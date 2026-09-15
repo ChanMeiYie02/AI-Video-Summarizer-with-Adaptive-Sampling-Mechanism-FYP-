@@ -1,0 +1,64 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:01.010 --> 00:00:04.500
+>> The kinds of model we can build with scikit-learn are
+
+00:00:04.500 --> 00:00:07.875
+rooted in statistics and regression-based mathematics.
+
+00:00:07.875 --> 00:00:10.800
+This so-called classical machine learning techniques are
+
+00:00:10.800 --> 00:00:13.505
+very powerful and relatively easy to implement.
+
+00:00:13.505 --> 00:00:15.030
+So it's no surprise that they're used in
+
+00:00:15.030 --> 00:00:17.580
+many cutting edge AI solutions.
+
+00:00:17.580 --> 00:00:20.820
+However, when it comes to computer vision,
+
+00:00:20.820 --> 00:00:24.015
+there are some limitations that you should be aware of.
+
+00:00:24.015 --> 00:00:28.200
+First, the algorithms used to separate the image pixel arrays into
+
+00:00:28.200 --> 00:00:31.680
+classes are very susceptible to variations in color,
+
+00:00:31.680 --> 00:00:34.515
+contrast, lighting conditions, and so on.
+
+00:00:34.515 --> 00:00:36.495
+Then, you can mitigate this by
+
+00:00:36.495 --> 00:00:38.980
+equalizing and otherwise preparing the images,
+
+00:00:38.980 --> 00:00:41.620
+but that can require a lot of work.
+
+00:00:41.750 --> 00:00:45.830
+A more difficult problem is that classical machine learning
+
+00:00:45.830 --> 00:00:49.855
+techniques apply to the entire array of pixel values.
+
+00:00:49.855 --> 00:00:52.670
+Now, only some of these pixels actually
+
+00:00:52.670 --> 00:00:55.655
+describe features of the object you're trying to classify.
+
+00:00:55.655 --> 00:00:58.640
+The classical algorithms can be heavily influenced by
+
+00:00:58.640 --> 00:01:00.170
+background pixels that have
+
+00:01:00.170 --> 00:01:03.640
+little or no bearing on the class of object.

@@ -1,0 +1,197 @@
+[
+    {
+        "text": "So I'm.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Talking a little bit about some of the tools I've been involved in building to do forced alignment and also maybe offering up a bit of a menu of the kind of options that are available to you. So I'm a linguist, associate, linguist. I study mostly changes in pronunciation, and I'm not. Actually still quite clear where everybody's information level is at. So if I'm talking about things at a level that is, you feel. Patronizing because it's too. I'm telling them how to suck eggs. I apologize I had I tried to pitch it. A bit a bit basic so.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Um?",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So I was in a situation when I was working on my PhD where what we had was a lot of really great data rotting on magnetic tape and this is a collection of data that my supervisor also pictured there was involved in collecting over 40 years in Philadelphia. These were social linguistic interviews conducted with everyday Philadelphians. The social linguistic interviews. Would ask basic demographic questions and then turn to trying to elicit narratives with personal experience, so things like. Did you ever get blamed for something you didn't do, or was there? Was there ever a time when you thought this? Is it? I'm going to die? And these once you get people warmed up, these are. These are actually pretty good topics. But of course, our primary, well, that's great. Our primary focus, of course, we're interested in what people had to say, but we're also interested in how they set it, right? So what we had was this static data and what we wanted was.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Thing like this now I'm not sure how much phonetics anybody knows. This is a representation of how people are pronouncing the sound I. And this is it. How that pronunciation changed overtime over the 20th century, right? This is what we're interested in, right? I'll just let that play out, so this is the result of a statistical model over the acoustic data that we managed to collect. So how did we get from what we had to?",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "We wanted. So first we had to convert all the analog recordings to digital format, so that was a project and preserve the most important metadata and I'm sorry I missed most of the talks yesterday, but apparently that was a big topic of conversation. Then we had to. This is very much what John was talking bout identify where in the audio the speech sounds. Of particular interest were we had to know where each and every I ow O sound was. Then, and that's going to be the focus of what I'm talking about here, because it seems to be the topic of most relevance or most interest here, then there was other issues, right? So once we know where in the audio speech sound is, we had to automate really and really really had to automate. Given the volume of data we had, the acoustic analysis of the speech sounds, which was a separate kind of project that I won't be talking as much about, but was also really big component. And then of course apply statistical analysis to the acoustic data that we collected. Which the output of which is what you saw just a moment ago.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So identifying where in the audio a speech sound is that is forced alignment right? Which in case the name is opaque, you take. But the the words and the speech segments that you know to be in the audio from a transcript, and you force an alignment of that to the audio, right? And this is what it looks like. This is some audio of me saying actually this actually saying well there was one time. And this is the output of that forced alignment, and you can see it did pretty well. The speech segment layer is a little crowded up here, but you can see well there was one time and. Even if you're not used to reading spectrograms, if you're not used to reading spectrograms, this is done actually pretty well.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So I'm interested in finding speech sounds in audio, right? But finding words of particular interest in audio is another thing that might be of some interest. I'm just trying to sell why you might want to do forced alignment. Here's a really interesting pattern I found in these social linguistic interviews, right, which most of them are going to be narratives of personal experience. Such a thing happened to me and then and then the next complicating event, a curd, and then there was the conclusion. And in these. A narrative personal experience, it looks like the distribution of days of the week follows a very interesting pattern. A lot of discussion of Sunday. Monday nobody likes talking about Wednesdays. And then there's the weekend again, which is actually an interesting kind of pattern. And that's the kind of thing where maybe you have done all this work and then you get this data out. And now this is driving your next sort of question. What are they talking about right there, talking mostly about Sunday? I mean, maybe that's because they're mostly. Italian Irish American Catholics. And issues of religious belief and experience come up frequently. Or football right? The other American religion.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So the rest of the presentation is going to be talking a bit about some of the necessary bits and pieces that are needed for forced alignment and then coming up with some of the tools that are available for you to do forced alignment at home.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So bits and pieces and issues for doing forced alignment. I'm going to talk about a few things, sort of the everything that's needed to do forced alignment. Not all of these pieces you are going to need to provide as the end user, but I figured I'd talk about all of it just to demystify it a bit or just so you know what all the moving parts are.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So maybe the first big issue is you need a pronouncing dictionary, right? So you need some way to look up in a dictionary. Here is this word? Well, what are the speech segments in it right and? This is a there are pronouncing dictionaries out there for many languages? But it's sort of a non trivial issue, so and some of the interesting issues that do come up when it comes to the pronouncing dictionary or what do you do about multiple pronunciations. So for example, here is an interesting case and I'm I'm just drawing this out. Reminded a talk, I just saw it then or than English is workshop on.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Three variants of walking right? So there is the. Broad English standard walking. Then there is the not standard walk in that everybody says. And then in the North there is walking. Which comes up with some frequency. So there's a question of, you know you have all of these variants. How do you deal with this? You know the fact speakers are going to be producing all of these variants. How do you deal with this for the alignment, and I think there's different philosophies out there, I'm not sure what John's feeling is. So that's option. That's option one at least right so. Let the let the aligner figure out which option to use, so one of the pros is you'll get a more accurate. Uh. Timing information and a better alignment and and. A more accurate in some sense, phonetic transcription, some cons?",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "To this or in choosing pronunciation variants, if the particular variant that was chosen is your research question. Right, so Bailey was interested in which one of these particular things that people say at which frequency? The case that some aligners. Agree with humans at a lower rate than humans. Agree with human coders. Agree with each other, so that's an issue. Maybe this is something that needs to go back and be corrected. It can be tricky to identify which pronunciation. Variance or variance of each other to from from? If all you get out of the alignment is the one option, so one.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Approach and this is sort of how I've been leaning a bit more is to only allow the aligner choose one option. You take a hit in terms of the accuracy of the alignment in the timing. In the phonetic transcript, but allows me you know if I know all instances of Ng. No matter how they turn came out, did the person, say, walking, walking, walking in the alignment? They're all going to be given an English sequence. I can look up all those Ng sequences and do the coding. Some auditory coding and then train a classifier. If I want to or whatever this is the way I've been leaning, but there's it's sort of depends on what your goals are really. So issue 2 that's always going to come up when you're doing alignment is out of dictionary words right now.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "These are frequently proper names, which I guess we would be anonymizing anyway, but street names you know. So here's through walled up there or regional terms. Things like hoagie, which if you don't know, that's the Philadelphian word for a sub sandwich. Sort of grinds my gears a little bit to say submits a hoagie. So these either need to be added to the dictionary when the aligner is run, which is what we do with our system, which means if you run if you're running the aligner usord need to know the transcription. State the how to type in these speech segments or there are other separate pieces of software which will try to guess the the speech segments based on the spelling. So I should say you might need to provide these outer dictionary items as the end user, but the pronunciation dictionary it comes typically bundled with the aligner, so that's something the aligner is using, not something you necessarily need to provide. Something you definitely don't need to provide unless you're training your own aligner or the acoustic models right, and some sense this is.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Most complicated bit and I'm going to use the simplest figure to represent it, but these are the three WS from that little recording me saying. Well, there was one time. Well there was one time that's right. And what the aligner. This is really the bulk of what it has is. Statistical models of you know you look at these three WS their different durations. They've got different acoustics. What the aligner systems are using is actually not anything that you are actually looking at up here. They're not human interpretable, but they. The point is they need to figure out you know. This looks like it could pop this bit of chunk of audio. Looks like it could be a W and so on and so on. For all the speech sounds. So.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "The big piece that then this is the one big item that you as the end user do need to provide for the aligner is a transcript of some sort. And I guess many of you would know outside the original field work. This can be the most expensive and time consuming. Aspect right, but of course it's valuable. And of course I would recommend using Ellen. This is any line transcription that I did. This is actually a press. Jimmy Carter's first press conference complaining about the Soviet Union and all that. So let me see how I am on time. OK, I can do this.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Yeah, great so. I'll go very basically through how it works. Again, this is a demystifying process, right? So your aligner has looked up a word in the pronunciation dictionary. The word you wrote down was the and it said OK. These are the two speech segments that are in the word, the. And the aliners model of how the world works is speech segments have a beginning, middle and end, at least the one I'm working with, they can vary. And so it has a beginning, middle and end and has a beginning, middle and end.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "And it also knows there's some probability that appear in the beginning state of you might transition to the middle, or you might stay in the beginning. And so on. You know if you're in the middle, you might transition to the end, or you might stay in the middle. So it knows approaching the problem. We're going to have some audio. The word the is in there and there's going to be a sequence of beginning, middle and end transitions between the and the end within them. And the beginning, middle, and end of all of these speech segments has a probabilistic statistical model of what the acoustics for the beginning state of should be. An what the middle state? Should be. So it tries to work out. Here is the actual audio. That it's that it's presented with where from one window of analysis to the next we have this transition in the audio and it needs to figure out does this transition in the audio represent a transition from beginning to middle or from beginning to beginning? And it tries to work that out by balancing out balancing out. What's the probability that we would have stayed in the beginning an if we're in the beginning, we would have admitted this audio was the problem versus what's the problem with the joint probability? We would have transitioned to the middle and then being in the middle emitted this audio and then it does that out for the whole.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Sequence and we get. This is how it works out what the alignment should be. It tries to optimize it across the whole audio stream. It can take awhile and we found actually that aligning on many small chunks is faster than aligning one big chunk, right? So chunking up the audio because of the optimization it tries to do if it's trying to optimize many times over a small window, it can do it, can do it quicker. So some.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Concerns that are out there about forced alignment is it will make mistakes and it will make mistakes. As John was pointing out, but it is also easier and faster and since faster cheaper to manually collect a menu manually correct the output. Of the automated system, then to create manually create the entities annotations from scratch. Ann is the case, you know, humans make mistakes too, right? Except we're more chaotic systems, so the kinds of errors that these automated systems maker, usually systematic in some sense so that they are on the one hand easier to find. And on the other, correctable. This is a kind of a strange one that gets thrown at me that these automated systems. This is sort of me talking to the sociolinguists in my life that it's a black.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Box, which it's not, at least the aligner we're developing, and the software developing is being developed in the open. Anyone anyone can download the code what they mean by black boxes. I don't understand what's in it.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "You are a black box is what I have to say. You know the whole reason we are involved in this enterprise is because the nature of human knowledge and the nature of the decisions we make are an unsolved problem. And you're just applying that problem to creating the data in the 1st place, so. Yeah.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Another concern that I've heard is that this automation process sort of removes me from my data. I don't have a. A feeling for it anymore and in some sense I can see how this is true. This automation you know you have this big collection of data that you're haven't read or listen through. Every little bit of it, but it does wind up sort of inverting the direction of hypothesis generation and exploration. So whereas you might have arrived at this. So I should think about how people are talking about days of the week or what are they talking about from listening to lots of recordings and then you would realize, oh, this is something I should look into. This sort of inverts that direction where you've got the big picture? You've got this graph and then and then need to sort of iterate back and drill down into the data in detail. It's not an excuse to not understand your data is what I would say.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "OK, so doing force alignment at home so.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "I've been involved in developing the FEV suite. It's actually 2 pieces of software, an aligner. And basean format analyzer. I'm going to talk about the formant analysis. That's the acoustics. The liner is based on the P2FA system which was it's trained. Its acoustic models on. I think it's 25 or so hours of US Supreme Court oral argumentation and has fairly good time accuracy. This is a histogram of errors. How offset each boundary was from a human anti gold standard.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So some of the benefits of FEV as your use tool to use is. It's a it's been developed. For Sociolinguists, so we are assuming that multiple talkers is the default case. We always have more than one person on the audio. It also developed in the open. It's all the code and everything is available on GitHub. You can go download it right now. And trying to be as cross platform friendly as possible, which is a sure but but. I want people to use it so it needs to work on their computer. It's written in Python, which is a widely understand, understood programming language and. It's a relatively simple and flexible thing, right? So the FEV forced aligner does basically one thing, which means that the code is relatively simple and readable. So if you were to hire A pro, if you got money to hire programmer they have some Python experience. They could probably work with what we got. And as just some evidence of this there are people. If you look at the commit log there are people. Who are not just me and not just people from my research group who have pushed sent pull requests to the repository and have contributed to the code right so? People who are not deeply involved with this system have made edits and changes to the code. And the primary developer is friendly and responsive.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "That's me.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "So the acoustic models of FEV were based on North American audio. But Mackenzie and turn founded. It compares very favorably to other aligners on British data. It is only English.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Another con would be that the acoustic models are not particularly flexible. It does what it does and it's not re trainable really. My recommended way that I would recommend to use fave is to download it and install it locally. So we have a wiki page with some extensive documentation for how to install it and how to use it, and there's a. Users mailing list that I try to try to respond to as quickly as I can. What babe?",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "It's input is the audio, obviously an transcriptions, partially time aligned right, so chunked up like this as you would transcribe it. With multiple speakers separated out onto separate tiers.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "There's also the positive lab aligner, which has been developed at the University of McGill, so its pros and cons are going to be largely the same as FEV, 'cause it's a very similar kind of system. One of the big benefits to Procede lab is it has retraining of its acoustic models built into it. I haven't actually tried doing it, but. You are able to do it and I also know the guy who develops it and he tends to be fairly responsible, responsive to these things too. It doesn't quite have a streamlined facility for handling multiple talkers.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "And again, my recommended usage would be to download and install there's web mouse.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Which is a liner. The mouse is Munich. I'm not sure what it stands for. Developed in Association with clarity. It's a web based platform which makes it easy to use this kind of click and drag. It's with any kind of system that people have built and put out. There is maybe less adaptable, so I like to have something installed locally so I can type it into my own scripts and have it do exactly what I want, and I've had success with Webmail, but the fact that it's it's available online is. Is good, so this is something I've just recently started thinking about and I don't know how it works everywhere else. So in the UK at least we need to ensure that data audio that has personally identified as sensitive information. You know, even if the you know no matter what people have signed off on, the consent forms can't leave the European economic area. So the web Mail servers that won't be an issue for me, but double check.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "So my recommended usage for mouse would be to go to the website and and click and drag and have at it it.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "It's also. This is it will communicate through Elan I learned yesterday. In a really cool way so. It's not in the Elan software, it's up again uploading the audio and transcript to the to the servers and then sending you back the results.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "There's also Darla, which is a really cool system, something I'm I would like to get more in experience using. It has automated speech recognition as the first step, right? So actually what you submit to Darla is just the audio it tries to apply English automated speech recognition to create a transcript, and then it will do the alignment. Now the transcription is. Ever full. But it's just like it's probably. It's faster and easier to correct alignment that comes from an automated system. It's going to be quicker and easier to correct bad automated transcription then to do the transcription by hand in the 1st place, and I believe they even have a facility where it will show you this is what this was. The most probable text given the audio. And here's the 2nd and 3rd fourth most probable. The big issue. Is they don't have their code available to download yet, it's just a web based service which means I can't actually use it here in the UK 'cause the servers are in the US so. That's a whole other conversation. Services you can use it anywhere, right? The issue is. According to your data management laws, can you send an interview to a server in the US? That's the issue. Outside the European economic zone or whatever.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So my recommended usage until they have the code available to download would be just to go to the website and upload and upload it there. If you can. Depending on what your data is.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "And that's it, that's that's what I have to say, thanks.",
+        "start": 1102.0,
+        "end": 1131.0
+    }
+]

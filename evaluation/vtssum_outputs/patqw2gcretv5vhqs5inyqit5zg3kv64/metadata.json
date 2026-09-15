@@ -1,0 +1,20 @@
+{
+    "id": "patqw2gcretv5vhqs5inyqit5zg3kv64",
+    "title": "A Complete Algorithm for Generating Landmarks",
+    "url": "http://videolectures.net/icaps2011_bonet_landmarks/",
+    "info": {
+        "author": [
+            "Blai Bonet, University Simón Bolí­var"
+        ],
+        "published": "July 21, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence->Planning and Scheduling"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 221,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 3085
+}

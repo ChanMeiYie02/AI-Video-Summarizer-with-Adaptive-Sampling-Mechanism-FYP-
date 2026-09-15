@@ -1,0 +1,20 @@
+{
+    "id": "uasj56zqi5gtoyjxafbghiic4pc6fhdb",
+    "title": "Subspace-based Learning with Grassmann Kernels",
+    "url": "http://videolectures.net/icml08_hamm_sbl/",
+    "info": {
+        "author": [
+            "Jihun Hamm, GRASP Laboratory, University of Pennsylvania"
+        ],
+        "published": "Aug. 29, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 252,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 2376
+}

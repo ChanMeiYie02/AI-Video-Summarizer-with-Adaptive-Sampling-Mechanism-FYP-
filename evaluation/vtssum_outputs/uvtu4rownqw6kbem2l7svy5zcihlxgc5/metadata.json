@@ -1,0 +1,21 @@
+{
+    "id": "uvtu4rownqw6kbem2l7svy5zcihlxgc5",
+    "title": "Deep Learning for Machine Vision",
+    "url": "http://videolectures.net/bmvc2013_coates_machine_vision/",
+    "info": {
+        "author": [
+            "Adam Coates, Baidu, Inc."
+        ],
+        "published": "April 3, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 61,
+    "num_sentences": 376,
+    "num_clips_with_summary": 30,
+    "num_gt_summary_sentences": 66,
+    "ground_truth_summary_length_chars": 8094
+}

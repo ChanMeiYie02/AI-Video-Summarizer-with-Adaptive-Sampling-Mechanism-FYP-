@@ -1,0 +1,21 @@
+{
+    "id": "gn3yfild7nmglk2bofhxzhxujzosd7zj",
+    "title": "Data Mining in the Life Sciences: The Path to Personalized Medicine",
+    "url": "http://videolectures.net/mlpmsummerschool2013_borgwardt_data_mining/",
+    "info": {
+        "author": [
+            "Karsten Michael Borgwardt, Max Planck Institute for Biological Cybernetics, Max Planck Institute"
+        ],
+        "published": "May 13, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 68,
+    "num_sentences": 837,
+    "num_clips_with_summary": 42,
+    "num_gt_summary_sentences": 101,
+    "ground_truth_summary_length_chars": 11751
+}

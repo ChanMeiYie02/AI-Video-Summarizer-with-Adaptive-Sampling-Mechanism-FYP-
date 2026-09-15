@@ -1,0 +1,21 @@
+{
+    "id": "hw3egyugkx2pz4ohcgnq2suruhbv5qok",
+    "title": "On Future Internet, Cloud Computing and Semantics - You Name It",
+    "url": "http://videolectures.net/active09_zwegers_ficc/",
+    "info": {
+        "author": [
+            "Arian Zwegers, Commissioners, European Commission"
+        ],
+        "published": "Oct. 20, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computers->Internet",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 45,
+    "num_sentences": 793,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2122
+}

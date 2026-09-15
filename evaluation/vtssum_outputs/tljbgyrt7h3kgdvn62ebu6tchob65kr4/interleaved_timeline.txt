@@ -1,0 +1,110 @@
+[0.0s - 29.0s]
+This is joint work with Costar. Skalak is also in the house. I'd like to comment while this work is on learning mixtures of Gaussians along the way, I'll introduce a number of tools and techniques which I think will be very interesting for more general learning problems.
+
+[29.0s - 58.0s]
+First of all, I guess you just heard this, but what exactly is a mixture of Gaussians or GMM? There's two interpretations. The first interpretation is just saying the PDF is a convex combination of Gaussian PDFs this great analytically, but doesn't really give you much intuition on what's going on, which leads to the second interpretation. In this interpretation, there's several unlabeled Gaussian populations which are mixed together. This leads to the following equivalent sampling definition. You have a bunch of Gaussians you pick one of them with probability proportional to some mixing weight. And then you draw a sample from that Gaussian. In this talk, our focus will be on mixtures of two Gaussians in one dimension.
+
+[58.0s - 87.0s]
+The model we are working in is the PAC learning model and our learning goal will be proper learning. In this learning model, we will have access to some mixture of two Gaussians X and will receive sample from it. The sample will be fed to our algorithm A and our algorithm A has to output a hypothesis X hat, which is also a mixture of two Gaussians. Our goal is to have this hypothesis distribution be close to the original target distribution. In statistical distance. We comment that statistical distance is also equal to total variation distance and it's equal to 1/2 the L1 distance. As usual as algorithm designers, our goals here are to minimize the sample size and to minimize the amount of time taken by our algorithm. So I'm.
+
+[87.0s - 116.0s]
+In proper learning, I'll define that a bit more carefully, as well as a few other learning goals. So in roughly increasing order of difficulty, we have improper learning, proper learning and parameter estimation. So you can see it here. It's kind of faded, but you can see we have a bunch of component Gaussians here which make up this overall distribution which also looks kind of Gaussian. This is actually the lower bound alluded to in the moisture and valiant result in the last talk, but that's an aside. In particular, the 1st and easiest learning goal is improper learning. In this, our goal is to output any hypothesis which is close to the target in statistical distance. In this case, we have a piecewise linear function which approximates the target. The next and slightly harder goal is proper learning. Again, we're trying to output hypothesis which is close to the target, but this time we have the additional restriction that we have to output a mixture of Gaussians. Finally, and most stringently, we have parameter estimation in which we not only have to output a mixture of Gaussians, but in some sense we have to output the correct mixture of Gaussians. So that was the model considering the last talk in this talk.
+
+[116.0s - 145.0s]
+We're going to focus on the slightly easier both conceptually and computationally learning goal, which is proper learning.
+
+[145.0s - 174.0s]
+So I'm going to talk about some of the prior work. There's been a very long line of work on learning Gaussian mixture models, but this is some of the results which are most relevant to this talk. So in 2010 there was a breakthrough result by climate renvall Ient. On it was the 1st result to really show that you can learn a mixture of two Gaussians with no separation assumption. This this was a huge result. Theoretically, though, the sample complexity and time complexity both have very large exponents, even though they didn't try to optimize these exponents. The sample complexity, for example, is one over epsilon to 300, and the time complexity is more than one over epsilon to 1000. A state in the paper.
+
+[174.0s - 203.0s]
+Next, very recently, actually a result by Channa Dal gives an improper learning algorithm for mixtures of Gaussians. This has sample complexity, which is total of 1 over epsilon squared and a time complexity which is again polynomial. But this time believe me when I say it's a very. It's a very reasonable polynomial. The blocking step is basically a linear program. We comment that this is actually a more general result and works for and it has learning results for anything which is close to a close to a mixture of piecewise. Polynomials, which is a very broad class actually.
+
+[203.0s - 232.0s]
+But the focus of this talk will be on proper learning, and there's two recent results in this field which are independent and someone concurrent wanted by Charlie Attalan. One is by us. Both of these algorithms achieve near optimal sample complexity of one over epsilon squared. Our time complexity is one over epsilon to the fifth, which is a factor of 1 over epsilon squared faster than theirs.
+
+[232.0s - 261.0s]
+And yes. Yes, it's on density estimation or improper learning in one dimension, and it applies to it applies semi agnostically to any mixture of piecewise polynomials, which is very very broad class. I recommend this paper is a good one. So, but in terms of lower bounds for these problems. First of all, there's a well known lower bound of one over epsilon squared for improper improper learning. This folklore and you'll note that all the algorithms for proper and improper learning we give here match this up to log rhythmic factors. However, more recently, and more Interestingly, Hardin Price came out with a parameter estimation lower bound of one over epsilon to six for a certain type of parameter estimation, which implies proper learning. We note that our algorithm bypasses this in both sample and time complexity because we're dealing with proper learning rather than parameter estimation. We also comment that they have a matching upper bound, but it's in a slightly different version of parameter estimation which isn't immediately extendable to proper learning. I recommend you check out the paper for more details.
+
+[261.0s - 290.0s]
+At a very high level, our algorithm with all these two steps. First, we're going to generate a set set of hypothesis to GMM's at least.
+
+[290.0s - 319.0s]
+One of which is close to the true target distribution. The second stage will be somehow to weed out the bad distributions.
+
+[319.0s - 348.0s]
+And pick a good candidate from the set. The other two steps and.
+
+[348.0s - 377.0s]
+Along the way I mentioned there's going to be some tools. First of all, how do we remove part of a distribution which we already know? Second, how do we robustly estimate the parameters of the distribution and 3rd which is the second step, which I just described? How do we pick a good hypothesis from a pool of hypothesis?
+
+[377.0s - 406.0s]
+So I'm going to start with the first step of this plan. How to generate the set of hypothesis hypothesis distributions. What?
+
+[406.0s - 435.0s]
+Is a hypothesis hypothesis will be a mixture of two Gaussians which can be described by 5 parameters. In particular it has a mixing weight. The two means and the two variances. Another mentioned before we want at least one good hypothesis. What does a good hypothesis mean? Well, we want one hypothesis such that the parameters are close to the true parameters and using a little bit of analysis you can see that this implies the desired statistical distance bound. In terms of how close we want it, we want the mixing wait to be within an additive epsilon and for the other two parameters we want them epsilon times the corresponding standard deviation. That was probably so it is. The idea is that we're going to generate a bunch of candidates, at least one of which has parameters that are close to the true distribution. The issue is going to be that we can't specifically pick him out and say this is the right guy with the right parameters, but we're going to find either him or another guy would just happens to be closed in total variation distance, so we could output something which is far but this guy. The fact that this guy is in the pool makes it work out.
+
+[435.0s - 464.0s]
+So let's have a warm up. There's a classic problem of learning one Gaussian. This is a relatively easy problem and we understand it well. The right thing to do is output a Gaussian with mean equal to our samples mean and a variance equal to the sample variance. And if you have a sample size that at least one over epsilon squared, then diesel boats match. The true parameter is pretty close and we're happy.
+
+[464.0s - 493.0s]
+On the other hand, if we're doing mixtures of two Gaussians, a little bit harder, it's not immediately clear what to do. Like if we took the sample moments would be sort of mixing up samples from each component, and it's not directly clear what to do here. So we're trying to bypass this. In this cartoon picture you can see that this like tall, skinny Gaussian kind of stands out a lot. So what we're going to do first is find the tall, skinny, Gaussian and learn it first in some sense. In general the tall skinny Gaussian will be the one which has the maximum weight over standard deviation. OK, so we know what the tall skinny Gaussian is, and in some sense which we'll get to in the next few slides. We want to remove it from the mixture after we remove it from the mixture. Well then we just have one Gaussian which was easy. There's a bit of a complication, but we'll get into that.
+
+[493.0s - 522.0s]
+OK, so the first thing like I said, we're going to learn the first tall, skinny Gaussian. Unfortunately, I don't have enough time to get into all the details here, but I make the following claim. If we take over one over epsilon squared samples, we can generate O~ one over epsilon cubed candidates. Each candidate will describe one Gaussian and at least one will be close to this tall skinny guy right here. So we note that the sample complexity of this step is one over epsilon squared, which is we are still sample optimal up to this point. So OK, we have a bunch of candidates. At least one of which describes this guy, right? Now, if we knew which candidate was the right one, could we remove this tall skinny component? Note that I say if we knew it, I'll get to it later. We're going to be able to find out in some sense will be able to guess which one is the right one, and then keep going from there. But believe me, for now, let's pretend that we know which candidate has the right description of him. So this is the first.
+
+[522.0s - 551.0s]
+I promised you how do we remove part of the distribution? We already know this is a cartoon of what we want to do. We have this mixture of two Gaussians and poof, this guy is gone. That's what we wanted.
+
+[551.0s - 580.0s]
+A very useful tool for this will be something called the DKW inequality. Roughly, the DKW inequality says if we take over one over epsilon squared samples from a distribution X, we can output a hypothesis X hat which is close to epsilon, close to the unknown distribution. In Kolmogorov distance. We note that this Kolmogorov distance, which is weaker than statistical distance. However, this is still an incredibly useful tool because we note that DKW inequality holds for any probability distribution when you think about it for statistical distance, we're typically for every different problem we study, we have to come up with a custom built algorithm. But DKW said we can. We can estimate or sorry we can learn something up to Kolmogorov distance epsilon very easily and generically, which makes it awesome. So just to give you an idea of what happens, here is the true CDF distribution and using the DKW quality we get this thing which sort of approximates the CDF of it.
+
+[580.0s - 609.0s]
+So I'm going to walk you through the steps of how we subtract out the known component. The first thing I mentioned is that we're going to be considering CDF's, so we start with the PDF and we just think about the CDF from now on. Well.
+
+[609.0s - 638.0s]
+OK, we have the CDF and like I said, we're going to the DKW inequality and this gives us a discretized distribution which has a CDF close to the original. But the benefit of that we can work with this one. We actually can play around an estimate things from it.
+
+[638.0s - 667.0s]
+Next, remember that I said we were pretending that we know the first component. Well, the idea is if we know the component, we also know it's CDF and so we can just subtract out the CDF of that component. Now what's the issue here? This might look like a kind of funny CDF and that the reason is because this is not a CDF at all. A CDF has a property that is nondecreasing, otherwise it doesn't correspond to a probability distribution. So all we do is we iron out.
+
+[667.0s - 696.0s]
+Distribution and we monetize it. We basically make sure it's monotone nondecreasing, and at this point after rescaling we now have a valid probability distribution, with the guarantee that this will be close to the remaining Gaussian in Kolmogorov distance. OK, So what we've done up to this point is we've figured out one of the components and subtracted out.
+
+[696.0s - 725.0s]
+So this is back to the warmup kind of. Now we're learning one almost Gaussian. So when you picture in almost Gaussian, this might be the picture you have in your mind in the sense that, OK, look, it's kind of got a bit of noise and you can picture in this case maybe that OK. Again, we can take the sample mean and the sample variance and it'll workout. But The thing is, this is not the worst case. This is an easy case in some sense.
+
+[725.0s - 754.0s]
+The bad case is when we have a Gaussian and then you.
+
+[754.0s - 783.0s]
+Take a trip out to Infinity and then you have a very small epsilon mass. The idea is you displace one of epsilon mass from the Gaussian and put it off at a very large value. What are the mean of this distribution be? The mean will be something very very large. Often the... here compared to what the true mean of the original distribution was zero. So the question is, given this distribution, how can we recover something which is kind of close to 0?
+
+[783.0s - 812.0s]
+In other words, how do we robustly estimate the parameters of this distribution? Well, for.
+
+[812.0s - 841.0s]
+Finally, we can appeal to robust statistics, which is a very broad field of study. We use two very commonly known statistics known as the median and the interquartile range. So you can see in this cartoon picture that even though we have this mass off at a large number here, notice how the medium has only moved a very small amount from the value. Would like to recover, which is 0. And it's not as easy to tell because you might not be familiar with interquartile range, but believe me when I say this is roughly the same as it was before. What does it mean? In other words, we can recover the original product parameters approximately even for distributions were at a distance epsilon away from the original distribution, which is really cool. And even cooler, that this is entirely determined by the other component. What does that mean? It means before we had one over epsilon cubed descriptions of one of the Gaussians, and for each of those, each of those descriptions we can generate exactly 1 corresponding Gaussian, which describes the other one. So this means we still have one over epsilon cubed candidates. Furthermore, consider the case where consider the remember how he said we didn't know which is the right candidate, the one that matches the first one? Well, it doesn't matter, because the one which was right in the first one because of the property. The robot statistics will get the second component right as well. So therefore I've described how to generate a set of hypothesis with at least one which is close to the true distribution.
+
+[841.0s - 870.0s]
+Now comes the second part of the algorithm. How to pick a good candidate from the set?
+
+[870.0s - 899.0s]
+And this is the third tool I promised you.
+
+[899.0s - 928.0s]
+So this is the problem of hypothesis selection in hypothesis selection we have N candidate distributions, at least one of which is epsilon close to the unknown distribution, and our goal is to return something which is within a constant factor, something which is Ovap salon close to the target. So in the cartoon you can see here there target, we have the circle in here and we have at least something which is in it, but we're fine outputting anything which is within this larger circle.
+
+[928.0s - 957.0s]
+There's a few previous results here which I want to talk about. First of all, there's classical approach is based on the chef a estimator. These have some drawbacks unfortunately. First off, they can become computationally difficult depending on the class of hypothesis you're considering. And second, it requires quadratic time in the number of candidates you're considering. Recently, independently and concurrently with our work, there was work by Acharya ET al, which also is based on the Chevy estimator. Though it uses a variant which avoids some of the computational difficulties. However, the main contribution is reducing it down to N log N time quasi linear in the number of candidates at the post quadratic. Finally, there is our result, which is the general estimator which requires minimal access to the hypothesis. I'll get into what that means in the next slide. It requires N log N time as well, and in a certain regime it runs slightly faster.
+
+[957.0s - 986.0s]
+So here's the specification of our algorithm. In terms of a milder access to the hypothesis, first of all, it requires sample access, which is very natural, and second, it requires something called a PDF competitor for every pair of hypothesis. What are the PDF comparator? Well, a PDF competitor will take 2 hypothesis and a value X, and it will tell you which of those two hypothesis has a greater value in the PDF at that value X. We note that if you can explicitly and efficiently compute the PDFs, then you have this, so it's a very natural concept. The guarantee is that it'll output a hypothesis with the additional promise that if at least one hypothesis is epsilon close to the target, it will output something which is over epsilon close to the target and have highlighted the important terms in the complexities. Here, the sample complexities log arhythmic in the number of candidates, whereas the time complexity is near linear in the number of components. Oh sorry, near linear in the number of candidates.
+
+[986.0s - 1015.0s]
+To give you a flavor of what the analysis, how the algorithm works. First of all, there is the naive approach used by the classic results I mentioned in this they set up a tournament which compares every pair of distributions. And it outputs the hypothesis which has the most wins among this set. I don't want to get too much into what it means to compare every pair, but you can think of it as a noisy comparator. It takes 2 hypothesis distributions and if one is clearly much closer to the target, it will tell you that's the one. On the other hand, if there if this isn't the case and there's no real guarantees. So us we get around this by setting up a single elimination tournament instead of doing the N squared comparisons. We only do N log N. There is an issue here which is a glaring in that in this setting the error will double at every level of the tree since there's log and levels of the tree. This results in an error of two to the log N times epsilon. However, we have a better analysis using a window or a dual window argument. We partition our set, integrate hypothesis which are within epsilon of the target good hypothesis which are within eight epsilon of the target and bad hypothesis which are the rest. We note that we don't know this partition, but our algorithm is oblivious to knowing the actual partition. So we show that these two cases if the density of good hypothesis is small, then you can imagine or sorry, the error propagation will not happen and the reason is because the great hypothesis will make it very far in the tournament without being stopped by anyone else. However, if the density of good hypothesis is large, well we can just subsample pick a bunch of guys out of the set, and then run the naive tournament and there's only square root of N hypothesis. This is ovean. The issue is we don't know which of these two cases is the truth, so we run both of these two cases and then we have two hypothesis. Finally, we compare these two hypothesis and output the better one, which will be our final winner.
+
+[1015.0s - 1044.0s]
+Yep, so we'll put it all together in the first part of this talk I mentioned how to generate one over epsilon cubed candidates such that at least one is good in the second party described. How do you hypothesis selection to pick a good one? Putting it together, we have the sample complexity which is otila one over epsilon squared, which is near optimal and time complexity, which is otila one over epsilon to five.
+
+[1044.0s - 1073.0s]
+Here's some open problems. Most Interestingly, I think of the time complexity of KGO memes. In improper learning we know it's polynomial time in the number of components. In parameter estimation. We know it's exponential in the number of components. So the question is where does proper learning lie? That's all I have to say, thank you.

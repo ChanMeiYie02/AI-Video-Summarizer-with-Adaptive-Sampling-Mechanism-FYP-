@@ -1,0 +1,22 @@
+{
+    "id": "5gvyji5kkjrubsewjkekludjw3rxsj2e",
+    "title": "Convolutional Networks",
+    "url": "http://videolectures.net/deeplearning2015_lee_convolutional_networks/",
+    "info": {
+        "author": [
+            "Honglak Lee, Department of Electrical Engineering and Computer Science, University of Michigan"
+        ],
+        "published": "Sept. 13, 2015",
+        "recorded": "August 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 67,
+    "num_sentences": 751,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1074
+}

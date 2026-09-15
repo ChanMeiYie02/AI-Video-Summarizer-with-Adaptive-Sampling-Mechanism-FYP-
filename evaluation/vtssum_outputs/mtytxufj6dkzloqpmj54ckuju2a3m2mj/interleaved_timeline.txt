@@ -1,0 +1,203 @@
+[0.0s - 29.0s]
+So we'll talk about binary classification standard binary classification. We have distribution over X * 0 one and based on example form distribution. We want to find a good classifier. So many.
+
+[29.0s - 58.0s]
+A algorithms to this problem that I will collectively called generalized linear methods can be described as follows. We take our instance, SpaceX, we embed it into a high dimensional space an in that space we find 1/2 space that minimizes certain convex loss, so.
+
+[58.0s - 87.0s]
+This description encompassed many metal scanner SVM regression. 484 Miss Methods and others and four.
+
+[87.0s - 116.0s]
+Theoretical perspective it also provides us the best guarantees. Too many problems to learning halfspaces, learning DNF's and other problems and domain.
+
+[116.0s - 145.0s]
+Purpose of this work is to prove lower bounds for these algorithms, and we do that, in particular for the program of learning large mining half faces. So what is that problem?
+
+[145.0s - 174.0s]
+Just remind you the interface will be the unit ball vectors of more math than one. Ford
+
+[174.0s - 203.0s]
+, greater than zero. We define the gamma error of a hyperspace hyperplane as the probability of an example to fall either at the wrong side of edge or a distance less than gamma from edge. Add.
+
+[203.0s - 232.0s]
+Also defined the gamma of the distribution as the gamma of the best hyperplane, and we'd like to find a classifier with L is at most the gamma error of the OK, so this is the purpose.
+
+[232.0s - 261.0s]
+They go to. The algorithm will be the margin parameter, gamma and their parameter epsilon an access 2 examples from D and also the the complexity parameters of the former will be one over gamma and one over epsilon. We will want to be polynomials in these two parameters. Now, as we will see later, we probably can solve this program exactly by efficient algorithms, so we'll have to compromise on approximation algorithms and.
+
+[261.0s - 290.0s]
+For Alpha greater than one, we said that algorithm has approximation ratio Alpha. If it is guaranteed to output a hypothesis with arrow at most Alpha times, the gamma error of the and here the error of the faith is simply the 01 error.
+
+[290.0s - 319.0s]
+And finally, we we. We say that learning algorithm is efficient if it runs in time polynomial and uses polynomially many samples. OK, so.
+
+[319.0s - 348.0s]
+Learning language model half base is one of the most cited problems in machine learning. What do we know about this problem? So let's start with upper bounds.
+
+[348.0s - 377.0s]
+If we simply use SVM with no kernel and the hinge loss, which is not how to see that we get an approximation of ratio of one over gap, which is quite bad approximation ratio and you can ask whether we can do better. So yes we can.
+
+[377.0s - 406.0s]
+If we use FM with a particular cannon, we can do slightly better, and this can also.
+
+[406.0s - 435.0s]
+We achieved using other methods, so this is the state of the out of the upper bounds. What about lower bounds?
+
+[435.0s - 464.0s]
+So under cryptographic assumption, it is possible to show that there are no exact algorithms and in.
+
+[464.0s - 493.0s]
+Recent results we show that under certain average case complexity assumption, there are no constant approximation ratio algorithms. OK, so these are the lower ones and I make two remarks. First, as you can see, there are very very far from the upper bounds and second they are based on not the most standard complexity assumption like base different from NP. So we can ask what about lower bounds for concrete algorithms?
+
+[493.0s - 522.0s]
+So forth, and we also have a matching lower bound of one over gamma. If we don't use kernel and the slower ones holds also if you use other convex losses, not just the hinges. But what about more general families of algorithms like kernels?
+
+[522.0s - 551.0s]
+PMO general in our algorithms. So here the best of my knowledge. We don't have general result and the.
+
+[551.0s - 580.0s]
+Result of this work is to show that every efficient generalized linear learner has approximation ratio at least one over gamma up to a logarithmic factor and this matches.
+
+[580.0s - 609.0s]
+The best known upper bound up to the logarithmic factor, and as I said.
+
+[609.0s - 638.0s]
+In the beginning, this applies to. Too many techniques.
+
+[638.0s - 667.0s]
+So in the remaining time at try to.
+
+[667.0s - 696.0s]
+Give you a glimpse to the proof. So the main challenge they technical challenge as we see, is to rule out every possible embedding of our data into a high dimensional space and to do.
+
+[696.0s - 725.0s]
+So we develop.
+
+[725.0s - 754.0s]
+Technique and we use many mathematical tools from many formalities. So I won't have the opportunity to talk about all of them, but I tried to give you some idea. So let.
+
+[754.0s - 783.0s]
+Well defined precisely, what do we mean by a generalized linear algorithms? So we have a Hilbert space when we want to embed our data with the unit ball B.
+
+[783.0s - 812.0s]
+We fixed an embedding fee for eggs to be Anna convex. Surrogate L can be any nonnegative convex function you want and see can be any function you want with one technical condition that I have enrolled that she should be absolutely continues.
+
+[812.0s - 841.0s]
+Now for a vector W in the high dimensional space and biosphere, we do not buy HW be the classifier corresponding to the mapping C and the halfspaces defined by W&B and we do not buy LL the surrogate error of this classifier.
+
+[841.0s - 870.0s]
+Now account base learner corresponding to C&L minimizes the surrogate error over all vectors of normal less than C of gamma will see of gamma. Is somebody that can be chosen by the algorithm. This is another parameter of the algorithm.
+
+[870.0s - 899.0s]
+And when you're done, tell us that every efficient such learner has approximation ratio at least one over gamma up to this log factor.
+
+[899.0s - 928.0s]
+In order to prove that we need to show that for every choice of three L and three, there is some bad distribution that fails the algorithm.
+
+[928.0s - 957.0s]
+OK, so the first step maybe is to give an equivalent definition of kernel based learn also generalized linear algorithms.
+
+[957.0s - 986.0s]
+So we do not buy F. The Hilbert space consisting of all hypothesis. The algorithm might return and we end all this Hilbert space with the no induced by the Hilbert said we started right by age. Now in Cleveland.
+
+[986.0s - 1015.0s]
+Definition of algorithm is an algorithm that minimizes the surrogate error over a certain bowl in that Hilbert space. OK, so this is just an equivalent definition.
+
+[1015.0s - 1044.0s]
+And now, instead of quantifying all possible mapping, see we need to quantify over all possible Hilbert phase spaces of that kind and.
+
+[1044.0s - 1073.0s]
+Actually, in the powerful will use both formulations. Some of the arguments will be easier in the first formulation, some of the argument will be easier in the second, but in the talk we will use only the second formulation. So let me repeat it, we have a Hilbert space of function from X2 R and we minimize the surrogates error over large bowl in that Hilbert space, and we want to show that this algorithm will perform very bad. OK.
+
+[1073.0s - 1102.0s]
+So now I give you a Birds Eye view of the profit can be decomposed into four step.
+
+[1102.0s - 1131.0s]
+Step would be to handle this bound C of gamma. So refer to that sends the sample is polynomial in one over gamma. C must be polynomial in one over gamma as well so.
+
+[1131.0s - 1160.0s]
+It is a Commonwealth of very, very well known theorem tells that if fees polynomial then we can learn with a polynomial sample complexity and I think that is an testing of its own right and.
+
+[1160.0s - 1189.0s]
+OK, so I want prove it and just take that this step is prove using a certain geometric arguments.
+
+[1189.0s - 1218.0s]
+The second step is to prove the theorem in a very restricted setting where the instance space is 1 dimensional ball, the figment minus one one an hour Hilbert space is simply the space of polynomials of degree at most log one over gamma. The second step is.
+
+[1218.0s - 1247.0s]
+To reduce all of this restriction and to prove it indicates that. The interface is the unit ball, but now in D dimensions, but they're space will still be a polynomials of bounded degree and the final.
+
+[1247.0s - 1276.0s]
+Step of course, is to deal with the general case. So in the mean time I'll tell you a bit more about Step 224, so let's start with the.
+
+[1276.0s - 1305.0s]
+Dimensional case. So in order to prove that, erm, I need to show you a distribution with a small. Gamma ello such that the algorithm will be doing very bad hypothesis. So here is the distribution will have two very heavy points close to the origin. Each of these points will have more ability, almost half, and the left one will be negative and the right one will be positive and on the rest of the segment will simply have a uniform. So this is the distribution. Now.
+
+[1305.0s - 1334.0s]
+First, it is easy to see that the gamma always very good. It is at most two gamma. Why? Because if we look on the half space, which is simply the threshold of zero, it's error is less than two gamma. And now we show you that the error of the hypothesis returned by the algorithm will be almost half, and therefore the ratio will be one over gamma as we need.
+
+[1334.0s - 1363.0s]
+OK, so let's be be the polynomial returned by the algorithm, the 1st.
+
+[1363.0s - 1392.0s]
+Point to note is that the L2 norm of this polynomial has to be small and the reason is that otherwise if it's big, if it's more than one over gamma, then the arrow on the noisy part will be very large. The target error and noisy part will be very large. Therefore the L2 norm is small. No.
+
+[1392.0s - 1421.0s]
+So since we work with polynomials of very low degree, the fact that the L2 norm is small implies that L Infinity norm of the derivative is small as well.
+
+[1421.0s - 1450.0s]
+Therefore, the value of the polynomial on the two heavy points will be approximately the same, and therefore the label will be the same, so the algorithm will have to err on at least one of them and therefore.
+
+[1450.0s - 1479.0s]
+There will be approximately half OK, so this is the idea of actual proof.
+
+[1479.0s - 1508.0s]
+View A is done using a championship polynomial, so this is certain family orthogonal polynomials.
+
+[1508.0s - 1537.0s]
+The next step is to go to the D dimensional ball. So now, then specify the dimensional ball and still a Hilbert space is bounded degree polynomials. So the idea here I give left.
+
+[1537.0s - 1566.0s]
+This is to take the distribution. We used it before and lift it to the dimension of. Also with life the ball into slices. Each slice will be D -- 1 dimensional distribution on each slice will be uniform and we will have two very heavy slices next to the origin. And you think?
+
+[1566.0s - 1595.0s]
+Conceptually similar argument, but technically much more involved, we show that the theorem holds for this case as well. The final say.
+
+[1595.0s - 1624.0s]
+Is of course to deal with the general case, and this is done using a new symmetrization technique, so I'll try to give you the idea. I won't give almost any details. We do not buy ODI. The group of linear example trees over Rd. No.
+
+[1624.0s - 1653.0s]
+We say that a Hilbert space is symmetric if the following holds for every function in that Hilbert space. If we rotate it using a linear lizama tree, then we are left with a function in the table space and the North don't change. Now.
+
+[1653.0s - 1682.0s]
+We construct an construct, an operator that takes a Hilbert space and return a symmetric Hilbert space, and this is intuitively that done by averaging over this group. We take the Hilbert space movies all over the fear or all over the ball, and we take 13 average OK. So this is a very. A course description.
+
+[1682.0s - 1711.0s]
+And we show two things. First, is that the approximation ratio of optimizing over the symmetrized space is at least as good as the approximation ratio of the original space, which means that we reduced to the case that the Hilbert space is symmetric and last.
+
+[1711.0s - 1740.0s]
+We show that the mental space almost coincides with low degree polynomials, and this again.
+
+[1740.0s - 1769.0s]
+When is done using presentation tier, we over the sphere and harmonic analysis over the ship, so I won't get into the details.
+
+[1769.0s - 1798.0s]
+So let's summarize. So we proved lower bounds on a particular family of algorithms an I think that such lower bounds are interesting for various reasons. The first reason is that such overruns tell us that if we want better guarantees, we have to use other metal, so I.
+
+[1798.0s - 1827.0s]
+And ask you to prove upper bounds for other methods. Second, if the family is general enough, then we might hope or think. But these are ones holds for every algorithm, so I can.
+
+[1827.0s - 1856.0s]
+Ask you to prove lower bounds for general algorithms and.
+
+[1856.0s - 1885.0s]
+Use this opportunity to advertise another work of the same authors. Yeah, well we developed a new technique to do that, so till now proving hardness results for learning was quite hard cause the issue of improper learning. And here we have a new technique that also applies to this problem where we prove. That there are no constant approximation ratio algorithms.
+
+[1885.0s - 1914.0s]
+And two other.
+
+[1914.0s - 1943.0s]
+Quite natural question is to use this technique, which is quite general to prove lower bounds for other problems and to prove all ones for the same problems. But for more general families of algorithms. So I think that all the open questions are reachable. And they.
+
+[1943.0s - 1972.0s]
+And thank you and take questions.

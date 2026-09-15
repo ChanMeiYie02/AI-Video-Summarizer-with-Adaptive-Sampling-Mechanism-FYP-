@@ -1,0 +1,192 @@
+[
+    {
+        "text": "In case from the Regional Hospital. Thank you. Discussion on the basic hospital on the level of 1.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Southeastern part of Europe. And the central city of Autonomous Province of Waiver dinner is a novice at 70 kilometers from Belgrade.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "The autonomous province some fiber dinner has the population about 2 million. Most of them are circles, but numerous nations and nationalities lives here as well. Something about the cancer in Vojvodina we have about 8000 newly diagnosed patients. And about 5000 patients died from cancer each year. Do you?",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "It is a highly specialized health, educational and research institution in the field of onkologie. And is a reference center put on koleji and medical informatics. What?",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "The Department the Institute has it has two clinics, surgical and medical oncology, radiotherapy, diagnostic imaging center, nuclear medicines, outpatient Department with daily hospital rehabilitation laboratory with pathology, experimental oncology, epidemic Epidemiology as administrative center. We are the budgetary institution which realize 70% of its income through the Republic Institution of Health Insurance and 30% of its income is realized through commercial program donations and participation of the open market. Our 100 physician at 40 of them are involved in the teaching process at the Faculty of Medicine in Orissa. Some fact during the first 11 months of 2009 are the total of realized contact was about. 83,000 out of which malignant? Now Plasma were 31. Contact the number of hospital is side, patient was 8898 with amount of 82.87% of that capacity. Did not.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Give me drink center has two modalities of magnetic resonance around that area and number of procedures are about 11,000. Both of these modalities are working 24 hours because of this. Until 7:30 AM to 8:00 PM, this modality has the outpatient and through the midnight only hospitalised stations have the procedures in this modalities also we have the mammography, CTPIT city and scintigraphy, two gamma cameras. A successful implementation of integrated systems.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Starts with making a decision and defining goals which must be clearly established, realistic and comprehensible and accepted. All levels of medical institution organization. I must tell that IT managers in the hospital must decide how to contribute to cross organizational integration and what strategy and means to choose for achieving interrupt.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Our goal was to generate EPR and. Which aims at the national Strategy and information age. Each Aehr the principle wasn't five piece proper information on a proper patient available to proper person at the proper place in the proper time.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Brief chronology the calendar was started in August 2005 and it was signed at the November 2005. We have some problems during the regularization and the program was started in its full capacity at the 16th April 2007. The project organ.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Denies, but the Executive Council of AP Bible dinner, which representative is the project supervisor of the board? In this time I will tell something about functional teams, which I think that it is the most part of this program of implementation and these teams prepare all necessary data for the implementation and Group's introduction or modification of the process at the consequences of introduction of integrated system. Team members should be those who directly affected daily of their ability and who understand the realized. The utility of the integrated introduction team member are responsible and author and authorized to make the decision.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "One of the. Most part it was implementation and the period of user training on the test system. The training was performed per model of recognition and training of the key users. The training of key users was done by project management and then such key users performed training of the other system users. Diverse shop with 12 work posts and test baseballs installed at the Institute for Training of the key users and other system users. The training was performed during and after the working hours in accordance with the process of the work. What is the realized goal?",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "System was starting at 16 April 2007 with its full capacity. All the models and mutually optimally integrated at the opera. Interoperability at the level of communication HL 7 DICOM, an Internet interface is semantic. The same code register and rules and ledges legislative at the same way of accounting. In this means we enable the user to see all these complex models as unique system. The integration comprises the following Motors, laboratory information system, pharmaceutical, clinical or radiological financial calculation, tariffing and invoicing, and the management. We",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "With the aim of achieving interoperability, it is necessary to provide the software standard which are supposed to be in accordance with the International and European standard at the level of architecture, electronical medical record, communication, security.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "What we integrate integrated. The clinical information system and laboratory information system with within the framework of clinical. The laboratory diagnostic units request special excess meaning and specific hardware and software support. This is called with the fact that laboratory diagnostic needs a quick increase. Prices in that ification of large number of samples in a short time period. Interaction with laboratory analyzers with results verification. And prompt distribution on findings.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Print screen of the request for analyzes with the different color depends of the. If this is the part of laboratory hematology, biochemistry, immunobiology or human markers.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Here is the requested analyzes review in the laboratory system where the technicians only have to put the specific into checked analyzes from the physician to the analyzer.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Here is the integration with clinical radiology anpac system through the HL 7 and DICOM. We have the reception of order entries and appointment scheduling for the patient from Department, outpatient clinic and external orders. Indeed, radiology information system we have to the order preparations, selection of modalities, sending the order to a modality on the modality we have the processing and sending a picture in a packs and in clinical system we have the possibility of picture from packs. Review with URL viewing code viewer.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "What we have of modalities in the Institute. We have two magnetic resonance devices, Siemens, Avanto, Siemens Trio combined device, PITCT digital mammography with vacuum assisted biopsy table, ultrasound device and two had gamma cameras with ultrasound device in this moment. Also the radioterapia part with the special bracket therapy is connected to the pack system. Integration of. Clinical information system and radiology through HL 7 radiology sent the age of seven to broker, and from this the broker center all these messages and I can format to modalities and modality to the pack system.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Here is the examples of the pictures for some patients, example of the patient who was examined on the Mr and City on the same day. But the accession number of the patient is different and it's depend of the modality. Here.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "The example of the patient who was first examine eyes on the PIT and on the MRA few days later. This is the picture from Mr. This is the picture from PIT and. And after few days on the diagnostic workstation, Leonardo Wolf Pictures are merged, the picture marked in such a way as we sent back to the pack system and such. It is at the disposal for all patients throughout the hospital. Only way merge this picture is the only way. For the physician to see some tumors on the liver of this patient.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "And the third example is the patient who has the functional magnetic resonance imagery before and after operation. And here is the 3D reconstruction of these pictures, which is the proposal for the physicians activating the URL during on its workstation in its room.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Integration of the clinical and pharmaceutical information system. The first step is to generate the catalog of medication and sanitary material and touring the name. The producer, the grouping of Medication, Alternative and basic units, and recalculation how much alternative units have in one basic unit. Here is the code of the General Catalogue of Medication, ATC code stocks, supply monitoring, billing and starving of medication and tender groups which are transferred to the business information system. A prescribed therapy for the patient in the basic or Alternatively you.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Measure is by the physician. Generating the overall era quisition order on the basis of the prescribed therapy, and it tends to the central to the central stock requisition is prompted, delivered to the central facility distribution of goods on the basis of a requisition only actually distributed quantities are confirmed.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Here is the integration of hospital and business information system business information system in Microsoft Division. Here is the cytostatic tender review. Spring perch order the purchase order, but the supplier, Bella from in accordance with the tender documentation and the order from the suppliers and Central Pharmacy. What week?",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Done, we can understand the disease. Medical data. Example of diagnosis eyes ICD 10 and Samsung Special Field on koleji. TNM classification, stage figure and Lincoln. You request order.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "In order entry is complete communication model that covered it would be called recording consultation and all types of actions taken to request within a hospital both for the out and inpatient. The request can be made. The outpatient clinic for consultation medical Technician Department for examination. Is that knology? And it's depend on the body part. Or technician services for general requests requests? Here is the ordering for medical for magnetic resonance which depends on the body part and all procedures is standardize on the 30 minutes and depends if the body part is defining then the modality is standardized.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "We standardize the clinical pathways, procedures, medications and materials. If we have the magnetic resonance for the. Body part all clinical process is standardized with the standard is materials and drugs, which is correspondence for this clinical process. Here is the.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Example of radiotherapy bracket Arabic practical with standardize materials and drugs.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "And nurse care where we have about 100 clinical procedures with standard based materials which need for this care.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Here is the picture for the laboratory system which can be seen in the physicians as this way or at the PDF version and something special for the oncology F. If we have the patient with a few connections in hospitalized during the period of 2008 through 2009. If the physician tracked some of analyzes SD tumor markers. The units and the results of this analyzes can be see through all Contacts of the patient.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Planning chemotherapy. The camel Turkey protocols are standard desired on the body part. If this protocols are the European protocols or national protocols. Physician in every moment can see the stock supply of the Department of the Central magazine. Then he will calculate the body surface and to put the cytostatic in alternative units for this patient.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Material and medication. Administration of the prescribed therapy. The nurses can die can down this prescribed therapy. Transfer its consumption to the central pharmacy and automatic generation of consumption IT department storage and reduction of stock supply.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Security model our authorization at the level of the responsibility Executive data privacy only authorized users can produce report data quality. Only results validated by the qualified users are made available to other users. Indeed, the Accessibility data is success Iaccessible immediately everywhere and to everyone who has the appropriate user rights.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "What is the project result default default filament of the prerequisites for the implementation of integrated system demands. Full engagement of the management organizational units. Manager physicians and ID experts. The human factor is a crucial for the successful creation of prerequisites for integrated system and the synergy of all the participants in this process is obligatory.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Realized goal we have five level of realized gold. I will tell you something about organizational medical in the economic level on the organizational level we can put the rendering of services in material processes that isation change of business process and reduction of time. Request realization. At the medical level, standardization of methods and procedures in the process of rendering medical services. Increase of therapeutic and diagnostic quality but authorized access and control quality in the economic part. The primary goal of integrated system is not saving but rationalization of consumption and products. Very important is saving of materials and poorly connected financial funds in stock supply.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Integration of medical information sources is based on interoperability in this process. Inter ability is a means of crucial importance. The change of organization, culture represent the necessary condition and creators must play a central role. Integrated system represents the full integration of all business, process and transactions. In a way which ensures an absolutely consistency and updating of data interoperability is observed at third levels. Business system in their models, application and data. And.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "We are at the beginning. In this way we created necessary preconditions for our integration and model with minimum requirements which must be apart of each integrated system of any medical institution founded by EPI Vojvodina. As the assistant of the Secretary of Health of EPI Bible dinner, I will tell that recommended system of sender desired medical data, methods and procedures as well as the amendments of business process is. Which was successfully implementing it past two year long testing period on the Oncology Institute is the model which will be implemented in all, secondary and tertiary level medical institution in Vojvodina. The budget of IAP Vojvodina for the year 2000 and two 2010 anticipates the financial funds for the first implementation with Integrated System which leads to the realization of our primary goal goal interoperable. Behold, acquire dinner.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Thank you for your attention. With some sentences we of with the book Funky Economix mediocrity doesn't win B unit get connected and communicate with standard is it paper and practical and remember an average number of smiles better in employer is a pretty good and employer from Uncle Jack Institute are smiling.",
+        "start": 1073.0,
+        "end": 1102.0
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "id": "7norum2liktkzgow32j77qpaqb75dnno",
+    "title": "A MediaMixer for online learning? – making learning materials more valuable for their owner and more useful for their consumer",
+    "url": "http://videolectures.net/internetofeducation2013_nixon_mediamixer/",
+    "info": {
+        "author": [
+            "Lyndon Nixon, Department of New Media Technology, MODUL University Vienna"
+        ],
+        "published": "Dec. 10, 2013",
+        "recorded": "November 2013",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web",
+            "Top->Social Sciences->Education",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 309,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 3613
+}

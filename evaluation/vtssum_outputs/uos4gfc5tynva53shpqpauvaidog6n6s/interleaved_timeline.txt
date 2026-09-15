@@ -1,0 +1,95 @@
+[0.0s - 29.0s]
+So I needed a child sort of an emblem to describe our relationship with benchmarks so.
+
+[29.0s - 58.0s]
+So the first thing I want to talk about is other communities are not necessarily afraid of benchmarks and I have 20 minutes, so I'm just going to talk a little bit about in the first few minutes about what some other communities do with benchmarks.
+
+[58.0s - 87.0s]
+So the cloud community. This is this first example is a little more subtle than it looks at the beginning, but in 2008 in July 2008, about two years ago. Hadoop blog sort of talked about winning the 2008 Tera sort benchmark and this was kind of interesting and it was interest. People look pretty carefully at the hardware they use about how they did it and about what it said about the field and it they support. They sorted a TB in about 2 update 110 billion hundred byte records in about 209 seconds. This is the blog from their announcement on July 2nd, 2008.
+
+[87.0s - 116.0s]
+Let me talk a little bit about that particular feet. They use 910 nodes. They sorted one terabyte, which everyone, including they themselves knew since they were could scale to petabytes. Shortly thereafter, they supported one terabyte, which is small data which consisted of 10 billion hundred byte records. And then they wrote the results to disk, which is required by the Tera sort benchmark. I'll tell you a little bit about the history of pterosaur. In a minute. Each node had two Quad Core 2 GHz Xenons, 8 gigabytes of memory. They have up 40 nodes per rack and they had an 8 Gigabit per second uplink out of each rack to the central.
+
+[116.0s - 145.0s]
+Ouch. So why does this matter? Well, it's helpful. The assumption here and will go a little more carefully into this. The assumption is that if you have lots of data, it's helpful when designing out of date out of memory algorithms to understand exactly benchmark so that you scale out of memory algorithms. It's helpful if you have an algorithm that doesn't run in the map. Reduce context to figure out how to put it into the map, reduce contexts, it's helpful if you're like me and. You don't have a lot of friends and you gotta figure out how to set up racks and data centers on your own. It's helpful to look at how other people set up data centers and ranks. It's helpful when you're designing large data clouds like we do to understand tradeoffs space in terms of the features you're doing in the in the large data clouds, so it's helpful from algorithms itself or systems. It's helpful for applications. It's helpful on the physical infrastructure, so you know, I think it's kind of clear why we don't care about.
+
+[145.0s - 174.0s]
+In this community. That was a joke. Sorry bout that. Now there's some. There's some. A subtleties with this. They used 1800 Maps in 1800. Reduces an in the footnote of this they released the code because they are the world's best people, but they they patched the system. The Pre 0.18 release so that that the. So that they know intermediate results were written to disk, so this wasn't really indicative of how you would do things. And you know, if you have large data which fills disk you don't. You know you don't artificially pin things unless you have to so that they don't, so they don't have to be written to disk and allocated enough memory buffers to hold intermediate data memory. And then if you actually tried to replicate the benchmark and we did replicate these and other benchmarks, you realize that you have to tune. You have to tune her dupe in such a way. That the block size are essentially the size of files and other tricks like that, and that suggests a different design if you're designing these kind of large data architectures. And again the code was checked in.
+
+[174.0s - 203.0s]
+Checked in. I just want to encourage some of you to sort of skip the rest of the conference and leave an after this talk and go produce some analytic benchmarks because I think would be really quite useful to the Community in 1985, Jim Gray in a very famous and influential paper. In February of 85 called Anon at all proposed the SORT scan and debit credit benchmarks and those of the sort is essentially what became the terror sort. You know that was, I think that was started either with with about 10,000,000 and 10,000,000 records. Initially, it soon became clear that you had to scale that up with increased size of processors and so in a 9 to 10 years later, in 95 Jim Gray and others proposed two more relevant benchmarks. The minute sort? How much could you sort in a minute in the penny sort? How much could you sort for a penny's worth of system resources?
+
+[203.0s - 232.0s]
+So I don't want to go through this slide, but if you go just after Jim Gray was lost at sea, he kept that page up himself for awhile after we lost at sea. It was taken over by Pete. Some people he worked with, its now pertained as sort benchmark.org, and there is the grey sort named after Jim. How many terabytes can you sort per minute when you have at least 100 terabytes? The whole idea is to get a natural architecture where the data is on disk. How much penny sort I mentioned? Minutes or dimension jewel short which is very important as you try to design next generation analytics. How much could you sort for a jewel worth of energy? TB sort, which I just described is by and large is it appreciated, as is the first one which sorted 1,000,000 records. So I just walked you through in 5 minutes. The sort of the sort of state of sort which is the world's probably very important algorithm, but very very simple algorithm and not really well. I'm going to allow that you answer that, but I want you to think about Jules when you go off after this talk and skip the rest of the conference. I want you think about Jewel Minute, Penny and Gray, the large one so that you can think of similar ones and Anna.
+
+[232.0s - 261.0s]
+Politics so is Terra. Sort relevant to the KDD community?
+
+[261.0s - 290.0s]
+Probably not, so why did I spend 5 minutes? I sort of wanted you to think about how to do benchmarks at the beginning, so I think the question then is what is a relevant benchmark for large scale analytics? And so you know, I I just think small, medium, large. I think a lot of you have heard me say this before. Small fits in memory medium fits in a database. Large does not fit in a database, so I'm talking large. As in we heard in the last talk. Into plenary talk, large means you fill data centers, so when you fill data centers, what is the relevant analytics?
+
+[290.0s - 319.0s]
+Benchmark so you know one way to think of this. I think the killer application, one of the killer applications for large scale analytics are log files. That's a picture of a real saw.
+
+[319.0s - 348.0s]
+Either way. So log files are everywhere we heard about them. You know essentially the last talk was. How can I produce log files? How can I process log files from what visitors going to websites and how can I monetize web files log files so that people pay me a lot of money and I can help them with their targeting their advertising? So I think if you want to think about a good example of a log file, just think of the last plenary talk from clown class. For you know system log files. If I fill a data center with database with nodes that data center produces log files health and status monitoring. If I have a worldwide system and there are a lot of worldwide systems out there to run a worldwide system means you worry about rare cases and keeping the system up. It's health and status monitoring. So more or less most devices these days come with an HTTP server and then that HTTP server. I'm sorry when you when you engineer a large scale system now you typically need device put in HTTP server. That device that HTTP server put makes available log files. You gather up all those log files at scale and you get petabytes of data. And then you're in the situation of trying to analyze petabytes of data for information insurance. If you're if you run your fear, the CTO of a large company or the CIO is sorry for the CIO of a large company, you realize you only have that job for two or three years. You gotta keep that. You gotta keep that job, at least for two to three years. Best way to you know the best way to lose that job is to have someone break in your system and to take out all the consumer data. So information insurance is a big deal and anyone any CIO of a large multinational worries a lot about keeping other people out of their private data and then one of one of my favorite papers recently is a paper from Google researchers called Ghost in the browser and I'll come and talk about that. So my basic claim is log files are everywhere.
+
+[348.0s - 377.0s]
+What are the common elements, timestamps, sites you know, say websites or something entities, sites could be anything from a site to me. Something is like a website or computer or network device entities like visitors, users or flows. So the log files fill up. Disk behavior occurs at all scales. You want to identify phenomenon at all scales. You want to group similar behavior and you want to do statistics, not sorting. So what's up? What's the simplest problem? To warm up in that content.
+
+[377.0s - 406.0s]
+So the simplest problem I know of is you. I'm going to abstract log files to have sites and entities so when I measure online behavior, I've websites are the sites and consumers are the entities. Ghost in the browser. Sometimes when you there, sometimes websites can be infected when you visit the website there will be a vector of attack and if you have an unpatched computer of a particular type, your computer will be infected. So there the computer identified by the IP of the browser. The cookie is the IP of the computer or the cookie. The browser that that's the entity in the websites, the sites, the website, an information insurance, the you know the various devices are the sites and the entities are the users.
+
+[406.0s - 435.0s]
+Things so you can abstract that out is taking an event ID, a timestamp, a site ID, and entity ID, and I'm going to do some model of marking that will be used in the benchmark and then I'm going to take the same thing that Terra Sword and all the other penny sort etc. I'm going to assume these are hundred byte record.
+
+[435.0s - 464.0s]
+So here's the toy example. The way I think of map reduce is I filled this room full of disk. I have him half full. I do a map operation. I felt the other. I do a reduce and so how do I think of this in this context? So I'm going to scatter this room. Every chair has a disc, it's half full. I'm going to scatter them. Events are going to be collected by some device or something, almost always temporally, and then I'm going to map each event to a site. So I'll collect all the sight of each. Each disk will collect from a hash or bucket all the data from that. And then I'm going to do some simple statistical operation per site and you could abstract this quite generally, but that's what it looks like.
+
+[464.0s - 493.0s]
+I'm going to have 10s of millions of sites, hundreds of millions of entities, billions of events. Most sites have a few number of events. Some sites have many events. Most entities visit a few sites, some visitors.
+
+[493.0s - 522.0s]
+Visit many sites. So here's the picture. The bad sites are in pink. The entities are arrows. The green person is very lucky. He visits a bad site, but nothing happens. The blue person is very lucky. He doesn't visit a bad site. The pink person is not so lucky. Visits the pink site and gets affected and I just wanted to do a group by or map to collect all the statistics and compute the number of marked arrows which are dotted divided by the number of. Unmarked arrows man. I want to do that for each site for a couple months.
+
+[522.0s - 551.0s]
+Million sites so I just described the Mark model. It's actually a little more complicated. I'm going to assume a background distribution of marking that's independent. I'm going to assume certain sites are going to be infected, and then I'm going to do everything with power law and other types of distributions. So it looks like large scale Internet and other data that's called.
+
+[551.0s - 580.0s]
+Mark model. There's a little bit of statistic when you have to put one more. I'm running out of time, but you have to put one more concept. There's an exposure window when sites are actually marked, and then there's a monitor winner when entities are marked an the statistic that you want to do a simple the world's simplest statistic. It depends upon what happens in exposure.
+
+[580.0s - 609.0s]
+Just monitor window and so they'll notation. This is one of those things that notation makes everything easy. I'll fix this site. I'll let AJ be all entities that transact during the exposure window. I'll let VJ be the set of all entities that become mark during the monitor window, which is distinct from the exposure mental, and I'll compute the ratio. An I'm typically interested in temporally varying behavior, so I'm going to do the same thing, but I'm going to slide the monitor window and I'll get a sequence of those ratios.
+
+[609.0s - 638.0s]
+So I'm not claiming you can. You can you understood just what I said, but I'm claiming if I can put the entire algorithm on two slides, then in two minutes outside the talk you can figure out all the details so it all fits on these two slides.
+
+[638.0s - 667.0s]
+We made the code available the generator available, so if you want 100 billion events, put over 4 racks. This is a very simple way to get this.
+
+[667.0s - 696.0s]
+So the milestone benchmark was developed by the Open Cloud Consortium. It comes with a generator that will generate 1 billion, 10 billion, 100 million, or more events. It will generate it. It's in following the proper distributions over racks of computers and it's this stylized computation, which is the simplest statistic I know of for log.
+
+[696.0s - 725.0s]
+Files, there's a version for 10 billion hundred pain in one tree and called an A is the version without the temporal variation bees the version with the temporal variation. Um?
+
+[725.0s - 754.0s]
+So I'm just going to give four or five simple examples. We and others have used this to benchmark Hadoop in different configuration.
+
+[754.0s - 783.0s]
+We set this out and there are not a lot of benchmarks like this, so the first users where the users I never expected, pervasive has used it for a proprietary system to compute with MapReduce. So they build a system called data Rush and they could do Mount. So it takes roughly.
+
+[783.0s - 812.0s]
+The. 800 minutes to do milestone be on 20 nodes.
+
+[812.0s - 841.0s]
+It took datarush 68 minutes with proprietary hardware GPU's. Mental images is using this to do another GPU based benchmark for.
+
+[841.0s - 870.0s]
+Intensive computing we use it for design tradeoffs in the summer stuff I do, we could do it in 44 minutes.
+
+[870.0s - 899.0s]
+We're primarily interested in such things by support, providing support for in memory devices for better bucket localization for bucket Combiners, and other things we get relative tradeoffs with respect to milestone B, so I have time for a minute or two of questions. Oh no, I can't. Well. The most important thing.
+
+[899.0s - 928.0s]
+I'm. Is it's available because as you know, whenever you write. KDD paper you make the data available and you make the code available so others in the Community could use it. So the data in the code are available out there as an it's it's we're interested in working together with others. It's a. It's our first attempt. If you need 10 or 100 million transactions over a rack to do data analysis on how to do that with realistic distributions and you know in Chicago we try hard, but we need a lot of help to get all the details right. So I'm encouraging you to sort of work with us to get the next version of this code out there for the Community, so I have time to answer whatever that's it. The next speaker.

@@ -1,0 +1,20 @@
+{
+    "id": "4potahfmvuvi5cz3fwx54behpffppj5c",
+    "title": "Logic, Automata & Games",
+    "url": "http://videolectures.net/ssll09_pinchinat_lag/",
+    "info": {
+        "author": [
+            "Sophie Pinchinat, IRISA"
+        ],
+        "published": "April 1, 2009",
+        "recorded": "February 2009",
+        "category": [
+            "Top->Computer Science->Logic"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 723,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 3264
+}

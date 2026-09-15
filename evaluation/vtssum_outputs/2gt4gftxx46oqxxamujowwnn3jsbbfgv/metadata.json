@@ -1,0 +1,20 @@
+{
+    "id": "2gt4gftxx46oqxxamujowwnn3jsbbfgv",
+    "title": "High-Performance Computing in the Time of Uncertainty",
+    "url": "http://videolectures.net/kolokviji_koumoutsakos_high_performance_computing/",
+    "info": {
+        "author": [
+            "Petros Koumoutsakos, Department of Computer Science, ETH Zurich"
+        ],
+        "published": "Dec. 31, 2015",
+        "recorded": "December 2015",
+        "category": [
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 91,
+    "num_sentences": 619,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 3478
+}

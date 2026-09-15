@@ -1,0 +1,20 @@
+{
+    "id": "ugfnr6teyzpmh4bedjejfqlpif5xyunt",
+    "title": "Tradeoffs in online learning under partial information feedback",
+    "url": "http://videolectures.net/nipsworkshops2012_szepesvari_feedback/",
+    "info": {
+        "author": [
+            "Csaba Szepesvári, Department of Computing Science, University of Alberta"
+        ],
+        "published": "Jan. 16, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->On-line Learning"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 505,
+    "num_clips_with_summary": 28,
+    "num_gt_summary_sentences": 47,
+    "ground_truth_summary_length_chars": 5221
+}

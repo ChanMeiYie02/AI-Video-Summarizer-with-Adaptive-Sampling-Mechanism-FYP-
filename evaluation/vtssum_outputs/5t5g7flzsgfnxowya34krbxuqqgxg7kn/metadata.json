@@ -1,0 +1,20 @@
+{
+    "id": "5t5g7flzsgfnxowya34krbxuqqgxg7kn",
+    "title": "Providing Linked Data",
+    "url": "http://videolectures.net/eswc2014_acosta_linked_data/",
+    "info": {
+        "author": [
+            "Maribel Acosta, Institute of Applied Informatics and Formal Description Methods (AIFB), Karlsruhe Institute of Technology (KIT)"
+        ],
+        "published": "Oct. 19, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 54,
+    "num_sentences": 491,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 64,
+    "ground_truth_summary_length_chars": 6839
+}

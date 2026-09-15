@@ -1,0 +1,21 @@
+{
+    "id": "goe4nghd4sxw424jqkbkzxrjxslxygxs",
+    "title": "WP13 Cargo Intelligence",
+    "url": "http://videolectures.net/ekom08_jermol_wci/",
+    "info": {
+        "author": [
+            "Mitja Jermol, Centre for knowledge transfer in IT, Jožef Stefan Institute"
+        ],
+        "published": "Feb. 20, 2008",
+        "recorded": "February 2008",
+        "category": [
+            "Top->Business->Transportation and Logistics",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 326,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 1594
+}

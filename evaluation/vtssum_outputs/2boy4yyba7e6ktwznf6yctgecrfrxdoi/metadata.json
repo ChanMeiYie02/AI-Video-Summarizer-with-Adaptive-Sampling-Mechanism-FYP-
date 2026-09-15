@@ -1,0 +1,17 @@
+{
+    "id": "2boy4yyba7e6ktwznf6yctgecrfrxdoi",
+    "title": "Knowledge Graph Embedding for Ecotoxicological Effect Prediction",
+    "url": "http://videolectures.net/iswc2019_bryhn_myklebust_effect_prediction/",
+    "info": {
+        "published": "Dec. 10, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 147,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 479
+}

@@ -1,0 +1,11 @@
+[0.0s - 29.0s]
+OK, hello everybody. So back to some robotics. Yeah so this is our Max skeleton control based on muscular manipulability. Now, first about this manipulability. This gives a description how well a robot can move in a given configuration.
+
+[29.0s - 58.0s]
+So it can be represented by this, But this ellipse. And what this means that for any given. Motor movement to the tip of the robot can move inside this ellipse so. In in this, in this major axis of the ellipse, the robot can exert maximum force is, so that's why, for instance you're not putting objects on the shelf like this, you're usually putting them like this because this major axis of the ellipse lies along your longer body. Now we tried to.
+
+[58.0s - 87.0s]
+Predis for EXO skeleton control, but our human muscles are not. I mean our arms are not driven by Motors in joints. Instead we have muscles which span across the joint and the forcing muscle move the move this joint and. The muscle forcing the muscle depends on how stretch the muscles. So if my arm is fully stretched, my muscles fully stretch and it cannot generate as much force as when the muscle is like somewhere in between.
+
+[87.0s - 116.0s]
+So the idea is that the EXO skeleton would then help you in this configurations. Where you're not so naturally strong, and ideally your manipulability will become a circle, so you will be equally strong in every direction and. Yeah, this is my short presentation, so and you can. You're welcome to visit me at poster #43 for more details.

@@ -1,0 +1,173 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+The video begins with a static image of the Stanford Engineering logo. The second frame shows a presentation slide for a course titled "Stanford CS224W: Reasoning in Knowledge Graphs using Embeddings." The slide includes information about the course, the instructor (Prof. Jure Leskovec), and a link. The video then transitions to a speaker addressing the class. The speaker welcomes everyone and introduces the topic for the day: "reasoning in knowledge graphs using embeddings." The speaker explains that the previous week's discussion covered knowledge graphs, defining them as a set of nodes and a set of relations between them where nodes can have attributes. [29.0s - 58.0s]
+different types and also relationships can have different types and then we have defined a task we called knowledge graph completion task where basically given enormous knowledge graph the question is can we complete it can we predict and infer missing relationships in the graph so for a given head and a for a given relation we want to predict missing tails right so basically for example
+
+[58.0s - 87.0s]
+we would want to predict the genre that a particular author is writing books about based on the rest of the structure of the knowledge graph so what we are going to do today is we are going to take this idea of knowledge graphs and knowledge graph completion but we are going to generalize it and extend it to more interesting and more challenging setting where basically what we will be doing is
+
+[87.0s - 116.0s]
+The video begins with a title slide that reads "Today: Reasoning over KGs". The main topic is introduced as "Goal: How to perform multi-hop reasoning over KGs?". The speaker then elaborates on the topic, stating that they are going to perform multi-hop reasoning and logical reasoning in knowledge graphs using embeddings. The goal is to reason in knowledge graphs, which means being able to answer multi-hop queries or, in some sense, to make complex predictions in these knowledge graphs for arbitrary predictive queries. The speaker outlines the specific areas to be covered under "Reasoning over Knowledge Graphs," which include:
+*   Path Queries
+*   Conjunctive Queries
+*   Query2box
+
+The slide also displays the Stanford University logo and information about the instructor, Prof. Jure Leskovec, and the lecture details. The audio continues with the speaker explaining the purpose of the session, emphasizing the use of embeddings for reasoning in knowledge graphs. [116.0s - 145.0s]
+And the other one will be about talking about conjunctive queries and a method called query to box. And in all these cases basically the idea will be how do we embed the knowledge graph? How do we embed the relations so that we can reason and navigate and move around in this in this in this space. That's essentially the idea. So for the rest of the lecture I'm going to use this simple
+
+[145.0s - 174.0s]
+a biomedical knowledge graph that includes the following four types of entities we will have nodes for different drugs we are going to have nodes for different diseases we are going to have some kind of adverse events or let's say side effects that these diseases can cause and then we'll also have nodes corresponding to proteins and
+
+**AI Summary:**
+The video introduces the topic of reasoning over Knowledge Graphs (KGs) using embeddings. The session aims to teach how to perform multi-hop and logical reasoning in KGs to answer complex queries and make predictions. The speaker outlines specific areas covered, including Path Queries, Conjunctive Queries, and the Query2box method. The core challenge discussed is how to effectively embed the knowledge graph and its relations to enable navigation and reasoning. To illustrate the concepts, the lecture uses a biomedical knowledge graph featuring nodes for drugs, diseases, adverse events, and proteins.
+
+============================================================
+
+### Semantic Chapter 1 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+[174.0s - 203.0s]
+are in our bodies, and basically proteins regulate and are part of various kinds of biological processes, taking part in our bodies and in our cells. So now let's say we have this kind of miniature knowledge graph or a small part of the knowledge graph that basically captures how these different entities are related to each other, and then the question will be can we answer interesting questions over this knowledge graph? [203.0s - 232.0s]
+so to give you an example for example the question is how could i answer complex queries or how would i be able to make complex predictions over incomplete and massive knowledge graphs and just to give you a few examples you know you could say what adverse event is caused by a drug full westrand right and the way you could say this is to say i wanna start with the entity full westrand and i wanna traverse relationship
+
+[232.0s - 261.0s]
+So, I want to predict what is on the other end of the of this fullwestrant cause relation. And this is in some sense a one hop query. It's basically a knowledge graph completion type task. I could then also do path queries where for example I could say what protein is associated with the adverse event caused by fulvestrant, right? So in this case I would say I want to start with entity fulvestrant, I need to traverse a work cause. [261.0s - 290.0s]
+relation and then i need to cause traverse over associated relation whatever entity is at the end of this that is the answer to my question to my query and then we can also ask more complex queries where we can also have various logical relations between them for example i could ask what is the drug that treats breast cancer and causes headache so i could say you know breast cancer i start with an entity breast cancer i say treated by so transcribe the following speech segment in its original language
+
+[290.0s - 319.0s]
+is now the drug treated by the breast cancer and i also want to take a migraine and say what are the drugs that cause a migraine and then whatever drug causes both that's the the the answer to my question so you know you can vary questions in natural language you can write them in this kind of formula but you can also write them in terms of the graph structure right so in a sense that one hop query says start with an entity and make a step
+
+[319.0s - 348.0s]
+long relation path queries say start with start with an entity make a step along one relation and then make a step along the other relation like causes and associated and what does this say is it's a started breast cancer and move across the treated by and start with migraine and move across the relation caused by and whatever you end up whatever entity you end up with that's the answer to your question so you can see how we can basically take
+
+[348.0s - 377.0s]
+like these yeah let's say questions queries in write them in natural language or write them in this type of logical formula or write them in this type of graphical structure form of course today we are not going to address how do you get from natural language to the formula we are only going to kind of discuss once you have the formula once you have this logical structure this graphical structure how do you answer a query and an important point all here
+
+[377.0s - 406.0s]
+we want to be able to answer these queries over incomplete knowledge graphs so it won't be only that we say oh just traverse a relation it will be like the relation is missing you have to predict it and it can be change of relations that are missing or are not in the knowledge graph and we still want to be able to answer the able to answer these questions so um you know first let's talk about one hop queries we already know how to answer them because we can formulate graph completion
+
+**AI Summary:**
+The segment discusses how to use knowledge graphs (KGs) to answer complex queries. It introduces two main query types:
+
+1.  **One-hop queries:** Start with an entity and traverse a single relation to find an answer (e.g., finding the adverse event caused by a drug).
+2.  **Long relation path queries:** Start with an entity, traverse multiple relations sequentially (e.g., finding drugs that treat breast cancer and cause headaches).
+
+The discussion highlights that queries can be formulated in natural language, logical formulas, or graph structures. A key challenge addressed is answering queries over *incomplete* knowledge graphs, which requires techniques like graph completion to predict missing relations or potentially change missing relations to provide an answer.
+
+============================================================
+
+### Semantic Chapter 1 (Part 3)
+
+**Original Timeline (Subtitles & Frames):**
+[406.0s - 435.0s]
+problems as answering one hop queries right in a knowledge graph completion basically what we need to be able to estimate to say is there a link between a head and a tail of relation type r so this is essentially the same as saying is this an answer to the query starting the head and move along the relation r so for example what side effects are caused by drug fullwestrand this is my
+
+[435.0s - 464.0s]
+are is the cost by and now i want to basically say is this particular entity the endpoint of full westrant and cost buy so that's how basically answering one hop queries like a simple link prediction queries is knowledge graph completion now we can talk about how about answering path queries right we want to generalize this to basically being able to chain multiple relations
+
+[464.0s - 493.0s]
+Right so we can say that we have an end-hop path query Q that is represented by a watisgolden anchor node a starting entity and then a sequence of relations R1 all the way to RN right so we is a visa bay is an anchor node this is a fixed entity like a fullvest strand as we talked about and then answers to the query will be denoted in this notation so basically i have this kind of double braces
+
+[493.0s - 522.0s]
+so whatever is whatever elements i variety in here these are the answers to the query q on a knowledge graph g so the way we could write this in a graphical forum and to the sky in something we are going to call query plan is basically we start with the entity visa bay and then we want to traverse over relationship type one and relationship type two all the way across the n relationships and whatever entities are at the end of this we are making uh
+
+[522.0s - 551.0s]
+a prediction that this is the correct answer so that's a notion of a path query um to give you an example i could ask what proteins are associated with a dwarf event cost by fullwestrant right so we have five ids then i say fullwestrant is my anchor entity my r1 and r2 are relation causes and associated so my query will be start with fullwestrant go across the causes relation and go across associated relation right so
+
+[551.0s - 580.0s]
+Here is my full strand. I want a first go over the green um um the green links saying uh you know what is what causes this would be the red links apologies and then from here I want then traverse over the second part of link associated to arrive at a given protein.
+
+**AI Summary:**
+The discussion focuses on knowledge graph completion, specifically how to answer queries.
+
+The speaker first introduces one-hop queries, which involve finding a link between the head and tail of a relation type (e.g., finding side effects caused by a drug). They then generalize this to answering path queries, which involve chaining multiple relations.
+
+A path query is defined as starting with an anchor node (a fixed entity), traversing a sequence of relations (R1 to RN), and identifying the resulting entity that serves as the answer.
+
+An example is provided: querying what proteins are associated with a specific event. The query is structured by starting at the anchor entity, traversing the first relation (causes), and then traversing a second relation (associated) to find the final entity. The process is visualized as a "query plan," starting from the entity and following the corresponding links to arrive at the answer.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So that would basically be the idea for path queries, right? So to answer to transcribe the following segment in its original language. [580.0s - 609.0s]
+you an example again so how do i how do i find the answer now basically the way i find the answer is that conceptually if the knowledge graph is complete i simply need to traverse according to this query plan so the idea is i start with full list i i traverse over causes relations to get to all the side effects caused by this drug like headaches and you know brain bleeding and shortness of breath and kidney infection and so on
+
+[609.0s - 638.0s]
+and of quite serious side effects and now that i have this set of entities now i need to traverse from the according to associated relation and you know i traverse the edges and whatever proteins end up with those adverse answers to my query so these are the answers to the to the query about you know what are proteins associated with adverse events caused by the drug fulvestrant so that's basically the idea how now i can formulate an answer
+
+[638.0s - 667.0s]
+Sir, path-based queries directly on the knowledge graph, assuming knowledge graph contains all the information. Of course, in some sense this seems easy, right? It's just answering queries, you just traverse the knowledge graph according to this plan. But the problem is that knowledge graphs are notoriously incomplete, right? Many relations between entities are missing or are incomplete. For example, we lack a lot of biomedical knowledge. [667.0s - 696.0s]
+and you know kind of enumerating all facts testing all possible side effects all possible associations in these graphs is too costly and would take far too much time and perhaps we will never be able to obtain the entire knowledge about biomedicine so the question then is if these graphs are notoriously incomplete right we cannot simply hope to traverse them to get the answers right so
+
+[696.0s - 725.0s]
+So then is what do we do to give you an example right if i find missing perhaps a relationship causes by because it's not yet known that fullwestrant also causes shortness of breath then for example if i'm not able to traverse the edge then you know there is no way for me to discover that beer too the protein is actually an answer to my query right i would be able to say that caspase is a is
+
+[725.0s - 754.0s]
+Cancer because I go over a brain bleeding to get to it. I know that P1 is also a answer because of this path through the kidney infection, but there is no way for me to find out that this B2 protein is also the answer to my query. So that's the problem.
+
+**AI Summary:**
+The speaker discusses using path-based queries on knowledge graphs (KGs) to find proteins associated with adverse events caused by a drug, such as fulvestrant. The ideal approach involves traversing the KG according to a plan (e.g., from a drug to side effects, then to associated proteins).
+
+However, the main challenge is that knowledge graphs are often incomplete, with many necessary relationships missing. This incompleteness makes it impossible to enumerate all possible facts or associations, meaning the system cannot always discover all relevant answers, even if a relationship is missing.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So what you could do is to say, aha, I actually, you know, listened to previous lecture, and I remember we talked about knowledge graph completion. So let's go and apply knowledge graph
+
+[754.0s - 783.0s]
+completion so that now the graph will be complete and then we can simply traverse it the problem is that if you do this then you don't know how many edges are really missing in the knowledge graph so you could basically go and apply your knowledge graph completion approach to all possible edges of the graph so it means that you would want to take for every triple in the knowledge graph you do us ask your knowledge completion transcribe the following segment in its original language
+
+[783.0s - 812.0s]
+Algorithm completion engine to assign a probability that that link is true. Um the problem then will be that now your graph just got a whole lot of new this kind of probabilistic links and now the graph is getting denser and knowledge graph completion or traversal will get very expensive because if you think about you know starting at an entity moving along a given relation and then
+
+[812.0s - 841.0s]
+I'm to a set of nodes, moving to the next relation, to a new set of nodes. This will explode exponentially with the length of the query, right? So with the query length is let's say capital L, then if at every step you have some non-trivial expansion, some non-trivial number of nodes that are that allow you to traverse along a given relation, then this is going to increase exponentially. [841.0s - 870.0s]
+spanning in the queryland and having big queries this becomes computationally quite hard to do over a massive noli graph especially if you think about that we have just added a lot of new edges with different probabilities and we need to keep track over this probabilistic computing edges as well this becomes a very hard computational task so here is the idea how we are going to do this
+
+[870.0s - 899.0s]
+and the way we are going to talk about this is we are going to call it predictive queries and the idea is right we need a way to answer path based path based queries over an incomplete knowledge graph and we want our approach to implicitly impute an account for the incompleteness of the knowledge graph so we don't want to impute the edges and then traverse with just like the method to take care of this automatically so
+
+[899.0s - 928.0s]
+rather than thinking that all we have to do is just traverse the knowledge graph we really can think of this as making very complex predictions right it's basically saying predict what entities are an answer to a given query so basically we are going to formulate these queries as predictions so this will now be a prediction task and this means it will be very interesting because we'll be able to answer any kind of query and so far we talked about
+
+[928.0s - 957.0s]
+path queries we are able to answer any kind of path query whatever set of relations you put on the path we should be able to answer it so it doesn't mean at the training time we have to see the query then we train how to answer the query and now we are able to give the answers the idea is that we can we can get any query at the test time and we should still be able to answer it and then you know another important thing is that this method needs to be able to transcribe the following speech segment in its original language
+
+[957.0s - 986.0s]
+you impute or implicitly complete the knowledge graph for the missing information and be this way robust to the missing information or to the noise in the knowledge graph and really another way how you can think of this predictive queries task is that it's a generalization of the link prediction task right link prediction is simply starting with a head moving along a relation of type r what is the tail and now we'd like to
+
+**AI Summary:**
+The system discusses knowledge graph (KG) completion and the challenges associated with traversing dense, probabilistic graphs. The core problem is that adding probabilistic links makes traversal computationally expensive, leading to exponential complexity with query length.
+
+The proposed solution is "predictive queries," which aims to answer path-based queries over an incomplete KG by implicitly imputing missing information. Instead of explicitly traversing the graph, the method formulates queries as predictions—predicting which entities answer a given query. This approach allows the system to answer any path query at test time, making the method robust to missing information and generalizing the task of link prediction.
+
+============================================================
+
+### Semantic Chapter 3 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+[986.0s - 1015.0s]
+The video shows a presentation slide with the text "Stanford Engineering" and a discussion about a change in a prediction task. The speaker explains that they are generalizing a one-step prediction task into a multi-step prediction task.
+
+**AI Summary:**
+The speaker presents a discussion about modifying a prediction task, specifically explaining the process of generalizing a one-step prediction task into a multi-step prediction task.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+They emphasize the importance of this change, stating that they are reformulating the task of answering queries across a knowledge graph into predicting what entities are the answer to the query.
+
+**AI Summary:**
+The speaker emphasizes a significant change: reformulating the task of answering queries across a knowledge graph to instead predict which entities serve as the answer to the query.
+
+============================================================
+

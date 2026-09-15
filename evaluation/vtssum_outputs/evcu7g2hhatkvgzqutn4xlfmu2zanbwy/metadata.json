@@ -1,0 +1,22 @@
+{
+    "id": "evcu7g2hhatkvgzqutn4xlfmu2zanbwy",
+    "title": "The maximum entropy production principle in enzyme kinetics: novel theoretical insights",
+    "url": "http://videolectures.net/biophysics2018_dobovisek_maximum_entropy/",
+    "info": {
+        "author": [
+            "Andrej Dobovišek, Fakulteta za zdravstvene vede, Univerza v Mariboru"
+        ],
+        "published": "July 9, 2018",
+        "recorded": "May 2018",
+        "category": [
+            "Top->Chemistry",
+            "Top->Biology",
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 128,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1767
+}

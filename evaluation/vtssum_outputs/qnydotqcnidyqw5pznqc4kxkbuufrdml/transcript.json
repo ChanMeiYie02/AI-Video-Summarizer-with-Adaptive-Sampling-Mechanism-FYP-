@@ -1,0 +1,157 @@
+[
+    {
+        "text": "Right, so I'm Hassan safe from the Open University and today I'm going to present our work on extracting semantic patterns and using them for sentiment analysis on Twitter.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Basically, I'm going to give some background knowledge about sentiment analysis and the traditional approaches used in this area, and then I'm going to move to talk about our new approach with the evaluation we did and the evaluation results we got.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So, um sentiment analysis is the task. Fun defying opinion, emotions and attitudes and text. The basic task. Or let's say the most popular task and sentiment analysis is to extract positive, negative or neutral sentiment from sentences.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "The traditional approach is in sentiment analysis can be categorized, usually in lexicon based approach. Our lexicon based approaches that rely on sentiment lexicons in order to obtain the operated words in sentences and to detect the overall sentiment of the sentence. The other line of approaches is the rely on machine learning classifiers trained from features extracted from labeled data features usually are derived from the syntactic or linguistic. Representation of words such as part of speech or word anagrams or letter anagrams.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Um, so the one limitation of this approach is is that they sent they heavily rely on the existence of abbreviated words or the features that are related to sentiment or associated with sentiment. The problem here is that sentiment is usually conveyed in more subtle or more latent relations or buttons in three or in sentences in general. For example, the word destroyed by its own convey negative sentiment. However, when it occurs with the concept or the common sense concept invading germs. Then it constitutes somehow a relation or a pattern of negative sentiment. Now.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Now, in order to overcome this limitation and you line of approaches has emerged at that, consider basically the this kind of relations in text. In order to improve sentiment classification. These approaches also can be divided into 2 main line of works, so it's syntactic button approaches an semantic button approaches.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Tactic button approaches, they rely on the syntactic relation between words that usually used by people to convey sentiment. Basically, they use predefined set of part of speech templates that expressed sentiment in text. For example, here we have subject passive verb, so it could be mapped to customer or satisfies that have negative sentiments. They are better than traditional approaches, but they have one limitation as well. They basically semantically weak. That is, they do not account for the semantic of words when calculating their sentiment. So for example, the word called here is positive when occurs with beer, but is negative when occurs with weather.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "On the other hand. The semantic button approaches overcome this problem by considering the syntactic and semantic relations between words. To this end, they usually extract the common sense or the semantic concepts that associated with sentiment to, and they use external semantic entology's to do this. Also some semantic based lexicons that have concepts with the associated sentiment, such as Happy Birthday, is a positive. An invading germs is a negative concept.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So both syntactic and semantic button approaches. They are better somehow than the traditional sentiment analysis approaches, but again, they are not tailored to Twitter data. This is becausw they.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Are designed to function on formal text or conventional text that is long enough and well structured, and people who wear ties. Sorry people who write sentences. They use structure sentences basically on the other.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "And tweets are or tweets are often short and they are noisy and messy, especially when you try to clean them when they start. Reducing some in structured and informal sentence is.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "OK, so to overcome these problems, we propose a new approach that extract patterns from words and use it for sentiment. Our approach is basically designed to work on Twitter and doesn't rely on the structure or syntactic structure of tweets, nor uses syntactic templates or extend our knowledge sources and state that use it, captured the patterns from tweets based on the context for semantic and sentiment similarities between words. So talking quickly about contextual semantics, this type of semantics is inferred from the Co occurrence patterns of words, or Co occurrences between words and tweets. It's basically rely on the hypothesis that words that occur in similar contexts and to have similar meaning.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So, for example, the Trojan horse as an entity as an award in tweets, when if it occurs with words such as threat hug, program malware or harm, it's more likely to have negative sentiment senses. Contextual semantics here refer to the computer virus. On the other hand, if Trojan horse occurs with words such as history, Taylor, Greek Troy, then it's more likely to have a neutral sentiment. This is because it's contextual semantics refer to history class on Greek mythology, for example. Um?",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Now, our hypothesis is that there might exist some words in tweets and different tweets that share similar contextual semantics, an sentiment and therefore forming patterns or clusters of that of words that convey sentiment. In our example here we have Trojan horse and we have spyware. Usually people in one Twitter corpus, if they occur together, they can be described by negative words such as thread dangerous and malware. And therefore the the sentiment here is a crime and indicative way, and this kind of words or this cluster of words represent any kind of sentiment. Now, knowing and extracting these patterns from tweets allows us to.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Extract the sentiment of semantically similar entities or words such as warmth, hardware and time poems, as again, uh, this is because people tend to use similar context words or less similar contextual semantics in order to express sentiment or these words based on the.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "But we propose extracting the buttons based on three steps. The first one is.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Syntactic preprocessing as I said before, children are noisy. Sorry tweets are noisy, therefore we need to apply some preprocessing techniques or procedures and tweets before processing them such as removing URLs and non ASCII and English terms.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Second step is to capture the contextual semantic and sentiment of words. In order to do this, we use our previously proposed scientifical approach. The center cycle approach quickly for Trojan horse. For example, the center circle is a 2D geometric circle where the truth centered at the center of the circle and each point inside the circle refer to context term that occurs with Trojan horse in a given Twitter corpus. The position of a context term like dangerous. Here is defined jointly by an angle which refer to the prior sentiment of the term dangerous and a radius which indicates that air the degree of correlation between the word dangerous and Trojan horse. It's like how important they are together, or how important the word dangerous to Trojan horse. Now to calculate the overall contextual sentiment we used, we calculate basically the median of the points geometric median of points inside the circle and check with. Where the median lies inside the circle. Um, the last step.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "It is to extract the semantic buttons from of the words. So basically two. At this stage we have each term represented by its own center circle that represent the contextual semantic can sentiment of the word of the turn in order to extract the buttons. Now we first extract 3 main features from each center circle. The first one is the geometric position of the medium point of the circle, the second one is the density of the points inside the circle and the third one is the dispersion which refer to how how contact condensed or scattered the points inside the circle. After that we apply K means. On the feature vectors extracted from the circles and the output is a class set of clusters or buttons that share that content, terms or circles of similar sentiment and semantics.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "As for evaluation, we assess the performance of our extracted buttons by using them as features to train supervised classifiers for sentiment for two different sentences tasks at entity level sentiment analysis that detect the sentiment of individual named entities in tweets, and the second task is St level sentiment analysis that detect the sentiment of the overall tweet.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "To this end, we use different classifiers for treat level. We use maximum entropy and naive Bayes and for entity level we use we built our own classifier based on maximum likelihood estimation.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "We also use different datasets for suite level. We use nine Twitter data sets of different sizes, sizes and characteristics and for entity level we use one data set of 58 entities such as Obama, Sydney, iPhone, iPhone etc.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "We compare our semantic sentiment patterns against syntactic features for type of syntactic features, such as unigram, part of speech, tags, Twitter features, and lexicon features. We also compare against two type of semantic features, including topics extracted from tweets using the LDA method, the other, the other one, is the semantic features that refer to the semantic concepts extracted of named entities extracted from tweets. So, for example, we use. Obama as a person and London as a city.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "We perform tenfold cross validation in all our experiments and we report accuracy and a form measure.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So for tweet level sentiment analysis we the baseline model is a sentiment classifier trained from word unigrams only. Here we can see that maximum entropy always outperform naive Bayes in all datasets by both average F measure and accuracy and therefore we report the results results. Here in our experiments using maximum entropy only.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Um, this slide will report the win loss in accuracy on average of measure of all the features comparing to the unigram model. As we can see here, semantic sentiment patterns consistently outperform all type of features, including the semantic ones. Here we have improved improvement on average up to 3% inaccuracy on F measure. Um?",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "As for entity level sentiment analysis, we have somehow similar observation. Our buttons also outperformed all other features by 6% and 7% in accuracy on average. I've measured respectively.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Um, OK. So Lastly we conduct a quantitive analysis on our buttons in order to understand why they have better performance than other features. As I mentioned before, our buttons are extracted from the contextual, semantic and sentiment similarities of words and therefore theoretically they are best when the terms inside the pattern have similar sentiment. So here we in our analysis we tried to. Measure the sentiment consistency of the patterns. To this end, we propose a new measure that is called within pattern sentiment consistency. We apply.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Our measure on 14 patterns extracted from the 58 entity data set here, for example, we have two buttons, the first one button, 12 is strongly consistent with the sentiment of its terms because all terms inside have similar sentiment. Kardashian Katy Perry, Beatles on the other hand, Button 5 is weakly consistent becausw it has entities of the friend sentiment. Overall, the average sentiment of our buttons reaches up to 88%, which shows that our approach was able to capture buttons of similar contextual Seamus semantics and sentiment of terms.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "As for conclusion, we propose a new approach for capturing the capturing patterns based on the context for semantic and sentiment of words. We use our patterns as classification features to train supervised classifiers for entity entry level sentiment analysis. We showed that our batters outperform consistently all other type of features include, including other semantic features. We also contacted the Quantitive analysis on a sample of our extracted buttons, an showed that our buttons are strongly consistent with the sentiment of their terms. This is.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Me happy to answer your questions. Well, obviously you're planted too. You have a very good motivation of this method for for tweet data, but I think your message is quite generic as well. I think. I'm wondering if if you thought about applying to just normal tax. Yeah, this is a question. OK yeah that's true because basically we are here focusing on similarities between words, so it can be applied to different text, but the motivation was that tweets are really noisy and they lack of structure. And therefore our approach was built in a way that doesn't care about the structure. Let's say we don't study the structure. Basically we just focus on individual words in grams here. But yeah, you are right. I mean, it can be applied to different type of text because I mean we we don't. We're not limited to the structure of text or the type of text, but honestly we didn't try it this so would you say would compliment other. You know classic Masters could be yeah could be. Very interesting, I was looking at the pattern examples you gave. Yeah, and it seems that there are words that would not necessarily Co occur because I was under the impression that the patterns were looking for Co occurring afford stress words in the tweet. So why write basically the buttons those patterns are representing the 58 entities right? So the K means clustering was applied. To the fifth 58 entities. That or, let's say, lucenti circle of the 58 entities. And then you're not expected to see other terms. I got your question right. This is what you were asked right? So in other another in that other tweet level, yes, you are right. There are words that occur with these entities in the same pattern. What is the performance of your classifier an what is it? What is it? Comparing it to other classifiers, what's the efficiency of it? Alright, so which task you OK in general? As I mentioned before, that the model basically we don't have a classifier, we have features at the end because we trained the classifier from our features and compared to other models trend from other type of features and we can see again that the the here we have on average an improvement up to 3%. In both accuracy and F measure comparing to other models that are trend from other features. So how many seconds will it take me if I, if I want to crank the machine? I mean the performance and time complexity. I'm interested to time. It's really depends on the size of the data set. Usually. For example usually naive Bayes is pretty fast, faster than maximum entropy with Maxine to be gives better performance. It really depends on how how many tweets you are processing here and the type of features as well. The time of you need to extract the features we basically conducted. The time analysis of extracting our features and but in different paper and basically as I remember it takes 6 milliseconds for each center circle and K means clustering is quite fast anyway, because we don't cluster the center circle itself, but we cluster the features extracted from the circle. I hope I answered your question. Thank you once again. Thank you.",
+        "start": 870.0,
+        "end": 899.0
+    }
+]

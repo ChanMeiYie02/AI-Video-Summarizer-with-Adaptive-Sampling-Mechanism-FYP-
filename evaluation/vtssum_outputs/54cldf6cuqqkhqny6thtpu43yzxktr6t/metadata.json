@@ -1,0 +1,21 @@
+{
+    "id": "54cldf6cuqqkhqny6thtpu43yzxktr6t",
+    "title": "Content as basis for Social Connectness …as basis for better User Experience",
+    "url": "http://videolectures.net/coinplanetdataschool2011_negretto_catch/",
+    "info": {
+        "author": [
+            "Ugo Negretto, Enicma"
+        ],
+        "published": "Dec. 23, 2011",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Network Analysis",
+            "Top->Computer Science->Software and Tools"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 374,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2302
+}

@@ -1,0 +1,23 @@
+{
+    "id": "snhqybv4ddheg6azfav5jpsh2oayrrue",
+    "title": "Automatic Identification of Best Answers in Online Enquiry Communities",
+    "url": "http://videolectures.net/eswc2012_burel_online_enquiry/",
+    "info": {
+        "author": [
+            "Grégoire Burel, Open University (OU)"
+        ],
+        "published": "July 4, 2012",
+        "recorded": "May 2012",
+        "category": [
+            "Top->Computers->Online Community",
+            "Top->Computer Science->Semantic Web->Ontologies",
+            "Top->Computer Science->Semantic Web->RDF - Resource Description Framework",
+            "Top->Computer Science->Semantic Web->Semantic Technology"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 193,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3648
+}

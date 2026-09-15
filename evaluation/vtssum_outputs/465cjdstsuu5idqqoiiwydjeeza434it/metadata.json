@@ -1,0 +1,20 @@
+{
+    "id": "465cjdstsuu5idqqoiiwydjeeza434it",
+    "title": "NFTs - History, data, and use cases",
+    "url": "http://videolectures.net/javameetup2019_osvald_use_cases/",
+    "info": {
+        "author": [
+            "Urban Osvald, 0xcert"
+        ],
+        "published": "March 26, 2019",
+        "recorded": "March 2019",
+        "category": [
+            "Top->Computers->Programming->Java"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 162,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1092
+}

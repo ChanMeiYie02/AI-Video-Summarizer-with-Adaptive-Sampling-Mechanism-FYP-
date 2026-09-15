@@ -1,0 +1,20 @@
+{
+    "id": "soq3uvpxzxij63eo5sxedwqll4dcz5gw",
+    "title": "Chorus: Status and Challenges of MMSE Technology",
+    "url": "http://videolectures.net/chorusfc09_koehler_scm/",
+    "info": {
+        "author": [
+            "Joachim Köhler, Fraunhofer IAIS"
+        ],
+        "published": "June 19, 2009",
+        "recorded": "May 2009",
+        "category": [
+            "Top->Computer Science->Information Retrieval->Multimedia Retrieval"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 98,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1633
+}

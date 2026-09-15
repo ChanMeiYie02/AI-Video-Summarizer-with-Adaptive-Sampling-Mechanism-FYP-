@@ -1,0 +1,21 @@
+{
+    "id": "6adrgwd5i3fxwzq2jkyxlo7adkjqtx24",
+    "title": "Arm-exoskeleton control based on muscular manipulability",
+    "url": "http://videolectures.net/ipssc2017_goljat_arm_exoskeleton/",
+    "info": {
+        "author": [
+            "Rok Goljat, Department for Automation, Biocybernetics and Robotics, Jožef Stefan Institute"
+        ],
+        "published": "May 23, 2017",
+        "recorded": "April 2017",
+        "category": [
+            "Top->Science->Scientific Research",
+            "Top->Computer Science->Robotics"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 19,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 126
+}

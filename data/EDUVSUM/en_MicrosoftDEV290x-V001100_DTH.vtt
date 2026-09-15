@@ -1,0 +1,229 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.920 --> 00:00:05.410
+>> Mathematical morphology sounds complicated but it's really just
+
+00:00:05.410 --> 00:00:09.715
+about using mathematical operations to change or morph images.
+
+00:00:09.715 --> 00:00:13.535
+The first operation we are going to look at is called dilation.
+
+00:00:13.535 --> 00:00:16.330
+To see how this works, let's imagine we have
+
+00:00:16.330 --> 00:00:17.920
+a black and white image in which
+
+00:00:17.920 --> 00:00:20.710
+a pixel value of 255 indicates white,
+
+00:00:20.710 --> 00:00:23.140
+and zero indicates black.
+
+00:00:23.140 --> 00:00:27.860
+We start by creating a mask which we call a structuring element.
+
+00:00:27.860 --> 00:00:30.400
+This contains pixel values and has
+
+00:00:30.400 --> 00:00:32.615
+a target cell called this origin,
+
+00:00:32.615 --> 00:00:35.030
+usually somewhere near the center.
+
+00:00:35.030 --> 00:00:37.870
+In this case, our structuring element is
+
+00:00:37.870 --> 00:00:40.010
+a basic cross pattern of black cells.
+
+00:00:40.010 --> 00:00:41.785
+But you can use any shape you like really
+
+00:00:41.785 --> 00:00:44.930
+depending on the effect you want to have on the image.
+
+00:00:45.120 --> 00:00:47.755
+Now, we place the structuring element
+
+00:00:47.755 --> 00:00:49.685
+on the image just like a filter,
+
+00:00:49.685 --> 00:00:51.340
+and we look for pixels where
+
+00:00:51.340 --> 00:00:52.915
+the underlying image value
+
+00:00:52.915 --> 00:00:55.855
+matches the overlaid structuring element value.
+
+00:00:55.855 --> 00:01:00.575
+If we find any, we activate the target cell by setting it to zero.
+
+00:01:00.575 --> 00:01:03.970
+In other words, we're performing a logical OR-operation on
+
+00:01:03.970 --> 00:01:05.845
+any cell in the structuring element
+
+00:01:05.845 --> 00:01:08.480
+that matches a cell in the image.
+
+00:01:08.900 --> 00:01:11.145
+In this case, there are none,
+
+00:01:11.145 --> 00:01:13.605
+so we move on to the next cell.
+
+00:01:13.605 --> 00:01:15.850
+Now, the middle cell on the bottom row of
+
+00:01:15.850 --> 00:01:17.830
+the mass contains a zero,
+
+00:01:17.830 --> 00:01:19.945
+and so does the corresponding image cell.
+
+00:01:19.945 --> 00:01:23.710
+So our criteria of finding any cells with a matching value is met,
+
+00:01:23.710 --> 00:01:26.885
+and we set the target cell to zero.
+
+00:01:26.885 --> 00:01:29.470
+Let me just repeat the operation,
+
+00:01:29.470 --> 00:01:30.950
+convolving the mask across
+
+00:01:30.950 --> 00:01:34.025
+the image until all the target cells are set.
+
+00:01:34.025 --> 00:01:35.720
+You can see from this that
+
+00:01:35.720 --> 00:01:37.970
+the key effect of dilation is to enlarge
+
+00:01:37.970 --> 00:01:39.980
+images by extending pixels around
+
+00:01:39.980 --> 00:01:42.825
+the edges and to fill-in small holes.
+
+00:01:42.825 --> 00:01:45.205
+Erosion, as its name suggests,
+
+00:01:45.205 --> 00:01:46.790
+is the opposite of dilation.
+
+00:01:46.790 --> 00:01:49.810
+It removes pixels in details from the image.
+
+00:01:49.810 --> 00:01:53.060
+We'll start with the end result from our dilation process,
+
+00:01:53.060 --> 00:01:56.330
+and once again, we'll apply a structuring element.
+
+00:01:56.330 --> 00:01:59.675
+But this time when we compare the cells,
+
+00:01:59.675 --> 00:02:01.705
+we'll use a logical AND.
+
+00:02:01.705 --> 00:02:03.810
+In other words, we'll set the target cell to
+
+00:02:03.810 --> 00:02:06.875
+zero only in cases where all of the cells match.
+
+00:02:06.875 --> 00:02:10.490
+Otherwise, we'll set it to 255 and make it white.
+
+00:02:10.490 --> 00:02:13.500
+For example, at this point,
+
+00:02:13.500 --> 00:02:15.820
+not all of the cells match.
+
+00:02:15.820 --> 00:02:19.610
+So we'll set the target cell to 255.
+
+00:02:21.510 --> 00:02:25.780
+Then we'll just repeat that across the entire image,
+
+00:02:25.780 --> 00:02:28.060
+and our erosion process that
+
+00:02:28.060 --> 00:02:30.190
+removed a layer of cells at the edges.
+
+00:02:30.190 --> 00:02:32.020
+We've also lost the rounded edges.
+
+00:02:32.020 --> 00:02:34.750
+One of the effect of erosion is to remove fine detail.
+
+00:02:34.750 --> 00:02:38.410
+Now, let's consider what's happened to our image so far.
+
+00:02:38.410 --> 00:02:40.240
+We started with this image of
+
+00:02:40.240 --> 00:02:43.265
+a black solid cross inside a black square.
+
+00:02:43.265 --> 00:02:45.394
+Then we apply dilation,
+
+00:02:45.394 --> 00:02:46.900
+which had the effect of extending
+
+00:02:46.900 --> 00:02:49.195
+the edge pixels and filling-in the gaps.
+
+00:02:49.195 --> 00:02:51.310
+Finally, we applied erosion,
+
+00:02:51.310 --> 00:02:53.310
+which remove the edge pixels again,
+
+00:02:53.310 --> 00:02:57.100
+so we ended up with the original square with the gaps filled-in.
+
+00:02:57.100 --> 00:02:59.629
+The net effect of applying dilation
+
+00:02:59.629 --> 00:03:03.150
+followed by erosion is called closing.
+
+00:03:03.250 --> 00:03:06.770
+Now, the opposite of closing is opening,
+
+00:03:06.770 --> 00:03:08.630
+and we could do that by performing
+
+00:03:08.630 --> 00:03:11.275
+the same operations in the opposite order.
+
+00:03:11.275 --> 00:03:14.205
+So we could start with the same image
+
+00:03:14.205 --> 00:03:16.940
+and then this time apply erosion,
+
+00:03:16.940 --> 00:03:18.560
+which removes the pixels around
+
+00:03:18.560 --> 00:03:20.980
+the edge and loses some of the detail.
+
+00:03:20.980 --> 00:03:23.565
+Then we apply dilation,
+
+00:03:23.565 --> 00:03:26.620
+which adds pixels to the edges.

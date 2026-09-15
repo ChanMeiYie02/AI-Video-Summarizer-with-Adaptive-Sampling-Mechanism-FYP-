@@ -1,0 +1,21 @@
+{
+    "id": "xshuxrfjtncdcem2upg3jj6iaikvmyc6",
+    "title": "Benchmarking parameter estimation and reverse engineering strategies",
+    "url": "http://videolectures.net/pesb07_mendes_bpe/",
+    "info": {
+        "author": [
+            "Pedro Mendes, Virginia Bioinformatics Institute, Virginia Polytechnic Institute and State University"
+        ],
+        "published": "April 4, 2007",
+        "recorded": "March 2007",
+        "category": [
+            "Top->Computer Science->Bioinformatics",
+            "Top->Computer Science->Machine Learning->Statistical Learning"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 540,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1650
+}

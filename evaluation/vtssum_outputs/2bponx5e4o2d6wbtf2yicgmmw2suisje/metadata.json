@@ -1,0 +1,20 @@
+{
+    "id": "2bponx5e4o2d6wbtf2yicgmmw2suisje",
+    "title": "Scaling AI Through Multi-Agent Organizations",
+    "url": "http://videolectures.net/ijcai09_lesser_saitmao/",
+    "info": {
+        "author": [
+            "Victor Lesser, Department of Computer Science, University of Massachusetts Amherst"
+        ],
+        "published": "July 22, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 49,
+    "num_sentences": 503,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 612
+}

@@ -1,0 +1,20 @@
+{
+    "id": "dos2ojnqd5wjfhu2ymew6enwl3fh4fiw",
+    "title": "PAC-Bayes Analysis: Background and Applications",
+    "url": "http://videolectures.net/mlss09us_shawe-taylor_pacbaba/",
+    "info": {
+        "author": [
+            "John Shawe-Taylor, Centre for Computational Statistics and Machine Learning, University College London"
+        ],
+        "published": "July 30, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 166,
+    "num_sentences": 579,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 4098
+}

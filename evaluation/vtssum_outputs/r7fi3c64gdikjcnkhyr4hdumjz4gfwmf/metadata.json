@@ -1,0 +1,20 @@
+{
+    "id": "r7fi3c64gdikjcnkhyr4hdumjz4gfwmf",
+    "title": "What Is a Cluster: Perspectives from Game Theory",
+    "url": "http://videolectures.net/nipsworkshops09_pelillo_cpg/",
+    "info": {
+        "author": [
+            "Marcello Pelillo, University Ca' Foscari"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 357,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2447
+}

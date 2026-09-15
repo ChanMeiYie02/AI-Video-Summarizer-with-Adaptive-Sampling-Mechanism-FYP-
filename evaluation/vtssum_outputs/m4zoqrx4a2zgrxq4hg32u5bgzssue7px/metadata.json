@@ -1,0 +1,20 @@
+{
+    "id": "m4zoqrx4a2zgrxq4hg32u5bgzssue7px",
+    "title": "Active Matching: Efficient Guided Search for Image Correspondence",
+    "url": "http://videolectures.net/rss2010_davison_ameg/",
+    "info": {
+        "author": [
+            "Andrew Davison, Department of Computing, Imperial College London"
+        ],
+        "published": "Nov. 8, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 248,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 3193
+}

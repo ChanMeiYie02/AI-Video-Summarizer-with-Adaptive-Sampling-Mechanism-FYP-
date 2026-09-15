@@ -1,0 +1,22 @@
+{
+    "id": "frd2tc6fcixtuvamcxl4gwl6makqfn4z",
+    "title": "Participation is Risky: Approaches to Joint Creative Processes",
+    "url": "http://videolectures.net/bio2014_huybrechts_creative_processes/",
+    "info": {
+        "author": [
+            "Liesbeth Huybrechts, LUCA - Faculty of the Arts"
+        ],
+        "published": "Feb. 21, 2014",
+        "recorded": "February 2014",
+        "category": [
+            "Top->Arts",
+            "Top->Arts->Visual Arts->Design->Graphic Design",
+            "Top->Arts->Visual Arts->Design->Industrial Design"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 209,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3585
+}

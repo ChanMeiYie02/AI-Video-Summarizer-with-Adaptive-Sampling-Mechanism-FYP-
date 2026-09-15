@@ -1,0 +1,20 @@
+{
+    "id": "wf47t7ncwv7txvxzfsbk2ajwhd4odbs3",
+    "title": "Optimal Bayesian Recommendation Sets and Myopically Optimal Choice Query Sets",
+    "url": "http://videolectures.net/nips2010_viappiani_obr/",
+    "info": {
+        "coauthor": [
+            "Paolo Viappiani, Aalborg University"
+        ],
+        "published": "March 25, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Recommender Systems"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 32,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1712
+}

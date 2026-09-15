@@ -1,0 +1,20 @@
+{
+    "id": "khbxfswzcsnzoulqbjibfpfup4hjlgc2",
+    "title": "Exploiting contact interactions for robust manipulation and locomotion skills",
+    "url": "http://videolectures.net/kolokviji_righetti_locomotion_skills/",
+    "info": {
+        "author": [
+            "Ludovic Righetti, Max Planck Institute for Intelligent Systems, Max Planck Institute"
+        ],
+        "published": "May 16, 2016",
+        "recorded": "April 2016",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 65,
+    "num_sentences": 826,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 2984
+}

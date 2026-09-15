@@ -1,0 +1,20 @@
+{
+    "id": "2l2uulzx2wh4do2ksztv54bjuntu7w7c",
+    "title": "LSD-SLAM: Large-Scale Direct Monocular SLAM",
+    "url": "http://videolectures.net/eccv2014_engel_monocular_slam/",
+    "info": {
+        "author": [
+            "Jakob Engel, Faculty of Informatics, TU Munich"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 183,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1547
+}

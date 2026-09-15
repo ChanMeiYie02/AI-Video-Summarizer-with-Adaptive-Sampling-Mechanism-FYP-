@@ -1,0 +1,20 @@
+{
+    "id": "35n7gmpa2jk5uh477nuyew4xdrrq6fqx",
+    "title": "Kovinastroj Gastronom, Factroy of catering equipment d.d.",
+    "url": "http://videolectures.net/wete07_jurancic_sn/",
+    "info": {
+        "author": [
+            "Marko Jurančič, KOGAST - Factory of Catering Equipment d.d."
+        ],
+        "published": "Feb. 28, 2008",
+        "recorded": "November 2007",
+        "category": [
+            "Top->Technology->Materials"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 170,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2490
+}

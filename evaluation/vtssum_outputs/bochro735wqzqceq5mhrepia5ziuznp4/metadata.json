@@ -1,0 +1,20 @@
+{
+    "id": "bochro735wqzqceq5mhrepia5ziuznp4",
+    "title": "A Closer Look at Context: From Coxels to the Contextual Emergence of Object Saliency",
+    "url": "http://videolectures.net/eccv2014_mairon_object_saliency/",
+    "info": {
+        "author": [
+            "Rotem Mairon, Department of Computer Science, Ben-Gurion University of the Negev"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 135,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 3441
+}

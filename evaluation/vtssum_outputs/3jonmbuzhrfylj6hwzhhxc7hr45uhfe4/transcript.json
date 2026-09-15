@@ -1,0 +1,232 @@
+[
+    {
+        "text": "So surprisingly, this talk is not going to be about deep learning where quite shallow people. So this talk is about dimensionality reduction for symmetric positive definite matrices so.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Of all, why do?",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Care about SPD bases so SPD matrices appear in several computer vision problems, and here in particular we focus on the problem of visual recognition, and for this task region covariance descriptors are proven to be quite powerful representations, so reaching covariance descriptors are computed by extracting features at different locations in an image and then compute the covariance matrix of these features, and so if you have enough observations then the resulting descriptor is an SPD matrix.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "If you want to make these descriptors more discriminative than you typically want to use high dimensional features in the 1st place. Now, unfortunately, if you have high dimensional features then you have very large descriptors and these descriptors can be very hard to handle. So.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "In this work, we propose to reduce the dimensionality of very large SPD matrices, and more precisely, given a set of images that belong to different classes, we represent each image with.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "SPD Ella High dimensional SPD matrix, where here the color indicates the class and we learn a mapping from.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "High dimensional matrices to lower dimensional SPD matrices such that the distance between these matrices is a better representative of the class label.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "One difficulty that arises when handling SPD matrices is that they form a remaining manifold and therefore they have a nonlinear structure. So this means that the Euclidean.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Distance is not a very accurate measure to compare two matrices instead.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "One would like to rely on the geodesic distance, which is the length of the shortest curves that joins two matrices. So several methods have.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Proposed to account for the non Euclidean geometry of SPD matrices and these methods typically follow two different approaches. Some of them rely on tension space approximation. So the approximate the manifold by Euclidean spaces either locally or globally and others map embed the SPD matrices to higher dimensional Hilbert space, where Euclidean geometry can apply 9.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Cases.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "The problem is that the computational cost of these methods increases with the dimensionality of the SPD matrices, and so typically in practice people will use low dimensional descriptors that are potentially less discriminative. So instead here we propose to reduce the dimensionality of large SPD matrices while preserving or even increasing their discriminative power.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Of course there's been other works on dimensionality reduction of SPD matrices. However, they typically adopt the following strategy so even high dimensional SPD matrices. The first map these matrices to a high dimensional Euclidean space, and then from these Euclidean Euclidean space that reduces the dimensionality to another Euclidean space. So this is for instance in the case of principle geodesic analysis, which is a generalization of PCA 2 remaining manifold and PCM PGA first Maps of the matrices to the tangent space around the car show mean of the data. And so it's also the case of covariance, discriminative learning, which also approximates the manifold with its tangent space and then find the discriminative Euclidean subspace of the resulting Euclidean space.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So here, in contrast, we propose to map high dimensional SPD matrices to a lower dimensional SPD manifold where the distance better encodes the notion of class labels and so are finite representation. Still are SPD matrices, so they still benefit from the same useful properties, and they can be used in conjunction with existing manifold based techniques. Now, before going into the details of our method, I will first review some concepts of the remaining geometry of SPD matrices.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "It will be useful for derivations, so first will rely on the notion of distance between two SPD matrices. An in practice will consider two different metrics on the manifold. The first metric is the affine invariant Romanian metric that was introduced by panic and colleagues in 2006, and that reduces geodesics on the manifold. The second metric is the Stein metric, and it has the advantage over the IRM of being faster to compute. Now in the paper we also show that these two metrics are related in the sense that the length of any given curve is the same under both metrics up to a scale factor. So in the remainder of this talk I will use the notation Delta to indicate the distance between two SPD matrices and this Delta can be obtained with either of these two metrics. Now these two metrics are.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Also have another interesting property which is that they are invariant with fine transformation. So if we consider two SPD matrices X&Y, and if we multiply these two.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Matrices from left and right by a square invertible matrix M that is M in the general linear group then.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "The distance between the two resulting matrices is the same as the distance between the original matrices X&Y and so this is true for both metrics and will use this property in formulation.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "OK, so now let's go into the details of our approach. So recall that our goal is to map a high dimensional SPD matrix X through a lower dimensional 1F of X. So here.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Here we parameterized this mapping with a rectangular matrix W, and we obtain the low dimensional SPD matrix by multiplying X from left and right with W as illustrated below. And so if.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "W has full rank, then F of X is also a symmetric positive definite matrix. So that would be fine mapping, but.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Now we want also to define a cost function to learn the parameters of this mapping. So here we rely on the following intuition. We would like the low dimensional SPD manifold to have a distance that reflects the notion of affinity between the high dimensional SPD matrices. And so.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "For each pair of SPD matrices XI and XJ will ride cost gij, which is a product between an affinity measure AIJ and the distance between the two matrices in the low dimensional manifold. So this means that if we have a high affinity AIJ, then would like to have a small distance after mapping the matrices to the low dimensional manifold and contrastive hello or a negative affinity AIJ, then we're happy to have a high distance between the two matrices after mapping.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So in practice will use the class labels to define the notion of affinity, and we'll set AIJ to one if XJ is a nearest neighbor of XI from the same class. So that means that our cost function without a favor pulling together 2 samples that are of the same class. Any?",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Interest will set AIJ to minus one if XJ is the nearest neighbour of XI from a different class. So that means that we will try. Our cost function will try to separate two matrices that are of different classes.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "And finally, the affinity will be set to 0 if XJ is not a nearest neighbor of Excitel. So now we.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Define the cost function, but this is not enough because it said before to have valid SPD manifold. We also need W to have full rank. So here what we do is we enforce orthogonality constraints on W. Now this may seem like a tool restrictive assumption because in general not every full rank matrix is an orthogonal matrix however.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "And show that these constraints entails no loss of generality and the reason is that any full rank matrix dubled can be decomposed into a product of an orthogonal matrix W and a matrix M in the general linear group. And so because.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Those of you find invariants property about metrics. Then we'll have the cost function. Gij of WTO is exactly the same as the cost function JIJFW, so we can only enforce orthogonality constraints and not lose anything.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "So that we have a cost function and we have constraints on W so we can formulate our learning problem and so given a set of high dimensional SPD matrices, learning is expressed as minimizing the sum of all pairwise cost functions such that the resulting matrix W is orthogonal. And because of these orthogonality constraints, this can be a problem in optimization problem on either a Stifel or a Grassmann manifold, and the difference is that for the Grassmann manifold 2 matrices that are the same up to a rotation actually correspond to exactly the same point on a manifold. So to study whether we want to use a Stiefel Grassmann manifold optimization approach, we need to study the effect of rotations on our cost function.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "So if we take any rotation matrix are are you finding variance property of the metrics also yield that the cost function JIGW is exactly the same as the cost function of the rotated matrix W? So it means that we can make use.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Of optimization methods on the Grassmann manifold and, in practice will exploit conjugate gradient descent methods on the manifold. OK, so now we have an approach that can map high dimensional SPD matrices to a lower dimensional SPD manifold now.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "On this low dimensional manifold we can still learn different classifiers to do visual recognition and so in our experiments we tried two different such classifiers. First one is a nearest neighbor classifier on the low dimensional manifold, and this classifier evidences the benefits of dimensionality reduction more clearly, do too in simplicity. It also can exploit both the fine environment Romanian metric and this time metric and the second classifier that we use is the RSR classifier. That was introduced by massage at ECB two years ago, and that classify explores the notion of sparse coding on the manifold. But it was designed for this time metrics or the results reported for this classifier will only rely on this time metric.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "So in our experiments we evaluated the following methods, first of all, with high dimensional SPD matrices, we evaluated the true nearest neighbor classifiers. We also evaluated the RSR classifier as well as the CDF method of Wang and colleagues. And then of course, after our dimensionality reduction, we evaluated the two nearest neighbor classifiers well and also the RSR classifier. So.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "As the first experiment, we tried our method on for the task on material recognition and to this, and we use the UIUC material data set that was introduced last year at CPR. This data set contains 18 classes and we using 10 different partition between training and test data. And the input to our algorithms are high dimensional matrices of size 155 by 155 that were computed as region covariance descriptors of SIFT features and color features. And the parameters of our approach were obtained by cross validation and these parameters are the dimensionality of the low dimensional manifold, the number of neighbors of the same class when building the affinity matrix, the number of neighbors of a different class when building the affinity matrix.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So here are the results. So the first baseline is the was the result reporting in the paper that introduced the data set and it was 43.5% accuracy in terms of recognition. And then we evaluated CDL an RSR on our high dimensional SPD matrices. They both achieve about 52% accuracy and finally the nearest neighbor classifiers on high dimensional matrices only achieve about 35% accuracy. Now what is interesting is that.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "After reducing the dimensionality, if we apply the nearest neighbor classifiers then we increase the accuracy by more than 20%, so reach 58%, which means that we even outperformed the CDL and RSR classifiers that were computed on high dimensional matrices and so finally if we.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "We evaluate the RSI classifier on the low dimensional manifold. We reached the top accuracy of 66.6%.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "The second experiment we performed action recognition from motion capture data, and for this we use the HTML5 datasets. This data set contains 14 different actions an we use two subjects to train our method an three subjects to test it, and in this case there are no images. There are three joint location of human skeletons and so the inputs high dimensional SPD matrices are 93 by 93 dimensional and they are covariance descriptors of the 31, three joint location of the human skeleton. And the parameters over approach were again obtained by cross validation.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "So again, the results on these datasets here. CDL perform 79.8% accuracy, which is likely higher than the RSR glass fire, and this is both in both cases on high dimensional matrices, the nearest neighbor classifiers both form that 60% accuracy and now again if we use.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "Nearest neighbor classifier. After dimensionality reduction, we increase the performance by several percentage. Now in this case, unfortunately we don't reach the performance of CDL in RSR, however, if we.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "We use RSR after dimensionality reduction. We reach the best accuracy of 81.9%.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "So to conclude, we have introduced an approach to mapping high dimensional SPD matrices to lower dimensional. An more discriminative ones, and this. Here's a practical way to handle large SPD matrices with existing recognition algorithms, and so in the future we plan to extend a framework to using different cost functions and for instance to end of the unsupervised scenario or the semi supervised scenario an. We'd also like to study if the concept of reducing the dimensionality from one manifold to another manifold could apply to a different type of imaging manifolds.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Thank you for your attention. So could you explain why you got better results after you produce the sparse smaller matrix well? So the intuition would be that because we also encouraging the low dimensional representation to be more discriminative, then we already better reflect the notion of classes. So would be the the task would be easier for the classifier. Right? Here hello. Yes, so so. In effect you're building a new descriptor, right? So by by mapping to this new space. And so I'm wondering whether there is any intuitions that you have about the new descriptor. Yes, so so you can think of the new we discussing this in the paper, but we can think of the new descriptor in the case of covariance matrices. You can think of. The new descriptor has also been a covariance matrix in lower dimensional features. And so ultimately, yeah, this is. This is really the intuition behind this is that we will try to learn. You can think of it as having lower dimensional features that are going to be more discriminative when you consider the covariance matrices. So in relation to the previous question, maybe you're you get better results because you're mapping you take into account the distance between the classes. So if you try to do your mapping from one dimension to the same dimension. And see if that improves. So we did not try this, but so the baseline CDL this CDL baseline also tries to separate the classes in a related matter as well. We're doing so. In a sense, I think there's more to it than just that. I wonder how he did was bring mutations is rows and columns of matrices are in correspondence, are invariant to run competitions? Yeah, I think you can show that it's also invariant to row and column permutation, and so, yeah, that's why it's only talked about rotation, but it's also true for permutation over one column. No more questions. If not, then let's thank our speaker again.",
+        "start": 1305.0,
+        "end": 1334.0
+    }
+]

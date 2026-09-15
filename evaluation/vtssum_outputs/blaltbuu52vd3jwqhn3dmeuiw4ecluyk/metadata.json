@@ -1,0 +1,22 @@
+{
+    "id": "blaltbuu52vd3jwqhn3dmeuiw4ecluyk",
+    "title": "An Infinite Restricted Boltzmann Machine",
+    "url": "http://videolectures.net/deeplearning2016_cote_boltzmann_machine/",
+    "info": {
+        "author": [
+            "Marc-Alexandre Côté, Université de Sherbrooke"
+        ],
+        "published": "Aug. 23, 2016",
+        "recorded": "August 2016",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 115,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1171
+}

@@ -1,0 +1,21 @@
+{
+    "id": "ejpvfoei6aolht3peuwkp44gx6efpbql",
+    "title": "Low dry friction - Measurement and imaging",
+    "url": "http://videolectures.net/surf08_bullas_ldfmai/",
+    "info": {
+        "author": [
+            "John C. Bullas, Atkins Highways and Transportation"
+        ],
+        "published": "Dec. 4, 2008",
+        "recorded": "October 2008",
+        "category": [
+            "Top->Business->Transportation and Logistics->Technology",
+            "Top->Technology->Materials"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 292,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 1805
+}

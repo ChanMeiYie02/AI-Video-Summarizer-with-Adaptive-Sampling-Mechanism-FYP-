@@ -1,0 +1,22 @@
+{
+    "id": "w4bdreyuvcr2tuxbwmmvab5rbfy72daa",
+    "title": "Forced alignment using FAVE and DARLA: Powerful language technology tools and methods to support oral history research",
+    "url": "http://videolectures.net/clarinplusworkshop2016_fruehwald_FAVE_and_DARLA/",
+    "info": {
+        "author": [
+            "Josef Fruehwald, School of Philosophy, Psychology and Language Sciences, University of Edinburgh"
+        ],
+        "published": "Aug. 21, 2017",
+        "recorded": "April 2016",
+        "category": [
+            "Top->Humanities->History",
+            "Top->Humanities->Languages",
+            "Top->Computers->Digital Media"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 287,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 2746
+}

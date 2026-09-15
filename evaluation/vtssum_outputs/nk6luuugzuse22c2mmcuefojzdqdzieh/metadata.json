@@ -1,0 +1,20 @@
+{
+    "id": "nk6luuugzuse22c2mmcuefojzdqdzieh",
+    "title": "The Construction of Bounded Irregular Pyramids with a Union-Find Decimation Process",
+    "url": "http://videolectures.net/gbr07_marfil_tcobip/",
+    "info": {
+        "author": [
+            "Roica Marfil, University of Malaga"
+        ],
+        "published": "July 12, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Mathematics->Geometry"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 186,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 3382
+}

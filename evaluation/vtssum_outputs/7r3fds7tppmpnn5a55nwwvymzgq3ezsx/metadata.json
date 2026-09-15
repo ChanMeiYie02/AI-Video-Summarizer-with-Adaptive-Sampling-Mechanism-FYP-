@@ -1,0 +1,21 @@
+{
+    "id": "7r3fds7tppmpnn5a55nwwvymzgq3ezsx",
+    "title": "Sparse-Coded Features for Image Retrieval",
+    "url": "http://videolectures.net/bmvc2013_ge_image_retrieval/",
+    "info": {
+        "author": [
+            "Tiezheng Ge, University of Science and Technology of China"
+        ],
+        "published": "April 3, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 123,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 1371
+}

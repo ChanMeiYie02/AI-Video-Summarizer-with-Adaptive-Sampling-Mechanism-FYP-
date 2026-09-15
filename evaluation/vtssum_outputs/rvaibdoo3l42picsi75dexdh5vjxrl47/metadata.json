@@ -1,0 +1,24 @@
+{
+    "id": "rvaibdoo3l42picsi75dexdh5vjxrl47",
+    "title": "The More, the Merrier: the Blessing of Dimensionality for Learning Large Gaussian Mixtures",
+    "url": "http://videolectures.net/colt2014_anderson_learning/",
+    "info": {
+        "author": [
+            "Joseph Anderson, Department of Computer Science and Engineering, Ohio State University"
+        ],
+        "published": "July 15, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning",
+            "Top->Computer Science->Machine Learning->Statistical Learning",
+            "Top->Computer Science->Machine Learning->Supervised Learning",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 122,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 3829
+}

@@ -1,0 +1,21 @@
+{
+    "id": "xnylifqy5c6objyrrheohl7rs53gupqt",
+    "title": "Multi-Task Learning with Gaussian Processes with Applications to Robot Inverse Dynamics",
+    "url": "http://videolectures.net/nipsworkshops09_williams_mlgp/",
+    "info": {
+        "author": [
+            "Chris Williams, University of Edinburgh"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Gaussian Processes",
+            "Top->Computer Science->Machine Learning->Multi-Task Learning"
+        ]
+    },
+    "num_segments": 50,
+    "num_sentences": 636,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 55,
+    "ground_truth_summary_length_chars": 6228
+}

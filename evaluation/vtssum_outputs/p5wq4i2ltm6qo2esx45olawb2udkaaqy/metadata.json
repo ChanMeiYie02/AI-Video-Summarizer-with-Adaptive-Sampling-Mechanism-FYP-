@@ -1,0 +1,21 @@
+{
+    "id": "p5wq4i2ltm6qo2esx45olawb2udkaaqy",
+    "title": "UNITAR Approach to Capacity Building and Development for Climate Change",
+    "url": "http://videolectures.net/ccandun2010_oseku_frainier_acbd/",
+    "info": {
+        "author": [
+            "Sharon Oseku Frainier, UNITAR - United Nations Institute for Training and Research"
+        ],
+        "published": "June 21, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Environment->Sustainable Development",
+            "Top->Environment->Climate Change"
+        ]
+    },
+    "num_segments": 10,
+    "num_sentences": 177,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 2118
+}

@@ -1,0 +1,22 @@
+{
+    "id": "x34x3tr3qkwqw3xxjavx4u377au44jfw",
+    "title": "SysMIC - the leading eCourse for computational tools in the biosciences in Europe",
+    "url": "http://videolectures.net/internetofeducation2013_baier_tools/",
+    "info": {
+        "author": [
+            "Gerold Baier, University College London"
+        ],
+        "published": "Dec. 10, 2013",
+        "recorded": "November 2013",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Technology",
+            "Top->Computer Science->Internet, World Wide Web"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 234,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1266
+}

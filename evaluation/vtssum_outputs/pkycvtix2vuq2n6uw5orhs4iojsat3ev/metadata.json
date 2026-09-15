@@ -1,0 +1,22 @@
+{
+    "id": "pkycvtix2vuq2n6uw5orhs4iojsat3ev",
+    "title": "Geometry, Connectedness, and Dynamics",
+    "url": "http://videolectures.net/complexnetworks2012_costa_geometry/",
+    "info": {
+        "author": [
+            "Luciano da Fontoura Costa, Cybernetic Vision Research Group (CVRG), University of São Paulo (USP)"
+        ],
+        "published": "July 3, 2012",
+        "recorded": "May 2012",
+        "category": [
+            "Top->Mathematics->Geometry",
+            "Top->Technology->Systems and Cybernetics",
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 200,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1125
+}

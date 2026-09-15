@@ -1,0 +1,20 @@
+{
+    "id": "6t6jprxcoikx2alridjlfqsntp4pilev",
+    "title": "On probabilistic hypergraph matching",
+    "url": "http://videolectures.net/icml2010_shashua_ophm/",
+    "info": {
+        "author": [
+            "Amnon Shashua, School of Computer Science and Engineering, The Hebrew University of Jerusalem"
+        ],
+        "published": "July 20, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Mathematics->Graph Theory"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 328,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2199
+}

@@ -1,0 +1,24 @@
+{
+    "id": "gv36fsjjobsmyg27szj4yveax4qpubki",
+    "title": "Coordination, Semantics, and Autonomy",
+    "url": "http://videolectures.net/eswc2014_floridi_semantics_autonomy/",
+    "info": {
+        "introducer": [
+            "Valentina Presutti, Institute of Cognitive Sciences and Technologies (ISTC)"
+        ],
+        "author": [
+            "Luciano Floridi, Oxford Internet Institute, University of Oxford"
+        ],
+        "published": "July 30, 2014",
+        "recorded": "May 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 737,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 4313
+}

@@ -1,0 +1,21 @@
+{
+    "id": "eqmx5hr27tv7lz7njripnwgivhi3vmyp",
+    "title": "Folks in Folksonomies: Social Link Prediction from Shared Metadata",
+    "url": "http://videolectures.net/wsdm2010_menczer_fif/",
+    "info": {
+        "author": [
+            "Filippo Menczer, School of Informatics and Computing, Indiana University"
+        ],
+        "published": "March 18, 2010",
+        "recorded": "February 2010",
+        "category": [
+            "Top->Computers->Social Networking",
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 278,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 1458
+}

@@ -1,0 +1,21 @@
+{
+    "id": "3dxps35anzgq5wi6s56vtht6t3qitraw",
+    "title": "Deployment of a partial mesh network for adaption of district level energy optimization schemes",
+    "url": "http://videolectures.net/emender2015_tsoukalas_optimization_schemes/",
+    "info": {
+        "author": [
+            "Konstantinos Tsoukalas, School of Mining and Metallurgical Engineering, National Technical University of Athens"
+        ],
+        "published": "Oct. 22, 2015",
+        "recorded": "October 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Technology->Energy"
+        ]
+    },
+    "num_segments": 13,
+    "num_sentences": 74,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2133
+}

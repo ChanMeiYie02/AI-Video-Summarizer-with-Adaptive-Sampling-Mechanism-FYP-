@@ -1,0 +1,77 @@
+batch result 
+
+No batch
+How to Make a Video in PowerPoint - ppt to video
+14 segments
+Processing: 11m 16s
+Duration: 6m 46s
+
+2-batch
+How to Make a Video in PowerPoint - ppt to video
+14 segments
+Processing: 9m 8s
+Duration: 6m 46s
+
+Unquantized to 4 bit version
+How to Make a Video in PowerPoint - ppt to video
+14 segments
+Processing: 7m 32s
+Duration: 6m 46s
+|
+Because 
+-> The Quantized Version (4-bit - Previous): To save paper space (VRAM), the book is printed in a highly compressed code. Every time the GPU wants to read a word, it has to stop, translate the code back into plain language, and then process it. Even though the book is small, this constant translation slows the computer down.
+-> The Unquantized Version (16-bit - Current): The book is printed in regular, plain language. It takes up slightly more space on the desk, but the GPU can read it directly at maximum speed without translating. Since your graphics card has a huge desk (24 GB of VRAM), there is plenty of room, so the size of the book is not an issue.
+-> Conclusion: The extra work the GPU does to "uncompress" the 4-bit code makes it slower than just running the raw 16-bit model.
+
+Unquantized version
+Youtube_input.mp4
+14 segments
+Processing: 22m 47s
+Duration: 12m 5s
+
+
+
+When you achieved 4 minutes previously, it was because of the frame filename collision bug in v1. The bug caused 0 keyframes to match your chunks, meaning Gemma-4 was running in audio-only mode (no images) for all 14 segments.
+
+Audio-only sequential pass: 14 segments × ~17 seconds = ~4 minutes.
+Now that the bug is fixed, Gemma-4 is processing both audio and visual frames for active segments, which takes nearly double the time per chunk (9–11 minutes).
+To achieve a processing time of under 4 minutes (or even under 2 minutes!) while still having correct keyframe visual analysis, you can choose one of the following two optimization paths:
+
+
+
+Summary of Previous Changes
+We previously applied:
+
+4-bit NF4 Quantization via BitsAndBytesConfig across all execution paths:
+multimodal_processor.py
+frame_captioning.py
+transcription.py
+Capped Token Generation Limits to 200 tokens in 
+multimodal_processor.py
+.
+Framework Patches to handle integer/quantized data types in the transformers library weight clipping functions.
+Why the Result Was Not Good
+Multimodal LLMs like Gemma-4 rely on sensitive visual and auditory projection layers to map images/audio into the text space. Quantizing these projection weights to 4-bit completely broke the alignment, causing the model to:
+
+Ignore actual PowerPoint slide frames and speech inputs.
+Degenerate into repetitive hallucinated training templates (Donald Trump, red and black plaid shirts, IPTV logos, collage of female faces).
+Reverting to unquantized precision (FP16/BF16) restores the model's sensory perception. Since your RTX A5500 has 25.75 GB of VRAM, the 2B model fits comfortably without quantization.
+
+
+
+
+Key Highlights & Benchmarks
+SSIM Implementation: The custom 
+
+compute_ssim
+ logic successfully computes visual change scores between successive keyframes without requiring the uninstalled scikit-image package.
+Selective Keyframe Capping: The code sorts keyframes by structural significance (change_score descending) and flags only the top $K$ (default: 5) keyframes as active in 
+
+frame_comparison_final.json
+.
+Execution Speedup:
+In our test run on the PowerPoint video, the pipeline successfully filtered 32 candidate scenes down to the top 5 most visually distinct keyframes (at scene indices: 0, 8, 13, 23, 24).
+This change reduced the total execution time from 941.94 seconds to 584.90 seconds (saving 6 minutes of GPU time, representing a 38% speedup).
+Please check the updated 
+walkthrough
+ for detailed benchmarks and code references!

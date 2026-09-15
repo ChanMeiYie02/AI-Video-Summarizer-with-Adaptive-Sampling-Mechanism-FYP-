@@ -1,0 +1,21 @@
+{
+    "id": "q6kusnfswqmuxh6hsqshz2oupysh276o",
+    "title": "Sparse Methods for Under-determined Inverse Problems",
+    "url": "http://videolectures.net/mlss2011_gribonval_sparsemethods/",
+    "info": {
+        "author": [
+            "Rémi Gribonval, INRIA Rennes - Bretagne Atlantique"
+        ],
+        "published": "Oct. 12, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Digital Signal Processing"
+        ]
+    },
+    "num_segments": 53,
+    "num_sentences": 807,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 4290
+}

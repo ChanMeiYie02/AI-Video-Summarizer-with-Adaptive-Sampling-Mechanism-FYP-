@@ -1,0 +1,20 @@
+{
+    "id": "kt4qtqmwa6m52klbcxi4xktlc5osymdg",
+    "title": "Fundamentals of Linked Data: main standards and technology components, motivating application scenario",
+    "url": "http://videolectures.net/eswc2015_norton_linked_data/",
+    "info": {
+        "author": [
+            "Barry Norton, British Museum"
+        ],
+        "published": "Oct. 22, 2015",
+        "recorded": "August 2015",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 1139,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 2891
+}

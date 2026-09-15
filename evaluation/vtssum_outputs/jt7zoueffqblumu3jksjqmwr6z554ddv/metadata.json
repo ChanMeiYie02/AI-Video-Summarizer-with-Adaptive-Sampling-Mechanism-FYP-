@@ -1,0 +1,20 @@
+{
+    "id": "jt7zoueffqblumu3jksjqmwr6z554ddv",
+    "title": "Dyna(k): A Multi-Step Dyna Planning",
+    "url": "http://videolectures.net/icml09_yao_dmsdp/",
+    "info": {
+        "author": [
+            "Hengshuai Yao, School of Creative Media, City University of Hong Kong"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence->Planning and Scheduling"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 116,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1567
+}

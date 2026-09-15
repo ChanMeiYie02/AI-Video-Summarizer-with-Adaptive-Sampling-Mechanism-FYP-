@@ -1,0 +1,24 @@
+{
+    "id": "uihun7e7qzjufgdk2xnsfi3oy22xkpch",
+    "title": "The FloWr Framework: Automated Flowchart Construction, Optimisation and Alteration for Creative Systems",
+    "url": "http://videolectures.net/iccc2014_charnley_creative_systems/",
+    "info": {
+        "author": [
+            "John Charnley, Department of Computing, Goldsmiths College, University of London"
+        ],
+        "published": "Aug. 8, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Machine Learning",
+            "Top->Arts",
+            "Top->Philosophy",
+            "Top->Social Sciences->Psychology"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 266,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1549
+}

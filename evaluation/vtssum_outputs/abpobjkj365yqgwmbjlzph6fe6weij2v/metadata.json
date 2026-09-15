@@ -1,0 +1,20 @@
+{
+    "id": "abpobjkj365yqgwmbjlzph6fe6weij2v",
+    "title": "Efficient Algorithms for Association Finding and Frequent Association Pattern Mining",
+    "url": "http://videolectures.net/iswc2016_cheng_efficient_algorithms/",
+    "info": {
+        "author": [
+            "Gong Cheng, Nanjing University"
+        ],
+        "published": "Nov. 10, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 187,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1746
+}

@@ -1,0 +1,20 @@
+{
+    "id": "rlyudt4sasvmwnheoqqgjl3rhl2ccjkb",
+    "title": "Learning Using Local Membership Queries",
+    "url": "http://videolectures.net/colt2013_awasthi_queries/",
+    "info": {
+        "author": [
+            "Pranjal Awasthi, Machine Learning Department, School of Computer Science, Carnegie Mellon University"
+        ],
+        "published": "Aug. 9, 2013",
+        "recorded": "June 2013",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 184,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2434
+}

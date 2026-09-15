@@ -1,0 +1,65 @@
+[0.0s - 29.0s]
+Today
+
+[29.0s - 58.0s]
+I'll be presenting like presented the corpus of Grand National Assembly of Turkish Parliament. I'm a PhD student as well as University in Istanbul, Turkey. I also work for how we are on the center in Istanbul. I conducted this research with two of my other PhD students from the same University.
+
+[58.0s - 87.0s]
+I'll start with motivation. Then I will explain the building test. Then I will give some examples to demonstrate the potential of the corpus for several kinds of research. Then I will conclude with a few.
+
+[87.0s - 116.0s]
+Work. This motivation part is not so required. After all this talk, all of us know that these transcriptions are very important for.
+
+[116.0s - 145.0s]
+People from different backgrounds, but I want to emphasize that there are two perspectives from the political perspectives, historians and political scientists care about these transcriptions 'cause they want to have data to explain the political phenomena and from the language perspective, linguists and computational linguists. Wants to access this kind of data because these transcriptions contain historical data where they can analyze the evolution of the language and also these transcriptions contain lots of data language data where computational linguists can build models of language structures. From my perspective, I work on named entity recognition and especially. Focus on morphological analyzers so. I plan to use this data in my research for example.
+
+[145.0s - 174.0s]
+The problem is basically too. Extract text from various sources. Parliaments generally provide this in HTML or PDF. The Turkish parliament provides. This is scanned images. As you can see on the right. This is actually the first the first sessions transcriptions. But these are, you know, problematic for scientifically analyzed.
+
+[174.0s - 203.0s]
+So we in this work built the corpus of these transcriptions, spending time of 95 years. Also, we provide an offline system for querying and analyzing. Using a relatively sorry using a relatively easy way to access.
+
+[203.0s - 232.0s]
+So the Turkish Parliament formed to 1920. And every four or five years. 400 to 550 people are elected. For each of this year has sessions most of the year has most of the days of the year has a session. So these sessions are transcripts by clerks in real time. And after an editorial process, they are published by the Parliament in a Journal Journal called Minutes of meeting in Turkish this Potomac terrorism.
+
+[232.0s - 261.0s]
+So basically we focused on this session files, downloaded them and extracted text. Clint done tokenized and this made up the basic work in basic process in this.
+
+[261.0s - 290.0s]
+Book. To download, we manually found out URL addresses of these files and downloaded with a script.
+
+[290.0s - 319.0s]
+Can be used tool called PDF to text to convert these scanned image to PDF text. But some serious characters showed up, so we removed them. Using scripts also done, we took night by separating the words. From the punctuation and numbers done. For an efficient data format, we coded this clean text in Unicode to a number based coding. So we have. These texts. Without the structure, we just have the text in a code it way.
+
+[319.0s - 348.0s]
+I'll talk about it later. So we also record today and the year of the session, but we do not explicitly mark any person names or any political party names or the subject of this session. Also, we do not extract the structure of the dialogue. This is one of the things that we aim to do in future.
+
+[348.0s - 377.0s]
+So there is a lot. We have around 12,000 sessions. They sum up to 200 million words. And when we look at unique words, we have 600,000 of them. But just looking at these numbers is not satisfying for us, so we wanted to test the coverage. To do that, we follow this simple procedure. We first discarded unique words which AP at less than 10, so we got. We reduced the number two 300,000. So then we remove the inflectional suffixes. As you might know, Turkish is one of the one of those languages. Which is rich morphology, so we need to remove the inflections to look up them in a dictionary. So we looked them up in Turkish dictionary and we found out it's 70% of them are found, so this serves as a confirmation. Ovality of our extraction process.
+
+[377.0s - 406.0s]
+So I will continue with some examples which will demonstrate the potential of the corpus. First of all, we used latent resettle location too. Allocate words into 20 different topics. I give five of them as example. The 1st three rows. Who are all containing older Turkish words and the other topics contain modern Turk shorts. Some of them are alternatives of each other. So when we plot this topic.
+
+[406.0s - 435.0s]
+True time we can validate this. Also the 1st three rows appear in the first half of the 20th century, but the other two starts too. Appear after the 80s.
+
+[435.0s - 464.0s]
+And we also looked at the word usage frequencies. Specifically, we focused on these two words, members and military. Clearly, these are the. These are used to refer to a member of the Parliament in Turkish, but members is originally Arabic, so as you guessed, it was used in the Ottoman era and in the first part of the 20th century. There is a small bump in a specific meaningful error, which is which is 50. It was revived at that error, but it quickly dropped to 0 after 60s. I think it corresponds with the group in 1960 done. Modern version started to ramp up and after 80s it was used, so this is another. Analyze.
+
+[464.0s - 493.0s]
+So we also looked at some technological terms too. To validate, so these are three words. As you can guess, this is television, telephone and Internet. We used we use very similar orthographic versions of these words. So when we look at this, we see that television was started to be used around 40s and. Internet not until 90s.
+
+[493.0s - 522.0s]
+So the resulting file is 1.2 gigabytes and we share this corpus in our GitHub page. In that GitHub repository we also shared offline interactive interface.
+
+[522.0s - 551.0s]
+Which I want to show a little example. For example, if a researcher wanted to explore. Specific words he or she can download this corpus and run this notebook, which is called the Jupiter Notebook and simply run this. Comment to have this plot for his or her examination.
+
+[551.0s - 580.0s]
+OK, so I conclude. As I mentioned, we built a suitable environment for statistical analyzes. Becausw our corpus is a single file which can be analyzed in a computer and then an interface for researchers without extensive programming skills are provided.
+
+[580.0s - 609.0s]
+In our research. The future work will be extracting the structure, name downstairs and the sessions between 2015, 2015 and today and also removing spelling errors is an important task.
+
+[609.0s - 638.0s]
+Thank you for listening.

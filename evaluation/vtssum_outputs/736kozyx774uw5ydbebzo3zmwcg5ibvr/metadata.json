@@ -1,0 +1,20 @@
+{
+    "id": "736kozyx774uw5ydbebzo3zmwcg5ibvr",
+    "title": "Alan Turing and the Development of Artificial Intelligence",
+    "url": "http://videolectures.net/is2012_gams_science_einstein/",
+    "info": {
+        "author": [
+            "Matjaž Gams, Department of Intelligent Systems, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 16, 2012",
+        "recorded": "October 2012",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 11,
+    "num_sentences": 150,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1290
+}

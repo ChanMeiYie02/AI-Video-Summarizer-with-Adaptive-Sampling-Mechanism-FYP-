@@ -1,0 +1,20 @@
+{
+    "id": "qjzgvboe6hnb5645knutrz3m25otdqg6",
+    "title": "A Robust Spelling Device for Locked-In Patients Based on Real-Time fMRI",
+    "url": "http://videolectures.net/bbci09_goebel_arsd/",
+    "info": {
+        "author": [
+            "Rainer Goebel, Faculty of Psychology, Maastricht University"
+        ],
+        "published": "Aug. 10, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Technology->Neurotechnology"
+        ]
+    },
+    "num_segments": 44,
+    "num_sentences": 386,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 3026
+}

@@ -1,0 +1,142 @@
+[
+    {
+        "text": "I'm going to present the research that we did. Actually it's 1/3 of the research that we did together with three students, and this was research trying to use crowdsourcing in order to get ground truth annotations for text, medical, text sentences, and we one of the one of most of the research we actually did in the medical domain and at some point we really were interested. After developing the entire end to end system an in the process of testing it, somebody has a power for me because this is going to happen. Just in the intermediate. Not very new. OK anyway. So I'll try. It doesn't start very well. I hope the content is more entertaining. So I'm just realizing there's no way I can play animation's half of my slice of animations. What a disaster anyway. So once after we did a lot of experiments in the medical domain, we really wanted to see to what extent the various parts of the process that we were developing for creating ground truth annotations is actually domain independent, and the second experiment, the second set of experiments that we performed, were in the domain of extracting events from newspapers.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "And that's what I'm going to talk about here, just for the ones who are not familiar with the term crowd truth that we introduced some time ago is basically worth play with ground truth, where the ground truth is collected by the crowd of either lay crowd of Amazon Turkers or Crowdflower workers, or sort of initial source group of medical or domain experts. And one of the main claims that we make for creating the crowd truth is really that we would like to take the entire annotation process for gold standard annotation process that is used in an LP right now and turn it the other way around. By enforcing this agreement rather than trying to prevent it based on the claim an we're proving it in the experiments that this agreement is actually signal and should not be. Should not be something should not be treated as a problem to avoid, but actually is something. As a useful signal that can give a lot of a lot of. So how well signals for insights in terms of various semantic interpretations in terms of vagueness of sentences in terms of similarity of terms, even vagueness, ambiguity, and so on. One important part here is that we try to gather this kind of crowd truth, and we're still in the process of analyzing. So here some of the results that I'm going to show. Is to see.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "See how this analysis helps harness harness this disagreement, and this is the what we call the Crowd Watson framework. We call it crowd Watson because we started with the medical domain providing linking to the text input that the Watson system was using to train in the medical domain and trying to provide an alternative annotation and then feed it back into the. An LP components the extraction components, so this is an end to end process where we spend a significant amount of time of looking at various preprocessing steps of the text which will allow optimal annotation collection from the crowd and one of the main parts. The core parts is the disagreement analytics which are sets of metrics that we define on sentences, relations, workers. And depending on the domain, you can have different different domain dependent metrics in order to be able to actually understand what's the signal in the disagreement. And we have a set of post processing tasks which are primarily focused on optimizing the process by eliminating spam workers using those metrics in order to identify spam workers. In order to identify most efficient or less efficient. About the crowd sourcing channels and also the post processing part is 1 important thing for the creation of the crowd. Truth is that they are. We identify which sentences are good for training and not an for this disagreement. Metrics help us a lot to find out which are the. Yeah, well not to waste our time for sentences that are not good for training. Um? So, so this is so this is the. But the workflow that I showed here is the framework that the show here was the initial one that we did for the medical relation.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Struction, and this was the adopted one which we did for the event extraction. 1 interesting aspect, which here came from the events which was not present in the relation extraction, was the fact that the events are much more multi dimensional than the relations medical relations, so we had at least 2 levels, which was the type of event and all the so the event in the role fillers and for the role fillers as well we have the level of granularity of the expression. And the type of the role filler. So at least three levels for which the templates the crowdsourcing templates to identify the task were different had to be differently presented than the ones for relation extraction. I'll show you a little bit more about.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "And just to give.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "An example of so we worked with the newspapers. Articles like this and one of the preprocessing tasks that we did was for example filtering out sentences that initially are way too short in order to. Useful for training so length of the sentences was one aspect which we on the average sort of tunes the number of words per sentence. We would give the optimal length depending on the set of the target domain. You can also have various types of preprocessing. Will not go too much in detail here, but the idea is to only take the sentences which are worth paying. To workers to annotate. If we know a priority, the sentence will be not useful for training. We're not even going to bother annotate.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "And then the second preprocessing step was to try to identify the so-called putative events automatically. Identifying them and highlighting in the sentences, and this would be the the putative events which are given further to the workers to confirm whether they are actual events or not, and what are their type and already here you can see that we are producing from one sentence. We actually produce multiple sets of putative events as they have various expressions like to enforce or to enforce order. Came to enforce protest released and the idea is not only to identify whether any of those are events are actual events and give their ties, but also to see which are the ones which are the main events in a given sentence.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "And this is these are some of the taxonomies that we used for the type for the event type, location, time and participant. So there is nothing spectacular here about this is just choices that we made. What is interesting afterwards in the results that I'm going to show you is that it's interesting to see that the. Input that we get from the crowd is very different for the different role fillers and types, and there is much more disagreement at the particular. For example, for the event type, an one of the most plausible explanation is that this taxonomical constructions for event type are way too difficult for lay users or workers on Crowdflower to be able to clearly. Choose one or the other when they are given the choice and then on this in the same time we see. Sorry, we see if we'll see afterwards in the results that for things like time and location, the agreement is significantly larger. An much easier for them to choose between the different options in those text.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Enemies. So as I said, so this is our main goal, so we do all these tasks in order to know how exactly to represent and measure disagreement, and he can do this also across different domains, so that's why we chose this.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Means and I don't need to convince you about this I guess. Bye bye now, even though it's the beginning of the workshop by now. Everybody who is here.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Knows the event semantics are hard and I mentioned earlier and here you can see this the the complexity of those multiple dimensions of events that we tried to capture in the different template. I have to tell you that this was a really yes. This was really tedious task and we went through number and number of. Iterations of how to define it in such a way that actually workers understand what event means. One of the first task that we actually ran was asking them to see whether they have some kind of common notion of event an it was interesting to see that there was very difficult to find any clear agreement of what event really is, so they captured all the possible aspects of event.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "But really, which only show that everybody understands even in a different way? So which made it even more challenging to create a template where they could clearly understand the questions that we're asking them? For example, in the beginning we only ask them whether something refers to an event, and then all of the questions. All the answers that we got were no. This is not an event. This is an action, and we didn't want to go into the dispute whether an action is event or not. So we included. Event or an action is impossible as a in the main question and so you can see it is actually you won't be able to see it because it's animation here, but we have defined this sort of two layers templates where you can given your identifying an event and say there is an event enter. It is an event, then link directly and identify. Is there a location is in this sentence related to this event? We do the same for participants and for temporal expressions as well. So.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Oh oh here. The other so the other thing is we are not only identifying whether there is a location or temporal xpression, but we also interested about the granularity of the expression. So we also ask the workers to highlight exactly the string. The words in the text which are identified either either location or or time, and you can have here various expressions. Some people just put. 2:30 others will put 2:30 PM others will put around. 2:30 so like this, we actually gathered the full range of possible temporal and location participant temporal and location expressions. Um so.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "I'll just go further, so we based our idea on so how we started with. We started from sort of this basic idea why people disagree but and serve trans.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Plays it into our own triangle where we basically on a given sentence in a given understanding or ontological or domain understanding we. Allow workers to perform annotations according to this ontology and what we do here in terms of harnessing the disagreement is that we develop metrics three sets of metrics which can identify either that the particular worker is not good enough in what they're doing, or a sentence is too ambiguous in what in what it's trying to present, or there is a problem. In the domain, in the way the domain is expressed, so all the three types of metrics that we developed are centered.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Around this triangle an you can see we have developed several metrics for sentence clarity, similarity, ambiguity as well as worker metrics. Two types of worker metrics based exactly on the input for events. An event fillers, which we call the content based worker metrics, but we also use at the end some explanation. Free text explanation which we asked them to. Justify their answer and we found out that we can develop a set of additional explanation based metrics which allow us to about 5% of additional catching additional spam. Only by very actually the explanation metrics are much easier to catch spammers then from the other. The content based metrics. So we started with developing those metrics in the for medical relation extraction and we wanted to see whether they could be adapted easily to even text.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Action and here is some of the experiments. The settings in the experiments with events that we did. Well, I guess it's safe self explanatory.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So that's how we collected. So this is a view of the data as we collected so per event. So this would be event type, located, location granularity, time granularity and participants granularity refer to the granularity of the expression. And well, so for every given sentence we have this kind of distributions of the possible types and granularity answers and.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Here is an example in this sentence. For the event entered. So workers have identified arriving or so have identified the type for this event to be 5055% of the workers identify this is arriving or departing type about 18% as an action or emotion type of events. Four 9% an event with Java type purpose as well with an 18% and you can see sort of the distribution of the event type. For this sentence, what is interesting here to see is time has hardly any. Any disagreements in terms of the type but has a little bit of disagreement but still pretty agreeable in terms of the. In terms of the granularity of expressions so we can see the example with around 2:30 PM that I gave you early is the only temporal express.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "And similarly, we can go like this through. Location granularities",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Temporal granularity.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "And so on. And the participants granular.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So here you can see the overall distributions. This is the event type distribution, so you can see that it's. Every single sentence, so every bar is a sentence. Every single sentence has a very. So there is hardly any agreement, even though you can see there are some parts, some some types which are much more prevalent. So there is some kind of majority voting present there. All the types really fluctuate. An one of our hypothesis here is that it cannot be. We cannot blame the workers that didn't know what to do. Neither the sentences. But in this triangle, it's the only reasonable explanation is that in the taxonomy we used for the event types. It was too difficult for the workers to deal with an you can see for time. It's much more clear picture, so there is a lot of disagreement, but there is the types do not fluctuate so much and.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "For the same for location. OK for location and participant the same.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Um? Well, I wanted to show you how, based on this data that we're collecting, we define sentence clarity metrics which allow us to basically Cherry pick afterwards. Which sentences are the most clear and they typically will be the ones most useful.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "For NLP training. I think I mentioned enough about the spam detection. And.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Yeah, So what we're interested in. This is almost the closing one. What we're interested, as I said, is to see if we start changing different domain domain definitions or taxonomies for event for event typing. Whether the results are going to change and the same also for the other role filler so big it is really our main focus to try to understand to what extent those three these three aspects of the triangle. Influence each other in order to be able to capture ambiguity in such a way that you can make it a functional aspect. Functional feature of ground truth data.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "And. Think let's. You can. Vincent",
+        "start": 783.0,
+        "end": 812.0
+    }
+]

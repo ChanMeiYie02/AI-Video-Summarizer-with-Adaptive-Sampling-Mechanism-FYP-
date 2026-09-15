@@ -1,0 +1,20 @@
+{
+    "id": "jyxu4p7suxf2teskdblt5wph2efrtsnz",
+    "title": "The Complexity and Application of Syntactic Pattern Recognition Using Finite Inductive Strings",
+    "url": "http://videolectures.net/prib2010_myers_casp/",
+    "info": {
+        "author": [
+            "Elijah Myers, Department of Computer Science, Winston-Salem State University"
+        ],
+        "published": "Oct. 14, 2010",
+        "recorded": "September 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 159,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1435
+}

@@ -1,0 +1,20 @@
+{
+    "id": "almgjgjnwpnk72zqcxitigqyymo757l4",
+    "title": "Multi-Objective Design Exploration (MODE) - Aerodynamic Applications at Tohoku University",
+    "url": "http://videolectures.net/mla09_sasaki_mode/",
+    "info": {
+        "author": [
+            "Daisuke Sasaki, Department of Aerospace Engineering, Tohoku University"
+        ],
+        "published": "July 20, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Technology->Engineering"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 184,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 4147
+}

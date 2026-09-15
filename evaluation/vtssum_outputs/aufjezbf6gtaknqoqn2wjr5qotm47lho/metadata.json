@@ -1,0 +1,20 @@
+{
+    "id": "aufjezbf6gtaknqoqn2wjr5qotm47lho",
+    "title": "Human memory search as a random walk in a semantic network",
+    "url": "http://videolectures.net/machine_abbott_semantic/",
+    "info": {
+        "author": [
+            "Joshua T. Abbott, Computational Cognitive Science Lab, Department of Psychology, UC Berkeley"
+        ],
+        "published": "Jan. 14, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Science->Cognitive Science"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 27,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 397
+}

@@ -1,0 +1,25 @@
+{
+    "id": "a3zprxltzwlyiao6nyceqo4rxcepndpy",
+    "title": "Welcome",
+    "url": "http://videolectures.net/tcmm2014_signoretto_welcome/",
+    "info": {
+        "organizer": [
+            "Marco Signoretto, KU Leuven"
+        ],
+        "published": "Oct. 13, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computers->Software->Open-Source Software",
+            "Top->Computers->Programming->Python",
+            "Top->Computer Science->Optimization Methods",
+            "Top->Computer Science->Programming Languages",
+            "Top->Computer Science->Machine Learning",
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 5,
+    "num_sentences": 55,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 726
+}

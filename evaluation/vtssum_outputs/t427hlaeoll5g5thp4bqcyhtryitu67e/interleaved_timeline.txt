@@ -1,0 +1,71 @@
+[0.0s - 29.0s]
+So I'm going to talk about the title of our paper. Is using the path to explain the present interlinking current affairs with our calculus semantic Web, and I think I think that's one of the early in you stalking that particular session. And another interesting fact is that it probably has the longest title. And anyway, so.
+
+[29.0s - 58.0s]
+Groups so. As you might know, the BBC has been broadcasting since 1922 and has accumulated a very large archive over the years. The main idea behind this work is that such arc apps can provide useful historical insights for current news events. Just lots of information in there and which could be used to illustrate and understand more about current news event.
+
+[58.0s - 87.0s]
+So to give a concrete example, sorry that we do a bit of food you as well, so I just need to plug myself in the term. So to give a concrete example, there was a recent news stories about a pneumonia vaccine a couple of weeks ago. We just had promising trial results. And definitely deserve radio programming. the BBC archive, which from 1997, which includes a an interview with quite a famous scientist in that field, explaining giving lots of details about why this new how this new, more efficient malaria vaccines work and why they are so complex to engineer. So I can, yeah. Single most important health problem. What amendment? Anyway, yeah, so another.
+
+[87.0s - 116.0s]
+Input as well where the couple of weeks are good to Nobel Prize in physics was hatchery to Peter Higgs and Francois Englert for their work on his person and there's a lot of archive BBC archive data that there's a bit of missing, sorry. And there's a lot of archive data about the Higgs boson discovery, and in particular there's a couple of recordings. Including one from 2000, which includes a recording of the session in which early hints of the Higgs bozon have been observed in the precursor to the LHC. the LP at the time. And that led to that particle accelerator to be extended for a few months, but the confidence level ended up not being good enough, so they ended up building the LHC and leading to the actual discovery in July 2012. I can listen to that. So one of the things that was in that session or introduces what was actually happening at the time, and you can hear everyone shouting when they see the actual plots. And yeah, which is quite interesting to see. To hear physicists being that excited about things which is really good.
+
+[116.0s - 145.0s]
+Anyway, so. Archive programs can be used to provide interesting background, context and historical insights or current news events. However, finding these connections between archive contents and current news events is not trivial, especially for parts, with the BBC BBC Archive that have very little or no meta data. An interesting example of that is the BBC World Service Archive, which is very big, so it covers about six decades and would take you about three years to listen to everything back to back. But the meat eater around it is very sparse and sometimes wrong, As for example there's a third of the programming there that have absolutely no texture meta data, and that means that basically these programs are effectively lost. Nobody able to find through them to understand the connections between them and things that are currently happening in the news. So as it's such a hard case, we decided to focus on that particular cavazza use case for this work.
+
+[145.0s - 174.0s]
+So what we want to do is to try and Italian part in telling parts of the BBC Archive with little or no meta data with current news events. At the way.
+
+[174.0s - 203.0s]
+We do that is in four steps. So we start by automatically deriving links between archive contains NDP capturing the values topics mentioned in the program and the values people contributing to it. We then use the resulting intellinx automating intellinx to publish a browsable archive on the web. As automated intelligence will never be entirely accurate, we put mechanisms in place for our users to feedback on the quality of that data. Which means that our set of intellinx are continuously improving a set of metadata describing this archive is continuously improving as well. So we do play with similar process to our news output. And we use the resulting in direct intellinx going through DPI in that case between our news output, an archive content to drive visualization, which shows archive programs related to current news events, so we do not describe each of these steps in a bit more detail.
+
+[203.0s - 232.0s]
+So we start with the first step, automatically deriving interlinks from archive content.
+
+[232.0s - 261.0s]
+So in some cases, so for about 1/2 of the archive there is a bit of texture metadata available alongside the content, so in that case, so it could be a synopsis, or it could be a title. And in that case we derive topics using an instance of Wikipedia minor. And we map the results to dwis using the GPS GPS light service.
+
+[261.0s - 290.0s]
+However, a lot of these programs will have little or no associated textual metadata, and when it's presented sometimes wrong as well. So for example, quite a few programs claim that they have been broadcast before the BBC ever started, or after. Yeah, there's one program that claims to have been broadcast in 2100, which is probably not true. So we therefore consider using the content etc concerns itself. So we start by identifying which parts of the audio have speech and identify the value. Speakers contributing to the audio, and to do that we use our diarize Jarobi toolkit, which is we put links later on which is available now GitHub. And we identify who these values speakers are by deriving a small change, your printer, their voice and querying your fast index based on locality sensitive hashing techniques. Something all the code is available on our GitHub as well. We didn't transcribe the speech segments using an open source toolkit, CMU Sphinx with custom models trained on BBC data.
+
+[290.0s - 319.0s]
+So the resulting automated transcripts are pretty noisy, so the programs in the archival wait time period, lots of value sachsens lots of different people, background noise, lots of different jaws, so it's very heterogenous. However, they do include useful clues as to where the program is about proper names, locations, organizations, and So what we need to do now is to isolate this cruise from this automated transcripts and infer the topics of the program from them. So most of the existing concept tagging tools are designed to work on text that has been manually returned, so that includes clues such as punctuation, capitalization, and so on and so on so they don't perform that well and noisy transcripts. Where do context surrounding particle named entity could be very, very noisy. So we therefore developed on tool which we originally presented at the Eldar Workshop in 2012 and improved quite significantly since then. And this tool uses the structure of the itself, the paragraph itself to disambiguate and rank keywords, but it throughout the transcript something it's available on our GitHub. So for example for program mention Spa recently fell alert we Paris in France because it's closer individual craft to the toy fell into the programs mentioned Harrison Texas alerts we pick Paris in Texas because it's closer in deputy graph to the Texas Resource. So at the end of this process, for each program we get a rank list of GP attacks.
+
+[319.0s - 348.0s]
+Describing what the program is about, and here are couple of example results. The first program is a 1970 profile of the composer Gustav Holst. The second problem is in 1983, profile of the Ayatollah Khamenei. The first program is an 8083 episode of the medical program. So what we notice is that detecting algorithm works relatively well for programs that talk about a handful of topics that are quite focused but tend to degrade quite strongly in the. In the case of magazine program. So programs talking about many, many different topics during the length of the program, 'cause in that case the algorithm gets very confused. But actually if you ask humans to just identify a couple of topics describing magazine programs that talk about many different things, it's extremely difficult because it's very ambiguous.
+
+[348.0s - 377.0s]
+So we also built a framework as this process is quite expensive, we also built a framework to be able to distribute this algorithm. And automatically in telling a very large arcade, because we really wanted to try and scale that process to entire BBC World Service Archive. So we used Amazon Web Services for that and with this infrastructure so we did all the processing with virtual images running on Amazon Web Services. And we have this infrastructure. We process the entire archive in about 2 weeks and the only bottleneck in how quickly we could process the entire cave was the bandwidth between ourselves and Amazon's servers, actually.
+
+[377.0s - 406.0s]
+Effectively, you have intrinsic ability on their end. So we have. We now have an automated set of links for each program which we used to publish the archive under web and make it searchable and browsable.
+
+[406.0s - 435.0s]
+So the resulting prototype is available at destroid and is available online and that gives access to the entire BBC World Service Archive, including lots of programs that reference listen two since they were originally broadcast. So there's quite a lot of hidden gems in there.
+
+[435.0s - 464.0s]
+So, as I mentioned before, this automated intelligence will never be entirely accurate, so we put in place and mechanisms for users to create data when it is found to be wrong. So for example, you can upvote or downvote individual topics or add new topics for an autocomplete list using the Piazza target vocabulary. And we use this user feedback for improving the search and discovery within the arcade, but also to evaluate continuously evaluate in the context and continuously improve algorithms as well. So as a result of this feedback cycle, move the interlinks, get better overtime, so do interacts between archived. But also our algorithms generating new intelligence on your pieces of content. So we started this experiment last year and we now have about 3000 active users and captured about 100,000 pieces of individual individual feedback on values automated interlinks.
+
+[464.0s - 493.0s]
+So another part of our system is to apply the same sort of work through, but are now live news outputs to detect automatic automatically detect news related topics that are currently being discussed.
+
+[493.0s - 522.0s]
+So we can certainly listen to our life, BBC News outputs and extract specific topics identified by GPU, eyes and mentioned at a specific time. In order to do so, we use the same workflow as before, but customized to actually work on the continuous string. So we make the resulting stream of the peaks available for a simple HTTP and also for public simple Publish, subscribe, publish subscribe mechanism.
+
+[522.0s - 551.0s]
+And we now have a stream of topics coming from the news identified by GPU eyes, and you don't find topics related to news events currently being discussed, and the larger K, which is also entirely encrypted pedia. And we use this interlinks, this indirect interims, between archive contains an news content to drive visualization which enables journalists and editors to quickly locate relevant archive contents. So here is the capture of this life visualization which was taken about a week ago. So just play that while I talk. So the Big Blue dots there are topyx that.
+
+[551.0s - 580.0s]
+Where mentioned on the news in the last five minutes. The small dots Arkoff programs that relate to these topics, the reader oddities. The more relevant the corresponding program is to things that are currently being discussed on air, and this visualization dynamically updates as new topics get mentioned on the news. So, for example, there was a story about indulging Margaret Thatcher, Andrew Conservative Party, so its surface is this particular program which is a. A portrait of Margaret Thatcher, which is actually playing now.
+
+[580.0s - 609.0s]
+So I go back to the visualization. Things change slightly because more things have been discussed on the news since then and I can start exploring more and more.
+
+[609.0s - 638.0s]
+Arcade programs that relate to things currently being discussed. Just move on to a couple of screenshots. So just to give a couple of examples of how this was actually used in practice over the last six months, this capture of the visualization was taken during the May 2013 prime ministerial election, Pakistan, which involve Imran can, which is a. Addition and a former cricketer at the Red programming, this visualization includes a 1990 documentary about business #2 and also in 2003 Imran Khan interview.
+
+[638.0s - 667.0s]
+Another screenshot of that visualization was taken during your new stories, new story about UK soldiers in the Helmand Province in Afghanistan, and one of the programs brought up by this visualization is how long program by your BBC correspondent in that province, and describing the evolution of the iteration of all year, so understanding it more by the context of that particular region and what's happening there.
+
+[667.0s - 696.0s]
+Right, so to conclude, our assumption was that the BBC Archive as a huge repository of institutional memory could be used to understand more about current news events. However, large sections of this archive, very little or no meter data, so it's hard to understand connections between what's happening right now and concern that sell within this archive. So we therefore designed a system that combines semantic web technologies, automated interlinking techniques, crowdsourcing technologies to get an ever improving. Set of interlinks between archive, content and live news content. Finally, we developed a visualization which is aimed at journalists and editors and which enabled them to quickly locate archive content that could be used to illustrate and provide background information about current news events right? And that's it. Thank you.

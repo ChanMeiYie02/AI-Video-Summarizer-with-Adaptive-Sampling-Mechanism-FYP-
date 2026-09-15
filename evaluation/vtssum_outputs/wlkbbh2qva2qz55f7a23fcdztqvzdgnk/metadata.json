@@ -1,0 +1,21 @@
+{
+    "id": "wlkbbh2qva2qz55f7a23fcdztqvzdgnk",
+    "title": "A linkset quality metric measuring multilingual gain in SKOS Thesauri",
+    "url": "http://videolectures.net/eswc2015_albertoni_linkset_quality/",
+    "info": {
+        "author": [
+            "Riccardo Albertoni, Istituto di Matematica Applicata e Tecnologie Informatiche, IMATI"
+        ],
+        "published": "July 15, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 57,
+    "num_sentences": 169,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 779
+}

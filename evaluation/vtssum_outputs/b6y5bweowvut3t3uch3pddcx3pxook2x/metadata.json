@@ -1,0 +1,20 @@
+{
+    "id": "b6y5bweowvut3t3uch3pddcx3pxook2x",
+    "title": "Clustering",
+    "url": "http://videolectures.net/aop07_ben_david_clu/",
+    "info": {
+        "author": [
+            "Shai Ben-David, David R. Cheriton School of Computer Science, University of Waterloo"
+        ],
+        "published": "Dec. 14, 2007",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 66,
+    "num_sentences": 892,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 52,
+    "ground_truth_summary_length_chars": 5316
+}

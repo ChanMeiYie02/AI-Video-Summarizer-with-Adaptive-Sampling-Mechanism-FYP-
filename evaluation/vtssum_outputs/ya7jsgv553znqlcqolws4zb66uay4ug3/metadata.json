@@ -1,0 +1,20 @@
+{
+    "id": "ya7jsgv553znqlcqolws4zb66uay4ug3",
+    "title": "Dynamic Captioning: Video Accessibility Enhancement for Hearing Impairment",
+    "url": "http://videolectures.net/acmmm2010_hong_dcv/",
+    "info": {
+        "author": [
+            "Richang Hong, School of Computing, National University of Singapore"
+        ],
+        "published": "Feb. 1, 2011",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 94,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 797
+}

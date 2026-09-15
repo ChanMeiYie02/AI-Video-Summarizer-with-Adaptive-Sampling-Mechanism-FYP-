@@ -1,0 +1,20 @@
+{
+    "id": "z6fxf7pwhs6ahe3xk6gyw7rt642krscv",
+    "title": "Vision-Based Control, Control-Based Vision, and the Information Knot That Ties Them",
+    "url": "http://videolectures.net/nips2010_soatto_vbc/",
+    "info": {
+        "author": [
+            "Stefano Soatto, Computer Science Department, University of California, Los Angeles, UCLA"
+        ],
+        "published": "Jan. 12, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 668,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 2867
+}

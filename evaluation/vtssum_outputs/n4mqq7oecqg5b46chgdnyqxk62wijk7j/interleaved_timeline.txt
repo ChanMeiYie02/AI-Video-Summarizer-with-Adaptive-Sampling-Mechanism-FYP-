@@ -1,0 +1,128 @@
+[0.0s - 29.0s]
+Hello everybody, I'm going to present in evaluation of the sparkle endpoint filtration system. This is a Journal paper, so of course I cannot present everything, but I will try to present the most important results in this presentation.
+
+[29.0s - 58.0s]
+So here is the agenda for today's talk. First, I will talk about Sparkle Query Federation and then I will talk about some results of the survey about sparkle query processing systems. So we conducted actually a survey to get the information about in the feature about the sparkle query processing engine. And then I will talk about some performance variables that impact the performance of the Federated query and then in the last session I will talk about the sparkle endpoint, the evaluation results.
+
+[58.0s - 87.0s]
+So what are the approaches the general approaches for Federated sparkle query processing? So we have a three approaches. The first one is the Sparkle Endpoint Federation. So as the name suggest, we have a set of sparkle and points and we have a Federation engine and we have a Federated query so the Federation engine federate queries over the set of multiple sparkle endpoints. So we have some advantages pertaining to this approach because we have two optimization, the Federation engine can also optimize the query and we have another optimization at the sparkle endpoint, so it is well so generally this kind of Federation approaches can lead to fast query execution, but of course there is a downside of these approaches as well that most of the load data is not exposed as a sparkle endpoint. So we have another kind of Federation approaches which we called in Data Federation, or we also called it a link traversal approaches. So in that the data shouldn't be exposed as a sparkle endpoint. If you have just a RDF data dumps, that's about the. You know the principles of the RDF. That's that's that's all for it. So that can cover like a lot of you know, data dumps. But of course you know that's based on the UI. Look up, so that can take some time. And then we have a hybrid approaches as well. So we have a set of sparkle and points and what side and we have a data dumps and there is a Federation engine that fed try to federate queries on top of both.
+
+[87.0s - 116.0s]
+So here is the paper is about the sparkle and perpetration approaches. I will just briefly show how the Sparkle Endpoint Federation works, so here we have a sparkle engine. This one this box is a sparkle engine and we have a set of sparkle endpoints, so let's suppose S1 to S4.
+
+[116.0s - 145.0s]
+And we have a guy one query from the user. So the first step is to.
+
+[145.0s - 174.0s]
+Far is the query, so in general in parsing what we get is to just get the individual triple patterns of the query.
+
+[174.0s - 203.0s]
+So once we get the individual triple patterns of the sparkle query, the next. Step is the source selection, so the goal of the source selection is to identify what are the relevant or capable sources pertaining to each triple pattern. So here we need to specify which source is relevant for each individual triple pattern of the query.
+
+[203.0s - 232.0s]
+And then the Federated Query is one that that, should you know, collect results from more than one data set. And if you submit the complete query to each of the source, you cannot get you know results because the data is distributed. So to solve this you need to make sub queries of the big query and that is the job of the federator and then you need to optimize that. For example join order optimization. So once you get the subqueries there you need to. Send those subqueries, Ann. Here the sources are already identified during the source selection, so you need to send those subqueries to the corresponding sparkle endpoints and that can be done in parallel, or that can be done in sequential depending upon the implementation.
+
+[232.0s - 261.0s]
+So he sparkle in point reply.
+
+[261.0s - 290.0s]
+And then you get the results back and then you have.
+
+[290.0s - 319.0s]
+Local data integration. So you integrate the results.
+
+[319.0s - 348.0s]
+And then send it back to the user. But the whole process is transparent to the user, so the user just submit the query and get the results back. But it doesn't know what happened in the background.
+
+[348.0s - 377.0s]
+So as I talk about source selection, that is to identify what are the relevant sources pertaining to a sparkle query. So there are three approaches that Sarah generally used, so the first one is index free approach, so you don't have any index, no statistics, nothing about the datasets. So what in this approach that the only like most of the approaches using the sparkle ask queries. So for each ripple pattern you ask each of the source whether that contained results for that ripple pattern yes or no. So you just do the triple pattern by source selection. Using this worker, ask queries so this can potentially insure resultset completeness, because if you are using index the index can be outdated and once the index is out dated you cannot ensure the result set completeness, but here we don't use any index or the potentially can ensure resultset completeness. But the problem is this is sparkle. Ask queries can be expensive as well, so if the number of sparkle ask queries are too much then the source selection time. It can be, you know increased. So here for this park, Alaska Nation can be used, for example, in the start you do sparkle, ask and then cache the results, and then the next time just check the cache and see like if you have a cache hit. Famous example is of this kind of source selection is in FedEx, which is a Federation engine. I will show the evaluation results later and then the second approach is index only. So we have only index and the complete source selection is based on index. So usually in index which we index the. Properties and then for each triple pattern, we just matched the predicates. If it's there in the index, then we select that source, otherwise we discarded. So this can be less efficient becausw. Mostly it only cares the predicates, but if the subject or object is bound then it usually overestimate the sources. Result set completeness is not insured. Becausw index can be outdated in famous examples are LHD and distributed your Q&A.
+
+[377.0s - 406.0s]
+We have a third kind of source selection which is called hybrid, so which is a hybrid of Spark Alaskan index. So for some triple patterns, for example, if the subject and object is not bound in only the predicate is bound. So you can you can go directly, have a index look up and for the rest you can use Park Alaska. Very so depending upon. That is most efficient. In result set completeness is of course not insured because of the index and. Here also we can use the cache of the sparkle ask queries and famous examples are hibiscus in episode and ask blended.
+
+[406.0s - 435.0s]
+So now I'm talking about the survey to the goal of this server was to collect information about existing Federation engine. So that's the first one is about the system in formation. We collected like title and URL of the Federation and code whether the code is available in the implementation in licensing information and type of source selection and what kind of joint is used in weather. The cache is used or not and whether there is a support for index update or not.
+
+[435.0s - 464.0s]
+So here is the result. I would just like to mention it's a bit hard to read from here, but I can show you know summary of that. But we can see here in the start we have the systems and then we have the category suspect sparkle and pointed Federation in Linked Data Federation and then the implementation. So for example we can see most of the systems are implemented in Java and here we can see the source selection. So most of them are using hybrid approach and here is the joint type. So bind join in his joints are commonly used. So here is.
+
+[464.0s - 493.0s]
+The summary, so the code availability. There are 59% of the Federation engine for which the source code is available.
+
+[493.0s - 522.0s]
+And then the type of source selection. So as I said, that majority of the sources are Federation engine are using hybrid sort selection approach. So there are 5665%. It will Federation engine that make use of the hybrid approach.
+
+[522.0s - 551.0s]
+And use of caching so it's like half of the systems are using caching.
+
+[551.0s - 580.0s]
+And weather is a support for index update so majority of them don't have any support for index update.
+
+[580.0s - 609.0s]
+And then we collect some information about the requirements. So for example the there confirm anymore requirements, but these are we picked as an important one, for example result set completeness and then the policy based query planning, which means that's like we are resuming that every time our data is open. But that's not the case like in some cases for example in medical domain the data is restricted and usually in hospitals or their data, so they have different you know. Policy level so different access level now whether there is a you know system that can deal with this kind of policy based query planning and then we we ask about support for partial result retrieval becausw it's possible that sometimes the query result is in million in the user might not be interested in all of the results but a small and quick results might be more interested for the user. So then we talk about we ask about the adaptive. Very processing like sometimes the network traffic can influence the you know overall query performance or the sparkle endpoint can be busy. So whether they adopt the query plan and then we have support for provenance, informationon, query runtime estimation and duplicate detection. So in top K query processing and support for sparkle important Sparkle features so.
+
+[609.0s - 638.0s]
+Here is the result.
+
+[638.0s - 667.0s]
+And here is the summary of the results. So for example result set completeness only 18% of the Federation engine ensure the result set completeness.
+
+[667.0s - 696.0s]
+Then the policy based query planning only fear of them or able to do this and then.
+
+[696.0s - 725.0s]
+The partial results retrieval are also not possible in many of them and then.
+
+[725.0s - 754.0s]
+The adaptive query for.
+
+[754.0s - 783.0s]
+So sing here we talk about provenance information so we can see that 94% don't give you any provenance information.
+
+[783.0s - 812.0s]
+So runtime estimation there is no Federation engine that can give you estimation of the runtime.
+
+[812.0s - 841.0s]
+And the duplicate detection and.
+
+[841.0s - 870.0s]
+Top query processing.
+
+[870.0s - 899.0s]
+Here are some of the key features and that are, you know, that are that are supported by the various Federation engine.
+
+[899.0s - 928.0s]
+Here are some performance variables. Is a bit difficult to read, but I will try to. And and or observe variable which are performance metrics. For example, number of our number of people pattern by sources or solution time very runtime the answer completely and on the left side we have the independent variables that affect the performance matrices. For example, in query the query shape in the basic triple pattern selectivity and intermediate results are those features that affect the. You know the dependent variable and then in the data we have the size frequency. In these effect overall. And then of course in the platform, the Ram availability cash all these number of processors in the end points we have endpoint type an initial delay in message size, this all affecting the result sizes the perform.
+
+[928.0s - 957.0s]
+So here in our moving to the performance evaluation, we use three benchmark. So fair benches are famous of aggression benchmark. But this we also want to try the parallel querying capability of the Federation engine. So what we did is the problem is fed benches that it usually spend queries or one or two or three sources. So we want to slice the data among different sources so that maximum number of sources are. Read it and so we slice that benchmark and then we have SP2 bench. So this is a triple Store benchmark but we Federated using slices in. Here is the Federation engine that we've all waited. So those are the engine by the time that code was available so that we can, you know, measure the performance matrices.
+
+[957.0s - 986.0s]
+Here is the result for the number of us so we can see the FedEx is the index free approach, so that's why the number of Sparkle asks are really high compared to the others and the 01 means that it's only index only approaches. And then the same goes for and we can see if we compare Fed bench with the sliced of the Fairbanks with the number of request increases, because now the data is more partitioned.
+
+[986.0s - 1015.0s]
+So here is the results of the triple pattern wise sources selected. In this case the in app set is the best engine that selects the minimum number of sources. So if you select minimum number of sources, that means you generate less network traffic in the intermediate results can be smaller as compared if you overestimated the sources.
+
+[1015.0s - 1044.0s]
+So here is the source election time, so we can see it. FedEx also make use of the cold and warm caching. So in the Cowlitz increase. But in the warm when the sparkle ask our cash then you know the the number goes significantly bro.
+
+[1044.0s - 1073.0s]
+And about resultset completeness, there are systems that says like we ensure the result set completeness, but in reality is not. For example in splendid like there are queries, for example LD one, the actual results is 2309 but we get 308 and then the LD 3 so far in LHD also 77 instead of 91. So here in our evaluation only FedEx gives complete results. But yeah, that's that's about the Fed bench evaluation. In the.
+
+[1073.0s - 1102.0s]
+Query runtime I'm presenting the here the the generalized results are generalized against the Fed bench and sliced bench. So which Federation engine is better?
+
+[1102.0s - 1131.0s]
+So in 3rd bench the FedEx Warm is better in 25 out of 25 queries compared to FedEx Call and then the FedEx cold is better than LHD and then the LHD is better than splendid in an upset in distributed Air Cube.
+
+[1131.0s - 1160.0s]
+In Unsliced, bench, here are the results. So FedEx is the best system in terms of under query performance.
+
+[1160.0s - 1189.0s]
+And as I said that we want to measure the parallel query processing capability or the effect of data partitioning.
+
+[1189.0s - 1218.0s]
+So as I said, like if your data is distributed so you generate more network traffic and you you need to do more, you know query processing. So here we can see that when we slice the third bench then the most of the Federation engine, the performance is decreased as expected. But here for the distributed Air Q it is increased. So when we investigated the reason, the reason is that the distributed IRQ make use of the nested loop joint so it bombarded a single. Sparkle endpoints with two many number of requests, but now since the data is distributed so the number of request was also distributed among the sparkle endpoints, so that's why the performance was increased.
+
+[1218.0s - 1247.0s]
+Yeah, that's all from my side. More details can be found in the paper. Thank you so much for your anticipation and now I'm open to take some questions. Alright, thank you very much.

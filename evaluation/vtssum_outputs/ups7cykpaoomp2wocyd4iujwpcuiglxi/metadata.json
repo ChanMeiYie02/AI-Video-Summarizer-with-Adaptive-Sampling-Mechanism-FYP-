@@ -1,0 +1,21 @@
+{
+    "id": "ups7cykpaoomp2wocyd4iujwpcuiglxi",
+    "title": "Desperately Searching for Travel Offers? Formulate Better Queries with Some Help from Linked Data",
+    "url": "http://videolectures.net/eswc2015_lu_linked_data/",
+    "info": {
+        "author": [
+            "Chun Lu, Sépage"
+        ],
+        "published": "July 15, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 284,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 3411
+}

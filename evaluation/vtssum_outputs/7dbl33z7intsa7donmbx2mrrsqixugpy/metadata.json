@@ -1,0 +1,22 @@
+{
+    "id": "7dbl33z7intsa7donmbx2mrrsqixugpy",
+    "title": "We don’t know what the Questions are, but we know we’re gonna find the Answers",
+    "url": "http://videolectures.net/lawandethics2017_czadilek_hoetzendorfer_questions/",
+    "info": {
+        "author": [
+            "Walter Hötzendorfer, Research Institute AG & Co KG",
+            "Alexander Czadilek, epicenter.works"
+        ],
+        "published": "July 24, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Data Science",
+            "Top->Social Sciences->Law"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 254,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 5490
+}

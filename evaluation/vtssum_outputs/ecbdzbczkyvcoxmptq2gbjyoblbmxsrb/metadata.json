@@ -1,0 +1,22 @@
+{
+    "id": "ecbdzbczkyvcoxmptq2gbjyoblbmxsrb",
+    "title": "F.A.I.R. Data Management",
+    "url": "http://videolectures.net/clarinworkshop2017_ocarragain_data_management/",
+    "info": {
+        "author": [
+            "Eoghan Ó Carragáin, University College Cork"
+        ],
+        "published": "June 26, 2018",
+        "recorded": "November 2017",
+        "category": [
+            "Top->Humanities->Languages",
+            "Top->Computers->Digital Media",
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 249,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 4681
+}

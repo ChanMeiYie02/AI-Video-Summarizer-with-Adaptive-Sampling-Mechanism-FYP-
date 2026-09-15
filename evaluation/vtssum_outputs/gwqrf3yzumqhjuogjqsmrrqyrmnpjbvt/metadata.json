@@ -1,0 +1,21 @@
+{
+    "id": "gwqrf3yzumqhjuogjqsmrrqyrmnpjbvt",
+    "title": "Gentle Introduction to Signal Processing and Classification for Single-Trial ERP Analysis",
+    "url": "http://videolectures.net/bbci2014_blankertz_signal_processing/",
+    "info": {
+        "author": [
+            "Benjamin Blankertz, Machine Learning and Intelligent Data Analysis Group, TU Berlin"
+        ],
+        "published": "April 3, 2014",
+        "recorded": "February 2014",
+        "category": [
+            "Top->Technology->Neurotechnology",
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 84,
+    "num_sentences": 1014,
+    "num_clips_with_summary": 40,
+    "num_gt_summary_sentences": 90,
+    "ground_truth_summary_length_chars": 7495
+}

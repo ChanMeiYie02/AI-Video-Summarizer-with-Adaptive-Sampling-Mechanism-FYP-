@@ -1,0 +1,111 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+Good morning, thanks a lot. So I she just said I'm very sorry I'm a member of the data Mining Research Lab at the High State University. This is joint work with my advisor Srinivasan party Saturday. [29.0s - 58.0s]
+So just a quick outline of the talk I'll be introducing our problem statement and then I'll be discussing in somewhat more detail, particularly relevant piece of previous work, Markov clustering that will allow me to naturally segue into our own contributions, which are regularised MCL and multi level regularised and so then I'll talk about some experiments and some conclusions. [58.0s - 87.0s]
+So the problem statement is graph clustering. It's a longstanding classical problem we're given. On directed possibly weighted graph and we want to partition the vertices of the graph into into disjoint sets so that each partition is a coherent group. So this has a number of applications. I just list a few of these discovery of protein complexes from protein interaction networks and then discovering communities in social networks and segmenting images. So given the importance of the problem, it's not surprising that the number of solutions have been proposed. Two of the sort of classical methods are spectral methods and edge based agglomerative slash tools of methods. These give good results, especially spectral methods, which is very widely used, but the sort of the one limitation is that it tends to be not very scalable. The first 2 methods, so Dylan at all in 2007, proposed an equivalent, an algorithm that. It was shown to optimize an equivalent objective to spectral methods that work by weighted kernel K means that will be one of the algorithms that will be comparing against later and and the key feature of this algorithm is that it's much faster than the usual spectral methods. And then there's also metrics algorithm which is which is proposed around 12 years ago by Cara Pesan Weapon Kumar. And that's also one of the fastest algorithms for graph clustering around. And then there is Markov clustering which is proposed by Steinwand. And in 2000, and I'll be discussing that in more detail, so. [87.0s - 116.0s]
+This was the original algorithm for clustering graphs using stochastic flows. I'll be explaining in just a little bit how exactly the algorithm works, but the reason we chose this algorithm is that it's in fact very widely used in bioinformatics because it's been found to be very noise tolerant and very effective at at retreiving the right clusters and and so it has a very simple and elegant formulation, but on the other hand it's very slow. For example, it took around 1.2 hours to cluster 76,000 known social network and it's also prone to output too many clusters. So on a 4741 node, protein protein interaction network output around 1416 clusters, it's roughly around three nodes per cluster. So the goal of our work is to try to redress the disadvantages of Markov clustering while retaining its advantages. [116.0s - 145.0s]
+So just a brief bit of terminology we will call the transition probability from a node to another node in the graph, as the flow from that node to the other node, and we can. We can put all the flows from between all pairs of nodes in a matrix and we can do this just the usual Markov transition matrix. We call this flow matrix for conciseness and for intuition. We have a simple example graph of a simple line graph of three nodes. You can see that once you construct the transition probabilities, the nodes at the end flow with probability one to the node in the middle and the and the node in the middle flows with probability have to either of the nodes at the end and you can put that in a flow matrix and we put the flows out of out of each node in the in the column corresponding to that node. So the sum of each column is 1. The other thing to note about this matrix is not it need not be symmetric, even though the original matrix. [145.0s - 174.0s]
+
+**AI Summary:**
+The speaker introduces themselves as a member of the Data Mining Research Lab at High State University, working with advisor Srinivasan.
+
+The presentation outlines the problem of graph clustering, a classical task involving partitioning vertices of a directed, possibly weighted graph into coherent sets. Applications include discovering protein complexes, social network communities, and image segmentation.
+
+Existing methods include spectral methods and faster alternatives like the Dylan algorithm and the Metrics algorithm. Markov clustering, a widely used method in bioinformatics, is highlighted for its noise tolerance but criticized for being slow and prone to generating excessive clusters.
+
+The proposed work aims to address the disadvantages of Markov clustering while retaining its benefits. The concept of Markov clustering involves defining transition probabilities and constructing a flow matrix where the sum of each column is one. The flow matrix does not need to be symmetric. The core contribution involves regularized MCL and multi-level regularized methods.
+
+============================================================
+
+### Semantic Chapter 1 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+Is symmetric. So the MCL algorithm? How does it work? It basically manipulates the flow matrix such that after a series of manipulations, the flow matrix represents the cluster structure of the of the underlying graph. So how does it do this? You initialize the flow matrix to what we call the Canonical transition matrix or the Canonical flow matrix, MG, which is simply the normalized column normalized adjacency matrix. We add the identity matrix to avoid certain pathological conditions, and then there are these two operations. The expand and inflate operation which which are which are applied in automation until convergence. What they expand operation does is it simply computes the final distribution of a random walk of length 2 from each node, so that is in matrix notation. Simply M = M * M. So what this does is it enhances the flow too well connected nodes in the graph. As well as gives flow to new notes, excuse me. And the next operation is the inflate operation, which increases the, which essentially, in case you didn't understand the math lab notation, it takes each entry in the matrix and raises it to the power R, which we call the inflation parameter. And what this? And then we re normalize each column to have someone. So what this essentially does is it increases the inequality in each column. So what we refer to as the rich getting richer and the poor getting poorer. Then we have this simple prune operation which would save memory by removing those entries close to 0 and we do this until convergence, so this very intuitive sort of algorithm turns out to have one disadvantage to disadvantage is the first of which will be discussing how to reduce first, so MCL outputs too many clusters. And why does this happen?
+
+**AI Summary:**
+The Markov Chain Monte Carlo (MCL) algorithm manipulates a flow matrix to represent the cluster structure of a graph.
+
+The process involves several steps:
+1. **Initialization:** The flow matrix is initialized as the Canonical flow matrix (normalized adjacency matrix), and the identity matrix is added to prevent pathological conditions.
+2. **Expand Operation:** This operation computes the distribution of a random walk of length two ($M = M \times M$), which enhances flow between well-connected nodes and distributes flow to new nodes.
+3. **Inflate Operation:** This operation raises each entry in the matrix to the power $R$ (the inflation parameter) and then re-normalizes each column. This increases inequality, simulating the "rich getting richer" effect.
+4. **Prune Operation:** This operation removes entries close to zero to save memory.
+
+These operations are repeated until convergence. A key disadvantage of the MCL algorithm is that it often outputs too many clusters.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We believe that it happens. [174.0s - 203.0s]
+Do over fitting, in particular because it does not explicitly penalize divergance of flows between neighbors. In other words, that the probability distributions that correspond to two neighbors in the original graph diverge a little too much, so our remedy is to explicitly penalized this divergent and flows between neighbors. So how do we? How do we express the penalty at each node? We say that the penalty at each node is simply the sum of the weighted KL divergences. From between that node and all of its neighbors. And if you remember, the MG Ji represents the flow in the original. The flow in the original graph from the node I to its neighbor J. So this has, uh, this we think is a pretty intuitive expression of the roughness at a particular node. So Fortunately for us, it turns out that this penalty has a simple closed form solution. It's simply the linear combination of the columns of of the probability distributions of each of your neighbors, the. The weights again turn out to be the flows to that particular to the particular neighbor from the original graph, so this particular update defines the regularize operator, and it can again be conveniently for us expressed in matrix notation as M times MG, where MG is again the Canonical flow matrix. [203.0s - 232.0s]
+So the regular is MCL algorithm is very simple. It's we simply replace the expand step from the MCL algorithm and replace it with the regularize step. So the regular step takes into account the flows of the neighbors as well when updating the flows of the node itself. So, but it turns out that this actually improves the cluster quality of the algorithm quite significantly, as we'll see later and then. But we still want to reduce the second disadvantage, which is that it might be slow, which is that the algorithm is slow, so we embed regularised. [232.0s - 261.0s]
+MCL in this multi level framework. So the basic idea behind the multi level framework is as follows. You're given this input graph which might be quite big and then you you perform this coarsening step to produce a smaller graph which is in which nevertheless represents the structure of the original graph. Somehow you continue doing this until you. Come up with a graph that is sufficiently small. Say a few 100 nodes or 1000 nodes depending on how how coarse grained or fine grained you want your final clustering to be. So once you have this course is graph you you run your MCL, you run your algorithm on the coarsest graph and then you use the state of the algorithm on the coarsest graph to initialize the state of the algorithm on the next bigger graph. You continue doing this until you arrive at the final graph and then you run our MCL to convergence and output the clusters. So one of the critical challenges here is how do you project the flow that preserves the sanctity of the algorithm. Unfortunately, the details are a little complicated, so I encourage you to read the paper if you're interested. And the advantages that we derive from using this framework that the course is running on the courses craft first helps us capture the global topology of the graph and the second benefit is that it's faster to run on the courses on the smaller on the smaller steps first. So let me.
+
+**AI Summary:**
+The system addresses the problem of overfitting in clustering algorithms by introducing a regularization penalty. This penalty is defined as the sum of weighted KL divergences between a node and all of its neighbors, where the weights are derived from the original graph's flow. This penalty has a simple closed-form solution, expressible in matrix notation as $M \times M_G$.
+
+To implement this, the Markov Chain Learning (MCL) algorithm is modified by replacing the standard expansion step with the regularize step, which incorporates neighbor flows during the node update. This regularization significantly improves cluster quality.
+
+The approach is further integrated into a multi-level framework: the algorithm coarsens the input graph into smaller, progressively coarser graphs. MCL is run on the coarsest graph, and its state is used to initialize the subsequent larger graphs until a desired scale is reached. This multi-level approach captures the global graph topology and enables faster computation on smaller steps.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[261.0s - 290.0s]
+Go to the evaluation first. We compare with MCL and we here we show the results on for real world datasets. We've got some other results in the paper as well. The evaluation metric we use in the is the normalized cut metric, which is pretty, which is pretty standard quality metric for graph clustering. An lower the lower the metric, the better so you can, so the so the blue bars are represent MLR MCL, whereas the modern bars represent MCL. So you can see that in all four datasets there is quite a significant improvement in and cut scores, ANAN with respect to speed, MLR MCL is on average 96 times faster, and on the 76,000 Epinions graph, MLM sales runtime is 26 seconds compared to MCS 1.2 hours. [290.0s - 319.0s]
+We also compared with crack Listen Matters, Witcher 2, State of the art graph clustering algorithms. So this is the on the left.
+
+**AI Summary:**
+The segment details the evaluation of clustering algorithms, comparing MLR MCL against MCL using the normalized cut metric. The results demonstrate that MLR MCL provides a significant improvement in cut scores across all four datasets. In terms of speed, MLR MCL is 96 times faster. Specifically, on the 76,000 Epinions graph, MLR MCL has a runtime of 26 seconds compared to 1.2 hours for the standard MCL method. The comparison also included other state-of-the-art algorithms such as Crack Listen Matters, Witcher 2, and State of the art graph clustering methods.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We have the clustering quality represented by the average and cut. We can see that the blue curve represents MLR MCL, whereas grad classes the red curve. We can see that UMSL dominates both crack listen matters quite significantly, and when it comes to speed, which is represented in the graph on the right, you can see that. MLRMCL is is competitive with metals. It's almost along the same trend and it's it's quite faster than reckless. [319.0s - 348.0s]
+So I also have some evaluation on PPI networks, but I think I'll try to leave some time for questions, so I encourage you to read the paper if you're interested in that. [348.0s - 377.0s]
+So to conclude. Regularised MCL overcomes the fragmentation problem of MCL and multi level regularised MCL further improves the quality and the speed of MCL and so in the end we have achieved an algorithm that often outperforms the state of the art algorithms, both quality and speed wise on a wide variety of real datasets. Future directions and number of people were mentioning to me yesterday.
+
+**AI Summary:**
+The discussion compares various clustering methods and algorithms, focusing on quality and speed.
+
+Key points include:
+*   **Algorithm Comparison:** The video compares MLR MCL and Grad classes based on clustering quality. UMSL is noted as dominating in crack listen matters.
+*   **Performance:** MLRMCL is shown to be competitive with MLR MCL and is faster than reckless.
+*   **Conclusion:** Regularized MCL overcomes the fragmentation problem, and multi-level regularized MCL further improves both the quality and speed of MCL.
+*   **Overall Achievement:** The presented algorithm is shown to outperform state-of-the-art algorithms in both quality and speed across various real datasets.
+
+The speaker concludes by encouraging viewers to read the paper for further evaluation on PPI networks.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So with this work doesn't is still not. Perfectly applicable to directed graphs because the semantics of the directed graphs are slightly different, we'd like to extend this work to director and bipartite graphs, and we'd also like to look at novel coarsening strategies. We currently use the standard coarsening strategy that is used in both crank listen mentors. So I would like to acknowledge NSF for funding our work. [377.0s - 406.0s]
+These are differences I can take any questions. The next speaker right there is why questions. Did you compare this newer result? Resume data faster result. Some worker that works at the host community structures and well before and compare the effectiveness of both the algorithms on which well known networks did you mean? Right, right? True, so with respect to domain specific evaluation that we had, we did some domain specific evaluation on the biological networks, but we were primarily constantly trying to look at graphs that were of some reasonable size, so we did not. Actually, I think there's a characteristic clubs around 100 people or so, but yeah, that's a good idea. I think that's one thing I'll go ahead and review and actually do that.
+
+**AI Summary:**
+The speaker discusses future work, noting that the current methods are applicable to directed graphs but plans to extend the work to directed and bipartite graphs, including exploring novel coarsening strategies. They acknowledge NSF funding for the research.
+
+During the Q&A session, the speaker addresses questions regarding the comparison of their results with newer methods. They confirm that while they performed domain-specific evaluations on biological networks, they focused on graphs of a reasonable size (around 100 people). They acknowledge the suggestion to review and perform further domain-specific evaluation.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Thank you.
+
+**AI Summary:**
+The speaker expresses gratitude.
+
+============================================================
+

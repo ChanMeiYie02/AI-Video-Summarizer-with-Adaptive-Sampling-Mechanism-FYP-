@@ -1,0 +1,21 @@
+{
+    "id": "z73gehygfwjcagc4xuf3rerjkvq5cjeo",
+    "title": "Scientific Visualization (Part 2)",
+    "url": "http://videolectures.net/ihpcss2016_byrd_scientific_visualization_part2/",
+    "info": {
+        "author": [
+            "Vetria Byrd, Purdue University"
+        ],
+        "published": "Sept. 19, 2016",
+        "recorded": "June 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computers->Programming"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 492,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 1875
+}

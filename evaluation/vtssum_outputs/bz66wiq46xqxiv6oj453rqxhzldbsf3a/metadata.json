@@ -1,0 +1,21 @@
+{
+    "id": "bz66wiq46xqxiv6oj453rqxhzldbsf3a",
+    "title": "Mining network data",
+    "url": "http://videolectures.net/miningdata2016_ceci_network_data/",
+    "info": {
+        "author": [
+            "Michelangelo Ceci, University of Bari"
+        ],
+        "published": "Jan. 31, 2017",
+        "recorded": "September 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Data Science"
+        ]
+    },
+    "num_segments": 72,
+    "num_sentences": 375,
+    "num_clips_with_summary": 30,
+    "num_gt_summary_sentences": 44,
+    "ground_truth_summary_length_chars": 4785
+}

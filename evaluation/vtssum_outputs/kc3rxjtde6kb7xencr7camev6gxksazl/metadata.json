@@ -1,0 +1,21 @@
+{
+    "id": "kc3rxjtde6kb7xencr7camev6gxksazl",
+    "title": "LaRank, SGD-QN - Fast Optimizers for Linear SVM",
+    "url": "http://videolectures.net/icml08_bordes_lrsq/",
+    "info": {
+        "author": [
+            "Antoine Bordes, Facebook"
+        ],
+        "published": "Sept. 1, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines",
+            "Top->Computer Science->Optimization Methods"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 333,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 3531
+}

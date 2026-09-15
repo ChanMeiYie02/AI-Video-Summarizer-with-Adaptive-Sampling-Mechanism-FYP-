@@ -1,0 +1,21 @@
+{
+    "id": "7gpqdn2xtpcdpcyonzr26nc3kvnl5mia",
+    "title": "High Performance Computing of gas turbine flows: current and future trends",
+    "url": "http://videolectures.net/prace2013_gourdain_hpc_gas_turbine_flows/",
+    "info": {
+        "author": [
+            "Nicolas Gourdain, CERFACS"
+        ],
+        "published": "Jan. 6, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computers->Software"
+        ]
+    },
+    "num_segments": 68,
+    "num_sentences": 644,
+    "num_clips_with_summary": 34,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 4870
+}

@@ -1,0 +1,21 @@
+{
+    "id": "5d6zossafzifkezsr6z2zg4wgg2wreq3",
+    "title": "Large Scale High-Precision Topic Modeling on Twitter",
+    "url": "http://videolectures.net/kdd2014_yang_twitter/",
+    "info": {
+        "author": [
+            "Shuang-Hong Yang, Twitter, Inc."
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 157,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1424
+}

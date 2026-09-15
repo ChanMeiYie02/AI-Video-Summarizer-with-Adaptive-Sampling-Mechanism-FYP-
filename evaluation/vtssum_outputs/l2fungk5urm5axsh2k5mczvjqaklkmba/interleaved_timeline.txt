@@ -1,0 +1,125 @@
+[0.0s - 29.0s]
+This is joint work with Microsoft Research and I'm from the University of.
+
+[29.0s - 58.0s]
+So the problem we're trying to solve is, given an image or a video, we want to estimate the depth per pixel, so the distance from the camera and we want to do this without imposing any restrictions on the type of input. What I mean by that is we don't want to impose that the camera has any parallax.
+
+[58.0s - 87.0s]
+So we can handle things like static stationary cameras and static images.
+
+[87.0s - 116.0s]
+And we also want to allow for camera motion in the form of translation, rotation, or even a change in focal length. And we also want to.
+
+[116.0s - 145.0s]
+Be able to handle things like moving or motion in the scene, an overall dynamic scenes. In fact, any combination of dynamic scene, static scene or dynamic camera static camera.
+
+[145.0s - 174.0s]
+And so in the past, we've seen kind of two separate classes of depth estimation. One takes more of a geometric approach like structure from motion, but it requires parallax and also a static scene, and the other class is kind of more of a learning approach, which works for single images, but it's not quite clear how to extend these to video.
+
+[174.0s - 203.0s]
+So again, what we're proposing is a technique that doesn't require any parallax or static scene, and there's a very easy extension to video. And our method tends towards past parametric approaches, but it uses a data driven non parametric model instead. It's also fundamentally different than these past learning approaches.
+
+[203.0s - 232.0s]
+The scale at which we're doing the training, ad and so for example, in some of the first work on single image depth estimation, sex scene at all trained A1 depth model over their entire training set. And then we saw a few years back that you could improve your results by actually training a different model of depth for each semantic class in your data set. So something like a different model for Tree, Sky and so on. And now what we're proposing is that if you actually take one step back and train a different model only on scenes that are similar, so it seems with similar semantics, you can actually improve your results even further.
+
+[232.0s - 261.0s]
+Insert techniques. Data driven. We require an RGB data set and we actually use 21 for outdoors and one for indoors. The outdoor one comes from a 3D data set and the indoors we actually collected ourselves, which we've titled the MSR V 3D data set which contains indoor videos containing depth and this was captured with the Connect.
+
+[261.0s - 290.0s]
+And our algorithm hinges on densin alignment, and for this we use sift flow and so let me quickly go over the SIFT flow algorithm. It's essentially optical flow using dense sift features with the difference from optical flow that it uses the largest search window and modified smoothness constraints. So the idea is that if we have two images here, image A&B. We want to rearrange the semantics of image A to match those in image B. So the first thing that happens is we compute dense sift on each image and then match sift features according to the Sift Flow algorithm.
+
+[290.0s - 319.0s]
+This results in a warping operator, which we can then apply to.
+
+[319.0s - 348.0s]
+Image A just semantically align it with image B and this is the result for these two images.
+
+[348.0s - 377.0s]
+And notice that the appearance doesn't match. Even so, in slightly and these two, but the semantics are actually matched pretty well. So if I flip back and forth, you can see that the ground has been matched to the ground Sky to Sky tree to tree, and so on.
+
+[377.0s - 406.0s]
+So I'm getting into algorithm. I'll start with the single Image case 1st and then show you the extension of video in a few slides. So we start with an input image and also an RGB database. And the first thing we do is compute just features over the for each RGB image in our data set and also on the input image. And we do a simple nearest.
+
+[406.0s - 435.0s]
+Your query to find images that match well in terms of just features.
+
+[435.0s - 464.0s]
+This results in a set of candidates that we can then warp using Sift flow to hopefully semantically align these images with our input and so sift flow results in an operator that we can then use to warp the depth as well. So we're not just warping the RGB values.
+
+[464.0s - 493.0s]
+And that's actually it for the training phase of our algorithm. Or you can think of that as a training phase of our algorithm, because so once we have this. What's left is to use a few pieces of data to infer the depth for a given image, so the inference uses the input the word candidates and then also a prior term, which we compute as the average per pixel of our depth data set. And so this is 1 result.
+
+[493.0s - 522.0s]
+Tickle more a little bit, so the inference is actually phrased as a continuous optimization an the inferred depth can be thought of roughly as a linear combination of our candidate depth with the warp candidate depths, and so there's three terms up here in our objective function, the first term is meant to enforce the infer depth to match the candidate depths, and it's done at the absolute and relative scale. That's what the two terms correspond to in this part of the equation, and this is also weighted by a measure of confidence which comes from the SIFT reprojection error. Obtained during shift flow. And then we also regularize the solution with the smoothest term and a prior term, and so one thing you might notice is we're using an L1 distance metric, and this is for a few reasons which are detailed in the paper. But the main reason is that we want to enforce sparsity in the number of match candidates that we're actually using in the first term. And so one thing.
+
+[522.0s - 551.0s]
+Point out is that we're not solving a labeling problem here. This is actually due to the fact that we want this linear combination of candidates, and we also want to use this relative depth term that was in the the first initial term that enforces depth to match the candidates. And so to do that, we can actually treat this as a labeling problem.
+
+[551.0s - 580.0s]
+So now here a few of our single image results. On the left is the input image, the middle is the ground truth depth from the make 3D data set and on the right is our inferred depth.
+
+[580.0s - 609.0s]
+And here's the same result, but a different visualization with the fly through an one thing to notice is that even though there are repetitive structures and repetitive patches of appearance, like in the tree bark, we can still localize the depth with relative accuracy.
+
+[609.0s - 638.0s]
+And here's one more result. Again, the middle depth comes from the make 3D data set and then on the right is our result.
+
+[638.0s - 667.0s]
+And one thing you might notice is that we're losing thin structures like the lamppost, but this is due to smoothing, but overall the field of depth is about right.
+
+[667.0s - 696.0s]
+So let me go back to the objective function just for a second and on the last result. This is an example of what our inference does with and without transferring the relative depth, only transferring the absolute depth results in a scale ambiguity in a few places. That's in this example, it's noticeable near the top of the tree and around the middle of the tree.
+
+[696.0s - 725.0s]
+We've also done some quantitative evaluation.
+
+[725.0s - 754.0s]
+On the mic through the data set and we're scoring about as well and even a little bit better in some of the metrics then the state of the art approaches for single image depth estimation. And one thing I'll point out is that.
+
+[754.0s - 783.0s]
+Several these methods actually use RGB plus labeled data for training, and we only require so the labels are semantic labels and we only require RGB data, so this can be just captured with hardware rather than having a user segments.
+
+[783.0s - 812.0s]
+So now moving to the video extension, so the input here is a sequence of frames and one thing we could do is use our single image solution to compute depth at each of these frames and then concatenate this into one video. An Kolesar solution. But this isn't the best idea.
+
+[812.0s - 841.0s]
+Because we're not incorporating any of the rich temporal information that's available in videos, and so our idea is if we incorporate optical flow and motion segmentation, we should be able to get a much better result.
+
+[841.0s - 870.0s]
+And so the only thing that really changes about our algorithm is in the objective function. So the initial phase of finding candidates and warping them stays exactly the same on a per frame basis, and the only thing we have to do is add in two additional terms into our objective. So the first term stays exactly the same as the one I just showed a few slides ago, and now the next to come from a few observations. So one observation is that depth changes are typically gradual from frame to frame, and what we do is we compute first the optical flow. From frame.
+
+[870.0s - 899.0s]
+Frame and ensure that the depth along this optical flow direction is the change in depth is small.
+
+[899.0s - 928.0s]
+The other term comes from the fact that gravity forces moving objects to usually be on the ground. So if we can get an estimate of motion then we can enforce everything in motion to have a similar depth value as where it Contacts the ground and so. This term is just encoded in. By forcing the moving objects to be actually at this point in the ground.
+
+[928.0s - 957.0s]
+And here's a concrete example of with and without the temporal information. So the middle result is the one I described where we just compute are single image solution for each frame in the video and then on the right is once we incorporate these two additional terms and the things to note are the depth is much smoother temporally in the right example and also the moving object in person has been localized much better.
+
+[957.0s - 986.0s]
+I'm moving on to a few of our.
+
+[986.0s - 1015.0s]
+Video results. So again, we're able to do this from just a stationary camera and for dynamic scene objects and it works outdoors.
+
+[1015.0s - 1044.0s]
+As well as indoors, as in this example, and this example was trained using our indoor data set.
+
+[1044.0s - 1073.0s]
+And it also works in cases with dynamic scene and a dynamic camera.
+
+[1073.0s - 1102.0s]
+And using our indoor data set, we've also done some thorough evaluation which is available on our project web page and on the paper or in the paper, and so the results that I'm showing here are on the each triplet of images, the input, the groundtruth Connect depth, and then our estimate of depth. So I'll refer you to the project web page and the paper for more details on this. So our failures largely fall into two categories. The first is due to our data set not being representative enough of the input, and this is a limitation of pretty much any data driven approach and the 2nd.
+
+[1102.0s - 1131.0s]
+Case usually happens for or when we have incorrect motion estimation or if one of our motion assumptions doesn't hold. For example, the basketball here is floating, and we're assuming that it's actually contacting the ground.
+
+[1131.0s - 1160.0s]
+One application we've investigated is converting moscovic 2D videos into stereoscopic 3D. And we can do this by taking our video sequence. We can do automatically by taking our video sequence and converting it into depth using our algorithm and then automatically using depth image based rendering to render stereoviews. And then creating any 3D viewing format, for example anaglyph and these are a couple frames that we that we computed using our algorithm on the film charade. And we actually do.
+
+[1160.0s - 1189.0s]
+In a comparison to, YouTube has a 2D to 3D automatic conversion system as well, and we have a comparison on our web page and I guess it's hard to see the difference without 3D glasses. But one thing to notice is the difference in the amount of disparity between our result and the YouTube result. And if you're interested, you can take a closer look on our project website and also our coding data set are now available as well. Thanks for your time. Anybody have any questions? Were there humans in the training data? Yes so. At least in the. See. So for the outdoor, for the most part, no. I believe these were just static scenes though for the outdoor.
+
+[1189.0s - 1218.0s]
+Images and then for the indoor we had. It was videos of primarily static camera with a dynamic scene. So in the dynamic parts were usually people and or cars. And so these are examples of from the indoor data set. Can you give us any insight on the computational complexity? So how fast is sure sure so? Zyflo I guess on a 5 by 5 fold image on a reasonable computer takes maybe 30 seconds per image, easily parallelizable, but I guess for the generator result like the ones I'm showing here. Which is 3260 frames can take about a minute to frame so it is still pretty slow, but there is room for optimization. How to estimate the depth of moving objects? Sorry, moving objects. How do you submit the depth? Oh, how do you segment the? How do you actually obtain the motion estimation? Know how to use to make the depth so oh, so if an object is in motion then we get a binary motion mask for that object and then we assume that that moving object Contacts the floor and so the yes the then we have a term that enforces the depth of that mask to take the. The depth at where they contact the ground. OK, let's fix the speaker.

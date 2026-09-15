@@ -1,0 +1,21 @@
+{
+    "id": "q5k4xayuetirsxrxfi5l4mzb2c574n2x",
+    "title": "Recognizing Textual Entailment with LCC´s GROUNDHOG System",
+    "url": "http://videolectures.net/pcw06_hickl_rtelg/",
+    "info": {
+        "author": [
+            "Andrew Hickl, Language Computer Corporation"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "April 2006",
+        "category": [
+            "Top->Computer Science->Text Mining",
+            "Top->Computer Science->Natural Language Processing"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 356,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 43,
+    "ground_truth_summary_length_chars": 6043
+}

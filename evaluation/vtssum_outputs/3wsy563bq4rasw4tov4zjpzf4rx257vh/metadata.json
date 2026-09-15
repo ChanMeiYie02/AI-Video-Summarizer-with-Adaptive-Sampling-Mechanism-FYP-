@@ -1,0 +1,21 @@
+{
+    "id": "3wsy563bq4rasw4tov4zjpzf4rx257vh",
+    "title": "Linking Data, Services, and Human Know-How",
+    "url": "http://videolectures.net/eswc2016_pareti_linking_data/",
+    "info": {
+        "author": [
+            "Paolo Pareti, School of Informatics, University of Edinburgh"
+        ],
+        "published": "July 28, 2016",
+        "recorded": "June 2016",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 158,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 802
+}

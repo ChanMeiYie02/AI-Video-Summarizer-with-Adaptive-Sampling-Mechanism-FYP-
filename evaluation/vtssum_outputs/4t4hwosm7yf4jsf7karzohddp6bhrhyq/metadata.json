@@ -1,0 +1,20 @@
+{
+    "id": "4t4hwosm7yf4jsf7karzohddp6bhrhyq",
+    "title": "EI Science Base initiative: a state-of-play from the Commission",
+    "url": "http://videolectures.net/ice09_martinez_teisb/",
+    "info": {
+        "author": [
+            "Cristina Martinez, DG Information Society and Media, European Commission"
+        ],
+        "published": "Sept. 24, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Business->Enterprise Interoperability"
+        ]
+    },
+    "num_segments": 9,
+    "num_sentences": 117,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1840
+}

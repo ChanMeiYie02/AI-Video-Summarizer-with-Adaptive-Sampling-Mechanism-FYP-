@@ -1,0 +1,20 @@
+{
+    "id": "zci7lvlyi33maohjxv7jqqrnrs4uimbj",
+    "title": "Integrating two features or kernels within one SVM classifier",
+    "url": "http://videolectures.net/mlsvmlso05_meng_itfkw/",
+    "info": {
+        "author": [
+            "Hongying Meng, University of Southampton"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "March 2005",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 383,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 600
+}

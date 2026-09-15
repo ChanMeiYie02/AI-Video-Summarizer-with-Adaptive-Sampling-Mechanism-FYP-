@@ -1,0 +1,9 @@
+# Final Multimodal Video Summary
+
+The lecture introduces the topic of reasoning in knowledge graphs (KGs) using embeddings, focusing specifically on how to perform multi-hop reasoning. This involves using embeddings to enable systems to answer complex queries, including multi-hop queries, path queries, conjunctive queries, and Query2box within KGs.
+
+The discussion grounds this methodology in a biomedical knowledge graph encompassing entities such as drugs, diseases, adverse events, and proteins. The system demonstrates different query types, ranging from one-hop queries (finding a direct relationship) to path queries (traversing multiple relations to find associated entities), and complex logical queries (combining multiple relationships across different entities).
+
+A central challenge is handling incomplete KGs, as biomedical knowledge graphs are notoriously sparse, and enumerating all facts is computationally costly. While one-hop queries are addressed through knowledge graph completion, path queries require chaining multiple relations from an anchor node. The difficulty lies in predicting missing relationships to ensure the system can robustly identify target entities, especially when specific links are unknown.
+
+To address the limitations of standard traversal and completion, the proposed solution is to shift the task from explicit answering to predictive querying. This approach implicitly accounts for knowledge graph incompleteness by reframing the task as predicting which entities serve as the answer to a given query. This multi-step prediction method allows the system to generalize and handle complex path queries, effectively imputing missing information and making the system resilient to noise and missing data.

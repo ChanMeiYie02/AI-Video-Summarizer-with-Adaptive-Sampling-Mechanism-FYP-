@@ -1,0 +1,82 @@
+[
+    {
+        "text": "Check. OK our. There it is. Blush how are you guys from? So, and the joint paper with. Heat on. Basically, on the system which. Produce the features images which I showed before so this landscape on the star project, so this would be kind of short short introduction. This system actually works. It will be little bit more in detail here, so that's why I didn't touch it before in the tutorial. OK, so I'm black Fortuna and as Marco said, this is joint work with me. Mark on Lumia on visualization of document corpora. So.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "For some motivation, why would we like to? Visualize some document document collection and there are more reasons for that. So one of the most common is that we would like to see what are the topics covered in this document collection. Then we also like to see what are covered the documents from the collection related how are the topics from the collection related and also we would like to enable user to explore these things in a very simple and fast way. So to explore these so called document space.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So first about how do we represent documents? We use a bag of words representation. We heard about that in last talk already. If you just repeat in shortly, so each document is representing code that was a vector elements of vector. Each element of vector corresponds to one specific word, and it contains the frequency of this word. For example, if you take this. Take care that said, this is a document. We get this list of words, and for each word we know the frequency with which this word Co occurs occurs in the document. And some words can appear 0 times. Some appear more times and. So this is a. At the end we get very high dimensional vectors. So this is the original representation of the documents from the collection and. Of course, we also use the weighting Marco described before this TS IDF vectors. The prob.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "In this representation, is that each vector the dimensionality of the spaces? It corresponds to the number of different words that appear in the document collection, and usually this number of different parts is very high. It's totally normal to have 10,000 or 100,000 different words, and that means that we have the vectors representing documents are vectors living in this very high dimensional space in. If we want to visualize these documents to draw them on some on the computer screen, we must reduce this to just two dimensions, and that's a very big step. So.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "We do this in more stages, so first we start with this original document representation. That is quite a national vectors. And the first step is using so-called Latin semantic indexing technique, and we use this to get down to around 100 dimensions.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "What is Latin semantic indexing? So it's a technique which finds similar words and groups them together in so called latent variables and words are grouped corresponding to the Co occurrences in the documents. So if 2 words appear together more often very often. We say that these words are most likely have some similar meaning. If machine learning appears very often and said OK, machine learning is some specific concept we call them concepts and. After we do this step of finding this so called latent variables. We describe documents we change the way we encode documents into vectors before we encode them as by the words. But now we include them as these concepts and usually not this number of this discovered concepts. It's much lower than number of different words, so when we get from this way, we get from around 10,000 or more dimensions to few hundreds. So this is still. And the background of this method is singular value decomposition and it finds a low dimensional approximation of document vectors. And the basis vectors of this lodac dimensional subspace are called matter.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Variables. So now we only go to around 100 dimensions and we still have to get down to two dimensions and for that we use multidimensional scaling.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "This is another technique for dimensionality reduction for the difference between PS1 and this one is that Latin semantic indexing is linear production technique and this is nonlinear, so it can be much more much more radical in reducing the dimensions by still preserving the similarities between documents. And the goal of this technique is to find the position points given on the dimensional Euclidean plane so that the Euclidean distance on the plane matches the original similarity between documents. So for example, if you use causes similarity, then we would like the cause in similarity of two documents is about the same as the greedy and distance on the map view. Some iterative gradient descent algorithm to. Calculate this new positions. An output of this algorithm is those two dimensional. Points so we can put draw them on a plane. If we go again.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "The first weekend bag of words, representation of documents or documents as words. Then use that in semantic indexing to describe documents just by topics. All these concepts that in variables and then we get down to do dimension using multidimensional scaling. We could also go directly from here to here but. We did some experiments and the quality of visualization is much lower. So. And once we get this 2 dimensional. Positions of each document we can draw it on computer screen. So.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "These yellow crosses 1 yellow cross represents one document and once we have the position of the documents it can also generate the background landscape. This is this is the landscape marker showed before and it's based on the density, so the. In this case, the lighter the background color is, the more dense that area is. For example, this is darker. There's no documented column here, it's a big group of documents, so it's very light color.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Then we connect also keywords to the map. So this white words are keywords. And for example, this work for each work. For each point we take some. Sample of documents surrounding this point. For example, for this point we take these documents around here, and we take the. The sum there. TF IDF vector and we calculate the average document for that area. And we check which is the most important word in that average document. And we this position of these points is randomly randomly selected.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Then you can also, if we enable user to position on some specific part of the gap, for example here this dark cross. And we show here so user selects that part of the map and we look to show here the list of the keywords for the documents which are inside that dark circle. So now I showed the live demo of this office software on 2 document collections. Both are made from. Are related to Pascal. First, document Collection is a collection of abstract of scientific papers which are available through Pascal. Eprints server on the Internet. And the second data set is. In the second data set, each document is 1 Pascal. Researcher and. Each researcher is the content of this document is. Sum of all the abstracts of the papers he's coauthored.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So good. So this is an example of the papers. For example, each each point here. This represents one document and you can just checking the white words. We see what are the topic for each area. You can see this is some document. So this is the picture marker showing before only in. This is a bit, but it's not really into the. The. Visualization and here we see the text mining. Here we see multimedia up there. We see kernel methods so we can see the topic just by checking the word. For example, here we have image image object. Kernel images or. Something about images and we can click some point, for example this one. And we see this is. The. Future selection challenge. Probably this is about was. Some of the datasets or something was related to images. Reduces object categorization. So population of images and so on. If you check here. Network here is probably some. This is some the theoretical parts and these are kernel methods if you check. Make sure progression. So on. So, but just looking at this picture in few minutes, you can have a very good idea of what are the. Papers from Pascal researchers covering. The second visualization now. Each this. Yellow crosses a person. Put this so these are now the person names are visible. So these orange names are document names. In this case documents are persons and you can zoom in. For example in some area. And we can see here. What are the researchers and you can see this is? Checking into the coffee can see this is text mining area. And. We can, but try checking the people you can see which people are working in this field. We can like that no, we have not shown is user profiling. So. Lumia it's text mining. Tutorial so micropenis. Jones Colonel. So this is joint for Taylor next to Bernhard Shelkoff. I like small eyes here so. Thunder. Then you can click and you can see all the papers. Up stepped in the papers from keys from the key posted on the Pascal. So this is these are the demos.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Can also by extending the block. For now, this landscape was just the the color of the background. If we can use this instead of for the color of the brain background, diffuse it for as a High Peak and through this 3D pictures. So this is European projects and. I'd like this card is here. So and. Let's let's also thank you.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Question. OK, so this is much faster than this, for example. That is money, even if it's for these datasets, it's a matter of seconds, and this one is the method means. How can you explain the voice? The moment loans near management. You can check on that. He's very. So yeah, because. This weekend there. Yes, but what is your interpretation? Why is there no? Doesn't fit into any of these topics. The bank is on the power people. It could be that we his papers are not just from. Yeah, so there's this is not such a big gap. Or kernel method, so it's. So we can assume who I'm talking about. There's no other signs of getting this topic, but not many. It is not not many from these, from there, yeah. Identified. Other words, every dentify, maybe a 6000 feet are not discriminating useless words, so that then speed up in this way that we only focus on so there is.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "You can already throw out when we do preprocessing, so like this end or this so called stop words. Then you can also reduce by. Cutting prefixes suffixes are suffixes by popularity timing, so this is one way and another who is this? He basically identifies which words are similar, and it's another way of. This place is a space CK opening who was developing so-called basic elimination based initially. No eight hundreds and then then somebody increased to 1000 and there are there are such which say that anything he needs can be expressed with these 800 words. And then I look at this idea. We have 3 lines. Discard but at least this way you can. You know translating from English to basically anything different. So we usually deal with this problem with if first 2 hours of town. So instead of letting having this kind of basic English usually use this desires expert net, which basically where the meanings of perverts, our senses of the words are organized in this one big three. So roughly, we have 100 thousands of sensors, each senses a set of synonyms for each word, and we know that I don't know. The hierarchy of the senses of the top level ones are very high level. One in the bottom level are very concrete stuff, so one way would be to map the words into this census so the other way which actually is kind of side effectively interesting that this eigenvectors which are identified basically produce sort of set of synonyms for this particular domain, so maybe. This set of basic English words. Boolean wouldn't cover vocabulary. Speech appeared in this very technical texts, so this is the problem. So here we can. Automatic means to identify this sort of. Say people have met the grapple colocations between versions of this. Please, if we talk about this, I connected spaces with because of eigenvectors and but basically effects impact this set of synonyms which are automatically identified. So this is the way how we deal with this. Can you find an item coming bedding dimensions of this? These documents is mean you still asleep visualizations. Thank you, I didn't try it. Where we are aiming for two from it so we didn't really try anything else. They just need to know what was in Coleman's office. Is minimal inventing promotions. Leslie here the goal was mainly this vision. Another point of these, going from hundred to two, there are at least that's how much I understand that visible component method using chemical applications you apply to some system system that uses 20 descriptors and principal component with elevated only six ascension. So at least they will know that you mention running. Maybe you know something. So this lattice mannequin this thing is very similar to principal component analysis and. One thing we found here that so for using just principle component analysis, for example, it's a linear method. Then it's not. It doesn't capture enough information if you just put it on 2 dimensions, so. It would be because it would be something nonlinear to in order to. Capture as much information as possible because it mentions. But these are size. Is very very similar to this. Even in the pilot fire plan, it would be easily to change it. Yeah, so all these tools which you saw here before now basically these are all within this so called text Garden software package and basically the actual single tools are the particular. Is just set of a pipeline of individual tools like from here, so he could easily exchange. PCA. Just posted something. Did you try send my countries today? My kind of crazy 8 if I'm not incredibly say. Any other comments? OK then, thanks. So.",
+        "start": 435.0,
+        "end": 464.0
+    }
+]

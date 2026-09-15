@@ -1,0 +1,21 @@
+{
+    "id": "e4t72gvbvwnbgxajtvjvreabkk7s4fgb",
+    "title": "Denser than the Densest Subgraph: Extracting Optimal Quasi-Cliques with Quality Guarantees",
+    "url": "http://videolectures.net/kdd2013_tsourakakis_quasi_cliques/",
+    "info": {
+        "author": [
+            "Charalampos E. Tsourakakis, School of Computer Science, Carnegie Mellon University"
+        ],
+        "published": "Sept. 27, 2013",
+        "recorded": "August 2013",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 165,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 3801
+}

@@ -1,0 +1,20 @@
+{
+    "id": "zuwx2qnjk2rgkwbfnbxdjodgslw44jno",
+    "title": "Deep Recurrent Neural Network for Multi-target Filtering",
+    "url": "http://videolectures.net/multimediamodeling2019_emambakhsh_neural_network/",
+    "info": {
+        "author": [
+            "Mehryar Emambakhsh, Cortexica Vision Systems Ltd."
+        ],
+        "published": "Jan. 29, 2019",
+        "recorded": "January 2019",
+        "category": [
+            "Top->Computers->Multimedia"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 98,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 2269
+}

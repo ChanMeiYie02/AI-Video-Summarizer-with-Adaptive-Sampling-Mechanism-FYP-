@@ -1,0 +1,21 @@
+{
+    "id": "66a223pxlfnaozzfuweutjcj6l6dnynu",
+    "title": "OCW (OpenCourseWare) and MOOC (Open Course Where?)",
+    "url": "http://videolectures.net/ocwc2014_martinez_open_course/",
+    "info": {
+        "author": [
+            "Sergio Martínez, University of Cantabria"
+        ],
+        "published": "June 23, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society->Public Policy"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 156,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 1537
+}

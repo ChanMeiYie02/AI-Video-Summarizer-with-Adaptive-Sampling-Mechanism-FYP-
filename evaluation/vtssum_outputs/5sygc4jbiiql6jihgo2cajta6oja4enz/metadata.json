@@ -1,0 +1,21 @@
+{
+    "id": "5sygc4jbiiql6jihgo2cajta6oja4enz",
+    "title": "Learning multi-scale temporal dynamics with recurrent neural networks",
+    "url": "http://videolectures.net/netadis2015_taylor_neural_networks/",
+    "info": {
+        "author": [
+            "Graham Taylor, School of Engineering, University of Guelph"
+        ],
+        "published": "March 7, 2016",
+        "recorded": "December 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Physics->Statistical Physics"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 264,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 2308
+}

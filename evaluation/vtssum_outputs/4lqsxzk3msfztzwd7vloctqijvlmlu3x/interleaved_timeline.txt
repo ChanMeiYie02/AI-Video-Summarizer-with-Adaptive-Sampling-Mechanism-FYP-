@@ -1,0 +1,125 @@
+[0.0s - 29.0s]
+Mining influence in networks, especially in social networks, has attracted, has attracted. Tremendous tremendous
+
+[29.0s - 58.0s]
+Attention and some background first. I'm sorry. OK, topical level influence between academia and industry is useful in many cases. Here are three example students who whose career goal is to be a researcher in a company's research lab, often seek advisor with high influence industry and founding agencies may choose to grant certain award to researchers who work closely with industry companies. Also uncertain topics and the company may want to collaborate with academia researchers who may have tight industry.
+
+[58.0s - 87.0s]
+Action so. OK, to all knowledge his work is the first one on mining influence between academia and. In
+
+[87.0s - 116.0s]
+Tree. OK, in this problem the input is a cross network in the cross network nodes, nodes, researchers and edges are closer relationship between a pair of researchers and the weights of the edges as the number of publications caused by the pair of researchers and. Unlike social networks, there are no temporal action that means also. Each paper is published by a pair of authors. The paper was published at the same time, so the action was at the same time.
+
+[116.0s - 145.0s]
+OK, this is author of the presentation. We will first introduce topic specific influence model in cross. Network and send three models for influence between academia and industry are proposed. Then finally we will show the evaluation of three models and give conclusions.
+
+[145.0s - 174.0s]
+OK. The first method is a naive method and it's based on the number of courses publications influence from. Former user A to B is the ratio of the number of core publication of A&B over the number of Publication B. OK, this is measured to. To indicate the influence from A to B, however, the problem of this naive method is considered only A&B as independent to other authors, so it's usually not not true.
+
+[174.0s - 203.0s]
+OK, and a method named the TMP is proposed in KDD 2009. OK, so tongue is not me. I guess it's my boss. This method is based on topic topical affinity propagation. Topical graph is built on the top of crossing networks and likelihood likelihood function for the graph is maximized by the model and influence are computed via this model. The model influence among multiple researches. So advantage of the method is it models so influence among among researchers on specific.
+
+[203.0s - 232.0s]
+Next we go to the models. We first assume that we have already some information. We assume we have already obtains a topic specific influence between researchers in crossing crossing network. For example, using the TMP method and the influence directed. So usually the influence from A to B and the influence from B to a is not always the same.
+
+[232.0s - 261.0s]
+Now let's take a look at the simplest model. So basic idea is to simply sums influence on a specific topic T from an academia research tools. Also research company. Yeah, let's take a look of this formula. We wanted to calculate the influence from a research R to accompany. See we just sum up all the influence from. Researcher for Mr. Researcher to another research answer in the company. OK, this is a simple.
+
+[261.0s - 290.0s]
+Little. And the problem of the model is. Actually, not all the researchers are equal of equal importance to the company. For example, a manager should have higher weights than his or her group members, and. A senior researcher should have higher weights, and junior research doesn't.
+
+[290.0s - 319.0s]
+So we have another model weighted additive model. In this model, which we add a weight to. Each research and I'm not going to the details.
+
+[319.0s - 348.0s]
+And again, the problem of the weighted. Additive model is still might be researchers, often public published paper together. These researchers will have high influence to each other and they may have high internal influence leading to some bias in the model so.
+
+[348.0s - 377.0s]
+So. So what we want to solve the question is how to normalize the weights of the research which they cost a lot.
+
+[377.0s - 406.0s]
+And. Finally, we have served model, so basic idea here is we put the research that collaborate with each other a lot into a cluster and we will use them as a virtual researcher. Once we have a set of cluster, we can, we can consider it a virtual researcher or super researcher and we average we average the influence in the classroom and we conduct the weighted additive model in on the cluster level instead of researcher level. So we use, we just use a super. We just applies a weighted additive model to the Super researchers. OK, so. The benefit is a waste of more correlated correlated researchers or related who have called, elaborates, often can be adjusted appropriately.
+
+[406.0s - 435.0s]
+Yeah, now we discuss about how to cluster the researchers. We do not know a reasonable number of clusters for clustering algorithms. For example, such as K means M or spectral clustering. Also, the model modularity based clustering do not require a number. Also, modularity based clustering do not require a number of clusters, but ignores the distance between the nodes.
+
+[435.0s - 464.0s]
+So we propose a clustering algorithm which is based on the distance between nodes and also does not require prior knowledge on the number of clusters.
+
+[464.0s - 493.0s]
+For clustering we need a similarity of nodes. So we define the similarity of two researchers as the Jaccard. Such cards, coefficients on the number of publications, and. The reason we use coefficients is that we want the similarity to be symmetric.
+
+[493.0s - 522.0s]
+So we require some. OK now we discuss the algorithm. We require the nodes in the same cluster are fully connected. The same forms click. And in this model, given a threshold TH connects two nodes only when the similarity of the two nodes is no less than T. So we can generate a set a set of clusters by searching the clicks in the graph. So we just wanted to select. Go to T.
+
+[522.0s - 551.0s]
+OK, so the problem left is with how can we select AT in system we propose an objective function 40 based on the following motivations. First we want to minimize the sum of distance an or maximize the sum of similarities and we also want to. We want. Yeah we wanted 2. Max minimize so. Similarity between clusters? OK then we have this formula.
+
+[551.0s - 580.0s]
+So to find this AT, we first compute the pairwise similarity for all the nodes in the cluster network, and we prove at least one of the pair wise similarity is able to minimize FT. So we tried all pairwise similarity and find the one maximized. So this is a numeration algorithm and. So time complexity, if we assume every research has only a constant number of collaborator edge, this step will take time O N * X, where is the total number of users and ash is a. The average degree so usually actually is much less than so. ON times Edge is approximately oh.
+
+[580.0s - 609.0s]
+Next I will briefly show the procedure of the clustering based additive model. Once we have the clusters. Again, I'm not going to the details of the formula. I just give that shows a brief idea. We first compute as a weight of the research in the cluster according to the normal weight additive model. Yeah, this formula and we send computers are influence from a researcher to a cluster L based on the web. Of the researchers in the cluster.
+
+[609.0s - 638.0s]
+We also computed the influence between pair of clusters based on the weights of researchers in two clusters. We then consider each cluster as a virtual researcher. Then we compute the weights of a cluster as a total influence from the cluster divided by the total influence of the. Class.
+
+[638.0s - 667.0s]
+So. And then finally we compute the influence of academia researcher to accompany C according to the normal weighted additive model by considering each cluster as virtual researcher. So this. This formula is quite similar to the weighted model, and it's just. Just take the clusters as a researcher.
+
+[667.0s - 696.0s]
+As we will show later in the experiments, when there are best towards the research, who often published together the simple additive model and the weighted additive model are not able to address the bias and the clustering based additive model is able to better address the. Best so this will be seen from the experimental result.
+
+[696.0s - 725.0s]
+It's. Now we show the results.
+
+[725.0s - 754.0s]
+OK, so the data used is. Is the same data set used in the work of KDD 2009 and it contains 8 different topics? Research affiliated with either a company or a University. One research only has one application, so table shows the number of researchers and the number of companies and the number of universities on each topic of the data set.
+
+[754.0s - 783.0s]
+One thing to keep in mind is that the data set does not have some missing affiliations for some researchers, so these researchers are removed so. For the experiment for the experiment, we first compute the influence on the 8 topics among the researchers while TH.
+
+[783.0s - 812.0s]
+She measured. Now we show some sample. First following table shows the top five most influential researcher to Microsoft and IBM from the three models on topic data mining. Different models research differently. The ranks of all models are the same for IBM becauses the data doesn't contain many IBM researchers. Or some researchers who missed who has missing data removed.
+
+[812.0s - 841.0s]
+Again, we want to point out the ranks may be may not be accurate due to some missing application information. So if we don't see your name there don't be pissed off.
+
+[841.0s - 870.0s]
+The table shows that the top five most influential researchers to Microsoft and IBM from the three models on the topic of machine learning.
+
+[870.0s - 899.0s]
+OK, all clustering algorithm found the cluster of researchers who collaborated quite often. We show 4 pairs of researchers who caused many papers in the table. As you can see, one of them published a lot papers than the other. So we guess who won who published more is relatively is a senior at this answer is relatively junior, so from there coauthored papers we. Can tell so junior research, mainly published with senior researchers. So we we end we also related to the titles of the senior research and it's true that all of them are managers and principals. Researchers.
+
+[899.0s - 928.0s]
+Now we are going to show some results on simulated data due to select of ground truth and missing affiliation. So we cannot effectively validate our model on real.
+
+[928.0s - 957.0s]
+Date. In the simulated data we generate a company with 200. Researchers and we randomly select 20 of them as manager and we also we also assign the remaining researchers to one of the. To one of the twenty groups randomly and we generate. 400 researchers in academia and the ground truth of the type of the most influential academia researchers are to the company. Defined by two types, one type is. So research academia research who influence. Many researchers. Of the company, for example, he will cost a lot of papers with different researchers in the company, and another type is academia research who influence important researchers. For example, sugar usually causes AC. Oh so. He might be more influential.
+
+[957.0s - 986.0s]
+We select 10. Yes, we did find the two types. We select 10 for each type and we also select. We also selected 220 influence, same group researchers who influence researchers in the same group of the company and then we rank the academia researchers according to their influence using different models and we expect the top 20 most influential researchers should be. 10 influence many researchers, and the 10 influence important research.
+
+[986.0s - 1015.0s]
+This. Then we conduct we can have two sets of experiments. In the first one, the researchers in the same group have low influence to each other, so therefore there is no path towards the research who published often and in the second one the researchers in the same group. Have high influence to each other, therefore there is a bias to towards the research who published a lot.
+
+[1015.0s - 1044.0s]
+OK. We can observe in the experiments, so simple additive model tend to assign high ranks to the influence. Many researchers. This is because we just simply add the. Influence.
+
+[1044.0s - 1073.0s]
+OK, and weighted additive model tend to assign her high ranks to the influence input and researcher.
+
+[1073.0s - 1102.0s]
+And OK, so proposed clustering based additive model. It has no bias.
+
+[1102.0s - 1131.0s]
+And. It's a well assigned higher ranks to both influence important and and influence many researchers.
+
+[1131.0s - 1160.0s]
+OK.
+
+[1160.0s - 1189.0s]
+OK, now we conclude in this paper we address this problem of mining research topic specific influence between academia and industry. We propose three models, and. So influence from industry to academia can be also solved using the same model, but use the reverse direction agent OK.
+
+[1189.0s - 1218.0s]
+It's just all of the talk. Thank you. And try to answer or not as you prefer. It's just as you pointed out, this model is sort of symmetric when you can go one way or the other. But is that a good thing? I mean, companies and academia are they are different sorts of entities. For example, companies have also other sorts of output like patterns, filings, and all sorts of internal things which are never shown publicly. So. It's not clear to me if if modeling them in exactly the same way is the right thing to do. Yes, it's a good question. So in this paper I think it's a. Then just solve the. Influence from academic academia to industry and the reverse side. Will be similar, but it will contain some other uh constraints or other things. Let me for example, let's say that the way you calculate seniority among the researchers in a company. Currently, I think you do. It's only based on the published numbers numbers, but that's if there is some hidden activity going on inside the companies then that could skew up the evaluation of who is senior or not. I mean, there might be someone who is heading the research groups. He's mostly publishing intern or reportes within the company and then these sorts of things. Yes, there will be an important feature and should be combined into the model. OK thanks. If there are no more questions, let's thank all the speakers in this session.

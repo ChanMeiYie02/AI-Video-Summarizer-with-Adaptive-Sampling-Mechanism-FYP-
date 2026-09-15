@@ -1,0 +1,112 @@
+[
+    {
+        "text": "I'm going to talk about stochastic dual coordinate ascent and this is joint work with Tom. Zhang was sitting here.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So consider the standard problem of regularize. Last minimization would like to minimize the function P of W where PFW contains 2 parts. The first part is an average loss over an examples and the second part is L2 regularization with parameterless.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So this is something that we solve a lot. Support support vector machines. The loss function is the hinge loss here. Logistic regression. We have log one over log one plus exponent of a -- Y. I said absolutely progression square regression and we consider 2 cases. One case is Lipschitz functions Lipschitz loss functions in the other cases smoothly loss functions?",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So what is dual-core dissent is not? It is not something that we invented. It is a well known algorithm that being implemented in many software packages. So if the primal problem is this problem from before the dual problem is to maximize over a vector N dimensional vector Alpha, well where we have an average of conjugate dual functions. Minus Lambda over 2 and then an average of the examples XI according to the dual variable Alpha. And then I think about dual function is that we can optimize it variable by variable. OK, so we can fix all the elements of all the elements Alpha to their current values and then optimize with respect to a single coordinate of the dual. And this is dual coordinate ascent. OK, so at each iteration we fix all the variables and then optimize with respect to one variable, stochastic dual core dissent is exactly the same, just the variables that we choose to optimize is chosen at random, uniformly random.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "OK, so stochastic dual coordinate ascent is very similar to stochastic gradient descent in stochastic gradient descent. For regular as last minimization we have an update rule where we scale WT a little bit and then we subtract the gradient with some weight in stochastic dual coordinate ascent. We first calculate the optimal improvement of the single variable and then we update. This should be Delta here. And then. OK, there is a mix up here, but the bottom line is that WT plus one again is WT plus. An improvement is a function of Excel. And it has several nice advantages, such as stopping return and no need to tune any.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Learn great parameters, so here is a concrete example for the hinge loss. The only thing that I want you to take from this slide is that the complexity of each iteration of stochastic dual coordinate ascent and stochastic gradient descent is roughly the same. OK.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So how how they are compared these methods? So here's an experimental observation. What you see here is a accuracy or error of three methods depicted as a function of the number of epochs through the data. So I count here is the number of times you go over the entire examples. OK, so you see that stochastic dual coordinate descent exhibit a linear convergence. It's a logarithmic scale. OK. SGD is much smaller, is much slower. OK, the other variant is stochastic coordinate descent. With permutation. It's just instead of selecting each time a variable with repetitions, we select it without repetitions.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "OK, so this one is for smooth loss. For hinge loss we do not see linear convergence, but we see some, at least at some point we do see linear convergence. OK even for the hinges, which is not smooth. In any case it is much better than stochastic gradient descent.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So this is in practice, but in terms of theory, the current analysis is unsatisfactory. So the question we studied, how many iterations are required to have peace of WT smaller than the optimal value of the primal plus epsilon? So for SGD we know that one over Lambda epsilon iterations are enough. For stochastic dual coordinate descent, so Seattle in ICML 2008, following a paper by Lewin saying show linear convergence for stochastic dual core distant but they do not specify the parameter new. And actually when you look at the proof the parameter new can be arbitrarily small. OK, so this is not satisfactory. Another line is stochastic, do according sent it's actually a coordinated set algorithm and there are analysis by myself and damaged warrion by Nesterov for coordinate or coordinate descent in general and you can obtain a rate of convergence of North over epsilon for our problem. So we can apply this result for the dual problem. The problem is at first the resulting rated slower than stochastic gradient descent is an over epsilon while in stochastic garden dissent we have one over epsilon. SEC analysis does not hold for loss functions like logistic regression cause the dual of logistic regression is not smooth. But most importantly, the analysis is for the dual sub optimality and this is not enough and many papers do analyze the jewels of optimality and they would like to show you that this is.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "You know, OK, so I would like to show that dual suboptimality is not enough, so let's take a simple example. Take data which is linearly separable using a vector W 0. OK, now let's set Lambda to be 2 epsilon over W 0 squared, and I argue that this is the right choice of Lambda. OK. You can verify it and use a hinge loss. So now we would like to solve SVM with this Lambda. So the primal of star is smaller than the primer of W 0 by optimality of W star. An P of WO is exactly epsilon and this is how I set Lambda. OK, and we want it to be epsilon 'cause the data is linearly separable. OK. Now, what about the dual? So I would like to look at the dual at the solution 0 so all the alphas are zero. OK so dual of 0 = 0. And the sum of the maletis. Is dual of upward of Alpha stars optimal Alpha minus dual of 0? By strong duality, this equals to the primal W star minus zero, and the primer of W stories at most epsilon. So the dual suboptimality here of the all zero solution is epsilon. So excellent dual solution. What about the primal? So the corresponding primal vector is also the all zero vector. The primal of 0 is exactly 1, because it's a hinge loss. And P of W stories at most epsilon. So the primal Suboptimality is at least one minus epsilon. So we have a huge gap between dual suboptimality and primal suboptimality. So each analysis, every analysis that gives you just draw.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Optimality is not enough. OK, So what is our results? So we have results for smooth loss and for Lipschitz loss for smooth loss we obtain a convergence rate of the number of examples plus one over Lambda times, log one over epsilon. So indeed a linear convergence. And for lips loss we obtain a convergence rate of. Again, the number of example. Of examples plus one over Lambda epsilon, one over Lambda epsilon is the convergence rate of stochastic gradient descent, and you would like to think about it as the same order as one over Lambda epsilon. So this is in the interesting regime. This is exactly like stochastic gradient descent. But what we saw in the experiment that even in the Lipschitz case stochastic dual coordinate descent is better than stochastic gradient descent. So indeed we have a more refined analysis showing that for almost smooth loss, like the hinge loss which is smooth everywhere except a single point. You can have a better convergence rate N plus one over Lambda epsilon, and now epsilon is to the power of 1 / 1 plus new, where new is a data dependent quantity. So this is explains what we see in experiments. Something that behaves better than one over epsilon. Enter the first round. So in the first bound we have one over Lambda Gamma and here you have L over Lambda epsilon. The first one, do you have, but are stronger Mexican in the first round? So because it is regular eyes loss minimization you have strong convexity. So in fact, if you will perform. Vanilla gradient descent here. You will have also one over Lambda time log, one over epsilon iterations, but each iteration will cost you. Order of North. So for vanilla gradient descent, you will have N * 1 over Lambda times, one over epsilon, and the advantage of being stochastic is that you have N + 1 over Lambda times, log one over. OK.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "OK, so there is another interesting point. So this is our bound. It's the same graph as before, so we have primal suboptimality and the number of epochs over the data. This is our bound. This is actually performance, so the bound is looks quite good. I. Now this guy here. Is dual coordinate ascent where you perform cyclically. You choose in a round Robin the dual variable to update in the analysis of previous analysis for fluent sang for this problem, allow or holds also for round Robin choice of the dual variable. So this graph shows you that our analysis must be better than the previous analysis, 'cause it's empirical. Proof.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "OK, another point here is that I would like to mention is what loss function should be? Should we use so people like the hinge loss? It's indeed a nice loss function, but it is Lipschitz and not smooth. You can do tiny manipulation to the to the hinge loss and construct tell us which behaves exactly the same as the hinge loss, except here it has a. Smoothing of the non smooth area of the of the interest and I was curious about about. Is this really matter in terms of classification error? Because what we really care about is.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Notification error, so we perform so gamma is a parameter that measures this smoothing, and so we calculated the 01 error rate for three datasets as a function of this value of gamma. And what you see is first, it's hard to say, but all these numbers are very, very close and sometimes taking the smooth dangerous is even better than the hinge loss. Sometimes it goes up and down, up and down, so there is nothing really matter here. In terms of 01 performance. At least these experiments is not do not show any advantage to the hinge loss over this most dangerous. This is zero and training right? So just zero yes yes yes yes. Because this is easier to optimize over logistic because you have a closed form solution to the optimal dual. While in logistic you need to do some line search for the for the dual update, so it's really similar. Logistic will look a bit different, but this is really really similar to the heat loss it has.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So now it improves the training time, so you gain in training time and you lose nothing in 01 error. So it seems like at least something you should.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Right, thank you. This.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Goes back OK, so let me just point about few related some of their recent related work. So first for smooth loss the work of calling sinntal give similar bound 2 hours, but for more complicated algorithm it is an exponentiated gradient. Stochastic dual coding sent is really the most trivial things that you can think of. So what we show is that, at least for this most case, you can do the vanilla thing and obtain the same right? No lacosta Julian, this is the right Simon at all. We were not aware of their work, but they study a different algorithm. Frank Wolfe algorithm for the dual of structured prediction problems, and it turns out quite surprisingly it is a different algorithm. But if you boiled it down to the bottom of classification case, it becomes stochastic. Dual cord into sent and the bounded they derive is also on the duality gap, not on the dual suboptimality. So it's a good bound and. It is practically the same as our bound for the lips case. Another work from these snips, the rush made in the bug. They show a violent of ASD for smooth loss and finite sample, so it's basically the same setting is ours and they also obtain log one over epsilon convergence rate. In this case, I believe that that are bound is exactly the same as ours, right? It's N plus one over Lambda. Often we do the same also time to DCA completely fails, but DCA or stochastic DCA because, OK, so DCI. We also saw in our experiments it can completely fail if you do not randomize. Which for me was very surprising because at the beginning I did the experiment and they said OK. I do random permutation, permutation of example and then I do not need to randomize and then we found out that I plotted the bound and I plotted this algorithm. This is this is this thing OK? And then it doesn't look like.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "OK, it doesn't look like a linear conversion thing, so I plotted the bound and I saw that it's about the above about why I thought I have a bug. I thought maybe I'm training a deep network. Anyway, actually, so this is for this most dangerous, and as you can see. OK, I already.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Talked about it. OK, some extensions so we have slightly better rates for stochastic dual coordinate ascent. If you do HD initialization and we're now working on proximal stochastic dual core dissent. Basically the two improvement is that you can have any regularizer so you can use it for L1 problems. And you can also have more sophisticated functions, vector valued functions, so you can use it for structured output prediction and stuff like that. I think I.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "It has time for the proof ID, so let.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Just summarize.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Classic dual coordinate ascent. Really basic algorithm that is being implemented in many software. It is a good algorithm. So far the theoretical guarantees were unsatisfactory and our analysis shows that it is an excellent choice in the in many cases. In the interesting region. Thank you.",
+        "start": 609.0,
+        "end": 638.0
+    }
+]

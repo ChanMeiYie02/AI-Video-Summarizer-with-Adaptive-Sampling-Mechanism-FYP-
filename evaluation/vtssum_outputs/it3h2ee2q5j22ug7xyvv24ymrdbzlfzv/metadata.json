@@ -1,0 +1,20 @@
+{
+    "id": "it3h2ee2q5j22ug7xyvv24ymrdbzlfzv",
+    "title": "On the completeness of coding with image features",
+    "url": "http://videolectures.net/bmvc09_dickscheid_ccif/",
+    "info": {
+        "author": [
+            "Timo Dickscheid, University of Bonn"
+        ],
+        "published": "Dec. 1, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Computer Vision->Image & Video Retrieval"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 115,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 3398
+}

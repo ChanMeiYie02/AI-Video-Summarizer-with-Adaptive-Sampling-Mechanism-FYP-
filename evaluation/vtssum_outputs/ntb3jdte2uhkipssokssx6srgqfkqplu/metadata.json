@@ -1,0 +1,22 @@
+{
+    "id": "ntb3jdte2uhkipssokssx6srgqfkqplu",
+    "title": "Bayesian Hyper Networks",
+    "url": "http://videolectures.net/deeplearning2017_krueger_bayesian_networks/",
+    "info": {
+        "author": [
+            "David Scott Krueger, Montreal Institute for Learning Algorithms (MILA), University of Montreal"
+        ],
+        "published": "July 27, 2017",
+        "recorded": "July 2017",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 143,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1098
+}

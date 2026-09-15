@@ -1,0 +1,20 @@
+{
+    "id": "2xn6v2ncotut7r4ocvvhh5xgkcibi5qp",
+    "title": "Gaussian Processes and Gene Regulation",
+    "url": "http://videolectures.net/prib2010_lawrence_gpg/",
+    "info": {
+        "author": [
+            "Neil D. Lawrence, Department of Computer Science, University of Sheffield"
+        ],
+        "published": "Oct. 14, 2010",
+        "recorded": "September 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Gaussian Processes"
+        ]
+    },
+    "num_segments": 184,
+    "num_sentences": 749,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2489
+}

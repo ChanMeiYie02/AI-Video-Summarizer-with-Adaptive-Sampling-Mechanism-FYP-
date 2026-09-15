@@ -1,0 +1,24 @@
+{
+    "id": "2ip36tjkiksxne4xzaild47euhkibbue",
+    "title": "Autonomously Managing Competing Objectives to Improve the Creation and Curation of Artifacts",
+    "url": "http://videolectures.net/iccc2014_ventura_competing_objectives/",
+    "info": {
+        "author": [
+            "Dan Ventura, Computer Science Department, Brigham Young University"
+        ],
+        "published": "Aug. 8, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Machine Learning",
+            "Top->Arts",
+            "Top->Philosophy",
+            "Top->Social Sciences->Psychology"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 275,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 481
+}

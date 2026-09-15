@@ -1,0 +1,20 @@
+{
+    "id": "flkylw7zuy3jpvybyyj2swthwgyefnd5",
+    "title": "On a L1-Test Statistic of Homogeneity",
+    "url": "http://videolectures.net/ripd07_biau_olt/",
+    "info": {
+        "author": [
+            "Gérard Biau, LIP6, Université Pierre et Marie Curie - Paris 6"
+        ],
+        "published": "Feb. 25, 2008",
+        "recorded": "December 2007",
+        "category": [
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 79,
+    "num_sentences": 482,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3027
+}

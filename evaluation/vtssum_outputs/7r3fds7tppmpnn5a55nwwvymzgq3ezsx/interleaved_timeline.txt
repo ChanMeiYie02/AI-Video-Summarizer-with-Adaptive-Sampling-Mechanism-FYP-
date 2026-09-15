@@ -1,0 +1,122 @@
+[0.0s - 29.0s]
+Hi everyone, I'm teaching from University of Science and Technology of China and this paper title is sparse coded feature for image retrieval and the coauthors, our Chief Uncle and Jensen from Microsoft.
+
+[29.0s - 58.0s]
+In this paper focused on the topic of large scale image search, the topical topical target to building a system, the system help restore database which contains large number of images. When some user uploads a query image and the system shows select images which represent the same object with the input one and then return to the user.
+
+[58.0s - 87.0s]
+There are many methods proposed for this method for this topic. A large group of these methods rely on local feature. In general, their workflows are giving an image in the system first, extract hundreds of local features such as shift and then transfer local features into image representation in order to gather representation. One popular way is a bag of virtual world. It first quantized local features. Into which words and then applies the inverted file system. An alternative method is the so called future aggregation. It tries to merge or local feature which belong to one image into a Ninja level Ninja level representation representation vector. Such vector can be further quantized using standard vector conversation. They represent representative work very D and facial kernel.
+
+[87.0s - 116.0s]
+On our work follows the 2nd way we find that these two representative aggregator aggregators, vid and official kernel can be reformulated into two speak two steps step one coding in Tomb map, each vector X into a high dimensional vector GX. Step 2 pulling into March or old map vector belonging to 1MG into a representation vector. Big GX. Since the leading says search access, since leading search search distant uniformly follow such two step strategy, we are encouraged to try more coding method under the coding pulling formulation. Therefore we turn to sparse coding.
+
+[116.0s - 145.0s]
+Sparse coding is a widely accepted technique in many areas of computer vision, such as face recognition, image classification and image burn. For image classification is proposed to use sparse coding, adding spatial pyramid pooling. We apply it to image search. Is the standard two step structure encoding step where you stand are L1 regularised, pulling one regularised. Coding improving step. We choose simple Max pooling.
+
+[145.0s - 174.0s]
+We know two differences between our image retrieval and image classification in sparse coding. First, the input local descriptors are computed from interest points instead of from instead of from dense sampling grids. Second, we don't use the visual spatial pyramid for their translations and rotations in image search task, while SPM is sensitive to them.
+
+[174.0s - 203.0s]
+And then we explore how or why sparse coding works for image search. Here let's define two terms. The first one is active.
+
+[203.0s - 232.0s]
+And let's take take a image for example. Assuming it has three features X, One X2 and X3, and their code vectors RGX. One checks two and GX3 like this. Then according to the rule of Max pooling their final reputation, Big GX is like this.
+
+[232.0s - 261.0s]
+You see X1 and X2 contributes to the final representation, but X Ray doesn't. In another world.
+
+[261.0s - 290.0s]
+The final reputation speak GX, depends solely on X1X2, but doesn't depend on X3. Then we see X, one X2 are active. An X Ray is inactive. Since the final representation only depends on the active state, we remove the inactive one.
+
+[290.0s - 319.0s]
+The next one is Coactive. If 2 features from 2 images are active and they happen to contribute to the same dimension, we say they are coactive. We go on with the example just law. X1 is active and it and it contributes to the third dimension.
+
+[319.0s - 348.0s]
+Then here comes another image along with this feature Y one if Y one is active and it still contributes to the third dimension. And then we say X1 and Y1R coactive. For illumination will.
+
+[348.0s - 377.0s]
+Link coactive pairs bireli.
+
+[377.0s - 406.0s]
+If two images are related, we hope they share many coactive pairs and these pairs are indeed true match pair. This is similar to that for Bag World. We hope the matched pair match points are quantized to the same thing.
+
+[406.0s - 435.0s]
+Then what cereal scenario? This is a real case of the two related images. Hello that is the active feature and the rail line links the coactive pair. For clarity, we only show a pair of the part of the coactive pairs. Our observations are first.
+
+[435.0s - 464.0s]
+Most descriptors are active only a few are removed 2nd.
+
+[464.0s - 493.0s]
+There are many coactive pairs. For most of them are indeed true matched ones.
+
+[493.0s - 522.0s]
+So our conclusion is for interest point based local features. Sparse coding works like a future mature feature matcher. It connects matched pairs.
+
+[522.0s - 551.0s]
+Here's another example, the same observation.
+
+[551.0s - 580.0s]
+Until now, we focus on the single feature one feature generator.
+
+[580.0s - 609.0s]
+And kind of local feature which is, uh, aggregated into one representative representation vector.
+
+[609.0s - 638.0s]
+The high damage the high dimensional vector is. Is quantized to the compact vector by PC. This pipeline is natural to extend to multiple features, for example.
+
+[638.0s - 667.0s]
+We extract local visual two and aggregate two vector 2.
+
+[667.0s - 696.0s]
+Then we calculated vector one and vector 2.
+
+[696.0s - 725.0s]
+And still applying PC upon the joint venture.
+
+[725.0s - 754.0s]
+The fellow compact vector contains information, or both feature one and feature 2. Note that the final compact vector has the same dimension with that for single feature. This is desirable for image search for it.
+
+[754.0s - 783.0s]
+And here is the online search efficiency.
+
+[783.0s - 812.0s]
+The next problem is to choose local features we explore. We explored different local feature detectors such as Harris Corner, Laplacian, Gaussian and different feature descriptors such as Swift and dancing. And we found that the best combination is harvest with Daisy and Laplacian got lost in Goshen with safety. We delete them as HD and LS.
+
+[812.0s - 841.0s]
+Since the feature combination is effective, we are encouraged to combine more local feature. We design a local local feature called Micro Feature. It's A kind of color feature and inspired by the work of bag colors. To extract micro feature we don't lease Tampa the local Patch. Each Patch is owned by an color Patch. We transfer it to LAB color space and use it 3 channel values as descriptor. So the descriptor is ambion by three dimension. We found this simple feature works pretty well for sparse coding framework.
+
+[841.0s - 870.0s]
+Since Michael Fisher is densely sampled, it's hard to build Point point correspondence like that for interest points. Then how does best coding work for micro feature? We still explore the active points. Here are four images along with their active micro features. The yellow dot are active features. We observed that in.
+
+[870.0s - 899.0s]
+Discriminative region in discriminative region. The active points distribute density while in smooth region.
+
+[899.0s - 928.0s]
+The active points are sparse. As most repeating patterns are removed. So our conclusion is, for densely sampled features, sparse coding works like a filter. It focuses on representative patterns.
+
+[928.0s - 957.0s]
+We test our method on 2 standard datasets Holidays and UK B. We first compare sparse coding with very D and facial kernel for fair comparison. For fair comparison we use single local feature. The highest rating the highest AC. We compare the performance in Origonal dimension and that after PC to 128 and 60 four dimension. We observe that sparse coding outperforms in most scenarios.
+
+[957.0s - 986.0s]
+Then we test the multiple feature combination. We report the result of using only single feature, combining double features and triple feature respectively. We observed that the performance the performance significantly increase with more features even after reducing tools that.
+
+[986.0s - 1015.0s]
+Even after reducing to the same dimension, the multiple feature wins.
+
+[1015.0s - 1044.0s]
+We find this study the scalability, using Holidays, adding formatting images from Flickr. We test our performance of reality for single feature sparse coding for single feature double features and triple features, our observation is. Our observation is consistent with that instead of the Holidays. For single feet.
+
+[1044.0s - 1073.0s]
+Person, sparse coding or performance varied by three points.
+
+[1073.0s - 1102.0s]
+Using double and triple features the system.
+
+[1102.0s - 1131.0s]
+Maybe will greatly increase the increment is about sorting and 45 points respectively.
+
+[1131.0s - 1160.0s]
+To summarize. In this paper we describe a system for large scale image search. Our work is based on the framework of local feature aggregation. It applies sparse coding, Max pooling aggregator. Uses feature combination and proposes a kind of local local feature called Micro Feature. By combining these technicals, we reached a system that is promising and competitive.
+
+[1160.0s - 1189.0s]
+So thank you.

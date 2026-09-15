@@ -1,0 +1,20 @@
+{
+    "id": "stbptffyl2czyr7jfh7ainvo3g2r374a",
+    "title": "Autonomous Geometric Precision Error Estimation in Low-level Computer Vision Tasks",
+    "url": "http://videolectures.net/icml08_paisley_agpee/",
+    "info": {
+        "author": [
+            "John Paisley, Department of Electrical and Computer Engineering, Duke University"
+        ],
+        "published": "Aug. 29, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 75,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 1672
+}

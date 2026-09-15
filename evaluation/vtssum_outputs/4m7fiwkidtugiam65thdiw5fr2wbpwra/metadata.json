@@ -1,0 +1,21 @@
+{
+    "id": "4m7fiwkidtugiam65thdiw5fr2wbpwra",
+    "title": "Using text mining techniques to maintain translation memories",
+    "url": "http://videolectures.net/ipssc2017_repar_text_mining_techniques/",
+    "info": {
+        "author": [
+            "Andraž Repar, Department of Knowledge Technologies, Jožef Stefan Institute"
+        ],
+        "published": "May 23, 2017",
+        "recorded": "April 2017",
+        "category": [
+            "Top->Science->Scientific Research",
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 3,
+    "num_sentences": 23,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 505
+}

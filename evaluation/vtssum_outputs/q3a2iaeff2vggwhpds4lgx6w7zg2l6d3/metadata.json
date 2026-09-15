@@ -1,0 +1,20 @@
+{
+    "id": "q3a2iaeff2vggwhpds4lgx6w7zg2l6d3",
+    "title": "Geometric Computing over Uncertain Data",
+    "url": "http://videolectures.net/algo2012_suri_geometric_computing/",
+    "info": {
+        "author": [
+            "Subhash Suri, Department of Computer Science, University of California, Santa Barbara"
+        ],
+        "published": "Oct. 2, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 67,
+    "num_sentences": 492,
+    "num_clips_with_summary": 38,
+    "num_gt_summary_sentences": 66,
+    "ground_truth_summary_length_chars": 7561
+}

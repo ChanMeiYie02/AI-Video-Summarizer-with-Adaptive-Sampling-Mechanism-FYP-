@@ -1,0 +1,20 @@
+{
+    "id": "dbwdrhwsf7jmw7yyu6bypzedjbbrr5y2",
+    "title": "Enhancing fitness with WSN systems: From the laboratory to the market",
+    "url": "http://videolectures.net/wsnsme2010_rakocevic_efws/",
+    "info": {
+        "author": [
+            "Goran Rakočević, School of Electrical Engineering, University of Belgrade"
+        ],
+        "published": "June 14, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Computers->Networking->Wireless Sensor Network (WSN)"
+        ]
+    },
+    "num_segments": 9,
+    "num_sentences": 114,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1659
+}

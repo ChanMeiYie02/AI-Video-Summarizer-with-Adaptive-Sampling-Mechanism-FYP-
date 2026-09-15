@@ -1,0 +1,92 @@
+[
+    {
+        "text": "Hey, my name is Ruth Livingston. I'm from 20 University and I will present some joint work carried out together with Derek Highland. I will talk this present.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "And about dominance. About the concept of dominance, what people perceive as dominance. And I will tell you how we actually made a system that is able to detect dominant people in meetings.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Let's start with some notions of the cooperativity. For a meeting to be effective, the participants should be cooperative. That is, a principle that is formulated back in the 70s by rice. He stated that people should not speak more or less than required and only say things which for which we have evidence and it should be relevant to obviously formulated such that you're as well clearly understood. Well.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "In most of the cases, that obviously is not the case, but. People are uncooperative. And therefore we have a Chairman and issued. Obviously, make sure that everybody is able to speak and when people are speaking too long, you should cut off and intervene when contributions are irrelevant. So we have some mechanisms that actually force people into cooperativity to some extent. And the concept of dominance is related to this in a sense that people who are two dominant there frustrating the cooperative, cooperative principles and as well the meeting process in this sense. Well as the Army project is concerned with aiding the meeting process as well as its participants. It would be nice if we could come up with a system that is able to automatically detect if one person is more or less dominant than someone else. So we did some preliminary exploration.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Send this presentation actually well reveals how we how we did that. If we look into social psychology, we see the Dominator as being defined as a group member member trying to assert authority by manipulating the group or certain individuals of that group and dominators, they may use flattery or protect their superior superior status to gain attention and interrupt contribute of others. And it's already back in 79 today. Came up with this.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "And so all those well. They came up with a whole list of words related to dominance is somehow similar to emotions. It's conceptually we all understand what is meant by being joyful or angry, but to actually make a system that is able to comprehend. Or to understand that concept is much more difficult to do that how to operate, operationalize those features, and to make them measurable? Is it's? It's a difficult and complex task. So here are some words that were written down by by Bales in his epay and later is similar system in 97. He actually made a huge questionnaire that people can fill in you. You sometimes have to do that as well if you're applying for a job. There is this questionnaire that you have to fill in and then certainly they have a measure of how dominant you are. If it's 0.6 ice already somehow. They are able to do that. There supposed if contributions to dominance. For instance, if you're extroverted, or you're an authority or provocative and some negative contributions if you are. If you say little or. If you doubt your own ability, you're set to be not dominant.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Well. As we have this list. It still might be the case that someone is dominant for somebody. And for some other person, he's no dominant at all. So if we want a system to come up with a measurement for dominance. How how should we do this and what is dominant for someone if it is not dominant for someone else, can we then still say it's 0.8? I don't know. So what we did was we try to.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Compare the evaluations of people on their dominance judgments on a corpus of 8 four person meetings taken from the M4 and the Army pilot data set. A total of 95 minutes and we asked 10 people to rank the meeting participants. Based on their idea of dominance, so we ended up with a total of 5 rankings for every meeting.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And. It looked like this. This is just a part of the results. Missy. Can somebody help me on how to switch this on? It's a laser pen. Just Mr President. Ah, OK. One body. Alright alright. So, um, we have in the columns the results from the annotators and in the Rose. The results from per meeting. And we have 4 numbers and the number in the 1st place corresponds with the OR the valuation for person one. And this is person to person three and person 4. So what we could see for instance in the top row is that the 4th person is rated the most dominant by annotator, A1A2 and A3. And therefore are rated him somehow as being the third most dominant and a five. Luckily, again as the most dominant. So what we did with this is creating some sort of mean as well as some sort of varience. And we did that the following way for the mean, we summed up the values for each of the annotators and then re ranked the total score. So in this case it's 1113 and one which is a total of seven and there's no number which ended up higher or no lower than seven. So therefore for the mean again receive the number one. And for the Varience measure we took.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "The sum of the differences for all annotators summed up with the with the meme. So this sort of gave us a distribution. Which we could compare with an ordinary random generated judgment. And although we had such few measures, it Luckily appeared that there was some significance in this sense. So somehow we could conclude that people seem to agree on well how to perceive the concept of dominance, at least in relation with other people. Also showing some dominance. Right?",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So now the next part of the story as we do have apparently some sort of collective understanding about the dominance concept. How can we detect it right? In the talk given last year, we showed already the dominance can be regarded as some sort of higher level concept together with emotion or dialogue structure. And to actually obtain those higher level concepts, you should use lower level observations or measures in order to retrieve them. But then again. Most of those lower level features that we've seen in the literature are very hard to to measure or to operationalize. I mean alienated. When are you 0.7 alienated, I have no clue.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So what we did was asking the person who pursue evaluated the OR ranked the participants of the meeting what features they used for their ranking procedure and Luckily they came up with some common sense features that could easily be retrieved from our data. At least some of them that we've used. Well, probably the most easy one is just to measure the speaking time in seconds. If someone is just speaking and speaking and speaking and the other ones are quiet then, well, the guy who's speaking is the most dominant, probably. Well, there are some derived features like the number of turns. The number of words. But on the other hand, you could also look at the number of times somebody is addressed. And somebody is privately addressed, right? Because you might address a whole group or just a subset of the group. But if you address somebody in private, it might mean much more. And then we could calculate the number of interruptions like successfully interruptions. If you were willing to grab the floor and you were overruled by the other speaker, it might turn out that you're not really that dominant. But if your interrupt and then somebody everybody else is quiet, then it might be some sort of signal or sign. So then on the other hand, you have the measurement that the number of times that you are being interrupted yourself. That might also reveal something. And then we looked at the ratio of successful interruptions and the number of times being interrupted. This as a feature. Then the number of times the floor is grabbed by participant after a silence. It might also say something we thought, or the number of questions asked by participant. Well and there are some more.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Um? So what we did is we calculated for those eight meetings, all the values for the features. And then we made them compatible to some extent by just mapping them on a scale high normal low. And then what we did was mapping the judgment so the rankings as well on the scale like high, normal low. And this resulted in our final data set of 32 samples, which is obviously not that much, but to obtain the annotations for five meetings for all features is quite some work. So. And then we defined our baseline performance, which was this share of the most frequent plus obviously. Which was 37.5%. So we were all we were lucky. We thought if we at least go to exceed that 37.5%. Right?",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "But then again we thought, well, it might be interesting to see which of those features identified. Is the best. To have or to use, right? Because if you're willing to detect dominant people. You do not want to have all those systems. That at are taking out all the features, right? If you could do with two features, it would be much better than if you could do with 20 features because you just need fewer systems. And as well, it could give us a nice insight in what you should not do in order to be dominant or what you should do.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So we use the sum attribute evaluator. And the top five features. Appear to be the number of floor graphs, so if it is silent and you're taking the floor, somebody might consider you dominant, so be careful. Then the. This is hierarchical, so the top one is the most important one. Then the number of turns turns out to be important. The number of successful interruptions number averts used, and the numbers of questions asked. Is also really important.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "And after applying a tenfold cross validation machine learning experiments, we obtained the highest performance of 75%. Which was which was quite nice, I think. You can see in the confusion metrics that especially the low dominant people in the high dominant people. Really well determined. But the normal so that is somewhere in between. Is there a little bit more scattered? Which was in line with our common sense thinking. Well. As this is just, well, a small experiment with very few samples, actually we had to calculate the confidence interval and what we saw that the lower bound was 62%, which was still much higher than our initial baseline. And well.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "That might might. Conclude in a sense that. It is possible. In the future, someday to have a system that is able to analyze the level of dominance of the meeting participants. And. That's all for for today. I think we could. We could say about something that we can actually do. Of course, if I still have time with me.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Yeah we could. We should run more tests on data and we could use semantically oriented features, of course, and. What can we do with the results right? What is the impact of these findings? If we provide the Chairman with this information, then how will the meeting proceed? Or if we provide this information to the participants themselves, what will happen? Very intriguing questions if you ask me. OK, so that really is it for the day. Questions. I do have one question. Website. So early in the talk we were talking about the difficulty of ranking dominance and so I was wondering if you actually did any studies on that order aware of anywhere you doing? Paralyze is 8 more dominant than B as opposed to trying to get that actual ranking up. No, I'm not aware of that. So I'm hoping my question. I was wondering if all the features you've extracted were expected problematically or manually. Some of them were extracts automatically, especially the number of words. They were just the Pearl scripts running on the transcriptions. The transcriptions are manually, that is correct, as well as the addressee. Information is also a manual annotation, so to some extent there are automatically into some other extent. There were men using this, but that is the problem when you're working on lower level features then you're dependent on them and if they're not there and delivered yet by systems. You you can do better than using manual annotations. Yes, of course. Questions. Do you? The infected number of challenges for the floor. Success here. The other thing we found. Participants in the meeting are. So it turns out in in our kind of meetings is not. The amount of this piece but. Actually, it's the amount of time people look at that. When, when they're speak, when they want to turn or or when when they they they asking, so the difficult dominant people in in the sense that the people who we don't call him down and recalling the centers of gravity. Power in the meeting, other ones that you will look at unless through the ones was speaking. Right? Who is speaking and and whether the term successful challenges, for example, is a good would be found to be a very good measure about whether this involves power. Regular person. With another recordings right? Yes, well we did not have annotations for engaged features on those meetings, sadly. But we can see if we include it as well. What the contribution of that feature is to the overall performance, obviously. One last question. Some of the work we've done I wasn't sure I saw in there is is when someone interrupts and changes the direction of the conversation. It's really content redirection. If you look at that as well. No, as that can be regarded as a more semantically oriented features. Everything becausw when there's somebody changed the content of the meeting, it's semantics and we sticked in this exercise just too easily. Measurable features. Great thanks.",
+        "start": 493.0,
+        "end": 522.0
+    }
+]

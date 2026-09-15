@@ -1,0 +1,20 @@
+{
+    "id": "t5mcn5arepglj7dskiew7ur4geewadcd",
+    "title": "Optimization of smart grids: Opportunities and directions",
+    "url": "http://videolectures.net/solomon_talbi_smart_grids/",
+    "info": {
+        "author": [
+            "El-Ghazali Talbi, Polytech'Lille"
+        ],
+        "published": "Jan. 29, 2018",
+        "recorded": "December 2017",
+        "category": [
+            "Top->Technology->Energy->Smart Grids"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 590,
+    "num_clips_with_summary": 25,
+    "num_gt_summary_sentences": 60,
+    "ground_truth_summary_length_chars": 5257
+}

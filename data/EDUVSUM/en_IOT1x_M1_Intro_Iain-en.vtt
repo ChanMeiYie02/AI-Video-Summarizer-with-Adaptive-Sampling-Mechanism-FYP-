@@ -1,0 +1,283 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:02.875 --> 00:00:03.750
+IAIN MURRAY: Welcome.
+
+00:00:03.750 --> 00:00:05.580
+I'm Iain Murray, and I'm a Professor of Electrical
+
+00:00:05.580 --> 00:00:07.496
+and Computer Engineering at Curtin University.
+
+00:00:07.496 --> 00:00:10.620
+And I'll be taking you through the Introduction to The Internet of Things.
+
+00:00:10.620 --> 00:00:12.660
+My interest in the IoT comes from my background
+
+00:00:12.660 --> 00:00:14.490
+in computer systems engineering.
+
+00:00:14.490 --> 00:00:16.710
+I've been dealing with the internet basically
+
+00:00:16.710 --> 00:00:18.570
+from the very early days when it was just
+
+00:00:18.570 --> 00:00:23.220
+a group of academic machines all hooked together with email
+
+00:00:23.220 --> 00:00:25.650
+and very little else that you could do with it.
+
+00:00:25.650 --> 00:00:29.640
+The internet's evolved to a platform where we can share information.
+
+00:00:29.640 --> 00:00:31.650
+We can find out facts.
+
+00:00:31.650 --> 00:00:32.910
+We can meet with our friends.
+
+00:00:32.910 --> 00:00:36.330
+We can have tele-conferences and talk to friends and relatives that
+
+00:00:36.330 --> 00:00:37.535
+may be miles away.
+
+00:00:37.535 --> 00:00:38.910
+The internet is changing.
+
+00:00:38.910 --> 00:00:41.370
+And it's changing in profound ways.
+
+00:00:41.370 --> 00:00:43.619
+It's no longer just a means of communication.
+
+00:00:43.619 --> 00:00:46.410
+We can use the internet to connect things that we wouldn't normally
+
+00:00:46.410 --> 00:00:48.960
+think of putting onto the network, things
+
+00:00:48.960 --> 00:00:51.220
+like your fridge for a simple example.
+
+00:00:51.220 --> 00:00:54.540
+Find out when your milk's going off and when you need to order some more.
+
+00:00:54.540 --> 00:00:56.310
+But it's more than that, much more.
+
+00:00:56.310 --> 00:01:00.840
+In medical areas, in manufacturing, in agriculture, the internet of things
+
+00:01:00.840 --> 00:01:02.850
+is going to change the way we do things.
+
+00:01:02.850 --> 00:01:04.160
+It gathers information.
+
+00:01:04.160 --> 00:01:06.270
+It processes that information and presents it back
+
+00:01:06.270 --> 00:01:08.924
+to human beings in a way they can understand.
+
+00:01:08.924 --> 00:01:11.340
+In the background, there's a lot of communication going on
+
+00:01:11.340 --> 00:01:14.270
+between the machines-- machine to machine communication.
+
+00:01:14.270 --> 00:01:16.470
+And we'll be looking closely at how this happens.
+
+00:01:16.470 --> 00:01:20.820
+And that automates the processes so that humans can do what they do best,
+
+00:01:20.820 --> 00:01:23.010
+make decisions on valid data.
+
+00:01:23.010 --> 00:01:26.291
+The internet of things is just in its very beginning stages.
+
+00:01:26.291 --> 00:01:28.290
+We're starting to see the connection of devices.
+
+00:01:28.290 --> 00:01:31.290
+We're starting to see some places where the data is
+
+00:01:31.290 --> 00:01:34.960
+being collected, and processed, and used in different ways.
+
+00:01:34.960 --> 00:01:38.482
+So you may be wondering what the internet of things can do for us.
+
+00:01:38.482 --> 00:01:39.690
+Well, it can automate things.
+
+00:01:39.690 --> 00:01:40.980
+It can make our life easier.
+
+00:01:40.980 --> 00:01:43.980
+It can gather massive amounts of data that a human being can't really
+
+00:01:43.980 --> 00:01:46.440
+cope with, but we can use that to predict
+
+00:01:46.440 --> 00:01:48.090
+what we need to do in the future.
+
+00:01:48.090 --> 00:01:49.470
+We can look at trends.
+
+00:01:49.470 --> 00:01:53.160
+We can take actions before failures occur,
+
+00:01:53.160 --> 00:01:55.920
+and generally just help us do a better job of what we're
+
+00:01:55.920 --> 00:01:58.149
+doing now by embracing automation.
+
+00:01:58.149 --> 00:01:59.940
+So the Internet of Things-- it's wonderful.
+
+00:01:59.940 --> 00:02:01.564
+It's going to cure all of our problems.
+
+00:02:01.564 --> 00:02:04.380
+It's a solution to all of our worries in the world.
+
+00:02:04.380 --> 00:02:05.760
+No, it's not.
+
+00:02:05.760 --> 00:02:07.410
+It is going to cause us some issues.
+
+00:02:07.410 --> 00:02:10.289
+Some of those issues include the security.
+
+00:02:10.289 --> 00:02:12.600
+We all know about cybersecurity threats and how
+
+00:02:12.600 --> 00:02:14.520
+hackers try to get into your computer.
+
+00:02:14.520 --> 00:02:17.580
+Well, imagine when we've got 20 billion extra devices connected
+
+00:02:17.580 --> 00:02:18.490
+to the internet.
+
+00:02:18.490 --> 00:02:22.110
+That's 20 billion more devices for hackers to try and get into.
+
+00:02:22.110 --> 00:02:23.020
+It's a real issue.
+
+00:02:23.020 --> 00:02:25.491
+And we'll be looking very closely at the security.
+
+00:02:25.491 --> 00:02:28.740
+If we're gathering all of this data, and there's lots of data we're gathering,
+
+00:02:28.740 --> 00:02:31.440
+and it can be personal, and you can be walking past a sign,
+
+00:02:31.440 --> 00:02:33.420
+and it'll announce you should go into this shop
+
+00:02:33.420 --> 00:02:35.670
+because there's something in there that's of interest,
+
+00:02:35.670 --> 00:02:38.220
+do we really want that invasion into our private space?
+
+00:02:38.220 --> 00:02:40.050
+Do we want other people to know how we're
+
+00:02:40.050 --> 00:02:42.420
+going to keep this information away from people
+
+00:02:42.420 --> 00:02:44.420
+we don't want to find out about it?
+
+00:02:44.420 --> 00:02:47.790
+The Internet of Things will also cause a major disruption in employment.
+
+00:02:47.790 --> 00:02:49.470
+There will be a change.
+
+00:02:49.470 --> 00:02:52.260
+People will be losing their jobs.
+
+00:02:52.260 --> 00:02:56.110
+But the good news is far more jobs will be created in the area.
+
+00:02:56.110 --> 00:02:58.230
+These jobs will require a higher skill level.
+
+00:02:58.230 --> 00:03:01.260
+Instead of the person who's manufacturing cars just tightening
+
+00:03:01.260 --> 00:03:04.680
+bolts, they will need to be able to maintain the robotics,
+
+00:03:04.680 --> 00:03:08.760
+or control the production line, monitor the dashboards
+
+00:03:08.760 --> 00:03:11.880
+of the information that's being collected from the manufacturing line.
+
+00:03:11.880 --> 00:03:14.550
+So the jobs will be far more skilled, which probably
+
+00:03:14.550 --> 00:03:16.320
+means they will be better paid.
+
+00:03:16.320 --> 00:03:17.820
+But there will be far fewer of them.
+
+00:03:17.820 --> 00:03:19.737
+And this is an issue we need to confront.
+
+00:03:19.737 --> 00:03:21.945
+So you may be asking yourself where will this impact?
+
+00:03:21.945 --> 00:03:25.410
+Where will the greatest impact be in the near future?
+
+00:03:25.410 --> 00:03:27.270
+Well, I've got no idea.
+
+00:03:27.270 --> 00:03:29.037
+And I don't think anyone really has.
+
+00:03:29.037 --> 00:03:30.870
+This is something that we've got to explore.
+
+00:03:30.870 --> 00:03:34.110
+We've got to look at where will the resources that we save be used.
+
+00:03:34.110 --> 00:03:38.490
+Will we just save resources and not use that benefit?
+
+00:03:38.490 --> 00:03:39.720
+I wouldn't think so.
+
+00:03:39.720 --> 00:03:43.290
+So we really need to start examining where the impact will be
+
+00:03:43.290 --> 00:03:46.330
+and what these savings will actually mean to industries.
+
+00:03:46.330 --> 00:03:48.840
+Right, so, generally, that's the Internet of Things.
+
+00:03:48.840 --> 00:03:51.930
+Let's now have a look at some applications and case studies
+
+00:03:51.930 --> 00:03:55.190
+of the Internet of Things in the real world.

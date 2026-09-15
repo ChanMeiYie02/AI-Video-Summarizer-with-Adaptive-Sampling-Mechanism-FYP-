@@ -1,0 +1,32 @@
+{
+    "id": "zka5v7fwc6cr4zzivavt7ihvhhir6jon",
+    "title": "ISWC 2012 Closing and Awards",
+    "url": "http://videolectures.net/iswc2012_bernstein_closing_awards/",
+    "info": {
+        "moderator": [
+            "Abraham Bernstein, Department of Informatics, University of Zurich"
+        ],
+        "presenter": [
+            "Andreas Harth, Institute of Applied Informatics and Formal Description Methods (AIFB), Karlsruhe Institute of Technology (KIT)",
+            "Diana Maynard, Department of Molecular Biology and Biotechnology, University of Sheffield",
+            "Sweitze Roffel, Elsevier B.V.",
+            "David Huynh, Computer Science and Artificial Intelligence Laboratory (CSAIL), Massachusetts Institute of Technology, MIT",
+            "Tania Tudorache, Stanford Center for Biomedical Informatics Research",
+            "Evren Sirin, Clark & Parsia, LLC",
+            "Jeff Heflin, Lehigh University",
+            "Philippe Cudré-Mauroux, University of Fribourg",
+            "Chris Welty, IBM Thomas J. Watson Research Center"
+        ],
+        "published": "Dec. 4, 2012",
+        "recorded": "November 2012",
+        "category": [
+            "Top->Events",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 51,
+    "num_sentences": 221,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 359
+}

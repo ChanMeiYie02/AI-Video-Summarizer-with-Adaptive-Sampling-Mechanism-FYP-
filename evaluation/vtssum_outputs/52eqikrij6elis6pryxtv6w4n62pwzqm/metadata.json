@@ -1,0 +1,20 @@
+{
+    "id": "52eqikrij6elis6pryxtv6w4n62pwzqm",
+    "title": "Autonomous discovery of abstract concepts by a robot",
+    "url": "http://videolectures.net/icannga2011_bratko_adac/",
+    "info": {
+        "author": [
+            "Ivan Bratko, Faculty of Computer and Information Science, University of Ljubljana"
+        ],
+        "published": "May 3, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Computer Science->Robotics"
+        ]
+    },
+    "num_segments": 57,
+    "num_sentences": 469,
+    "num_clips_with_summary": 33,
+    "num_gt_summary_sentences": 59,
+    "ground_truth_summary_length_chars": 5222
+}

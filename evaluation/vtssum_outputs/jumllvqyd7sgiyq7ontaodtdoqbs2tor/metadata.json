@@ -1,0 +1,22 @@
+{
+    "id": "jumllvqyd7sgiyq7ontaodtdoqbs2tor",
+    "title": "Machine Understanding for Interactive Storytelling: The MUSE project",
+    "url": "http://videolectures.net/solomon_moens_cavazza_muse_project/",
+    "info": {
+        "author": [
+            "Marc Cavazza, Digital Futures Institute (DFI), Teesside University",
+            "Marie-Francine Moens, Department of Computer Science, KU Leuven"
+        ],
+        "published": "Dec. 11, 2013",
+        "recorded": "October 2013",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Natural Language Processing"
+        ]
+    },
+    "num_segments": 57,
+    "num_sentences": 372,
+    "num_clips_with_summary": 26,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 6938
+}

@@ -1,0 +1,21 @@
+{
+    "id": "hy5lvd4geo47qi7mjcrujo6zlxdg62zr",
+    "title": "Introduction to HPC",
+    "url": "http://videolectures.net/prace2013_kos_hpc_introduction/",
+    "info": {
+        "author": [
+            "Leon Kos, Faculty of Mechanical Engineering, University of Ljubljana"
+        ],
+        "published": "Jan. 6, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computers->Software"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 584,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 1467
+}

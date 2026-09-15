@@ -1,0 +1,20 @@
+{
+    "id": "xthmk7ulshxb3ylg5m5vxtt562luegn2",
+    "title": "ArCo: the Italian Cultural Heritage Knowledge Graph",
+    "url": "http://videolectures.net/iswc2019_carriero_heritage_knowledge_graph/",
+    "info": {
+        "author": [
+            "Valentina Anita Carriero, Department of Computer Science and Engineering (DISI), University of Bologna"
+        ],
+        "published": "Nov. 27, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 132,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 3006
+}

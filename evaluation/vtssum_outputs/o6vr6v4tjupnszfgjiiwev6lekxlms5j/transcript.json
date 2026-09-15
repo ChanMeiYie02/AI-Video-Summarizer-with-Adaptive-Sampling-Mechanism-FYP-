@@ -1,0 +1,77 @@
+[
+    {
+        "text": "Hi, I'm 1145 in your social network. So we're two that's for teenagers, isn't it? No good for scientists. Well, my experiment is an experiment to find out. We thought we'd try it and see.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "People say that scientists are very competitive that they'd rather share their toothbrush and share their data. And I would first of all observe that the science has always been a social and collaborative process, since this is what's called the Invisible College in the days of old. When famous scientists exchanged information by letter or by annotation of book margin, we've had this. This social process of publication and reading those and building on that. And that's how science progresses and how methods. Progress, so here's a sort of picture of science as we know it now in the middle I've got a. I've got a guy in a white lab coat. I've also got an in silico experiment going on there in a scientific workflow. Generates loads of days here. Lots of discussion about loads of data. We've talked about that before. I might mention that again in a minute, and then traditionally this this goes through after publication through repositories and digital libraries against the peer review process. It comes back around to the scientists we. We can concentrate a loss on processing all that data, but to accelerate science we need to look more holistically at this whole scholarly knowledge cycle. And that's how it's been for awhile. But as we've gotten increasing sort of digital participation in the process of research, not just science, with all aspects of research, but this new stuff, these new digital artifacts, we've got the data and there's some efforts to link that in with the stuff on the left hand side of this picture. But it's not very good. We got the metadata. We got the provenance so that we can interpret and trust and judge the data that we're using the scientific results of your search results. We got scientific workflows. We've got the services that are being used in in sort of service oriented science, which a lot of science is now. We got the ontologies, but all these new digital artifacts and where my experiment fits in this picture isn't that white space on the bottom right, quite conveniently near to the undergraduate students in the grad students who are, of course, the next generation of scientists, many of you in this room. And really the experiment is to see whether this web two stuff over on the right is going to help with all the new artifacts and sharing those in one day. I'd like to link it up with the stuff on the left, and that's something I'm discussing with an issue. Will come back to that later, but really, I want to tell you about the thing on the bus.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Right there. So we built this site. We described it at the beginning as Facebook for scientists and then we started describing it. As it's not Facebook for scientists because they really put scientists off 'cause there's an assumption by scientists by many people that if it's Web 2 then everything is public and we do not mandate that everything's open. Interesting point of discussion compared to previous talk. Absolutely, we do not. That's part of our value proposition. This is a repository of research methods. We could share datasets or stuff that's dull in their repositories that do that, we share methods, right? That's very significant. It's a social network. We've really measured on the social infrastructure, and you actually run stuff in it. So it becomes part of the research environment, so you can describe there's any one of those, those things. It's open source, you can download it. You can modify it. You can build your own. There are people in this room. We've done that. Tony, thank you in different domains and. It's interesting how rapidly we put this together. This is actually 2 developers built this in that number of months, and it's been up and running for for over a year now because we use a web application framework. Ruby on Rails so that we could spend much more time talking to the users and a lot less time actually developing code, and that was very, very significant. It's very much designed with the users and we've got sort of thousands of people downloading stuff, but in terms of people who are actually part of the network and creating content and annotating and sharing, reviewing and so on. Is 1800 registered users? There's 150 groups 700. We just checked workflows and another.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Stuff and I'll talk about some of those things. If you're online, you can go and play with the site now. It's more interesting listening to me, but you'll see a familiar tabbed interface. You've got notifications of what's going on in your social network. You can form friends and groups, and you can find these things called workflows will come back too and you can build these things called packs and we've got an emphasis on the Community curation durations of a big thing. For us, the interesting column down the middle of that picture is the slightly yellow V1, which is what we call the social meta data. It's all that stuff about the licensing about the credits, the attributions, all the things that really matter. The scientists.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So those are the things on the bottom that distinguish us from other web two sites, and you can read various papers about this, so I won't go through them in detail, but because of the knowledge object thing that's come up on today's panel.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "I do want to talk about a couple of things we don't mandate that the user comes to the site. This is web two. We follow the cooperate, don't control Maxim, and we can bring out through our Restful interfaces the functionality through into anyone's work environment so you can see I Google users, their particular sort of Workbench product to Werner Facebook. Having said it's not Facebook look, you can use it in Facebook, Windows 7, whatever, so just so it's not just a website, it is apps.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "All that functionality to bring through. We concentrate on process and method because by sharing methods people are sharing know how sharing knowledge, building capacity, enabling you science.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Accelerated science to occur. He's a nice little story and would like a lot of these, like a lot of stories like this and we're beginning to see them happen. So Paul Fisher is a bioinformatician in the University of Manchester. He was working with Japan Atomizing cattle and he had loads of data and he was manually triage Ng it and figuring out which bits of data he thought would have the results in he needed. He got it wrong. He built a workflow so you just press a button. The system has to be processed all of that data in an unbiased way. He found the result he wanted, published it, published the workflow. Bumped into Joe in the corridor. Think now of my experiment is the corridor and handed her the workflow which she then used. Nothing cattle but in mouse and got. The result. Should be looking for for a couple of years in a manual study, so this is entirely new scientific results occurring by sharing method from one area to another. So that's that's one of the promises in one of the.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "The reason we focus on method. His poor Fishers pack. OK so we started in two Web 2 version by saying we have one particular content type that we do really well like movies on YouTube or photos on Flickr or PowerPoint. On slide share we did work flows. Actually it turns out that isn't that scientists what they want. Collections of stuff. One piece of science doesn't involve just one data type, so we have these things called packs in which you can click together all the bits and pieces on the website but also externally and repositories or anywhere you like. So Paul's Packers got. The actual workflows in but it's got the data. It's got little service invocation logs, so you have the provenance records. It's got the metadata. It's got some power point slides. Got that PDF there, which is an old-fashioned human readable thing called paper, but figured out those 'cause what you see here is a knowledge object. That's what they.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Like in the future, we can export those using a standard, so if you may have come across the open archives initiative object we use an exchange standard, which if you haven't come across it, just think named RDF graph.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "And I very rarely show bits of RDS to audience, but this is 1 occasion when I can. So if you go to RDF dot my experiment to organize our sparkle endpoint and access stuff, packs contain things like that. I worry aggregates a package simply description of a load of URLs that are aggregated together and then we make that more and more sophisticated.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "To describe these research objects or knowledge objects, these are some of the relationships we use both within an object to describe how things are related to each other and to the object, but also between objects. If you look at it from a discourse analysis viewpoint, so we've got provenance there. We got the provenance model. We got this one until the shock for the online communities. It's quite interesting that sees that one paper can actually arouse another paper if you look carefully in the third column there.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Take it up with him, Clark, right, and finally back to the users. We really interested in this issue of curation. Everyone's focused on all this data processing this data. But actually when they when they do stuff with the data, they're creating methods. There isn't just a data deluge, but there's a method that deluge you need the methods to reuse that data. Workflows are a good example. So what we're interested in here for my experiment is not just the users doing that. The wisdom of the crowd if you like, that's very important. The service providers and the people provided the workflows in the content doing that, but we have exploration. We're setting up the social structures now to enable experts to come in. Think of the sort of Wikipedia film model of lots of consumers are very small. Number of producers and in between lots of other people who are adding value to the site's editors or curators. If you like an increasing automation in the tools that are used and this slide also mentions our system project by catalog, which is launching an SMB which is using the same experiment code base but it's. It's a registry of web services and life Sciences.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So in summary, if we can talk about the stuff we talked about this panel, we have to understand what the next generation researchers do and lots of you in the room. So this is this is exactly the right place to discuss it. We have to understand the changing nature of research practice. It is becoming more data centric. It isn't just about volumes. Of data is about changing scientific practice from forming a hypothesis and going and getting the data. So to actually discovering the data you want and working from the increasing volume of data available is shifting the balance between what goes on in silico. And what's going on? For example, in the web apps, that's very significant. There's more much more data intensive. And I claim for the purpose of this panel that papers are some obsolete human readable form and which would be replaced by these discoverable and shareable, for which you need my experiment. Research objects that have all these ours, right? This enables you research to be repeatable. You can submit a paper and someone else can repeat that research. You can replay it to see exactly how someone did something. It's reproducible. There's different, repeatable. It means you've got enough there to go away and do the research yourself and see if you come up with the same results. History, purpose, aghbal, because you've got enough pieces to understand and to. How they used and to be used them in your own work, and it's robust in the face of the increasing automation, increasing scale of processing that has to occur occur with increasing scale of experimentation and automation that's going on in the experimental world.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Thank you very much.",
+        "start": 406.0,
+        "end": 435.0
+    }
+]

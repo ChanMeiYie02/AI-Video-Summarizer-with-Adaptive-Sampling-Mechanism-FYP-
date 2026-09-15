@@ -1,0 +1,21 @@
+{
+    "id": "kyxynndl2tlja3bbjnoligccfopfnn4p",
+    "title": "Gathering data to prove that we can implicitly crowdsource language-related datasets from learners",
+    "url": "http://videolectures.net/WG3WG5meeting2018_nicolas_gathering_data/",
+    "info": {
+        "author": [
+            "Lionel Nicolas, European Academy of Bozen/Bolzano (EURAC)"
+        ],
+        "published": "Nov. 13, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Crowdsourcing",
+            "Top->Humanities->Languages"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 211,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 2681
+}

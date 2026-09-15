@@ -1,0 +1,21 @@
+{
+    "id": "rr3pwwwey3cu2eda2y2weh6o7unzxbrf",
+    "title": "Should all Machine Learning be Bayesian? Should all Bayesian models be non-parametric?",
+    "url": "http://videolectures.net/bark08_ghahramani_samlbb/",
+    "info": {
+        "author": [
+            "Zoubin Ghahramani, Department of Engineering, University of Cambridge"
+        ],
+        "published": "Oct. 9, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 672,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 58,
+    "ground_truth_summary_length_chars": 6401
+}

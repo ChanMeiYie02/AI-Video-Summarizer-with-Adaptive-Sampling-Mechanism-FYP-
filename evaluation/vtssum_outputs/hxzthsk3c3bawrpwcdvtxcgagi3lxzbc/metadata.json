@@ -1,0 +1,20 @@
+{
+    "id": "hxzthsk3c3bawrpwcdvtxcgagi3lxzbc",
+    "title": "A new editing scheme based on fast two-strings median computation applied to OCR",
+    "url": "http://videolectures.net/ssspr2010_rico_juan_esocr/",
+    "info": {
+        "author": [
+            "Juan Ramon Rico-Juan, Department of Software and Computing Systems, University of Alicante"
+        ],
+        "published": "Sept. 13, 2010",
+        "recorded": "August 2010",
+        "category": [
+            "Top->Computer Science->Pattern Recognition"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 180,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 1412
+}

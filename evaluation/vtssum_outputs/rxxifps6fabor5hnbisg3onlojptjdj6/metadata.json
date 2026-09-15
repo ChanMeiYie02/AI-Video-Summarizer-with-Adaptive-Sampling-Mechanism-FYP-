@@ -1,0 +1,20 @@
+{
+    "id": "rxxifps6fabor5hnbisg3onlojptjdj6",
+    "title": "Mapping collaborative technologies for organizational workflows",
+    "url": "http://videolectures.net/aibootcamp2011_imtiaz_mcto/",
+    "info": {
+        "author": [
+            "Ali Imtiaz, Research Institute for Operations Management, RWTH Aachen University"
+        ],
+        "published": "March 31, 2011",
+        "recorded": "February 2011",
+        "category": [
+            "Top->Business->Enterprise Collaboration"
+        ]
+    },
+    "num_segments": 45,
+    "num_sentences": 522,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 52,
+    "ground_truth_summary_length_chars": 5096
+}

@@ -1,0 +1,20 @@
+{
+    "id": "4sjb3r6lwbo57ld7psubah5k5eiyr5zd",
+    "title": "Speaker Diarization For Multi-Microphone Meetings Using Only Between-Channel Differences",
+    "url": "http://videolectures.net/mlmi06_pardo_sdmmm/",
+    "info": {
+        "author": [
+            "Jose Pardo, International Computer Science Institute, UC Berkeley"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "May 2006",
+        "category": [
+            "Top->Computer Science->Speech Analysis"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 186,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 1800
+}

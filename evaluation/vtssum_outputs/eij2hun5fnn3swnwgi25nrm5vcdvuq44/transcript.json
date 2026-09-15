@@ -1,0 +1,162 @@
+[
+    {
+        "text": "Let's start a little bit about talking about what is network complexity and what? Why is network complexity we quantified and then what follows. It is incrementally the developments until we were able to analyze PPI networks and then we give some recent works about networks as probability distribution. Not, which is. I think it could be interesting for.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "The audience, so first.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Book. Network Sciences needs quantification in order to be a science itself, so we are on the way, I think of doing that quantification, but we need more and more quantification. Form a methods. Predictable or. So for instance, if rap information theoretic perspective you use the MDM principle in generative models. For instance in in just working in with trees or you have to do. To control or to quantify the dynamics of a complex systems in ecosystem. So this question has arrived. Or the evolution of the function of proteins. For instance, if I have a protein, the protein is is performing a function, but the protein change from one bacteria and other bacteria and other bacteria more involved. So what happens with the function? The function theoretically is going to be more and more complex. I view especially the type of protein I'm going to study with this radio signal transaction, which is key for the life of bacteria. So OK approaches. Rollie, you can say. Randomness to measure. To quantify complexity, I can use some measure of randomness, like entropy here. Floor. Statistical or or? A set of. Focus my attention on. So these are going to be shown that pay attention to irregularities beyond randomness itself. So this is a general principle is OK. Both maximal, random and complete order structure should but should have O complexity. OK, so the reason behind this or my interpretation behind that is that when you have complex system you need some organization and this relation constraints the communication between the nodes and This is why you have a complex system. Otherwise you have a complete graph. For instance every pair of nodes can be communicated. This, I think is not a complex system, so you had to cut some of them to obtain 111 complex system. OK, there are some classical or modern or recent.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Citations. OK, so if we go to randomness complexity we will OK. I take a couple of examples. One is the coordinate graph entropy and the current graph entropy is minimal contribution to the probability distribution associated to the vertices. And vertex baking polytope autograph so difficult to measure. You need a distribution associated to the vertices and the problem you have to solve are very hard. So do you have the one human entropy, which is very easy to compute? And with one human entropy you can use maximal for random graph a minimal from complete graph. And is the intermediate from Mr. Graphs should maybe work there. Other methods like Geo spheres for instance like take the neighborhood of a of every node and try to build probability distribution and then compute entropy. So all these methods are one way or other related to the notion of entropy of something computer from the graphs. OK, so this one, the classical world corner and some JS JS first for spheres form fundament.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "OK, so. All the methods for coming from. From statistical or not so randomness based complexity, for instance, is the Strada Reggane index which is. Gorgeous difference in degree or related functions. Between connected vertices it can be expressed like the like quadratic form. As you used usually exploit the disease, let something so that like that and it in practice work very, very well. We will see later. OK, you have another approach which is thermodynamic depth. Tommy is more. When you're looking at your looking things that are more related with the process itself, the process of building the graph, the process of, or the notion of each node has for the complete. The complete graph graph, so it really is the entropy of the number of histories. Imagine that one you define the basic states over the nodes. The nodes start to to communicate with neighbors and then with neighbors until they reach the graph. So the history of one note is is in a complex system. Is going to be very different from the history of another note, so good idea maybe to measure the variability of these histories. Basically what is important is to apply these two graphs is to define microstates. In that case, the nodes and the history is how the hell? This structure emerges from a particular note. OK, so this is the situation from from the original index and this is the classical.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "OK, our approach in. A few words is OK. We have information flow. So for our Protobuf complex complex network, impose constraints on the flow of information, for instance heat. So is there no constraints? Then the system is not complex. So This is why we tend to use elements like connectivity, connectedness or bitterness, or things like that because they are. There are button bottlenecks when when this information collapses and we want we wanted to integrate this information flow, the constraints imposed with thermodynamic depth. These are the ingredients or approach so.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "First of all. You have here an example of the different complexities or different different graphs. Is particularly interesting. OK, this is a Gaussian graph as well. Random graph with Russian links and you have more order things. You have this line and this is particularly zero and why is particularly zero like the complex graph cause the view this node have has all the graph is the same view. Of all the other nodes and the information transferred passing through this node is the same, the same constraints over the information transfer. For all the notes, this is coming from Timonium in depth. So This is why. If we look that we tend to think about zero thermodynamic death complexity. OK, it's not regular, but from that point of view with this it is simple.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "OK, let's go to the. To review the steps we follow to. To derive this, make the derivation of the.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So maybe the first of all we analyzed, we or first approach to come to complexity was to explore the big polytopes. Be hopefully talks are the comics call of the double stochastic matrices, so you know that. This is well known the remote session, so imagine that each vertex you you put a. Um rotation matrix and then the space the convex call of all of this is the bigger polytope. Why in the center of the polytope is there under the mattress, which is a matrix? Were all entries are 1 / N The very center of all the. Olay off of the polytope. Why is this important?",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Chipper polytope this is important becausw the Bonnyman theorem says that every doubly stochastic matrix can be expressed as a convex combination. Of unit number of permutations so I can have a best double stochastic matrix and I can express our comics combination and the coefficients of the convex combination. Can give me a an entropy. However, the. Maximum entropy this composition is not unique. If you want the maximum entropy decomposition you have to solve a slash P problem because it involves solving the permanent quantifying Department of a graph or matrix. There is a constructive proof when you can get some linear combination going. The details about that but. Compound in anywhere this constructive proof. What is important here? Can you have the? Basically this later was the first with. Prove that maximum entropy representations are a slash P not. Not, not him, but he suggested that Valiant proved that. The permutation permanents are.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "OK, what is the link while using the polytope, the hopper it up because one interesting double stochastic matrix is a heat kernel hit kernel for every time from zero to Infinity is doubly stochastic matrix. So if I have a hit kernel, I decompose the entropy. Then I move on time the compose get the entropy. I can have a very nice complexity trace. And how the process? How information is flowing through the network at the beginning? All the stuff is you have the identity matrix all once in the diagonal. At the end you have the vendor version matrix is like you are traveling to the center of the Earth. In that case to the center of the polytope. So every different where you go in there, have you quantified the entropy of that? You have an idea of complexity of the graph. OK, this is the Taylor expansion of the heat kernel is good cause I had hit conservation. Always have N units of hit. So what I have to do is when I diffuse is the topology constraints. How this is diffused but I have always to take an unit. So this is the idea of of quantifying complexity in that terms. OK. For when I am close to 0, this is dominated by by the Laplacian. When I am close to Infinity. I am close to the to the bottom of the matrix.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "OK, so given a hit kernel for a given time and the coefficients. I can get the composition and then from this coefficients I can compute the entropy and normalized entropy from the entropy uniform distribution and get I measure. OK, so this is 0. At the beginning and it's one at the end because it's normalized. So that the trace what is in there.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "The thing is that race and that race is important because we detected a kind of change of phase so. Entropy start to grow until a given point and then decreases until delirium and it happens for every graph. Um? So you have OK this is 1 example. This coming. OK, you can see there. OK you have a point. Here is a phase transition. OK so it's not exactly, but here they are Nick Librium. So they are close to 1 / N is a simple graph but you can see that. OK, come here. You can see one thing interesting here is. How this is flowing faster than the others 'cause it's diffusing? And reaching the equilibrium faster than the other. This could be useful for analyzing the dynamics. If I take the dynamics of how the heat diffuses through the graph. But the trace is similar. If you have a complete graph, what happens is you have a trace and agree. Clearing point never descends because there's no constraints, so the graph immediately you have 1 / N.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "OK, another example of this face change. Is without line a linear graph linear graph? You have the extremes are slower than the other, so this this kind. This bottle here is. The hit which is not in the network. OK, so is not in the links is the hit which is induced. For instance, you have probability for going from here to here, but you are not connected. What we call a transition link. Transition links appears at that phase. At the beginning, everything flows through the network until I need to establish relationship relationship. Between this point. At this point directly, and this is the transition link and it happens from here to the end. Yeah, this language interaction appear later. So what I'm going to pay attention is to what is happening in the network itself. Run alone regeneration is useful for for the formal proof of some terms later, but not for.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Essence of a trace. OK, so we did initial experiments. OK here this is changed the access, but basically with some peas from a string database. So you have some proteins related to do Akali and other just for looking happens and in this area. And what happens here so. That or first post was too too to embed not to measure complexity at that time. Hello little bit. About how sensitive the curve on the right might be to the to the graph on the left. Because some of these data, some of these networks have false positives and false negatives, so, but they're generally sparse. Those graphs relatively sparse, so you know is that very sensitively dependent upon the structure on the left, or is it just a fairly generic profile? This network is very noisy in general so but this difference? Have not measured insignificantly in terms of statistics. Matt, This is why. Finally, what happens is that what are you measuring with this discount kind of trace? Is global things on the graph. Is like in the in the network, in the in the degree function. If you're looking at the the power law or something like that. Additive to find details. So no, no no, no, not we we tried but so. So are you just looking at the one hope Network from spring? This is frustrating here. OK, so this is just the center node. Yeah, the center note is in red, yeah? Federal today possibly. No, I don't care about the center note. For instance, I choose a given protein and try to feed the parameters of this of a string and. Make some experiments with network corresponding to different species but with the same protein to see simply what happens. The question about the composition you're doing for the going from the position in the big pull it up through the composition of the condition matrices, what you're doing. You're doing a simplistic composition of the polytope, and you're taking their linear combination of its extreme of the simplex, right? Then don't once you have phase, transition to the fact of your transition, you're transitioning from one simplicity another, or that doesn't happen with. With the heat flow, 'cause in general, if you're moving to the vehicle, pull it up. You will change the symbol of the Simplicius, but then you might have an underlying distribution of this continues will not give you a transition but but you're sort of transition to the fact of you the way you are projecting onto only a few presentation. Stage we thought that. Could be independent of the the way we compute the entropy, but later there Saturday and later we realized that the this phase transition point is corresponding to the maximum to the time where there's a maximum amount of heat in the network. So it is not. It is. Changing the simplest answer as you transfer, it's the heat. So it is later realized that so, so it seems to be consistent.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "OK. So OK, we we try to relate the the diffusion of dynamics with the computer, not a permanent because the permanent is consistent with the loss of perfect machines from zero. When you have 111 and 2 divided over the matrix. So what happens when that race you want to use as alternative measure of complexity that race? We have here under trace which measure permanent is only useful in a small part and the permanent is very hard to solve so. But there is in interesting Internet fanatical POV. Yeah, I know, but the order is end 2523. To the best of my knowledge, the first polynomial algorithm is of. And then 26. You sure, yeah. I'm not sure this is the the faster. But it's OK. You use the one riser you are going to the exponential, but I think it is close to end 20 starting at this exact thing, but maybe there's more efficient approximations. But in any case is not. Seems not to be so useful, this what.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "What we obtain? OK, so. Let's move to.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Full flow complexity. We are going to express complexity in a simpler way. We have similar qualities, similar intention qualitatively, and has this notion and correspondence between entropy, maximum entropy and maximum flow. OK, so this is Anthony's Florida network, is this expression? Imagine that you have given time beta and you have this is. The component hyj, which is the heat going from white J at the given point. And OK, you retain only the components of this belonging with are coincident with the adjacency matrix, which is from a new product, can be expressed like this. The adjacency matrix, the kernel. So you have that. Can you analyze the the you normalize becausw in the limit you have? Um divided by by two and. Instead of demanding better metrics, you have something that we have similar probl properties like the little complexity and you are using very simple way of computing the complexity. Instead of computing entropy. Uh, I'm performing N 6. Is it a time the complexity of doing every every big composition which is very hard to do?",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So. In our paper, we have the main principle with the first addition principle, which basically says that if I have a non 0 beta. It defines a face transition point, then the flow that did at this point is maximal that the sum of this. Hits flowing through the network maximum, and this implies that if I perform at the composition, the maximum entropy decomposition, which I cannot perform in real in reality because is very hard to find. But if I could do that. I will have at that point the maximum entropy. So this is quite interesting 'cause. Flow maximality occurs or happens at face decision point, as well as entropy maximality. Happens. As the maximum entropy, the composition. So in the proof we use the. In the paper, I think the paper is here. OK, well the paper is here and we have one in presently in. In physical review, so in the proof we use is important to study the relative links because we have the original problem and the dual problem. And analyzing both problems, you reach to the conclusion of this principle is correct.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "OK, so. So we have the flow element, the flow part, but we had no described thermodynamic part of the.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "This is what? We're doing now. The main ingredients are no histories. Given a note expansion produces an extensive sequence of subgraphs until you reach the graph. Give another point, different histories and so on. I assume that the network is connected, not connected. I had to do that for every connected component of the network. Have the notion of use Bregman balls to capture all the profiles of the flow profiles of every history and to capture the variability. And I use for data metric called original generalized global labor divisions, and I finally use information projection to introduce to combine randomness and depth to this. It had to be useful. So basically this is the this the paper in published a couple of months ago.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "And these are this snapshot of what is the thermodynamic depth sandwich hit OK for each note for note one I have. The history of this node is something like this. The 1st order history. Then for each element here I tried to reach unreached. Neighbor so I have the 2nd order sequence history start order and so on. So the perspective of this note. Is. I could be that race here that race here. The trees here that race here, so these traces are integrated here are the limits given by the LaGrange multipliers, but they are. They mean they are at the center of the ball. The Bregman ball is the average history of all of them, and the radius of that is giving me. I. What I say is giving me the variability for this node. For this note, the histories are different because this node is another position and the first history is that the summer history is that the search history is that it has a different Bregman Bolden, different center, and different values. And this happens. You can see that as the symmetries of the graph are imposing that. They rather use the ready which measure the amount of certainty in the histories. OK, there is a symmetry of course, for every note from the first note to the to the 25 now. So it's not nothing surprising after that. I summarize all these centers in in a final Bramble. I summarize 2nd order variability and then project the Wonder Birthday Matrix. Onto this Bramble to include the information on randomness. I can do that, I can avoid, it tends to be useful if you do that using information projection principles or things like that. So this is basically what happens with. OK, this is the another vertex with another histories, so these histories are very useful later in order.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Locations.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "OK, so when I going to apply to the analysis of PP eyes so I focus on is stinky necessary cause they are proteins involved in signal transduction and this I said before this is related. This is Nikki, NASA is involved in bacterial survival so I'm going to study several bacterias along evolution so is good to know what is happening with the function with the same function. So my point is more. The Volvo period of course told to refine and make more complex satisfaction, but I had to quantify more. 5 minutes so I can say this qualitatively, but I have to measure in terms of complexity. Gay take 200 of peas of from find a correlation between thermodynamic depths an philogene.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "OK, so there are some examples ordered. This is. Particularly earlier. Bacteria this is this is a protein so you can find. There is an attempt to find to form communities, but there's no community yet, strictly speaking. You go little bit later, you increase the complexity because they are. Some communities are starting to emerge.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "This is a dramatic change, for instance here where there's a really huge communities and you grow your complexity. A lot. I have to say that these numbers are not dependent on the size. Of the network. OK, so I do not consider the size of network an in my measure and. Finally, doesn't matter the size. You may have high complexity with. OK you have here the same example, but here you have two. To communities it depends, so it could be interesting, for instance, to study the modularity of networks. Think related to the complexity of them. It seems to be related. That seems visually visually but not.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So finally have this kind of network, so there are examples. There are some results where we we're doing with that is to find histograms an an informal Roc curve and then. OK, the more recent. The species are have. The greater area under the curve so sore method predicts that the filler Jenny this protein. This acid bacteria is Ellyn Ellyn is not considered, is not clear this is considered. Closer to asshole. Here, so for instance, this other index is case changing a little bit. This kind, but is doing is trying to predict in the same thing as us is very independent on these two methods are the most independent methods with respect to the size of the network. Another method, like the Laplacian entropy. So the Laplacian energy choose me the one human entropy are you know are not predicting philogene it's all OK, so there are connections between these.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "These two methods.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Finally, some results regarding network separate distribution. Simply I can get a graph user commute time in bending the graph. And use a multi dimensional method for matching the graph and then use a kernel. To measure the similarity of the graph and I can do that with graphs, very large graph, provided that I can compute the commute times, and I satisfies the ball, look, look Swerdlow switches that the commute time is not get lost, which may happens in some networks like peas. So I have to verify that at least OK, so we are. We are performed every other method for matching to date. OK, this was published in CP.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Are classier other result interesting is to see graphs until source and stencil distribution. Imagine that I get a coverage which is sub graph node another coverage another coverage and I get some spectral features firm here in our coverage metrics and. Coverage metrics is is a point of Riemannian manifold, so I can see the graph of the scatter distribution. All these points which are covariance matrices in this in this space. This is the space from the Central view is the tangent space and we have shown that this is the result we have so far. Lasier and this is the result we have now in a very, very difficult database graph database. So. Sort of graphs in terms of that.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "And finally, we can perform. One thing is called embarrassed embedding, which is OK. We have the commute time is giving us information to project the points. The distance between the points is the commute time. What happens if someone tells me OK, you have the distance of the points? Give me a graph. So if I formulate optimization problem, when I when I say OK, maximize the edges of the graph given the constraints and the constraints are that the when you come back to the topological space? The distances have to be the commute times. So this can be formal has been formulated we through like multipliers and the theorem has we proved the convergence has has improved using preparation analysis. Um? So you can see that for both graphs that will function converge and we obtain. OK, everything different from Orange is something existed in one graph and not exist and we don't know the graph. There is white or it's black, but we recover 70% of the graph. But we do that because we stop where. When we we don't know how many edges has the graph, but we stop when we get the. We reach a connected graph. I'm for doing that. We use on MDL principle over there will be players. So we are using that because this is very useful later for for doing generative models in the pointer space and then come in. To the topological space, so we're trying to do both things, but this is the first step.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "OK, so thank you. Questions. So I'm not sure I understood by the end of the bacteria story, but the thing that the main conclusion was that bacteria, the external field bacteria is in the filter, feel they have more constraints, VPN S or structure or something that makes sense absolutely. They are not an expert in that, but had to ask, but there was the data are telling me is this step. What about that there is? Results about discription complex complex. Is there any thin graphs? Yes. I'm not sure. I think you know 'cause. OK. Have the code you have to get the entropy of the code so that the description. You can go that way that in terms of, for instance. Go in terms of get the adjacency matrix and OK. This is the encoding of the graph, but I think that that that. Finding moot encoding for measuring this complexity is very hard. Because if you take the adjacency matrix, this matrix is telling you that these are symmetric. You can get the spectrum or things like that, but this is giving you pull information. For doing that, maybe if you use that obtained and you can have two, you are able of measuring entropy because they are bypass entropies. Tomatoes can measure entropy in. Dimensions in many, many dimensions and few few. Number of points of samples of nodes. This will be the possible should be a good idea to internalize but. In this case, we focus in the way of information transfer because at the end the network has to do something and doing something for me. Is. To transfer information, some kind of information. And This is why I followed that path. I did not realize that of that at the beginning with polytopes, but but later in the flow complexity. There are this parameter set. Try to quantify how difficult to solve a problem like this complexity. NPR, but then. Conditions that are not. So some of these parameters are three with rank with bubble with. Any chance to use these parameters? They know that we explored. For instance, I comparison was for instance in with the parallel complexity. For instance, when you have to to see if you can, you can solve a problem with Poly log number of computers. And it turns out that that it had been recently proved that, for instance, if I use the permanent for computing this maximum entropy, things like that. The result as the NC class is not or slash P class is not even see. So it seems it would what is behind this is that finding the complexity of our network with the bit hold. So things like that. Is a kind of different to paralyze? Very difficult to parallelize. Very difficult to parallelize. That is our result for cattle. Normally and all the other people about this kind of classes of. I don't know if you refer to that or. A little bit. So the main idea behind that is that if you look for the complexity that terms from the maximum entropy decomposition, this is hardly. To paralyze but in flow complete, I don't know have this plot. Short idea, I believe that the metabolic networks exist for most of all of these species. It would be fantastic to compare the PPO Network Center metabolic networks, maybe simply for sure. One thing we are collaborating with people people from. From USA now is that is what happens with the virus. It happens that with few proteins. They want videos. In fact, something is gaining the control. For all the PPI network and is quite interesting to discover. Why is this happening. Be careful with the metabolic networks because of the following. Their representation of a metabolic reaction or any chemical reaction as a simple graph where directed graphs losing information. Represent that as a directed hypergraph, so you have to go to hyper graph. There are some details, and then you will have to mathematical objects which are differing a graph which is representing the protein, which is a simple graph. Indeed, Anna directed hypergraph and I don't know how to match the things that you are obtaining if you go to the direct network representation of the metabolic reaction you are inferring as many of the papers which are published in the literature wrong things absolutely the wrong things. So that's that's a very. What is what is important is that the relationship is not between metabolic network but with metabolic pathways. So in this study what they do is to study PPI networks and they study what happens with with certain metabolic ways. But so this, I think, is because it's difficult to deal with them directly, so they deal with them. But you know. In a. My passport. Just started back to administer in the case of the metabolic networks, it does make a big difference, but they were interested in the substrate substrate or enzyme enzyme links. So whether the notes of the networks are the substrates or enzymes, probably in the case of the substrate. It's more important that you say you know inside, and then maybe we can talk about it with two copies because it's hard. Power is interesting, OK?",
+        "start": 899.0,
+        "end": 928.0
+    }
+]

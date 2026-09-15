@@ -1,0 +1,542 @@
+[0.0s - 29.0s]
+Photo today 7 hours will be from aerial increases, linguistics and logic, so will be given by this couple. She's from like at the moment. And Conversely, yes. Yes. So and so this will be first out of two talks. Today is the first talk in the second at tomorrow's your second talk, which will also get quite interesting about Psych Lexicon, which is. Very important place or maybe one of the most important places of psych. So far I guess please just stuck and will discuss during the talk. OK, alright?
+
+[29.0s - 58.0s]
+So thank you, it's great to be here. It's been great meeting everyone, OK?
+
+[58.0s - 87.0s]
+Baxter so the general enterprise that I've been engaged in at cycorp, mostly in collaboration with David Baxter. Has been to define and implement an algorithm for translating formulas of cycle, which is a form of predicate logic into English. It should be concise, natural sounding English with quantificational expressions like every man. No man proper names like Mary and John Indefinites like a man. Definite descriptions like the man pronouns like him in her wherever.
+
+[87.0s - 116.0s]
+They are called for. What this means is that what we want to do is generate both referring expressions and non referring expressions, expressions that refer to objects or people like Mary and expressions that don't like no woman. Referring expressions basically correspond to constants. An non referring expressions correspond roughly to variables and the logic.
+
+[116.0s - 145.0s]
+There are two fields in natural language generation that we can draw on to come up with a solution to this problem. Generating referring expressions is the name of 1 field in the in natural language generation, and then there's another field called tactical general generation or realization in generating.
+
+[145.0s - 174.0s]
+Referring expressions the task is to provide. An appropriate means of referring to a given object in a domain.
+
+[174.0s - 203.0s]
+So you might have a situation where there are multiple books. Each book has a set of associated properties like. Being on a table or not, and you want to refer to some book that's on a table and there's only one table in the domain.
+
+[203.0s - 232.0s]
+An appropriate output for such an object would be the book on the table. Assuming that the interlocutor is aware of the existence of the table. This field has done a lot of great an important work, but.
+
+[232.0s - 261.0s]
+It only generates genuinely referring expressions, so only expressions for which there is an object in the model.
+
+[261.0s - 290.0s]
+There are systems within this line of research that generate quantified referring expressions. Such as these women who have fewer than two two children, or the people who work for exactly 2 employers. But even here what we have are preferential expressions, so they refer to groups of objects in a domain rather than being non referring expressions.
+
+[290.0s - 319.0s]
+In the field of tactical generation generation. You do get. Non referring expressions being generated. So tactical generation systems are generally based on existing. Formal grammatical theories like head driven, phrase structure, grammar, lexical functional grammar, combinatory. Categorial grammar. And.
+
+[319.0s - 348.0s]
+Um? The way that the input is represented is the semantic representation for that grammatical theory. So in head driven phrase structure grammar, the grammatical and semantic properties of an utterance are representatives attribute value matrices, which are. A set of pairs where one element of the pair is a. An attribute and then it's associated with the value, which again can be an attribute value matrix. And using their called Avms and using an AVM you can represent the semantic content of an utterance. Uh. Even if the other utterance contains quantifiers, so here's an AVM representation of. Every student and that kind of corresponds to a formula of quantificational logic. If you squint really hard. So the index. So you have a A. An attribute debt which is short for determiner. Its value is for all that corresponds to the universal quantifier then. Restand corresponds to the restriction of the quantifier. The index corresponds to a variable, so that boxed for is like X and. And deeper in there you have Realm student and that corresponds to student the predicate and again you have that boxed for and that could. You could see that as a variable like X. So this kind of means for Aleks Student X. So the point is that using HP SG you can represent quantificational formulas and there are tactical realization systems for HP SG such as the one implemented by Wilcock and Matsumoto. Let's say class of logic formulas which are expressible in natural language. So this would be pretty much. Yes, yes. Of all these categories, which are well? Constructing for which you are constructing the formulas. Well, this would be some building blocks would be the ones which are showing here, right? Yes, right. Yeah, I think the point is that with Avms you can represent a version of quantificational logic and you can generate from these kinds of content representations. But these tactical realization systems have no representation of the discourse.
+
+[348.0s - 377.0s]
+Um? So to combine the strengths of these two subfields of natural language generation, you might say, OK, I've got a generating referring expressions machine here and I've got a technical generation machine, so let's just. Put 'em together but. I would like to argue that that's not.
+
+[377.0s - 406.0s]
+The right approach because there are common constraints between. Bound and referential anaphora, so that you have pronouns that have antecedents that are non referring expressions and you have. Pronouns whose antecedents are referring expressions and they are subject to the same constraints. Both kinds of pronouns require an antigen iaccessible antecedent in the discourse, so you want to capture these two kinds of anaphora within a unified system.
+
+[406.0s - 435.0s]
+Which is what I'm saying here. So that's what I'm going to. To present a unified system for generating referring in non ref.
+
+[435.0s - 464.0s]
+Ring expressions, so one starting point for such a system might be some form of dynamic semantics, because one of the insides underlying dynamic semantics is that referring an non referring anaphora. Have something in common so examples of dynamics semantics are discourse representation theory and file change.
+
+[464.0s - 493.0s]
+Semantics. And as I just said, these kinds of semantic theories capture the insight that referential unbound variable anaphora have certain.
+
+[493.0s - 522.0s]
+Banalities with they use. This theoretical construct, called the discourse reference which is not an actual reference like an actual object in the domain. It's sort of a theoretical construct that's intermediate between language and reality. Colin, it's called a discourse reference, that's cartoons.
+
+[522.0s - 551.0s]
+Term. He defines it sort of indirectly. In this quote, he says the appearance of an indefinite noun phrase, such as a man. Establishes a discourse reference just in case it justifies the occurrence of a coreferential pronoun or definite noun phrase later in the text. So that means that. You can have either preferential or non preferential. Pronouns referring back to these discourse reference.
+
+[551.0s - 580.0s]
+Well. Being justified by these, but the introduction of these. Discourse reference. And as he says, this definition allows the study of coreference to proceed independently of any theory of extralinguistic reference. So it's captures both kinds of.
+
+[580.0s - 609.0s]
+Afro. So. Just to give an example of how discourse representation theory works. You start with a full sentence full of parts of a sentence like. The one I've given here. And if the sentence is. A language.
+
+[609.0s - 638.0s]
+Likes Mary. Then the first thing you do is. Transform the subject of the sentence. Into a condition. Linguist X and introduce a new discourse reference. I'm calling that X&Y and the new discourse reference goes in. That top part of the box, which is the universe of the DRS and then below the universe you have conditions that. Give you more information about these discourse reference. So first you convert the subject to this condition. Linguist Prymaxe, linguist prime. Is you use the prime to distinguish linguist from the word linguist, because in this theory the meaning of life is life prime. And. Yeah, right, so and you leave the and then you replace the subject with. The discourse reference and.
+
+[638.0s - 667.0s]
+Then what you end up with is. ADRS, discourse representation structure with. Two discourse reference X&M. Um? Proper names are represented as predicates using discourse representation theory, and that's a slight difference from predicate calculus that. You would have to deal with if you were going to start with TRT. Anne with. The resulting DRS. You can from that dress you can convert. You can construct a predicate logic representation so. Yet. Actually in the. Algorithm for constructing predicate logic expressions from DRS is. Something like Mary M is converted into M equals Mary. Um?
+
+[667.0s - 696.0s]
+So. You might say, OK, you want to translate predicate calculus into English. Let's start from a predicate calculus representation and created DRS and then use that to generate English.
+
+[696.0s - 725.0s]
+So start with exists X linguistics and like sex Mary generate this deal.
+
+[725.0s - 754.0s]
+As an produce, a linguist likes Mary.
+
+[754.0s - 783.0s]
+But that doesn't make sense because the strategy doesn't capture phenomena that reflect changes to the discourse as the discourse proceeds.
+
+[783.0s - 812.0s]
+If the input is a fully formed ERS. Then the discourse representation will remain fixed throughout the generation procedure, as opposed to changing as the generation. Proceeds
+
+[812.0s - 841.0s]
+So. The dynamic nature of discourse representation theory is basically thrown away under such.
+
+[841.0s - 870.0s]
+Approach. So the present work is inspired by some of the ideas underlying DRT, but including the notion of the discourse.
+
+[870.0s - 899.0s]
+But we're going to build up the discourse as the sentence is generated, and in that sense.
+
+[899.0s - 928.0s]
+The algorithm is dynamic.
+
+[928.0s - 957.0s]
+So. The next thing I'll do is talk about some of the phenomena that we want to capture, and then I'll go into the description of the system and some of the results.
+
+[957.0s - 986.0s]
+Strictly speaking, if you want to translate predicate calculus into English, you don't have to worry about expressions like every man and a woman and bound variable in effort, because you could just translate directly so. Take a an expression like frolics is X man implies loves XX. You could translate that As for every X if X is a man, then X loves X and that would be clear enough. And that's how psych used to work. Sometimes it still works like that when we can't. That's sort of the default. Way to generate when all other methods fail, but we'd like to do a little bit better than that, and make Sykes seem smart and like it can speak English. So to do that. We're going to need to be able to produce outputs like every man loves him.
+
+[986.0s - 1015.0s]
+Elf right? So a simple. Starting point for doing that would just be to say if the variable is universally quantified, then use every. If the variable is existentially quantified, then use some.
+
+[1015.0s - 1044.0s]
+Pretty much that's right. So if you have something like for all X loves Mary X. That should be translated as Mary loves everything. But if you have exists, X loves Mary X that should be translated as Mary. Love something.
+
+[1044.0s - 1073.0s]
+But it doesn't work with certain cases like donkey sentences. Um? So if you have for all X for all, why is X donkey and is X farmer and owns XY implies Beats XY. Um? You want to translate that as if a farmer owns a donkey, then he beats it, not. If every farmer owns every donkey, then he beats it second. Right? Xbox Wi-Fi yes why Farmer yes sorry. I mean, unless? Farmers, if a if a donkey farmer owns anything, then he beats it. That's what that first formula releases. Uh, OK. Right, so that's one class of counterexamples to the generalization that universally quantified variables should be translated with.
+
+[1073.0s - 1102.0s]
+Free. Negation also changes how universally quantified variables should be translated. So if you have for all X is X. Donkey implies not loves Mary X. You don't want to translate that as. Mary doesn't love every donkey. You want to translate that as Mary doesn't love any donkey or any donkeys. An another option would be Mary loves no donkeys, so you express the negation as part of the determiner.
+
+[1102.0s - 1131.0s]
+Um? Only the no option is available when the variable to be expressed is going to be realized in subject position. So if you have for Alex is X Donkey not loves X Mary the only option there is no donkeys love Mary. You can't say any. Donkeys don't love Mary, so there's some. Syntax to be taken into account as well.
+
+[1131.0s - 1160.0s]
+It's not the case that if there is a negation around, you should use any or no. When the negation out scopes the universal quantifier, then things kind of get reset and you should use every again. So if you have not fralix loves Mary X. Um? You want to translate that X using every Mary doesn't love everything. Right? Um? Whereas if the negation is inside the scope of the universal quantifier, you want to use any.
+
+[1160.0s - 1189.0s]
+Existentials. Are similar in the basic case. And an existential quantifier.
+
+[1189.0s - 1218.0s]
+It's translated using some. Um? And negation also affects how existentials are are realized, but the effect of scope is kind of the opposite with existentials from how it is with the universal so. If you have their existing X not loves Mary, then you're going to use some, so where the negation is inside the existential quantifier, use some right. That means there's there's someone who doesn't love Mary. Someone doesn't love Mary. Um? And that's true. Whether the, whether you're dealing with subject position or object position.
+
+[1218.0s - 1247.0s]
+Um? So when the negation is outside the existential quantifier not there exists. Next loves Mary X. Then you get any or no. So this means there doesn't exist any person that Mary loves, so Mary doesn't love anybody anyone. Or Mary loves no one. And again, if the expression is in subject position, you can't get any. Um? Publication of side be outside the quantifiers we just got through them inside. Did I? I didn't, that's. That's a very good question. Some treatments of any assume that it corresponds to an existential quantifier. We're assuming that you can have any corresponding to a universal quantifier or an existential quantifier, and here is 1 argument. If you have. Not frolics for all, why? I. Um? Loves XY then you should realize that as it is not the case that anyone. Loves anyone know for Alex? For all why not loves XY? That should be that can be translated as is. It is not the case that anyone loves anyone. Not love sex why? So there you have two universally quantified variables. And there's only one that you can swap with the negation to produce a negation outside an existential quantifier. So there's a case of any that has to correspond to a universal quantifier, so. Since you have to allow that, you might as well allow it in general. OK, so that's that. Um? So that's all. I'll say about Dota.
+
+[1247.0s - 1276.0s]
+Dinner selection. Um? Now move on to anaphora, so variables. And constants can be realized using pronouns. So if you have loves Mary Mary. Are you want to translate it that as Mary loves herself? If you have for all X not loves XX, then you want to translate that as no woman loves herself. You want to actually Eastern or something which will show it is translatable. You want it and you've got it. So and so on. So this is management Oh yes. Oh yes, an anaphoras. One of the main features of this system. So there are commonalities between. Referencial, anaphora, as in the first example where herself refers to Mary and non preferential anaphora, as in the second example, where herself corresponds to a variable. And there's no object in the domain that herself refers to. In fact, you know we're saying no woman loves herself, right? So there's nothing to refer to.
+
+[1276.0s - 1305.0s]
+OK so but referential and non referential anaphora are subject to slightly different constraints so. A normal reference that is a referring reference survives for awhile. If you say I found Mary's cat.
+
+[1305.0s - 1334.0s]
+And kept it in the next sentence. You can say then it ran away.
+
+[1334.0s - 1363.0s]
+But a short term reference can just die abruptly at the end of a sentence. This is an example from Haim. 1983 her article on File Change semantics. Everybody found a cat and kept it.
+
+[1363.0s - 1392.0s]
+Then it ran away, is not OK. According to Hime, I can kind of get this. Reading where everybody found a cat and. Kept it and then for everyone the cat ran away. Maybe I've just been looking at this sentence for too long, but. I don't think that that's the. We found a kitten right? So there are a bunch of people. For everyone there was a different cat. Potentially. Oh, right, if yes, right. If the existential has wide scope over the universal, then the following pronoun is OK. So yeah, if everybody collectively found one cat then then the following. Say that everybody's cat. I think that's OK. Yeah, yeah. Right, yeah? So on a bound variable reading. Of the pronoun. Anne. If the if everybody has scope over a cat. Then this is app. So yeah. Well, we're using it in order to show that a cat does license. About variable anaphore um. What's the Pakistani? Journalist language. What did care about this? That was different? Oh yeah, sure, yeah yeah yeah. It should end it and it shouldn't be. Everybody found a cat and kept them. I think. OK, so.
+
+[1392.0s - 1421.0s]
+Here's a clearer example. You can say Jane will give give you her.
+
+[1421.0s - 1450.0s]
+Amber, I know.
+
+[1450.0s - 1479.0s]
+Sure, but if you say no, self respecting lady will give you her number, you cannot follow that up by saying.
+
+[1479.0s - 1508.0s]
+I know her that's completely bad. Do even the non native speakers of English in the audience get that intuition? Yes, right? I mean yeah, it's clear what that should mean I suppose. OK, so this shows that referring a non referring anaphora. Have different lifespans, non referencial? Sorry, referring a non discourse reference corresponding to referring on referring an Afro have different lifespans so. Discourse reference corresponding to variables. Can just die at the end of a sentence abruptly? OK.
+
+[1508.0s - 1537.0s]
+And then another thing that you want to be able to capture is that. Depending on the the determiner that introduces the discourse reference. There can be different lifespans, so if you say a farmer, if a farmer owns a donkey then he beats it. Um, that's fine. The pronoun can refer to a donkey, but if you say if a farmer owns every donkey. Then he beats it. That's totally out, so. That's another contrast that we want to be able to capture.
+
+[1537.0s - 1566.0s]
+So what we're going to do is define a generation function, let's call it G, and it applies to a logical formula. Say Alpha, which can be any expression of the logic cycle, we're going to only worry about the 1st order predicate calculus part of cycle here.
+
+[1566.0s - 1595.0s]
+At. But I mean the generation system does cycle in general. And this generation function depends not only on the formula to be translated, but also on two kinds of context. The discourse context and the operator.
+
+[1595.0s - 1624.0s]
+Context. And it has side effects, so it modifies the context as it goes along. So that's sort of the formal definition of.
+
+[1624.0s - 1653.0s]
+Dynamic here. I'll go through the discourse context 1st and then.
+
+[1653.0s - 1682.0s]
+Explain the operator context. So the discourse context, unlike those discourse representation structures that I showed at the beginning, is just a set of discourse reference. And each discourse reference is associated with a logical expression, which can be either a constant or variable. So again, that's sort of unlike DRT, where. The the universe is consist only of variables, they don't consistent. They don't have constants in them and then associated with each discourse reference is set of index features, person number and gender, and that determines how pronouns are realized. But we're not going to worry about that part too much. So.
+
+[1682.0s - 1711.0s]
+Just as an aside, as I just mentioned, DRT treats all discourse reference as variables. Which complicates the translation to predicate logic. So if you have a discourse representation structure like this one, that would be translated. Um? As on the right where X equals Mary replaces Mary X, so it's this kind of ugly little. Piece of the translation algorithm.
+
+[1711.0s - 1740.0s]
+And they also, in DRT, have to use this mechanism of external anchoring for proper names. Something that goes beyond the interpretation of normal. Conditions and Reinhardt Muskan's has suggested. Magician has suggested that. If you allow constants to be discourse reference, then you won't need this external anchoring device, so I'm with Reinhard, Wisconsin. This respect treating discourse references either constant.
+
+[1740.0s - 1769.0s]
+For variables and, it's kind of interesting that. This is what I came up with. As I was generated as I was building this. Natural language generation system. Not knowing anything about DRT, honestly. But from the parsing perspective it took. I don't know 20 years to come up with the idea that you should use constants as well as variables as discourse reference, so that kind of indicates that taking this natural language generation perspective could potentially be illuminating about semantics in general.
+
+[1769.0s - 1798.0s]
+So. Right, that was an aside. So here here is the key part. Of the algorithm that makes the semantics dynamic. It's very simple if the expression to be realized is an individual denoting constant or a variable ranging over individuals, then as you generate the this expression, you add it to the discourse context.
+
+[1798.0s - 1827.0s]
+So here's an example. We have loves Mary Mary. As our formula to be expressed, we also construct a syntax tree using the generation template for loves. Which says that the subject is going to be married. The verb is going to be a translation of loves and the object is going to be Mary. We realized the subject.
+
+[1827.0s - 1856.0s]
+With the string Mary. Add married to the dish.
+
+[1856.0s - 1885.0s]
+Course context. Generate the verb.
+
+[1885.0s - 1914.0s]
+Is loves rather than love because Mary is third person single.
+
+[1914.0s - 1943.0s]
+Then generate the Anna for Mary because Mary is already in the discourse context. Sorry, we generate that.
+
+[1943.0s - 1972.0s]
+For herself and the value. Of the generation function applied to the input formula is the concatenation of the. Strings Mary loves.
+
+[1972.0s - 2001.0s]
+And herself. And, um. Again, sort of as an aside. We are associating Arg. One of the Love's relation with the subject of the sentence. In other words, we're doing argument linking. Via these generation templates, which are encoded in the KB using the Gen template. At predicate, so we're kind of taking argument linking as given. Um? Yeah, so for example, the predicate likes. Specifies that it should be translated as a transitive sentence in which the subject is the realization of the first argument. The verb is a form of, like the word that agrees with. The subject and the object is the realization of the second argument.
+
+[2001.0s - 2030.0s]
+OK. Ah. Thousands, not sure exactly they are. Yes yeah click on predicate extent for Jenn template. Right, and so the point here is that. The same thing happens with variables, so if you have for all X likes XX, you're going to end up with a syntax tree where the subject. Is the translation of X. And so is the object. So the translation of.
+
+[2030.0s - 2059.0s]
+If X is going to come out everything.
+
+[2059.0s - 2088.0s]
+Using the determiner selection algorithm that I'll get it get to next, and then after you generate X. You put it in the discourse.
+
+[2088.0s - 2117.0s]
+Context. Generate the.
+
+[2117.0s - 2146.0s]
+Verb An, then anaphore is appropriate because X is already in the discourse context. When you generate.
+
+[2146.0s - 2175.0s]
+The second time. That gives you everything likes itself. Instead of everything. Because we I. I assume that we are not taking into account the argument constraints of likes, but in fact this would come out. Everybody in the system because the system does take the argument constraints of likes into account, and it knows that liking is something that. Only humans or human like things can do. Right from the argument constraints of like. That's an issue that gets pretty messy because. The argument constraints. Of likes are actually like sentient being or something really technical and weird sounding. And if you say every sentient being likes itself, it sounds like you're saying more than just frolics, like sex sort of conveys more content and. Conveys it more confusingly than you would like, so that's an issue that I don't quite know how to deal with. Right, OK, so both variables are.
+
+[2175.0s - 2204.0s]
+Constants get added to the discourse context. But variables are removed from the discourse context after you're done generating the quantificational expression, binding them so in for all X like sex. Um? X is bound by the universal quantifier, and when you're done generating that universal quantifier expression, you have to take X out of the discourse context.
+
+[2204.0s - 2233.0s]
+So, so you have frolics, not loves Doug X, and Frolics loves Mary X.
+
+[2233.0s - 2262.0s]
+First you generate.
+
+[2262.0s - 2291.0s]
+Doug put it in the discord.
+
+[2291.0s - 2320.0s]
+Context.
+
+[2320.0s - 2349.0s]
+Loves then X comes out nothing. Put X in the discourse context.
+
+[2349.0s - 2378.0s]
+Now we're generating sorry missed the crucial moment. I. We take.
+
+[2378.0s - 2407.0s]
+X out of the discourse context after we're done with Doug, loves nothing.
+
+[2407.0s - 2436.0s]
+And then.
+
+[2436.0s - 2465.0s]
+Yumari put Mary in the disk.
+
+[2465.0s - 2494.0s]
+First context law.
+
+[2494.0s - 2523.0s]
+Loves an now X comes out everything because X.
+
+[2523.0s - 2552.0s]
+Is not in the discourse context. Then we can put it back in. Suppose we didn't remove X from the discourse context, we would.
+
+[2552.0s - 2581.0s]
+Great dog.
+
+[2581.0s - 2610.0s]
+Loves
+
+[2610.0s - 2639.0s]
+Nothing. OK.
+
+[2639.0s - 2668.0s]
+It's still in there.
+
+[2668.0s - 2697.0s]
+Generating Mary.
+
+[2697.0s - 2726.0s]
+Loves
+
+[2726.0s - 2755.0s]
+It.
+
+[2755.0s - 2784.0s]
+It because.
+
+[2784.0s - 2813.0s]
+X is in the discord.
+
+[2813.0s - 2842.0s]
+Context, and that would be bad. That would not convey what we're trying to convey, and it may not even make sense. Yeah. I don't know.
+
+[2842.0s - 2871.0s]
+That's a representative example. OK, so this is how we're going to account for Heinz Cat example. Everybody found a cat and kept it.
+
+[2871.0s - 2900.0s]
+Then we take X&Y out of the.
+
+[2900.0s - 2929.0s]
+Discourse context, so we can't say.
+
+[2929.0s - 2958.0s]
+It ran away.
+
+[2958.0s - 2987.0s]
+Alright, now for the operator context, which has to do.
+
+[2987.0s - 3016.0s]
+With determiner selection. Define an operator context as a tuple veessen, where V is a set of variable type entries. S is a stack of logical symbols. Which can be implies operator, the negation operator or a variable. Such as X&N is an integer representing the number of negations lying around that have to be expressed.
+
+[3016.0s - 3045.0s]
+OK, and a variable type entry is again a tuple. With three elements, a logical expression, a quantifier. Sorry, a variable, a quantifier, and a type. Um? So that the variable is a. Variable over individuals. It actually could be a variable over more types of things than that in reality, but just for the sake of sticking to 1st order predicate calculus, it's a variable over individuals and. Then there's a quantifier symbol for all or there exists an A type is. Election in psych.
+
+[3045.0s - 3074.0s]
+OK. So. How the key? Aspect of this algorithm is that we're going to take information out of the. Logical input formula and put it into the operator context. And what's what remains after we take that information out of the input formula is the clausal skeleton. So the causal skeleton of frolics for all. Why is X man is a wild donkey owns XY, implies loves XY. Is owns XY implies loves X apply? And that will be realized as if a farmer owns a donkey then he beats it. So the structure of the English sentence generated is isomorphic. Two, the. Well, the English sentence is isomorphic to the clausal skeleton.
+
+[3074.0s - 3103.0s]
+What I removed from the input formula there was. Variable typing clauses. Those are is a form.
+
+[3103.0s - 3132.0s]
+Was. Which relate an individual to a collection signifying that the individual is an instance of the.
+
+[3132.0s - 3161.0s]
+Action. Variable typing clauses are removed from the input formula along with the.
+
+[3161.0s - 3190.0s]
+Quantifiers and the types the collections. Mentioned in the is a clause is.
+
+[3190.0s - 3219.0s]
+Are stored in the operator context. And here is a. More formal, yet still not exactly truthful representation of what is encoded in the site generation system. So for an input formula of the form for all variable sentence. If the sentence is of the form, Phi implies PSI. Um? Then there are three cases. If Fi is a variable typing clause. Then the causal skeleton that Sigma. Is set to the consequent of the. Of Alpha and we add. The collection mentioned in the variable typing clause gamma. I to the set of variable typing entries an associate that with the variable. In the second case. The antecedent is a conjunction and one of the conjuncts is a variable typing clause. Um? That little squiggle means matches, by the way. And what we do is take that variable typing clause out of the antecedent. And otherwise leave the formula as it is to produce the causal skeleton, so that will give you something like. Is it X donkey and loves exhalt implies? Is X nice donkey? We will take is X donkey out but leave like sex hey in there because likes is not available typing class OK and will add. The type which would be donkey in that example to the set of variable typing entries. And if there's no variable typing clause, then we just use thing which is the most general type in psych. At. Right, and that's what we do if. The sentence is not an implication to we just use thing as the type for the variable. Uh.
+
+[3219.0s - 3248.0s]
+Do a similar thing for. Formulas of the form exists variable sentence. If we find a variable typing clause among the conjunct. In the sentence. Then we take it out and add it to the set of variable typing and variable typing. Sorry, the variable type make a variable type entry for it and then. If we don't find a variable type in clause, then we assign thing to the variable.
+
+[3248.0s - 3277.0s]
+So. We add this variable type entry to this.
+
+[3277.0s - 3306.0s]
+At a variable type, entries in the operator context and then we compute G of Sigma. So we generate the clausal skeleton.
+
+[3306.0s - 3335.0s]
+And then we restore the operator context to its previous state. So we take. All those variable typing. Variable type entries out. And we're also going to have to deregister that variable from the discourse context when we're done with G. Don't you also? Table type entries. Constraints coming from relations. Yeah, we do actually. Yeah, as a matter of fact that's slightly more controversial, so I haven't publicized it, but it's true that we do that. This result. It's sort of philosophically. It's philosophically questionable I've had. Multiple hours worth of debates with the philosophers over this. Etc. It's it's true, but I want to do the right thing. Right, so OK. Let's go back to that for all X not loves XX example if that. Is realized as no sentient agent. No sentient being loves itself. Um? That seems to make a weaker statement then. Nothing loves itself. Um? If I mean if the interlocutor doesn't know that sentient beings are the only things that could love themselves, then it seems to make. It seems to convey the wrong idea that's one problem, but. If you say. Every sentient being loves itself. It's not clear that that's the negation of no sentient being loves itself. Um? Whereas. Everything loves itself seems to be the negation of nothing, loves itself. About what bodies yeah alright. Yeah, so the question is, under what circumstances do you get contradiction? Under what circumstances you could. Exceptional cases or or would this be also? Well, it's a very pervasive issue, because every predicate has argument constraints and you don't always have a variable typing claws around, so you have to come up with a solution that works in general. So it's an important question. And it should be resolved. Yeah, I don't know what the right answer is. Um?
+
+[3335.0s - 3364.0s]
+OK. Right, OK, so here's an example of. Creating a causal skeleton in more detail, let's use our donkey sentence. Again, we're going to take. The.
+
+[3364.0s - 3393.0s]
+Universal quantifiers and the variable typing clauses out and add them to the set of variable typing entries, leaving us with owns XY.
+
+[3393.0s - 3422.0s]
+Blaze Pizza XY and that gives us if a farmer owns a donkey, then he beats it isomorphic.
+
+[3422.0s - 3451.0s]
+To the input. An input formula that is an implication can sometimes be simplified to a single clause, so we don't have if and then in the output. Um? So if you have is a X men implies loves X Mary.
+
+[3451.0s - 3480.0s]
+You'll take the variable, just eliminate the antecedent altogether. And store X azzaman universally quanta.
+
+[3480.0s - 3509.0s]
+Hide and get every man loves Mary. OK. So that's how we deal with universal and Existential.
+
+[3509.0s - 3538.0s]
+Modified formulas. Negative formulas are also dealt with using the operator context, so. If you have an input formula of the form notsi, then. The causal skeleton is PSI, so you're just getting rid of the negation. In the. In the formula to be realized. You don't produce any variable typing variable type entries, but.
+
+[3538.0s - 3567.0s]
+Up the counter of unexpressed negations. OK, and this allows negation to be expressed sub causally. If we left the not in there then we would have. It is not the case that blah blah blah. But this allows you to have married. Doesn't love such and such. Um?
+
+[3567.0s - 3596.0s]
+And will push the. Negation symbol onto the operator stacked symbol that there's a.
+
+[3596.0s - 3625.0s]
+To symbolize that there's a negation around, OK. Um? The operator stack also contains variables corresponding to universal and existential quantifiers. So if you have a formula of the universal formula, then you push the corresponding variable onto the stack and pop it off. After you're done generating the formula, you push the negation on to the stack and pop it off again after generating the formula. And this is a bit of a hack, I admit. If the formula is of the form Phi implies PSI. Then you put the implies operator on the stack and pop it off when you're done generating the antecedent, and that's because the purpose of this operator stack as I will show, is to license any and in general negative polarity items. Items that are sensitive to the presence of negation. Um? And negation, like things like. I. Hypothetical so. So if you have. If Mary likes anyone, then Mary likes me. Anyone is is a negative polarity item and it's licensed in the antecedent of a conditional, which is kind of a hypothetical context. It's not really a negative context. It's been said that what licenses negative polarity negative polarity items is non veritical context, so where it's either hypothetical or negative. People argue about this, but our analysis is basically that if it's in the scope of negation, or if it's in the antecedent of a conditional, then negative polarity item is licensed.
+
+[3625.0s - 3654.0s]
+OK. So. Here is the variable realization algorithm at long last. So say you have. At. A given variable type entry. If the variable is in the discourse context, then you will realize it with a pronoun. If its antecedent is sufficiently salient, and if the pronoun would not be ambiguous. Otherwise you realize it with a determiner followed by a noun expressing the type. OK, and.
+
+[3654.0s - 3683.0s]
+The determiner has yet to be decided, so the first step in choosing a determiner is whether a negative polarity item license negative polarity item is licensed. OK, and we're going to compute. Π, which will be either the negative polarity item, licenser, or null. I. So if the if the. Quantifier binding the variable. Is a universal quantifier? Then what you want to know in order to compute Pi is whether the variable is deeper on the stack. Then the licensor or not. And if it is deeper on the stack, then NPI licensor. Then you set π equal to the NPI licensor. For existential quantifiers, is the opposite, so you want to know if the MPI licensor is deeper on the stack than the. Then the existentially quantified variable and.
+
+[3683.0s - 3712.0s]
+There is an MPI license or deeper on the stack. Then you set π equal to the MPI licensor. Otherwise Pi is null.
+
+[3712.0s - 3741.0s]
+Alright, so given pie. First, well, if the variable is in the discourse context, then you use a back reference like that or the. Followed by a noun that expresses the variables type. So the donkey. If π is not null, then there are two cases. If it's. Negation and there are unexpressed negation flying around then use no. And then you decrement an by one signifying that there is 1 less negation to be expressed. Otherwise you return any. Or an indefinite determiner? This is kind of a stylistic choice. If there's only one expression of the variable, then we use any. Otherwise we use the indefinite determiner. Um, those are the complicated cases. Otherwise, if the quantifier is. For all the news every. Um? And the only remaining cases that the quantifier is. Exists is there exists and in that case you return? At the indefinite article.
+
+[3741.0s - 3770.0s]
+So let's go through an example. You start with frolics, not loves Mary X.
+
+[3770.0s - 3799.0s]
+Take off the universal quantifier and there's no variable typing clause, so we're going to use this thing. And we add X to the stack and the negation counter is 0.
+
+[3799.0s - 3828.0s]
+Then we take the negation off. And increment N. Putting the negation on the stack.
+
+[3828.0s - 3857.0s]
+And now we're.
+
+[3857.0s - 3886.0s]
+To start generating. We get married. Uh.
+
+[3886.0s - 3915.0s]
+For the subject. Put that in the disk.
+
+[3915.0s - 3944.0s]
+First, context loves with an S on the end because Mary is third person single.
+
+[3944.0s - 3973.0s]
+And then when it comes time to generate X. We get nothing because X. Is. Well, we know that X out scopes negation. And there is. An unexpressed negation around. And π is the negation symbol because. Because that's the NPI licensor. OK, so.
+
+[3973.0s - 4002.0s]
+That gives us nothing. And when we're. Done with that we add X to the discourse context, but that doesn't matter because we're not going to generate any anaphora after that.
+
+[4002.0s - 4031.0s]
+OK, say we. I express negation on the verb instead of on the object. What will do is.
+
+[4031.0s - 4060.0s]
+Take off the universal quantifier again.
+
+[4060.0s - 4089.0s]
+Add X to the stack. Take the negation symbol and put it on the stack and add. 1.
+
+[4089.0s - 4118.0s]
+N2 N.
+
+[4118.0s - 4147.0s]
+Meh.
+
+[4147.0s - 4176.0s]
+Mary and now we're going to generate negation on the verb.
+
+[4176.0s - 4205.0s]
+So we decrement negation. In that case, decrement the negation.
+
+[4205.0s - 4234.0s]
+Counter and. In this case we have an NPI licensor, but there are no negations to be expressed, so. We get married.
+
+[4234.0s - 4263.0s]
+Love anything. These which. There are two methods, the verbal negation method and. It can fail for a number of reasons, but you try that one first and then if it fails, then you use this account. The correct result is just one usually sounds awful. Well. Mary loves nothing. I suppose that's more awkward than Mary. Doesn't love anything. In that case both are adequate. You have in general. Anyway, but. Question. Yeah, yeah, both both are fine. I think yeah, I think verbal negation is better than. Negation on the object, but both are fine. Um?
+
+[4263.0s - 4292.0s]
+OK, so say. We have the negation outside the universal quantifier. This is going to be the last.
+
+[4292.0s - 4321.0s]
+Sample or second. Last example. OK, we take the negation off.
+
+[4321.0s - 4350.0s]
+Increment the negation counter. Add X to the set of variable type entries with.
+
+[4350.0s - 4379.0s]
+Type thing.
+
+[4379.0s - 4408.0s]
+Mary
+
+[4408.0s - 4437.0s]
+He doesn't love. We're going to express that on the verb.
+
+[4437.0s - 4466.0s]
+Decrement the negation counter.
+
+[4466.0s - 4495.0s]
+And now we're going to get everything instead of anything, because Pi will be null. There's no, there's no negative polarity item licensor. Because of the relative scope of the universal quantifier in the negation.
+
+[4495.0s - 4524.0s]
+That is.
+
+[4524.0s - 4553.0s]
+Wrecked OK. And the donkey sentence one last time.
+
+[4553.0s - 4582.0s]
+In full detail. Take the variable typing causes out at X&Y to the.
+
+[4582.0s - 4611.0s]
+Stack.
+
+[4611.0s - 4640.0s]
+Um? X is going to come out of farmer because there is a negative polarity item licenser. Um? And there is no negation line.
+
+[4640.0s - 4669.0s]
+Bound to be expressed.
+
+[4669.0s - 4698.0s]
+Same for a donkey.
+
+[4698.0s - 4727.0s]
+The second time X is realized. X comes out as a pronoun because it's in the discourse context. And so.
+
+[4727.0s - 4756.0s]
+For why?
+
+[4756.0s - 4785.0s]
+And this is how we're going to account for that interaction between determiners in life spans that I mentioned before. So if um. If the if Y is universally quantified inside the scope of the antecedent.
+
+[4785.0s - 4814.0s]
+Then you'll get if a farmer owns every donkey, so. First we take off variable typing cause for execs, Farmer and then we want to generate. Um? This embedded universal.
+
+[4814.0s - 4843.0s]
+Formula.
+
+[4843.0s - 4872.0s]
+Um? We take, uh, we take the. Variable typing claws out of that one and generate tones.
+
+[4872.0s - 4901.0s]
+Why?
+
+[4901.0s - 4930.0s]
+Um?
+
+[4930.0s - 4959.0s]
+Will come out if a farmer.
+
+[4959.0s - 4988.0s]
+Owns every donkey. Um?
+
+[4988.0s - 5017.0s]
+And at this point we're done generating the universal formula. In which why is bound? Which means that Y will be removed from the discourse context. Which means that subsequent anaphora two Y is going to be impossible.
+
+[5017.0s - 5046.0s]
+So that's how we account for the difference between if a farmer owns a donkey, then he beats it, and if.
+
+[5046.0s - 5075.0s]
+Farmer owns every donkey, then he beats.
+
+[5075.0s - 5104.0s]
+OK.
+
+[5104.0s - 5133.0s]
+So. To conclude. Translating predicate logic to English requires generating referring an non referring expressions and I've. Try to both argue and show that they should be treated.
+
+[5133.0s - 5162.0s]
+A unified framework. The solution that we've come up with uses both a discourse context and an operator context. The discourse context is used for both referring and non referring expressions and the operator context is used for introducing.
+
+[5162.0s - 5191.0s]
+Non referring expressions, and we've captured constraints on the use of quantificational determiners like every in some and no in any. And we enforce lifespan limitations on discourse ref.
+
+[5191.0s - 5220.0s]
+So that's I mean, that could be the right analysis. It's it's our analysis and it's different from the ones that exist. Another issue is Accessibility. So in discourse representation theory. A pronoun can have a given antecedent if it's in the right structural relationship within the discourse representation structure. Whereas here, Accessibility is modeled as a potentially transient state that ends when the QUANTIFICATIONAL expression has been realized, and that's a different analysis from the DRT one, and it has a certain intuitive appeal. So in DRT. Proper names always float to the top of the discourse representation structures, so they're always available as an antecedent for subsequent anaphora, whereas here we just don't ever take constants out of the discourse out of the discourse. Context and so. I sort of intuitively understand our approach to that phenomenon better. I could be that there are different empirical predictions. I haven't explored those, but I think that's an interesting potentially interesting question and. And the generation perspective also sheds light potentially on the nature of presupposition. So definite descriptions like the man and even pronouns are generally taken to have uniqueness implications. So like the man means that there is one man around, and the idea is that the comes with this presupposition attached to it that you have to unpack and incorporate into your model in order to figure out with the man. Refers to. Here we only generate pronouns and definite descriptions when they're unique, but that sort of follows from the procedure with which we decide how to realize an expression. So it's sort of implicitly procedurally encoded rather than declaratively encoded, and that could capture the fact that. Pronouns are the easiest things to understand of all. Expressions of natural language. So the idea that they come. As this really complex message with this complex presupposition that you have to decode is sort of goes counter to the fact that they are very easy to comprehend and our analysis. Captures that fact, so that's. Another reason to sort of consider the generation perspective on semantics as sort of a theory of. Semantics.
+
+[5220.0s - 5249.0s]
+That's all I have to say. Thanks, thanks. Some questions question from my side so. Are these models for language generation rich enough so that you would be able to turn them around and cover? Some coverage of the actual sentences which are reported. Um? That's a good question. We should generate all possible sentences and see how many of them are attested in New York Times. At least for I am a little scared to see what the results, but of that would be because there's somewhat technical sounding sentences and they express concepts that. Have been encoded by philosophers, ontological engineers at psych with sort of technical meanings in mind. I mean, these concepts are are somewhat technical. In some cases and. It could be that this is a sort of. Another domain from what people actually talk about in the New York Times. Kind of knowledge extraction you know, like so if we generate. Language from logic game, so it would be able to. Create back logic from language. So it's yeah it should work. We should try it. We might be able to get something. Yeah. So basically the question was really how? Recharges malls in terms of coverage. Sentences which would still be a lot used letter. Most of the KB is expressible via generation. That's yeah, generation is. Stronger than parsing and so like so. Second question, if you try to go beyond the. Sentence border so physically would generate multiple sentences, yes. Formula, so how this relates to? Yeah, well, the discourse context. Um? Ends when you're done generating a formula. Well, we sort of set it to null again when we're done generating formula, but if we were generating. Um? A really long formula composed of many conjunct's that was intended to be realized as a paragraph. Then the discourse context would survive from sentence to sentence because we wouldn't remove any of the constants from from the discourse context. So this automatically accounts for anaphora across central sentence boundaries, so that's one of the things I've been wanting to do for a long time, so. Do you have any multi sentence? Text for me to generate, please let me know. Opposite direction, so that's why. Now for a solution. So trying to resolve pronouns from the written text. Yes. Yeah, the questions. I have a question about. If I understand right, basically dealing with. Subject. Natural language sense somebody does. Something. Mary loves John or I. I chose love just because it's a very simple example, but it mean it's sort of. Always with. No, I mean the the predicates can be of any arity and. John loves Mary and Mary loves it. It is not correct. You said something like. No. Yes. It would be. Then after work. Then it would refer to. That means Mary loves dancing too. OK. No, it refers to dancing, which is a noun phrase. No. You can go back to this. For example, if you want it's around 4:00. But 40. I got 40. Around. Yeah. You said that. This one. Oh right um? I know which one you're talking about. This suppose we did not, yeah. Right, this is fine. As a sentence, if it refers to something other than. Anything mentioned in that sentence, it just doesn't express the input formula. It would refer to the fact that dog loves nothing. Oh, Doug loves nothing and Mary loves it. Oh yes, that's true. That would be yeah, if you had. Right? Or it works are close to yeah. Hold close as. Right, so yeah, that would be. Love's right that? OK so I think the input formula for that would be something like. Um? The first contract would be the same and then there would be no universal quantifier for the second contract. It would be like loves Mary quote for all X not loves Doug X. Perhaps so you have some some object for the proposition. I think he would quote it for the proposition that. Doug loves nothing. And then. Right? Then that would. Not be in the discourse context according to the current model, we don't have propositions in the discourse context, but. The possibility of that example shows that they should be in there, so yeah, that's a good point. Second question is. Verbs is very. Natural language. So if you say if you take an example like. I found the ball. Let's Jaune found another job. Oh yes. And. Quote. If you then put it together. You need to say John found himself. Even if. John would be the same entity. It would not mean the same thing because to find oneself means to, you know. The verb has different meaning. If you find the thing or if you find. Yourself. Yes. Not. As a regular work with objects. So so so. The input formula for John found himself as in like he had an epiphany. Would be different from the input formula for John found himself. Yes, right? So it is possible in principle for two different formulas to have the same output string. Would you know that the meaning changed? Actually because it did change like? If I take another example. Somebody shaves his beard. Somebody shaves himself or. I don't know. She shaves her legs. Shapes herself. You see what I mean? These are completely different meanings, yes. Same brand. Yes, I mean natural language. That's that's what my patience so you have to know. Let's say you have to know your heart. Well, OK, I mean so. So shave is ambiguous from a generation perspective. That means that there are two formulas that. Give rise to sentences. With shape I mean. So if we speak strictly about generation, then I guess this is growing its abilities are you you were talking about the reverse procedure, right? I'm talking about if if you if you generally generate language. You have to be very careful about what you actually produce, because it works in predicate logic. But actually it turns out something else in natural language. So it could be misleading. Any cases, because if you don't know actually about your purpose and you say that it works in the same way with love unpaid and everything. Natural language does not work this way. The difference? From the same log. It's not questioning. Well, yeah if and if you generate a sentence. That is a valid way to express the meaning. Doesn't that corresponding to the input formula? And that sentence has another meaning that is more cognitively accessible then that would be a bad thing. So that's the kind of. Thing we would want to avoid. Depends on the actual verb. OK. Oh yes, yes. Question. Meaning. Santa's jaundice piece. Pissed. Lover please. Angry or drunk? How to include them? Just use. Or beautiful bitch. We have different different concepts in the KB for those different meanings. I. Yeah, in principle. No, if they're lexified. The same way, then they'll come out the same, so that so ambiguity in interpretation corresponds to multiple inputs having the same output in generation. We're talking about the same thing without thinking. Before the possible problems. Well, from interpret from the interpretation perspective, John is pissed if the input is the sentence. Talking about. Various beverage there so you know that probably means yes. Right, yeah, so generation. Should probably be sensitive to the context, but the context. I mean in your example, you're taking the interpretation perspective and using context to disambiguate the verb. Um? From a generation perspective. In that example, the context actually doesn't matter because. Uh, you could. Generate John is pissed in any of those contexts, whether beverages being served or not. Um? So yeah. But it would be important to keep in mind what the. You know the reader will think is the most likely interpretation given the context, so it's not like you should disregard context. In fact, that's pretty much my main point. Yeah. Bars yes. Yes. If you would have. 1st order. You want to stay. And I think there are two ways. Either you have many short sentences and a little repeating. To reinforce the context about. Say it was before that. Things nested there. And I think that the most pleasant is something to reduce something in between, and I want to plastic for the system somehow. Try to find the sweet spot. Decided it was more sentences or really we take the same one. Yeah, so so far we've been hand coding. With the aim of. Minimizing the number of words in the output because we think that that is probably a good measure of how readable the output is. I've wanted to go for. Doing some kind of search to find through all the options to find what's going to minimize the number of words in the output. On the assumption that that would be the most readable thing, we haven't gotten that far. We it's just a very handcoded. Tech 9. That doesn't sound strange, yes. Yeah, so there's clause length and number of words which are two quantities that should both be minimized. Belief, yeah. That sounds like a good research program. We have not done anything in that direction, but I've been thinking about a little bit and yeah. Seems like a good next step to take. OK. Comments questions? Thanks again.

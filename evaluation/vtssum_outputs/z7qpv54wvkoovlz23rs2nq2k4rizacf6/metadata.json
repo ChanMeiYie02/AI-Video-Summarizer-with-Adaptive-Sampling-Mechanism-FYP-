@@ -1,0 +1,20 @@
+{
+    "id": "z7qpv54wvkoovlz23rs2nq2k4rizacf6",
+    "title": "Effects of Stress and Genotype on Exploration-Exploitation Dynamics in Reinforcement Learning",
+    "url": "http://videolectures.net/otee06_luksys_esgee/",
+    "info": {
+        "author": [
+            "Gedi Lukšys, École Polytechnique Fédérale de Lausanne"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "December 2006",
+        "category": [
+            "Top->Computer Science->Machine Learning->Reinforcement Learning"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 125,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2471
+}

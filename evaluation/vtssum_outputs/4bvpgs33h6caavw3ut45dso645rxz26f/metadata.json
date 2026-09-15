@@ -1,0 +1,20 @@
+{
+    "id": "4bvpgs33h6caavw3ut45dso645rxz26f",
+    "title": "BtoGreen® Method / BtoGreen® Experience",
+    "url": "http://videolectures.net/ecodesign2011_haoues_btogreen/",
+    "info": {
+        "author": [
+            "Nizar Haoues, Pôle Eco-conception & Management du Cycle de Vie"
+        ],
+        "published": "July 6, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Environment->Sustainable Development"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 152,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1447
+}

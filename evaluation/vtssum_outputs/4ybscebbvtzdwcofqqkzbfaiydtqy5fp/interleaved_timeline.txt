@@ -1,0 +1,80 @@
+[0.0s - 29.0s]
+Let me start with a basic question. So how hard is it to verify individuals and identify them? On different social media sites and the reason I'm asking this is basically. There is this claim by privacy experts that sites know a lot about you because you visit their sites or you do things on their sites. But can they just stop showing you probably the same ad over and over again so.
+
+[29.0s - 58.0s]
+I haven't clicked on, let's say some ad on site A which have been shown 100 times. Are you going to click on it in a new site, which is apparently there's a clear answer to that, but this happens all the time. Now what I want to say is that basically you have all these behaviors on different sites, and what most people do is usually analyze the behavior on just one site. Now how can we collect this information and to collect that information you have to identify individuals across sites.
+
+[58.0s - 87.0s]
+Now. We would. Our claim is that if you have more information about individuals on different sites. You can actually get close to solving this problem and we all use many social media sites and the information that's provided on each site is often partial. So if you combine this partial information, they act as some sort of complementary information and this helps you build better user profiles. Now I'll give you an example from my coauthor, so he has an account on Google Plus and. I just selected three attributes from his profile, so age, location an education, age is not reported. Location is Tempe, AZ and education is USC now. If I also go to his Facebook profile, age is still not reported. Location is USA so I have less details about the location and more detail about his education which where I have the years 1985 to 1989. So if I want to actually do better with location prediction on Facebook. I can use Google plus if I want to do better with education on Google plus I can do. I can use Facebook and if I want to predict age, I can actually use the information on Facebook and assuming that he was there in his 20s or 30s, I can have an estimate on how old he is. So the problem is that in this case I just manually selected 2 profiles, but this connectivity information is not available like who on site A is who on site B and the biggest problem is. That sometimes you don't have something like the profile picture to verify. There might be many who only use on Facebook, and because this information is not available so I would say there is no consistency in the availability of information. Now the question that we're asking is, can we connect individuals across sites with these constraints? Now.
+
+[87.0s - 116.0s]
+So let me rephrase what we're trying to solve. So let's say you have different information from different individuals across sites and you want to somehow verify if they are the same individual. Now too. If you answer that question, you can basically identify individuals across sites.
+
+[116.0s - 145.0s]
+So the basic idea that helped us do this is that human behavior generates information redundancy. So let me let me talk about that a bit more. So this is based on George Miller's study in the 1950s and basically your memory has limited capacity, so 7 plus or minus two items you can keep and you don't really like to store random items in your memory, and the memory also works based on redundancy. So you have to be able to re encode things in multiple ways to be able to save them in your memory, so that's it's the same reason why when you change your computer or if you stand when typing or when you go to a new place, you have difficulty remembering your passports so.
+
+[145.0s - 174.0s]
+The second idea is that information shared across sites provides a behavioral fingerprint that can actually help you identify users across sites, so.
+
+[174.0s - 203.0s]
+Our idea we introduce a model called and methodology called Mobius which helps you model behavior for identifying users across sites and it has 2 features.
+
+[203.0s - 232.0s]
+One is it has a behavioral modeling approach which I will discuss more and it uses minimum information across sites. So back to the availability of information because there is no consistency, so you want something that works with minimum information.
+
+[232.0s - 261.0s]
+So what is the minimum information available across sites? So it's definitely not network information because people don't list their friends all the time, or they get hidden behind privacy settings or pictures, or many other things. And we actually think the minimum information available is usernames. So you need a username to join a site and it's unique, so it's helpful. Now we are trying to learn and identification function F where whenever you are given two usernames, U&C. The identification function function tells you if they belong to the same individual. And zero otherwise, so you can actually generalize that function to a set of usernames U and a candidate username C. And basically, if I have a set of prior user names of someone and I have an you username, can I tell if they belong to the same person, so U is the candidate username like John Smith and see is the Canada username and use the prior user names, J Smith or John S&F? Is the identification function. So how can I learn the identification?
+
+[261.0s - 290.0s]
+So. So when users join sites, they have different behaviors that exhibit on these sites. Now these behaviors create information redundancies as we discussed and the information redundancy can be captured by feature sets. Now these feature sets with labeled data. You can use a supervised learning framework and then you can learn the identification function. So.
+
+[290.0s - 319.0s]
+Let me talk about the behaviors so the. Oops so. So I changed laptops. I OK I can. I can actually discuss this. So the behaviors that we observe when when individuals select user names, the first behavior is there are a category of behaviors. The first one are the behaviors that come from the limitations that you have. So because you have limited time and memory. Because of that, you select your user names in certain ways. There are also behaviors that are because of external factors because of the language that you speak because of the keyboard that you use, and there are also behaviors that are due to internal factors, for example. Oh, so you can see the 2nd row. OK, so human limitations. The second one you can see which are external factors and the third one is internal factors such as your name, the name of your doc. These things also affect the way you choose your usernames and also internal factors like your like, your habits. So let me go into so.
+
+[319.0s - 348.0s]
+All of these behaviors and the rest are all are available in the paper, so let's talk about time and memory limits because you have limited time and limited memory. Most people use the same username. Over and over again and basically 59% of individuals use the same username. Also there is a. So there it should be user name, length, likelihood, so there is a length that you use. Animals have. So basically if you're always select user names that are very long, you it's very less likely that you would pick a username that's short. So let me show you some graph. So this is the distribution of length of prior usernames and if you have that distribution you can actually measure how likely is the candidate username that you're analyzing.
+
+[348.0s - 377.0s]
+There's also knowledge limitation an in that box. It should be limited vocabulary and what it means is that because individuals have limited vocabulary, so they use like some English words and their usernames. It's actually not very hard to identify individuals by their vocabulary size. The problem with that is that you have to have different dictionaries, and you can actually solve that by that box, which is limited alphabet. So basically, if you have limited alphabet, you can so. I'm saying that basically individuals have a have a limited alphabet. I'll give you, I'll give you an example. So Alphabet size is actually correlated to the language. This is my friend Samantha Kumar's name written in Hindi and that's his transliterated name in English. So if you can actually observe the 1st letter Maps to S&H in English, so basically, if you have a name in Hindi, it's likely to have S&H in your name and hence in your username. It's very unlikely to have an X in your username because Hindi names don't have X usually and it's more likely to have an X if you're a Chinese speaker now.
+
+[377.0s - 406.0s]
+The third category of patterns are typing patterns, so most of the individuals in the world they use two types of keyboards. They either use QWERTY keyboards or variants like AZERTY or Qwertz, or they use Dvorak keyboards. And if you actually look at the two well known passwords that people use on these keywords. You can actually see that these passwords are consecutive words on these keywords, consecutive characters and the message here is that your keyboard type impacts your usernames. Now, given that we actually measured how many times you use different fingers. To type a username, how many times do you switch rows to type a username? What's the distance that you travel on the keyboard to type a username or or how many times do you have to switch between? Change your hands or change your fingers. Now these features actually helped us alot an.
+
+[406.0s - 435.0s]
+Finally, there are habits that individuals exhibit a lot when selecting usernames. The first box is modifying previous usernames, so you have a username. You change it a lot and you add prefixes, suffixes you abbreviate, you swap letters, and these are very easy to identify with computational methods. The second box, which you still can see is creating similar usernames. So for example, these two usernames they have the same alphabet distribution. They actually have the same letters. So basically if I actually have the alphabet distribution of these two usernames, I can easily match them with something as simple as cosine similarity. And the third one is the username observation likelihood. So you can assume that individuals have a language model, a statistical language model that based on that they create their user names. So if I have prior user names, I can actually estimate that statistical language model and I can measure how likely it is to observe the candidate username. So based on that I can actually measure the likelihood. And that's also that could also be a fee.
+
+[435.0s - 464.0s]
+So let me talk about the experiments. So our data was around 200,000 instances and. We have a 50% class imbalance class balance. We collected their data from Google Plus block catalog. Different sources. Basically people list their usernames on different sites and we can collect that as labeled information and we overall generated 414 features from these behaviors that some of some of which I skipped.
+
+[464.0s - 493.0s]
+We found two methods that did something close. One was our own previous method that uses the exact match. Basically, if the two usernames matched to some extent, it's considered the same individual and the second method is by purito, which assumes that there is a 1 gram statistical model that predicts whether the two usernames belong to the same individual. We also created three baselines, so people, when they're asked when they're given to usernames and ask whether they belong to the same individual. One thing they do is they see if the candidate username has been seen in the prior user names a couple of times. The second one is they see if they are there. If one is a substring of another one, or they see if they can find a pattern in the letters. So basically the alphabet distribution has some sort of correlation.
+
+[493.0s - 522.0s]
+So the three baselines the exact match did 77% substring matching to 63, and patterns and letters that 49 our previous method did 66 and pretty do it L .77, so we. Made this data set with just 414 features and we didn't do any preprocessing. We just used the naive method. Which is called naive Bayes and we got 91.38. Now. We wanted to see if there is a bias that's imposed by naive Bayes, so we tested with different other algos.
+
+[522.0s - 551.0s]
+Comes with different biases, so we tried naive Bayes we got, we got 91. We tried J 48. We got almost 91 random forest gave us 93.5 FM's, did 93.7 and logistic regression almost at 94%. So as you can see there is not much difference. Almost two or three percent in the algorithms. So basically if you have enough information, the algorithm bias is not much important in this case.
+
+[551.0s - 580.0s]
+What we also observed is that the performance goes up as you add more user names in the in the prior user names, but you can actually get as good as 92%. 91% if you have just one other username. And you get almost 100% if you have 25 or 30 usernames, which is very unlikely. But even when you have a little, maybe two or three usernames, you can still get 93 or 94.
+
+[580.0s - 609.0s]
+So there is this diminishing return property that basically by adding more usernames, you don't really gain much, and after five or six usernames you get almost zero percent improvement.
+
+[609.0s - 638.0s]
+The same with the features. So when you add features you don't really improve much. So if you want to design like a trade off because you don't really have to design 414 features, you can basically do a trade off on which one is needed more.
+
+[638.0s - 667.0s]
+So the message the takeaway message would be so information shared across sites acts as a behavioral fingerprint. And what's more important.
+
+[667.0s - 696.0s]
+Is that human behavior results in information redundancy? We can't do random strings, and for that we will generate information redundancy that can be captured.
+
+[696.0s - 725.0s]
+And we designed a methodology for connecting individuals across sites. First and foremost, it's a behavioral modeling approach and it uses minimum information across sites. As I said, information that's available across sites is not consistent, so you want something that works with the minimum and the minimum. In our case was user names and. It allows for easy integration of additional behaviors, so I discuss only three or four, but in the paper we have a lot more and.
+
+[725.0s - 754.0s]
+For future work, we are planning to integrate features that are specific to some sites. So if you have tag information on one side which is not available elsewhere, you can still incorporate that into our framework.
+
+[754.0s - 783.0s]
+Anne. I'll end here by saying that I we think that this is just the beginning. So after you connect sites. You can actually find applications that work across sites. So basically let me give you an example of what we recently analyzed. So let's assume user migrations across sites. So if you have just data on one site, you can never analyze where your users are migrating, but if you actually connect users, you can see if they stopped their activity on one site and they became active on another site. So you can compare it and these two sites and figure out what features they have that we don't have. And and implement those. You can also measure what's the property that's common among the users that are migrating and try to, you know, count for that or stop that. Thank you.

@@ -1,0 +1,22 @@
+{
+    "id": "bnghut3w6szgpceldl4l3tlmjnxlsmmo",
+    "title": "Polish Parliamentary Corpus",
+    "url": "http://videolectures.net/parlaCLARIN2018_ogrodniczuk_parliamentary_corpus/",
+    "info": {
+        "author": [
+            "Maciej Ogrodniczuk, Polish Academy of Sciences"
+        ],
+        "published": "May 30, 2018",
+        "recorded": "May 2018",
+        "category": [
+            "Top->Computers->Digital Media",
+            "Top->Humanities->Languages",
+            "Top->Social Sciences->Society->Politics"
+        ]
+    },
+    "num_segments": 11,
+    "num_sentences": 99,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 957
+}

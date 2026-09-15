@@ -1,0 +1,21 @@
+{
+    "id": "5bka7tt6ujnbdj2hxw4skscurclvytrw",
+    "title": "Opening",
+    "url": "http://videolectures.net/ocwc2014_lou_forward_opening/",
+    "info": {
+        "author": [
+            "Mary Lou Forward, Open Education Consortium"
+        ],
+        "published": "June 23, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society->Public Policy"
+        ]
+    },
+    "num_segments": 7,
+    "num_sentences": 60,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1045
+}

@@ -1,0 +1,22 @@
+{
+    "id": "bjedp25oyeha4aanffkwytokq5sxyol2",
+    "title": "Artificial Intelligence: Techniques, Trends and Applications",
+    "url": "http://videolectures.net/AIindustrySeminar2019_robnik_sikonja_artificial/",
+    "info": {
+        "author": [
+            "Marko Robnik Šikonja, Fakulteta za računalništvo in informatiko, Univerza v Ljubljani"
+        ],
+        "published": "May 18, 2020",
+        "recorded": "February 2020",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 249,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 3948
+}

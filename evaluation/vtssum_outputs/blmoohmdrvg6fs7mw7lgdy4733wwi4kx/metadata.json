@@ -1,0 +1,21 @@
+{
+    "id": "blmoohmdrvg6fs7mw7lgdy4733wwi4kx",
+    "title": "A Graph-Based Approach to Learn Semantic Descriptions of Data Sources",
+    "url": "http://videolectures.net/iswc2013_knoblock_data_sources/",
+    "info": {
+        "author": [
+            "Craig A. Knoblock, Information Sciences Institute (ISI), University of Southern California"
+        ],
+        "published": "Nov. 28, 2013",
+        "recorded": "October 2013",
+        "category": [
+            "Top->Computer Science->Information Design",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 180,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 683
+}

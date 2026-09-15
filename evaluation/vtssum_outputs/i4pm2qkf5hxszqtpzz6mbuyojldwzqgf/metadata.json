@@ -1,0 +1,21 @@
+{
+    "id": "i4pm2qkf5hxszqtpzz6mbuyojldwzqgf",
+    "title": "Automated Cybercrime Investigations: The example of “Sweetie 2.0”",
+    "url": "http://videolectures.net/lawandethics2017_urbas_cybercrime_investigations/",
+    "info": {
+        "author": [
+            "Gregor Urbas, Faculty of Business, Government & Law, University of Canberra"
+        ],
+        "published": "July 24, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Data Science",
+            "Top->Social Sciences->Law"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 189,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 49,
+    "ground_truth_summary_length_chars": 6295
+}

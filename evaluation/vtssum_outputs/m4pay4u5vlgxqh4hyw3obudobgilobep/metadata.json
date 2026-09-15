@@ -1,0 +1,21 @@
+{
+    "id": "m4pay4u5vlgxqh4hyw3obudobgilobep",
+    "title": "Using Big Data for International Development",
+    "url": "http://videolectures.net/kdd2014_rutherford_ignite_talks/",
+    "info": {
+        "author": [
+            "Alex Rutherford, Global Pulse, United Nations"
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 6,
+    "num_sentences": 94,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 335
+}

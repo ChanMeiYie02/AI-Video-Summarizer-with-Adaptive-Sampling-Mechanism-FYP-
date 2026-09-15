@@ -1,0 +1,20 @@
+{
+    "id": "txvpphvkca7z4rms3pjen6wpkpitn4wv",
+    "title": "Collecting, Integrating, Enriching and Republishing Open City Data as Linked Data",
+    "url": "http://videolectures.net/iswc2015_bischof_linked_data/",
+    "info": {
+        "author": [
+            "Stefan Bischof, Siemens AG Österreich"
+        ],
+        "published": "Nov. 10, 2015",
+        "recorded": "October 2015",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 200,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 2885
+}

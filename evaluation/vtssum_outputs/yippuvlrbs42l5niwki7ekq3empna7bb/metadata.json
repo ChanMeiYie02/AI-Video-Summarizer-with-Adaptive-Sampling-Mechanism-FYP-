@@ -1,0 +1,24 @@
+{
+    "id": "yippuvlrbs42l5niwki7ekq3empna7bb",
+    "title": "Community Detection NetworkX",
+    "url": "http://videolectures.net/NTUcomplexity2017_legara_community_networkX/",
+    "info": {
+        "author": [
+            "Erika Fille Tupas Legara, Institute of High Performance Computing (IHPC), Agency for Science, Technology and Research (A*STAR)"
+        ],
+        "published": "April 3, 2017",
+        "recorded": "March 2017",
+        "category": [
+            "Top->Science->Complexity Science",
+            "Top->Computer Science",
+            "Top->Data Science",
+            "Top->Mathematics",
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 361,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1257
+}

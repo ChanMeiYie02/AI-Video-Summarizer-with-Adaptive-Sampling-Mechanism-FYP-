@@ -1,0 +1,20 @@
+{
+    "id": "vyskldyg64a2gg5ya74aix2j7izrnyjo",
+    "title": "Nonparametric Bayesian Models",
+    "url": "http://videolectures.net/mlss09uk_teh_nbm/",
+    "info": {
+        "author": [
+            "Yee Whye Teh, Department of Statistics, University of Oxford"
+        ],
+        "published": "Nov. 2, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 980,
+    "num_clips_with_summary": 25,
+    "num_gt_summary_sentences": 76,
+    "ground_truth_summary_length_chars": 7424
+}

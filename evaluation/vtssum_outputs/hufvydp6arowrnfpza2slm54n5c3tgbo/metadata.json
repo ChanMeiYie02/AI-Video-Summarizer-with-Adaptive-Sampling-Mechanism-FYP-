@@ -1,0 +1,21 @@
+{
+    "id": "hufvydp6arowrnfpza2slm54n5c3tgbo",
+    "title": "Lightweight Spatial Conjunctive Query Answering using Keywords",
+    "url": "http://videolectures.net/eswc2013_schneider_conjunctive_query/",
+    "info": {
+        "author": [
+            "Patrik Schneider, Faculty of Informatics, Vienna University of Technology"
+        ],
+        "published": "July 8, 2013",
+        "recorded": "May 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 305,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 4276
+}

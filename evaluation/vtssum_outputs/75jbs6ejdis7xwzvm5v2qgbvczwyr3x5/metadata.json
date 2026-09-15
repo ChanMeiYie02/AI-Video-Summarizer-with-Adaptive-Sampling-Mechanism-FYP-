@@ -1,0 +1,21 @@
+{
+    "id": "75jbs6ejdis7xwzvm5v2qgbvczwyr3x5",
+    "title": "A Novel Approach for Efficient SVM Classification with Histogram Intersection Kernel",
+    "url": "http://videolectures.net/bmvc2013_sharma_novel_approach/",
+    "info": {
+        "author": [
+            "Gaurav Sharma, Technicolor S.A."
+        ],
+        "published": "April 3, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 121,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2780
+}

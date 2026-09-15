@@ -1,0 +1,21 @@
+{
+    "id": "xbdk52mowfgamihnfjl7kdecs7hgti6a",
+    "title": "Financial crises and risk management",
+    "url": "http://videolectures.net/risc08_sornette_fcrm/",
+    "info": {
+        "author": [
+            "Didier Sornette, Department of Management, Technology, and Economics, ETH Zurich"
+        ],
+        "published": "Oct. 17, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Social Sciences->Economics",
+            "Top->Science->Complexity Science"
+        ]
+    },
+    "num_segments": 70,
+    "num_sentences": 926,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 37,
+    "ground_truth_summary_length_chars": 4190
+}

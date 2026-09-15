@@ -1,0 +1,21 @@
+{
+    "id": "b4hiplq4te7zpafxteizqlcjtq6u3e76",
+    "title": "Coupled Discriminative Feature Learning for Heterogeneous Face Recognition",
+    "url": "http://videolectures.net/fgconference2015_deng_face_recognition/",
+    "info": {
+        "author": [
+            "Weihong Deng, Beijing University of Post and Telecomunications"
+        ],
+        "published": "July 2, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Computer Vision->Face & Gesture Analysis",
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 135,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1169
+}

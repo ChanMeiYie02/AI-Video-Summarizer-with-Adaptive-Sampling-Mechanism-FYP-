@@ -1,0 +1,20 @@
+{
+    "id": "5fvwhthjttblmayk2nmm4eakaeswvpoo",
+    "title": "Fast Gaussian Process Methods for Point Process Intensity Estimation",
+    "url": "http://videolectures.net/icml08_cunningham_fgpm/",
+    "info": {
+        "author": [
+            "John Cunningham, Department of Electrical Engineering, Stanford University"
+        ],
+        "published": "Aug. 7, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Gaussian Processes"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 259,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2746
+}

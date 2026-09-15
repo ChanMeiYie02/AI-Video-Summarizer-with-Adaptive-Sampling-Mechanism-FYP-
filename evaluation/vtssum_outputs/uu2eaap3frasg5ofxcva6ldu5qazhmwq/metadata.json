@@ -1,0 +1,21 @@
+{
+    "id": "uu2eaap3frasg5ofxcva6ldu5qazhmwq",
+    "title": "Interoperability Now! A pragmatic approach to interoperability in language technology",
+    "url": "http://videolectures.net/w3cworkshop2011_andrae_interoperability/",
+    "info": {
+        "author": [
+            "Sven Christian Andrä, Andrä AG"
+        ],
+        "published": "April 22, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access",
+            "Top->Technology->Interoperability"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 128,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 738
+}

@@ -1,0 +1,21 @@
+{
+    "id": "kqg273lul5qsqi7xbzh62rkeah5vtmzt",
+    "title": "Student Mobility Handbook: guidelines and scenarios for students and HE institutions using OpenCourseWare in the context of Student Mobility",
+    "url": "http://videolectures.net/ocwc2014_truyen_mobility/",
+    "info": {
+        "author": [
+            "Frederik Truyen, KU Leuven"
+        ],
+        "published": "June 23, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society->Public Policy"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 165,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1395
+}

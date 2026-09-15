@@ -1,0 +1,20 @@
+{
+    "id": "izebydgb7pma7v36zb4uqqcvlv4a76my",
+    "title": "Inferring Latent Functions with Gaussian Processes in Differential Equations",
+    "url": "http://videolectures.net/dsb06_lawrence_ilfgp/",
+    "info": {
+        "author": [
+            "Neil D. Lawrence, Department of Computer Science, University of Sheffield"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "December 2006",
+        "category": [
+            "Top->Computer Science->Machine Learning->Gaussian Processes"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 386,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 4043
+}

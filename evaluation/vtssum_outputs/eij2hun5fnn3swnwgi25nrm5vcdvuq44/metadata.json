@@ -1,0 +1,21 @@
+{
+    "id": "eij2hun5fnn3swnwgi25nrm5vcdvuq44",
+    "title": "Thermodynamic Depth of Networks",
+    "url": "http://videolectures.net/complexnetworks2012_escolano_thermodynamic_depth/",
+    "info": {
+        "author": [
+            "Francisco Escolano, Department of Science of the Computation and Artificial Intelligence, University of Alicante"
+        ],
+        "published": "July 2, 2012",
+        "recorded": "May 2012",
+        "category": [
+            "Top->Computer Science->Network Analysis",
+            "Top->Computer Science->Pattern Recognition"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 437,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 40,
+    "ground_truth_summary_length_chars": 3446
+}

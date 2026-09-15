@@ -1,0 +1,64 @@
+EDUVSUM is designed for:
+
+🎥 Educational video summarization
+📚 Lecture / tutorial video analysis
+🧠 Selecting important learning segments
+📊 Training and evaluating video summarization models
+
+It focuses on:
+
+Key concepts in lectures
+Important teaching moments
+Structured learning content (slides, explanations, examples)
+
+https://github.com/VideoAnalysis/EDUVSUM
+EDUVSUM Dataset
+
+
+-------------------------------------------------------------------------
+TVSum is an extractive video frame , it is not for text summarization.
+Video
+  ↓
+Frame features
+  ↓
+Model predicts importance scores
+  ↓
+Select top-ranked segments (summary)
+  ↓
+Compare with TVSum human importance scores
+  ↓
+Compute F-score / ranking correlation
+
+If you end up using the dataset, we ask you to cite the following paper:
+Yale Song, Jordi Vallmitjana, Amanda Stent, Alejandro Jaimes.
+"TVSum: Summarizing Web Videos using Titles," IEEE CVPR 2015
+
+--------------------------------------------------------------------------
+MMSum (Dataset cannot be accessed)
+https://www.catalyzex.com/paper/multisum-a-dataset-for-multimodal/dataset(Need to request from owner at here)
+
+https://mmsum-dataset.github.io/
+
+https://yilundu.github.io/
+
+How it is used in research
+
+Typical tasks:
+
+Video + audio → text summary
+Video understanding → narrative summary
+Multimodal fusion summarization models
+
+Evaluation:
+
+ROUGE (for text summaries)
+BLEU / METEOR (sometimes)
+Human evaluation (fluency, relevance)
+
+It is a multimodal summarization.
+----------------------------------------------------------------------------
+
+https://github.com/drmuskangarg/Multimodal-datasets
+A multimodal dataset
+
+VISTA (dataset need to request from owner)

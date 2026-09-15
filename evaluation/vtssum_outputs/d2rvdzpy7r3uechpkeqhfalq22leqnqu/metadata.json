@@ -1,0 +1,20 @@
+{
+    "id": "d2rvdzpy7r3uechpkeqhfalq22leqnqu",
+    "title": "ERA-Net Transport",
+    "url": "http://videolectures.net/tra08_althoff_ent/",
+    "info": {
+        "author": [
+            "Oliver Althoff, TÜV SÜD AG"
+        ],
+        "published": "May 22, 2008",
+        "recorded": "April 2008",
+        "category": [
+            "Top->Business->Transportation and Logistics"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 121,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 3721
+}

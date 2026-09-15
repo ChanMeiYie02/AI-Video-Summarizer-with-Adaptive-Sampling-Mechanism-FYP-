@@ -1,0 +1,20 @@
+{
+    "id": "omlfwazzccktb2o22tdwqapiolzfzrln",
+    "title": "A Hilbert-Schmidt Dependence Maximization Approach to Unsupervised Structure Discovery",
+    "url": "http://videolectures.net/mlg08_gretton_ahsdma/",
+    "info": {
+        "author": [
+            "Arthur Gretton, Centre for Computational Statistics and Machine Learning, University College London"
+        ],
+        "published": "Aug. 25, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 217,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1390
+}

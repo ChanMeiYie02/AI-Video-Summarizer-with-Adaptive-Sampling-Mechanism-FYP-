@@ -1,0 +1,21 @@
+{
+    "id": "ggqvh7jp5vfelfclkwzkzmtepf72wu7d",
+    "title": "Machine Learning for Multimodal Neuroimaging",
+    "url": "http://videolectures.net/bbci2014_biessmann_machine_learning/",
+    "info": {
+        "author": [
+            "Felix Bießmann, Department of Software Engineering and Theoretical Computer Science, Technische Universität Berlin"
+        ],
+        "published": "April 3, 2014",
+        "recorded": "February 2014",
+        "category": [
+            "Top->Technology->Neurotechnology",
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 115,
+    "num_sentences": 919,
+    "num_clips_with_summary": 49,
+    "num_gt_summary_sentences": 88,
+    "ground_truth_summary_length_chars": 8643
+}

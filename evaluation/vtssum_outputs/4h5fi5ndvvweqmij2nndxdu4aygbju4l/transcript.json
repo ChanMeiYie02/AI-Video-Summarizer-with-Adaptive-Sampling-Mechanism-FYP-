@@ -1,0 +1,112 @@
+[
+    {
+        "text": "I'm sorry it was alright. Presentation, bathroom title. Logic for predictive classification. It's Jane Belgrave undress soboba likelihoods and virtuous, and we are all from Czech Technical University.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "The outline of my dog is. First I will introduce statistical, relational, Lincoln, Animal stable targets limitations when it comes to learning rate numerical data. And then I will present our quite simple framework called Goshen Logic. Which is intended for learning rate for. Numerical data and then I will present the two sets of experiments, one from proteomics domain and pass from gene expression domain. Then I will conclude my talk and maybe I'll learn something.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So let me start with the introduction and.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Problems of the Sarel. When it comes to. Bella speaking. This is. Many approaches that combine probability and relations. Somesara frameworks are able to go also with numerical variable if it continues numerical random variables. For example, hybrid mark of logic can do this, or vision logic programming can do this quite seamlessly, but unfortunately these systems become quite complicated when around starts working with numerical data. There for example, there is no structure lining for hybrid Markov logic. Variables. So.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "That's why. We tried to introduce. Simple, maybe too simple approach, which we call Russian logic. And. In",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "It allows us to interact with. We made a lot of fun at some price, which is that you need to have some assumptions. So the first assumption. Is expressed. It is assumed that our learning examples, which do cards, relational structures and a corresponding numerical data are sampled from this distribution. Here. And the relation structures are assumed to be sampled. From a distribution VS. And the numerical values are assumed to be sampled from a multivariate Goshen distribution, which is represented here by its density FS. And. The relational structures have five guards for these numbers.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So now do the exactly same thing, but little more intuitively. How an example would be drawn according to Outline mode? So first thing, draw an emotional structure as from a distribution. PS. This distribution can be modeled by any standard. Asylum framework because it does not contain numerical data. Orlando site caps for men. Let us assume that we sampled this. Relational structure here. So it is an example from a genomic domain. We have three jeans. Friction levels for those chains and their allies directed relations. And then we somehow construct the multivariate normal distribution that is the covariance matrix and the mean vector. For. There is at least draw a sample from this distribution. This relation structure and the vector sample from the distribution are then one possible or sampled. You know?",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So how could we model? It is. This distributions first, PS can be modeled by ordinary exile frameworks. For example, market logic networks. But we need to be able also to model closed multiple regression distributions. For any relational structures and these. The distributions depend on those structures, so. We need the second and last assumption that there are some relations of structures. Which shared the same marginal distribution. Nicole, such substructures in Goshen features.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "In our framework, we represent Goshen features in first order logic. So this is an example of a Goshen feature this at here. And if this is a Goshen feature, it means that. In this example, which is the same relational structure as be so in the previous slide. The marginal distributions corresponding to G1G2G2G3 and G3G man. Are the same, so this is true for our simple example shown here. This can be verified by looking at this governance matrix and vector. But of course, in practice this can be true only approximately. Almost never. It's exactly course.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So when we have some Goshen features which have their governance waitresses. How can we construct the FS? Maybe early had truly Goshen features. In the end, all these features cover the whole covariance matrix. That is, the whole relational structure. Then our task is quite busy. We just filling the respective. And trees. In the components matrix an enderman vector. And we are done in breakfast. It can happen that different. Goshen features such as different values for. The same entry, so in that case you need to. Averaging or something similar, and sometimes it can also happen that the resulting occurrence matrix is defective, that it's for example, not positive definite. In that case we need to repair it by, for example, finding the nearest curb. Positive definite matrix.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So that was how we can construct. Anne. Most of the regression distribution to Goshen features, but. Email, so who needs to find these features 1st and they need to estimate their parameters? And is there covenants, matrices and their main vectors? So how can we do this? First we need to introduce to define sample sets. A sample set is simply a multiset of values that are extracted by the feature. From the relational structure. So, for example, it yet again. Old version structure show me and the feature F. Then this feature extracts. Values corresponding to things jivanjee. Bring GG2G and Angie Bungie free into the sample set. It's basically matching. So this is how we construct sample sets.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "And. Once we have sample said, we would like to estimate the commence matrices and being vectors for them from them. But the values in individual sample sets are correlated or can be correlated. So. You cannot compute environment. There's only from the Union of the sample sets, but we need to take a different approach. For example, we can take about sample from each sample set, and then we have a set of independent samples, so we can. Estimated occurrence and. Mean vector in a conventional life. However, this would be a wasteful approach, so instead we. Do this math for all combinations. Of samples from different sample sets and then average this. At least this is the idea.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Fortunately, it turns out that it can be. Everything by is it I'll get algebraic manipulations to this form. And. This is it is important then here. You basically use. What did you see? Barney dress, which are computed from individual examples. So we can estimate these parameters. By first computing only the blue bar meters for each example. Individual is so. We don't have to have all the examples in their main memory bands order samples.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So with this complexity of this estimation. Unfortunately, in general the complexity is of this problem is very high. It is an NP hard problem, so it can take time, but we were able to create algorithms for three like features, account in polynomial time and estimate. Pictures and convince my dresses. And this could be also easily extended to the general case of features. They found it too late.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So we like over many assumptions. Therefore, it's important to check if we can actually do something in practice. Something with real data. So we performed two sets of experiments. The first valuables in Peru.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Things to make very trying to predict which proteins bind to DNA. The motivation for the. Setup of our experiments was the observation of biologists who observed that in DNA binding proteins they are purchased on their services, which are highly positively charged. And so we asked ourselves, is it very good? Good luck, this phenomenon in sequence. Because it is dispatches do not translate easily to sequence because proteins are completely folded in complicated ways. So. We looked at.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Protein sequences be ignored. 3 dimensional data. Validate the sequences into consecutive windows of different sizes. And. Then for each window will be computed in number of positively charged amino acids. In the end. Then on this representation it constructive and that of Goshen features automatically by our algorithm. So I think in them in aggregate I in value. Looked at how much they improved accuracy on training data. So just give us an predictive model. And. Then we use these models. In vision classification between compact like the whole of two models, one constructed for proteins that bind to DNA and unconstructed for proteins that.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "And the result was. That we are able to match accuracy. Of methods suggested by biologists. Features physical chemical properties of proteins in conjunction with logistic regression classifier. And we were able to do this with much less information. We only use the information about distribution of charge in sequence. On the other hand, they use information about the special symmetries of some states or dipole moments, and so on. Then we also tried to verify better correlations discovered. Like Ocean Logic features very useful. And it turns out that without the Goshen logic favor could be discarded the correlations. Discovered by our algorithms. And then the accuracy decreased by about 3 or 4%. I guess it must be.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Our second set of experiments worked out. It was done with Gene Expr.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Later. We tried to use our framework for construction of novel definitions of gene sense. Gene sets are. Use inseparable classification adults. Which are metals based on aggregation of values of gene expression levels of genes which have something in common. For example, they are from the same biological process of post similar and some of these gene sets used in literature are based on motives. Disconnect. That are in that are possible to describe and Russian language. So we try to find such motives automatically by our Ocean logic framework.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "And he. Generated I set off. Very highly correlated. Features. And we come back and use them as definitions for gene sets and come back to our results. Page insights. Defined by biologists, which are also called fully coupled classes. And here we were also able to match their accuracy, but again be used much less information out. If base gene sets about half the number of genes. A scumbag digger cheeseheads, based on Fuller couple, flexes. By achieving basically.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So despite the simplicity of our framework, is better able to obtain some quite promising results into related domains. This indicates they also did potential of the more complicated approaches in these domains. And maybe with something more complicated, more sophisticated than his Goshen, which we could get that result. But this is our first step in this direction, thank you. Did you consider as a baseline? The end. It's it's meaningful for the first experiment definitely, or the second bound. It would be maybe harder. Because then we try to find those glasses, handle switches that have an average are highly correlated with glass and. That would be after. But As for the first aspect. It's good idea to come back.",
+        "start": 609.0,
+        "end": 638.0
+    }
+]

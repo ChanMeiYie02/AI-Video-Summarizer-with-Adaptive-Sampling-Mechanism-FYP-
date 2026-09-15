@@ -1,0 +1,20 @@
+{
+    "id": "lfqmsrveagunbqhmhpbtzhaxgejjfoyq",
+    "title": "Multilevel Conditional Fuzzy C-Means Clustering of XML Documents",
+    "url": "http://videolectures.net/ecml07_kozielski_mcf/",
+    "info": {
+        "author": [
+            "Michal Kozielski, Politechniki Slaskiej"
+        ],
+        "published": "Feb. 6, 2008",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 7,
+    "num_sentences": 20,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 173
+}

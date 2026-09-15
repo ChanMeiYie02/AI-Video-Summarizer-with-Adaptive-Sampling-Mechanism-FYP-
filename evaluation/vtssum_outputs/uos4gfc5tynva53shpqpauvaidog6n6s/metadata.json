@@ -1,0 +1,21 @@
+{
+    "id": "uos4gfc5tynva53shpqpauvaidog6n6s",
+    "title": "MalStone: Towards a Benchmark for Analytics on Large Data Clouds",
+    "url": "http://videolectures.net/kdd2010_grossman_mtba/",
+    "info": {
+        "author": [
+            "Robert Grossman, Open Data Group"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Databases",
+            "Top->Computer Science->Information Retrieval"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 196,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1413
+}

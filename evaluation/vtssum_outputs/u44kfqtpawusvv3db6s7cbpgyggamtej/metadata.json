@@ -1,0 +1,21 @@
+{
+    "id": "u44kfqtpawusvv3db6s7cbpgyggamtej",
+    "title": "How to use ILIAS to support language learning?",
+    "url": "http://videolectures.net/3rdAnnualActionMeeting2019_kunkel_ilias_language/",
+    "info": {
+        "author": [
+            "Matthias Kunkel, ILIAS"
+        ],
+        "published": "April 8, 2019",
+        "recorded": "March 2019",
+        "category": [
+            "Top->Humanities->Languages",
+            "Top->Computer Science->Crowdsourcing"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 138,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 2005
+}

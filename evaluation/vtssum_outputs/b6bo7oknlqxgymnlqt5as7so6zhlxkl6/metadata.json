@@ -1,0 +1,21 @@
+{
+    "id": "b6bo7oknlqxgymnlqt5as7so6zhlxkl6",
+    "title": "Galaxy overdensity estimation: toward learning the missing data",
+    "url": "http://videolectures.net/nipsworkshops2011_dupe_galaxy/",
+    "info": {
+        "author": [
+            "Franois-Xavier Dupé, Aix-Marseille Université"
+        ],
+        "published": "Jan. 23, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Astronomy->Cosmology"
+        ]
+    },
+    "num_segments": 3,
+    "num_sentences": 28,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 532
+}

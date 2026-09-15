@@ -1,0 +1,21 @@
+{
+    "id": "4npokbit5zyjamj34hleai7tgdvpjdj4",
+    "title": "Agents and avatars: A new era of computational social science",
+    "url": "http://videolectures.net/cvss08_macy_aaaane/",
+    "info": {
+        "author": [
+            "Michael Macy, Cornell University"
+        ],
+        "published": "Sept. 26, 2008",
+        "recorded": "August 2008",
+        "category": [
+            "Top->Computer Science->Social Computing",
+            "Top->Computer Science->Intelligent Agents"
+        ]
+    },
+    "num_segments": 66,
+    "num_sentences": 350,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 42,
+    "ground_truth_summary_length_chars": 4718
+}

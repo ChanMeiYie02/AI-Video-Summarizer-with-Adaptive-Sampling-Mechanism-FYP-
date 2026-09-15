@@ -1,0 +1,21 @@
+{
+    "id": "vw2wns5djyusbi3lxtqlfaza2r7rqafa",
+    "title": "Technology and the Recession: how new technology is changing the way we do business",
+    "url": "http://videolectures.net/efmdmddg09_ruenbaum_techrec/",
+    "info": {
+        "author": [
+            "Ronan Gruenbaum, Ashridge Business School"
+        ],
+        "published": "Nov. 13, 2009",
+        "recorded": "January 2009",
+        "category": [
+            "Top->Business",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 241,
+    "num_sentences": 993,
+    "num_clips_with_summary": 34,
+    "num_gt_summary_sentences": 61,
+    "ground_truth_summary_length_chars": 5919
+}

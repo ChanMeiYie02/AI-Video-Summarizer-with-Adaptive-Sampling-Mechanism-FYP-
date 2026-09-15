@@ -1,0 +1,21 @@
+{
+    "id": "sy2k2xymes32crfe2mjozvawbku4fpm6",
+    "title": "Towards a Binary Object Notation for RDF",
+    "url": "http://videolectures.net/eswc2018_charpenay_object_notation/",
+    "info": {
+        "presenter": [
+            "Victor Charpenay, University of Passau"
+        ],
+        "published": "July 10, 2018",
+        "recorded": "June 2018",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 310,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 783
+}

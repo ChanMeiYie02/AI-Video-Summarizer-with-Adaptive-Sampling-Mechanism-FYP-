@@ -1,0 +1,272 @@
+[0.0s - 29.0s]
+Good afternoon everyone. The title of my talk today is learning with a non exhaustive training data set and we will be covering a case study which is the direction of bacteria cultures using optical optical scattering technology and these are the authors. It's a joint work with Purdue University and I UPI.
+
+[29.0s - 58.0s]
+And here is the outline of my talk. I will first briefly give the motivation for the for the research, and then discuss and argue the proposed approach, and I will present experimental results and finally conclude my talk.
+
+[58.0s - 87.0s]
+So the fundamental problem in machine learning as we will as we will also agree, is that the problem of generalizability. So when we develop systems spend with OLAP models using training data, we want to make sure that these models will generalize well in unknown settings, 'cause then we diploid the system. The samples that we will be receiving are the samples that we have never seen. So if the model set with envelope does not generalize well to future cases, then it doesn't mean anything. It doesn't mean anything. Even if I get 100% sensitivity on training data set. So there are several factors contributing to the problem of generalizability and the most.
+
+[87.0s - 116.0s]
+Portant one is whether or not we have a representative training data set. So if my training data set does not really include samples from all of the classes of informational value, then the training data set.
+
+[116.0s - 145.0s]
+Cannot be considered. Cannot be considered represented.
+
+[145.0s - 174.0s]
+We call this a non exhaustive set of classes. So in other words. They represent a represented training data set is a training data set version. We know all of the classes of informational value. If some of the classes are missing, then we call this a non exhaustive list of classes and a non exhaustive training data set. So obviously when the list of classes is not exhaustive, we have an eel defined problem. Kate, the problem is not well defined by becausw. Let me first go over this.
+
+[174.0s - 203.0s]
+So we have a non exhaustive training.
+
+[203.0s - 232.0s]
+Dataset when classes exist but not yet known. OK.
+
+[232.0s - 261.0s]
+When class is not yet exist, you might have an evolving data set and you may not know in the future. Maybe there will be some new classes that will emerge as you run your system.
+
+[261.0s - 290.0s]
+Or there are too many classes to consider. So whatever the reason is.
+
+[290.0s - 319.0s]
+All of these settings when I have a non exhaustive training data set, future samples from missing classes are going to be misclassified by probability one OK.
+
+[319.0s - 348.0s]
+Now, as an illustrative example, here we have 10 classes. Now suppose that eight of them are known. They were known at the time of the training so that I can model a nice classifier, but two of them were unknown. So if I use the classifier that is trained on eight of the classes. Then when I diploid the system in real life. The samples from these two classes with the dashed lines will be misclassified to one of the existing 8 classes.
+
+[348.0s - 377.0s]
+Now it's a case study. We are considering the pathogen direction.
+
+[377.0s - 406.0s]
+Uh, application. Now the motivation for this work is mostly due to the recent food outbreaks for people living in United States in Canada. Actually, we had several food outbreaks over the past couple of years. One of them was contamination of spinach and ground beef.
+
+[406.0s - 435.0s]
+Sherry Sherry Collier. Another one was presence of salmonella in peanut Butters, which was a reason.
+
+[435.0s - 464.0s]
+Outbreak and we had another one Listeria monocytogenes in ready to eat meats.
+
+[464.0s - 493.0s]
+So close to them, both aluminum in cancer resource and all of these actually pathogens are fatal, so the we witnessed several people died because of this.
+
+[493.0s - 522.0s]
+The outbreaks so food pathogens it's a serious threat to public.
+
+[522.0s - 551.0s]
+Health. Traditional way of recognizing or traditional way of classifying bacteria is usually through antibodies and genetic matching.
+
+[551.0s - 580.0s]
+It's very labor intensive, time consuming, and at the same time it destroys the original samples that we collect from.
+
+[580.0s - 609.0s]
+Foods. Obviously, this techniques cannot be used for detection of unknown pathogens becausw to develop an antibody, you need to know you need to have a sample of the bacteria. So if the bacteria doesn't exist, you cannot develop an antibody or you cannot develop a genetic matching technique. So you need to know the protein structure of the bacteria culture so that you can develop something.
+
+[609.0s - 638.0s]
+Of that sort. At Purdue University we have developed a system that we call Bargo. It stands for bacteria rapid detection using optical scattering technology, and it uses a laser. A light at wavelength 635 nanometer to eliminate bacterial colonies. Then we collect scattering the light that is scattered through the colonies and analyze the scattering to come up with fingerprints that we call. These are actually forward scatter signatures of the underlying bacterial colonies. And here you see some examples, some examples for a subclass in Salmonella, another subclass in Vibrio listeria, Salmonella obvious, which is another subclass of salmonella. As you see, even within these examples this fingerprints are quite distinctive, so it can tell you a lot of things about their bacteria cultures, especially the phenotypic behavior of the bacteria colonies.
+
+[638.0s - 667.0s]
+So then what we do is we using the scattered signatures. We are characterizing the fingerprints. Extracting several features involving moment invariants and haralick text.
+
+[667.0s - 696.0s]
+Descriptors and using samples in the training library. A classifier is trained and.
+
+[696.0s - 725.0s]
+The barter system is diploid. In real time to classify new bacteria cultures. But as you might realize, something is missing in this picture. So when we deploy the barrel system in real time in on food chains which are trying to identify and classify bacteria cultures, we need to have. An exhaustive training library so that I can train a nice classifier right? But the reality is, no matter what we do.
+
+[725.0s - 754.0s]
+We cannot get an exhaustive training data set because of the following reasons. Now the training samples that we have are usually from most prevalent serovars of bacteria.
+
+[754.0s - 783.0s]
+And Furthermore for example, for salmonella alone there are over 4000 servers.
+
+[783.0s - 812.0s]
+So. Collecting samples from all 4000 Sam F. Serovars and then defining a class for each of them, and this is for only salmonella. There are hundreds of bacteria out there, hundreds of bacteria. Main classes. Salmonella is only one of them, and apart from this high number of servers, the main difficulty in obtaining. Most of training libraries, the high mutation rate bacterias goes through mutation very often, and when they go through imitation and non pathogenic bacteria class may become a part of pathogenic bacteria class. So you may think that OK this is a non politician but when you classify that as an opposition it may cause very unfortunate consequences because maybe the bacteria went to a mutation and became a new class in you subclass of bacteria. So we have four 4400 known set of ourselves. Manila one of them can go through mutation and form another subclass that will be the 4400 month Serovars. So it's very often.
+
+[812.0s - 841.0s]
+Due to these reasons, an exhaustive training library in bacteria detection is impossible, so I am not saying impractical, it's almost it's definite.
+
+[841.0s - 870.0s]
+Impossible.
+
+[870.0s - 899.0s]
+So the easiest way, I mean, the traditional supervised classification algorithms. The way they deal with this problem is they usually assume that the training set is exhaustive so they know they assume that the classes that they have there in their training data is an exhaustive list of classes and they make this assumption and they design A classifier and diploid is classified in real time. So this could be a reasonable strategy if the misclassification costs if the if the cost of classifying. Sample of an unknown bacteria into non bacteria is negligible if that was negligible this would be reasonable strategy, but that is not the case in our case study because bad.
+
+[899.0s - 928.0s]
+To classify a pathogen example as an input into a non pathogenic class. Then this will have disasters impact on the human health.
+
+[928.0s - 957.0s]
+So we need a more rigorous approach.
+
+[957.0s - 986.0s]
+And the related work is actually I'm going to compare nonexhaustive learning with two lines of related work. The first one is anomaly detection and the second one is novelty detection. Now nonexhaustive learning versus anomaly detection. I normally is according to the dictionary definition, it's something peculiar. It's something peculiar. The integral is abnormal or difficult to classify.
+
+[986.0s - 1015.0s]
+So a normal is usually they don't have any informational value, they don't come from a class, so you cannot model them because an animal can be different than animals can be different among themselves. So they are usually outliers.
+
+[1015.0s - 1044.0s]
+On the other hand, the non exhaustive learning. Is very different than anomaly detection problem because we are dealing with missing classes. So if this class was known during training, I could easily model them just like I did for the existing classes. So the non exhaustive learning I want to make this I want to emphasize this non exhaustive learning is very different than animal.
+
+[1044.0s - 1073.0s]
+Detection and there is another line of work that is called novelty detection, which is a novelty is considered a sample of a class not represented in the.
+
+[1073.0s - 1102.0s]
+Training set so novelties have informational value an.
+
+[1102.0s - 1131.0s]
+In that regard, non exhaustive learning is very similar to novelty detection.
+
+[1131.0s - 1160.0s]
+Now early work on novelty detection is based on support estimation and density based models. So I will next discuss these techniques just to give you an idea of what literature.
+
+[1160.0s - 1189.0s]
+Is all about. So support vector domain description. It's actually it's also known as one class support vector machines. The goal is to fit a sphere into each class data and this fear is fit such that the radius and the center of the sphere is optimized using this constraint programming problem and the nice part about this approach is you can choose different kernel functions and you can easily get very different very flexible shapes to estimate the support of any distribution, any type of distribution. And we didn't.
+
+[1189.0s - 1218.0s]
+Non exhaustive setting a new samples is accepted when it is distance to any of the class centers is smaller or equal than its radius. So if I knew some sample emerges. And it doesn't feel it doesn't fill into the support of. It doesn't fit into the support of any of the distribution of the class distributions. Then we call that this new sample does not belong to any classes, so it's a novelty.
+
+[1218.0s - 1247.0s]
+OK. And in the density based models for each class data, we are assuming a conditional distr.
+
+[1247.0s - 1276.0s]
+Vision. And then we are computing the likelihood of Z, which is the new sample coming from each of the classes. And if this likelihood is less than a certain threshold, then we call that as an outlier.
+
+[1276.0s - 1305.0s]
+And if a sample is an outlier for all of the existing classes for all of the classes in my training data set, then.
+
+[1305.0s - 1334.0s]
+That sample is. It will be considered that sample as belonging to one of the unknown classes or one of the missing classes. Usually in this framework a Gaussian distribution is assumed for the.
+
+[1334.0s - 1363.0s]
+Additional distributions. Now, in our proposed approach.
+
+[1363.0s - 1392.0s]
+First of all, a little bit of notation. We are denoting all.
+
+[1392.0s - 1421.0s]
+Classes with Omega non classes with PC.
+
+[1421.0s - 1450.0s]
+Unknown classes with.
+
+[1450.0s - 1479.0s]
+And we are assuming that AK&M are the corresponding cardinality's of the boat classes with a equal to Cape.
+
+[1479.0s - 1508.0s]
+Sam and we are also assuming that for each sample we have a D features, so it's a D dimensional feature.
+
+[1508.0s - 1537.0s]
+Space and each class data is characterized using the data matrix. We are using for each four samples of each class.
+
+[1537.0s - 1566.0s]
+Data. And the FX given Theta denotes the class.
+
+[1566.0s - 1595.0s]
+Conditional distributions and we also have a prior over the data, which is the parameter of the class condition.
+
+[1595.0s - 1624.0s]
+Distributions. Now I will next discuss argue the.
+
+[1624.0s - 1653.0s]
+Some likely direction. The maximum likelihood decision function it's a well established technique for classifying samples. Especially it's a. It's a good technique, especially if your data is normally distributed, so the decision function for classifying and you sample Z. Is this which means a new sample is assigned to the class that maximizes the likelihood? OK, so the decision function for determining whether this is a member of one of the known classes or an unknown class can be expressed in terms of the Omega sub J. Omega Subject is the class that is maximizing the likelihood. So if Omega subject belongs to the set of non classes, then we say Z belongs to one of the known classes. So if Omega. Abj belongs to gamma, which is the set of unknown classes. Then we say Z belongs to the set of unknown classes. OK, obviously we don't know the set of unknown classes, so we cannot really explicitly. Implement or evaluate.
+
+[1653.0s - 1682.0s]
+Decision function so the conditional distributions are not known.
+
+[1682.0s - 1711.0s]
+But it can be estimated for known classes only, so we don't have any samples from the unknown classes. But we can still estimate conditional distribution using samples from the.
+
+[1711.0s - 1740.0s]
+Some classes? So we are assuming that we make assumption. Here we are assuming that each class data is distributed according to a Gaussian distribution with mean. With mean mu and the covariance matrix Sigma. And we are making another assumption and we are saying that the covariance matrices are shared among all.
+
+[1740.0s - 1769.0s]
+Classes to simplify the problem, and as I will discuss in the conclusion, this is a very strict assumption. But for the time being, for the sake of this paper we make this assumption that all of the classes share the same common covariance matrix. So this makes our job very easier, because even though we don't know the set of non unknown classes since we make this assumption, we are saying that OK, the covariance matrix is shared among all classes. We can easily transfer this information to the set of UNK. Unknown classes as well. Now the common covariance is estimated as follows, where the sample mean is estimated as the second.
+
+[1769.0s - 1798.0s]
+Asian. So the core asthmatics.
+
+[1798.0s - 1827.0s]
+Common for all classes known and unknown. We are also defining a prior and since the covariance matrix is already since the covariance matrix is already known. For all classes, all we need to do is define the prior over the mean vectors, so we are defining a prior over them.
+
+[1827.0s - 1856.0s]
+Vectors and the parameters of the mean vector or the parameters of the prior is estimated using the sample means. So remember, we have a large number of classes in our training data, so it is not like a traditional learning problem where you have one class problem, two class problem, three class problem we are considering. We have 10s of classes, 10s of existing classes in our training library and we are estimating this prior using the means of each class data. Using the estimated means of teaching.
+
+[1856.0s - 1885.0s]
+Lost data. And then we are generating a large number of samples from this distribution which we denote as Matilda too, just to differentiate the actual means from the simulated mean.
+
+[1885.0s - 1914.0s]
+Then we are presenting an algorithm for training and the algorithm for training. It summarizes, but I already discussed so for each class in the training data set, we are estimating the common covariance and the mean vectors. Then we are. Then we are estimating the. Sorry. Then we are estimating the Ms which are the parameters of the prior. Using the sample means that we are generating am samples. I'm is a very large number of samples from the prior distribution, so the samples of this prior distribution corresponds to the means of the unknown classes. Suppose that the unknown classes.
+
+[1914.0s - 1943.0s]
+And the algorithm for detection is. We are evaluating the likelihood for the actual classes for the real classes using this this formula and then we are evaluating the likelihood for the unknown classes. That is something that I can do as well, because I know the common covariance matrix and I know the mean vectors which are simulated from the prior distribution and I am saying that if the simulated, the likelihood for the simulated class is greater than the likely for the real classes. Then we reject ZZ is the new sample we are saying that the does not belong to any of the known classes or any of the existing classes. So if it is not, if this is not true, then we are saying that. The Z or the new sample belongs to one of the known classes, so this page.
+
+[1943.0s - 1972.0s]
+Summarize our algo.
+
+[1972.0s - 2001.0s]
+Rhythm, and these are the experimental results. We have two and eight different bacteria subclasses. We have 5 main bacteria classes which are essentially Listeria, Salmonella, Staphylococcus and Vibrio Ann. From each of these bacteria classes we have several subclasses, so these are serovars of this bacteria and from each of the sub classes we have several samples collected, so a total of we have two 2054 samples and we have a total of 28 classes.
+
+[2001.0s - 2030.0s]
+In our training data. So.
+
+[2030.0s - 2059.0s]
+So there is a validation technique we are.
+
+[2059.0s - 2088.0s]
+In temple crystallization, but we are.
+
+[2088.0s - 2117.0s]
+Modifying it little bit just to actually from the one for this left hardest test from the remaining mind faults, subclasses are removed one at a time, so we are removing one subclass or one class at a time, and considering that as an unknown class and we are getting 28 different man exhaustive training.
+
+[2117.0s - 2146.0s]
+It's. Then test samples are classified as accept or reject.
+
+[2146.0s - 2175.0s]
+And all temples are covered.
+
+[2175.0s - 2204.0s]
+And we are repeating this 10 times to account for the variability due to cross validation and we are.
+
+[2204.0s - 2233.0s]
+Getting the receiver operating characteristics curve.
+
+[2233.0s - 2262.0s]
+And we are considering the following classifier which are support.
+
+[2262.0s - 2291.0s]
+Victor Domain description maximum likelihood class.
+
+[2291.0s - 2320.0s]
+With common covariance feature.
+
+[2320.0s - 2349.0s]
+Linear discriminant that support vector machines. Now this these last two techniques are discriminative approaches and we are modifying them to account for this non exhaustive setting and details are available in the paper so I have to skip them.
+
+[2349.0s - 2378.0s]
+And finally, this is the.
+
+[2378.0s - 2407.0s]
+Proposed approach.
+
+[2407.0s - 2436.0s]
+When we plot the Roc curves as you see the Fisher senior. This commander support vector machine. It's almost a random classifier, so it doesn't do any good. The support vector domain description it looks promising. The maximum likelihood with common covariance is also promising and our approach is it paid much dominates the entire Roc curve except for the region where we could not generate samples due to computational constraints. By just looking at this occur even though the proposed approach is outperforming the. State of the art that is, you see the proposed rocker for the proposed approach is still way off the ideal curve, so which means we have still lots of room for improvement before the system can be diploid in real life. For detecting bacteria cultures.
+
+[2436.0s - 2465.0s]
+So as a conclusion, learning with a non exhaustive training data set is.
+
+[2465.0s - 2494.0s]
+A very challenging problem and the proposed based modeling approach is only.
+
+[2494.0s - 2523.0s]
+Starting point and ongoing work is it focuses.
+
+[2523.0s - 2552.0s]
+The visual prior for the covariance matrix, as I discussed in during my presentation, the common covariance assumption is quite strict, so we want to lose in that assumption and now we are defining. We are considering a prior for the covariance matrix itself and the visual prior is the is the way to go.
+
+[2552.0s - 2581.0s]
+And we are also interested in not only detecting samples as novel Tees or not. We are also interested in recovering the entire unknown class. So that is actually makes this problem even more challenging, because we want to make sure bandwidth detector sample as a novelty, it will need to be followed on right. So if there are lots of samples classified as novelty, then the human being has to go over this. Have to follow up on them bomb by one which is very time consuming. Want to make sure we are only we will. We will only be following an interesting clusters of novelty's. Not all of the novel Tees because the novelty can also be an anomaly in this in this framework. So we want to make sure and notice form clusters and we want to follow up on those clusters, not each and every novelty.
+
+[2581.0s - 2610.0s]
+And this concludes my talk.
+
+[2610.0s - 2639.0s]
+Thanks for your patience. Time for one question. The glasses. But that problem will not be talking about the finding of those clusters. There will be clusters themselves, which would be so in that case, what would be that the unsupervised now the unsupervised learning? I think it's quite different than the non exhaustive learning because here we are considering that the classes are total ilost. We don't have any classes. I mean we don't even have any samples in our training data. We cannot run a clustering algorithm or an unsupervised learning algorithm on the data set. We don't have any samples from those classes. We will discover this samples as the system is deployed in real time and the samples are classified in the in real time, so we don't have those samples yet, so we cannot do anything. Or store that yes, the system will be diploid in real life and as the system runs for maybe a month or four days, we will be discovering this novel Tees and we want to make sure that OK, this group of novelties belongs to they have something in common as opposed to this novel Tees which are individual novelty so they may not have any informational value. But this group of novelties. They have something in common. They form a class or a cluster so we wanna follow up on these novelties, not on each and every novelty. OK thanks.

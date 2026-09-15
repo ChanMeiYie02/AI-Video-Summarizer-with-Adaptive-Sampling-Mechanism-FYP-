@@ -1,0 +1,20 @@
+{
+    "id": "aybrnpr5ii2evbuiot754lrvrbwtommz",
+    "title": "Use of variance estimation in the multi-armed bandit problem",
+    "url": "http://videolectures.net/otee06_audibert_uvema/",
+    "info": {
+        "author": [
+            "Jean Yves Audibert, Center for Education and Research in Computer Science of the École des ponts, École des Ponts ParisTech, MINES ParisTech"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "December 2006",
+        "category": [
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 243,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2283
+}

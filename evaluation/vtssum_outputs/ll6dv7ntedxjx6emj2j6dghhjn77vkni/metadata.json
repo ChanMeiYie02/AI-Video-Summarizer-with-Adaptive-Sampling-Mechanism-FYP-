@@ -1,0 +1,21 @@
+{
+    "id": "ll6dv7ntedxjx6emj2j6dghhjn77vkni",
+    "title": "Fast Nearest Neighbor Search in Disk-resident Graphs",
+    "url": "http://videolectures.net/kdd2010_sarkar_fnnsdrg/",
+    "info": {
+        "author": [
+            "Purnamrita Sarkar, Machine Learning Department, School of Computer Science, Carnegie Mellon University"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Information Retrieval",
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 217,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 42,
+    "ground_truth_summary_length_chars": 5249
+}

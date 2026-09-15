@@ -1,0 +1,134 @@
+[0.0s - 29.0s]
+It's a pleasure to get together with all of you every year and we're going to begin the session with an overview of the conference for you. You're going to meet all the organizing committee is going to come up and talk about what they did for you and and then we'll have a session with an invited talk.
+
+[29.0s - 58.0s]
+I wanted to welcome you to the conference and thank you oh so much for everything that you do to make is week what it is. So we had an organizing committee of 30 people that you'll see up here. But there's about 100 of you that organized some event in some manner that is a lot of you contributing to making the conference useful, practical, interesting and very personal. So thank you for doing that. We had a lot of you contributing reviews, opinions and inputs to the. To the review process, there's about 4:30 registered participants at the conference and will have 260 presentations, which is a lot 5 days of great fun. We're kind of towards the middle of it. I want to point out that on Wednesday at five will have an hour of a town Hall meeting, so if you have any feedback, opinions about how you want the conference to be run, that is a good place to let us know and you can catch me in the halls at any time. So with that said, I'm going to start to ask the organizing committee to come up and tell you what they've been working on. First and foremost, Hideaki Takeda, who was our local arrangements chair. OK, so welcome.
+
+[58.0s - 87.0s]
+To Japan and welcome to Kobe is a. Really enjoyed it and pressure to having so lot of so participants from abroad. So yeah so yeah actually. So this is our team so this is a local organizing organizing committee so I I so expensive so I really thank too. So Yoshinobu Camera and Nikki Amuka and Cozy Kousaki is by chair of local committee member or local committee and all other people is. I'm just so contributed so to organize this meeting so it's very thankful so.
+
+[87.0s - 116.0s]
+So I just tell you so are statics about, so participants so actually so. I thought a lot of people from Europe. Yeah, so really thank too. Come here, so it's long trip, so from Europe and so really nice thinks it's a lot of people who are on nearly 30% from Asia actually is. So rather people from Japan is very exciting for me. So because the semantic web is so so. Interest for Japanese researchers, and so industrial people so and also some OK, so the other side is a category. Distribution is a I think so it's not so big change. So from past conferences. So actually sorry, so sorry. Number is longest 44. This started probably 4440 at most at that so. Total is a very so it's a nice number. So because this is not so Europe, NATO, United States, so that's so Asia. So it's really I'm really satisfied to this number. So OK anyway, so thank you for coming here.
+
+[116.0s - 145.0s]
+So thank you for coming here, so I'm a sponsor could share. So yeah so we would like to thank so much to so these sponsors listed here for contributing. This ice double seat conference. So this year we have IBM semantic software in HK, Oracle iOS press recruit who did so good pitches, entity Resonant. And. Brace graph meta facts and Hitachi Rocktenn. And. Accenture thank you. And every severe Yahoo, Japan, Google and NSF and also we're duct pipe. Thank's so Swsa and Interpolator initiative. So thanks, thank you again. Let's give our approach to these sponsors by scrapping.
+
+[145.0s - 174.0s]
+Alright, so at the conference you'll see a lot of work ranging from germinal ideas that are shown in the workshops. The posters and also the Lightning talks will talk about that in a minute and things that are more maturing through tutorials, demos and some of the workshops and then coming to fruition in the main papers. So let's start with the workshop program so.
+
+[174.0s - 203.0s]
+This year we had already too exciting days of workshops and tutorials, 16 workshops and five tutorials thanks to organizers and participants, and for the first time, if you missed something you weren't here, you would like to know what happened in other workshops. We are experiencing a workshop report session and it will be on Friday at 3:50, so please come.
+
+[203.0s - 232.0s]
+OK, the program will have three fantastic invited Speakers, Kathleen McKeown this morning, Christian Bitzer, and he Rocky Gitano. We're very excited to have them all. Give us a perspective and learn from them about incorporating new ideas into our field.
+
+[232.0s - 261.0s]
+The main program of the conference had a research papers track that is traditional. We had a resource track with ontologies, benchmarking replication studies, a lot of different kinds, and then applications. There was also a new track this year, which is a Journal papers track. So if you see a paper with a J next to it, that's what it is. Overall, there's about 22 sessions and all the papers are intertwined, so let me ask each of the chairs to tell you about their track.
+
+[261.0s - 290.0s]
+So we had a great research paper track this year, some.
+
+[290.0s - 319.0s]
+That's for you. 212 submissions. Tons of reviewer's 159 PC members. As usual, each submission was reviewed and this year we added bullet points and lots of papers from Germany.
+
+[319.0s - 348.0s]
+Some statistics we did on the reviewing actually, so we had 664 total reviewer's, the average length of a review is probably about 5 paragraphs and you guys write really kind of iaccessible reviews and no matter the score, you're kind of the same sentiment no matter the level of the score.
+
+[348.0s - 377.0s]
+So in total we have 39 papers accepted covering a range of things in the semantic web, from data to knowledge, graphs to reasoning. So I really hope you enjoy all these really great research track papers and over to the reviews. Right, So what does this mean for you? I'm here to give you the good news, so we're here to celebrate. We're here to present our dates, ideas, latest papers to network. But we're here to celebrate the best of us. So now I'm going to tell you more about the best papers, but we're also going to award two people in the program committee that have impressed us an the researchers who submitted their work here with the quality of their reviews. And so the program committee, the senior program Committee members, are what make this program's success. They're the ones who put in all the effort all the hours to read the papers. To comment and give constructive feedback to to all of you and so it is a great pleasure to introduce you to the two best reviewers of the research track for this year.
+
+[377.0s - 406.0s]
+And these are Aidan Hogan and Benedict Kempton. Let's give him pause. And I have had two very smart looking certificates for you for later now. Moving on to the awards in the research track, we had best paper award candidates as well as student paper awards. A student paper. We considered those paper with papers were the most of the research according to the authors, has been done by an added grad. For post grad student, starting with the best paper award, we have two candidates.
+
+[406.0s - 435.0s]
+And it's great to see that I'm supposed to see the titles, but the names of the people are involved, and so the candidates for the best paper award in the research track are the multiset semantics of sparkle patterns. An unsupervised entity resolution on multi type graphs, congratulations. And now for what we consider the most promising research for best student paper.
+
+[435.0s - 464.0s]
+These are multi level semantic labeling of numerical values and the probabilistic model for time aware entity recommendations, congratulations.
+
+[464.0s - 493.0s]
+So now we go onto the resource is track. This is knew this year we combined the datasets and ontologies track with the empirical benchmarking track. And matter and some fortune able to be here. So I'm going to present all of this.
+
+[493.0s - 522.0s]
+For the resource is track. We had 71 submissions this year. This is up on previous years we had 57 PC members with 20 four additional reviewers and a total of 220 reviews. Each paper was asked to provide a permanent urri for the resource that they were presenting in the abstract of the paper. So when you look at the papers in the proceedings, you can immediately get to the resource is and see them. This is because we were reviewing the resource is as well as the paper if the resource wasn't up to scratch, but the people is very well written, then you probably didn't do so well in the reviews this year. To help us do this, we used a structured review process so that we could really pick out the points that we were looking at and making resource is reusable for the rest of the Community following best practice or making the resource is available and also seeing whether there is a community using the resource. Although some emerging resource is we're able to come through this process as well. As with the research track, Germany provided the predominant number of the resource is, although this may be due to the number of authors on those papers.
+
+[522.0s - 551.0s]
+We had 24 papers accepted. This is the breakdown of the topics of those papers. This came out of the review process, not from the original author of recommendation of what the paper was. So the predominant work here is on ontologies providing software and providing datasets. As with the research track, we have nominations for awards and we also have to thank Program Committee for all the hard work that they did in reviewing the papers. So the best reviewer's wear.
+
+[551.0s - 580.0s]
+Then when and Peter bets. These two people stood out based on the quality of their reviews, but also the interactions in the discussions with the rest of the program committee. After the auto rebuttal process. We have a best paper award.
+
+[580.0s - 609.0s]
+We have three nominations for these, and these are an ontology of soil properties and process is. Lot stats the data web census data set, and the OWL Reasoner evaluation Orry 25 2015 resource is. So you can find those papers in.
+
+[609.0s - 638.0s]
+For the best student paper we discussed with the authors again for those papers where the student, either undergraduate postgraduate PhD, had made a significant contribution to the paper. Our nominations for these are the Lord Stats, the data Web Census data set, also up for Best Paper award and enabling combined software and data engineering at web scale. The aligned suite of ontologies.
+
+[638.0s - 667.0s]
+Hi everyone, so I'm going to present what we did for the application track source code sharing this session with markers which couldn't make it to Japan this year because it gets a new child so not sure will get better slim partners so so.
+
+[667.0s - 696.0s]
+The statistics for this truck, so we get 43 submissions. We divide it in 20 funds, topics or sub areas or emerging applications in use. Applications in these three applications, 31 PC members. 5515 additional reviewers for a total of 132 reviews and the main innovation we tried this year is to combine the existing in use. I use application track with the. Industry truck and also bring a new truck in it which is the emergency imaging applications. So basically it Masons may be confusing but it's all industry driven and the way you should think about that is the majority of the use case. The business cases. So we try to understand different level of maturity. So much more research orders but still working with real world data and working with industry partners. So we try to. Evaluate different majority of those applications so as you can see, authors from all over the place. Basically mainly China, UK, USA. So.
+
+[696.0s - 725.0s]
+Earn some of papers so it's 12 papers I've been accepted majority of coming from the emerging applications, so it's definitely a new track and it sounds like lots of people. Lots of papers fit pretty well in this truck, so the thing that was encouraging in trying to find something new and bringing a new way of evaluating in use or application papers as you can see, it's data driven ontology clearing and all small words in that. Well, one it would be much more the applications, so similarly to the other trucks we get reviews based reviews, so most of the reviews did very good job in helping us in selecting the best papers. But two did a particular good job. First in doing significant good reviews and also helping us even basically on the daily basis in. Picking some minor changes, something we may forget, so and some of them deserve particular price. So those two per.
+
+[725.0s - 754.0s]
+Teens are more dragony and Aiden Logan. Thank you guys. And we.
+
+[754.0s - 783.0s]
+Also have a best people application. Basically poor award for this. We have four nominees and the paper which are nominees for these awards. Or translating ontologies in a real world setting with a certain semantic technologies for data analysis in healthcare? Query Q daily question. Sewing over dynamic and linked knowledge graphs and extending sparkle for data analytic tasks. Thank you. Thing.
+
+[783.0s - 812.0s]
+You're very much not to the Journal track. The Journal Track is a new experiment this year that we ran and will probably run next year. My Co chairs are Pascal was right next year to me, as well as his shy bro. Unfortunately could not make it this year so that.
+
+[812.0s - 841.0s]
+Journal track had the idea of bringing some of the most interesting papers for that were published in the Semantic Web related journals into the conference and give him some air time in terms of presentation, we ran the following procedures. We took the papers published in the relevant journals in either 25th published or accepted in either 2015 and or the 1st three months of this year. We contacted the authors and ask them whether they would be willing to come to Japan to present their paper. And ask them as well if their paper was not presented at a previous version of either this conference or use WC those who were eligible were then put up and the respective editorial boards got to vote on the papers they were thinking were most appropriate for presentation. We selected 6 papers from both of the journals which you will find interspersed thematically in the program and marked with a J and I hope you will enjoy these papers. Thank you very much.
+
+[841.0s - 870.0s]
+Hi so I'm gonna talk about the posters and demos track for a few SEK.
+
+[870.0s - 899.0s]
+For the person demos track, we had way more than 120 years. Submissions out of those we selected roughly 100. You will find the full list in your in your bag an attached to the list. You will also find a map which Maps them to the respective places in the posters and demos presentation area. So there is also some geospatial information. In this data you will do the posters and demos presentation tonight upstairs. There's also a minute Madness session running in this afternoon. 10 minutes to four. I still miss like 10 slides, so if you haven't sent your slide in, get in touch immediately for the. For the awards, we will have two sets of votes for the posters and demos, one being based on the reviewers and the other being based on audience voting. For that you also find a sheet of paper in your bag which provides you with the voting address so you vote via the website plus a unique code for your. For your voting and you will also find the proceedings online. The link is up there helping to see you for the minute madness at the posters in demo session tonight. Thank you.
+
+[899.0s - 928.0s]
+Hello everyone, well there is going to be an amazing amount of talks. This conference that you already know about. But still if you need to present something some data said some late result that you want to talk about. We have the lightning talk session so I'm still collecting one slide from each of you. You will have two minutes to talk about it, so if you want to say something or present something to this Community, please send. Once lied to me before. Thursday end of the night an there is about an hour and a half so the session is limited so the earlier you send it a more chances you have to present it. And then I will confirm a list with all the talks. I will be there. Thank you so much.
+
+[928.0s - 957.0s]
+Great Fabian could not be here, but he really did a great job putting all the papers into the proceedings and making them available to you. You have a thumb drive there on the website. He kept all of us on track.
+
+[957.0s - 986.0s]
+Right hello everyone. So also this year there will be a good online presence of this conference were very active on Twitter at ISWC 2016. The hashtag is the same thing, but then you put a hashtag in front so we're also will also put all the important announcements on Facebook. And if you have any questions we have. At the email address where you can always reach us or just grab us in the hallway, which is fine.
+
+[986.0s - 1015.0s]
+This year we put some extra efforts in making the website very mobile friendly, very responsive so it's accessible for every device you can use to browse the program, and I'm also happy to say that it works offline so you don't need any extra apps or anything like that. And also just like last year video lectures will come and record every session so you can re watch them later, thanks.
+
+[1015.0s - 1044.0s]
+Hello everyone, we have produced a lot of metadata for this conference starting from the CVS file that the chairs provided us. From easy chair. We have used a new tool that is closed called collage to to convert such CVS file into RDF and we are now pushing all this data in the scholarly data portal right now. In addition to that, we also use this data to produce quite interesting visualization that are available in the portal that has been used even in the last edition for making this kind of very interesting. Him for these.
+
+[1044.0s - 1073.0s]
+This is one of those Infovis that concern the topics. The keywords top keywords in the in the conference. Let's say it is not Sir complete just because it we had a lot of issues when cleaning metadata in when extracting text from the source of the papers. But still a lot of interesting visualization visualization has been produced.
+
+[1073.0s - 1102.0s]
+For instance, this is the situation last year about participation to the conference. There was of course a lot of people for coming from US, and not so many people coming from Asia, and it will sanya.
+
+[1102.0s - 1131.0s]
+And this is the new situation. Of course, a lot of people coming from Japan that was quite you know, common and we have a lot of people coming even from from Asian Oceania, and slightly less people coming from US, at least according to the data we had.
+
+[1131.0s - 1160.0s]
+We have other kind of visualization that are available on the on the portal, such as that trend that is the collaboration between countries in the last 14 years. Looking at the diagram, there are a lot of collaboration between US and UK. An strangely enough, even, you know, in neighboring countries are not collaborating so much, such as Austria and Germany. This is just. Funny.
+
+[1160.0s - 1189.0s]
+Seeing this is another kind of visualization that allow you to understand how the most used keywords in the past here evolved during time. In each addition of the conference. That is, find interesting like the ontology keyword, that is the one that is highlighted there. More or less has sort of, you know, standard you know distribution along all the here's that's all for what concern meta data, thank you.
+
+[1189.0s - 1218.0s]
+OK, hello everyone. So this year we got. 27 people funded by the Swiss. Some grants and eight people coming from the US. Thanks to NSF, so Abby and I have been coordinating all of this effort an we would like to thank you for applying to these grants because it is always very good to to bring in students from all over the world. So just a quick thing. The mentoring lunch is going to be tomorrow on the 16th floor. And I will be happy to see you there.
+
+[1218.0s - 1247.0s]
+And rounding up the tracks is, I guess what we're going to call the future of this community, which was the doctoral consortium which had 24 submissions from 14 countries. The consortium is designed for students, sort of in the middle of their PhD career to get feedback on their dissertations. If you would like, there were 13. PhD dissertations presented what will give a brief report that the workshop session that Karen mentioned on Friday alright, and we culture it was Philip Anrich hero, and it was a wonderful session. Then I think sort of the session really highlighted how much we have to look forward to in the new submissions and the new papers in the coming years. And was that I'll switch my head.
+
+[1247.0s - 1276.0s]
+Sure. Also give you a word from the semantic Web Science Association. It has been mentioned a couple of times for the students in the audience. You probably know what it is because many of you have been funded by it with the travel grants. But in general, where the Association that promotes scholarly work in the semantic Web makes sure this conference continues from one year to another gives a lot of student awards and also gives a lot of student grants and also gives a number of awards, which is probably the most fun part of this. And so the first award that I want to talk about is the one that we have every year. Which is this wizard Distinguished Dissertation award?
+
+[1276.0s - 1305.0s]
+Which this year went to. Hassan safe person. Can you please come up?

@@ -1,0 +1,162 @@
+[
+    {
+        "text": "So I'm quite cool. I'm supervised by Professor Philip David, so this is joint work with my supervisor, sufficient covariates and linear propensity analysis.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "In many cases, our interest lies in identifying causal effects from observation. ULL studies rather than randomized experiment which requires adjustment for a set of covariates. For example, age, gender or family income, etc. If we have many such covaries and then it's necessary for us to conduct dimension reduction for some of the approaches, I'll talk about it later.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "First of all, I would like to introduce 3 random variables, binary treatment, T very one stands for treatment Group and 0 control. We have response Y also P dimensional covariates X.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Oh, analysis is based on decision theoretic framework within which we introduce announced acoustic regime indicator FT. It's explains the treatment assignment mechanism, it can. It can take three values if is. Idle equal to idle, so we say it's observational regime, so in this case we don't do anything, hands off and then just does the treatment arise naturally? If FT is equal to 1 and then we say it's an interventional regime, which means the assignment to the treatment group is by the external intervention, and if is equal to 1, is another interventional regime. The assignment to control is by the external force as well.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Because the causality is all about manipulation. So we define our average causal effect as the difference of the expectation of our response under two interventional regimes. For convenience, we write down the values for regime indicator as the subscript here. As in our framework, sufficient covariates plays a key role, so next I would look at the possible proper properties for such.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Sufficient covariates, the first one is that the marginal distribution X is independent of FT, which means the distribution of X in each regime is equivalent. So we call such. X is a covariate.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "In addition, if the distribution of Y given X&T is the same in each regime, then we call such X is sufficient covariates, so sufficient covariates must must satisfy two properties, both one and two.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Most strongly, if we have given X, we've observed both treatment group, so then we call. Such X is strongly sufficient covariates, so in this case, as we can say, it's condition becomes stronger and then the name of X become longer. Well, whatever I think, yeah, that's just in general setting. Doesn't say anything about it dimension. At all.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So if we let express property one and two for sufficient covariates graphically and then we can find out in the DAG which is directed acyclic graph. So here we can say that X is independent FT. And why is independent FT given X&T by moralization? If you're already familiar with this deck? Expression.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Before going to details, I would like to introduce another definition which is called specific causal effects. It is actually very similar to the average causal effects, but here is the difference of the conditional mean of the response given X. So which means SC. Here is actually a function of X.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "If X is a covariate, let's go back to.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "The property one. If X is covaries and then the distribution of X must be the same in each regime, so that's why it comes to. Serum",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Two so the average causal effects just expectation of specific specific causal effects for each regime here. Which is actually a post back door formula if you.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Put that before. So what happens if X is drawn is sufficient? If this is the case and then for any intervals at which is a function of YX&T and any versions of conditional expectations almost surely in any regime we have that conditional on X and forgiven specific treatment group the estimated the expectation of Z is the same no matter. Whether this this treatment is from intervention or from the observation so that is nice because from theorem one we can find out that the specific causal effects which is defined in interventional regimes can be identified from observation, ULL data and by theorem two. Consequently, the average cause or effect can be identified from the purely observation. ULL data as well.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "As I said before, for some approaches such as matching and subclassification for Jasmine, purpose is much easier to adjust for just just for a single random variable rather than multi dimensional variable. So our point is how we carry out such dimension Redux.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Chen so conditional on X, that X is strongly sufficient and V is a function of X, then we must be strong sufficient as well. If this conditional independence properties satisfied, which means that distribution of Y given V&T is the same in each regime. So I would skip all the proofs here. So if you are really interested in you can refer to our paper afterwards.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Theorem Three provides us 2 alternative ways to carry out such dimension reduction.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So the first one is called response efficient. This look at this dad this graph. So actually V is on the pathway from X to Y to response Y. So that is why is called response sufficient reduction. Intuitively we might think OK there is another alternative way for us to carry out such reduction, which probably is from X2T.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Exactly, so that's exactly our second approach. So from X to T, that is V, so it's called treatment sufficient reduction.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Then how we obtain such reduction? So if we have a family Q with two components Q, not, Q1 consists of the observation of distributions for X given T being equal to 01 respectively on it can be shown that a treatment sufficient reduction is a sufficient statistic for Q. Consequently, a minimal treatment sufficient reduction. Is a minimal sufficient statistic for Q which is equivalent to the ratio down?",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Then we call such minimal sufficient treatment sufficient reduction a propensity variable as. Some of you may come across. Propensity Score which is defined as the probability of being in a treatment group given observed X that is actually a one to one function of likelihood ratio. So in this case a propensity variable is just a one to one function of the propensity score.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So will carry out propensity analysis by very simple example. Is from a normal linear model because propensity analysis is regarded as a very useful tool to reduce bias or even increase precision for our estimators. So let's see if it's always true. The joint distribution is given us following, so we actually observe both treatment groups. Conditional distribution of X given T and observation regime is from normal with mean depend dependent on the treatment and covariance matrix of X given TR for the two for both treatment group is identical and distribution of Y conditional on. Xton FT is again from normal, with its men being a linear function of T&X. So here from the second model setting, we can see that the distribution of eggs under the observation regime is actually a normal mixture. If we take its distribution and Inter.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "National regime is the same. And then we can actually prove that X is strongly sufficient, because in this third's model setting, Huawei doesn't depend on FT at all given X&T. So the average causal effect can be obtained is just the coefficient of T in response regression model is just Delta. And it can be shown that is also true for any regression on the linear sufficient reduction of X.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So as I said before, we can carry out the treatment sufficient reduction by looking at the likelihood ratio. So let's take log. Then the dog like ratio is in the really simple form. LD here is fishes, fishes, linear discriminants and also is a propensity variable in our model. So let's carry out two linear regressions. One is multivariate linear regression as usual, and the other is to carry out the regression linear discriminants. Actually, we end up with the same coefficient of T, so here because. Linear discriminants also a propensity variable is actually a linear sufficient reduction of X, so that's why it's this result holds, but are interested is in the observed data, so that is population based. So what happens? What's going to happen in a data, let's say from the formula in the linear discriminants is only first and 2nd one, second moments being involved. So if we replace. Muse and covariance matrix by their sample estimates, and then the sample based on linear discriminants is again a linear sufficient. Reduction of X. So in this case for sample based.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Analysis is still true. That's exactly what said for what I said for Curly one, so everything is based on sample and again we end up with the same coefficient of T.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So here this say from our model really simple model setting propensity analysis does not increase precision at all, it just give us the identical result as a multi various linear regression.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Will verify our results by simulations. For simplicity, we only consider two components in X, X1, and X2 and X1 given tease from standard normal X2. Given T is normal again with minty and variance 1X an X1 and X2 independent given T. Also, the conditional distribution of Y given X&T is from normal as well with this mean. Is a linear function of T and X1, so it's really easy saying that X one is true linear predictor of our response.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "For some simple algebra we can find out that linear discriminants is propensity variable which is just X2. So the distribution of Y, conditional X2 and T. Let's say it doesn't depend on X2 at all, because that's not surprising because X2 is not a linear predictor of the response.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Then we carried out for linear regressions. Am not is the baseline regression, which means we don't know which one is a linear predictor or propensity variable doesn't matter, we just include everything in a linear regression and M1 here, if we know the two linear predictor is X1, then we include this X one in a linear regression in M2. If we know the true propensity variable which is X2. And then we included in the regression. So the last M3 is the case in general, because normally we don't know the true propensity variable. We need to estimate it from our data. So first of all we estimated from data and then we do adjustment on this estimated propensity variable. Actually, this for all for linear regression's give us unbiased estimator for the for the average causal effect. So let's look at the performance of the variance.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "So that's a result of simulations graphically, so let's look at the left hand side. The top one is from the baseline linear regression model, which means why the linear regression of Y on the whole set of covariates and T. The bottom one is the adjustment for the sample linear discriminants, which means is just the estimated propensity variable. Indeed, these two graphs gives us exactly same results. No difference at all. And let's look at right hand side to graphs. The top one is the regression linear predictor X1, which resulting. The most precise estimator. As we can see. And in contrast to the bottom one here, which is a linear regression on the true linear prediction true propensity variable. That is the worst in terms of the variation of our estimator.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "So to summarize, I propensity variable is identified as a minimal treatment, sufficient reduction and for simple normal linear model, propensity variable and linear discriminants that just equivalent to each other. So adjustment for the sample based. Linear predictor, sorry. They're proposing variable yields. The same estimated average causal effects as a multivariate X, so it can neither increase nor decrease precision. Therefore, our investigations add some weight to the accruing evidence that propensity analysis in some circumstances is of little help to improve the estimation of our cause causal effects.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Thank you.",
+        "start": 899.0,
+        "end": 928.0
+    }
+]

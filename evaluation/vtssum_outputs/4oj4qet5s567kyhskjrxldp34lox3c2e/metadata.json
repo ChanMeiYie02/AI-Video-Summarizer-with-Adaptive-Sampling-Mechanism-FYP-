@@ -1,0 +1,20 @@
+{
+    "id": "4oj4qet5s567kyhskjrxldp34lox3c2e",
+    "title": "Representative of Estonian team",
+    "url": "http://videolectures.net/cleanbalkans2011_urm_ret/",
+    "info": {
+        "author": [
+            "Tiina Urm, Let's do it world!"
+        ],
+        "published": "May 18, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Environment"
+        ]
+    },
+    "num_segments": 2,
+    "num_sentences": 71,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 66
+}

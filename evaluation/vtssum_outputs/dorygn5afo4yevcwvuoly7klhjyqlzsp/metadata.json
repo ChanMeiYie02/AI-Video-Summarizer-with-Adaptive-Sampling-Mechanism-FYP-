@@ -1,0 +1,20 @@
+{
+    "id": "dorygn5afo4yevcwvuoly7klhjyqlzsp",
+    "title": "STARK: Self-Tuning Association Rules for KNIME - A Pascal-2 Harvest Project",
+    "url": "http://videolectures.net/workshops2012_balcazar_stark/",
+    "info": {
+        "author": [
+            "José L. Balcázar, Universitat Politècnica de Catalunya"
+        ],
+        "published": "April 25, 2012",
+        "recorded": "March 2012",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 450,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 36,
+    "ground_truth_summary_length_chars": 3730
+}

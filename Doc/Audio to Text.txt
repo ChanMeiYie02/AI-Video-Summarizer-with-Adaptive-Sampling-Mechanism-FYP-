@@ -1,0 +1,35 @@
+Audio to Text
+Transcribe the following speech segment in its original language and organize it into clearly defined chapters.\n\n"
+
+                            "STRICT OUTPUT FORMAT (follow exactly):\n\n"
+
+                            "## Chapter X: [Chapter Title]\n"
+                            "**Transcription:**\n"
+                            "[Full transcription of this chapter in paragraph form]\n\n"
+                            "**Summary:**\n"
+                            "- [Key point 1]\n"
+                            "- [Key point 2]\n"
+                            "- [Key point 3]\n\n"
+
+                            "RULES:\n"
+                            "1. Use digits for all numbers (e.g., 1, 2, 3).\n"
+                            "2. Identify logical chapter boundaries based on topic changes.\n"
+                            "3. Each chapter MUST include: title, transcription, and summary.\n"
+                            "4. Keep summaries concise (3–5 bullet points only).\n"
+                            "5. Do NOT omit any spoken content in transcription.\n"
+                            "6. Do NOT add any introduction or conclusion outside the chapter format.\n"
+                            "7. Do NOT explain your process.\n"
+                            "8. Maintain consistent formatting across all chapters.\n
+
+Example output:
+
+Chapter 1: Recording a Slideshow\n
+Transcription: \nUnder here you'll see an option right under the slideshow pivot that says record slideshow. And what I'm going to do is you could either record from the current slide or from the beginning, but in this case the current slide is the beginning so it doesn't matter which one I choose. So I'm going to go ahead and say from the beginning. Now, a few things that I could do on the screen that popped up, you see this big red record button, well that's how I record. I could also stop recording and then I could also play it to hear how it sounds. I have some settings under here where I could choose my microphone, I could choose\n
+\n Summary:\n
+
+-There is a "record slideshow" option under the slideshow pivot.\n
+-The user can choose to record from the current slide or the beginning of the slideshow.\n
+-The user decides to record from the beginning.\n
+-There is a red record button to start recording, and options to stop recording and play back the recording.\n
+-Settings are available to select the microphone.
+

@@ -1,0 +1,20 @@
+{
+    "id": "z42tq347ez3dnx42xz6mikcfpmup2fre",
+    "title": "Hallucinations in Auditory Perception",
+    "url": "http://videolectures.net/mbc07_slaney_hap/",
+    "info": {
+        "author": [
+            "Malcolm Slaney, Yahoo! Research Silicon Valley"
+        ],
+        "published": "Dec. 29, 2007",
+        "recorded": "December 2007",
+        "category": [
+            "Top->Computer Science->Speech Analysis"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 566,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 897
+}

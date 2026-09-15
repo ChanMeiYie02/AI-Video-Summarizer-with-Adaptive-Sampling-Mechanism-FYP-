@@ -1,0 +1,122 @@
+[
+    {
+        "text": "My name is Tim Medicaid and I'm. Happy to have the first presentation this morning especially.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "After this inspiring keynote that we just heard. Talk about local image features, or more specifically about the completeness of a particular set of local features with respect to the information that is contained in an image. So let us. Quickly get into the topic by having a look at some examples we have here an image of a system from the Celtics database overlaid with three different sets of local image features. On the left we have the popular lower detector which basically captures stock in bright blobs. In the middle we have a set of straight line segments. On the right we have a scale invariant junction detector. It's the recently proposed stop detector with recently proposed I mean that we will propose it in few weeks on ACV, so if you're interested about that. Just ask me, but what is important about this slide? Is that these three features that obviously capture really different parts of the image so they cover different image content?",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "And this can also be seen from the next slide. Here we have another image with less structured content, and we have three sets of different block detectors, and even among the plot detectors we see that the area covered by the images, and thus the information that is preserved by the images, is really different.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So what are we doing if we use local features? In general we use local features to gain robustness against different problems, and we want to decrease the data volume significantly and what we're doing implicitly is we want to preserve important information that is contained in an image, and the question is, can we measure that? To our knowledge, the information contained in an image that is preserved by local features has not been addressed yet as a measure. If we lean back, there is already something that we can imagine the information contained in an image is usually expressed by the number of bits that is needed to code a certain area in the image. So we basically would expect the feature detector too. So give us features where we need lots of bits for coding the image and this is what we are.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "We propose we want to interpret feature detection and description as a coding scheme very similar to what we do when we use the JPEG compression. And in order to derive. A measure from this and an evaluation scheme we need to solve 3 problems. First of all, we need to representation for what we consider to be relevant image content. Second, we need a representation that is similar to this one that represents the information that is actually coded by a particular set of local features. And 3rd we need to business measure between these two representations and we would require this distance measure to be small if the set of feature covers the information mostly complete.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "This is what we are. What we want to do, and let's start with the first problem. How can we represent the relevant image content? We propose to just derive an entropy density, denoted pH here from the local image statistics you see are shaded relief plot of this entropy density on the upper right. And we can see, as expected, that the number of bits needed for coding, and thus the information is high on the border of the object depicted and we have some peaks here where the borders meet and it is rather low on very homogeneous areas, especially on the image border. That's what we wanted to express.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So let us quickly have a look at how we derive that. This is only very broad overview. Now there are much more details in the paper. What we basically do is at each pixel given a certain Patch size, we just derived the entropy. That is the expected number of bits that would be needed for coding of dispatch, and we do this for different Patch sizes to take scale into account. You see that here by the expressed by the South and justice take the sum of all these different Patch sizes at each pixel. And finally we normalize this distribution over the whole image. And if we have a little bit closer look. That's how we compute the entropy. One might see that this is basically the entropy of a Gaussian variable, so we assume each local image Patch to be the sample of a Gaussian process, and we derive the entropy from the power spectrum P. That is, be cause the pixels in the local Patch have correlations that we do not know, so we have to take that into account and that is actually implicitly solved by computing the entropy in the power spectrum. What we also see is that we take into account the Sigma Square North, which is the noise variance of the image that's basically needed for fixing the significance level so that we do not not code any bits in homogeneous areas where we have only noise.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Alright, having such an representation, we need something similar for the features. So given a particular feature set, we need the distribution that we can compare to the entropy density for this that represents this local features and we just proposed to use the other topic Gaussian for each of the features where the shape of the Gaussian is similar to the shape of the local feature. And then we assume each local feature to require a certain number of bits. Loading this could be done sophisticated, but we for simplicity we assume that every feature has a constant number of bits, same number of bits, and this number of bits is just spread over the Gaussian area. And these cautions obtained for each of the features in the set. Again just added over the whole image at normalized, so we get some distributions here. 2 shaded reliefs again, one for each sequence and one for four scale invariant junction features.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And having such two representations, we needed distance measure between the two, and we propose here to use the heling US metric. Which can be thought of as the following if we have two densities over the image domain, we can consider them to be unit vectors in the space of all possible densities. And the Hellinger distance is basically 1/2 of the distance between the piercing points on the unit sphere that these densities give us, and it's interesting the heling US metric is related to the callback lifeblood emergence, which is probably much more popular, but the kullback Leibler divergent is not a metric, so we couldn't use it here having a higher divergent in this case wouldn't mean we have a higher or lower completeness necessarily, so that's why we use the heling US metric.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "OK, let's have a look at the evaluation scheme that we propose it's. Quite intuitive and easy. Having one image, we detect different sets of features here. In this case we illustrated two sets of features on top we have a set of junction features and on button we have a much more complex set, including plops, junctions, and each segments. So intuitively we would say the set of features and the bottom is much more complete for representing the information in the image then the set of features. Depicted.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Top. Then we go on by computing this feature coding densities for the two sets of features and computing the entropy density over the whole image domain as a reference.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "And we compute the Hellinger distance between of these two feature coding density with respect to the entropy density and what we gain our two distance measures. And as I said before, in this case we would clearly expect the distance two of the distance of feature set two with respect to the reference to be much smaller than that of feature set 1.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So we tried that out using lots of different detectors and and images. Basically we used. Different image categories, most of them taking from the 15th in categories database we took 100 or more images for each of these of these sequences and what we see here, it will be considered more detail. Soon is basically the Hellinger distance of one single detector with respect to the entropy. So in this case here we see that.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Detector that would be represented by the blue bar. Here has a distance of about 0.39 and the detector denoted by this bar here has a clearly a smaller distance, so the detector represented here is more complete on average on the aerial image data set and the little black bars just denote the standard deviations over the images of each category. So let's have a look at some of the results. First of all, we observed that the maximally stable extremal regions and the asphalt junctions seem to be most complete on average over these over these datasets. It's here denoted by red circle.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "The second we, it's quite significant that the straightedges obviously have a very bad completeness on the forest and products texture databases, which mainly include natural content. So it's quite intuitive. We don't have many straight edges here.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "And what we also see is we get very similar results for the Harris affine and the Harris LA Plus detectors which basically differ by the shape of the local feature windows. So there is a fine detector refines the feature window to an affine ellipse and it's quite interesting that this doesn't seem to improve on the completeness in this case.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So far for the separate detectors, but what we were more interested in is what happens if we combine different sets of local feature detectors. If you want to use more than one detector to get more out of the image, which detectors are really complementarian, which detectors give us more information when we put them together and I will focus here on the degree to which detectors complement the lower detector only for the reason that most of the people are using the lower detector so it's most intuitive to have a look at that, but we have more results in the paper.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "And this sorry. What we see?",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Is the left bar is the lower detector separately? It's the same that we saw on the plots before, but then we see a group of pairs of detectors. So here we have combined sets of two detectors, the lower complemented by Harrison finessing afine by edges by MCR and by the S5 JCT detector and on the right we see some combinations of three or more detectors. And.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "We investigate that over the different categories. We see that the lower detector is most efficiently complemented by the asphalt junctions and the maximally stable extremal regions on average over this datasets that we investigated. And what we also see.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Which is very interesting. Taking three detectors at once, so combining the lower detector. The maximally stable extremal regions and their subjunction detector, we get a quite significant improvement on the completeness, and especially we get results that are almost as good as taking all the six detectors depicted here at once. So adding another detector to this set of three detectors doesn't improve the completeness anymore.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "And 3rd, we found that the Harris affine detector doesn't compliment the lower detector more than the Hessian affine detector, which was at first surprising for me because I expected to hear Steven detector to be more of a corner detector, so it should complement the props given by lower better than the hashing offended tector, which basically extracts plot similar to the lower detector. But that's from our evaluation scheme is not the case. So concluding from this one should also consider the Harris definite XR. Effectively to be more of a blob detector.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So let us summarize what we saw. We propose to interpret feature detection and description as image coding, and this enabled us to derive a completeness measure of a set of features with respect to the information that is contained in an image, and we think that this approach is very helpful for distinguishing different detectors for getting an impression what information is actually. Preserved by detector, and more importantly, it helps us to make a good choice of combinations of detectors. So if we decide to take more than one detector, this measure helps us a lot to choose a combination that is really effective. And it also gives rise to the problem of mapping the space of all detectors. So one could imagine having such a distance measure that we just plot these detectors in the space that arises naturally from these distances and have something like a map of all the detectors we actually currently working on that to get an impression about this space. Alright. So I'm at the end.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "My talk already. Thanks for your attention and feel free to ask questions. Actually, we're actually trying. To detect these peaks of entropy and compare that to this ones, I haven't the results in here, but one important thing to notice that we must not necessarily derive a feature detector. That is, it expresses exactly this reference, but the point is that we use this reference for seeing the effects of combining different detectors. Yes, that depends on the application, and that might that might be true, yes. So, but still we have. We have a lot of good evaluations on repeatability and robustness of feature detectors, so that would be the first thing one would use to make a choice. But assuming that this is done and that I have a set of detectors that are really feasible for my application, then I can use this to check if they are complementary. And if.",
+        "start": 667.0,
+        "end": 696.0
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "id": "7ah3enasmguguldieh7iuq23jlwh2avz",
+    "title": "Unsupervised Learning of Syntactic Structure",
+    "url": "http://videolectures.net/mlcs07_manning_uls/",
+    "info": {
+        "author": [
+            "Christopher Manning, Computer Science Department, Stanford University"
+        ],
+        "published": "Oct. 31, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 397,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2878
+}

@@ -1,0 +1,20 @@
+{
+    "id": "3emiivqay6iic3ov6iwtnpf355t7qbve",
+    "title": "30Hz Object Detection with DPM V5",
+    "url": "http://videolectures.net/eccv2014_forsyth_object_detection/",
+    "info": {
+        "author": [
+            "David Forsyth, Department of Computer Science, University of Illinois at Urbana-Champaign"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 194,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 1971
+}

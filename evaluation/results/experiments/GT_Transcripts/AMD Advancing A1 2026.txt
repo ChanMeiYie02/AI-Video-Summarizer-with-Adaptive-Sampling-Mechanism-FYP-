@@ -1,0 +1,2500 @@
+0:00
+[applause] Good morning. Morning. That's a pretty good morning. How about
+0:07
+let's try one more. Good morning. Good morning and welcome to Advancing AI 2026. It's
+0:14
+so great to be back here in San Francisco and to see so many friends and partners and customers and especially
+0:21
+all the developers that are here with us today. And I want to say a big welcome to everyone who's joining us online from
+0:27
+around the world. This is my absolute favorite event of the year. It's where
+0:33
+we bring the entire AI ecosystem together to show what we've been building and where we're going next. And
+0:40
+this year, this is our biggest show ever because we have so much to tell you. So,
+0:45
+let's go ahead and get started. At AMD, our mission is to push the
+0:51
+boundaries of high performance and AI computing to help solve the world's most important challenges. And I often say AI
+AI is the most important technology
+0:59
+is the most important technology of the last 50 years. And frankly, the progress
+1:04
+that we're seeing in the industry is just incredible. Like every month, every few months, we see something new that
+1:11
+was far beyond our imagination. And you can already see the impact across every
+1:16
+industry. In healthcare, AI is helping researchers identify new drug candidates
+1:22
+faster. In science, we're solving problems that we didn't think were possible a few years ago. And across
+1:29
+every industry, AI is changing the way we get work done. And the most important
+1:34
+thing is we're still in the very very early innings of what's possible.
+1:41
+Now, just take a look at some of these charts. You know, I we look at these every year and you kind of see the rate
+1:46
+and pace of AI growth. Um, a couple of years ago, we were just starting. People
+AI demand is accelerating
+1:52
+were experimenting with chat bots and you know it was really cool. But if you look at today we're really seeing more
+1:59
+than 35 quadrillion tokens consumed every single month. That's increase of
+2:05
+nearly 160 times in just two years. And that curve is actually just getting
+2:11
+steeper. You're going to hear a lot about that today. So just looking at you know where is all
+2:17
+that demand? I mean obviously training remains incredibly important and foundational and over the last four or
+2:22
+five years you know we see the compute that's used for training advanced models continuing to increase by let's call it
+2:29
+roughly 5x every year and those models are getting better like we're all experiencing that we're seeing better
+2:35
+reasoning we're seeing new capabilities we're now seeing a growing number of specialized models and one of the things
+2:41
+that I really believe in is there is no one perfect model I think we're all going to use a slew of different models
+2:48
+depending on what task you're trying to uh solve and which industry you're in.
+2:53
+But the bigger shift is actually in inference. And we expected this. We expected that inference would grow
+3:00
+faster than training. And we can say that in 2026 for the first time the world is using more AI compute to run
+3:08
+models than to train them. And we've seen that to a point where we think this year roughly 60% of the global AI comput
+3:17
+capacity will be used for inference. And the reason for that is actually pretty
+Inference surpasses training
+3:22
+simple. As billions of people every day use AI, the workload shifts from building models
+3:29
+to putting them to work. And actually, we're going to talk a lot today about agentic AI. And that's accelerating the
+3:36
+shift even faster. So if you think about all of this, you know, we see agents as
+3:42
+the next big step for AI. And the most interesting thing is like this has really just started accelerating over
+3:49
+the last, I would say, five or six months this year. So when we started with LLMs, they were great to answer
+3:55
+questions, but we found that to really get the power of AI, you want agents to
+4:02
+be able to really answer full questions. So you give it a goal, it keeps working
+4:08
+until it's solved the problem. And what that means for us in the compute industry, it means that compute demand
+4:16
+is growing at an incredible pace. We're actually seeing a step change in compute
+4:21
+demand because when you ask the agent to do something, it actually has dozens of
+4:27
+steps and it has to reason and it has to call tools and it has to access data and it has to keep doing it over and over
+4:34
+until it solved the problem. And so you need lots of GPUs to do all that reasoning. Uh but importantly, you also
+4:41
+need a lot of CPUs to orchestrate every step around it. So when you look at, you know, just what
+4:47
+that means from a market standpoint, um it's really hard to put this market data up because I feel like every few months
+4:54
+we're changing, you know, sort of the perspective based on what our customers are saying. Um but what we're seeing is
+AMD raises its AI market forecast
+5:00
+that the shift to Aentic AI is certainly growing the AI accelerator market very
+5:06
+significantly. Uh it was actually last year at this event that we called the AI accelerator
+5:12
+market at about 500 billion by 2028. And at that time it actually felt like a
+5:18
+very big number. Didn't you think it was a big number?
+5:24
+But honestly, you look at it today and it looks conservative because the AI demand is just continuing to accelerate
+5:31
+and you can see it, right? better models, more usage. More usage requires more compute and more compute actually
+5:38
+builds better models. And so we're now expecting that by 2030 the AI
+5:43
+accelerator market is going to reach about 1.4 trillion by 2030. So what do
+5:49
+you think about that? Is that a big number? [applause]
+5:56
+I mean what that means is by the end of the decade the AI accelerator market is going to approach the size of the entire
+6:02
+semiconductor market today and although there will be many different types of accelerators you know I'm a big believer
+6:09
+in there's no oneizefits-all as it comes to chips uh we do expect that GPUs are
+6:15
+going to make up the vast majority of that market because the algorithms are still very much in their infancy and
+6:22
+we're still continuing contining to see the workloads change and that favors programmability in the um the overall uh
+6:29
+silicon ecosystem. Now perhaps the most interesting part of the last 6 months has been you know GPUs
+6:37
+are only part of this story. What we're actually seeing is Agentic AI is
+6:42
+creating an entirely new growth vector for server CPUs. Now I've updated this
+6:48
+number a lot also over the last uh you know 6 to 8 months but look we call it
+6:55
+like we see it and you know we were early I mean we saw from our largest hypers scale customers and you're going
+7:00
+to see some of them here today who said look as AI inference is going up we need
+7:06
+more server CPUs and so we saw growth um in the server CPU market and uh we said
+7:12
+you know last year we thought it might grow let's call it 18 to 20% kagger to an overall all market size of 60
+7:18
+billion. But frankly, what we're seeing is that the rate and pace of Agentic AI adoption is much much faster than any of
+7:26
+us thought. So we're talking about agents going from millions to billions.
+7:32
+Like we're able to increase all of our productivity and that requires a tremendous amount of CPU infrastructure.
+7:39
+And every customer conversation is telling us that this buildout is just beginning. So based on what we're seeing
+7:46
+today, and we're going to talk more about how Agentic AI is evolving with CPUs, we now expect the server CPU
+7:53
+market to grow by over 50% to over 200 billion by 2030. So that's starting from
+8:00
+today, a $25 billion market going to over 200 billion. Um, so there's a lot
+8:06
+of excitement about CPUs uh as well. Now probably one of the thing that that
+AMD's AI strategy
+8:13
+is differentiating AMD and how we think about the market is this is not just a
+8:19
+data center opportunity. As AI becomes a larger part of our daily
+8:24
+lives, we want the intelligence to run right where the work happens. And that
+8:30
+means cloud is super important, but the devices that we use every day are going to be extremely important. And that
+8:36
+means that we're going to do a lot more at the edge as well with autonomous machines that sense and act in real
+8:42
+time. And we really believe that you need AI to be infused everywhere. And
+8:48
+that's exactly what we're focused on at AMD. So putting all of that together, we actually expect that the market for our
+8:54
+high performance and adaptive computing products to grow at roughly a 40% Kagger
+8:59
+over the next several years, approaching a $2 trillion market by 2030. And
+9:06
+frankly, the only way you're going to be able to service a market like that is for us to work together as an ecosystem.
+9:13
+There's no one company that can solve it all. Uh but th this is the opportunity to bring the best and brightest
+9:19
+together. And we have never been in a better position to lead. We have the
+9:25
+broadest product portfolio. We have the strongest road maps we've ever had. And the thing that I'm most proud of is we
+9:32
+have the deepest partnerships with the companies that are building this future.
+9:38
+So a little bit about our strategy. Look, I think we've been very consistent. You know, we've talked about
+9:44
+our multi-year strategy and it's really built around three priorities. The first
+9:49
+is just compute leadership. We're building the broadest set of compute engines in the industry so that we have
+9:54
+the right compute for the right workload. Second, it's going to be about open platforms. We want everyone to come
+10:02
+together in an open ecosystem. We believe an open ecosystem is essential to the future of AI. And that's how we
+10:08
+get the force multiplier of everyone coming together. And that's open on hardware in terms of hardware standards
+10:15
+as well as open on software. And that's why we're investing so heavily in our rockom software. And you're going to see
+10:22
+that AI has been a tremendous multiplier in this rate and pace of progress that
+10:28
+we're making um in Rockom and in software. And it really means that if we
+10:33
+put all of this together, we can have our customers deploy on AMD hardware
+10:39
+faster than ever. And the third piece is we're going to get a chance to talk to you about
+10:44
+powering AI everywhere. So that's AI in enterprise, that's AI at the PC, that's
+10:50
+AI in the physical world, and that's adding new capabilities across all of our products. So today, you're going to
+10:57
+see all of that in action. We're going to start with compute for the agentic error. I'm going to show you a lot of
+11:03
+hardware, uh, and then we're going to talk about some software and then, um, our overall products, um, from a
+11:09
+platform standpoint. and we're honored to have some really special guests that are going to join us to really help
+11:15
+bring the technology to life. So, let's start with the data center. Today, AMD
+11:21
+Epic runs on the most important workloads in the world. We power the largest cloud providers. We power the
+11:27
+digital platforms that billions of people use every day and the most important critical systems that are used
+11:34
+by the largest businesses including more than 60% of the Fortune 100 are using
+11:39
+AMD Epic and that momentum is just building. Last quarter, we reached a record 46%
+11:46
+revenue share in the server market. And we're continuing to see every major
+11:52
+customer move more workloads to Epic. And on the GPU side, our instinct
+11:59
+adoption has also accelerated. We have a broad set of customers across the largest AI labs, cloud providers,
+12:06
+leading AI startups as well as some of the national labs and sovereign AI um opportunities are being built on AMD
+Helios AI infrastructure
+12:14
+Instinct. And we really appreciate that opportunity. Now, AI computes becoming a lot more
+12:21
+complicated. And what we're seeing with Frontier AI is it's really raising the
+12:27
+bar for what infrastructure needs to do. It takes more than a single chip or a
+12:33
+single server. You actually have to design the entire rack as one system.
+12:40
+And that requires leading CPUs. That requires leading GPUs. That requires
+12:45
+high-speed networking that connects everything inside the rack and across the data center. And just as
+12:51
+importantly, this is about making these systems super easy to use. And so they
+12:56
+need to be easy to deploy, easy to service, and very reliable. And that is
+13:02
+exactly what we built with Helios. So today, I'm super excited to launch
+13:08
+Helios, the industry's [applause] highest performance AI route.
+13:17
+[applause] Now, Helios is built to train and run the most demanding frontier models in the world at massive scale.
+13:24
+And I have a lot of showand tell for you. So for those of you who know me, you know that I love holding up chips.
+13:33
+I call myself sometimes the vena white of chips. Uh but it turns out with Helios there
+13:39
+are lots and lots of components. And so you can see these are the chips inside
+13:44
+the Helios rack. These are the instinct. Thank you. [applause]
+13:54
+So this is Instinct, Epic, and then the the Pensando chips
+13:59
+for networking that are inside each rack. And every one of these chips is part of the system. So MI455 is the
+14:07
+engine. It's the highest performance GPU in the industry. Venice with which
+14:12
+drives it is the world's fastest CPU coursees. and Pensando DPUs
+14:20
+actually and nyx actually connect them with leadership programmability and scale out bandwidth. So I have a few
+14:26
+more props to show you. Um let's kind of take a look at how these things fit into the overall system. So first this is now
+14:35
+the MI455 accelerator which is mounted on what we call an enhanced accelerator
+14:42
+module or EAM. It's a production module that goes into Helios and it is much more than the GPU
+14:49
+package. The EAM actually integrates the GPU, memory, power delivery, high-speed
+14:56
+interfaces, system management, cold plates for liquid cooling, all into one
+15:02
+compact serviceable module. Pretty cool, right?
+15:08
+[applause] Now, if I just give you some of the
+15:14
+specs, we're talking about 320 billion transistors. This is built with TSMC's
+15:20
+leading 2nmter and 3nmter process technology. And most importantly, it
+15:25
+brings together nearly a decade of AMD triplet innovation. So, it allows us to combine 12 compute and IO triplets with
+15:34
+432 GB of memory. All connected by leading industry 3D chip stack
+15:40
+packaging. And I can say for sure it's the highest performance AI accelerator
+15:45
+in the industry. [applause]
+15:53
+Okay. So this is the CPU board that's inside the Helios compute tray. And I'm going to talk a lot about CPUs later. Uh
+16:00
+but just to give you a um a high level view, it's um high-speed 96 core epic
+16:06
+processor, DDR5 memory, all the IO that's needed to feed the GPUs all in a
+16:11
+single motherboard and um we also have our Selena DPU. This is a critical part
+16:18
+of the networking infrastructure and it really allows us to deliver both a front end as well as the scale out and scale
+16:25
+across you know bandwidth overall. And this is our Volcano AI nick. And you can
+16:31
+see, you know, this actually allows us to really have up to six volcano nicks
+16:36
+um on a board. And it uses the open ultraethernet standard. So each Helios compute tray includes two of these
+16:43
+Volcano boards. And that allows us to have the um the scale out uh and scale
+16:48
+up the scale up networking overall. So you put all that inside the rack and we
+16:54
+have an additional six dedicated networking trays that handle the scale up networking and those are all
+17:00
+connecting 75 GPUs together with UA link over Ethernet with silicon from our
+17:05
+partners and that's what we mean by an open ecosystem. So when you bring this
+17:10
+all together I want to say Helios is simply the best AI rack in the world.
+17:18
+[applause]
+17:24
+Now let's take a look at some numbers. Uh clearly it's um a very competitive world out there. So when you compare
+17:31
+Helios to the competition, we're delivering 15% more compute, 50% more
+17:37
+HBM4 memory capacity and memory bandwidth and 50% more scaleout bandwidth. And what that means is that
+17:45
+every Helios can deliver more performance for the largest models, more capacity for longer context, and the
+17:52
+bandwidth to scale across thousands of racks. And now we can kind of come over here
+17:58
+and take a look at another very large piece of hardware. Uh this is now the
+18:03
+production hardware that customers are deploying. And you can see more of that as you go through the um uh the exhibit
+18:10
+center. And each one of these weighs more than 160 lbs and stands less than 2
+18:16
+in tall. That's just an extraordinary amount of technology when you put look
+18:22
+at what's in one of these trays. And when you bring these things together, the numbers are just incredible.
+18:28
+more than 18,000 CDNA 5GPU compute units, over 4600 Zen6 CPU cores, and 31
+18:36
+terabytes of HBM4 memory, all in a single rack. That's what it takes to run Aentic AI at
+18:44
+scale. So today, I'm excited to announce that Helios is in full production.
+18:52
+[applause]
+18:59
+We have shipments on track to start at the end of the third quarter and ramping into the fourth quarter and the second
+19:05
+half of the year. And I can tell you customer demand for Helios is extremely strong and we're extremely proud of the
+19:12
+work that we have done across the leading AI labs to adopt Helios. And so
+19:17
+let's start with some of our guests today. I'm excited to be joined by our newest Instinct partner and one of the
+Anthropic partnership
+19:24
+leaders in Frontier AI to share more about what we're doing together. Please welcome anthropic co-founder and chief
+19:30
+comput officer Tom Brown.
+19:35
+[music]
+19:43
+Hello Tom. It is so great to have you here and um it is really such an honor to be working uh with Anthropic. We just
+19:49
+we we had a big week this week. We did. Yeah. [laughter] So, look um Anthropic has just had uh
+19:55
+incredible success over the last few years. You know, claude has made such a big impact on the overall industry. Uh
+20:02
+compute is such an important factor in the progress. Can you just talk a little bit about um your compute strategy and
+20:08
+just how things have been evolving? Yeah. Yeah. And first, thank you so much. A hard act to follow with Julio.
+20:14
+Amazing. Um so with anthropic uh as you as you mentioned the um the scale of
+20:22
+that we're growing just as an industry is enormous and so we have been working
+20:28
+to make sure that we have um the best uh like different chips and we can use the
+20:34
+best chips for the best workloads. Yeah. Look, I think you've been um
+20:39
+really leading in that area and you know, I'm I'm happy to say that um I've
+20:44
+always wanted to be as part of part of your infrastructure. I remember the early times we talked as you were starting Anthropic. Uh but we had a big
+20:51
+announcement this week. We're honored that you will be deploying up to 2 gawatts of Helios. Um why now? What was
+20:57
+the uh the key reason? Yeah. Um so I think that uh like the
+21:02
+first the first thing was just Helios is an amazing machine. It's like it's a it's absolutely fantastic.
+21:08
+Do we do we like that? Does that work for us? [applause]
+21:13
+Um and then and then I think the thing that we were thinking about originally was whenever we're bringing up a new
+21:19
+hardware platform, it's a big effort. It's like a a huge thing. And so um as
+21:24
+part of the uh as we were thinking about this, we started doing our own
+21:29
+evaluation of MI355. Um you guys generously got us a rack to start working and um we expected this to be
+21:36
+kind of a big process. Uh our actual experience was we had one engineer start
+21:42
+doing it. Um they spun up uh they connected it to Claude asked it hey
+21:48
+bring up this machine left it going over the weekend and we ended up with a graph of the actual performance of our leading
+21:55
+model on it just going up and up and up over the weekend. And so yeah,
+22:01
+[applause] and I I I think that that's a testament to the open platform that you guys have
+22:07
+made where like anyone like human or AI can now build real models on on your
+22:14
+platform. Uh Tom, I kid you not, when my team told me that you had an engineer working on
+22:19
+MI355, I said, "Hey, like are we like making sure we help them?" And they're
+22:24
+like, "They say they don't need any help. They got it all covered." and I was like, "Hey, that's that's uh that's
+22:29
+a wonderful story. Thank you for that." Now, um we're also super excited about the work we're doing together because,
+22:35
+you know, one of the most valuable parts of this partnership is, you know, Claude and using Claude within AMD. Like, we're
+22:41
+big believers in the fact that, you know, AI is this force multiplier and the more we're able to have the leading
+22:48
+foundational models uh really familiar with the AMD architecture, you know, the better, uh we're going to be able to
+22:53
+service the overall market. So can you just you know talk a little bit about how you're seeing claude really evolve
+22:58
+in you know these types of you know highly engineering specific workloads. Yeah. So I think this is a a great place
+23:05
+for collaboration where um in ter like the bread and butter of cloud is doing software engineering and now more and
+23:11
+more we're seeing it help out with the type of workloads that you guys are doing also um like design layout which
+23:18
+is not quite the normal software engineering but is adjacent and I do think that uh that that is the place
+23:25
+where we can work together to make the next generation of chips even better. Yeah. No, I I think um and and also on
+23:32
+the software side, I think the work that we've seen with Claude and and the kernel development has been uh just
+23:38
+incredible. So um you know, Tom, one of the things for our audience here, we we like to talk about the present, but it's
+23:44
+actually most of us are working on the future. So this is really the beginning of you know, what u we believe is a a
+23:51
+very u strong multi-year, you know, uh partnership. Can you talk a little bit about number one, what are you most
+23:57
+excited about in the industry? And then number two, like what can we do more together to uh to really u make sure
+24:05
+that we're satisfying those, you know, key opportunities. Yeah. Um that's a great question. So, I
+24:12
+think the working together for the scale up seems like it's probably the the
+24:19
+biggest thing that I'm most excited for where it does seem like we see consistently using more better compute
+24:27
+results in better models that then add more value to all the folks using it downstream. So, I think that's the
+24:32
+biggest thing. And then I I think one thing now that we're investing more and more with you guys too and I think we
+24:39
+can continue continue to is security where that's a place where now um as the
+24:44
+machines are getting more complex we can work together to secure things at the chip layer the server level the rack the
+24:51
+whole network um and that'll help out like not just us but the entire industry stay safe.
+24:56
+No I I think you're completely right. We are super focused on the idea of you know how can we use AI to improve every
+25:03
+aspect of our product uh whether it's you know performance power software and and security as you said. So um really
+25:10
+Tom huge thank you for the uh you know the real the opportunity to work very
+25:15
+closely with you and your team. Our team loves working with you guys and we look forward to everything that we're going to do together.
+25:21
+Thank you so much. Thank you. [applause]
+25:30
+All right. So look, Tom talked about how important performance is and we have
+25:36
+been laser focused on ensuring that the real world performance of MI455 and
+25:41
+Helios really uh comes true when we look at you know system uh results. So let's
+25:47
+take a look at some of those results. So here's an example. We're running uh
+25:52
+DeepSync V4 flash, one of the latest reasoning models, and we are actually comparing MI455 to MI355.
+25:59
+And you know, the the key thing is with every generation, we want to make huge leaps in performance. So, we're seeing
+26:06
+that at lower concurrency that MI455 delivers 4x the throughput of MI355.
+26:13
+But clearly what you see with you know large users um with u across the board
+26:18
+that you want to increase the number of simultaneous users you want to increase the amount of work that you can do at the same time. And so at the highest
+26:25
+concurrency we're seeing Helios deliver up to 34 times more throughput than our
+26:31
+prior generation. And what that means is more users, much faster response and
+26:38
+much better efficiency at scale. And performance is just one aspect of
+26:43
+it, right? The other aspect and you know what I should have mentioned when Tom was on stage is every one of us in the
+26:48
+enterprise is seeing our AI budgets go up every single month. Is that right? Are you seeing some of that? And so
+26:56
+customers really care about cost per token. And with every generation of Instinct, we're driving the cost per
+27:03
+token down. And that's with more memory, more bandwidth, and much more compute.
+27:08
+And we're taking another major step with MI455, delivering up to 18 times more tokens
+27:15
+per dollar, so customers can serve far more users with the same investment. And
+27:21
+as you think about how that comes together in Iraq, many of our data
+27:26
+centers right now are really limited by power. So power is kind of the the maximum limiter. And so we tested Helios
+27:33
+o over a full range of workloads where you have a fixed rack power compared to
+27:38
+the competition. And what we're seeing is across the highest throughput workloads, the most interactive
+27:44
+applications, all of these leading inference workloads, we're seeing Helios an average of 10 to 15% more performance
+27:51
+than the competition. And that comes with all of the system work that we've done in the um overall system. And how
+27:59
+that translates to a customer is cost. What we expect is the Helios rack
+28:06
+delivers more performance and it also delivers up to 30% more tokens per
+28:11
+dollar than the compos competition. So I think that's a pretty good uh overall
+28:16
+value proposition. [applause]
+28:24
+Now I'm happy to say that the customer demand for Helios is extremely strong.
+28:29
+From the largest AI labs to hypers scale and Neocloud providers, we are working
+28:35
+across the entire ecosystem to enable Helios together with our OEM and ODM
+28:40
+partners. And one of our deepest and earliest partners deploying Helios is Open AI. To
+28:47
+talk about where AI is headed and the work we're doing together, please welcome to the stage OpenAI's head of
+OpenAI partnership
+28:53
+infrastructure, Sachin Kati. [music]
+29:02
+Thank you. Thank you. Thank you. Thank you, Sashin. It's so great to have you here. And most importantly, we are so
+29:08
+thankful for the partnership with OpenAI. we've been through uh so much on this journey together. So uh you're
+29:15
+really operating on the frontier of AI. Can you just tell us a little bit of what you're seeing and you know just
+29:21
+what compute looks like for you? No, thanks. Great to be here. Uh I was try thinking about this event and over
+29:28
+the last two years. It feels like the attendance at this event is following scaling loss as it's been [laughter]
+29:34
+doubling doubling every year over the last two years. But uh more seriously to your question uh we've always uh
+29:41
+predicted that models will evolve where they will start as chat bots then they
+29:46
+become reasons then they become agents then they become interns and and the
+29:52
+trajectory has kept up with that right so we are all seeing that models are becoming a lot more capable more agentic
+29:58
+and able to do very long running tasks let them go and they just take care of it and so all that really means is we
+30:06
+need to keep scaling compute, right? The more compute we scale and throw at training, the more capabilities emerge.
+30:14
+The more compute we scale and provide it to distributing intelligence to the world, the more people want to do with
+30:20
+it. And this is what we see with exploding uh token budgets. Uh we've seen internally for example in open AI
+30:27
+that not just engineering but every aspect of the enterprise uh is beginning to use uh agents for every part of the
+30:34
+work. This is why we need platforms like yours that sc that can scale with how
+30:40
+quickly the capabilities of these models are scaling as well as how quickly the whole world is beginning to embrace what
+30:46
+these things can do. Well, Sashin, I don't think I've ever ever spoken to you where you haven't
+30:51
+asked me for more compute. So, he's actually very very consistent. Uh, look,
+30:56
+our teams have been working really closely together. I think it's been um a true journey when we think about just
+31:02
+all of the technology that we've been doing. Um you know last year we announced um a really you know landmark
+31:09
+uh partnership where you're going to deploy up to 6 gawatts of AMD infrastructure. Uh you're one of the
+31:15
+first I think you were the first to actually have um MI455 racks a few months ago. So can you talk a little bit
+31:21
+about the journey? No, it's been a phenomenal partnership. uh as as you mentioned uh we were first
+31:28
+to bet on AMD and we are really thrilled with how that bet is turning out for us.
+31:33
+Uh start got started on MI300 and expanded very quickly to 355 and it's
+31:39
+been uh really fun uh for our team to see how it was uh we were pos it was
+31:44
+possible to optimize the software stack the networking and everything and deploy our models uh running on AMD
+31:51
+infrastructure. So as uh Lisa mentioned, so we just got hands on the Helios racks
+31:56
+three months ago and the collaboration has gone to the next level. Uh our engineers are working side by side uh
+32:03
+with AMD engineers to optimize the software stack and run GVDclass workloads uh on Helios already. Uh Phil
+32:11
+will probably on stage later talking about how productive uh and fast that
+32:17
+collaboration is. So, we're really excited about the capabilities Helios is already showing us and we expect that
+32:24
+we'll be deploying Helios at massive scale uh starting towards the end of this year and then accelerating uh
+32:30
+throughout 2027. Like I said, I know more faster. [laughter] We need it earlier.
+32:37
+So, uh Sasha, the other thing is, you know, one of the most exciting parts of our collaboration is actually some of
+32:42
+the research work. So, you know, very thankful for uh the opportunity to spend um you know, really bringing our best
+32:48
+engineers together with your researchers to talk about how AI should be, you
+32:53
+know, really implemented and used uh for, you know, future uh both silicon and software. So, can you talk a little
+32:59
+bit about that work? Yeah. Uh I think one of our key bets and
+33:04
+I think uh for a lot of us in AI is about recussion, right? AI recursively
+33:11
+improving the systems it needs to run on and eventually obviously AI doing the
+33:16
+research itself. Right? Today expert engineers spend an enormous amount of time uh optimizing kernels figuring out
+33:23
+how to translate new models to run them efficiently on different hardware uh dealing with all the usual things you
+33:29
+think about compilers communications libraries system configurations. uh what we've been super excited and
+33:37
+encouraged uh by the work we are doing with you is now AI showing the potential
+33:43
+and demonstrating it in production to automate a significant portion of the work when anyone programs to an AMD GPU.
+33:50
+Uh so it dramatically has shortened the path from a new model coming up to an
+33:56
+efficient production deployment and something that we can much more easily tune to changing uh workload
+34:03
+requirements. Right. And that's that's a big deal. So one of the other things that's super exciting for us is because
+34:09
+AMD is built around an open software ecosystem. All these things that we are now uh inventing internally for our own
+34:16
+use, we believe can we can also bring it to the whole world and allow the whole world to use it for all of the AI models
+34:24
+out there, not just our models. I think super excited about that. I think the idea is that it's really the
+34:30
+tide that lifts all boats, right? as as we work it it helps our work together but it really helps the overall
+34:35
+ecosystem. So um a little bit of your crystal ball uh looking forward I think we all know that compute is uh super
+34:42
+critical. What do you need from the next generation AI infrastructure and you know what can we do as uh you know
+34:50
+really a a key partner to to help you accomplish that mission. If you haven't heard heard already, I need more
+34:55
+compute, more f more more. [laughter] But at least he's consistent.
+35:01
+[applause] Uh I think the the thing that the whole industry is realizing is it's a systems
+35:08
+problem at a data center scale. Yeah. So I think we obviously very quickly internalized that AI was a rack level
+35:15
+problem. But now it is very clear that it's not just a rack level problem. It's a rack in a data center. So the whole
+35:21
+data center is a system and we have to think about how we design the future based on what we know about our
+35:27
+workloads, what's coming down the line, but co-design it with you from CPUs to
+35:33
+GPUs to memory, networking, storage, power distribution in a data center and
+35:38
+the cooling systems that go with it. These are all intertwined and they all have to be co-designed. And one of uh
+35:44
+the really fun parts about about what we do with you your and your team is how
+35:50
+easy and productive it is for us to work with you and give you insight into how
+35:55
+we expect the world to change in the future from what our workload needs are, what our models are and how quickly uh
+36:02
+your team responds in in turning those insights into better chips, better systems, better software. So that's
+36:08
+worked worked well really well with MI400 and left shifted uh a lot of the
+36:13
+engineering work that we needed to do to bring this up online quickly and that's why we are very confident we can
+36:20
+productionize uh those systems uh very quickly and so really looking forward to accelerating that with my 500 and beyond
+36:27
+and increasingly using AI to actually do that work for us uh rather than being
+36:32
+limited by uh by humans. That's that's fantastic, Sachin. And and look, we uh really do recognize that input is so so
+36:39
+valuable. So, I have to say uh thank you again for just the extraordinary partnership. The amount of work uh that
+36:45
+our joint teams are doing together and we couldn't be more excited about the opportunities in front of us. Thank you,
+36:51
+Sachin. Thank you so much. Yes. [applause]
+36:58
+[applause] All right. So, now let's turn to the world of CPUs. Uh there's been a lot of
+37:04
+talk about CPUs recently and I can say that this has been the foundation of our AMD data center strategy for the longest
+37:11
+time. Uh we launched Epic in 2017 and we've been on a very very clear mission.
+37:18
+Every generation more performance, more efficiency, more capability for a wider
+Venice CPUs explained
+37:24
+range of workloads. Now Naples was our first generation. It established the foundation. But Rome and Milan really
+37:31
+changed the economics in the data center. We did more than what people expected when in terms of adding core
+37:38
+count and adding throughput. And then Turan set a Genoa expanded our performance and then Turan set a new bar
+37:45
+for density throughput and total cost of ownership. That's really been the epic
+37:50
+formula. A clear road map and very consistent execution and leadership that
+37:56
+actually grows with every generation. This is why if you look today, fifth gen
+38:01
+epic turn is the best server CPU in the world. With up to 192 cores and 384
+38:08
+threads, Turin delivers leadership performance across a broad range of cloud, enterprise, and HPC workloads.
+38:16
+But the thing about the data center is compute never stands still. With Agentic
+38:22
+AI, it's actually creating a whole new class of infrastructure and the CPU matters now more than ever. And that's
+38:30
+exactly what we built Venice for. So there's been a lot of talk about agentic
+38:35
+AI, but it's actually a very new field. And what we see is that server computing
+38:41
+is actually splitting across a couple of different workloads. So the first section, you know, is GPU servers and
+38:49
+that's fairly wellnown. That's where the GPU's job, the CPU's job is basically to
+38:54
+drive the GPUs. And so the job there is all about speed. We want the highest
+39:00
+frequency cores. We want the fastest IO and we want to keep the GPUs fully fed.
+39:06
+Now the biggest middle part, this is the largest growth is actually in agent servers or what we call agent sandboxes.
+39:14
+And this is actually a whole new class of workload. Here you execute code. you
+39:19
+actually call a bunch of tools, you actually query data that's outside the model. You have a whole bunch of things
+39:25
+um around it. And in this place, the priority is actually density. So we want
+39:31
+the highest performing cores per watt to run thousands of agents at once. And
+39:38
+then we have our traditional general purpose servers that run the enterprise. And here you're going to have a
+39:43
+diversity of workloads. It's all about efficiency. It's running the applications. It's running databases. It's running data services. And all of
+39:51
+that is, you know, what we would traditionally say is, you know, general purpose server. And so with these
+39:57
+different workloads, you actually need the right CPU for the right workload.
+40:02
+And Epic is the only CPU portfolio that leads across all three.
+40:09
+So Venice is our newest and most advanced server CPU family, and it's actually designed for the agentic error.
+40:17
+We're extending turns leadership across every single metric. That is performance, that's efficiency, that's
+40:23
+TCO for cloud, that's enterprise efficiency, that's HPC workloads. And
+40:29
+then it starts with our allnew Zen6 core. We have higher IPC, higher frequency,
+40:37
+and that delivers up to 1.8 times more performance than Turin. That is one of
+40:42
+the largest generational gains. I mean, we have been doing this for six generations, but this is one of the
+40:48
+largest generational gains in the history of Epic. It's 203 billion transistors built on TSMC's newest 2n
+40:56
+process. And it uses a next generation triplet that supports up to 512 threads
+41:02
+per socket. And this is actually a really important point. I'm going to show you why in a few minutes.
+41:08
+This gives us the highest compute density, but it also allows us to double both the memory and the IO bandwidth.
+41:15
+So, I have a few more chips to show you if that's all right. And what's clear is
+41:23
+Venice is not one chip. Venice is actually an entire family of chips. And
+41:29
+this is where our chiplet architecture becomes a huge, huge advantage. It lets
+41:34
+us take the Zen6 architecture and build a whole portfolio around it. So let's
+41:40
+start with this guy. This is Venice HF.
+41:46
+This is the highest performing CPU that drives AI host nodes. It has eight
+41:53
+compute triplets each with 12 cores running at up to 5 GHz with the IO and
+41:59
+memory bandwidth to keep the GPUs completely fed. And this is the CPU that I showed you before shipping inside
+42:05
+Helios. [applause]
+42:13
+Now this is its bigger brother. It's Venice
+42:20
+256 core. This is the chip that's built for Aentek sandboxes. And it also has
+42:26
+eight compute triplets. But each of the triplets now has 32 cores. So it scales
+42:32
+all the way to 512 threads and it is the highest compute density in the industry.
+42:39
+[applause] Customers get more agent capacity per
+42:46
+watt, per dollar, per rack, bar none.
+42:53
+Okay. And then one more member of the family. This one is Venice 128 core. And
+42:59
+this guy is optimized for enterprise and general purpose servers. This is the same leadership performance per core,
+43:06
+but it's in a lower cost, lower power design for enterprise applications. And
+43:11
+this one is really tuned to give customers the best performance per dollar across a wide range of
+43:17
+configurations. So you can see really the power of the family as they come
+43:22
+together. And in addition with these guys, I can tell you that next year we're adding a few other chips to the
+43:28
+family. We're adding Verono, which is the next generation for AI host nodes. And what that adds is a more power
+43:35
+efficient low power memory as well as faster in interconnect between the CPU and the GPU. And then we're also adding
+43:42
+for our high performance computing or technical computing uh Venice X which is using our 3D vcash stacking technology.
+43:50
+And we're really the first to stack memory triplets right below the compute triplets to accelerate performance even
+43:57
+for um those types of workloads. So you can see one architecture a CPU is not a
+44:03
+CPU. There are many different types of CPUs and for us one architecture spans
+44:09
+dozens of different chips and that breath is someone that no other CPU vendor can match. And that's what makes
+44:16
+six Gen Epic the best CPU in the data center. [applause]
+44:27
+Now, you're going to bear with me because I'm going to take you through some performance because the numbers are just incredible. Um, so looking at AI
+44:34
+workloads, right? Again, you have different use cases and different workloads. Um, you know, starting first
+44:40
+with GPU servers. Uh, many of the largest frontier models require you to move uh data between the CPU and the
+44:46
+GPU. And in that scenario, Venice moves the data faster than the best competitive x86 processor, delivering up
+44:54
+to 1.8 times more tokens per second. And when you look at the Agentic CPU servers
+45:00
+and sandboxes, because of our density, Venice delivers more than twice the agents per watt for agent sandboxes. And
+45:08
+for general purpose applications, in this case, we're standardizing on a 100 kilowatt rack. Venice delivers more than
+45:15
+twice the performance per watt. So pretty incredible uh results.
+45:21
+And the gap is even wider if you look at ARM processors. So if you look at the
+45:27
+leading ARM processors, when we're comparing at the chip level, Venice supports up to 2.8 times more agents per
+45:34
+watt. And when you look at the rack level, Venice is delivering up to 3.3
+45:40
+times more performance per watt. And what that means is at the data center
+45:45
+scale, you can just get a lot more agents in the same power envelope.
+45:52
+[applause]
+45:58
+Now, there's been a lot of talk about what matters most for Aentic AI with
+46:03
+some saying that per core performance under load is the only thing that counts. But that's really only part of
+46:10
+the story because aentic AI actually runs as a distributed platform and that
+46:15
+is across databases and vector stores and orchestration and all of that happens has to happen at once and that
+46:22
+requires not just raw speed but you absolutely need density efficiency and
+46:30
+per core performance all together and what I'm happy to say is that Venice
+46:35
+leads across every one of them. So when you compare Venice against the highest
+46:40
+performing ARM CPU from our competition, Epic delivers 20% higher per core
+46:47
+performance. And when we [applause]
+46:55
+I like that number. I like that number. Um and when we pair that with leadership
+47:00
+core density, we're delivering 2.2 times more performance at the socket level. And so the main point is whether a
+47:07
+customer needs per core or per socket performance, Venice is the leader. And
+47:13
+there's one more point that's a benchmark doesn't really capture because when you think about what a Gentic AI
+47:19
+is, it's really like you're adding thousands of employees to your enterprise to your, you know, sort of
+47:25
+traditional workflow and that software enterprises have been running on for years.
+47:31
+The truth is that software runs on x86. So Venice runs all of it. And this is
+47:37
+where x86 has an advantage. You must have the best performance. You must have the best density. But having that
+47:43
+software compatibility is a big big plus. So customers scale up their agents
+47:48
+on the stack that they already have. And now let me just show you what that means
+47:53
+at the rack level. So at the rack level, what we find is, you know, density is super important. Everyone's trying to
+48:00
+optimize their data center. Everyone's trying to optimize their power envelope. And with Venice, every major server OEM
+48:07
+is offering a broad spectrum of racks for Aentic AI. So what that means is we have the full spectrum from, you know,
+48:14
+25,000 cores to 50,000 cores and that's more agents per rack and that gives
+48:21
+customers the choice. Um the key is every data center is different and you know with that the flexibility allows
+48:28
+you to pick you know the right cooling the right space requirements for what you're trying to do in your data center.
+48:34
+So there you have it Venice the best server CPU in the industry [applause]
+48:46
+and I'm very happy to say also today that Venice is in full production. Customer demand is incredible. It's the
+48:53
+strongest we've ever seen for a new epic generation. [applause]
+49:01
+We're we're seeing every major server OEM, every major cloud provider on track to begin rolling out in the fourth
+49:09
+quarter as we start with making the broadest epic launch we've ever had. So
+49:14
+with that, I want to turn to my next guest who runs some of the largest and most advanced compute infrastructure in
+49:20
+the world. And it's really been our privilege to partner with them as they've deployed multiple generations of
+49:27
+both Epic and Instinct. To share more about our work together, please welcome to the stage Meta's head of
+49:33
+infrastructure, Santo Dennard.
+49:39
+[music] How are you? Wonderful. It is so great
+Meta partnership
+49:46
+to have you here. Thank you for being here. Good. Um, Santosh is a true friend. Um, I have
+49:52
+to say, uh, it's been a tremendous opportunity over the last few years. My story about Santosh is the first time I
+49:58
+sat in his office, he said to me, Lisa, we're going to deploy a lot of CPUs.
+50:05
+Please make sure they work. [laughter] And I said, I will. I will
+50:10
+and you lift it up. I have to say they won't care. I try. But uh look, Santo, you know, Meta operates um you operate some of the
+50:17
+most advanced infrastructure in the world. Um what's happening in the data center world? What's happening in your
+50:23
+world? Tell us a little bit about uh the architecture and and what you're working on.
+50:28
+Sure. First of all, thank you. It's awesome. This is like a hardware geeks paradise, right? [laughter] You come in,
+50:34
+you're talking about transistors, you're talking about hardware, you're talking about cooling. This is sort of the jam. I like it. Yeah. Uh right. Uh and I
+50:41
+think this is an audience that's receptive to it. Says I usually talk to audiences they don't they have usually either not been to a data center or not
+50:47
+really seen a chip ever. So so this is refreshing I have to say. Uh the thing I'll say about uh see listen we are
+50:54
+seeing sort of demand go through the roof. Uh when you look at inference training recommendation system that's
+51:00
+how a newsfeed works. Uh content creation uh the demand for that is just exponential right now. Right. And when I
+51:08
+think about sort of the overall uh Mark has this vision of delivering personal
+51:15
+super intelligence to billions of people. So if you go to sort of Facebook or Instagram or WhatsApp or whatever
+51:21
+surface you go to the idea is that we'll meet you there and we'll deliver super personalized uh intelligence right
+51:27
+wherever you are and that's why we established this meta compute initiative uh uh and because it's a top level thing
+51:33
+Mark himself oversees. Now what that means is that we are now moving away from an area where we used to take
+51:40
+servers optimize it right this is what the conversations we were having many years ago that hey I'm deploying a CPU I
+51:46
+really need to maximize performance out of it it's different now you talked about how we uh we should be thinking
+51:52
+about the whole system end to end we are we at a point where we have to look about the whole data center and think about it
+51:58
+as one integrated system servers hardware networking cooling power all of
+52:04
+that is not optional. All of that has to work together, right? And this is where I think there's a huge opportunity for
+52:09
+collaboration with partners like AMD. Uh because you have to now co-design, co-create systems, not just deploy uh
+52:17
+sort of something that comes off the shelf, right? The other thing is by the way flexibility. The thing I really liked
+52:23
+about what you said is that this is such a big opportunity uh in the industry
+52:28
+right now. All of us need to lean in and and sort of work on this together. So uh
+52:33
+it it needs to be open. It needs to be heterogeneous. Uh and I think there's no one company, one partner that works for
+52:40
+for any one of us. We need to sort of work on this together. And that's why I think uh you're one of our most most
+52:46
+important strategic partners. Thank you Santo. And look, we we completely agree with uh your
+52:51
+philosophy. Now um you are actually one of our broadest partners because if you think about our work on CPUs, GPUs uh
+52:58
+you know we uh developed the rack scale um OCP uh systems together um you've
+53:03
+deployed lots and lots of CPUs so millions of CPUs um and you know you're a lead partner on Bennis. Can you just
+53:10
+talk a little bit about sort of your CPU and infrastructure and some of our work together? Sure. Uh it's been many years uh and the
+53:16
+the story that Lisa was saying was many years ago. I think we went from Milan to Burgamo to Turin now to Venice. So it's
+53:24
+four at least the fourth generation. So so long time partnership uh obviously uh
+53:29
+I actually think the world is changing in the sense that uh it use the world is
+53:34
+every year is a new world these days. Uh it's like every month months exactly so what ends up happening now is that it's not just a GPU game
+53:41
+anymore. It's CPUs and GPUs. If if anything I think CPUs are becoming at least as important if not more you're
+53:47
+looking at a world where sort of the workforce uh the workload is changing uh
+53:53
+because while you have your workh horses and GPUs at the end of the day you uh that's agentic workloads you have to run
+53:59
+your tools you have to run your systems and all the code that's being generated still needs to run somewhere right so uh
+54:06
+so I'm super excited to work on Venice I think there's a lot uh to come there um and you have to think Again, uh uh this
+54:13
+is a theme that I I am assuming will go throughout your presentation that you have to start thinking about CPUs and
+54:19
+GPUs as conjoined things. You hand off workloads depending on the workload, you employ the right hardware.
+54:24
+Yes. No, absolutely right. And we've gotten a lot of feedback from your technical team. I think that's what I
+54:30
+really appreciate about the um the partnership with with Meta. Now clearly you're deploying lots
+54:36
+of GPUs too, a lot of accelerators and uh you're also uh one of our deepest partners on the accelerator side
+54:42
+starting with MI300 and then we had um you know a very uh large uh you know strategic partnership announced around
+54:49
+um up to 6 gigawatts starting with MI450 uh and what we're doing is is quite unique with Meadow. So can you talk a
+54:55
+little bit about um you know sort of the evolution and and the MI450 plans?
+55:01
+uh again uh multi-year collaboration I think we started with MI300 uh we did a bunch it it a really nice memory
+55:07
+capacity I remember talking to you about that right uh and then there's a bunch of pipelining we did it was important to
+55:13
+de uh to deploy that at production scale so sort of get hands-on experience on both sides uh 350 is the first time we
+55:20
+deployed this on a ranking and recommendation systems so that that's now uh you know getting into sort of
+55:26
+some good numbers and 450 is I think I'm super excited about it we we we has got some of the racks and we are going to
+55:32
+deploy it across the board because it gives us the opportunity to go and sort of really collaborate. I think the
+55:39
+difference big difference between sort of the uh 300 350 and 450 is that we have had an engineer sitting in the same
+55:44
+room talking to each other co-designing co-creating like power cooling it like I
+55:50
+was saying it's not just just a single thing and uh we are not shy in feedback like they're not shy for sure [laughter]
+55:57
+and but you're very deceptive so this this this is true partnership right this is the point about co-designing and co
+56:03
+co-creating that I think and uh and like I saying that that's a huge uh uh sort of deployment coming in the more we
+56:09
+deploy uh the earlier we co-design the better we are. Yeah. Absolutely. Really uh really
+56:15
+appreciate the effort together on MI450. Now I'm going to ask you also about your
+56:20
+crystal ball. So you look out into the future and you see you know what the next um you know few years really means
+56:26
+as you push forward in the um the AI industry. What are the biggest challenges and and really opportunities
+56:32
+for us? You know this is the industry ecosystem here. So what should we be focused on as an industry? Listen the uh
+56:38
+all of you know about the bottlenecks you know about the power the data centers uh the silicon uh like all of
+56:44
+these I think are choke points that I think the industry is s of waiting on u but those are things I'm pretty
+56:49
+confident we'll sort of work our way through at at the end of the day I I I think that demand is immense people are
+56:55
+responding uh but but the thing that I really want to uh make sure all of us realize is that we should not think
+57:02
+about systems in isolations like I was saying CPUs and GPUs are one conjoint system, you should start thinking about
+57:08
+it that way. You should uh we really need to co-design things uh early. See,
+57:13
+data centers takes years to build. Okay? Uh like one of my favorite stories is Mark comes to me and says, "Hey, I want
+57:19
+a gigawatt worth of data centers." Well, you should have talked to me 2 years ago. It takes time, right? It's the same
+57:25
+with silicon, right? Uh it just takes time. So, so we need to be starting uh and sitting down in a room co-designing
+57:32
+today for what we need to deploy in 27 and 28. That I think is when we truly
+57:37
+unlock sort of powers of the system. The systems are amazing. The specs are amazing, right? But think about how much
+57:43
+more you can get out of it if you sit in a room and and just co-design it today and then in 28 we'll be having much
+57:50
+better graphs out there. [laughter] Fantastic. Santo, I completely agree with you. Um I want to say again, thank
+57:56
+you. We are so so happy with the amazing partnership that we have, you know, across the board and and most
+58:01
+importantly, you know, with your engineering teams and we truly are excited about what we're going to do in the future. Thank you so much.
+58:07
+Thank you. Thank you. [applause]
+58:14
+So, you heard Santos talk about just the diversity of workloads and um really the massive scale that you require with AI.
+58:22
+Now I want to turn to another part of the inference market where the requirements are actually very different. So lots and lots of workloads
+58:30
+and as inference is moving into more products and services we're actually seeing it segment into different
+58:35
+workloads depending on what you're trying to do. Some of these are let's call it less interactive. So they're
+58:41
+really tuned for let's call it maximum throughput or the lowest cost. Um you know other of these applications require
+58:47
+more balanced throughput. So you have to balance throughput and um responsiveness. And then there's this
+58:53
+new class of applications that actually want very very fast results. You have extremely smart engineers and they don't
+59:00
+like to wait. And that is where ultra low latency or every millisecond
+AI software and ROCm
+59:05
+actually [clears throat] matters. Each one of these types of workloads requires a different type of compute. And one of
+59:12
+the best ways to reach ultra low latency today is disagregated inference. So if
+59:17
+you think about you know the different pieces uh both prefill and decode are two different jobs. So prefill tends to
+59:25
+need more compute decode tends to need more memory bandwidth. And with instinct
+59:30
+we have a very balanced machine so that we deliver both great compute and great memory bandwidth. But you can actually
+59:36
+take this a step further if you know what workloads you're trying to run. You can actually let customers tune each of
+59:42
+these pieces uh independently. And to address this market opportunity, we've been working with Cerebras. So to talk
+59:50
+more about what we're building together, please welcome to the stage Cerebras co-founder and CEO Andrew Feldman.
+59:58
+[music]
+1:00:05
+Andrew, it's great to have you here. It's been an exciting few months uh for you. I know that um for those who don't
+1:00:11
+know exactly what you've been working on, can you talk a little bit about Reebus and you know what problem have
+1:00:16
+you been trying to solve? Sure. Great to be here and great to be sort of among people who love hardware.
+1:00:24
+It's it's nice. Look, I'm I'm thrilled to be uh here with you and to announce
+1:00:30
+our our cool new partnership at Cerebrus. We build the world's largest
+1:00:35
+and fastest chip. It's a full wafer and we package this into a system and
+1:00:43
+systems right into racks and then racks into clusters
+1:00:48
+and we deliver them both on premise and via the cloud. And you you've had some
+1:00:53
+of our customers up here already to date on the frontier labs. We serve customers like like OpenAI and in the hyperscalers
+1:01:01
+like AWS in the small uh agentic and the coding space leaders like Cognition
+1:01:08
+and they they do this because we're blisteringly fast.
+1:01:14
+There's no question, Andrew, that um you have some tremendous innovation uh with uh you know what you've been working on
+1:01:20
+and our teams have been collaborating really closely over the last um few years to really have Helios together
+1:01:26
+with the wafer scale engine for ultra low latency inference. Can you just kind of just educate the audience a little
+1:01:32
+bit? What are we trying to do and what does that mean for customers? Sure. Right. I think what's happened and and you described it previously is that
+1:01:39
+that sort of AI has moved from being a novelty to being useful and then in some
+1:01:44
+domains a necessity. And when something's a necessity, uh
+1:01:50
+people want to use it and they you want to use it quickly. And to serve this market, this segment of ultra low
+1:01:56
+latency, we we sought a partnership that could extend uh our our capabilities and
+1:02:03
+our our footprint. And there was no better answer than AMD. We we were already an AMD customer as we use AMD
+1:02:09
+CPUs to to to surround our systems and we were so excited at the opportunity to
+1:02:16
+build a disagregated solution that combined AMD CPUs, the cool new Helios rack and
+1:02:24
+the the Cerebrous uh wafer scale engine. Yeah. Look, the the um the technology is
+1:02:30
+is pretty cool. So just talk a little bit about how it comes together. Sure. So as Lisa described what you have
+1:02:37
+with with Instinct in the Helios rack is you have the leader in performance and
+1:02:42
+and and memory capacity and you marry that with our wafer scale engine which
+1:02:49
+is the leader in in sort of in SRAMM and in memory bandwidth and that combination allows us to
+1:02:56
+deliver a solution that is unmatched in the industry. So very very exciting. I know that customers are excited about what we're
+1:03:02
+going to do together as well. So, when are we going to have it in market? Uh, later this year and it will be first
+1:03:10
+in the the the the Cerebrus cloud and it will be later uh at a store near
+1:03:18
+you. [laughter] I I think the key thing is we're going to give uh customers the choice to
+1:03:24
+really put together um you know what is the solution that they want. And I think we're very very happy to be able to do
+1:03:29
+this together with you. I think it's a huge step up in terms of what we can do for this ultra low latency segment.
+1:03:35
+I I think that's right. I think until recently customers sort of they could have uh sort of high throughput or they
+1:03:43
+could have extraordinary speed. And by bringing together uh the the Helios rack
+1:03:49
+with the Cerebras wafer scale engine, we we we give you five times the throughput
+1:03:55
+while continuing to deliver this extraordinary speed. It's really
+1:04:00
+something amazing. Fantastic. Well, look, Andrew, um huge congratulations to what you and the
+1:04:06
+Cerebras team have done. I mean, I think it's been incredible. I think you have been clear on what you were trying to
+1:04:11
+accomplish and it's really nice to see not only it come together but us come together to offer a solution that will
+1:04:18
+be uh very very compelling to customers. So we can't wait to get this into customers hands soon.
+1:04:23
+Thank you. Good to see you. Thank you so much. Thank you Andrew. [applause]
+1:04:31
+All right. So look, I think we've shown you a lot of hardware this morning. Um, but as we all know, hardware is only
+1:04:37
+part of the story. Um, it's actually software that turns all of this into a platform that developers can really
+1:04:43
+build on. So to share the progress we're making with Rockcom, please welcome AMD senior vice president of AI Vomi Bopano
+1:04:51
+to the stage. [applause] [music]
+1:04:59
+Thank you Lisa. Good morning everyone. It's great to be back to talk about
+1:05:04
+software. Just a few years ago, programming AMD GPUs required deep
+1:05:09
+expertise and significant engineering effort. We've come a long, long way in a remarkably short period of time. Through
+1:05:17
+our opensource community collaboration and sustained investment in Rockom, our
+1:05:22
+software stack, AMD Instinct GPUs are powering some of the most important and
+1:05:27
+consequential workloads on the planet. But the biggest change is still ahead of
+1:05:33
+us. AI is transforming how software is getting built and we are bringing that
+1:05:39
+transformation to Rockom and that's what I'm excited to share with you guys today. Our software teams have been
+1:05:45
+moving fast with relentless focus on developers. We've invested at every level of the
+1:05:52
+stack in build and test infrastructure so we ship faster. Rockcom releases now
+1:05:57
+go out every six weeks. not every four months. We've continued to expand the
+1:06:03
+work we do with our AI ecosystem partners and the result more features,
+1:06:09
+faster performance, and a significantly better out of the box experience.
+1:06:14
+Our strategy that has gotten us here has been remarkably consistent. It's built
+1:06:19
+on two core principles. partner deeply with the open-source ecosystem
+1:06:25
+and build with the right layers of abstraction to enable developer productivity. Open source gives us
+1:06:31
+velocity and scale and abstraction makes developers more productive.
+1:06:39
+Our deep deep commitment to open source has resonated with the community that has truly embraced AMD. From frameworks
+1:06:47
+and compiler stacks to inference engines and model hubs, AMD is now becoming part of default enablement for the most
+1:06:54
+important AI communities such as hugging face, PyTorch, Jax, VLM, and SG lang.
+1:07:02
+This is why new models get day zero support and why the world's most important AI workloads run on AMD today.
+1:07:10
+That is a big shift. Inspired by engineers seeking productivity,
+1:07:16
+abstractions have evolved to enable work at the right level of detail, hiding
+1:07:21
+complexity when they want speed and exposing control when they need performance. From low-level programming
+1:07:28
+in assembly and C to block programming abstractions like Triton to Pythonic frameworks, we've invested in key
+1:07:34
+abstractions. Aer our kernel library and Atom our
+1:07:40
+serving engine get you peak performance without writing the kernels yourself.
+1:07:45
+Fly DSL is a brand new Pythonic domain specific language that gives you low-level control with the performance
+1:07:52
+of handtuned C++ and Mori. Our communications library
+1:07:58
+helps deliver leadership performance on the latest models like Miniax.
+1:08:04
+But look, something very very exciting is happening. Over the past year, I've seen something remarkable inside AMD.
+1:08:12
+Our engineers are using AI models to generate GPU kernels, optimize code,
+1:08:17
+debug issues, and improve performance. And in some cases, these AI generated kernels are shockingly good, better than
+1:08:25
+what we expected, sometimes better than the most manually tuned versions. The
+1:08:31
+first time you see this, you're a little bit skeptical. You run more tests, you try to break it, you look for what went
+1:08:38
+wrong, and then you realize this is real. What has happened in general
+1:08:44
+software development is coming to significantly transform GPU programming.
+1:08:49
+It's going to reduce the time it takes to bring up workloads, make optimization automated, and it will remove any
+1:08:56
+remaining barriers to broad adoption. We want to put that capability in the
+1:09:02
+hands of every developer. So today I am excited to introduce Rockom.ai.
+1:09:12
+[applause]
+1:09:17
+It's an agentic AI platform that brings the capabilities of AI assisted GPU programming to developers. It starts
+1:09:24
+with the simple idea of giving developers access to the power of an AMD ecosystem through the AI coding agents
+1:09:31
+they already use. Whether you're using Cursor, Claude, Codeex, Rockom.AI helps
+1:09:38
+those agents understand AMD platforms, understand Rokom, and helps you build
+1:09:43
+and optimize your workloads. In other words, we are making those popular
+1:09:49
+coding agents into Rockom super users. You should be able to describe the workload you want to run, the
+1:09:55
+performance target you want to hit, and then let the agents help you get there.
+1:10:00
+For years, we have been building the open software foundation. Now, we are adding an AI assisted layer that helps
+1:10:07
+developers use that foundation faster and more effectively. So, let me show you what is inside rock.AI.
+1:10:15
+It's built on the foundational capabilities of Rockom, our core software stack, runtime, libraries,
+1:10:22
+compilers, tools, framework integration, all of the core software that makes the stack work. On top of that, we built a
+1:10:30
+layer of AI assisted optimization called Hyperloom. Using Hyperloom, the system can analyze
+1:10:37
+a workload, tune configurations, select and tune kernels, adjust parallelism strategies, and iterate towards
+1:10:44
+performance goals. To give you an example of the power of Hyperlim, I was
+1:10:50
+talking to the lead developer last week. He told me they just pushed through a suite of 14,000 models through
+1:10:57
+Hyperloom, optimizing them and creating valuable insights. This would have been
+1:11:03
+impossible to imagine even with a large team of engineers before. That's the power of Hyperloom.
+1:11:09
+And finally, we provide an AI native interface for our developers. AI skills
+1:11:15
+that allow coding agents to understand Rokom natively. I am incredibly excited
+1:11:20
+by what we have built with Rockom.AI. It's going to profoundly transform the way developers interact with our
+1:11:26
+platforms. So, let me make this concrete for you with an example. Imagine you're
+1:11:31
+a developer who wants to optimize MiniAX M3 with VLM on MI355s.
+1:11:37
+Today there are many things you need to get right. You need the right VLM optimizations, the right model recipes,
+1:11:44
+the right environment variables. You may need to write new kernels or optimize kernels and then you still need to tune
+1:11:50
+all of this. With Rockom.ai, this interaction becomes much simpler.
+1:11:57
+So let's see it. You can say optimize MiniAX M3 with Hyperloom. Enter.
+1:12:05
+And behind the scenes, the agent does what an expert would do. Pulls a known
+1:12:11
+good recipe, runs and profiles the workload. It creates and tests a bunch of kernel and runtime configurations,
+1:12:17
+and it keeps iterating towards target. You can actually watch on screen here.
+1:12:23
+Rockcom.AI write a GPU kernel. It sees an opportunity, right? A more optimized
+1:12:28
+group gem. And the result, Rockom.AI delivers a 38%
+1:12:35
+more tokens per second improvement on this specific example. This is the
+1:12:41
+experience we want for developers. Simple to start. [applause]
+1:12:47
+That's pretty cool, huh?
+1:12:52
+Simple. Simple to start and powerful to optimize. We've continued our relentless focus on performance. With every
+1:12:59
+release, we've delivered significant performance gains on leading models like DeepSeek. Rockom.ai delivers 3.3 times
+1:13:07
+speed up over Rockom 7. This has been made possible by innovations at every level of the stack. Techniques such as
+1:13:15
+the use of block scaled fused kernels, KB cache quantization, expert
+1:13:20
+parallelism. But look, the bigger story is how AI agents actually profiled the
+1:13:25
+workload, proposed new kernels, tested configurations, and actually validated all of the results.
+1:13:32
+That exact same focus is also on delivering performance gains for training. On the same hardware,
+1:13:39
+Rockom.ai improves training performance by an average of 2.4 times
+1:13:44
+through optimized kernels such as fuse flash attention, more efficient checkpointing, and advanced parallelism
+1:13:50
+strategies. Our engineers have done amazing work to unlock the capabilities of MI455 through
+1:13:57
+Rockcom.AI. So I'm delighted to share some incredible results on hardware on on
+1:14:03
+running real workloads. We are able to see the system deliver 20 terabytes of
+1:14:08
+memory bandwidth and 20 pedaflops of delivered compute. These are the highest
+1:14:14
+demonstrated compute plus memory capabilities of any accelerator platform
+1:14:20
+in the industry today. It's not theoretical, [clears throat] there's measured. [applause]
+1:14:30
+Super exciting that we were able to share this on day one. I'm also thrilled to share that the leading AI ecosystem
+1:14:36
+partners who have had their hands on MI455 have had a delightful experience.
+1:14:41
+You can see here what they've had to say. From end to end PyTorch testing to
+1:14:46
+ensuring hugging face models are getting validated to VLM and SG lang running well on MI455.
+1:14:53
+We are incredibly encouraged and excited by what the community is about to unlock with MI455.
+1:15:00
+This matters because day zero readiness is one of the most important objectives we strive for and that's what rockom.ai
+1:15:07
+enables. So now let's look at rockom.ai AI in action on Helios. This time we are going
+1:15:14
+to use a codeex front end. Let's deploy DeepSeek V4 Pro, a 1.6 trillion
+1:15:20
+parameter frontier model on Helios. Now watch what happens.
+1:15:26
+Rockcom.AI pulls the right recipes. It configures the runtime. It implements
+1:15:32
+the model graph onto hardware and finally serves up the model.
+1:15:38
+There you go. The model is actually up and running. And let's see the model write a simple poem now about advancing
+1:15:46
+AI. Let's hit enter. Isn't that a pretty cool poem?
+1:15:53
+[applause] This is the experience we want to give
+1:15:58
+our users. The developer should not have to manually reason through every layer of model architecture, kernel selection,
+1:16:06
+coms strategy, and rack level deployment. AI is transforming this
+1:16:11
+experience and that is a very very big shift for GPU hardware and software.
+1:16:17
+Now there are few organizations shaping the frontier of AI as much as open AI. You heard Lisa and Sachin talk about our
+1:16:24
+partnership. It's been truly wonderful collaborating closely with the OpenAI technical team to make rapid progress
+1:16:31
+with Rockom to talk about how they are advancing the frontier of software development and our collaboration. I'm
+1:16:38
+delighted to welcome to stage Philip Tle from OpenAI.
+OpenAI software collaboration
+1:16:46
+[music] Thank [applause] you for joining us
+1:16:52
+here, Phipe. So, just so you all know, Philip is the creator of Triton, one of
+1:16:57
+the most important software innovations in modern AI infrastructure. It's a huge privilege having you here.
+1:17:03
+Thank you. [applause] OpenAI has always pushed the limits of
+1:17:09
+infrastructure. Um, so you know, can you tell the team a little bit here today as to how your team actually develops GPU
+1:17:16
+software and how have technologies like Triton evolved? Yeah, for sure. Well, first of all, thanks so much for having me. I was here
+1:17:23
+2 years ago. It's my great pleasure to be back now. Um, look, our way of looking at things is there's no one way
+1:17:30
+to fit all applications and we really try to meet users where they are. So for
+1:17:35
+that reason we've developed multiple solutions. So for workflows where speed of iterations is more important uh we've
+1:17:43
+developed Triton as you mentioned. So this is typically what researchers will use. Uh but more and more we've been in
+1:17:49
+a case where we've had to hyperoptimize performance and Triton didn't give us the level of control that we wanted. So
+1:17:56
+we've developed Gulon for that which is a lower level language and uh and this
+1:18:01
+way we've been really able to optimize our our kernels for AMD among other things. Um and yeah like our agents have
+1:18:09
+become extremely good good at both of them and we've worked with um AMD on both of them as well. Yeah.
+1:18:15
+Um yeah and you know more and more what we're seeing is agents slowly taking
+1:18:20
+over like yeah they're getting just very good as you just mentioned at at writing this kind of code. Amazing. So look I
+1:18:28
+think the work you have done with Triton and now gluon right it's been really really uh moving the ball forward for
+1:18:33
+the entire industry. Now we began our work together with 300 and you know extended at 350 but now we're
+1:18:39
+collaborating at a different scale with 450 and Helios. So uh would would love to hear your thoughts on how that
+1:18:45
+collaboration has been going and how has that experience been. Yeah, super well. It feels like ages. I
+1:18:51
+think we started years ago on uh on hardware code design, you know, when MI450 was like in the very early
+1:18:58
+prototyping stages. Uh I think we're able to work really well together and it's so nice to see the outcome of that
+1:19:05
+uh and the chip. Um and more recently we've been working very very deeply on
+1:19:11
+software enablement for MI450 both for our models but also for the broader ecosystem. So a lot of this development
+1:19:17
+has been done open source. Um and yeah we're collaborating on a full stack now
+1:19:23
+uh down to the very low-level LVM code generation uh you know so that like all
+1:19:29
+the nice hardware advances that came with MI450 can be properly leveraged you
+1:19:34
+know in end to end applications. Yeah. And and you know you got your Helios racks uh you know so tell us a
+1:19:40
+little bit about that. Yeah. Yeah, it worked like uh we got the the chip and
+1:19:46
+[applause] yeah, we got the chip and uh you know
+1:19:52
+very quickly like a single engineer in a few days was able to confirm that you know everything worked obviously like we
+1:19:58
+have to optimize performance more [laughter] um but we're very confident we can get in a very very good place.
+1:20:04
+Awesome. That's awesome to hear. So look um one of the more amazing things that we've done recently right is uh teams
+1:20:11
+have collaborated even more closely in terms of uh you know using AI to program
+1:20:16
+AMD GPUs. So you know would love to hear your thoughts and anything you can share with the audience.
+1:20:21
+Yeah. No uh I mean everyone in this room knows how much agents are taking over uh
+1:20:28
+our jobs in a sense as kernel engineers. Um and um yeah, and it's been amazing
+1:20:35
+just to see like how much better they've got over just the the past 6 months. And
+1:20:40
+just now they're extremely good at generating just high quality GPU kernels in a way that were not before. Um, and
+1:20:47
+it's been very great collaborating with AMD on just like making sure that agents
+1:20:53
+not only are capable enough, um, you know, but also have the all the right context they need to be able to make
+1:20:59
+good decisions and and good optimizations. That's great to hear. Yeah, I think um, you know, the quality of code that's
+1:21:06
+getting produced by AI assisted kernel generation has been truly remarkable through our collaboration. Very excited.
+1:21:13
+Now as you look ahead right you know um what crystal ball do you have for us for
+1:21:18
+the future of AI software ecosystem and collaborations like ours? Yeah so there's two things that really
+1:21:25
+come to mind one you know as [snorts] we keep talking is just how good agents are
+1:21:30
+are getting and the other one is I think how much the open approach to software
+1:21:35
+of AMD is enabling uh not only for OpenI but I think for the industry as a whole.
+1:21:41
+Uh you know I talked a little bit earlier how we've been collaborating on LVM code generation. LVM is an open
+1:21:47
+source project. The entire compiler stack uh from AMD is open source and that has allowed us to make our agents
+1:21:54
+really good at very very low-level code generation down to you know scheduling instructions in assembly and this has
+1:22:01
+led to like very very significant performance gain that I don't think we have would have been able to to achieve
+1:22:08
+in in a fully closed source stack. Yeah, that's one of the real sort of big uh
+1:22:13
+value propositions that we have to offer, right? Because everything that we do is in the open and the fact that u AI
+1:22:20
+can actually pick that up is a big one. Thank you, Philipe. Uh we truly appreciate the partnership and we're
+1:22:25
+really excited about what we're going to build together. Yeah, my pleasure. Thank you so much for having me. [applause]
+1:22:34
+What you just heard is extremely important. When we combine better abstractions with AI assisted
+1:22:40
+development and close hardware software code design, we can create some incredibly powerful capabilities. And
+1:22:47
+that's exactly aligned with our strategy. Now everything I have shown you so far has been about AI but Rockcom
+1:22:54
+is also a great stack for developing high performance and scientific computing applications from frontier
+1:23:00
+models to climate simulation. And we use the same rockom, the same library, same tools, same AI assisted development, one
+1:23:08
+open stack for every single workload. And in fact, when you look at our road map, we've retained that very strong
+1:23:15
+focus on HPC and scientific computing. Just like MI455 leads in AI compute with
+1:23:20
+FP4 and memory performance, MI430X leads HPC compute with FP64 and memory
+1:23:28
+performance. two platforms purpose-built for two very different classes of workload.
+1:23:34
+The MI430X is built by leveraging our modular chiplet architecture to deliver
+1:23:39
+a purpose-built variant with native FP64 hardware, giving customers leadership
+1:23:46
+performance across AI and HPC in a single platform. And this is hardware
+1:23:51
+double precision, not emulation. For the scientific community, that distinction is everything.
+1:23:58
+This product delivers 288 teraflops of FP64 compute, nearly nine times better
+1:24:04
+than competition, and the same leadership, memory capacity, and bandwidth of MI455.
+1:24:11
+The MI430X ships in the first half of 2027.
+1:24:18
+This is why leaders in sovereign AI love this product. The first sovereign
+1:24:23
+exoscale AI factories in both US and Europe are being built on the MI430X
+1:24:30
+discovery at Oakidge National Labs and Alice Rope with CNS and Gen C in Europe.
+1:24:37
+So look, as we look ahead, let me leave you with this thought. Every so often
+1:24:42
+our industry goes through inflection points. We've all felt it when neural networks first started recognizing cats
+1:24:49
+and dogs. when transformers changed what was possible with AI. I believe we are
+1:24:54
+experiencing another one right now, a real inflection in the ability of AI to
+1:25:00
+program complex hardware systems. Building on the surface area that's been
+1:25:05
+exposed from open-source software and leveraging the power of abstracted interfaces, AI is making it dramatically
+1:25:12
+easier to program AI systems. We cannot wait what you will build with it. Thank
+1:25:19
+you. [applause]
+1:25:28
+Now AI is getting pervasively infused into all forms of computing. Enterprises are experiencing the same shift with
+1:25:35
+their own unique requirements. So to tell us more about that transformation, please welcome to stage senior vice
+1:25:42
+president and general manager of compute and enterprise AI Dan McNamara.
+1:25:54
+[music] Thank you Vonyy and good morning everyone. Uh it is a great pleasure for
+1:26:00
+me to bring to you the third pillar of our strategy which is powering AI everywhere and you know the vision
+1:26:07
+behind this has remained the same for several years for for us you know to deliver the right compute engine to the
+1:26:15
+right workload and then continuously drive optimation point optimization
+1:26:20
+points across our entire portfolio from CPUs GPUs networking and FPJAS.
+1:26:28
+So, building on what we've already shared, I'll cover how our strategy comes together across our enterprise
+1:26:34
+portfolio and how the foundation we built with the CPU franchise has truly
+1:26:40
+positioned us for the next era of AI across multiple deployment models. So,
+1:26:46
+Lisa talked about the the frontier model and hypers scale landscape and and just the rapid and massive advances we've
+1:26:53
+seen over the last 6 to 12 months. And those advances are driving the adoption
+1:26:58
+of AI well beyond the cloud. And as AI continues to grow, it will demand compute beyond the massive purpose-built
+1:27:06
+data centers that we all know and love, extending into enterprise, personal and physical AI. And each of these brings a
+1:27:14
+new or unique set of requirements. Enterprises are usually constrained by
+1:27:19
+power and cooling. Personal AI is usually must operate within a fairly
+1:27:24
+limited compute and memory footprint and physical AI must perform reliably in
+1:27:30
+real world demanding environments and AMD is the only company delivering a
+1:27:36
+complete portfolio that spans all of these model development models.
+1:27:41
+So I just mentioned that our journey began and and with the in the data center with our CPU franchise and I want
+1:27:47
+to touch on it a bit. With each generation of Epic, our strategy has been to listen to our customers, address
+1:27:53
+their evolving needs and deliver the highest performance, lowest total cost
+1:27:58
+of ownership, and the fastest time to value. As Lisa mentioned earlier, we've
+1:28:04
+introduced many industry firsts across our generations that our enterprise
+1:28:09
+customers has actually asked for. And that customer focus has brought us to
+1:28:15
+where we are today with Epic as the leader in enterprise computing. And over
+1:28:20
+the last three years, there's been very very strong adoption across the enterprise with the world's largest companies moving more and more workloads
+1:28:27
+to AMD. And it's reflected in a number of places. first public cloud where our
+1:28:32
+VM consumption has grown at 76% KAG over the last three years and on deployments
+1:28:40
+with our OEM and ODM partners uh is growing quite quite aggressively across key industries.
+1:28:47
+But just as important, this position allows us to understand truly the diversity of the workloads
+1:28:53
+that our enterprise customers run every day. And each workload places new demands on
+1:29:02
+the CPU. Some require maximum thread count. Some depend on per core performance while others depend on
+1:29:08
+memory bandwidth, cache efficiency or IO performance. The really important point is that there
+1:29:15
+is no single skew that solves every enterprise application. And that's why our Epic portfolio with
+1:29:23
+Venice spans 8 to 256 cores with a range of power frequencies and IO capabilities
+1:29:30
+giving customers the flexibility to choose the right solution for their workload and most importantly at the
+1:29:37
+most optimized cost. So Lisa mentioned this earlier and now
+1:29:42
+we all know we we we covered Venice and she showed how very we have strong
+1:29:49
+leadership about across AI host nodes and the agentic workflows but I wanted to show you how Venice
+1:29:55
+actually leads across the general purpose workloads of the enterprise and these workloads that are running you
+1:30:02
+know c our customers rely on every day as you can see we have a minimum of 2
+1:30:07
+and a halfx the performance across our competition across these very very important enterprise workloads.
+Enterprise AI strategy
+1:30:15
+So now as we all know Agentic AI is is you know really the next major
+1:30:20
+transition for the enterprise and it truly is a force multiplier for for enterprises and adoption is
+1:30:27
+accelerating. In fact, the latest data here shows that nearly every enterprise next year will have some form of agentic
+1:30:35
+deployments. And as enterprises move from, you know, pilots to production deployments, we
+1:30:42
+talk we've talked to CIOS all the time and they have looking at three major things. First,
+1:30:49
+predictable infrastructure cost and token costs. Secondly, making sure the data is
+1:30:55
+secure. And then lastly, and sometimes this is overlooked, right? Integrating
+1:31:01
+AI into their existing infrastructure. It's not all green field out there for the enterprise customer. So to solve
+1:31:09
+these problems, we truly believe that this going to be a distributed deployment model that leverages frontier
+1:31:14
+models, cloud services, on-prem infrastructure, and of course AI clients. And as AI has moved from chat
+1:31:23
+bots responding to prompts to you know agents doing real work writing code summarizing documents and running
+1:31:30
+complex flows the requirements have evolved also and those are exactly the
+1:31:36
+requirements we've been designing for for multiple years. So while AI will be
+1:31:42
+deployed across all these environments the on-prem deployments in our enterprise customers have fairly unique
+1:31:49
+constraints. First and foremost, power cooling really ch big challenge in space
+1:31:54
+and of course costs remain top of the list for CIOS that are trying to you
+1:32:01
+know drive things forward with an AI in the AI world. And then lastly the full
+1:32:06
+solutions they need to need to be easy to deploy. That's that's been common for
+1:32:12
+many many years for the enterprise but it has to that's something we're very very focused on. So to address these
+1:32:19
+constraints, thank you Laura. I'm uh very happy to announce the launch of the
+1:32:27
+Instinct MI 350P. [applause]
+1:32:35
+So today, every enterprise wants AI in the data center, but the challenge is how do you add those capabilities
+1:32:42
+without starting over? That's exactly what the 350P was designed to solve. It's an aircooled GPU designed to fit
+1:32:49
+within the power and cooling of enterprise servers today without a facilities upgrade, making it easy to
+1:32:56
+bring LLM scale inference into today's enterprise data center. And at the same time, there's no compromise in
+1:33:03
+capability. A single MI350P can support up to 260 billion parameters, allowing
+1:33:09
+customers to run the majority of enterprise AI workloads on a single GPU.
+1:33:15
+And the economics are actually even better and more compelling. The 350P
+1:33:20
+delivers more than four times the tokens per second per dollar than the competition.
+1:33:27
+It's pretty cool. [applause] And it actually
+1:33:34
+turns the customer's existing data center into an AI data center. Now
+1:33:40
+we all know that benchmarks are one part of the equation, right? The other part is really evaluating does the advantage
+1:33:47
+hold up across the actual workloads you run and the business and how your business runs. So we tested a set of
+1:33:53
+workloads uh enterprise use cases using production models and the 350P delivers
+1:33:59
+much higher productivity than the competition delivering up to two to five times tokens per faster tokens per
+1:34:06
+second than the competition. So if you think about that, that's more tokens per second, more work completed, more users
+1:34:15
+supported, all at a lower cost for the business.
+1:34:21
+So another area that I wanted to talk about is our earliest customer is our own AMD IT team.
+1:34:28
+And uh they're a tough group to work with even for us. So you but they're
+1:34:34
+they they put our put us through our paces and you know really this has been our model from day one is we want to put
+1:34:41
+our technology into our own data center first. So like many companies many enterprises we're looking at how to
+1:34:47
+deliver AI service to our employee base but also manage costs and protect our
+1:34:52
+data and manage and control the data. So we focused on two use cases uh that we
+1:34:58
+wanted to try out and first was autonomous threat detection and you know that is probably one of the faster
+1:35:05
+growing agentic applications that we're seeing today and the second was you know personalized AI assistant running on
+1:35:11
+openc clock. So both of these run uh run route requests through the through the
+1:35:16
+router and the gateway sort of tests the complexity the sensitivity of the
+1:35:22
+information and the service level requirements. So some requests are sent to the to the
+1:35:28
+frontier model while others are routed to open weights models running on epic and an MI350P.
+1:35:34
+So with intelligent routing we reduced our token cost by 43%.
+1:35:40
+while delivering up to 3x faster response times for the workloads running
+1:35:45
+locally. So we believe this is how enterprise AI will be deployed.
+1:35:53
+But we also know that from our history here with Epic that enabling enterprise
+1:35:58
+takes a whole lot more than great silicon. It requires a complete ecosystem of software and solutions. And
+1:36:05
+over the last several years, we've truly grown uh significantly and expanded our enterprise AI ecosystem. Today, we
+1:36:12
+support numerous AI ISVS, provide zero day support for all all of the
+1:36:18
+industry's leading open models, and deliver robust frameworks that help customers bring AI into production as
+1:36:25
+fast as possible. And it's all built on trusted platform, software, and OEM
+1:36:30
+partnerships that enterprises rely on every single day. Now,
+1:36:37
+everything I just shared comes down to one goal for us, and that's helping customers deploy AI where it creates the
+1:36:44
+most value for them, whether it's in the cloud, on premise, or in the edge. At the edge. So, to bring this to life, I'd
+1:36:53
+like to welcome Jeremy Le, Chief Technology Officer at AT&T.
+1:37:01
+[music] [applause] Hey crew, good to see you.
+1:37:06
+Yeah, thanks for having me. Yeah, this is great. It's kind of a homecoming. I uh I grew up in the East Bay, so it's good to be back.
+1:37:13
+Yeah, fantastic. We really appreciate you joining us today. So, look, I think everyone knows AT&T is the largest
+1:37:20
+communications company, one of the largest in the world, and I'm sure all these pe half of half of them out there
+1:37:26
+probably have AT&T network right now. But you know hopefully more than half but yeah
+1:37:32
+[laughter] but um you know AI is touching way more than the network and and you and your
+1:37:37
+team are are really doing a fair amount of work uh driving it. So can you share with us sort of the opportunities you
+1:37:43
+approach you're working on and and uh your experience to date? Sure. Happy to. Um at AT&T we're now
+1:37:50
+burning about a trillion plus tokens per month. Uh and that number has gone up
+1:37:56
+pretty dramatically. it's moving up double digits and so this is now becoming very pervasive inside of the
+1:38:03
+enterprise. Uh we've got over a 100 gen a models in production across uh across
+1:38:09
+our enterprise as well. And those are stretching from, you know, things that I think a lot of folks are doing in
+1:38:15
+customer care, things that we're doing in fraud, but also things that you wouldn't necessarily think about like
+1:38:21
+where's the best place to place a cell tower or RAN that is the most effective
+1:38:26
+use of it inside of a network. So all of these things are happening across our
+1:38:31
+enterprise, but they're happening at a scale that is not necessarily normal. Uh
+1:38:36
+we get over 300,000 calls a day. the transcription of those calls is an
+1:38:42
+enormous workload and then driving the insights out of those calls that we then bring back to the business is another
+1:38:47
+set of insights. So, it's a it's a really an interesting thing and now we're beginning to actually rebuild
+1:38:54
+entire workflows inside of the company beyond just the point use of a use case.
+1:38:59
+Uh so as we think about HR as we think about finance and we think about different kinds of things that each of
+1:39:05
+those organizations do cash forecasting things that we do on onboarding employees as examples we're now
+1:39:12
+identifying those entire workloads. Yeah. So [clears throat] it is you know we work closely with your
+1:39:18
+team and and we've had many conversations. It's it's truly amazing the number of actual uh you know uh
+1:39:25
+opportunities you're addressing with AI. So can you know super broad range of use. So can you just explain sort of how
+1:39:32
+what are the key learnings in moving these to AI at enterprise scale and then
+1:39:38
+maybe a bit on what we've done together. Sure. Uh I mean I'll start at at a place
+1:39:43
+that I don't think everybody starts from here which is the human. Um you need
+1:39:49
+worldclass teams in order to do this and you need people that think in workflows.
+1:39:54
+There's an enormous amount of what I call racing from stoplight to stoplight. Um folks are going from zero to 100 and
+1:40:01
+then they hit the next stage of the workflow and then there's a red light and they haven't worked their way all the way through that. So I would start
+1:40:08
+with people and the quality of the people that you that you uh that you really have across your enterprise in
+1:40:14
+order to do these things. The second point is we are big believers in data sovereignty and data sovereignty for us
+1:40:22
+means not being tied to a specific chipset not being tied to a specific
+1:40:27
+model or a specific set of development tools. You need as an enterprise to manage your data. Your data is your fuel
+1:40:34
+in terms of how you implement AI across that broader enterprise. What we've done
+1:40:39
+with AMD and AMD's been such a great partner in this is leveraging open- source models, leveraging GIF sets of
+1:40:46
+chipsets, building our own models, le training other models. We're one of the few companies in the world that's
+1:40:52
+actually post-trained a model on AMD and then been able to drive equivalency in
+1:40:58
+terms of performance and accuracy with other more expensive chipsets in the marketplace. So, as we have done that,
+1:41:04
+we've been able to drive down token cost essentially through moneyballing across all of these different models and
+1:41:11
+leveraging that human capital in a way that's made a big difference to our company. And so, increasingly, even
+1:41:17
+though token consumption is going up, we're able to manage that underlying token cost at enterprise scale, which is
+1:41:24
+not a small thing. Yeah, it's just it's a bunch of great work. Another key area that's that's
+1:41:30
+sort of groundbreaking which is exciting also is you're the first telecom company to actually train a model on AMD and
+1:41:37
+also you you're you're driving fully open source models in telecom. So tell us about that experience and why you you
+1:41:42
+felt like that was needed. We felt like the industry was moving down a path where folks were only going
+1:41:49
+to use closed source models to solve solutions. And while closed source models are an important ingredient in
+1:41:54
+that, we didn't want to lose sight of the fact that open source models were going to be a very significant part of the solution. So we we announced um what
+1:42:02
+we call 1.0, that's the open telco AI model a bit over a year ago or so now
+1:42:08
+and we had over 18 million downloads of that model since then. Um we're excited
+1:42:14
+to announce today the launch of hotel 2.0 um which is a more advanced set of models that we have trained on AMD and
+1:42:22
+we're now making that available via open source across uh the broader industry and it I think is going to give folks an
+1:42:28
+opportunity to see that not only do you need to think about leveraging models but you also need to think about
+1:42:34
+training those models and how they work across your enterprise. So that's just great. We we certainly
+1:42:40
+appreciate the partnership and you know I I we really feel like this is gerine to the conversation. It's exactly what
+1:42:46
+we've been talking about today and I just want to thank you again for joining us and and the partnership. Thank you. You're a big part of it.
+1:42:52
+Thank you. [applause]
+1:42:57
+Okay. So, let me close with one last point. We've established ourselves as a
+1:43:03
+leader in enterprise computing by listening to our customers and delivering the right solutions for their
+1:43:09
+work loads. Today, we're extending that leadership to help customers accelerate
+1:43:15
+their AI journey. This is our vision for powering AI everywhere.
+1:43:21
+And to expand a little bit beyond the data center into uh physical and and
+1:43:27
+client AI, it's my pleasure to introduce Mr. Jack Yun, who leads our computing
+1:43:33
+and graphics group. Thank you. [applause]
+1:43:40
+[music] Thank you, Dan. It's great to see so many friends, partners, and developers here in San
+1:43:46
+Francisco. Today, we have seen how Andy is building the found the compute foundation for AI in a data center. But
+1:43:54
+the full AI transformation requires two more ingredients. Intelligence that becomes personal and intelligence that
+1:44:01
+can understand and act in a physical world. Those are the two frontiers I want to explore with you here today.
+1:44:08
+Let's begin with personal AI. Enterprise AI is already reshaping the data center,
+1:44:14
+but Aentic AI will extend far beyond it. Agents are the next great productivity
+1:44:19
+multiplier. The jump from software that responds to software that completes
+1:44:24
+work. A personal agent can double what one person can do. A team of agents can
+1:44:30
+multiply that by 10. And as agents gain more capabilities often can grow
+1:44:35
+exponentially. But that promise has a compute consequence. Unlike a single AI
+1:44:40
+query as agent reasons, calls tools in accordance to other agents and run
+1:44:47
+non-stop. Agents become more capable and pervasive. So will token consumption.
+1:44:55
+Meaning that demand will require every layer of the computing ecosystem to scale together. Data centers remain the
+1:45:02
+foundation for front-ter AI in the most demanding workloads, but edge and client systems can extend that capacity,
+1:45:09
+putting more intelligence closer to where data is created in a work in where the work gets done. The PC is already
+1:45:17
+one of the most powerful compute engines ever placed in the hands of an individual across billions of devices.
+1:45:24
+Enormous computing capability is already deployed every single day. Yet its potential remains largely untapped.
+1:45:32
+Putting that capacity to work changed the economics of computing. More workloads can run on systems that ready
+1:45:38
+in place, reducing overall infrastructure costs and allowing data centers to focus on the largest most
+1:45:45
+demanding task. And local computing brings inherent advantages. Your data
+1:45:50
+stays with you. Your applications remain responsive and your system keeps working
+1:45:57
+even when your network does not. And thanks to a new generation of smaller,
+1:46:02
+more capable AI models, we're beginning to unlock that potential.
+1:46:07
+And the unlock is happening faster than anyone expected. Last August, GPOSS
+1:46:15
+needed 120 billion parameters to score 80 on GPQA.
+1:46:20
+Just seven months later, Quinn 3.5 scored even higher with only 9 billion
+1:46:27
+better performance with 13 times fewer parameters. This is not an incremental
+1:46:33
+improvement. It's a dramatic shift in the compute required to deliver advanced
+1:46:39
+intelligence. And this is a trend now an outlier. Smaller open models are closing
+1:46:45
+the front gap at extraordinary speed. Quinn 3.6 27 billion parameter mal now
+1:46:53
+outperforms leading frontier mouse from the previous generation on graduate
+1:46:58
+level reasoning at a fraction of the size and cost. That changes what is
+1:47:04
+possible. Workloads once reserved for the cloud can now run on pop compute engines
+1:47:12
+designed for personal AI compute. Let's map these model performance
+1:47:18
+breakthroughs to AMD platforms. Ryzen AI400
+1:47:23
+supports mouse up to 24 billion parameters, more than enough for quin
+1:47:29
+3.5, 9 billion with substantial headroom. Ryzen AI Max extends that capa
+1:47:36
+capacity to mouse as large as 200 billion parameters running natively on a
+1:47:41
+personal system. This is not reduced AI compressed to fit on a PC is a new class
+1:47:48
+of personal computing built to run powerful models where the work actually happens.
+1:47:55
+And this is exactly what led us to build Ryzen AI AI Halo. We wanted to give
+1:48:01
+developers a platform powerful enough to run these mouse locally, yet simple enough to use every day. With 120
+1:48:09
+gigabytes of unified memory and support for mouse up to 200 billion parameters,
+1:48:15
+developers can build, test, and iterate locally directly on their desk. Ryzen AI
+1:48:23
+Halo embodies the future of personal AI for everyone. A future that shortens the
+1:48:29
+distance between an idea and a working model. For developers, that means a
+1:48:34
+dramatically more efficient and optimized path from experimentation to
+1:48:40
+deployment. And as Vont showed earlier, Rockom.ai is making hardware programming
+1:48:46
+radically more accessible. developers can understand,
+1:48:51
+modify, and optimize code for Rockom, even without deep Rockom expertise. And
+1:48:58
+better yet, the same open software foundation extends across all of AMD's
+1:49:04
+hardware. Developers can use the frameworks and tools they already know, start locally on Ryzen AI Halo, and
+1:49:11
+scale across the full AMD compute platform without rebuilding their work.
+1:49:16
+And we're not stopping there. Today, we're expanding our partnership with HuggingFace to bring the open AI
+1:49:24
+ecosystem directly on Ryzen A Halo. Powerful compute only creates value when
+1:49:31
+developers can quickly access the right models, optimize them for the platform,
+1:49:37
+and turn them into real applications. Together, AMD and Hugging Face will
+1:49:42
+deliver Halo optimized performance for open models and gentic workflows.
+1:49:48
+[applause] How cool is that? [applause] And along
+1:49:54
+with co-engineer libraries and toolkits designed to help developers spend less time configuring infrastructure and more
+1:50:02
+time building. And later this year, every Verizon Ali Halo box will include
+1:50:08
+a full year of hugging face pro, putting the power of partnership in developers
+1:50:14
+hands from day one. Freedom and more power to the user.
+1:50:20
+This is how we accelerate innovation in the AI era. And we already pushing that
+1:50:27
+vision further with Gorgon Halo. And seeing is believing. Look at how
+1:50:33
+small and beautiful this box is. [applause]
+1:50:41
+We've increased unified memory from 128 to 192 gigabytes, the largest unified
+1:50:49
+memory pool in its class and increased mouse support from 200 billion to 300
+1:50:55
+billion parameters. Thank you, Laura.
+1:51:00
+[applause] And this is no longer limited to a single platform form factor together
+1:51:06
+with the world's leading OEMs. AMD now powers the broadest portfolio of personal AI systems from laptops and
+1:51:14
+workstations to many PCs and developer platforms. That means developers,
+1:51:20
+enterprises, and creators can choose the right system for the way they want to build and work. Personal AI is not a
+1:51:27
+concept, is a category and is available right now on AMD.
+1:51:34
+We now have all the pieces. Models are efficient enough. Hardware is powerful
+1:51:39
+enough. Software stack is open and ready. An open harnesses like Lemonade
+1:51:44
+Server can route workloads to the right model and right compute. The technology is here. The next challenge is taking it
+1:51:52
+from one developer's desk to thousands of user across an enterprise. Cisco sees
+1:51:57
+and believes in that future the same way we do. To take us deeper into how we turn that vision into enterprise scale
+1:52:04
+reality, please join me in welcoming to the stage G2 Patel, president and chief
+Cisco partnership
+1:52:09
+product officer at Cisco. [music] G2, how you doing?
+1:52:15
+How are you? You look great. Thank you for joining me here today. Congratulations. Thank you. Thank you.
+1:52:21
+Now G you and I talk how we're at inflection point and for the past few years industry has spent time just
+1:52:28
+building intelligence. The next phase is how we deploy this at scale enterprises.
+1:52:33
+You spent so much of your time talking to CIO technology leaders. What are they telling you? What's changing?
+1:52:39
+Well firstly it's a really exciting time to be alive in tech. And if you just take a step back right now and see
+1:52:45
+what's happening, there's actually a fundamental shift that's happening in the patterns of inferencing. So if you
+1:52:50
+think about the patterns of inferencing that existed during the chatbot era that was humanled, it was very very spiky.
+1:52:56
+You ask a question, you get an answer. What you're starting to see with agents is they're working 7 by 24. Um they're
+1:53:02
+they're they're very consumptive on bandwidth and on infrastructure. So you're starting to see a much more persistent pattern of kind of demand
+1:53:09
+signal for infrastructure. Right. You know, we usually um um joke around internally, humans click, but agents
+1:53:15
+swarm. Yes. You know, and so as you start to see this, what you're going to have is a
+1:53:20
+tremendous amount of um and there's there's two big concerns that are also there, which is one is every customer is
+1:53:27
+concerned about security and every cons every every customer is concerned about cost. So what you're starting to see happen is
+1:53:34
+inferencing is not just going to be limited to the data center. Inferencing is going to be distributed everywhere.
+1:53:40
+And there's a whole new class of computing that's emerging with this deskside computing that you're you just
+1:53:45
+announced where there's going to be inferencing that you're going to have a laptop or a desktop where humans work
+1:53:51
+and they might have a deskside computer where agents are kind of going out and running their jobs uh on behalf of
+1:53:57
+humans. So that's that's what we're seeing essentially and we're fully align G2 and that's exactly shift we're seeing know if AI is
+1:54:04
+moving closer to employees, comput has to move closer as well, right? The PC is no longer just a productivity device. It
+1:54:11
+becomes an intelligence node in the enterprise. But deploying intelligence everywhere creates a new trend for CIOS
+1:54:17
+that you and I talk about so much. We do. How do you operate thousand of these systems with the security, governance,
+1:54:24
+and control enterprises require G2? How is Amy and Cisco solving this? And how
+1:54:30
+what are we building together? Yeah, so this is a this is an exciting time because what you're starting to see is there's a few things that need to
+1:54:37
+really be done. You can't just go out and deploy your uh deskside computers uh
+1:54:42
+and hope that everything works out in the enterprise. You need to make sure that it's governed, it's managed. And so
+1:54:47
+there's a few things that are really important. Number one, you have to have an appropriate amount of network bandwidth to satiate the needs of the
+1:54:54
+agents that you um that you're going to run locally. So this notion of network infrastructure that can get modernized
+1:55:00
+uh to keep up with the needs that you're going to go out and generate is going to be very important. That's number one. Number two, like I said, every customer
+1:55:08
+is really worried about token costs and so we need to make sure that we can actually contain the costs of an agent's
+1:55:14
+consumption of tokens when it actually starts to go right up and down when needed. Exactly. Uh number three then is how do
+1:55:21
+we monitor agent behavior for safety and security so that if it does start to do things that we don't want it to do, we
+1:55:27
+can in runtime provide enforcement guardrails. And then fourthly, it's just the overall safety and security uh that
+1:55:34
+you need to have from an apparatus perspective to get this entire thing humming in the way that you want it to. Yes. G2 sc how you and I think very
+1:55:41
+alike. So I mean this the opportunity is not just bring at every device as you and I talk. How do we enable enterprise
+1:55:47
+to deploy manage and scale out with confidence? Why don't we take a look at what we've been building the past uh few
+1:55:53
+weeks and months? Yeah, it's it's exciting. So basically what we've done is there's a full stack
+1:55:58
+that you can start to think about. So what you you folks have done with Halo is you've got um you've got an isolated
+1:56:04
+secure agent sandbox, you've got intelligent routing, you've got an MCP
+1:56:09
+um you know kind of um um you know core set of integrations and then what we've done above that is we've made sure that
+1:56:16
+you have the right level of security policy enforcement. We've also got the the right level of observability so that
+1:56:23
+it's an end toend resilient infrastructure stack. So it's observability of how is your um um your
+1:56:29
+apparatus and the infrastructure working. Is the agent behavior being done in the right way? Can you observe
+1:56:35
+the agent behavior and are the tokconomics within the guidelines that you want them to be? Um and then what we
+1:56:42
+have is a single unified management plane, a control plane that
+1:56:48
+can look at every single um you know dimension that you have and be managed within one environment. And so that's
+1:56:54
+kind of the the full stack and we are really really excited about the partnership. Us too our teams love working with your
+1:57:00
+team G2. Now how's this all managed? How does the CO deploy this at scale? Yeah. So let's let's take a look at what
+1:57:05
+this looks like, right? Because what we would have is this is Cisco cloud control which is the overall management
+1:57:12
+plane. So if you happen to have um you know Halo devices on every desktop which
+1:57:17
+which it might actually get to uh what you want to make sure that you do is you are able to go out and manage um your
+1:57:25
+entire estate of not just your Halo fleet but also what you have running on
+1:57:30
+the data centers as well as what you have running in the cloud. So you can provide you can provide full visibility
+1:57:35
+for that entirety of the estate. And then once you've got that uh what we also have is this notion of how do we go
+1:57:42
+out and monitor tokconomics and so is um the agent behaving the way that it's
+1:57:48
+that it needs to behave or is the agent actually going out and being overly consumptive uh at which point you should
+1:57:55
+be able to isolate any individual Halo device so that you can make sure that you can quarantine it. No,
+1:58:00
+I love this. Then we actually see the return on invested capital. It could pay for itself in three or six months even even quicker.
+1:58:05
+Exactly. So what you see over here basically is you can tell how every single agent is performing and whether
+1:58:12
+or not they're consuming way too much, you know, kind of token cost and if they are, how do you actually contain the
+1:58:17
+cost as you're going through it? No, I love this G2. Now, everyone else is wondering when can they buy this?
+1:58:23
+When do when is this open for everyone? Well, the good news is you can buy the Halo um um already today. And then what
+1:58:30
+we're doing is we're making sure that we provide this entire management apparatus um that's currently in early
+1:58:37
+availability for a select set of customers but we'll have it in general availability in the US uh in early fall.
+1:58:45
+So we're excited to make sure that we can provide not just the compute but all of the apparatus that's needed to go out
+1:58:51
+and manage this so that you can have inference running in the cloud, you can have inference running in your data center privately or you can have
+1:58:57
+inference running on your desk side. G2, we're so grateful partnership with you and Cisco. We're so excited.
+1:59:03
+Thank you so much. Congratulations. Take care. Okay. Thank you. [applause]
+1:59:10
+What you just saw brings the vision scale AI seamlessly and securely from personal devices all the way to the
+1:59:16
+cloud. But in the age of AI, intellier
+1:59:23
+is where AI leaves the screen, enters the world and acts. That frontier is
+1:59:30
+physical AI, the ultimate application of agentic frameworks. In a digital world,
+1:59:36
+an agent plans and completes a task. In a physical world, it must also sense
+1:59:41
+motion, navigate uncertainty, and protect people. Here, intelligence does
+1:59:48
+not just produce an answer. It produces an action. When answers become actions,
+1:59:53
+latency becomes safety and reliability becomes trust. That is why the promise
+1:59:59
+of physical is so incredibly powerful. is not about replacing human potential.
+2:00:04
+It's about amplifying it. Giving surgeons greater precision, keeping
+2:00:10
+people out of harm's way, making farms more productive, supply chains more
+2:00:15
+resilient, and factories more efficient. The best technology does not make people
+2:00:21
+smaller. It gives a much greater reach. For more than 20 years, Andy has helped
+2:00:27
+power the core capabilities that robotics depend on. From sensing and functional safety to deterministic
+2:00:34
+control and precision motion, that foundation is already trusted by many of
+2:00:39
+the companies to find the future robotics. And now that foundation is
+2:00:44
+coming alive in extraordinary ways. These are not machines flying a script.
+2:00:50
+They are beginning to perceive the world, reason through uncertainty, and act with purpose. The promise of
+2:00:57
+physical AI already in motion. The next era of robotics is not
+2:01:03
+programmed. It is autonomous. While traditional robots execute instructions,
+2:01:08
+autonomous robots are given an objective. And from there, they determine how to achieve it. And they do
+2:01:15
+this all at once and all in real time. The robot must orchestrate intelligence,
+2:01:22
+motion, and safety continuously. And every part must respond at the speed of
+2:01:28
+the world around it. that demands an entirely new kind of robotics brain. And to solve that, we
+2:01:36
+rethought its architecture from the ground up. Today, I'm so excited to introduce the AMD Korea AI system on
+2:01:44
+module powered by Ryzen AI embedded X100.
+2:01:50
+[applause] It brings CPU, GPU, NPU, and unified
+2:01:59
+memory together in one compact openstandard architecture. This allows
+2:02:04
+robots to process perception. AI reasoning and do it all
+2:02:09
+simultaneously and in real time. The architecture is different, but the
+2:02:15
+results are decisive. In third-party testing against Nvidia Jensen Thor,
+2:02:21
+Korea delivers 3.4 times better real-time results, 2.3 times more
+2:02:27
+concurrent agents, and 1.6 times more CPU capacity. That means faster
+2:02:34
+reactions and greater headroom for the robot to take on more complex work. And
+2:02:39
+all this without compromising control or safety. But to find the next era of robotics
+2:02:47
+takes more than a powerful brain. Developers need a complete path from
+2:02:52
+idea to a machine operating in the real world. Today
+2:02:58
+we are introducing AMD's Korea AI robot developer platform.
+2:03:04
+[applause]
+2:03:09
+the industry's first turnkey, open fully integrative robotic system.
+2:03:17
+Thank you, Laura, so much. [applause]
+2:03:23
+At the center is the Crea AI system on module paired with a robotics carrier
+2:03:29
+card designed for sensing and connectivity. Built on Rockum and Ross
+2:03:34
+2, this platform gives developers everything they need to move from concept to prototype in days. And the
+2:03:41
+same module carries forward into production with no migration or redesign
+2:03:46
+needed at the finish line. You can build faster and move from imagination to
+2:03:51
+deployment with absolute confidence. This is the breath only Andy can bring
+2:03:57
+to Tom's robotics. From the first signal to the final motion, AMD crea for the
+2:04:03
+brain, versal for the spine, zinc for the joints, and Spartan for the sensors.
+2:04:11
+Each layer purpose-built for its role, working together in one intelligent
+2:04:16
+system, connecting perception and highlevel reasoning to real time
+2:04:21
+control. The future will not be defined by one model, one machine or one company. It
+2:04:29
+will be built in the open across silicon software systems and an ecosystem moving
+2:04:37
+forward together from the cloud to the PC and now into the physical world. Andy
+2:04:43
+continues to build a compute foundation for intelligence everywhere. with laser
+2:04:48
+focus on the future. So our solution can augment and expand what people are capable of achieving. The next era of AI
+2:04:56
+will not just unfold behind a screen. It will unfold in the world around us. And now to bring it all together and take us
+2:05:03
+to what comes next, please welcome back Lisa to the stage. [applause]
+AMD's AI roadmap
+2:05:09
+[music] Hi Lisa. [applause]
+2:05:15
+All right. Thank you, Jack. And it's been a big day. We've covered a lot from
+2:05:21
+our data center products to enterprise AI to personal and physical AI and the software that ties it all together. This
+2:05:28
+is the strongest product portfolio in our history. And I we believe it's the strongest portfolio in the industry. But
+2:05:35
+it's really just the beginning because what our customers count on is not just today. They really count on us looking
+2:05:42
+ahead and pushing the bleeding edge of technology. So I want to spend the last few minutes giving you a preview of what
+2:05:48
+we're working on. Starting with CPUs. In 2028, we're going to introduce Florence.
+2:05:55
+Florence brings the nextG 77 cores. It's leading edge process technology. It's a
+2:06:01
+new set of AI compute extensions to really ensure that we have all of the AI capability and it supports the latest
+2:06:08
+memory technologies. And we're not stopping there. We're already deep in development of Revena, our eighth
+2:06:15
+generation epic family built on Zen8. And that family is already well under development for 2030.
+2:06:22
+Now to give you a little bit of a flavor, Florence is again going to extend our biggest advantage with Epic.
+2:06:28
+It's all about product breath and having the right foundation and also the right
+2:06:34
+family for each workload. So you have Florence, you have Ferrara, you have Fidenza and it's really built on a full
+2:06:42
+family of CPUs that is optimized for these different workloads. That's giving the customers the right CPU for every
+2:06:49
+workload and that is our commitment with Epic. Now moving to Instinct, we are
+2:06:55
+continuing our cadence of delivering a new generation every single year. MI500
+2:07:02
+brings next generation HBM. It brings a larger scale up domain because scaling
+2:07:08
+is everything. And it introduced new copper and optical interconnects. And
+2:07:13
+with MI600, it's powered by our CDNA next architecture and it's already deep in development for 2028.
+2:07:21
+Now, to give you an idea of what we see from a performance standpoint, every
+2:07:26
+generation of Instinct has delivered a major big step up in performance. And with MI455, we've talked a lot about it
+2:07:34
+delivering 35 times more inference throughput compared to MI355,
+2:07:39
+but we're really, really excited about MI500. What we see is another opportunity to take a major step up and
+2:07:47
+actually bend the curve again. So MI500 will deliver the largest generational
+2:07:52
+leap in the history of Instinct, putting us on track to deliver more than 2,000 times higher inference throughput in
+2:07:59
+just four years. [applause]
+2:08:07
+Now what I can tell you is we are working with a number of our customers already on this design point. MI500 is
+2:08:14
+super exciting and the feedback we're getting from customers is just fantastic. Now put the CPU, GPU and the
+2:08:22
+networking road maps together and you can now see a complete cadence of our rack scale systems. So you should expect
+2:08:29
+from AMD a new Helios system every year delivering more performance, more
+2:08:35
+capacity so that we can run larger models, more agents at better total cost of ownership and that gives our
+2:08:42
+customers the complete predictable roadmap to plan and scale their infrastructure for years to come. So
+2:08:49
+lots of exciting things in store over the next few years. So with that, let me
+2:08:54
+wrap this up for this morning today. I hope you saw a little bit about how, you
+2:09:00
+know, we're really looking at a uh that compute from every angle. So, every aspect of AI compute, whether you're
+2:09:06
+talking about Helios or MI455 or Venice for the world's largest AI systems, or
+2:09:12
+you're talking about MI430 and MI350 for sovereign and enterprise AI, you saw the
+2:09:18
+passion in Bombsy with Rockom AI. Uh it's so good to see how much has come through that platform in terms of making
+Closing remarks
+2:09:25
+developers make it much much easier for developers to assess access the AMD platform. And then you know Jack talked
+2:09:32
+about Gorgon Halo and our new Korea AI platforms really bringing together the leadership of the endtoend AI story
+2:09:39
+including PCs and physical AI. So, lots of new information, but I want to say a
+2:09:45
+very, very special thank you to all of our partners who joined us today because it is really through those partnerships
+2:09:52
+that we're able to do the most amazing things uh together. So, if I just leave you with a final thought,
+2:09:59
+when I think about where AI is today, the biggest change that we see is we're
+2:10:05
+no longer talking about what might be possible. We're actually seeing how AI
+2:10:10
+can have real and significant impact across every industry and every part of
+2:10:15
+our lives, our personal lives. And I have to say that I've spent my entire career in tech believing that high
+2:10:23
+performance computing can make the world an incredibly better place. And I have never ever believed that more than I do
+2:10:30
+today. At AMD, what we're focused on is building the technology, the road maps,
+2:10:35
+and the partnerships. And there's never been a more exciting moment than today
+2:10:41
+for our 30,000 plus engineers. This is really the next phase of AI. This is
+2:10:46
+where we make AI give the AI the opportunity with all the tools and all
+2:10:52
+the capabilities to really bring meaningful real world impact. And I can tell you I could not be more excited to
+2:10:59
+build all of that together with you, our ecosystem. Thank you so much for joining
+2:11:04
+us today.

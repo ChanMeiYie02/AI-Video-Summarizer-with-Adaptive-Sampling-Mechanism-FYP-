@@ -1,0 +1,21 @@
+{
+    "id": "eqvuu2ukh2mez5ckp2jc5ah36psdml6q",
+    "title": "Computer Mediated Transactions",
+    "url": "http://videolectures.net/ijcai09_varian_cmt/",
+    "info": {
+        "author": [
+            "Hal R. Varian, Google, Inc."
+        ],
+        "published": "July 22, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Computers",
+            "Top->Social Sciences->Economics"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 647,
+    "num_clips_with_summary": 28,
+    "num_gt_summary_sentences": 72,
+    "ground_truth_summary_length_chars": 8056
+}

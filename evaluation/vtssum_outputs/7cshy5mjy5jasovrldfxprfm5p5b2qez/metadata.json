@@ -1,0 +1,22 @@
+{
+    "id": "7cshy5mjy5jasovrldfxprfm5p5b2qez",
+    "title": "Deep siamese neural network for prediction of long-range interactions in chromatin",
+    "url": "http://videolectures.net/deeplearning2016_chicco_neural_network/",
+    "info": {
+        "author": [
+            "Davide Chicco, Princess Margaret Cancer Centre"
+        ],
+        "published": "Aug. 23, 2016",
+        "recorded": "August 2016",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 114,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 3268
+}

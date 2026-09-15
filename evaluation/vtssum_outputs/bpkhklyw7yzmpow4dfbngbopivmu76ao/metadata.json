@@ -1,0 +1,21 @@
+{
+    "id": "bpkhklyw7yzmpow4dfbngbopivmu76ao",
+    "title": "HPC Python Programming (Part 1)",
+    "url": "http://videolectures.net/ihpcss2016_van_zon_HPC_python_part1/",
+    "info": {
+        "author": [
+            "Ramses van Zon, University of Toronto"
+        ],
+        "published": "Sept. 19, 2016",
+        "recorded": "June 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computers->Programming"
+        ]
+    },
+    "num_segments": 69,
+    "num_sentences": 1047,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 53,
+    "ground_truth_summary_length_chars": 5532
+}

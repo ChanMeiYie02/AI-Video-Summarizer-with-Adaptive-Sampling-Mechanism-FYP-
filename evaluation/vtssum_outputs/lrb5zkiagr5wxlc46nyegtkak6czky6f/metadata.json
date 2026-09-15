@@ -1,0 +1,21 @@
+{
+    "id": "lrb5zkiagr5wxlc46nyegtkak6czky6f",
+    "title": "Bioplarch: Starch Based Bioplastic As a Construction Material",
+    "url": "http://videolectures.net/matchmaking2016_gokce_ozdamar_ideas/",
+    "info": {
+        "author": [
+            "Esen Gökçe Özdamar, Namik Kemal University (NKU)"
+        ],
+        "published": "March 21, 2016",
+        "recorded": "February 2016",
+        "category": [
+            "Top->Architecture",
+            "Top->Arts->Visual Arts->Design"
+        ]
+    },
+    "num_segments": 35,
+    "num_sentences": 190,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2388
+}

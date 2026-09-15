@@ -1,0 +1,20 @@
+{
+    "id": "fv375auvff4d3sm6ht7snfnhawi7anc4",
+    "title": "Structural properties of magnetic nanoparticles",
+    "url": "http://videolectures.net/slonano07_makovec_spm/",
+    "info": {
+        "author": [
+            "Darko Makovec, Jožef Stefan Institute"
+        ],
+        "published": "Jan. 18, 2008",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Technology->Nanotechnology->Nanomaterials->Nanoparticles"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 183,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1597
+}

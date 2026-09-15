@@ -1,0 +1,21 @@
+{
+    "id": "fvmgq5rix5kjso4izsizg3evgwluk7n4",
+    "title": "On the Quantitative Analysis of Craniofacial Asymmetry in 3D",
+    "url": "http://videolectures.net/fgconference2015_sukno_craniofacial_asymmetry/",
+    "info": {
+        "author": [
+            "Federico Sukno, Department of Information and Communication Technologies, Pompeu Fabra University"
+        ],
+        "published": "July 2, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Computer Vision->Face & Gesture Analysis"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 135,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 1194
+}

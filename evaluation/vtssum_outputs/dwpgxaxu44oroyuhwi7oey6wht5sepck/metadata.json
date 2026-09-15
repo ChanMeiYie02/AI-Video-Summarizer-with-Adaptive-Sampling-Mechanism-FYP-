@@ -1,0 +1,21 @@
+{
+    "id": "dwpgxaxu44oroyuhwi7oey6wht5sepck",
+    "title": "Supervised Learning of Graph Structure",
+    "url": "http://videolectures.net/simbad2011_rossi_structure/",
+    "info": {
+        "author": [
+            "Luca Rossi, Ca' Foscari University of Venice"
+        ],
+        "published": "Oct. 17, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Supervised Learning",
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 204,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 6036
+}

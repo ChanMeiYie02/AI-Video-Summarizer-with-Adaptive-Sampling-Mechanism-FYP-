@@ -1,0 +1,20 @@
+{
+    "id": "3ydmjj3x25lukbdsh44n2bvdf53k7jnc",
+    "title": "Coarse-to-Fine Auto-encoder Networks (CFAN) for Real-time Face Alignment",
+    "url": "http://videolectures.net/eccv2014_zhang_face_alignment/",
+    "info": {
+        "author": [
+            "Jie Zhang, Institute of Computing Technology, Chinese Academy of Sciences"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 35,
+    "num_sentences": 135,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 380
+}

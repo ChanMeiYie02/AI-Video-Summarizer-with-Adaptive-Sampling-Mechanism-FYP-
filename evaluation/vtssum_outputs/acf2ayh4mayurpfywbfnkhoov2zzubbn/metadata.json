@@ -1,0 +1,21 @@
+{
+    "id": "acf2ayh4mayurpfywbfnkhoov2zzubbn",
+    "title": "Masitinib for the treatment of amyotrophic lateral sclerosis (ALS): preclinical overview",
+    "url": "http://videolectures.net/encals2017_barbeito_masitinib_preclinical_overview/",
+    "info": {
+        "author": [
+            "Luis Barbeito, Institut Pasteur de Montevideo"
+        ],
+        "published": "July 21, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Medicine",
+            "Top->Medicine->Neuroscience"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 239,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2861
+}

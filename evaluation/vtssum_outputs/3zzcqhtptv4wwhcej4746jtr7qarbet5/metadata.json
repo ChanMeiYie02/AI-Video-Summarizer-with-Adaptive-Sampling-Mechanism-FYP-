@@ -1,0 +1,21 @@
+{
+    "id": "3zzcqhtptv4wwhcej4746jtr7qarbet5",
+    "title": "EW-Shopp: Supporting Event and Weather-based Data Analytics and Marketing along the Shopper Journey",
+    "url": "http://videolectures.net/eswc2017_palmonari_shopper_journey/",
+    "info": {
+        "author": [
+            "Matteo Palmonari, University of Milano - Bicocca"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 7,
+    "num_sentences": 44,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 2030
+}

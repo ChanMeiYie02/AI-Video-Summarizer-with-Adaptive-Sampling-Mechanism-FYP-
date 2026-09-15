@@ -1,0 +1,20 @@
+{
+    "id": "fbuevdkfgsbi35jlyekew6o7ithmpdvd",
+    "title": "Multiscale Geometry and Harmonic Analysis of Data Bases",
+    "url": "http://videolectures.net/mlss09us_coifman_mghadb/",
+    "info": {
+        "author": [
+            "Ronald Coifman, Department of Computer Science, Yale University"
+        ],
+        "published": "July 30, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Computational Learning Theory"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 558,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1430
+}

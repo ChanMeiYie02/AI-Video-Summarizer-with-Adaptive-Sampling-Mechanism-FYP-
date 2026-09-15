@@ -1,0 +1,21 @@
+{
+    "id": "h7dwtx3h2xfz62npabjex46untyczskw",
+    "title": "Opening the Black Box of Ontology Matching",
+    "url": "http://videolectures.net/eswc2013_todorov_ontology_matching/",
+    "info": {
+        "author": [
+            "Konstantin Todorov, Montpellier Laboratory of Informatics, Robotics, and Microelectronics (LIRMM), University of Montpellier 2"
+        ],
+        "published": "July 8, 2013",
+        "recorded": "May 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 250,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 4015
+}

@@ -1,0 +1,20 @@
+{
+    "id": "mkji2iqvxvx5htzwnxibuqnpgyjvou6e",
+    "title": "Granger Causality and Dynamic Structural Systems",
+    "url": "http://videolectures.net/nips09_white_gcdss/",
+    "info": {
+        "author": [
+            "Halbert White, UC San Diego"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 272,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3126
+}

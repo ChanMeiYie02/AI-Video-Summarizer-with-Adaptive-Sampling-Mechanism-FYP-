@@ -1,0 +1,20 @@
+{
+    "id": "vtsahkjdo75po5mp5g4lwsb7b6cbbd4c",
+    "title": "Learning to Reconstruct 3D Human Pose and Motion from Silhouettes",
+    "url": "http://videolectures.net/lmcv04_agarwal_lr3hp/",
+    "info": {
+        "author": [
+            "Ankur Agarwal, INRIA - The French National Institute for Research in Computer Science and Control"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "May 2004",
+        "category": [
+            "Top->Computer Science->Image Analysis"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 323,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 3849
+}

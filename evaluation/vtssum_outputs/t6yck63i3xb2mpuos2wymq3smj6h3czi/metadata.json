@@ -1,0 +1,24 @@
+{
+    "id": "t6yck63i3xb2mpuos2wymq3smj6h3czi",
+    "title": "Data Mining for Anomaly Detection",
+    "url": "http://videolectures.net/ecmlpkdd08_lazarevic_dmfa/",
+    "info": {
+        "author": [
+            "Jaideep Srivastava, University of Minnesota",
+            "Varun Chandola, University of Minnesota",
+            "Vipin Kumar, Department of Computer Science and Engineering, University of Minnesota",
+            "Aleksandar Lazarevic, United Technologies Research Center",
+            "Arindam Banerjee, Department of Computer Science and Engineering, University of Minnesota"
+        ],
+        "published": "Oct. 10, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 601,
+    "num_clips_with_summary": 39,
+    "num_gt_summary_sentences": 114,
+    "ground_truth_summary_length_chars": 11723
+}

@@ -1,0 +1,20 @@
+{
+    "id": "j5oy3kouka73rzqdi4lfcqqccvxmmtrt",
+    "title": "Value innovation for the logistic sector",
+    "url": "http://videolectures.net/ekom08_paganelli_vil/",
+    "info": {
+        "author": [
+            "Paolo Paganelli, Insiel SpA"
+        ],
+        "published": "Feb. 20, 2008",
+        "recorded": "February 2008",
+        "category": [
+            "Top->Business->Transportation and Logistics"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 359,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 62,
+    "ground_truth_summary_length_chars": 4433
+}

@@ -1,0 +1,80 @@
+[0.0s - 29.0s]
+I will be talking about building flexible and engaging content collections in a breeze. So I hope you will do this afterwards, so I finish after 30 minutes and then you can start building connections. OK, so this is basically a work that has been funded by the European Commission as part of the MTI split plus project, which was a demonstration action that will help us to bring the results of research that we did. We did into into market. Sorry I will be. I have a call so I will try to speak. Clearly and loudly, but I don't know if you will hear everything. OK so my main.
+
+[29.0s - 58.0s]
+Storyline today is basically saying. Something about tax? Then how we misuse tax and how we combine them with XML and do fancy stuff so that you can. Manage and publish content online and mix it and master it. So that's what I'm going to say, and then I will show some examples and then of course we can have a question for discussion.
+
+[58.0s - 87.0s]
+So probably you all know Twitter I assume and but this guy in, let's say 2007 said OK, how do you feel about using pound for groups as in barcamp? And basically with what he did, he took over a concept that was in newsgroup. This found in the old web old Internet newsgroup and made it a hashtag. So he invented the hashtag annotation for a group or a keyword. And of course.
+
+[87.0s - 116.0s]
+You also know Twitter and this username. So this is actually a user. This annotation for a user is attack for a user. And not only Twitter has this, but also Facebook copied. The same thing. Mid Europe there is a user in Facebook.
+
+[116.0s - 145.0s]
+And what we thought is another notation we invented. Actually location annotation for a location. So we have a social network ourselves called follow the place.com where I invite you to go and share your best photos. Not all photos, only your best photos. And if you look there then you basically see this notation here. Rest here Italy. This means actually that this picture is. Located there. And using this notation weagel tag this photo automatically. So a nice way to give back your large collection of photos if you know where you took them.
+
+[145.0s - 174.0s]
+And what's next? I suspect there will be more coming out of it, like Copyright, legislation, fees, Compton, whatever. We don't know, but what we actually see.
+
+[174.0s - 203.0s]
+Is that people use action tags like this small startup chair. If I had a small announcement in September 2013 and Matchable found it. Very interesting to post action tax so you can basically on Twitter use hashtag by or vote or give and buy something. Vote or give something away. So it's an actiontec it's attack that's basically associated with an action. So we said OK, people are started doing this. So what are we going?
+
+[203.0s - 232.0s]
+To do. So we invented an action tag for us, which is we we call it a collection tag. A pulse. So something that actually says this item goes to a collection. Pizza collection tag. That also is connected to layout, so a pulse is a collection track connected to a layout. And we have this kind of, let's say, pulse Pinboard over there. So. That's what we invented a little.
+
+[232.0s - 261.0s]
+So you could then start writing things like this photo of a work from Mona in an exhibition taking place in the Ville News. Whatever museum sawing trees, public domain and legislation request, pin board, or OK, it's a bit odd, but then you can start rendering and made it a bit more nicer looking like this. So we actually take a lot of information that is stacked in and then render it and put it in nice layout and make it more browsable. Easier to treat.
+
+[261.0s - 290.0s]
+But you say, is this not already there? Yeah, might be, and I think it is. We used XML and it is on the back end of what we do and when we actually have structured data like let's say a person applies attacker Copyright apples and you know hashtag collection everything can be can be explained. There are six ML but what is the problem then?
+
+[290.0s - 319.0s]
+The problem is that. Just abstract from the social networks. Still we live in this world that there is the content is consumed within sealers is not available. There are not so many API's out of that you can query, so it's still there.
+
+[319.0s - 348.0s]
+And there are also technologies out like RDF link data were mentioned previously. Semantic web, but still they have not. Took off as they should. So what we're doing here? So we actually said OK.
+
+[348.0s - 377.0s]
+Let's start with simple idea of having a structured data items. Represented in XML. What can you do with this? We are more visual person so we just imagine this orange rectangular canvas. Something you can start drawing and putting elements in. We are we are developing for the web so we actually like this canvas approach so you can start take the title and put it there. We can be fine using this XML element layout in a position for the title and then you can do this for the description too and for the Copyright and author and whatever tax and for the file. So you can basically take this. Item with this notation and show it somewhere. And together with some magic, of course, because it doesn't get automatically. So there is a bit of magic involved here. I will tell later what this magic is about, but this is what you can do, and not only on this nice layout you can.
+
+[377.0s - 406.0s]
+Side that you have heavy rain again to arrange everything is accurate. Or
+
+[406.0s - 435.0s]
+Arrange everything as a feed so that basically things are flowing after the other or.
+
+[435.0s - 464.0s]
+Compose in any story. So that you start with the create field, we can you have the freedom to do whatever you want with the content. So as long as the content as long the content is presented in this XML notation.
+
+[464.0s - 493.0s]
+So let's zoom into file. So this is, you know, we talk about files primarily, so we actually what we do with the magic is that we take the file, extract thumbnails, make low resolution things, stream it, make a stream version. So we do a lot of processing on the back. But what we gain here is basically a granular way to represent files that is basically coded in this semester.
+
+[493.0s - 522.0s]
+And let's look into piles piles. As we said, our collections that have a specific layout so apols could be a pinboard. Everything that is there, a highlight, A blog, weblogs, impulsivity, and a Gallery magazine, or any type of an exhibition. So again, this is a. An abstract way to represent layouts and publish items. So why do I say this?
+
+[522.0s - 551.0s]
+Everything because I would like to sum up now and basically then go into what you can do with it. So so we give basically responsive web based publishing layouts which are the pulses together with the power of structured data. And this open XML based interfaces and some magic to add, edit, transcode, command render model, connecting zone index and then we give you back the freedom to do anything you want with content you with your content. So this is basically what is platform is about and we actually develop this into a.
+
+[551.0s - 580.0s]
+Which we call on media. It's a web based ecosystem to mix and master content in one place.
+
+[580.0s - 609.0s]
+So what is in for you? So what you can do with it? And then I will go to more applications. You in this learning domain so you can pay the create living collections of content. I don't speak about learning content, it could be learning content tool so that you can add yourself, modify, edit, let others add, modify, edit tag. As you need, you can reuse and repurpose content in different. As you see fit. So for this specific type of audience and for this specific type of lecture you can engage with your with your audience and let them comment and upload their own content. Ask questions. Give it back and you do this by. Developing ones for every device. For desktops, mobiles, tablets, everywhere.
+
+[609.0s - 638.0s]
+So education applications indication an and learning, so you spell sisters learning modules so you have a bit of content that you want to do. Make available on the web. You publish on the web actually and then you can put them in a pulse that as we said, was a pinboard or highlights or a block. In this style, you can build up communities in. To share progress or give feedback, ask questions. If you want a more extended version of a forum, but then that goes back to your original content that is attached to your original content. You can add social media so that you start engaging the outside and connect the outside with the insight. Those are basically who are on the course on on on the task with the external world. You can create additional media to a specific topic as you see fit, and you can do much more things of it. So we are open to hear your ideas. So so.
+
+[638.0s - 667.0s]
+Examples. This is a collection. Off, let's say opera. Pieces um where with let's say composer and the CD's or let's say the compositions of the person and then and then you can basically click and hear it. You know, connected with others and command and so. On the one side, on the other side is a collection of videos with additional content that you are don't open that you can share.
+
+[667.0s - 696.0s]
+This again is a is a board of composers. From the Contemporary Music Center in Ireland. So more more contemporary composers where you can link to their biography to the things that they did to the things that they have composed and so you can play it. You can play everything and and experience it.
+
+[696.0s - 725.0s]
+This is something we did for this conference actually, and I hope it will be on the event website soon. Is an aggregation of social media on this conference. And you know, I hope that it will be in the in the website soon, but we did also something else for a much larger event like.
+
+[725.0s - 754.0s]
+With ICT 2013 event like you probably know. In that that was in the news last week. You can have a look on this actually 2015 event. Looking at this website down there. So I'm just going to show this website now in a bit more interactive way. Going life, you know, we don't care, we don't, we don't we don't? We are not afraid of going live because the systems work and. You of you know what insights you can gain on using the system. Of course the examples are more. Let's say content not learning content, but I'm sure you can imagine that you can add learning Continental. So let's see. I have it prepared here. So basically this is this is the ICT 2013. We name it pulse. It's everything from specific actors. On social media. Home gift excuse me. I'm not familiar with this operating system, so then you see here the you know, a digital edge and another person who basically treated on a specific hashtag. What they have said. What they have said. And you know what? Whatever they were tweeting about. What tax they were using? And what tax were using? So you basically have a kind of an aggregation of things that happened around an event, an aggregation of things that are happening around accountant basis. That could be all types of content are. So what you can see from here is a bit of, let's say, insight is that Nelly Crush, the digital agenda Commissioner here, Nelly Cruz was mentioned 987 eight 981 times. So basically you click on that occurs, and then you basically see that. No, in which occasionally occurs was mentioned. And you can, you know, see what the digital agenda you, basically their hair, hair. Their area in the Commission said about nearly curse. Another nice example is that you see what was the most trending thing here. If you look at the tax then you see OK, except the usual tax you know, actually 2013 or so. And then you see big Data. Big Data was the most trending hashtag in this conference, so people were excited about big Data and this is how it works. And then you can see who said something about big Data and what were the interesting stuff. And then and then. OK, what Nelly curses? I said about big Data that's interesting because she is advocating that topic. So then you see what Nelly Cruz was said are saying about big Data. OK, this is purely social content, so let's look at something that is more. A mix of social content plus my own content, and this is my personal pin board, so it's everything I treat OK. We can do not only Twitter. We can do Facebook, YouTube, slide, share, Flickr, Instagram, whatever, you name it, it's everything that has an API. We can take it and bring it there. So this is what I treated here and I mixed it with some content that I have. So I go here on type and say, OK so. 20 photos that they have uploaded over there. And then you see some you know, abstract painting I did. Maybe not that successful compared to what others did. So I click on Earth and then you basically see some things that are art related. The great mystery of Alfred Johnson and soon. Imagine that this could be a specific topic on. Let's say you're not learning modular. OK. So what I can do is take social content, mix it with my with my own content that I have, and basically do collections out of it. Everything that you see here every click I did. It's basically a collection that I can take out of this. And put it on my website. We don't want this to be, you know. Another social network of place where people go. We want this to be part of the website of the host website that is hosted somewhere that people actually engage with the originator of the content. Not not with me. So we don't want to be another Facebook. We could turn it into likes and whatever, but we don't want it. So we want basically to give people the freedom that they take the corner that they own and make something out of it. So any click. So I just clicked here on Earth. Or photo so I just click on photo and then I basically I can take this collection and then put it on my website. It takes the layout of the website and so on. If I put another photo on this collection it will dynamically update my website. So my website will be always up to date, so I can basically generate a bit of more engagement. And if I put another item learning item on this pulse then it will be there so I can basically steer in this way. Also engagement with the audience. OK, this is what I mainly wanted to say. On how we use this. Tax and other things, so I.
+
+[754.0s - 783.0s]
+This is my last slide. So I would like to thank you for your attention. Just summarizing what we did, so we're opening up content and basically we allow you to create profitable living collections. We store them temporarily if you want or permanently on the web on the cloud. But we what we are proud of. We allow you to take it out of there and put it on your own website. And that's it. Check it out on video.com. Thank you very much.

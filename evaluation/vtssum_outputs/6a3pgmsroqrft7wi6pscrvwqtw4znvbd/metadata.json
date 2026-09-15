@@ -1,0 +1,21 @@
+{
+    "id": "6a3pgmsroqrft7wi6pscrvwqtw4znvbd",
+    "title": "Exploring City Structure from Georeferenced Photos Using Graph Centrality Measures",
+    "url": "http://videolectures.net/ecmlpkdd2011_vrotsou_graph/",
+    "info": {
+        "author": [
+            "Katerina Vrotsou, Fraunhofer IAIS"
+        ],
+        "published": "Oct. 3, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Mathematics->Graph Theory",
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 11,
+    "num_sentences": 47,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 330
+}

@@ -1,0 +1,20 @@
+{
+    "id": "wxpmmun4g6xvuf55cfmx6cijtvglpp5t",
+    "title": "Sentiment of Emojis",
+    "url": "http://videolectures.net/single_kralj_novak_emojis/",
+    "info": {
+        "author": [
+            "Petra Kralj Novak, Department of Knowledge Technologies, Jožef Stefan Institute"
+        ],
+        "published": "Oct. 5, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Social Media"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 384,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 37,
+    "ground_truth_summary_length_chars": 3311
+}

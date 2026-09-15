@@ -1,0 +1,20 @@
+{
+    "id": "26g6psjua4czlgwv4ortua7nymlqf3bg",
+    "title": "Scalable Graph Clustering Using Stochastic Flows: Applications to Community Discovery",
+    "url": "http://videolectures.net/kdd09_satuluri_sgcusfacd/",
+    "info": {
+        "author": [
+            "Venu Satuluri, Ohio State University"
+        ],
+        "published": "Sept. 14, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Computer Science->Web Mining"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 109,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2796
+}

@@ -1,0 +1,21 @@
+{
+    "id": "a2q2twz5wmombzyrvt3v7bnc2tfrn5qf",
+    "title": "Parameter Estimation of ODE's with Regression Splines: Application to Biological Networks",
+    "url": "http://videolectures.net/pesb07_brunel_peo/",
+    "info": {
+        "author": [
+            "Nicolas Brunel, IBISC laboratory, Université Evry Val d'Essonne"
+        ],
+        "published": "April 4, 2007",
+        "recorded": "March 2007",
+        "category": [
+            "Top->Mathematics->Statistics",
+            "Top->Biology"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 148,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 2226
+}

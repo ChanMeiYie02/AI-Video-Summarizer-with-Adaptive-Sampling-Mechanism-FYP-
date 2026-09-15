@@ -1,0 +1,20 @@
+{
+    "id": "yxvdicqzy4uw6bjsdodltgcjmohxw7ed",
+    "title": "Domain-Independent Abstract Generation for Focused Meeting Summarization",
+    "url": "http://videolectures.net/acl2013_wang_summarization/",
+    "info": {
+        "author": [
+            "Lu Wang, Department of Computer Science, Cornell University"
+        ],
+        "published": "Oct. 2, 2013",
+        "recorded": "August 2013",
+        "category": [
+            "Top->Computer Science->Computational Linguistics"
+        ]
+    },
+    "num_segments": 51,
+    "num_sentences": 215,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 3265
+}

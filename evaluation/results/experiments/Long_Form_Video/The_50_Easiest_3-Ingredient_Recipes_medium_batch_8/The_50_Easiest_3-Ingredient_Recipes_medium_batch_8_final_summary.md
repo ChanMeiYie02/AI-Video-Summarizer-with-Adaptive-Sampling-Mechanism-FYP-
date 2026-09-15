@@ -1,0 +1,3 @@
+# Final Multimodal Video Summary
+
+The video begins by introducing a collection of simple, salt-free, and no-water recipes designed to combat instant gratification, contrasting the time commitment required for traditional Greek cuisine. The segment then transitions into a tutorial focusing on dessert techniques, demonstrating how to prepare frozen treats by mixing ingredients like ice cream, sweetened condensed milk, and vanilla bean paste, followed by whipping cold heavy cream into

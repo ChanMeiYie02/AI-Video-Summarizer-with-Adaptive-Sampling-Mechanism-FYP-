@@ -1,0 +1,21 @@
+{
+    "id": "vj5uv3qkxzl2q6qblea6rrkvggewd3el",
+    "title": "Psychology in Human-Computer Interaction",
+    "url": "http://videolectures.net/chi08_kieras_phc/",
+    "info": {
+        "author": [
+            "David Kieras, University of Michigan"
+        ],
+        "published": "May 29, 2008",
+        "recorded": "April 2008",
+        "category": [
+            "Top->Computer Science->Human Computer Interaction",
+            "Top->Social Sciences->Psychology"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 367,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 67,
+    "ground_truth_summary_length_chars": 7561
+}

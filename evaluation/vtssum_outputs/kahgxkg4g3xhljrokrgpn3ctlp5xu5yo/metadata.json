@@ -1,0 +1,20 @@
+{
+    "id": "kahgxkg4g3xhljrokrgpn3ctlp5xu5yo",
+    "title": "Efficient Handling of SPARQL OPTIONAL for OBDA",
+    "url": "http://videolectures.net/iswc2018_cogrel_efficient_sparql_obda/",
+    "info": {
+        "author": [
+            "Benjamin Cogrel, Free University of Bozen-Bolzano"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 238,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 980
+}

@@ -1,0 +1,20 @@
+{
+    "id": "zxylgj4wxdeaq4fjk3ykn2bfcaeklfpo",
+    "title": "Match Selection and Refinement for Highly Accurate Two-View Structure from Motion",
+    "url": "http://videolectures.net/eccv2014_liu_match_selection/",
+    "info": {
+        "author": [
+            "Zhe Liu, École des Ponts ParisTech, MINES ParisTech"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 124,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2405
+}

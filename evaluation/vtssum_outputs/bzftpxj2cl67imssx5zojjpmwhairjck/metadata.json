@@ -1,0 +1,21 @@
+{
+    "id": "bzftpxj2cl67imssx5zojjpmwhairjck",
+    "title": "Reinforcement Learning",
+    "url": "http://videolectures.net/netadis2013_munos_reinforcement_learning/",
+    "info": {
+        "author": [
+            "Rémi Munos, SequeL lab, INRIA Lille - Nord Europe"
+        ],
+        "published": "Nov. 21, 2013",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Physics->Statistical Physics",
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 574,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 52,
+    "ground_truth_summary_length_chars": 5127
+}

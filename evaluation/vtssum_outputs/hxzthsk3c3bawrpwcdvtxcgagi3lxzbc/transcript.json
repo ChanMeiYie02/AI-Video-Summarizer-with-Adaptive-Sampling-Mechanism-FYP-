@@ -1,0 +1,137 @@
+[
+    {
+        "text": "With afternoon people I will present this work called annual scheme, base it on on a fast 2 stream median computation applied to author.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So let's begin with the motivation. You know online divided in five point.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Once. So again, with.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Motivation? So I ask introduction as introduction or context. In data set, editing has received important considerable attention in the literature. For example, they will know without him to edit, in edit, set reset. The technique of nearest neighbor to edit this. This training set can improve is the some prototypes. Is are illuminated so their response of the nearest neighbor classifier can improve it. If eliminate the conflict or confused prototypes. So some algorithms some works. One option is to delete the wrong target instances. Annala works related with this subject is another works change, some instances belong to the training set. So our representation is an alternative to pictorial representation. Syntactic coding as a string, or trees in all cases. This work is based on string. Yeah us, I set this representation are commonly use it instead of the vectorial representations.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So. Motivation, an baseline. Or this line is used with Rory theme, they will know will see everything to edit training set. Strings are representation of objects and their qualification of Freeman's prototypes. And there are some classifier. The key nearest neighbor's classification technique.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So. Or our proposition. Our goal is revised. This technique, this scheme, to improve a decisions by adding artificial prototypes in certain situations. An define new algorithm to compute the median algorithm between two strings to create artificial prototype. So our contribution. Is these two these two parts? For one, the other one is the modification of of which algorithm and the 2nd and everything to define median. NS-3 and between two prototypes.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So the construction prototypes.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So honey prototype is constructed is built from 2 strings. These strings are coded with Freeman code. This approach is easy and faster than a computer Marion with our themes that trait or that compute any prototypes. And the latest in this time I stream these tanks. It uses as a starting point.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So Harry, this time is simply is simple. We have two strings. This things is based in three basic operation insertion relation or substitution. One symbol by another. So there are some sequences to transfer. There's a string in the second, but all this path or this step to transform the one string in another half a cost, so the minimum cost gives the minimum path to transform this first string in the second. So I dynamic programming algorithm is proposed. By one efficient 1944 that allowed to compute in using dynamic programming in quadratic time.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So hey, there Mary Ann is define it this formula. An or case we have only to a string, so the the criterion or an extra a criterion added is that or maybe and is in the middle in the middle as possible from the middle of distance between the first string and the 2nd. This is a general definition, but in all cases easier because only have to twist things an satisfies this formula that then you maybe and we compute. If we add the first term and the second term. Always give the final or the distance between the original streams. I give an example becaused.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "To. To see more clear these formulas, for example the. We present these things as assets, order sets AB the first thing and the second stream. A cost associated to the delation an insertion is 1. And this substitution is a lexical order between the symbol in this case. So, for example, if we compute the minimum cost sequence between the example, the 1st and the 2nd, we give the sequence and elation of the a substitution an insertion. The cost associated 123, the final four. So if we give this operation. We explore with dynamic programming. All possible all possibilities within these operation. For example, they say we could get to the final Marion or with not get. If we get the A for the final. A this a belong to the first string, so the difference at the moment is 0. But in the second stream though half these a. So we have the associated insertion correspondence. The rest of the. Operation we have the same the same algorithm of the secretary and if we get the symbol or not get the symbol at the end, we obtain all possibilities, accepting or not accepting the symbols belonging or that belong of some operation of this path. So at the end, for example, we have a CACECCE, but the final score I are different in or in our case we choose this 'cause they are. The small difference between the distance of this string to the 1st and the 2nd are the same, so the difference are through. If we choose another, we have some different between between the first scores and the second score to the 1st or the 2nd stream. So in this case the. This is the restriction. Get one of these solution becauses the in the middle of the interesting.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So hey, this account on a partition of the work is.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Is it in our him? In the editing over him, I tried to to explain with a graphical graphical way, so is a algorithm called DJ Wilson and they will soon. So we have for example a key you equal 3. We have this prototype. This prototype have a three nearest neighbor, 2 belong to the same class and another not. So this prototype is accepted because the majority of the key belong to the same class, so is well classified, it's OK.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "In the second. Is that all of these? A key nearest neighbor are from the other class. Like this report. So we've shown on our algorithm. Remove this. This prototype is considered an overlay an an error.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So the difference is here because we have this situation, we have a the examining the key nearest neighbor. We have two neighbor from 4 different class from this prototype, so will soon remove these different type cause the majority. The majority are from different different class. In in our in you know modification the will shown we consider it that there are some prototype. Mia, so is not considered an overlay. Instead of create new prototype between to two originel prototypes. So then you is an artificial prototype. This prototype help when we try to classify the. Then in the test, because half an artificial prototypes in the frontiers or in the in the places where not well. Not a. They are not a sufficient density of the same class prototypes, so generate in the middle of the nearest neighbor. So this is the difference between Wilson over our algorithm. So is create a new prototype between the nearest neighbor.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So this pretty means I started from the nearest iteration. And we have a. Letters, letters, and digits on experimented A in the two different situation. The method use it to validate it for a fourfold core valuation technique. And some other guys do training and some for text and use the technique. The three to 17 to edit the. The training prototype and to classify from 1:00 to 7:00.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Show the results in we get the.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Some some. Hey there, it's error rate in characters for attack there. Is a put involved and the results that is better than the baseline. That there is the. They're not easy to get a note edited submit training set. The best error rate an the edited with Wilson technique. An over technique as you wish and Ain other results most the most. Experiments are better than the baseline. Approximately is the. A 70. 70% more or less. Is better, they are division or are oor edit technique is better than the baseline in the product.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "The second part of this. Table is there with. With this case. In addition, in.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "In the next table, referring to the.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "A digit. More or less have the same results that the previous about a 17% approximately of the experiments are better than the baselines, experiments and always always or what technique is better than they will. Something like in all the cases give better results? For this this.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Data sets. Is clear.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So hey, has conclusions. Analytic method was presented to a data set of contours encoded, but using a Freeman code. A new, fast procedure to compute the median between two strings based it on a string. Edit Distance is planet underpayment, showed that our scheme we have well of the on this study data set.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "It's. So as future work we can revise the instance detection and consider our criterion. Like this mode, synthetic minor minority oversampling technique using in unbalanced classes. Is not the same problem, but we get some extra ideas to apply in the same in this case. It is clear that we apply this technique to data set this frame, for example to UC Medical data. Say some of the data sets. An extent or method to mix or to obtain the median between two strings. Oh, I got this thing could be extended to compute a case of any samples, compare with another another algorithms compare with an ugly algorithms published.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So thanks for your attention. Yes, how many? Numidians would you add typically on the task you gave me? A good question I.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "They know exactly Becausw only is that the first publication with this technique so only gives the results. I don't give the other results, I don't run. I don't need this experiments, so I only give this these numbers. Now so I. I don't, I don't know this information. In our next publication, probably I estimate the number of prototypes that belong to the training set. The number of adding prototypes and remove prototypes, but not in this work is not considered essential question, but. The next publication maybe? Is she is? OK. You think a silent auction nation to the promedia? OK yeah yes. OK.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Do you think your method is going to improve if instead of having? Approximation to the media after 2 media. Sorry if you compute that rumanians. Do you see your results? Will the golf tour. I'm going to be better or wrong. I for any prototype or for only two production. Improve the image. If only. I if if the true median improve reduced. I'm not sure 'cause I try to compute more data set to answer your questions, cause maybe an approximation are are enough to classification task or the true is maybe better to compute this. This kind of algorithm. I'm not sure. I think the approximation is enough to. To classification task, I think so. Thank you. Thank you everybody to be here.",
+        "start": 754.0,
+        "end": 783.0
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "id": "kkldrxie6ffhxdk5xzwlsd3ozhuer2qj",
+    "title": "Weighted Deduction as an Abstraction Level for AI",
+    "url": "http://videolectures.net/ilpmlgsrl09_eisner_wdal/",
+    "info": {
+        "author": [
+            "Jason Eisner, Department of Computer Science, Johns Hopkins University"
+        ],
+        "published": "Sept. 18, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 70,
+    "num_sentences": 672,
+    "num_clips_with_summary": 32,
+    "num_gt_summary_sentences": 73,
+    "ground_truth_summary_length_chars": 7945
+}

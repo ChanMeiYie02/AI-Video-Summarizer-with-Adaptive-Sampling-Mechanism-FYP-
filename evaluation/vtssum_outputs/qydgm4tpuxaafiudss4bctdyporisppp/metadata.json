@@ -1,0 +1,21 @@
+{
+    "id": "qydgm4tpuxaafiudss4bctdyporisppp",
+    "title": "What SPARQL Query Logs Tell and do not Tell about Semantic Relatedness in LOD",
+    "url": "http://videolectures.net/eswc2015_paulheim_query_logs/",
+    "info": {
+        "author": [
+            "Heiko Paulheim, Institut für Informatik, University of Mannheim"
+        ],
+        "published": "July 15, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 10,
+    "num_sentences": 89,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2415
+}

@@ -1,0 +1,115 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.000 --> 00:00:10.910
+Hi, today I've prepared for you a small example of a video that is associated with three different tracks.
+
+00:00:10.910 --> 00:00:20.800
+Two for subtitles, in English and in German, and one track for chapters.
+
+00:00:20.800 --> 00:00:28.630
+First, before going further, let's look at how this is rendered in different browsers. With Google Chrome,
+
+00:00:28.630 --> 00:00:38.500
+we've got a CC button here, that will enable or disable subtitles. What we can see
+
+00:00:38.500 --> 00:00:46.020
+is that by default the subtitles that are displayed are in German (in this example).
+
+00:00:46.020 --> 00:00:54.239
+And I can just switch them on and off. It loaded the first track that has the default
+
+00:00:54.239 --> 00:01:02.710
+attribute. And I have no menu for choosing what track, what language I want to be displayed here …
+
+00:01:02.710 --> 00:01:08.210
+If we look at FireFox, it's even worse!
+
+00:01:08.210 --> 00:01:16.009
+We don't have any menu at all, no CC button. I cannot switch on the subtitles, because
+
+00:01:16.009 --> 00:01:25.600
+as of December 2015, FireFox will load only the first track, if it has the default attribute.
+
+00:01:25.600 --> 00:01:31.650
+This is not the case, so we don't have any subtitles and we cannot display them.
+
+00:01:31.650 --> 00:01:38.570
+With Safari, on my Mac, it's better because I've got a subtitle menu and I can choose between
+
+00:01:38.570 --> 00:01:49.860
+the different tracks. I can switch to English subtitles, and english subtitles will be displayed.
+
+00:01:49.860 --> 00:01:57.430
+I'm on a MacIntosh so I cannot show you... but with other browsers like Internet Explorer
+
+00:01:57.430 --> 00:02:07.939
+or Microsoft Edge, there are situations similar to Safari. So, what can be do to increase
+
+00:02:07.939 --> 00:02:15.080
+the features of the default player? We can use what we call the Track API, for asking
+
+00:02:15.080 --> 00:02:23.050
+which tracks are available, activating them, and so on. Now, I would like to remind you
+
+00:02:23.050 --> 00:02:29.150
+the structure of a track. I'm just going to display the content of one of these tracks.
+
+00:02:29.150 --> 00:02:40.480
+The tracks are made of cues and what we call a cue is a kind of time segment that is defined
+
+00:02:40.480 --> 00:02:47.599
+with a starting time and an ending time. And the cue can have an ID, in that case it
+
+00:02:47.599 --> 00:03:00.420
+is a numeric ID (1, 2, 3), and a content that can be HTML with bold, italic elements
+
+00:03:00.420 --> 00:03:07.310
+and it can also be a voice so when you see "v" followed by the name of the character
+
+00:03:07.310 --> 00:03:14.239
+that is speaking, it’s a voice. So, we are going to look at what we can do
+
+00:03:14.239 --> 00:03:21.680
+with such tracks during the course and we will see how to handle a chapter menu,
+
+00:03:21.680 --> 00:03:28.690
+how to display a nice transcript on the side of the video, that you can click to jump at the
+
+00:03:28.690 --> 00:03:37.480
+exact time the video tells the words that are on the transcript. And we will see also
+
+00:03:37.480 --> 00:03:44.239
+how to choose the subtitle or caption track language for the video.
+
+00:03:44.239 --> 00:03:52.739
+So, this is finished for this small introduction video, I will just conclude by this thing
+
+00:03:52.739 --> 00:04:01.610
+here: explaining this crossOrigin="anonymous". We saw that during the HTML5 Part 1 course
+
+00:04:01.610 --> 00:04:09.230
+and many people asked questions about this. This is because of security constraints.
+
+00:04:09.230 --> 00:04:16.000
+In browsers, when you've got the HTML page that is on a different location than the video file
+
+00:04:16.000 --> 00:04:26.880
+and the tracks files, you will have security constraints errors. And if your server is configured
+
+00:04:26.880 --> 00:04:36.860
+for accepting different origins, then you can add this attribute crossOrigin="anonymous"
+
+00:04:36.860 --> 00:04:47.440
+in your HTML document and it is going to work. So the server here: mainline.i3s.unice.fr has been
+
+00:04:47.440 --> 00:04:59.180
+configured for allowing external HTML pages to include the videos it hosts and the subtitles
+
+00:04:59.180 --> 00:05:07.970
+it hosts, this is the reason. You can use the DropBox public directory here
+
+00:05:07.970 --> 00:05:18.449
+because Dropbox also enables cross origin requests. So this is all for this first video,
+
+00:05:18.449 --> 00:05:19.310
+I see you in the next one!

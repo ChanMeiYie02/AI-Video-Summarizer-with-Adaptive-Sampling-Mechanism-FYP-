@@ -1,0 +1,20 @@
+{
+    "id": "xdeiubmytivv3wg3674oehdgvn5onm52",
+    "title": "Fluctuation scaling in complex systems: Taylor's law and beyond",
+    "url": "http://videolectures.net/ephdcs08_kertesz_fsics/",
+    "info": {
+        "author": [
+            "János Kertész, Institute of Physics, Department of Computer Science and Information Theory, Budapest University of Technology and Economics"
+        ],
+        "published": "Oct. 15, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 702,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 3284
+}

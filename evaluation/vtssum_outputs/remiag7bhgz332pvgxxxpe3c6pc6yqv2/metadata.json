@@ -1,0 +1,21 @@
+{
+    "id": "remiag7bhgz332pvgxxxpe3c6pc6yqv2",
+    "title": "A Partially Supervised Metric Multidimensional Scaling Algorithm for Textual Data Visualization",
+    "url": "http://videolectures.net/ida07_martin_merino_apsmmsa/",
+    "info": {
+        "author": [
+            "Manuel Martin-Merino Acera, Pontifical University of Salamanca"
+        ],
+        "published": "Oct. 8, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Data Visualisation",
+            "Top->Computer Science->Algorithmic Information Theory"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 125,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 3865
+}

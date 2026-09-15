@@ -1,0 +1,21 @@
+{
+    "id": "axcttwlvqxml5noa7b66j737nus3e7kf",
+    "title": "Impact of News Events on the Financial Markets",
+    "url": "http://videolectures.net/sikdd2017_mladenic_news_events/",
+    "info": {
+        "author": [
+            "Dunja Mladenić, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Dec. 8, 2017",
+        "recorded": "October 2017",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 98,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1635
+}

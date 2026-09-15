@@ -1,0 +1,20 @@
+{
+    "id": "l7qaev6nvmjtuu6p2t6rm7xj6zlpklkn",
+    "title": "The Conditionally Independent Voice Model",
+    "url": "http://videolectures.net/mbc07_raphael_civ/",
+    "info": {
+        "author": [
+            "Christopher Raphael, School of Informatics and Computing, Indiana University"
+        ],
+        "published": "Dec. 29, 2007",
+        "recorded": "December 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 478,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2083
+}

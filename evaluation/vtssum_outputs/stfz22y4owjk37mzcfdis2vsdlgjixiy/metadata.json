@@ -1,0 +1,20 @@
+{
+    "id": "stfz22y4owjk37mzcfdis2vsdlgjixiy",
+    "title": "Isomorphism, Matrices and Graph Invariants; Subgraphs and Connectivity in Graphs",
+    "url": "http://videolectures.net/fmf07_pisanski_img/",
+    "info": {
+        "author": [
+            "Tomaž Pisanski, Inštitut za matematiko, fiziko in mehaniko (IMFM)"
+        ],
+        "published": "Nov. 8, 2007",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Mathematics->Graph Theory"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 504,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 409
+}

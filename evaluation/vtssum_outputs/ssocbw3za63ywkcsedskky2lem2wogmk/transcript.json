@@ -1,0 +1,182 @@
+[
+    {
+        "text": "I'll talk about expanding on the already quite well researched sentiment analysis problem and comparing how this problem kind of comes up in different domains and in different languages. And what are the differences here? And above everything, how to best model this? In a way that works best for all these setting settings.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So just for those of you who aren't familiar with exactly this is a topic of study. That's about opinions, sentiment, evaluations, emotions, and so on. So basically different things that people use to relate themselves to other things around them. Also other people. And there's also cinnamon synonym for this called opinion mining, which you some of you might have seen in other domains.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Button then. That's because opinions are the things that kind of drive a lot of our behaviors. So a lot of stuff that we're doing we're doing because we've seen other people express positive or negative emotion or sentiment towards some particular thing. And this is a. So if you want to know how to influence others, you should follow this presentation. Because this is kind of a big decision making criterion and analyzing this in how people are expressing themselves can be really useful to predict how people will react in the future.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So, and where can we find this? So of course, every other things can be found on the web. Or via word of mouth. So like people, privately conversing with each other. But would the interesting part for us is basically what we can gather. So for us, interesting stuff was. Found in social media, where people are pretty relaxed about expressing themselves and also in a bit more domain specific areas like products and movie reviews such as Epinions, IMDb, Rotten Tomatoes and such. There is also some sentiment in news, but it's a bit more subtle. And of course also internal data for various business domains for, for instance for customer feedback. So every decent business has a book of complaints somewhere. And that could be quite interesting to see. And one question is here, is that do these domains kind of act differently? So do they have different indicators? Or what are the kind of characteristics?",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So just to go quickly through some work that this was done in this area. So initially this was done from new movie reviews because this was a quite an easy topic. You had positive and negative examples. They had scores attached and the domain was really straightforward and this was kind of the Seminole work here and. Indians this works well and is more or less a solved problem, but it turns out that in other domains you should first separate what is actually an opinion and what is just some statement because not every statement is also an opinion. Maybe movie reviews. It is because it's a review in the end, but that's definitely not true in general and all domains have wildly different distributions about. So what is subjective objective and what is actually positive or negative? So it turns out that solving this first and then figuring out what the positive and negative polarities can be more important than just going positive or negative. But we'll see how this turns out in our experiments.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So it's and also since it's a quite clean text classification problem, in the end it's quite interesting area of research for also machine learning application. Is so the main problem of having really domain specific classifiers has also been. Tackles quite successfully nowadays, and it's also being. It also has some quite good results in applying deep learning to this. OK, but All in all, most approaches that are used in the wild nowadays. They usually encode domain knowledge in some lexicons, so that's kind of still knowledge from some existing source which assigns a unique, globally valid number, or in a class for each word that appear. So for instance, the word good is almost almost always somewhat positive. This works OK. You don't get perfect performance with this big cause. A lot of words are context sensitive, so if something is heavy, that might not be a good or bad thing. Right, so if some for instance some phone is like that might be a good thing, but if some for instance. Something with example that is inappropriate. Anyway, I had this the same one, but I forgot what was the other thing. Anyway, things are not context insensitive. There are quite some good lexical sources for this.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Just kind of a quick snapshot. How is this problem actually formulated in general so it's an opinion. Is a quintuplets 05 points or one is Holder who has the opinion? Target is about what aspect about which property orientation is positive, negative mostly or also it could be gradient in gradient and also when was this opinion stated? So this can be also interesting playgrounds for some other problems. For instance holders and targets sometimes have to be extracted from the content itself, and aspect extraction is also a whole new area of research. OK, for simplification here will mostly talk about orientation here, and we're also dealing with Holder in target extraction, But this we treat this as a preprocessing step. So basically. What we do is.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "We replace the Holder in the target with some like OPEC. Kind of, for instance, we save up person, love that and we do. Actually instead of having the persons name, there is a feature. We actually said this is just a person or a Holder. So it's a bit cleaned up for further learning. So yes, this is the actual problem. We have objective, negative and positive. This is the simplified version, so we don't at first consider doing this in the settings. I'll explain later why. So it's basically a three class classification problem.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And there we have some hypothesis here which would like to think about and evaluate. So one is, can we use external sources of information to increase performance or various lexicons? Various regular expressions, patterns and stuff like that? Things that we know that should have some information and may not be explicitly present in the data. So what's the best way to encode is so there's a different ways to model this as features and kind of how to actually incorporate it in a learning setting. Then when we have lexicons which work best for what domain, and of course in the end kind of the descriptive thing, what are the differences across domains and languages?",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Just to go through the datasets here so we have two languages, Spanish, English and three domains. So new social media and movie reviews. So this was. 1st for instance, go through the news domain. We use the JRC new sentiment corpus. It's around 2000, something 1200 something examples. This was originally done for English, but we have a translation done by Bing Translate for in Spanish and it's it's not a bad thing to do actually, at least for news it not not a lot is lost. We have the classic reviews data set from both Pang and leading Lee. This is the kernel data set, which is really often cited. And we also constructed some of our own datasets for social media for specific domains of telecommunication providers and how the people expressed the sentiment about those. So they are a bit different in size. Some are smaller, so some of them only have two classes that actually don't have any neutral examples. And the class distributions are also a bit varied. For instance, the new datasets has mostly objective statements. Whereas this one basically one has everything subjective and it's a bit different in others, but it's quite OK balanced.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So it's not doesn't have any strict, really rare occurrences. So to represent all this data. So how to? What do we use to detect this? We have three main sources, so first is the content. So this is the baseline Model S. So if you have a. Piece of text. If you do this. Tokenization, preprocessing, stemming, lemmatization, stopword removal, and the classic stuff so. Here we actually Additionally perform removal of numbers. Removal of. Targets opinion holders plus removal of URLs. I mean, this is simply for cleaning up stuff for social media. And people got also really good results by cleaning up misspellings, so this was actually. Cleaning up data is brings a much bigger performance improvement than actually any other algorithm. Secondly, we use the sentiment lexicons which I mentioned earlier. This is a global list of mapping a word to some sentiment score. And also some surface patterns which are basically just saying how are things expressed that people are repeating vowels screaming using caps lock, lots of punctuation's, emoticons, smileys and so on. So we also have some pattern which are kind of non. Non lexical, but we it's kind of how words are actually expressed then.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Today for the new spelling corrections, is this something that we're particularly well in the social media setting? Yes, we have a lot of them. Or yes, it's actually. I would also say that for Spanish you have more than than four English. Maybe it's the English that is from Ireland, so we'll see if that makes a difference. But yeah, some some parts. Some cultures actually have really well established slang for social media. I'm not sure how deep this goes, but yes, for English and for some domains on social media, cleaning up with simple spelling corrections worked wonders. No algorithm, language modeling and character modeling and so on. So this and some simple dictionary rules. OK, so OK you can see the water the presence feature. So mostly standard thing except for the masking and also ask normalization. This was quite important for Spanish because Spanish has a bit extra characters, but they're not consistently used, so some people actually use the ASK equivalent. So if you have a with this mark on top then just say in the end. Um?",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "OK force Lexicon features. So this is the second part. When we look at the sentiment lexicons, we take a look at every word. If it's in there and then, we generate like a sum of all scores in the in the. Example, some of the absolute scores, so that's kind of gives us this opinionated Ness. Then the ratio of positive to negative and all of the above for every individual simplified part of speech. For instance, what is the sum of scores for all nouns? And that's one feature here. So this is kind of a. Way to to generate an aggregate score for the whole example, given that you only have individual words that are detected.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Some words about the lexicons that we used, so there are several existing ones. English, Spanish and we developed some new ones, so this is what inner contributed alot here. So we call this render Lex and render Lex links and there is a project that is being worked for and the links part is interesting 'cause we also include them. The links of that. So the Co occurrence links between words and known sentiment words. So for instance, if a word Co occurs with some other work which we know that is positive, we say this is a positive link, and if it Co occurs with a negative word but in a contrast setting, so this is. Good but slow and then we say OK. If this is a bad slow that means that good is a good thing. If so, is is a bad thing. So basically we tried to generate features about how these things Co occur. And.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So for the surface features, or basically, how should I say this character patterns? These are the ones that we can take a look at, so looking at capitalization of individual words in digital characters, proportions of how many things are repeated. Also, if negation or contrast words are used emoticons, we actually have special lexicons for English and Spanish because they use totally different emoticons. And of course curse words and also punctuation is also quite a big. Indicator. Some go, you see in the end, but just to profanity, is not used a lot. It exists, but not enough to be picked up as a big feature.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Um? I mean. Well, that it's in the models. It didn't pick up with a big weight, so it's like one of the small signals, but it doesn't make a big difference. Also in the score it didn't. Kind of contribute much, but included because I saw some people cursing in the data so. Let's so OK, this is 1 hypothesis here. How should we model this? So bag of words representation is usually really sparse, so we have an example which has like 50 words maximum and then. More or less in a space of like 100,000 dimensions, and that usually works OK for most models. But we also wanted to experiment whether these features, which are basically more like Co occurrence occurrence and TF IDF based, play well with these which are have a bit of a different scale. So these are proportional and indicator features and so on. And besides, trying just a simple way to concatenate all these things three we tried to do first intermediate model which first used only bag of words to predict what the sentiment and then use this prediction as an input feature for the final classifier along with lexical and surface features. So this was kind of a two step like 2 level pipeline in away and the idea was that this might kind of clean up something that. Maybe show up. It works actually. Separating these two further didn't really help a lot, maybe because I think it's more it has to do something with distributions and sparsity I guess. I didn't get too deep into this, but I just report on what worked.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So OK, just to say what the setup here. So you have these three feature classes. We have various combinations of this evaluated and we have, so we valid models on this word plus features 2 levels think to level combination and also using feature scaling. So scaling the features to have a mean of zero and variance of 1. This reportedly worked well for some SVM problems, especially when you do stochastic learning. And we'll see if it works.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So for news data, there's not much to see here. Becausw the baseline back before test VM was the best Model S nothing else actually came better. Things are kind of equivalent statistically, but not much is changed on a good note, this is better than what the people who released the datasets had. Like for three points or so, so I think it was in the same was also for English, more or less. Um?",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Maybe this one is actually more interesting. Here we got better results by including this letter. OK, sure. You can look here. And we hear there wasn't a big difference, but it sounded, including all features here gave us a bit of a boost. Compared to other things, so one thing which is obvious not having a bag of words is a pretty bad idea because you actually lose like huge amount of information there. Lexicons themselves give some information, but it's hard to tell which one would be better. So we have some domain specific ones, and some general ones, and they all kind of contribute something. The interesting part is that if we use all of them, we don't actually get worse results, so this was quite shocking. London, so I guess, but it doesn't see I think the sparsity so, but this is social media. Social media. This is like it's also small data set is like eight 900 examples. So so even I was surprised that bag of words gave me anything actually. But it also shows that this combination model with. Two level features actually gives like a slight edge above the SVM one and also in other examples. So this is data set is on tweets on services and products from big telephone. Yeah, so my phone doesn't work. So I bought an iPhone and now it's cheaper so. And stuff like that, so yes.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "OK, just quit. This, uh, this one. So there are things that on news we don't do any better on social media we do better.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Maybe we can go to the English part. So here we we didn't really introduce bag of words. Still basically the best thing, more or less. So the difference here. It wasn't that significant actually. But it shows that this combination and feature scaling really was kind of in general a good thing to do here, although the best result still came from just having a bag of words. And actually this. This one here is not that much below what was actually state of the art. Using really sophisticated parsers and stuff like that. So I think above .91 is what people get with really heavy machinery, so doing something pretty much which is tokenization more or less and getting that Paris was quite OK I guess. Come from this rule based. No, but they they have a specific. Something really complex involving parsers and not rule based. It's learned based, still learning, so this is more less people do machine learning on this one more. I actually don't remember what was the exact approach. The deep learning one got also around 91, so that one is also pattern based. And didn't use any of this parsing rules, but. The point the point I'm trying to make the yeah so comes from parsing more or less so. The data set is not that hard to maximize I guess, so it's easy task in the end and this one is 2002. So lot of people actually try this one and most everyone got basically up there somewhere.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "On the news data. So for the. For the English part of the news, surprisingly, we actually got some benefit out of using lexicons, so Surface features didn't bring up anything. Cause I mean certain features aren't used to express sentiment in use. People use! Marks really rarely. There mostly dots dashes are used where grammar says they should be used and people don't really scream a lot there. And I haven't seen any curse words here, so. But yeah, lexicons do help a bit cause the data set is still not that big. 1300 examples and it shows.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "And for the social media data set, this one was actually pretty small. So here the the benefit of using lexical huge and actually using bag of words wasn't that good. So I think it was that was in some other experiments so. Here, because it's a small data set, we don't have a lot of to learn from, so we can actually benefit from having a generalized representation in the form of lexicons. So actually here it also helps to have this step version, so just having concatenation really not that impressive. And also just to clarify, so this is SVM, multinomial naive Bayes, SVM. With these two levels and two level plus scaling. So scaling helps a bit here, but not that I would be too happy about it. So.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "OK, just to summarize this one and kind of conclude because I think I'm almost out of time. Oh, so reviews are pretty hard. I think this one was for Spanish, so this is wrong. The lexicons in proof. Two layers help for. Especially for social media. And the lexicons which.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So earlier here, so the links, parts and their other lexicons don't show a big difference, except for this one, which is domain specific, which works much better than the one which is general. So this is also an interesting thing to notice. So that only few few losing only lexicons which are domain specific on navbase you get 2.8, which is OK. I guess I mean the best result is about .88. But it's actually quite a good compromise, because sometimes you simply don't have training data, or you know for some other constraints. So for the first shot, doing lexicons on social media is a good idea.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Um? And the other link features didn't help in any way. And.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Maybe just looking at some models, I actually threw this into a decision tree learning so it's called predictive clustering tree. So the software is called clues. So The thing is, maybe it shows that what are the big features here so the. This one is actually not using bag of words, because if you throw in that you just get a big line of single single branches, so it's useless. But for lexicons an for surface you get quite a nice story. So here you see that lexicons kind of go on top, then you get some. Capitalization is the only surface feature which makes sense. Basically. If there are people being mentioned there that maybe has to do something with objectivity, because if capitalization. Is not higher than some percentage, then its objective. So if no one is being mentioned, then it's objective. So that makes some sense. And then there's basically if someone is asking a question. That that can be. Subject subjective because if someone is not then. No questions are objective, so this is one thing.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "OK for social media. So basically the the top layers are mostly number of rows, number of capitalizations, vows, repetitions of letters and there is also some lexicon sprinkled in, so it's. Smiley yes sad face. Of course, if sad face. Yes, positive. I have no idea how this happens, but. Maybe there's some cultural barrier here. I didn't cross quite.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "OK, the reviews Mace basically just simply lexical feature for the simple reason that this data set is quite well cleaned up so it doesn't have anything. Just like those configurations.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "I'm I have a lexicon of negation words and I figure out if it's mentioned there or not. I don't have any specific engineering for that. It's just a feature actually, so I don't. I don't have any specific processing, I just say OK, this is a negation word one.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "But without the context, just yeah, this one that's but bit simplification and also for contrast words. But those don't pop up a lot. But despite, however, this one didn't show much. So basically ratio of positive to negative words was quite interesting, and some lexicons.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "The newsletter set was also. Quite so lexicon heavy so not many surface features except for capitalization, which is kind of a proxy for mentioning people. And a bit more on adjectives then announce, so maybe that's a translation artifact.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Yeah, for English social media, it's mostly. Lexicons, I was surprised, so apparent I think maybe in English. And so this was actually Irish people use less like heavy exclamation uppercasing stuff like that, and they actually say things in words, not in how they write it. So maybe that's some cultural thing here.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "OK, just to conclude this. We also tried hierarchical representation, so having this model into 2 levels like first objective and then positive negative and this didn't work really well. It's same or lower and I would say feature scaling would still be recommended but not in all feature spaces. So this would be kind of a thing to try, but not without consideration. And of course, having a two layer model was almost always. Either the same or better than having just a concatenated model.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "So yes, we go with below state of the art on the reviews above on the new data set, which is quite full surprise for me and. We went through some of these feature differences in different domains and languages and kind of shed some light on some possibly cultural cultural differences. Here I I'm not that expert in that area, so I'll kind of leave this a bit, but there are.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "There so finished. OK thanks.",
+        "start": 1015.0,
+        "end": 1044.0
+    }
+]

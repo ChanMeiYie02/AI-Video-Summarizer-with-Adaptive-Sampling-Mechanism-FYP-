@@ -1,0 +1,122 @@
+[
+    {
+        "text": "This is joint work with chain so long and can you forgive me too and it's about multi task learning so we want to address the situation where we want to learn simultaneously multiple tasks and on the same time you would like to estimate the relationships between these tasks. So.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "We already had a talk before about multitask learning with a lot of motivations, why learning simultaneously multiple task can be beneficial, but I'm going to give some further examples and the simplest examples that I know too that illustrates very well why multitask learning can be useful is multiple regression. So let's consider this very simple application in pharmacokinetics and what you can see here. Estimates these curves are all estimates of. The concentration profile overtime of some drug in the blood of 27 human subjects, and. You can see all these curves start from zero, which is the time where the drug we have this Drug Administration. Then you have a region where the concentration is increasing and then you have an elimination phase where the drug is expelled is eliminated from the Organism. So all these curves have the same shape. But as you can see there is microscopic Inter individual variability. So the lowest of these curves has a maximum at around 40, whereas the highest of this curve says the maximum weight around 100. So now the problem is you may want to estimate these curves from the.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "The sets that look like this, so for each of the subjects you can imagine, you know that possibly you have very few samples like two or three points per subject. So of course if you try to solve the regression problem with two or three data points. In dependently this would. Not give a good solution. But the only way we can solve the problem is to put together the datasets from the different subjects and exploiting the knowledge that the shape is the same. We can try to estimate all the curves simultaneously.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "OK, another example.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "All of multi task learning which is very successful is collaborative filtering, recommender systems or more generally user preference estimation. So in this type of problem which probably became popular after the Netflix competition, we have a collection. The datasets are collection of ratings assigned by several users to a set of items. The items maybe movies. They may be books or whatever. And the goal is of course to estimate the preferences of every user for all the items in the database. Now here see this is a popular website for movie recommendations called Movie Lens and you can register on this website. You can browse a huge database of movies and you can assign some ratings from one to five stars to each of these movies so that the system can give you then recommendations of the world. Now the problem here is that of course you cannot give a rating for all the movies in the database. You will be only be able to give you writing for a very small subset. There are thousands and thousands of movies, so preference profiles are different from every user. However, we again want to exploit the fact that similar users have similar preferences. And what is interesting about these problems of collaborative filtering, in my opinion, is that you have also.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Only information in addition to the ratings, you may have additional data about the items. So for example if we talk about movie, you can take one movie and you go in a website like this. the Internet movie database and you can retrieve a lot of information such as the ear when it was released, the name of the director, the name of the actors in other, a lot of information you may have additional data about, the users like gender, age and occupation and so on. And you may have even additional metadata about the rating themselves. So for example, you know that. Timestamp attached when the rating was given or you have tags attached to the ratings, or you may also have a small pieces of text associated with the rating. So the question is can we combine all these data from different users to better estimate individual preferences? So what is?",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "In common between these two problems, is the data set structure and the point is that we have many tasks, so many subjects or many users, and sampling can be very sparse in the sense that for every task we have very few samples, so.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "The case of pharmacokinetics. We have very few measurements in time for each subject, and in the case of recommender systems, we are able to measure a rating only for a very tiny subset of the whole set of movies, however.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Each sample is shared by many tasks and this is what allows us to somehow do something. Another problem that this seemingly unrelated with this is odd.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Recognition with, let's say multi classification classification with structured discovery. So this is a multi class classification problem. Very popular in computer and computer vision. It's a contact 156. We have a data set of images of different categories and the goal is the classical goal is to build a classifier multiclass classifier with good generalization. Performance is so given a new image we want to predict the label. But another thing that you may want to do is for example to discover relationships between the different classes. And about relationship I mean something.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Like this, so you may want to automatically solve the classification problem on the same time produce graph, for example, that expresses the relationship between the classes. So for example, that tells us that images of motor bikes are very similar to images of mountain bikes, images of chopsticks, baseball bat, sword have something in common, and so on. And you want to obtain this without you know, hard coding this information in the in the in the in the model. OK, so now I'm going to introduce.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Use some methods to solve multiple multi task learning problems and on the same time try to estimate relationship between the tasks in this in.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Context of this talk. When I talk about multitask learning, I essentially talk about this multitask, supervised learning, where the goal is to synthesize multiple functions. FJ mapping some input set X can be any set set of images set of text documents, and so on into some output set, which can be a set of scholars simply or something else. From multiple data sets of input output pairs. And here for simplicity, I assume that the inputs it is common for all the for all the tasks. But of course one can think about more general situations where the input sets are different. So if I want to use a kernel methods to solve this problem, whatever method they use at the end of the day, I have to specify a kernel multitask kernel of this form, so I have to specify a similarity measure that for every pair of inputs X1 and X2, and for every pair of task in this is inj. Specifies the joint similarity between inputs and tasks. Now equivalently, I can express the same information by using a matrix valued function H. Of course, that looks formally more similar to the usual kernel because it takes as an argument only the two inputs X one X2, but in Maps into matrices M by M&IJ entries is exactly this similarity here. So there are two equivalent ways to represent this similarity, But the problem is, given specific multitasking problem, how do we choose the kernel? How do we specify? Some meaningful joint similarity measure is not is not trivial becausw we have a lot of flexibility here, So what many people do.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "It has been done a lot in the literature is to make this assumption here that simply says OK, I'm going to assume that this similarity measure can be decomposed as the product of a kernel on the inputs only, and a kernel on the task indices that expresses the similarities within the task. I in the task J. Or equivalently, if you think in terms of metrics valued kernel, you are going to have a scalar kernel K which multiplies a constant matrix L. And of course, this contest custom matrix has to be symmetric and positive semidefinite for all this to be a valid kernel. So we're going to call KX the input kernel. And key Y the output kernel. Or equivalently, this matrix L the output kernel. So we. Want to solve the multitasking problem by using a regularization?",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Approach. So we build a reproducing kernel Hilbert space of functions of vector valued functions associated with this decomposable kernel here. And we optimize over this space by minimizing the sum of some loss term over the tasks and some regularization which is simply in this case the squared norm in the kitchen. So the usual framework of regularization. And we know by the representative theorem that the solution looks like this. So the J component of the optimal function FFJ. Can be written in this form where we have kernels, expansions on the individual datasets. And then we have a linear combination of these kernel expansions that involve this LJK. So the entries of this matrix L. Now, not only the solution depends on L via this combination here, but also the coefficient CIJ are going to depend implicitly on L. Because of the optimization problem here, so the norm here depends on L and also the space itself. So the question is, in this context, how do we choose the output kernel? Of course there is a knave baseline, which is just choose L to the identity and this would correspond to independent single task learning. So if we choose L to the identity, essentially what we're doing is we're learning all the components of this vector valued functions in dependently. The other extreme is pulling single task learning, so I choose L equals to the matrix of all ones or a constant matrix. In this case, what we are doing is essentially learn a vector valued functions with components which are all equal. So essentially we are learning only one function for all the tasks. So we can do better than these baselines. Of course, in many situations, sometimes actually these are optimal already, but in many cases they are not. So if we have some prior knowledge about the relationship between the task, we should use it to design this L in advance, but in practice I do see many problems where we have quantitative information about the similarity between task in advance. So the most meaningful way to proceed seems to be to learn this L from the data simultaneously with our function in the opposing cannabis space. So one possibility that immediately comes to mind is to use multiple kernel.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Learning so one can design some Dictionary of basis kernels KK. Take a chronic combination of these. And then learn the weights of this combination simultaneously with the function in the architectures this is 1 possible approach is very general and of course I can use this approach also for multi task learning because I think a combination of multitasking kernels. In particular, I can take combination of decomposable multitask kernels and I can do the use the same machinery of multi task learning. So even more specific I can choose this KXK. To be in the same kernel and what I'm doing effectively is to learn a combination of these matrices kyk. By solving an optimization problem. But there are two issues with this approach. OK, the first issue is that the maximum number of kernels that I can use is in fact limited by memory constraints. So although in principle I can use an arbitrarily high number of kernel, even an infinite number of kernels I have to store the kernel matrices and I cannot store too large number of them. And the other issue is that I don't want my user to specify this set of this huge set of kernels. So I want something more automatic. I want something that doesn't require domain knowledge. So what we propose here is a more direct approach that applies under the assumption that the kernel is decomposable, and essentially what we do is simp.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Modifying the regulation problem by adding an additional regularization. Omega fell on the output kernel. And then so this Omega Val is going to be typically a convex function, or in some cases maybe also nonconvex. And we're going to minimize not only over this space HL, but we're also going to minimize over the set of symmetric and positive semidefinite matrices for L. Now this problem is non convex and possible examples of choices of course are all possible norms that you can imagine on L, But for some of them we have actually developed some algorithms that solve the optimization problem. For others we haven't yet. So for this one for example, we have some algorithms, the squared for business norm, but something more interesting that one may want to do is to use for example some sparsity inducing regularizer. So in the case where we know that. Some some of the tasks are related. Some of the tasks are not related at all, but we don't know which one are related, which one are not. We may want to use something like this to discover automatically which does related which tasks are not related or another structure that we may want to impose this low rank so we can use the trace of L which will encourage low rank output kernel. And we can also sometimes use a hard rank constraint, so this is the indicator function of the set where the rank of value is less or equal than P. Of course, when P is equal to M, this thing it doesn't influence the solution, but when P strictly less than M then we have a hard rank constraint and I just want to talk a little bit about this last regularizer here.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Because for this I actually I've developed some code that works. In the case of least squared loss. One can show that after applying the representative theorem, the problem boils down to this finite dimensional optimization problem where why a bold? Why is the matrix containing the output data, which can be an incomplete matrix in the case of in general, in the case of multi task learning. So we use a binary mask. This is the element wise product to make this loss depending only on the entries that we actually observe. K is the input kernel matrix, the classical. Matrix containing all pairwise evaluations of the input kernel L is the output current matrix and C is the matrix of coefficients CIJ that we want to optimize. The in the squared norm in their FHS can be written in this form, and you can see that there is a quadratic function of C and is linear in K&L. So now we have also trace organization and we minimize over the set of symmetric and. Most of them are matrices with rank less or equal than P. So this one can show that this problem is actually a nonlinear kernelized generalization of reduced rank regression. This is a popular technique in technique in statistics, so this is a kernelized version of that, where in addition we have some regularization here. Now one can reformulate this problem in different ways. This problem is of course, nonconvex. And one of the way to reformulate the problem only involves low rank matrices, and this is the reformulation that we use in this moment to solve the optimization problem. So essentially the problem is reformulated as an unconstrained problem, where we optimize respect to A&BB is essentially a low rank factor of L. And all these two matrices are have a dimension that can be controlled. It's B. This is can be controlled by the by the user, and therefore we have a control on the on the memory occupation and currently what I do is simply to do block or dissent for this, where I alternate between optimizing A&B and at each step I have to solve quadratic problem, linear matrix equation effect. Which I solve iteratively by using approximate preconditioned conjugate gradient. OK, more details about this formulation and the way we we solve the problem are containing these two papers. So I'm just going to show you some.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "My experiments with this method, let's have a look at the move.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Less datasets these are three datasets for collaborative filtering. We have different sizes tend to the five to six in 6:50 ratings, different number of users, different number of movies. We also have some metadata about the movies. Um and. Now I want to use this method here and if you look at it you will see that essentially what we need to specify here in addition to the data is just the input kernel. And the regulation parameter, because all the rest is optimized from the data. So for the input kernel we design some kernel, which in this case measure the similarity between 2 movies by using some meta data that we have in this data sets about some general categorization of the movies. So we generate some binary vectors, we compute the humming distance of these. We take the exponential of minus the Hamming distance, and this is a condition to be a valid positive symmetric kernel and then the problem with this if I only use this. The problem is that I cannot distinguish two different movies with identical metadata and therefore I add a little bit of Delta kernel based on the ID of the movie, so that now I can distinguish between two different movies with identical general categorization, and this is quite important for performance. Is the methods that I compare our independent single task learning pool edge single task learning? Likewise, matrix factorization, which is very popular in this context of collaborative filtering and low rank output, cannot learning. So the.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Cup is the following for each of the user. I take 50% of the rating for training and the remaining four test. I do some validation to choose the regulation parameter by extracting a subset of the training set. And these are the performances on the small data set 100K ratings. You can see that the pool, it baseline works pretty well actually. So for this actually we are estimating one reference profile for all the users. The same preference profile, exactly the same for all the users, and it's already pretty good. Actually, it's better than regress matrix factorization, but this difference can be explained by the fact that this method uses the meta data about the movies, whereas this method only uses the rating. The independent work, solid work worse and you can see that this method outperforms the baselines as well as rigorous metrics. Factorization and the same can be observed also on the bigger data set, although the difference in performance is becomes less significant. OK, now let me just tell you how did we obtain this graph. So essentially we.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Have a multi class classification problem and we formulate this as a multi task learning problem where each of the components of our vector value function is a score for a given given class and then we classify to the argmax. Again, we have to design the input kernel, and in this case the input kernel has to compare 2 images. So for this we just used a kernel designed in this paper in SV by Gaylor and Nobles in and output kernel is learned using output kernel learning.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Essentially, what this graph represents is the entries of the matrix L after some thresholding, where we take only the values with the with high absolute value. OK, to conclude so much.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Machine learning promises are structured and multi task. It is clear that indeed solving multiple problems simultaneously can improve performance is, especially if you have many tasks and a few data points per task. These methods output going to learning centers are a good alternative to MCL. They can solve multitasking problems and on the same time reveal Inter task relationship relationships we have to solve some non convex optimization problems but they have some special structure and it seems like the simple alternate optimization. It's already already gives good performances at least in terms of learning. There is some code available online for some of these methods. Thanks for you.",
+        "start": 667.0,
+        "end": 696.0
+    }
+]

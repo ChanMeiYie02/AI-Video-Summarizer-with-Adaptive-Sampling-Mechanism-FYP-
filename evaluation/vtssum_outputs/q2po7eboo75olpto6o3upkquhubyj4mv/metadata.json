@@ -1,0 +1,21 @@
+{
+    "id": "q2po7eboo75olpto6o3upkquhubyj4mv",
+    "title": "Deep Learning for Domain Scaling of Conversational Agents",
+    "url": "http://videolectures.net/interACT2016_wang_deep_learning/",
+    "info": {
+        "author": [
+            "Ye-Yi Wang, Microsoft Research"
+        ],
+        "published": "July 31, 2016",
+        "recorded": "July 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 192,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2721
+}

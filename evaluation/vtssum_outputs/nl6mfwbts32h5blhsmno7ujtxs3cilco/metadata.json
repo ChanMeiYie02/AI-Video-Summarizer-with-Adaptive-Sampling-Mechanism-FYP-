@@ -1,0 +1,21 @@
+{
+    "id": "nl6mfwbts32h5blhsmno7ujtxs3cilco",
+    "title": "Opening & Awards",
+    "url": "http://videolectures.net/eccv2014_pajdla_pollefeyes_opening/",
+    "info": {
+        "organizer": [
+            "Marc Pollefeys, Department of Computer Science, ETH Zurich",
+            "Tomas Pajdla, Czech Technical University in Prague"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 212,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 89
+}

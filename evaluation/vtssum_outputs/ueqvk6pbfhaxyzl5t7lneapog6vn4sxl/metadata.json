@@ -1,0 +1,20 @@
+{
+    "id": "ueqvk6pbfhaxyzl5t7lneapog6vn4sxl",
+    "title": "Multimedia Information Indexing and Retrieval",
+    "url": "http://videolectures.net/ssms08_smeaton_miir/",
+    "info": {
+        "author": [
+            "Alan F. Smeaton, Dublin City University"
+        ],
+        "published": "March 11, 2009",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Information Retrieval->Multimedia Retrieval"
+        ]
+    },
+    "num_segments": 62,
+    "num_sentences": 946,
+    "num_clips_with_summary": 41,
+    "num_gt_summary_sentences": 93,
+    "ground_truth_summary_length_chars": 13392
+}

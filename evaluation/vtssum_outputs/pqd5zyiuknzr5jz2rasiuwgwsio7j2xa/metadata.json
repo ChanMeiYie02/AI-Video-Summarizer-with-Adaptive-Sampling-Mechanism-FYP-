@@ -1,0 +1,21 @@
+{
+    "id": "pqd5zyiuknzr5jz2rasiuwgwsio7j2xa",
+    "title": "Introduction to GENDERA project / Predstavitev projekta GENDERA",
+    "url": "http://videolectures.net/genderaworkshop2011_mladenic_gendera/",
+    "info": {
+        "author": [
+            "Dunja Mladenić, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Jan. 3, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Science",
+            "Top->Social Sciences->Society->Gender Issues"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 69,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 983
+}

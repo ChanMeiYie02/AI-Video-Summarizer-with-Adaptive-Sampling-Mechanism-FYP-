@@ -1,0 +1,24 @@
+{
+    "id": "fwrnlpvgfwa25eaokb3ddacauef56p74",
+    "title": "Self Organized Criticality",
+    "url": "http://videolectures.net/NTUcomplexity2017_chew_self_organized_criticality/",
+    "info": {
+        "author": [
+            "Chew Lock Yue, Division of Physics and Applied Physics, School of Physical and Mathematical Sciences, Nanyang Technological University"
+        ],
+        "published": "April 3, 2017",
+        "recorded": "March 2017",
+        "category": [
+            "Top->Science->Complexity Science",
+            "Top->Computer Science",
+            "Top->Data Science",
+            "Top->Mathematics",
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 1056,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 1151
+}

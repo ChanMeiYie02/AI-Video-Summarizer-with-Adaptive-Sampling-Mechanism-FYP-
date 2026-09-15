@@ -1,0 +1,267 @@
+[
+    {
+        "text": "Hello OK. Thank you for staying for the last talk for today and this is Shannon Link. From California Institute of Technology doing my PhD studies there and today, I'm going to talk about large margin source code it on samples for ordinal regression and this is joint work with my colleague Linley and will be presented in the algorithmic Learning Theory Conference this October.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "OK, so let's just start with an overview of this work is all about, so I copied Johns slide slide about reduction method and in this work we're actually doing reduction for interesting problem. So junk taught us to do is first we need to identify the type of learning problem and we find the reduction and then. Algorithm and then we can build a predictor. So let's see what we do.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "We identified the type of learning problem which is ordinal regression. And our pre made reduction would be the thresholded ensemble model. An article learning algorithm is the famous Adaboost algorithm in on sample learning. And then we build a regression rule using our newly designed algorithm called ordinal regression boosting plus the data. We also do another part.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Of the reduction here, which I called a theoretical reduction. So the first 2 steps are similar, but then we start by analyzing the non generalization bounds in binary classification, which are the large margin ensemble bonds and then using the reduction we're able to derive new bounds based on combining the reduction and the known bound.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So I think overview this work is actually a concrete instance of reductions.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "OK, so let's start by describing the ordinal regression problem and the problem with look look like this. So what's the age group of the person in the picture?",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "The picture looked like this. We would say the person in the picture is.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Current and if the picture looked like this, we would say she's a child.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And if the picture looked like this, we would say he's a teenager.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And if the picture looked like this, we would say he's an adult, so we can represent this.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Age curves by a finite order set of labels, which we call the ranks, and we assume that they are from one to K.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So we can replace this age groups by this numbers and we hope to find an ordinal regression.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So that correctly tells us the unknown picture is offering to.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So this is the ordinary regression problem. We're given a training set like a bunch of pictures and their associated labels, and we want to find a decision function that creates the rings of unseen.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Example as well. So there are many applications of this kind of problem. For example, we can rent movies like say a movies very bad, bad, OK, good or very good or we can rank by Doc.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Coments relevance so because this idea of ranking or early no regression matches human preferences. It has many applications in social science in information retrieval.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So let's look at the ordinal regression problem in more detail. We can think of it as a regression problem, but we found the metric information in our previous example about the age group. There's possibly a metric underlying like the age, but it's not encoded in the ranks 1234.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "We can also think of it as a classification problem with order categories. What I mean by ordered is that it will be a small mistake to classify a teenager as a child because very rings are close by, but it would be a big mistake to say that an infant is an adult.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So there are some common loss functions to describe this properties of ordinal regression. First, it's kind of a multi class classification problem, so we can use the classification error to measure the performance.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Determine the category or another commonly used loss function is. We want to have a close prediction in the category so we can use the absolute error to measure the performance.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Nothing urgent or regression rule. In this talk, because of the time, I'll talk about the absolute error only and similar results happening as can be derived for the classification cost.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "OK, so first I'll introduce the thresholded model for ordinal regression. This model is widely used in previous algorithm designs. We start by thinking about a knife algorithm for ordinary regression. So first we can just treat the rings as general labels and just do a general correct regression.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Estimated function. And then we round up the regression resource we get for exactly if we get 3.4, we round it to three, or if we get 1.8 we rounded to two hour final prediction. This method has two prop.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Points. So first we said that the ordinal regression problem can be solved as regression without metric and general regression algorithms performs badly without the match.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Information. And second, the round of operation here, which is essentially a uniform quantization, can cause large error because of the. Skewed distribution underline. So improved and generalized algorithm that people often use is first to estimate a potential function F of X that hopefully take care of the order of ribs. And then they quantized potential function by some ordered thresholds to get the final rule.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So. So in illustration of this model, which is called the thresholded model is like this. So if we first map everything by this potential function and then if the potential value falls between likes it a one seater two we predict is a threat two if it's between Season 2 and season three we predict US rank 3.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "In our proposed thresholded ensemble model, the potential function at X is computed by a weighted on sample. So basically we can consider like an ensemble of T hypothesis and they have associated weights.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "The intuition of this model is we want to combine preferences from for every individual hypothesis to estimate the overall confidence.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "An example of this intuition is, say if many people we call them HT say that a movie is good, then if we combine them by positive weights, the confidence of the movie should be high.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "So in our results here, the hypothesis can be binary, multi valued or continuous, basically reflecting.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "The preferences and also we allow the weights to be positive or negative so we can reverse the bad preferences.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "And essentially the source loaded on sample model is an extension of ensemble learning in the area of ordinal regression.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Before we go into deriving the theoretical results of 1st loaded Ensemble model, we first talk about an important concept called the margin and the idea of the margin is that we want to be saved from the boundaries. So for example for this example here we want its value to be away from this. So the thresholds here. This results here and this result.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "We can define the margin like this, which basically captures the distance between the potential value and this result for each threshold here. Singer.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "To the case of binary classification, a negative margin would indicate around prediction. So important observation here is that if for a pair of example XY, if we sum all its margin violations, then we basically get the term we want to use in the absolute loss.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "So now comes our first results using the reduction, so the reduction is based on this observation. So if we look at. Or you know regression problem here, but we only look at one source code. We can see that it's very similar to a binary classification problem. We want these examples to be on one side of the first hold, and these examples to be on the other side of this result. And we have K -- 1 thresholds here. So basically have K -- 1 binary classification problems. Now we can use one classifier trick that jump this yesterday. And basically we encode the same here. Can have one classifier there.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Then we can apply the bounds in binary classification. So this is a famous founding binary classification that basically says OK if you have IID samples here and you're out of sample error can be bounded by the example margin violation and some complexity terms. So this basically tells us that if I can guarantee that I have a large margin classifiers, the Delta term can be set large. Then this bound can be like small. And basically the generalization error can be bounded well.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So this is the analysis found that we describe based on the reduction. So in ordinal regression with similar settings, if we consider the thresholded ensembles then basically we have a similar bound, so this here is the out of sample absolute error and here we have the number of margin violations and here we have a complexity term.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Which tells us that large margin shares audit on samples can generalize.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "And in addition to the theoretic reduction, I also mentioned that we do have rhythmic reduction to edibles, so I think we may learn more about edibles in the next week. But all we need to know now is edibles is the binary classification algorithm that can be explained by operationally optimizing this term, which is kind of maximizing the minimum margin here. So we derive the large margin bound here in the previous slide. So basically we want to maximize the minimum.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "In some way, so this is our formulation. Basically we have two formulations, but maybe this one would be similar to look at. So basically we try to minimize the summation of exponential negative margins, which if we look at here we are doing the next moment maximization of minimum.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "And this is basically our Everest MIC reduction to Adaboost.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "We can look at some advantages of our boost here. So first here is some idea from ensemble learning, so we can combine simple preferences to approximate.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Complex cards. And second, it has the idea of thresholding, which can be sort of adaptively estimated scales to perform ordinal regression. Also, there are some interesting properties that it inherits from Adaboost. So for example, we can have simple implementation and guarantee on minimizing the margin loss here.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "I also observed that it's practically less vulnerable to overfitting, so also a similar property to add a boost.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "And the lesson we learned is useful. Properties are inherited with the reduction methods that we use here.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Now I'm going to show you the result of some ordinal regression boosting experiments. So on the horizontal axis here there are eight real world datasets and vertical line. Here is the error. So basically the lower the better and blue one is ranked Boost algorithm which is which was the best algorithm for combining preferences to estimate the overall confidence and the green one is our our boost algorithm. And Red One is an SVM based algorithm which is state of the art algorithm in performing ordinal regression tasks. What we see here is the our post algorithm performs much better than rank boost. So if we see the results here, the blue the blue bars are usually much higher than the green bars.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "And we see that our post performs similar to SVM based algorithm. So in some datasets are books performs better in some datasets or boost performance worse and overall we don't see a significant difference in the datasets that we observed. However, notes that are both runs much faster than SVM based algorithm. So for example in this data set here there are 6000 training examples and SVM based algorithm. Which has a time consuming automatic parameter selection step would take more than four days to finish one run, but for or boost it takes only like an hour to finish.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Run. And also we have similar results for another setting of our boost.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "So in conclusion, we proposed threshold on sample model which was shown to be useful for ordinal regression using this model with performance theoretical reduction and derive new large margin bounds. And we also perform algorithmic reduction which leads to new training algorithms called or.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "Host and or both has simplicity over existing boosting algorithms and comparable performance to state of the art algorithms, and it enjoys fast training and is less vulnerable to overfitting.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "We also have ongoing work that use similar reduction techniques for other theoretical and algorithmic results using more general loss functions.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "So thank you for your attention. Are there any questions? Thank you.",
+        "start": 1508.0,
+        "end": 1537.0
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "id": "zqtdgtgp7kryiisbv2zwdzls6reeca2d",
+    "title": "Mixed Cumulative Distribution Networks",
+    "url": "http://videolectures.net/aistats2011_silva_cumulative/",
+    "info": {
+        "author": [
+            "Ricardo Silva, University College London"
+        ],
+        "published": "May 6, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 238,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2842
+}

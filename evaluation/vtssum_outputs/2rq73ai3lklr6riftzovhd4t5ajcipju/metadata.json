@@ -1,0 +1,20 @@
+{
+    "id": "2rq73ai3lklr6riftzovhd4t5ajcipju",
+    "title": "No-Free-Lunch Theorems for Transfer Learning",
+    "url": "http://videolectures.net/nipsworkshops09_ben_david_nflt/",
+    "info": {
+        "author": [
+            "Shai Ben-David, David R. Cheriton School of Computer Science, University of Waterloo"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Structured Data"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 600,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 47,
+    "ground_truth_summary_length_chars": 3983
+}

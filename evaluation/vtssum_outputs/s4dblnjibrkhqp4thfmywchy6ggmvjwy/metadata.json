@@ -1,0 +1,20 @@
+{
+    "id": "s4dblnjibrkhqp4thfmywchy6ggmvjwy",
+    "title": "Selective Sampling with Almost Optimal Guarantees for Learning to Rank from Pairwise Preferences",
+    "url": "http://videolectures.net/nipsworkshops2011_begleiter_pairwise/",
+    "info": {
+        "author": [
+            "Ron Begleiter, Technion - Israel Institute of Technology"
+        ],
+        "published": "Jan. 24, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Astronomy->Cosmology"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 253,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2205
+}

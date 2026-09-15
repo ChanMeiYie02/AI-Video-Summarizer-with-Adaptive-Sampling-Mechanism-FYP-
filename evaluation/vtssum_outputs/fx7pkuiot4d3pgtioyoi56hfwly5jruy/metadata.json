@@ -1,0 +1,22 @@
+{
+    "id": "fx7pkuiot4d3pgtioyoi56hfwly5jruy",
+    "title": "Gene transfers, like fossils, can date the tree of life",
+    "url": "http://videolectures.net/biophysics2018_szollosi_gene_transfer/",
+    "info": {
+        "author": [
+            "Gergely J. Szöllősi, Department of Biological Physics, Eötvös Loránd University"
+        ],
+        "published": "July 9, 2018",
+        "recorded": "May 2018",
+        "category": [
+            "Top->Chemistry",
+            "Top->Physics",
+            "Top->Biology"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 206,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2522
+}

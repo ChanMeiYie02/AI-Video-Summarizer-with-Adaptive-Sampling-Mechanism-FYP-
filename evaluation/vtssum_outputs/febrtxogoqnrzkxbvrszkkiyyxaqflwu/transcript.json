@@ -1,0 +1,392 @@
+[
+    {
+        "text": "This my talk will be certainly on an important aspect of active and this is dealing with text, so I won't talk so much about link analysis and social network analysis, which is another important bit of active which complements the text and. So I will. I will cover this. Textual part. And these I guess she she covered the the graph part quite quite bad so. The talk is structured pretty much in two. Parts so first one is a little bit of.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "General overview how are tax and tax related areas from a little bit market research and a little bit interesting messages from? What's a text related areas do or how they view the text analytics semantics and so on, so we'll see the details and the rest will be just demonstrations, nothing else. So sets of set of something like 10 demos. Hopefully Internet will work for some of them. I will need the Internet, the rest I guess will be locally. Oh so. Everybody, I guess knows about this.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Gartner hype cycle. So this is, well, extremely bird bird eye view to what things? What kind of things are going on and how they might affect the future. So if you go. I didn't get the 1 from 2009, but roughly these 2008 version is reflects still the future, since here we talk about 5 to 10 years. So this one year doesn't matter so much so. The question now is where these text related technologies where they fit into Gartner Hype Cycle. So just to explain what Gartner hype Cycle is, so it's a. 2 dimensional view to different technologies. So the bottom dimension talks about the. I would say type of. Maturity of the technology in the way. So you see on the left side we have technology trigger technologies, then peak of inflated expectations. So typically you don't want to be. You want to get rid of this speak as soon as possible. If you have certain technology then through of Dillusion Minton then alignment and productivity to pretty much the mature technologies would be on the right. This would be the hype. Which might not reflect the actual productivity level. Oh, our usability for production and the rest is somewhere in between. So here I pointed out couple of these technologies which are all text related so. We could discuss which are taxed more or less tax related, but some of them let's say so. Weapon olitics for sure is something which should include or includes tax in many ways. Then corporate blog, blogging, semantic web. Social applications certainly deal with text as well. Web 3.0 whatever this means. Gardner is very careful about this term and context delivery architecture, so this is where active actually is. The context delivery architecture. So technology trigger and actually if you look a little bit into a production or what's going on in the companies as early storage projects than context video architecture certainly is already appearing. So this is 1 possible view to. Text related technology so. Oh, there's another diagram which also shows the same the same.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "A set of technologies through through two different. Dimension so one is this years to maintain mainstream adoption. You see we have less than two years, two and five years 5 to 10 years in more than 10 years. And then we have transformation. High, moderate and low benefit for the company. And so the ones we try. Emphasize somehow they they. They would include text and semantics. Uh, in one of the other way, so not sure. Well, this semantic web is extremely on the right, so I guess this reflects more like this. Orthodox semantic web technologies, while some other technologies like Web 2.0. Obviously everybody is using this everyday, so this should be more like on the left corporate blogging and so on. Web analytics is something which by recent Forrester Research. Is going extremely up recently and and so on so so this is where roughly we fit in terms of technologies. Now the rest of the presentation will be more like digging into the components which build up these technologies. We won't talk so much on this high level, but somehow will try to understand we won't go too deep but will try to understand what kind of building blocks are behind. So there's another view, which is more like my view. Which is maybe reflec.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "A little bit academic perspective to the same technology, so probably most of you know about this story where you have I don't know, in this case 6 blinds men which are all touching elephant in one or the other way from different sites and then. They go away and they explain. What is elephant and for this guy? Elephant is a spear for this one. It's a wall because he feels the body of for the guy on the right. The elephant is just the rope so detail and there alright. Just nobody. They're not covering complete truth. So in the same way. We can say that semantics and text related text understanding. Has also different views to pretty much the same the same topic. So let's say if you ask computational language, they will always say well if you want to talk about semantic syntax. It's all about language. What else? If you ask Web 2.0 they will always say it's about community, just organized community in certain direction and they will provide semantics, which is also true. Semantic web? Well they say well all components are there already, we just need to connect them. Components are not there, but it's true that we need to connect them. Then text mining. It's everything is about analytics. We don't care bout Valve. All higher levels, vocabularies, semantics and so on. The true knowledge should should be digged out with some kind of analytics and and text type of analytics. And while machine learning, specially in the recent time so turned very much towards statistics and well everything is about statistical approaches so how probabilities go left and right and at the end you get some kind of model and that's it. So in this understanding of the Texan semantics would appear from this site. And of course, if you ask, I don't know. Google and other search companies. I mean this is true. They say, well, you just type a query and our engine will find the answer and we don't care for everything else on the left. And so now the point would be. Oh, what are now commonalities between all these different views? So we'll try to. Provide some kind of summary view to all this stuff and the last the last bit, which is sort of related to text as well. So graph network, social network analysis. Also, one aspect which recently came into this field but from a little bit site.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "From the site. OK, now if you try to summarize all these technologies and so this operational technologies which we saw before on the Gartner Hype Curve and this academic views which roughly reflects academic communities which don't interact too much between each other but still, so we would, we can cluster approaches in 3 three major groups. So one is top down approaches, so this would roughly be semantic web area or knowledge representation reasoning. So this traditional AI. So they look or they try to view or approach the problem from top down South. First we define define some kind of world model and then. And the other one or the other way we. Oh we do reasoning call whatever operation, but it's really top down first the world model and then the rest while machine learning data mining approach the problem completely from the other side. So they take data. And try to bootstrap knowledge straight out of date and so this would be bottom up approaches. And then there's a certain aspect which was not so obvious before, let's say appearance of these Web 2.0 which is collaborative approaches where basically the message is the following. They say, well, all these techniques top down and bottom. They work, but well, if we ask people in the right way, they will provide the answer and we don't care so much about the world models and. Statistics and so on and so. Web 2.0 social computing really try to do this. How to organize people so that they come with certain. 3rd task, whatever. Oh, and our integration of all these ideas really open. Integration opens really possibilities to solve problems, which certainly are not easy solvable, were not easy solvable before, so This is why we are here in the way. Oh so this is 1 slide with a lot of bullets which maybe we can just browse through it. I think this is the slide with the most bullets in the whole presentation, So what?",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Are the key issues in today semantic and text related technologies, so one is certainly scale scale was not addressed properly in the past. And if you. Try to make a brief summary of recent research so it's a lot about scale in all these areas which I mentioned before scale is very important then exclusivity. So what kind of language do we use for underlying representation? So this is a battle between these communities. All of it's about expressivity. Which kind of language do we use then? Interoperability how to connect so W 3C and all the semantic web technologies deal with this. Services so how to offer functionality so this is something which is another aspect, which I guess is quite important and related to interpretability. Collaborative approaches, so as we said how to organize people to collaborate, then relation to computational linguistics. Linguistics so semantics in computational linguistics. They don't collaborate really well yet. Knowledge acquisition is extremely important area which relates with most of these other areas. So how to extract knowledge from data? So by mining manually, alot of this is still going on manually or semiautomatically anfora big cost, so reducing these costs this would. This would solve a lot of problems. Then temporal dimension. So if we introduce time into the whole thing, this this gets very important. So three binding and many other technologies deal with this and probabilistic versus logic approaches. So this this is another challenge. So this would be set of challenges I guess for the future, and you can expect that research in the future or in the next years will go along these dimensions. OK, now. Maybe?",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "11 slide.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Based on a broader context, so there is something which. An initiative from from Southampton University, together with W3C and so on, is something which is called websites, so they try to even be broader. So we call these websites and so they try to bring in all the areas from ecology to economics and so on. Their computer science and artificial intelligence where we pretty much operate. You just part of it, so we typically. Appear as a summary here, so this is just one slide to.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Well to give you. Brother over now let's try to be a little bit more technical now. So I said representation is really one of the key issues which. Divides communities cyantific communities. It's like religion in a way. So that's why this communities are divided and they fight and try to pursue the other one. Y there text representation is the best. So if we try to summarize what kind?",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Representations are out there. We can come up with again this set of. Representations from very simple ones on the on top to very sophisticated ones on the bottom. Later on we'll see Demos which will. Try to cover most of this space. So let's say we roughly we can say the upper ones are something which operates on the lexical level where. These technologies would operate really on the just on the level of the symbols. Syntactic syntactic technologies would operate already a little bit on the structure, which exists in a text, while the bottom ones would would operate on the level of semantic, so they try to understand really what's going on. They have a little bit of world model, while the other other ones wouldn't have any words model. So now each level of these technologies would have attached. Certain set of problems are certain set of applications which are solvable on that particular level. Let's say if we take this really the simplest one. So text consists from characters, obviously letters. Most letters on this level words come afterwards. So if we view the text text documents only as a set of characters, nothing else, then we can already solve certain problems, like for instance language identification. So if I give you a document and your task is to identify in which language the document is written, then this representation is sufficient. You can solve this pretty much almost 100% or copy detection if you need to detect whether two documents are copy of each other or partial copy of each other then. On this service nation, you can pretty much cover everything. But of course for some other problems this is not enough. Let's say if we well after characters, then we would get to the level of words out of words. We would construct phrases and so on. We can do a little bit more there, but let's say let's stop this part of speech text where we assign functions of words within a text. So like verb, noun, adjective and so on. So at this level we can do already things like named entity extraction. So we can identify. Which phrases stock mention names of people, organizations, places and so on? And this is where text mining operates a lot. Not completely, but this would be the level of presentation which is already sufficient for very so for good part of the market of text mining products. Then OK taxonomies there is. Another way Harvey organized texts are words in a taxonomies and so on. Is Ari like word, net and so on, but will skip this so if we go to this the most popular model which is called vector Space model. So here most of text related techniques actually leave, so this would be text categorization, clustering, search, summarization and so on. Typically this would leave on vector space model. Let's say Google is using vector space model and that's pretty much it, plus a little bit of. Extra stuff on the top, but roughly the level. The power of representation would be on this level. They don't go beyond, so this is also one of these critics of let's say Google or these search engines. But they don't there really to to to go beyond because they they would come into different risks. Then if we add a little bit of power, we add something which we call language models. Language models is typically statistical models which model sequences of words here. Let's see if we go to. This area of spam filtering, so this software switch try to detect spam's they operate on this level or machine translation typically would would operate on this level. They don't go into understanding of texts, but they this is enough for most of the most of the stuff which we. Let's say if you go to Google Translate roughly behind would be this language models and with some correspondence and that's it. Then cross modality. So where we try to where we have for the same object in the nature, several representations like textual, visual, audio and so on. Here we can do multi lingual search, associating text. So image search and so on. So if you go to Google and do image search, typically this would be something like this. Now if you go to semantics, so collaborative filter attacking. So this is like Flickr and similar portals they would operate on this level. So this is the way how many operation here is that we have set of data objects which we don't know much about. But we know that people can say something about this and we ask people. Let's describe it with some text and this converges towards somehow unifying semantics of data. So this is. Something which already brings a little bit of word model, and so the last one ontologies in first order theories where we can do reasoning, semantic search and so on. So this is what you heard today already in the presentation of Psych. Soci could operate on this last level, so this is more or less what currently exists in the. And this filter this field of dealing with text and semantics. OK. Oh so this is just the sum.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So we have three major dimensions. When we deal with text, so representation how we represent text techniques. Techniques would go from manual work, so you ask people to do some work over this analytics where only statistics would do its work or reasoning where we connect pieces which are not obviously connected between each other and we have task which we try to solve. So one task is obviously which we do every day. It's search so when we go to Bing or Google or one of these search engines this would be one of the tasks and then we have a couple of other tasks which we will see in the depths later on. Oh",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Oh OK. We so roughly we set representation tasking techniques, so these are really very agnostic way. How to understand the whole field and this generates then different scientific communities like natural language processing, information retrieval, semantic web mining and so on. Which we can say, well, the top level is really politics. How people organize to function and to work while scientific work. Proper scientific work would typically leave down down there. OK, maybe we can.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Skip this semantic web technology stack. Probably most of you know this. So this.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Is the way how?",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "W3.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "You organized.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Organized. Semantic level, so this goes from the characters on the bottom unit codes to URLs. So how to identifiers XML? How we describe structures? How we describe stronger structures, ontologies up to the rules, and. But trust in this issues are not really addressed yet properly, so we here, I guess about this in the next days at the conference more so, let's keep this at the moment. Now live.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "It's just few.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "It's about this. Wef X dot X technologies, and then we'll go to the demos.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So this is 1 trial. How to organize these different versions of the web so everybody heard about Web 2.0? But obviously if there's Web 2.0 there must have been something before as well, so most likely it was Web 1.0. And if it's Web 2.0 then somebody came up with Web 3.0 and four point one 5.0. If you go to the web you will see it's a lot of discussions on this so but let's say this would be kind of possible organization view to these different web. Technology, so one is the web which as we saw it back in early 90s, so static static HTML pages. This would be Web 1.0. This would be HTML. HTTP, roughly would correspond to this. Then we got. Typically this is the web which we know today. Let's see what Web 1.0 this is. Dynamic HTML content. The content which is generated out of databases or in some other ways. And this would be so corresponding technologies would be on the client side. JavaScript dynamic, HTML, flash and so on and on the server side while CGI. This is an old technology, PHP, Perl, ASP, JSP and all these 3 four letter acronyms. So this is what we know. Now we have to point out this is the big hype from last couple of years. So where the idea is really to integrate information data on various levels and to introduce vocabulary and in particular sharing vocabulary so where people can connect to each other. So technologies which correspond to this level of technology would be well obviously blocks, social bookmarking, social tagging, wiki, Wikipedia would be on this level. RSS feeds and web services as well and technologies would be your eyes, XML, RDF hours and so on, so this would be this level and Web 3.0. Well this is now at least the aim. Somehow it's adding meaning to semantics for this, going back to. This old AI dream. This is really what we would need, but certainly we are not there well for me personally. Somehow the closest to this Web 3.0 is what psych is offering today and maybe a Wolfram Alpha I guess would be maybe a step in this direction. OK. So this is. Let's keep this slide and maybe just to go to this.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Lights just to see.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Types which are now not made from Gartner but generated out of Google Trends. So Google Trends is this portal which where you can type in certain query. So in this case we typed in three queries, semantic Web, Web 2.0 and data mining. So this is roughly 3 technologies which we described so far and we can see what's the amount amount of traffic which this queries generates. On Google, and this corresponds in a way to. Call popular, at least the techniques are, so we will see that. Data mining is the Orange one is popular, but somehow it's getting down a little bit, so this typically would be associated with business intelligence and so on. The term data mining itself goes down. This doesn't mean that the whole market on this would go down. Semantic graph is certainly much smaller and somehow leaves on this level, while we have 2.0 while didn't exist before 2000, four 2005 freely and then it was huge. Increase and lot of swinging up and down and now somehow it's coming down roughly. So this is 1 possible. View how this types work. So this is. I made it today so it's fresh. Oh OK, then this is.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "That they needed to show these slides before, no. So this is Dennis slides how what's interesting about Web 2.0 so? Scaling the dynamics of Web 2.0 so per minute you can see that there are roughly 100 edits in Wikipedia, 200 texts and delicious. 270 images uploads to Flickr over 1000 block entries per minute and so now the question is, are we prepared really to deal with this kind of amount of data? So we have 2.0 actually it's effect and it's relevant facts. It's not just empty hype. Hello. Yep. Let's go back. 12,000 tweets minutes, 12,000 tweets a minute. OK, so this is something which I can add to the slide. Yeah, well, it's on you to have that. I will just take this now. I know, I know. I have updated version OK will communicate. Now this is interesting view, so to actually what's going on. And since this is now relatively standardized and it's. Feasible, at least to get this kind of data streams. Obviously, then, this offers opportunities to maybe the biggest number in the updated slides are 100,000 new objects created in Facebook every minute. 100,000 objects per minute in Facebook, so yeah. Oh Google process one petabyte quest for hour. To bite requests. Could be could be possible. IR is the pro way. Things in a little, that's a simple approach that. Probate everything only. Every tweet that has fewer than two words or one more quick stored away everything PP as that's more fewer than 5 characters stored away. Then you left with much smaller number. Sure sure, it's always it's always power loss so it's always the peak which generates impressive numbers. I mean the whole integral of the whole curve, but certainly the peak is always much, much smaller. Yes, volume is huge, but useful only 1% or 10% is huge 1%. It's not that much, so I'm not aware of that working sets for Wikipedia. Wikipedia notes here and there are a lot of small edits. But for the rest are either not far Delicious or any wouldn't make sense of trigger action. Meeting images uploaded, but it's so similar to come other image you know there's been 100 million images or 5 problems like care. If it's a million applied only the same and there's some random person in front of it, which doesn't mean that. But yeah, I agree, I agree. I mean this so. The model behind all this data typically is this power law distribution which you can buy. But if you would model a straight set, if you would model importance of the data, then the picture will be slightly different. But then he said most likely nobody. Nobody was really doing this research yet. It's not easy to make this research as well, so now demonstrations. So we'll try to go from really light.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Way too heavy weight. Heavier weight stuff. So the first one will be really.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Basic just to give you a little bit of flavor. How to learn models? Statistical models because.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "And which in most of the other demos will be something like this behind so. So this is one of the building blocks which we can reuse in many many contexts, so I will now try to switch to. Oh well. Just go to R. This is 1 simple demo where we try to separate. Pluses and minuses are red and blue dots, so first we have red dots. We click couple of them. And we have a couple of blue dots. So now we would like to separate them. I imagine that this is not just the dots in a two dimension, but that it's complicated data object which leaves maybe in. 10,000 or 100,000 dimensions, so this is reality. Everything else is the same, so now would like to isolate this. For instance population or person profile would be one dot, except that it's in many more dimensions than two. Like here we would like to isolate certain set of users versus everybody else. Now we try to build a model. So this is the simple case. Oh we do like this. We get the line and we're happy. OK now what if? We would well there would be a couple of people. Oh, and so well, the model still separates this, But his problem. But what about if we put some here? Doesn't work anymore, so we need to increase the power of language a little bit. So this would be. A little bit stronger language. Which has still problems. But let's say if we use a little bit more stronger language, this is something which is called Gaussian kernel, which is some kind of plugging into this SVM algorithm. So this is the technical detail which we will skip then. You see, you are able to isolate red dots versus. Blue dots now if we are even a little bit more mean. And put some red dots. I don't know here. Let's see whether it succeeded. If we put some blue dots. Here. Again, it works. So now we can put a couple of red dots here. It will still work and so on. I mean it doesn't work always, because sometimes it's really complicated, but roughly this is how we play with the data in extremely high dimensions and at the end. When you press a button, we have a model statistical model, so couple of numbers say the end formula if you want. Which we can then apply on the new data, and this is roughly what happens behind on very low on the lowest level. And we will be using this for the next demos. Not always, but in many cases. So this in particular is this support vector machine, which is one of the most popular methods. Or maybe the most popular methods in the last decade in machine learning. OK oh. Just to go back. Now the next also rather fundamental MoD.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "A demo is how we classify now. Text into a little bit more structured form. So in this particular case in the large taxonomies again this is. An example for many other similar type of classifications so. For demo we will.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Use. Oh this demos taxonomy, which is, I guess still the biggest. On the web. So were people. Something like 80. Well they claimed that they are 80,000. 1884 thousand editors are in collaborative way categorizing. Websites into roughly I think it's over more like 700,000 topic categories. Now the question is, are we able to learn something from all these huge manual work and be able to reconstruct? The skill set of this 80 + 1000 people and let's say if we get a new website or new document, are we able to classify this into some of these categories so the demo will see just this science part. So science is one of these. 18 top categories and if you go into science then well, science would then obviously get split into. Her physics, biology, chemistry, agriculture, Sciences and so on. If it would go to physics then we would get further top areas of physics and if we go even further, let's say then we would. I don't know. Nuclear physics would have further and so on. So altogether you see, it's huge three, roughly on a 15 levels would be the deepest parts of this tree. Now in the demo. We'll see the following, so this is 1 simple demo which is really just one software library running behind from this our software. Where we can put in a query, let's say in this case we'll put. Simple query Firma for my is the name of this famous mathematician which. Oh well, did couple of things. In the past, so now you saw we pressed so from I was a query. We say submit and we get now this query for MA described first with keyboards. And the keyboard speech would reflect this for mice. For science, obviously his scientists, it's math, mathematics, number theory. So he was doing work in number, the offended equation. So this would be integer equations which he was working in, and from a famous last theorem which was solved couple of years ago. This was this famous theorem and this has. This is also kind of relevant keyword for FEMA and this would. Things here reflect categories in this huge demos, three which would. Roughly reflect, which would include Fermat in more or less prominent way. So this is simple example. Now, instead of putting Forma as a query, we can put also a document. But they will go to. Our Institute page or to English version of it. And this is quick description of our Institute. Let's end now, if we put. Oh with text. And paste the text into the demo submit and now this is the keyboard suite with which the software described this document. So it's about science institutions, research centers, social Sciences, biology, basically topics which are kind of relevant, and this would be categories which where the the page from. Describing Cover Institute would kind of fit so. Science institutions, research institutes or science biology institutions, research centers and so on. So which, roughly reflects I mean. I guess they are quite correct, so this is 1 again underlying them over basically what we did, we put relatively unstructured data, so this piece of text into the software and we got more structured version of description or structured version of the same information and will use this in the next demo. Oh, it's going back. So this is just.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Mom to slides on whatever just showing.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "It's something which we.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "All visual and contextual search. So here the idea is the following. So what's the?",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "At most. Let's say common task which we do every day in terms of text. Text manipulation typically would be search Internet search. So we go to Google or any other search engine and we put a query and we get the text on the other side there's some text manipulation. Obviously going on and. So let's see what we can do on the top of this. So if you put a query Jaguar. I see.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Jaguar is very ambiguous query, so has many meanings so. If you put Jaguar, you see we get. Google says, well, it's 84 million results, but we see typically just the first page so we don't see much. So the system which we built is called search point and tries to help us. To see the long tail beyond the first page in an easy way. So let's. Try to run it. The online version won't work. I have uploaded OK. So we put a Jaguar. Wait a little bit. Now here on the left. On the left we get. Results from in this particular case from Yahoo Web Service Search Web service. So it's just the same ranking first result for response to 1st result from Yahoo and so on. But here on the right we have a small. Applet flash demo. The flash component which classifies all the hits into these demos taxonomy which we saw before. The most relevant categories from demos regarding Jaguar are the following, so. Obviously, science of cats cars. Cars obviously is 1. Probably the most important meaning on the web for Jaguar. Then airplanes are Jaguars and games and also football club. Now how to get in an easy way to. Up to that part of search results which talk about the football club. So we take this red dot and results results. Reorganize are organized in such a way so that the ranking. The ranking reflects now the. The context of the football club. This doesn't mean that it's always 100% correct, but roughly, the Jaguars would still cars were on the top anyway. What's I guess if we? Let's go to cats. Yeah, guess works. So if you go here, sign so the page is just with the cats. Well, not just. Here's again, cars cars are, so I mean if you say Jager for the web, this means car, I mean and it's really hard to get rid of this noise. So if you want to see more like car information, then we go here. Oh wants a subtopics of cars like modeling enthusiast, recreation style. Then we go here. Airplanes would be here mainly, and so games would be here and so on. So this is one way how to reorganize search results so. Oh how this happens. Basically we used this previous two components which we which we saw before. So this classification and a little bit of SVM like learning behind and we build up these models and basically we use these models in a proper way through this user interface. Oh so this is. So this is one way how we can do this. Let's say if we would. Put the query so another mode of this is. Even try this query, but let's try. Active project. You may not. Oh after 7. Just active project OK? So in this case here we classify the results into demos. Now in this this case we we are clustering results into typical groups. And are we ha so? Again, active projects. Yahoo returned us lots of results and we try to cluster these results in different in groups of similar documents. Now seems that this bottom. Oh Bob Button one talks about the projects called active, but there are many so. So. I'm not sure if our is. Some around the top. Seems not, but it is. Yeah, OK, Ours is also here, OK? But there are many others. You see we isolated this context. So this is another way how we can deal with this demo. OK, let's proceed. So. Put this up next.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Next demo is where we.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Add a little bit more to the to the model behind it's multilingual search, so let's say this is the following scenario. We have database of documents which are in different documents, other different languages and would like to issue a query which in one language, but we would like also to get results in different languages. So how we do this? So this was part of this smart prod.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Act which is still running where we took. European legislation so this is corpus called okika monitor, which is translated in many in all 20 + 25 languages of Europe and we build up the with this technique Canonical correlation analysis. We will have the sort of language neutral document representation and now if you have a new document, we transform a document into this language neutral document representation and. So then we can operate with this. Now search is 1 possible operation which we can do and so this will be the demo about. So.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Let's run the demo. So we'll just put one query in two languages, so one is let's say if we say. English query Stock Exchange. Oh, and say search studies. The database of Reuters news. Pretty much you see that first hit is some. English documents discussing something and the second one is already German one. And the third one is again English. German, German. German and answer one the same way. If you would say. In German German query. Better. We would get. Also well English, so it recognizes, so this is kind of learned within the statistical way that this Stock Exchange kind of corresponds to beds, so we didn't do anything with some, let's say vocabulary or dictionary behind. So first asset, we learned the statistical model how language is mapped to each other, and then we applied this model on this search and you'll see that roughly it works. So we could do also something else. Like oh. Any suggestion? What's a computer? Yeah, so this is English query and we would we get German document on the top. And so on. OK, so this is another way how we can use these techniques to deal with the text in this particular case we are aware of languages and we try to map languages between each other. Next next demo is.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Our next is really just one slide, so. Oh",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "We all know.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Oh, that's well. If an event happens in the world, then everybody. Many, many publishers. Many news sources would try to say something about this event, and certainly each news source has different bias, different perspective to the same event, different interpretation. So this was one small. I mean small. It was decent experiments on comparing news reporting bias from 4 News sources. So the next slide I will show just. Comparing Al Jazeera and CNN, which are obviously to relatively.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "So. Different sources, so to say. So the task is the following. So we have a new story. Are we able to say based on the text based on the vocabulary which it's used there? From which source it came? So I said we compared CNN Al Jazeera from about the same events from the war in Iraq, and basically what we did. So it's 300. It was 300 events from the war in Iraq, and for each of these events we. We took CNN story an Al Jazeera story and we tried to compare them and what it came out. What are the most characteristic? Oh oh, what's the most characteristic vocabulary are words for CNN? And what for Aljazeera and so CNN would typically report on insurgents militants stuff terrorists and so on while Aljazeera would for the same stuff use words like rebels, fighters, resistance and so on South. This came out straight straight from the data. So this piece of research is a little bit bigger. It's interesting to check but. You see that you can see the detect the bias, the bias which news reporting agencies are somehow. Using when reporting about the same events. OK, this was pretty much the whole the whole message. Now next topic is new visualization, so one aspect.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "Visualization is of course important, so once we have data we would like to see them, not just having some, let's say, numbers from experiments and so on, but we would like to also to see them in different ways. Now here I will show one demo where we try to visualize. Results from the search. So I run this demo just to explain the elements so here.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Up here we put a query. We gotta search results and on the right side we get a topic map where the same results search results would be organized in slightly different, more visual way. And let's go to the demo now. So we should query Clinton so these are Reuters news from. August 96 to August 97, so something like 800,000 news stories. Wait a little bit so we get the results here on the on the left. So if we click a new story. We would get the text down here and also the new story would get highlighted here on this map. Now what this map means? So each cross on this each cross on this map is 1 story. Let's say this particular cross if you click it you get the text here and so it should highlight also the new story here on the left. But we see that it's a complete correspondence between all three parts of the. Screen and also we can go with this small circle around this map. And if you would like to get summary of particular set of crosses like this one, here is 1 denser part. So what's important to say so? If two crosses are close on the picture, this means they talk about the similar topic. So now we put the circle on the top of this crosses and we see the typical vocabulary are coming out of this new stories. And obviously this is about Palestine, Israel, Netanyahu, Arafat and so on. So basically this Middle East problem would be here, while if you would go up here. You would see words like Dole White House campaign Republican, so election topics. If we go here, it's more like budget discussion, while here would be more like economic discussion or discussion about the general economy. Now we can see the same set of results also in a social way. So we extract just the name entities out of the articles and visualize which name entities correspond to each other. So this would be more like European, so remember that this is the context. Is Clinton, so all the articles were Clinton appears. So this would be entities which Clinton is related somehow, more like from the Europe, is one more like from Middle East conflict and this would be more like from American policy. And the third view is also temporal view. So here we like to see how the stories evolve through time. So again, we have still remember we have still the same set of results. But now we try to view them through time. So we see from Aug 96 to Aug 97 on the right, and each color corresponds to one topic. And here we see the characteristic vocabulary for that particular car color. Let's say the orange color on the top. It's about so characteristic words would be Dole campaign Republican and so on. And these are these are 96 articles and talk. These documents talk more less about elections. While the red topic. Is pretty inactive at the beginning, but then got much more prominent, so it's about budget discussion. While let's say this one would be about some NATO, Yeltsin, Russia, so more like about relation to Russia and so on. Well, this one which is pretty much equally important all the time. It's about this Middle East. Conflict and this is. Oh this is a. 1. Possible view to the same set of results. I think if we issue another query like. Microsoft, we would see what kind of topics were relevant for Microsoft. I think this is some. So your results now and let's say at that time it was this discussion between Microsoft and Netscape, so this would be this topic, which went over the whole year and then some other topics would be more a little bit more more less prominent. So it's different distribution of topics so we can play with this and dig in, dig out and so on and so on. Oh, OK, so much about this visualization part. Now going back to. The present.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Ocean. So the.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "So just this beats which I was showing.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "So far.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Uh-huh maybe this couple of slides. So here we.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Visualized use the same software to visualize parts of New York Times. Archive so is a set of. Tell me like 15 million documents going back to 18. 51 and here we isolated the Second World War, and so I will show here just three queries. So one is Pearl Harbor. You see that pretty much nothing was. Written about Pearl Harbor before they actually, so the attack to Pearl Harbor happened on December 7th and 41 and then so before it was almost nothing and then it exploded and during the whole Second World War public hardware was in the news in different contexts of course. Again, different sub subtopics now. Oh, if you would put a query Belgrade.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "Oh bad, grades obviously was well discussed in the New York Times. From 38 on until the actual attack happened. This was on April 6th. And somehow the story shrink. This was just one of many wars which was going on during Second World War and was not obviously not so interesting between within New York Times and while discussion before was really about remember probably from the history that was discussion with our Windows Live at that time will join the packet or not and. So this was well covered in New York Times.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "And the third one is Normandy, where you see that Normandy was discussed before Second World War. The topic was really sailing and ton of some light topics and then completely disappears until the. The this did they happen to and then there was a lot of discussion about this, so these are kind of views to the temporal views to the same node to these different queries. In most of you know about video lectures. Oh, camera over there also this website with the academic videos and. So one of the function functions there is also to. Where is service which we call life, nightlife where we try to connect people which are at the same time on the on the site. Well, this web seems to be slow. Is anybody using torrents? How do I second round one video of which roughly demonstrates this? Um? Hello, my name is volleyball. No, this is not the right one. The system, so this is the first time trying to rent a car. The user, so we have a. So this small 2 minute video basically shows how this service could be used behind this. Again going text mining, but it's on a kind of overlay over the web pages, so that ask for a user is that he would like to rent a car. He goes to Google, puts a query and get some results. Now typically user when user is doing this while puts a query and then he tries to find some information. Maybe it finds it or not. Goes away now we know that user is not alone on the web at the same time. There are many people which are doing pretty much the same thing. Now the question is, are we able to connect these people in real time? Is lost in results the user is lost in results? He then starts the live MetLife service. Then the user starts life, not life service. And he spots to other icons, so this would be two other people which would be doing pretty much the same task at the same moment. One at the same time, reading about renting a car and might be more experienced. Now this is our user says Hello an all others this related users. Doing similar content as our user can hear him see him and then answer him. So he can this. Our user can communicate with these other users which are set at the same time on the site. Here we see how one ever nearby bloggers answered our users question and invited him to a page with more information. So this user, Sebastian, which happened to be there somehow responded and invited our user to this other website. And our user jumped to that other website, discovered a very useful page for his problem. What is more, he meets the person who invited him and who might help him with his problem even further. This is why they decide to start using voice communication. So, so the service also offers this voice communication so well they can chat like you. So now now they will turn on voice communication. They can also discuss. Chat. Hi there. Hi. Really good sad man. Well, thank you. Look, I'm renting a car. Have an advice for me. Perhaps you should just read the coupons. The reason here in my blog the first points, can you hear? Can you see? Do you see there are two mouse pointers so one is from our original user and the second one is from this other user so they can communicate also in this way, so they're sharing in away a little bit of this functionality on top of application. Oh, that's so good. Thanks dude. No problem. So while these two were talking, another person was listening in. So there's another person was listening, and now this third person kind of jumped in. His advice? Besides talking and this person offered pretty much enterprise website at the end. Can also see each other mouse pointers I can point and direct each other into the right direction. Our user had many benefits from our service. He was given a good advice by an expert and also found what he was looking for in any. OK. This is a little bit of self advertisement, which I guess is justified. So this is roughly the idea, and maybe this. Oh let's see if this video lectures already bootstrapped. It didn't OK anyway. If you want Network will work better somehow. If you go to video lectures you will see the set of icons on the bottom. And one of the icons will be you and the other ones are. Users which are that particular moment on the website and you see what they're doing, what they're reading, and you can communicate, and so on. OK, so much about this demo. Um? Going further on.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "So did you just a couple of?",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "Right on this, which basically you saw in the video much more.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "Oh, now going to this.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "Summarization so summarization of.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Text is also one very important topic, which still it's not really well solved and but we did some research on it so you will see the demo. So this is joint work with.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "Colleagues from Microsoft. So we did the following thing. So what is summarization? So you take a piece of content. And you tried to get smaller piece of content with roughly the same information included. What we did now in this piece of research. So we took the text. We transformed into somehow more like semantic form. Then we learn how to extract the relevant part from this so called semantic graph from this form. Extract the graph and then out of this graph we generate smaller version of the of the text.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "So this is an example how we represent the text. So let's say if we have three sentences like Tom Sawyer went to town, he met a friend. Tom was happy, so one of the steps is that we replace he and Tom with Tom Sawyer. So certainly we need to know we need to understand that it's always about Tom Sawyer and then we extract this subject. Predicate object triples some Tom go down. Tom meets friend, Tom is happy and so this is. Kind of representation of this small document in more like graphical form and on this form vieau.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Right afterwards. So let's say an example. So here we have one long document, and this is roughly the summary, which we.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "Which are human extracts and in the same way we are able to extract the document as well. So this is this is representation graphical representation of a document in a large graph. So you will see now the.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "Oh",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "We will see now.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "The the.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "On this.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "Oh so we load one document. So this is 1 document from this one. Oh summarization challenge. So one of the standard documents at the time when we were doing this research, so the full document looks like this, so it's a lot of things going on, so this roughly reflects 50 to 70 sentences in a document. And when we extract this subject, predicate object triples and we draw a graph, we get something like this. Now what this summarization does, so each bit of this information is. We assigned importance for the summary. Now if you want to reduce a little bit this graph. So we use these thresholds. And we reduce the full graph into just one bit, one triple. It's about President Bush ordered embargo, so this embargo was economic for Iraq, trade embargo and so on. So this is now one triple summary of the full document. Now if we decrease the threshold a little bit then other parts of the story will start appearing so that. There was some force. And some resistance. OK, this is maybe not so interesting. So Army sees building so powerful Iraqi Army, SSD, government and other buildings. So this would be roughly the sentence behind Turkey cut. Also experts pressure. President Bush ordered deployment of the troops. Some Americans were trapped there. And so on. And now if we decrease this threshold, we would get the full story in front of us. So this is roughly the what we can do in this piece of research. Now we can try to do this so we have also online version. Daily and Laurent are authors of this, so let's hopefully if network will work. So here we have a piece of text. Let's go to, let's say. BBC. And take the fresh, fresh document. OK. Let's take this one. It's hard to get the story which is not about the war or death. People. Let's wait for. Yeah. Uh, yeah, it's. OK. Haha OK. OK, let's take. So much. And we paste in the text. This is. This is quite some text actually. Maybe we can make it a little bit smaller maybe. Or and. We say. We can do couple of things, but I will show just this one semantic graph, so the visual representation of this document, which we. Oh just paste it in. No, I guess there. This will take what a minute or so. Maybe we can go further on the next why this is slow. Becausw behind is going on this deep parsing and this deep parsing component. It's slow. It's not paralyzed at the moment, but at some point will be. Will be huh? Something is going on. I guess this graph should. Dealer will graph appear. Trips it's pretty long pipeline behind so, but so far it never failed. So yeah, see. So this is now this story. Graph of the text which we paste it into. Uh, the window and if we can dig in into. Different. So mourners attended reception. Family also attended reception. OK, nice. Oh oh, here's something about the cocktail. It's not clear from the context, so we need to add a couple of more things so that this context would be obviously well. There was a cocktail there. It was. Sorry yeah of course because of cocktail. Yeah yeah, of course. Cocktail of peace. And so on, so. Now if we go back and press the summary then we would get the short, short, shorter version of the same document. So this is what we paste it inside. And this is a summary of no, this is the back. This is the summary of the previous document, which was there. OK summary. Looks like this a little bit smaller is just that should should be from the same text. Oh you know how to get it. Like this? So. Now we need to wait a little bit more and we would get the short short version of this. Of this document. So this is one way how to approach summarization so summarization as such is rather difficult problem and. Huh? So we're still doing research together with a couple of other people, so I hope in the couple of years we'll have a little bit even better results so. Ha. So this is now the summary of the text below. Which, well? Reflect something, yeah? How much? Italian technique itself is language independent, but requires. Requires parser, so parser must be built, so if you have Italian parser than the rest I guess would. Only. Grammar the language no no, no. So everything was. Specific to the grammar is compensated by the parser. So the rest, so out of the grammar, we extract the graph and then it's really we extract the essence of the information from based on the graph, so which is completely language independent. Shoot, I guess yeah, if we could get this parser so subject predicate object triples, then Chinese should work as well. But if you started to really. One started really dumb and instead of parsing just triples. Yeah. We care about the structure in the graph and then use the graph. You figure out the summary based on 3 grams. How much worse? So our experiments show daily. I can confirm pretty much and also this was shown also in this work with Natasha and you would have somehow that part of speech tagging is roughly enough. Maybe you lose here and there. Some piece of structure if you have complicated sentence, but roughly part of speech. Is correct? Word. We were checking how we can completely eliminate. I said over overhead altogether and now we have it in such a way that is. Carson Football is it works much faster and basically like we can get out of rupees quality pretty much the same. We might find that in the graph. Unfreezes have a certain graph structure no. I mean, if you have enough data. If it's possible to get rid of even that and then just figured out, I don't know where it is, but I know that this structure occurs. This is an important word. You can almost get rid of. Can't do it for small thanks, but you got. So new stories typically are not so extremely long, and so you really try to introduce some. External source like, well, some linguistic tools to discover the structure. So just cause it's not too long. Document also for anaphora solution. You know you try to connect this graph as much as possible, so enough resolution is certainly one bit which helps here as well. In this profession you've written articles. Uh, the name of her. I don't know. One President Clinton would be mentioned once. Maybe somewhere here would be preferred as just president and so on. And you really need to connect these bits and pieces, so this is also one important element which we need to take care of but. Otherwise, yeah. Certainly ideal situation would be to reduce this too. Slides linguistic tools is possible. Yep. All those things are show. They are more or less. Oh yeah, more or less. They're open source. Yeah, I think they are. I mean you would need to ask which bit in particular. Let's say life. Net life. I think it shouldn't be or it is. I don't know. Oh yes and no. Probably you would need to. Most of the things are GPL as a component. They're all available. Maybe integration. Sometimes it's not like this. OK, going back to. The slides, so we have maybe just a little bit. Maybe one more demo, so this is so question answering question answering is also so far we talked about summarization. Question answering is something where we would try to go beyond the current search where we type in just a keyboard. And here in question answering the goal is somehow to type a question in a relatively full form as a natural language query. And somehow we expect for the software behind tool provide an answer. And so we developed on the top of this machinery which we were showing so far. So some of these components were used, specially the last ones. Uh, we're used to to build this service, which we call answer art. I will try to demo it and you will see what's going going on. Oh answer art.net. Um? OK, so we gather so the collection, which is indexed at the moment is this Reuters collection. I think we already did, Wikipedia or not. We didn't index it, but roughly. Wikipedia is almost there already, and here we type in a question so so this is again this collection of Reuters documents for one year, which include politics, economy and so on. And one of these questions who declared the war so since so many documents about the war, why not to ask who declared the war? We are. We press ask and we get results. So Israel declared war, France declared war. Republican army all. These guys declared the war. We just need that everything comes here. OK. And these are corresponding documents which talk about this. So basically here is the list of mentions. Again, just to repeat, so we have a set of documents which are. Who declared the war? Uh. Which are so parsed extracted triples and now basically we transform query into a triple and we try to match on the level of triples, not on the level of keywords like Google is doing and. So let's say if you go to the first document. So job here. Oh no, we need to click here, sorry. So this is a document so long document. So now we can read it. Or we provided here another functionality which is a little bit more intelligent way of browsing the document. So it's called document overview. Oh wait a second. So now we will get an overlay over this document overlay window. Which offers three different views to the same document, the same. Using summarization and this graphical form. So now this document. This is a textual representation of the information which is here in the graphical form and here is in the form of the facts. Now, if we increase the window we would get also more text based on the summarization and also the graph would get bigger. And also we will get a little bit more text if we go over certain facts. This will get highlighted also. You know actual text where this fact is mentioned and also the graph in the graph that part gets highlighted. So or if we get in. You know, on a on a graph also the text would get highlighted and the related facts would also get highlighted on the right. So this is kind of another view of having all this long pipeline which we were discussing now. So summarization transformation of text into the graph and many other things, anaphora solution and so on. So this is one kind of summary demo which which combines most of these stuff with some let's say. Acute user interface. Oh so you can. You can try this by yourself so if we. Let's see if I problem is the resolution on this projector is small, so. If. Then we would get more more and more text. OK, so sometimes it's better, sometimes not so good. So this is question answering. Oh basically, this is just a couple of slides showing this.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "And.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "Well, this is just lost.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "Couple of slides.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "From psych, which you heard already you do, did you see this example of graphic?",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "Cody from my.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "Mike Michael typically doesn't like to show it. Because it's it's really advanced way of reasoning which doesn't work always, so that's why he's a little bit. Concerns that. Your expectations will be too high, but still it's worth worth showing the example, so it's example of this abductive reasoning which which is far from easy. So one of the projects which side had in the past was. Encoding decent part of this public information which appears in the news. Public news stories based on terrorism. OK, so these were just pieces of text which were entered by people into a psych knowledge base. And OK, going a couple of years back. So there was an event when the seraphic Hardily Prime Minister of Lebanon got killed and well since IQ. A lot about the terrorism, so we were able to ask the question in a natural language. Who has a motive for assassination of Rafik ready? So it's extremely nontrivial questions, so we buy for answering this kind of question. We need to understand the traffic as it is Prime Minister. Prime Minister is represents. A country that this he represents a country, Lebanon and Lebanon, has conflicts with all these other neighbors, and so on. Lots of things. And on top of this we ask who has a motive. So this is not who declared war. And in the previous example we were just searching for patterns where somebody was declaring the war. So here we really need to understand what motivates which is number is written while this guy had a motive. So we asked the question. Then we have simple interface. How to transform this question? Very effective mechanism into logic query. So the logic very would appear on the top and then. Say well, get me answers and then the cycle would come with following set of examples. So Al Assad president of Syria, Syria itself, al Qaeda, United States Israel and this would be. All candidates an for each of these candidates. Psych has some justification, and now in the next slide will I'll show justification why Al Qaeda might have a motive. It's not clear whether, OK, that did this is just why Al Qaeda might have a motive. Oh so basically what's said here. So.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "So just to summarize, so traffic there were pieces in public documents that traffic Hariri was an advocate of Lebanese economic reforms and al Qaeda is opposing economic reforms, and by applying one rule which I will show now, we can conclude that. Al Qaeda had a motive. Now what's the rule which connects all these pieces and there are more pieces, which psych is connecting here. Basically, if you just go through this rule, which was which is very generic, basically defining a motive for an act and the rule says the following so. If there's one in some intelligent Agent Agent which is opposing some policy and there's another intelligent agent which, well, in this case will call victim's advocate of this policy, and there's another third one adapter which is responsible for recording with the policy, then. And then there's one, let's say, if we skip, there's an act which prevents victim from playing the role of key participant in this adopt type, which is defined here, then this first intelligent agent would have a motive to for this act, and this is very generic, independent of killing. Can be many other situations on daily life. In this particular case, Psych was able to map this set of facts into this rule, and out of this somehow. It's concluded that. OK, OK that was also possible. Might had a motive for killing. Graphic audio and it could be also something guys, not just killing, so I'll just removing in one of the other way. OK, so this was the last.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "Demo, just like have just three slides more. So just now we talked about a lot about.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "Text related technologies. So a couple of references which I guess are worth mentioning, so these are I would say. Set of books. Maybe there would be 1 two more which I would suggest particular. The upper left and upper right other lower light, right? So this one would be really good. Also, is mining the web from? Schumann Chakrabarti. These three are really, really good. And there would be set of books also in semantic tech.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "Ologists about their every half a year when I'm at some events that would be more. So let's say these ones would be certainly interesting at least. And what's also interesting, since I've mentioned before that.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "These areas are covered by many communities, so this would be kind of set of list of key events covering semantic and text related technologies, so one is, well information retrieval which deals with search. So this would be cigar and European. Conference on information retrieval. So this especially CCR is very, very prominent event, then machine learning. Data mining would be lots of events. This is missing here. I see Mail this email so I smell this international conference on Machine learning. Is email. It is the event which is next week here in bed. Which that's why we have also this summer school just Co located here before the conference KDD and so on. Computational linguistics linguistics would have separate set of events ACL, so Association computation, linguistics and European version and North American version and Semantic Web has international version, European version and Asian version. So this is you see, these topics are typically discussed on all these events while we try to cover them as many as possible. But it's hard.",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "And the last slide is just well. If you go to video lectures site you will see lots of this stuff covered, especially machine learning and semantic technologies are extremely well covered. Also, linguistics and of course many other things, but. Since we are involved in many projects and activities from this area, somehow these areas are a little bit more prominent. OK. So much for my site, so if there are any questions otherwise so we can also discuss. Tomorrow on the next days. Thanks.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "And one more announcement. So we have dinner at 8. Hey here, yeah. So 7:45 we meeting in the lobby here. Haha, OK, Monica said before 7:45 so if you're hanging around here at. Between 7:30 till eight eventually will collect. Everybody will be here in the restaurant is restaurant union. Yesterday we've been there already, so you just up the road next to the traffic lights. So this is the shortest description. Just a few minutes. Away I don't know what's. Seems that it's raining outside still. OK, then we are concluding today first day, yeah.",
+        "start": 2233.0,
+        "end": 2262.0
+    }
+]

@@ -1,0 +1,68 @@
+[0.0s - 29.0s]
+Sorry, I'm going to present our current work on mining trees. We are interested in the link structure so we focus on another trees and level trees. And we we also look for the closed threes. So because we've got all the information that the frequency is have in less patterns and we need powerful representation. And so we use the natural representation.
+
+[29.0s - 58.0s]
+My name is Franklin. Trees is becoming an important task and this is because three is is. I type of data is between the complexity of sequence and the complexity of of graph. We had a lot of applications in by informatics, chemical informatics and also web analysis. For example, we are interested in web analysis and we do all the experiments on real data with the data of Castle that is. Online shopping website and then we will look at the other navigation patterns of the users. So we use the web log data and then every user session was taken as a tree.
+
+[58.0s - 87.0s]
+So first I want to distinguish between order trees and other trees. Maybe it depends on the we we take as important. The order of the child of the trees. For example, these two trees are two different order trees, but they are the same another three.
+
+[87.0s - 116.0s]
+Also, we want to distinguish between induced subtrees, an embedded subtrees, the inducer trees are obtained by rapidly removing leaf nodes and the embedded subtrees are obtaining. By preserving the ancestor relation, that means contacting some of the edges. We are. Our work is an induced subtrees.
+
+[116.0s - 145.0s]
+So what is 3 pattern mining? 'cause we've got a data set of trees and then we define the support of a tree as we fine. We say that on section supports that we if these trees subtree of this transaction and then the support is the number of transactions that support these three. So given a data set of three is we want to find the complete set of frequent subtrees. We find there are frequent Re 3 is that they are the ones that have support is no less than the minimum support and there are the clothes trees that they are the ones that there is no subtree with the same support. So every equals three is frequent re an we can close frequently provides a compact representation because all the frequent trees are subtrees of their close trees. So. With the information of the cost trees, we've got all the information that the frequency is.
+
+[145.0s - 174.0s]
+Let's see an example. In the audit case for example, we've got this data set of the two threes AMB an. If we define the support, US even supports 2, then we've got two close up trees that are X&Y, but there are eight frequency trees, but they are all of this and we can see that the frequent subtrees are the subtrees of their clothes subtrees.
+
+[174.0s - 203.0s]
+In the another case, what we see is that we've got one more frequent subtree and that the the Why is is different because it has a one more node.
+
+[203.0s - 232.0s]
+There are a lot of related work in using elaborate trees. We are focused on laboratories and then with their to main strategies, doing working with another tree that is one is to compute all the occurrences of the trees and another one is is to use the departed matching to solve this this problem what we see is that includes three mining. There are the CMT minor like works with industries, but the other works that are reality or cloud. They work with a special kind of in question three so for example, cloud users at Redwood trees that they are threes at all. The different styles have different level. Anna. Real so similar and path join. Also the definition of the trees at the old child cannot have the same level.
+
+[232.0s - 261.0s]
+So what is important in reminding algorithms is how we can, how we generate all the candidate sets? How isn't it all the candidate risks and how we compute the support? So we need a powerful representation and then we use this natural representation. First we define these two operations that is concatenation and deletion of number to each component. And then we use the natural. The notion of natural sequence and not other presentation is not because it's using natural numbers. So natural segment is a number is a sequence that begins with zero and that it. Subsequent number belongs to the range between one an impressive number plus one so we can see, for example, this. In this example we've got 0123. Following free, it can be only a number between one and four. We can see also these three other's using the operations of concatenation and addition of.
+
+[261.0s - 290.0s]
+Of a number. What we need is a function that associates to its three not well representation. So we define a recursive way associating to single node. The number 0 and then. Better question, all the all the trees that are joined in a common Rd we use the the concatenation of of its representations. Here we can see an example. This is not representation of this of this pre and we can see that is. Is this the subtrees, this one and this Saturday? Is this one, so we have the the combination of this. We can also see that the tree is represented in that way. They follow the pre order. The list of the death of the traversing between pre order problems away.
+
+[290.0s - 319.0s]
+In order to generate all the candidate sets, natural representations allows us to generate all the candidates doing one step extension. That means that we can add every time one number, and then we are. We can extend on by this way all and generate all the candidate trees.
+
+[319.0s - 348.0s]
+So we begin with a more simple algorithms that is a frequent subtree. In the case of the other trees. What we do is very simple. We begin with the three of a node and then in a recursive way we expand, expand all of the candidate 3 and we compute the support and we check if they are frequent or not. So there are two lines that they are very important that is. They want that we do the extension of the of the candidate reason the other one where when we compute the support.
+
+[348.0s - 377.0s]
+I mean or change that we can do is to put all the tests of frequent subtree at the at the end.
+
+[377.0s - 406.0s]
+In the another case we want we don't want to use all the all the possible root trees and then we use only the Canonical representative. So here we've got free trees and they all represent the same another tree. What we do is that we take my convention one as a Canonical form. In this case is the one on the left. What we do is that we take the maximal. According to lexicographic ordering.
+
+[406.0s - 435.0s]
+And then what we do is we have to do our algorithm.
+
+[435.0s - 464.0s]
+We are the checking of that is a Canonical representative. An doing that we we, we can manage their unordered case.
+
+[464.0s - 493.0s]
+And in order to mind a closed. Close sopris. What we do is that we add to the frequent.
+
+[493.0s - 522.0s]
+Subtree mining, we had the lines of checking that is that is closed. So we check that the the new 3 extend that have the same support or not and if you have the same support then it means that it was not a real tree closed.
+
+[522.0s - 551.0s]
+Let's see if an example same example is happening. We've gotta threes, Amb and then we do the step extensions and then we found that the closed subtree czar exam and why when we are doing the one step extension, when we found a tree that is have the same support that the previous, then we know that the previous is not. Close.
+
+[551.0s - 580.0s]
+An in the other case is the same. With the difference that in this case, why is different and we've got another extension and we arrive to a new closed.
+
+[580.0s - 609.0s]
+Free. We test our methods in in artificial data set and in real data set. We we use the the psykiatri generator. So the artificial data set, artificial experiments and what we see is that in. In artificial in these three is generated by the psychiatry generator. The results were not so not so good. Instead, in doing experiments on real data, we see that our method was better than the city CMT minor. We think this is because. That resonated by Assassinator are small trees, and in this case the trees that we take care of. This web online web. Shopping Castle was a. No, that these were bigger and what we see is that our what we see is that CMT minor when the Super is is small they got memory problems.
+
+[609.0s - 638.0s]
+Anna, what we see doing this work is that. Not the representations are. A very powerful representation that allows us to to generate the candidate twists and to the support. The test of the support in a very efficient way. Anne. And that that allows to present well this this is different algorithm for mining ordered an not red clothes on frequent trees. And then what is what we consider our future work is to work on level sub reason and embedded subtrees.
+
+[638.0s - 667.0s]
+And also to use. This this information extracted from these closed three close up trees to to create a concept. Concept ideas an to obtain Association rules? Thank you very much.

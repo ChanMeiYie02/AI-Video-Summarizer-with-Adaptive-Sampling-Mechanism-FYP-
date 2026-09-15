@@ -1,0 +1,385 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:06.780 --> 00:00:10.530
+Strings are immutable sequences of characters.
+
+00:00:10.530 --> 00:00:14.850
+In Python, you can enclose strings in either single quotes,
+
+00:00:14.850 --> 00:00:18.240
+in quotation marks, or in triple quotes.
+
+00:00:18.240 --> 00:00:23.160
+Let&#39;s look at a couple of common sequence operations on strings.
+
+00:00:23.160 --> 00:00:25.530
+Let me first define a string.
+
+00:00:25.530 --> 00:00:29.280
+Let&#39;s just go with &quot;Python.&quot;
+
+00:00:29.280 --> 00:00:32.220
+Again, if I wanted to find out how long is my string,
+
+00:00:32.220 --> 00:00:34.650
+I can use the len function.
+
+00:00:34.650 --> 00:00:41.430
+Or if I wanted to access say the first or the last element of that string,
+
+00:00:41.430 --> 00:00:46.080
+I can use my common generic sequence operations.
+
+00:00:46.080 --> 00:00:48.150
+I can also do slicing.
+
+00:00:48.150 --> 00:00:51.870
+So I might want to start from the very beginning of the string
+
+00:00:51.870 --> 00:00:54.930
+and take the first three objects.
+
+00:00:54.930 --> 00:00:58.590
+In that case, I specify the starting point of the slice
+
+00:00:58.590 --> 00:01:00.900
+and the end point of the slice.
+
+00:01:00.900 --> 00:01:04.739
+So in this case, I get the letters &quot;Pyt.&quot;
+
+00:01:04.739 --> 00:01:07.740
+So Python returns a new string to me.
+
+00:01:07.740 --> 00:01:11.520
+I can also do slicing using negative indices.
+
+00:01:11.520 --> 00:01:18.540
+So for example, if I type S, minus 3, Python
+
+00:01:18.540 --> 00:01:22.620
+will give me the last three characters in that sequence,
+
+00:01:22.620 --> 00:01:26.250
+in that string, which are h, o, and n.
+
+00:01:26.250 --> 00:01:29.340
+I can also test for memberships using the strings.
+
+00:01:29.340 --> 00:01:35.100
+For example, imagine I wanted to ask, is the character y part of my string?
+
+00:01:35.100 --> 00:01:40.176
+So I can type in my y, and I can ask, is y in S?
+
+00:01:40.176 --> 00:01:42.840
+And the answer is going to be True.
+
+00:01:42.840 --> 00:01:48.150
+If I use capital Y, the answer is going to be False.
+
+00:01:48.150 --> 00:01:51.510
+Strings are a good place to talk about polymorphism.
+
+00:01:51.510 --> 00:01:54.930
+Remember, polymorphism means that what an operator does
+
+00:01:54.930 --> 00:01:59.190
+depends on the type of objects it is being applied to.
+
+00:01:59.190 --> 00:02:03.000
+This is just like in mathematics, where you have to define addition separately
+
+00:02:03.000 --> 00:02:08.100
+for numbers as opposed to matrices or some other object.
+
+00:02:08.100 --> 00:02:12.390
+In Python, we can add two numbers together by using the plus sign.
+
+00:02:12.390 --> 00:02:16.970
+So for example, I can just ask Python, what is 12 plus 12?
+
+00:02:16.970 --> 00:02:19.860
+I can also add two strings together.
+
+00:02:19.860 --> 00:02:24.790
+In that case, the operation is not called addition, but concatenation.
+
+00:02:24.790 --> 00:02:29.010
+So let&#39;s have one string here, &quot;hello.&quot;
+
+00:02:29.010 --> 00:02:32.610
+We can add that to another string.
+
+00:02:32.610 --> 00:02:35.490
+And actually what Python does is the following:
+
+00:02:35.490 --> 00:02:39.120
+It takes my first string, it takes the second string,
+
+00:02:39.120 --> 00:02:42.780
+and it concatenates those two strings together.
+
+00:02:42.780 --> 00:02:45.900
+The result is a new string where the previous two
+
+00:02:45.900 --> 00:02:48.660
+strings have been put together.
+
+00:02:48.660 --> 00:02:53.610
+Let&#39;s think about the multiplication operation first with numbers.
+
+00:02:53.610 --> 00:02:59.460
+Say, in mathematics, if we say something like 3 times 5, what we really mean
+
+00:02:59.460 --> 00:03:05.610
+is 5 plus 5 plus 5, which would be 15.
+
+00:03:05.610 --> 00:03:09.870
+If we have a string in Python-- let&#39;s called that S--
+
+00:03:09.870 --> 00:03:15.330
+and if we type something like three times S,
+
+00:03:15.330 --> 00:03:22.220
+Python will turn this into S plus S plus S.
+
+00:03:22.220 --> 00:03:25.980
+A plus sign between two numbers means addition,
+
+00:03:25.980 --> 00:03:30.270
+whereas a plus sign between two strings means concatenation.
+
+00:03:30.270 --> 00:03:35.190
+Therefore to say three times S, where S is a string object,
+
+00:03:35.190 --> 00:03:37.740
+makes perfect sense in Python.
+
+00:03:37.740 --> 00:03:39.300
+Let&#39;s try this out.
+
+00:03:39.300 --> 00:03:46.380
+Let&#39;s define a string object S. Let&#39;s just go with &quot;Python&quot;.
+
+00:03:46.380 --> 00:03:53.640
+If I type 3 times S, Python is going to take that string
+
+00:03:53.640 --> 00:03:55.860
+and concatenate with itself.
+
+00:03:55.860 --> 00:04:01.030
+So the result is &quot;PythonPythonPython&quot;, a new string.
+
+00:04:01.030 --> 00:04:03.720
+In the examples that we looked at here, we
+
+00:04:03.720 --> 00:04:07.050
+were applying a plus sign between two objects that
+
+00:04:07.050 --> 00:04:13.380
+were either a number and a number or a string and a string.
+
+00:04:13.380 --> 00:04:17.220
+In order for polymorphism to work, these two objects
+
+00:04:17.220 --> 00:04:19.240
+have to be of the same type.
+
+00:04:19.240 --> 00:04:23.930
+So while it makes sense to add a number to a number and a string to string,
+
+00:04:23.930 --> 00:04:28.630
+it does not make sense to add a string to a number or vice versa.
+
+00:04:28.630 --> 00:04:31.060
+Let&#39;s look at this through an example.
+
+00:04:31.060 --> 00:04:34.590
+Let&#39;s try to concatenate a string and a number.
+
+00:04:34.590 --> 00:04:37.680
+So first, I need my string.
+
+00:04:37.680 --> 00:04:42.990
+I&#39;m going to have something like &quot;eight equals&quot;-- and I&#39;ll try to add a number,
+
+00:04:42.990 --> 00:04:44.820
+let&#39;s say 8.
+
+00:04:44.820 --> 00:04:49.680
+The reason this does not work is because the first object is a string
+
+00:04:49.680 --> 00:04:53.010
+and the second object is a number.
+
+00:04:53.010 --> 00:04:57.270
+For me to be able to run this line, what I need to do first
+
+00:04:57.270 --> 00:05:01.920
+is to take the number 8 and turn that into a string.
+
+00:05:01.920 --> 00:05:08.680
+I can explicitly turn a number to a string by using the str function.
+
+00:05:08.680 --> 00:05:13.230
+In this case, I have two strings, so saying a string plus a string
+
+00:05:13.230 --> 00:05:14.610
+makes sense.
+
+00:05:14.610 --> 00:05:17.370
+And the result works out.
+
+00:05:17.370 --> 00:05:20.340
+The operations we have seen for string so far
+
+00:05:20.340 --> 00:05:23.940
+have really all been generic sequence operations.
+
+00:05:23.940 --> 00:05:26.850
+In addition to these operations, strings also
+
+00:05:26.850 --> 00:05:30.930
+have their own methods that enable you to manipulate strings.
+
+00:05:30.930 --> 00:05:38.180
+To get a directory of all attributes, I type dir, str for strings,
+
+00:05:38.180 --> 00:05:41.370
+and Python gives me a long list of different attributes
+
+00:05:41.370 --> 00:05:43.750
+that are available for strings.
+
+00:05:43.750 --> 00:05:48.120
+Let&#39;s see what type of help is available to us right here.
+
+00:05:48.120 --> 00:05:51.900
+For example, the string function &quot;replace&quot; looks interesting to me,
+
+00:05:51.900 --> 00:05:58.720
+so I can just type str replace, and I can enter a question mark at the end.
+
+00:05:58.720 --> 00:06:03.900
+This gives me a very brief description of the string replace method.
+
+00:06:03.900 --> 00:06:07.770
+So let&#39;s use the replace method through an example.
+
+00:06:07.770 --> 00:06:10.080
+I&#39;m going to define a string,
+
+00:06:10.080 --> 00:06:11.640
+let&#39;s call it &quot;name&quot;.
+
+00:06:11.640 --> 00:06:16.230
+I&#39;m going to use &quot;Tina Fey&quot; here as my string
+
+00:06:16.230 --> 00:06:21.741
+and we&#39;d like to replace the first capital T with a lower case t.
+
+00:06:21.741 --> 00:06:24.130
+I call the replace method,
+
+00:06:24.130 --> 00:06:30.000
+and I&#39;d like to replace the capital T with a lower case t.
+
+00:06:30.000 --> 00:06:33.540
+Because strings are immutable objects, Python
+
+00:06:33.540 --> 00:06:36.780
+doesn&#39;t actually modify your string.
+
+00:06:36.780 --> 00:06:40.890
+Instead what it does -- it returns a new string to you.
+
+00:06:40.890 --> 00:06:46.080
+If I&#39;d like to keep this new string, I have to assign it to some variable.
+
+00:06:46.080 --> 00:06:49.950
+So for example, I could call this &quot;new_name&quot;,
+
+00:06:49.950 --> 00:06:54.930
+which consists of the original name with the letter T replaced.
+
+00:06:54.930 --> 00:06:57.990
+If I now look at the content of my original name,
+
+00:06:57.990 --> 00:07:01.250
+you&#39;ll see that the T remains capitalized.
+
+00:07:01.250 --> 00:07:04.220
+But if I ask, what is my new name?
+
+00:07:04.220 --> 00:07:07.920
+The capital T now appears as a lowercase t.
+
+00:07:07.920 --> 00:07:09.990
+Let&#39;s continue with our example.
+
+00:07:09.990 --> 00:07:13.350
+But this time, let&#39;s try the split method.
+
+00:07:13.350 --> 00:07:19.380
+The split method takes a string and breaks that down into substrings.
+
+00:07:19.380 --> 00:07:21.690
+What you have to specify is the character
+
+00:07:21.690 --> 00:07:25.170
+you would like to use for splitting the string.
+
+00:07:25.170 --> 00:07:28.050
+I can also take these strings and turn them
+
+00:07:28.050 --> 00:07:33.240
+into lowercase or uppercase letters using other string methods.
+
+00:07:33.240 --> 00:07:36.390
+Let&#39;s find out the type of this object --
+
+00:07:36.390 --> 00:07:38.000
+it&#39;s a list.
+
+00:07:38.000 --> 00:07:42.180
+Therefore we can ask how many objects are contained within that list.
+
+00:07:42.180 --> 00:07:45.870
+And Python tells us we have two objects there.
+
+00:07:45.870 --> 00:07:51.000
+Because it&#39;s a list, we can access individual objects by their position
+
+00:07:51.000 --> 00:07:57.950
+so it makes sense to write names square brackets 0, or names square bracket 1.
+
+00:07:57.950 --> 00:07:59.980
+We can also do the following:
+
+00:07:59.980 --> 00:08:03.870
+We can extract the first object in that list,
+
+00:08:03.870 --> 00:08:07.570
+and we can ask what is the type of that object.
+
+00:08:07.570 --> 00:08:11.130
+Now that we know it&#39;s a string, we can call some string methods
+
+00:08:11.130 --> 00:08:13.200
+to modify that name.
+
+00:08:13.200 --> 00:08:17.366
+So let&#39;s take that string -- names square brackets 0,
+
+00:08:17.366 --> 00:08:20.010
+and let&#39;s call the upper method.
+
+00:08:20.010 --> 00:08:23.890
+This turns the name &quot;Tina&quot; into all uppercase.
+
+00:08:23.890 --> 00:08:28.560
+We could similarly take, let&#39;s say, the string at location 1,
+
+00:08:28.560 --> 00:08:34.459
+and turn that into a lowercase case string using the lower method.

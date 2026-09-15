@@ -1,0 +1,21 @@
+{
+    "id": "4pb7uvpnfpdpo36jabhczewfxw55awu4",
+    "title": "Distributed Markov chain Monte Carlo",
+    "url": "http://videolectures.net/nipsworkshops2010_murray_dmc/",
+    "info": {
+        "author": [
+            "Lawrence Murray, CSIRO Mathematics, Informatics and Statistics"
+        ],
+        "published": "Jan. 13, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Monte Carlo Methods",
+            "Top->Computer Science->Machine Learning->Markov Processes"
+        ]
+    },
+    "num_segments": 6,
+    "num_sentences": 45,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 695
+}

@@ -1,0 +1,21 @@
+{
+    "id": "hnn6biixygiuitvfeb5jxrvvhs2u7foq",
+    "title": "Exhibition recommendation using British Museum data and Event Registry",
+    "url": "http://videolectures.net/eswc2014_kosmerlj_clarke_exhibition_recommendation/",
+    "info": {
+        "author": [
+            "Peter Clarke, University College Dublin",
+            "Aljaž Košmerlj, Jožef Stefan Institute"
+        ],
+        "published": "Oct. 19, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 83,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 889
+}

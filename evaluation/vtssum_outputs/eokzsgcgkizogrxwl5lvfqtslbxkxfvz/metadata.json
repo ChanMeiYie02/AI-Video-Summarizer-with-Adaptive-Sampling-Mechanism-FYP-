@@ -1,0 +1,20 @@
+{
+    "id": "eokzsgcgkizogrxwl5lvfqtslbxkxfvz",
+    "title": "Approximate Inference in Natural Language Processing",
+    "url": "http://videolectures.net/nipsworkshops09_smith_ainlp/",
+    "info": {
+        "author": [
+            "Noah Smith, Language Technologies Institute, Carnegie Mellon University"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Natural Language Processing"
+        ]
+    },
+    "num_segments": 68,
+    "num_sentences": 351,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1845
+}

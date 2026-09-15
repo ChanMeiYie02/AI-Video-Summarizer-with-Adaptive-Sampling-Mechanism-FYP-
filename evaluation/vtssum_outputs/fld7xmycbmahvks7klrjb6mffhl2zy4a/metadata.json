@@ -1,0 +1,21 @@
+{
+    "id": "fld7xmycbmahvks7klrjb6mffhl2zy4a",
+    "title": "BigDataOcean – Exploiting Oceans of Data for Maritime Applications",
+    "url": "http://videolectures.net/eswc2017_lytra_exploiting_oceans/",
+    "info": {
+        "author": [
+            "Ioanna Lytra, Institute of Computer Science, University of Bonn"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 40,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 542
+}

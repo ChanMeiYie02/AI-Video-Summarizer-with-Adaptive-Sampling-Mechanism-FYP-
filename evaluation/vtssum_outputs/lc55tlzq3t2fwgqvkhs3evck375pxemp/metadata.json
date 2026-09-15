@@ -1,0 +1,21 @@
+{
+    "id": "lc55tlzq3t2fwgqvkhs3evck375pxemp",
+    "title": "Modern String Theory Confronts Particle Physics and Black Holes",
+    "url": "http://videolectures.net/kolokviji_cvetic_black_holes/",
+    "info": {
+        "author": [
+            "Mirjam Cvetič, Department of Physics and Astronomy, University of Pennsylvania"
+        ],
+        "published": "May 22, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Physics",
+            "Top->Astronomy"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 591,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 72,
+    "ground_truth_summary_length_chars": 7746
+}

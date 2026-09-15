@@ -1,0 +1,162 @@
+[
+    {
+        "text": "Hello, sorry for the. Slight disruption, so yeah, this is joint work with Ronald Koehler, Bear Frederic, Ratle Hossain, Mohammad Mobile, he Pavel Cook, certain Corey. I'm not going to try and pronounce that maybe maybe so he's in Jan's group. OK thanks.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "This is I. Isn't good. So this talk is about looking at deep learning, semi supervised deep learning in a multi task learning context so you can see the Hinton, Lacon, Bengio, groups work in this kind of context where they use an autoencoder as to train an unsupervised task as the auxiliary task and then uh. You know, train their supervised task as the other task, but they do it not at the same time but pre training one and then the other. But still you could see it as multitasking. And but in this work we're going to propose instead of an encoder decoder model like in the Hinton, Lakanen, Bengio approaches. We're going to just use an encoder only method which is just to use. Embedding algorithms like dimensionality reduction algorithm to do the semi supervised learning, which is just what people are doing in like with support vector machines with like the Laplacian SVM. So we're going to use that kind of regularizer and show that that has some nice results. Yeah, it's easy to implement and think about, it's simple. Faster train and seems to work well. And then we're going to. We're going to show some first experiments on small datasets that show that works and then apply it to video and text as well. How do I OK so my first slides are just like?",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "A recap of the nice tutorials of Jan and Joshua. Neural networks, they seem really cool, but standard backdrop might not always give good results. So one argument is that. When you do the backpropagation with a supervised target, you're going all the way from the output backwards, so the gradients get very small on these earlier layers, or these earlier layers. This is a convolutional net, and this is just a normal normal net and yeah, and so those those layers, the earlier ones don't get trained. So if you multitask with the task that isn't as deep. And it's sharing these earlier layers. Then you could think it's going to train those layers more, right? So that's why you're greedily.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "You're greedily starting from the beginning with these kind of encoder decoder. Methods. So I don't really need to talk about that, more so if you look at it from. From this perspective.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Of what deep learning type researchers are doing and what people doing like kernel methods are doing. Then you could see these two sort of points of view. So the deep researchers could be saying that and this was, you know these. Some of these points are in the tutorial. What we want to use deep networks because you can learn some tasks in the layers and you know you can like in the previous talk you can share share these things that you learn with multiple tasks and this should be essential for hard tasks and you can't do that with this shallow system so. And also that's what you were saying. The nonlinear nonlinearity is sufficient. So like yeah, like in kernel methods. If you train on a lot of points and you just don't do any smart tricks, you have a huge number of support vectors or something and it's really slow. But on the other hand, people doing like kernel methods might say are these neural Nets? They look really complicated messy. Then you deep methods like these ones might look even more complicated and messy. And shallow methods give clean, valuable insights to what works. And so my point of view is like, let's try and take all the nice things that shallow researchers do and try and put it into the deep algorithm.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So. We're just going to do that so very high level. And then Zang proposed a kind of in this. In German law 2005 framework for multi task learning, and they did it just with like linear classifiers. I think where you propose like pseudo supervised tasks on unlabeled data, and you multitask with those to try and improve your error rate. Semi supervised. So you have a large number of unlabeled data, presumably in the small number of supervised. So they do things like predict the middle word. Given a window of words and then perform really well on like NLP tasks. And so in convex learning you have to multitask. You have to train the two tasks at the same time, right? 'cause otherwise if you train the unsupervised 1 first and then train the other one is convex and there's a unique solution. So you're just going to forget what you had. But with non convex systems you could see why doing one and then the other. I mean has been said. You can still retain some of the memory of what you did before, like you're only going to move the weights so far with the supervised learning. So for me that sort of while you could see it as multi task learning, but you sort of you didn't do them at the same time, but it still has a similar effect. But for us, in this work, we're going to sort of look at this very general framework and just choose a particular kind of super pseudo supervised task which is pairwise embedding average.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Circles gone one too many, so there's lots of like kernel method type, dimensionality reduction embedding algorithms like Laplacian, Eigen Maps, Isomap, multidimensional scaling and they all have the kind of flavor where you take pairs of inputs and you have some you have some prior on which pairs are similar in which are dissimilar and typically this is done very naively by just saying. The nearest neighbors are a point I have are the ones that are similar in the high dimensional space and then you learn a low dimensional embedding which tries to retain that. With this kind of loss function on the pairs. And yeah, so it's Laplacian eigen map does exactly that. And. It gets very nice embeddings and then just cutting forward so people have used that with support vector machines to add as a regularizer to. This is a normal SVM objective function so you add this term which is like the Laplacian eigen map. Objective function and what that does is if the cluster assumption is true. So like the points that you identified as WI J equals one. A similar do indeed tend to have the same label. Then this thing is going to push the outputs of the SVM for the unlabeled points that you believe have the same label to be the same. So it tends to. Make these clusters of points agree Ann, you end up getting better error rates than if you just learned with a small amount of supervised data, so. There's no.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Other embeddings embedding set of embedding algorithms for neural networks, which are the analog of those embedding algorithms which are Siamese networks, right? It's the same type of loss function. You have a pair of examples and you push them together, or if they're similar and Pullman parties are dissimilar and like one particular loss function which is the Doctor Lim algorithm from Jan's Group has looks like this for the similar pairs you push them together. Squared distance an for the other dissimilar you pulling parts have a margin of at least M, So this sort of looks just like the Laplacian eigen map thing. I so you can think of it as the neural network analogue of that. I mean, there's some differences like this. I mean this function you're learning now is a neural network. It can be any general neural network, whereas in Laplacian eigen map is the just learning vectors, one vector for every example. Actually like completely nonlinear. It's not actually a mapping that you can apply to new Point scored the out of sample extension problem that people have tried to address. But here there's no problem like that is learning a function so you can just apply. To any point, you can also include prior knowledge in the function, because it's in your network, so there's lots of.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Nice things about it, but then there's basically that's that's our trick. So you've got the SVM plus that regularizer right? For Laplacian SVM we can do the same thing. We're just going to put neural net here. And instead of passing Eigen map objective here, we're going to put the Siamese net objective. The. Difference is we don't have to just put it on the output like they did on the SM. So the.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Yeah, mine has one layers. You can only. There's only one place to put it on the regularizer on the output, right? But we can regularize the output of any of the layers of the neural network, so the output of this layer is the input features to the next layer, right? So this this output. Here we can say for two examples that we believe should have a similar representation, we push them together. That point there. So if you want so essentially you can see three different where we see three different ways of doing it. You can either put it the output, put it somewhere in one of the internal layers, or maybe a little bit more tricky. You could make some extra layer that's not actually shared with the with the rest of the network. That's that you're using for your supervised task, and then do the. Do the loss function on that and the reason why that might be good is because you've got one more linear map that's rescaling the data so that when you're asking for this margin, M are pushing the points apart you. You don't force them apart too much for the supervised task.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So that's that's the algorithm. So we just literally do that with stochastic gradient descent. And we don't do that pretraining, by the way, we just do it like in SVM, both objectives at the same time. So it's very simple. Just make the grade.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Updates. Now. The. The thing is, what people did with Laplacian Eigen Maps mostly just using K nearest neighbor. This idea is much more general than that you can take if you have any kind of prior on pairs, you can use it for example in videos which is what we did in our ICML talk that Renan gave yesterday's. You could say 2 frames of video next to each other that you know might have the same objects and things of the same labels. You can use those as the pairs for embedding or if you have text you could take a word in its neighbors and use that. Or, you know, you could use stuff from the web as well. Lots of possibilities. Some.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "She's fired and have really got time to go into. The more you could see this thing as an encoder without a decoder and compared to the encoder decoder methods of other other groups that might be nice that you don't have to do the decoding step. For example, you have a very sparse representation is input when you did, when you decode it again, you would be dense within normal methods so. This could be really slow. With this method. You don't need to do that.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So now just some simple experiments on typical semi supervised datasets that that people use to measure things like Laplacian SVM. This is this is a normal neural net and this is adding this regularizer on three of these small datasets.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "And this is just a two layer neural Nets. Essentially you get the same kind of improvement from SFMTA Laplacian SVM as you get from neural net to this nor net with the embedding so OK.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Doing the same thing. But now we can look at. This is on three different sides of emnace, with 100 training points 600 and 1000. You can do the same thing, but embedding not on the output layer but on one of the internal layers or one of these auxiliary layer that I proposed and all of those seem to work. So this is the normal neural net. So this is the difference. Once you add the semi supervised learning and this is where the convolutional net any kind of network you can do this, there's no restriction. You're also going to see improvements.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So that was only with two layer Nets and now this is the same kind of results where I go from 2 layers for later 6, eight 10:15 and with a normal neural net you're going to see the test error here. Getting bigger and bigger the training area you can easily get its zero. In this case actually, but it's just over 15 an with the embedding on the output, just on the output layer you are seeing improvement actually, and this is where you do the embedding regularization. All the layers at the same time. You see a further improvement. And that's that's better than SVM and T SVM in that case. So.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Yeah, that that please conclusion so far it's simple method, easy to train. We didn't do any pre training. There's no decoding step. And yeah now how long have I got like? 5 minutes, yeah, now we just show quickly some experiments on video and text so.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Deep learning for video, so this this is just a little summary of Reynolds talk.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Yesterday is basically we take the the frames consecutive frames of video as the. Regularizer. OK, so so presumably you could do things like learning variance, suppose illumination background clutter will kind of things with that.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "We actually did a very simple experiment. We just took oil 100, which is 100 objects 70 two different poses. We recorded our own video of objects that look similar, so we call it coil like and we took these plastic animals like 60 of those and took videos as well and use these two as unsupervised video. We also like pretended that was video as well.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "In another experiment and just quickly go for that, there's two setups, so anyway, one where you have 30 objects and one where you have a.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "And so if you use the fake video from coil, you get this like ridiculous jumping error rate from a standard CNN. But that's kind of cheating 'cause you have, like the tests images. Actually in that video. In this setup you don't get semi supervised. We have 30 objects in the other 70 we put in the video and you still get a big jump an with these other videos that we made which have completely different set illumination settings and so on. Or different objects in this case. You still get an improvement. Not as much. Yeah so.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So basically, yeah, then you're up to's to state of the art without feature engineering. And. Yes, and we did the same thing in text. This is probably our biggest experiment, so we took different tiles, part of speech tagging, chunking. Any R and SRL. In",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "NOP is really quite striking what people do because they make a cascade of classifiers like they do a part of speech.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Tiger then a pause are in the each time they hang code what the outputs to each of these tasks are going labeled data and their hand code. The input features that based on those predictions. The next layer and they do that and it really sort of looks like a neural network, but like nothing is trained between. It's all independent. Mind you can set them up as convex problems then, but we just try and train them.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Thing and we use the CNN and the each so we only have words as input and the words are represented as like 50 dimensional features and we're going to do an embedding.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Some of the words just like before, so we're going to take like some neighborhood of words plus or word in unsupervised data. So we take Wikipedia, which is 630 million examples of such such pairs. And we do the embedding algorithm the same time as we train these.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Tasks this was kind of what the embeddings look like, so afterwards, so you get like the country France is close to these other countries in the embedding space, so these things look nice, but. The error rates we get big improvements.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "So over not doing the semi supervised learning. So this is the normal CNN is most striking here. This is F1 score on the semantic role labeling task. Go from 51 to 72 and after we've done that we're at the state of the art of the shallow and methods that don't use all the feature engineering. Yeah, that's that's it.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "So when I do preach, I don't do pretraining. But yeah, when I'm training, I backdrop through all the layers. Yeah, so if the embedding is on the output, that's really going through all of them. You could actually try it. Not doing that, and I suspect it might still do something good. CNN. Yeah. Convolutional net without the semi supervised learning. So when we add the embedding algorithm we call it in bed scene and. So. How is what trained? Specific background. Oh, it's like the same, the same network, but just on the supervised data. It's not semi supervised. Right, right, right, yeah.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "So it's all these results were analogous every in each table. I basically showed the supervised network and the semi supervised network using the embedding algorithm and every time I was getting an improvement in this. Basically. Yeah, maybe one more question. So we have for this consultation CLU training separately. We actually we try both, and because, yeah, that's another kind of multitasking right where you multitask with supervised task. And actually the improvement you get from multitasking. The other supervised tasks are not that much is something, but not that much. I don't have the graphs here, but the unsupervised task makes a much bigger difference. But there's two reasons why there might be. One is there's. There's only. A million training examples supervised and the other. The other problem is that it's actually the same data. It's all Wall Street Journal, so it's not like you're even seeing anything knew in the inputs, only the output is new. Speak again.",
+        "start": 899.0,
+        "end": 928.0
+    }
+]

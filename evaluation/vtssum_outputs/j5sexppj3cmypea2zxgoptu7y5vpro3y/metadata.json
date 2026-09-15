@@ -1,0 +1,21 @@
+{
+    "id": "j5sexppj3cmypea2zxgoptu7y5vpro3y",
+    "title": "Probabilistic Techniques for Robot Navigation",
+    "url": "http://videolectures.net/interACT2016_burgard_robot_navigation/",
+    "info": {
+        "author": [
+            "Wolfram Burgard, Department of Computer Science, University of Freiburg"
+        ],
+        "published": "July 31, 2016",
+        "recorded": "July 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 190,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1822
+}

@@ -1,0 +1,137 @@
+[
+    {
+        "text": "OK, good afternoon everybody. My name is Javier. I realize I'm the only thing between you and lunch. So I'll try to be brief. Just bear with me. To present my company and the width of what we do with data, it's called Elsa speak and the title of the talk. I called it language resource management so.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Basically, I'll talk about three things first introduced by the companies. So maybe does any of you any any one of you knows what else is OK? Nice, well, OK it's it's a start. Then I'll talk about our product, what we do, what we try to do. It's around audio. It's not so much text. I seen a lot of text today, so it's very different and then also a couple of things we do with the data we collect from our users, which we treat very carefully. And I have a couple of examples. A couple of samples if they work, fantastic if they don't. Well, I'm sorry about the setup.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So this is me, I'm I'm originally cattle and I came to Lisbon a few years ago after doing a PhD and in speech processing I worked in the telecom industry in Spain and then I came to Lisbon, where I did my small startup on my own. Finally I joined, else at the end of 2015's Chief Scientist, CTO, co-founder. And.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Um? What is Elsa so? So I'll say is this application and all the technology behind it. It's personal mobile coach, so it teaches you how to communicate better right now in American English. What does it mean? Well, it teaches you pronunciation. It teaches you intonation. It teaches you to be able to listen well and it will in the future teach you not to do the arms to do the right pacing. To do the right sentence, intonation, etc etc. It's all about speaking. So one of the differences with many of the apps that you can download out there is that we focused our company into building our own technologies. So we have our research team. We build the technology, we put it in place and it's actually here in Lisbon, so we're really literally down the road.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So how how do we do that? What's it based on? So this is an example of the speaking part of the pronunciation. We ask people to read the watch in the screen. It can be single word, so it can be sentences. And then after that we analyze it with our our own AI and we tell the users. If they said it right or wrong, and if they said it wrong on the target phonemes that we we highlight, we tell them what we think they said wrong. So how can they could improve on that pronunciation? An if there is, like if we can clearly identify the phoneme they said versus the phoneme they should have said we. Also we also point pinpointed here.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So. As I said, it's an app. We have iOS and Android versions. We've had quite a lot of success. We've been at it for three years, bit more of three years and we have over 4 million downloads, almost 5 million now, baby. So we, in addition to the apps, we also have an API that we've. We've had some people try already. We're not putting into any big company right now, but we've had lots of people that giving it a try and saying how it could improve, how, what, what sort of feedback we could give. And we have also on the better version at Teacher Tool so that teachers can track how their students are doing with the students. Consent of course, our team is about 20 people now. And we are, I think the best to go.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "We are all over the place. Our headquarters are in San Francisco in Lisbon. We have engineering and research. We have engineering in India and in Vietnam. Which is right now our main market, Vietnam, Southeast Asia. We have business development, engineering and customer support. So here I wanted to put them into the how we've been over the years. Just a couple of highlights. As I said early 2015, it was funded by a Vietnamese Vietnamese girl. Are you joined at the end of that year? And we've been going on? We've had a couple of big rounds of funding 3 million last year and just a month ago we got 7 million from a Google Ventures Company. And we've been keep pressing lots of downloads of people, and definitely, as you can imagine, lots of data coming.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So next I want to speak about the what is it, what the app does, what we can do with it?",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And so, as I said, our objective is to teach you how to communicate how to better communicate. So communicate what does it mean. It means speaking. So we teach pronunciation. It means also listening. We teach whether you can understand the difference is maybe the minimal pairs and things like that. We teach you conversation, so you can have conversations with our with our Elsa agent. By the way, Elsa is not the frozen Elsa, it's zone. And we teach you intonation right. Right now, word stress or whether you stress the right syllable in the word. This is something that agents tend to fail a lot at an we are also about to release a sentence intonation where whether you stress the word you want to stress on the sentence.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So these are the main screens that you would see if you enter the app. The first one the Planet screen is where the English skills that we teach our listed here. You can see the WVB and short long guy. So there is, I think 16 skills, 1516 skills that we teach right now and that should be increasing as we as we get our acoustic models stronger when you click on one of these you normally get a list of lessons from from easier to more complicated. On each one has the type if the first one is a listening one, then speaking, then sent word stress on there. If you go into a speaking lesson and that's where we have the most we like, it's like 90% or would say you'll see the numbers afterwards, it's pronunciation. Then you'll see something like that. This is the screenshot on Android. iOS is a little different, but it's going to become this soon, so you have. In this case you have Elsa telling you the word and then you say OK, Oscar nominee or you might say Oscar nomina or whatever. And then if you say it right it will put it in green.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Excellent you can. You can continue if you say it wrong. You will put it in red or yellow if you more or less 8 and then we'll give you a feedback hint that you can listen to if you want to. You can also click on the on the little light bulb and get more information like the pronunciation, the transcription there is a description definition sometimes that is an image that illustrates so it indirectly we're teaching lexico, but it's not. Lexical grammar is not our main focus. We're not. We don't try to go against Duolingo Busuu the puzzle guys here we we try to do our pronunciation stuff I. That's why you know they have. Yes.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "OK, so this is I computed it yesterday to show you because we keep every week we keep putting new content so I never cannot keep track of so I just discovered we just exceeded our thousand lessons. So 1001 lessons we have so this is a way that we split it. Content modules is this big chunk of content that goes into a particular topic, a particular theme, right? So it's like I don't know human relationships or business or. Or we have one of taxi driver? How a taxi driver talks to his clients etc etc. And then within that we have bunch of lessons. Sometimes there is like 20. Sometimes there is like 60 and each lesson has 547 depends exercises which are these words or sentences that you either speak or listen to or conversations conversation turns. So we have more than 5000 exercises and this is the split. Lots of them are pronunciation. Some conversations I'm listening and some word stress.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "In addition to all this, so we we figure it out very early on. OK, our users might want to use our app also as a free pronunciation helper. So what does it mean? So they are, they see some text and they're like. How do I pronounce this text? So we made a dictionary feature. You are able to type in there whatever you want. Or you can choose one of the options we have below. We keep changing them and then it will go to a screen like the standard pronunciation screen where you can pronounce it. You will hear a TTS, a text to speech, voice of that, and you can pronounce it. And then we will also give you feedback on that. OK, and we are. We are giving you also written feedback so we automatically generate this feedback. Sometimes it's not as accurate as the one we have in the curriculum where we know exactly what we're teaching, but we're working on it. So and yeah, six months ago or so, I started tracking how many and how different the sentences on the worst people were in putting in there, where and so far in six months I have more than 230 K words or sentences. Some of them are correct, some of them are incorrect, some of them are not politically correct. So you can imagine what sort of things people want to pronounce for fun or or for leisure. So.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Yeah, so how does it work? Well about data so we have our app, our speakers, our users use the app. The app connects, does everything on the server side. We don't try to do anything in app so we send all the audio we send everything to our cloud. The speech server in the server side uses pretty big deep neural networks to analyze your speech and tells you what how you did. Now of course with the user consent we are. We ask for this concern at the beginning when you register we keep. We keep that data in S3 in a WS so that we can later on analyze and use it as an aggregate at an aggregate level to improve our system.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Data, well, we've we've kept collecting it and collecting it and collecting. At some point we were like, OK, we are going to be drowned by it. So we right now have about a million exercises today so people speak or listen more than a million times on our app. And we've collected about 25 terabytes of audio plus metadata. This is the curve if you're interested more or less on on how it's growing, it's going pretty steadily. We're about 200 more than 200 million. Audio recordings right now, stored in our in our back end and as I told you, Southeast Asia, Michael Foundries from Vietnam, so in that area people looked really at the app and used it a lot so you can see that it's 60% of the of this data is Vietnamese. We have a lot of Vietnamese people speaking into our app and we have Arabic, Spanish, Portuguese from Brazil over there. One of the smaller ones and. Yeah, Arabic Arabic, it's a. It's a it's a funny story we discovered one day that even though we did nothing and it's actually the quality of the service might not be great. We have lots of people in Egypt using our app. Lots and lots and lots of them. I don't know who has the same thing but for us it was very amazing. We never never ever done anything in Egypt to boost the people. Lots of them were using it.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So. All that data that the 25 terabytes is not usable. Many times they don't even speak. Many times it's like very dirty. They not understandable. So we do some cleaning up. These are the steps but it's basically we make sure that the audio corresponds to the text that they were supposed to speak and it's of sufficient quality. We are interested in collecting errors so we looked at whether there is errors but not too many because if not, it's just an error audio. And if it's correct then we keep it aside and that's that's the data that we use for our experimentation. 4 hour retraining, etc etc that I'm going to mention briefly briefly about.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So I don't know if it's going to work, but I'll try to play samples. Because I think it's important to see what sort of users use, use this sort of tool, so let's see if it works. This summer I will visit a new country with two of my best friends. We will go sightsinging and stay at a resort by the ocean. So this is. These are sentences from our assessment test. I didn't mention the assessment test. It's an optional activity that you can do. You can read right now. I think 13 sentences and then at the end you will get a report of all the skills that you that we have in the app and how you rank in them. So we propose to you what you can do to learn what the skills you can work on and in here I joined all the sentence together. This audio is long but I'm just playing a couple of sentences. This gentleman is actually. Pretty good, I think this one is a little worse. This summer I will visit a new country with two of my best friends in Spanish. We will go since ascending and stay our restaurant by the ocean. OK, it will be very good quarter. But it would water. And the last one. This summer I will visit, visit a new country with two of my best friends. We will loss Tyson and stay at our spot. By also. So an important point to make here is whether. Thank you at important point to make here is that it is not. We don't have exercises where you are right or wrong. It's not a binary decision. There is a lot of to be analyzed here. Like you know how. What percentage of of right are you on? What sends you know what is important for you to say here what is not? And this is something that keeps us very busy, because for example if we just look at the rate of pronunciation Orwell pronounce phonemes, you might get a quite high good pronunciation. But if we look at the. I don't know at the understand ability or are you. Is your sentence more or less correct? You make a couple of mistakes and probably an American would be totally lost or an English speaker with Toyota would not understand you, so it's this is sort of the grey zone we are working here when we work with audio instead of just saying, you know, type this word and then we know if it's correct or not depending on whether you typed it or not, or other apps that maybe use ASR and they compare the output of the ASR to see whether it matches or not. What they were expecting. So. No, I don't wanna play.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "OK, just a couple of I'm right on time. Just a couple of three or four experiments we've done and things that are still ongoing on the analyzing these data and working with this data. So as you can imagine, we have like we're sitting on top of at least 7 terabytes of good quality, good quality data that we can use for something. So hey, my boss tells me, hey, where are you? You know, when are you using that? When are you doing something with that? So we keep. We keep bringing up research project in my group and some of the things are going into production. And I'm.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Mentioning some of them here, so this is the obvious one, right? So we have. This is the same picture we have the three first 3 icons we have our users, they get scored in our speech server and then the data gets stored. Now as I mentioned we have some data selection process which then after sometime so we did. We did one iteration. We had 500 hours. We did another iteration. We had 1000 hours now. Probably soon we're going to do another one. Then we use that. Audio to retrain our acoustic model so our acoustics. Now we can use all that data we have to use very good quality data. We cannot use the third person 'cause it's going to make our models understand things that are considered correct. Things that are not correct. So we have to use the top of the top. But with those we can tell our acoustic models. Hey, here is the acoustic conditions. Or here is the channel condition. So here is the microphone conditions that our users are using train to that. So we do that and then we feedback back into the speech processing server. Which normally boosts a lot the performance at one time of our system.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So. Brushing #2 similar to that, but well, this is. This is an exercise, a project that the student did when she came to our lab last year. This we've been always thinking. OK, so we have a lot of Vietnamese people speaking English with Vietnamese accent. So basically they have many of the phonemes that are borrowed from Vietnamese. They're not using the American phonemes and, but that's great because one problem we normally have in ASR. Of a standard typical ASR system is that it has problems understanding non native English and heavy accented English is is always horrible. So of course the more data you put into the system and these big corporations they keep. They keep adding data and data. You can make models better, but what's the situation where you actually? So if you go to Vietnam they will try to develop a Vietnamese speech recognizer and not an English speech recognizer for Vietnamese people. So we're at a unique position here. Where we have Vietnamese people speaking another language, English or whatever Spanish people speak English, so we said, OK, let's try. Let's try training a speech recognizer. Don't care much. We use the this prototyping toolkit called Cali. For those of you close to speed, you know what that is. It's basically an open source software. We can do everything on it, train and decode, and that's with it. And we took data vanilla data from read audiobooks database called Libri Speech. 500 hours and then 500 hours of our the first batch of data we had collected from our good speakers. speak English. We actually got to feed more to get a few of the pronunciation mistakes in there so that it would adapt to those also. And we trained GMM system. Then we increased it to a different system and we did some decoding tests.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "And we were happy we went, got very reasonable results. This is for those in speech. OK 25 is not that good but this is 8 kilohertz. So we then later tested 16 floors. But I don't have the data for all the cases so I didn't show it here. I don't want to give numbers, but we we benchmarked it against two APIs that we had got. Could get hold on online and actually we were surprised that the first API one. It's actually pretty good. I mean so they are doing a very good job. Given that they have not adapted to this Vietnamese style in our case, of course we don't have. 200 speech scientists to work on the speech recognizer, so it's still, you know, still believe in our case, data is skiing. In their case, researchers are key and the other third party API with a bit pretty bad.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So. 3rd Project out of four analysis of Common mispronunciations. So this is something that we have ongoing. We're going to use. We plan to use the analysis of what users are making mistakes on to improve our system. So this is very simple, right? We take we take a bunch of results from our users. In this case we took 300,000 audios. We analyze them. We got the phone in transcription of those audios. We compare that for interception, free from transcription to what we're expecting them to say. So we can get the confusions. So we can say OK here you should say this phoneme. You instead said that for him with those confusions we can see what patterns we can see in the audio right? So we extracted about 190 of the most common patterns with their context and we're in the process to analyze all of those. So that, of course there is errors that appear in the textbooks. Typical errors from Vietnamese people speak English. Of course the reserves from our system that we don't want to have there, so that's can be used to. Somehow improve our system on those. Is there other things? There are other things like spurious things, that operator you don't know why, so those have to be manually checked 1 by 1.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Here is the list. This is a nice very nice website from you can see the link down there that shows for two languages what phoneme sets what IPA phoneme sets. One language has and that corresponds with the other language and which ones don't correspond. So you see, if you see green means that Vietnamese and American English have that for him. If you see red means that only American English hazard for him, and if you see blue only Vietnamese hazard. Funny, OK. So these are the top ones. Some of them are actually our systems fault. This is our pet. So for some of the ZH goes to Z, that's the first one. The red here. Order sure going to S etc. So in many cases were Vietnamese people actually eliminate the ending sound. So lots of ending ending for names that go to EPS, which is the symbol we use for nothing like. They just don't say it. OK, but this is a very ongoing and pre preliminary work that we're working on.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "And finally. This is actually something that they see those wells also doing. We do take into account the difficulty of each of the exercises when we actually build the curricula and we will very soon propose exercises to users. So this is a cumulative histogram of two of the sentence is we have in the curricula hilsa. Nice to meet you and judgmental and in this case you can see how. I also nice to meet you. Normally people say it pretty well. This is zero to 100%. Correctness or nativeness. Many people say very well, but there is some people that they cannot even speak this thing. Some down here there is a non small bump. In judgmental, most people start tricking over and we see values morning. The 760 something 70s, early 70s. We're pretty we're pretty lenient, so 70. It's actually you would say it's pretty high. Well, it's you know if you say 70 if you do 70 is still you didn't say pretty well, so we do that. We have that for all our curriculum that we were incorporating that when we create curricula, if we have one sentence that gives us this sort of scarlet judgmental. We will not put it in the first lessons. We will not discourage users with that. We will put it in later lessons so that sort of creates our curricula with that and very soon we hope to recommendation. So to recommend users what to do based on what they did before and based on that.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So summary to wrap up. Soap. We are helping many users. I can say that we have lots and lots of active users every day in the app and I wish I wish they were not all Vietnamese. But I mean we have the app all over the world. So with you guys now downloading the app, we're going to have a peak in Lisbon. And. We collect a lot of data. We are starting to use it. We've used it in several things. We want to use it in many more things. And finally, yeah, we're hiring. So if you want to stay in this one, talk to me.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Thank you on any questions you have. Thank you so here for a very nice talk and do we have questions? Yes we have got one question over there. Thank you for your presentation. Was really nice. So you explain that you use deep in our network Nets to analyze the pronunciation. So what sort of metrics do you use? Is it apart of the neural network or do you process some vector calculation and then you get the final value of some deposited accuracy? Oh, 80% accuracy so far. Is it part of it or is it an external system? So we we base our analysis from deep neural network, deep neural network models that we trained on the data. We do a few tricks on the training, but in principle is like a standard ASR standards feed recognizer and then we do forced alignment between the. If you know what that means between the text. So we compute the transcription of the text with all the possible variations that are acceptable and what the user set. Once we have that. So we have the alignment of per phoneme. And we have the the posterior probability discourse perform him of all the possible phonemes they have in there. Then comes the secret sauce there that allows us to do like so many people in the past used God goodness of pronunciation. We saw that in DNS to make that work is not does not so well. So we that's what we've evolved over the last three years to give us a better output. But yeah, we base, we base it off our of the posterior probabilities of the phonemes. In each segment. Have a one more question, so yeah, so do you use any linguistic features in your opinion model? Do you got any linguistic features in your model? Because it is based on names. Particular English, yes. Yes, that's that's one of the steps in this secret source where we incorporate the knowledge of what sort of error user make you all. Yeah yeah, thanks information that our linguists in-house have given us. That can sort of constrain how we give feedback and where we give feedback. Thank you one very last question, short question and short answer please. Thank you, OK. There you go. Hey I'm scared. Will your model scale to other languages other than English? Short answer yes. We are so so so in my CEO's words. We just raced around and that was on the statement of the of the race. We will soon go to Spanish and I'm really looking forward. I'm originally from Spain, but yeah, I cannot say more of how many the technology part is. Yeah is figured out. Thank you very much. Thank you everyone for being with us here this morning.",
+        "start": 754.0,
+        "end": 783.0
+    }
+]

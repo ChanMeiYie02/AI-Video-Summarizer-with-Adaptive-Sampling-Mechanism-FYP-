@@ -1,0 +1,327 @@
+[
+    {
+        "text": "So hello everyone, and welcome to this tutorial on mining complex data. My name is Gregorio Marcus. I'm from the Irish, will converse with the seller, Nikki. And this is joint work with Professor Hans Peter Kriegel hearing it duty and tax for the mic from a little bit Maximilians University, Munich and to his professor, my last pill pull from my University of Magnum book in German.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "OK, so this is the structure of the tutorial. After the introduction, I will talk on multi label data, some basic concepts and then how we work with data structure multi label data. Then I threw in the rainy will focus on high dimensional data in dynamic environments initially after that, before the break will focus on static. Had a national data and after the break it really will continue with dynamic high dimensional data and in the end a mirror. We'll talk on my multi relation that data and data evolution.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So just a few words about their presenters. Myra Speaker Pool is a professor of information systems in the Faculty of Computer Science and not a fun character. University Magnum book. Since that set of their knowledge Management Discovery group, this is the co-founder of Web Web KDD Workshop series and has Co. Organized this MLK Day 2006 Antenna DB 2008. So it has also been the tutorial code Zero, Five 6010 and workshop set of ICM 2011. I'm a lecturer in the Department of Formatics at the original investor seller Nikki and member of the Machine Learning and Knowledge Discovery Group, and my main interests are assembled learning and multilabel learn.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "You really do think that resume mic work at the database systems and data Manic group of Professors Hanspeter Cricket at the Ludwig Maximilians University in Munich. Hearing it is a postdoctoral researcher there, and also scholar for annual exam performed humbled foundation. And perhaps is there is the glue datamining covered dynamic data with a focus on high dimensional data accuracy scientific assistant there and he works in special in clustering and clustering high dimensional data. Unfortunately, Professor constricted cricket could not be with us. He had he still in Canada with will be publications there.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So their motivation for this tutorial is that it's dual. Basically that in recent years we see more complex types of data like multi label data, multi relational data, high dimensional data. So we have for example social networks that require the combination of activity recordings, which content recommendation made any sense that required user ratings, customer transactions, item descriptions and so. And at the same time we have a data to become more dynamic, they are evolving and we have a streams of such complex types of data. So this is where we will focus on how to manage complex data insights, dynamic environments and how to build methods that adapt to these changes with the data.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So in the second a block I will discuss. As I said, the mining of multi label data. So the first part I will just say some basic concepts from static static multi label data and then focus on streaming multi label data and some issues that arise there.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "In Block 3, Iranian doctors will discuss high dimensional data. As I said initially, Arthur will focus on static high dimension dementional data. Any will talk on dynamic environments and data streams and how we deal with high dimensional data there.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "And finally. Myra will talk on my multi relational data, the kind of that we see in a social network and there we have for example persons entities like persons, resources, opinions and relations between these entities like persons upload, download, annotated content and so on, replied to other persons. So we have all these relationships and we want to we will study and discuss how to how we can learn from such kind of data that are evolving and especially with the focus on. Business applications.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "OK, so.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Let's start with a multi label data part. So what does it mean when we say multi label data? We can say that these are data with. Multiple binary target variables. With that we call labels or baby. With another interpretation, we can say that we have instances annotated with a subset of a fixed set of labels. So for example, if we have an article about the recent Fukushima accident, we could say that this kind of data. This document is annotated with labels like nuclear crisis as your perfect specific energy and environment. So what are the main issues here? Basically, that one is how to exploit label structure to improve their predicted performance. And when we say label structure we mean basically dependencies between the labels. And of course, how to scale up to a large label dimensions that exist in common applications.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So multi label data have become ubiquitous these days. There are many, many, many applications. The most important one is automated or semi automated annotations of large databases of different types of objects. Text web Daytimers data, video, audio, even biology data and with the ultimate goal of being able to perform information retrieval from this database. But there are also more specialized applications like tax suggestion, quicker categorization, drug discovery and so.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So let's say some basic concepts, or about learning from multi label data. So we have the dimensional input space and we have a set of Q labels that we will denote Langer 12, Lambda cube. And the multi label data set is basically pairs of this section wise. That where X. Is a subset of the in space? And why is the subset of the label space?",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "What can we do? What can we learn from South Sudan to date? One first, the classical task is classification. Some people actually think. That model able learning is all about multilevel classification, but we will see more tasks that we can do that we can learn from this type of data. So in classification we have for example, a set of labels like this one. And we want to output. We want to train a model that outputs the partition of this space of labels into a positive and the negative set relevant labels to the object and irrelevant labels without.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "We can also do ranking. So we can let models that rank the labels from the most relevant label to this object. Do they list one? Do the least relevant one. So again in this example you see we have the same 5 labels and we output the ranking of this label, so they label Lambda 3. Is the most relevant one, and label Lambda one is the least relevant today a new instance.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "We could also combine both tasks. So we could output both every partition and the ranking as you see here at the end. And they what what we should take care of is that this would be consistent. Meaning that we shouldn't have. Negative labels in higher rank from positive labels. OK, so this is this holds here where a Lambda one and Lambda four are the top of the rank.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Finally. What other thing? Another thing that we can do is probabilistic investing in indexing, and this is particularly interesting information retrieval. So what we ultimately want to produce these probabilities of relevance for the new object to this one of the labels. OK, so we have this. In this example we will have this vector of probabilities. Of course, from this a it's richer information. We can go to a ranking. If we do tiebreaking it, we could even go to be partitions. If we threshold somehow the ranking.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Matlab Lliving requires slightly different evaluation measures, so we could organize them. According to two dimensions we have measures that according to the way they are calculated, we can call them example based. So we calculate its measure for example and update these measures. This is like a loss function for example. And to make a connection with what we will see next. Of course, that's kind of measures are easily calculated in a in a streaming fashion, right? So there's no need to collect statistics. Label based the measures are calculated separately for its label. Again here, depending on the measure, we have some measures that can be calculated. In an online classroom, but there are also measures we will see next that we have problems calculating in a streaming fashion. I will save more than in the next slides and according to the output of the model, we can categorize measure measures to those working on the partitions on ranking sonar probabilities.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So I don't want to spend a lot of time here, but just to give you an impression of the measures, so just a couple of additional notations notations, so the P is the set of the predicted labels, for instance XI and why I set of actual labels. So to two common measures. Is there subset accuracy or 0? One last basically for multi label data. So this is a strict measure that. Penalizes predictions that are not entirely correct and as expected. And they penalize hard this kind of predictions. How many glosser is another common measure with just calculates the differences between the two sets, the predicate and the actual label. The set of labels, how different they are. And we have also other measures.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Measures are inspired from information retrieval. So we have a precision recall and F1 measure calculated that the prepaids example. There is of course some issues here. As for example, what happens if the prediction settle? The relevant set is empty, then we might run some into some problems, defining precision and recall. And then and then they mean, of course.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "As far as the ranking measures are concerned, we have measures like 1 error that evaluates how many times the Top Rank label is not in the set of relevant labels of the example. Cover, it's that the value is how many steps we have to go down to the ranking list of labels to find all relevant.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Payments. And perhaps one most commonly used is the ranking loss. With the. For each pair of labels Landley and Lundeby. Where land lay is a relevant label in London Visa Irrelevant label for, for example, it counts how many times at Spurs have the wrong ranking, so Despite that. Lambda busy, relevant. It is higher in the ranking from Lambda.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Now label based measures. We can basically calculate any measure that. Exists for binary classification and then somehow aggregate the results so there are two ways to do this aggregation. One is called micro averaging where this is just the mean of the of the binary measure overall labels. And my collaborating with the. Put chosen on labels into, let's say one big metal label and computes the metric ones. My Provident treats all labels are equally why Microgrids Inc favors. Frequent labels, so this is something to have in mind. Depending on the application. Which measure we would like to use?",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "And finally, as we said, we have the probabilities, we can have probability. So depending on when we have this kind of output we can obtain every partition. As I said through thresholding and then use ordinary example or label based binary measures. If we solve ties in probabilities, we can obtain a ranking and then apply the example based ranking measures. We could compute also vertical ranking, so ranking of the objects. And this this is of course what we want to do in information retrieval applications, But this is also the case where we have problems. If we want to calculate this in a streaming fashion so. You cannot because you need to have the objects ordered. You cannot wait forever. Maybe you could calculate such metrics over moving window for example, but it's not the same. And of course the same calls for a stressful independent evaluation like area under a rock or PR curve which need also to sort the objects.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So now we're continue with some very basic approaches, and it is this kind of approaches that have been used in a data stream setting, so This is why I will mention. To help our discussion next. So when we talk about multi label learning algorithms we usually. Categorize them into. Groups their problem transformation algorithms that basically take them out, label data and problem and transform it into one or more single label or. Classification regression problems. And then we have the algorithms adaptation methods that take a particular belief and adapt it so that it can directly work with multi label data. So we will discuss such algorithms that have been used in streaming settings.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So by now, relevance is a very basic, but yet still strong baseline approach in multi label learning kits. Equal to the one versus rest approach in multiclass classification. So what we do is learn one binary classifier for its label. OK, so for example, if we have this data set with four examples and four labels. We create as many datasets as the labels and learn a binary model for each one of them. Its complexity is linear with respect to their labels and the number of examples, but its main limitation that also criticizes the criticism of this method is that it does not take into consideration potential correlations between labels, and this is basically one of the main goals in multi label learning. How to take into account set dependence and improve their results.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "A second basic method is a. The label Powerset method, as it's often called so this basically transforms the multi label data into a multiclass. Single label classification problem. So you see here for example. Again we have the same data set and we construct a new data set to where we have just one class and the class values are basically the different combinations that appear in the training set, so. Here is just a binary representation of this combination, Lambda one and Lambda four and so. So we have four different combinations for different classes, and we learn a single label as an ordinary classification and multiclass classification. What is the problem with this?",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Type of approach. The problem is that this number of different classes can become very large, so it is upper bounded by the number of. Examples or the number of possible combinations, so M or two to the power of Q. And it's usually much smaller in practice, but we still larger than Q we can.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "See here. And some datasets. Commonly used the number of examples, the number of labels and you see that typically, unless we have very very small number of labels, like in this case which is 6, then the bound is equal to the two to the power of 6. But in there in the rest of the cases. The bond is equal to the number of examples. Now the actual label sets. As more are smaller than that as I said, but still quite lads and you can see that in some datasets like this music data set that has a 600. Approximately labels. The number of different combinations is almost equal to the number of. Example, so it's in it's example. We see a different combination, so it's like we are trying then to learn a multiclass problem with 32,000 classes. And that's not the only problem. The problem is that we have only one example from each one of these. Us so. If we see also if we focus on one of these datasets, the medium a data set to discuss. 6500 approximately labels it.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "At the. Here we see a log log graph of the appearances of the. Or feeds of their label set. So we see that from this 6500 labels it's 4000 here 4000 appear only once, so they are associated with just one example. And the 895. Label says from this 6500 appear only twice have only two examples, so. Really, this is the problem that you can not learn from so many few, so the social examples paper class. Apart from that.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "It has another problem that also is relevant to the streaming setting that it cannot predict answered label set, so it learns to predict only those labels that has it has seen in the training set. So when you have a stream of. Since later you imagine that new combinations will appear, and so that's an approach should be somehow adapted to handles this appearance of new labels. They had their.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "It's been some work that improves with basic approach. This is the proof sets approached by Riddle. And it has also been used in a streaming set setting. That's why I'm presenting it. So what this does too? And deal with the problems of the label Parset method is that it prunes those infrequent labels. It's so it runs away combinations that are. Very rare at introduces the examples that are so associated with those rare label sets, but it introduces them with. Frequent subsets of these labels, so this is done with two strategies with and we can see an exam.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "So we're back to this. Example with four labels and you can see the different label sets that exist now in a new different data set and these are sorted by frequency. So they are going has a parameter P. And it proves away. All labels said that are rarer than this parameter, so they lost. My nation will be pruned away. But the this information the instance language based information must be introduced. By assigning this examples to labels of subsets of these labels that are frequent. So let's see all these subsets of this. Rare labels it. Basically it's Lambda two Lambda free Land Lander, one Lambda 2. And with one strategy it sorts this. Subsets of this rare label label set according to their size. So this one has two labels, size of two. This has one and then Secondly sorts them by the number of examples associated with this label. So 16 and then has another parameter bit and says we will keep the top two, the top be enter introduce this. Examples with this now frequent label, so in order not to lose this information. And with another strategy. It sorts the subjects only based on size and select those that has the half size greater than a threshold, again with parameter P so it reintroduces the examples only with this label. So this is how this approach works. And this closes their problem. Transformation type of methods.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Now as far as albums adaptation methods are concerned. Methods that are based on decision trees have been used for streaming data. And such methods are the multi labels for Wild Label version of the C 4.5 algorithm proposed by Clearing King in 2001, where the main concept here is that we change the definition of entropy. And basically just the sum of the binary entropies of the labels. If you see here. So. But you built in this way just one tree for all labels. And another. Well performing approach that also follows the Decision tree para banking is the predicted clattering trees. And one of the publications appearing is in Vincent Al. There the main issue the main concept is this algorithm is that. The best attribute in order to do the split is based on the notion of reduction of variance, and so you can. Basically, if you have a data set. If you are in a node in the tree and you have some data. What you do is calculate the average. Of the output space. So this is the. Let me know the output space there. The mean of their, let's say late 01 values for all the labels and then you calculate the distance of each one of the output page of this examples. Of the outer part of these examples with this mean, and of course the smaller they mean, the better the more homogeneous is the the node. So this is basically them. The decision tree approaches that. Work with multi label data.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "No, closing this part of static static multi level data. Just some pointers for further work for someone who is who is interested more so a survey and also an open source software that with implementations of several algorithms for data sets for you to play with.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "So. Now, what about the dynamic? Multilabel data so I will give some examples of really dynamic data in meaning that we have object evolution. We have also label evolution and we go well. We also have database tables for examples. In the code example in Wikipedia. The content of the articles can be updated the categories through the labels associated to documents in Wikipedia can be updated, and of course we have new articles being added or deleted. So another very interesting thing also that interests asking streaming scenarios is that there is no fixed set of categories, so users may add new category. So this is quite different from the usual static multi label data where the the number of categories were there. They go to fix. The labels are fixed. And also examples from health. Where, for example, a person may be suffering from one or more diseases, and these changes as time changes. So you have a database where the label civil and. New diseases may appear, or we may have an outbreak of existing ones, and so. So to the best of my knowledge, I haven't seen. Any work on dealing with this kind of evolutions with multi label data? But there is some work that we.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Focus now on concerning streaming multi label data, so this is a similar case of dynamic data. So we have a stream of incoming labeled multi label examples so applications so you can imagine. Here are for example emails that person tags into multiple categories. We all do that. A news aggregator that gathers news and also this may be tagged with different labels and then generally web to content. Now in this, in this streaming scenario there of course the challenges of multi label learning remains, so we still must exploit the dependencies with between labels and we still must be must have efficient methods that scale to large number of labels. But we also inherit the Italians of string learning, so we also do must do incremental learning under constraints in time and memory. And of course we have to to deal with the problem of concept drift if we are discussing if we're dealing with valving. Label data of course. 1 issue. Here is, is it the notion of concept drift in multi label diarize is the same. Is it different in this case? So we will talk a little bit of that in the next slide and some other issues that concern us here. Is how do we construct synthetic multi label data? Because this is always an issue even in. In less in single label, for example, within a strange with single day. With simple data like single label data. And of course, again, as I said, I mentioned that also before, how do we deal with an open ended label space? So we might have a stream of objects and no other evolution, but still, the label space might be evolving. So how do we also deal with that?",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Now as far as a concept is concern in single label data in classification data we can say for example that the class priors might change overtime. All the way they classes. Let's say genetically examples also changes overtime, so the meaning of the concepts also change overtime. So what does it? What does conservative mean in multi label data? We may say we may look at it from the. Label part from their lip from the side of the labels and we can say that OK label priors also change overtime, but. There is a cut here to so that does all this do all these prior change at the same time? OK, this is an assumption often made in some of the. Approach is presented in variables. And then what about the combinations of labels the label set priors? OK, this may also change overtime. And the connection of the label sets with the data, which might also send, so it's a bit more complex and we have to take into account also this. These issues instead of just simply saying OK Multi label data, we just have changes in their labels.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So one of the major issues here is how to create synthetic data. Synthetic label data streams. So what I would say, then we'll ask the question, why not use a real world data? And that's all there is, because there aren't any available. So. This is unfortunately true, with one exception of the Reuters corpus volume. The famous Reuters tax data set. That has timestamps and this kind of. A stream limited stream. But there's also the issues out there that at least from experiments that we have seen that there is no limit on some major concept Riddler. So going back to the that, there are not any data set available then one could say then why do we deal with this problem? OK, so if there are no real world data then why do you? Have to do work on this, but well, they think that's partly true in many problems, but the truth here is that it's very difficult to obtain. World stream data. The 1st place and also multi label String Theta is even harder so this may require access to operational systems and the tweaking. This may involve sensitive data and in fact I was discussing in last year's a female katebe conference with George Foreman from here Packard Labs and he has some very nice streaming multi label text data from the customer center and OK at least. I told him let's make a contest that silence. Let's organize that silence around this and. See you with my label method. Works well and so on, but he told me immediately that there are so many legal issues that we cannot get ahold of such data, so these are some reasons why real world not labeled letter not available. And of course, if you find real world data then what is concept drift in this data? So you may need a domain expert to explain where that risk happens and what exactly it means. OK, so some issues to consider here. From based on existing care work is that we have to ensure that the priorities of the labels and the dependencies between the labels. Follow that of real world multilabel data. And also we have of course to simulate concept drift whatever this means. As we said earlier. So let's take a look of. The label prior so insane.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "State diaper. So here I have two datasets, the call 500 data set is a music data set and the medium is a video data set. Call 500 + 374 labels on average. 26 for example, and 500 examples and maybe only has 101 labels for another reason. Approximately 44,000 examples. And you see here. The distribution of the label Priors, which follows a kind of power law, so we have most of the label labels are really, really rare. So it's below 0.1 frequency. But you also have somewhere. Maybe one with a high frequency and the same approximately the same. We notice here in medium.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "And another two datasets. East is a biological. Data set with a few number of labels and we here we here notice that the distribution is slightly different, but in the end run textual data we see again that it has the same behavior. So most most of the labels are rare. Yes, when there are some. More frequently, one, so let's see now what the existing work of generating synthetic multi label data has done so far.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "So one of the approaches is that of Q ET al. There's an machine learning conference in 2009, So what they did there? They in order to introduce concept drift. They use the ideas that exist in single name label streams. So there we have a moving hyperplane to define changing binary concept. So now we have one moving hyperplane per label, yes but OK. But this means that all labels drift simultaneously then so is this realistic? Is this what happens? We expect to happening in real world model labeled data streams, some labels matrix, some others may not. You could set a different speed of drift to to simulate this. This was not done by the by the authors of course, and another issue is that the label priors that they used. It was Zero point 5 for all labels, so again something really different. And something that should be taken care of in each user works. This means that the average number of labels, for example, would be. Two, the number of labels divided by two, so half of the half of the labels, which is as we said in real world data as we saw before, it's quite unrealistic. And how did they introduce label dependencies? Basically, this was quite an ad hoc approach that does not scale. Manual introduction of this depends if this dependence just for for labels. So.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "A more advanced approach. Is that a very little and 2010? So there they did something better with the label priors. So we have a parameter said that controls the average number of labels bearing samples for example. So this could be set. Do a number that is small with respect to the number of labels. As we usually notice in real world data. But label priors this time was they were assigned randomly and then scaled to. Scale based on this red parameter scale too. Comply with that parameter, but again, this this would make a distribution different from what we have seen in before in the real world data. But still it's a step forward. In terms of dependencies. They create a cube IQ probability matrix. So in the beginning they just. Consider that all labels are independent from each other, and we're talking about unconditional dependence and independence, so we're not looking at the input space as the labels. And they overwrite some of these. Values to introduce dependencies, so this OK simulates somehow the dependencies we see in real world data, and then they use the bicycle to fit to fill in the rest of the matrix. So what is the idea?",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "The main idea to how to create them? The synthetic data set. It's actually basically, it actually is just a single binary. Then later, for binary classification problems underneath. And how does it work? The main idea is that labels and combinations of labels and labels that they are affected by one or more of the features, that is the basic idea. And how do they do that? They have an attribute mapping function. That Maps attributes. Two, the 2 / 2 most probably subsets of labels according to the probability to the prior probability. The probability matrix they define. So. OK, the idea is of course very nice, but one issue that we must consider is that this number of subsets is very small. So as we say, as we saw in the label Powersets approach, they combine the different combinations are usually. Too many, not half of the labels, so this approach kind of favors more. The prune sets approach that proves this. And infrequent labels like so. And it's not that realistic in the sense. We don't see so few label sets in real world data. OK, so then how does it work? First label is selected based on the prior probabilities and then more labels may be added may be added or not according to the matrix of the probability with the dependency probabilities. Then they generate one positive and one negative example from the single label binary generator that I told you. Then this is just a parameter of this method. You can use any generator that you would like for binary problems. And then for it's for. It's one of the features. If it affects the this combination or a subset of this combination according to the mapping function, then we add the positive example or the value of the positive example or the value of the negative one. So let's see that.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "This with an example. So here we have a 5 features. X165. We have how many labels? How many combinations? We have four combinations of labels, Lambda, one Lambda, two Lambda, three and this one. And then we start from the beginning. OK, this is the modular function they had, so if we had more features than we would see this iterate again and again. And since we have four label sets, how many labels we have? 8 right, because we said that.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Yeah, they take the half of the number of labels, most prob.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Double subject so. Since we have four subsets, this means that we have four labels, 8 labels, but we only see three of these labels. Now we create the the new combination of labels based on the priors and the dependence matrix. This is the new label combinations, combinational Lambda one Lambda 3L1L3 here. And the. We notice that for the 1st. Attribute. This. Combine nation, OK, single label. But this is also a subset of the label, so it's acceptable. We see that it is a subset of this one, so this means that this since this feature affects this label, social effects this combination. So This is why we take the value of the positive example input here in the synthetic data. Inventory space office. Here we see a two and this is not here, so we take the value of the negative example and so on. So this is how this approach. This Nobel approach offering that all works. So what about concentrate? Where the user ideas from. The. From single label streams, basically so they have already developed an approach for. A creating custom drift by mixing different single label streams and the same can be applied. Of course for multi label streams. But again, what is the cats here? That this means that. All labels will drift simultaneously and again. Is that something that we expect in a realistic model able data stream? Probably not. And there is there. These are two different must be labeled streams, totally different. We expect the change would be quite radical.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "So that that was all about how to create synthetic multi label data. Basically we have these two up two main approaches and this is still an ongoing area. You know? What about learning approaches? The OK we have created the OR we have them streams of my label data. How do we learn? There is of course a lot of work on online learning and machine learning community, and we could apply that to strings, but we should also in addition. Sam thanks Ronald before adapting to drift and there is also. There's also a few works on directly working on Multi label data streams, so let's see. Did I say a few words about?",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "So one A1 online learning algorithm from 2003 that does ranking. It doesn't output since the math class multilayer perceptron algorithm by cramming Seager so this one maintains one linear perceptron per label, and the weights get updated when the ranking that is output by the by the perceptrons is wrong. And then according to the magnet they according to how many labels are ranked higher. How many positive labels are ranked higher than negative labels and the opposite the magnitude of change is according to that. And it also further depends on the what the actual loss was. So typical losses here used. Is there like the ranking close that we saw earlier at the beginning of the presentation? So things to point out for this algorithm is that it has if it performs better, it does better ranking compared to the binary relevance. The simple independent approach, it is linear with respect to the number of labels. But as I said, it cannot output partitions it it should. It would require some kind of restaurant service coding mechanism and probably one that adapts also that is also online.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Some additional points that they interest. Asking this in the streaming scenario multi level data. It is that it can take into account new label. So for example, when a new label appears, we could just initialize the new person. So this is not something. Examined by the authors, but I'm just the. Discussing this opportunity here. Of course, there is no explicit causative handling, but however it could serve as a strong baseline in papers presenting multilabel data, stream algorithm and of course there are also some extensions that bring better performance, some pairwise approaches but to the expense of quadratic complexity with respect to the number of labels. So I'm not saying anything more on that.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "So one of the first. Papers discussing directly. Label data streams. Was that Q ET al approach this the same that we show before that also had an approach to create synthetic data. So how does it? How does it work? It partition the strings into chunks of equal size. Train multilabel classifier from it sank and keeps the last end tracks. So, given a new instance, it finds the game nearest neighbors in the latest in the latest rank, it computes the accuracy of the models in this nearest neighbors. And they usually says I waiting await with the voting process. So this is a typical approach, followed in a static and samples. So here is.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "Here is a. A paper by Zimbel Petal one year earlier. I have kept the previous light and only you see in red. The difference is so instead of single instead of multi level we have single label. And there there, instead of keeping the delvine thanks, they keep their best and tax based on Microsoft. It's basically the same algorithm. And what does this?",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Tells us. Is that basically we can use state of the art and sample methods for like the approach of symbol or one at all. Anne and readily apply them to label data so we can train different models, different models, label models from different sites, and we readily can apply this approach to multi label data. Anne. Of course. This could be used as a baseline, and it's something that we should compare against. But again, such an approach assumes that if concept drift will happen, it will happen for all labels, because when you throw away a model you throw away the complete, more complete model affecting all labels not. One specific label, or a subset of the label, so again. We can borrow ideas from single label data label that what we should also take into account the issues that arise in specifically in multi label data.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "Another approach that was recently proposed is based on the is based on the halting tree, and this is a multi label version of this tree. So it combines the combines the tree of democracy and helping the carpeting. And the multi label Decision Tree that I showed you in the first part of this talk and what they also do. They also consider train training a model able learner at the leaves of this wedding tree, and in particular they argued for the Princess algorithm that I also showed you before. So we said of course that proof sets. In cats, the problems of their laborers pouched the algorithm so it cannot predict unseen labels, and it has to wait and see some labels that in order to be able to predict them. So this is usually treated by having a first period of let's say N examples. During which they consider only single labels and then they calculate the combination and start predicting also with kind of combinations.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "In addition, read Attalla explored and sample techniques. Existing assembly techniques for singulated illustrates such that they add Edwin bagging approach, so it's basically an online bagging approach that replaces model based on accuracy. Whenever this there is concept drift and this is monitored by Edwin algorithm. But again, here we have the same issue that all labels are causing did that. They should there since we have we throw away the complete model that we have the assumption that all labels def simultaneously and this is not so realistic. Another thing to point in this kind of approach and also other approaches that are based on examples. Is that the? If you want to, if we want to be able to output the partitions, then we somehow need to have a thresholding mechanism. Becauses assemblies give us votes and this is just the then the combination of votes of their average is just an American output. So you need some kind of thresholding and this thresholding needs to be also incremental. So what they what they did in their approach is to incrementally update, increase or increase the threshold. Based on the predicted partition, the size of the predicted partition, and what the actual one was. So if the output was three labels and the. The actual labels were for. For example, maybe they should lower the threshold to have a better recall. They lower the threshold to have better recall. I.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "There were, they they. Perform some experiments with several variations, so I don't want to.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "To go into the details. To save some time.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "I will just give you the results that compared to binary approaches and compared to the simple crafting Multi Label 3. Using the process algorithm, the lips at the leaves help. In real world data and also using this online bagging approach. Again, having the whole thing tree and proof sets algorithm at their lives also gave the best results in terms of 1 metric at least that I show you here, but also in others they have results with more measures. So this we can consider this as a state of the art method in this domain.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "Finally, quite recent method follows a different line of thinking. The multiple windows approach. In this years it's guy. It may, it looks at it looks the problem from a binary view and basically it maintains a fixed size. Moving Windows separately for its label and separately for the positive and negative examples of its label. So. This is done basically to deal with class imbalance. That is typically as we as we as we have seen, labels are quite rare and we have a class imbalance and through you have a single window. Then you are losing a lot of positive examples, so this is basically the main idea behind this this approach so it uses a KNN binary classifier on the Union of the positive and negative windows. And it has a problem like any binary approach, that it ignores correlations between labels. But this can be fixed by exploiting binary approaches that. Benefit from defenders from dependencies like from example. The sample of classifier chains approach. But the benefit is that we can deal with this issue of multiple concentrates, so as we as we focus separately on its label. So we can detect separately the drift at the label level. And of course they get take care of a glass.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Balance. A few more words on this approach that there is no training involved as it used the cane and algorithm. And with every new example, it updates the positive and negative windows of its label that have a fixed size, and there's also space efficient implementation for setting examples between the positive and negative windows. And the prediction involves a nearest neighbor sets of the Union of positive and negative examples of its label. Again, there's an efficient implementation for this. And there since we have. A a number of neighbors and we get there. The average of their votes. Again, the output is in terms of is in America output, so we also have here. Enneagram mental thresholding technique to him too in order to be able to output to be partitions.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "This is basically an incremental version of an existing method for static method. They pick up method. So what it does is that every instance is it calculates the threshold that would most accurately approximate the observed frequency within that window of that label, and then this gets updated every N instances and quite good results have been noticed with this kind of online thresholding approach.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "So to conclude, my to conclude my part. We have discussed multilabel data. We see that this is a such data Arabic with this and. They are complex in the sense that the label space can be quite large, and of course the labels. It's also. And we need their techniques that exploit the structure of labels and deal scale to the large number of labels. In addition, when we move to streaming environments, we notice that we need techniques for incremental learning and also. We have time and memory constraints and we must deal with conservation. And particularly, things that must be notice in work in this area is how to create properly the synthetic data. How to adapt to the multi label version of concept drift and careful definition of this and also help you deal with class imbalance issues and also thresholding in order to obtain maybe partitions.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "So.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "So that.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "It would be the end to this.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "Block so thank you very much. So should we have questions now, OK?",
+        "start": 1856.0,
+        "end": 1885.0
+    }
+]

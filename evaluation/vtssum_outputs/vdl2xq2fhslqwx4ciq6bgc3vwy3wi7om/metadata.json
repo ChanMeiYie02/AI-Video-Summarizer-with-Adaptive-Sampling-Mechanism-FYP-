@@ -1,0 +1,21 @@
+{
+    "id": "vdl2xq2fhslqwx4ciq6bgc3vwy3wi7om",
+    "title": "Social Machines + Knowledge Turning: A Big Question in Computation, Intelligence and Life",
+    "url": "http://videolectures.net/turing100_goble_big_questions/",
+    "info": {
+        "author": [
+            "Carole Goble, School of Mathematics, University of Manchester"
+        ],
+        "published": "July 10, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Human Computer Interaction"
+        ]
+    },
+    "num_segments": 10,
+    "num_sentences": 59,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1306
+}

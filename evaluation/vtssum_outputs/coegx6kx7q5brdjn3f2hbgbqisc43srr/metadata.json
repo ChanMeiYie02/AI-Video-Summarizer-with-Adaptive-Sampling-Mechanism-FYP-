@@ -1,0 +1,21 @@
+{
+    "id": "coegx6kx7q5brdjn3f2hbgbqisc43srr",
+    "title": "Determining significance in neuroimaging studies using covariate-modulated false discovery rate",
+    "url": "http://videolectures.net/msht07_lawyer_dsins/",
+    "info": {
+        "author": [
+            "Glenn Lawyer, Faculty of Medicine, University of Oslo"
+        ],
+        "published": "May 23, 2007",
+        "recorded": "May 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 64,
+    "num_sentences": 506,
+    "num_clips_with_summary": 26,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 3520
+}

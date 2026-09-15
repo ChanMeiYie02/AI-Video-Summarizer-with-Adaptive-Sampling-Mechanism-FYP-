@@ -1,0 +1,25 @@
+{
+    "id": "lvpepwbkv5rx5vmi6uingqtv66pjus5t",
+    "title": "Mining Massive RFID, Trajectory, and Traffic Data Sets",
+    "url": "http://videolectures.net/kdd08_han_mmrfid/",
+    "info": {
+        "author": [
+            "Jiawei Han, Department of Computer Science, University of Illinois at Urbana-Champaign"
+        ],
+        "coauthor": [
+            "Jae-Gil Lee, KAIST - Korea Advanced Institute of Science and Technology",
+            "Hector Gonzalez, Department of Computer Science, University of Illinois at Urbana-Champaign",
+            "Xiaolei Li, Department of Computer Science, University of Illinois at Urbana-Champaign"
+        ],
+        "published": "Sept. 26, 2008",
+        "recorded": "August 2008",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 78,
+    "num_sentences": 729,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1238
+}

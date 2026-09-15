@@ -1,0 +1,152 @@
+[
+    {
+        "text": "Welcome welcome, I made after tax I. Would like to say a bit about move. For instance learning you already seen did this before. I decided not to go into any deep mathematics. I try to come up with interesting pictures and technical details we can discuss during the poster session or later. I actually don't want to present wonderful grades, knew spectacular results, but I would like to present some for me interesting or say, well, baffling results. So I would like to discuss with you the problem of multiple instance learning an inspired by this workshop. Something about these similarities and in this case December the similarities between Macs. It will come to that.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "The similarities are very nice, general way of describing object, so we are of course taught and raised with the idea that it is a good thing too. To describe objects with feature vectors well, and we know that it may be a bit restrictive. In particular, if you're looking at objects that are very complicated, like this image, and if you ask people, describe this image or give it the label if you're doing classification, you are actually forced to give it a label, and I think that many people are quite disappointed to give just one single label to such a complicated object. And it really depends on your point of view, what you're interested in. And maybe I'm.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Very interested in red Chile, whatever it may mean, it's.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Hear, hear other people may have said, well no, it's a shop or it's some type of spices or the point is it's not well defined and.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "If you now want to represent an object like this, it would be very fine. If you're able to make a representation that can cover these situations. Anne.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "One of the ways of doing this. In my opinion, is somewhat trivial, while quite of simple extension of the single feature vector representation of an object is by using. Assess of feature vectors and it means that one object in this case this one single picture is represented by a collection a set. Or feature vectors? And the sad thing is that the whole set is labeled as being. Member of a certain class. Yeah, often we take the binary case because it's easier. So this is the starting point. This is multiple instance learning that you say, OK, I have an object represented by a collection of feature vectors and this whole collection is is labeled and of course now the task is to infer these labels from a collection of feature vector.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "I will go extremely fast through some classical mill. Actually I only one slide with some philosophy behind it. And what I thought was a very basic simple start to do it in a bag dissimilarity way with the original hunch that it should not work mate. Well, we'll see I show you. Then the experiment that I did, and then I have some. Some things to discuss, or maybe, well, maybe you think it's interesting I do.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Some conclusions well. Multiple instance learning. In the most naive approach, if you don't know anything about multiple instance learning, people label all the instances of the bag that was labeled positive as positive instances, or sorry to be very sure I have to go for notation, but I have is a feature space I have collection of bags and banks contain instances, instances are feature vectors. And this actually happens a lot. The unfortunate part is that many people can't really find the term multiple instance learning in literature, and they do something else with in effect they do. They're doing multiple interfering only well. We did under a different name.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And one of the standard thing is to just label all instances from positive back as positive. All interest from negative from negative X is negative and go for sort of standard classifier and then invent something. What to do with an object with a new back that comes in and how to label that new bag? Because you have a classifier that classifieds instances and now you have to combine them. So that's another topic, but say this is, say, the naive way of doing. Multiple instance learning and it's actually being done a lot. You only have to recognize it because nobody notice milk for instance.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Doing so. In the original formulation of the multiple instance, learning the detect paper. There was a deep roast that multiple instance learning actually has to define for each positive back. An instance that belongs or at least one instance that belongs to a concept and that was in our situation here. The concept of the red chili. Yeah, so there's the underlying assumption that if I want to do this in multiple instance way. I have somewhere hidden instance that I am required to model.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So that's the challenge to to. To find the interesting instances from the positive backs and per definition, there is no such instance in a negative X and there are now tons of methods that actually trying to find this sets in insensible way, smartway efficient way which is not so.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Trivial. Here I was thinking OK. This optimization is not so simple. I have some underlying concept, but I don't really know if it's there. Let's go for the other way. I'm drunk, I'm going to define just simple the similarities between Becks. OK, set. The similarities were also seen them already here.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Before I can explain that in a slightly more detail, I will not give much detail, but I have to have some notation, but the notation we have already seen, so it's not very shocking. Banks are collection to feature vectors that I did not buy. X labels denote by Y and I also for now define and pairwise. Dissimilarity between instances from one back BI and the other bag BJ. So all instances of. What is this? I think this J. Or the other way around this matter. I have you all post.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Alchemy next. If I have that. I want to make one single distance between back inj so I can. Well this is already sort of strong model. I can define operations role as column wise. Then I get per row and column A number and I can combine that further to one single number to characterize the similarity between 2 bags and if I have the similarity between 2 bags. I can try on top of these things. I can represent each new back now with these similarities and contain any normal classifier. Of course, the challenge is to find interesting operations. And I thought, OK, this should be. Yeah, this is a challenge how to do this. But let's start simple, and I propose three extremely simple ones. First one is take the minimum. Overall, let's say columns, rows, takedown the minimum over these, so it's overall minimum over this whole matrix. Basically, and that's the similarity between 2 bags completely naive, completely stupid. And one the minimum mean. Nada mean minimum distance. It actually takes to mean sort of minimum horizontally and vertically. That just means for each instance in each bag, I find the closest one to the other Mac and average all the minimum distances.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "And there's also standard things like a standard Hausdorff distance. You first take the minimum that you take the maximum over the minimums, and then take the overall mix. Yeah, also have modified Hausdorff many more, but these are the most trivial ones.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So I did some experiments on this an quite a lot, and now I'm going to bed fully with not yet. Sorry it's a lot of results later on. Sorry I was too fast. I have to. Explain OK, I wanted to compare it with the. With the district, with the assumption that the back is not a set of instances, what I basically did before, but I want to compare it to when I assume at the bag is actually a distribution. So I had some distribution. The similarities. Also there have many many different possibilities. I for here I just choose these two show. Amanda nobles, distance assuming from Goshen. Earthmovers distance is actually assuming that. What I'm looking at is in sampling I have a set of discrete points in each of the banks, and each of these instances have a uniform probability to one over end and is the number of instances. And if I have another bag which also has M instances, the question is how can I transfer my probability mass from one to the other, taking into account the distances between it? And to move the probability mass or here PDF. Well, probability mass from one back to the other, you have to find the optimal flow. The minimum flow to make it to define the distance. OK technicalities.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Does it make sense? Does it make sense to define these type of? Models to solve the multiple instance learning problem well. In the strict multiple instance learning, so the classic way of doing this, you require that at least one instance from the positive back. Is actually from a concept and the question is there. Is there a concept? Is it clear that there is some small part that really determines the full label? Furthermore, if my concept description is a bit better vague, it can be also be very noise sensitive, because I can just in the background find also something which happened to be close to the concept and you actually will label the whole object wrongly. If you go for an ultra instant learning on the distributions, yeah, you may actually get now in trouble, if indeed he had just very small parts that was determining the label of the object and you have a big part which can be considered background. And if you then take the full distribution into account, you have to be very sure that these distributions these these background distribution do not disturb. Using this pairwise dissimilarity's well. I think this is a discussion point really. For me it's not so clear what it actually means. I just tried it and I thought it should not work.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "I just tried this method. I have a lot of different datasets in the paper. I showed a few and these datasets were chosen not to show that one method is better than the other, but you show that are different types of problems that different methods work on different problems. And it also means that in some cases one classifier is very good. And in some cases the classifier is very bad. Which indicates for me that this classifier is actually not bad. It is only good for certain problems, so I wanted to see what type of variability we can actually expecting this multiple instance learning problem. Of course, if you do multiple instance learning, you can not. Forget the first 2 datasets that somewhat if you don't do that, you don't do another instance learning, so these are the two datasets that are classical. You have to do that. There are many different image database problems, but also also. Multiple instance learning problems defined on the classification of newsgroups from on web pages. And yeah, there are some classic image retrieval datasets as well. I will not don't worry, I will not go through all the results. I will try to give you an idea what I saw.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "This is what? What you get if you look at the results of the first four datasets. I hope you called read it. You should not read it, but the general idea is that we have a big matrix where we have several methods and in this case four datasets and their methods are split in three parts. And the first part isn't and selection of. Classical multiple instance learning methods. The middle part is using the dissimilarity's that are just defined and using the 1K nearest neighbor directly on the distances. So this is just to indicate the usefulness of the individual differences that divide and the bottom part is actually using these distances as features and train a classifier in the similarity space. And then overall these methods. I looked at the best one. And the best one, and the ones that are not significantly worse and they are indicated in bold. And before I go a bit deeper into this, you will see some results now that. Are not exactly the same as what you see in the literature. And that's because I reran the experiments and I I could really not reproduce these results. So these are my best, best, best estimates, and sometimes there really is 10% off. And if you're the author of the paper, please come along explaining how you did.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "These are the classical ones. These are the results of these four datasets, they just. Four of them. Of course the most datasets. And, well, some methods perform pretty well, some classical ones should also perform well. I didn't really get it to work really well. Show me extremely trivial approaches were also very well, like using an Fisher discriminate or LDA on representation of a back way. Just take the minimum feature, the minimum value of a feature and a maximum value of a feature. So you just take a box and you put it around all the instance of a bag. And he said over the features you get now, 2 * D features it's very competitive, but I managed to get. And there's a lot of stuff.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "But I really wanted to show you is the next part. Because these are using the similarities. An OK it differs on what data set you look sometimes. Straightforward use of the similarities that I showed you give already very good results without doing any different difficult stuff. It's actually only sorting the distances and take the minimum. And these are the different dissimilarity matrices that are defined that I just explained in the first few slides. It is the minimum, the absolute minimum, then the mean. Yeah, minimum distance. It's a bit unfortunate name. Out of distance demand the lowest distance the earth movers distance. So yeah, linear assignment. I forgot to explain that it's not so. And in my experience, the mean minimum distance. So you take for all instances it's closest relative to the other bag. An average debt is actually often very competitive. Well, he's not always OK. And the earthmovers distance. Even more shocking was this result here that I got quite good results using the overall minimum distance. The overall minimum distance. In these experiments. Was actually the best.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "And for me, OK, what is the overall minimum distance? I have two bags here. I indicate one back in blue and the other back in red and I just take the minimum distance. But you can imagine if these two bags are far apart. OK, that makes sense.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "But the original idea of the of the mill problem was, well, there is some type of background things that are not interested and it should be somewhere a concept that really characterizes the label. So I'm actually interested to find. And similarity measure that actually. Find the distance within the concept very important and all the.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "It's not, and here I run the risk if I take the overall minimum that if I have lots of background again just by noise happen to have a close object here. So the fact that it works for me indicate that the concept that for that there is a concept in this problem and this concept is quite tight. And that all these these the overall minimum distance almost always occurs within this concept and not within the background. That's now my intuition. If that's true, well. So. Although this looks for me like it was doing my baseline methods, it it did something only for there for this data. So this is sort of stuff.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Range also this mean minimum distance is mindis what you showing? Well it actually takes into account all these minimum distances over the whole set so it doesn't have any idea of a concept or and or background distribution. It considers the whole thing. This well this.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Makes sense. Earthmovers data is after some thinking, actually quite similar to this. Well, OK, let's discuss it offline. This mean this thing. It also tries to more found full distribution into another one. So there's also not a single concept that's really essential.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Good this these are definitely not the only results that I have. I can go on with all these results here. I have some reason.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Selected to show where other types of distances are important. EMD is still done and then here this single distances do not work very well. You really need to have slightly more flexibility.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Good. So. My idea now is that there is actually an not so very clear idea. What is a good? Description of a meal problem. What is actually the best or what is in suitable way of modeling a mill problem there? It essentially depends on the question that you're now asking. If you're really going for Etta Tilly. Then you definitely need in different model and you can't really go with the standard approach. If you want to classify for instance, spice shop from something else, special probably needs more global information at their chili. Although if I want to distinguish red Chile from an elephant picture. I can probably get away with the general model of this special.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Good, that is actually what I wanted to say. My main message is here that I think that this these similarities between banks is actually very well. Very much needed and. It's not only that you have to have a single instance that should belong to a concept, it should be more flexible than that. Often the concept of our idea of a concept is really not so strong. Often the context is is important as well, so you need more information about. The full distribution, but how exactly to trade off? My most promising candidates nowadays are these mindis, which is the average of the minimum distances and their earthmovers distance. Anne. And it's still my my well, my question. How far is the full distribution needed? This independent. Yeah, it definitely depends on the problem, but also on, for instance sample size. Because if I don't have enough data to find reliable the concept, then I may have to go for full distribution. Although if I don't have too much data, also full distribution might not be possible, so. Good. Oh sorry, this was my conclusion, sorry. Someday I start with a question or comments or I was not really surprised at this mid mid distance. Works well because that seems to defy listening to it seems to reflect the fact that there is that there might be one single positive example in in the back and then you should probably use the minimum distance and and there's a comment. I mean if noise is an issue as to why they would teach us average over the key. Minimum minimum distances. Instead of having the completely mean minimum, so about your first remark that it's not surprising. I think that I could also have chosen. This example of the spices I could also have chosen another concept like the cinnamon. So then I would also expect that is Cinnamon would have had to cluster there with minimum distances. So why is it not working for the four one concept and not for the other concept? It's well, it's not clear to me. And to make it more robust against noise, yeah, they extended the process as well to have some quantile so that you just take a 10% or 25% off, yes. Further questions. Doesn't seem to be the case, so let's thank all the speakers in that session again.",
+        "start": 841.0,
+        "end": 870.0
+    }
+]

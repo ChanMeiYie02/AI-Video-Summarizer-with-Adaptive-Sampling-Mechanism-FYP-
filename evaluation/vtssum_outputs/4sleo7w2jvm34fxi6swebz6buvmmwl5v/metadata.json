@@ -1,0 +1,20 @@
+{
+    "id": "4sleo7w2jvm34fxi6swebz6buvmmwl5v",
+    "title": "Practical Ontology Pattern Instantiation, Discovery, and Maintenance with Reasonable Ontology Templates",
+    "url": "http://videolectures.net/iswc2018_skjaveland_practical_instantiation_templa/",
+    "info": {
+        "author": [
+            "Martin G. Skjæveland, Faculty of Mathematics and Natural Sciences, University of Groningen"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 70,
+    "num_sentences": 200,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1361
+}

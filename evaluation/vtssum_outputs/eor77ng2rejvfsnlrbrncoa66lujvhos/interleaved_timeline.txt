@@ -1,0 +1,119 @@
+[0.0s - 29.0s]
+Good afternoon everybody. My name is.
+
+[29.0s - 58.0s]
+So this is the outline of representation. About the. Division Four. Potential patient. And the saddle sores. You available followed by the 15 also proposed method is an awful lot of boost and its variants for concentration. Working finally.
+
+[58.0s - 87.0s]
+So model reading. We gotta make this model using same data set. And even though it is the simple truth. Press every time they modified. Facebook, unless that changes right? Can you put a word? Model. It felt locations in many machine learning subfields and there are many single model algorithms capable of doing this. However, it's still an awful challenge to develop efficient and reliable assemble algorithms for incremental.
+
+[87.0s - 116.0s]
+Turning an once touches other boosts. Right now the boost requires sequential training of a large number of classifiers and therefore rebuilding an entire sample. Appan slight changes in training data can put a burden to the computational resources. Are very nice. Example is active learning with other boost query by committee where Committee is trained using the current data then used to query additional examples and once those additional examples are added the queries knew querystring. This would greatly benefit if you would somehow be able to modify the existing community without having to train a new one from scratch, so there is a high interest for modifying boosting for incremental learning applications such as online learning, active learning, concept change and even decremental learning when you where you want to unlearn, right? So you want to remove.
+
+[116.0s - 145.0s]
+Flyers, for example. So other boosts. And here I'll concentrate on the two class case is developed using arguments from statistical learning theory. However, there is an alternative view which sees it as fitting an additive model through iterative exponential cost optimization, where this right here is that cost at empts boosting iteration, where Y is the class label, an FM Capital FM is the current additive model, which is really a linear combinations of N base models produced so far and alphas. I'm going to call out for this car.
+
+[145.0s - 174.0s]
+Parameters, so we really have a data set. Some initial data weights. Of course, number of iterations and an. In each iteration we fit a base model by minimizing this loss right here. And since this is an indicator function, clearly. Examples with larger weights are going to. Receive more attention. Next we calculate the confidence parameter for the new base model based on its performance on the weighted data set, and finally update the example weight such that we increase them if increasing. For examples which are misclassified by the new model receiving more attention in the next round and decrease them otherwise, then the prediction is just simply the sign over the weighted sum.
+
+[174.0s - 203.0s]
+Are you a straight this up here where we have some initial weights and it's important to note that F is based on the weights. Alpha is based on both the weights and F and the new weights are based on all three and everything that goes into the next round are really the weights where these are used for predict.
+
+[203.0s - 232.0s]
+So, given an additive model iteration N -- 1, the objective is to find an improved one, right iteration M and the cost function can be simply expressed now like this where we have this additional term and by changing notation simply we have the example weights. By rearranging, we can obtain an equation which leads to familiar other boosts. How well classifier FN plus one is trained by minimizing this equation, assuming its confidence parameter is fixed. Since this doesn't depend on the FN plus one, we get it by simply minimizing this guy right here and alphas and then determining the same way minimize this. Assuming FN plus one is fixed and by simply setting the derivative to zero, we can obtain the close form solution as I showed before and before continuing to the next round. We have corcept update example weights as I showed in the previous slide, and this is done by making use of this equation right here.
+
+[232.0s - 261.0s]
+OK, so in our method we assume that other boost committee with N based classifiers has been trained on some data set D old and then we should train a committee upon the data changed to Dean you by addition of some examples, the N and the removal of some examples the out. So this is the new training data option one is of course to discard the entire sample and the training you want from scratch and option two is to reuse the.
+
+[261.0s - 290.0s]
+Existing assemble, So what is the difficulty really in reusing? Well, imagine you have your old data and then you perform three other boost iterations, and you predict in this manner and then for whatever reason you decide to remove some examples. It may be that their weights become too large and you suddenly consider them as outliers, but anyway, you cannot just continue into the next iteration with the weights and confidence parameters you had before the change. You somehow need to cancel out the effect of these examples as if they never existed. And why you might ask? Because some base classifiers might have much larger confidence parameters now that these data is gone, so.
+
+[290.0s - 319.0s]
+After you make appropriate changes, can you continue and now you make your predictions based on these updated Alpha.
+
+[319.0s - 348.0s]
+Right so. The same holds for when you want to add new data. You somehow need to update as if this data was here all along.
+
+[348.0s - 377.0s]
+And that's when you can continue. Not the question here is. Whether you should update the base classifiers themselves in some online manner and the the answer is that you don't really have to care about this if you don't want to. And I'll explain why it's becausw simply because of the convergence properties of other boosts, which say that given any base classifiers, right, even a random guess as long as their confidence parameters are all greater than 0, addition of a new base classifier and calculation of its confidence parameter in another boost manner will lead to over minimization of the exponential loss. So This is why you can simply assume that you guess you can even assume that you guess the base classifiers. And the. And their fixed.
+
+[377.0s - 406.0s]
+So. This is 1 important thing to note. Another one is that. Upon changing data, the cost function clearly changes because the old is replaced by DU and you have several choices regarding use of the reuse of this current example, you can update the company's parameters to better fit the data. You can even remove base classifiers which no longer fits well, and AA is going to tell you this right, and then you can add a new base classifier and we can limit their number to let's say M. Now there's also question how often should you do this? And I'll discuss this later, but this really depends on your application, your resources and.
+
+[406.0s - 435.0s]
+For this of the data. So here I just wanted to see what happens when you remove a classifier. So let's say you did your six iterations and your data is fixed. And then for some reason you want to remove the classifier. It's important to know that all of these are based on the performance of the guy you want to remove on the.
+
+[435.0s - 464.0s]
+Wait Sir. So in the proposed method, we update the confidence parameters to better fit the new data so that they now minimize the knew exponential costs for fixed base classifiers. And we can use simple gradient descent to do this. We have batch and stochastic version and from our experience. Sometimes it's enough to perform only few iterations because the old components parameters. If you change data slightly are really close to the optimal. And then you can potentially remove base classifiers, right? If they are underperforming, it could happen that they receive negative confidence and thus you should remove them. Or when the budget is full, you want to remove the one with the minimum confidence. Updating the example weights. There are three scenarios really. If alphas were unchanged since the last iteration, you can simply calculate the weights for only. For example, is the indien if Alpha were updated, you can use the equation I showed before 6 and if any base classifier was removed, you can really fast. You can use. Best way to cancel out its effect and of course then you want to add.
+
+[464.0s - 493.0s]
+Base classifier, so this is the flow chart of our algorithm. And we made it such that it's very flexible and you can really make variants of this algorithm for online learning. Active learning tracking codes have changed incremental learning and so on, and you can also make variant depending on your. Computational power how fast you want to train, how fast you want to predict. So this is where the updating data happens that the new is the old minus Dr Plus the in and the first question is whether you want to add a new new classifier. And of course you can always choose not to and just update the weights and update the computer parameters in the weights for when the answer is yes and when when the answer is yes, you have to check if your budget is cool. If it is, you remove the the. The first classifier and quickly cancel out this effect and then the final question is whether you want to update where you have time. Maybe to update the companies parameters. If the answer is no, you can simply calculate the the weights. For example in the only and if the answer is yes, you make the appropriate updates. And then you proceed to training a new base classifier, calculating alphas and updating waste in a standard boosting fashion. And it's important to note that if the out and be in our empty sense and the training data never occurs, this path right here is regular other books. Also, you can imagine that for applications such as concept tracking concept range, it's really important to add new classifiers and remove the underperforming ones. While for applications such as online learning, you might not want to add a.
+
+[493.0s - 522.0s]
+Every other classifier. So before I show our variant for concept change, let's just discuss a little bit about it. So it's when data stream when you have a data stream with properties of the targets only change overtime and this change can happen in our sourcing ways and random times and their different drift types. And I borrowed this figure from a nice overview paper, eyesight so you can have a sudden drift, gradual, drift, incremental driven, even reoccuring can't.
+
+[522.0s - 551.0s]
+An one approach is to use online learning with sliding window, where this window sides presents a tradeoff between accuracy and the current concept and that recovery from your distribution changes just like in this figure.
+
+[551.0s - 580.0s]
+Some popular approaches are adaptive supervised learning techniques. Also adaptive and samples are popular and there's a question of the update. How often should you update the model depends on the properties of the data stream. Compares the data incoming depends on your computational resources, and one of this popular solutions is after enough incoming examples are misclassified by the current.
+
+[580.0s - 609.0s]
+So in our variant for concept change, we have data stream. We have a window size of NA budget, frequency of model addition and the number of grading descent updates. So these parameters we think are intuitive and can be easily selected for a specific public.
+
+[609.0s - 638.0s]
+Nation. And this is the flow chart for the concept change variance. You initialize the window, it rained the first classifier. Then you slide the window. You ask if the update criterion is satisfied. If it is, you had a additional one. If it's not, you just have time for updating the confidence parameters and so on. And of course, there is some checks to see if some base classifier it should be removed.
+
+[638.0s - 667.0s]
+So in the related work there, there have been a lot of in sample algorithms. So we'll compare ourselves to non incremental other boost which is retrained each time the data changes. Online coordinate boost, online boost, and two modifications for concept change. Fast and like boosting dynamic weighted majority. An admin, online bagging and these are some characteristics I summarized in this table for these algorithms. Some of them use the change detector in the background, which is cool because then they can make appropriate changes when they affect the changing concept. For example this algorithm right here drops the entire in sample. This one right here drops the worst base classifier and so on. There is also an option of online based classifier updates. As you can see some of them perform this are our algorithm doesn't there is option to add classifier and to remove classifiers and there's also sliding window.
+
+[667.0s - 696.0s]
+Option. So here I just wanted to point out some flaws in online boost and only according to boost.
+
+[696.0s - 725.0s]
+But we can come back to this after I finish.
+
+[725.0s - 754.0s]
+Because I don't know if I'm gonna have time but. Here the datasets are used in the experiment, so I use four different datasets with different types and different training sizes, and I have two different test types. For. First do I test on the holdout data from the current concept and for the the remaining to use each example to train, and then I use it to test.
+
+[754.0s - 783.0s]
+And here are the. Results for C data set with four concepts. It's a sudden drift. And I use base classifiers as decision stumps at base classifiers. And I compared the two versions. I I boost direction stochastic and I also failed to mention that in the constant change application the batch version used the entire window to update the companies parameters where the stochastic version uses only the most recent example. And I compared to retrain the other boost which also uses the window and online coordinate posts and fast and light boosting. Why only these three? Well, these are the only treated which can handle base classifiers that don't have an option to be updated in an online matter, which is the case for decision stamps. And you can see a clear dominance of our algorithm and you can also observe that I boost stochastic. You performs close to my boost batch while being faster. You can also see a limited. Generalization power of retrained other boosts when it has a window and for fast and like boosting you can see that it's really a bad idea to remove the entire in sample when you detect the change.
+
+[783.0s - 812.0s]
+So we did a thorough investigation for different window sizes and different budgets.
+
+[812.0s - 841.0s]
+And so we also use this recovery As for evaluation, where recovery we defined as average test accuracy on the 1st 600 examples after introducing the new concept. And. Really, we observed that fast recovery from concept changes done bye bye Boo stochastic becausw. It updates only with the current with the most recent example. Uh. Some main conclusions is that for a fixed window size, when you increase the budget, your performance improves but also at cost of increased time. And also when you increase the the window size for a fixed budget, you have gain in performance, but then you have a slower recovery time and you have again increased the. Training time. It's interesting to compare. I boost another boost when window size increases, then this performance gap in the recovery really. The growth this gap, but it reduces in the test accuracy because as we increase the window size, other boots gets more generalization power.
+
+[841.0s - 870.0s]
+OK, so we also played out played around with different parameter B&P parameters. So if you choose more creating decent updates you get increasing performance but also increasing training time. Also if you add base classifiers less frequent you degrade the performance in some cases, just likely if you compare these two but you save alot in training time.
+
+[870.0s - 899.0s]
+OK, so now I use my vices base classifiers so I can compare to all the other algorithms. And here I just highlight the two most competing ones so the black line is our stochastic version and we have fast and like classifier and dynamic weighted majority. You can see that fast and like classifier performs almost the same as our algorithm in first 2 concepts But then falls behind especially the last one where dynamic weighted majority falls behind in all the concept except in the last one. And here the remaining ones. It's a little bit of a mess, but they fall behind. And Interestingly, our I mean, our algorithm also has a very good training time. I think it comes in second after dynamic waited majore.
+
+[899.0s - 928.0s]
+We can zoom in to see how they all recover from concept change and you can see that we do pretty good. It's interesting to observe that admin online bagging doesn't have as much drop in the accuracy as the other algorithms because it uses this changes actiontec.
+
+[928.0s - 957.0s]
+Let's move on to the second data set Santa Fe, where we have three concepts and we have incremental drift. And I test out on the holdout data. Now you can see even more the benefit of our algorithm. And again we do very well regarding with time.
+
+[957.0s - 986.0s]
+This just summarizes the results, so you can see your big improvements, especially in the Santa Fe data set.
+
+[986.0s - 1015.0s]
+And finally I show results for Eli D Data set an RBF data set. So. Here we can see. A big gap. We beat the other algorithms by a large margin. Especially in this RBF data set. While being very fast here, and I think we come in second.
+
+[1015.0s - 1044.0s]
+In some remarks, experiments are performed in Matlab, so thus the training training time is a little bit large. TBF and Eli D Data were generated using more and codes will be available soon.
+
+[1044.0s - 1073.0s]
+And to summarize, we propose an extension of other boost incremental learning. We evaluated on concept change applications and our experiments showed that. Our algorithm is more accurate, resistant and efficient than the original letter who celebrate them and previously proposed. Once future work is to extend it to perform multiclass classification, which should be fairly easy and combine it with the powerful admin change detection technique to see what we can do when we actually know that the change happened, because right now we are blind to to all the changes and experiment with more advanced base classifiers. And.
+
+[1073.0s - 1102.0s]
+That's it, I think.
+
+[1102.0s - 1131.0s]
+Synthetic the datasets are all synthetic data. The synthetic RBF synthetic.
+
+[1131.0s - 1160.0s]
+Thanks yeah Santa face some social synthetic, some laser data. Because otherwise, I mean, I was surprised because otherwise in principle you could not know what type of drift or shift is. In the data set. Because when the data simulated, you simulate the drift type. Also when you simulate it, yes you have it under control, but you didn't experiment with real data so far. So far it didn't. But I'm working.

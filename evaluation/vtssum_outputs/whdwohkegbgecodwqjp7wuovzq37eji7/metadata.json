@@ -1,0 +1,21 @@
+{
+    "id": "whdwohkegbgecodwqjp7wuovzq37eji7",
+    "title": "Gait Representation Using Flow Fields",
+    "url": "http://videolectures.net/bmvc09_bashir_gruff/",
+    "info": {
+        "author": [
+            "Khalid Bashir, Queen Mary, University of London"
+        ],
+        "published": "Dec. 1, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Image Analysis"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 129,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1625
+}

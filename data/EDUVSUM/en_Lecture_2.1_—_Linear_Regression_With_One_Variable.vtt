@@ -1,0 +1,532 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.000 --> 00:00:03.750
+our first learning algorithm will be
+
+00:00:01.530 --> 00:00:05.250
+linear regression in this video you see
+
+00:00:03.750 --> 00:00:07.049
+what the model looks like and more
+
+00:00:05.250 --> 00:00:08.639
+importantly you also see what the
+
+00:00:07.049 --> 00:00:13.769
+overall process of supervised learning
+
+00:00:08.639 --> 00:00:15.330
+you'll flip let's use a motivating
+
+00:00:13.769 --> 00:00:18.060
+example of predicting housing prices
+
+00:00:15.330 --> 00:00:21.390
+we're going to use a data set of housing
+
+00:00:18.060 --> 00:00:24.119
+prices from the city of Portland Oregon
+
+00:00:21.390 --> 00:00:27.119
+and you're going to plot my data set of
+
+00:00:24.119 --> 00:00:29.400
+a number of houses there were different
+
+00:00:27.119 --> 00:00:32.189
+sizes that were so for a range of
+
+00:00:29.400 --> 00:00:33.899
+different prices let's say that given
+
+00:00:32.189 --> 00:00:36.090
+this data set you have a friend that's
+
+00:00:33.899 --> 00:00:39.570
+trying to sell a house and let's see
+
+00:00:36.090 --> 00:00:41.910
+your friend's house is of size 1,250
+
+00:00:39.570 --> 00:00:43.469
+square feet and you want to tell them
+
+00:00:41.910 --> 00:00:46.250
+how much they might be able to sell the
+
+00:00:43.469 --> 00:00:49.140
+house for well one thing you could do is
+
+00:00:46.250 --> 00:00:52.350
+fit to a model maybe put a straight line
+
+00:00:49.140 --> 00:00:54.930
+to this data then write something like
+
+00:00:52.350 --> 00:00:57.960
+that and based on that maybe you could
+
+00:00:54.930 --> 00:01:00.770
+tell your friend that looks likely to
+
+00:00:57.960 --> 00:01:04.680
+maybe sell the whole square around to
+
+00:01:00.770 --> 00:01:07.680
+$18,000 so this is an example of a
+
+00:01:04.680 --> 00:01:09.450
+supervised learning algorithm and it's
+
+00:01:07.680 --> 00:01:12.360
+supervised learning because we're given
+
+00:01:09.450 --> 00:01:15.180
+the quote right answer for each of our
+
+00:01:12.360 --> 00:01:17.520
+examples namely were told what was the
+
+00:01:15.180 --> 00:01:19.350
+actual house what was the actual price
+
+00:01:17.520 --> 00:01:22.110
+that each of the houses in our data set
+
+00:01:19.350 --> 00:01:24.509
+was so for and moreover does an example
+
+00:01:22.110 --> 00:01:26.159
+of a regression problem where the term
+
+00:01:24.509 --> 00:01:28.200
+regression refers to the fact that we're
+
+00:01:26.159 --> 00:01:30.689
+predicting a real-valued output maybe
+
+00:01:28.200 --> 00:01:32.369
+the price and then just remind you the
+
+00:01:30.689 --> 00:01:34.650
+other type the other most common type of
+
+00:01:32.369 --> 00:01:36.810
+supervised learning problem is called
+
+00:01:34.650 --> 00:01:41.369
+the classification problem where we
+
+00:01:36.810 --> 00:01:44.909
+predict discrete values outputs such as
+
+00:01:41.369 --> 00:01:47.640
+if we are looking at cancer tumors and
+
+00:01:44.909 --> 00:01:50.220
+trying to decide if a tumor is malignant
+
+00:01:47.640 --> 00:01:53.220
+or benign so there's a 0 1 value
+
+00:01:50.220 --> 00:01:55.979
+distrito more formally in supervised
+
+00:01:53.220 --> 00:01:58.950
+learning we have a data set and this
+
+00:01:55.979 --> 00:02:00.360
+data set is called a training set so for
+
+00:01:58.950 --> 00:02:02.579
+a housing price an example we have a
+
+00:02:00.360 --> 00:02:05.310
+training set of different housing prices
+
+00:02:02.579 --> 00:02:07.670
+and our job is to learn from this data
+
+00:02:05.310 --> 00:02:10.020
+how to predict the prices of the houses
+
+00:02:07.670 --> 00:02:11.849
+let's define some notation that we're
+
+00:02:10.020 --> 00:02:13.500
+using throughout this course I'm going
+
+00:02:11.849 --> 00:02:15.270
+to define quite a lot of symbols
+
+00:02:13.500 --> 00:02:16.710
+is okay if you don't remember all the
+
+00:02:15.270 --> 00:02:18.450
+symbols right now but as the course
+
+00:02:16.710 --> 00:02:21.180
+progresses so be useful with a
+
+00:02:18.450 --> 00:02:23.790
+convenient notation so I'm going to use
+
+00:02:21.180 --> 00:02:25.830
+lowercase M throughout this course to
+
+00:02:23.790 --> 00:02:28.500
+denote the number of training examples
+
+00:02:25.830 --> 00:02:31.500
+so in this data set if I have you know
+
+00:02:28.500 --> 00:02:33.870
+let's say 47 rows in this table then I
+
+00:02:31.500 --> 00:02:37.830
+have 47 training examples and M equals
+
+00:02:33.870 --> 00:02:39.959
+47 let me use lowercase X to denote the
+
+00:02:37.830 --> 00:02:42.720
+input variables often also called the
+
+00:02:39.959 --> 00:02:45.330
+features so though the X's here will be
+
+00:02:42.720 --> 00:02:47.459
+on input features and I'm going to use Y
+
+00:02:45.330 --> 00:02:49.560
+to denote my output variables or the
+
+00:02:47.459 --> 00:02:52.890
+target variable region to predict its
+
+00:02:49.560 --> 00:02:56.660
+Alexis second column here a little bit
+
+00:02:52.890 --> 00:03:04.620
+more notation I'm going to use X comma Y
+
+00:02:56.660 --> 00:03:06.780
+to denote a single training example so a
+
+00:03:04.620 --> 00:03:09.660
+single row in this table corresponds to
+
+00:03:06.780 --> 00:03:12.270
+a single training example and to refer
+
+00:03:09.660 --> 00:03:19.280
+to a specific training example I'm going
+
+00:03:12.270 --> 00:03:23.390
+to use this notation X I comma Y I and
+
+00:03:19.280 --> 00:03:30.290
+going to use this to refer to the
+
+00:03:23.390 --> 00:03:34.080
+training example so this superscript I
+
+00:03:30.290 --> 00:03:37.350
+over here this is not exponentiation
+
+00:03:34.080 --> 00:03:40.350
+right this X I Y I the superscript I in
+
+00:03:37.350 --> 00:03:42.750
+parenthesis that's just an index into my
+
+00:03:40.350 --> 00:03:45.299
+training set and it refers to the I row
+
+00:03:42.750 --> 00:03:49.049
+in this table okay so this is not except
+
+00:03:45.299 --> 00:03:53.100
+our of iy ^ I instead X I Y I just
+
+00:03:49.049 --> 00:03:55.440
+refers to the I fro of this table so for
+
+00:03:53.100 --> 00:03:59.880
+example X 1
+
+00:03:55.440 --> 00:04:01.769
+you know refers to the input value for
+
+00:03:59.880 --> 00:04:06.060
+the first training example so that's 21
+
+00:04:01.769 --> 00:04:11.040
+0 4 represents X to the first row X 2
+
+00:04:06.060 --> 00:04:16.109
+would be equal to 14 16 right the second
+
+00:04:11.040 --> 00:04:18.870
+x and y 1 will be equal to 460 with
+
+00:04:16.109 --> 00:04:21.329
+that's the first the Y value for my
+
+00:04:18.870 --> 00:04:23.590
+first training example that's what that
+
+00:04:21.329 --> 00:04:26.840
+one refers to
+
+00:04:23.590 --> 00:04:29.300
+so as I mentioned occasionally I'll ask
+
+00:04:26.840 --> 00:04:31.310
+you a question to let you check your own
+
+00:04:29.300 --> 00:04:33.380
+understanding and a few seconds in this
+
+00:04:31.310 --> 00:04:35.660
+video a multiple-choice question will
+
+00:04:33.380 --> 00:04:37.400
+pop up in the video when it does please
+
+00:04:35.660 --> 00:04:38.860
+use your mouse to select what you think
+
+00:04:37.400 --> 00:04:41.510
+is the right answer
+
+00:04:38.860 --> 00:04:43.250
+we're defined by the training set is and
+
+00:04:41.510 --> 00:04:46.070
+so here's how a supervised learning
+
+00:04:43.250 --> 00:04:47.600
+works we solve them of a training set
+
+00:04:46.070 --> 00:04:50.120
+like our training set of housing prices
+
+00:04:47.600 --> 00:04:52.490
+and we feed that to our learning
+
+00:04:50.120 --> 00:04:54.710
+algorithm is the job of a learning
+
+00:04:52.490 --> 00:04:57.530
+algorithm to then output a function
+
+00:04:54.710 --> 00:05:00.500
+which by convention is usually denoted
+
+00:04:57.530 --> 00:05:04.970
+lowercase H and H stands for hypothesis
+
+00:05:00.500 --> 00:05:07.970
+and what the job of the hypothesis is is
+
+00:05:04.970 --> 00:05:10.190
+is a function that takes as input the
+
+00:05:07.970 --> 00:05:11.930
+size of a house like maybe the size of a
+
+00:05:10.190 --> 00:05:14.840
+new house that your friend is trying to
+
+00:05:11.930 --> 00:05:21.760
+sell it takes in a value of X and it
+
+00:05:14.840 --> 00:05:25.340
+tries to output the estimated value of y
+
+00:05:21.760 --> 00:05:33.460
+for their corresponding house so H is a
+
+00:05:25.340 --> 00:05:35.990
+function that map's from X's to YS um
+
+00:05:33.460 --> 00:05:38.060
+people often ask me you know why is this
+
+00:05:35.990 --> 00:05:40.100
+function called a hypothesis some of you
+
+00:05:38.060 --> 00:05:41.990
+may know the meaning of the term
+
+00:05:40.100 --> 00:05:43.970
+hypothesis from the dictionary or from
+
+00:05:41.990 --> 00:05:46.490
+signs or whatever it turns out that the
+
+00:05:43.970 --> 00:05:47.900
+machine learning this is a name that was
+
+00:05:46.490 --> 00:05:49.490
+used in the early days of machine
+
+00:05:47.900 --> 00:05:51.890
+learning and this kind of stuff because
+
+00:05:49.490 --> 00:05:53.660
+maybe not a great name for this sort of
+
+00:05:51.890 --> 00:05:56.060
+function for mapping from sizes of
+
+00:05:53.660 --> 00:05:59.390
+houses to the predictions but you know I
+
+00:05:56.060 --> 00:06:00.920
+think the term hypothesis maybe isn't
+
+00:05:59.390 --> 00:06:02.870
+the best possible name for this but is
+
+00:06:00.920 --> 00:06:04.730
+what this is the standard terminology
+
+00:06:02.870 --> 00:06:06.380
+that people using here you know so don't
+
+00:06:04.730 --> 00:06:09.830
+worry do it don't worry too much about
+
+00:06:06.380 --> 00:06:11.270
+why people call it that when designing a
+
+00:06:09.830 --> 00:06:13.370
+learning algorithm the next thing we
+
+00:06:11.270 --> 00:06:17.180
+need to decide is how do we represent
+
+00:06:13.370 --> 00:06:19.190
+this hypothesis H for this in the next
+
+00:06:17.180 --> 00:06:21.950
+few videos I'm going to choose our
+
+00:06:19.190 --> 00:06:23.780
+initial choice for representing the
+
+00:06:21.950 --> 00:06:25.910
+hypothesis will be the following going
+
+00:06:23.780 --> 00:06:27.850
+to represent H as follows and with the
+
+00:06:25.910 --> 00:06:35.270
+right of this subscript theta of x
+
+00:06:27.850 --> 00:06:38.000
+equals theta 0 plus theta 1 of X and
+
+00:06:35.270 --> 00:06:40.340
+as a shorthand sometimes instead of
+
+00:06:38.000 --> 00:06:42.140
+writing you know H subscript theta of X
+
+00:06:40.340 --> 00:06:44.570
+sometimes it's a shorthand I'll just
+
+00:06:42.140 --> 00:06:47.270
+write this is H of X but more often our
+
+00:06:44.570 --> 00:06:50.000
+rector the subscript theta over there
+
+00:06:47.270 --> 00:06:53.360
+and plotting to some pictures all this
+
+00:06:50.000 --> 00:06:58.000
+means is that we are going to you know
+
+00:06:53.360 --> 00:07:01.790
+predict that Y is a linear function of X
+
+00:06:58.000 --> 00:07:03.500
+right so there's a data set and what
+
+00:07:01.790 --> 00:07:07.310
+this function is doing is just
+
+00:07:03.500 --> 00:07:11.600
+predicting that Y is some straight line
+
+00:07:07.310 --> 00:07:17.030
+function of X s of x equals 3 0 plus
+
+00:07:11.600 --> 00:07:20.270
+theta 1 X ok and why a linear function
+
+00:07:17.030 --> 00:07:22.250
+well sometimes we'll want to fit more
+
+00:07:20.270 --> 00:07:24.680
+complicated perhaps nonlinear functions
+
+00:07:22.250 --> 00:07:26.810
+as well but since this linear case is
+
+00:07:24.680 --> 00:07:28.310
+the simple building block we'll start
+
+00:07:26.810 --> 00:07:30.500
+with this example first so fitting
+
+00:07:28.310 --> 00:07:32.960
+linear functions and we'll build on this
+
+00:07:30.500 --> 00:07:35.630
+to eventually have more complex models
+
+00:07:32.960 --> 00:07:37.880
+in more complex learning algorithms let
+
+00:07:35.630 --> 00:07:40.640
+me also give this particular model a
+
+00:07:37.880 --> 00:07:42.650
+name small though is called linear
+
+00:07:40.640 --> 00:07:44.750
+regression or district example is a
+
+00:07:42.650 --> 00:07:48.050
+actually linear regression with one
+
+00:07:44.750 --> 00:07:49.910
+variable will be variable being X some
+
+00:07:48.050 --> 00:07:52.430
+connecting housing prices functions in
+
+00:07:49.910 --> 00:07:54.680
+one variable X and another name for this
+
+00:07:52.430 --> 00:07:57.200
+model is you need the area linear
+
+00:07:54.680 --> 00:08:01.210
+regression and you need area is just you
+
+00:07:57.200 --> 00:08:05.150
+know a fancy way of saying one variable
+
+00:08:01.210 --> 00:08:07.250
+so that's linear regression in the next
+
+00:08:05.150 --> 00:08:10.630
+video we'll start to talk about just how
+
+00:08:07.250 --> 00:08:10.630
+to go about implementing this model

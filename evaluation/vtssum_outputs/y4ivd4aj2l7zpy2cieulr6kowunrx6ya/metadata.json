@@ -1,0 +1,21 @@
+{
+    "id": "y4ivd4aj2l7zpy2cieulr6kowunrx6ya",
+    "title": "Searching for Information in Software Development Projects Using the Alert System",
+    "url": "http://videolectures.net/is2012_stopar_alert_system/",
+    "info": {
+        "author": [
+            "Luka Stopar, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 16, 2012",
+        "recorded": "October 2012",
+        "category": [
+            "Top->Computers->Software",
+            "Top->Computer Science->Information Extraction"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 112,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1019
+}

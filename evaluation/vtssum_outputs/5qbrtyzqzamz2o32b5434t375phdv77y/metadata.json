@@ -1,0 +1,21 @@
+{
+    "id": "5qbrtyzqzamz2o32b5434t375phdv77y",
+    "title": "Search Query Disambiguation from Short Sessions",
+    "url": "http://videolectures.net/bsciw08_mihalkova_sqdss/",
+    "info": {
+        "author": [
+            "Lilyana Mihalkova, University of Texas at Austin",
+            "Raymond J. Mooney, Department of Computer Science, University of Texas at Austin"
+        ],
+        "published": "Dec. 20, 2008",
+        "recorded": "December 2008",
+        "category": [
+            "Top->Computer Science->Search Engines"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 194,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3251
+}

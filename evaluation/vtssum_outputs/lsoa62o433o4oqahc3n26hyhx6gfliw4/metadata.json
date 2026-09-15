@@ -1,0 +1,20 @@
+{
+    "id": "lsoa62o433o4oqahc3n26hyhx6gfliw4",
+    "title": "Computing Homology Group Generators of Images Using Irregular Graph Pyramids",
+    "url": "http://videolectures.net/gbr07_peltier_chgg/",
+    "info": {
+        "author": [
+            "Samuel Peltier, Vienna University of Technology"
+        ],
+        "published": "July 12, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 51,
+    "num_sentences": 204,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 3072
+}

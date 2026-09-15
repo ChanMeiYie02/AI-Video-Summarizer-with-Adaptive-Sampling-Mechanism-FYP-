@@ -1,0 +1,21 @@
+{
+    "id": "qvwg7ko3pylvglk4keetmjumg4v2iw6h",
+    "title": "Proximate Sensing: Inferring What-Is-Where From Georeferenced Photo Collections",
+    "url": "http://videolectures.net/cvpr2010_newsam_fgpc/",
+    "info": {
+        "author": [
+            "Shawn Newsam, Department of Electrical Engineering and Computer Science, University of California Merced"
+        ],
+        "published": "July 19, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Information Retrieval->Multimedia Retrieval"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 166,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 5647
+}

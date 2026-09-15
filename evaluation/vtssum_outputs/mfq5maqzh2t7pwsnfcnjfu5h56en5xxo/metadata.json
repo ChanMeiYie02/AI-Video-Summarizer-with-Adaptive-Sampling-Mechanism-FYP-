@@ -1,0 +1,20 @@
+{
+    "id": "mfq5maqzh2t7pwsnfcnjfu5h56en5xxo",
+    "title": "A Fast Active Learning Algorithm for Link Classification",
+    "url": "http://videolectures.net/machine_zappella_learning_algorithm/",
+    "info": {
+        "author": [
+            "Giovanni Zappella, Dipartimento di matematica \"F. Enriques\", Università Degli Studi Di Milano"
+        ],
+        "published": "Aug. 6, 2013",
+        "recorded": "April 2013",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 5,
+    "num_sentences": 20,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 418
+}

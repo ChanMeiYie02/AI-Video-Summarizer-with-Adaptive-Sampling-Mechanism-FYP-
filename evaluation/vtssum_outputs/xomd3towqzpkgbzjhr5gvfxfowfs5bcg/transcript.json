@@ -1,0 +1,117 @@
+[
+    {
+        "text": "Good evening to everybody. I'm sorry I yesterday go to nasty cold and may prevent me from touching as good as I would like to, but I'll try to do my best. This talk. It's about a method for modeling complex systems, and especially the digital territory, complex system, digital territory.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Is a new artificial in quotes concept that seems to have attracted much attention attention lately. It is somewhere in the middle above artificial life where you have a number of very small, not powerful enough entities that interact in a very naive way with each other. And of course artificial intelligence where I have very few very intelligent agents that interact in a very powerful way with each other. So digital territory talks about is more a huge number of small entities who have which have, however. Large capabilities for communication and establishing connection with each other and the this the digital territory concept tries to capture today's situation where we have a vast number of moving appliances, mobile phones, PDAs etc. And each of them is trying to connect or interact with each other in the surrounding.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So. Actually, digital territory consistency is in a number of agents that move about in say 2 dimensional or three dimensional space and interact with each other in some specified manner. We are interested in describing these kind of interactions between these agents using some formalism.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "When this is the technological aspect of the digital territory which realized which makes a realisable such a concept today sure talking about all this kind of networks 4G3G we're talking about mobile devices about. Verify this an everything. So a digital territory actually consists of all these elements together which interact with each other. So in this talk we are interested in describing this interaction in a way that makes these systems amenable to mathematical interpretation.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So modeling interaction in general and theoretical terms is done using the random graph formalism. So actually the random graph formalism assumes that I have a number of agents of verticies. International language of graphs and let's say, and I have some candidate connections between the verticies. This is the end. Choose two possible interactions between these verticies. Of course I can have interaction between not simply pairs of vertices, but say triples or quadruples advances. Then we're talking about hypergraphs, but we're not going to. To discuss this concept here. But everything we say applies directly to hypergraphs too. And not only simple graphs where I have interactions between pairs of nodes alone. So 2 popular random graphs models is the GMM around of graph model where I have the M agents and the interactions among them are chosen from within the entries. Two possible interactions. I choose M of them at random. The GNP model actually assumes that each of the possible emptiers two interactions appears independently of the others with probability PP may be a function of M, and it actually is a function of him.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "We have the fixed radius model which appears to be more suitable for devices that move about and have a certain interaction radius around them, and this is of course the capability of transmission and receiving. So actually I have a number of random points that appear in a certain area and two points make a connection only if they are close enough to each other, which is model by the parameter D. Sorry R0. D is the dimension of the space. Actually D is equal to two or three. We also have the model GNMP, where each of these agents are at it chooses some random elements from within a set, and if the elements intersect. Then we have a connection between the two nodes.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "We're going to propose another random interaction model. Which actually establishes the connection using some scale free selection of the degrees of the nodes. When we're talking about the degrees of the nodes, I mean the number of members with which a note needs to connect. We actually chose this model because we wanted to exemplify two techniques from random graph theory that can be applied to analyzing any complex system. The first technique talks about when a random graph model which you analyze nautically seems to have another look in real life, so it actually tells you if this you define actually can correspond to a real graph. And the other theory, Stelzl tells you you can talk about properties of your computer system written in a special logic 1st order logic, the language of graph and then you are able to tell if your system starts growing indefinitely, whether a property will exhibit A 01 law in the end. So whether your community, your complex system, actually in the limit will display for sure property or. Let's play for sure, probably. So this is useful to define a class of properties that will appear the certainty in your random graph model or will not appear. We said that in your random graph model. And this is the famous SD property which I'm going to describe later. So actually you use this model to define the redirection between two nodes. Two nodes actually choose the degree. Their degree, I mean the number of neighbors that the node needs to connect to. At the discretion of children according to this distribution, which actually follows a scale free law. So after the modes choose their degrees, the random graph which corresponds to the chosen exists is constructed, and then this is the interaction graph of the complex system.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "The problem is that you cannot simply take N vertices and say this vertice vertex has degree. This vertex has other degree etc becausw this sequence of degrees may not be graphical. This means that there cannot be a graph that realises this selection of degrees. Fortunately, there is a very famous theorem, A case of which appears here. This is a theorem of Harrity and Richard and says when. A given degree sequence corresponds to a graph. And this is actually that a sufficient condition is for the expectation to have a finite value.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "It's one of the many cases of this theory. So a computation of the average degree for the model with defined actually shows that if the parameter M stays fine it then the expected degrees find it, and so our graph model actually corresponds to a real graph. So this means is realisable in practice.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "What about now properties of this model? Because when I define the random graph model, I want to talk about the system it describes. So I need a language. One of these languages is the 1st order. Randomly sorry. The 1st Order Language of graph. And it consists of this element and number of symbols which are actually the vertices of the graph. A number of relations, binary relations. It's equality between vertices. An adjacency between verticies. And Universal and existential quantifiers, which apply. However, only two singletons becausw if I apply existential or universal quantifier to subsets of vertices, then I have higher order vertices. Sorry logics and they're not amenable to the analysis we're going to show below. So this is actually the 1st order language of graphs. And of course the usual Boolean connectives. So using this language I can say things about my my graph. I can say for example, that villages at Ryan or every vertex is joined with at least three other purchases and many other things which may be useful if I want to talk formally about my graph. My set of interactions actually for the complex systems I am studying.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "A very interesting theory is this one. It refers to a graph where you have defined properties using the 1st order language of graphs and says the following. The extensor statement is when I have a set of 1st plasty verticies. And for every other vertex I can choose. I can find connection with. All of the edge of them, or none of the story, and none of the other three of them. So actually it separates the two sets of vertices into SMT. Where another vertex is adjacent to all of the 1st and none of the latter. So this is the extension statement as the extension statement. The important is the following. If the extension statement is proven to hold in a random graph model, yet you have defined to describe a complex system, then you can say that all properties, all properties that talk about your system, your complex system either hurting the limit with probability one that is there certain port or they do not hold in the limit of probability one. So actually they do not fault at all. So this is a very important theorem about when you manage to describe your complex system using the 1st order logic of graphs. Then you have a whole set of theorems like this one that allows you to conclude there your complex system has a certain set of properties, namely the set of properties that are first order or do not have these properties.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "We are going to compute the probability that the SD property fails. We want to establish conditions according to which this property holds for certain. So actually we're going to prove that the probability that vested property fails tends to 0. So the usual technique is to find some upper bound and prove that this upper bound tends to 0. So actually this is an easy upper bound computed there.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Afterward, outbound the probabilities of connection between two vertices in our random graph model, this is PAPEB probability events.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Actually. Then you can show that if you want your random graph model that we've defined before. To exhibit 01 law in the first language robertsau graphs. Then you have to allow the vantages to have a smaller bound to the degrees equal to something which is order N over log in. Which is huge. This has the following implicate.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Public. When the parameter M temps to Infinity, there appear legit theorem actually does not apply and you are not certain if the random graph model if M tends to Infinity with.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Vision 8. Actually defines a graph that is realisable. In actuality, so this is the problem if you try to define something more complex than simple random graph models, then either you do not have 01 low properties. If the extension phase statement does not hold, or if you force it to hold, then you get a condition such as this which actually can make the graph not realisable.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Another interesting thing here is the following. In order to prove the extension statement, you find some upper bound in the probabilities. But then these probabilities are assumed to be independent.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "In the random graph model that we defined before option. The probabilities are not dependent becausw if I know that the node is connected to some other verticies, then the probability of connecting with me is smaller becausw the degrees has chosen in advance and stay fixed. So actually I have strong dependencies in this random graph model, which makes the analysis hard.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Complain. So just simplify the steps. It's in the paper you.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Realize the probabilities using the total probability log base. And after some simplifications then dumdei this result that I showed you before. That is the condition on of M. Suggest to finish.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Sad. So as I said, the cuts here is that this condition is so strong that actually you are not able to prove that your graph is actually corresponds to some real life situation. So the problem remains.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Just to delineate some example for future search. Can you define a random graph? Models that actually do not exhibit 01? Properties. Up to date all the random graph models that have appeared exhibit the 01 property either proving easy if there are no dependencies or even harder way if there are dependencies, as in this case. Another interesting question is to compute exactly the probability that VSD property fails. So this means computing this probability on the right hand side. Using perhaps and very complex inequality such as Johnson on Mcdermott's in, these are probability theory tools, which are very hard to apply in such cases.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Then OK, allow random graph models that appear to treat different areas of the graph in a different way. Perhaps the model? More complex sets of real life application where some graph may exhibit such a density here or such a density there something else. So what can you do last with properties that actually cannot be written in the 1st order language of graphs? That is, their higher order are there? Are they 01? Another which conditions? This is another open question. Because not all properties are written, of course, is the 1st order theory of graphs or the 1st order logic? So this is then. Thank you.",
+        "start": 638.0,
+        "end": 667.0
+    }
+]

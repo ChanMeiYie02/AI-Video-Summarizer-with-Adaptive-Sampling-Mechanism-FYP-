@@ -1,0 +1,20 @@
+{
+    "id": "wo6v5isdqzplmium53iochofhb6s3pvq",
+    "title": "Demo - Control of an octopus arm using GPTD",
+    "url": "http://videolectures.net/icml07_engel_demo/",
+    "info": {
+        "author": [
+            "Yaakov Engel, Department of Computing Science, University of Alberta"
+        ],
+        "published": "June 22, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 13,
+    "num_sentences": 144,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1564
+}

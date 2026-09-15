@@ -1,0 +1,247 @@
+[
+    {
+        "text": "I think the stock will be more informal. You've heard lots of talks and I'm going to try to show 3 demos over the Internet, which I'm told I'm connected to, so hopefully.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Will be fun. While I'm acknowledging people let me start by acknowledging right the folks in the Nodal Research Group we've been working on information extraction from the web since 2003. Both students and faculty at the University of Washington, and we have six alums who've graduated with their PhD.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "And where I wanted to start is with less valence words. He won the Turing Award this year, as you know, and he said in an interview, the most critical choice for a scientist is what problems to work on so often were we get enamored with our mechanism or our formalism. The acronym DAJOUR Bit SVM or LDA or whatever, and I think it's really important to take a step back and say OK, what is the problem? And why am I working on it? So I want to start by talking about that.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "And the problem that I've been working on is really the knowledge acquisition bottleneck in AI. I think most of us, if not all of us would agree that you need a massive amount of knowledge to achieve artificial intelligence. Just think about the number of facts, opinions, heuristics, rules, etc that each of us has. So that's a given. Another question is how do we get this massive amount of knowledge? And actually there's relatively few approaches to this problem that have been practiced in the field. If you think about it, how many people have tackled this problem an in what ways? Well, there's a psych project, and ugly not deserves a lot of credit for starting this ambitious project back in 1984. To try to have knowledge workers put in a huge amount of background knowledge into a system, and I think now after over 25 years and I think easily more than 100 million dollars, it's fair to say that that's been a resounding failure. Games is an approach that Luis von Ahn advocated at CMU. He had the ESP game where people labeled images and were generated as part of the game and generating knowledge that way. There was a game called Verbosity where people were attempting where common sense knowledge was being generated as a side effect of the game, his subsequent games after USP have been less popular, so we've not seen massive amounts of knowledge coming out of them. Out of all the games. But that's an interesting approach. The Open Mind project at MIT suggested using volunteers to put in common sense knowledge. Again, that's been limited success. If you measure the amount and the quality of knowledge that's been created, of course, Wikipedia or something like that has been far more successful, but that's people creating text, not actual machine processable knowledge, so our belief is that knowledge acquisition has to be automatic. It's A kind of learning problem. And specifically, what our project is explored is doing some kind of reading and I'll explain what I mean by machine reading more shortly, but some kind of reading of a corpus and the natural corpus to consider is the web. It's massive, it has. A huge amount of information you're not restricting yourself to a narrow domain, etc etc. So back in 2006, my colleagues and I called for machine reading as a challenge for AI and the number of people have joined in. There's a DARPA program, a machine reading start in 2009. Tom Mitchell's, a very exciting project team you called Nell, which follows on some of his earlier work on Web KB, which was also very inspirational project in this area. Of course there's Watson that most of us have seen there a little bit circumspect about the sources of text that they use, but they are clear about the fact that the using massive amounts of textual information on a huge variety of topics. So it's clear that this is potentially an exciting.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Area. So what do I mean by machine reading? It's the automatic unsupervised understanding of text. Again, the word understanding there is a little bit vague, but the basic idea is to go from sentence is to assertions of fact or opinion and then to be able to draw inferences to have the machine draw inferences on top of those. And one of the key distinctions that we like to make is between micro reading, where you're reading an individual sentence and macro reading where you might be reading a billion sentences simultaneously. And as I'll show you in certain funny ways, it's easier to read a billion sentences than to read just one.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "There's another motivation to what we do, which is a more pragmatic one. As Craig mentioned, I always keep in the back of my mind the real world or what's going to happen in the next five years, in addition to what's going to happen in the next 100. Well, information overload is something that we all experience, right? And that's even before the 100 million tweets that were sent today and the hundreds, if not thousands of email messages right? Waiting for us. Since we've been at at each guy, so it would be great to also.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Address that and my thought about what to do. That is to build substantially more sophisticated systems than the ones we used today. So today we have the web or other sources of text and we have systems like Google that I think of as information herbivores. They graze over the web and then they regurgitate what they find in an indexible form. And my suggestion is that we move up the information food chain and build information. Carnivores if you will. More sophisticated engine, so this is our note. All icons, so some kind of nodal where you can ask it questions. How is the iPad 2 and get answers like? Well, I found 28,000 reviews, 87% of which are positive. The key features that people talk about are this that and the other thing in the electronics domain. That's what decide.com does in part, but I'm going to show you a demo in a second in the restaurant domain, but you see the idea right? If we're able to operate at this high level, then the interaction is much more satisfying. Of course, to be able to analyze the text and summarize it at this level, we need much more sophisticated.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Intelligence so let me show you this Rev minor project, which is something we've put together recently. And by the way all the demos I'm going to show you today are available on the web, so don't rush to try them as I'm doing. It will probably slow them down. These are research prototypes, but feel free to try them afterwards. This one sits at Rev Minor. Com and what it does is it extracts key attributes, an opinions of anything that's reviewed by Yelp. In Seattle, so Barber, shops, hotels, restaurants and is based on the open system, which was done by Anna Maria and myself way back when. But now we're applying it at much larger scale and what we're really emphasized when I want to show you here is how an interface based on extraction can summarize information for you much more succinctly and easily than if you're having to do search. And this is a point that was made extremely well bye. Yeah Tony at all in the best paper track this they want a best paper award for an extractive interface just in this years 8.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Yeah, so let's see what this looks like. And we'll see if I can.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Do my demo, so here's Red Minor and I tell it I'm looking for good sushi in Seattle and. We'll ignore the optimal resolution notification, so here it gives me a bunch of restaurants where there's good sushi, but interprets the query for good sushi, not literally. Basically it says I have a set of opinion words that I've extracted from the reviews, and I've rank them right from the darkest green is the most positive to read. Darkest Red is the most negative. Black is somewhere in the middle. And I'm going to interpret good sushi is good sushi or better so so excellent sushi is going to be included as well. And you see that it's providing us with something that according to the Yelp reviews is probably the best sushi in Seattle and it's also extracted a wide variety of other. Attributes and what people said about about those. So it summarizes the reviews, and we should probably cut down the number of adjectives, but you can at a glance get a sense of how is the service in this place. And if you say you know I'm really interested in what people say about service, I want to only go places where the services I don't know, amazing that I might click on that and I'll see places where the service was amazing, and then I could. I might go to. I don't know taste of India and see what people say say about that. So you get a sense here right about how we're operating not at the level of reading reviews after reviews, but at the level of this concise summary.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Now again the.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Interface I showed you. Is not.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Optimize for mobile device, but again you can imagine how on a mobile device like this one right riedering reviews and I think we've all had that experience become very tedious. You could imagine looking in this and quickly at a glance seeing what people say about about the sushi about the service, etc. Because we're extracting these Nuggets of information. So what have I done so far in the talk, I hopefully motivated for two reasons. Information extraction, right? One is to solve the Knowledge acquisition bottleneck and the other one is as a basis for a new paradigm of search and interaction based on extractions. What I'm going to do now is tell you more about machine reading and specifically focus on how we do information extraction. So I'm going to get into some more detail here. Definitely not the level of detail for an NLP person. But I'll refer you to the papers for that. So machine reading is really going to be information extraction or IE and inference. I'll give a quick overview of that with the focus on the question of how do we scale IE to operate over the web. I'll talk specifically about our approach, which is called open A and I'll give you the second demo and then the next part of the talk is I'll show you how we're able to compute inferences over the extractions from the web. And I'll end up with some spec.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Collective remarks OK, so So what is a basically think of it as a function that Maps a sentence to a relation instance and a probability. So if the sentence is Edison, was the inventor of the light bulb, then I might come up with the relation invented of Edison, the light bulb with a probability of .9. That's what we're trying to do here. And how do we do that when we go back to the 50s with the Harrises distributional hypothesis? And 1st put it really well. He said you shall know word by the company it keeps. Basically it turns out that in a sentence there's often clues in the.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Context of a word that tell us what that word really is, and so let's say I'm trying to figure out what Barcelona means. Well, if I see Barcelona mayor, I see the phrase downtown Barcelona. I see Spanish cities such as Madrid and Barcelona and so on and so on. I start to get a clear sense that Barcelona is a city, maybe a Spanish city, etc. So if I have these clues, life is pretty easy. I can figure out what words mean, what relations are, but really, the big question is where do these clues come from and how can I get them in a scale?",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Noble way, and so let's look at the history of IE of information extraction with that question in mind, in the 70s and 80s. There was a large number of systems. Work here is often funded by the intelligence community, right? 'cause they're very interested in processing text for intelligence analysts, but also there's financial analysts. So often they looked at very narrow domains, very narrow genres of text. For example, naval operation messages, and they said, you know what I'm going to write down these clues by hand, 'cause I'm specifically interested in earnings. Surprises, or I'm specifically interested in engine failures, let me figure out using human intelligence what the right clues are. I find them in the text using grep an I know that I've got what I need, and obviously that works in narrow genres. In these clues are relatively brittle, but that's how the field guide start. The next major step was in the 90s with the work of roll off and Sutherland, they said, you know what we can think of IE as a supervised learning problem. So let's take sentences. Let's label the pieces of the sentence is that are instances of the things we want to extract, and let's automatically generate these clues. So here's an example sentence in the what's called the management succession domain. Mary was named to the post of CFO succeeding Joe. ETC etc. Mary is labeled right as the.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Person moving in an CFO is the post and based on that we can say OK, maybe I'll see this in a bunch of other examples and I'll conclude that when I see the name of a person followed by, the phrase was named to. Then maybe that's the new person moving into a post, right? And likewise when I see post of and then some acronym, I'm going to conjecture that that's the post. So this way of. Labeling sentences and running machine learning algorithms over the labeled data allows us to automatically generate these clues, and that's clearly much more scalable than than writing them by hand. But the question still remains. Does this approach to supervised learning from the 90s doesn't scale to reading the web right? Billions of pages, heterogeneous genres? The sentences are not necessarily grammatical. They can be on any topic so.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So does this scale to the web? And the answer is no, and I think at this point I can. That's the end of my talk, no? The answer is no, and so obviously the main part of my talk is to explain to you how we.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Can scale IE to the web, but let me first explain why the answer is no. It turns out that the supervised learning approach yields relation or concept specific extraction. So if I'm interested in management succession, I can label some examples about that and I can get clues that are specific to management succession. They'll typically be learned if I do this over the Wall Street Journal corpus will be specific to the Wall Street Journal. These learning systems perform much better. In specific genres, the other problem is that I've replaced handcrafting clues. Right by doing that by hand with handcrafting training examples. Creating these training examples as those of you work on machine learning know is very touchy stuff. You have to find the right sentence is you have to go in and label each of them and you have to have a substantial number of them per per concept, so that's highly problematic and basically this becomes very labor intensive.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "For the web does not scale. Now some of you might say wait a minute. You've forgotten about semi supervised learning right where we label only a small number of examples and use unlabeled data, of which we have plenty. What? Why not do that? And the answer is that that's true that we use a few hand labeled examples in semi supervised learning. But it's a few hand labeled examples per target concept. In this case per relation. So that means that if I have a million relations and I need. 10 training examples per relation, which is a pretty small number. You do the arithmetic right 10,000,000 labeled examples, but here's what's even worse. The concepts when you're doing supervised learning, even semi supervised learning have to be stated in advance. Now think about it. When you read the paper this morning. If you had time before coming to this talk, does somebody look over your shoulder and say, OK, here are the relations I want you to extract management, succession and government deficits and so on. So no, it's a much more unsupervised. Serendipitous process where the relations of interest are not defined in advance. So if we want to scale to reading the web right billions of pages about arbitrary topics, we can't even do semi supervised learning. Even if we could label the right number of examples right 'cause we don't know what the target concepts are in advance, we really need a very different approach. Does this make sense? And so the problem that we face when we tried to scale information extraction to the web? Is the question of how do we do that without knowing what the target con?",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Steps are in the 1st place and the answer is what we call open information extraction and the basic idea is to focus on language in a domain. An relation independent way and we found that there are regularity's in language there are regularity's in the way that people express relations in English. I should say we believe that to be the case in other languages like Spanish and other Chinese would have you, but we haven't verified that. But their regularity's in English that allow us. To do extraction.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "In a very general way, so we avoid hand labeling sentence is an open IE we make a single pass over our corpus which is extremely important for scalability an we do not use any pre specified domain specific vocabulary. Now of course there's a challenge here when you do that, you might extract a relation phrase saying was the inventor of and you do have the problem of mapping that to Canonical relation like invented and I'll talk about. How we address that a little bit later in the talk, but right now our goal.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Is going to be to extract relations so again, just to bring this point home, here's a table showing traditional information extraction side by side with with open a, so the input in traditional IE is the corpus with a bunch of hand labeled data. We don't do that. We do make use of existing resources. You can think of this as being allowed to do a constant demand of work. Alongside the corpus an, whereas in traditionally the amount of work. Scales linearly with the number of relations, right? And we see this in the complexity statistics. So traditional IE the complexity is ordered D the size of the corpus times are the number of relations and R can easily be a million when you're dealing with the web. And here the complexity of open A is just order D, which is very nice and in traditional either relations are specified in advance. For us there discovered automatically and that results in the output traditionally is relation specific. Whereas for us the output is.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Relation independent so text runner, which we actually unveiled back in HK 07 is the first was the first web scale open. A system by now it's extracted easily over a billion distinct extractions. At its peak it achieves about .9 precision, which is quite good, but that's at very low levels of recall, so it definitely has a challenge in terms of recall. On the other hand, when you're dealing with the web, you might allow us. Some latitude in saying OK, I didn't extract it from this sentence or this page. How about getting it from the next page, right? So but that is one of the tradeoffs.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "In in text running, so how does text runner work? Well, it uses fairly simple heuristics to identify what the. Proper nouns are or what the entities are in a sentence. The really hard part, and the real innovation is how do we get the relation out. So if we have Tim Berners Lee and the web and we have a number of intervening words, then the question is which of those denote the relation? Is that the entire set of words? Is it just the verb invented? And how do we do this in general, right? That's the technical question here. How do we figure out what the relation is and the mechanism text runner used? Actually in the original paper, use naive Bayes. But more recently, we've shifted to using conditional random fields as CRF. The basic idea is to view this problem as a sequence labeling task. We go. We started with the entity on the left, Tim Berners Lee, and then we go, word by word, and the CRF tells us, OK, this word is not part of the relation. This one is not. This one is not. The relation starts here and then it ends with the second entity. So this, this CRF is learned at a general. A relation independent level and the reason this works is because it turns out that there are relation independent clues that tell us how people.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Express relations in English. So this is what the system looks like. We actually used distant supervision techniques. I won't go into that to automatically generate 180,000 training examples. We fed those to the CRF. It learned an extractor and then we feed it the web corpus it produces. It uses rather the learned model of relations that avoids any specific nouns or verbs, and that outputs a set of raw topples of this form. We then count the topples. Identify the synonyms and index that output in Lucene, which in turn allows us to do a set of of relational queries and I'll show you a demo in a few minutes. I just want to tell you first about.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "It happened after we came up with with text runner. Well, first of all we were excited that the system worked at all, but it certainly had plenty of errors. So let me talk about two types of extraction errors. The first one is let's say we encounter the sentence. Al Gore invented the Internet. Text Runner will happily extract invented Al Gore Internet and so we call this a sound correction of a sound extraction rather of an incorrect fact, right? Garbage in. Garbage out, there's a lot of incorrect information over on the web. An text runner happily extracts these incorrect facts or opinions. Another kind of error that we see is actually an unsound extraction. So if the sentence is the cost of the war against Iraq has risen above $500, that 500 billion dollars soon, 500 trillion dollars, then above Iraq, 500 billion dollars is really not a sound extraction and our work is focused on avoiding unsound extraction. So this challenge is in.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Listing as well. So how do you filter unsound extractions? One of the key ideas that we've used, which is the one I want to highlight, is using redundancy over a massive corpus like the web. It turns out that the more redundancy you have, the more distinct clues you're able to find. Like Barcelona mayor and downtown Barcelona, the more distant clues I have, it's effectively like Co training, right? I'm getting clues from different angles leading me to be more and more confident. Then in fact, the extraction is sound and the other thing we can do is we can look at the proportion of clues among the mentions of the word. So we can ask what fraction of the times that I've seen Barcelona say, do I see clues that suggest that it's a city? And again, if that fraction is relatively high, then it turns out I can actually compute the probability that Barcelona is a city based on the text. One important caveat is when we do these counts. It's important to do those over independent sentences. So often write sentences are repeated over the web or they're quoted and we don't want to count those. So we have a variety of ways of determining that two sentence is are likely to be in.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Dependent of each other and this is work that Doug Downey did, we actually formalize this very specifically just to show you we don't just build systems. We actually asked the precise question. If an extraction X appears Kate. I'm in a set of end this thing. Sentence is what is the probability that X is member of a particular class era particular relation R and it turns out that we were able to derive using combinatorial model a closed form solution for exactly this. This probability and this closed form solution was 15 times as accurate as previous work, so it turns out that using combinatorial techniques we can actually formalize a lot of what's going on in these extraction processes and what.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Happening with with redundancy. So here are the key ideas in text runner. First of all, open a over. The web is actually possible. We can take arbitrary sentences and extract in English and extract meaningful information from that. Secondly, we've been able to identify a tractable subset of English. It's not the case that we can take any arbitrary English sentence and find meaningful extractions from it, but we've been able to identify a tractable subset of English which is interesting in and of itself. And then Lastly we have a bunch of ideas that I just quickly alluded to of using macro reading of using redundancy over literally hundreds of millions and billions of sentences to help us identify errors and to help us quantify the probability that our extraction.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "They are correct. So the next thing we did is an error analysis of text renders relations and again, even with the mechanism described there plenty of errors, right operating over the entire web. Here are some examples of incoherent relations that we found. The sentence, for example, the guide contains dead links and amid sites and in the CRF labeling process, it decided that the relation here is contains a minutes. Remember it has no domain specific, no relation specific knowledge, and we actually found that about 13% of the time. This was occurring, so that's pretty significant. We also found that about 7% of the time text runner was extracting uninformative relations. It would extract is as the relation between two entities, where really the relation was is an album by or is the author of or is a city in and that's really problematic, right? 'cause it might extract something like Barcelona is Spain as opposed to Barcelona is a city in Spain, right? Not not.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "What we want. So the next system we've built, which is just coming out, we have a paper in the proceedings, describes it, and also Tony Fader as a paper to appear shortly in MLP was called reverb and it said for identifying relations from reverb from verbs and the remarkable thing about reverb is it's incredibly incredibly simple. OK, and actually to do a quick segue to one of my pet peeves. We actually had a hard time publishing this work because we would submit at the conference that people say, well, you've got very nice results. Reverb actually, the area under the precision recall curve for Reverb is 200% higher than for Textron, it right? So it's easily double and people said OK, very nice empirical results, but this is so simple, right? We can't accept this and I was like no, no when there's a problem and somebody had a complex mechanism. And we come up with something incredibly simple. That's interesting, right? So if you were one of the reviewers of that paper, please come and see me. After the talk, we need to have some some words here, but I really think it's important, and I urge all of you except simple papers, right? If they've demonstrated what they're trying to show, because that's one of the ways that the field advances, not always just by creating a more complicated mechanism. So let me describe to this ridiculously simple mechanism. The first step is you find the longest phrase. Well we assign parts of speech to the sentence right? Using a part of speech tagger. That standard NLP technology, right? So we know what the verbs and nouns and so on are, but then we find the longest phrase matching a simple syntactic constraint. So it's this regular expression that has three parts. Either we have a verb or we have a verb followed by a particle, which is typically a preposition, or we have a verb followed by maybe a noun adjective. Adverb, pronoun, and then by a particle. That's it, that is our syntactic model of relations. And this is based on our empirical analysis of Tex Ritter. We found, hey, virtually all the binary relations actually map to this form. So why don't we?",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Look for it explicitly. It's a bias for the learning system. The one refinement that we had to have because we're looking for the maximum phrase of that length. Sometimes phrases grew out of control, so we'd get relations like is offering only modest greenhouse gas reductions at. That's not an appropriate relation, so we added one more statistical constraint over the corpus. We said, hey, if you have something that's claiming to be a relation, make sure that you see distinct argument pairs for this relation more than K times, in case the parameter. Of the algorithm, we could learn it. We just set it to 20 by hand. Work great on a large corpus. That's it. These two constraints essentially some small twiddles, but essentially are reverb. OK.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "And we get relations like inhibits tumor growth in voted in favor of mastered the art of wrote the book on, etc. A huge variety of relations across.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "All domains and if you look at how the richness compares to previous systems, you see the previous systems, the number of relations was in the hundreds. Even learning systems like nail right on the order of 500 relations. Some manual efforts go up to the few thousands text runner had, maybe on the order of 100,000 reverb has easily more than 1.5 million of these relations so.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Really far more successful if we look at the precision recall curve. Now at low levels of recall, we're approaching .9 or even guaranteed precision. We've developed a strong confidence function over these, and if you compare it too, so text Runner is here in the Dash line, this is really substantially better, and the other lines you're seeing here are some follow up work to text runner that was done with different training algorithms, so there are slight improvements. Over text runner, but again re verb is just substantially better. And the surprise here is that again, I step here to discuss my pet peeves. So those are, you're falling asleep with the technical part. Wake up for the for the pet peeves, another pet peeve I have is over learning. Machine learning is great. I did my PhD thesis on it. We use it all the time. You don't always have to use machine learning if the set of concepts is small, you need to consider the possibility that writing the knowledge by hand is a more effective approach than using a fancy machine learning algorithm. Right, that doesn't make sense. If you have millions of concepts, but here what we're trying to learn as a model of relations in English and what we found is that, at least syntactically, it's a very simple thing, so there's no reason to learn it. So we naturally assumed in text render over years. Then we need to take a machine learning approach, and we don't. And you see this in other people's work as well. I'm not the only one to make that mistake, so again, I urge you to consider when you're attacking a problem. Do I really have to use machine learning here? Maybe 90% of the time the answer is yes. Sometimes the answer is no, and if that's the case, please consider my paper before just projecting it. Working through some feelings here.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "OK, so let me show you how this works and I should mention that this system is so simple and easy that we've made it publicly available for download, right? It's an open source project that reverb.cs.washington.edu. It's easy to download and just try it on the sentence is of your choice. We also provided a sample of our extractions available so you get a sense of what it can do, but let me see if I can. Activate this demo directly. Alright it was.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So here's our really non non interface. We have a set of of sample questions that you can ask it which are the questions that it tends to get good answers on and also we have a structured interface where you could say OK, give it an entity. You could ask him what do you know about Obama. You can ask it. What's the relationship I'm going to ask you? What's the relationship between Apple and Microsoft? But let me just start with some of these questions. So I asked what kills bacteria. It has a very simple question processor.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Maps that too OK. The predicate here is kills. The second argument is bacteria, and here it's gathering information across literally thousands of pages, and it finds antibiotics, kills bacteria. The number here represents how often it founded. It's doing a collapsing of synonyms. If I click here on the word, I see all the different synonyms. It's collapsed if I click here on the number I see, the sentence is that it came from. I can mouse over. And see the URL. I can also click through and go to the URL. At this point is somewhat old corpus, so I'm not going to do that. If I click on 160 two more, it opens another page with more answers to what kills bacteria. And here you start to get a sense of the richness of the answers that it pulls together. You've got antibiotics at the top, but then you get chlorine cooking, alcohol, bleach, vinegar, somewhere down there is honey, silver, all kinds of things that kill bacteria and so this is really an example. Of this information Fusion kind of like in the Rev minor reviews where I showed you right? We get the answers by pulling together information from a large number of documents right? Which is much better than the answer you get or can be much better than the answer you get if you go to any specific document. I think we have one of the best, if not the best answer to what kills bacteria anywhere on the web. Certainly better. I compared it with Wikipedia. We have a better answer that question. Another thing we've done is we've mapped. To the Freebase ontology so I can ask it things like what sports originated in China and here it gets the sports and it filters things through the Freebase ontology so discards alot of the results and we see that you might not have known that golf probably knew the karate origin in Chinese and the golf did at least according to some people. And if I have my doubts I can click on the number and see the sentence, see if it's a sound extraction. Also see where it came from so this is over 500 million web pages that were provided for us by Google. You'll see that the recall is limited, but still it's pretty good. And let's say if I ask it about. Apple and. Microsoft, so I want to know what's the relationship between those. I better it doesn't have spell checking so. So it's asking basically what predicates, if you found that, connect those it's index. It's a distributed indexing Lucene and with the caching infrastructure it's pretty fast usually and you do see actually a variety of opinion. It does. Some people do say Apple is Microsoft, some people say it's not Microsoft. Some people say it's becoming Microsoft. It's taken a page from Microsoft Book, it's kicking Microsoft, but you rapidly get a sense of anyway this is this is kind of fun and plenty of errors here, right? This is. A platform for research, so you get a sense of what we can do here using this. Rather simple mechanism.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "OK. So have we made progress towards machine reading? One question that I get asked from time to time is OK. That's very nice. You can play games with structured text, but where is this a man?",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "6 here right? I mean we're in Europe, where people are at least reputed to be formalists. Where is the semantics and the answer is I'm not going to give you logical proofs, but what I'm going to show you here is a sample of the ways in which we've carried out inference over these extractions, and to show that semantic information is hidden in there an these extracted couples are really a precursor to a semantic representation that would fit. In an ontology and so on. So what are some of the inferential processes that we do? One thing that we've done is map the extractions the entities in them in the relations in them into Freebase. So we've associated them with specific ontologies, and actually this is a fairly large and vibrant subfield of extraction. People have worked a lot of different methods of mapping between strings and ontological terms. Another thing we've done, which I'll talk about in a second, is identify. Synonyms in the extractions. That's key and I showed you a simple example of that. We've also learned 1st order Horn clauses from the extractions and this is work that and we also carried out inference over them. That's work that appeared in MLP MLP 08 and MLP 10 and very recently unit and Brent actually figured out how to do transitive inference using graph algorithms over these learn horn clauses. And one of the best student paper award at ACL just just recently. And we've also figured out how to learn argument types. So if I have a relation like invented, or is the President of NI can automatically learn the types of the domain and range of that relation? And I'll show you a demo that most.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "Interrole so how do we do some of this stuff? If you look at the problem of synonyms, it's again well known. Problem in natural language processing and has its correlate's in the database community. How do we figure out which entities even though they're very different like Mars and the Red Planet mean the same thing and it turns out that when you have extractions then it's natural to think that if I have two entities X&Y, the probability that they are the same. Is some function of the shared relations right? So if X was born in 1961, is a citizen of the US and is married to Obama and the same facts are true of why I'm going to believe it's quite likely that X&Y may be two different names for the same person, right? So in general, if I have a large variety of relational expressions, I can compute this, I can do it actually in an unsupervised fashion using in combinatorial model. So in Alex Yates is work which you can look up in Jericho nine. He actually figured out the precise probabilities involved. Another nice thing is this kind of algorithm directly applies not just to entities, but also to relations. So if I want to know that two relations are synonymous, I can look at the number of shared argument pairs, right? And figure out how likely these are to be referring to the same thing. And this works for radically different names for the relation as well as from. Misspellings is this kind of make sense. Right, so it's a pretty simple idea. It's just that we're able to do it again in a domain independent way completely unsupervised, which is what's necessary to scale these kind of techniques to the art.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "Jerry relations that you find on the web. Let's talk about argument typing. So let's say we have a sentence. P was born in Y, right? These are schematic examples. Obviously, we would conclude that P is a person. And why is the location or?",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Date, but how can we do that in general? How do we map from these texts in the extractions to argument types? And there's been a bunch of work along these lines by Resnick and Pentel and others. Alan Ritter and work that appeared in ACL last year had a novel idea, he said. You know, we could use generative topic models. What does that mean? We can take these extractions and we can view the type. Associated with a particular relation as a document, and we can use a generative model to try and generate that document. Find the best fit an read, the read the types off of that. So let me let me.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Describe that in a little bit more detail. We start with text runner extractions, right? Some of this work was done in the context of text runner. Re verb is really just out in the last few few months. So if you look at text Runner extractions this is what they might look like. First step is we sort these right so that all the the. Extractions that have the same relation or synonymous relation.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Are together in a document and then we build a generative model and I won't go through. This is the standard notion notation. I won't go through it in detail except to point out that it turns out that there are links between argument one and argument 2, so we had we used Link LDA, which is version of the LDA algorithm that has a generative variable that takes into account.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "This dependency and we found they were able to. Do quite a good job of inferring argument types directly from from the extractions and let me show you what that looks like and by the way, again the data associated with this is also available on the web if anybody wants to wants to use it so the system is called El DSP and our demo simply you can type in various. Examples of relations and. Here's what it looks like, so it figures out what it does. Is it actually clusters using the general model of clusters, the term, and then in Maps it to word net classes so you can figure out that fluids tend to pour into locations, but sometimes people say that assets pour into locations, and sometimes I guess crowds print objects, and again there's some degree of error here, but it's really quite impressive what we can do. Let's take a fairly ambiguous one, like when. Um? And again, we can see that teams and politicians win events and so on and so on. So so you get you get the idea.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "So, So what are the lessons from from open AI? Want to leave time for questions so I have two more slides approximately. It's simple, it's highly scalable. You can get your own copy of a state of the Art E system right there. It's a basis for these kinds of extractive interfaces, right? That, slice up text and put the pieces together, and I showed you two primitive interfaces like that. We're not HCI people, but I think you get the sense of the power of it. And it's basically it's the basis for all.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Kinds of inference. So let me conclude with a few speculative remarks. One is this idea of machine reading that I'm working on, but I've alluded to quite a few people in the community working as well is really a great platform for NLP and AI research. There's tremendous number of knowledge representation and reasoning problems that the community is just beginning to tackle. I like to think of it as VLSI very large scale AI because one of the things that we do insist on is being able to do this kind of reasoning at very large scales. It suggests a way to go from keyword search to question answering and I showed you simple examples of that and I think that is absolutely essential when more and more of our access is coming from devices like this one and then the last point may be the most speculative. I want to say that the machine reading to date and I also think in the future is going to look very different than human reading. Write an human reading right. We focus on a sentence we re did relatively slowly compared to the machine. We understand it a very high degree of Fidelity machine reading, right? We're processing billions of sentence is we have a limited understanding of it, but to some extent we make up for that with scale and scope and remember computer chess. OK, that's how the chest was. Want to use that phrase right? If you think about it right? Computers understanding of any individual position is relatively limited, but he uses computer power and its own path to come up with the best chess playing system. That we have is certainly a superhuman one, so I'm looking forward to superhuman machine reading, maybe not around the corner next week, but a great goal for us. Thank you very much.",
+        "start": 1392.0,
+        "end": 1421.0
+    }
+]

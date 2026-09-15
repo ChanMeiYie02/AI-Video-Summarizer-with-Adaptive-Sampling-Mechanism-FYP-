@@ -1,0 +1,77 @@
+[0.0s - 29.0s]
+OK, good afternoon to everybody. I'm going to talk about. The projective sampling technique. That under certain conditions can improve the utility of the data mining process. And if you wonder about the pictures of the first slide, this is our campus in the middle of the negative desert in the South of Israel. So after a brief introduction.
+
+[29.0s - 58.0s]
+Then I will talk about the previous work and learning curves and progressive sampling. Then I will describe the proposed projective sampling strategy. Will show you some empirical results and then conclude my talk.
+
+[58.0s - 87.0s]
+OK, probably most of us realize that the data is not actually free. It can be scarce. It can be costly. Sometimes we have to pay the real money for the data. Sometimes the cost is something else. Here are a few examples of such applications getting patient records from a hospital running an engineering experiment at a factory collecting seasonal records from an agricultural database. And even when the data is free and is unlimited. In its amount still we can spend a significant effort on the preprocessing that data. So the critical question is how much data do we really need? When we decide to spend our resources in terms of time or money.
+
+[87.0s - 116.0s]
+And this is the usual situation when we acquire some training set. To induce a model in my talk, I will be focusing on induction of classification models. And we assume that in the future we will have some score set. Where the examples will be classified will be labeled by the induced model. I'm using here. The framework developed by our session chair Gary Wise and his student at Eon. According to that framework, we can refer to several costs when we talk about the utility of the data mining process. There is the cost of acquiring one example, the cost of committing one error, committing an error on one testing instance in this core set. And also there may be the cost of 1 unit of the CPU time. Also, as a part of the assumptions in that framework, I also assume that we have some fixed amount of the scores.
+
+[116.0s - 145.0s]
+Examples. So what is this research about? We're trying to find the best training set size that should maximize their overall utility. More specifically, should minimize the total cost of the data mining process. The idea of projective sampling is very simple. We take a small subset of the available data data. We fit learning a learning curve and the runtime curve to that small subset. And once we know the equation of the learning curve, we can calculate the. Optimal size of the training set and then we just acquire that amount of examples, not more and not less. So in this research I will be calculating the optimal training set size for several learning curve equations and I will show you that actually this approach can improve the utility of the data mining process of the classification process. For any given data set and an algorithm, of course under certain.
+
+[145.0s - 174.0s]
+Conditions. Here are just a practical examples from the benchmark datasets that are used. That's how the learning curves look like for a decision tree algorithm implemented by rapid miner two. In one case we have rapid rise, then it's slow guys. Sometimes we have eventually plateau. And in another data set we can see that the oscillations are quite high. It goes up and down very unstable, by the way, all the numbers that you see here are averages of 10. Random random validation runs OK. It's not just one time. One time result OK and here we have some more. Another big data set where there is a very slow rise. In the classification accuracy, as we accumulate more examples, so from here you can probably conclude that fitting learning curve to given data set is really not.
+
+[174.0s - 203.0s]
+Trivial task. What can be the best fit for a learning curve? There was one work done by friend Fisher back in 99. They found that the power law was the best fit for the Civil 5 algorithm on several. They experimented with several datasets. In my own work from 2007. Yeah, I experimented with another decision tree algorithm, which is called information network and also found that actually the power law was the power law was the best feed. Another I think less known work by seeing from 2005 says that actually the power law is only second best to some other alternatives for several.
+
+[203.0s - 232.0s]
+Therefore, several algorithms. And so there are some papers on progressive sampling strategy. Probably one of the first by Foster promised in his quarters in 99 with progressive sampling strategy, you start with some initial amount of training data and then incrementally you increase your training set until the cost starts to increase. You can apply uniform schedule with a fixed increment or you can apply geometric sampling. For example, you can double the size of the training set.
+
+[232.0s - 261.0s]
+At every step. Progressive sampling has several limitations. Mainly it can overfit some local perturbations in the error rate and according to the result results in your paper. They actually the costs may exceed the optimal ones by 10 up to 200%, which of course is not very good an. Also, there is some. This is also an important point. There is some overhead with each action of acquiring and preprocessing some new sample. So probably we are interested to minimize the amount of samples and the number of iterations. And finally, our expectation is that the projective sampling strategy should reduce the data mining cost, since it will find. The optimal or it will project the optimal.
+
+[261.0s - 290.0s]
+Size of the trainings. So what is the projective sampling strategy? We start with some fixed sampling, increment Delta. Each acquired sample is handled as one is treated as one data point. We acquire a new data point and then we compare persons correlation coefficient for each one of candidate fitting functions on the next slide I will show you the list of four. Different fitting functions that are used in this study. And also, I assume that the learning curve is not straight line, so I need at least three data points. The correlation coefficient is calculated between the error and the number of examples. So we're looking here basically for the lowest correlation coefficient, the correlation coefficient has to be negative, but we have more examples. The error rate should go down. That's what we hope at least. And so we continue to acquire additional data points as long as the correlation coefficient of oh equations is non negative. Once there is at least one negative correlation coefficient, this procedure, this algorithm picks up the best one, the lowest one. Of course, if we have not exceeded the maximum amount of available data. And then we can estimate the coefficients of the equation and from the coefficients of the equation we can calculate the optimal training set size. And then, oh, we have to do after that is to acquire the calculated number of examples.
+
+[290.0s - 319.0s]
+Introduce a classification model. So the candidate fitting functions considered here include the logarithmic learning of the equation mentioned in your paper by Vicenta Jan, Power Law and Exponential equation. Also consider two runtime curves, the linear one and the one behaving by the power law.
+
+[319.0s - 348.0s]
+Anne. I can apply very simple transformations to these equations so that the actual coefficients. Can be calculated using linear regression procedure. The linear regression process.
+
+[348.0s - 377.0s]
+Major. That's how the coefficient of correlation is calculated. This is standard equation.
+
+[377.0s - 406.0s]
+Pearson correlation coefficients and these are the equations for calculating. The slope and the intercept of the regression line OK, after I did. The convergence the transformations I can use these equations to find the actual the actual line.
+
+[406.0s - 435.0s]
+So that's how the total cost functions look like with each one of these learning curve equations, the difference is only in the differences, only in the last part where we calculate. The cost. Of data data.
+
+[435.0s - 464.0s]
+Vision. And now to find the optimal training set size. Of course under the assumption. And that all functions are convex. And this assumption is true mathematically. We just find the derivative the first derivative equal set first derivative equal to 0. Also, the cost of 1 training example is assumed to be equal to 1 and then we just manipulate with erasure of the error cost versus versus the training costs and also for for the sake of simplicity I assume here the linear relationship between the number of examples and the runtime and that relationship was actually verified by my experiments. And now I'm just showing you the equations for the optimal training set size based on each one of the optional learning curves logarithmic then. Formula My wife Center Jan the power law. The power law and the exponential. The exponential equation again, we don't know in advance which equation is the best one for a given data set, and this is part of the procedure to find the.
+
+[464.0s - 493.0s]
+Best equation. What are the experimental settings? I took 10 datasets ranging from the size of like 500 examples up to 200,000 training examples. Each data set was randomly partitioned into the test set and training set, potentially training set. The sampling increment was set to 1 percentage of the maximum training set size and the error rate was. Averaged over 10 random partitions of the training set. The projective strategy was compared to the Uniform Progressive Strategy where the equal increments of the training set size, the geometric strategy with a equal 2, which means doubling the training set size at every step and straumann strategy which is just taking all available training data. The largest possible amount of training data and also the actual optimum. Of the utility function of the cost function was found for each data set by enumerating. The 100 possible options, 1%, two percent etc. Concentrations were ranged from 1 to 50,000. And there were two sets of experiments without induction costs, which means CPU factor equal to 0 and with induction cost equal to 1, which means 5 minutes. Then yeah, OK, one means that the cost of 1 millisecond of CPU time is the same as acquiring one training example.
+
+[493.0s - 522.0s]
+OK, just a brief description of the datasets. You can find it.
+
+[522.0s - 551.0s]
+In the paper, and these are the main the main results of the experiments. There was no specific learning curve. Which was the best fit for all datasets. You can see that in some cases it's exponential. In some other cases it's logarithmic or power. Low power law is definitely not the winner here. Also, in terms of data points, in the worst case with the adult with other data set we had to increment up to 14 data points, but in many other cases three data points was enough to fit the learning curve. Sometimes it was a bit, it was a bit more. And you can also see here the equations.
+
+[551.0s - 580.0s]
+Of of the learning curve. These are the project projected and actual learning learning curves. Sometimes the learning curves produced by this method underestimate the actual accuracy. Sometimes they.
+
+[580.0s - 609.0s]
+Overestimated and some some some more child that you can also feel.
+
+[609.0s - 638.0s]
+And in the paper. OK, this is probably the most important slide in terms of results. Here we can see, especially on the left on the on the left hand side when the CPU factor is zero. When we ignore the induction costs and the projective sampling approach is second best only to the optimum OK to the actual optimum of the other progressive sampling strategies. And of course, the Straw man strategy. All the other strategies have higher costs. And this is what happens when the cost ratio is relatively low, which means that acquiring training examples is more generally is more expensive than committing errors on the score set when the concentration goes up. Then still the projective sampling strategy is one of the best, but it's very close to the strong one strategy, but the errors are very expensive. The best strategy is actually to pick up the. Available training data. And once the CPU factor goes up, which means we have some induction costs, then actually this approach is less benefit.
+
+[638.0s - 667.0s]
+Here are some details of the performance of sampling schedules for each individual data set. What you have seen the previous slide, what the average of all of hotel.
+
+[667.0s - 696.0s]
+Some more results. OK, since I have I don't have much time left. These are these are the conclusions we can estimate the optimal training set size using the projective sampling strategy and the method was evaluated on 10 benchmark datasets of variable size using one specific algorithm, which is decision tree. And according to the results, it is recommended to use the projective sampling strategy when the induction costs are very low or just negligible when the CPU time is very very cheap and when the data acquisition costs are relatively high, which I assume is not a very rare situation.
+
+[696.0s - 725.0s]
+As for future research, I'm sure this is just just the beginning. We can try to further optimize the projective sampling schedules. And we can try to improve the utility of cost sensitive data mining algorithms rather than just looking at the overall accuracy. And of course, this problem is closely related to active learning, active sampling, and probably we can try to model learning curves for some non random sampling strategies. And of course for some non random labeling techniques.
+
+[725.0s - 754.0s]
+And. This is the end of my talk. Any questions? Thank you. Yeah yeah, so I'm staying here. Correlation coefficient. Can you repeat your question again? Sufficient points to estimate, yeah. Yes. All. What what was what was the value of the collection confusion? Or why not check this magazine? Why is it negative? Because there is a negative correlation between the error and the number of training examples when the number of training examples goes up, we expect the error the clinical classification error go down. This means that the correlation is negative and not positive. So the best correlation coefficient is minus one.

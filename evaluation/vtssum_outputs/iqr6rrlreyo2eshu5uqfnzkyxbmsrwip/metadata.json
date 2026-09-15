@@ -1,0 +1,21 @@
+{
+    "id": "iqr6rrlreyo2eshu5uqfnzkyxbmsrwip",
+    "title": "Impact of International Organizations on Governmental OER Policies",
+    "url": "http://videolectures.net/ocwc2014_lesko_oer_policies/",
+    "info": {
+        "author": [
+            "Igor Lesko, Open Education Consortium"
+        ],
+        "published": "June 23, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Social Sciences->Society->Public Policy",
+            "Top->Social Sciences->Education"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 97,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 3982
+}

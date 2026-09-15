@@ -1,0 +1,328 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:07.000 --> 00:00:13.170
+Tuples are immutable sequences typically used to store heterogeneous data.
+
+00:00:13.170 --> 00:00:16.710
+The best way to view tuples is as a single object that
+
+00:00:16.710 --> 00:00:19.740
+consists of several different parts.
+
+00:00:19.740 --> 00:00:22.770
+Tuples have many uses in Python programming.
+
+00:00:22.770 --> 00:00:26.880
+One especially important use case is when you want to return more than one
+
+00:00:26.880 --> 00:00:29.650
+object from your Python function.
+
+00:00:29.650 --> 00:00:33.360
+In that case, you would typically wrap all of those objects
+
+00:00:33.360 --> 00:00:38.270
+within a single tuple object, and then return that tuple.
+
+00:00:38.270 --> 00:00:41.010
+Let&#39;s now take a look at some of the basic operations
+
+00:00:41.010 --> 00:00:43.920
+that we can do using tuples.
+
+00:00:43.920 --> 00:00:45.690
+I&#39;m first going to construct a tuple.
+
+00:00:45.690 --> 00:00:49.110
+I&#39;m going to just call it capital T. And let&#39;s just
+
+00:00:49.110 --> 00:00:51.310
+put in a few numbers in my tuple.
+
+00:00:51.310 --> 00:00:54.780
+Let&#39;s say 1, 3, 5, and 7.
+
+00:00:54.780 --> 00:00:57.060
+Again, tuples are a type of sequence.
+
+00:00:57.060 --> 00:01:00.690
+So if I wanted to know how many objects I have in my tuple,
+
+00:01:00.690 --> 00:01:03.240
+I can use the len function.
+
+00:01:03.240 --> 00:01:05.550
+I can also concatenate tuples.
+
+00:01:05.550 --> 00:01:08.820
+So I can do something like T plus.
+
+00:01:08.820 --> 00:01:10.670
+I need a new tuple here.
+
+00:01:10.670 --> 00:01:13.720
+Let&#39;s say 9 and 11.
+
+00:01:13.720 --> 00:01:16.720
+And in this case, Python returns a new tuple to me
+
+00:01:16.720 --> 00:01:20.490
+where the two tuples have been put together.
+
+00:01:20.490 --> 00:01:24.930
+Because tuples are sequences, the way you access different objects
+
+00:01:24.930 --> 00:01:28.390
+within a tuple is by their position.
+
+00:01:28.390 --> 00:01:32.950
+So if I wanted to access the second object in my tuple,
+
+00:01:32.950 --> 00:01:36.720
+I would type capital T, square bracket, and 1.
+
+00:01:36.720 --> 00:01:39.780
+And remember, using position 1 is going to give me
+
+00:01:39.780 --> 00:01:46.110
+the second object in the tuple, because indices in Python start at 0.
+
+00:01:46.110 --> 00:01:49.290
+Another operation that you need to be familiar with
+
+00:01:49.290 --> 00:01:52.360
+is how to pack and unpack tuples.
+
+00:01:52.360 --> 00:01:55.680
+Imagine I have two numbers-- two variables, x and y.
+
+00:01:55.680 --> 00:01:57.530
+Let&#39;s just quickly create them.
+
+00:01:57.530 --> 00:02:00.540
+Let&#39;s say x is equal to this.
+
+00:02:00.540 --> 00:02:03.150
+y is equal to this.
+
+00:02:03.150 --> 00:02:06.480
+Imagine now if I wanted to construct a tuple object.
+
+00:02:06.480 --> 00:02:10.840
+We could think of these two numbers x and y as coordinates.
+
+00:02:10.840 --> 00:02:13.200
+So I could do something like this.
+
+00:02:13.200 --> 00:02:20.790
+I could define my coordinate as a tuple, which consists of two objects, x and y.
+
+00:02:20.790 --> 00:02:25.550
+If I now ask Python, what is the type of my coordinate object,
+
+00:02:25.550 --> 00:02:28.110
+Python will tell me that&#39;s a tuple.
+
+00:02:28.110 --> 00:02:32.430
+This operation is called packing a tuple, or tuple packing.
+
+00:02:32.430 --> 00:02:36.880
+Another related operation is how you unpack a tuple.
+
+00:02:36.880 --> 00:02:39.690
+Our coordinate contains two numbers.
+
+00:02:39.690 --> 00:02:42.460
+Our coordinate object is a tuple.
+
+00:02:42.460 --> 00:02:45.330
+Here is how you can unpack this tuple.
+
+00:02:45.330 --> 00:02:48.330
+Let&#39;s say I would like to unpack that into two numbers--
+
+00:02:48.330 --> 00:02:54.090
+say c1 and c2, perhaps short for coordinate 1 and coordinate 2.
+
+00:02:54.090 --> 00:02:57.900
+I can just write c2 and c2 as a tuple.
+
+00:02:57.900 --> 00:03:02.190
+And then I can assign coordinate into that tuple.
+
+00:03:02.190 --> 00:03:07.920
+If I now look at the values of c1 and c2, I will observe the following.
+
+00:03:07.920 --> 00:03:11.570
+c1 contains the first object in that tuple.
+
+00:03:11.570 --> 00:03:15.430
+Where c2 contains the second object of the tuple.
+
+00:03:15.430 --> 00:03:20.910
+We can also use tuples in FOR loops, which is extremely handy.
+
+00:03:20.910 --> 00:03:23.580
+Let&#39;s say I&#39;ve created multiple coordinates.
+
+00:03:23.580 --> 00:03:25.980
+So in this case, my object coordinates is
+
+00:03:25.980 --> 00:03:32.340
+a list which consists of tuples where each tuple consists of two numbers.
+
+00:03:32.340 --> 00:03:37.492
+What if I wanted to loop over these objects in say a FOR loop?
+
+00:03:37.492 --> 00:03:39.610
+Then I can do the following.
+
+00:03:39.610 --> 00:03:43.550
+I can call these coordinate pairs x and y.
+
+00:03:43.550 --> 00:03:49.410
+Let me enclose these in parentheses here, in coordinates.
+
+00:03:49.410 --> 00:03:54.240
+And I can ask Python to print the value of x and y.
+
+00:03:54.240 --> 00:03:55.980
+So this is what&#39;s happening here.
+
+00:03:55.980 --> 00:03:58.560
+Coordinates is a list of tuples.
+
+00:03:58.560 --> 00:04:03.120
+In my FOR loop I am going over that container, that sequence
+
+00:04:03.120 --> 00:04:05.610
+of coordinates, one at a time.
+
+00:04:05.610 --> 00:04:09.540
+The key part to focus here is how I unpack the tuples
+
+00:04:09.540 --> 00:04:11.610
+from my list of tuples.
+
+00:04:11.610 --> 00:04:16.300
+So the syntax is 4x comma y in coordinates.
+
+00:04:16.300 --> 00:04:20.730
+In other words, I&#39;m unpacking the tuples within the coordinates list
+
+00:04:20.730 --> 00:04:22.900
+one at a time.
+
+00:04:22.900 --> 00:04:26.070
+One more thing about unpacking tuples in a loop.
+
+00:04:26.070 --> 00:04:30.090
+I don&#39;t necessarily need the parentheses surrounding x and y.
+
+00:04:30.090 --> 00:04:35.310
+So I can also just type for x comma y in coordinates.
+
+00:04:35.310 --> 00:04:37.890
+And then I just have the same print function.
+
+00:04:37.890 --> 00:04:39.390
+This also works.
+
+00:04:39.390 --> 00:04:42.780
+However, sometimes having the extra parentheses around the tuple
+
+00:04:42.780 --> 00:04:47.400
+will make it clearer to you that you are dealing with a tuple object.
+
+00:04:47.400 --> 00:04:51.450
+It&#39;s relatively easy to understand how to construct and deal with tuples
+
+00:04:51.450 --> 00:04:53.250
+that contain multiple objects.
+
+00:04:53.250 --> 00:04:57.810
+But what if you just have one object within your tuple?
+
+00:04:57.810 --> 00:04:59.700
+Let&#39;s experiment with that first.
+
+00:04:59.700 --> 00:05:05.430
+Let&#39;s start with a tuple where we have two objects, say 2 and 3.
+
+00:05:05.430 --> 00:05:08.330
+We know this is a tuple from the way we constructed.
+
+00:05:08.330 --> 00:05:13.920
+We can also ask Python to return to us the type of the object, which we now
+
+00:05:13.920 --> 00:05:16.470
+happen to call c.
+
+00:05:16.470 --> 00:05:21.240
+If I wanted to construct a new tuple with just one object in it,
+
+00:05:21.240 --> 00:05:25.740
+you might guess that we could just use the following structure.
+
+00:05:25.740 --> 00:05:29.200
+We could just type c is equal to parentheses.
+
+00:05:29.200 --> 00:05:31.480
+And we put the one number in there.
+
+00:05:31.480 --> 00:05:35.850
+However, if we ask Python now, what is the type of this object?
+
+00:05:35.850 --> 00:05:37.620
+It&#39;s not actually a tuple.
+
+00:05:37.620 --> 00:05:43.080
+If we check the type of this object by typing type parentheses c,
+
+00:05:43.080 --> 00:05:46.890
+Python is telling us that c is actually an integer.
+
+00:05:46.890 --> 00:05:48.850
+But this is not what we wanted.
+
+00:05:48.850 --> 00:05:53.730
+We wanted to have a tuple object that contains just one object.
+
+00:05:53.730 --> 00:05:57.270
+This is where the syntax is a little bit counterintuitive.
+
+00:05:57.270 --> 00:06:00.390
+To construct a tuple with just one object,
+
+00:06:00.390 --> 00:06:02.730
+we have to use the following syntax.
+
+00:06:02.730 --> 00:06:06.150
+We start by saying c is equal to.
+
+00:06:06.150 --> 00:06:08.910
+We put our tuple parentheses.
+
+00:06:08.910 --> 00:06:10.620
+We put it in our number 2.
+
+00:06:10.620 --> 00:06:12.720
+And we add the comma.
+
+00:06:12.720 --> 00:06:16.770
+When we now ask Python what type of object is c,
+
+00:06:16.770 --> 00:06:19.170
+we know that this is a tuple.
+
+00:06:19.170 --> 00:06:24.180
+Finally, if you want, you can also omit the parentheses.
+
+00:06:24.180 --> 00:06:25.530
+This also works.
+
+00:06:25.530 --> 00:06:27.810
+But the code is not quite as clear.
+
+00:06:27.810 --> 00:06:32.690
+That&#39;s why I recommend using parentheses whenever you&#39;re using a tuple.

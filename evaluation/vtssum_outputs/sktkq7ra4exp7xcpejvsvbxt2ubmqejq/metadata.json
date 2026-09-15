@@ -1,0 +1,20 @@
+{
+    "id": "sktkq7ra4exp7xcpejvsvbxt2ubmqejq",
+    "title": "Nearest Neighbors in High-Dimensional Data: The Emergence and Influence of Hubs",
+    "url": "http://videolectures.net/icml09_radovanovic_nnh/",
+    "info": {
+        "author": [
+            "Miloš Radovanović, Department of Mathematics and Informatics, University of Novi Sad"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 193,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 3036
+}

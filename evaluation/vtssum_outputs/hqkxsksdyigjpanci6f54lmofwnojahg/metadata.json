@@ -1,0 +1,22 @@
+{
+    "id": "hqkxsksdyigjpanci6f54lmofwnojahg",
+    "title": "AI Applications in Agriculture",
+    "url": "http://videolectures.net/AIindustrySeminar2019_trajanov_ai_applications/",
+    "info": {
+        "author": [
+            "Aneta Trajanov, Department of Knowledge Technologies, Jožef Stefan Institute"
+        ],
+        "published": "May 18, 2020",
+        "recorded": "February 2020",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 169,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 42,
+    "ground_truth_summary_length_chars": 5968
+}

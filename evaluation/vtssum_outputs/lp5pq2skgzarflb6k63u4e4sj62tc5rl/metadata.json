@@ -1,0 +1,20 @@
+{
+    "id": "lp5pq2skgzarflb6k63u4e4sj62tc5rl",
+    "title": "Landscape Dynamics of El Farol Attendies",
+    "url": "http://videolectures.net/eccs07_atilgan_lde/",
+    "info": {
+        "author": [
+            "Canan Atilgan, Faculty of Engineering and Natural Sciences, Sabanci University"
+        ],
+        "published": "Nov. 23, 2007",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 161,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1534
+}

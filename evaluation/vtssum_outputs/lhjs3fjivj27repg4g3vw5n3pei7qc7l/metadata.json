@@ -1,0 +1,24 @@
+{
+    "id": "lhjs3fjivj27repg4g3vw5n3pei7qc7l",
+    "title": "HIV from Molecule to Men",
+    "url": "http://videolectures.net/NTUcomplexity2017_sloot_hiv_molecule_to_men/",
+    "info": {
+        "author": [
+            "Peter M.A. Sloot, Institute for Advanced Study, University of Amsterdam"
+        ],
+        "published": "April 3, 2017",
+        "recorded": "March 2017",
+        "category": [
+            "Top->Science->Complexity Science",
+            "Top->Computer Science",
+            "Top->Data Science",
+            "Top->Mathematics",
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 120,
+    "num_sentences": 854,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1128
+}

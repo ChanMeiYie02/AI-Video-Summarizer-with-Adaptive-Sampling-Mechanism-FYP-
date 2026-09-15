@@ -1,0 +1,22 @@
+{
+    "id": "3of2lj4lnsi46atahyx5t7kc3mpkmns2",
+    "title": "Opening",
+    "url": "http://videolectures.net/ijcai2011_kitano_perrault_knoblock_opening/",
+    "info": {
+        "author": [
+            "Craig A. Knoblock, Information Sciences Institute (ISI), University of Southern California",
+            "Raymond C. Perrault, Artificial Intelligence Center, SRI International",
+            "Hiroaki Kitano, Systems Biology Institute - SBI"
+        ],
+        "published": "Aug. 23, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Events"
+        ]
+    },
+    "num_segments": 6,
+    "num_sentences": 119,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 378
+}

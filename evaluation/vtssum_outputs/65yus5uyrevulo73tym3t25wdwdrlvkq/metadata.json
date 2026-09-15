@@ -1,0 +1,21 @@
+{
+    "id": "65yus5uyrevulo73tym3t25wdwdrlvkq",
+    "title": "From Wireless Sensor Networks to Internet of Things and Future Internet",
+    "url": "http://videolectures.net/wsnsme2010_krco_wsni/",
+    "info": {
+        "author": [
+            "Srđan Krčo, Ericsson"
+        ],
+        "published": "June 14, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Computers->Networking",
+            "Top->Computers->Internet"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 201,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 1976
+}

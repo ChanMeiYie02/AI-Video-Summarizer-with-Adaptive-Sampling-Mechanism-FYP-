@@ -1,0 +1,20 @@
+{
+    "id": "w3t26tx3ivpr26bwjwh3czxzitih6jie",
+    "title": "From kernels to causal inference",
+    "url": "http://videolectures.net/nips2011_scholkopf_inference/",
+    "info": {
+        "author": [
+            "Bernhard Schölkopf, Max Planck Institute for Biological Cybernetics, Max Planck Institute"
+        ],
+        "published": "Jan. 25, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods"
+        ]
+    },
+    "num_segments": 52,
+    "num_sentences": 436,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2941
+}

@@ -1,0 +1,21 @@
+{
+    "id": "3smozwwizg5s3kycshsdsq5fbgu77fbx",
+    "title": "Budget Pacing for Targeted Online Advertisements at LinkedIn",
+    "url": "http://videolectures.net/kdd2014_ghosh_budget_pacing/",
+    "info": {
+        "author": [
+            "Souvik Ghosh, LinkedIn Corporation"
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 131,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 1767
+}

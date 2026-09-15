@@ -1,0 +1,92 @@
+[0.0s - 29.0s]
+So this is a word that we do. Will tell you and Aiden. And.
+
+[29.0s - 58.0s]
+The main idea is that in some cases we have incomplete information. For instance, we had. This is a book that is written from somebody, but we don't. Doesn't know who writes the book, so we put a blank note. To represent that that exists, the writer, but. With a note.
+
+[58.0s - 87.0s]
+So in RDF there are several ways that banknotes are you said. There are two 2. The more important is R2. The first is.
+
+[87.0s - 116.0s]
+They represent an eerie resource. And the second is they represent variable. And if it's an extension variable. The fact is, you sit in your sparkle. And the second in RDF. This is the standard notion of blackness in RDF.
+
+[116.0s - 145.0s]
+Did you consider this data? An we can query this data. By who who is victim. Of my Mail person.
+
+[145.0s - 174.0s]
+In this case. That's what is River Stinkum. Because we know that arbitrage is made. Anne, she rated by KDB towards characters. But if we this is certain becausw. In any evaluation of the blank node, this is going to be the password. But if we ask who is not? Killed by a person that is male, we cannot ensure. We are going to get this answer in a sparkle in the standard cycle, but this is not certain. 'cause it might be the block number could be OJ Simpson. So is this is not a certain answer in the in the RDF semantics, so we have a difference in between both semantics.
+
+[174.0s - 203.0s]
+So our question is. If we have to choose to give users an option to ensure that they are answered will be certain. And if this is this post issues important and what it could be, the cost of doing that.
+
+[203.0s - 232.0s]
+So. This consider this query. This is woman that is not killed by Atlas. In this case, we move the blank note to the profession of OJ Simpson. So. They are.
+
+[232.0s - 261.0s]
+For this query. That's where this query is. A. Will be a. We here we have a difference that all females that it will remain, it will return.
+
+[261.0s - 290.0s]
+Simpson, an reinvesting camp and then we have to rest. Old person that are added, but as we doesn't know that Oscar OJ Simpson is an athlete. We are going to return. Nicole Simpson but the certain aspects of this query is empty becausw. It could be that this blacknell is athlete. But we have in the difference. We return necrosis symptoms cause we compute the certain answers of the. Or the first part of the difference. And then we we we compute the certain answers of the second part. But it would be more preferable to compute the possible answers on of the second part of the difference or the right part of the difference. Cause we have a possible answer. A possible case in which. OJ Simpson is another.
+
+[290.0s - 319.0s]
+So this was the original. The fix is query. This is a form of rewriting the previous query. To ensure that answers are certain. So in this case we introduce a filter in. We have that we have the worst case being adapted or being a blank node. This is the kind of reflects that we are going to show or to use.
+
+[319.0s - 348.0s]
+So if we compare both queries, we can feel that the second could be more complex. That is a feeling that we're going to explore.
+
+[348.0s - 377.0s]
+But the the question of. Deciding if an answer is certain. Is. Untaxable compared with when we have long nose compared with the. That when we have no black nose, so we have a gap. And to solve this gap. We are going to approximate the answers.
+
+[377.0s - 406.0s]
+So that we're going to do in this work is. So we do is. Compute the certain answers. To undermine the center answers and over approximate the possible answers. And then to combine these two approximations. To produce the sense and answers, this is the defining. Us
+
+[406.0s - 435.0s]
+This shows. They did that just circles are that that that that that are untractable. And the other are the approximation. The upper approximations on the under approximations so. If.
+
+[435.0s - 464.0s]
+There is a.
+
+[464.0s - 493.0s]
+Adjoin. They are approximation of the join is simple. We we we. The other approximation is simply joining the over approximations.
+
+[493.0s - 522.0s]
+And over the Underestimations is joining the under approximations. But diff.
+
+[522.0s - 551.0s]
+This is more complex because we have two in the over approximation. We approximate the over approximations, but when we apply the difference we have to meet the possible we have to consider only the center the certain. And the.
+
+[551.0s - 580.0s]
+Is the contrary. In the case of approximation, underestimating the certain answers. So this kind.
+
+[580.0s - 609.0s]
+Of a ideas could be a player to the relational algebra and have been applied several times, but now we are mapping this allira to sparkle. And applying this kind of rewritings.
+
+[609.0s - 638.0s]
+The typical rattus looks like this. In the left. They are the. The the certain an Inter and right they are the possible rewritings and the that is important. Here is the rules of the difference of the sentence for when. We under approximating the P. An over approximating the queue. And then we combine it with some kind of unification operator that we have no much time to explain. All this writing and the under.
+
+[638.0s - 667.0s]
+So. How we finish this by describing the experiments? We use a single machine.
+
+[667.0s - 696.0s]
+Is a small machine, but we were more details can be found in this. The data, the queries and results. All the output.
+
+[696.0s - 725.0s]
+And we first start with some basic synthetic queries like this. In this case we have correlated.
+
+[725.0s - 754.0s]
+A variable X and we have a variable inside the minus that could handle blank note. So we have one alternative to provide this like the previous one that is included.
+
+[754.0s - 783.0s]
+They posted it to weed blanks. But we have several forms to provide this. This is another one. So we have a big combination of this. We prove several.
+
+[783.0s - 812.0s]
+Combinations and what we can see here is that. The basic ways that are writing would be. Using filter not a season. There are always a. Transfast faster. So the scale factor is the size of the database, so here they always get faster than the other gets one or two orders of magnitude more more time. In this synthetic case.
+
+[812.0s - 841.0s]
+We also so the question. Well, second question is. If this matters, this. The writing could be useful. How could we if people is going to want this rewrite this to ensure certain answers. And. The issue is that with data to the best of our knowledge, Wiki data is the only one. The only one data set that use black nose with the meaning of certain answers. A. So we split it with the. First, we find these patterns with the minus, because the minus is the difference is the key that generated. Incorrect results in according to the semantic of certain answer so. We we find. Only 47 queries. That have this feature. From this they said the second feature of the data is that they only have a blank node in object position. If we know that only 29 will be affected. Also, there are some properties in Wiki data that never have. Never have certain answers, sorry. Never have blank nodes. So if we screwed in this to the queries we have only 25. But then when we exploited that, what of these queries really are producing incorrect results? We only have 3 queries. We ask.
+
+[841.0s - 870.0s]
+The queries we have, we computed these queries. Using virtuoso base graph, this is the public engine and this is a local engine. And they are the times. The reaction between the times, so in most cases we have pretty similar times between the certain is a smaller. Overall over. Work. Except in places, but. So. Or conclusion. He
+
+[870.0s - 899.0s]
+That we can approximate. It used using off the shelf Sparkle query implementations. But we have haven't found a. I clear evidence of the whole useful could be completing the sentence answers or introducing a keyword for the users to compute Cetera answered. That's all. Thanks, OK, thank you. So it's interesting that all the three papers relevant to approximation of one kind of another and the questions. Have you thought on the completeness aspects of data when you evaluate? Negation clarification so maybe like if. The negative parts. I mean you'll never. You'll never get basically a certain enzyme into certain answers would be always empty, right when, when, when you have answers, offer queries publication because you could always add some something more on dedicated part. So have you ever considered the completeness aspects on the? I mean like if you are? Like if your graph would be more complete than the set and enforce with I mean yeah. OK currently there is no like standardized way to say completeness but. Blank notes are kind of way to represent. Incompleteness in the middle between incompleteness, incompleteness. Because you can say something but you are not sure. But if you've ever considered on the compliance aspect, I'm not sure you're asking how to measure what is the approximation. Um? So you are basically adding text of blank notes right in the inside the negative part, so that's why you are. You then can be safe to give answers like that like in the in The Simpsons case. So you added the blank note restrictions such that if it's blank, not so it will be included in the indicated parts. So then. You'll be safe that The Simpsons is is. It is still in play, not as a profession, so you can't really say you are thinking about introducing some recessions. Yeah, I mean the compliance aspects in the negative part, so that's that's my. Yeah, the. In the case of. You think you asking if we have the knowledge of. Or you have the query and then we have the knowledge of that. Some attribute will not have a blonde, never. But that is here. The thing is that, um, for the Simpson case, I think the main reason is that's why you you could only have still playing notes, but if it were like an athlete so that the problem won't happen, right? So I mean, if it's if it's complete then the problem won't happen. If it were not, applying not. So if you know that the Simpson is an athlete so. Your query would return correct answers or. Perhaps you can do it offline. Go offline. Well, I mean in incur answering it's money. Well, there are a few existing approaches about upper and lower bound approximations, and in some of the experiments we've seen, the possibility of the upper bound and lower bound collapse to be the same. So that basically indicates you have certain answer. So in your evaluation, have you seen things like this as well? So the question is how we can conceive if the approximation is good or bad, so it's possible that you actually did that. 2 pounds actually. Yeah, yeah, in some cases we ensure that we reach the certain answers, but in other cases we doesn't know. It's difficult to know if we are getting all the center answers cause the complexity of computing the certain answers, so it's also difficult to have a recall or precision measurement to the and that is not never have had a final. Sometimes it's the same OK. Thank you understand speakers again.

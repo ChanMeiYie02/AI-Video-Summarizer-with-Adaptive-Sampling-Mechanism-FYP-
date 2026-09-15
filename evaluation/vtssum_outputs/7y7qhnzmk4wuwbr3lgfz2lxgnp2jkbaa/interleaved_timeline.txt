@@ -1,0 +1,53 @@
+[0.0s - 29.0s]
+Well, good morning.
+
+[29.0s - 58.0s]
+I'm I'm afraid I will. Tell you something about the city editor we are developing at humanity, closer with the Dutch Royal Academy of Real Academy of Arts and Sciences. Because I'm rather new in this field, I shall introduce myself very briefly.
+
+[58.0s - 87.0s]
+I'm a software engineer. Is the humanities cluster I work at the Department of Digital Infrastructure and Front end developer and my experiences mainly sherfy apps and edited for crowdsourcing and my what my current project is making an editor for the Mutants Flit Archive, the Mirror to Split Archive. It just seemed eBay Suppository of all digital and non digital collections. Of the Mutants Institute. At this moment collections are migrated into it reflect, archive and. And with the flip up application, all the all the resources in Merton scan the search. But once.
+
+[87.0s - 116.0s]
+Flexsteel is an editor and we've we've looked to existing Cindy editors, but we also looked at our prospect users and it was not an ideal match. Because our prospect users are not very acquainted with Cindy and they want to manage their data and not creating Cynthia Records. So we thought we had to make an editor that is really convenient for the users they are using applications now which they are. Well, they are. When we make an editor, it must. It will be as convenient for them to use as their existing software.
+
+[116.0s - 145.0s]
+So we we thought about one editor for multiple profiles. For all the profiles that are possible. High usability show a flexible layout you can think about field orders. The fields that are most important will be shown first language versions and in editor affiliation you don't want to make a whole Cindy profile and then validate it, but you want to have a direct response of the editor when you type in something that is not correct. And one other feature is that it must be applicable within existing infrastructure, so it can be by often existing workflow. And this also possibility of branding so that you can make it an application. A corporate application for your own Institute.
+
+[145.0s - 174.0s]
+Well, and we thought that the layout often form an editor is is is defined by the senior profile by fields in the constraints and also the senior record. Because when you edit it a data you have. A shift rule. Always when you have publications, fields and components that will also reflect in your editor. So we thought why not at third file? Can I have a glass of water please? So we thought, why not register elements and Two's functionality and and other things and that is thank you. So we invented that weak farm.
+
+[174.0s - 203.0s]
+And that week file contains actually formation for the Internet elements and functionality like human readable field labels in several languages. If needed a flexible field order configurable field types of fields prices when you want to edit the description you want a big field when you editing number she wants more. Default and fullback failures. Use of external formularies. An additional celebration because. And sometimes you have to use a conditional validation, and that's not possible in the inner city year profiles.
+
+[203.0s - 232.0s]
+The tweak file looks. If I looks a little like the. So the the. Like profile, sorry.
+
+[232.0s - 261.0s]
+But it's still not is Celine version of the profile. We stripped all the older, older, older data that were not needed in the in that week and we added some new features. We added a language and label form we we used CMD 1.2 QoS. Attributes we also could import from external for calories and. Yes, that's that's, that's how. A quick file looks like. It's. Quick file, it contains steal all the path information of all the elements in the component.
+
+[261.0s - 290.0s]
+And when when the results of a portion that week file in a profile and record? Well, result is written by application in JavaScript and it it creates an editor out of nothing. Well, nearly nothing.
+
+[290.0s - 319.0s]
+We having a demo this afternoon and you're only fighting to see it life at work.
+
+[319.0s - 348.0s]
+There are three main components in this on the server side, there's a partial. It parses the profile. The record in the tweak file. And also on the on the server side, is the record builder when you edit all your information and it's sent back to the server, a record will be. And a record will be constructed. These first elements are applicable PHP classes, so you can look it in your own web application. Even when you don't use PHP, you can build a small PHP shell that can communicate with your system on the client side. Is the average script jQuery plugin and then builds. The editor. And you have to see this stylesheet for styling.
+
+[348.0s - 377.0s]
+Well, the process is look like this. You have a profile, the profile is the only mandatory file that's needed. You can build an editor just out of profile. For making mutations record convedia edit and there's that week that we can. Well, these files will be merged into an XML file that will be barged. And adjacent structure is sent to the to the client and the Alpha Script show for it creates from the Jason structure a complete editor. When you start the editor, you have nothing on your screen on your logo and but when it's built you have complete editor. The writing back is is even simpler. The electoral rights back adjacent structure to the server and the record builder builds and senior record. You can also add some resources with it and the resources will also be uploaded and connect it. Also appended to your record.
+
+[377.0s - 406.0s]
+So as I said to see is the CCF editor can be incorporated in any web application is based on PHP and JS script in first official release of the editor that will be at the end of this year. Well, no, in the beginning of 2019 I make a host application so you can test it and. And if it's any eventually for protection.
+
+[406.0s - 435.0s]
+The support is, well, 1.1 and 1.2. And all the 1.2 features like now file satisfied modification before fullback are supported. Also accused with tools like display or hide resource improvement in height.
+
+[435.0s - 464.0s]
+We have this version already that the status and this applicable for shooting development for MI Flat that you are kind of off the music Institute but also our version for Timbuktu, the Opus Ultra Repository system of the Hurricanes. There's not Cindy Bass, but RDF, but I can. I can write a new parser that uses the same electric builder so we can book it on all up. Also on other systems. And first production fishing is ready early 2019. We planned.
+
+[464.0s - 493.0s]
+Well, the conclusions. It's it provides a new Cindy editing environment for readers based on arbitrary profiles, but with extensive possibilities. And it can also be a million other pro in other environments. Do. Address you, I know the experience of editing in a in a web based environment and sometimes you get tangled in the traffic between the server and the client. But we make the editor. Well, in this way there is all the work will be done at the client side, so you can get direct responses and the only the only time you have to send traffic to the server is to save your work. So I hope that we can do something about your objections.
+
+[493.0s - 522.0s]
+Just one problem. Help. Yes, yes, this is the spread because our connection can be problem anymore I guess. Yes, that's right. Well our our future work is conditional validation and therefore we need to be feleppa and you kind of syntax. To add pressure, pressure, and tabulation, some profiles give large forms and it's better to break these up in in different sections so you have more over side and also wishes for creating clip files because making a quick file can also be user friendly. We have a GitHub repository. At the moment there's only an introduction airy text, but it will be filled soon next coming months. And that's it.

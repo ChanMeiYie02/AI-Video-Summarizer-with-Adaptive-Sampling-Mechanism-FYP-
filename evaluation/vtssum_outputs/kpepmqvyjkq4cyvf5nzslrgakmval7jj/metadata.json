@@ -1,0 +1,21 @@
+{
+    "id": "kpepmqvyjkq4cyvf5nzslrgakmval7jj",
+    "title": "Introduction to Machine Translation",
+    "url": "http://videolectures.net/aibootcamp2011_sanchez_att/",
+    "info": {
+        "author": [
+            "Joan Andreu Sanchez, Technical University of Valencia (UPV)"
+        ],
+        "published": "March 31, 2011",
+        "recorded": "February 2011",
+        "category": [
+            "Top->Computer Science->Natural Language Processing",
+            "Top->Computer Science->Machine Learning->Human Language Technology"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 454,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1484
+}

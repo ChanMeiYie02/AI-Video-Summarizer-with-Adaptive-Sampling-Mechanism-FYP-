@@ -1,0 +1,21 @@
+{
+    "id": "f3upkn7v44thbziejxq75tsavxizfkqb",
+    "title": "A random coefficients model for regional co-expression associated with DNA copy number aberrations",
+    "url": "http://videolectures.net/cancerbioinformatics2010_wieringen_rcmr/",
+    "info": {
+        "author": [
+            "Wessel van Wieringen, Faculty of Sciences, Vrije Universiteit Amsterdam (VU)"
+        ],
+        "published": "Oct. 11, 2010",
+        "recorded": "September 2010",
+        "category": [
+            "Top->Computer Science->Bioinformatics",
+            "Top->Medicine->Informatics"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 241,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1575
+}

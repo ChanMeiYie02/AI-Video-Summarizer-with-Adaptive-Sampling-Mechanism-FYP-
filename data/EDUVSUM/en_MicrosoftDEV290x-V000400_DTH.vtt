@@ -1,0 +1,109 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:01.460 --> 00:00:04.110
+>> Now when you're working with images,
+
+00:00:04.110 --> 00:00:07.470
+there's a number of operations you can perform to manipulate them.
+
+00:00:07.470 --> 00:00:09.930
+Some of these might seem a little trivial at first,
+
+00:00:09.930 --> 00:00:12.060
+but they can be important when it comes to preparing
+
+00:00:12.060 --> 00:00:15.225
+image data to train a machine learning model for computer vision.
+
+00:00:15.225 --> 00:00:18.285
+So let's take a look at a few basic operations.
+
+00:00:18.285 --> 00:00:20.610
+Here's a common situation,
+
+00:00:20.610 --> 00:00:23.100
+suppose you've taken a photograph on your phone,
+
+00:00:23.100 --> 00:00:25.260
+but when you look at the image file that's been created,
+
+00:00:25.260 --> 00:00:29.025
+it's displayed in portrait orientation instead of landscape.
+
+00:00:29.025 --> 00:00:30.975
+In cases like these,
+
+00:00:30.975 --> 00:00:33.150
+you need to be able to rotate the image.
+
+00:00:33.150 --> 00:00:34.920
+In other words, change the shape of
+
+00:00:34.920 --> 00:00:38.320
+the pixel array and move the values accordingly.
+
+00:00:38.690 --> 00:00:43.610
+Similarly, you might want to transpose or flip the image,
+
+00:00:43.610 --> 00:00:46.530
+so that it's reversed into its mirror image.
+
+00:00:47.050 --> 00:00:51.650
+Another really common requirement is to resize the image by
+
+00:00:51.650 --> 00:00:53.660
+increasing or decreasing the size
+
+00:00:53.660 --> 00:00:55.790
+of the array containing the pixel values,
+
+00:00:55.790 --> 00:00:57.500
+and condensing or interpolating
+
+00:00:57.500 --> 00:01:00.510
+values to make the image fit the new size.
+
+00:01:00.700 --> 00:01:03.130
+Then, when we resize an image,
+
+00:01:03.130 --> 00:01:05.135
+it's important to bear in mind that the image is
+
+00:01:05.135 --> 00:01:08.510
+scaled in proportion to its original dimensions.
+
+00:01:08.510 --> 00:01:10.520
+Resizing an imagery to
+
+00:01:10.520 --> 00:01:14.510
+a different aspect ratio results in some distortion to the image,
+
+00:01:14.510 --> 00:01:17.540
+producing a squashing or a stretching effect.
+
+00:01:17.540 --> 00:01:22.990
+So how can we resize and reshape an image without distorting it?
+
+00:01:22.990 --> 00:01:25.550
+Well, one commonly used technique is
+
+00:01:25.550 --> 00:01:27.530
+to resize the image proportionally,
+
+00:01:27.530 --> 00:01:30.635
+so that its longest dimension meets the required size.
+
+00:01:30.635 --> 00:01:32.390
+Then, overlay it onto
+
+00:01:32.390 --> 00:01:34.745
+a new background image of the right dimensions,
+
+00:01:34.745 --> 00:01:37.385
+which will add some padding to the shorter edge.
+
+00:01:37.385 --> 00:01:40.055
+It's like mounting a rectangular photograph
+
+00:01:40.055 --> 00:01:42.360
+in a square picture frame.

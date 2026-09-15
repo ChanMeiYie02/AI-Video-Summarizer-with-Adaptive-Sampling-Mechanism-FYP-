@@ -1,0 +1,20 @@
+{
+    "id": "23g3hw5ev4e6aedpxz4bioljs4hbznyl",
+    "title": "Variational Inference over Combinatorial Spaces",
+    "url": "http://videolectures.net/nips2010_bouchard_cote_vic/",
+    "info": {
+        "author": [
+            "Alexandre Bouchard-Côté, Department of Statistics, University of British Columbia"
+        ],
+        "published": "March 25, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 31,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 730
+}

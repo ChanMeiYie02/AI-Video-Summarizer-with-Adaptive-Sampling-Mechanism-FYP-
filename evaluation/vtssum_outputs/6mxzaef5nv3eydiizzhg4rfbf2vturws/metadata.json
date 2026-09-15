@@ -1,0 +1,20 @@
+{
+    "id": "6mxzaef5nv3eydiizzhg4rfbf2vturws",
+    "title": "Boilerplate Detection Using Shallow Text Features",
+    "url": "http://videolectures.net/wsdm2010_kohlschutter_bdu/",
+    "info": {
+        "author": [
+            "Christian Kohlschütter, L3S Research Center, Leibniz University of Hannover"
+        ],
+        "published": "Oct. 7, 2010",
+        "recorded": "February 2010",
+        "category": [
+            "Top->Computer Science->Web Mining"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 245,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2048
+}

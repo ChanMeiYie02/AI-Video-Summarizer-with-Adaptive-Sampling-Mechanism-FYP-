@@ -1,0 +1,20 @@
+{
+    "id": "4ddcwh3gusnxci7y7qdqqgqxvplyfgek",
+    "title": "Names",
+    "url": "http://videolectures.net/w3cworkshop2013_pane_names/",
+    "info": {
+        "author": [
+            "Juan Pane, Department of Information Engineering and Computer Science (DISI), University of Trento"
+        ],
+        "published": "June 19, 2013",
+        "recorded": "March 2013",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 6,
+    "num_sentences": 65,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 122
+}

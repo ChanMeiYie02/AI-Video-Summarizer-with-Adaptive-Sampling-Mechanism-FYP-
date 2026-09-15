@@ -1,0 +1,517 @@
+[
+    {
+        "text": "Hello everybody, I environment Krishna and I'll be talking about my work pose machines.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "And the goal of this work is to estimate the articulated two repose of a person in a single image. And here are some of our results on the lead sports data set and we pose this problem as the problem of localising 2D anatomical landmarks, such as the wrist, elbow, etc on the human body. On each of these images and detecting these anatomical landmarks is a hard problem because there's a large variation in appearance and configuration. And to motivate this, I'd like to start with a small example.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Here I'm showing you two patches taken from a larger image and one of these two patches corresponds to an actual body part. Anne from purely local evidence, this is very difficult to recognize as to which one of these two parts corresponds to the body part. However, when I reveal.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Patched close by like this.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Or like this, I believe in which one of these two patches corresponds to a body part changes.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Additional.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "When I reveal a larger Patch which might contain more discriminative image structure or confidence as to which of these two patches actually correspond to body part changes, and indeed with the this information revealed.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "The lower part, the part outlined in the Patch outlined in blue does indeed correspond to the rest of that person and the other part actually corresponds to the ball. So, summarizing what we've learned.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "One is that local local image evidence is weak for this problem. However, we can detect certain parts with more confidence than others. For example, we could detect the head with reasonable confidence.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Part context is a strong Q. When we when we are able to detect parts nearby, our confidence in detecting harder parts.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Just.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "And larger composite parts, such as full arms are can be easier to detect and they can help in.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Localizing smaller, finer parts. So let's put this intuition into action.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So we begin with trying to make the most use of the local image evidence. And to detect these parts, we basically look at each Patch in the image.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Compute some image.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Choose and train a multiclass classifier to classify each Patch into one of the part types or background.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "And since parts have this highly multimodal appearance variation, we'd like to.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Use the best predictor we can use, so we want to use a high capacity supervised predictor that's capable of modeling this multimodal data distribution. And in.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "This work we use booster random forests, but there's no reason to limit ourselves to this predictor. You could use any predictor even on your network, for example.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "And confirming earlier intuition, relying purely on local evidence, you can detect parts like the head, neck and shoulder with reasonable confidence. The ideal kind of score map for this problem would be a peak at the right location and low probability everywhere else. But for parts that are lower down in the kinematic chain like the elbow and wrist, you have lots of false positives and tend to be hard to detect, but the.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "What so we see that local image ever?",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "This week, but certain parts are easier to detect than others and we should be able to use this fact to improve our predictions in our next stage.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "For example, if you are trying to classify the elbow relying purely on local evidence, we have a lot of false positives.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "But the fact that the shoulder has a confident detection in its vicinity should be should enable us to improve our prediction for the elbow.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "And the way we incorporate this contextual information is by describing two types of context features. So the first kind of feature is a Patch feature. So if you're trying to classify a Patch at a particular location, we would extract a Patch from each of these confidence Maps and perform pooling within smaller cells to introduce a little bit of invariants and reduces the size of the feature.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "The next kind of feature we use is an offset feature, so this offset feature is comprises of offsets from that location to peaks in the score map.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So in the next stage. So in the first stage we had detectors that relied on local evidence. In the next stage.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "We combine the contextual features with the image features to produce new new confidences, and when we do this, we see that lots of the false positives that were earlier in the score match for the shoulder and the elbow have now been removed and we have a peak in a single peak at the right location.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "And you could rip.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "This for a number of iterations to improve prediction and.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "We see that the peak indeed corresponds to the correct location in the image.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "So in a sense, our algorithm is reduces this hard problem of the sort structure prediction problem of estimating human pose into a sequence of simple class.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Fication problems.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "The second kind of intuition that we had was that larger composite parts that correspond to full limbs can can be easier to detect, and this kind of has been observed in many other works, such as in the post, let's work and the discriminative mid level patches work, and we like to incorporate these additional cues into our model. So the way we do this.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Is by SIM.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Really instantiating a level of predictors for each level in the hierarchy that we want to model, so as before we had one multiclass predictor that was trying to decide between. The smaller parts, like the rest and the elbow.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Anne.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Then we have a new second level predictor which tries to look at larger parts and classify them as full limbs like the arm or the like.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "And we could have a coarser level which probably models the full body.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "As before, we can.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Compute context features on the outputs of the previous stage.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "But now.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "We transfer the spatial spatial context information across these layers. Why are these contexts?",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "So now.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "How a predictor in the?",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Stage uses context features from its own layer as well as context features from other parts in the hierarchy. And I.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "We repeat this for a number of iterations.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "So going over what this looks like underneath in the first stage here, our confidence is for this image. For all the finest level of the hierarchy and we can see that for the head and neck you have good detections. But for all the other parts like the shoulders, elbows, wrists, you have noisy detections.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "In the next stage, we see that lots of the false positives have been removed.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "And. And the prediction improves as we move through stages. Also to note that we also have a background class, so background modeling is implicit in the model.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "If you look at what the Level 2 confidence Maps look like and these correspond to composite parts like the head and shoulders and the full on. Even in the first stage we get decent detections and this allows us to improve detections for the final parts. And as we move through these stages, these predictions improve.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "And in this data set, since these images are cropped around the person, we just get a simple single peak for the person detection. But I'll show you results later on where this becomes useful.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "So just showing you again. Kind of the complete inner workings of the model in the first stage you have predictions for each of these.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "Parts.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "In subsequent stages, these predictions tend to improve.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Here I'm showing you. A temporal sequence. And in the first stage you can see that the predictions are kind of noisy and might on the top right. And as you move through the stages these predictions tend to improve and. You have peaks at the correct locations in the image.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "So our model reduces structured prediction to a sequence of simple classification problems and the sequential classification paradigm.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "Has been observed, has been used in different domains in natural language processing by Cohen and Carvalho, and Almetal and in computer vision. The auto context paper and many other papers have used sequential classification.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "So to point out some of some interesting properties of this model.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "Training reduces just to training multiple supervised classifiers. There's been a lot of work in the machine learning community in supervised classification, and this allows us to leverage that and just use whichever supervised classifier we would like without reinventing new classifiers.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "Next, the spatial model is learned implicitly by the classifiers in a data driven fashion. We do not have to specify parametric forms for potentials that that define the relationship between the locations of parts instead.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "Classifiers in later stages are allowed to use context features in whichever way they see feet. See fit to give the best predictive performance.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "Our method is related to inference in graphical models in message passing in.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "Such as loopy belief propagation and mean mean field variational methods, the belief of a particular variable is usually expressed as the product of messages arriving from neighboring variables.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "This can be thought of as sequential prediction, where this classifier kind of has this product structure and the features are messages from neighboring variables. However, we are kind of limited to this product structure because of formal probabilistic modeling, and since we are interested in good beliefs for each of these variables, are method can be interpre.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "Replacing this product structure with some general classifier.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "Replacing the messages with context feature computations. And see.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "We use context features from all the parts in the model. It's kind of models a fully connected graph where information from all parts in all levels are used in production.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "And this has certain advantages. When you use a fully connected model, you do not fall prey to certain characteristic errors that arise when you use a simple simplified graphical model like a tree structure model. For example, here I'm showing the error of double counting, where the same region in the image can be explained by more than one part and the reason for this is if you look at the Billy for the left ankle. In this case the Max module, there are multiple peaks and when you perform inference algorithm is allowed to use either of these two. Interpret the image.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "In our method, although in the first stage we have.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "Speak at the wrong location.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "In subsequent stages, using context from other parts, we are able to.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "I obtain a peak in the correct location. Additionally, since we met.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "The hierarchy we can both do pose estimation and detection of parts simultaneously. Here I'm showing you the.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "The confidence from the detection level, which is the coarsest level. So conditioned on this.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "We can now perform.",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "Pose estimation within those details.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "And here are some examples of this.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "For evaluation, we evaluate on 2 standard datasets. The lead sports data set and the flick data set.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "Another way to visualize this data set is by showing the distribution of poses. And here I'm just overlays overlaying each pose over each other and you can see for parts like the wrist and the elbow, there's a large number large amount of variation, and those parts tend to be hard to detect.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "So on the flip data set we use the percentage detected joints metric, which is basically wearing a threshold from the ground truth point and see how many directions fall within the threshold and we improve upon the results of the state of the art method by SAP at all from the CPR 2013. Although there's maybe some room to improve in the high precision resume.",
+        "start": 2320.0,
+        "end": 2349.0
+    },
+    {
+        "text": "And here are some qualitative results on the flick data set and we are able to handle images with a lot of background clutter and varied poses.",
+        "start": 2349.0,
+        "end": 2378.0
+    },
+    {
+        "text": "Here I'm showing you qualitative exam results from the leads data set and for quantitative results I'd ask you to look at our website where we have additional results in an addendum with different metrics to evaluate.",
+        "start": 2378.0,
+        "end": 2407.0
+    },
+    {
+        "text": "I analyzing method through the stages. We see that the dotted and dashed line corresponds to using purely local image evidence and adding the second stage increases the performance to a large extent and adding an additional third stage improves performance on difficult parts like the elbow and wrist, but with minor performance gains on hard parts like.",
+        "start": 2407.0,
+        "end": 2436.0
+    },
+    {
+        "text": "On the anchor. Here we do a greater spatial analysis to see how much context, how much model is dependent on which context, and we see that.",
+        "start": 2436.0,
+        "end": 2465.0
+    },
+    {
+        "text": "By blocking out context for one part and blocking out each of them in turn, the predicted Postal does not.",
+        "start": 2465.0,
+        "end": 2494.0
+    },
+    {
+        "text": "Change. So here I'm making it uncertain, equally uncertain.",
+        "start": 2494.0,
+        "end": 2523.0
+    },
+    {
+        "text": "And when I.",
+        "start": 2523.0,
+        "end": 2552.0
+    },
+    {
+        "text": "Block out.",
+        "start": 2552.0,
+        "end": 2581.0
+    },
+    {
+        "text": "Text the more.",
+        "start": 2581.0,
+        "end": 2610.0
+    },
+    {
+        "text": "The post doesn't.",
+        "start": 2610.0,
+        "end": 2639.0
+    },
+    {
+        "text": "Change much.",
+        "start": 2639.0,
+        "end": 2668.0
+    },
+    {
+        "text": "And this is due to the. This is due to the fact that we're modeling.",
+        "start": 2668.0,
+        "end": 2697.0
+    },
+    {
+        "text": "Complete graph.",
+        "start": 2697.0,
+        "end": 2726.0
+    },
+    {
+        "text": "Fully connected graph.",
+        "start": 2726.0,
+        "end": 2755.0
+    },
+    {
+        "text": "A note on efficient prediction. Since each operation is independent for each location in the image, it's parallelizable. Our CPU implementation at a particular scale runs at around 300 milliseconds per frame, and using GPU hardware we can improve that to 100 milliseconds per frame.",
+        "start": 2755.0,
+        "end": 2784.0
+    },
+    {
+        "text": "In conclusion",
+        "start": 2784.0,
+        "end": 2813.0
+    },
+    {
+        "text": "I showed that local energy image evidence is weak.",
+        "start": 2813.0,
+        "end": 2842.0
+    },
+    {
+        "text": "And we use a sequential classification problem classification architecture, which is modular where you can use whichever supervised predictor helps you model the data.",
+        "start": 2842.0,
+        "end": 2871.0
+    },
+    {
+        "text": "Part context is a strong Q.",
+        "start": 2871.0,
+        "end": 2900.0
+    },
+    {
+        "text": "And larger composite parts are easier to detect.",
+        "start": 2900.0,
+        "end": 2929.0
+    },
+    {
+        "text": "And our model implicitly learns these rich spatial and hierarchical relationships.",
+        "start": 2929.0,
+        "end": 2958.0
+    },
+    {
+        "text": "Thank you and visit our website for more details. So I have a question about the observation that this is just this can be viewed as three rounds of BP where you're actually learning to pass the messages. Have you thought about doing something really funky that you can just take the message that you've learned in passer till convergence? Like just take the 1st way of passing message and run 'cause you're always stopping at three iterations, right? So if you pass it longer, do things converge to what we expect? If you do this longer? So empirically, I've seen that you do converge and the other kind of empirical observation is that as we add, more stages are precision tends to increase. At least in these, but yeah, there are other ways of doing the same thing where instead of having a single multiclass classifier to predict, you could use a single classifier for each variable. And there you could actually directly emulate what loopy belief propagation is doing. Do we have more questions? Hi, how's your model handle occlusion so parts model is resilient to a little bit of occlusion right now the datasets don't have occlusion labels. But if you have occlusion labels, that will definitely improve occlusion handling. Just another point on that, since we're also doing background modeling that also assists with occlusion reasoning because you know that a particular location corresponds to background with a large degree of confidence, which means that it cannot be. You cannot put apart at that location. I have a question myself actually. You mentioned the relation to auto context. Can you quickly summarize the main difference to the auto context bug? Well, auto context hasn't been used for this particular problem, so. But the difference is I guess are in the architecture. For example, how we capture context using Patch features and contextual features and how we incorporate hierarchies over these parts. Maybe a final question from the audience. That's not the case. Let's thank all our speakers of this session.",
+        "start": 2958.0,
+        "end": 2987.0
+    }
+]

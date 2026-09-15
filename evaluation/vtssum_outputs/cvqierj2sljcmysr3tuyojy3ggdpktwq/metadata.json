@@ -1,0 +1,22 @@
+{
+    "id": "cvqierj2sljcmysr3tuyojy3ggdpktwq",
+    "title": "Virtual Therapy in Head&Neck cancer: Data collection and sharing for articulatory synthesis of patient speech",
+    "url": "http://videolectures.net/clarinworkshop2017_van_son_virtual_therapy/",
+    "info": {
+        "author": [
+            "Rob van Son, Faculty of Humanities, University of Amsterdam"
+        ],
+        "published": "June 26, 2018",
+        "recorded": "November 2017",
+        "category": [
+            "Top->Computers->Digital Media",
+            "Top->Humanities->Languages",
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 223,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 1954
+}

@@ -1,0 +1,87 @@
+[
+    {
+        "text": "So the title is volumetric ellipsoids, and.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "I'll start with the motivation for it. So imagine the following motivation for mix. It's taken from experiment design. You have N patients and each of them is characterized by some D dimensional vector X. And you can perform experiments. An experiment. Basically, gives you some function over these. X can be thought of linear function plus noise. And you would like to learn this in your function, where the complexity that you really care about is the label complexity. Or the number of experiments that you were going to perform. So I want to minimize the number of experiments an learn W's in the best way possible. So this best way possible can be defined in many different ways and in experiment optimal experiment design they discuss various ways and we are interested here in. A worst case error of some sort. So we really care about. After querying this subset S. That I somehow picked. I would like for the worst case patient worst case data point to have a bounded variance.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So this is a mole, so as it turns out, this is the formulation that we really care about. I would like the set of size T and. Given this, set any vector X in the global set of data points can be expressed should be expressed as some linear combination of the data points that I chose. The sum of Alpha I times VI. And consider the vector of coefficients this Alpha vector. What I really care about is the L2 norm of this vector. So I'll avoid using this epsilon and just want a variance of 1. Assume that the man. What I want is to find the minimal set such that any vector can be expressed with the coefficient vector Alpha with bounded L2 norm. And this is actually very closely related to notion of bully centric spanners by elbow and Kleinberg that actually solve the same thing, but they. Achieve a bounded L Infinity norm. And. You can go over a lot of works that usable essentrics panel and see that if you replace this spanner the percent expander with the volume at this panel you. Could potentially gain an improvement of square root of the OR some kind of improvement. So.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So why? Why is it that we care about the L2 norm? So if I look at the estimator for the inner part of the X with my grethel. The estimation is going to be some, some will it do this vector of coefficients Alpha and if we compute the variance it turns out to be exactly the L2 square of the coefficient vector times Sigma Square, which is the variance of a single query.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "OK, so before I get into the methods they just want to. Tell about there or one of the applications which is about the application of bandit linear optimization. We managed to. Get the Nice's out there and. Well, the most of your problem familiar with the setting. It's a game and there's the set K. It could be finite, could be infinite to convex, or. Whatever, and there's another set of Z and in each round the player chooses a vector X from the set K nature, or some adversary chooses the vector large L form the Set Z, and we suffer a loss of little L subscript. And. The bandit part. Is the fact that we do not observe the linear function L but only the loss which is the inner product? And you have to assume something, and very typical assumption is that the inner products for any choice of XML is bounded by one, and this would happen, for example, if both are the unit sphere. It's called the L2 assumption. And the regret, as usual, is the is our total loss minus the loss of the best in hindsight fixed strategy.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So. Just a quick recap of some of the previous works. I didn't include all of them. It was introduced to solve online routing problem by Evergreen Climber. Then they obtain sublinear regret. Of T to the 2/3 then. Came out of paper with an efficient solution by a political sign rattling for that. Provide a regret of square root T which is optimal in terms of T the time. But it's not optimal optimal in terms of the dimension of the problem. Why there's a lower bound of the Times Square root of T, but they have the cell phone cord and barrier that can be constant but can be larger. Anne next, there's a paper by boob excessively nincada that achieve optimal regret, and I should mention that the regret is optimal for the general convex body and some particular convex bodies. But there are other convex bodies. Well, the regret can be even lower. For example, the unit sphere you can achieve sort of the time so. The problem with this algorithm is that it's not efficient. It relies on the Johns decomposition of the set and. There is no known way to compute that, even approximately 4. For example, for the polytopes. And polytopes is what we would like for the original motivation, for example of online routing 'cause there we want the SD path politics. Anne here.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Using our methods, we obtain the same regret within efficient algorithm. This polynomial in the parameters, so it's optimal in the general case and. Font optimal to a specific ones, but it might not always workout, but. OK, so back to our notions. I showed an algebraic formulation an it's more convenient to look at it through geometry. So let's assume I picked some subset of points S, which are called V1 to Vt. So this defines a norm which is the norm of a point. X is its norm corresponding to the inverse matrix of some of VI VI transpose. So the.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Pneumatic ellipsoid. Corresponding to the set S. Consists of all the points whose. Norm is bounded by 1. So stop. Two quick drawings of how this ellipsoid should look like. If you have in two dimensions, two points, this is the ellipsoid, but.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "It also turns out to be an ellipsoid for more than D points, so here is an example of three points. They're all contained inside the ellipse, and it exists.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So it's pretty easy to do, easy to verify that if the ellipsoid happens to contain. The original set of Point K. Then you achieve the objective of having the maximum variance will maximum is taking over all the points in the set. He's going to be bounded by 1. So. In the geometric view, this is our objective. Find a minimum size S such that. It's automatic ellipsoid contains the sub. The total set of points.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So will the natural questions. How small can we take this set to be? It has to span the entire space. The other point, so it has to be at least number of dimension. But how much larger should it be? And also, can it be found efficiently? But the other two question is what kind of bands do they get an application talk about briefly? So.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "This is our theorem regarding the order of K, the number of points that you need. It's linear. It's actually strictly larger than D. There's a proof by drawing here. Just take a triangle you. You could play around. You'll see that you need three points from that angle, so it's larger than that, but a more interesting.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "It is the other inequality. It's 12 D, so the idea here is to take the Johns decomposition of the set. So this. This procedure consists of finding the ellipsoid of minimal volume that contains your set K. And this ellipsoid should have contact points with the original body. And Jones decomposition. It provides you to express the ellipsoid with these contact points, and Furthermore it it needs at most D squared, roughly contact points. So immediately this gives us a bound of these squared, but it actually gives us something stronger, which is can be seen in these terms as a broken solution. Meaning if I'm allowed to take 1/2 of this point, 1/3 of this point, and so on, and just pay for the half, then I get a perfect solution. Anne. By taking this week and figure out the distribution that if we sample D log D points format, we get what we need. But we can even go even further with the technique of the video for paper twice on Newton spice suppliers that actually allows us to avoid this log defector achieve 12 D points.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "And this actually gives us an immediate application for experiment design, which is if you have this large pool of inpatients and I want to achieve a worst case minimal variance, then I don't need to test all of them. I just need to test the over epsilon square. This is actually the lower bound as well up to constants.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "OK, so now for. Construct how do you? How do you construct it? So what I described so far relies on Johns decomposition and that could be a bit expensive. It relies on the size of the set K, so if it's infinite we don't know what to do. But even if it's large, we have some slightly more. We have a more efficient algorithm that will we pay in the size of the set so you can go as low as 12 D. But if you willing to give relax a bit on the size and get the log deal OK, you can have something that's pretty much the same as. Inverting a matrix. The size of the set is just the number of points that they chose to the set S that find the. Let's go back the size. OK, so here's the set S. The size is the. It's the number of vectors that they chose.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "OK, so that that was the case for finite sets we have this. Polynomial time. Construction of linear size. We have a relaxed, slightly better running time, but worse. Some size and now we have this. The setting of infinite set OK is convex. Here we have a problem we can't really use the Johns decomposition because we don't know how to do that and we didn't find a way to get an exact solution. But we consider two approximations. And one is the ratio spanner. It's more it can be. It's very related to things that were previously considered well. I don't want the ellipsoid to exactly contain the set, but if I blow it up by a factor then it will contain the set. And as a matter of fact very centric spanners give me this with low equals square root of D cause of the that provides me something with Infinity. I want L2 so the transition would. The cost of this condition is sort of the the other type of approximation is called expander. Essentially, it can be thought of as an ellipsoid that would contain almost all of the all of the set K. And this is actually something a bit stronger, and it says that if I choose a random point from the convex set K. It's not only it's not only with high probability inside the ellipsoid, but the probability of it being inside having a. Inside two times the ellipsoid is. 1 minus epsilon squared and three times minus epsilon 2/3. And these are actually the IT turns out that these approximations, yes. Oh sorry. OK, so as it turns out, these approximations have. All enough for the analysis of bandit linear optimization. And with it we get an optimal regret and efficient solution. Well, the optimal regret is as the caveat that I felt about. You need to set to be convex. We use the L2 assumption and. It's optimal for when you want something general for convex bodies. The basic idea intuition behind it is to use the geometric edge framework. There is a. So you need to have some fixed or not Zella fixed exploration strategy, so the exploration strategy of previous works with user preset expander and Alex relations strategy is using a union of a ratio spanner an expander. And just buy. Going through the. Standard proofs we see that we can arrive the necessary concentration bounds just by using these two properties. Of this man. So.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Actually, I'm that's all I have to say. You're welcome to approach me for having more questions. We have experiment, design type results and also an application to Bentley optimization. And I strongly believe that there are more active learning applications out there that could benefit from using these types of spanners.",
+        "start": 464.0,
+        "end": 493.0
+    }
+]

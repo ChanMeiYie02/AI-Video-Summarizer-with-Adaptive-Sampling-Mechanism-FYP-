@@ -1,0 +1,9 @@
+# Final Multimodal Video Summary
+
+The segment introduces the fundamentals of reasoning over Knowledge Graphs (KGs) by using embeddings, defining KGs as nodes and relations, and tackling the problem of Knowledge Graph Completion, which involves predicting missing relationships. The focus then shifts to enabling multi-hop reasoning, allowing the system to answer complex queries, such as path queries and conjunctive queries, by effectively embedding knowledge graphs. This is demonstrated using a biomedical KG to identify complex relationships, like tracing an adverse event caused by a specific drug.
+
+The system handles queries through natural language and logical structures, covering core concepts like path queries, one-hop knowledge graph completion, and the necessity of predicting missing links to handle incomplete graphs. A path query is defined as a sequence of relations that leads from an anchor node to a final answer, which can be translated into a graphical query plan.
+
+A significant challenge arises because KGs are often incomplete, meaning crucial relationships are missing. To address this, the method employs knowledge graph completion by assigning probabilities to all existing links, thereby making the graph complete. However, performing path queries over these large, probabilistic graphs remains challenging.
+
+The proposed solution is to transition from standard link prediction to "predictive queries," framing the task as predicting which entities serve as the answer to a given query. This approach implicitly imputes or completes the knowledge graph to account for missing information, making the system robust to incompleteness and noise. Ultimately, the methodology reformulates the task of answering queries across a knowledge graph by predicting the specific entities that resolve the query path.

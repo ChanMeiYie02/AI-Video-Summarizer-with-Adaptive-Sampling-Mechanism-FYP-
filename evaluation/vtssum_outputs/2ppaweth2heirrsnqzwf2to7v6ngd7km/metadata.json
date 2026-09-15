@@ -1,0 +1,20 @@
+{
+    "id": "2ppaweth2heirrsnqzwf2to7v6ngd7km",
+    "title": "KiWi - A platform for building Semantic Social Media Applications",
+    "url": "http://videolectures.net/estc2010_schaffert_pfbsm/",
+    "info": {
+        "author": [
+            "Sebastian Schaffert, Salzburg Research"
+        ],
+        "published": "Dec. 23, 2010",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Semantic Web->Semantic Web Services"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 355,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 2693
+}

@@ -1,0 +1,22 @@
+{
+    "id": "icfepu6r4l4ba357v5d24pqkmxs44min",
+    "title": "Probabilistic inference methods in robotics-filling the gap between high-level reasoning and low-level motion control",
+    "url": "http://videolectures.net/psm08_toussaint_pim/",
+    "info": {
+        "author": [
+            "Marc Toussaint, Machine Learning and Intelligent Data Analysis Group, TU Berlin"
+        ],
+        "published": "Feb. 7, 2008",
+        "recorded": "January 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning",
+            "Top->Computer Science->Robotics",
+            "Top->Computer Science->Machine Learning->Statistical Learning"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 259,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 2140
+}

@@ -1,0 +1,22 @@
+{
+    "id": "mmexjjqvvthegtaoef7lkazjl7h7ur3v",
+    "title": "Media fragmentation and annotation technologies",
+    "url": "http://videolectures.net/wmpa2014_mezaris_media_fragmentation/",
+    "info": {
+        "author": [
+            "Vasileios Mezaris, CERTH - Centre for Research and Technology Hellas"
+        ],
+        "published": "Feb. 10, 2014",
+        "recorded": "January 2014",
+        "category": [
+            "Top->Computer Science->Software and Tools",
+            "Top->Computer Science->Semantic Web->Annotation",
+            "Top->Computer Science->Semantic Web->Applications"
+        ]
+    },
+    "num_segments": 63,
+    "num_sentences": 553,
+    "num_clips_with_summary": 34,
+    "num_gt_summary_sentences": 92,
+    "ground_truth_summary_length_chars": 12031
+}

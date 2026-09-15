@@ -1,0 +1,97 @@
+[
+    {
+        "text": "OK, so welcome. After I'm going to present a the. Anne, this paper also about OSR that's rejection threshold estimation, but I will know language model in an OCR task. So in this case.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Then in this case, what we? We need. A. We are using a language model, but we are focusing on a practical problem. Again, it's. Is that well? To define a good threshold that is applied to the cost of the transformation from the OCR to the final solution, I mean, as as you know. On which model? Actually has to correct the output from the OCR to get one to get a string compatible with the language model. But this cost of the transformation. In, is used, is often used to the define which strings are more likely to be correct and which not. Which of them are not? I mean, if the string is completely unrecognizable and has to do, you have to change every single character of it to get compatible. Output with the language model. Then it's probably wrong, so you give a low confidence on that on that particular string so well. So the main important thing is that we want to reject strings that are not good and to accept strings that are more likely to be good from the beginning. OK, so we have the meeting or well corrected. I mean we want only well corrected strings. So this has a very important impact in the economic performance of an OCR will cause you are not allowed to make many, many mistakes, so they accepted strings should most mostly be good. The accepted distinction are only one or 2%. As I said before, only one or two percent of error rate is allowed in the output, so you have to minimize how many. Strings are sent to manual input. So and the problem again, as I said before, is that the language model is changed often, often. So for the OCR you can tune your parameters for a for industrial setting or a practical setting. But the language model changes for every field in a single form, so that's an important problem. So the idea is that we will accept we will want to get. We want to set an accepted error rate. UN obtain the threshold.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Usually the threshold is is just well empirically tuned to get as many. As as many directly accepted as possible for a given error rate as I said, but in this case we want to establish it, but the problem is that the we get us as we as I said, a lot of new language models all the time. We build a lot of new models all the time, language models at the time so. And so we want to obtain this to obtain this. Estimation of the error rate for our estimation of the of the threshold for our even error rate automatically and unnecessarily as possible so.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So if we if we see here if we take a look at four different language models, in this case for Spanish names. Spanish surnames. I mean, the names are all the names in the sensors are names are all the surnames in the sense in the current Spanish census. The spine municipalities are all the towns in Spain. And the local area municipalities are only 35 municipalities from a small area of Spain. So to compare different kinds of sizes of models. As you see there. A number of strings. A that we get for each transformation cost, I mean the distribution of the strings according to the transformation cost is a are very different. They are completely different there. There's more language model is is here. The names are here. The surnames which should be very similar are slightly different. And finally they, the Spanish municipalities are like there. They have a queue of strings that are difficult to correct, so they give high transformation costs. But they have also other strings that are more easily corrected. Of course we have a small number of of of strings. We get less deformation costs because we have much less many less options to correct, so corrections are more likely. More likely good, more likely.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Hey good so. This would be the distribute the previous. The previous slide was the distributions of the different language models, and here we see the distributions of the error rate. I mean four different transformation costs. OK, so the error rate, not the number of strings as before, but the error rate. So obviously the error rate increases as the transformation cost increases. So this is what we want to estimate. We want to try to estimate this without looking at any. String for the language model. I mean, we have the language model. You give me the municipalities of Turkey and I will remember. I want to know. Well, I want to know this curve because then I will be able to say. 4 four threshold. I don't know here. I have if I put the threshold here I will have a 5% error. That's what I want to know. So for a new completely no language model that I don't know nothing about and I don't want to take a real batch of OCR to train the model and to estimate the threshold we want to do it, I want to do it without a new without samples, only knowing the language model.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Change of the language model. So obviously that's not going to be easy, and the errors probably will not be. I mean there are will be will be high, but that would be very very very practical so. So what we're going to do is to compute the histogram of the transformation costs. Offer strings that belong to a language so you will say if they belong to a language you don't have to transform to transform them. So what does the transformation cost mean? The information cost in this case would be the parsing cost. I mean taking into account the error model taking into account the probabilities of the perplexity of grammar and everything you don't have a one probability of even if the string belongs to the language. I mean, the string has a likelihood different from one, because the language model has a number of parameters, so. Because the there are other options and for example are very very string that is very different from any other string. We will have a lie, a high likelihood, so low transformation costs because the decisions are clear at every power, at every. The point of the path, but a string that is very very similar to 10 other strings will have lower likelihood, even if both belong to the grammar belong to the language, so that's a. That's why their idea the smoothing parameters are also also important here, and so on so.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "What we get. When we do this this on the on, the languages that we saw before, we had something that Fortunately resembles somehow the other graph. With the graph we said we saw before. So this is these are the parsing cost of the strings that belong to the language. So if we compare them.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "With the previous ones.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "We see that they are not there. They differ quite a lot, but they are.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "They resemble one another, so our goal is to using this we can have this very easily trying to estimate the.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "This OK, so that's a.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Yeah, So what we do is to. To obtain some parameters of the histograms of the parsing cost of positive samples. Of a number of language models and with that try to build a regression model to obtain the real test samples of the same language models as the dependent variable. I mean as as the output as a target output OK. So when we build a new language model, in practice we will automatically will be able to automatically compute the histograms, compute the parameters of that histogram, and apply the regression model to get the result to know where to put the threshold to get our target.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Error rate. So the experiment. In this place we used the same the same language model as before, but also three other three more three other language models, the 100,000 surnames. The 6600 thousand first names in the last issues over Spain's in the surnames with probabilities, I offered the frequencies in the census so they are they are samples with probabilities with frequencies. And also the. All the Spanish municipalities without frequencies we got we could. We could use them with frequencies with the frequencies of the population. So things like that, because that's the likelihood that they could appear in a in an address or something, But in this case we didn't and. And also the small set of municipalities. OK, so this is experiments.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So the data we saw and the more the model for the duration model we got a sample of $2000 reported strings waiting for a real CR and for each language model. Then the parameters we extracted from the contributions where mean, median variance, coefficient of variation, different percentages and also being frequencies. And we tried to obtain a good regression model with all those parameters. So obviously the target output is the error rate for each cost value, so we trained several relation models, support vector machines for regression analysis functions, animal perception and the results were similar, so we're showing the results of the last of the modular receptor.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "For example in this case. In for example, in the case of municipalities in Spain. The red curve is what we should get. I mean, when we when we increase the transformation cost. We get the different error rates. Obviously this is only useful until I don't know until 5% maximum. Part of the graph is useful, but it's interesting to see the behavior of the for all the strings we will see now this part, obviously. Better.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Or later and this. And this is the same for there for the Spanish surnames. So this is the green. The green curve obviously is the regression regression estimation let estimated error rate.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Curve so the first part of the curve which is between I mean for estimated error rate between 0 on this case. For example, 3% would be the most interesting part K or even 2%, because three is quite so much usually. Well in this, in this case we see that the estimation deviation of the error is good for the Raven blue curves, which are the names and Spain municipalities for the other two curves. It's probably too high because if this is 1% and we are looking at rates of between 2 around 2%, so it's a little a little bit too much so. For these two languages is probably too high for a practical use, but but anyway. It's much more accurate that another arbitrary threshold. That is what we have to do now. I mean, you have to train to have to empirically set stressful and then look for a better position in the in the operation. Curve of the system. So for two of the models is even enough for correct threshold definition and for the other two Languages 2 languages is a good starting point. To finally adjust when when.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Relation OK? So the conclusion is that the well, the conclusion is that the estimation is useful. In all cases, in practice one of them is that it was all tables, is the other one is a good starting point. We have to take into account with that we only have 4 four samples with. This was the first experiment we made and it's it's using only only four samples for language models. In this case, each language model is a sample, so learning with four samples is quite difficult, so that's why that's why we think this is good. Result for such a small experiment anyway, so obviously as a future where our future we plan to use a larger set of language models and and obtain hopefully more accurate results to know to know if they can be really used in one way or another, OK?",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So that's that's all. Thank you, rain. Speaker.",
+        "start": 522.0,
+        "end": 551.0
+    }
+]

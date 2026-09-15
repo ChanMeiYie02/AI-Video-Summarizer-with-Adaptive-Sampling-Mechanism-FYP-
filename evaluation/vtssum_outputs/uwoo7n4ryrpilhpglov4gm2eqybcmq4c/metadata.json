@@ -1,0 +1,20 @@
+{
+    "id": "uwoo7n4ryrpilhpglov4gm2eqybcmq4c",
+    "title": "On the Stratification of Multi-Label Data",
+    "url": "http://videolectures.net/ecmlpkdd2011_tsoumakas_stratification/",
+    "info": {
+        "author": [
+            "Grigorios Tsoumakas, Department of Informatics, Aristotle University of Thessaloniki"
+        ],
+        "published": "Oct. 3, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Supervised Learning"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 220,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2258
+}

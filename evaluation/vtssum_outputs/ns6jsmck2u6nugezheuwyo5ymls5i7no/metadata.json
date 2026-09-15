@@ -1,0 +1,21 @@
+{
+    "id": "ns6jsmck2u6nugezheuwyo5ymls5i7no",
+    "title": "Nonparametric Variational Inference",
+    "url": "http://videolectures.net/nipsworkshops2012_hoffman_variational/",
+    "info": {
+        "author": [
+            "Matt Hoffman, Adobe Systems Incorporated"
+        ],
+        "published": "Jan. 16, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->Graphical Models",
+            "Top->Computer Science->Machine Learning->Kernel Methods"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 267,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2955
+}

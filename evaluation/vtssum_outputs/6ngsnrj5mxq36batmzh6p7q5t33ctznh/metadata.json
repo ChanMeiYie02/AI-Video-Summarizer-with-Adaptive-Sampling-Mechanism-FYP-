@@ -1,0 +1,20 @@
+{
+    "id": "6ngsnrj5mxq36batmzh6p7q5t33ctznh",
+    "title": "High-Dimensional Descriptor Indexing for Large Multimedia Databases",
+    "url": "http://videolectures.net/cikm08_valle_hddifl/",
+    "info": {
+        "author": [
+            "Eduardo Valle, ETIS lab (Signal and Image Processing researches)"
+        ],
+        "published": "Nov. 19, 2008",
+        "recorded": "October 2008",
+        "category": [
+            "Top->Business->Management->Knowledge Management"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 199,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 799
+}

@@ -1,0 +1,35 @@
+{
+    "id": "j2iwyqep3277iqq4srqr4cmirns4l2ci",
+    "title": "Elevator pitch session 1",
+    "url": "http://videolectures.net/ipssc2019_elevator_pitch_session/",
+    "info": {
+        "presenter": [
+            "Jelena Isailović, National Institute of Chemistry Slovenia",
+            "Marta Boito, Jožef Stefan Institute",
+            "Alja Čontala, Advanced Materials Department, Jožef Stefan Institute",
+            "Jelena Isailović, National Institute of Chemistry Slovenia",
+            "Adrijan Ivanušec, Department of Molecular and Biomedical Sciences, Jožef Stefan Institute",
+            "Marta Boito, Jožef Stefan Institute",
+            "Matej Kocen, Department for Nanostructured Materials, Jožef Stefan Institute",
+            "Alja Čontala, Advanced Materials Department, Jožef Stefan Institute",
+            "Adrijan Ivanušec, Department of Molecular and Biomedical Sciences, Jožef Stefan Institute",
+            "Matej Kocen, Department for Nanostructured Materials, Jožef Stefan Institute"
+        ],
+        "published": "July 8, 2019",
+        "recorded": "April 2019",
+        "category": [
+            "Top->Technology->Nanotechnology",
+            "Top->Physics",
+            "Top->Chemistry",
+            "Top->Computer Science",
+            "Top->Biology",
+            "Top->Science->Scientific Research",
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 86,
+    "num_sentences": 393,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2408
+}

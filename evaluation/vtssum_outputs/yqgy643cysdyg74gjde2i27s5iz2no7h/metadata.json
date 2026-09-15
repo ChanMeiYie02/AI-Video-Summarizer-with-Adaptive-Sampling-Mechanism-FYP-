@@ -1,0 +1,21 @@
+{
+    "id": "yqgy643cysdyg74gjde2i27s5iz2no7h",
+    "title": "Ontologies and Reasoning to Capture Product Complexity in Automation Industry",
+    "url": "http://videolectures.net/iswc2017_mehdi_liebig_industry/",
+    "info": {
+        "author": [
+            "Anees ul Mehdi, Festo AG & Co. KG",
+            "Thorsten Liebig, derivo GmbH"
+        ],
+        "published": "Nov. 28, 2017",
+        "recorded": "November 2017",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 98,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 567
+}

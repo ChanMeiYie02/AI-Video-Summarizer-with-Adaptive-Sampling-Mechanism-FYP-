@@ -1,0 +1,21 @@
+{
+    "id": "pftkd27sy4ehoxr4n26cmwfi22cwvqoz",
+    "title": "Near Real-Time Transportation Mode Detection Based on Accelerometer Readings",
+    "url": "http://videolectures.net/sikdd2016_urbancic_accelerometer_readings/",
+    "info": {
+        "author": [
+            "Jasna Urbančič, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 15, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 181,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1600
+}

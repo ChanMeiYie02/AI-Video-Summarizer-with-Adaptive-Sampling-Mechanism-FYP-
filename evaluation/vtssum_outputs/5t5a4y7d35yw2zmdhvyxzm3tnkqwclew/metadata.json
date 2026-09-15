@@ -1,0 +1,21 @@
+{
+    "id": "5t5a4y7d35yw2zmdhvyxzm3tnkqwclew",
+    "title": "Information-theoretic bounds on learning network dynamics",
+    "url": "http://videolectures.net/netadis2015_montanari_network_dynamics/",
+    "info": {
+        "author": [
+            "Andrea Montanari, Department of Electrical Engineering, Stanford University"
+        ],
+        "published": "March 7, 2016",
+        "recorded": "December 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Physics->Statistical Physics"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 325,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 1699
+}

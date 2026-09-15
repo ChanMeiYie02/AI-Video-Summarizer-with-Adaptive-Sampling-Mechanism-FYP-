@@ -1,0 +1,24 @@
+{
+    "id": "67k7w73wp6d733uabdod4l3znqrp6j5o",
+    "title": "Open PHACTS: A Data Platform for Drug Discovery",
+    "url": "http://videolectures.net/dataforum2014_groth_data_platform/",
+    "info": {
+        "author": [
+            "Paul Groth, Department of Computer Science, Faculty of Sciences, Vrije Universiteit Amsterdam (VU)"
+        ],
+        "published": "March 31, 2014",
+        "recorded": "March 2014",
+        "category": [
+            "Top->Social Sciences->Law->Regulations",
+            "Top->Social Sciences->Society->Public Policy",
+            "Top->Business->Management->Knowledge Management",
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Data Visualisation"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 211,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1264
+}

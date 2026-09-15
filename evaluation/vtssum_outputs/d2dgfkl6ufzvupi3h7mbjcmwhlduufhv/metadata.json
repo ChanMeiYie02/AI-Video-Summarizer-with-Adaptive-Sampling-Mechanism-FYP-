@@ -1,0 +1,23 @@
+{
+    "id": "d2dgfkl6ufzvupi3h7mbjcmwhlduufhv",
+    "title": "Alcohol addiction treatment",
+    "url": "http://videolectures.net/snc2015_boben_bardutzky_addiction_treatment/",
+    "info": {
+        "author": [
+            "Darja Boben Bardutzky, Javni zavod psihiatrična bolnišnica Vojnik"
+        ],
+        "published": "Sept. 7, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Medicine->Neuroscience",
+            "Top->Medicine->Psychiatry",
+            "Top->Biology->Neuroscience",
+            "Top->Social Sciences->Psychology"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 184,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 53,
+    "ground_truth_summary_length_chars": 6914
+}

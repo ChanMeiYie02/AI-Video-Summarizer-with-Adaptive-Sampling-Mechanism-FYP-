@@ -1,0 +1,20 @@
+{
+    "id": "jbzm63kngretfbvxvxjterqalodbjseb",
+    "title": "Best Papers Awards ICML 2008",
+    "url": "http://videolectures.net/icml08_mccallum_papers/",
+    "info": {
+        "author": [
+            "Andrew McCallum, Department of Computer Science, University of Massachusetts Amherst"
+        ],
+        "published": "July 24, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Events"
+        ]
+    },
+    "num_segments": 10,
+    "num_sentences": 31,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 777
+}

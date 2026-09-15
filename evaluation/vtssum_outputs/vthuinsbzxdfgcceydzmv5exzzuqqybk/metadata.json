@@ -1,0 +1,20 @@
+{
+    "id": "vthuinsbzxdfgcceydzmv5exzzuqqybk",
+    "title": "Monte Carlo and the mind",
+    "url": "http://videolectures.net/mlss2010_griffiths_mcm/",
+    "info": {
+        "author": [
+            "Tom Griffiths, Computational Cognitive Science Lab, Department of Psychology, UC Berkeley"
+        ],
+        "published": "June 15, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Monte Carlo Methods"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 334,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 6020
+}

@@ -1,0 +1,21 @@
+{
+    "id": "vblr34yb4icutpduvqglqws5kxnfuhnz",
+    "title": "Large-Scale Deep Unsupervised Learning Using Graphics Processors",
+    "url": "http://videolectures.net/icml09_raina_lsd/",
+    "info": {
+        "author": [
+            "Rajat Raina, Computer Science Department, Stanford University"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 197,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1300
+}

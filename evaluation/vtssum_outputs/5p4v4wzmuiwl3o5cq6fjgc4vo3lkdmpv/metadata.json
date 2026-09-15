@@ -1,0 +1,24 @@
+{
+    "id": "5p4v4wzmuiwl3o5cq6fjgc4vo3lkdmpv",
+    "title": "A Chaining Algorithm for Online Nonparametric Regression",
+    "url": "http://videolectures.net/colt2015_gerchinovitz_nonparametric_regression/",
+    "info": {
+        "author": [
+            "Sébastien Gerchinovitz, Department of Mathematics and their applications, École normale supérieure Paris"
+        ],
+        "published": "Aug. 20, 2015",
+        "recorded": "July 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning->Active Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Semi-supervised Learning"
+        ]
+    },
+    "num_segments": 6,
+    "num_sentences": 39,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 1258
+}

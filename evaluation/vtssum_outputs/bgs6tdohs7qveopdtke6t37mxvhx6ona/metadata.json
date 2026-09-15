@@ -1,0 +1,22 @@
+{
+    "id": "bgs6tdohs7qveopdtke6t37mxvhx6ona",
+    "title": "Interpreters at Work – a Peek into a Day (or two) at the European Parliament",
+    "url": "http://videolectures.net/interACT2016_klimek_feder_interpreters_work/",
+    "info": {
+        "author": [
+            "Hanna Klimek, European Parliament",
+            "Marcin Feder, European Parliament"
+        ],
+        "published": "July 31, 2016",
+        "recorded": "July 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 190,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2585
+}

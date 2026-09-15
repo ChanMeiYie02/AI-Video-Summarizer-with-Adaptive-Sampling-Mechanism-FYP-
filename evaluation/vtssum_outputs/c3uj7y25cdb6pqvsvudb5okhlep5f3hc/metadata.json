@@ -1,0 +1,21 @@
+{
+    "id": "c3uj7y25cdb6pqvsvudb5okhlep5f3hc",
+    "title": "Deployment of RDFa, Microdata, and Microformats on the Web – A Quantitative Analysis",
+    "url": "http://videolectures.net/iswc2013_meusel_quantitative_analysis/",
+    "info": {
+        "author": [
+            "Robert Meusel, Research Group Data and Web Science, School of Business Informatics and Mathematics, University of Mannheim"
+        ],
+        "published": "Nov. 28, 2013",
+        "recorded": "October 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Internet, World Wide Web"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 118,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 2478
+}

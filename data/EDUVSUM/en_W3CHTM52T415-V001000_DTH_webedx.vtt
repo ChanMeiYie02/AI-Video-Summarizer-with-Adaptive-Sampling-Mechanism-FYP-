@@ -1,0 +1,193 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.000 --> 00:00:09.920
+Hi! This time, we will just go a little bit further than in the previous examples.
+
+00:00:09.920 --> 00:00:18.039
+When we click on a button, we will force the loading of the track, we will read the content,
+
+00:00:18.039 --> 00:00:25.550
+add cue listeners in order to trigger events when the video is played and we will display
+
+00:00:25.550 --> 00:00:35.180
+them on the side this time, and there are hyperlinks you can click and if I click somewhere, the video
+
+00:00:35.180 --> 00:00:44.010
+starts at the corresponding location and you can see that the cues are highlighted in black
+
+00:00:44.010 --> 00:00:51.780
+as the video advances. There are not a lot of subtitles at this location
+
+00:00:51.780 --> 00:01:03.600
+but... you can see that the transcript is highlighted as the video is playing.
+
+00:01:03.600 --> 00:01:13.439
+What have we added to the previous example? The first thing is that we just defined a
+
+00:01:13.439 --> 00:01:24.640
+rectangular area here: it is just a div with an id="transcript", and we added some CSS here,
+
+00:01:24.640 --> 00:01:35.780
+for locating the video and the transcript on the same horizontal position, so that the
+
+00:01:35.780 --> 00:01:44.799
+video can grow and the transcript too. We use floating positions, I put ‘float:left;’
+
+00:01:44.799 --> 00:01:56.960
+for the transcript that is on the right because if I put 'right' it will grow but it will
+
+00:01:56.960 --> 00:02:00.740
+be aligned on the right... and I prefer it on the left.
+
+00:02:00.740 --> 00:02:08.869
+We can give a look at the CSS, there is nothing complicated and this can scroll because of
+
+00:02:08.869 --> 00:02:18.470
+the overflow:auto; rule we added to the div. When we click on the buttons here, we call a
+
+00:02:18.470 --> 00:02:26.830
+function called loadTranscript(), instead of forceLoadTrack(0) and forceLoadTrack(1),
+
+00:02:26.830 --> 00:02:35.110
+this time we just ask for a particular language and, it's implicit, but we are also looking
+
+00:02:35.110 --> 00:02:45.060
+for track files that are not chapters. Let's have a look at this loadTranscript() function
+
+00:02:45.060 --> 00:02:52.670
+here. So the loadTranscript() function has a parameter
+
+00:02:52.670 --> 00:02:57.760
+that is the language. The first thing we do is that we clear the div,
+
+00:02:57.760 --> 00:03:05.750
+we are just setting the content to null and then we disable all the tracks: we set the mode
+
+00:03:05.750 --> 00:03:12.780
+of the all the tracks ‘disabled’ because when we click here and we can change the language
+
+00:03:12.780 --> 00:03:20.930
+of the transcript, we need to disable all track and enable just the one we are interested
+
+00:03:20.930 --> 00:03:25.080
+in. How can we locate the right track with the
+
+00:03:25.080 --> 00:03:31.319
+language? We just iterate on the tracks... this is the
+
+00:03:31.319 --> 00:03:40.340
+text tracks object... and we get the current track as an HTML element and as a TextTrack
+
+00:03:40.340 --> 00:03:48.099
+and using the TextTrack, we just check the language and the kind. And if the language
+
+00:03:48.099 --> 00:03:54.189
+is equal to the one we are looking for, and if the kind is different than chapters, then
+
+00:03:54.189 --> 00:04:00.590
+this is the track we would like. By forcing the mode to "showing", in case the
+
+00:04:00.590 --> 00:04:09.370
+track has not already been loaded, it will trigger (it will ask the browser) to load the file.
+
+00:04:09.370 --> 00:04:14.970
+This is where we test if the file is already been loaded, it is exactly the same test we
+
+00:04:14.970 --> 00:04:21.359
+did in the previous example. If the track is already loaded, just display
+
+00:04:21.359 --> 00:04:28.759
+the cues in sync with the video and if the track has not been loaded, display the cues
+
+00:04:28.759 --> 00:04:34.860
+after the track has been loaded. This is the same function as the getContent
+
+00:04:34.860 --> 00:04:40.850
+we had, except that we renamed it. This takes the track as an HTML element and
+
+00:04:40.850 --> 00:04:48.560
+the TextTrack as parameters. Let's have a look at how it is done.
+
+00:04:48.560 --> 00:04:54.699
+"displayCuesAfterTrackLoaded" just waits for the load event to be triggered and then
+
+00:04:54.699 --> 00:05:02.199
+it called display the cues function that will display the cues in sync.
+
+00:05:02.199 --> 00:05:09.130
+Either we call it directly if the track is loaded, or we know that the loading has been
+
+00:05:09.130 --> 00:05:15.810
+triggered if necessary, and we just wait in the load event listener.
+
+00:05:15.810 --> 00:05:22.039
+Let's have a look at what displayCues function does.
+
+00:05:22.039 --> 00:05:28.080
+The displayCues function is exactly the same as the readContent we had earlier.
+
+00:05:28.080 --> 00:05:36.039
+It gets the cue list for the given track, add listeners to the track. And instead of just
+
+00:05:36.039 --> 00:05:44.509
+displaying the plain text below the video as we did earlier, we will just make a nice
+
+00:05:44.509 --> 00:05:55.729
+format and we will add the id of the cue in the element we are creating.
+
+00:05:55.729 --> 00:06:02.530
+Let's have a look... I'm calling the inspector...  let's have a look at one of the list items here.
+
+00:06:02.530 --> 00:06:13.410
+You can see that in the list item we use the CSS class called cues, just for the
+
+00:06:13.410 --> 00:06:19.220
+formatting, for putting them in blue and adding an underline when the mouse is over,
+
+00:06:19.220 --> 00:06:30.479
+and we use the id of the cue in the list item. So the id is 10, and we also created an onclick
+
+00:06:30.479 --> 00:06:37.139
+listener that calls the function we will detail later, that is call jumpTo.
+
+00:06:37.139 --> 00:06:44.740
+And here is the starting time of the cue. What we did is that we created a list item
+
+00:06:44.740 --> 00:06:53.919
+with a given id and if we click on it, it has a click listener that will call the jumpTo
+
+00:06:53.919 --> 00:07:00.169
+with the time as the parameter. This is the trick, this onclick listener
+
+00:07:00.169 --> 00:07:04.780
+that will make the video jump to the right position.
+
+00:07:04.780 --> 00:07:17.690
+How did we create that? We use classical techniques. So we created a string called clickableTransText
+
+00:07:17.690 --> 00:07:27.229
+that is just an HTML list item with the id, the onclick listener that is built with the start time
+
+00:07:27.229 --> 00:07:34.440
+of the cue and we just add this list item to the div.
+
+00:07:34.440 --> 00:07:43.860
+This function here, addToTranscriptDiv, just adds in the DOM the HTML fragment.
+
+00:07:43.860 --> 00:07:54.710
+We can give a look at addToTranscriptDiv. It just does transcriptDiv.innerHTML += this text.
+
+00:07:54.710 --> 00:08:03.660
+The jumpTo method that makes the video jump... in order to jump to a particular time
+
+00:08:04.660 --> 00:08:11.180
+in the video we are just setting the currentTime property of the video element and we want
+
+00:08:11.180 --> 00:08:25.940
+it to start playing as soon as the jump is done. So video = document.querySelector("#myVideo") is just the video HTML element.
+
+00:08:25.940 --> 00:08:38.360
+I recommend to look slowly at the code, it is a bit longer because we added some formatting
+
+00:08:38.360 --> 00:08:46.019
+for the voices and so on, but it is not complicated. Take your time and look at how it's done....

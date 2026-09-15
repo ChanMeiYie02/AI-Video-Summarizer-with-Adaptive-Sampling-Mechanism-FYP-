@@ -1,0 +1,20 @@
+{
+    "id": "mw37z7eg3io45zpbjtofrxycznq3zisr",
+    "title": "Mining Frequent Closed Unordered Trees Through Natural Representations",
+    "url": "http://videolectures.net/gbr07_bifet_mfcu/",
+    "info": {
+        "author": [
+            "Albert Bifet, Telecom ParisTech"
+        ],
+        "published": "July 19, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 115,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1568
+}

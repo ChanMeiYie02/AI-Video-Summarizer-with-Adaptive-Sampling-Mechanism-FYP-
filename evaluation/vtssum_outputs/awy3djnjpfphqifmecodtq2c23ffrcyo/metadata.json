@@ -1,0 +1,22 @@
+{
+    "id": "awy3djnjpfphqifmecodtq2c23ffrcyo",
+    "title": "OER Research Hub Examines OER Impact at U.S. Community Colleges",
+    "url": "http://videolectures.net/ocwc2014_farrow_daly_oer_impact/",
+    "info": {
+        "author": [
+            "Una Daly, OpenCourseWare Consortium",
+            "Robert Farrow, Open University (OU)"
+        ],
+        "published": "June 23, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society->Public Policy"
+        ]
+    },
+    "num_segments": 6,
+    "num_sentences": 78,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1285
+}

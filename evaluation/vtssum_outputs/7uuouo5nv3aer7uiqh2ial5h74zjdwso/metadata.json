@@ -1,0 +1,20 @@
+{
+    "id": "7uuouo5nv3aer7uiqh2ial5h74zjdwso",
+    "title": "Nonlinear functional regression: A functional RKHS approach",
+    "url": "http://videolectures.net/aistats2010_kadri_nfraf/",
+    "info": {
+        "author": [
+            "Hachem Kadri, INRIA Lille - Nord Europe"
+        ],
+        "published": "June 3, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 196,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1638
+}

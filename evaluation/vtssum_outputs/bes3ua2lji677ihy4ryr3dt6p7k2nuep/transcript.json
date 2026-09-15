@@ -1,0 +1,182 @@
+[
+    {
+        "text": "Alright, so the second speaker and contender for our best paper competition is Jianjun Boo and his team from Xiangyang University and the paper that he will present is music recommendation by Unified Hypergraph, combining social information and music content. Good morning everyone. I'm so long time from two young University in China. It's my honor to stand here and give my percentage of our paper the title of my presentation is music recommendation by Unified Health Graph combining social media information and music content. This is a joint work with charging book changing Taiwan how leisure and show.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Quicker. To study multistep media information, the traditional method is content analysis by extracting features from media content. For example, we can extract safety features from image films and acoustic features such as M accesses from audios. With the emergence of social media communities, we can study these types of media by social analysis. The most popular's social media communities includes Flickr for photo sharing, last DOT FM for music listening and YouTube for video sharing in this online social communities there are multi types of social media information such as friendships, interest groups, resource collections, tags and so on. These types of social media information is very useful for me to study. Such as similarity, computing recommendation and cross media table. So in this work, we propose to fill the media content and social media information by our mathematical model cause hip graph specifics. Particularly, we focus on music recommendation problem in online music. Social community.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Is a friend of my presentation. First, let's look at music recommendations.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Problem. You know we have Hills among music available in music, social communities, but it's difficult to find music. We would potentially like, so we need music recommendation. Actually, some music social communities already have music recommendation service such as Last Dot FM.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Traditional musical recommendation method. Only use limits. Limited kind of social mission, for example, collaborative filtering only uses written information acoustic based method only used as acoustic features and hybrid method. Just converted to.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Actually there is risk social media information in music. Social communities. For example, in last DOT FM. This information includes friendships, members, seems listen, relations, having relations and inclusion relations among resources.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "The rich social media information is valuable for music recommendation. For example, to build users profiles. Two particular interest from your friends to recommend music tracks by albums or artists and so on.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Some paper trying to use traditional graph to model new social media information but failed to keep healthy relations in social media information. This is a tagging example. We use the bipartite graph to model 310 relations. Use one book, fast resource, one with Tech One bookmark screenshots, two with type tool and user two bookmarks resource one with Type 2 but only from this graph is unclear. Whether you're that old bookmarks, resource land, resources to or both, this graph cannot keep all the information.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So in this paper, we propose to use a unified help graph model, multi tap objects and health reasons ahead graph is a generalization of the traditional graph. Each is your help graph called hyper. Is is an arbitrary non empty subset of the vertex set. The left figure is the traditional graph model and the right figure is the type of model we can see that habit in the head. Grafton King can contain 1.2 points, 3 points, and so on, so we can model is how other relation bear hybrids in this way. Help groups can capture healthier relations naturally.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "This is the example we used the unified helpful model taking relations. We can see that the healthy relations among three types of objects can be naturally represented as triples. We don't miss any information.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Coming to constructing the unified Help graph, let's look at the example of last DOT FM. We have six types of objects and then types of relations here. Objects from the vertex set of the unified graph, and each type of relation corresponds to a certain type of hyper edges.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Specifically, we build a high praise corresponding to its Paris friendship.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Is.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Girl is listening.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Jason is tagging along.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Sen is Alba Moro.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "List and each tektrak simile.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Did he release and then we can get the unified hypergraph?",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "We modeled music recommendation problem as ranking on Unified health plan.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Setting a user as a query and.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "And producing checklist checks have more strong strong passes to the query. User will get higher ranking.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Scores these are locations of my.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Start and with the Wrap regularization framework for the cost function of ranking on unified health graph, details can be found in.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Our paper. Our proposal method is a general ranking framework. We can apply it to different tasks, for example.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "When we set a user.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "As a query and we can get to 60.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Let's party in this paper we only focus on music track recommendation problem.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Experiments we compare our algorithm with other three methods based on data set from last DOT FM. The similarities between tracks are computed based music content. The audio films are downloaded from web. The first compared method is user based collaborative filtering which only uses listening relations and the second one is acoustic based music competition with users, listen relations and snap reasons. The third method uses olive, missing outdated sex, different from our proposed method. We use traditional graph to model social media information. Here we call this graph. Answer The ranking on unified graph. We also compare compare the performances of our proposed method based on different subsets of information. The first is Emma is happy rates only uses listing reasons and natural essence. The second one is Ms Social uses all the social media information but not used semantic reasons. The last one use all the information.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "This is the performance comparison in terms of MP, F1 and ECG. It's clear that our proposed algorithm, significantly up from the other condition algorithms.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Acoustic based method works worse that becausw acoustic method includes the semantic gap and similarities between the Best Song. Hotels are not always consistent with human knowledge.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Self algorithm does not work well to. That's probably cause the check metrics in our data set is highly sparse.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Our proposal measured finish problems Ms Hyper. It only uses smart reasons among music tracks and listening lessons, but it works much better than acoustic method and say.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Measure. Comparing to Emma's social MISD uses smart relations among Czechs. Additionally, we found that using this acoustic information can improve the recommendation result, especially when we care. We only carry top ranking music tracks.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "The superiority of MSR already indicates that the hypergraph is indeed indeed better choice for modeling complex relations in social media information.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "In conclusion, we used the unified hypergraph model to fuse Multitype Media includes multiple social media information and music content. As can be seen, social media information is very useful for music recommendation and help graphs. Can cap capture held relations among various types of objects.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "OK, that's all, thank you.",
+        "start": 1015.0,
+        "end": 1044.0
+    }
+]

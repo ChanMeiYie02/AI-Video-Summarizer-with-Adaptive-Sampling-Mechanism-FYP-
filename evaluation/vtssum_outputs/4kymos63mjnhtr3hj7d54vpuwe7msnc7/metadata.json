@@ -1,0 +1,22 @@
+{
+    "id": "4kymos63mjnhtr3hj7d54vpuwe7msnc7",
+    "title": "Life beyond the pixels: machine learning and image analysis methods for HCS",
+    "url": "http://videolectures.net/icgeb_horvath_image_analysis_methods/",
+    "info": {
+        "author": [
+            "Peter Horvath, Hungarian Academy of Sciences"
+        ],
+        "published": "June 28, 2019",
+        "recorded": "May 2019",
+        "category": [
+            "Top->Data Science",
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 162,
+    "num_sentences": 735,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2309
+}

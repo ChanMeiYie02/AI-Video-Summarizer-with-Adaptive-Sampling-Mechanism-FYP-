@@ -1,0 +1,21 @@
+{
+    "id": "bsceh4lr6l4p764poidaxf7hkfzvbjp3",
+    "title": "In Vivo Veritas: Towards the Evolution of Things",
+    "url": "http://videolectures.net/ppsn2014_eiben_vivo_veritas/",
+    "info": {
+        "author": [
+            "A. E. (Gusz) Eiben, Faculty of Sciences, Vrije Universiteit Amsterdam (VU)"
+        ],
+        "published": "Oct. 27, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Robotics"
+        ]
+    },
+    "num_segments": 67,
+    "num_sentences": 696,
+    "num_clips_with_summary": 39,
+    "num_gt_summary_sentences": 65,
+    "ground_truth_summary_length_chars": 5376
+}

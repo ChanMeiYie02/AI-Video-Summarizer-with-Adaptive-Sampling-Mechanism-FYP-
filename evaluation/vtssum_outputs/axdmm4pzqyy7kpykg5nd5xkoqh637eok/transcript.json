@@ -1,0 +1,77 @@
+[
+    {
+        "text": "Messed up here because originally layout is like oh. I can you hear me now? Maybe it's not. Can you hear me now? Uh. Sorry for that. McAdam for the mess up things and manage their shopping, and originally I'm from UIUC, but I've tried Google Now and this is joint work with my pitches advisor, salary, hand, and finger from IBM.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "And the first thing, let's look at, we know that every almost everything is on the web. But whether the things on the Web I trust or not is our problem. The survey, which was done in late 2005. That 54% of Internet users trust the news or websites most of time, and unfortunately they regraded some internally 6% for websites that sell products. At is even lower four blocks, so it shows that the user really think that and trustworthiness problem on the web is a severe problem means that they cannot trust many websites. So we pray.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Post to solve the problem problem. We lost wickets means conformity trees. The problems like this giving a large amount of conflicting information about many objects provided by many websites. How to discover the true facts about every object. Let's look at an example. Here we look at many websites to get authors of the book rapid Contextual Design, and we can see that Power Wheels book says there's one answer and Work Noble Center, St Office. Some other books also says there also offers but slightly different names and so on. Different websites they have different information for this simple crowd. Although we tried true, we use a simple approach. We found the book on the web. We look at image of the book cover and we found that and this one is the right answer. But how can we do it automatically is our problem?",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "OK, let's go to the prom. It's like we have a lot of objects on the web, like OL two. They maybe say two books and we want to know their authors and we have some facts for every of the object like 2 versions too fast for one is respectful. Oh and every website will provide some facts like invisible websites and the questions that help pay back for each object like how can we know which?",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "And in order to solve the problem we utilized floor heuristics. Here first, while we assume that there is a unique one true fact for a property of an object which is a unique case and 2nd, why is that only true fact will appear to be the same or similar or different websites like a website? They say a book is written by Jennifer Reeder. Another mystery is written by Tributary Button there, although they are not exactly same very similar and. Then the four stacks are different. Websites are less likely to be the same or similar because and introduced by the human errors for titles and so on. So they are more relevant and website provides mostly text in the past will likely provide the true facts for other other objects in future. And these are reasonable assumptions and we can see that because the true facts are more resistant than the prospects that's likely have financials.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Here's all of you. We found his golf the confidence of the facts and the trustworthiness of the websites. We say. That fact has high confidence. It is provided by many trustworthy website and also a website is trustworthy if it provides many fans with high confidence. So it's like they interact with one another. So messages that initially we assume their website is equally trustworthy and we based on the distichs weakening. First, the confidence of facts from the trustworthiness of the websites and then for back. So finally, we can receive a week and achieve a stable state.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "And then we made an allocation of our approach so it's only happiness by concerning website has an effect size, the authorities higher consciousness of the House refer the high companies of the authorities and vice versa. Uh, however, is very different from inserting having access, so. The first difference is that we cannot use the information as they already have nasty Carson or website trustable ages provide accurate facts into the manifest. So we cannot somethings up, and so is the case for the conference events and also different facts of the same objects like Jennifer Widom, J. Reed and the influence they influence one another, so there's so it's more complicated than.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "The sort of happiness. And here's one example. We're still saying and then from there we can infer the person up. Sorry, the contents of the tax and any further back. I think many of the animations are not here so, But anyway we can infer back and forth back, and a trustworthy so website and that confidence affects. And let's ignore the formulas here because of.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Here's the difference between different facts. As I mentioned that in different back then they influence each other like one website in Cebu treated by medical William, another website, it says by interview.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So we know that you want to. The other is also likely to be true. However, if this is a several other highly trustworthy websites say that this book is actually written by Geoff Moment, then we know that both these sites are likely to be wrong.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "OK, let's go to the experimental results. Here we use approach to. To apply approach to data set containing 1365 books listed on a comparison shopping website and we randomly select 100 books from the we found the image of the book and we thought you know the true author and then we use.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Approach to find the authors of every book available available. The first approach is simple approaches and voting is like and for every book. Have a look at some facts there, which are the authors and we wish back in supported by most websites we think is the correct word. So however is not verified and the second code is also suspended. The acquisition much higher and the third approach is so that we get the names from Barnes, Barnes and Noble. Unfortunately Barnes and Noble is not angry here. We can see this accuracy is very low compared to real life so. Although first Noble, it actually ranked number one on Google. If we search book store, but we can see that his accuracy is actually pretty good. So.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "We want to see whether we can find more accurate websites than some search engines like Google. So here are the three websites found by us. Their accuracy is pretty high, although their coverage is pretty low there whatever books. So they uncovered that underneath. On Google we found that look at this other number one train goes there. The cover on the books. Unfortunately, accuracies represent relatively low, so we can see that and Google is is good at finding some large bookstores. Sandwich are popular, but in this book stuff may not provide the most accurate facts.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So, OK, here's the conclusions we studied. Accounting is very important problem because then people always want to find the true information instead of the copper wire. An hour feels that legalized the interdependency between the transverse into websites and companies affects fan. The good ones, the websites and facts. An we outline our system. Actually according to experiments, achieve the high accuracy. Most of the tasks.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "And his part and questions or comments? That's all.",
+        "start": 406.0,
+        "end": 435.0
+    }
+]

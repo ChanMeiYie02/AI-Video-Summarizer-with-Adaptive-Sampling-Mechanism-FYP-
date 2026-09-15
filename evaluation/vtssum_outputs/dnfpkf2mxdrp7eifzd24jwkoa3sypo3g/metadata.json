@@ -1,0 +1,20 @@
+{
+    "id": "dnfpkf2mxdrp7eifzd24jwkoa3sypo3g",
+    "title": "Learning bounded unions of Noetherian closed set systems via characteristic sets",
+    "url": "http://videolectures.net/icgi08_kameda_lbu/",
+    "info": {
+        "author": [
+            "Yuuichi Kameda, Tokyo Metropolitan University"
+        ],
+        "published": "Oct. 9, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 177,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 2667
+}

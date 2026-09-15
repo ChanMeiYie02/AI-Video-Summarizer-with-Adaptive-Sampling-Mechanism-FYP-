@@ -1,0 +1,21 @@
+{
+    "id": "so32nwo76hjsyhvzqx6birptiuuk466x",
+    "title": "Grammatical Inference",
+    "url": "http://videolectures.net/bootcamp2010_higuera_gi/",
+    "info": {
+        "author": [
+            "Colin de la Higuera, LINA, University of Nantes"
+        ],
+        "published": "July 16, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Text Mining",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 81,
+    "num_sentences": 739,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 47,
+    "ground_truth_summary_length_chars": 4812
+}

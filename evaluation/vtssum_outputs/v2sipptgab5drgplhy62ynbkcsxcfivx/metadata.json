@@ -1,0 +1,21 @@
+{
+    "id": "v2sipptgab5drgplhy62ynbkcsxcfivx",
+    "title": "Integrating Spreadsheet Data via Accurate and Low-Effort Extraction",
+    "url": "http://videolectures.net/kdd2014_chen_spreadsheet_data/",
+    "info": {
+        "author": [
+            "Zhe (Shirley) Chen, Department of Electrical Engineering and Computer Science, University of Michigan"
+        ],
+        "published": "Oct. 8, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 56,
+    "num_sentences": 127,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1505
+}

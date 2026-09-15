@@ -1,0 +1,22 @@
+{
+    "id": "2jt4mtghgha6gdr2ddfwmpfe3w4l4jir",
+    "title": "Opening Ceremony",
+    "url": "http://videolectures.net/kdd2014_opening_ceremony/",
+    "info": {
+        "moderator": [
+            "Ankur M. Teredesai, Institute of Technology, University of Washington Tacoma",
+            "Michael Zeller, Zementis, Inc."
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 69,
+    "num_sentences": 621,
+    "num_clips_with_summary": 40,
+    "num_gt_summary_sentences": 58,
+    "ground_truth_summary_length_chars": 7069
+}

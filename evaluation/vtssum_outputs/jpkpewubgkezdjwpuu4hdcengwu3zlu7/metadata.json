@@ -1,0 +1,18 @@
+{
+    "id": "jpkpewubgkezdjwpuu4hdcengwu3zlu7",
+    "title": "Transformation of educational process in digital era",
+    "url": "http://videolectures.net/Transformacija2019_orr_transformation_digital_era/",
+    "info": {
+        "category": [
+            "Top->Technology",
+            "Top->Technology->Educational Technology",
+            "Top->Computer Science",
+            "Top->Computers->Digital Media"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 374,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2693
+}

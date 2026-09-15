@@ -1,0 +1,20 @@
+{
+    "id": "mummlztjdqfngzgnq6etabq7lda5h4vy",
+    "title": "Topic Dynamics: An Alternative Model of Bursts in Streams of Topics",
+    "url": "http://videolectures.net/kdd2010_he_tda/",
+    "info": {
+        "author": [
+            "Dan He, Computer Science Department, University of California, Los Angeles, UCLA"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 191,
+    "num_clips_with_summary": 25,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 5084
+}

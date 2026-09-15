@@ -1,0 +1,20 @@
+{
+    "id": "t4funcgya7lf2zgt4c5ows7v6jkb6xys",
+    "title": "Bag Dissimilarities for Multiple Instance Learning",
+    "url": "http://videolectures.net/simbad2011_tax_dissimilarities/",
+    "info": {
+        "author": [
+            "David M. J. Tax, Faculty of Electrical Engineering, Mathematics and Computer Science, Delft University of Technology (TU Delft)"
+        ],
+        "published": "Oct. 17, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Instance-based Learning"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 265,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2219
+}

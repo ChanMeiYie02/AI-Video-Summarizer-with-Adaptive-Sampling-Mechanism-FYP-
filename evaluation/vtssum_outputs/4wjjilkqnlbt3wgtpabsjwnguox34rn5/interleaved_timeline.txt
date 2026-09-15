@@ -1,0 +1,95 @@
+[0.0s - 29.0s]
+Hello everybody, I'm going to talk about the importance of interoperability in European green corridors and this is in the context of a project that we're running with the European Commission.
+
+[29.0s - 58.0s]
+And this is an overview of the paper. First of all, I'm since we're talking about green cord or I will try to define what we mean by that. I'll talk about some relevant key performance indicators. Then try to connect interoperability with KP eyes. But according door benchmarking and then try to draw some conclusions. So. There's been a lot.
+
+[58.0s - 87.0s]
+Let's talk about green corridors and the question is what is what do we mean by it? This is this may seem like an easy question, but that's probably a very easy question. In a sense, we are trying in this project that I'll describe in a minute. We're trying to help the Commission and and and industry define exactly what we mean by that. So at a very high level, there are some definitions. This is definition by the European Commission. It's a European concept Delong denoting long distance freight transport corridors where you have advanced technology and commonality that are used to achieve energy efficiency and. Reduce environmental impact.
+
+[87.0s - 116.0s]
+There's another definition by the Swedish Ministry of Transport, by the way, Sweden and Scandinavians are very advanced in this area. Spending a lot of effort talking about green corridors, they have some some corridors that they are there actively pursuing. And being green is something very important to them, so this is their definition. What are the characteristics you have sustainable logistics solution? Integrated logistic concept harmonized system of rules? You have national both national and international goods traffic on long transport stretches effective and strategically placed. Transshipment points infrastructure. And then a platform for development and demonstration of innovative logistics.
+
+[116.0s - 145.0s]
+Shows so dealing with all this is this what is known as a super green project? The full name is supporting EU freight transport logistics action. Plan on on green corridors issue issues. It's in the context of.
+
+[145.0s - 174.0s]
+57 and this is a list of objectives. Support the recommendations on green corridors to the freight transport logistics spectrum practice plan. This is a natural plant that was adopted in 2007, but then you had other documents after that. The main the main example is the recent 2011. The new White paper and Carriage Co. Modality for sustainable solution performance benchmarking of green corridors based on selected KP eyes covering all aspects that are related to transport, operation and infrastructure. Then have a program of networking activities among the stakeholders are many stakeholders here.
+
+[174.0s - 203.0s]
+Ranging from ports to transport a very those shippers, environmental organizations, etc. I have a program of dissemination of research results. They live up some studies that address topics that are important. Policy recommendations, so one of the most important parts of this project. And those are recommendations of what new research should be conducted.
+
+[203.0s - 232.0s]
+So this is I don't know if you can see this is a list of the constructive members. There are 22 partners, ntuh the coordinator model to 22 partners from 15 European countries covering all surfers. Also first modes. Air transportation is not is not covered here.
+
+[232.0s - 261.0s]
+Is on figures on duration and budget. We are slightly beyond the midpoint right now. Look, what are the projects?
+
+[261.0s - 290.0s]
+I'm not going to go into details. Is the work work package structure or have several work packages and.
+
+[290.0s - 319.0s]
+One of the main things that we we got involved in the studying is the KPI's key performance indicators. So we have come up with these 5 high level groups. I would say efficiency, service, quality, environmental, sustainability, infrastructural sufficiency and social issues, not only CO2. There are other things also if.
+
+[319.0s - 348.0s]
+For example, an operation is not profitable. Nobody is going to use the corridor. OK, so you have to bring that also on board and. On the left is the high level. On the right is the lower level. Efficiency, you mean absolute unit course, relative link or service quality. There are several components, transport time, reliability, frequency of service. Whether or not you have ICT applications, cargo security, safety and then you have environmental, KP eyes, CO2, Sox, NOx and particulate matter. Then you have infrastructural sufficiency men. Some social issues like land use, Traffic Safety or noise. We spend a lot of time trying to figure out which of the of these things are more important than the others. So we had an extensive consultation process among stakeholders and had several regional workshops.
+
+[348.0s - 377.0s]
+And finally we came up with this. Figure where the green KP eyes are the ones that we. Really want to to consider like a relative course transport time, reliability, frequency of service, CO2 emissions, stocks emissions and then you have the. A lower tier which is in green in yellow or orange. Like God will say, for example, Kroger security things like that. And then there's one that isn't ready. Which would we don't really care.
+
+[377.0s - 406.0s]
+Enter Interoperability is a key element of the EU transport policy in the strict sense. Here and the thing that is perhaps more important terms of the corridors is focused on rail transport, but in the broad sense it applies to all modes into the supply chain as a whole.
+
+[406.0s - 435.0s]
+So I'm going to talk about rail a little bit. Well, it's a. It's a patchwork in Europe, I mean at least four major gauge systems. At least four major electrification system, at least 20 train control systems, virus clearance systems, incompatibilities even between systems that are similar in other respects. For example, local model pantagraph, some anywhere in same electrification system, player different that makes.
+
+[435.0s - 464.0s]
+Things very difficult, so there is this Interoperability Directive 5057 of 2008. To establish the conditions to achieve interoperability within the Community rail system. And then you have this directive as of 2010, superseding the previous directive on the European High speed rail system. So there are. There are things that concern high speed rail and conventional. Play system.
+
+[464.0s - 493.0s]
+So then what we what are known as technical specifications for interoperability that concern the list of things that I list here. , Command and control signal in telematics applications, freight wagons noise problems.
+
+[493.0s - 522.0s]
+That said, the. A key component of interrupt building rail is what is known as ear TMS the the so called European Rail traffic Management System. Because there are many different control systems, for example, the well known talleys train set between Paris, Brussels, Cologne and Amsterdam have to be equipped with several different systems of train control. OK, So what we are TMS is trying to do is trying to bring this into a kind of universal common denominator. There are several components. One is the. ET CS Andrew Bentrem control system. Automatic train protection system to replace the existing national systems. And then there's GSM R radio system for providing voice and data communication between the track and the train based on standard GSM etc etc.
+
+[522.0s - 551.0s]
+What is the relevance to drink the green corridors? Well, it isn't paramount importance be cause if you take a look at the at the KP eyes that I talked about before, they are significantly influenced by whether or not the recorder can function smoothly or not. So, and actually we speculate that even a modest moderate gain in this Department who translating significant gains for the attractiveness of rail vis a vis other modes which are less anfar, environmentally friendly. For example, Rd transport. What is the impact of interoperability?
+
+[551.0s - 580.0s]
+APIs here this is. This is of course, the object of a detailed analysis. I can only say something qualitative at this point. For example, the importance on the relative court, KP eyes high also on the transport time on the reliability. On the frequency by Sky to moderate on the emissions KP eyes high high to moderate. OK, because this KP eyes are grams of CO2 per ton kilometer. So if you if you improve the denominator you get a better KPI.
+
+[580.0s - 609.0s]
+And in terms of interoperability and other modes itself, equality equal importance given the drive for Co modality. And now you have interoperability in in conventional technology and also in the building my city. And I would say that a quarter with little or no wonder ability is not cannot be green. You have to have interoperability in order to be able to have good KPI's like the ones that are shown.
+
+[609.0s - 638.0s]
+Before now, in terms of work on this project we have. We are currently working on have selected 99 corridors across Europe that achieve a good geographical balance. I'm not sure if you can read this list, but in terms of the European map they are.
+
+[638.0s - 667.0s]
+I'm showing in this in this map here, and it's actually quite an interesting coincidence that this map looks.
+
+[667.0s - 696.0s]
+Quite similar to the the map of the frederi oriented Rail corridor network that was produced by by the European Commission last year. The one in green is the freight oriented corridors and the one the one in red and one green is the Super green quarters.
+
+[696.0s - 725.0s]
+And actually, this is the rendition of the Corridor Mapping Metro format, which makes it easier to read.
+
+[725.0s - 754.0s]
+And what we have done there is we have done some benchmarking so we have gathered some data to try to figure out some of the KPI's. In these corridors and and these are some. Some partial.
+
+[754.0s - 783.0s]
+Pulse now we have a work package that deals with green technologies. Here we mean the conventional technologies like fuels, vehicles, cargo systems, things like.
+
+[783.0s - 812.0s]
+And then another group markers that deal with actually technologies. I'm going to try to see how by suitable choices of these you can improve on KP eyes. If you are into.
+
+[812.0s - 841.0s]
+Within this project, that is the way to to get connected. You can send an email to this this this email that they can put you automatically in the list of people who are. Notified about what we're doing. There is a website that actually all all of the deliverables that are. I have cleared the. EU review process. Posted on the website.
+
+[841.0s - 870.0s]
+Quatar this is this is a list of public documents. Can be downloaded.
+
+[870.0s - 899.0s]
+Also there we have a page and LinkedIn and Facebook. But whatever that is worth.
+
+[899.0s - 928.0s]
+And thank you very much. This is what I had to say.

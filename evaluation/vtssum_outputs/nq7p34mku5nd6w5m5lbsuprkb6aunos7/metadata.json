@@ -1,0 +1,20 @@
+{
+    "id": "nq7p34mku5nd6w5m5lbsuprkb6aunos7",
+    "title": "A Dirty Model for Multi-task Learning",
+    "url": "http://videolectures.net/nips2010_jalali_dmm/",
+    "info": {
+        "author": [
+            "Ali Jalali, University of Texas at Austin"
+        ],
+        "published": "Jan. 12, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Regression"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 162,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2119
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2e7hdruw3sdhbfphc4ohhqp5vcnyznqq",
+    "title": "A Scalable Pattern Mining Approach to Web Graph Compression with Communities",
+    "url": "http://videolectures.net/wsdm08_buehrer_spma/",
+    "info": {
+        "author": [
+            "Greg Buehrer, Microsoft Research"
+        ],
+        "published": "Feb. 25, 2008",
+        "recorded": "February 2008",
+        "category": [
+            "Top->Computer Science->Web Mining"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 209,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1647
+}

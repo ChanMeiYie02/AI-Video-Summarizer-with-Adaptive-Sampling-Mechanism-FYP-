@@ -1,0 +1,29 @@
+{
+    "id": "2eauxz26ijalx6qv5tgev2zxkxa5i5xb",
+    "title": "Welcome statements given by the representatives",
+    "url": "http://videolectures.net/rtd09_welcome_wsgbtr/",
+    "info": {
+        "author": [
+            "Hrvoje Meštrić, Ministry of Science, Education and Sport, Government of the Republic of Croatia",
+            "Danica Ramljak, Ruđer Bošković Institute",
+            "Anneliese Stoklaska, Austrian Federal Ministry of Science and Research",
+            "Vedran Batoš, University of Dubrovnik",
+            "Peter Volasko, Ministry of Higher Education, Science and Technology, Government of the Republic of Slovenia",
+            "Bernhard Pelzl, Joanneum Research",
+            "Boris Pukl, Jožef Stefan Institute"
+        ],
+        "chairman": [
+            "Neven Žarković, Ruđer Bošković Institute"
+        ],
+        "published": "June 19, 2009",
+        "recorded": "May 2009",
+        "category": [
+            "Top->Science"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 588,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1082
+}

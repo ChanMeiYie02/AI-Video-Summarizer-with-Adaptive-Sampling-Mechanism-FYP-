@@ -1,0 +1,20 @@
+{
+    "id": "eafi7whwq74i2qvdkp3lii4wr6ldoewe",
+    "title": "Practical Statistical Relational Learning",
+    "url": "http://videolectures.net/icml07_domingos_psr/",
+    "info": {
+        "author": [
+            "Pedro Domingos, University of Washington"
+        ],
+        "published": "June 21, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Statistical Learning"
+        ]
+    },
+    "num_segments": 65,
+    "num_sentences": 895,
+    "num_clips_with_summary": 45,
+    "num_gt_summary_sentences": 84,
+    "ground_truth_summary_length_chars": 8905
+}

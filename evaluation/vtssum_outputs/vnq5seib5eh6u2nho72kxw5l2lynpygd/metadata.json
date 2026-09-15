@@ -1,0 +1,20 @@
+{
+    "id": "vnq5seib5eh6u2nho72kxw5l2lynpygd",
+    "title": "Manifold Tangent Classifier",
+    "url": "http://videolectures.net/nips2011_dauphin_manifold/",
+    "info": {
+        "author": [
+            "Yann Dauphin, Université de Montréal"
+        ],
+        "published": "Jan. 25, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Manifold Learning"
+        ]
+    },
+    "num_segments": 46,
+    "num_sentences": 157,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1363
+}

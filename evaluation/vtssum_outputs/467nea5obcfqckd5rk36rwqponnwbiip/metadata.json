@@ -1,0 +1,22 @@
+{
+    "id": "467nea5obcfqckd5rk36rwqponnwbiip",
+    "title": "Corpus-based Wordnet Development and plWordNet as a Relational Semantic Dictionary",
+    "url": "http://videolectures.net/WNLEXworkshop2018_piasecki_plwordnet/",
+    "info": {
+        "author": [
+            "Maciej Piasecki, Institute of Informatics, Wrocław University of Science and Technology"
+        ],
+        "published": "July 24, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Humanities->Linguistics->Lexicography",
+            "Top->Computer Science",
+            "Top->Data Science"
+        ]
+    },
+    "num_segments": 49,
+    "num_sentences": 345,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 4675
+}

@@ -1,0 +1,20 @@
+{
+    "id": "6gnrh2asik5s6duvneatmm2jyybqb5jp",
+    "title": "Deep Neural Network Based 3D Articulatory Movement Prediction Using Both Text and Audio Inputs",
+    "url": "http://videolectures.net/multimediamodeling2019_yu_deep_neural_network/",
+    "info": {
+        "author": [
+            "Lingyun Yu, University of Science and Technology of China"
+        ],
+        "published": "Jan. 29, 2019",
+        "recorded": "January 2019",
+        "category": [
+            "Top->Computers->Multimedia"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 120,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 449
+}

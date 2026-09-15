@@ -1,0 +1,86 @@
+[0.0s - 29.0s]
+I will describe to you.
+
+[29.0s - 58.0s]
+IPM projects panacea in open air. I will explain also what they did and what they are important for clearing in the interlude section I will show the solution in Clarion for the same communities targeted by these two projects. Finally I will talk about some technical implementation and future works.
+
+[58.0s - 87.0s]
+Panacea motivational panacea are related to overcome the language barriers through technological means. This is especially true for machine translation system and for their significant impact on management or multilingualism in Europe, automatic translation is required by millions of cities all across Europe. Panacea propose a solution based on a factory of different language resource by means of platform. To automate all stage involved in the acquisition, production, updating, validation and maintains of language resorts. A side effect panacea for Stew in interoperability among language technologies and now lose less skilled people to use language resource technologies.
+
+[87.0s - 116.0s]
+Benicia created different pipelines which cover natural language approaches. Task from corpus creation tool, Axle acquisition technologies pipelines are executed using a workflow platform which concatenates its each atomic soap service in a more complex chain.
+
+[116.0s - 145.0s]
+In the project consortium, some partners of Panacea already played important role in Clarin. Preparatory phase back to the 2008. This part is US leader in their sector as well. Benicia, focusing on small medium enterprise in machine translation area as well on expert in human language technologies. Panacea fosters interoperability, interoperability, thanks to graph graphical notation format, which, as the selected input out format for the. They offered the suit surface. Punisher uses standard as LMF and Eagles and punish addresses. The csensich issues. This last three points are very important for crowding too.
+
+[145.0s - 174.0s]
+Open Era Opener is a conet opener is connected to X extraction of semantic analysis. Opinion My Nan named entity recognition and collection in reviewers, touristic places, especially hotels and restaurants. Opera opener reorganize recognize such results as valuable one so it focuses on reusing or creating Lexa and tool to extract information from such resorts. In conclusion, opera. Improve the technologies for above mentioning tax tasks to the use of resources, including dedicated his hour relax and an appeal tools.
+
+[174.0s - 203.0s]
+Open air created difference pipeline which cover NLP task from Lexicon creation to production of advanced annotation for sentiment analysis. Opinion My Nan named entity recognition. This pipeline are executed using rest APIs which put each atomic rest service in a more complex chain.
+
+[203.0s - 232.0s]
+In the project concerts, when there were small immediately price and some really important academic players in this NLP task area as a panacea. Even open air target is small immediate price. Open at foster interoperability thanks to cough Jordan notation for match. Which were they selected? Input out format for rest services. Opener uses standard as LMF and upper addresses. License issues as above.
+
+[232.0s - 261.0s]
+Both projects implement interoperability and exploit available standards. Both projects use sort of workflow to process linguistic data. But let's note that Panacea involves human language technology communities more than open air, and a consortium of panacea is closer to Clarion stuff then open air. So it's not a surprise that open air is more interesting science. The aim of Clarion is to involve more users and different community.
+
+[261.0s - 290.0s]
+If we go and visual or virtual language survey Teran perform a simple search, we can see that there is anonymous genetix between machine translation and the other NLP tasks. These two communities seem to be differently, is represented in the metric in the number of resources available through VL. Oh, it's important to confirm that the search has been made. Simulating are not expert. User wants to know whether there are some web services. An lexical resources about all of these tasks.
+
+[290.0s - 319.0s]
+It seems that we have to push the open air community, yes, but how can we involve the community? At least according to different parts, parts, political, air, organizative and technical, and we focus on the second one, the technique.
+
+[319.0s - 348.0s]
+Before approaching the technical aspect. Let's go back to the project and let's see what they have in common. Many tools are common, like program which panacea transforming sub service while opener in rest sub service as a chessable from graphic interface open Air offers pop both post and get API. APIs both project use workflow in Gene Taverna for Panacea and the list of endpoints which can be concatenated in open air. Coffing graph guaranteed interval interoperability for open air an para SER. So. This computer. Sorry. One second, the computer froze again. Sorry for that. Thank you.
+
+[348.0s - 377.0s]
+OK. Here is the workflow panacea. And.
+
+[377.0s - 406.0s]
+In here they work for open air.
+
+[406.0s - 435.0s]
+In the previous life we have described the project including the. OK. Problem. OK. OK. In the previous slides we have described the project including their political and technical aspects. Now it's time to see whether Panacea opener should meet Clarin. The question is what made happen when panacea an open air meat Clarin. The idea is that the more user can be involved in using these additional services. Make this service also part of web leak and Wan and Language Resource Switchboards will eventually attract more users.
+
+[435.0s - 464.0s]
+Here is some links of our services.
+
+[464.0s - 493.0s]
+For the next slides, I'll describe the strategy we followed to move panacea and open air services into Claris to Clarion arrest environment. Is it a request to be part of Web leaked and the language resources which? But so the goal is clear. Create a rest services and APIs but we have to take in mind that while opener is easily rapid into rest, the context panacea is not. We need to play around the soap services before christify them.
+
+[493.0s - 522.0s]
+Foot panacea, we have two solution. First alternative uses soap soap APIs provided by the same software which is called subclub. Then transform common line into super services second alternative. Second alternative, start from scratch. This means that we start from the original common line tools and use a different framework to obtain rest and the point. So far so good. There are pros and cons for bots solution. For option one supplied transforming the common line to soap do offer API's to manage it. Soap service so they can be executed by a program that's a pro font. Unfortunately such APIs are pieces of the soft that must be managed, and that's a con.
+
+[522.0s - 551.0s]
+For option two to use a state of the art tools to transform a script to rest is a prop. Since we are aligned to the technology and supported by the by many developers, but it needs to replicate endpoints. I mean we have to maintain the original soup and there and then you rest endpoints probably replicate shown of server and these are cons we consider option to not economical for our purpose. Here is a.
+
+[551.0s - 580.0s]
+An overview of two projects.
+
+[580.0s - 609.0s]
+The rest. First use drop wizard. Second, creating multiple endpoints. And use dockets to publish the result.
+
+[609.0s - 638.0s]
+Epona share service accept text. Even a struct from a graph file and produce an active format which can be converted into a graph align using a dedicated convert in open air coffee is used as input and output format developer manager and enlarge the input the output format.
+
+[638.0s - 667.0s]
+Essentially, the roughly play with the input and output formats, it is able to trust for plaintext into a valid TCF. This year for the format used in a web leaked and vice versa. The same for Tokyo annotation format. There there is that. With this wrapper you can provide text TCF and cough to the services. Panacea needs plaintext opener cough, but Clarin F2 to do. This but Clarin F not to be so strongly limited. They rapid helps in transforming one format into the other. In this way, panacea and open air can be used with plaintext, TCF and cough.
+
+[667.0s - 696.0s]
+Here is the link of the readme file. Where we can? Take more details.
+
+[696.0s - 725.0s]
+And here is the link for Panacea.
+
+[725.0s - 754.0s]
+All the code is available in in Git and the Docker image and images are in our repository in our reported and in the our Institute. In the Hour Institute repository and Doc app.
+
+[754.0s - 783.0s]
+Digit code contains more than the service described it it is also skeleton to wrap other services. What is needed to do is to intercept the output or the service an convert into an internal format which will be future managed at it. For chronic we used Richard to manage Docker image.
+
+[783.0s - 812.0s]
+And finally up. We have to update the list of services offered by Klarin so they can be used and distributed. Contact language resources which worked to test our service and with up as E MDI file for web linked. Thank you.
+
+[812.0s - 841.0s]
+Thank you so much for me. No. In the Netherlands, might have a humble made a application or I don't know exactly how to call it. It's called the clam. It's also a tool to make an existing command line program into a web service and also generates automatically kind of web interface that you can also use it as a web application with a very simple interface where you aware of this and did you consider using that as one of the possible options? You mentioned two strategies and you chose one and this. Good, I think fitted it's second strategy that you did not choose. But yes, I just want to check whether you are aware of it and and whether you consider it and if you are not aware it of it and I recommend you to look at it. Ricardo, he is my quote or recut. The worse is a joint is joint work. We were aware of Clam, but is there as you said, the N is actually the second option, so we need to replicate in some sorts on all the servers that we have because we have end points for Panacea, theater is used by the old project that we are we were involved, so we decided that. For this experiment is better to do using what we have instead of redoing from from scratch. However, the pro of using Clammer using state of the art towards is to be more consistent with the new technologies, so this is that's all. So can I use these services already in replica? If I go to a website or are they nuts running there yet? Sorry can I use it, can you? We have all the way. So they are not. This is a story of promises, but we are quite positive of having such services. Am before the end of the year because we are. We did the same experiments with the same strategies we drop with the Jersey and justice stuff and it is integrated. It is integrating Web Listen languages, resource switch ports. So since they arrested and points are the same, we are quite confident to be it being happy for that for you to use it. Alright. OK, thank you know I have a question. We know we still have time. You are quite detailed on the technical aspects, but can you give us an overview in functional terms? Where are the kind of tools that will be available as web services when you are finished with this task that you set for yourself? This service as are already available at our server in in Italy and the next step is to integrate these services in. Who objected and the author. Yeah yeah, but that was not my question. It was what kind of tools do you have? Their functional, functional terms. Tokenizers parsers. We have. Tokenizer post Agra and Captain Jean converter. This is 3 services that we have. Thank you. OK alright, let's thanks our speakers. Thank you.

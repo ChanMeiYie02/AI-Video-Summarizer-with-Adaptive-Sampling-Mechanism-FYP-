@@ -1,0 +1,20 @@
+{
+    "id": "ovgovtfsnczepmmilixtpumvd7pud6lp",
+    "title": "Homo heuristicus: Why biased minds make better inferences",
+    "url": "http://videolectures.net/ijcai2011_gigerenzer_heuristicus/",
+    "info": {
+        "author": [
+            "Gerd Gigerenzer, Max Planck Institute for Human Development, Max Planck Institute"
+        ],
+        "published": "Aug. 23, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 51,
+    "num_sentences": 666,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 913
+}

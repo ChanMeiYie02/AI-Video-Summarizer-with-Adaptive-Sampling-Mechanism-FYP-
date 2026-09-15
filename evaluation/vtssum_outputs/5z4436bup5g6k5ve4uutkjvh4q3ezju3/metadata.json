@@ -1,0 +1,21 @@
+{
+    "id": "5z4436bup5g6k5ve4uutkjvh4q3ezju3",
+    "title": "STCU Science Research Fields Overview",
+    "url": "http://videolectures.net/tict08_blume_srf/",
+    "info": {
+        "author": [
+            "Yaroslav Blume, Institute of Cell Biology and Genetic Engineering, National Academy of Science of Ukraine"
+        ],
+        "published": "April 3, 2008",
+        "recorded": "March 2008",
+        "category": [
+            "Top->Biology",
+            "Top->Science->Scientific Research"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 111,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 3370
+}

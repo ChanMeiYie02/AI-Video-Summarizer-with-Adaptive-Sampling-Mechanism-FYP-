@@ -1,0 +1,21 @@
+{
+    "id": "pbr25ulqt2zslchcm7272ied3xlfpi63",
+    "title": "Unsupervised Rank Aggregation with Distance-Based Models",
+    "url": "http://videolectures.net/icml08_klementiev_ura/",
+    "info": {
+        "author": [
+            "Alexandre Klementiev, University of Illinois at Urbana-Champaign"
+        ],
+        "published": "Aug. 29, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Information Retrieval"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 233,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 43,
+    "ground_truth_summary_length_chars": 5330
+}

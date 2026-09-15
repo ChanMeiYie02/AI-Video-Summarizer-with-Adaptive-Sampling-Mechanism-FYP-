@@ -1,0 +1,21 @@
+{
+    "id": "jecoxfu75z4yramqquqrqgx7n5zrq4ge",
+    "title": "Estimating Parameters and Hidden Variables in a Non-linear State-space Model of Regulatory Networks",
+    "url": "http://videolectures.net/pesb07_quach_epa/",
+    "info": {
+        "author": [
+            "Minh Quach, Université Evry Val d'Essonne"
+        ],
+        "published": "April 4, 2007",
+        "recorded": "March 2007",
+        "category": [
+            "Top->Computer Science->Bioinformatics",
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 157,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 2194
+}

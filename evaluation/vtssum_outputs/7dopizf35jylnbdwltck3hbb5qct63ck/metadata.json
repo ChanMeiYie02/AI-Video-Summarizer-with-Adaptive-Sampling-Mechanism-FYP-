@@ -1,0 +1,20 @@
+{
+    "id": "7dopizf35jylnbdwltck3hbb5qct63ck",
+    "title": "Conceptual Clustering and its Application to Concept Drift and Novelty Detection",
+    "url": "http://videolectures.net/eswc08_damato_cca/",
+    "info": {
+        "author": [
+            "Claudia d'Amato, University of Bari"
+        ],
+        "published": "Aug. 16, 2008",
+        "recorded": "June 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 222,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 5001
+}

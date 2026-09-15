@@ -1,0 +1,132 @@
+[
+    {
+        "text": "I'm going to present some work which has been done together with the AUA go and Zora Belison here in Montpellier and I'm happy that horror is here today so he would join me at the end of my presentation to take your questions. He's the guy who has done all the development in all the experiments, so probably he's in a good position to answer some more technical and more picky questions that you might have. So. Yeah, I'm going to talk about ontology matching by taking a kind of an inside out perspective for stance to this problem in the sense of I'm not going to present to your particular ontology matching system and explain to you how and why it is better than the state of the art. We have seen a lot of that in the past years and Luckily so, but instead I'm going to give you kind of a more global view on what are the difference. Components of an ontology matching system that are desirable that we have, and how these components combine with each other, how they interact with one another and how these interactions influence at the end. The overall quality and the overall performance of the of the matching system. So we thought that time has come to look into this kind of interactions. More methodological, an engineering point of view, rather than introduce just performance in quality results of a particular system.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So. In the beginning I will start by presenting to you what we consider to be a generic framework for ontology matching. And for ontology matching evaluation. And further on, I will go through a series of experiments that we have done in order to test the interactions between the different components. So I have to say already here that the paper on this on which this talk is based is very technical and very engineering oriented, so it's full of experiments in a lot of discussions, and I'm aware that this is a hard hard task to present this orally in 20 minutes, but I will try to do my best with please give a hint on the main directions that we have tried to investigate and probably this will introduce you to go and have a look at the paper. And into the discussions.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So intelligent matching problem, I suppose that we are all aware or is about and we're all acquainted with this challenge and this problem.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Which is Bill now stems from the fact that intelligence. Are created in a decentralized and strongly human bias manner which leads to the existence of many ontologies which tend to describe the same or similar domains or intersecting domains. Of knowledge. And this is where the phenomenal photology heterogeneity comes from. From the fact that we have these mismatches between intelligence and these mismatches can be observed to many different levels, right? We can we can have syntactic heterogeneity, which is about actual formal languages in which intelligence are defined. Or we could have a terminological heterogeneity about differences in the vocabularies and labeling conventions and so on and so forth. Structural heterogeneities, etc. So the name of ontology matching system is to consolidate these heterogeneous ontologies by expliciting the semantic relationships between their entities in an automatic manner, preferably.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So in a generic ontology matching framework, we would assume that we might have something like that. So we have a our system which is here in this lower left corner and then at the input we have two ontologies, assorted source, ontology and the target Ontology which are loaded pre processed transformed in a certain input format and feed it into the. Ontology matching system. So what's inside of this ontology matching system? Um? We may encounter these four components, a terminological measure which deals with terminological heterogeneity. So dealing with all kinds of mismatches which stem from differences in the vocabularies in which the intelligencer defined for the naming conventions that are used to label concepts, relations, properties, etc. Then we have a structure based measure which. Which would take input from the terminological matter, and is based on exploring structural relations within the intelligence in order to improve the matches that have been found that have been discovered already in the previous step by the terminological matter. Further, we might have a semantic component, so this is a semantic based matcher which services kind of filter which refines already found already discovered alignments. By applying some reasoning techniques or some logics in order to discover inconsistencies and eliminate them or infer some missing correspondences. And it's typically could take input from either a terminological or the structure based measure. And Additionally to do these three components like mature entities, we could have a mapping selection component which serves as a filter on the on the overall, like it's fixed threshold, which defines the minimal score of similarity between two entities so that they are passed by the algorithm, whether it be the terminological measure, structure based measure or semantic measure. And of course, these components would be interacting with all of these three other components in a in a ontology matching system. So there are plenty of different algorithms which implement it which are implemented within each of these components. Many similarity measures that exist that have been applied, and at the end there might be some kind of a global algorithm which applies all these components and combines them together in a certain manner in order to produce an alignment. OK, so this is the output of the matching system. The question is how good an alignment heavy produced, and for that reason we have to apply some evaluation techniques. We assume that there exists a reference alignment for our two input ontologies to which the produced alignment is compared, and standard information retrieval based framework. We calculate some evaluation measures for the computed alignment. Standard League.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "These are precision recall and the global F measure. So in our experiments we have computed these these measures on end tests for each data set. Or does that mean within each data set a test is defined as just a pair of ontologies? Have different knowledges that feed it into the matching algorithm and open alignment is produced if we take two different ontologies from the same data set. There we have another test and usually in a data set we might have like between 2030 or 100. So whatever different tests and we of course assume that there exists a reference alignment for. This ontologies that are part of this test. So.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Now we'll go. Through the experiments that we have done in this. Four different studies. The first one explores the relation between the mapping selection module and the terminological measures. Then a similar experiment has been done to evaluate the relation between the mapping selection. Would you land determine the structural based measures? Then we have done experiments by exploring the impact of noise produced from one measure which is used as an input to a further measure. So we have been introducing noise into terminological measures in order to look at the how this influences the performance of a structural measure which takes input from the terminological match. And finally we have put all these components together in one big experiment where terminological. Structural semantic measures are compared with respect to the mapping selection, would you?",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So in the first experiment we have studied the interaction between mapping selection and terminological measures, and we have been particularly interested in the behavior of global terminological methods as compared to local ones. I'll come to that in a minute. And the data set that we have used in order to do these evaluations is the conference data set from the ontology alignment Evaluation Evaluation Initiative, and this one. This data set is very appropriate for this kind of task because it contains real world ontologies that are not too big, but they are very heterogeneous on Terminologically speaking and they describe the same domain. The domain of conference scientific conference organization.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So as I said, we studied how local methods perform as opposed to global ones. As local similarity, local terminological methods. These are methods. Just look at the individual similarity of entities and we have used representative methods from two through three big groups. Edit Distance based methods. Token based methods. So these are methods that decompose labels into token 1st and then compare the similarity of their tokens and hybrid methods that also use in addition to string based techniques. They use some linguistic information whether it will be internal or external related to the entities that are of interest. Global methods combine local ones in order to produce correspondences between the. But in the end it is. And the simplest way of providing such a combination of local methods will be just to take some kind of a linear combination of these methods of the results of the set of measures, local measures. And this is what the first 2 methods you see here do. Some more advanced techniques would apply machine learning techniques. For example. This is also state of the art approaching the intelligent matching field in which. The matching problem is transformed into machine learning task, or rather a classification task. We have a pair of entities from two different ontologies which are seen as a data instance which is labeled either as a match or non match in a training in the training set. And the variables which the variables which define or describe this data instance. Our similarity measures local similarity measures. OK, so this is a way of constructing a classification framework in which a machine learner can be trained and then perform classification and then be tested on unseen data. We have used different learning data from the data that we have used to test the learning algorithm of course. And finally we have also implemented one additional global method which is based on information content of the concept within each single ontology and it is very efficient for dealing with compound compound labels. Labels containing multiple tokens. Which are related in certain way. Across the ontologies. So.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Here are the results of this first experiment you see on the X axis. The variations of the filter threshold and the F measure on the Y axis, and all these methods that we have seen have been put in this experimental setting. Not surprisingly, we see that the global methods outperform the local ones. I am not going to go into details unfortunately because the time is quite limited, but we can discuss this afterwards of course, so we see that the machine learning methods and the information content based methods labeled IR here. Outperformed the other methods, so one education which one of these two to choose when we construct an ontology matching a system. Well, if we don't have training data, this question doesn't make any sense. Anyway, if we do have, still we see that the information retrieval based method for some values of the filter threshold outperforms the machine learning algorithm.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So in a similar study we have proposed the gaze one another, the mapping selection and the structure and a set of structural methods. This time we have used different data, set the benchmark 2011 data set from the OEE campaign, which contains 103 tests test cases. How these test cases have been constructed? Well, we have an original autology which has been modified in a certain way. Either the structure has been altered or most commonly labels of concept names have been modified. So. We run first analogical matching by using the identical metric, which returns one if two concepts labels are identical and 0 otherwise. Very simple metric and we feed the results into a structural measure and me very the value of the mapping selection threshold and we observe what happens.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "On two groups of methods, again, first standard structural methods which basically look on the explore standard structural relations between the entities such as. We take two entities and will look at their descendants, their ancestors there leave suggestions and so on. And we rely on already discovered alignments within the sets that are defined by either descendants, ancestors lives or orezone. And then we have also implemented a more advanced technique which is called similarity propagation based on the similarity flooding algorithm. Also well known technique. Which relies on directed relations in the ontology in order to discover and propagate similarities on the through the ontology. Hierarchical backbones not only hierarchical, but including all kinds of directed relations.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So here we see one thing which first one can immediately observe that the similarity propagation methods outperform significantly all the other techniques for a very low levels of the mapping selection threshold. As the threshold increases, all these methods tend to converge towards the performance of the initial mappings produced by the identical metric. This is also not an astonishing result in the sense that. The mappings that are produced by the. Where is there is a threshold growth will reach his level of situation of the similarity that can be extracted from the already discovered terminological mappings.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So. Now a bit more interesting study which goes into.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Looking into the behavior of structural metrics when we add noise into the input that they take from terminological. Measures so how do we define noise? And no noise is a pair of entities that are falsely labeled as a match. Alright, so we produce noise. We feed this noise into a terminological mature, and the output of this terminological matter matter influenced by the noise is fitted for their own to the structural measure.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So at the terminological level we have used the identical metric again. And we have added a noise which is a portion of the correct mappings discovered by the identical metric. Alright, so we have gradually added percentage of noise. Animal structural level. We have taken this input and selected different. We have selected the threshold filter for each of the structural methods that we use with respect to what was the best threshold filter that we found in the previous experiment. So we try to take the best out of each structural method and see how it behaves in the presence of noise. Again, we use the benchmark 2011 data set because we are doing again as an experiment on structural methods. End.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Here is what we have discovered. So we have on the left side the Y axis indicating the number of correct mappings and on the right hand side the number of incorrect mappings. And on the way on the X axis you have the the percentage of noise edits into the data. So here we see that the the semantic propagated the similarity propagation algorithm. Seems to be more stable and perform better in terms of correctly discovered mappings with respect to the other standard. Structural methods for what it concerns. The incorrect mappings we see that two methods are quite stable. The SC and the DSI Path method in terms of they don't seem to be really influenced that much of the noise, but is that a good news? Not necessarily. It simply comes to show that we are not really able to predict properly the the influence of noise, the impact of noise onto this method, so it remains random thing that we can. Really, properly put a hand on it and look what's the relation. Of course there are further observations of these experiments that would gladly go into. Later.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "And now I will look at the last experiment that we have done. Which relates.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Or opposes onto one another. The terminological methods when used alone and when used in combination with structural and semantic methods. Again, in the presence of the mapping selection module, which. So it's a filter threshold of selecting a certain number of mappings with respect to the similarity score. The data set that we have used. Is the conference data set from the Ontology Alignment Evaluation Initiative? And we have tried to identify the terminological measures that provide best performance for the structure on the semantic matches that take them as an input. Alright.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "So at terminological levels level we use three different methods to produce the initial mappings or the input mappings. The Q grams method, which represents token based methods. The ice of methods which is an added based edit distance based method. And the IR method. So as I recall you, this is a method which is based on the information content of concepts or of tokens within ontologies. And this one has shown to perform best for what concerns the global methods terminological methods. At structural level, for the same reasons we have used the SP methods, the similarity propagation method, because it performs better than the other structural methods. And on a semantic level, we have implemented the global acknowledges optimization algorithm. Which is well known semantic component from the from the from the state of the art and it's based on refining input terminological mappings in order to remove inconsistencies. And it is important that it works on a global level in the sense of it takes the already produced mappings and works with that in order to detect and remove inconsistencies. Where is there some other semantic methods which would be applied simultaneously or parallel with the terminological measure? So we discover a mapping and when we reason is it consistent with already discovered or not, we continue discovering and so on and so forth. So this method is replacement global level.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So this is the first graph that I'm going to show you. We see the different values of the mapping threshold for the technological measure. And the F measure calculated for the. Structural, different structural methods that we have implemented in this experiment. We observe several things in the first place. That the IR method, which is the best performing terminological method. This is the blue line here combined with the the similarity propagation. This is the red line over there. Performs better than the other techniques. One thing that I want to say just before I continue discussing this graph is that the behavior that we observed is similar also for.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "For semantic based matches. So when we opposed terminological towards semantic based measures, so actually the.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "The discussion that I'm making concerns both results, right? So I'll go back to this slide now. Another thing that we see is that that matters that are based on kilograms. So the Q gram taken alone and Q gram taken in combination with the with the similarity propagation technique. Performs also quite well and is also stable with respect to the different values of the mapping threshold. Which is not exactly the case for the isotope method you see here. They are submitted, applied alone and then applied in combination with the similar similarity propagation or. With the. Semantic matter in the next slide. So one general observation is that of course, the combination of terminological and semantic or and structural methods boost the performance of terminological methods. And still the IR based method seems to outperform the other the other methods.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "OK, so to conclude.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "I tried to bring out this point that ontology mapping system has to be seen as a combination of several components and these components interact with one another in certain way and it is important to understand these interactions and behaviors that this implies in order to be able to take some important decisions in the from engineering point of view. In the when we construct an ontology matching system, especially if we ordered concerns, the problem of selecting a measure and combining different measures. And setting parameters of this of our intelligent matching system. And I thank you for.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Your attention. Hi, it's not completely clear to me how you can guarantee that these results are meaningful for the general generalization about the mattress that you make. Instead, for the particular implementation that you used in this paper. Also because of several measures maybe are lexical, but they also use contextual information which might be structured so sometimes is not so easy. To classify a mature as purely structural purely lexical and so on and so forth, thanks. Yes, thank you for that remark. Of course, when we look at these results we have to. It's a natural thing to think. OK, maybe there is some overfitting happening here. Maybe the system is too fine tuned for the data that we have, but The thing is that we cannot really take into account all the possible measures that exist, all different methods. So we try to just take representative methods for groups of similarity techniques or matching techniques and observe their behaviors. In fact, we have implemented much more method. Then what you see here? These results actually, which are included in the young plus plus Ontology matching tool and for example only for the terminological measures. There is about tell me if I'm wrong. 50 different techniques that have been implemented to just represent all these results. So we try to give a summary somehow the main groups, but your remark is valid of course. Hello, I'm very very firm for University of Bolzano, Italy. And then my question is more into the ontology matching in general I guess. So in your opinion, can we possibly get an ontology matching matching system that is 100% correct? With respect to what? With respect to the to the results of the matching with respect to the reference alignment or with respect to user expectation with respect to expert expectation experts expectation well. I guess the answer would be no. Right? But that's what we're working on right to get this close to that as possible. And what about with respect to the user expectation? And what about with other aspects then? Well, in this ontology matching emulation framework that I presented to you, we have reference data what so this is simulation benchmark data to which towards which the results are compared? So we can only judge on the basis of that for what I present, at least in this talk. We have these reference alignments which already exists. That benchmark which has been constructed in a way that it is supposed to to provide an affair affair. Way of evaluating the results. And we have just compared our results to this to this already existing reference alignments. And we measure right precision recall and F measure so standard like from information retrieval framework and to that respect you saw the results and I cannot tell you more than that. Alright. So I think we have one more question in the back here, but in the meantime maybe the next presenter can move to the front and. When when you did your experiments an you had your de terminological machers followed by savior structural matters. Did you have any inconsistencies between the two? Did you use any like agreement maker? For example uses a local quality measure, Anna Global Quality Index to decide how to combine results from different matters? Or were you only taking the match or results and adding? More match or results? Yes, this is the the letter is that the answer? We didn't. We only took their yeah am I right or? So we have taken the input from the terminological. Mapping central have just fit it into the structural mattress. OK, let's thank the speaker again.",
+        "start": 725.0,
+        "end": 754.0
+    }
+]

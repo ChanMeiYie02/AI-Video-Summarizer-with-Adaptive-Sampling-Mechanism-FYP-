@@ -1,0 +1,20 @@
+{
+    "id": "r3il4jaobymkbco33q6pdkfa43dskbu7",
+    "title": "Measures of Statistical Dependence",
+    "url": "http://videolectures.net/mlss06au_gretton_msd/",
+    "info": {
+        "author": [
+            "Arthur Gretton, Centre for Computational Statistics and Machine Learning, University College London"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "February 2006",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods"
+        ]
+    },
+    "num_segments": 64,
+    "num_sentences": 525,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 69,
+    "ground_truth_summary_length_chars": 8696
+}

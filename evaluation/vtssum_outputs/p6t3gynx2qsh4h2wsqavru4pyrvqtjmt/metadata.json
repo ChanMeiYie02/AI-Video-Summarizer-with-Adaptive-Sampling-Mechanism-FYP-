@@ -1,0 +1,21 @@
+{
+    "id": "p6t3gynx2qsh4h2wsqavru4pyrvqtjmt",
+    "title": "A Semantic Portal for Next Generation Monitoring Systems",
+    "url": "http://videolectures.net/iswc2011_patton_semantic/",
+    "info": {
+        "author": [
+            "Evan W. Patton, Rensselaer Polytechnic Institute"
+        ],
+        "published": "Nov. 25, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web->Semantic Web Services",
+            "Top->Computer Science->Software and Tools"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 265,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 40,
+    "ground_truth_summary_length_chars": 4989
+}

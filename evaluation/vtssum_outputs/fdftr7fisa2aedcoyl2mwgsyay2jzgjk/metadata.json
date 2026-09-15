@@ -1,0 +1,22 @@
+{
+    "id": "fdftr7fisa2aedcoyl2mwgsyay2jzgjk",
+    "title": "Graph kernels and applications in chemoinformatics",
+    "url": "http://videolectures.net/gbr07_vert_ckac/",
+    "info": {
+        "author": [
+            "Jean-Philippe Vert, MINES ParisTech"
+        ],
+        "published": "July 12, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods",
+            "Top->Computer Science->Machine Learning->Structured Data",
+            "Top->Computer Science->Chemoinformatics"
+        ]
+    },
+    "num_segments": 61,
+    "num_sentences": 642,
+    "num_clips_with_summary": 37,
+    "num_gt_summary_sentences": 85,
+    "ground_truth_summary_length_chars": 9086
+}

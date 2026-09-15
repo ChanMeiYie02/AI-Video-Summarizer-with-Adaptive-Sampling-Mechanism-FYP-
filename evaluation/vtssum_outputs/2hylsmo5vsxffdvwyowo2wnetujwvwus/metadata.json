@@ -1,0 +1,20 @@
+{
+    "id": "2hylsmo5vsxffdvwyowo2wnetujwvwus",
+    "title": "Learning Representations for Automatic Colorization",
+    "url": "http://videolectures.net/eccv2016_larsson_automatic_colorization/",
+    "info": {
+        "author": [
+            "Gustav Larsson, Department of Computer Science, University of Chicago"
+        ],
+        "published": "Oct. 24, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 60,
+    "num_sentences": 144,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1069
+}

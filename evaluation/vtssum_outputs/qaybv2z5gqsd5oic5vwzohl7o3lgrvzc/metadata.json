@@ -1,0 +1,21 @@
+{
+    "id": "qaybv2z5gqsd5oic5vwzohl7o3lgrvzc",
+    "title": "Tree Based Ensemble Models Regularization by Convex Optimization",
+    "url": "http://videolectures.net/nipsworkshops09_cornelusse_tbe/",
+    "info": {
+        "author": [
+            "Bertrand Cornelusse, University of Liège"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Optimization Methods",
+            "Top->Computer Science->Machine Learning->Ensemble Methods"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 166,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1723
+}

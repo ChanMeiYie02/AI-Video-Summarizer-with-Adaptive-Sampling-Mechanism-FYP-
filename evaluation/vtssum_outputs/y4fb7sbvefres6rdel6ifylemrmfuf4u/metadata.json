@@ -1,0 +1,21 @@
+{
+    "id": "y4fb7sbvefres6rdel6ifylemrmfuf4u",
+    "title": "Challenges for Machine Learning in Computational Sustainability",
+    "url": "http://videolectures.net/nips2012_dietterich_sustainability/",
+    "info": {
+        "author": [
+            "Thomas Dietterich, School of Electrical Engineering and Computer Science, Oregon State University"
+        ],
+        "published": "Jan. 16, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Computational Sustainability"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 386,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 6493
+}

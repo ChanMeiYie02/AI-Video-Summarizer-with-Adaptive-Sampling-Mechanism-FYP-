@@ -1,0 +1,20 @@
+{
+    "id": "kbiaepqa3jj5nn27r7epce4nxskfyjkx",
+    "title": "Adaptive Fourier-Domain Inference on the Symmetric Group",
+    "url": "http://videolectures.net/aml08_huang_afdisg/",
+    "info": {
+        "author": [
+            "Jonathan Huang, Robotics Institute, School of Computer Science, Carnegie Mellon University"
+        ],
+        "published": "Dec. 20, 2008",
+        "recorded": "December 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Markov Processes"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 283,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 6010
+}

@@ -1,0 +1,21 @@
+{
+    "id": "jp2qwbmbb53u2fgmto6f4n3mge4vw2ph",
+    "title": "Gaussian Process: Practical Course",
+    "url": "http://videolectures.net/mlss2012_gorur_gaussian_practical/",
+    "info": {
+        "author": [
+            "Dilan Görür, Yahoo! Research",
+            "Zoubin Ghahramani, Department of Engineering, University of Cambridge"
+        ],
+        "published": "Jan. 15, 2013",
+        "recorded": "April 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->Gaussian Processes"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 324,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1396
+}

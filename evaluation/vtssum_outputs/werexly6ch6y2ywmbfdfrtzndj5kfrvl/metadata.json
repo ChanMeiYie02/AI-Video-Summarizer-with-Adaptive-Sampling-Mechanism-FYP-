@@ -1,0 +1,24 @@
+{
+    "id": "werexly6ch6y2ywmbfdfrtzndj5kfrvl",
+    "title": "Online Nonparametric Regression",
+    "url": "http://videolectures.net/colt2014_rakhlin_regression/",
+    "info": {
+        "author": [
+            "Alexander Rakhlin, Statistics Department, Wharton School, University of Pennsylvania"
+        ],
+        "published": "July 15, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Statistical Learning",
+            "Top->Computer Science->Machine Learning->Supervised Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 196,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3244
+}

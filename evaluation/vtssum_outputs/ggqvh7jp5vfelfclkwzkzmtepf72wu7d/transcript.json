@@ -1,0 +1,577 @@
+[
+    {
+        "text": "So yeah, the difference between what I'm doing now and what I have been doing before, it's actually not that big, so I'm using exactly the same methods, basically. So, and it's also, I mean, machine learning is probably a bit too overstated. I mean, we're really using very simple methods here. Most of them are older than 100 years, but they are very effective. As it turns out.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Before I start, let me acknowledge well the contributions of my collaborators. That would be neat on the experimental side, Nikos Logothetis mainly and Yuusuke label, and in the states she provided the GF Mariah data to Michael, and he supervised these experiments, and Michaela Kepler here from Sheraton Berlin, Frank Meinecke. He also moved to industry. Now he's working at Solando Arthur Gretton. He's now lecture at Gatsby, Steven, hopefully who we heard yesterday. And of course, close robot from Berlin.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So what's Martin model neuroimaging? Think of this ellipsoid here as the set of all brain States and then think of this ellipsoid, the blue one as all the measurements we can take with electrophysiological devices. So these would be invasive recordings with electrodes, ecoark, electrocardiogram, electrocardiograms or electroencephalograms. And think of this ellipsoid here as the measurements we can take using hemodynamic devices. So that would be functional magnetic resonance imaging near infrared spectroscopy or just intrinsic optical imaging. I will give some more examples on how this works later. So each of these. These two sets they intersect here, so that's what we will call. Neurovascular coupling, but there is also some parts here that we can. So some aspects of brain activity that we can only measure urine, neurophysiology and some aspects of brain activity that we can only measure urine, hemodynamic measurements. And there is also some stuff that is not related to brain activity. So if the subject falls off the chair, that will probably create an artifact in both modalities. But that's not related to brain activity. So what we're interested in is, well, basically, optimally. Combining these two measurements. In order to find out more about neurovascular coupling or obtain complementary information about brain activity from either of those modalities.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So yeah, the options, neural activity neural activation is reflected in electromagnetic field changes or in human activity and these modalities they are complementary. So what I will try to convince you office that multimodal neural neuroimaging is better than imaging just with a single modality and also for understanding the coupling between the two. This is essentially it's the only way of understanding how these two are related.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Just to quickly summarize how what's happening, so why? Why is neural activity reflected in electromagnetic field changes? You heard about this like a lot because we will use. We will talk about invasive recordings today. Here is like the more microscopic. View on these electromagnetic field changes, so here is a neuron. And here is another neuron that synapses on one of the dendrites. Here, as soon as some electrical charges arrive, neurotransmitters are released. And then the intracellular potential rises from minus 70 millivolts. To animals something more positive. If that happens, this part here of the neuron stays at resting membrane potential, and so this part here becomes more positive with respect to that part. Here the soma. Of the neuron, So what happens outside what you can measure is that, well, the opposite, right? So here you have a negative potential relative to this position. If that happens in a synchronized fashion, then these electromagnetic field changes outside of the cell will become strong enough that you can measure them with extracellular electrodes. And if those electrified population of. Aligned neurons. Get depolarized in synchrony and they are in the right orientation with respect to your EG electrode. Then you might even measure that with EG. So.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Yeah, so let me. Reactivation is reflected in electromagnetic field changes, and you can measure that using intra cranial electrodes. That would be ideal. You can't do that. You can also resort to electrocardiograms or electroencephalography or magnetic encephalo graphy. The characteristics of this data is that it typically has a very high temporal resolution but very low spatial resolution. Even if you use intra cranial electrodes, there is only so many electrodes you can put in the brain and, well, a couple of years ago, when people started using more and more electrodes and high density arrays, turns out back then the hard disk were actually too slow to write all this stuff to disk. So I mean by now we have faster hard disks, but there are technical limits, so you can only record. I don't know couple of. I guess a couple of thousands by now. Um, which is much less than what you can record with this.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Other modality with hemodynamic modalities. So here what neurovascular coupling. So we had we spoke about these neurons here. And what people see in most neuroscientific publications nowadays is these blocks in the brain, and these are generated using functional magnetic resonance imaging. And. What happens there is you make use of the fact that when humans are activated, so when these charges arrive at the dendrite and depolarize the cell, then this takes a lot of energy to restore the membrane potential, right? So. This energy uptake, so giving the energy back to the neurons and metabolising neurotransmitters. All this is done by astrocytes. These glial cells that well make contact to the neurons to the synopsis, but also they make contact to the blood vessels and they take care that well, no toxic stuff comes in here. They actually form the blood brain barrier and they also well get rid of the neurotransmitters and what brings sugar into the cells. Or that's needed to. Make up for this energy for these energy demands, so this is a very complicated process and we won't study that in detail. In fact, we just look at, well, a more macroscopic level of this coupling. And in fact, neurovascular coupling is. I mean, it's a very complicated issue, because, for instance, you also have some receptors here on these vessels that are very similar to the receptors that you have here. So for instance, if you have. Cholinergic neurons acid choline is very important in our brain for attention and many other things. But if neurons from the from the deep from the brainstem regions release acid: all over the brain, this doesn't have an effect. Only here at the synapse it also. It also has an effect here on the vessels. So it's. And this is hard to distinguish from the local neural activations sometimes, so it's a pretty complicated topic, but The upshot is that neural activation is reflected in what we call the blood oxygen level dependent signal.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So. It can be measured with intrinsic optical imaging, near infrared spectroscopy or functional magnetic resonance imaging near intrinsic intrinsic optical imaging is just when you cut open the brain, you shine light directly on the surface and then you record with the camera. What's happening, the light absorption near infrared spectroscopy is the same, but you don't cut open the brain function. Magnetic resonance imaging makes use of the fact that. Blood hemoglobin, so the proteins that transport the oxygen. Which have. So if this hemoglobin has a lot of oxygen, it has different light absorption properties. That's what people make use of here. Then, when it doesn't have a lot of oxygen, but it also has different magnetic properties, so the different magnetic properties are made use of here in functional magnetic resonance imaging, the characteristics of these hemodynamic signals is typically you have a high spatial resolution. If you use intrinsic optical imaging, it's just as high as. Your camera has a resolution. Of course there is an intrinsic like. There are limits physiological limits due to the point spread function here, but. In theory, the resolution is, I mean in practice, the resolution is very high. Compared to EG for instance. Also, in functional magnetic resonance imaging, the resolution is very high and you also can get down to deep brain structures in the brain stem for instance, but you have a low temporal resolution and this is due to mainly the fact that there is a. This this neurovascular coupling process acts like a temporal lowpass filter essentially.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "We will talk about this more so here is an example of blood oxygen level dependent signal. So what people did here is they. Deflected whiskers of a rat and then you shine light infrared light on the brain so you cut open the skull and then you shine light on the brain. You record the light absorption with the camera and what you can see. Here is 3 different. Channels essentially, so there are three different peaks in the wavelength spectrum, and if you shine light on it, so the first peak would be deoxyhemoglobin, so that's the hemoglobin with fewer oxygen molecules attached it, then oxyhemoglobin and then also the total hemoglobin. That's kind of it's a proxy for blood. Volume essentially, so the bold effect is basically a complex combination of blood volume, blood flow and oxygenation, and some of these aspects you can see here.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So you have here the three different channels. Basically, and here is time. And here is the well, it's the next. The second part of this experiment. Here you have a stimulus, so that's when the whisker gets deflected and then you see there is a complicated spatial pattern that. Reflects the. Well, the bold effect essentially. That is due to the energy demands of the underlying Europe population. So fMRI signals of course don't look that nice an Inhumans, the HRF. The hemodynamic response function also looks a bit different, but this is basically well as accurate as you can measure the bold.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Trust. So why would you do multimodal neuroimaging benefits? Are for clinical applications. You can have better diagnosis. People do that a lot for epilepsy, so measuring epileptic focus that's. Better when you have more than one modality. Also, for therapy I will give some examples later on where people use hybrid brain computer interfaces to achieve higher classification accuracies for Bcis and also for basic research is important to better understand the single modalities. What the P300 is, for instance where it comes from that you can only see when you. I mean you could do source modeling or source localization, but you could also use fMRI in order to trace down the actual location of these sources. And also if you want to understand the coupling between these two modalities, it makes sense to look at both modalities at the same time. There are some challenges associated to this, so first of all it's a technical challenge. Recording electrophysiological signals in an MRI scanner is very difficult, and people have mastered this about more than 10 years ago already, but even if you can actually get neuro physiological signals that don't drive that are not saturated or the. Not all the signals are clipped. Even then it's difficult to obtain clean neurophysiological signals. You will do. You will need to do some artifact removal, which is difficult because you don't have a good model for the artifacts, but I will go into some of these methods later on. And then of course analyzing this data is notoriously difficult because there is no gold standard analysis method available like. I mean, Steven mentioned yesterday also for source localization. There is no gold standard. It really depends on the question you're asking which method you should choose.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So the outline of this talk is first, we will just go through some very simple. Analysis tools. That you can use for multimodal or that have been used for multimodal neuroimaging analysis. And then I will go through some applications. This is the hybrid BCI is an example of supervised learning in multimodal near imaging. Then I will present some examples for cleaning artifacts from multimodal recordings. When you record neural physiological signals in an MRI scanner, then I will shortly talk a little bit about the neural information contained in hemodynamic signals and in the end that's not really multimodal anymore. It's just a well you abuse multimodal methods in order to do hyper scanning essentially.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "And most of what I will be talking about is also described in more detail in this review paper that we wrote, and all the code and toy examples and data is available on this website. If it's still up, I guess so.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Yeah so.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "As I mentioned, there is no gold standard analysis method for multimodal new imaging. And all the analysis approaches that have been taken. They are difficult to categorize, so it's it's a wild zoo. It's that you can't come up with a stringent taxonomy, but many analogy analysis methods combine different methods, so they are using different modules essentially. And most of these modules are based on very simple algebra. And you today will just well present some of these, and then you can use these and combine them in any way you like to tailor your analysis to your needs.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So this is an overview of all the methods we'll talk. We'll be talking about. So first of all, supervised analysis. I guess you heard about this a lot in this lecture series you have some data, X subscript, MM, denoting the modality. So for instance F MRI or EEG signals and you model your labels as a linear combination of these single features. So each coefficient of this WM. Would correspond to one e.g sensor or two one. fMRI works well and then you just make a linear combination to explain your target variable and you have some noise. In unimodal unsupervised analysis you basically have the same model as Stephen was talking about in these ICA methods. For instance, you model your experimentally measured data for EG. For instance as a linear mapping from neural sources too. Well, your respective modality. The important point is you do this for each modality separately. This is why you can come up with. Modality specific neural sources. This is well potentially a problem. Then there are biologically inspired models where you just make up a well biophysically plausible model that generates your data and you estimate these parameters. I will have a backup slide on this, but I will not go into detail because as most realistic models these are intractable. I mean I haven't seen a good model where you can really. Well, you have biological realism combined with good complexity control, but I also haven't been looking in the literature. Lost the last two years, so maybe there is something, though most of what we will be talking about is really just very simple, although there is some biological realism as you will. I mean I hope as I hope I can convince you later. But what we found most useful is to use multimodal unsupervised analysis. So here you basically model sources that are shared across all modalities, and those are mapped out into the measurements using modality specific mappings essentially, and I will explain in detail how this. How this is done?",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So supervised analysis.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "They usually fit some data to some label Y and. So what is what the data is and what the label is? That's basically, well, arbitrary. You can choose either modality and fit them alternatingly. For instance, many people so examples for this model are, well, general linear models like you have in SPM. Linear discriminant analysis, like people use for e.g. EPC, eyes or support vector machines. Basically, yeah, all these linear classifiers.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Or regression techniques. This is an example for a general linear model, so here this would be your stimulus time series, then you convolve it with a Canonical hemodynamic response function, and then you. Essentially you just correlate this time series with each voxel in your brain. So this is a these are three slices through monkey brain and this is primary visual cortex and parts of V2. And, well, the color just indicates basically the correlation of the box with this label, the target variable. So this is not really a linear combination here, it's really just a mass univariate approach. But the idea is the same. So this is what people have been doing or are doing for fMRI data. Most of the time it's been the most productive analysis, and when people use that for multi mode on your image Ng, you can also get some good results so.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "This is what most wanted, so here he just extracted e.g features from. So this is the spectrogram of EG. In just one electrode, the occipital electrode here and you see that there is a peak in the Alpha range and that peak, while it has some temporal fluctuation. And here you see. So here it's extracted, so just the Alpha power, see here. There is some peaks, or probably the subject closed his or her eyes. Now you just take this time series and use that as a. You just put that in your design matrix essentially, and then you correlate that with your. With each voxel in your brain separately.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "And what you get is here. This is the negative contrast. Is well, a contrast image from 4. That reflects basically the negative activation correlated in fMRI. The negative activation of your fMRI time series. Correlated to the. EG band poem. And you can do the same with nearest.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Here. Here you don't have actual spatial resolution here. Most men just took the occipital opt Rd from the nearest and correlated that with the occipital band, Power, Alpha Band, Power from the G and this is just a cross correlogram. So if you shift these two univariate time series with respect to each other you get a peak at about well what you would expect here 5 seconds or so. The peak of the hemodynamic response function.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So for these supervised analysis, well, first there is always a certain arbitrariness with respect to what you choose to be the data, what you choose to be the label. Often you don't even have a target variable, so you can always choose either modality but. Yeah, it's it's kind of arbitrary. I always felt another reason why you shouldn't do the. You shouldn't extract the EG band power in sends a space and then correlated with hemodynamic activity is because it doesn't comply with the biophysics of the EG. I will explain that later when we go, so we actually be looked into models and spend. Then it came up with a model that is more compliant with the biological realism here. Most people do that nonetheless and it works OK, but you might lose something with noise ratio if you do that. If you compute the manpower in sensor space, not in source space, but later more. And yeah, when you regress your data onto the stimulus when you have a stimulus variable, then one problem you might have is that. Your linear model extracts all variants in your data. Not only that related to neural activity, which might lead you astray.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "People have been doing a lot is just applying unsupervised analysis analysis to multimodal data. Um? And what these approaches do is they so they model some sources S and then they learn a mapping a that translates these source activity into your measurements, and importantly here. We have what we have one measurement for each modality. We have one mapping for each modality and we also have modality specific neural sources. Because you do this analysis for each modality separately. An example is our principle component analysis, independent component analysis, or clustering, for instance. So in clustering, this S here would be a vector that consists only of ones and zeros, or more specifically just one one and the rest is 0. And then this a would be just your cluster centers and that generates your data. So it's just a special case of this. Of this model. I will just go into. I will just briefly discuss principle principle component analysis because this is, it turns out to be one of the most important methods for, well, everything I've done. I think in science and it's really the workhorse of.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Statistics it's more than 100 years old and well. This is the original picture from the Pearson Paper. If you have data points that are distributed like this, Pearson just ask What's the best line? What's the best fit for a line to describe this data? And Pearson's answer is. It's that line that maximizes the variance after projecting the data onto it. So if you project each of these points onto this line. Then you will get the highest variance right as opposed to when you put the line at all like this for instance, and everything that's orthogonal. All the variants that's orthogonal to this line is then the noise. So for.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Normally this means. So first we put our data in the Matrix X. That's what we will always do in this notation throughout the talk, and then PCA finds a line in this space such that when you project the data onto it, the variance is maximized. So what does that mean here? This is your data X. You project it onto that line and then you square it. And the squaring is just taking it, multiplying it with itself, which is this. So again, project your data onto the line and then that's the variance and you need to put some constraints on the W 'cause otherwise your algorithm will just increase the values of W to increase the variance, which doesn't make sense. So you want that to be constrained to, say one. Now you put these two together in the Lagrangian.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "And then you take the first derivative, which is very easy. So essentially here you just drop 1 W and you put a 2 instead. And here you also drop 1 W and put a 2 instead. Basic vector calculus, and then you rearrange the terms and you arrive at this equation. So you see that. The that maximizes this objective is just well. Is just an eigenvector of this matrix here. And that's the covariance matrix of the data. So we see that the line that describes the data best is the strongest eigenvector of the covariance.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Exxon, this looks like this. So if we have data set that comes from this elliptical distribution and redraw the eigenvectors in there, you see that they are aligned with the lines of maximal variance, and then if we project out this and then we're left with this direction here. Now if you project your data onto this space, it just. Alliance your data with the coordinate axis. And this tidies up the whole data set. So now we can remove single directions without affecting the others if the data is really just determined by the 1st two statistical moments.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Yeah, so this is the same data. And now if you project it onto the first eigenvector, it looks like this. It just falls onto this line. And what I did here. So I projected the data onto the first eigenvector and then I projected it out again into the original space and then it falls along this line before it was just one number. What you can do now is you can subtract that variance from the original data. This is called.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Deflation. And then you end up with. This so basically all the variants along this direction is subtracted and this is all the variance that's left. That's the second eigenvector. Now we've only been looking at 2. Whoops, 2 dimensions here. In multimodal recordings you often like for fMRI, for instance, you have 10s of thousands of dimensions. And there is one neat trick that you can do in order to. Solve this problem if you have high dimensional data. So if you have high dimensional data, your covariance matrix.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "This guy here. Will be well ill conditioned basically. So if you have hundreds of thousands of voxels and you only have a couple of 100 data points you cannot, you cannot expect to estimate a good covariance matrix. So what you do instead is you make use of the assumption that your solution can be expressed as a linear expansion of data points. So basically you think of your data points as basis vectors and use them. To describe your solution, that's the kernel trick. Essentially, here is just the linear kernel trick, so we just plug in this for W and then we end up with this. And here we also plug that in and this one. Here is the linear kernel and if you have a look at this paper you will see that you can actually. Just solve the eigenvalue problem in kernel space here. So you just solve an eigenvalue problem that is N by N number of samples by number of samples instead of number of dimensions, not by number of dimensions.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Actually, the kernel trick has much more nice many more.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Nice properties, for instance, if your data is not. Generated by Gordon distribution, for instance, but it looks way more complicated like this. Here, for instance, there are two. Well. Two principal components, one lies along a circle here and one lies along a circle here. You cannot describe this with. I mean, you won't find a reasonable solution with linear PCA here, but if you use kernel methods, so nonlinear kernel functions, then you can actually get a very good first principle component, and I just colored here the value of the first principle component in the background color. So you see that if you project your data onto this first principle, component is nonlinear manifold. You can actually separate the data very nicely, so some people use that lost count and is using nonlinear PCA for denoising of his fMRI data, for instance. So.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "What's the difference between doing standard PCA or linear kernel PCA? If this is F MRI data and you have a lot of boxes and only a couple of samples, then what you do when you do linear kernel PCA is just you just transpose the data matrix and then you do PCA on this matrix and this is also called spatial PCA. Yeah, people wrote papers about this, for instance called Princeton Rd Paper called Functional Connectivity Analysis where you just brought a lot of things about. Connectivity and in the end he just said well, it's just SVD. So yeah, basically PCA is useful for a lot of things. You can use it for. Well, temporal PCA or spatial PCA, depending on how you put the data into it.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "So to summarize. This is the model of unimodal unsupervised analysis. Here there is 1 missing. So the point is that you estimate a model for each modality separately and this comes with some. So this has some problems, mainly the correspondence of these unimodal components. If you compute PCA on the data and you computed on the fMRI data, it's not clear how they too are related. In fact, it turns out if you look at fMRI data, the strongest variance components are often. They're meaningless almost if you try to. If you reduce the dimensionality of your fMRI data and only keep the 1st, 5:00 or so, they usually don't correlate with the label or anything. It's really just breathing or things like that. If you remove all that stuff using prior knowledge. But if you record your heartbeat and all that, then you can remove these things. Then maybe the first components are more useful, but in general, if you have this correspondence problem between. The components that you fit. On one modality and the components that you fit on the other modality. So you might end up with one component that is only present in one modality and then you don't know how that relates to the other modality. Or what's even worse is 1 component corresponds to multiple components in the other modality, and then it's then you need additional processing to relate these two together.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Um, to illustrate the difference between what I mean with multimodal unsupervised analysis?",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "It makes sense to look at well, so this is again an example of unimodal. Analysis You have some signal in the brain and then you measure electrophysiological signals and FBI signals. They're multi variant, then you do some uni modal analysis using supervised or unsupervised methods and then. You integrate them somehow and the problem here is that you.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Might discourage relevant information. What we do instead in the next section is we use Canonical correlation analysis and I will explain that in a bit. In order to integrate the data. Such that the common activity is extracted. So yeah, that's what Canonical correlation.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "This does. You have some measurements X and some measurements. Why, and then you assume that there is a hidden variable that gives rise to both of them and you approximate them by assuming. Whatever is correlated in here is probably. Probably reflecting the hidden variable. So.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "We are looking for brain activity and we measure electrophysiological signals, and if my signals. And then. We measure some spectrograms of electrophysiological activity in F frequency bands and T. Epoch's, and we measure fMRI activity in South spatial locations and T. Samples. And then CCA finds. So the first Canonical direction is just AF dimensional vector in the EG space and then S dimensional vector in the fMRI space such that the correlation between the data when you project them onto their respective Canonical subspace is maximized. So this is so here we project the EG data onto the EG Canonical direction. We project the Y data onto the. Respective Canonical variant and this is our approximation for the brain activity and we estimate this these W's such that the correlation coefficient of these approximations is maximum. And this term, here, this Canonical correlation has been put forward by hoteling in the 1930s. So almost 100 years old. But the idea is actually much older, Camilla GA in 1875 or so came up with this concept of principle angles. This is. Pretty much the same mathematically.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "So how it's so easy that we can actually derive it in one slide so? This cxy is just the.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "The. Oops, it's just. The cross covariance between this data matrix just data and this data right? And sinks will be this matrix and see why will be this matrix just the?",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Variance matrices, so we want to maximize. The cross covariance. Subject to the constraints that these two are one, if they are one, the stuff in the denominator, well, we don't need to care about it, and we can maximize the covariance is the correlation. Just put all these together in one Lagrangian again and we take the partial derivatives with respect to this one and this one. We combine these two in one equation and we end up with this eigenvalue equation. That has the cross covariance matrices and the auto variance matrices and this eigenvalue. Here is the. Canonical correlation. Now. There is one thing that I'd like to emphasize it. It took me some while too too well. So appreciate the value of eigenvalue equations. But if you think of this matrix as a in this matrix SB, then and you have a look at Marcus Borges PhD thesis. For instance, he explains that very nicely how these eigenvalue equations relate many different methods together.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "So it's all this eigenvalue equation, right? So it's a generalized eigenvalue equation. If B is the identity, then this is just a standard eigenvalue equation. And well, if you if you plug in for a just CXX, the covariance matrix of X, then it's PCA, right? If you plug in the cross covariance matrices and you assume that the auto variance terms are identity, then you have partially squares. This is also what you end up with. If you regularize CC a lot, but we didn't talk about regularization, so if you plug in the matrices as we have them on the previous slide, you recover CCA and you can also recover multi linear least squares if you plug in these matrices, it makes a lot of sense if you if you invert this matrix and left multiply it to this one. Here you get the ordinary least squares estimator. And yeah, that's I found this really useful. This is so the WS that we found now.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Canonical subspace, they translate. Our variables are measured variables into our latent variables, the brain activity. But what we are often interested in is the mapping from that latent space to our measurements. We should never interpret or we should. We should not interpret these W's here. The coefficients of these W's because they probably reflect more the noise in our data then the actual signal. And here is an example that.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Steven put together for explaining why you should not do this, so this is just a short excursion into supervised methods, but it shows you that there is a PCI setting. It shows you that you should not interpret these coefficients of the. Of these W's, essentially so in LDA you also compute this WS. They project your data into that latent space that in supervised cases reflects your label. So in this PCI setting you have one voxel. Here it's just a 2 dimensional 2 dimensional EG Data Time series and one of the boxes here reflects your signal that you wanted to move the left arm, and one of these boxes is only noise. And here that's the signal. So for each of the trials you get one point. He ran, the red ones are positive class, the blue ones are negative class and so yeah, but these distributions they overlap considerably, and here this is the other voxel which is not correlated to the label at all. So the means of these two classes they are on exactly the same line. You don't see any difference there. But when you when you compute LDA linear discriminant analysis, then you see that this classifier comes up with this hyperplane here. The dashed purple line and so. The normal vector, which is the result of LDA basically. Uses actually a lot of this uninformative dimension. This coefficient is much higher, so the option is although. This direction here doesn't contain any signal because the means are aligned on the same point here. It is very important to subtract the noise. And this is the same for CCA.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Definitely came up with a nice trick. To basically compute the patterns, what you're interested in, the patterns of activation from these W's. If the sources are uncorrelated, which they are for PCA, they are for CCA and for ICA two and they are trivially trivially uncorrelated. If you have just one component like in regression or classification settings. Then you just protect your data onto your W. That's your estimate of the label, and then you look at the covariance with each single voxel in order sensor, and that gives you your. Optimal activation pattern in the least squares sense.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "And here is, well, here's the difference between the W that you get and the pattern that you get for CCA. So what we did here is. So we recorded fMRI data in this slice of visual cortex. Here is the electrode chamber and we had an electrode sitting here recording electrophysiological activity in the scanner. And then we computed CCA between. Between the electrophysiology and the FBI activity. And then we plotted the Canonical direction for the fMRI activity onto this on the MRI space. And you see there are. It does make sense, right? There are high voxels around the recording electrode, but it looks very scattered and there are lots of higher negative values around here. If you transform this into the pattern, it looks much smoother and reflects much better the cortical anatomy. So this layout layout sheets here.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "If you like information theory, there is a nice implication of CCA, so if you. The probably the most important quality in information theory is the mutual information. It's computed like this, so the mutual information between two variables is high if they share information, it's low if they are independent. And it's computed like this. So you need the joint probability distribution and then you need the marginals. Here the single distributions for each variable or modality. And these are notoriously difficult estimates. So for high dimensional data it's. Impossible basically. But if you compute CCA. And you assume that all accounts for your data is the 1st and the 2nd order moments, mean and variance or covariance for multivariate data. Then, so this is basically what all methods most methods in your imaging do they assume that your data is only described can be described by first and 2nd order moments exhaustively. Then the Canonical correlation is equivalent to the mutual information. And it's related. To each other by this formula. So this these lambdas already Canonical correlations, and then if you plot the Canonical correlation here and the mutual information, the Goshen estimates of the mutual information on this axis, you get this curve. And that why is this good information? Mutual information is in bits and you can relate that to all kinds of other experimental settings. For instance, if you have a binary classification task, you can relate that to. The estimates that you get from Canonical correlation analysis and then you can basically make estimates how many stimuli can I show or how many stimuli. Can I rely abli discriminate for instance?",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "Another trick that not many people are aware of is that you can do CCA for more than two modalities. Of course, you can have as many as you can put in your ROM essentially, so can. So you have still this assumption that there is one common hidden variable and then there is a couple of measurements that reflect this underlying variable. This idea was investigated by Kettering in this biometric paper. He also explored. He explored many methods of combining this or extending CCA, but the one that is easiest to implement is just when you want to maximize the sum of all pairwise correlations. That's very easy to implement, subject to the same constraint that you want the data in their respective Canonical subspace to be decorrelated.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "And this looks like this. So you see, it's again just a generalized eigenvalue problem and it looks very much like the one that we had for two variables only. So you have here along the diagonal you have a block Jeff block, matrices of zero. And here on the diagonal you have block matrices that already auto variance matrices of your data. And all the rest is 0. Here again, you have the Canonical subspaces for each of the variables. And on the off diagonal here. You have basically the cross covariance matrices between all modalities. So if you're of course you can combine that with kernel methods so you can go to the dual for one of these and just in case you have fMRI data and you have many more examples than. The dimensions.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "So here's a short brain teaser. This is a simulation. That compares unimodal and multimodal unsupervised analysis as we talked about it before so. I generated two modalities data for two modalities and this could be EG data. Or well actually can't be but. So you have the point is that you have two sensors in each modality. And you have one common signal here. This sine wave that is in different sensors. So here it's in the first one and here is in the second one and then you have another signal that is totally uncorrelated to that and it has a much larger variance. This one here in the 2nd and here in the first dimension. If you compute PCA on this one and PCA on this one. What will be the first component? And if you compute CCA on both of them, what will be the first component? Anne. So yeah, so you get of course. One solution for each of the modalities and the first PCA component for X and also for Y will be the one that maximizes the variance within that modality only. And because the variance here is larger than the variance here. This will be the first component that you extract. And for CCA this will be the first component. And. Yeah so. It's the same for the other modality, so this is just to illustrate the differences between. Combining modalities in your analysis and doing the analysis separate for each of the modalities it can. Eventually just extract what you're not interested in.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "Now, standard CCA requires computation of covariance matrices. These are these can be very very large forever. iPhone for instance, and this is computationally infeasible. Also, CCA captures only linear dependencies and well, one way to solve this problem is to just use kernel CCA.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "And here I'm using a more well. That's the kind of notation you find in kernel papers often don't get scared by this, so it's really just satisfy of X is a kernel function that Maps your data from your F dimensional space or from your input dimensional input dimension to a potentially infinite dimensional kernel space. You have one for X and one for Y. And then. Once the data is in that kernel space, you just maximize the correlation there, and the trick is that you don't. You never actually compute compute the correlations in this kernel space. Just as a linear combination of comparisons of data points. So what is kernel matrix X here contains in the X and I wife entry is, the linear is the inner product between the data projected to the kernel space and another data point projected to that kernel space. So this K matrix is again just number of samples by number of samples and you just optimize the Canonical correlation in that space. And that can be very efficient for fMRI data if you have many more dimensions than data points.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "And here is an example where you can really see that. Kernel CCA captures nonlinear dependencies, so I generated one modality with that follows just this sine wave, and here it's the cosine, so just. Phase shifted if you plot this signal against this signal you get a circle which does which has a correlation coefficient of 0. If you apply nonlinear kernel CCA using Gaussian kernels and you project your data into kernel space, then you get. Straight line between these two so correlation coefficient of 1. And this is how the data looks like in kernel space. So here on the X axis you have for each data point here. You have the output of the kernel function. Yeah, I mean it's a it's kind of pathological example. You could solve that in other ways. Much simpler, but it's just to illustrate that kernel CCA can actually capture nonlinear dependencies.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "So, but still kernel CCA also has some problems. It assumes instantaneous dependencies, so you need to have each sample correlated with the other sample from the other modality instantaneously. If there are time lags between the two. Then you won't find correlations. Of course, saying that after I showed you this example before, where there was a correlation, there was time lag by, well, one phase of this. One period of the of this sine wave, it's a bit misleading, but in general. If you have more complicated time courses then. It's not as easy as as before, so the point is if you have non instantaneous dependencies between the modalities like you have between EG and fMRI, then you need to account for this. For this temporal dynamic, for example onomics.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "So the standard model of neuro vascular coupling is to use this hemodynamic response function. You have so that if you have a neural impulse here in blue. And. You model then you model the hemodynamic response as something like this. So it has a delay of about 5 seconds and then you have some undershoot later. This is what people do usually, and they assume that the temporal amix. Are the same for all voxels, and this implies that the temporal mics are separable from the spatial dynamics.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "So what we did to account for this temporal for these temporal dynamics is we just extended standard kernel CCA to optimize. The correlation between well here is this could be of my data which is mapped instantaneously into the kernel space. And here we compute a mapping that projects the data into kernel space and at the same time computes convolution in time. And we also of course need to make sure that it's properly normalized.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "And, well, the technicalities. I mean, it's so the tricks we use is basically just we add additional dimensions to X, and here I'm just looking at the linear version again because it's easier to. The notation is easier. So you just add timeshifted copies of your data. This is what we call temporal embedding, and thereby you just blow up the dimensionality of your space. And this reduces the whole problem to a standard CCA problem.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "And that we can then use that we can optimize using standard kernel CCA for instance. And we can recover the Canonical convolutions using, well the linear kernel trick. We just expand our data using these dual coefficients here and then we get back our temporal convolution and the fMRI hyperplane basically.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "So here's to illustrate what's happening here. So we have our electrophysiological measurements. They are measuring instantaneously what's happening in the brain, and then we have our fMRI measurements which measure the same neural activity, but time delayed or convolved in time. And then standard CCA will find. Unless we use some model for the temporal dynamics like the Canonical, HRF. If we have without any model of the heater, FCH won't find. Any correlations because the MRI fMRI data is just too late, it's not instantaneously correlated. But if we use this temporal deconvolution here, then CCA can align these time series and find the underlying neural activity.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "So. What I told you about nonlinear CCA. Oh oh. Thank you Felix. Have a question about the temporal embedding on its practical effect, so you blow up the space a little bit. If you have no prior knowledge about the potential time delay, you should be careful. And of course use rather large. Range of tone? How does this effect later on on the let's say dependency on noise that is in the data? Yeah, so that if the noise has some temporal structure, this can be a problem. But what we usually do is just cross validation. So we just try a lot of, I mean usually overestimate the time lag and then we just see a decay decay, but iteration in the Canonical correlations for increasing time legs. Also we can use. Well, prior knowledge essentially so we know from from the Canonical hater, Efron from all. From detailed measurements, the temporal dynamics of the human response function is, well, it's usually not longer than 20 seconds that you can expect some dependencies there unless you have a periodic stimulus or some intrinsic. Oscillations in the system. So yeah, kernel CCA is one way of estimating nonlinear dependencies, but this point ties in nicely with what you just said. So if we have prior knowledge, then we should probably use it. And in our case, where if you want to correlate e.g data with fMRI? We have prior knowledge about how they are coupled actually and this prior knowledge has been.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "Established by Nikos Logothetis, for instance, an others too. They, So what you have here, these are the first measurements of simultaneous fMRI and intra cranial Physiology, so you see, in blue and green and black different bands, band power of different bands of neural activity, and in this this reddish background is the bold signal. And what you can see is that the high so blue and green are high local field potential. Spent power time series and black is the lower LFP basically. And you see that, well, the blue stuff is basically all zero here after initial increase and the black stuff is still well non zero in standard deviation units. I think that is yeah. So the point is that. You can conclude that it's the. The oscillations, the amplitude of neural oscillations in the lower frequency bands, especially that is correlated to the bold signal.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "So now if you compute the band power, this is a nonlinear function. Computing it's the variance of the single, essentially in some epoch. So for the when you measure e.g. So yeah, maybe to clarify that all the measurements I've been talking about before were intra cranial measurements, but most people only have EG. Now what you measure with EG is linear mapping from sources, neural sources to your sensors. What you measure measure with. Nearest or fMRI hemodynamic devices. Is quite a different signal, so first you square the signal and this is a proxy for the energy demands of your neural populations. And then you have this. Here it's called QA temporal convolution that delays the signal that you measure with the bold, and then you have some unknown spatial mixing. Basically, and these three operations can be modeled explicitly. And this is what spend edited. So the optimization of this model is not quite as simple As for standard CCA, but it's. Better because it respects the biophysical realities essentially.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "Um? Yeah, so computing the newer band power isn't is a nonlinear function, and the EG model is linear as I mentioned, so computing the band power in sensor space is not good because you measure the band power of a superposition of many sources, including noise sources, and that will decrease your signal to noise ratio if you try to invert this non linearity. In the sense of space, which you would do with nonlinear kernel CCA for instance, on band power signals in sensor space. So.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "If you if you choose to use e.g sensor band power as a regressive for SBM, GLM's or for CCA partially squares or for multivariate regression or classification. This is a problem. And spend has come up with a variety of methods that address all of these different cases an and take into account these. The biophysics, essentially of the of the coupling. It's less of a problem if you compute first the neural source signals and then convert those into band power signals. But it's even better if you just compute the model that explicitly models this. This coupling, like spend it, and here is.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "The model so of course you have some linear spatial mappings. And then you have here the band power computation. Off the GPS signal for instance. And then here you have a. Temporal convolution and you also have. So if you combine all these three. Then you translate basically neural sources into e.g data and you also translate them into first proxy for the fMRI signal. Then the time delayed version of the fMRI signal and then the spatial multivariate time course of that sort of that band power time delayed signal.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "And this then you end up with this objective here. Where you maximize the covariance between the band power of your source signal of your time, delayed band power source signal and the other one. And you also have to subject to some constraints in order to make sure the W's don't grow.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "Exponentially don't grow to Infinity. So this chart here just compares the three models and. Well, what do you do with PCA and ICA? Basically, do first some unmixing. Then you compute some spatial spectral features on the G data, and you do some convolution and then you integrate these two for CCA or partially squares. You can do the. And power computation of convolution on the electrophysiological data 1st, and then you can combine them and four M Spock Spence method you can. Well basically you iterate in each step of the algorithm through the biophysical model essentially, and then you arrive at.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "A very nice solution that gives you a much better singers noise ratio when you compare it to CCA on band power signals for instance. So here you very few varied S&R in simulations. You see that the Canonical correlation for the M Sport model is higher.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "And also, if you compute that on real data, this is. On this axis you have the Canonical correlations. If you compute the band power in sensor space and then you apply Canonical correlation analysis and here you have the Canonical correlations. If you use myspark model.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "And this is how the patterns in e.g space look like. This is the temporal convolution which nicely matches the. The Canonical HRF as we know it and this is the nearest pattern.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "So finally we arrive at the application section.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "I have, I think 4 different ones. So first is hybrid Bcis. It's the best example I know of that well addresses the question whether or not multimodal BCI actually helps something for real applications. In terms of does it increase the information transfer rate in a BCI? Then we use the PCA using PCA based approach to clean multimodal, do clean artifacts in multimodal recordings. And then we will decode miravan power from fMRI using this TCC same model, and then we will look at multi subject analysis. Probably will skip.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "Some of these?",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "So I guess you are familiar with the PCI setting.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "Anne. We know that easy and nearest carry complementary information. And the question that Seamark fastly addressed in this work is. Whether or not multimodal BCI is actually improved, the information transfer rate in BCS.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "Or whether standards Bcis on either modality work just as well. So what he did is he trained a linear discriminant analysis classifier on each modality. And then he took the output of those and integrated them in another LDA classifier. And well, this is the LDA classifier for binary classification you have here the covariance matrix for one class, the covariance matrix for the other class, assuming the data is centered in the respective class. And this is the difference of means and that's your class.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "Fire you do proper cross validation. You compute the LDA on each of the modalities and then you integrate them.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "And this well, the result shows that if you use only EG like the classical. PCI then, well, you get lower classification accuracy than when you use both modalities at the same time. And this is true for more than 90% of the subjects that he tried.",
+        "start": 2320.0,
+        "end": 2349.0
+    },
+    {
+        "text": "So to summarize this application, EG. And ears carry complementary information, and if you combine these two you can get improved classification accuracies in PCI settings.",
+        "start": 2349.0,
+        "end": 2378.0
+    },
+    {
+        "text": "Yep.",
+        "start": 2378.0,
+        "end": 2407.0
+    },
+    {
+        "text": "I have a question regarding the amount of sensors use, so the recordings were in parallel right? So I think it's a bit unfair to compare the EG alone and. Nears alone because you could have used more sensors right? Yeah, yeah. So this is just one of I think a dozen plots that show pretty much the same comparison, so they always compare. Unimodal against multimodal. And. So what I guess what you're suggesting is you should use. Both. Concatenated. No. So when you you records F NIRS in e.g simultaneously you have to you have a tradeoff between the sensors you use for each modality so you have less data in each modality. So if you compare one modality against the combines modalities of the simultaneous data right? That's that's fine. But you could have made another recording with more sensors of the same modality. Effectively giving you better data. Yeah you could. Yeah, for each opt wrote you could plug in another EG electrode but. I don't think I don't think that works. Give you that much because how many chances? This I think it's less than 64. The difference between 64 and 32 is not as much as as we gained from here. Yeah, so I mean for these sources that we're looking at here motor imagery. I mean, I'm I'm not. I mean we have a lot of experts here on this. But yeah, I think it wouldn't give you that much, probably.",
+        "start": 2407.0,
+        "end": 2436.0
+    },
+    {
+        "text": "Yeah, so here is 1 example where one of the oldest methods that I know of. Years state of the.",
+        "start": 2436.0,
+        "end": 2465.0
+    },
+    {
+        "text": "Performance for cleaning of multimodal artifacts, so this is now well the whole setup. We have fMRI recordings in these slices in primary visual cortex of the macaque monkey. And we have an electrode chamber here where we measure intracranially neural activity at 20 kilohertz, and then we compute the neural band power. Because we know that this is what reflects the energy demands of that neural population. And then we have these two datasets where we have here why we extracted the boxes in this region of interest here. And these are the different boxes. A couple of thousands. And then we have some time series of a couple of 100 fMRI volumes and here we temporally aligned the epoch's and we extracted band power in different frequency bands and this is spontaneous activity here. And as you can see you can't see any correspondence, so it's really difficult to. 2. Eyeball this and tell anything about the coupling so.",
+        "start": 2465.0,
+        "end": 2494.0
+    },
+    {
+        "text": "The setup that we program what that we used was, so we have these electrophysiological data, and the FBI data. Then we do some analog cleaning in the amplifiers to not drive the signals into saturation we do with some well we converted the signals to digital, and then we, and then we do some software cleaning. And this we do. Yeah, I don't know. So this can be done online and here we did that in a 5 second circle. So with each new fMRI volume we got a new batch of electrophysiological data cleaned, and this is how it.",
+        "start": 2494.0,
+        "end": 2523.0
+    },
+    {
+        "text": "Looked like the electrophysiological data, so we recorded the gradient in an additional electrode. Then we recorded the fMRI data. Sorry, we recorded the neurophysiological data intracranially, and this is the clean signal then. So when you record electrophysiology, you basically. So you don't see anything. It's really just a scanner gradient that you see and the clean version now well looks more like the visual stimulus which I uploaded here in red. That well, it's reflected now, at least in the in the electrode somehow. So this is the raw time series. It looks even cleaner if you look at the band power signal here and how we arrived at this. It's actually very.",
+        "start": 2523.0,
+        "end": 2552.0
+    },
+    {
+        "text": "Very simple, so you take the raw signal and this is now just one epoch of the stimulus on and off, and you see there is no difference in the time series. Then we cut this raw signal into scanner into eppi shots, basically so the scanner does multiple shots for each each slice of the brain and and they look very similar. Each of these slices. And here I colored these slice, epoques indifferent grace. Now you just align each of these. You pick out the same slice, the same gradient type, basically. And you use stack them so you just use clustering to find the same gradient artifacts. Basically, if you have eight different slices, you get 8 different clusters and. And then we just do PCA on each of these clusters and we project out the largest variance signals. And then you get a clean signal if you project them out. The assumption here is that the scanner gradient. It has a much larger variance than the actual neural signal, which is yeah. Just a very quick question, so in this. Application the gradient artifact was really contained in a single PCA component, so sometimes I mean Nope, that's the next slide. OK, sorry. So yeah, when you clean the signal and you look at the time series here. Yeah, it looks much cleaner basically.",
+        "start": 2552.0,
+        "end": 2581.0
+    },
+    {
+        "text": "Yeah, now the question is how many components should you reject from this PCA? And that's an empirical question so. We don't know how this noise looks like because that really depends on the exact orientation of your electrode in the scanner. And that might change actually between the recordings, so in these recordings it's actually very simple case, because if you working with anesthetize animals you don't have a lot of the artifacts you get when you work with human so politic cardiogram artifacts that are induced by breathing essentially or blocked at the pulse that moves the electrode in the scanner. This is not this is actually not a problem here. We can subtract that because it's so systematic, but the scanner gradient is more of a problem and. Scanner grading artifacts are the easiest multimodal artifact, actually, but still you have to decide how many components to remove and what I did here. So I just plotted the eigenvalues, the covariance matrix, and you see that there is a sharp decrease and then we just assumed that. Well here where it. Where the steepness decays, not that, so there is not that steep anymore. This is probably where neural activity starts and we inspected that. By we just looked at the power spectrum of the signal. So in black you see the power spectrum with the artifact and in orange Brown you see the ones you see the spectrum without artifacts. And so this black one doesn't look very physiological, but it gets more and more physiological if you subtract like I think here was the 1st five or six or so, and then it looks well more reasonable. Of course you don't see, for example, Alpha dips or so you can't see here because they are hidden, so it's a very broad range here that we're looking at.",
+        "start": 2581.0,
+        "end": 2610.0
+    },
+    {
+        "text": "So to sum up, this part, multimodal recordings suffer from artifacts, and some of them are very complicated to get rid of. And modeling that explicitly is difficult because it depends on the position of your electrode in the scanner. An but the reasonable assumption is that your artifact has a much larger variance than your neural signal, and so you can just project out those parts of the signal that have the largest variance. Phoenix, can you say something about the feasibility with and not Onesta sized user in the fMRI where you have these nonlinearities in the artifacts? Is it is PC still that I'd say bread and butter approach? Yeah, I mean there are fancier methods to clean it. Many people use ICA. Two on top of it, but if you I think the temporal alignment. If you have a proper temporal alignment and you have kind of stationary conditions, then this is. This gets you very far. Also for ballistic cardio grams I would reckon. So that's what I think Steven Deborah uses. So I think one of the gold standard methods is what Steven David and he's using. I think I see a on top of right. Yeah. So yeah. In most combined fMRI, EEG studies have Reds, so it's different from like. Electrophysiology but they just simply use templates from the gradients to extract him from the egde idea. So how does this compare with like using the PCA methods very well. Actually the first, the first component is usually just that template. It's just it's very much. It looks very much like the mean. Like the gradient template that they use, you get rid of more variance so it gets a little bit cleaner if you use the 2nd, 3rd and 4th PC. But yeah, the gradient is sorry that gradient template approach is that the brain vision guys use. That's pretty pretty good. So what is the concrete advantage of using the PCA then? Because it sounds more complicated, at least to me. It's actually not, so you have to. I mean the cutting into epoch is as essential as critical. Or the template based approach as this one and once you have cut it into a box like doing the agony composition, that's just. I mean it's not. It's not complicated really. And also the template. I'm not actually. I talked to the guys from Brain Vision and I think. So you are a little bit more flexible with when you estimate this. Template using PCA basically. I guess I'm going to.",
+        "start": 2610.0,
+        "end": 2639.0
+    },
+    {
+        "text": "Skip the part.",
+        "start": 2639.0,
+        "end": 2668.0
+    },
+    {
+        "text": "About decoding nervous decoding neural band power from FBI. Maybe just some short. So this is again the neurovascular coupling is commonly described using this. Hemodynamic response function that implies that coupling is separable in space and time.",
+        "start": 2668.0,
+        "end": 2697.0
+    },
+    {
+        "text": "Which it's actually is not. So here is a beautiful image from. Keller seeded well. She imaged the blood system in Macaca monkey brain and it's this is Super high resolution. So what you do here is you inject plastic in the brain in the vascular system. And then you can slice the brain in very fine layers and you can use an electron microscope to image it. So what you see here is primary visual cortex. If a neural impulse arrives in layer 4. The blood response might look very different in the superficial layers compared to the lower layers. This is something that people found. Now the question is if you use a Canonical HRF. This doesn't reflect this biophysical reality and but people do that nonetheless. So the question that we addressed here is whether or not. It gives you a better decoding accuracy if you do take this into account. Our hypothesis was standard fMRI averages across, like I don't know a couple of millimeters. What we were looking at are boxes of the size of 250 microns, like 1/4 millimeter, and our hunch was that if you have data which is such a fine resolution, then you can actually. Make use of this complete of these complex spatial temporal.",
+        "start": 2697.0,
+        "end": 2726.0
+    },
+    {
+        "text": "Mix. Um?",
+        "start": 2726.0,
+        "end": 2755.0
+    },
+    {
+        "text": "I will just skip through these slides to show you well, basically the. This is the workflow we used. We extract the boxes here. We smooth them in time, little bit and then we combine them using temporal kernel CCA.",
+        "start": 2755.0,
+        "end": 2784.0
+    },
+    {
+        "text": "And this is the temporal convolution that we computed, and you can see it's not just a static pattern that is scaled up and down. Most parts of it are, but there is some variation that is not explained by just one single pattern. If you factorize it in time, you see it looks very much like a Canonical HRF.",
+        "start": 2784.0,
+        "end": 2813.0
+    },
+    {
+        "text": "We also fitted the standard Canonical HRF models and they well match very nicely what we found here.",
+        "start": 2813.0,
+        "end": 2842.0
+    },
+    {
+        "text": "And then we use this spatial temporal deconvolution to decode the neural activity. And we found this is in blue here that this model explains the neural activity much better than well using just a standard averaging. Here, or the mass univariate SPM approach? Or if you just do a standard regression type of thing with standard Searchlight analysis.",
+        "start": 2842.0,
+        "end": 2871.0
+    },
+    {
+        "text": "And here that's more of the same. So each point is a session, and most sessions in most sessions we can decode neural activity better with complex spatial temporal deconvolution as compared to standard models that assume a Canonical HRF.",
+        "start": 2871.0,
+        "end": 2900.0
+    },
+    {
+        "text": "I will skip through this we had.",
+        "start": 2900.0,
+        "end": 2929.0
+    },
+    {
+        "text": "Also some.",
+        "start": 2929.0,
+        "end": 2958.0
+    },
+    {
+        "text": "We also looked at how much information is contained in the. FBI single about new elected.",
+        "start": 2958.0,
+        "end": 2987.0
+    },
+    {
+        "text": "We looked at that for humans and monkeys and we found that it's approximately 1.5 bits per fMRI volume that you can get out of the fMRI data.",
+        "start": 2987.0,
+        "end": 3016.0
+    },
+    {
+        "text": "And that was the same for. Monkeys and humans.",
+        "start": 3016.0,
+        "end": 3045.0
+    },
+    {
+        "text": "Now, one thing that I'd like to mention shortly is that we can just use the same methods that I've been talking about here for hyper scanning, and this is something that I just. Started working on.",
+        "start": 3045.0,
+        "end": 3074.0
+    },
+    {
+        "text": "Some months ago. Or if it's more of a hobby that I know that I have a real job, but so the. The way we do that is. Or basically why we did that is for many stimuli. You don't have a regressor, so if you have a complex stimulus like a movie, you don't know what your stimulus variable actually is. So what people do usually in SPM is like they just do on off, and that's not possible for a movie because the movie has different scenes and different luminance and sounds whatever. So Andreas Bartels for instance in tuebingen he extracts features like optic flow and Gray values and that kind of stuff. And then he includes these regresses. And computes what is similar up. So what correlates with these features in the brain? But that might miss something, right? I mean you you can never know what's really important in a movie. He didn't do face detection. For instance, you could do that, but then there's other stuff that you cannot detect. The assumption that we used is that whatever. It is that drives your brain. It will be the same across subjects. And this idea is not really new Sojasun did that he looked at pairwise, so he looked at single boxes and then he compared the time series of each voxel in the subjects brain with the time series of. Boxes in other people's brains. And, well, this is essentially just the mass univariate version of what we did here. This has the usual drawbacks that you have a much lower signal to noise ratio. You only get one component, and that's usually uninformative. It's just visual on off basically. So we just considered each subject as a single modality.",
+        "start": 3074.0,
+        "end": 3103.0
+    },
+    {
+        "text": "We showed the movie stimulus and now we apply it Canonical correlation and what we get is the shared component in their brains and then we use for instance the trick that Steven. Came up with to visualize these Canonical components.",
+        "start": 3103.0,
+        "end": 3132.0
+    },
+    {
+        "text": "And that gives you. So this the red one is the first one and the green one is the second one. And this was the common activation pattern of 25 subjects watching the same movie. And what we? What we done did is we. Went to Neros and thorak. That's a website by Italia Coney and he included tons of studies and extracted using data mining. The psychological concepts that were mentioned with specific coordinates in the brain, so it's an automatised way of extracting. Yeah, well, psychological concepts associated with brain activation.",
+        "start": 3132.0,
+        "end": 3161.0
+    },
+    {
+        "text": "And that gives you for this particular brain pattern, which we threshold that I think. So yeah, it's a standard SVM analysis, actually. We just use the Canonical component as a regressor. Turns out this part here is mainly associated with motion perception, visual videos, biological body gaze action and and so forth. So that way you can obtain a fully data driven. Um? Analysis of your movie data that in the end maybe even makes sense in terms of the. Interpretability. That that sentence probably.",
+        "start": 3161.0,
+        "end": 3190.0
+    },
+    {
+        "text": "Makes sense well so. That's pretty, so that was more about vote.",
+        "start": 3190.0,
+        "end": 3219.0
+    },
+    {
+        "text": "Vocalising and that kind of stuff. I can really recommend that paper, and that website is pretty cool. It's a Python package, you just download it, you dump in your SBM image and you get out psychological concepts.",
+        "start": 3219.0,
+        "end": 3248.0
+    },
+    {
+        "text": "Yeah, so here we treated each subject as a separate modality and we used multimodal analysis too. Do hyperscan essentially. And what's good about this is that it's a multivalued extension of these intersubject synchronization studies. And that means that we get a higher signal to noise ratio. And we can look at networks instead of single boxes. Well, and the only assumption that we used is that if multiple subjects experienced the same stimulus, what's common in the brain is probably reflecting the stimulus. And this allows us to analyze complex stimuli without regressing.",
+        "start": 3248.0,
+        "end": 3277.0
+    },
+    {
+        "text": "So to sum up all these applications, we looked at hybrid Bcis that compared e.g and nearest and that gave you a better classification accuracy than unimodal signals alone. Then you can use CS PCA for cleaning artifacts. You can get arbitrarily complex with your methods about this, but PCA just does the job. If you properly align the epox. Um? Yeah, then we looked at decoding neural dental from fMRI, and we've seen that complex spatial temporal deconvolution's are better than standard Canonical HRF. If you have a high spatial temporal region in your temporal resolution in your fMRI. And you can also use these multimodal methods for other things like multi subject analysis, and this is more sensitive than mass univariate.",
+        "start": 3277.0,
+        "end": 3306.0
+    },
+    {
+        "text": "Approaches thanks.",
+        "start": 3306.0,
+        "end": 3335.0
+    }
+]

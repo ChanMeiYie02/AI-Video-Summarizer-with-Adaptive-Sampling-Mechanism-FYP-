@@ -1,0 +1,22 @@
+{
+    "id": "hebq3eanpz5vj2movhtae76wrij4dbb6",
+    "title": "Creation of Standards for Social Media Corpora: a Digital Humanities Topic Par Excellence",
+    "url": "http://videolectures.net/clarinplusworkshop2017_beisswenger_social_media/",
+    "info": {
+        "author": [
+            "Michael Beißwenger, University of Duisburg-Essen"
+        ],
+        "published": "June 6, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Humanities->Languages",
+            "Top->Computers->Digital Media",
+            "Top->Computer Science->Social Media"
+        ]
+    },
+    "num_segments": 35,
+    "num_sentences": 311,
+    "num_clips_with_summary": 30,
+    "num_gt_summary_sentences": 71,
+    "ground_truth_summary_length_chars": 10325
+}

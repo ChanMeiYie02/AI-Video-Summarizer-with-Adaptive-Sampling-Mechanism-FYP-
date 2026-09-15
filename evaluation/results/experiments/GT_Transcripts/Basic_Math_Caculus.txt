@@ -1,0 +1,324 @@
+0:00
+when we think about the area of a
+0:02
+triangle especially a right triangle the
+0:05
+calculation is one of the simplest
+0:07
+examples of geometry it is simply base
+0:11
+time height / 2 right this formula works
+0:15
+because a triangle is essentially half
+0:18
+of a rectangle imagine you have a right
+0:21
+triangle where the base is 4 units long
+0:24
+and the height is also four units to
+0:27
+calculate its area plug the values in
+0:29
+this formula to get the answer as 4 * 4X
+0:33
+2 or 8 square units now this simple
+0:37
+formula is possible to derive for simple
+0:40
+shapes with straight lines and clear
+0:42
+boundaries like triangles and rectangles
+0:46
+Etc but what happens when the shape
+0:48
+isn't so simple like a curve how do we
+0:51
+calculate areas in those cases we don't
+0:54
+have a direct formula for those cases
+0:57
+and this is where Calculus comes into
+0:59
+the picture
+1:00
+real world problems often involve more
+1:03
+complex shapes that don't have straight
+1:05
+edges for example imagine a u shaped
+1:08
+Valley which is similar to the graph of
+1:11
+y =
+1:12
+x² and you want to find the area of the
+1:15
+land beneath that Valley for cases like
+1:18
+these geometry alone doesn't help this
+1:21
+is where Calculus specifically
+1:24
+integration comes into play integration
+1:27
+is a fundamental Concept in calculus
+1:30
+used to find areas under curves the key
+1:33
+idea is to break a complicated shape
+1:36
+like this one into tiny manageable Parts
+1:39
+like very thin rectangles then for each
+1:42
+of those rectangles we calculate the
+1:44
+area and then add them up but how do we
+1:48
+do that for that just imagine slicing
+1:51
+this Parabola into very thin vertical
+1:54
+slices almost like we are stacking
+1:57
+pieces of paper next to each other each
+2:00
+of these slices has a tiny width and
+2:02
+each slice is so thin that it looks like
+2:05
+a rectangle okay for example I can
+2:08
+approximate this Parabola as a
+2:10
+collection of these rectangles right
+2:12
+assume each of them has a width of
+2:15
+0.2 this is indeed tiny so how many of
+2:19
+these rectangles will be needed if our
+2:21
+Parabola extends till x equals 2 we need
+2:25
+2 over2 or 10 such rectangles right
+2:30
+and these X values will be
+2:33
+24 6 and so on till x = 2 now in order
+2:39
+to calculate the area of these
+2:41
+rectangles we need base and height base
+2:44
+is this so we only need height tell me
+2:48
+what will be the height of these
+2:50
+rectangles yes you are right it will be
+2:53
+this but what is this value it is the Y
+2:56
+value of this Parabola right and that y
+3:00
+value is equal to x^ sared so the height
+3:04
+at these values of X will be 2 squar at
+3:07
+this it will be 4 square and so on and
+3:11
+here it will be 2 square I have made a
+3:15
+table of X values and their respective y
+3:18
+values now the area of this rectangle
+3:21
+will be base times height or this do it
+3:24
+for all of these rectangles and sum them
+3:27
+up to get this so the area of this
+3:30
+Parabola will be approximately this
+3:32
+isn't it see how cleverly we have
+3:34
+approximated the area of this parabola
+3:37
+by just approximating it as a collection
+3:39
+of rectangles now what if we make the
+3:42
+width of these rectangles so so small
+3:45
+that it is impossible to see it with our
+3:47
+naked eye and we call that width by a
+3:50
+variable
+3:52
+DX such that this DX goes to zero very
+3:57
+very small width this will make the
+4:00
+parabola as a collection of billions or
+4:02
+trillions of those rectangles so almost
+4:05
+infinite technically and thus it will
+4:08
+give an excellent approximation of the
+4:11
+area of this Parabola don't you think so
+4:14
+so if you understood what I told you
+4:17
+right now that means
+4:19
+congratulations you have understood
+4:22
+integration because that's what it is
+4:24
+all about assume for this Parabola at
+4:28
+some value of x we have the height of
+4:30
+this rectangle as X squ so the area of
+4:34
+this rectangle will be x² * its width or
+4:38
+DX and then we sum all of these areas
+4:41
+which will be this summation of x^ 2 *
+4:44
+DX and the value of x goes from zero
+4:48
+right here up to two right here this is
+4:51
+what is called
+4:52
+integration now for very small values of
+4:55
+DX which goes to zero instead of showing
+4:58
+the summation symbol we replace it with
+5:00
+this s looking symbol and write this 0er
+5:04
+and two here so the area of this
+5:06
+Parabola or for that matter any curve is
+5:10
+shown using this
+5:12
+integration and without going into much
+5:14
+technical detail the formula for
+5:17
+integration of x to the power of n is
+5:20
+given as X raed to n + 1 / n + 1 now let
+5:26
+us use it to calculate the actual area
+5:29
+of parabola
+5:30
+value of integration x² DX will be X
+5:35
+raed to 2 + 1 / 2 +1 or X Cub / 3 now to
+5:41
+calculate the value in numbers write X
+5:44
+Cub over 3 - x Cub over 3 and put this x
+5:49
+= 2 here and here put this x = 0 so it
+5:55
+will turn out to be 8 over3 or nearly
+5:58
+2.67
+6:00
+see it is so close to our calculated
+6:02
+value using 10 rectangles isn't this
+6:06
+cool therefore if you look at
+6:09
+integration in future using this way you
+6:12
+will never be scared of it and it can
+6:14
+never ever intimidate you okay now going
+6:18
+back to our case of right triangle of
+6:20
+base and height equals 4 we can
+6:23
+represent it by this curve y equal x
+6:27
+right where X goes from 0 to 4 and its
+6:30
+height that is the Y value at x = 4 is
+6:35
+also 4 so we can calculate its area
+6:38
+using integration like this integral of
+6:42
+x * DX from X = 0 to 4 we get this is
+6:47
+same as X raed to 1 so the value will be
+6:50
+X raed to 1 + 1 / 1 + 1 or x^ 2 / 2 now
+6:56
+write it as X2 / 2 - x x 2are / 2 and
+7:01
+put X as 4 here and X as zero here this
+7:06
+will give us 16 over 2 or 8 which is the
+7:10
+same as what we get using the formula
+7:12
+for the area of the right triangle that
+7:15
+is simply awesome before we go let me
+7:18
+tell you that integration has thousands
+7:21
+of real life examples like Engineers use
+7:24
+integration to calculate the amount of
+7:26
+material needed to build curved
+7:28
+structures like arches or Bridges then
+7:31
+the economists use it to measure total
+7:34
+income when graphed as a curve of
+7:36
+earnings over time then the physicists
+7:39
+use it to find areas under graphs
+7:42
+representing motion like velocity versus
+7:45
+time to calculate distance traveled and
+7:48
+so on see it was not as hard as you
+7:51
+assumed it takes a lot of effort to make
+7:54
+videos like this and if you really
+7:56
+enjoyed this explanation then I simply
+7:59
+request you to like this video and share
+8:01
+it with others and if I get 1,000 likes
+8:04
+on this video then I will make a part
+8:06
+two of it which will be much more
+8:08
+interesting than this one so good
+8:12
+[Music]

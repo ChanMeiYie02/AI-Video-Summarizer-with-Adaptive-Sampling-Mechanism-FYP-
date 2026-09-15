@@ -1,0 +1,209 @@
+[0.0s - 29.0s]
+So I'll be presenting work, joint work with my colleagues at the University of Oslo, Daniel Leffel and Henrik.
+
+[29.0s - 58.0s]
+The problem that we're tackling our main goal is that we want to improve the efficiency and quality of ontology engineering and the problems that we think we're faced with is that current ontology engineering methods are way too low level, and this makes ontology construction repetitive and error prone. It makes it difficult to engage end users because I think we as a community have yet to provide. The correct tools for the real people, as we heard in last, yesterday's keynote. It's difficult to generate sustainable large ontologies, and it's difficult to efficiently maintain these ontologies.
+
+[58.0s - 87.0s]
+We need our better abstractions. We need to be able to capture an instantiate, reoccuring modeling patterns. We need better formats that are adopted to the different types of roles that we have in until January. Ring the domain experts, the data managers and the ontology experts.
+
+[87.0s - 116.0s]
+So what are ontology reasonable ontology templates called author templates? So here we see some patterns. We see some pizzazz, and there is some recurring pattern here. And the blue stuff is what varies. But the black stuff stays the same. What we do is we represent the pattern using.
+
+[116.0s - 145.0s]
+A template and mark.
+
+[145.0s - 174.0s]
+The variables with green and we give it the name.
+
+[174.0s - 203.0s]
+And Mark List of parameters that are given to the template.
+
+[203.0s - 232.0s]
+This is a recursive structure, so each of. The triples are also templates.
+
+[232.0s - 261.0s]
+What we now can do is make instances of this template by referring to the pizza template and giving the arguments. This block here now represents the same pattern that we have on the left. So this is simple macros. What we?
+
+[261.0s - 290.0s]
+Assuming that we now have a new template which represents the simple subclass of relationship. We
+
+[290.0s - 319.0s]
+We can now replace this second triple here with a call to the subclass template. So.
+
+[319.0s - 348.0s]
+Whatever we gained, we have. We now have abstractions. We have a name. Pizza that represents this pattern and we can call it with arguments.
+
+[348.0s - 377.0s]
+This means that we don't repeat ourselves, so. We only make calls and do not need to repeat the pattern.
+
+[377.0s - 406.0s]
+Since templates can be built on other templates, we have this modularity and we can encapsulate the complexity of modeling. So in this simple example we see that we capture the OR we hide the complexity of the subclass relationship. So this I mean this is extremely simple, but. So the user does not need to know what how the modeling of the subclass template looks like.
+
+[406.0s - 435.0s]
+We got uniform modeling.
+
+[435.0s - 464.0s]
+And we separate to design and content, so the design or the templates and the content or the instances of the template.
+
+[464.0s - 493.0s]
+This ensures complete. We can also ensure completeness of input, so you cannot make pizzas without giving both arguments. And we have this simple input format that we shall exploit later.
+
+[493.0s - 522.0s]
+So how does this work? It works with simple syntactic substitution and macro expansion. So.
+
+[522.0s - 551.0s]
+I will now illustrate how this instance is expanded, so we replace. We take the pizza template and replace the.
+
+[551.0s - 580.0s]
+Labels, sorry the parameters with the arguments.
+
+[580.0s - 609.0s]
+Now we we expand until we reach the base template which is in our case the triple template. So we still need to expand the subcluster of template. Repeating the same operation. And we're done.
+
+[609.0s - 638.0s]
+And we see here that this represents the same pattern as over here.
+
+[638.0s - 667.0s]
+Going on to a more complex example. This is taken from the Pizza Ontology. So in the Pizza Ontology we have 20 two different named pizzas. And just by looking at. The ontology in any editor or or turtle it's difficult to see that there is in fact. A pattern that is repeated so it's difficult to really understand the ontology. And if we want to update the pattern, we need to repeat the process for each pizza. What we can do is represent the pattern as a template.
+
+[667.0s - 696.0s]
+So, assuming this is a prototypical instance of the pattern.
+
+[696.0s - 725.0s]
+Then we make an instance. Sorry, a signature. Which takes.
+
+[725.0s - 754.0s]
+So we have the template name.
+
+[754.0s - 783.0s]
+And it has three parameters.
+
+[783.0s - 812.0s]
+Each parameter has a name and we can say mandatory and we give it the type that.
+
+[812.0s - 841.0s]
+Types can also be optional.
+
+[841.0s - 870.0s]
+We can accept lists.
+
+[870.0s - 899.0s]
+Now we have the body or the pattern of the template and each of these templates represent.
+
+[899.0s - 928.0s]
+Common deal axioms.
+
+[928.0s - 957.0s]
+There is a small trick that we do.
+
+[957.0s - 986.0s]
+So I said that we can accept lists. And if we mark this instance with the list expansion, then.
+
+[986.0s - 1015.0s]
+If we make an instance of this form. Giving it a list. Then it produces this output. So for each element in the list it creates an instance of this template. So now.
+
+[1015.0s - 1044.0s]
+Assuming I make a new pizza. With more toppings.
+
+[1044.0s - 1073.0s]
+I get this.
+
+[1073.0s - 1102.0s]
+We have different civilizations to represent templates. The one you've seen so far is called subtle, and it's. Meant to be easy to read and write. We also have a format for out or in Alva Cabul Airy.
+
+[1102.0s - 1131.0s]
+Which is not so easy to read and write, but on top you see the signature below. Here you see the patterns we make use of RDF lists and Turtle to have this compact format.
+
+[1131.0s - 1160.0s]
+We can also generate queries from templates. So this is a query that. Whose answers are the instances of the pattern?
+
+[1160.0s - 1189.0s]
+We also have a tabular format. And this screenshot shows all the 22 name pizzas in the name Peter Pizza. OG.
+
+[1189.0s - 1218.0s]
+What we can learn from? The different civilizations that are shown are that templates are not only macros, but we can regard them as declarative mappings or transforms. Where we move data on this format by lifting it to a richer semantic format, which here is the pattern or expanded pattern. But we can also go the other way. Using queries.
+
+[1218.0s - 1247.0s]
+As we've seen, we have different formats or different format specifications. For the left hand side and right hand side, so we have tabular formats to represent the signature. We also saw it in RDF and we're experimenting with XML formats. Since this is. Houston industry.
+
+[1247.0s - 1276.0s]
+The the expansion is of course in OWL or RDF. We have a implementation of Java implementation which takes care.
+
+[1276.0s - 1305.0s]
+Move. The. Expansion we've also experimented using XLT to take the XML format using off the shelf XLT engines to do this expansion. And as we saw, we can also generate sparkle queries that performs the lowering.
+
+[1305.0s - 1334.0s]
+Our vision. For ontology engineering, is that all knowledge base interaction goes via templates? So.
+
+[1334.0s - 1363.0s]
+The three roles I mentioned in the introduction. Or then split across this figure where we have the ontology experts. That takes care of. The usual owl and RDF business, but also maintains the core templates which are the templates. The templates that represent. The owl axioms.
+
+[1363.0s - 1392.0s]
+Have the end user which has this tabular format to use as I as we saw on Excel spreadsheet. So this can be either manual input or generate the dumps from databases.
+
+[1392.0s - 1421.0s]
+In between we have the data manager, so this is constructed term. But there is someone in between here who takes care of translating the user format into templates. So this could be. If we take the analogy in programming. Then the ontology expert understands. The assembly language I'll. While the data manager uses the API created by the ontology expert. To create formats that match the user conceptualization of the domain expert.
+
+[1421.0s - 1450.0s]
+We have the similar shape Aurora rolls on the other side, so the data manager also combines templates to create. Templates that.
+
+[1450.0s - 1479.0s]
+Can generate reports. Anne. Output data for other systems. To use. So what we propose is that templates is a kind of API for all. And. We can maintain all interfaces with the Knowledge Graph by maintaining templates only.
+
+[1479.0s - 1508.0s]
+So the simple formal foundation from templates. Allows us to define different relationships between templates, so depends and overlaps and contains and from these simple relationships we can define two types of dependencies. The first one is lack of reuse. That's when we use. When we use a cap, when we use the pattern which is already. Captured by an existing template. So in this example. We see that T1 uses NB, which is the pattern that.
+
+[1508.0s - 1537.0s]
+T2 represents. So we should.
+
+[1537.0s - 1566.0s]
+And replace NB by a call to T2.
+
+[1566.0s - 1595.0s]
+There's also the uncaptured pattern, where parts. Where two templates share the same pattern. We then.
+
+[1595.0s - 1624.0s]
+Make a new template that represents that pattern.
+
+[1624.0s - 1653.0s]
+And refactor. We have evaluated our approach.
+
+[1653.0s - 1682.0s]
+Using a large scale ontology which is developed by a company called Able which produces oil platforms. Thanks.
+
+[1682.0s - 1711.0s]
+They have greater than ontology, called the MMD Ontology, which consists of. 80,000 classes spread over 200 modules. What we've done?
+
+[1711.0s - 1740.0s]
+Is to take. All the spreadsheets that they use to generate their ontology and we represent them as templates and we have seen that we can replicate their system using.
+
+[1740.0s - 1769.0s]
+Their system using templates.
+
+[1769.0s - 1798.0s]
+We can now do analysis on these templates. So the templates we end up with more than 900 templates. And after analysis, we see that only 500. 50 of them are unique. So there is some kind of redundancy here and. As many as 350 are, perhaps super flus superfluous, but domain experts need to take a look at the patterns to see if this is really the case. Further analysis reveals that there is quite a lot of redundancies in the templates, so the high number is due to all the different permutations or overlaps between the different redundancies. We are visualized this here. This axis is how common the pattern is. We could say, well, this axis is how big the pattern is. So there are 400 templates. That has a common pattern of size 2. While there are. Some patterns of size 24 which are shared between. Two templates and saturation. Of the dot is how are how many templates is occurs for. So this high numbers has that we need some heuristics. For how to fix this?
+
+[1798.0s - 1827.0s]
+We have some available resources online, so this is the home page.
+
+[1827.0s - 1856.0s]
+Have our command line tool.
+
+[1856.0s - 1885.0s]
+We have specifications for all the languages.
+
+[1885.0s - 1914.0s]
+We have a library of templates. So this is the. Documentation site for the pizza template.
+
+[1914.0s - 1943.0s]
+We have an executable demo which was presented yesterday.
+
+[1943.0s - 1972.0s]
+And all of this is put on get.
+
+[1972.0s - 2001.0s]
+So to sum up, we have an abstraction. Macro language for our definites. Built for Semantic web use. This gives us improved construction and maintenance of ontologies. And we have ideas for a methodology for different users, tools available and industry interest. What we need are editors for the day.
+
+[2001.0s - 2030.0s]
+The manager, an ontology experts and more on maintenance of these template libraries and we would also like to develop more input formats. Thanks. Thank you, mark.

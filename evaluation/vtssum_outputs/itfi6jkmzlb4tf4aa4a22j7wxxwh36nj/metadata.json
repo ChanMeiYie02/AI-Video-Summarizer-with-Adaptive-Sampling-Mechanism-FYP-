@@ -1,0 +1,21 @@
+{
+    "id": "itfi6jkmzlb4tf4aa4a22j7wxxwh36nj",
+    "title": "Language resources management at ELSA",
+    "url": "http://videolectures.net/3rdAnnualActionMeeting2019_anguera_management_elsa/",
+    "info": {
+        "author": [
+            "Xavier Anguera Miro, ELSA Corp"
+        ],
+        "published": "April 8, 2019",
+        "recorded": "March 2019",
+        "category": [
+            "Top->Humanities->Languages",
+            "Top->Computer Science->Crowdsourcing"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 383,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1269
+}

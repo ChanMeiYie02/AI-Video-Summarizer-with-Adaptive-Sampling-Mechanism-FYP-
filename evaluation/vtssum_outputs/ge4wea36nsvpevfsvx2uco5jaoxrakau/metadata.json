@@ -1,0 +1,21 @@
+{
+    "id": "ge4wea36nsvpevfsvx2uco5jaoxrakau",
+    "title": "Why are some word orders more common than others? A uniform information density account",
+    "url": "http://videolectures.net/nips2010_maurits_wsw/",
+    "info": {
+        "author": [
+            "Luke Maurits, University of Adelaide"
+        ],
+        "published": "March 25, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Computational Linguistics",
+            "Top->Computer Science->Information Theory"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 25,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 540
+}

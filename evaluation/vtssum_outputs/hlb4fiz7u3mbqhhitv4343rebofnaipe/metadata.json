@@ -1,0 +1,20 @@
+{
+    "id": "hlb4fiz7u3mbqhhitv4343rebofnaipe",
+    "title": "Characterizing Individual Communication Patterns",
+    "url": "http://videolectures.net/kdd09_malmgren_cic/",
+    "info": {
+        "author": [
+            "Robert Dean Malmgren, Department of Chemical and Biological Engineering, Robert R. McCormick School of Engineering and Applied Science, Northwestern University"
+        ],
+        "published": "Sept. 14, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Data Mining->Social Content"
+        ]
+    },
+    "num_segments": 89,
+    "num_sentences": 201,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 918
+}

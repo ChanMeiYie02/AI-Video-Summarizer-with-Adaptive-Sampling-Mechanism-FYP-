@@ -1,0 +1,20 @@
+{
+    "id": "7p24wlo2banw47k4r2rx4g75ef5f73bf",
+    "title": "Three Aspects of Gödel's Program: Supercompactness, Forcing axioms, Omega-logic",
+    "url": "http://videolectures.net/godelfellowship2011_viale_tag/",
+    "info": {
+        "author": [
+            "Matteo Viale, Department of Mathematics, University of Turin"
+        ],
+        "published": "May 20, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 96,
+    "num_sentences": 280,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1729
+}

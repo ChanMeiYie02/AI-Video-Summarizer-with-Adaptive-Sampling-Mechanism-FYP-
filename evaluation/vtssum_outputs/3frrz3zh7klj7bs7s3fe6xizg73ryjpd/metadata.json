@@ -1,0 +1,23 @@
+{
+    "id": "3frrz3zh7klj7bs7s3fe6xizg73ryjpd",
+    "title": "OE Design Tools Example",
+    "url": "http://videolectures.net/educationdesign2018_mezaris_vagliano_oe_design/",
+    "info": {
+        "presenter": [
+            "Iacopo Vagliano, Politecnico di Torino",
+            "Vasileios Mezaris, CERTH - Centre for Research and Technology Hellas"
+        ],
+        "published": "July 13, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Computers->Digital Media",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 353,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2786
+}

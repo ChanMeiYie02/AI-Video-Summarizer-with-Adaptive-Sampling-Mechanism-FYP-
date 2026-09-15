@@ -1,0 +1,325 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:06.700 --> 00:00:11.320
+Sets are unordered collections of distinct hashable objects.
+
+00:00:11.320 --> 00:00:14.310
+But what does it mean for an object to be hashable?
+
+00:00:14.310 --> 00:00:17.790
+That&#39;s a more technical topic, and we will not go into details here.
+
+00:00:17.790 --> 00:00:22.370
+In practice, what that means is you can use sets for immutable objects
+
+00:00:22.370 --> 00:00:26.680
+like numbers and strings, but not for mutable objects
+
+00:00:26.680 --> 00:00:29.250
+like lists and dictionaries.
+
+00:00:29.250 --> 00:00:30.930
+There are two types of sets.
+
+00:00:30.930 --> 00:00:33.940
+One type of set is called just &quot;a set&quot;.
+
+00:00:33.940 --> 00:00:37.400
+And the other type of set is called &quot;a frozen set&quot;.
+
+00:00:37.400 --> 00:00:41.860
+The difference between these two is that a frozen set is not mutable
+
+00:00:41.860 --> 00:00:43.900
+once it has been created.
+
+00:00:43.900 --> 00:00:45.870
+In other words, it&#39;s immutable.
+
+00:00:45.870 --> 00:00:50.340
+In contrast, your usual, normal set is mutable.
+
+00:00:50.340 --> 00:00:54.580
+You can think of a set as an unordered collection of objects.
+
+00:00:54.580 --> 00:00:59.260
+One of the key ideas about sets is that they cannot be indexed.
+
+00:00:59.260 --> 00:01:03.350
+So the objects inside sets don&#39;t have locations.
+
+00:01:03.350 --> 00:01:07.930
+Another key feature about sets is that the elements can never be duplicated.
+
+00:01:07.930 --> 00:01:12.440
+So if you have a given element or object in your set, say number 3,
+
+00:01:12.440 --> 00:01:16.750
+if you try adding that number again in the set, nothing happens.
+
+00:01:16.750 --> 00:01:19.730
+This means that all of the objects inside a set
+
+00:01:19.730 --> 00:01:23.200
+are always going to be unique or distinct.
+
+00:01:23.200 --> 00:01:27.800
+Python sets are especially useful for keeping track of distinct objects
+
+00:01:27.800 --> 00:01:32.770
+and doing mathematical set operations like unions, intersections, and set
+
+00:01:32.770 --> 00:01:34.540
+differences.
+
+00:01:34.540 --> 00:01:37.700
+Let&#39;s next experiment with using sets.
+
+00:01:37.700 --> 00:01:39.980
+Let me start by creating an empty set.
+
+00:01:39.980 --> 00:01:43.390
+I&#39;m going to create an object, a set that I&#39;m going to call ids.
+
+00:01:43.390 --> 00:01:47.580
+And the idea is that this would contain distinct ids
+
+00:01:47.580 --> 00:01:49.690
+in my study or my data set.
+
+00:01:49.690 --> 00:01:53.490
+I can create an empty set by just using the key word set,
+
+00:01:53.490 --> 00:01:56.780
+and just following that with a set of parenthesis.
+
+00:01:56.780 --> 00:02:01.200
+In this case, I would have created a set called ids, and it would be empty.
+
+00:02:01.200 --> 00:02:03.445
+It would have no objects in it.
+
+00:02:03.445 --> 00:02:05.820
+Let&#39;s say that I want to do something a little different.
+
+00:02:05.820 --> 00:02:09.930
+I&#39;d like to create a set that has a few members in it.
+
+00:02:09.930 --> 00:02:13.030
+And in this case, the syntax is very similar.
+
+00:02:13.030 --> 00:02:16.550
+I use the keyword set, followed by parentheses.
+
+00:02:16.550 --> 00:02:19.960
+And inside the parenthesis, I insert a list.
+
+00:02:19.960 --> 00:02:25.370
+Let&#39;s say that the numbers or the ids of our subjects
+
+00:02:25.370 --> 00:02:30.350
+are the following-- 1, 2, 4, 6, 7, 8, and 9.
+
+00:02:30.350 --> 00:02:32.720
+And this is my initial set.
+
+00:02:32.720 --> 00:02:36.480
+If I wanted to ask how many members do I have in this set,
+
+00:02:36.480 --> 00:02:38.910
+I can use the len function.
+
+00:02:38.910 --> 00:02:43.360
+And Python tells me that I have seven objects in this set.
+
+00:02:43.360 --> 00:02:47.310
+Let&#39;s say I wanted to add one more id to this set.
+
+00:02:47.310 --> 00:02:49.970
+Let&#39;s call that id number 10.
+
+00:02:49.970 --> 00:02:56.630
+So I would type ids.add, and I am adding an object
+
+00:02:56.630 --> 00:03:00.020
+with an id number 10 to my set.
+
+00:03:00.020 --> 00:03:03.520
+If I type ids, Python tells me that these
+
+00:03:03.520 --> 00:03:05.480
+are the current members of the set.
+
+00:03:05.480 --> 00:03:09.130
+And id number 10 has been added to this set.
+
+00:03:09.130 --> 00:03:16.300
+If I try adding, let&#39;s say, number 2, which I already have in my set,
+
+00:03:16.300 --> 00:03:19.130
+and then I ask what other members of the set now,
+
+00:03:19.130 --> 00:03:21.420
+you&#39;ll see that nothing has happened.
+
+00:03:21.420 --> 00:03:24.130
+And this is one of the key features of set.
+
+00:03:24.130 --> 00:03:27.100
+In other words, if you already have an object in the set,
+
+00:03:27.100 --> 00:03:31.570
+and if you try adding that same object again, nothing happens.
+
+00:03:31.570 --> 00:03:38.310
+We can remove members or objects from sets using the pop function.
+
+00:03:38.310 --> 00:03:43.890
+In that case, Python returns to you an arbitrary member of that set.
+
+00:03:43.890 --> 00:03:46.020
+So I can run this a couple of times.
+
+00:03:46.020 --> 00:03:49.510
+If I look at the contents of my set, I can see now
+
+00:03:49.510 --> 00:03:54.410
+that I have five objects remaining in my set.
+
+00:03:54.410 --> 00:03:58.900
+Let me redefine my ids set.
+
+00:03:58.900 --> 00:04:03.390
+Let&#39;s say that it consists of individuals
+
+00:04:03.390 --> 00:04:07.450
+with ids ranging from 0 to 9.
+
+00:04:07.450 --> 00:04:11.460
+I can look at the contents and this looks correct.
+
+00:04:11.460 --> 00:04:15.148
+Imagine that some of these objects are males and females.
+
+00:04:15.148 --> 00:04:17.689
+So I&#39;m going to construct a set that I&#39;m going to call males.
+
+00:04:20.420 --> 00:04:21.890
+So it&#39;s a set.
+
+00:04:21.890 --> 00:04:25.700
+I need to build that as a list.
+
+00:04:25.700 --> 00:04:29.760
+And let&#39;s say that these are the ids of the males.
+
+00:04:29.760 --> 00:04:32.500
+A very useful property of sets is that we can use them
+
+00:04:32.500 --> 00:04:35.070
+from a mathematical set operations.
+
+00:04:35.070 --> 00:04:40.970
+I can now use the set males to define a new set that I&#39;m going to call females.
+
+00:04:40.970 --> 00:04:48.120
+So I&#39;m going to define females as all of the ids minus males.
+
+00:04:48.120 --> 00:04:52.540
+If I ask Python what is the type of females, Python is telling me
+
+00:04:52.540 --> 00:04:53.900
+it&#39;s a set.
+
+00:04:53.900 --> 00:04:56.980
+I can look at the contents of that set.
+
+00:04:56.980 --> 00:05:00.510
+I can also look at the contents of my males set.
+
+00:05:00.510 --> 00:05:03.510
+And I see that these two are distinct.
+
+00:05:03.510 --> 00:05:07.210
+There are other ways to perform set operations in Python.
+
+00:05:07.210 --> 00:05:11.860
+For example, I can perform the set union operation in a very handy way.
+
+00:05:11.860 --> 00:05:15.710
+Let&#39;s say that I want to create a set which I&#39;m going to call everyone.
+
+00:05:15.710 --> 00:05:21.910
+And everyone consists of all of the males and all of the females.
+
+00:05:21.910 --> 00:05:27.220
+The short hand operation for a set union in Python is a vertical line.
+
+00:05:27.220 --> 00:05:30.580
+Again if I look at the contents of the set everyone,
+
+00:05:30.580 --> 00:05:34.080
+I can see that all of the set members are there.
+
+00:05:34.080 --> 00:05:39.270
+Finally, I can take an intersection of two sets using the ampersand operation.
+
+00:05:39.270 --> 00:05:45.070
+Let&#39;s say I want to take everyone, and I wanted to take out another set.
+
+00:05:45.070 --> 00:05:49.400
+So this is performing at the intersection operation.
+
+00:05:49.400 --> 00:05:54.950
+I can define another set, which in this case consists of the ids 1, 2, and 3.
+
+00:05:54.950 --> 00:05:57.790
+And then I can ask Python to return everybody
+
+00:05:57.790 --> 00:06:00.540
+who is in the intersection of these two sets--
+
+00:06:00.540 --> 00:06:05.640
+one set containing members 1, 2, and 3 and the other one containing everybody.
+
+00:06:05.640 --> 00:06:11.020
+And in this case, the answer is the set that consists of the ids 1, 2, and 3.
+
+00:06:11.020 --> 00:06:13.820
+As a simple application of sets, let&#39;s use
+
+00:06:13.820 --> 00:06:17.380
+sets to count the number of unique letters in a word.
+
+00:06:17.380 --> 00:06:20.330
+So let me first define my word of interest.
+
+00:06:20.330 --> 00:06:22.520
+Let&#39;s go with something a little more complicated,
+
+00:06:22.520 --> 00:06:25.450
+something like anitdisestablishmentarianism.
+
+00:06:25.450 --> 00:06:27.290
+I spelt that right.
+
+00:06:27.290 --> 00:06:34.040
+Now what I can do next is I can construct a set, so I just say set.
+
+00:06:34.040 --> 00:06:36.956
+I construct that from my string which is called &quot;word&quot;.
+
+00:06:36.956 --> 00:06:41.850
+And I&#39;m going to call this &quot;letters&quot;.
+
+00:06:41.850 --> 00:06:44.800
+To find out how many unique letters I have in this word,
+
+00:06:44.800 --> 00:06:50.810
+I just ask Python to return the length of the letters object, which is 12.
+
+00:06:50.810 --> 00:06:52.940
+So in this case, we were able to use the set
+
+00:06:52.940 --> 00:06:58.660
+object to simply count the number of unique letters in a string.

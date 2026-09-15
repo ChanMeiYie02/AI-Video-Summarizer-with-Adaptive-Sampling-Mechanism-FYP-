@@ -1,0 +1,20 @@
+{
+    "id": "vuqdf6enck4cteapk76u7vksvnhg65t7",
+    "title": "Opening Speech at the Regional conference Let’s clean the Balkans in one day!",
+    "url": "http://videolectures.net/cleanbalkans2011_zarnic_nv/",
+    "info": {
+        "author": [
+            "Roko Žarnić, Faculty of Civil and Geodetic Engineering, University of Ljubljana"
+        ],
+        "published": "May 18, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Events"
+        ]
+    },
+    "num_segments": 2,
+    "num_sentences": 118,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 75
+}

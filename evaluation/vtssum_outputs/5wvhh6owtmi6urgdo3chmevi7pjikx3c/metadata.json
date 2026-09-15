@@ -1,0 +1,21 @@
+{
+    "id": "5wvhh6owtmi6urgdo3chmevi7pjikx3c",
+    "title": "FEMA: Flexible Evolutionary Multi-faceted Analysis for Dynamic Behavioral Pattern Discovery",
+    "url": "http://videolectures.net/kdd2014_jiang_fema/",
+    "info": {
+        "author": [
+            "Meng Jiang, Department of Computer Science and Technology, Tsinghua University"
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 151,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2045
+}

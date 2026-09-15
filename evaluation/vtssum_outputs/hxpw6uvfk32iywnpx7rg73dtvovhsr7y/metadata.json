@@ -1,0 +1,21 @@
+{
+    "id": "hxpw6uvfk32iywnpx7rg73dtvovhsr7y",
+    "title": "Budgeted Optimization with Concurrent Stochastic-Duration Experiments",
+    "url": "http://videolectures.net/nips2011_azimi_experiments/",
+    "info": {
+        "author": [
+            "Javad Azimi, Oregon State University"
+        ],
+        "published": "Jan. 19, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning",
+            "Top->Computer Science->Machine Learning->Active Learning"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 32,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 582
+}

@@ -1,0 +1,331 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+The video begins with a title slide for a Stanford course: "Stanford CS224W: Knowledge Graph Completion: TransE, TransR, DistMul, ComplEx". Below the title, there is information indicating the course is "CS224W: Machine Learning with Graphs" and the instructor is "Prof. Jure Leskovec, Stanford University". The audio then begins with the speaker saying, "So, let's talk next about knowledge graph completion task and various methods to accomplish knowledge graph completion. In particular, we'll talk about methods that are that right now will have cryptic names but it will become clear: TransE, TransR, DistMul and ComplEx. So, I'll introduce what these methods are..."
+
+The visual remains static on the title slide throughout the audio segment. The speaker is introducing the topic of knowledge graph completion and the specific methods that will be discussed. [29.0s - 58.0s]
+we will be in particular interested what kind of relationships can this methods capture and predict so let's think about a knowledge graph completion task where basically we are given an enormous knowledge graph and the question is can we impute can we predict missing information because the knowledge graph is incomplete and the way the knowledge graph completion task works is that we are given the head node we are given the relation type and we'd like to predict the missing tail
+
+[58.0s - 87.0s]
+So notice that this is slightly different from classical link prediction task where nothing is given we just say predict what links are missing in the entire graph here we would actually say aha we are interested in this particular node we are interested in this particular relation type and we want to ask you know where is this particular author which other let's say genres is this author connected to so for example JK Rowling write the
+
+[87.0s - 116.0s]
+Harry Potter author is connected to let's say genre science fiction. So that would basically be something we would wanna predict. So what we are given is the head node, we are given the relation type and we wanna predict the tail. Um the way we are going to do this is we are going to do through node embeddings, right? So every node, every entity in the knowledge graph will have an embedding and we are going just to use shallow embeddings. [116.0s - 145.0s]
+so basically it means we will wanna learn an embedding vector for every entity type in the in the knowledge graph so that we can then do prediction well so the point is we won't be using gnn's we will just assume we are doing shallow encodings but you could also use gnn's if you would like so knowledge graph representation will be such that knowledge graph is represented as a
+
+[145.0s - 174.0s]
+That's triples head relation tail right so head is the source relation is the type of a relation and tail is the endpoint of the relation so head could be you know I don't know Barack Obama and relation would be nationality and the tail would be United States so the key idea how we want to do this is that we want to model entities and relations as embedding points and vectors in the embedding space and we want to
+
+[174.0s - 203.0s]
+associate entities and relations with shallow embeddings as i mentioned so we are not using gnn's just for simplicity to keep our life simple and then the idea is that given a true triple head relation tail the goal is that the embedding of head comma relation should be close to the embedding of the tail so i know this is a bit abstract right now so let me give you explanations how
+
+[203.0s - 232.0s]
+In word embed head comma relation and how do we define this closeness um that the embedding of head comma relation should be close to the tail and really all different methods will talk about different how this closeness and how this embedding is produced. The simplest idea and kind of the most natural one is called transi.
+
+**AI Summary:**
+The video is an introduction to Knowledge Graph Completion (KGC) and various methods, specifically focusing on methods like TransE, TransR, DistMul, and ComplEx.
+
+The core task discussed is Knowledge Graph Completion, where the goal is to predict a missing entity (the tail) given a head node and a specific relation type, distinguishing this from classical link prediction.
+
+To achieve this, the proposed methodology involves using shallow node embeddings for all entities in the knowledge graph. The representation models entities and relations as vectors in an embedding space. The fundamental idea is that the embedding of the head node and the relation should be close to the embedding of the target tail node. The speaker introduces the simplest approach, termed TransE, as a foundational method for achieving this association.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Any trans transi basically has this intuition of Transcribe
+
+[232.0s - 261.0s]
+The video begins with a slide titled "TransE" and a section on "Translation Intuition," which defines the problem as learning embeddings for a triple $(h, r, t)$ such that $h + r \approx t$ if the fact is true. A scoring function $f_r(h, t) = -\|h + r - t\|$ is also presented, illustrated by a graph showing a relationship between $h$, $r$, and $t$. The speaker then explains the core idea of TransE: for a head-relation-tail triple, the goal is to learn the embeddings of the head ($h$), the tail ($t$), and the relation vector ($r$). The objective is to find these embeddings such that the sum of the head embedding and the relation vector equals the tail embedding, i.e., $h + r \approx t$. The slide transitions to an example illustrating this concept with a graph showing "Nationality" and "American" as examples, suggesting that the learned embeddings can capture semantic relationships. The audio continues with a detailed explanation of the TransE model, emphasizing the learning objective of finding embeddings that satisfy the equation $h + r \approx t$. [261.0s - 290.0s]
+embed in bed if for example if Barack Obama nationality United States then I want them to be embedded in such a way that if I start with the head with start with Barack Obama I move according to this relation vector R I would end at the point where United States is embedded and of course I don't want this to only work for let's say Barack Obama I like to want this to work to be true for any
+
+[290.0s - 319.0s]
+persön en der der country of birth right so for example if in this graph i would be myself here as well maybe i'm a point here then if i would move according to this vector r here i'm from slovenia so my nationality should be slovenian so the country of slovenia should be mapped somewhere here right basically i would apply the same translation and hopefully the the the country that is embedded close to that
+
+[319.0s - 348.0s]
+is the country of my nationality right so here is here's here's the idea so the scoring function that would measure proximity between the head and tail would simply be head plus this vector r minus minus the tail right it basically says what is the distance between h plus r and the point t and here i could use let's say euclidean distance if i would like
+
+[348.0s - 377.0s]
+So this is what is TransE. Basically wants to learn these translations in the embedding space so that you can get from head according to a translation that is that is relation specific to the detail of that relation. I will I won't go into details basically of the learning algorithm but essentially idea is that we want have entities and relations that are first initialized uniformly
+
+[377.0s - 406.0s]
+You want to learn the translation vector for a relation. You use these are all the parameters of your model. You would, you know, sample a positive example, a positive triplet. You would, for example, sample a what is called a corrupted triplet where you would have the head, the relation the same, but you would pick kind of a random tail. You would pick a country that is not the the the true country of nationality and then you would say let me transcribe the following speech in its original language. [406.0s - 435.0s]
+I'd find the embeddings the values for head relation and tail such as the distance between the real tail and the corrupted tail the real tail and the embedding of H plus R is smaller than the distance between the H plus R and the corrupted tail which basically means a country that is not the true nationality and you can basically do the learning so now
+
+**AI Summary:**
+The video introduces the TransE model, a method for learning embeddings for structured triples $(h, r, t)$—head, relation, and tail—with the objective of ensuring that the sum of the head embedding and the relation vector approximates the tail embedding ($h + r \approx t$).
+
+The core idea is to learn embeddings that capture semantic translation, such as linking "Barack Obama" and "Nationality" to the "United States." The model uses a scoring function (like Euclidean distance) to measure the proximity between the calculated sum $(h+r)$ and the actual tail ($t$). The learning process involves sampling positive triplets and corrupted triplets to adjust the model parameters, aiming to minimize the distance between the real tail and the computed $h+r$ vector compared to a random tail.
+
+============================================================
+
+### Semantic Chapter 2 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+[435.0s - 464.0s]
+that we have done this this sounds like a great very natural idea what is cool about it is that now we don't only think of the embeddings as points in the space but we also learn this vector r that allows us to move or translate between different points it allows us to move in a given direction and of course the question is what kind of relationships is this type of approach able to learn and when i say what kind of relationships
+
+[464.0s - 493.0s]
+Can you mean relationships with different properties? For example, some properties might be symmetric or reciprocal.
+
+**AI Summary:**
+The speaker discusses an advancement in embedding learning, noting that the system now learns a vector $r$ that allows movement or translation between points, enabling movement in a given direction. The main focus shifts to identifying what kinds of relationships this approach can learn, specifically asking if it can handle relationships with different properties, such as symmetric or reciprocal ones.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Right, if person one is a roommate of person two, then person two is also a roommate of person one. Right, it's mutual. For example, then there is there might be relations that are called inverse. Right, if I am someone's adviser, then that other person is my advisee, right? [493.0s - 522.0s]
+Adviser and advisee are kind of inverse relations. However, is an relation of adviser and advisee in one way, advisee is in the other direction. So the question then becomes, can we correctly categorize this type of relation patterns or relation properties and are these knowledge graph embedding methods like the transe that I just discussed expressive enough to model these patterns? So the relation patterns we are going to
+
+[522.0s - 551.0s]
+cus are a for first is symmetric and anti-symmetric relations right like a family roommate are what we call symmetric because they are reciprocal right if i'm your roommate you are also my roommate it cannot be only one way anti-symmetric would be part of hypernym hyponym so it's basically one is with relation with the other but not the other way inverse relation
+
+[551.0s - 580.0s]
+So this would be one way of having the notion of transitive relations or if you think about relationship type trans
+
+[580.0s - 609.0s]
+So are also transitive that for example I say my mother's husband is my father so um you know that's that's also saying aha if if you start with me and you you transform according to the mother relation and then you take the mother point and transform according to the husband relation you should arrive to the same place if you take myself and transform me according to the father relation right the two the two
+
+[609.0s - 638.0s]
+Relations should meet and then another important thing is that there are one to one relations. For example, student of, right? I can have multiple students or Aiken have multiple advisees, so I can have one to n relations. So these are different relation patterns we are going to consider and what we are going to do next is we are going to look whether trans Z is able to capture this type of relations. [638.0s - 667.0s]
+Let's just talk about antisymmetric relations. What does this mean is H is related with T, T cannot be related with H according to the same relation. Like part of a hypernym is an example. And transitivity captures this, right? Because if I go from head according to the relation R, I arrive to the tail, but now if I'm at the tail and again apply this relation,
+
+[667.0s - 696.0s]
+transformation AR I don't get back to H I get to some other point so this means that uh transitivity naturally captures this anti-symmetry of relations that have this property another question is can transitivity capture inverse relations like advisor advises right so if H and T are related by R2 then you know there is some other R
+
+[696.0s - 725.0s]
+when that makes tail and the head related right can we model inverse relations yes we can in simply the r2 the the vector r2 should simply be the negative of the vector r1 so it means that from head according to r1 i move to tail then if i want to move from tail back to head i just move in the opposite direction so in tranzi this is naturally captured naturally doable so inverse relationships are possible
+
+[725.0s - 754.0s]
+How about composite or transitive relations? Right, where I say if x and y are related and y and z are related, then x and z should be related as well, right? So in transitivity, you can simply do this by by saying r3 is simply a combination of r1 and r2, right? So if I go from x via r1 to y and then I go from y via r2 to z. [754.0s - 783.0s]
+then i can basically simply go from x to z according to r3 and r3 is simply the vector r1 plus vector r2 so again we can do composite relationships with trans z easily so how about some relationships types that r that trans z cannot capture so for example interestingly trans z cannot capture symmetric relations
+
+**AI Summary:**
+The discussion focuses on modeling different types of relations in knowledge graphs, specifically examining whether knowledge graph embedding methods like TransE are expressive enough.
+
+Key points covered:
+1.  **Relation Properties:** Distinguishing between symmetric relations (reciprocal, e.g., roommate) and anti-symmetric relations (one-way, e.g., hypernym/hyponym).
+2.  **Transitivity:** Explaining how transitivity allows a relation to be applied sequentially (e.g., A $\rightarrow$ B $\rightarrow$ C implies A $\rightarrow$ C).
+3.  **Inverse Relations:** Determining if inverse relationships (like adviser/advisee) can be modeled. It was established that inverse relations can be captured by using the negative of the relation vector ($\text{r2} = -\text{r1}$).
+4.  **Composite Relations:** Discussing how composite relations (e.g., combining two relations) can be modeled, stating that a composite relation vector ($\text{r3}$) can be a combination of the individual vectors ($\text{r1} + \text{r2}$).
+5.  **Limitations:** The discussion concludes by noting that TransE cannot capture symmetric relations.
+
+============================================================
+
+### Semantic Chapter 3 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+[783.0s - 812.0s]
+ships right relationships where it where like family or roommate that are reciprocal right basically saying if h is related with r to t then t should be related to h with r as well and and the point is this right if you go from h according to r to t then what would like to do is apply the same r to t as well and get back to h and the only way you are able to do this is to make r to transcribe the following speech segment in its original language
+
+[812.0s - 841.0s]
+To be serializur which basically means that H and T are embedded on top of each other, but that is not good because H and T are different entities. They are distinct entities with distinct properties. So this means that Transi cannot embed and cannot do this kind of symmetric reasoning or it cannot model symmetric relations. And then another part that Transi cannot do is
+
+[841.0s - 870.0s]
+one to n relations right the idea is that if i have a head um end end relation and maybe this is a one to n relation then basically i want to go from head according to relation are to t1 and i also want to be able to go from head according to relation one to t2 right both exist in the knowledge graph for example student of right i can be a mentor or i can have two students simultaneously and again train z cannot move
+
+[870.0s - 899.0s]
+this type of relations because again the only way for this to work would be that t1 and t2 map into the same vector they map into the same point in the embedding space so that when you go from h according to r you arrive to the same point but again this is not this is not good because this would mean that t1 and t2 are the entities embedded in the same point so they are indistinguishable from one another but in reality t1 and t2 are completely different
+
+[899.0s - 928.0s]
+So this is what TransE cannot model. So let's look at a different method, ColdTransR that will allow us to fix some of these issues, right? So what we have seen so far is that TransE models translation of any relation in the same embedding space. So the question is can we design a new space for each relation and do the translation in it? [928.0s - 957.0s]
+relation specific space and the method that has proposed this idea is called transar and it models entities as vectors in the entity space or entities as points and models each relation as a vector in the relation space together with a relation specific transformation or projection matrix so let me give you the idea how this works so the idea
+
+[957.0s - 986.0s]
+as i said trans are model entities as points and for every relation we are actually going to learn two things we are going to learn the translation relation vector and we are going also to learn this projection matrix n for every relation so the idea is right if i want to what the way i'm going to now predict relations if i say are entity related by relation r i'm first going to transcribe the following speech
+
+[986.0s - 1015.0s]
+apply matrix M to both points and basically transform them into a new space and then in this new transformed space i'm going to kind of apply the trans e intuitions basically i'm going to use this vector r to move around so right i basically take the original embedding i transform it according to the matrix M basically means i scale it i rotate it i translate it and then i apply my vector r
+
+[1015.0s - 1044.0s]
+So, uh, you know, what will this buy me? For example, what this buys me is that it allows me to model symmetric relations because imagine again a symmetric relation like roommate, reciprocated, right? Then basically I can learn a roommate specific function, specific projection matrix N that will take two different points and map them into
+
+**AI Summary:**
+The discussion focuses on the limitations of standard knowledge graph models like TransE when handling complex relations, specifically symmetric relations and one-to-n relationships.
+
+**Key Points:**
+
+1.  **Limitations of TransE:** TransE struggles because it models all relations in a single embedding space. This prevents it from modeling symmetric relations (e.g., roommate) or handling one-to-N relations correctly, as mapping distinct entities to the same point in the embedding space makes them indistinguishable.
+2.  **Proposed Solution (ColdTransR/TransAR):** To overcome these issues, the system introduces a method where a dedicated space is created for each relation. This approach models entities as vectors and each relation as a vector, along with a relation-specific projection matrix ($N$).
+3.  **Mechanism:** When predicting a relation, the system first applies a transformation matrix ($M$) to the entity embeddings to map them into a new space, and then applies the relation vector ($R$).
+4.  **Benefit:** This architecture allows the model to correctly handle symmetric relations and distinct one-to-N targets, ensuring that different entities remain distinguishable.
+
+============================================================
+
+### Semantic Chapter 3 (Part 3)
+
+**Original Timeline (Subtitles & Frames):**
+[1044.0s - 1073.0s]
+same underlying point into the relation specific space so it means that two people that are roommates will be able to be mapped into the same point so that now here I'll be able basically to say no translation needed are zero and I have this symmetric relationship right now so this is what this allows us to do which for example transi was not able to do
+
+[1073.0s - 1102.0s]
+So anti-symmetric relations. Um again, we can easily do this, right? Because for example, the translation matrix uh can can if I have if I take two different points, the translation matrix can can again transfer um into this relation specific space in such a way that the two points don't collide. And then the same way as in transy, um we are able to do the same thing here, right from head according to the relation I get to. [1102.0s - 1131.0s]
+but from tea according to the relation i don't get back to a head so this is also possible so it can model both symmetric as well as antisymmetric relations can this treza also model one to n relations right like student of and actually again it turns out it can treza can model this because again we have enough flexibility in the
+
+[1131.0s - 1160.0s]
+projection matrix R that can learn how to take let's say T1 and T2 and map them into the same point so that when in this relation specific space I go from head according to the relation I arrive exactly to T1 and T2 that are embedded to the same position so in the original embedding these are two different points but in the let's say the relation specific embedding that is achieved by this transformation matrix M I arrive
+
+[1160.0s - 1189.0s]
+in enforce t1 and t2 to be in the same point so this one to n relations can naturally be captured so this sounds great right it seems we have kind of fixed all the issues with trans transi we can also do inverse relations because the same way as we were able to do them in transi we can do them in transar right so basically we just the transformation matrix
+
+[1189.0s - 1218.0s]
+if for both relations have to be the same and then you know one translation vector is the reciprocal or the inverse of the other translation vector um what is the issue what what does trans are what is it not able to do that trans is able to do is one thing is composition relation right and in trans are you cannot do this type of composition of relation
+
+[1218.0s - 1247.0s]
+Right meaning remember in where you say aha if x x is related by y with r1 and y is related with z with r2 then x and z are related by r3 this was very easy to do in transi because everything was in the same space and we just kind of moved around but in transr we cannot do this composition relations and the reason for this is that each relation has a different space
+
+[1247.0s - 1276.0s]
+in we know how to model from the original space to the relation specific space but we don't know how to model between different relation specific spaces so these relation specific spaces are not naturally compositional so this means that composition relations transar can not do so this was second method we discussed so let's transcribe
+
+[1276.0s - 1305.0s]
+talk about the srmmet as well that is that is based on what is called by linear modeling and so far right we were using the scoring function simply as a as a distance in the embedding space like in tran tran we said the head plus relation should be close to the tail but now what if we change the embedding the the way we
+
+[1305.0s - 1334.0s]
+scoring different relations what if we change this function and l f that it won't be a distance anymore but something more interesting so for example this smult is simply saying learn embed entities and relations as vectors in the embedding space kind of similar to transz but let's use a different scoring function rather than using the distance as in transz
+
+**AI Summary:**
+The discussion focuses on improving relation modeling capabilities within graph systems, specifically addressing limitations in symmetry, composition, and different embedding spaces.
+
+The speakers first discuss how to handle symmetric and anti-symmetric relations. They propose using a projection matrix to map two different points (T1 and T2) into the same position within a "relation specific space," allowing for effective modeling of one-to-n relations.
+
+A key limitation is addressed regarding composition relations: while inverse relations can be modeled, systems like TransR cannot handle complex composition relations (where A relates to B via R1, and B relates to C via R2, resulting in A relating to C via R3) because the relation-specific spaces are not naturally compositional.
+
+Finally, the discussion introduces SRMmet, which utilizes linear modeling. It is noted that SRMmet functions similarly to TransZ by learning entities and relations as vectors, but it uses a scoring function different from the simple distance used in TransZ.
+
+============================================================
+
+### Semantic Chapter 3 (Part 4)
+
+**Original Timeline (Subtitles & Frames):**
+[1334.0s - 1363.0s]
+Let's use this type of scoring function where we basically just have this bilinear model where we say the score is simply coordinate wise product of h r and t right so the idea is if I have a h r n t I simply multiply these things entry by entry sum it up and that is my score and the idea is if head relation tail is true then this score should be high and otherwise this
+
+[1363.0s - 1392.0s]
+This score should be low. The way you can think of this scoring function is that you can think of it as a hyperplane in the embedding space.
+
+**AI Summary:**
+The discussion focuses on a specific scoring function based on a bilinear model, where the score is calculated as the coordinate-wise product of h, r, and t. The function is designed so that a high score corresponds to a true head-relation-tail relationship, and a low score indicates the inverse. This scoring function is conceptually likened to a hyperplane in the embedding space.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So basically the way you can think of it is you can think of it as a cosine similarity between H times R and T. And cosine similarity is simply a cosine of the angle between two vectors. And what this means is that if
+
+[1392.0s - 1421.0s]
+So vectors are orthogonal then the cosine similarity will be zero and if two vectors are completely aligned the cosine similarity will be will be one. Another thing that is important is that because this now defines like a hyperplane in the embedding space this dot product can neither be positive or it could be negative and whether it's positive or negative this tells me whether the point lives on the left or
+
+[1421.0s - 1450.0s]
+or rather it lies on the right hand side of the of the hyperplane and hyperplane is redefined as a vector that is that is orthogonal to this hyperplane and this vector is simply h times z right so basically h times z defines a hyperplane that is orthogonal orthogonal to it and then the tails
+
+[1450.0s - 1479.0s]
+that that are related to each according to relation should fall on the same side of the hyperplane as this uh um uh normal vector is and tails that are not related to it should fall on the other side of the hyperplane so that's the intuition and the idea how this mult works so can it do one to n relations yes it can the reason the reason for this
+
+[1479.0s - 1508.0s]
+because we can think again of of a of a hyperplane and if if i have one two relations then t1 and t2 should fall on the same side or should fall on the same distance on or from the hyperplane and that's easy to achieve in terms of symmetric relations again we can naturally model this because multiplication is commutative right so we can flip the order in which
+
+[1508.0s - 1537.0s]
+multiply things and we'll get will get the same value so because summation and multiplication are commutative this is naturally true however the limitation are antisymmetric relations right like a hypernym part of where and the idea here is that this mult cannot model antisymmetric relations again because of the commutativity of summation and in product
+
+[1537.0s - 1566.0s]
+It means you get symmetry but you don't get anti symmetry, right? H times R times T will always be the same as T times R times H, and that's that's the issue. So, this mult cannot do that. And then the other thing this mult cannot do is modeling inverse relations, right? If H and T are related with R2, then they should also be related in the different direction. [1566.0s - 1595.0s]
+I'd rather like Adviser R2 to apply relation. Um and the reason this multinet cannot model this is because for because of the fact that it does not model inverse relations or only way to model inverse relation would be that R2 and R1 are equal, but semantically this does not make sense because then the embedding of the relation adviser is the same as the embedding of the relation. [1595.0s - 1624.0s]
+So basically this would mean that if i'm your adviser you are my adviser but at the same time if i say are you my adviser as well you answer would be yes and am i your adviser as well you answer would be yes as well so it would be like two symmetric relations rather than an inverse relation so this is where this mult fails and and then the last place where this mult fails
+
+[1624.0s - 1653.0s]
+is a composition relations right and the problem is that this smult defines hyperplane for each head relation per and the union of hyperplanes induced by this by this composition of relations cannot be expressed by a single hyperplane so kind of you know a union or an intersection of hyperplanes is not a hyperplane anymore so that's why that's the
+
+**AI Summary:**
+The speaker explains the mechanism of the model using cosine similarity and hyperplanes. Cosine similarity measures the angle between vectors, defining a hyperplane. The orientation of the dot product determines which side of the hyperplane a point lies on.
+
+The model can handle relations that are symmetric, such as those based on multiplication and summation, because these operations are commutative. However, the model has significant limitations:
+
+1. **Antisymmetric Relations:** The model cannot model antisymmetric relations because of the commutativity of summation and multiplication.
+2. **Inverse Relations:** The model fails to handle inverse relations. It cannot correctly model situations where a relation $R_2$ applies to $R_1$, only treating them as equivalent ($R_1 = R_2$), which is semantically insufficient.
+3. **Composition Relations:** The model cannot model composition relations because the union or intersection of hyperplanes induced by the composition cannot be represented by a single hyperplane.
+
+============================================================
+
+### Semantic Chapter 4 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+[1653.0s - 1682.0s]
+vision why composition relations are also not possible so the last method i want to talk to you about is called complex and the idea here the reason why i want to do this is that we don't necessarily have to embed points into the simple euclidean you know real space we can also have complex vector embeddings we can embed them in complex spaces right so
+
+[1682.0s - 1711.0s]
+complex embeds entities using in the complex vector space right where every every point now has a imaginary part and a real part and one concept from complex algebra that is important to keep in mind is this concept of complex conjugate where basically say if you is a complex number with real part a and imaginary part b then a complex conjugate of it is
+
+[1711.0s - 1740.0s]
+that it's not plus b times i but is minus b times i and this notion of complex conjugate will be important as we analyze this model so the way you can now think of this is that in complex we can actually use the scoring function that is simply similar to the to the complex to the scoring function in this model but we are only then taking the real part of the of the complex function because
+
+[1740.0s - 1769.0s]
+uh this is uh this would give me a complex number so i wanna only take the real part of it so let's quickly analyze this approach as well so can it model antisymmetric relations yes it can the way the way we can do this is that basically we can achieve that for different relations we get basically high or low value of our scoring function
+
+[1769.0s - 1798.0s]
+uh basically due to the asymmetric modeling of complex conjugates because here we are using the complex conjugate can we model symmetric relations again yes yes we can because we can simply set the imaginary part of the relation to be zero and then because everything works in in in the real part we are able to model symmetric relations as well
+
+[1798.0s - 1827.0s]
+and then you know can we can complex model symmetry inverse relations as well yes it can how by setting r by setting r2 to be complex conjugate of r1 and this basically means that the real part of the two will be exactly the same because what differs is only the complex
+
+[1827.0s - 1856.0s]
+apart so that is in terms of modeling inverse relations how about composition and one to many relations because complex shares this property with this mult meaning it uses the same scoring function then it turns out that complex also cannot model composition relations as well as one to many relations because it uses kind of a very similar
+
+[1856.0s - 1885.0s]
+scoring function so this basically now concludes our discussion of different knowledge graph embedding methods for knowledge graph completion we went through four of them we went through transe transar distmult and complex and what is interesting is that each of these methods has a bit different idea right the the two first two methods embed into the
+
+[1885.0s - 1914.0s]
+to the real space so into the euclidean space but one uses the translation idea for every relation while trans forms also uses this transformation matrix m and here i show different properties or different relation types that these methods can model trans i is the only one that can model composite relations where they can be composed this multichain
+
+[1914.0s - 1943.0s]
+is the scoring function and we embed a not into the euclidean space but in the complex space and the reason why i wanted to show you these different methods is to see kind of the diversity of options that embeddings allow you to work with and a lot give you a lot of freedom how you define your predictive model so how do you do now knowledge graph embeddings
+
+**AI Summary:**
+The speaker discusses knowledge graph embedding methods, focusing on the advantages of using complex vector embeddings instead of simple Euclidean space.
+
+Key points include:
+1.  **Complex Embeddings:** Introducing complex vector space, where every point has both real and imaginary parts. The concept of the complex conjugate (if $z = a + bi$, the conjugate is $a - bi$) is introduced as a crucial concept for analysis.
+2.  **Modeling Relations:** The speaker analyzes how complex embeddings handle different relation types:
+    *   **Antisymmetric relations:** Can be modeled using asymmetric complex conjugates.
+    *   **Symmetric relations:** Can be modeled by setting the imaginary part of the relation to zero.
+    *   **Inverse relations:** Can be modeled by setting $r_2$ to be the complex conjugate of $r_1$, ensuring their real parts are identical.
+    *   **Composition/One-to-Many relations:** Complex embeddings cannot model these relations effectively due to similarities in their scoring functions.
+3.  **Comparison of Methods:** The discussion concludes by comparing different embedding methods (TransE, TransR, DistMult, and Complex), noting that the first two embed in real space, while the Complex method embeds in the complex space, offering greater freedom in defining predictive models.
+
+============================================================
+
+### Semantic Chapter 4 (Part 3)
+
+**Original Timeline (Subtitles & Frames):**
+[1943.0s - 1972.0s]
+as in practice different knowledge graphs may have drastically different relational patterns and different properties so it is not that there is one method that works best on all of them it really depends on what kind of relationship types you are interested in modeling and what kind of relations do you want to predict if you really want to predict one to many relations
+
+[1972.0s - 2001.0s]
+One to N relations then don't use trans Z. If you want if you really care about composite relations and this kind of compositions then use for example trans Z.
+
+**AI Summary:**
+The discussion focuses on the relationship modeling within knowledge graphs. It is stated that different knowledge graphs have varying relational patterns and properties, meaning there is no single optimal method. The choice of method depends on the specific relationship types being modeled (e.g., one-to-many relations). Specifically, it is advised not to use "trans Z" for one-to-N relations, but to use "trans Z" if the goal is to model composite or complex relations.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+If what you care about for example would be antisymmetric relations, don't use this small and so on. So it really depends on on the graph and what you want to do. In general, you know, trans are and complex have the most kind of are able to model
+
+[2001.0s - 2030.0s]
+the most diverse set of different relation types so what you can always try is try with transz because it's very simple and has a very nice intuition and then you can use more expressive models like complex transz there is also another model called trans rotate which is transz but with complex embeddings so there is a lot of different approaches and different
+
+[2030.0s - 2059.0s]
+Yeah, there's a paper link up here that does serves a very good follow-up reading if you are interested in this topic. So, to summarize, we talked about the knowledge graph embedding and knowledge graph completion task, which is one of the very important tasks in knowledge graphs, and we talked about four different methods, TransE, TransR, deep smut and complex models with different embedding space and with different types. [2059.0s - 2088.0s]
+The image displays the logo for "Stanford Engineering" in red and black text. The accompanying audio discusses the "level of expressivity allowing us to model different types of relationships."
+
+**AI Summary:**
+The discussion focused on knowledge graph embedding and knowledge graph completion tasks, reviewing various methods such as TransE, TransR, TransRote, deep smut, and complex models with different embedding spaces. The talk highlighted the importance of modeling different types of relationships by varying the level of expressivity in the models.
+
+============================================================
+

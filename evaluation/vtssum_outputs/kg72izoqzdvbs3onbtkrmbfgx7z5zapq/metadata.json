@@ -1,0 +1,21 @@
+{
+    "id": "kg72izoqzdvbs3onbtkrmbfgx7z5zapq",
+    "title": "An Implementation of a Semantic, Web-Based Virtual Machine Laboratory Prototyping Environment",
+    "url": "http://videolectures.net/iswc2011_salonen_prototyping/",
+    "info": {
+        "author": [
+            "Jaakko Salonen, Tampere University of Technology"
+        ],
+        "published": "Nov. 25, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Software and Tools"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 172,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 4720
+}

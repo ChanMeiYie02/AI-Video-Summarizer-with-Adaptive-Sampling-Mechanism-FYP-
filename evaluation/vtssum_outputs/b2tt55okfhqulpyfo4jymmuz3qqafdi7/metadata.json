@@ -1,0 +1,21 @@
+{
+    "id": "b2tt55okfhqulpyfo4jymmuz3qqafdi7",
+    "title": "Cyc-Gate pipeline",
+    "url": "http://videolectures.net/larkceaw09_fortuna_bradesko_cgp/",
+    "info": {
+        "author": [
+            "Luka Bradeško, Artificial Intelligence Laboratory, Jožef Stefan Institute",
+            "Blaž Fortuna, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "July 15, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 729,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1064
+}

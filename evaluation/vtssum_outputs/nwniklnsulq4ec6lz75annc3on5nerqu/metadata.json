@@ -1,0 +1,20 @@
+{
+    "id": "nwniklnsulq4ec6lz75annc3on5nerqu",
+    "title": "Subspace Embeddings and ℓp-Regression Using Exponential Random Variables",
+    "url": "http://videolectures.net/colt2013_zhang_subspace/",
+    "info": {
+        "author": [
+            "Qin Zhang, IBM Almaden Research Center, IBM Research"
+        ],
+        "published": "Aug. 9, 2013",
+        "recorded": "June 2013",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 208,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 4028
+}

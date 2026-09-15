@@ -1,0 +1,15 @@
+PIPELINE EXECUTION TIME REPORT
+==================================
+
+1. Extract Frames & Audio: 26.10 seconds
+3. Compute Frame Diffs: 381.46 seconds
+3.5. Chunk Audio: 7.35 seconds
+4 & 5. Native Multimodal Processing: 930.10 seconds
+6. Adapt Multimodal Output: 0.03 seconds
+7. Embed and Search: 6.29 seconds
+8. Cluster Subtopics: 0.59 seconds
+9. Summarize Clusters: 55.17 seconds
+10. Final Video Summary: 474.43 seconds
+
+==================================
+TOTAL TIME: 1881.51 seconds

@@ -1,0 +1,68 @@
+[0.0s - 29.0s]
+Some examples.
+
+[29.0s - 58.0s]
+Of the kind of robots that my particular group working on, so we have from light vehicles like S UVS to really have machine.
+
+[58.0s - 87.0s]
+Like a scab, errors hope trucks and you see here. This scale of the kind of. Vehicles that we're working with Ann my talk today. We focus on the drill rig automation project. Which weighs about 40 times and said we have machine. So this is just an example of what can happen when things go wrong in the mind. Some of you might have seen this new tool before. But it's always interesting to show. So this is just a demonstration of how.
+
+[87.0s - 116.0s]
+Light vehicle meeting. One of those really heavy haul trucks have no chance of surviving. This wasn't the demonstration, but these are real pictures from the mines. And the problem here is that the position of the driver produced like huge large blind spots. So there's a need to use like different sense.
+
+[116.0s - 145.0s]
+Those are kind of obstacle detection to try to avoid these kinds of accidents. So in our group we have about 40 people working on those on different projects. And for people, including researchers, students, and engineers. And our main concern here is on safety course, predictability and efficiency of those models. And just to explain a little bit more in detail of the problems that we're dealing with here, so we're focusing on mine automation. As the name says. But we're not concerned on underground mining. We're looking at surface open pit mines like this one. In Australia. Anne. As part of the mining process, just explain little bit because that will be useful later on. How the mining happens. So for the mining first we have to explore the area. They drill holes on the ground to find the resources so they produce a resource model and then once they find the regions of interest then they drill holes and put explosives cause the rocks are really massive. They can't really mine it directly, so we have to put explosives and blast the hot rocks. So that then you can come with the excavators an remove the minerals and separate dinners in the waste. And that's basically the workflow of the mind.
+
+[145.0s - 174.0s]
+So we will be working on the. The rules that they are drilling the black holes before the mining can occur. So the ultimate goal of our project is to produce a probabilistic representation of the mind that would contain geology, geometry, equipment and the order properties of interest in the mining process.
+
+[174.0s - 203.0s]
+So for this drilling and blasting phase, this is how they do it today, so they have a team of geologists and surveyors. That they go and inspect, visually inspect the mining to find out the boundaries between the different mineral zones. So that they can excavate the minerals and separated, similar in the ways that it said before. So we should do this. We use visual inspection, they use samples from the Cera whole black hole in the use con loggings from those black holes. But it's always an estimate of watch the geology because they can't really go down the holes and see what's underground. So.
+
+[203.0s - 232.0s]
+This is our our drill rig Ann. The idea here was to use the same sensors that we use to automate this vehicle and use the same sensors to try to predict and estimate the geology underground. And we have a set of measurements while why you drill the holes. And like professional range, rotation, speed, rotation, pressure put on pressure, better pressure had speed and we used those measurements of course to control the drill for the automation. And the intuition here is that the interaction between the drill bits and this in the rocks. Would give the better estimate of the hardness of the rock or the kind of the geology of the rocks underground. Much better than the visual inspection that the current use, for example.
+
+[232.0s - 261.0s]
+So as I said, we're focusing on trying to predict Georgian hardness, and we want to build models from those multiple sensor measurements that are inherently noisy and have also inserted on the labels as RX Play little bit later, and we want to incorporate outside the spatial relationships of the geology. And to do this we use a conditional.
+
+[261.0s - 290.0s]
+Is. As was told before in a previous session, similar to America Broomfield. But instead of modeling the full joint, the conditional field will model the conditional probability of the hidden variables. And because we're doing this then we can have more flexibility in the file in the kinds of feature functions. For our click potentials.
+
+[290.0s - 319.0s]
+So here, how are graphical model looks like? So coming from the blast holes, we have a grid like pattern like this an for each hole. Extract all the measurements in this hole and we re sample measurements that are taking different sampling rates and we average for every state in centimeters and those will be our observations. And for this first Test, we did like a grid like chain, like CRF. So this is the prediction that we have once have as outputs.
+
+[319.0s - 348.0s]
+So little bit more detail about the functions that were using, so have a pairwise function that we try to enforce Association between the neighbor neighbor sections. So if the same label gives a parameter, it's a different label, gives a different parameter, and it's also learn it's all learned from the data. For the local features, so we actually tried to learn the inputs, the MWD measurements, the measurement while drilling. Later directly to the model, but it didn't quite work very well. So and we know from machine learning that usually the machine learning methods work better when you can extract useful features from your from your data and then inputs to your C classifier or regression model. So we test different methods like your networks as VMS, logistic regression and boosting was the one that stood out as. Efficient training and testing and very easy to to really tune the parameters. There's only one parameter change. And we tested different three different combinations of boosting so. First one using the multiclass output of logic boost directly into the model as the observation, second one using our one versus our approach using the binary ADA boost. And also we try to re learn the weights of data boost once we have the full model of the older one versus all models and the impression was that when you have the full set of models, if you can relearn 'cause they boost boost is a stepwise approach. So it doesn't we look back and went to look at the big picture could come up with better prediction.
+
+[348.0s - 377.0s]
+Learning inference in those models very straightforward. We use so the likelihood. For the learning it's we talked about in this conference before, so not going so much detail in for the map estimation inference, we use belief propagation. As you as you saw for our this.
+
+[377.0s - 406.0s]
+For these experiments, we didn't have a loop, so we have a closed form solution for the belief propagation. Spruce straightforward. And this is how our labels look like, so we have. In this example, for different types of geologists who have better information through iron ore zones, and this is shared with the kind of clay, and this was done by the geologist, so they draw discontinuous boundaries based on the other side vision inspection and also can't log in. And in order to put that into our model.
+
+[406.0s - 435.0s]
+We did actually was to use your physical logs, which is a different sets of measurements that include gamma, Ray, magnetics, Accessibility and Link City and we ask the geologist to help us and define some thresholds on those geophysical logs. And so that we could train our models so this you can see that it resembles very much of the interpretation of the geologists Ann.
+
+[435.0s - 464.0s]
+One point should say here is that if you give the same kind of data to a different geologist. He will come up with a different. Slightly different set of boundaries because it says it's sending trepidation of the measurements, so there's a lot of noise in those labels as well.
+
+[464.0s - 493.0s]
+So this is the results of this year Epson and boosting on those datasets. When our data sets you have here about 28 holes and each hole has about 12 meters Max and so have 120 sections. And for this test we use cross validation, but we didn't use like the standard random cross validation we use. We tried to simulate the scenario so we train using one set of. Previous acquired data and we are doing a new hole so we want to test on this new hole. So we took one entire hold out and left it for cross validation. And that's the kind of result that we have. And we see here that we have some difficulty in finding the boundaries. By using this cross validation, but anyway, the SCF gets little better boundaries, at least for this one. And it also has a kind of smoothing effects over the only the logit boost. So this.
+
+[493.0s - 522.0s]
+The statistics of the results you see that. The precision recall combined on the F measure gives India accuracy. Your higher edge for this see reps with logic boost. And we also test this for a larger data set using about four times as many number of holes, so have 130. And but the classification was actually simple, so have only three classes and you see that we have. They said trends here. But it's still the sheriff's analogical outperformed the older methods, and they will learn of data. Boost didn't actually perform very well was almost. Even worse than the logic boost alone. So just to wrap.
+
+[522.0s - 551.0s]
+Up the ideas that I put here so. We show that we can learn from the multiple sensor measurements of the drill by using a classifier and producer broad classification. An so that you can model their spatial relationships by using a CRF. And in our model, learning inference can perform efficiently by using belief propagation through the likelihoods. Then
+
+[551.0s - 580.0s]
+Those are some ideas. We think this is a really interesting application of our really good testbed for different methods in machine learning so we could test here and we're planning on testing this in the future by using supervised learning. But we have all this huge amount of new data and this is really hard to get the proper labels for those. And this also interesting interesting test kits for multi task learning where you have different sensors and we can try to predict different outputs like geology and hardness. They are not really connected, we can have. The same mineral that can be hard or soft, for example. And you might want to predict instead of only one hole at a time, but the full 3D relationship between the of the geologist, so this would require a big structure in the graph structure. And there's also the problem. Of course, we're drilling a series of holes, and there's the. The drill bit after doing some holes it starts to wear out so there is change the performance of the drill as it is drilling and so there is a shift on the data set so that we should really investigate this in the future. So that's all.
+
+[580.0s - 609.0s]
+Had to present today and thank you so much for attention. Looking for questions. No, that's correct. Sex video from devastation and shooting value menu. See. Trance. Thanks. This one. A previous.
+
+[609.0s - 638.0s]
+So yeah, this is just the if you have the same label, so you give. What went when parameter in? If it's a different label to give another parameter and this this comes from the data set, so it's pretty much just a learning. During the learning actually, yeah. Here in France. No, you learn the parameter during during the learning procedure and inference. Just use the parameter so we don't really learn that for inference. It will be attached, which kind of which pair of classes, right? But Premier business wait, let me get the ground truth from different areas. It was. So it is said we have those black holes. Then printable.
+
+[638.0s - 667.0s]
+When you're drilling the holes, you take the measurements right, but once you have the whole you can put extra sensors. That's called geophysical logs, and then that produce that there are different kinds of physical logs for here, use nasty caliper, magnetic, magnetic susceptibility, and natural gamma. But the geologists they have to interpret those measurements. Then they help us through providing like thresholds on those measurements so that we can come up with those labels here, and that's our ground truth, but it's really expensive to do that. That's why we want to do that directly from the measurements. It's basically a translation of what their religion. Yeah, the translation from this, yeah? Matched or. Sure problem. So basically it's still. OK. Too much.

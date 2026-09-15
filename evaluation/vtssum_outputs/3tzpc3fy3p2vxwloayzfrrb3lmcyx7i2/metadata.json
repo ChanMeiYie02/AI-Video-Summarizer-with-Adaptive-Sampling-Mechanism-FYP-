@@ -1,0 +1,21 @@
+{
+    "id": "3tzpc3fy3p2vxwloayzfrrb3lmcyx7i2",
+    "title": "Translation-based approaches to conformant and contingent planning",
+    "url": "http://videolectures.net/icaps2011_palacios_albore_planning/",
+    "info": {
+        "author": [
+            "Héctor Palacios, University Simón Bolí­var",
+            "Alexandre Albore, Pompeu Fabra University"
+        ],
+        "published": "July 21, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence->Planning and Scheduling"
+        ]
+    },
+    "num_segments": 195,
+    "num_sentences": 1061,
+    "num_clips_with_summary": 34,
+    "num_gt_summary_sentences": 68,
+    "ground_truth_summary_length_chars": 7691
+}

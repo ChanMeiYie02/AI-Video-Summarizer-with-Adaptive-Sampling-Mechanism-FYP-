@@ -1,0 +1,21 @@
+{
+    "id": "4k7iaweaaiiw3mv7gmmgcttrivlaanet",
+    "title": "Listening to the pulse of our cities during City Scale Events",
+    "url": "http://videolectures.net/iswc2013_della_valle_scale_events/",
+    "info": {
+        "author": [
+            "Emanuele Della Valle, Politecnico di Milano"
+        ],
+        "published": "Nov. 28, 2013",
+        "recorded": "October 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Digital Humanities"
+        ]
+    },
+    "num_segments": 60,
+    "num_sentences": 452,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 3400
+}

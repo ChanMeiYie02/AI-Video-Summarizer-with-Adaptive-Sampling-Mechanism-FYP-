@@ -1,0 +1,21 @@
+{
+    "id": "3sdvzr73ucjpjkhvihlfvq4vg5aaqf5w",
+    "title": "Patient Surveillance Algorithms for the Emergency Department",
+    "url": "http://videolectures.net/nipsworkshops2011_halpern_patient/",
+    "info": {
+        "author": [
+            "Yonatan Halpern, New York University (NYU)"
+        ],
+        "published": "Jan. 23, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Medicine->Personalized Medicine"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 28,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1102
+}

@@ -1,0 +1,167 @@
+[0.0s - 29.0s]
+Today I'm going to talk about integrating spreadsheet data via accurate and low effort extraction.
+
+[29.0s - 58.0s]
+Spreadsheets are everywhere. Many people use brushes, including professionals and nonprofessionals. Microsoft estimates more than 400 million people using excel's worldwide. Spreadsheets are a standard tool. For example the US.
+
+[58.0s - 87.0s]
+Government for many years published thousands of pressures about a variety of topics ranging from economics, demographics, public health and many others. This valuable data only available via spreadsheets.
+
+[87.0s - 116.0s]
+Imagine that a public health experts Aly wants to analyze the strength of connection between smoking and non cancer for all the US States and she is likely to obtain the datasets via two separate spreadsheets downloaded from a government website. But unfortunately she has to write customized code to combine the two.
+
+[116.0s - 145.0s]
+Silence example is basically a spreadsheet integration application. It is appealing, but it is very hard to integrate brushes using the existing tools.
+
+[145.0s - 174.0s]
+If we can convert spreadsheets into relational format, we will be able to use many traditional database operations to do data data analysis on top of it, including selection, integration, etc.
+
+[174.0s - 203.0s]
+However, it is not straightforward to convert a spreadsheet into a relational table because the spreadsheet schema is entirely implicit. The schema is often designed for human consumption, but it's not very easy for machines to process.
+
+[203.0s - 232.0s]
+For example, the spreadsheet here shows it's downloaded from the US Census Bureau showing the percentage of the population that smokes. The numerical values are described by a number of implicit annotations surrounding them.
+
+[232.0s - 261.0s]
+For example, the numeric value 28.7 is described by the annotations 1990 on the top 45 to 64 years. White male total smoker on the left. And it means that the smoking ratio for white male from 45 to 64 years old in 1990 is 28.7% in the US. But the spreadsheet does not explicitly indicate this hierarchical annotation mapping relationship. To convert this pressure into a relational table, we have to correctly identify the annotation tables for each numeric value.
+
+[261.0s - 290.0s]
+For example, the value 28.7 can generate the relational tab on the bottom.
+
+[290.0s - 319.0s]
+We can also generate the relational table for the value 13.7.
+
+[319.0s - 348.0s]
+And so on.
+
+[348.0s - 377.0s]
+In the end, we are able to construct the relational table for the four highlighted values and once we have the relational table, we can conduct many useful analysis on top of using the traditional database operations. So for example, we can easily calculate the average smoking ratio for white male in the US or integrate with a non cancerous pressure to discover the strength of connection between lung cancer and smoking.
+
+[377.0s - 406.0s]
+And this kind of hierarchy cost brushes are popular and we selected 200 random brushes from the web and we manually examine each. And we observed at 32.5% of the web's pressures are hierarchical and more than 60% in the top 10 Internet domains that publish the largest number of spreadsheets. And it shows that there is a significant portion of hierarchical structures in the web.
+
+[406.0s - 435.0s]
+And now we formally define our problem.
+
+[435.0s - 464.0s]
+There are variety types of brushes in the world and we are not able to handle every kind and in this paper we focus on our three power structures. Brush it any represents a type of spreadsheet, consists of three semantic components.
+
+[464.0s - 493.0s]
+The left annotation top annotation region on the top. The Le.
+
+[493.0s - 522.0s]
+Annotation regional F.
+
+[522.0s - 551.0s]
+And a data region in the center.
+
+[551.0s - 580.0s]
+In this paper we studied the hierarchy extraction problem, which recovers the hierarchical structure of annotations in spreadsheets. It takes in annotation region animats hierarchies for annotations. We have implemented a spreadsheet, database management system and it is able to transform spreadsheets into relational tables, which opens up the opportunity to integrate brushes. But in this paper, we focus.
+
+[580.0s - 609.0s]
+On the hierarchy extraction problem, which is the most critical component of our spreadsheet data database management system?
+
+[609.0s - 638.0s]
+The hierarchy extraction task is difficult. So first of all, different brushes use different formatting style to encode the hierarchy and then methods based on formatting heuristics will be very poor at reconstructing the hierarchy. And also our extraction system is designed to be interactive, but users are likely to give the system very little labeled data. The system will be able to repair extraction errors and obtain an accurate annotation hierarchy with a small amount of user input.
+
+[638.0s - 667.0s]
+As a result, we propose a novel two phase semi automatic approach to extract this, brush it hierarchies accurately and with no effort.
+
+[667.0s - 696.0s]
+And now we introduce our true phase semi automatic approach in detail.
+
+[696.0s - 725.0s]
+So in the first stage we employ an automatic extraction model to obtain the initial extraction results and present it on the screen.
+
+[725.0s - 754.0s]
+For example, the picture here shows the initial extraction results computed by the automatic extraction model. Because it is always horrible. An automatic method to achieve perfect extraction results. But we have designed a normal user interface to achieve this goal while minimizing the user required while minimizing the user effort required.
+
+[754.0s - 783.0s]
+And in the second stage we incorporate you this interaction into the extraction framework or user can repeat repairing an extraction mistake until it is fully accurate. A user reviews the extraction results and repairs error using our visual tool. The system then spread suffixes into many other similar mistakes and present the newly computed results on the screen for the next round of review and repair. The user can iteratively fix an extraction error until obtaining a fully accurate extracted hierarchy. As a result, the success of the system is indicated by how many repairs required from users to fix up all the extraction errors in the hierarchy.
+
+[783.0s - 812.0s]
+For example, the system will first present the results from the automatic extraction phase as shown on the left side of the figure. The dashed arrow shows that a user performs a repair by clicking and dragging white so that it becomes a child of Mail. Indicating that male annotates the white. The system spreads that users repair to many other similar mistakes, and then this one repair operation triggers multiple error fixes, including setting Mail to also annotate black. We have implemented this hierarchy extraction task using an undirected graphical model, and it supports both automatic extraction and interactive repair phase.
+
+[812.0s - 841.0s]
+We model this hierarchy extraction problem as a classification task. We enumerate all the possible annotation pairs in an annotation region as a parent, child pair candidate. And each of the candidate takes a label from true or false, representing whether one is the parent of another. For example, here, Mail is the parent of white here and then the variable.
+
+[841.0s - 870.0s]
+Male, white she takes the label true.
+
+[870.0s - 899.0s]
+And because black is not the parent of white and then the variable black white.
+
+[899.0s - 928.0s]
+Should take the label false. In the end, we are able to collect all the true parent child pairs to construct the hierarchy.
+
+[928.0s - 957.0s]
+Now we describe a toy example of building the graphical model for the extraction task and takes the region. For example, we will create the variables, including Mail. 18 to 24 years. Male 25 to 34 years and so on.
+
+[957.0s - 986.0s]
+We encode four different kinds of potentials to decide which variables are true and which are false. So the first kind is a node.
+
+[986.0s - 1015.0s]
+Or we encourage the properties associated with each variable as a node potential in the graphical model, such as its indentation, alignment, etc.
+
+[1015.0s - 1044.0s]
+We then build edge potentials on the graphical model. The edge potentials connects variables that are highly correlated with each other. For example the variable Mail.
+
+[1044.0s - 1073.0s]
+18 to 24 years and the variable male 25 to 34 years are very likely to share the same label because 18 to 24 years and 25 to 34 years have the same formatting style. In the structure. We then build an edge potential to collect the two variables and we also build other potentials other edge potentials for the other correlations. An please look at the paper for more details.
+
+[1073.0s - 1102.0s]
+And we encode the global constraints as a global potential. Here, for example, the variable.
+
+[1102.0s - 1131.0s]
+Now 18 to 24 years. And 25 to 34 years. 18 to 24 year.
+
+[1131.0s - 1160.0s]
+They cannot both be true, because in a legal tree, one annotation can only have one parent, and then we enforce the global constraints here.
+
+[1160.0s - 1189.0s]
+It is appealing to spread each user Reperta label avariable too many other variables. For example, when the user drags and drops white to be the child of Mail.
+
+[1189.0s - 1218.0s]
+We know that the label for the note male white is true.
+
+[1218.0s - 1247.0s]
+Adding to the correlation, we may be able to propagate this information to other variables, including the node male black because white and black share the same formatting style in this pressure, and then we know the label for variable male. Black should also be true.
+
+[1247.0s - 1276.0s]
+But simply propagating assignments may introduce errors where none previously exist, and this is a backtracking problem. Here we want to leverage the graphical model to integrate probability information with the node potential edge potential and global potentials to prevent backtracking.
+
+[1276.0s - 1305.0s]
+As a result, we encode this propagation process as the repair potential in the graphical model. The hope is that by adding high quality new information to the automatic extraction graphical model will yield better outcomes than treating spreading repairs as a non probabilistic post processing stage.
+
+[1305.0s - 1334.0s]
+And now we can talk about the experiments.
+
+[1334.0s - 1363.0s]
+In the experiments we use toothbrushes copro. In the essay, US is released by the US Census Bureau. It consists of more than 1000 spreadsheets. The web is our web crawl. Data set consists about 400,000 Excel files.
+
+[1363.0s - 1392.0s]
+And we see to evaluate the. So the first stage we will evaluate the automatic extraction and we selected 200, runs brushes, random hierarchical structures from both SAS and web which spread them equally for training and testing. And we repeat this bleeding process for 20 times and report the average F1.
+
+[1392.0s - 1421.0s]
+So the table shows the F1 score for the five methods on the two datasets. Although basic use simple features on classification and it is the baseline. Auto LR Auto Edge auto four are different different configurations of the graphical model for automatic extraction and auto 4 is the complete model. So from the table we can see that we obtain.
+
+[1421.0s - 1450.0s]
+A 91% improvement on SAS and 76% improvement on web comparing to baseline auto basic and the winning isn't huge. When we compared to auto LR but improvement will be huge in the interactive repair phase which will show later.
+
+[1450.0s - 1479.0s]
+And the second stage we will evaluate the interactive repair. So we measure the amount of user effort by counting the required number of drag and drop repair operations to fix up all the extraction errors in the annotation hierarchy using our visual repair.
+
+[1479.0s - 1508.0s]
+So the diagram here shows the normalized repair for each of the five methods on the two datasets. Essay, USANA, web. So the repair basic is a baseline and it ties correlated parent child pairs for simple propagation. And Auto R Auto 4 repair our repair for different configurations of the graphical model and repair for is a complete graphical model. So as.
+
+[1508.0s - 1537.0s]
+Only in the diagrams, the repair for can extract accurate expression hierarchies using just the 7.2% of the maximum possible human effort and a reduction of 53% compared to auto 4, which is the fully automatic graphical model.
+
+[1537.0s - 1566.0s]
+And finally, we conclude.
+
+[1566.0s - 1595.0s]
+So in this talk we have described a semi automatic framework for extracting relational data from spreadsheets. And our approach is able to derive accurate extractions with dramatic dramatically low user effort, and it opens up the opportunity for data integration amongst brushes and with many other relational source.
+
+[1595.0s - 1624.0s]
+That's all, thank you.

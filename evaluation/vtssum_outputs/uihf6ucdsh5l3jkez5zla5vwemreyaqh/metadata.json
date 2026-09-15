@@ -1,0 +1,20 @@
+{
+    "id": "uihf6ucdsh5l3jkez5zla5vwemreyaqh",
+    "title": "Robotics",
+    "url": "http://videolectures.net/is2012_gams_robotics/",
+    "info": {
+        "author": [
+            "Andrej Gams, Department for Automation, Biocybernetics and Robotics, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 13, 2012",
+        "recorded": "October 2012",
+        "category": [
+            "Top->Computer Science->Robotics"
+        ]
+    },
+    "num_segments": 3,
+    "num_sentences": 13,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 605
+}

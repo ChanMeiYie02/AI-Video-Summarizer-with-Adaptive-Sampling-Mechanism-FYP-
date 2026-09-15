@@ -1,0 +1,20 @@
+{
+    "id": "zde4kuhnxh43zugdniiwldugu5cn2foo",
+    "title": "Time Dependent Stick Breaking Processes",
+    "url": "http://videolectures.net/icml08_griffin_tds/",
+    "info": {
+        "author": [
+            "Jim Griffin, University of Kent"
+        ],
+        "published": "Aug. 4, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 37,
+    "num_sentences": 380,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2805
+}

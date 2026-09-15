@@ -1,0 +1,21 @@
+{
+    "id": "no6y5widcdktau2zy5obsmv4643byr5h",
+    "title": "Solving Person Re-identification in Non-overlapping Camera using Efficient Gibbs Sampling",
+    "url": "http://videolectures.net/bmvc2013_englebienne_gibbs_sampling/",
+    "info": {
+        "author": [
+            "Gwenn Englebienne, University of Amsterdam"
+        ],
+        "published": "April 3, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 139,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1704
+}

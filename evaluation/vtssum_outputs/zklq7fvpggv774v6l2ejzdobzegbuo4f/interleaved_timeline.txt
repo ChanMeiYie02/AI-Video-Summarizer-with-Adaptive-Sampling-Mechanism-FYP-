@@ -1,0 +1,140 @@
+[0.0s - 29.0s]
+So I think I win the prize for the most slides and they have 44 to get through in 10 minutes so. So I never thought it agree so much with Aldo Gangemi, so we're off to a good start. I think for the panel, but I want to use this this time to make some controversial and some less controversial statements. I'll leave you to decide which ones they are.
+
+[29.0s - 58.0s]
+So my first claim is that without Link data would be no semantic web. There would be no semantic web and there could be no semantic web from a technical point of view. If you can publish some data using semantic web technologies, that's great, but if it's not linked, it's not a semantic web from a professional or personal point of view. Then if it wasn't for the success of the linked data activity, then my argument is that the semantic web as a research area and a Technology Strategy would be dead, would be in the in the wilderness. If anyone doesn't agree with me then.
+
+[58.0s - 87.0s]
+Those of you that were around in 2005 or remember it was a fairly interesting time. No one understood, no one took us seriously. Everyone was rubbish.
+
+[87.0s - 116.0s]
+There wasn't even a semantic web beyond our photo files, and even that wasn't really a semantic web. It was just a few RDF. See also statements linking an these files together.
+
+[116.0s - 145.0s]
+We were completely bogged down in the HTTP range 14 issue. Would you please raise your hand if you remember the HTTP range 14 issue? OK yeah few diehards in the in the audience. So this is a horrible thing that bogged us down for years and no one could do anything because they didn't know how to how to actually get on. And publishing build a semantic web or web of linked data so.
+
+[145.0s - 174.0s]
+That was resolved or that that was a horrible issue. And then all we had to do was just consume the wine ontology to make sure I make things better and hope that things get get eventually better for us. So it was pretty.
+
+[174.0s - 203.0s]
+Dark time, exciting but dark.
+
+[203.0s - 232.0s]
+And then this happened.
+
+[232.0s - 261.0s]
+And.
+
+[261.0s - 290.0s]
+This and this.
+
+[290.0s - 319.0s]
+This and this.
+
+[319.0s - 348.0s]
+And this and this.
+
+[348.0s - 377.0s]
+And this and now we have a semantic web.
+
+[377.0s - 406.0s]
+So.
+
+[406.0s - 435.0s]
+So what worked well? Quite a few things worked. The first thing we got clarity the HTTP range 14 issues was resolved. There was a new understanding about how to deal with URA URA aliases which contradicted the previous guidance from the W3C about the architecture of the World Wide Web, and with that clarity we could really we could actually get on and build a semantic web 'cause we knew what to do. We had a set of.
+
+[435.0s - 464.0s]
+Basis on which to proceed. So that was the very clear set of instructions from the WTC about HTTP range 14. If you haven't heard of this, go away and read it. Highly recommend it.
+
+[464.0s - 493.0s]
+The second thing that worked was that we had some shared principles and some norms rather than constantly arguing about some of the specifics of how to publish link data, we actually had a set of principles which were simple enough to implement and specific enough to get on and do something.
+
+[493.0s - 522.0s]
+And most importantly of all, I think we took some action. We didn't just sit around and talk about it. We got on, did something, published some data linked together and as well they describe Bootstrap Bootstrap this.
+
+[522.0s - 551.0s]
+Web so, So what is it?
+
+[551.0s - 580.0s]
+Working well, I think. Firstly, there's some kind of terminological confusion which I.
+
+[580.0s - 609.0s]
+To clear up, so Link data is a style of publishing data on.
+
+[609.0s - 638.0s]
+Aweb linking open date.
+
+[638.0s - 667.0s]
+It is a project. Open Data is a style of licensing data that is very clear about its recent as very liberal terms of re use and open data is complementary to but orthogonal to link data.
+
+[667.0s - 696.0s]
+So let's not put openness of data on the critical path to adoption of the linked data principles because not every bit of data that's published as linked data is going to be open and not everybody of open data that's published on the web is going to be public data. So let's be clear about the distinctions between these two and be clear about this when we're communicating this.
+
+[696.0s - 725.0s]
+People. So.
+
+[725.0s - 754.0s]
+Network, so there are a few issues we need to address licensing. I've kind of talked a little bit about. I'll talk quickly about quality and.
+
+[754.0s - 783.0s]
+Later and then applications. So the links in link data. I mean that's what the whole things about, right? But we've seen in the link community in the web community in the last couple of years. The whole lot of agonizing about the same as issue. So what are the semantics with same as are the appropriate? Is it being used inappropriately by people? Who cares? I mean people in this community care, but no one in the rest of the world cares, no ones complaining because no one is doing anything with the data yet. So no ones taking data using our same as statements, smashing it together. And watching planes fall out of the Sky or nuclear power stations explode. No one cares, so let's just get on with it. Published some more data and wait to see, or at least build the applications that do this reasoning cause these problems and then revisit the issues with a real kind of set of experiences about what these problems actually are so. Need to chill by the pool. That's where the dogs on the inflatable thing.
+
+[783.0s - 812.0s]
+So yeah, so more more things about the links. So if you look at the Flickr rapper, which takes photos from Flickr and links it to DB pedia, this is one of the photos you get when you ask for depictions of the film atonement. So this is the cover of the book the.
+
+[812.0s - 841.0s]
+Is based on. This is a film poster about the film.
+
+[841.0s - 870.0s]
+OK, a little bit. This is one of the.
+
+[870.0s - 899.0s]
+Locations where the film.
+
+[899.0s - 928.0s]
+Filmed, this is another location. This is a black rectangle.
+
+[928.0s - 957.0s]
+These are two people dressed up to go to the premiere.
+
+[957.0s - 986.0s]
+Film atonement
+
+[986.0s - 1015.0s]
+This is another black rectangle and these are some photos from the from Yom Kippur the the Jewish.
+
+[1015.0s - 1044.0s]
+Festival on the Day of Atonement.
+
+[1044.0s - 1073.0s]
+This is some more of the same, this is some.
+
+[1073.0s - 1102.0s]
+Random piece of artwork from Florida.
+
+[1102.0s - 1131.0s]
+This is a band called Atonement and that.
+
+[1131.0s - 1160.0s]
+Some second life characters or something, so these are apparently pictures of or depictions of the film atonement, and I think you'll agree that there's some fairly significant data quality issues there, which I think we need to address. No ones going to build a meaningful application from this from this data. When Andy.
+
+[1160.0s - 1189.0s]
+Results that get returned. So the killer app question. So every wants to know. OK, what's the killer app of the semantic Web? Or Link data going to be?
+
+[1189.0s - 1218.0s]
+Then, well.
+
+[1218.0s - 1247.0s]
+There may not be one. I think we need to accept that link data might be a small incremental improvement to existing ways of doing things on the web that don't change the nature of application we build. Don't change the business model, it might just be a slightly easier way of doing stuff that we're doing already. I don't personally believe that, but we need to accept that.
+
+[1247.0s - 1276.0s]
+Possibility. Second answer is if I knew what the link Data Killer app was going to be, wouldn't tell you I'd be building it myself, so that's my own.
+
+[1276.0s - 1305.0s]
+Personal secret and you know when we think about linked data or applications as a whole, they just post hoc rationalizations. They're just ways of people looking back and saying, OK, oh wow, actually, the you know Google was the killer app of the of the web, but no one knew that when it was being in development. So let's just kind of get over it. No one cares about the killer app of electricity, refrigeration or television. Now, who cares? We're just living our lives and using it, and assuming that that exists as a core bit of infrastructure that supports our.
+
+[1305.0s - 1334.0s]
+So my request is or might demand actually is no more speculation or obsessive speculation about the link data killer apps, only principled analysis based on literature based on principles and theories. That's going to tell us what in which areas we should focus our efforts to find these kind of transformative applications so.
+
+[1334.0s - 1363.0s]
+So. That's my last slide. Thanks for your time.

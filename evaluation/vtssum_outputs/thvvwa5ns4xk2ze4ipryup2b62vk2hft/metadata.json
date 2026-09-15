@@ -1,0 +1,20 @@
+{
+    "id": "thvvwa5ns4xk2ze4ipryup2b62vk2hft",
+    "title": "From Theory to Practice: Sustainable Innovation",
+    "url": "http://videolectures.net/zapiranjesnovnihpoti2011_coronado_palma_innovation/",
+    "info": {
+        "author": [
+            "Nestor Coronado Palma, Royal Philips Electronics"
+        ],
+        "published": "Nov. 15, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Environment->Sustainable Development"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 375,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2483
+}

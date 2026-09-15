@@ -1,0 +1,170 @@
+[0.0s - 29.0s]
+This is the title of my talk.
+
+[29.0s - 58.0s]
+And here is a little more about my talk. The top could be about robots that learn from observations and when they learn from observations they also. I like to say that they gain insights abit later. I'm going to talk about what we mean by gaining insights. OK, I just need to adjust something with the pointer. Also, I'm going to discuss which methods of machine learning are suitable for gaining insights, but wait a little until I explain what we mean by in.
+
+[58.0s - 87.0s]
+Basically, the scientific goal of this project is to investigate mechanisms of autonomous discovery through experiments in an agents environment.
+
+[87.0s - 116.0s]
+And I can put this into a perspective with the ways that we can program robots. We can view several levels of programming. Several approaches I would start with the most simplest and the most primitive when we can just. Provide fixed sequences of direct commands to the robots. Now this has obvious limitation that it only works for exactly predefined tasks. Now the next better approach is to define a model of the environment and then have the robots with the planning capability so that the robot can plan actions to carry out its tasks. Now the limitation here is that the model is fixed in advance. Now, what happens when we don't know the environment? So when the environment images Robert operates is unknown or or changes. So for that we can extend. Our approach to yet another level of ambition, and that is to autonomously acquire model of environment through learning so that we have a robot that learns about the environment. Now that looks ideal, and probably in practice this is the best possible. But this still has a limitation. It has this approach normally uses a fixed language in which learned models are represented. So that is another limitation. Limitation on what can be learned at all.
+
+[116.0s - 145.0s]
+Now in this paper we will be we will show how this last limitation possibly can be. Alleviate it. But our robots, when they learn they also extend their modeling languages. And here here the role of insights coming becausw when the robot gains an insight. The robot can use this insight to extend the modeling language. Now in machine learning we we call modeling language hypothesis language. So often I would be referring to modern languages, hypothesis language. Baby can I ask you? How many of you work with Roberts? OK son. Alright.
+
+[145.0s - 174.0s]
+Now the this work was mainly done in a European project called called experiment. And in experiment, while this is where we coined this phrase, the robot gains insights. So in expanding, the goal was not only discovering laws that enable predictions or laws that enable predictions in the Roberts environment, but also new insights that make future discoveries easier. An insight in the strong sense means something conceptually more general than a more and more abstract than than just a lot.
+
+[174.0s - 203.0s]
+What exactly is an insight? The first approximation can be discovery of a useful abstract concept. But here on the next slide I have a more formal working definition.
+
+[203.0s - 232.0s]
+Which I personally like, but there is no general agreement about this. And inside is a new piece of knowledge that makes it possible to simplify the current agents theory about its environment. So this pinsight can used to redefine the current theory about the environment and. As a result, we get a simplified theory.
+
+[232.0s - 261.0s]
+Oh yeah, I I'll give you some examples of what we imagine can be insights in the robot in the robot domain, and actually some of them were actually discovered by our robots. For example, a robot may not be aware of any coordinate system, so. Any absolute coordinate system of discovery and useful discovery would be the discovery or app of absolute coordinate system. The robot may not be aware of numbers. And it may invent numbers and then further it may invent mathematical theorems on its own, for example Pythagoras Theorem. We have we have been very close or actually seen in direct demonstrations of how this can happen. The robot can think of the notion of gravity without actually gravity being mentioned anywhere in the robots. Current knowledge, nor it is observable in in the data. The robot may postulate that there's something like the notion of support within objects, or the notion of stability notion of force between objects, notion of mobility. Some objects are mobile, some some notion of obstacle or something in robots way. More difficult examples are functional roles of objects. For example, an object can be used as a tool in a certain way, so we would like our robot to also come up with with the discovery of the concept of a tool. Of course that concept to look has never been mentioned explicitly to the robot. But the robot would think over tool and see that that is a useful concept. For example when planning knew.
+
+[261.0s - 290.0s]
+Asks so there is a role that inside play in the evolution of theories we can view our robot S starting from no knowledge of our limited knowledge and then performing experiments using machine learning to gain more knowledge and then put together theories about the domain. So these theories, the theory will be evolving in time. So the initial initially the robot starts with this small initial theory. And then the robot performs experiments, takes measurements, can find some new laws to the theory. Keeps growing. It keeps going further. Now now and inside happens and the theory shrinks WHI because in an insight made it possible to reformulate this theory to restate the discovered loss and. State the theory in a more compact, compact form.
+
+[290.0s - 319.0s]
+Now for those people, not many of you who who work with robots I have, I have to warn you that this is not. This work is not a typical robotics project. I have given similar lectures to roboticists and somehow. It was always useful to tell the audience coming from robotics area that this is quite different, although it is about the robots, it's quite different from what people in robotics usually do. Typical about the project is the goal is to improve the robot's performance at some task, so the emphasis is on given task and on the robot's performance at that task. But in our in our. Approach the experiment. We want to improve the robust theory and understanding about the world, specially understanding and the understanding means to. Make a robot. Discover some new useful abstract concepts. And then new new insights also make further learning easier for the robot improve. For example, they improve their representation. Now this is all very abstract and I hope I will be able to give.
+
+[319.0s - 348.0s]
+Here's some more concrete ideas soon, but. The typical experimental scenario with our robots looks like that we have a robot performing experiments in its environment. Then the robot collects observations. There open learns from observations and the laws of the environment. And then the robots also extends its hypothesis languages, which is discovers new apps or concepts and introduces those into. Into the hypothesis language.
+
+[348.0s - 377.0s]
+So more or less, it looks like it takes the form of an experimental loop. When we have the robot performing experiments, collect observations, then apply machine learning to the observed data. Store what is found with machine learning into the current theory and choose next experiment which would seem to be useful to advance the the current theory and repeat the loop. Now what happens here is we are adding more laws about the domain. For example, in a in a mechanical domain, that would be a loss about emotional objects. But then we also occasionally find some more abstract concepts, code, insights, and that would be, for example, an insight. Cover of the concept of energy. Although energy will never be. Explicitly observed, and then maybe there will be a law concerned with that a lot about conservation of energy in a closed system. And that would be a useful discovery.
+
+[377.0s - 406.0s]
+So the ambition is fine. Mechanisms that enable discovery of abstract concepts make only a few or other basic assumptions about the agents prior knowledge. So the agents knowledge prior to all these experiments and demonstrate how discovery and gaining insights may come about from only a minimal set of 1st principles.
+
+[406.0s - 435.0s]
+Now we have experiment, it's with. With robots sounds on several platforms, single or multiple robots, robots in simulation or real robots. In India and in these experiments, the discoveries were that of obstacle immovable. Composite objects stability degrees of freedom tool and so on.
+
+[435.0s - 464.0s]
+Now here is 1 now concrete set setting in which some of the experiments were carried out. This is a simulated kopara robot. That plays with this red block and observes how the perception, for example, distance and angles between the robot and the block change when the robot is carrying out actions.
+
+[464.0s - 493.0s]
+Here so I have some more demos. OK. OK, this is the simplest start with the simplest. So this is this simulated compara bulto circulating around the ball and trying to find out about how the moves will effect the distances and angles and also the robot has a camera. The mouse no longer works. OK. Anyway also, so the robots can observe the ball with the camera and the robot would also like to predict. The the size of the image and in the camera and that can be tricky because when the robot turns around and turns away, the ball with this will disappear from the camera. OK, so that was simulation. Now here's a real robot Lego robot, again performing similar experiments. So when the robot is circulating around, it's taking measurements, so observing the distances and angles between the robot and the ball and also measuring the area of the of the ball. OK, let's stop this one. Now now I would like to now show a little more sophisticated demo. And this demo be prepared for. Conference and exhibition called Future Emergent Technologies. That took place two years ago and you can see this is done with the now robot. While we're using now Robot, because this is a relatively cheap humanoid robot, it only costs 10,000 euro or. If you take a version without fingers, it goes down to about 4000 Euro. Can we have the sound? So whatever the robot is saying, you can also see on the read on the screen. OK, the robot is a bit awkward. It looks fun when you see it for the first time, but then you go when you get used to the steps and noise it makes. It becomes a little boring. Later, OK, the robot was collecting some data about the boxes and on the top here. Here you can see the current theory that has been learned about environment about about the distances between objects and the robot and the angles. You can see this has the form of a decision tree or a actually it is almost like a decision tree. It actually is a qualitative team. Can you get the sound up? Gold shows. I need you ON. Play ball. I did. OK so it has updated the model A little. But the order this time it is learning is about how how the steps effect the distances and angle between the robot and the boxes. Make it right. Excited about this recommendation for medical supplies. Grace. Great. Video games. I'm interested. It is possible. Let me check those as Poss using ISO. OK, so you said this was made very popular for the common audience. They lacked very much. I think they liked most of it. They liked their robots, speech and the sound. The robot voice, which is not really our work so. But still there. Where we won the first prize in that exhibition. In this demo, and to tell you. The point of the demo is to demonstrate how the robot learns. And then the robot's comments are fake really, because the robot is telling the story only to to tell the audience what is going on. It's not that the robot wouldn't understand and synthesize sentences. OK, so.
+
+[493.0s - 522.0s]
+OK, that was that. Now we we used in our experiments. We use many machine learning methods. The methods that are implemented in the orange system which was developed at my University at the Faculty of Computer Science. And also. Sorry I need to. Just a pointer. OK. So, but the methods the learning method thoughts are decision to learning and regression to learning learning model trees, which is also kind of regression trees if then rules. But then so these are very standard. I'm sure that many of you will have recognized to them, but there are many other methods which are not so widely known. That is, learning qualitative trees and rules in systems like Queen and body. These are both our systems learning differential equations with goldhorn and inductive logic programming. Programs have high current.
+
+[522.0s - 551.0s]
+Now, regarding insights. I have to be stated in some explicit symbolic form becausw and inside is something that human when a human has a look at it will understand it and also the robot will have to be able to reason explicitly about that new concept. So, so that requirement rules out some other machine learning methods like neural Nets and SVM's. I know that this conference has a large tradition in this kind of machine learning approaches, so for this work they are not the most.
+
+[551.0s - 580.0s]
+Uber but one thing is is not important. That is a learning qualitative descriptions, so we often abstract away the numbers and instead of quantitative relations, we just use qualitative relations. They are easier to learn, there are easier to understand and there also, although they do not give exact numerical predictions, they are also useful. To think about plans and how to carry out tasks later, I'm going to demonstrate that. For example. When the robot is turning away from the object at some point the object area starts decreasing. When the object is disappearing from the camera view. Can it be easy to state it by qualitatively by saying? Add equals N minus anger, which says that. The area monotonically decreases with anger, so that is a qualitative description of what is happening.
+
+[580.0s - 609.0s]
+Now. If you just take this. Simple exercise, predicting the area of the ball in the in the camera so you can see when the ball starts disappearing from the from there from the image. Then the area will be decreasing and there are some pretty complicated formulas. So for robot to learn these formulas, it's not. It's not exactly the simplest task, it gets much simpler if we are. When we do this quality.
+
+[609.0s - 638.0s]
+Give abstraction. This is a qualitative tree which. Gives a nice. Insight into what is going on with this image in the camera. For example, if if the angle is. Negative then the. The area of the of the object in the camera image is monotonically increasing with the angle and. Decreasing with distance. So this is how qualitative trees are to be understood. And then here the board is completely visible. Yeah, the ball is disappearing from from the camera view.
+
+[638.0s - 667.0s]
+OK, regarding numerical learning we did a lot of that and the accuracy is not really bad. It's OK for prediction, but the clarity of what has been learned is not promising and regarding insights. The how we can not use these to reason about symbolically?
+
+[667.0s - 696.0s]
+About the domain. OK, the more promising line seems to be used qualitative models. And possibly a combination between qualitative and quantitative. Style. And there's a method that we developed called Q squared learning. Stands for. Qualitatively faithful quantitative learning.
+
+[696.0s - 725.0s]
+OK, now I want to come to my actually the the most interesting part. I mean the most interesting to me which is. Do this learning in logic. The approach to learning in logic is called inductive logic programming or ilpo for short, and that is really probably the only approach which. Neighbors. The discovery of the gaining of abstract insights. Again, can I can I ask you another question? How many of you? No, I had to pee. OK so OK, I'm sorry it's this will be just orientation for me. I must not expect much.
+
+[725.0s - 754.0s]
+Premier on this. Let me try to to make some points, even without your detailed knowledge. Just a program called Hyper which stands for hypothesis refiner. Publishing my product for I book some time ago and improved recently. By Lebanon myself.
+
+[754.0s - 783.0s]
+Now. I hope we may invent new predicates during learning. The important feature of inductive logic programming is that. Everything is stated in terms of predicates, so we set it in terms of logical formulas. Formulas include predicates and the point is that I'll pick and invent new predicates during learning, so new predicates that for which there is no explicit examples in the data. And in this way I automatically extends its hypothesis language. Now, why is predicate invention so important? First, it enables easier further learning because new models are easier to define with new invented predicates. Second, sometimes learning is not possible at all without a new predicate. For example, when the result of learning is a recursive definition that is impossible. To do without inventing a predicate on which recursion recursion happens.
+
+[783.0s - 812.0s]
+Yeah, OK, I will quote. But also in Noorvik their famous book Artificial Intelligence, a modern approach, the 3rd edition is. 2010 and when they comment this capability of predicate invention in inductive logic programming, they say some of the deepest revolutions in science come from the invention of new predicates and functions. For example, Golladay's invention of acceleration or Jules invention of thermal energy was this terms are available to discover of new laws becomes relatively easier so. It's not limited only to IP or machine learning. The discovery of this new predicates or new concepts makes discovery in general. Much easier.
+
+[812.0s - 841.0s]
+Yeah, I invented a small example. To illustrate why sometimes we need new predicates and here have a. This is a robot domain. These are blocks many blocks and here is. Rather grotesquely looking robot robot arm you know this, the Army is very large but the fingers are thin so I made this robot arm very large so that you can. You will be able to realize. What the task is? And why this? And the way I solve the task. Makes sense. Now the robot obviously would like to grasp some some objects. And. For this very awkward. Robots arm. Only blocks on the top. A graspable like block see this one. We save gasparone because the fingers can get on grasping the block, but block A is not. If the fingers get to a, then the arm will knock down some other blocks so that that is a is not graspable. Connected animal to see what would be a safe rule of grasping a block. The fire stick. Grasp the highest, but how about here is you see that there are several has blocks so. Hello. Verify that three Block 3 three stacks of blocks, three columns or blocks. OK, OK, by definition this one is also graspable and that one is graspable to base.
+
+[841.0s - 870.0s]
+The rule is. OK, let me let me. Let me tell you how how an IP system will learn this task. This is the world and the robot can see with the camera can observe the objects and extract from the camera this information that block A is on block B, so that is stated in logic on AB. Also we have on CD on D and we have on floor B, so B is on the floor on Flowey and similar things about four. The other objects.
+
+[870.0s - 899.0s]
+Now. To learn to make hyper the hyper program to learn about. Which objects are can be grasped or which cannot be grasped? The problem is, given positive and negative examples of graspable blocks. So we state to the learning program, sees graspable D is not graspable, he is not graspable. So she was on the top of another tool column. But the. But there was also on the top of a column, but that was a rather short column, so which makes it non graspable also? The program is given as background knowledge. The current informational table on baby on floor B. Now the program is supposed to learn the definition of the predicate graspable.
+
+[899.0s - 928.0s]
+We can OK. I'm now answering the questions that I asked you about earlier. Block B is graspable. If there is no other block above B. So we have this robot world and all the blocks are graspable. That have no other block in the inverse in which is above. The block his gospel band. And now that can be easy to state it in in logic, in Prolog it looks like it looks exactly like this block is graspable. If this is rad, as if not above another block block. So if there's no never in the scene, there is another block. Above. Hour block of interest. But now the predicate above this one is not given. It would have been extremely easy for the learning system to learn this if the predicate above was also defined and introduced to the learning system as background knowledge. But it is not so. Hyper has to invent it from actually from nothing. Above was never mentioned, so. The program has to invent it from nothing. Just as a useful auxiliary concept.
+
+[928.0s - 957.0s]
+And now the way that. It defines that it introduces the definition of above. File is illustrated here. Now here is the text, but maybe we look at the. At the pictures be one is above B2. If B2 is on the floor and be one is on top of another block. So definitely in that case B1 is above between. And then here there may be any number of other blocks. That will make be one or even more above return. OK, that is a kind of. Boundary case in the definition of this predicate and recursive cases. When we say Bonnie is above, become if we have B1 standing on B1B2 is standing on bit. Sorry, do honey. This is on B2A and if B1 is above B2A. OK so that is a recursive part of this definition and this recursive part. If we use it several times. It will reduce the problem by going down down in these columns until we get to the floor and then we get there. We can apply the boundary case. Alright, so that is what is going.
+
+[957.0s - 986.0s]
+Done. And what hyper produces is this invented predicate above? And that is the definition of above. Found by. The program automatically. And that corresponds exactly the logic. Corresponding corresponds exactly to.
+
+[986.0s - 1015.0s]
+To the pictures.
+
+[1015.0s - 1044.0s]
+On the previous slide. OK, now. I'll have to.
+
+[1044.0s - 1073.0s]
+Go be rather quick now.
+
+[1073.0s - 1102.0s]
+I will show what what the robot action.
+
+[1102.0s - 1131.0s]
+We learned in. In this block's world. But the first thing in which a new predicate was discovered was here. This is a block, and this block is to be pushed by the robot. The command is pushes block. From the start position by distance, but this distance and get it to a new position. Now when the robot tried that, sometimes the robot succeeded and the block ended in the new position just by distance further to the right. But sometimes the block just stayed here after the robot executed that command. Now what happened? Well, obviously this some blocks were too heavy for the robot to move. And as a result, the robot invented a useful new predicate which which is movable.
+
+[1131.0s - 1160.0s]
+I have to skip it out of things, but it invented this auxiliary predicate. P of object and P is actually actually corresponds to. Mobility, their property of mobility. Now the way that the robot defined that is little 1 sided is it says basically if if this object was observed sometime at location one and at some other time at location 2 and if these two locations are different, then this is a movable object. It has a limitation. For example, we when we may have an actually movable object, but an object that was never moved around and for such an object the robot will believe that. That one is immobile. But anyway, this.
+
+[1160.0s - 1189.0s]
+It is the spiritual movement.
+
+[1189.0s - 1218.0s]
+OK, discovered some other things, but the next thing, once we have movable and non movable objects. Robert discovered the concept of an obstacle. Suppose that we have a robot. Here, the robot wants to go to the goal position, but there is a block on the way, and sometimes the robot could get through. So the goal, and sometimes not depending on whether this bread thing in the middle is movable or not. So the robot now is using the previously invented concept movable and uses that to. Find the model that makes predictions in this situation, and again finds that into introducing a new predicate which exactly corresponds to an obstacle notion of an obstacle.
+
+[1218.0s - 1247.0s]
+That was useful. OK, there was learning about how to move trains.
+
+[1247.0s - 1276.0s]
+Blocks but now the real highlight is how to learn about functions of objects and. Since this is only have, did you say 5 minutes? It was OK. 5 minutes was three minutes ago.
+
+[1276.0s - 1305.0s]
+OK so I will.
+
+[1305.0s - 1334.0s]
+Go through all these technical details. Now suppose we have that is useful to see. So we have this situation. We have two blocks. We have a robot and then we have some blocks which make a passage. Now where the goal that the task of the robot is to put object 2 into this whole between the passage. But now the robot is too big to go to drive into this passage. So, but the idea is that the robot may use another object. There's a tool for pushing object to in here so.
+
+[1334.0s - 1363.0s]
+A plan for that would be. Well, first. OK, first go with robot here. Push this object to this place. Next to go back and push object one here and then in the next action is move around objects run and then push both objects into the gap OK.
+
+[1363.0s - 1392.0s]
+So, so now that there's no problem in finding block plans. It's like that.
+
+[1392.0s - 1421.0s]
+But the ambition here was can we?
+
+[1421.0s - 1450.0s]
+If you look at this again. Can we make the robots realize that object one was used as a tool for accomplishing the task? You know that if I if I ask people if you think yourself, how would you define what a tool is in general sense? Even for humans, this is a bit tricky and probably everybody will come up with a little different definition. OK, so so let's.
+
+[1450.0s - 1479.0s]
+Do you work for this?
+
+[1479.0s - 1508.0s]
+The robot invented.
+
+[1508.0s - 1537.0s]
+Some results, but.
+
+[1537.0s - 1566.0s]
+Then I think.
+
+[1566.0s - 1595.0s]
+I'm just going to give an interpretation, but basically the heart of the discovery is this test that an object is a tool in a plan. So object is used as a tool in this plan. If this is true regarding the plan, but now I'm going to just just ignore this because that's too formal. I can explain this intuitively. Plan consists of a sequence of actions, so this green green error. There are green there. The green on my screen. So this this actions. This is a sequence actions and they costed you the plan. Now for each action we have what the action is like. Push an object by the robot. But then for each action we also know what are the goals of this action. The action has to be have some purpose in the plan. So it is. It is not possible to do anything without knowing the reasons for actions. The definition of tool says. There is an action in which an object is mentioned. So say block one is mentioned in this action. But the goals, but but this object is not mentioned in the goals, so it is a kind of object that is quite auxiliary in this action. We are not interested in what happens with this object only. We are in this object helps to achieve some other goal. Some other thing which has nothing to do with this object. So that is to discover the definition of the tool and I hope that you find this intuitively acceptable.
+
+[1595.0s - 1624.0s]
+Can I connect OK? I cannot show another video or or not OK? OK. But I live there.
+
+[1624.0s - 1653.0s]
+Students can be annoying. Shopping with time. Stop, very interesting. Attention please. One question. Suggest or summarize some properties of the information system. Discovery's new concepts So what are the properties that this learning system and information system will need to be able to support such discount? I would say first it has to be. But basically it is a learning system. Because it has to discover something from from the data from from the from the examples. Second, it has to be symbolic learning. So that the people can understand what has been learned and also what has been learned can be used in symbolic reasoning, not just to make particular numerical predictions, but used in symbolic reasoning. For example, if I can reason in terms of tools, that's very useful when I put together plans. And so that is about symbols and the final thing is. It has to have a capability of introducing something new, expanding the language, like inventing a new predicate predicate that was never mentioned in the in the system before, and it was not even observed in the data directly, but it is quite an abstract concept that appears to be useful for explaining the phenomena in the domain, and so far we have really found only inductive logic programming. To have this capability of inventing new predicates. Well, I have to study says sophisticated questions. Private opinions about the difference between human beings intelligence and artificial intelligence of products. What's your opinion? What is the border between this doing? Yeah, I agree this is a very difficult question and it has been debated for. Decades and there is also the after all these decades of debate we have not. Got any closer to any definite answer? So it is only possible to take a position and consider arguments and then argue back and forth I think. But so you, I suppose you do not. You know that everything that I said you already know, so you must. I'm sure the intention of your question was not that I would give you a straight answer. Because I'm afraid I can't. And it depends on on the philosophy or it often depends on whether we require for for human, for true intelligence also feelings or self awareness. And if we require that and then if we require that. Only only biological beings can have feelings. Then of course there's no robot can be intelligent. But then that's the end of the game. So my view is I do believe that my programs and I and other peoples programs I have seen many they do exhibit intelligence and sometimes they outperform humans. But then, of course, if you go into how our programs outperform humans, you know we should analyze that. Then you can have all sorts of objections and saying yes, but the human does it this way and the program or robot does it that way. So probably there will never be a definite answer. Thank you very much. Fire anymore, maybe later in the week. Thanks very much.

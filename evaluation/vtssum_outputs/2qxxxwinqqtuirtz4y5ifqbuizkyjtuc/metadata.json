@@ -1,0 +1,23 @@
+{
+    "id": "2qxxxwinqqtuirtz4y5ifqbuizkyjtuc",
+    "title": "\"Why the Semantic Web will never work\"",
+    "url": "http://videolectures.net/eswc2011_hendler_work/",
+    "info": {
+        "author": [
+            "Jim Hendler, Rensselaer Polytechnic Institute"
+        ],
+        "introducer": [
+            "Grigoris Antoniou, Department of Computer Science, University of Crete"
+        ],
+        "published": "July 7, 2011",
+        "recorded": "May 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 53,
+    "num_sentences": 1021,
+    "num_clips_with_summary": 32,
+    "num_gt_summary_sentences": 55,
+    "ground_truth_summary_length_chars": 5487
+}

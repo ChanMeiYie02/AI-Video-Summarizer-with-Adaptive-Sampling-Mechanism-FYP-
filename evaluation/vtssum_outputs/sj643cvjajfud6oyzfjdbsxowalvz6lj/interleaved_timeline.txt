@@ -1,0 +1,107 @@
+[0.0s - 29.0s]
+So essentially here we use the social network social diffusion process to help the standard machine learning data mining task, and here we propose a very simple model, but very concrete, very simple and very intuitive.
+
+[29.0s - 58.0s]
+So.
+
+[58.0s - 87.0s]
+Um? So graphs just in some introduction, graph based clustering approach is widely employed in data mining machine learning. There's a lot of important papers and the graph data of course are widely available. Most of previous research focus on static analysis of graph graph partitioning, 6 partition are static optimization. Cut edges between clusters and the stochastic modeling stochastic modeling and maximize likelihood agenda generative model. Tough to do some kind of clustering and now work presents a dynamic analysis of graph data inspired by Matthew Matthew Effects. Essentially So what happens is that the stronger connection area become more stronger and essentially the social network circles expanded and become more smooth, so diffusion process.
+
+[87.0s - 116.0s]
+So motivation is a social networks relationship among people is a social is a change in time. People are typically involved in many social events. For example, meetings and new friends. In this easier Merle conference. So the more we meet each other, the more familiar with we are. Ways and people are usually connect with each other using connection like meeting friends, friends and friends. So two observations. So two people with many common friends have a lot of chances to know each other and two friends often have good chances to meet in the same social events. Enhance enhance the how to set relationship. So essentially we use social diffusion process. So here it is.
+
+[116.0s - 145.0s]
+Oh, here is his example.
+
+[145.0s - 174.0s]
+Network can see we see many events. We see friends and friends and.
+
+[174.0s - 203.0s]
+The more common friends we have, the more related or Type 2 friends become.
+
+[203.0s - 232.0s]
+So here this slides give the entire picture of our social network process is very simple. Very concrete. OK, so two friends. Setup a date. Meet. OK, so standard two friends set update 1. One of them brings along a friend third friend. So the three of them eat OK and other processes are two friends. Setup a date. Both friends bring along another friend each. So four of the meat. OK, of course you can have a little bit more, so each friend brings maybe two or something, but but these are the most fundamental process which says so. Three steps. OK. Very concrete, very simple. If I leave after this.
+
+[232.0s - 261.0s]
+So let's be a little bit more detail. So two friends meter set up date and then meet. That's fine as standard thing and two friends and be set up date. So one of them B brings along front. See the three of them. It's so the most important thing here is that a need to see that do not do not know each other before. So this is some kind of social diffusion diffusion. III processes two friends and be set up date and both front brings along a friend. So a Prince C alarm B prints the alarm, so the fault of the meat. So a Misty. So because they never know each other and be a mid season never know each other and most importantly seems D. So all these these are social diffusion that way so so so two person meet due to their friends initiative. OK they don't know each other. So it's very simple process that you can quantify very precisely properly is one of the simplest model in this conference, and so far here.
+
+[261.0s - 290.0s]
+OK, let's just more little bit more so. So essentially, in this social diffusion. So in this case a means to see you can trans transfer this. These two friends meet due to a common friends into a graph. So AB are friends. So beer brings. See allowance to see and a meat is so so. You can set this some kind of common due to common labor. OK, A in the sea meet. Do the common labor and in this case the two friends set update each. Bring a friend along so you can see a Miss D image C So. Aim is DC. So a Prince see alarm B. Prince D allows so so Amy D&B mean C and also important most important seem it D. So you can see this is due to a friends friends. OK second order process in my same. So these are the truly the simplest possible multiple items that you have. OK. So so this model you can. So we have written in the paper, reading a little bit more more. Abstract essentially we have a date. We have a brain, so these two operations can meet always happens, so it's more deterministic.
+
+[290.0s - 319.0s]
+OK so will not go through this essentially now it was.
+
+[319.0s - 348.0s]
+Left is a computer. On the other thing, OK important here is that. Assuming we want today to each other in the wedding or waiting for William and Kate. So who are we going to bring along so we all bring some kind of important friends? OK, in the sense that the different social settings we choose to bring different friends in the sense that the bring friends action should have a threshold threshold model. In fact is used commonly. But thresholds are important and here we use that. It's important part OK.
+
+[348.0s - 377.0s]
+So now let's set up a really computer probability, which is very straightforward. Suppose we have a threshold. In fact, since we do not know the threshold, we don't know distribution. Here, we assume it's uniform, but you can do something more complicated. Uniform is the simplest impossible. Everything here is really sparse. More really simple, and so we set our date and then we do the things. So we have two processes here, so the processes used the probability that 1 / N is some kind of common. Events so we have we have a threshold. T is the threshold. Remember everything here has a threshold. W is input graph which can be weighted with. Often. It's waiting in here. OK so it's a social diffusion. Essentially the weights are diffuse diffused, so there's an Alpha. Let me see.
+
+[377.0s - 406.0s]
+OK, there's our fathers. Mutiara is some kind of diffusion constant. Mu is the maximum maximum quantity is some kind of threshold you related. OK, so this diffusion constant we just set one. Since this is not really physics, this is this model modeling of diffusion.
+
+[406.0s - 435.0s]
+The other partner so so here more more details here A is the adjacency matrix and a race to T means that the thresholding. So if this wait if these are the link between between I and the jail above the threshold this become one, otherwise 0 so thresholding remember this the T is a uniform distribution, so OK, so now we need to compute the probability. In this case they just compute together. OK this is I in the J. So this Delta is proportional constant. To make this a normalized between zero and one in reality actually computation, we just set 1. OK, so as long as the probability makes sense, OK, the other thing is the computer. Let's set the meter three persons together. So we use this so called random walk. OK, so suppose I from K2 I the random walk probability is is this weight this probability divided by 8 degree of K standard random walk probability probability? OK, everything that we do here really is standard thing, or where the simplest possible. So once we compute and just compute like this. OK, so so this is the second process and the.
+
+[435.0s - 464.0s]
+Word processor is 1/3 process we have. Free actors so we have probability. Here is probability of sum of all the possibilities I to JI&JS. So I go through how this goes to locate the mutual friends and G through L and these are the probability and this happens. So this is probability and here. So Adam, together through three processes. This is the first process. Second process through the process, we can add more if you want, but this we just do the simplest possible case here. OK, so then writing down this and here. Here we have explained here. OK, so the.
+
+[464.0s - 493.0s]
+PRISM is fairly straightforward, so consider all things equal. So basically here we model mu. We model the key that essentially we just do uniform OK as we said, because you can do something a little more complicated, sophisticated. So let's just do uniform case. Then just do the things.
+
+[493.0s - 522.0s]
+So here's the here's the result. So we describe the algorithm.
+
+[522.0s - 551.0s]
+This algorithm actually only have one parameter here. How to define the granularity of the uniform distribution so T so T. Typically we set to 20 or 50. It does. The result doesn't change at all. It's very stable algorithm.
+
+[551.0s - 580.0s]
+So let's just look at a given random graph. OK, so we just so this is initial graph. We do one iteration, so the social networks. Because let's say this one this one. So this expand diffusion so it gets diffused. OK, and then becauses.
+
+[580.0s - 609.0s]
+The next thing is to look at the third iteration. This is tense iteration. You can something something here. OK, this is some edges for being cut because because of the algae.
+
+[609.0s - 638.0s]
+System has a little bit thresholding. Remember we have a threshold. In fact there OK.
+
+[638.0s - 667.0s]
+OK, so after 15 iterations, is excessive essentially converged into iterative 20s iteration doesn't change anything here. OK, so everything so this algorithm is really deterministic. OK, set up tied usually 20 or something. Doesn't really change my very much at all. OK. OK, so so use.
+
+[667.0s - 696.0s]
+This now we basically do some applications. We do clustering for example in this case. So using the we cluster grouping data using this process find the disconnect component OK after after some iterations you have all these disconnects. This is cluster this cluster. Afterwards just run connected component algorithm find them. OK, this one has no parameters. You do not need to know how many clusters in the problem. So essentially what this task is that use your social network diffusion process as a preprocessing? Or how to say enhancing the. The graphs OK, but whatever the machine machine learning tasks you want to do so so awesome takes this regular graph as input and using the disk diffusion process another graph which is much more clustered, much more kind of content, so we can do many things. We can do a clustering, we can do semisupervised learning.
+
+[696.0s - 725.0s]
+So.
+
+[725.0s - 754.0s]
+So, so this is a simple example, so this is a no. You can see it here so that there is a tool. This is a three. This is a four or four nodes graph and six node graph. There's one edge connected them, so after you can see that after 15 iterations. It essentially converged. Actually, for very large group, essentially 20 out of 20 to 30 iterations converge convergence.
+
+[754.0s - 783.0s]
+OK, so we run a very large number of datasets. Well 24 UCI datasets, so these are the names of it. OK, so these are the K means clustering, spectral clustering, normalized cut. And this is a graph evolution. OK, you can see for accuracy in most cases. Actually in most cases what we do is better. In this case we do a slightly worse and well is in this case it was slightly worse, but in most cases. There too much better you member. There's no parameter in this model and you can use the normalized mutual information or purity and typically typically. Our approach does better. OK, that's in this case. Is that slightly worse for for some reason except for this CRB data set?
+
+[783.0s - 812.0s]
+The other thing is so we can do a semi supervised semi supervised learning. Basically we are the number of labeled data is a large data set. Let me see actually. Status I forgot. So user 11 data set is a one point is labeled. One load is never too late late labeled so we use so called global consistency by zoo at all is two or four OK. And so for this data set and this is on the original graph and this is on the new graph after the graph evolution you can see it's improved quite a bit, but for this method that is all this harmonic harmonic function is by. Oh, it's also to three for this data. The improvement is not a lot, but for this is OK. So this is for different datasets. And then you can see that in both cases they improved quite a bit. Consistently, consistently in this case, they also consistently improved for both of these semi 2 super semi supervised learning methods. So we also run a value.
+
+[812.0s - 841.0s]
+Schematics data set. So also micro RNA function analysis. So these are all the jeans or the micro RNA and. So you can see that this is identified. Finally identified how to say six clusters. And then you can see something here. So this is one or zero. OK, so with this we can.
+
+[841.0s - 870.0s]
+We recognize something so, so let's say.
+
+[870.0s - 899.0s]
+Microphone family this is. And wearing a 20 microphone. Michael.
+
+[899.0s - 928.0s]
+My family and. OK, so corresponding genes. We can find them to.
+
+[928.0s - 957.0s]
+And. No.
+
+[957.0s - 986.0s]
+Can find something here? We will not go to details. So to give a summary is that we propose a novel, not really normal. It's a simple of social diffusion process. OK, and so the graph evolves and analog to Matthews effect is very simple, intuitive and deterministic and the model are very clearly spelled out OK and using this we developed algorithm run our many extensive experiment on many UCI data set and also. And to show that using this diffusion process, the graph to social diffusion process the results resulting graphs much better as far as in this machine learning tasks in clustering in semi supervised learning OK. This one almost has no parameter actually that T usually you said 10 or 50 doesn't change things at all. That's no real parameter here, and the easy to visualize. You can see. OK, thank you. Precious again. A question about the normalization of the M are having drinks in your algorithm was just wondering, I mean. I'm not sure where that exactly comes from or what's the effect of that normalization.
+
+[986.0s - 1015.0s]
+Yeah, this M. This is M just everything's together yeah but I mean it later. I think in the actual algorithm normalize it to sum to one or the so so. So essentially all these constant there are three constant diffusion constant. M is the maximum and Delta and all these collapse into one into a Internet one. So this is that one is here is the algorithm. Let me say the next page. The algorithm here is soft here. So this is a mule is maximum. So I divided tease percentage. Let's set each 20. So this is five 5% of them. So so then the. So the granularity of the thresholds. And remember we use a uniform get thresholds. So how about that normalization step for the M? And ultimately when you've calculated. Um so. So I mean that affects the rate of change, at least differently for each iteration. I know know this is. See. This is actually let me see. This is written correctly. I think there might be.
+
+[1015.0s - 1044.0s]
+There's the OK, so this is I think this line should be outside here. This line is outside. So this is. So this whole thing is repeated. 30 times so this accumulation actually is right here. So there is actually a loop here. This is doing uniform thresholding. I think sorry so. So actually it's a good question. In fact this one should be right here and there should be a loop. OK, so this one's self is just that, does the uniform threshold. You can see it because the scale is fixed. It's just the granularity of the uniform distribution. Well, if there are no more questions, then let's thank the speaker again, thank you.

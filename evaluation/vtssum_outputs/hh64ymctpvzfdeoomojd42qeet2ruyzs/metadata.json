@@ -1,0 +1,20 @@
+{
+    "id": "hh64ymctpvzfdeoomojd42qeet2ruyzs",
+    "title": "Information Technologies for Collaborative Supply Chains",
+    "url": "http://videolectures.net/ecitl2011_val_supplychains/",
+    "info": {
+        "author": [
+            "Javier Val, ITA eLogística, Instituto Tecnológico de Aragón"
+        ],
+        "published": "Nov. 3, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Business->Transportation and Logistics"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 205,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2554
+}

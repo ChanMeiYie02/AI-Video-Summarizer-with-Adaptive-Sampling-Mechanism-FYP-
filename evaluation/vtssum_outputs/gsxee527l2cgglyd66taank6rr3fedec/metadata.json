@@ -1,0 +1,20 @@
+{
+    "id": "gsxee527l2cgglyd66taank6rr3fedec",
+    "title": "Introduction to the Conference",
+    "url": "http://videolectures.net/mcvc08_boujemaa_int/",
+    "info": {
+        "author": [
+            "Nozha Boujemaa, Research INRIA Paris-Rocquencourt"
+        ],
+        "published": "Feb. 14, 2008",
+        "recorded": "February 2008",
+        "category": [
+            "Top->Events"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 132,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1980
+}

@@ -1,0 +1,20 @@
+{
+    "id": "663srld3jnogqhreqy6h76t23z4zrivx",
+    "title": "Achieving services when turning a waybill into an e-waybill",
+    "url": "http://videolectures.net/efreight2011_bakhtyar_ewaybill/",
+    "info": {
+        "author": [
+            "Shoaib Bakhtyar, Blekinge Institute of Technology"
+        ],
+        "published": "June 3, 2011",
+        "recorded": "May 2011",
+        "category": [
+            "Top->Business->Transportation and Logistics"
+        ]
+    },
+    "num_segments": 11,
+    "num_sentences": 90,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1904
+}

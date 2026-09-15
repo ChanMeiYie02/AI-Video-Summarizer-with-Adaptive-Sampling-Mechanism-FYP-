@@ -1,0 +1,20 @@
+{
+    "id": "hccna252f6wi767kjzmzshd3k4ojsgus",
+    "title": "RDF Explorer: A Visual SPARQL Query Builder",
+    "url": "http://videolectures.net/iswc2019_vargas_rdf_explorer/",
+    "info": {
+        "author": [
+            "Hernan Vargas, Millennium Institute"
+        ],
+        "published": "Dec. 10, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 35,
+    "num_sentences": 163,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2191
+}

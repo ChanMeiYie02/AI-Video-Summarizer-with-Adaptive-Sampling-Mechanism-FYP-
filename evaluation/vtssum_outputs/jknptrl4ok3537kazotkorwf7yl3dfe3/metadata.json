@@ -1,0 +1,21 @@
+{
+    "id": "jknptrl4ok3537kazotkorwf7yl3dfe3",
+    "title": "10 Years of Semantic Web research: Searching for universal patterns",
+    "url": "http://videolectures.net/iswc2011_van_harmelen_universal/",
+    "info": {
+        "author": [
+            "Frank van Harmelen, Department of Computer Science, Faculty of Sciences, Vrije Universiteit Amsterdam (VU)"
+        ],
+        "published": "Nov. 25, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Computer Science->Semantic Search",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 585,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 729
+}

@@ -1,0 +1,20 @@
+{
+    "id": "vamcnfnynyny6qkx4aoe2lulgh4e7zpl",
+    "title": "Abstraction Refinement for Ontology Materialization",
+    "url": "http://videolectures.net/iswc2014_kien_tran_ontology/",
+    "info": {
+        "author": [
+            "Trung-Kien Tran, Institute of Artificial Intelligence, Ulm University"
+        ],
+        "published": "Dec. 19, 2014",
+        "recorded": "October 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 113,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 187
+}

@@ -1,0 +1,20 @@
+{
+    "id": "kkjnkbhxn3tzneyww4m2nmkbu3xjje4i",
+    "title": "Interactive image retrieval using smoothed nearest neighbor estimates",
+    "url": "http://videolectures.net/ssspr2010_ferri_iir/",
+    "info": {
+        "author": [
+            "Francesc J. Ferri, University of Valencia"
+        ],
+        "published": "Sept. 13, 2010",
+        "recorded": "August 2010",
+        "category": [
+            "Top->Computer Science->Pattern Recognition"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 196,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2429
+}

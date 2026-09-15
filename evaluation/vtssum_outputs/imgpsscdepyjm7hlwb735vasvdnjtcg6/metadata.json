@@ -1,0 +1,22 @@
+{
+    "id": "imgpsscdepyjm7hlwb735vasvdnjtcg6",
+    "title": "Opening",
+    "url": "http://videolectures.net/ijcai2011_lopez_knoblock_bahamonde_opening/",
+    "info": {
+        "author": [
+            "Craig A. Knoblock, Information Sciences Institute (ISI), University of Southern California",
+            "Antonio Bahamonde, Artificial Intelligence Center, University of Oviedo at Gijón",
+            "Beatriz López Ibáñez, Department of Electrical, Electronic and Automatic Engineering, University of Girona"
+        ],
+        "published": "Aug. 23, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Events"
+        ]
+    },
+    "num_segments": 2,
+    "num_sentences": 50,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 143
+}

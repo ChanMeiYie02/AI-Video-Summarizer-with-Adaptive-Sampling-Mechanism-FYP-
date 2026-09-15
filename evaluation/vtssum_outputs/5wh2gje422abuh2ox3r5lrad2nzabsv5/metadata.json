@@ -1,0 +1,21 @@
+{
+    "id": "5wh2gje422abuh2ox3r5lrad2nzabsv5",
+    "title": "Directed Graphical Models",
+    "url": "http://videolectures.net/aibootcamp2011_archambeau_cgm/",
+    "info": {
+        "author": [
+            "Cedric Archambeau, University College London"
+        ],
+        "published": "March 31, 2011",
+        "recorded": "February 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Clustering",
+            "Top->Computer Science->Machine Learning->Graphical Models"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 690,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 60,
+    "ground_truth_summary_length_chars": 5009
+}

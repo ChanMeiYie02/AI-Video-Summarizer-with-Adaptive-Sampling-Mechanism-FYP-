@@ -1,0 +1,23 @@
+{
+    "id": "4zb643hqgwxsyy2lo4kmpgzbpuce3ixa",
+    "title": "New trends in public service and Citizens Communication",
+    "url": "http://videolectures.net/dataforum2012_pedersen_citizens_communication/",
+    "info": {
+        "author": [
+            "Jimmy Kevin Pedersen, Ministry of Finance, Denmark"
+        ],
+        "published": "July 16, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Social Sciences->Society->Information Society",
+            "Top->Computers->Digital Media",
+            "Top->Technology->Educational Technology",
+            "Top->Social Sciences->Society->Politics"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 218,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2499
+}

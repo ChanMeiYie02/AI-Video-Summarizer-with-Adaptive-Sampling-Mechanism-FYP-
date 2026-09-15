@@ -1,0 +1,157 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:01.610 --> 00:00:04.260
+>> A major element of most traditional
+
+00:00:04.260 --> 00:00:06.600
+approaches to image processing involves
+
+00:00:06.600 --> 00:00:08.490
+statistical analysis and manipulation
+
+00:00:08.490 --> 00:00:10.470
+of the pixel values in the image.
+
+00:00:10.470 --> 00:00:13.950
+Many of the techniques we rely on to glean information from
+
+00:00:13.950 --> 00:00:17.460
+an image rely on a good level of contrast in the image,
+
+00:00:17.460 --> 00:00:20.400
+enabling us to identify features clearly.
+
+00:00:20.400 --> 00:00:24.105
+Suppose we've taken a photograph in challenging light conditions.
+
+00:00:24.105 --> 00:00:27.380
+So it's underexposed and rather dark and gloomy.
+
+00:00:27.380 --> 00:00:30.905
+Or maybe the images overexposed and washed out.
+
+00:00:30.905 --> 00:00:33.770
+Either way, the level of contrast in the image
+
+00:00:33.770 --> 00:00:37.060
+makes it hard to pick out detailed visual features.
+
+00:00:37.060 --> 00:00:39.710
+Ideally, we would want to adjust
+
+00:00:39.710 --> 00:00:41.330
+these images to have
+
+00:00:41.330 --> 00:00:45.270
+a more uniform contrast that makes them easier to work with.
+
+00:00:45.400 --> 00:00:48.350
+Well, let's explore what this actually means when
+
+00:00:48.350 --> 00:00:51.300
+we're talking about an array of pixel values.
+
+00:00:51.610 --> 00:00:54.260
+Now we know that our image consists of
+
+00:00:54.260 --> 00:00:57.695
+pixel values in the range of 0-255,
+
+00:00:57.695 --> 00:01:00.590
+and if we were to plot a histogram of those values showing how
+
+00:01:00.590 --> 00:01:03.860
+frequently each possible pixel value appears in the image,
+
+00:01:03.860 --> 00:01:06.180
+it might look something like this.
+
+00:01:06.230 --> 00:01:10.015
+If we calculate the cumulative distribution function
+
+00:01:10.015 --> 00:01:12.010
+or CDF of the histogram,
+
+00:01:12.010 --> 00:01:14.515
+we can view the pixel values cumulatively.
+
+00:01:14.515 --> 00:01:16.240
+In other words, from left to right,
+
+00:01:16.240 --> 00:01:18.130
+we can see how the pixel intensities from
+
+00:01:18.130 --> 00:01:21.530
+0-255 are added to the image.
+
+00:01:22.080 --> 00:01:25.060
+A simple way to approach improving
+
+00:01:25.060 --> 00:01:28.385
+the contrast is simply to stretch the histogram,
+
+00:01:28.385 --> 00:01:31.330
+scaling the values from the lowest to the highest,
+
+00:01:31.330 --> 00:01:33.685
+in the hope that this will spread more evenly.
+
+00:01:33.685 --> 00:01:36.130
+The histogram itself remains the same shape,
+
+00:01:36.130 --> 00:01:38.690
+as the relative distribution of the values doesn't change,
+
+00:01:38.690 --> 00:01:40.860
+but the contrast in the image may improve,
+
+00:01:40.860 --> 00:01:42.490
+and you might see some of the bumps in
+
+00:01:42.490 --> 00:01:44.980
+the CDF gets smoothed out a little.
+
+00:01:44.980 --> 00:01:47.049
+That technique is called contrast
+
+00:01:47.049 --> 00:01:50.300
+stretching or sometimes histogram stretching.
+
+00:01:50.810 --> 00:01:54.020
+Now more sophisticated approach is to
+
+00:01:54.020 --> 00:01:56.285
+normalize the pixel values on a scale of
+
+00:01:56.285 --> 00:01:59.390
+0-255 based on adjusting
+
+00:01:59.390 --> 00:02:01.400
+the image so that the most frequent intensities
+
+00:02:01.400 --> 00:02:03.140
+are spread out evenly.
+
+00:02:03.140 --> 00:02:05.960
+This has the effect of flattening the histogram,
+
+00:02:05.960 --> 00:02:08.240
+which in turn produces a CDF that shows
+
+00:02:08.240 --> 00:02:10.730
+a clear diagonal accumulation due to
+
+00:02:10.730 --> 00:02:13.915
+a relatively uniform frequency of pixel intensities.
+
+00:02:13.915 --> 00:02:16.220
+Then don't worry. There are multiple libraries
+
+00:02:16.220 --> 00:02:18.230
+in Python that will do the math for you.
+
+00:02:18.230 --> 00:02:20.570
+The important thing is that the end result of all of
+
+00:02:20.570 --> 00:02:24.250
+this is an image with improved contrast.

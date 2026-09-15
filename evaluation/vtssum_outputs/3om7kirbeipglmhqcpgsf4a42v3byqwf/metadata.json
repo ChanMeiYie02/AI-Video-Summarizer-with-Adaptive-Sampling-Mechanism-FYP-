@@ -1,0 +1,22 @@
+{
+    "id": "3om7kirbeipglmhqcpgsf4a42v3byqwf",
+    "title": "Learning to Combine Distances for Complex Representations",
+    "url": "http://videolectures.net/icml07_woznica_lcdf/",
+    "info": {
+        "author": [
+            "Adam Woznica, University of Geneva"
+        ],
+        "published": "June 23, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Structured Data",
+            "Top->Computer Science->Machine Learning->Structured Output",
+            "Top->Computer Science->Machine Learning->Instance-based Learning"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 219,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 43,
+    "ground_truth_summary_length_chars": 4219
+}

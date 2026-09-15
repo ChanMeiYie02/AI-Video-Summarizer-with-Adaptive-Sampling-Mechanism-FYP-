@@ -1,0 +1,21 @@
+{
+    "id": "pdv3bvrzltf54aryczht2wbdjdas5xkr",
+    "title": "Finding, Assessing, and Integrating Statistical Sources for Data Mining",
+    "url": "http://videolectures.net/eswc2015_knoblock_data_mining/",
+    "info": {
+        "author": [
+            "Craig A. Knoblock, Information Sciences Institute (ISI), University of Southern California"
+        ],
+        "published": "July 15, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 119,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 2320
+}

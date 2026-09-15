@@ -1,0 +1,236 @@
+[0.0s - 29.0s]
+I've had a very nice week with lots of good lectures in in the in the workshop, so I I hope I can contribute. Contributed could contribute a bit now. I need to leave at 6 sharp, so if there are any questions, please ask them. During the lecture I need to catch a train so I really cannot cannot stay. Later, and what I will do is.
+
+[29.0s - 58.0s]
+Should explain. A bit of the very traditional framework of BCI. It's just to have a way to order the ideas and concepts and then talk about adaptiveness adaptiveness of the system, exploited that in BCI. We have an online loop. What can we do with sets in two ways? An adapting changing learning user? So.
+
+[58.0s - 87.0s]
+We have three big topics today. But first, this this framework and you have seen this in one form of the audio order, I think. Sometimes there is some kind of stimulation stimulus. Ansom BCI BCI is depend on that. And I will talk a lot about that. There are also BC ice that don't depend on a specific kind of stimulation where you spontaneously can, say imagine a movement. You don't need a stimulus for that. Then the user is engaged in the task selectively attending imagining movements, imagining musical fragments, what have you? There's a whole spectrum of possible tasks. Then we have measurement methods and they all have their own correcta, ristic's, time resolution, spatial resolution, sensitivity for artifacts. It's all all different, so we need to do usually pre processing depending on that type of measurement, the modality. Then sometimes we know what features we're looking for. We we extract them, we look for the power in a frequency band. We look at the time course. Maybe we look at higher dimensional or higher level features like face coherence or something like that. Or fractal correlation dimension. Or think you can think of many different features. Then you usually have a classification stage. Why you try to find out? Which starts to user was engaged in selectively attending to this stimulus or to that one. Awesome in modern approaches, feature extraction, feature selection and classification are put all together. So you let you use the classifier a lot to find out where your information is and if you use good methods. You don't do that that overfitting, then you produce some kind of output and you hope that the output corresponds to the task that he used was. Engaged in. Sometimes the output sometimes has control of a wheelchair or speller or what have you. An of course, the user then observes what is happening. So usually there is stimulation, maybe not ascential, but usually there is some sort of feedback because you notice the real Jack goes left or right. The letter was spelled correctly or not, and so on. But sometimes there are very specific stimulation patterns in any modality could be facial. It's explored a lot with tactile, auditory, nor many kinds of BCS.
+
+[87.0s - 116.0s]
+We now start. Benjamin said I would do something very different from what everyone is doing. This is what everyone is doing and you will all know. This matrix Bella flushing rows and columns the user is asked to selectively attend the specific letter. Of course, there's also eye gaze involved here and then. There is a number of flashes. All the letters, of course have their own flash pattern, so after awhile and after correct analysis, the computer can find out which letter the subjects was attending to an results.
+
+[116.0s - 145.0s]
+Offered behavior apart from maybe, I guess.
+
+[145.0s - 174.0s]
+That letter can be transmitted. Going through the cycle, these are all the types of measurement devices and there are many more and still evolving array.
+
+[174.0s - 203.0s]
+Usually we use EG. So most of my examples will be from EG.
+
+[203.0s - 232.0s]
+This one is from me G. And it's just to show this array of possible markers that we can look for this is. Covert spatial attention based on the look localization of Alpha power. So here the subject was attending a circle on the screen. It was rotating subject or striking that inattention. Fixating to the center of the circle and here you see the power in the author bent and you see those nice throat almost rotating pattern. So a classifier could pick up. Where the subject was attending in this in this space here.
+
+[232.0s - 261.0s]
+Now we're back to the speller and we have this picture in a slightly different form before. If there are flashes detected the ERP at a specific location, specific electrode looks like this target, the purple line. If there is no flash, the response looks more flat. Of course, this is an ERP with many average with lots of averaging, so it's a simple signal. The single trial signal with the look with much more noise in it, and that's what you want a classifier to pick up.
+
+[261.0s - 290.0s]
+Briefly completing the cycle again rests with some examples.
+
+[290.0s - 319.0s]
+This is an example also based on Alpha power, where the output was in a computer game not actually controlling the game, but changing the character. So when you were relaxed you became an R and Alpha I think and where you when you were excited and very focused. Then you became a monster like this, so this was multimodal in the sense that next to the BCI for controlling the game there were the joysticks and buttons. And what have you? And this this changed one of the aspects.
+
+[319.0s - 348.0s]
+OK. Now in the Matrix Pellerano I will now focus on that. There are stimuli in the South in the cells where you have to let us and the letters can flash, which you can do different things. You can enlarge them a bit. You can rotate little squares rectangle around it a bit, and in the lecture or this week we heard that faces even work much better. I never imagined that that we could have a flushing face in a speller and that it would elicit a larger response. But obviously I heard that it does.
+
+[348.0s - 377.0s]
+Now next to that, there is the sort of flash patterns that we allow. And you can allow columns to flash rose to flash or even arbitrary patterns. And maybe there's also a sequencing. You first do the rows and then you do the columns or you do them Alternatively.
+
+[377.0s - 406.0s]
+And then there is a modality. Of course, you can also have spells that work with audio. They say you pay attention to a specific sound and the rows are called out as they they pass. We also built a tactile speller.
+
+[406.0s - 435.0s]
+We have a device like this. It's Braille cells. Anne, first you select the proper role with fingers selectively attending to a finger. It's almost like the facial modality, so that instead of a flash there is a your finger is. Stimulated
+
+[435.0s - 464.0s]
+In here there's a lot of optimization that you can do and frame.
+
+[464.0s - 493.0s]
+Since this is a speller where there are no flechas but there are rotating rectangles and somehow rotation is picked up very strongly in the visual system. So this elicit a very nice response.
+
+[493.0s - 522.0s]
+And we compare them to the ordinary flash and you see that there is also a dependency in the response in the time window. So the flips are good, but they are especially good early in the time. And of course you can combine combine these things. But all this.
+
+[522.0s - 551.0s]
+Still.
+
+[551.0s - 580.0s]
+Who is at?
+
+[580.0s - 609.0s]
+The situation where you talk about a single flash. Detecting a single flash you do as a classifier. You train the classifier and then usually the classifier produces some sort of decision value as its output and they have a distribution and I like to work with decision values scaled as if they were probabilities between zero and one. It will be very nice if the classifier is well calibrated so the decision value reflects the true probability that indeed there was a target seen. But it's a different thing. There isn't some sort of. Probability distribution. Given that you show a flash and the subject is looking at it, or given that there is the subject is there is a flash in a normal target, so the subject doesn't see a flash.
+
+[609.0s - 638.0s]
+And for different subjects these probability distributions they look sometimes really different. Sometimes there is a lots of overlap, so that's a bad subject, low performance, and sometimes these distributions are very separate. We usually approximate this with better functions and that works quite well.
+
+[638.0s - 667.0s]
+So we have. Some sort of parametric distribution approximated an paracle distribution of the classifier output.
+
+[667.0s - 696.0s]
+Now back to the interpretation of that output. If I say everything above 1/2. I enter, but there's a flash. I have many hits, but of course there are some known flashes than interpreted as a flash that those are false alarms. And there are some missed flashes. And there are of course correct rejections. So from these distributions I can calculate.
+
+[696.0s - 725.0s]
+A confusion table with the hits to correct and it's just proportions in the table and the proportions along the diagonal SIM to your accuracy. That's your percentage correct along the diagonal. Now a Benjamin showed that. Maybe you have different number of exemplars in your classes. Or maybe it's really bad to miss. Targets, or maybe it's very bad to have. A false alarm so you can shift that decision boundary and then have different numbers here so that these numbers will change. And then you can calculate this area over the curve. For now, we won't do that, we do the simple thing above. 1/2 is a flash below harvest, no flash. And given that table, you can then calculate how much information is transferred in one flash detection. If you subject is perfect, if your classifier is perfect, there would be half hits, half correct rejections, zeros elsewhere, and there would be 1 bit transmitted. If the subject is really bad or your classifier is very poor or your amplifier doesn't work, that would be 1/4 everywhere. There's no transformation information transmitted, 0 bits transmitted. And of course you are somewhere in between. But given these empirical distributions, you can calculate that, so usually it's it's quite surprisingly low. It's point 2.3 bits in single flash that's being transmitted.
+
+[725.0s - 754.0s]
+Now, why is that so important? This maximizes what you can do for the full matrix if you have a whole sequence of flechas you you know what a single flash transmits in number of bits. So you know how many, how much accuracy you can get after a number of flashes. Or how large matrix you can accurately transmit this specific number of flashes? Assume this ideal perceiver at this ideal subject. You have one bits for flesh. You need to submit 36. Let us so it's the information that you need to transmit this lock to of that number of the size of your alphabet. So it's five and a bit more bits that you need so you can never become better than that. So it's really nice to have a ceiling performance. For a speller. Now row column coding only flashes, so if you have 6 by 6 matrix, 6 out of 36. It's already in itself kind of inefficient coding. Look at binary codes, every bit separates your. Alphabet into or or use symbols in two halfs. So it is very nice to have information that separates your symbols in half. Flashing one row. Flash is 1/6 of your symbols, so basically it's in itself already in. Not a very efficient coding. But we can calculate. We can go a bit further.
+
+[754.0s - 783.0s]
+So. From each flash. Single flash. We have a decision value from your classifier. A bit like a probability that there was a flash scene, so the target is flashed and we have all these characters with their own flash patterns. How do we now combine that? What is usually done in many implementations issue take such a decision value. And then you distribute it, you assign it to the row you have flashed. Because there's evidence it reflects the evidence that there was a flash there. So if this value C is very high. There is quite some evidence that. The role you flashed contains the target, so you put all the seeds there. And as counterevidence for all the rest, so you do 1 -- Y there. And then you renormalize. You don't need to do that, but it's nice because then again it behaves a bit like a discrete probability distribution. So you make them all sum to one again. If C is yeah. Yeah. It's there could be effects like you're at at the boundary of the Matrix, or you flashing a neighboring. So usually what you collect for training the classifier is a few targets. Now look at the letter C. And we flash many rows and columns and I know what I flash. I know what you're looking at so I know when you're when the response should shoot reflective flash and when it shouldn't. So I collect that amount of data and then I train the classifier with it. Yeah. It depends on your busy. I usually spell RBCS like this be 300. You're allowed to to fixate at a specific letter. And of course, then it makes it hard to reason about performance for patients that cannot do that anymore. But there are approaches where you fixate in the middle and the letters are flashed around it or different layouts. But the reasoning behind it. Sports, yeah. Yeah, it's it's also way too too. To do an assistive device, or maybe sometimes, there is a combination like eye movement tells you where and the BCI tells you what was clicked. For instance. Yeah, there are these these hybrid solutions. And. This calibration also means usually that you collect much more non target data than target data, so you should be careful in training your classifier and you should be careful in letting it know that that's the case or correcting for it or throwing away lots of non target data is sometimes people do, so you have proper distribution.
+
+[783.0s - 812.0s]
+Now instead of numbers, I will show pictures greyscales and you decide before hand I want so many flashes. You flash, you collect those. Patterns you multiply them all, and then you renormalize. And now I have a discrete probability distribution or sort of. Of my full letter matrix. So you see here this letter was probably in that column because it was very high classifier decision value that came out and everything is combined. And then you make a decision. You pick the highest and here you see the pattern is still not clear. But this is just arbitrary data from our former drawing program.
+
+[812.0s - 841.0s]
+So in this circle. Before producing the output. You do a lot of work. And you don't exploit that. You could do that incrementally.
+
+[841.0s - 870.0s]
+Becausw we can do this this calculation. And every time incrementally. Aggregate all the information. So before you have anything, you have a uniform distribution, then you flash one row or column. And you have a very simple the PDF with one row or one column highlighted. And then you continue have a second flashes circulation 4th class. So you go through this cycle much more often. So what?
+
+[870.0s - 899.0s]
+Be the benefit for that. Now the first benefit could be that maybe you don't decide before hands when to stop. Now usually it's a parameter of your speller, say 5 rounds of every row, every column. Then you stop and you make the decision. Maybe you have a very good subject and and there's lots. There's way too much data used. Maybe you have a subject with a bad day and you would need more iterations for reliable decision, or if you do this on the fly, you keep aggregating information. You can decide earlier and now you have to be careful because sometimes people just do the threshold there. A threshold on these beliefs. Well, in the beginning these values they can vary a lot. So you can hit that threshold even after one or two flashes. Only after a while. There is some confidence that belief reflects the actual state of the world well, so in the beginning the threshold should be high because you could easily have an accidental. Very well detected flash or accidental high output of the classifier only after awhile. So you need to model that you need the distribution of these values to decide when to stop. But you can do that. And of course that's very nice, so you classifier then or you speller then automatically adapts and maybe the subject. Learns a bit to use it and the classifier and the speller adapts an starts to become faster. Maybe the subject is distracted in one trial and it just takes a bit longer to spell that correct letter. But maybe we can do more. Because the speller now. You choose rows and columns randomly. Well, maybe after are two very good candidates and two columns next to each other. It makes no sense to flash that role because it will not give you extra information. So if you do this on the fly, you can make the speller adaptive and it will choose one or the other column to flash. 'cause that's the information you need to distinguish between those two remaining letters. And you can hopefully make the speller better. Now, how would you decide at which row or which column to flash? And can be decided on the fly with a local rule. Telling you immediately. Given this distribution, where should I look for? Is there a simple rule? And to visualize data bit better arfur.
+
+[899.0s - 928.0s]
+It will simplify the problem. So if you now have a 3 dimensional space, think instead of as fellow. You have three buttons that you need to apply, like forward, backward, stop or something like that. And they flash. And you in the same way, collect your beliefs by incrementally multiplying with one of the options that we see the other ones with 1 -- Y because you know what you flash. Then every relief is appointing a 3 dimensional belief state. So everywhere where you are, you can. Pinpointed so it becomes very simple.
+
+[928.0s - 957.0s]
+Now let's see what happens if you flash randomly.
+
+[957.0s - 986.0s]
+That's the rule that everyone uses now. And here we have those three and points where you can end up after a number of iterations. So it's a very simple, simple speller. The color of those trajectories are the true targets. So the subject was looking at the first, the red button or the green or the blue button, and you have random flashes and you now can calculate how long it will take and how, how correct you will be after a number.
+
+[986.0s - 1015.0s]
+Situations. So that's our. Our baseline. What people tried, sometimes an maybe intuitively this is right. Try the most promising candidate. You have a button. That you already think that that is the target. It's higher than the other ones Huawei not flash it again and collect some more evidence of this this promising Burton. I'll show you.
+
+[1015.0s - 1044.0s]
+What will happen then? So the triangle will be split in 3 three areas. And if you're close closest to the red target. The red target will flash. The first button will flash, so that's in this proportion of this place. These points in the space are all possible states that you could be in during detected during the run of your classifier, and the color is the true target, so all the blue lines means subject was looking at the blue button. And becausw here in this area always the red button flashes. If you were looking at the red button, you are updated in this direction and if you are looking at the blue button, you move away from it. And you move away from it in a straight line from this point. So that shows. Also while this rule is not so good. You start, start moving towards the target if you're correct. Very fast, which you. You can have a very long tail in this distribution if you happen not to be good.
+
+[1044.0s - 1073.0s]
+Say you're here. You're looking at the blue targets. Red starts flashing keeps flashing you slowly move your way here now green starts flashing then red starts flashing. You make you move along this which very slowly. And then only. When you become closest to blue, you start to move fast. So rule flash the most promising candidate is not a good local rule. And it's especially because of this problem that there is a long long tail.
+
+[1073.0s - 1102.0s]
+Flash second best. It's a nice. Oh, it's a better rule. It's still not good, is it? It's a nice alternative. Very simple rule. I just put it in. I don't do the analysis. But it's true, saying that you want to do. Is to optimize some criterion? And so we if we add a point in time. Model, but the distribution of our next belief status given this target or that targets or hot water sizing. This target that target or the other targets. And then can state what is a good belief state the clearest picture that we want to aim for had where we have a target close to the, to the endpoints. And we calculate this expected criterion outcome. We can have some some definition of optimality and calculate the whole thing too, and then pick the best flash. So we have them. We can calculate a strategy. A tiling of this triangle. At what point in space which target to flash.
+
+[1102.0s - 1131.0s]
+And if you're at a specific point in space and you flashing one of the targets, you can only move. In that direction away or towards the target. That's because they see 1 -- 0 that's on a straight line. And depending on your classifier distribution. Maybe? This is what's the target you're looking at. And you move in this direction and maybe Rat was not the target you were looking at. You moving in this direction. And maybe there's a lot of overlap. Or maybe not. You make clear steps.
+
+[1131.0s - 1160.0s]
+Now of course, for this whole belief states you somehow need to decide what's good. How do you want to move? The middle is not good. Any target could be the one you're looking at. These endpoints are really good. So you could calculate for instance entropy of that state. So uniform. Is very bad. Very close to target an everything else zero is very good. You could also do linear error. How far you are from the two targets or the distance from uniform. Or the margin. The difference between the best and the second best is also how clear how easy you can choose. If you have a best candidate and the second best and there is a big gap between them, but it's really nice measure. But somehow this feels kind of arbitrary. This is an arm, are all arbitrary rules. We don't know how they will scale up in higher dimensional problems. We want a bit more. We want to really prove. Optimality of our. Strategy.
+
+[1160.0s - 1189.0s]
+So if we calculate the all the probability all the probability densities of this belief state we can do the early stopping very well. Because, you know, if you run this point in in the space after so many flashes, how likely you are that you're correct, so we can just say I want my speller to be 95% correct and you're guaranteed to do that. If we have those full distributions. But is that doable? Is it doable to calculate this whole thing too? And of course, there's a bit of symmetry that you can exploit. And the first bit of symmetry is that. In the abstract case, the order of flashes doesn't matter, you just combined by multiplication. So you just count I have 3 red flashes, 1 blue flash, Anna Green Flash that will correct arise your probability distribution. That's enough order doesn't matter. And then of course 3 red flash, 1 blue flash. Anna Green Flash is almost the same, just a rotation of three blue flashes, rum and so on. So you can also slice your space there. You don't need to calculate all these possibilities too.
+
+[1189.0s - 1218.0s]
+So this is what is behind how many flashes there were on those three targets. And the transitions are the decision that you can make. You can go from here to there and from zero flashes. You can flash the first round, the second one, or the third one. And. These solutions here are just rotations of the same thing, so you only need to calculate one of those.
+
+[1218.0s - 1247.0s]
+So what will they look like? Here we are in the state that we have flashed the 1st and the 2nd targets. And you see, given that the targets the true target is one, we can calculate the distribution and it's just from that basic one flash distribution. We can calculate those and it's a bit asymmetric because the third target wasn't flashed yet, so there is not as much information here as there is there. You see, there is, it's it's bit asymmetric because of this example. Then from those distributions. We can calculate where we expected if we didn't know what the target was. If we don't know where we expect the belief state to be in. We can calculate. The most likely targets. How, how what the probability is that we are correct. Then we can have a stopping criterion and decide well if you're in this area. We are more than 95% sure that Rat was indeed the target that we're looking at. So here you can already stop and in this area you need to continue and we can calculate if we were to stop, how often we were. We expect to be correct so we can completely calculate the whole thing through. Also, for these other patterns.
+
+[1247.0s - 1276.0s]
+And then we can. I'll move on a bit.
+
+[1276.0s - 1305.0s]
+The quicker we can decorate this graph with areas that you know. Now you can stop.
+
+[1305.0s - 1334.0s]
+And you can add a bit of. The station there. Where to go? What to flash? Becausw from those different.
+
+[1334.0s - 1363.0s]
+Say if I came from here, I can move to here, but also to hear. And now it's possible it's possible to calculate if you look one step ahead, which flash is most beneficial, where you would gain the most amount of information from. Now the big question is, is that enough? If you do the one step look ahead, can you make that local decision there that from here it's better to flash another target and not this one? The second one, price.
+
+[1363.0s - 1392.0s]
+If you do the lookaheads only one step, this is the simulation. Also was the nice early stopping because you know. Anne. You can then calculate.
+
+[1392.0s - 1421.0s]
+Eat. This line is, I think, yet the proportion. The blue line is when you accept when you stop the process, so it's early stopping this is. How much you're correct, and that was a number I gave in I gave him the number I wanted to classify to be correct like this. And this is some sort of capacity given from a single flash. I cannot have more information transmitted than just repeated single flashes, so I know how good I can be. And the promising thing is that. They are as steep. So almost all new incoming information is used for stopping GNU belief states, yeah. Yep. Yeah, yeah. There are a few assumptions that you need to make. To be able to do this simulation, and of course one of the. An assumption that's really bad is that two subsequent flashes. Behave just the same as isolated flashes. Now that's one that's really, really not too. If you flash the same target twice in a row, you response goes down immediately, but it's easy to put it in. You just have another probability distribution and you and your symmetries will break will become a bit more complex, but you can put it in, and it's also easy from your calibration data to collect if two flashes happen in a row for the second flash, what will be your classifier? Outputs. But there are a few more of these kinds of assumptions that are put in the simulation. Of course, we will go a bit further and then and then I'll show.
+
+[1421.0s - 1450.0s]
+Three days. Apart from accuracy, you can also calculate path length distribution. And this gives a hint at how you can make behavior optimal not only in terms of accuracy. This random flashing had a very long tail. Sometimes it took a long time to recover from a bad initial flash classification. Maybe for the user that's really bad to have occasionally to wait for a very long time. Maybe it's better to penalize the tail abit more so. You use the square of the past length as a way to the site. Then you need to do this look ahead a bit further. You need to go through this network and you can calculate all the path lengths and you can then. Choose which flash is better. Even with such a rule, that long sequences you don't like, you penalize extra. And so the overall performance will have shifted a bit to longer sequences with the same accuracy because accuracy is given because of my stop critic criterion. But there are not that many long sequences anymore, so that's also very nice. Collectivistic
+
+[1450.0s - 1479.0s]
+Hear me now, move to simulations where we go to six so it's one row or one column so we can't become a bit better so we can no longer facialized the whole state. But we can calculate accuracy and you see in the beginning, adaptive and the random methods dbay they behave similar. And of course, the adaptive method will choose different targets, so it will be exactly the same in the beginning. It will be just the permutations of the rows or columns it's using.
+
+[1479.0s - 1508.0s]
+So we have an improvement and. We did confirm that by putting that this in an online experiment. So are we much faster? We are not as much faster as in these simulations because we forget a few more hypothesis. One of the hypothesis is also that we can classify on the fly before we need to decide on the next flash. But we flash so fast. That's a whole response, isn't in yet. So we need to issue. And choose and select flashes before we have gathered all the data of the previous flash. So you're a bit behind. If you have a large matrix of many rows and columns that is not that bad, but if you have a small matrix, it. Limits your your improvement. But this refractory period of a second flash that's also something and very funny thing that happens. Our adaptive methods broke down at the very end. When you're close to an answer, it certainly didn't improve much anymore. We didn't understand, but it turned out that it was cycling through a certain pattern. And so certainly it was not a random unpredicted flashing anymore, but there was a sequence of rows or columns that it kept flashing. And then of course the response goes down for the P3. So we need to build in something there or model what happens there. If you have a scanning. Classifier's coming speller. How does that work? OK. But I think the method is not fully exploited yet because we now only flash one row or one column. If you allow to flash more, or even two flashes scatter scatter of cells in the matrix, I think we can get a lot more out of it. And if we apply it to very different domains where we have many more classes. This will work much better. And so.
+
+[1508.0s - 1537.0s]
+Now I move to a completely different BCI. It's maybe also a new one, maybe, maybe not. And that is the BCI that we make you. You keep a word in your in your mind, you just select the words and I flash words at you. And somehow you lookout for or pay attention to related words, so it's not a Rd that's flash tan. You look at a specific letter. You have a. A Canary in your mind, and I flash yellow and you think yes or you count yes. Can we build a BCI then? That tells us after awhile which word you were keeping in mind. It's a bit like 20 questions, so the good probe words in the beginning will be like a life or male female or some broad categories. Of course, there are many thousands of words. And it's impossible to flash them all, even in a random sequence. So we need smartness and deciding what were to present next and if we do 20 questions. If you say, say yes on a yellow or if I have a response. That's that's indicates that the word you have in mind is associated with yellow. I'm not going to probe tomato. So the space of possibilities goes down quick control down quickly. Um?
+
+[1537.0s - 1566.0s]
+These are the words we used to use the database of words from from Logan. Did the experiment in Dutch with such subjects and for instance and and small was highly related an moves and respect. Could be related or Ray and more. So we picked words and presented them in pairs. So this was a pilot study to see if we could classify amount of associated knus.
+
+[1566.0s - 1595.0s]
+And indeed, it worked surprisingly well. We did a lot of work in matching word frequency and the length of the word data complexity. The number of syllables and things like that. So this is really a lot of work. Went into building this experiment. But in here there is. This is on one electrode, a very nice significant difference and this is a group difference between associated or related words and not related words.
+
+[1595.0s - 1624.0s]
+And we had 12 subjects, 400 word pairs, and a classification rate of 60%. And the best this is arranged the best subject at 67% an about minus 67% further in the worst subject. It's related, unrelated, so it's 50% the chance level is 50%. Yeah. Yeah. So this was a pilot to see if this idea of 20 questions could work for BCI. That's yeah, that's a single presentation, so there is reliable information there. It's not much, and we need to go to this set of thousands of classes. So can we do that?
+
+[1624.0s - 1653.0s]
+And. So we need to decide on the universe of Target words. Which words are are you allowed to have in minds? Then the universe of probe words could be the same, but could be larger, for instance. And at first we select the probes randomly in a simulation to see if we can now make the next step. Can we build such a BCI? Of course, if we select probes randomly, maybe you have a very strange word that only associate's with a few other words. That's not a good probe to use, especially not in the beginning. So as a first step, we ordered the words according to the number of associations they had. So Green was higher than male was having female wear high those broad categories. They have many associated words with them. And then we took those and we also from that. I think it had 10,000 words. This Association database that we used from Logan and we took the first hundreds. And we used the same universe of probe and target words. Anne.
+
+[1653.0s - 1682.0s]
+This is a simulation based on the word pair classifier output distribution. So the 60% correct. And here you can see how many probe words were flashed. In this simulation, an what accuracy would be? And now, instead of multiplying flashes according to row and column. We multiply the classifier outputs according to this matrix of. Associations that we have. So if I flash yellow. And there is a high output from the classifier, also Canary birds. Receives an update, then goes up in activation and belief as all other words associated with yellow. Now you need to know how much improvement there can be and one of the things that we did is to assume a perfect. User assume a perfect classifier. And then given the database of associations that we have, which is very very smart, sparse. So it's a bad coding, it's it's far from what you would do if you had a binary code. You could reach this one, so this basically is doing button presses instead of BCI. You tell me associated not associated, and I assume you behave exactly like this matrix that was collected, but for other subjects. And then this is the room that you have. If we were to have perfect encoding. If we were to have really nice words that slice the whole space and two in different ways in a very nice orthogonal way. So if we had. A bit encoding of binary database. Something like that. So this is the improvement we could expect and our database. It's still very sparse that we have and maybe does not reflect because it was elicited by spontaneous associations. I give you suck. You tell me feet. And that's very different from. Perception of an Association. If I have two words that there are many work, for instance moves and respect. Maybe you say yes and no one said respect to moves as a prompt.
+
+[1682.0s - 1711.0s]
+Now, of course, does this scale? Can we do that? And here we see this is a log arhythmic scale of the number of probes that you need to use. So we talking. Single targets 20 minutes or longer hour. 10 minutes experiment. So we talking long time VCI to get at that single word. But here you see how well it scales for larger and larger datasets, it's easy to to work there. Now in here I didn't do. The full. Adaptive search for the most optimal probe, because it's it's impossible to collect all those probability densities and calculate and completely true. But what I did do, and it's not in this picture. Good words somehow divides you believe. US aggravated aggregated belief mass into 2. If I know you have a person in mind, I somehow already older activation is on the person. Then male or female would be very good proper words, so that's simple local rule. Depending on the state, so very dynamic, so it's not ordering probe words before hand. Helps a lot in here and this is we are in the middle of this this analysis so we're building this experiment and we're simulating and trying to get this very adaptive BCI to work. And in here adaptivity is needed because the space is so large it would be impossible to make this work otherwise. And. I have no idea if we can actually pull this off an. Make this into a practical BCI but still the approach to to model this. This way of belief update is I think important.
+
+[1711.0s - 1740.0s]
+OK.
+
+[1740.0s - 1769.0s]
+And this was all adaptation of the system. Now adaptation of the user. Sometimes adaptation is somehow. Unwanted, undesired, it's nonstationarity. It makes your life as a BCO builder hearts because you have to deal with that. And of course users adapt. There is traditional in your feedback where you have an abstract marker power in a frequency band, or even ratio of two types of band power in the frequency. Two types of manpower at a specific place. And users learn it takes many sessions, but users learn to somehow control it. Of course, if you control a wheelchair or speller, you somehow also learn bits somehow improve a bit or Cam, or the other way round, you habituate San. The response is not as clear anymore. But what we are aiming for now is learning perceptual categories using VCI feedback. So it's neural feedback but not general state, but processing. A marker of processing perceptual processing that we want to go.
+
+[1769.0s - 1798.0s]
+Improve. And lots of our cognition is somehow built on categories. Everywhere we see categories. Usually you have. A variation in one dimension of a stimulus, say the difference between a T&AD. That's just the time difference when the tongue starts to move. And you don't hear that continuous dimension anymore. But you hear tease and certainly it switches and you hear AD. And of course that makes for a much more efficient coding. Discontinuous difference is not that important as which phone images. So it's very basic. It's also in shapes, it's it's, it's everywhere. Papa distinction in speech long and shorts, as is the difference between R&L for Japanese speakers or Chinese speakers. Very difficult to learn in this second language learning if they learn English or German or Dutch. The Mandarin tones are the four categories that you need need to learn. Fouls foul space so it's everywhere.
+
+[1798.0s - 1827.0s]
+And. Categorical perception. Is there if you can? Listen to such as stimulus on a continuous dimension and tell me then it's a T or D and it's not something like this, but it looks like this. This is identification, but still that behavior could be very much on the decision of the output side. I have to press a button T or D, so could be very artificial, so through categorical perception.
+
+[1827.0s - 1856.0s]
+And also means we need to collect. Sensitivity measurements. And you're not very sensitive to differences. And two D's that are close together or into tease. But around the boundary you're very sensitive. So actually, you're losing information within a category. You don't hear the difference between these anymore. Then we becomes two categorical perception. So that's the discrimination measure, and usually the first one is measured identification by just playing sounds and you have to say it's a T or D. This one is usually pairs of sounds and you have to say same or different. And the pairs of sound spend that spectrum, and you're much better in, say in recognizing differentness when you're close to the boundary.
+
+[1856.0s - 1885.0s]
+But we make a speech stimuli. Starting from real stimuli and then artificially removing some. So this is the difference between Farhan Bar where we remove a bit of this and then add a bit of the noise in the beginning.
+
+[1885.0s - 1914.0s]
+And then here we say receive behavioral response. Identification of Farhan Bar for native English and native Dutch speakers. And you see, there's a subtle difference. We both languages have these categories. Bar is different from there, so we need to recognize them. But there is a subtle shift in the category boundary, and that's really hard to learn. Very hard to pick up. You really need to spend years in a country before you do that well. Or maybe you don't even acquire that. It's a subtle, subtle difference.
+
+[1914.0s - 1943.0s]
+We have more of these examples. For instance, for Japanese speaker, long and short S for Dutch speaker, it doesn't mean much if it's a long or short and in Japanese it's really important. This is identification curve. This was exposure the so there was lots of exposure to short and long and you see the category boundary after exposure becoming a bit steeper. But you also see Dutch can do it that subjects it's not as steep and they are trained by exposure. It's not as perfect as here but they come close. Now these stimuli were from a single speaker, so picking up a difference becomes that you can listen to the artificial superficial acoustic differences. Here it's multiple speakers, and Japanese speakers are good, and they're even better after exposure. And Dutch speakers never acquire that category. It's just too hard. So this shows us there is space for. A good way to train. Um? Now of course.
+
+[1943.0s - 1972.0s]
+We have very nice paradigms, oddball sequences say of RML or of long and short as is. And from the mismatch negativity we can see that there was a distinction, hurt or not. It's preattentive. It even works if you read a book or you watch a movie. Usually these experiments are dumb in that way, so the stream of sounds goes on in the background. And there is evidence that there is a mismatch negativity. If you were to pay attention. But before that, so you cannot pick up a distinction. Which behavior but BCO an EG can from e.g you can.
+
+[1972.0s - 2001.0s]
+So this is by Empire, EG. Very easy contrast, very large difference between bompa and a very small contrast. And you see this small the blue one that contrast is not Victor by the Chinese more and you see also here that the response for hard contrasts is early earlier. So in that spectrum from. Hard to easy contrast and in the end both search and English speaker pick up the same contrast easily. But if the contrast is hard, we don't. We don't hear it.
+
+[2001.0s - 2030.0s]
+Now can we do it that was group data? Can we know? Now do that single trial and here we see the different contrasts. This one is the easiest to pick up. An the .5 is. Chance level and here we see native English are better than those, but we're still able to do it. And then discover.
+
+[2030.0s - 2059.0s]
+Place nicely with behavioral methods. Pick up so if there is something in e.g we can find it back in behavior.
+
+[2059.0s - 2088.0s]
+But still, those classified classification results are not good enough for a training system .6 if you get feedback with .6 correctness. Feedback is so bad you don't learn from that, so we need to combine a few trials to get a bit. Better.
+
+[2088.0s - 2117.0s]
+And before I show how we don't do it. See. I'll give this as a sideline. Now, instead of trying to classify the contrast, we try to classify which is your native language. And we do this form behavior. We throw pine bars at you and we ask you what are they? And because the boundary is shifted, we can tell you're not very reliable, but we can tell your native Dutch or native English speaker. But from EG if we select two of the conditions, we built an ERP from that. So it's a grand average and we do them classification. We can tell even better. So by just perceptually throwing, passing Massachusetts, looking at the brain response, we can detect not this full perfect recognition, but we can detect which is your native language. Of course, this is just a scary thing, but maybe in the. Assessment how good you are a second language speaker for this contrast. This makes sense so we can pick up how good you are. We hope if you learning this second language.
+
+[2117.0s - 2146.0s]
+Now in the BCO setup. It will look like like a loop. We present all bow sequences. A stimulation, then we do the classification. We combine over a few trials and then we give you some extra outputs. And.
+
+[2146.0s - 2175.0s]
+We could. Reward you, for instance by having the movie being blurred. If you're not doing it well. And I was subject in this experiment and it was beautiful nature movie and it's really not nice if the movie is is very non crisp is very blurred. Anne.
+
+[2175.0s - 2204.0s]
+But also you can for instance determined when to move on to the next exercise. Or you could even adapt the size of the contrast of the stimulus you're trying to distinguish. Becausw assumed if we make it very easy, very big difference between buying power or are an L. You don't learn everyone picks it up this if we make it very hard so you don't learn. But if we right at the boundary where you just are just about to be able to pick it up. If you present those stimuli, hypothesis is that you learn fast.
+
+[2204.0s - 2233.0s]
+So.
+
+[2233.0s - 2262.0s]
+That's and this is the stimulus adaptation. So that's how we try to build BCI learning systems for second language and for music. That's our SRA because in music there also many of these tasks like recognizing accord for instance, major and minor is very easy, but all the inversions are really hard and I think we can help a lot of people if we can somehow speed up that process. Um? And of course there are many of these contrasts. If you try and very hard contrast sometimes if you try to learn a second language. Um? But we haven't proven Ajax becausw you not you need to do long experiments and you need to prove that it's better than passive exposure because we learn a lot from passive exposure or even behavioral training. I give you ballpark and I tell you if you were correcting identification, that's another paradigm. Of course you want your BCO solution. UBC I reward to work better. So that's the next area that we were working in.
+
+[2262.0s - 2291.0s]
+And my big conclusion is adaptation is good and there are many ways to exploit it better and more in the whole BCI cycle. OK, thanks very much.

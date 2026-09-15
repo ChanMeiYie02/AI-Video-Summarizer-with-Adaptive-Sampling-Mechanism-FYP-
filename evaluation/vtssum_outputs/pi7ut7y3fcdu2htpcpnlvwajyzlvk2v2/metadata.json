@@ -1,0 +1,20 @@
+{
+    "id": "pi7ut7y3fcdu2htpcpnlvwajyzlvk2v2",
+    "title": "Channel Coding with LDPC Codes",
+    "url": "http://videolectures.net/mlss2012_perez_cruz_ldpc_codes/",
+    "info": {
+        "author": [
+            "Fernando Perez-Cruz, Carlos III University of Madrid"
+        ],
+        "published": "Jan. 25, 2013",
+        "recorded": "April 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 579,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 40,
+    "ground_truth_summary_length_chars": 3121
+}

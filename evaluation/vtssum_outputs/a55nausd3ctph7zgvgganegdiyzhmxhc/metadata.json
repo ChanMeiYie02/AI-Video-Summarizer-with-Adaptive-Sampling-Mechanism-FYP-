@@ -1,0 +1,20 @@
+{
+    "id": "a55nausd3ctph7zgvgganegdiyzhmxhc",
+    "title": "Innovation vouchers for SMEs",
+    "url": "http://videolectures.net/ttconference2010_meijenfeldt_ivfs/",
+    "info": {
+        "author": [
+            "Frits von Meijenfeldt, Ministry of Economic Affairs, The Netherlands"
+        ],
+        "published": "Oct. 21, 2010",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Business->Small and Medium Enterprises (SMEs)"
+        ]
+    },
+    "num_segments": 3,
+    "num_sentences": 58,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 773
+}

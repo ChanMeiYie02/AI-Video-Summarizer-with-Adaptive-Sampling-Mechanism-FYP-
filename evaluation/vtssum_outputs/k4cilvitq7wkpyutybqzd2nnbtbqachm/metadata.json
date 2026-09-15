@@ -1,0 +1,20 @@
+{
+    "id": "k4cilvitq7wkpyutybqzd2nnbtbqachm",
+    "title": "Scientific Integrity: Can Molecular Medicine Be Trusted",
+    "url": "http://videolectures.net/nib_bustin_molecular_medicine/",
+    "info": {
+        "author": [
+            "Stephen Bustin, Faculty of Health, Social Care and Education, Anglia Ruskin University, Cambridge and Chelmsford"
+        ],
+        "published": "Oct. 2, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 92,
+    "num_sentences": 476,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1275
+}

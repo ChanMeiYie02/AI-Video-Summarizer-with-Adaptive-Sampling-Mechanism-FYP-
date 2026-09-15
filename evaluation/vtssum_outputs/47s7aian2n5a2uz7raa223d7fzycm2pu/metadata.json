@@ -1,0 +1,20 @@
+{
+    "id": "47s7aian2n5a2uz7raa223d7fzycm2pu",
+    "title": "Efficient Semantic Web Service Discovery in Centralized and P2P Environments",
+    "url": "http://videolectures.net/iswc08_skoutas_eswsd/",
+    "info": {
+        "author": [
+            "Dimitrios Skoutas, National Technical University of Athens"
+        ],
+        "published": "Nov. 24, 2008",
+        "recorded": "October 2008",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 46,
+    "num_sentences": 272,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 3648
+}

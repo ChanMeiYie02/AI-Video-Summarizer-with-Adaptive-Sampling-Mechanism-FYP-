@@ -1,0 +1,21 @@
+{
+    "id": "xrl4sbesbt2h7ipdqk7r26kx3o7ape2r",
+    "title": "Translation Technology for Fighting World Poverty",
+    "url": "http://videolectures.net/translingeu2010_thicke_ttf/",
+    "info": {
+        "author": [
+            "Lori Thicke, Lexcelera"
+        ],
+        "published": "July 15, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Human Language Technology",
+            "Top->Humanities->Languages"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 178,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 759
+}

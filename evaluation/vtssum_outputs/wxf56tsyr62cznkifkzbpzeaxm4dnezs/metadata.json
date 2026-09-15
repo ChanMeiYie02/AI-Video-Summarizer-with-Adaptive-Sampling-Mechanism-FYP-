@@ -1,0 +1,21 @@
+{
+    "id": "wxf56tsyr62cznkifkzbpzeaxm4dnezs",
+    "title": "A Theory of Plenoptic Multiplexing",
+    "url": "http://videolectures.net/cvpr2010_ihrke_wetzstein_tpm/",
+    "info": {
+        "author": [
+            "Ivo Ihrke, Cluster of Excellence Multimodal Computing and Interaction, Saarland University",
+            "Gordon Wetzstein, Department of Computer Science, University of British Columbia"
+        ],
+        "published": "July 19, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Computer Vision->Computational Photography"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 162,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 3595
+}

@@ -1,0 +1,20 @@
+{
+    "id": "5jxfin4p7w6jrcvawerosvknvrvtedaq",
+    "title": "Diskriminative Sequence Labeling by Z-score Optimization",
+    "url": "http://videolectures.net/ecml07_ricci_dsl/",
+    "info": {
+        "author": [
+            "Elisa Ricci, University of Perugia"
+        ],
+        "published": "Jan. 29, 2008",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Optimization Methods"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 123,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 3478
+}

@@ -1,0 +1,584 @@
+[0.0s - 29.0s]
+Hi, good morning, I'm Hector Palacios. I'm going to present together with Alex an art tutorial titled Translation Bad Approaches to confirm and continue planning. So for my country in planning, you might have heard of that.
+
+[29.0s - 58.0s]
+And some people are saying, OK, this is boring. Sorry this is boring because we really want is to be half of tournaments. Robots doing things out there. And this is indeed the Twitter account of them are Phoenix. You must remember this rubber. He was the one who found water water in Mars recently until a couple of years ago. Like three years ago and the opera Twitter account. Twitter was a new thing. Or like commented about the implementations and things on the the rubber and but they had to find 2 to 4.
+
+[58.0s - 87.0s]
+Wait, which one is this one? There was a either the robot didn't receive the comment coming from here from from the Earth to this Atelier Omar. Finally to the River. So they treat that they didn't receive any comments or they didn't have any idea on what to do. So he have. We know that they have some prepare and sequence there in case of they don't they don't they don't get any any plan.
+
+[87.0s - 116.0s]
+And also you know it's like hard to follow to to have a proper plan there without any more information. Basically you are doing offline planning on Earth and then send it to the program and hope that everything is going to be OK. I mean, of course we would like to have all the ideas to make planets were there, but near what we're going to do that. But you know principle way. So this is what this is all about and.
+
+[116.0s - 145.0s]
+OK, so um, if planning is a product of finding a signal of actions for achieving a goal, then basically we're going to. We're going to do is to study too particular kind of planning problems. One is a conformant planning that differ from classical planning in the sense that we have incomplete information and initial state. And the other problem we're going to consider is contingent planning that is, like compliment, but we also allow allow observations in the first case, we still won secret factions that allows to achieve the goal. They got, they will have him complete. Information is illustrated in the listening state, but in the second ones. Because we'll observations we expect to behave differently depending on the results. Observation for that reason, the plans for continuing planets are not going to be sequenced anymore, so that's.
+
+[145.0s - 174.0s]
+Second problem, we're going to work on today, so this is illustration of a classical planning problem. This we express this space using some couple language. We're going to see that, but basically we're in classical benefit we're looking for is a sequent leaders for the initial state to the goal is said. In this case. The possible plan is marking red, and if we return this path, I have to figure out here, by the way. I have some feedback here. If we return this part and then we're getting a plan, and here we are saying what I mean by this is that they said I can stay here and from this state apply this action and then I get to this other side. So this is for classical.
+
+[174.0s - 203.0s]
+For confirming planning, I don't have one initial state, but a set of possible initial state in this case for say, and when I update this action I gave to this new order for possibilities and I keep applying action applying action until I finally get to the goal and notice that in this case the final, the final situation, the financial possible, say arriving to consider two Estates and the problem, and that means if this is the goal that both satisfies ago, maybe they differ in other things, but regarding the goal they do satisfies ago, so this is going to be. What they call a conf.
+
+[203.0s - 232.0s]
+Normal plan in the case. In the case of confirming planning, we can also think that we're indeed solving like many simultaneously classical plans, starting with different with different initial state and then finding one SQL function that for each possible state lead you to the goal. So this is like an ocean. The situation here we're certain this state we apply this this plan here. These are the actions ABCABAY and get to the goal.
+
+[232.0s - 261.0s]
+And maybe for another possible state we apply the same actions that we behave differently, because this is another instance state and lead you to the goal. And if we do that for each one of the possible Interstate, you are going to have also also confirming plan. So this this two sides of the coins of thinking about the set of possible configurations and applying actions versus thinking about different different classical planning process and things that we are going to to ensure intervention shorter. But mostly we will focus on this. This kind of look at other things.
+
+[261.0s - 290.0s]
+But going back to to to the belief was is called the belief state representation. This is the city.
+
+[290.0s - 319.0s]
+Action and it makes it clear when when we try to extend to continue planning, because in this case here we are applying. We apply 123 actions and then here we are planning action. That is indeed an observation and observation allows you to set know from these for enforcement state. Because of this observation, I conclude that the two other states are the right ones and of course for this state you need to achieve. The goal is to show that the elevation is lead you to this state. Then you need to. To get to the goal too. So we see that in this case this is not a sequence but a graph on this space. So this is a space. Feel free to interrupt me whatever you have a question.
+
+[319.0s - 348.0s]
+Um, OK so but we're going to do this by doing translation. I am just going to explain what is generally, therefore confirming the idea is that we start. We are confirming problem, expressing some language we're going to translate that into a classical planning problem, and this we're going to use a box here. A classical planner. Do whatever you want that works for this case, as supporters in Texas with problem and then from the plan. Of course, because we're feeding a classical plan, we are obtaining a Class A classical plan. I found the classical plan we expect to obtain a confirming plan, so that's the whole idea, and this is going to work well. I mean directly for confirming plastic or confirming plans are also SQL functions, so that makes sense for continued their Nazi consumption. So we're going to need something else, however, also for contingent this idea translate into classical is going to be the key is.
+
+[348.0s - 377.0s]
+So, Joe.
+
+[377.0s - 406.0s]
+The thing of some syntax, this is the way we're going to express things. We're going to have a proposition for the initial situation. We're going to have a propositions for the fluids for the goal, and their actions are going to press to express the India. In this way, we're going to have for conditions, an effect, and in this case, if it is conditional, meaning that when we apply action, being in that state, of course key Q have to be true if there are just too turns out to be true, then we're going to have also G as an effect. And for this classical program, Evie.
+
+[406.0s - 435.0s]
+Some is a plan, so in general we're going to have this syntax or classical planning. A classical planning problem is going to be a tuple. We have Florence, we have a influences cabinet situation. We have actions that have free conditions. I have a set of conditional effects and this is a notation we're going to use for the conditional effects. This things with this arrow also a set of fluency.
+
+[435.0s - 464.0s]
+In the goal, and indeed what was going on.
+
+[464.0s - 493.0s]
+But with this syntax where we are.
+
+[493.0s - 522.0s]
+Expressing is honest days of space and say space where we have a set of different states. We have our distinguish initial state as soon as possible. Goal states an action under actions and go how you go from one state to another.
+
+[522.0s - 551.0s]
+So basically this is Intel.
+
+[551.0s - 580.0s]
+This week's sugar for expressing this one, and of course, the size of this is going to be exponential on the on the size of the description. So basically we are.
+
+[580.0s - 609.0s]
+Getting here is exactly this. We express this in some formalism and basically we will get easy. Is this whole space and in season this is the model because it is going to be used for late.
+
+[609.0s - 638.0s]
+Am So what what's going on with? With classical banning, you probably know that in the in the last two decades thing has changed radically compared with previous years. And basically nowadays it too. Maybe there's another trend, but the main so trying are basically what is the search base planners. And the other thing is.
+
+[638.0s - 667.0s]
+Is this sub base and the good news? Is that classical planning works works, meaning that we really are solving much, much more bigger problems than send years ago, and in some cases where we're able to get very large plans in most cases. Not optimally, but it's OK, but of course you know classical planning. This is like silly. We would like probabilities, cost resources. Actions and arms and robots in Terminator. Stuff like that, but still even though I have, we have these these types of limitation. They're very, very useful, so we would like to do is to build on them and use them for something more complex problem that this translation.
+
+[667.0s - 696.0s]
+Based approach so getting more more more on unconfirmed planning. Basically what we're doing is to extend classical planning to the case of having complete information in principle and initial state or in the effects of the action we're going to focus on this tutorial and the case where you only have information to complete on the initial state. But if you go to the paper you can see what's going on about what happened when you have actually with no determinism, so we're going to say we have a confirmed plan we have will find a signal factions that actually figure for any possible estate. And while they issue here from the complexity point of view is that verifying at confirming plan is much harder than classical plan for very fantastic blend you basically get this state, apply the actions if you get to the goal. If you can apply all the actions against the goal, you are done, but for confirming you have a plan, you have the description of the problem and in principle you may have an exponential number of recent states that even encoding of the problem so verified just very fine. Whether you plan is confirming his heart and in this this is related with this result in complexity for the polynomial in classical paintings and be complete. But on the same restriction, government planning is exactly. Forward on the polynomial hierarchy so things are different. And of course, that means that there's not going to be free lunch here.
+
+[696.0s - 725.0s]
+An so just for giving 2 examples of confirming planning problems, consider our robot that is supposed to clean. Her room is supposed to collect every site. There is a good rule in a green room. The robot can collect the the racing a cell and a confirming planning for cleaner will be just to collect. The Theresa May or not be in different places until you find that you get the the room clean. Another another case would be too if you have a patient, have a possible sort of pathologies. You know doctors aren't really sure. What exactly you have bodies burning? But anyway they can give you some treatment that will lead you to be healthy even they didn't you. What exactly then they lose you have before. Quick ma'am and called a problem similar to that to to do this in this way look like here we have not only fluency artificial state and the patient is alive initially but also we have. We are at this junction then said that the patient might have. Of this illness or disease, illness, or both of them and we, why is the patient to keep alive and to be healthy? We have here these three different actions that are three different treatments that remain. One healed. You is you have their illness. One. I mean his job out there for a mistake here it hedgeable deals one day or the other in ELDO about the illness too. And this is the third action that earn major hail. But you know it is not exactly the illness you have. It might kill you. So I confirm about what we do just to execute. These two actions remain one and treatment two and issued a execute symmetry. Then you are. You can be sure that you are going to give a lot to be alive, so that's the point when we want to be sure that we get to that we get to the goal, we need to be sure that the patient is alive. So it is safe to apply these two actions. OK, that's like the whole spirit of the confirming plans in general.
+
+[725.0s - 754.0s]
+Instead of doing this.
+
+[754.0s - 783.0s]
+Is when we have free conditions were going to meet this information. Here I'm going to just to show he is like talk about the action treatment one I got to have. If you meet the pre condition that means that every condition is true and this is the way we're going to express conditional effects. So just setting up there.
+
+[783.0s - 812.0s]
+Innovation again. So this is another confirming problem. In this case, we have a robot that is in. This is in some location in this grid and the law of the possible actions he can move around and he can. He can look and grab, meaning that he tries. He looked around exactly around his position and grab any object there is not in this situation, but ignored in asserting his location, but around and then he got put put down the object so the initial situation is there is an object. Somewhere in the grid I have one day of you to be in the trash, but they said restriction than when they object they robot grab the object is he tried to do it again? He might last the object so the safe line is to go in Austin area. Try to collect the object that put down and they go to other area and do that. But this is this is just another pretty complicated and it's actually interesting benchmark for for confirming.
+
+[812.0s - 841.0s]
+There's nowadays, so those are three different products, and so far this is another one here as opposed to them. This robot that can move around in this grid again. But then we are headphones pertaining to incomplete information about initial staying. In this case, the robot can be in one of these four squares, and we want the robot to go to G. So this example is interesting because they show how confirming plans can be so different of classical ones issue this is you were sure that you are here, you just need to. Right and you get to to the to the to the goal, but if you do 2 rights giving this for possible instead, you are going to be like here, here, here or here. And because you don't know what it is you are in the goal or not. You may be in the goal, but you're not sure that's not going to get confirmed plan. Indeed, if we, if we in if when we move to Torah Wall we remain in the same place. I confirmed that would be to go to a corner and they can go to the corner to Jewel should rot in that corner and non anywhere and. From that you can just go to the goal, and that's totally different. But that's the kind of language we expect to do to get from.
+
+[841.0s - 870.0s]
+Informal plan so OK, but this look a little bit silly. I mean the robot should have a sensor or something like that. Or rather or any of these fancy things.
+
+[870.0s - 899.0s]
+And well, it turns out that if you have better government planning, you are you are going to be better having planning with our survey show called Continuum Planning. Indeed, there are some players that based on previous work on confirming the way they were able to to continue and planning. And once you have planning with observations, well, you can think about other things.
+
+[899.0s - 928.0s]
+But we are doing here the the basic blocks and the reason is the following. Go from a plan is going to be relevant to any planning setting where you have actions applying to set of configurations to self configuration every time you have that got confirmed.
+
+[928.0s - 957.0s]
+I think they're going to be relevant, and indeed is you seen that classical planning is symbolic reachability. I mean by this ability we mean we have a graph and we want to get to 1 point to the other. Classical planning is symbolic ability, meaning that we have the state expressed as a formula, and we want to move to one to another. Yep, conformable is going to be rich ability, but not big. Reinstates expressive formula, big with set of configurations and do it. That rich ability is important for you have probabilities or you have observation or whatever you have, so we're building here. The basic blocks or deliver it with the complete information that it was the data. Recent conferment.
+
+[957.0s - 986.0s]
+Writing is important, so setting up but the syntax we have again something that is very similar to classical planning. Have fluent, but it looked at in the case of Mr, you have a set of clauses and not only did about glasses are learning the difference in the actions duction, that's as described. Finding a classical planning problem and the goal is also a set of literals so that the only difference is.
+
+[986.0s - 1015.0s]
+Here for this interacting POV. But again, in the interface semantics there things are different, because here we had, we need to consider the set of possible states. Not only one is a stable sort of initial state, we have again instead of goals as sort of an action that lead that gives you a transition function.
+
+[1015.0s - 1044.0s]
+Basically, a confirming plan is going to be a sequence them at each one of the possible initial states into a goal state, the same act.
+
+[1044.0s - 1073.0s]
+I wanna get you can't you can think of.
+
+[1073.0s - 1102.0s]
+That I was like some like searching on a graph whose nodes correspond to set of possible states. That's what we will illustrate before with this.
+
+[1102.0s - 1131.0s]
+Exactly fear an OK supposed to you.
+
+[1131.0s - 1160.0s]
+To do search here, you know, I know this is basically going to be exponentially bigger than the other one. That is, you only have one estate, but OK, let's try to do the.
+
+[1160.0s - 1189.0s]
+What what do you need to do? What most most confirmed planets before we start working on this? Basically they they do that they represent the set of possible configuration and then you have mainly two issues. One issue representation becausw the number of real estate can be can be can be exponentially bigger than the original representation, so you need to have a representation that is both compact and efficient to update and do look up to today. Worries and that can be complicating his is another issue that they didn't appear in classical planning and the second thing is you need to guide the search there and this space is huge so but it still. I mean you need to. You need to deal with both of them. So we we would like to do or what we do with the translation based approaches to solve both problems in one shot by translating the conferment problem into a classical one where we are setting up a representation that is taken care of by the classical planner. I mean of course there's a free lunch for at lease is is being dealt with. And also, we're going to obtain a realistic and effective algorithms that work for the classical planner that are just able to work on this on the translation well feeling in the classical banner with. So we are so big is the two problems in one shot, of course is the pain of the capabilities to classical planner, but it but it works. Trying to see who regards and actually works very well.
+
+[1189.0s - 1218.0s]
+So basically, we're going to talk about in this part. The Clock is there. OK. Basically I'm going to introduce a basic translation that is going to be like like the starting point and I going to generalize that to a motor murderous scheme. And then these KTN is the one I'm going to instantiate with many things. So I'm going to see when they complete I going to characterize the complexities of translation, I'm going to define instance that also, depending on the characterization I'm going to study. Hope this characterization quarter confirming with is for some benchmarks. And they are going to say to some practicalities about about how to. How can you do a planet using this translation and then also some new words in there in the recent year, data based on the user selection, but in general is polarized. Finally, where I went to map to map confirming plans into problems into classical ones that plants can be just obtained by using off the shelf classical planner and the translation. Of course in the in the worst case is going to be exponential because they say complexity result which over before that shows that we always going to have that so.
+
+[1218.0s - 1247.0s]
+How so? This is a basic translation. This is a more important step is perfect. Feel free to interrupt here and this is very simple but fundamental. Is there going to be useful later? So basically if if we're doing a translation, basically are probably taking as an input and output on a couple describing the confirmed plan and planning problem, and the output is going to be a classical pulling problem, so this is the input of the function. Notice that we have here the initial situation described in clauses. But their resolve to happen easily straight in this situation. Just literals not clauses. But is it because it's going to be a classic?
+
+[1247.0s - 1276.0s]
+A classical problem. So basically I'm showing here in the function for this topic. I'm going to have this this this result.
+
+[1276.0s - 1305.0s]
+I'm basically going to map affluent into two fluent, so for each flu and I have here they conform problem. I'm going to have two new fluens here. This is going to be a classical problem and of course the poor planner have no idea of the meaning of these literals. We are the ones in Schererville have of giving them the proper semantics that behavior that should be for each flow. In here I'm going to have to literal here and they they are the literal KL is to mean that you know for sure that is true. You have a set of possible configuration is this is there is a catering Hall of them Alice through and in the other half L is not true that you cannot have this little and the order is going is going to mean that you are sure that you know for sure that Alice falls.
+
+[1305.0s - 1334.0s]
+The meaning of usefully dressin indeed is you know that digital is truly an initial situation. Then you are going to have that you know that for sure and the other two.
+
+[1334.0s - 1363.0s]
+Default, but when you are not sure about about about the true value of this little at the joint going to have both false notice you are doing here incomplete representation where you seem to fluency to represent a possible exponents and number of things happening there. There's just a representation is incomplete, one was going to be very.
+
+[1363.0s - 1392.0s]
+Useful after the gold you want to be sure that you got to the goal.
+
+[1392.0s - 1421.0s]
+Yeah, of course an why, but I do have a precondition. We need to be sure that the precondition is true before we apply the the the action and that's required. Front front front bumper.
+
+[1421.0s - 1450.0s]
+I'm planning definition and and this is a more important and basically what we're going to do is to translate each one of the conditional effects into something in the classical problem. So here what we have if we have a conditional effect saying that when the conditions see holes, we're going to have L as an effect. If we are sure that C is true in an essay, we can be sure we can be sure that in the in the next day is going to be true, we can't be sure about that. But if we are not sure about that.
+
+[1450.0s - 1479.0s]
+Well, Dang, I cannot be sure that any of this, an indeed this is very important. But imagine this situation. Suppose that you are sure that sees false. Because you have charge, I don't know one of the little Asterix falls is yours. Feel about that was going to do this conditional effect while do nothing, because you are sure you can be sure that you are going to be sure that nothing happens. But if you are not sure that this condition is false, and suppose that this literal was was known to be false. Therefore you cannot be false anymore. OK, and I'm going to show example talking exactly about that in the next slide, for being sure, because this is not subtle issue. But basically one should. What should you do? This translation you can feed these classical planning problem. Into a planner and CC you can get a solution. This is incomplete version manycam.
+
+[1479.0s - 1508.0s]
+You can get a solution, so let's see a couple of examples here without confirming planning problem we have here a goal that is G and have the decision this same meaning that we have here 3 possible Interstate. We have this actions. The actions have number conditions and those are respected conditional effects. So we have to hear to confirm plans. One is applying A&B. If you apply a you get to Q and you apply them BII. Applied Ed you get to Q. But in the interest that you have paid your queue, so after applying a or because Q was already true, or because of the action you have your supply for any reason you are going to have Q for sure and then you apply B and when you apply be Juliet Q for sure G for sure. Is it clear that this first one is is a conformal planning problem? Ackerman plan OK. Horrible, the other one. Here we apply C and look. Notice that air is known to be trained initially said so when we apply I see we get Q for sure and after applying C We apply V that way because Q issue A is known to be true. Then you are going to have for sure that Jay is true. Those are two different confirm plans for the improve this problem. It says clear because otherwise we get lost about the meaning and example. And it's like a little bit silly. Any questions here? Sure OK let's go. OK.
+
+[1508.0s - 1537.0s]
+Leslie translation, this translation you are going to have fun not going to represent the fluent, but basically I did KP and cannot be etc etc etc. So the only thing we know about initially stated that there is true is known to be true. The other things are false. Horrible KP, no false. What about cannot be false because neither P is known to be true neither. Not based on true true so the only one we have here is care. That's the only positive returned instead and in the goal. Of course we want to, we need to be sure that this. That is true. That's what we want to and the translation works like that. You remember for each one of the conditional effects here, we're going to have to condition effects here and without looking at that much at the details, let's see that this one is going to be a classical plan CB. So I just thinking now about our the classical problem. And when you apply C. Notice that KKR is trending Interstate. So basically you get KQ. In in this problem, yes, this is C from KR. Here we get cake you yeah and then we apply V and B4 KQ GKG thank ages ago. Cool, we have a classical plan for this one, but what about this order confirming plan? If we apply a. In a it's going only to to add KQ if we know that peace through. But it's be true. There now is not because he wasn't sure about that. There's a reason why did they put literal. So basically when you apply this action it do nothing. An and then you apply B. And you wasn't sure about exactly you do. Is this do nothing? And these are nothing, so both are confirming plans. But in this translation we got one who is a classical plan and we we lost one of the confirming plans. So there's these examples showing that the translation sometimes can get you to a solution, but it's another case. It does. Indeed, you can characterize one. Are you going to have solutions? And that's where we were able to do is clear. OK.
+
+[1537.0s - 1566.0s]
+So the next question is, what about the cancellation rules?
+
+[1566.0s - 1595.0s]
+This way why I have here this area?
+
+[1595.0s - 1624.0s]
+They have an example for that, so once again this is another problem we have. This decent disjunction. Again, we have some little here. We have two goals we have for this action A we have to conditional effects for B you have only one and this is a conferment plan, let's see. B. If we apply B in the initial state here areas in East is true, so we get G for sure. So we have part of the goal, but we still need to get T. If we apply a while a dose, does two things. One is that peace through there in Dilley, SER. And but it doesn't matter because we already achieve achieve G and and the other thing it does and it is. If it is, it has S, then there's 50. So basically paying this one and then this one another the other way around. We get up. We are confirming plant. But notice that we if we if we inverted the sequence, if we apply first A then this one may delete error. Not sure because we don't know whether B is actually true there. But they might delete it, and then when we apply this we might get or not G. So we don't have a confirmed plan, so this is a government plan and this is.
+
+[1624.0s - 1653.0s]
+So let's consider the translation, but lesser meet the cancellation rules. The part with the negations here. Yeah, just the support rules to see what happened. So in this case, well, let's see first that this first one is is a classical plan. We apply B from B here. Notice that we only are sure about these two other literals or an S. We know that both they are both known to be positive and all the others are false. When we apply be. Uh, we go from Kiev to Keiji. Which is fine. We have here K air and we get PG cool. We're getting part of the goal and we applied a while. We go from KP, that's cool. Let's see now we have to go from KS to Katie. KSS here like 80 and we are done. MBA is A is a classical plan for this and that's not bad because BA was indeed a confirming plan. That's good. How about the other one? If we first apply action A we go from from CSN gay, Katie, Katie here and then up Ivy and get the cagey and the city is this is this is also a classical plan but this is a mistake but this one shouldn't be a confirm. It's not confirming plan so this translation is wrong. And the reason this is wrong ebook is because this is missing the cancel.
+
+[1653.0s - 1682.0s]
+Asian rules, so let's see what's happening when we have the cancellation rules. This I say those those those special conditional effects are the ones that were missing before. So let's execute again both plans. If we execute for the first one, we apply for Section B. Here, and we get cagey. Yes, the seas. And this is fault, but this is not important important, but it's this one. We apply V and EKG and that's good. And then we play a. I'm big, we have KS and a Kitty so this is fine. We are again this via is a classical plan, but what we don't want to is Avita vehicle, a classical plan of this problem. Then in that case we had on some situation. So let's try to apply first action A we apply action A. Basically we're going to get let's see from KS. That's good. We're going to get Kitty. That's good. But notice that we have this literal true here. This know that not cannot be and so this conditional effects is going to do his work. So because of this, let's see if I'm talking about the right one. OK, there's a mistake here. Vertical. This condition affect this one. This one should be. Best Buy. Yes, because this was P2 into not air. So here we have no OK no P not K not not there. So this is a cyclical dissatisfied execution when we secured that this this this conditional effect in the initial state where we're going to do is to delete to delete this one and once we have less care when we apply B then we'd OK. We don't get cagey so but introducing this cancellation rules that were missing. What able to finally for at least for example, to get the proper format, that is, that the sequence are there. Confirming plans here are then classical plans at the sequence that are not confirming. Plans are not going to be classical plans, so that's the correspondence we need. And that's the reason we need the cancellation OK? OK.
+
+[1682.0s - 1711.0s]
+: does them, so these translation is sound and we just return example. How's the idea? This is sound, but this is very incomplete. Basically there are many cases where we don't.
+
+[1711.0s - 1740.0s]
+Solution if we use case error. However, we can actually extend this translation to see.
+
+[1740.0s - 1769.0s]
+Trackable polynomial and complete and then isn't it a list for the translation is going to be the following. We're going to use a set of tax those parameters. With election, we're going to have a set of tax that basically assumption about this, let's say, and we're going to have a set of mergers, and those margins are valid subset of tax and four with this merges where we're going to have is to introduce new, have only KL&K, not L, But this little KL that we read KL given T that means that is. The West Wind initial state. Then we are going to to have fell through now, so this is in model logic for those who remember that will be something like that you can kick with with with this.
+
+[1769.0s - 1798.0s]
+Intended meaning so the whole idea that we would like to spell the whole kind of reasoning will express the following. So how do you have this? Suppose you have this situation is let's say the guarantees him there in the in the Hall of the candies in the room and you want to hold.
+
+[1798.0s - 1827.0s]
+County for sure. So we would like to do is that after we apply an action like Pig the candy from the whole, we want to get that. We know that we hand the candy is a candy bar that was in the whole gang. After applying the action picked from the room, we get that we got the candy. If the candy was in the room, but I'm because we know that the candy in the candy wasn't the whole or in.
+
+[1827.0s - 1856.0s]
+There are only two be able to conclude, so how that we not where she will have the candy? And we're going to do that into this new action. We're going to introduce these new action in the translation and together with the tax on the disjunction, we're going to have a more powerful translation. That's just that's there.
+
+[1856.0s - 1885.0s]
+All idea so again, I'm going to the.
+
+[1885.0s - 1914.0s]
+Function that must was thinking to the other bank notice. I mean the translation is basically the same. The only difference is that no, it depends on these two parameters that acts under merge. But here we have again for each literal and therefore a possible tax would have not only KL and cannot help us offer which one of the possible that you have in the in the.
+
+[1914.0s - 1943.0s]
+As an income is you have you know that it is true you have this one as before.
+
+[1943.0s - 1972.0s]
+And you have no honestly but better case here. Suppose you and really don't know that the letter is true. But if you assume this this thing, then you have some consequences. For example, I know the litera. If you have the tag, that means that they have the candy was originally on the on the on the room. They I know that now because I just starting the litter is going to be to be in the room. So we are going to have. Exactly something like this.
+
+[1972.0s - 2001.0s]
+But if you go.
+
+[2001.0s - 2030.0s]
+Yep, so this will allow you to get that because your initial state. If the candy was originally in the room in the in the.
+
+[2030.0s - 2059.0s]
+I see the room is attack. No Sir, sorry. Spare.
+
+[2059.0s - 2088.0s]
+Sis is it? So is the candy was sitting in the room when they won't do anything. Instead you also know that and you see this little you are going to do will be able to apply the rest of the rules and to go on with a solved.
+
+[2088.0s - 2117.0s]
+The problem with.
+
+[2117.0s - 2146.0s]
+Have the same situation.
+
+[2146.0s - 2175.0s]
+The goal for the recognition. We have this same for the conditional effects is said that again we have now all the possible tax, but that but the meaning is not different.
+
+[2175.0s - 2204.0s]
+From the previous one day they most important difference before I decide introduction of attacks, who has it now for each one of these is junction. Remember that is submerged and we just said that the all we need is that this to be a disjunction of possible tax, a valid one, and is this is a valid injunction. Then we can conclude and if we have KL for each one of those, though, we're going to be sure about that. So the only the only thing we really require is this to be a proper disjunction at this juncture. Definition of state, but besides that you have this junction and you have proof L for all the possible positive for all the possibilities you are done, you have L for sure and that allows you to introduce KL and to actually achieve goal achiever condition using disjunctions. So this is the.
+
+[2204.0s - 2233.0s]
+They got translation and basically we're going. I have in these.
+
+[2233.0s - 2262.0s]
+This many here.
+
+[2262.0s - 2291.0s]
+Let me show on a small problem we have the at the confirm program. Again we have X 1 / X two and a government plan is to apply this action and then this action and because one of X1 or so of extra was true then we are going to have G for sure. After applying both action and in this translation we're going to have notice that we have the old AKX one and not cakes one. But also we have noticed a little at the only thing we know knew those ones and after we apply the translation well done. Of this action, basically we are going to have faster different than well, if X one was true then I have G and after applying the second one, if X2 was true, I have G and now you see the new match Merge action. I'm going to use both needed to introduce that you are sure because of this injunction that GS.
+
+[2291.0s - 2320.0s]
+Yep, and that's it. You get when you apply the the merge you get.
+
+[2320.0s - 2349.0s]
+Season do have the goal satisfies, but notice that know the plan of this part is A1A two merge. So forgetting the confirmed plan you need to remove the merge and that's it. It is telling you that you apply a 112.
+
+[2349.0s - 2378.0s]
+The confirmed plan. So basically what you did you need to consider initial state and get from there as sort of talk on a set of mergers and their merchants will be just disjunction. For example, I can set OK, that acts are going to be just a little single or you can have like set of literals. I mean this is I am using the notation here a little bit, but in this case it's just hard attacks where you can have any disjunction that is valid. From here for example, you can take the actors Johnson. Here you have here a merge that says PSQ. That correspond exactly to this one, or you can have here match that correspond to this one and you got the kind of triangle are more complicated than the disjunction here to be more complicated as far as they are at consequence of initial state, so that.
+
+[2378.0s - 2407.0s]
+The only thing you need to do to use this so given this relation, we have the following question one is it sound meaning that we are getting right plans when we when we do this and they fall and the other question is is it not so this is really not useful. I mean can we use it for another thing and we'll see if we can also use it in this case. The other question is about completeness. Meaning that is we can get all with a classical plan. If we had a conformal plan and the other question about performance because we're doing a translation here. And of course we expect to have a practical system working. One of the main issue is going to be the size of Revelation, because we expect that bigger classical plans will perform worse on classical planners. I mean, that's that's pretty normal. Well, but depends on when we would like to see how garden planets classical.
+
+[2407.0s - 2436.0s]
+It performed this translation, so let's start looking about the properties of this translation. Basically, what we're saying is that this relation is always sung as far as after TTM, have the right properties, and for some cases we can also have a complete isolation and it could be even polynomial and this.
+
+[2436.0s - 2465.0s]
+Going to be very interesting, so let's have an idea.
+
+[2465.0s - 2494.0s]
+The soundness so this thing is the following. If we have a sequence of actions that is able to achieve a literal KL. That means that for any initial state that satisfy this tea, the same plan is going to be made to make all through that what's going on inside and want to have done that because at least one of these tax in the merger going to be true, then I'll be able to conclude that for that reason, we're getting song plans. I mean this is not related. We completed with soundness and so we have these results at the guaranteed for valid taxonomy.
+
+[2494.0s - 2523.0s]
+We got a classical done, but let me do an illustration about this. What was going on. So here suppose we have these these classical state and we have all these literals and when we apply all this action we get to these literals here. Because we got this doing the merge, we conclude cagey, so that's what's going on in the classical part. What's the meaning of this? Basically when you have KL given T one, that means that for all this state initial state that satisfy T1, for example, all initial state where the candy was in the room for all those when you apply the action you are going to get to another set of possible state such that those is they're going to satisfy the goal. So somehow the leaders and the actual application are summarizing the application on a set of possible estate, and that six point Excel saving because you are representing this whole set of possible state, we much simpler things. That's that's the reason we get soundness.
+
+[2523.0s - 2552.0s]
+Here, um. Well then let's see an example of of a complete translation. For example, is, you pick the. You can pay the tax to be. In this case all the possible intrastate do list them all the positives listed you pick you modern numerator. Any any such solving SAT solver can do that, and then you only have 4. Mercer is basically saying of course one of the possibilities. Initial states is true. That's like.
+
+[2552.0s - 2581.0s]
+Obvious one here dude.
+
+[2581.0s - 2610.0s]
+Only going to have one merge, and so we're going what's going on here. Basically again, this action is going to keep track of what's going on for each one of US missile estate know for each one of the possible literal for each one of the possible states. So here this little is going to mean what the situation of L, assuming that the initial state what that one and when you get to one of these merge action, you are going to conclude that this sure if G. What's your for each one of the possible states? So this relation is indeed almost showing exactly the semantic for confirming planning problem. Yep.
+
+[2610.0s - 2639.0s]
+And this is the system is entirely because this one is complete and this is the first one we have seen that is complete. But this is exponential in the number of Florence and this is not good because it essentially that we perform. However, in some cases is this. This is an interest.
+
+[2639.0s - 2668.0s]
+Planner, but we would like to have more compact instances. So how can we do that? 'cause you have this problem?
+
+[2668.0s - 2697.0s]
+We do have to hear this is this is a situation we have this goal and we have these actions and basically the confirmed plan is to apply those each one of the possible actions. Because we have this injunction you get the goal, so that's that's pretty easy. Confirm planning problem, but indeed the number of facilities exponential here on N. Yeah, this is. I mean if you count the number of.
+
+[2697.0s - 2726.0s]
+Let me say this is huge. So if we use case set up, this is going to be huge, but indeed you can do something else. You can just build emerge like this and the corresponding tag. And having just applying actions so that at least they get you this one. Meaning that you have DS one was true, you will be able to to get the confirming plans, so you are indeed able to to get more compact solutions. And this one is going to be linear on N instead of exponentially angle. So this and this is an important saving.
+
+[2726.0s - 2755.0s]
+The question is of course, how can we generate?
+
+[2755.0s - 2784.0s]
+This company instances. So we have this definition of covering. I got enough time so I'm not going to cover all the things, but they did. The following affirmation of covering and discovering is going to to tell us when we're going to have completeness. They will have the definition of covering and then we were wondering how can we get combat covering's? But I'm going to basically to narrow down what we mean by by by completeness. So basically we're going to have that if I cover in translation when we have at least emerged. That deals with each one of the preconditions or goals that are basically the things you need to be sure about an when we have carbon translation, those ones those are the ones that are.
+
+[2784.0s - 2813.0s]
+To be complete so that initial here are three, one is the notion of relevance Wisener satisfaction both on the case of tax on the mergers and one of these three blocks I'm going to show again while we're.
+
+[2813.0s - 2842.0s]
+I mean by covering. So the first one is the notion of relevance. Basically, relevance means that what you have conditional effect, while it's something that is here is going to be relevant to the other things. So basically this just this has just the conditional effects plus transitivity, andsome, negation and stuff like that. So just simply where example support you have here these three rules you have here this these rule. Let's say you have amb, then you conclude see Anna stuff like that. With these rules you. Went to a relevant like this. For example a is going to be relevant to itself, is going to be relevant to see because of this and then a or is also going to be relevant to D because a is relevant to. C&C is relevant today for because of sensitivity and the same thing apply applies here and then you have also a negation, meaning that if not a is going to be relevant to not a general and is also if you have the age relatively then you are going to have that. Not a is going to be generally relevant to not be, so basically what you are doing is just to look at the part when you can pass over incomplete information. Lucas said we are not using the preconditions because preconditions do not contribute to properly relevance from the problem. We only look at the conditional effects to think about how can be literal affects this other one so that that's the Sadie also relevant, I have the formula.
+
+[2842.0s - 2871.0s]
+Mission later, if you want to see it so we definition of relevant Leslie considers, consider what we mean by are relevant costs over like this we have. This is Johnson POQR for a bunch of other disjunction their initial state.
+
+[2871.0s - 2900.0s]
+But suppose that both B is relevant to the Golgi. An OPI is relevant to the Golgi. Suppose that an suppose also that you have developed banks irrelevant to G, But the negative of that is not relevant.
+
+[2900.0s - 2929.0s]
+So what's going on? We are not going to get a solution, but listening on this one because using the conditional effect you have on the problem, you will not be able to get from this case to a solution. So what can you do? The only thing you can do is to reasonable this only relevant clause and meaning that both all of the literal inside then that should be relevant if one of them is not relevant. You don't need. I mean does interesting, but I cannot do anything with that. Indeed, is there is no closer irrelevant in this sense. The problem is not going to have a conformance solution because they are going to be some stay there that you won't be able to get to the goal, so why bother? OK, so basically I'm going to have to say there are classes going to be relevant.
+
+[2929.0s - 2958.0s]
+All of them are Arne, with all of the literal in the cloth. Relevant and official relevant clause and notice that this from the initial state allowed you. I mean, I'm also this is related to 1 little, so just looking at literally any other condition, a goal and you are thinking about OK, why I really need to deal with for this? Just little and maybe you have hundreds of classes for me for this little journey to classes.
+
+[2958.0s - 2987.0s]
+Yep. OK, next thing is that using this little what we know we know what to focus on and now we're going to see what do we mean by satisfies a class using at a close using attack and then consider this.
+
+[2987.0s - 3016.0s]
+Josh, so one what watch out we basically we would like because we have. The Interstate is personal logic. We want that we would like maybe 2 doing fancy inference on this formula and things like that but you need we need to be careful because we want the translation to be polynomial with those paid translation to haggle. Doing some SAT solver or inference there. So we needed the inference to really really fast. So basically what we ask in the translation we propose was to allow you to use this unit resolution. This is normal procedure in SAT solvers. And this is very fast and Jeju countries within resolution, this is going to be fast enough and it turns out that the technical condition for being used unit resolution is that the class I'm panicking form that is the case from both veg for. So suppose you can just do it fast. That's it. That's the whole point. Basically, I'm going to set that attack satisfy a clause is son of a literal. If for some of the literature of the clauses in the consequent of that, so I take that back. I had initially state I get the consequence of this stack. And if I get something but notice the little it should be, here is not in doing inference really. That should be. Here is a little appears are then I started finding that one and with this I gotta show an example. Now I'm going to say that emerged at the 4:00 o'clock if I can satisfy the class for these one other possible discharge.
+
+[3016.0s - 3045.0s]
+So that's that's like the whole idea. Let's see here an example. I have two examples, just this one OK. Supposed to have these initiatives that you have here now. One off of this embeddable aha. Funny another one off and buy this one off. I mean that one of them is true. And I have also clauses encoding that Noble, not not too, or they are true at the same time. And suppose that looking at the actions of the problems, you can see that XI is relevant to all the other access, both positive. Negative, so both that and the saying 4 four Y supposed to have this situation so observed at this stack satisfies all the clauses. Why this stuck here? Because what is the consequence of this the consequent of X1 XY one is all this whole thing. Why? Because this thing basically meant. Basically in goes one of that. This was only one of these can be true. So if you have X1 all the other true before. Unless you have why one or the other should be false. So this is the static consequence of these. And notice that for each one of the clauses here and also forwarded the case of the one of Y you gank have a little. For example, for these two, what you are going to find a little here and also for the other ones. So basically what you're saying is not that you are satisficing. Using propositional, you know you need to show me the card exactly, the car and this will allow you to basically do that impression in polynomial time. That's that's that's the whole idea, and that's it. Basically what we do is do we use this notion of satisficing funding, observing whether you have a merge and whether this marriage is going to be useful for satisfying all the clauses. So basically what you are getting is is you can observe that emerged satisfies a set of relevant clauses is because you're having for each one of the possible tax there that we were able to prove each one of the literal the clauses. By showing the cut off to each one of them. So that's that's like satisficing in general, but leaving most intact.
+
+[3045.0s - 3074.0s]
+So why did you have done that? I have.
+
+[3074.0s - 3103.0s]
+Here and there.
+
+[3103.0s - 3132.0s]
+Sample by always keep it for now. Wanna have that they basically were going to said was well but build on that I'm going to cover a literally have a half a merge. Have a little, maybe a goal or precondition you have one merge that cover this literal OK and covering the literal and no need to do that. Not only with ongoing Gulf of the all the goals and all the preconditions. If unable to cover order or that conditions and gold they are going to to get what I call a cover for the problem. And those are the.
+
+[3132.0s - 3161.0s]
+And they're going to be complete. And for example, this merge here discovering because fires Isabella disjunction. This is a self assuming sericite and 2nd is one of these. Let's say of course is able to satisfy their classes. Have all the little up there I can study.
+
+[3161.0s - 3190.0s]
+For the CLASS Act and there are other cases we also have covering translation.
+
+[3190.0s - 3219.0s]
+The next question, of course, is how can I try to get there? Try to get to build the governance translation ideas following. I'm going to skip a part here and observe that basically what we're doing is to. Well, we want to obtain is a merge that allows you to show that you can satisfy is one of the class. So how can we do that? You can for example combine do the cross product of the of the clauses. Yeah, if you do that, you always are going to have the then you'll always be able to satisfy the clauses. Other thing you can do is you can enumerate combination of the of the of the little software problem. You can also do that in any case. What you need is a polynomial is a procedure that we hope we hope to.
+
+[3219.0s - 3248.0s]
+The normal that allows you to.
+
+[3248.0s - 3277.0s]
+To get that so.
+
+[3277.0s - 3306.0s]
+Basically, this is when we get there.
+
+[3306.0s - 3335.0s]
+Ocean of of with basically yeah, the width is going to tell you how many classes you need to generate the combination that allows you to get a proper match. You have. The DO happen is, let's say all the all the clauses. If you're able to pick just two classes and with those two classes satisfies all the relevant to a literal, then is of course going to be much cheaper than taking four classes. Yeah, or bigger 6 classes. So basically what we're doing is asking how many classes do you need to build your cover that is also there is basically the same as saying how many liters do you do. You need to have in the attack. Bigger tax are going to generate more combinations are going to make a more bigger translation. So basically what you want to keep the control is a sign of attack. So basically the way the conformance with the problem. Is there is a number? Is it is related with the number of clauses? Do need to make a cover and the governance basically do using combination or so.
+
+[3335.0s - 3364.0s]
+Other stuff, but that's like the whole idea and this is your for a little. And then I can talk about the width of a problem and with the problem is going to be the Max for over the Olympic conditions are goals from there.
+
+[3364.0s - 3393.0s]
+One of the problem I have here soon as sample.
+
+[3393.0s - 3422.0s]
+If we like it.
+
+[3422.0s - 3451.0s]
+Keep an OK and no, I have that I can indeed construct an instance of KTM that can be useful for some problems that I have to have the appropriate appropriate with. So basically.
+
+[3451.0s - 3480.0s]
+I'm going to do. Is to say OK, you do take a problem. Suppose. You know that with other problem is you have you want to verify whether the width of the problem is that number, meaning that just generate a combination and try to verify what a joke you are able to to cover or not a relevant clauses. If you can do that. But you do this translation. Otherwise you just generated combinations you have. Can use those combinations of measures. The bottom line here is that this translation for any width of the problem is going to be polynomial, so you have a polynomial translation. When is this translate?
+
+[3480.0s - 3509.0s]
+I'm going to be complete this transition. Going to be complete is it turns out that the I you use for bone in the size of the translation correspond to the width of the problem, so we have here a translation that is always polynomial and that in some cases is complete and this is high because you. I mean, it might be hard to come to compute the width of a problem, but you can always try. OK, let's try with then the K1 because it's a problem turns out to have with one. While we will solve it, but we didn't. OK, we might try. We we we we we we distance K2 where we can do this kind of thing? These are larger.
+
+[3509.0s - 3538.0s]
+Thanks for the great flexibility. An indeed for Benchman are there having are being used in. In researching conferment planning, more many of them are Even so the number of little growth with the dimension of the problem do nonfluent they wish remains one and this is very interesting and there are others where you have a lot of unknown flowing and all of the interval to be relevant and you have someone who are in the middle. So basically this is telling you how big is going to be the translation when you apply this method, so you expect those want to perform really well and you hold you cross your fingers when you go through those ones. Because he is the one that showed that there is no free lunch with this translation.
+
+[3538.0s - 3567.0s]
+But that's that's that's a general idea, an it seems.
+
+[3567.0s - 3596.0s]
+OK. OK, so what's going on with the with the with? I mean what, what, what, what's the meaning of all this? Basically what we're saying first, remember that the first step was to say you don't really need to deal with all the relevant class with all the classes, you just look at the goal or the precondition. And I I want to deal with that. OK, what are the classes I need to look at that it was the first step and the second step was OK with this problem I have. What should be the size of attacks I need to deal with this, forget completeness. Yep, so basically they when you have this is this instance can be complete is when this is this tax are able to summarize the information you need to solve the problem. Because remember that we went when we talk about soundness. Basically when you have KL giving attack, you are summarizing all the possibly interested in satisfying stack. So basically we're doing completeness. If when you are able to do a proper proper summary of the situation, otherwise you do.
+
+[3596.0s - 3625.0s]
+Completeness and this is related with something we call the basis and ideas of following give a government plan June. Suppose identified a subset of possible initial state. Let call PS the government plan the government problem, that is satellite P, but we change the initial state. They are not the original ones, but this is now. So we will say we have a basis for a confirm program P if any government problem of this restricted one is a conformant plan of original one. So basically what you are doing is to change or do I do is to change is changing the initial state of a problem and keeping the same government plans. This looks interesting, but how are you going to get those?
+
+[3625.0s - 3654.0s]
+OK, that's that's a question. Well, basically what's going on? Is that because we are summarizing the information uses this tax. What we are going to have is a conformant problems. They have bonded with are going to have a basic that explanation, and that is exponential. The half sorry they have based their exponents setting on that number. So basically the weekly we selling do is how many how many initially say will you need innovating a basis for for having complete solutions? So while you can just plug plan for a basis, you are able to find one, but the whole idea of these faces they basically instead of having stacks, you can just transfer the inner problem and why we're doing. Indeed, if I leave for the component for the complete case is to is to is to summarize the behavior of the of the literals on tax on interest rate using the tax.
+
+[3654.0s - 3683.0s]
+I'm glad.
+
+[3683.0s - 3712.0s]
+Skip this.
+
+[3712.0s - 3741.0s]
+OK, so in wrapping up before before Alex Job team. So remember what we only need two together but instead of Tarzana an answer merge and once you have done that but you will get completeness depending on what you choose or you will get your soundness independent.
+
+[3741.0s - 3770.0s]
+Basically forever, you can just grab the initial situation and pick the class there and.
+
+[3770.0s - 3799.0s]
+Whatever you want, for example, you can just use a SAT solver to get model from that of things like that, But basically they they semantic we have for the translation allows you to to recognize the consequences of your decision and also you can also observe their social action is being in the moment you get that both of these details are false is because you don't know what's going on about the little food for the possible states, so you have explicitly represented while you have what.
+
+[3799.0s - 3828.0s]
+No, I'm glad you have lost and then we can define a translation uses.
+
+[3828.0s - 3857.0s]
+This idea of using just SAT solver looking at the initial close is getting the models and is a simple way too.
+
+[3857.0s - 3886.0s]
+To to get a planner. Indeed, this planet is it over the participating in the independent of the synagogue. From track was basically using differing instances. Form. For solving the problem. The team and the SIT in the seat I.
+
+[3886.0s - 3915.0s]
+Thanks Justin, because this is almost a challenge for in my opinion for the for the planning community, what's going on? Because I mean we're basically handed generations relation that use a lot of conditional effects I couldn't fix are really really expressive. I mean the essential you do to do those trips. This is one of the few that cannot be compiler quite easily, and what's going on basically in classical planning you are doing similar reachability by applying a transition that is simple that you have this recognition. But is this a little appealing? Devil is safe, they tend to tend to break. And even simple case handled treat. So this is a call for the Community for for having good support for conditional effects.
+
+[3915.0s - 3944.0s]
+Before.
+
+[3944.0s - 3973.0s]
+Finishing and.
+
+[3973.0s - 4002.0s]
+Just Seppi knows this.
+
+[4002.0s - 4031.0s]
+Heart.
+
+[4031.0s - 4060.0s]
+There was a comment here.
+
+[4060.0s - 4089.0s]
+OK, basically, what have you found out so far? We have a translation from confirming into classical piano has some instances we have said when these this translation can be completed for follow up confirming with we introduce our translation scheme that is polynomial can be can be complete depending on the width and we have showed you can build up with a planner on that before Alex goes and now this is Alex.
+
+[4089.0s - 4118.0s]
+So welcome to the second part of this talk of this tutorial.
+
+[4118.0s - 4147.0s]
+We're going to talk about contingent planning, which is government planning said before planning with incomplete information where we add observations which are sensing actions, you can see that sweet problem where the uncertainties encoded into the initial situation. The action might have. Conditional effects actor was saying but early at the sensing actions that would make the thing in there.
+
+[4147.0s - 4176.0s]
+I see. So I'm motivating example. Do you all remember the wompus problem from the AI book of Restaurant Norfolk? Here you have an agent, the lower left part of the maze? Yes, to grab some gold. But there are dangers there. Bottomless pits. Which emit breezes so you can fill them from the nearest cell and you have horrible monsters. The Bumpus or awful stand you can smell it from the nearest cell. So what's the goal here? The goal is to grab the gold, but the agent also asked to observe to sense if there is a pit nearby or monster it by and reason about the outcomes of the sensing to find a way to reach the.
+
+[4176.0s - 4205.0s]
+So. Including planning, finding a solution involves sensing reasoning about this, sensing an also dissented, used to uncover incomplete information. There are different challenges open here. One is to get for conference planning. You receive that are informed enough to carry on the search. And also the solutions they can grow exponentially. In the number of possible observations.
+
+[4205.0s - 4234.0s]
+So what are we going to do? We're going to do a translation based approach also for contingent planning. But we cannot do us in conference planning, why? Because the solutions here are different shapes because of the sensing in conference planning, a solution was a linear sequence of actions, bringing you from the all possible initial set from the initial belief state. To Apple here, we have the solution as the shape of a tree or graph. Basically, when you have an observation sensing action, you can either have one value for what you are saving or another value makes branches. An area we can make. Also a difference between different plants or different way of planning. Offline planning means we're looking for this whole tree, taking into account all the possible outcomes of the observations. Only planning is what is also called interleaving planning and execution. Basically acting sensing, grabbing the results from the sensing and then finding the most appropriate action to carry on the planning the search. An OK. As for confirming planning. We're going to compile the police away into states to reason and use heuristics on States and not on beliefs. It not on sets of states. Take some water.
+
+[4234.0s - 4263.0s]
+So. We're going to see what we've done with Celgene, which is state of the art contingent planner. Performs quite well and based on this translation approach, so here we are going to translate the contingent planning problem into a fully observable but non deterministic problem called. XTN why not the Mystic? Because the sensing actions are not atomistic. If I observe a sense, the litter I uncovered the true value of a litter in this case can be true or false. Extreme will have complete information. As for confirming planning. This means that the solution for the translation will be solutions for the original program. So what happens to the sensing? I will see that afterwards, but we need to incorporate the sensing for the search. The search has to be guided by the sensing talked in information to reason with them about the uncertain of the problem. So later on will introduce a relaxation called explus that takes into account the sensing actions to to guide.
+
+[4263.0s - 4292.0s]
+The search translation exam is very close to KTM that actor suggestion. So that's contingent planning. Program is a compliment, planning plascencia action. Extreme will be KTM on plus Detective actions plus sensing actions. The detective actions will will be different here still because of the sensing becausw. Observing a literal will allow us to reason on the truth value that we've uncovered that leader. So for instance, that reputation. I can refute. I can see that attack, which is an assumption, though original situation on the initial set can be false just because observing. CL is not to be true. Now if T was true in the initial situation. But now I know that L is full, so. T wasn't true initially. This kind of reasoning, with also the merge will be kind of different for all the taxing emerge either. I know that L is true given the tag. Or that attack is false. This allows me to deduce that L has to be true. Now, given all the possible situations. And then the sensing actions will be observing. What is included into this translation of serving the true value of a literal so observing and will end up by knowing that L is true. Or that L is false.
+
+[4292.0s - 4321.0s]
+A particular case of extreme is XS0, so as zero as before is the set of all possible issues. States we can use them as tax, so the set of tags will be equal to a 0. And we have a single merge equal to 0 to. This information is sound and complete. That's important because this means that we will capture all the solutions of the original problem without translation, and vice versa. We capture only the solutions of the original problem.
+
+[4321.0s - 4350.0s]
+Example to see how this translation works, we have a corridor where we are. Initially we have two doors. Behind one of these doors there is a treasure that we have. To get we don't know initially which one of the doors is open. And to open a door, I have to know that the door is open and this information is written a panel. So I have to go to the panel. To read.
+
+[4350.0s - 4379.0s]
+What's written on to know which one of the two doors is open? Because initially. I've added junction or the door one is open or the door 2 is open. Another corridor I don't have the gold. The goal of, of course, is to find the treasure and that actions to move from destination from initial positions to a destination can open a door an I have an observation assenting action.
+
+[4379.0s - 4408.0s]
+So to move scanner panel precondition effects to be at the destination to open a door. Here I have in the precondition I have to know that the door is open and which is unknown initially. And inspect panel observation. Will and by knowing that the door one is open. Or do you know that door one is closed?
+
+[4408.0s - 4437.0s]
+So in S0, which are the two possible initial states. Once it is where the dope or the door one is open and the other city where the door 2 is open, I have emerged purchase S1S2. And initially I will know that the door one is open if I'm in S1 an vice versa door 2 is open if a name. S2 I don't know. Initially FAM in S1 or S2 and I know for sure that I'm in the corridor. I know for sure this disaster it means that is valid for all the tags. That I don't have the goal, Exeter, Exeter. I don't know about.
+
+[4437.0s - 4466.0s]
+Thanks. So what would be a plan? I plan would be to go to the panel to inspect the panel to gather the outcome of the sensing, so to go to the door. I know it's open, open it and grab that error.
+
+[4466.0s - 4495.0s]
+Measure. The full train. The full plan will be this one to go to the panel, inspect the panel in the case the door one is open. I have to go to the door one, open the door one and get their treasure. But here I have an observation, so have a branch. So if the door 2 is open, I will do the same thing with the other.
+
+[4495.0s - 4524.0s]
+So all this it is applied to our translation KX0.
+
+[4524.0s - 4553.0s]
+Steam, so initially I'm in the corridor, I'm go to the panel so the fact.
+
+[4553.0s - 4582.0s]
+Be to be at the panel given all the tax.
+
+[4582.0s - 4611.0s]
+Then
+
+[4611.0s - 4640.0s]
+The observation. And inspect the panel so initially. I have to be as a precondition the panel and I don't know have I do not have to know which if the door one is open so I don't know that the door is open. I don't know that is closed. Dot com would be either to know that it's open or to know that is close. Let's say that. In that case the outcome will be. I know that the door is open.
+
+[4640.0s - 4669.0s]
+So all this it will change. In that way we include this information.
+
+[4669.0s - 4698.0s]
+And.
+
+[4698.0s - 4727.0s]
+Then I can apply a reasoning action. So let's apply tech reputation. The condition is always true and the effect will be that. In a Stew. The door one is not open, but the door one is open, so I can deduce that I'm not in a Stew so that.
+
+[4727.0s - 4756.0s]
+I'm in initial. Initially I was in S1.
+
+[4756.0s - 4785.0s]
+So from now on, the program is deterministic, so it's like classical planning because I've uncovered. All the uncertainty.
+
+[4785.0s - 4814.0s]
+About the initial situation. Us in the government setting in the contingent setting, I can make more general translations in similar way so I can look for recovering, but here I have to include into the covering the observations so have to look for literals that relevant to other literals, conditional goals or two observations. He has to be. They have to be included in a certain way into my translation. And also in this case, under certain circumstances find translations that are sound and complete if I.
+
+[4814.0s - 4843.0s]
+Recovering. Wasn't that case? I can define a contingent with very similar to the conferment with the general can be roughly said. That is the size of the tax needed for completeness. I can find translation bounding the size of the tax, so can have XI translations that will be polynomial and complete. For problems with. Continent with. Minor dander the this parameter I. And also in the continent planning we found out that most of the benchmarks are contingent with one which is good because I can have a cheap price man, I mean a smaller translation. Because I can make translations using this parameter set to 1. And the translations are exponential in the this parameter XI translations.
+
+[4843.0s - 4872.0s]
+So.
+
+[4872.0s - 4901.0s]
+What do we do now? We've seen a fully observable, but still nondeterministic problem that captures the original Prob.
+
+[4901.0s - 4930.0s]
+Extreme, now we're going to see how we embed the sensing into the relaxation.
+
+[4930.0s - 4959.0s]
+To guide the search so we make a relaxation explus P. It's done by dropping the delete effects, so it's. Don't like in classical plain. The delete relaxation. We move the preconditions in the conditions that be shown in the contingent FF paper by man and Brackman. There's this ends up into a conformant planning problem, rings a Bell. So and then the observations are included as deterministic actions. So after observing Li will introduce this M operator, meaning that an L might be true. Or L. Maybe force and this one is just. Another little thing that was observed, so here I'm relaxing on the preconditions because the precondition that were KL before I had to know the precondition action for sure will be. Maybe I can know that is sure. So ML. This means that by observing a literal, I will enable all the actions that have this literal in the preconditions to be applied. In the relaxation, of course. This is a classical planning problem because it's completely deterministic. So I can fit a classical. Planner with this relaxation, it will be give me a solution that.
+
+[4959.0s - 4988.0s]
+I will use to guide the search so it's like. Not compressing back linearizing the tree becausw by observing I will enable the precondition of opening the two doors. So I can apply all the actions. An I will end up in the goal eventually. We're still talking about the relaxation.
+
+[4988.0s - 5017.0s]
+Joe.
+
+[5017.0s - 5046.0s]
+See an exam.
+
+[5046.0s - 5075.0s]
+We have added using rules in that everything that is known to be true will maybe know to be true. I expect the panel so I have an observation that gives me the two possible outcomes, so I will maybe end up by knowing that the door one is open. Or maybe it's closed.
+
+[5075.0s - 5104.0s]
+And this way I update.
+
+[5104.0s - 5133.0s]
+My state.
+
+[5133.0s - 5162.0s]
+So it can apply a continent merge. So other door one is open order two is open. So if I have the outcomes of the two outcomes of the observation, if the door one was closer also the doctor is. Open.
+
+[5162.0s - 5191.0s]
+So will be able to. Reason in that way, and find eventually a classical plan which is to go to the panel. To inspect the panel to go to to go and open door, one to go open the door 2 and up and up in the goal. Why becausw by opening door one I will add this literal, which is to know that I have the goal, given that initially the door one was open, I substituted S1 an S2 by this literals. She's kind of equivalent, and this literally means that I have the goal, given that the door two was open by applying the merge. In all the situations I have the goal, so I end up in the relaxation to know that after work.
+
+[5191.0s - 5220.0s]
+How this encoded? We don't see anything OK. Basically. It's a closed loop, so there is a relaxation. Is fed to the classical planner that gives you a sequence of actions. The actions are applied by the. In this case X1 because we set the width to one. In the CG planner. So we have an action applied to the translation is fair to the environment. From the environment we have the outcome of an observation. And so the seats are updated.
+
+[5220.0s - 5249.0s]
+And so on and so forth. So. There are other ways to deal with with sensing actions in the continuous setting. Starting from the free space assumption of Van Koning, which was like the program was to move into a maze that no information about where the obstacles in dismiss where. So you assume that that no circles. So you plan to fund an obstacle. If an obstacle you update your knowledge and you carry until you reach the goal. Another idea was to use assumptions on the behavior on the environment encoded in a linear temporal logic to include complex behaviors on the of the environment. And by monitoring the execution, were able to recover and to reply. In that case can apply also works on preferences on the observations comes to reason with observations and the recent paper of Brafman. Angie Shannon. About using single state from the old possible initial states to have a classical planner, because if you reason taking account only one of the possible initial states, you have a classical planner. And then to returning on the consequences of the observations based on the SLG and T0 ideas.
+
+[5249.0s - 5278.0s]
+Another approach. Would be too. Also use classical planners. From a work of Blackburn, actor governor of this year that will be presenting each guy. So we can find also conditions under which possible of several problems can be solved with physical planners. We can define a subset of all possible problems called simple problems with all them. Closes Nonary closer all the uncertainty. Closes encoding certainty to initial state are all invariant. And you have no eat influence that appear in the body of the conditional effects. Here only on the preconditions or in the regular effects. That means that these problems have with one. So and also you assume that the space is connected, meaning that from 2 nodes two children of the initial root root node. You can reach each other. Means that you have noted and basically in the.
+
+[5278.0s - 5307.0s]
+In a domain. So. You cannot play a kind of optimist. You can incorporate the problem as a fully observed miss problem. Similar way as we saw before, but based on the cozero translation and you can solve this with a classic or translation similar also to or classical translation. But simpler. Basically you introduce for each sensing actions where you have a condition an. You're upsetting me for L2 deterministic actions in that you have a precondition you don't know the value of the true value of L, and you know that the precondition is sure, so the effect is to know that at least two and the other action is by knowing that the literal is false. It's like applying minimal heuristic. OK, it's like being optimists. You're taking the out conversation you need for planning is you also. Agree on the rules. But the idea is that the prefix given by. Classical planner Thielen observation is always executive. You have observation. Or when the precondition of an observation. Old you can sense you can grab the outcome of the sensing and if this outcome. Is not the one you use into your absorption assumption your plan?
+
+[5307.0s - 5336.0s]
+You can always do that because we said that the space has no dents.
+
+[5336.0s - 5365.0s]
+So what to do very quickly when you do not? When you do after dance? I didn't. Has different meanings, but the general idea is that you have infinite heuristic initial situation. This can occur because one of the possible issues said is that again, not all of them. Or simply because you don't have enough information. Think about the minesweeper one on Windows. You don't have enough information to solve it directly. Settlement is quite of common.
+
+[5365.0s - 5394.0s]
+So take this example. If we want to go from S to gym, but these cells can be blocked, we can have. You can have a ball. But only one of the two to the five possible wall configurations is actually didn't when all of them are blocked. Otherwise you can have a path you can go and sense and find a path to reach the goal. What you do you don't plan. Yes, you want to plan and to observe. And OK if you don't have a whole year, you will not reach the goal, but otherwise you will try to find out.
+
+[5394.0s - 5423.0s]
+A possible situation of possible plan by sensing. OK, So what you want to do here is to find a strategy that works. In most of the cases, if you don't have a surgery that works in all the cases, but it should be included in a planet called SLG plus very quickly, it's based on CLG, the online version, the one that finds interleaves, planning, and execution, you add assumptive actions. That is like betting or supposing that literal is true or false. Let's see it's false. And what course?
+
+[5423.0s - 5452.0s]
+Do it on that. So basically we assume that attack is false or was false. It's more fun graining graining that to reason about true tax because of this match. This contingent match rule that you can. Take out attacks one after the other and as the actions that add that attack was full. So your assumption as a high cost. So we use it as a last resort if.
+
+[5452.0s - 5481.0s]
+Love. A plan that brings you to the goal. OK, you will never use an assumption because you have all actions. Will lower costs that drive you to the color. Otherwise you can use these assumptions only for the search. And then you arrive your player, sensing you get the outcome of the sensing you carry on very similar to the Lion Actors Paper. Or like in minesweeper, you don't know what to do, so you bet you say OK. Let's say that in that cell I don't have a mind, so you play.
+
+[5481.0s - 5510.0s]
+Can be lucky or unlucky. If you're unlucky, OK, you screw up, but you have no solutions in any case, so it's OK. So there are different ways to.
+
+[5510.0s - 5539.0s]
+Jeff
+
+[5539.0s - 5568.0s]
+If I do the dance.
+
+[5568.0s - 5597.0s]
+And OK, let's summary the second part. So we saw a translation very similar to the KTM translation for confirming planning progress. But for contingent planning problems. We are also so conditions for completeness and soundness. And we also saw a parameter called. Continuing with that characterize our translations and our problems of contingent planning. We also saw a relaxation heuristic relaxation, which is a modern is a classical planning. Probably it can be fed up to classical planners is and provides us with a kind of informal heuristic. Is that one of the challenges we had before. And OK, so also how to solve contingent problems with classical planners different ways and how to deal OK, we saw that very quickly with the dense.
+
+[5597.0s - 5626.0s]
+I don't mean the world tutorial. We printed the approach for conferment and contingent planning that relies into translating problems into classical planning. Because classical planning works works well. And we saw also to use these translations for applications also to implement planners. And how to have useful heuristics to get the search which was is kind of complete for belief states. And in the case of conferment planning. Both the action applications, but the model and touristic model are embedded in the same model.
+
+[5626.0s - 5655.0s]
+Conclusion translated translation based approach provides a clear semantics. That includes the condition for completeness and soundness. Important we. Can capture all and only all the solutions of the original problem. And also properties on the structure of the of the problems and the planners based on the transition based approach are competitive. Anne can also have better performances if we use this translation based approach to focus on special cases. Simple problems, problems with and extra. That's your image and your imagination can carry on and find where to apply that. And it's very useful also for heuristics. Also your E 6 for the contingent setting is the most complex. Kind of planning problems. And that's it. Thank you.

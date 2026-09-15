@@ -1,0 +1,21 @@
+{
+    "id": "ntni3jbnx464j452didj3judxfx5dor6",
+    "title": "Big Data for Social Good",
+    "url": "http://videolectures.net/kdd2014_eagle_social_good/",
+    "info": {
+        "author": [
+            "Nathan Eagle, Jana Mobile Inc."
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 419,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1528
+}

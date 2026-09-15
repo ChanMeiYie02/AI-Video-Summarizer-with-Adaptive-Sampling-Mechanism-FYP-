@@ -1,0 +1,20 @@
+{
+    "id": "r7b3avsaf76p2zcatxsz4phxdniknvwj",
+    "title": "Path coding penalties for directed acyclic graphs",
+    "url": "http://videolectures.net/nipsworkshops2011_mairal_penalties/",
+    "info": {
+        "author": [
+            "Julien Mairal, INRIA"
+        ],
+        "published": "Jan. 25, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Optimization Methods"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 207,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2808
+}

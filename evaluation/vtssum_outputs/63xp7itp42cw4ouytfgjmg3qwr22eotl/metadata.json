@@ -1,0 +1,16 @@
+{
+    "id": "63xp7itp42cw4ouytfgjmg3qwr22eotl",
+    "title": "Annotating Video with Open Educational Resources in a Flipped Classroom Scenario",
+    "url": "http://videolectures.net/open_education_aubert_jaeger_annotating_video_oer/",
+    "info": {
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society->Public Policy"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 250,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1966
+}

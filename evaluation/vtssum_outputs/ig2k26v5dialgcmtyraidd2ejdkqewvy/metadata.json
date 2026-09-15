@@ -1,0 +1,23 @@
+{
+    "id": "ig2k26v5dialgcmtyraidd2ejdkqewvy",
+    "title": "Fast Algorithms for Informed Source Separation",
+    "url": "http://videolectures.net/roks2013_lefevre_methods/",
+    "info": {
+        "author": [
+            "Augustin Lefèvre, Université catholique de Louvain"
+        ],
+        "published": "Aug. 26, 2013",
+        "recorded": "July 2013",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines",
+            "Top->Computer Science->Optimization Methods",
+            "Top->Computer Science->Compressed Sensing",
+            "Top->Computer Science->Machine Learning->Regularization"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 228,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2489
+}

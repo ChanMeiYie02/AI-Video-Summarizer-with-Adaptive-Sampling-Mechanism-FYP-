@@ -1,0 +1,21 @@
+{
+    "id": "c73p2smfbzu5ins2jco3l2vovykvmr4k",
+    "title": "LIGA - Space for Architecture, Mexico City, Mexico",
+    "url": "http://videolectures.net/institutionalact2013_castro_architecture/",
+    "info": {
+        "author": [
+            "Marielsa Castro, LIGA - Space for Architecture"
+        ],
+        "published": "May 27, 2013",
+        "recorded": "May 2013",
+        "category": [
+            "Top->Architecture",
+            "Top->Arts->Visual Arts->Design"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 147,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 119
+}

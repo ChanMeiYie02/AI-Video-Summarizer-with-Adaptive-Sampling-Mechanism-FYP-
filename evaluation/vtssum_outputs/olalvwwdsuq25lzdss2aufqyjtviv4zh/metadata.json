@@ -1,0 +1,21 @@
+{
+    "id": "olalvwwdsuq25lzdss2aufqyjtviv4zh",
+    "title": "Pro-Active Knowledge Processes Support",
+    "url": "http://videolectures.net/coinactivess2010_ruiz_moreno_leban_pak/",
+    "info": {
+        "author": [
+            "Carlos Ruiz Moreno, iSOCO",
+            "Gregor Leban, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 24, 2010",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Science->Scientific Projects"
+        ]
+    },
+    "num_segments": 48,
+    "num_sentences": 519,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 69,
+    "ground_truth_summary_length_chars": 7459
+}

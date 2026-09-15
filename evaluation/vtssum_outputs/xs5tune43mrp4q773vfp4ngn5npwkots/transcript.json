@@ -1,0 +1,152 @@
+[
+    {
+        "text": "I've done this work together with vodka, Sammy and hosting a sister and Josephine Sullivan and we are all from KTH in Stockholm, Sweden.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So we are interested in multiview human 3D pose estimation in the wild. So.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So we don't want to do 3 post estimation in a studio environment. We don't want to use. Stuff the cameras and simple backgrounds. We want to use. Something like.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Closer to this. This is a sequence from our new three depos datasets, Multiview data set. So we have calibrated cameras and ground truth. Read opposing camera calibration for these. This sequence and a few other sequences. You can see that this is a bit challenging because we have moving cameras. We have dynamic backgrounds and we have motion blur and. Sometimes we have occlusion between the players as well.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So we want to do 2D and 3D pose estimation using pictorial structures or part based models. And these models have consist of two components, the first they have an appearance component and then a post component. So we have focused on the 1st, the first component, the appearance model and on developing appearance models that can be used together with any any pose model.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So this is the notation that I'll use, exists the position of a part or the position of all parts. We have imports and this can be the position in 2D or 3D and then we have some image evidence for each part and the appearance model then gives us a probability. Or measuring some image given for each possible position of the parts. And then we have a post model and this post model is typically factorized over three or something like that to make inference tractable. But we don't really care about the post model or how it's factorized. And then this is our joint distribution.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So people typically look at the logarithm of this this joint distribution. And the discretized space of possible positions. And then they find the most probable, most likely positional parts using dynamic programming. So this is what people have been doing for two day post estimation over the last 13 years. And at this CPR this year, we actually presented a paper about how to do it in 3D. So this is what we will use in the background.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "But we will focus on the part appearance model. First, we'll talk about it in 2D and then how to move onto 3D.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So this is a typical output of that part appears model. So we want to get the probability for each possible position of all the body parts.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So we also take take an approach that is a bit similar to the post estimation of Connect. So it's based on random forest classification. What we do not use depth images, so the input is an image or the Hulk of an image and a position, and then we want to classify this. We want to say what body part covers this pixel in the image or is it covered by the background? So we want to do a soft assignment of each pixel in the image. The probabilistic assignment.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So we use a random forest. And each tree of the random forest then consists of lots of weak classifiers. Each week classifier is defined by three parameters. And offset the hog dimension and the threshold. So given an input image and then input position that we want to classify, we look at the offset D in the image and then we look at the NTH hog dimension and then with threshold that scalar value. So then we just use the standard approach. Random forests would generate lots of random weak classifiers and then we choose the best ones. Sweet.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "We have a forest of this decision trees.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Here you can see some typical typical responses. For different depth of the trees and different number of trees, you can read much more about this in paper, but we found that using a depth of 20 and five trees worked well for our. Our data set.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "This is this is the resulting two depots estimation. So in the middle here you will see the. 2D appearance model applied to this to the new images. And to the right you see the result if you also add the post model. So if we add limb length and joint and angle constraints and estimate the posts. And we do this estimation independently for each frame. And yeah, we get quite the right results for most of the frames as long as we don't have occlusion. Yeah, OK.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So now I'll move on to three. Didn't so for three days we assume that we have calibrated cameras. Unless we know the calibration with cameras, so we know the position, the rotation and zoom on the cameras. We also roughly know the position of the player in 3D, so we have a bounding cube describing the rough position playing 3D.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So what we do is that we discussed discretize the volume covered by this funding cube. So we create the voxel grid and then for each voxel we projected into all three views and then we aggregate the 2D information from these views. So we multiply the two probabilities so we treat them as we treat the image evidence from each view as independent and then we get a score for each possible 3D position of all parts. There is a problem however.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So we have a problem with symmetric body parts. So left and right parts typically look very similar.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So what we would like to do is that we would like to classify the left and right parts of the person, but this is typically too difficult for us. We can't. We can't do this what we could.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Do is that we could just ignore the left and right labeling of the other parts and just classify hands and knees not caring about whether it's left to right. But that would cause some other problems. I mean, we'd have the problem of double counting, so when we when we would estimate the post, we would have both arms. Both hands placed at the same position. And it would also cause another problem.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Aggregate the information across views. So to the left you see the the sort of the synthetic case when we know this, we know the correct left and right labeling of the parts in all views, and then we get clean modes for each. Each part. So we'd get different colors for the for the left and right parts, but if we ignore the left and right labeling of the parts, not only do we get two modes at at the left and right parts with the same color, but we also typically get stronger mode in between the parts. Since we aggregate, we combine sort of the measurements of the right arm with the measurements of the left arm in the different views. So if we would do pull.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Estimation on top of this we would get something like this. So both the legs will be placed at the same position and both the arms would replace the same position and they would not be placed at the right position will be placed in the middle of the two to correct links typically. So we would like to solve this problem somehow.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So then what people do in 2D typically is that they classify the left and right parts of the image instead of the left and the right parts of the person. So that. Solves the double counting in 2D to some extent. But for Multi View post estimation we still have the problem of finding the right correspondences between parts across the different views. Because the right hand in the right hand of the image in one view might not be the right hand on the image in another view might not correspond with each other. So the way we suggest.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "To solve this problem is to. Introduce a latent variable to handle this. So we want to match left and right leg of the image with left and right leg of the person. For each view we have two choices for the legs and two for the arms. For CVS we have 4 to the policy choices. So we let the let the random variable S describe this unknown mapping, so S is a hidden variable that can take photo privacy possible values. Given a value, we know this. These correspondences across views.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So we add S to our joint distribution. And then to the right up in the right corner you see the 3D appearance model, which is now conditioned on this on this hidden variable. And then when we search for the most probable position of the parts, we also search for the most probable assignment of this latent variable. So this this maximization over S can be performed as an outer optimization. And then the inner optimization with the inner maximization is just the same as we did previously. So we can. You can use this in any any any part based model.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "And then this. This is the typical 3D parts course we get to the appearance course we get. So this is conditioned on the hidden value that we estimate. And you can see here that we get typically get. Distinct notes for the left and right parts. And if we do. Post estimation on top.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "This time we get something similar to this. So here we are. Here we're just using the three depart appearance model. We're not. We're not using any three post model or any. Motion model so we just search for the most likely position of each part independently. And then we estimate this latent random variable. So it's a bit jittery since we don't do any temporal smoothing. But for most of the frames we get pretty close to the to the ground truth, I would say. Which we were a bit surprised when we saw this first. We really thought we had to have a strong post model or a strong motion.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "OK, so to conclude then. So our new data set is available online, I hope. You will use it to develop new robust algorithms for multi view post estimation.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Around the force classification works well for body part recognition in ordinary images as well, not just depth images.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "And we have highlighted this problem of symmetric body parts for multi viewport based models. So it cost us a different kind of problems from Multiview compared to single viewport based models and we have presented a latent variable solution for this.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "OK, thank you. Yeah, thanks for the nice presentation. Am like this latent variable. You maximize over a bunch of frames or it's you do it at every frame separately. So we do the latent variable that chooses left or right. You maximize this latent variable over a bunch of frames for one frame. Yeah, for each frame independently. I mean for each. For all views but one time frame, I see so you're not using a bunch of frames too. No, no OK? I mean you could. You could do that as well. Yeah, because I would think that this is what disambiguates overtime, like, yeah, if you have this consistency, that right is always to be right, then another thing like this results showed. The you train the random forest only for this kind of football players. Or this was like a more general appearance model because it looks really really good. Yeah, that's why. So it was it was a model for place of a particular team of a particular team. Yeah, OK, thanks. Do you also estimate the camera pose? No, no. So we assume that we already know the camera post somehow, so user optimation because your camera was also be jittery. Yeah, yeah, yeah, the camera was jittery, but we assume that we know how exactly how jittery it is. Yeah, so I just have a question fairly classic, but how do you go without occlusion? Because when you do the product of your probabilities in in in multiple view, if you have an appearance model that is not good, you're going to really quickly kill your your overall probability. And so how? How do you handle that? We don't handle it really. So yeah, that would be future work. I. Your sister handles symmetry. If it arises. If there's no symmetries like and you had a single legged Blade Runner, for example, you wouldn't have any problem anyhow. Not know exactly we wouldn't have a problem then, so we don't have any problem for the head, for instance. Or less like this again.",
+        "start": 841.0,
+        "end": 870.0
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "id": "ywcmkohf3bzryc2zxdhoidaoihvac53f",
+    "title": "The SPAR Ontologies",
+    "url": "http://videolectures.net/iswc2018_peroni_spar_ontologies/",
+    "info": {
+        "author": [
+            "Silvio Peroni, Department of Computer Science and Engineering (DISI), University of Bologna"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 180,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 2683
+}

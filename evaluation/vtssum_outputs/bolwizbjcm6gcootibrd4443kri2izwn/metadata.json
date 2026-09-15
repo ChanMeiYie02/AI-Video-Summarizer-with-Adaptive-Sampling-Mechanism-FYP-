@@ -1,0 +1,22 @@
+{
+    "id": "bolwizbjcm6gcootibrd4443kri2izwn",
+    "title": "Network Structure of Folksonomies",
+    "url": "http://videolectures.net/eccs07_servedio_nsf/",
+    "info": {
+        "author": [
+            "Vito D. P. Servedio, Department of Physics, Sapienza University of Rome"
+        ],
+        "published": "Nov. 21, 2007",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Semantic Web->Annotation->Tagging",
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 354,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 37,
+    "ground_truth_summary_length_chars": 2750
+}

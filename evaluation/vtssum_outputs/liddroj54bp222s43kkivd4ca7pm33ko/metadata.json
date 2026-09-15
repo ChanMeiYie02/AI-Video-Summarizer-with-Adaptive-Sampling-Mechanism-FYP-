@@ -1,0 +1,20 @@
+{
+    "id": "liddroj54bp222s43kkivd4ca7pm33ko",
+    "title": "Corroborating Information from Disagreeing Views",
+    "url": "http://videolectures.net/wsdm2010_galland_cifd/",
+    "info": {
+        "author": [
+            "Alban Galland, INRIA Saclay - Île-de-France"
+        ],
+        "published": "March 18, 2010",
+        "recorded": "February 2010",
+        "category": [
+            "Top->Computer Science->Information Extraction"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 181,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 2201
+}

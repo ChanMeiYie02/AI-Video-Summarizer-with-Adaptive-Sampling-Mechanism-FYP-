@@ -1,0 +1,22 @@
+{
+    "id": "2ph442siaux66tigpbrc7bk4voguzpbf",
+    "title": "Extracting semantic user networks from informal communication exchances social web",
+    "url": "http://videolectures.net/iswc2011_mazumdar_socialweb/",
+    "info": {
+        "author": [
+            "Suvodeep Mazumdar, Department of Computer Science, University of Sheffield"
+        ],
+        "published": "Nov. 25, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Social Media",
+            "Top->Computer Science->Social Computing"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 256,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2682
+}

@@ -1,0 +1,20 @@
+{
+    "id": "hoat45s3fi75qmxrvaime3y6cbivpza6",
+    "title": "Bounds on individual risk for log-loss predictors",
+    "url": "http://videolectures.net/colt2011_grunwald_bounds/",
+    "info": {
+        "author": [
+            "Peter Grünwald, Centrum Wiskunde & Informatica (CWI)"
+        ],
+        "published": "Aug. 2, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 207,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2687
+}

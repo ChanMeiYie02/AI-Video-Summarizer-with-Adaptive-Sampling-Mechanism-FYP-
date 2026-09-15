@@ -1,0 +1,25 @@
+{
+    "id": "zsc5kb2jcjunfomfr2kzynl5xyarvgbf",
+    "title": "Artemis: Assessing the Similarity of Event-interval Sequences",
+    "url": "http://videolectures.net/ecmlpkdd2011_kostakis_artemis/",
+    "info": {
+        "produced by": [
+            "Data & Web Mining Lab"
+        ],
+        "author": [
+            "Orestis Kostakis, Department of Information and Computer Science, Aalto University"
+        ],
+        "published": "Nov. 30, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Sensor Networks",
+            "Top->Computer Science->Machine Learning->Classification",
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 197,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2737
+}

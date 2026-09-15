@@ -1,0 +1,24 @@
+{
+    "id": "c3djfuiyscvvr3hfjclwhv7w47kgqs6h",
+    "title": "The Wisdom of the Audience: An Empirical Study of Social Semantics in Twitter Streams",
+    "url": "http://videolectures.net/eswc2013_wagner_twitter/",
+    "info": {
+        "introducer": [
+            "Fabien Gandon, INRIA Sophia Antipolis"
+        ],
+        "author": [
+            "Claudia Wagner, GESIS - Leibniz Institute for the Social Sciences"
+        ],
+        "published": "July 8, 2013",
+        "recorded": "May 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 203,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 3474
+}

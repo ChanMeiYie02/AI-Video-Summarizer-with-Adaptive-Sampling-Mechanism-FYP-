@@ -1,0 +1,20 @@
+{
+    "id": "5zhh5ubvxspzsjiryivrgl75mzoa6rs4",
+    "title": "Intelligent car = safer roads",
+    "url": "http://videolectures.net/tra08_ducatel_ics/",
+    "info": {
+        "author": [
+            "Ken Ducatel, DG Information Society and Media, European Commission"
+        ],
+        "published": "May 22, 2008",
+        "recorded": "April 2008",
+        "category": [
+            "Top->Business->Transportation and Logistics->Traffic Stafety"
+        ]
+    },
+    "num_segments": 3,
+    "num_sentences": 90,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 167
+}

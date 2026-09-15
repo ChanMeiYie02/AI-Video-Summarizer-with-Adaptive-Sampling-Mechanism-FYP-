@@ -1,0 +1,62 @@
+[
+    {
+        "text": "I'm on a customer coming from the Department of Knowledge Technologies and today I will be presenting my work title towards semantic repository of data mining and machine learning datasets. So it is a well known. K. It is a well known fact that.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "But the amount of data that is being created and stored on a global level is enormous and it just still keeps growing. So those quantities of data must be good, managed, well managed in order to exploit their full potential. So in this sense, it is really important to say that the amount of data is not not the most important, but it's more important what we do with this data. On the other hand, in the in science, progress is best achieved by reducing by reproducing an, improving someone elses work so. In the in the process of knowledge discovery, discovery data plays a central role. This means that we must. Order to have Ohio State of high quality. It must be well managed to get access to it, so when researchers try to find high quality of data, they often. Spain spent a lot of time and and a lot of resources to get to it. In to help the process of data stewardship and data management, fair data principles have been introduced. What does fair data mean? It means that the data must be findable so each data resource must be uniquely identified in the. In the whole web and it should be well annotated with metadata accessible means that it should be accessed through standard protocols for communication like HTTP. And even even if the data itself is not available, the metadata must be also always be public. Interoperable means that the data stored in different sources can be. Automatically combined and reusable means that the data must be always published under a clear data usage license. So following those fair principles, we our goal is to develop a semantic semantic repository of machine learning datasets to improve the quality and the performance of the process of data mining and machine learning. The semantic repository would be able to search and query the datasets or as well as the metadata. So our semantic repository will be big.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Using the semantic web technologies which are shown in this picture, like you realize RDF. So different ontology languages and query language is here. I have just an example of how an RDF trip trip trip. It looks like, which is the basic form of expressing facts in the annotation. When dealing with annotations.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So if we have multiple triplets, RDF triplets. In this case I have six of them and we try to say here that the 1st three triplets expressed the fact that resource is a binary classification data set. The 4th and the 6th one say that data set is some multiclass classification data set and the fifth one is a regression data set. So once we have a set of RDF triplets, we can query over them using a sparkle query language. And if we just write a simple query like this one and we're interested in all flat classification datasets, we want to obtain all except the fifth one, 'cause the fifth one is a regression data set. But we haven't asserted the knowledge in our annotation base database, so if the notations are based on ontology terms and when using original, we will be able to infer this knowledge which has been encoded in them. Underlying ontology this is very simple scenario, but when dealing with complex. When will, when dealing with complex data with a lot of domain ontologies, we will be able to extract hidden knowledge which hasn't been encoded in the data itself, but it has been introduced somewhere in the knowledge graphs and ontologies.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Up till now there are a lot of existing data set repositories, but none of them supports this data inference which I mentioned before. One of the most popular is Ucil repository, which has a lot of statistical descriptors. It has some information provenance information, but as I said, it doesn't annotate the datasets with ontological terms. An as of, so it cannot support inference.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Other one is open ML. Which uses an ontology, but the annotations are generated on the fly on user requests and then again it doesn't. It cannot influence.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Over a bit more than a month ago, Google introduced Google Data Set Search, which is really good 'cause it goes through the whole web and then tries to find datasets that needed datasets by keyword search. But it is not for machine learning repository's, so we can only search for some by some keywords or by provenance data.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So as I said, it is really important to have. Annotations that are based on ontologies, and we've identified three groups of ontologies that can be used while doing the annotations. The first group is ontologies for describing machine learning and data mining datasets. So from those ontologies we can use concepts from which we can generate formal descriptions about the datasets as well as well as some statistical descriptors. That ontologies that will be used in our system are on to DM and the data mining optimization ontology. The second group of Ontologists are vocabularies and ontologies for describing provenance information. The Dublin Core vocabulary, the Prof Entology, and Schema Schema is the one that Google datasets uses. And the third one will be domain related to ontologies which. It depends from the data set at hand.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Finally, we propose. We proposed three architectural designs of how our semantic repository should look like. So in the. Nevertheless, in the scenarios we have a common common things. For example, we will have a semantic annotation engine that will use the three groups of ontologies that I previously mentioned, and will generate them the metadata about the data set. Some of the annotations will be done manually. But it will be done automatically, but notations that are. Well connected to the domain ontologies will need some kind of manual mapping or ontology labeling. And we will have a web based user interface where users can enter queries or keywords by which they want to query the store. The annotations will be stored in a triple store in RDF format, so in the first scenario the datasets as well as the metadata will be all converted to RDF triples and stored in the Triple Store, which will allow us to. Just query the Triple Store and get all the information needed from the datasets and the metadata the 2nd. But here we will have more. The physical storage will increase because. The data set format will not normalize.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "If we want to reduce the data, the physical capacity of the physical storage of the annotations, one other way is to store the data set in a relation relational database, map it to a virtual RDF graph, and then have a Federated query engine where the queries will be sent to the Triple Store with the metadata an to the virtual party of Graph graph which stores the notations of the. All data set and the third proposal is.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Not to have virtual virtual RDF graph, but to directly query the relational database. This of course will be done using the ontology based data access methodology. So so.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "To conclude, as far till now we have designed we have created three designs of semantic repositories and we started doing data set notations in promote which is tool for. Process process based modeling. Of next we will develop a user interface. As I mentioned before, which will allow us to query by keywords and finally we will select the most suitable architecture for. Storing the data set data set annotations. This is it from it, so if you have any questions that I can answer.",
+        "start": 319.0,
+        "end": 348.0
+    }
+]

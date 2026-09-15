@@ -1,0 +1,20 @@
+{
+    "id": "6u4d73bx4hyfqaf5ryl2vxh2xqwzrwfk",
+    "title": "The Nanoporous Materials Genome in Action",
+    "url": "http://videolectures.net/preglov_smit_nanoporous_materials/",
+    "info": {
+        "author": [
+            "Berend Smit, College of Chemistry"
+        ],
+        "published": "Feb. 14, 2018",
+        "recorded": "February 2018",
+        "category": [
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 87,
+    "num_sentences": 545,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 391
+}

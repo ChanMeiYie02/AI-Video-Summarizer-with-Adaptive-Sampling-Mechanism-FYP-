@@ -1,0 +1,20 @@
+{
+    "id": "bhqbd6n5ffsvl6eczvcxwyd7bb7ipbe2",
+    "title": "Using ontologies for verification and validation of workflow-based experiments",
+    "url": "http://videolectures.net/iswc2017_miksa_using_ontologies/",
+    "info": {
+        "author": [
+            "Tomasz Miksa, SBA Research gGmbH"
+        ],
+        "published": "Nov. 28, 2017",
+        "recorded": "October 2017",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 182,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 650
+}

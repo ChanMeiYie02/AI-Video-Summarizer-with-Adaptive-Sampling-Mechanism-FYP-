@@ -1,0 +1,20 @@
+{
+    "id": "eugm6wtqz4n5r5bknudfrqwnbwavgwrf",
+    "title": "Open-Access Datasets for Time Series Causality Discovery Validation",
+    "url": "http://videolectures.net/nips09_guyon_oadtscdv/",
+    "info": {
+        "author": [
+            "Isabelle Guyon, Clopinet"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Data Mining->Time Series Analysis"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 104,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 1412
+}

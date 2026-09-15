@@ -1,0 +1,163 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+The first images. [29.0s - 58.0s]
+The same as before, so if we. Remember, we started with virtual access and we present it lacks two part of. The platform or the infrastructure? It's. [58.0s - 87.0s]
+The upper part and now we go to the bottom part. [87.0s - 116.0s]
+Lex one and three. And an important thing too. Remember, is that according to work plan? This one. [116.0s - 145.0s]
+Rolex 2 already started. In month 3. So it's already there. And the second so lax. [145.0s - 174.0s]
+One and three are actually in the making. So officially. The work on this part of infrastructure started. Just this month, the 1st of February. So that's why what will be showing here is basically. The ideas and the. Description of tools and services that are in the. In the grant agreement and the Bitless will be we will be able to show a bit less. But still we can describe what will be available. Basically in one year that's the first step. Important one where almost all of the services will be available at least in the first stage. And then month 36. That means 2021 and. At the end of the project. [174.0s - 203.0s]
+So this is the description. If we take a look at. What is written here? It basically says Elexis retard digitization, tools conversion and alignment tools, linking tools and matrix dictionary or dictionary matrix. So this is what will be described in this session basically. [203.0s - 232.0s]
+So first part is segmentation and conversion tools. And. As it says, LAX one infrastructure will consist of several sets of tools. Automatic segmentation instruction of lexicographic content conversion and alignment tools. That will basically allow us to use or integrate the data in linked open data. [232.0s - 261.0s]
+So that's the first part linking tools. Will provide conceptual. Interoperability. And that's the difficult part. And we will use one resource which is already available. It's called Babel net, which will also be briefly presented today. By the author.
+
+**AI Summary:**
+This segment outlines the structure and scope of the platform's infrastructure and the tools provided under the grant agreement.
+
+The discussion begins by referencing the platform's components, noting that while virtual access has been established, the platform infrastructure is currently being built. It confirms that the work on the infrastructure started recently (February 1st), and that Rolex 2 has already begun in Month 3.
+
+The main focus shifts to describing the tools and services outlined in the grant agreement. This infrastructure includes tools for digitization, conversion, and alignment. Specifically, the proposed LAX One infrastructure will consist of:
+1. **Segmentation and Conversion Tools:** Tools for automatic segmentation and lexicographic content conversion and alignment, enabling the integration of data into Linked Open Data.
+2. **Linking Tools:** Tools designed to provide conceptual interoperability, which addresses the difficult task of linking data.
+
+A key resource mentioned for this linking process is BabelNet.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[261.0s - 290.0s]
+And. Then it comes this. Strange beast called either Matrix Dictionary or a dictionary matrix, and when I was preparing for this. Presentation I kind of thought that.
+
+**AI Summary:**
+The speaker introduces a "strange beast," referred to as either the "Matrix Dictionary" or a "dictionary matrix," while preparing for a presentation.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Both can be used, but for the purposes of this, So what will definitely be done? What will definitely be done? It will be dictionary matrix and what we don't know it will be done. It will be matrix dictionary. So let me just explain why. And this was the discussion inside the consortium, basically in November. [290.0s - 319.0s]
+What this matrix is? On the other hand, LAX three infrastructure is a smaller part of this, and it's only dedicated to retro digitized dictionary dictionaries. And it has two parts. One is actually the same as the one in Lex one. The tool for segmentation and structuring of content in retro digitized dictionaries. And the other one is Legacy Dictionary viewer. Which is almost available. And it's a tool where you can, if you have a retro digitized dictionary and you have it in a certain structured format like TI, like Zero will not go into that, but you have it in that kind of. Format then you will be able to use this legacy Dictionary viewer to put your dictionary on the Internet for everybody to use. [319.0s - 348.0s]
+So we have LAX one scenario and we have like 3 scenario lacks. One scenario is for digital unstructured types of dictionaries. For instance, if we have something in PDF which you created in the 80s in the 90s anytime where. Microsoft Word or any other. Any word processing tools were available, but it's not structured. And Lex. One scenario says that you will be able to convert and structure it and Lex three scenario is there is something on paper. And you digitize it, and do the same thing. [348.0s - 377.0s]
+So for this purpose we will use a tool called Grobet Dictionaries. Which is a submodule of grobet for structuring surprise, surprise, digital digitized lexical resources. And it allows parsing, extraction and structuring of text information in such resources. So we have just after my presentation, we'll have a presentation of this tool which will be part of. LAX one unless three infrastructures. [377.0s - 406.0s]
+And now we have. So if we say that we want all the dictionaries to have a uniform data model, we want to have them in them to be able to use the content in a similar way using the same tools. Then we have one possibility to use that. Unstructured. Resources. By converting them using grow big dictionaries so they end up in TI like 0 format. What do we have? Something that is already structured? But not in TI like 0.
+
+**AI Summary:**
+The discussion focuses on developing the LAX infrastructure for retro digitized dictionaries. This infrastructure includes a tool for segmentation and structuring content and a Legacy Dictionary viewer, which enables users to access structured dictionaries online.
+
+The system addresses three scenarios for handling dictionaries: unstructured digital resources, conversion and structuring of existing materials, and digitizing physical paper dictionaries.
+
+To achieve a uniform data model, the proposed solution is to use the Grobet Dictionaries tool (a submodule of Grobet) to convert unstructured resources (like old Word documents) into a structured TI like O format, allowing all dictionaries to be used in a similar manner. A presentation of the Grobet Dictionaries tool will be part of the LAX 1/3 infrastructure.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So let's say that we have. A slowing Dictionary of modern Slovene or a Dictionary of modern Dutch and W or Dictionary of modern Danish video. They all use maybe Danish, maybe Slovene maybe? Dutch. Coding for the content of the dictionary. So if.
+
+**AI Summary:**
+The segment discusses different dictionaries, such as a Dictionary of modern Slovene, a Dictionary of modern Dutch, and a Dictionary of modern Danish. It explores the linguistic coding used within these dictionaries, suggesting variations in languages like Danish and Slovene.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We have a situation like that, then we can't. We don't really know what ahead or it is. We don't know what what. Sentence structure is in in the entry. And this is where. Other tool comes in. Which. Is now in the development and I will be able to show very early stage on the in the next session. And what does this do?
+
+**AI Summary:**
+The speaker expresses uncertainty regarding a current situation and the future, noting a lack of clarity. They then introduce a new element—an "other tool"—which is currently under development. They state that a demonstration of this new tool will be provided in the next session, and they conclude by inquiring about its function.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[406.0s - 435.0s]
+Do So what we have now is the left scenario. So if you want to convert your dictionary into T like 0. Or something that is confirmed, confirmed with. Elexis datamodel. You can just pick the most important parts and the rest of it is still converted into a valid TI like 0 format, but only certain parts are identified and this is basic conversion. Quick and easy, and if you want to convert your full dictionary. And start using that data model from that point on. Then you need to go into a full conversion. [435.0s - 464.0s]
+And for. So this is the process.
+
+**AI Summary:**
+The speaker describes a method for converting a dictionary into a specific data model, such as the T-like 0 or Elexis data model. They explain that users can perform a basic conversion by selecting only the most important parts, or they can perform a full conversion of the entire dictionary to begin using the data model. The segment concludes by introducing the specific process.
+
+============================================================
+
+### Semantic Chapter 7 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Which we foresee. In Lex one. Infrastructure so you upload your dictionary in your custom XML format which is parsed. Or you can also provide schema. Then you identify basic dictionary elements defined by Alexis Data model. Let's say Headward sense definition, examples and so on, and then the whole thing is converted or your dictionary is converted to TI like 0 or something compliant with Alexis Data model and you can download it so we can just upload, download, upload, convert, download. So the slower scenario is that you upload your dictionary in custom XML format. Then you have to align your schema. Which you have to do yourself. So identify all the elements in the dictionary and find the right elements in TI like 0 and then it's converted so. And download it again.
+
+**AI Summary:**
+The process involves uploading a dictionary in a custom XML format or providing a schema. The system then identifies basic dictionary elements based on the Alexis Data model (e.g., definitions, examples). The dictionary is then converted into a TI format (like 0) compliant with the Alexis Data model, which can be downloaded. Alternatively, if using a custom XML format, the user must manually align the schema by identifying dictionary elements and mapping them to the correct TI elements before conversion.
+
+============================================================
+
+### Semantic Chapter 8 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[464.0s - 493.0s]
+And for the this well. It's a piece of software without a name, so preparing for this presentation I had to invent a name, so I called it Alexa Fire. So the quick and easy. Scenario this tool well, maybe the author were hated and it will not be called like that. But let's call it Alexa fire for now. And this is for the quick and dirty scenario.
+
+**AI Summary:**
+The speaker introduces a piece of unnamed software and invents the name "Alexa Fire" for the presentation. They mention this is a quick and easy scenario, noting that while the author might dislike the name, it will be used for the presentation.
+
+============================================================
+
+### Semantic Chapter 9 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+He can easy. And, well, the existing XLT tools will be used for complete conversion, which will take more time, but. Still, it will be possible. [493.0s - 522.0s]
+And now we come to the. Dictionary matrix or matrix dictionary part so. Now we have all these crucial parts of entries identified like headwords senses. Examples and so on. So we start linking. And what does that mean? The right I have an example from Longman Dictionary. And Fancy's are now. So a feeling, especially one that is not particularly strong or urgent, and so on and so on. So we have four senses. Of a noun, and we have three senses. Of the same noun in Wordnet in English word net. So how do they get go together?
+
+**AI Summary:**
+The speaker discusses the process of converting data using existing XLT tools, noting that while it will take more time, it is still possible. The focus then shifts to the "dictionary matrix" or "matrix dictionary," where crucial entry parts (headwords, senses, examples) are identified and linked. The segment uses examples from Longman Dictionary and Wordnet to demonstrate how different senses of a noun relate, specifically comparing the four senses of a noun versus the three senses found in Wordnet. The segment concludes by questioning how these different senses connect.
+
+============================================================
+
+### Semantic Chapter 10 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We can identify I mean manually identify that. Since one goes to sense three since well since 3 in, Longman goes to says since one yeah sorry, well you can see the arrows. And this is what?
+
+**AI Summary:**
+The speaker is discussing the method for manual identification and directing attention to specific visual elements, such as arrows.
+
+============================================================
+
+### Semantic Chapter 11 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We want to do. [522.0s - 551.0s]
+And we want to do that using something. At the center. So we can see the same concept that you find in Word net. Also in Babel net because word Nets are part of Babel net. And in the same way. You can find targets in all other dictionaries like long winded. [551.0s - 580.0s]
+Or the ones that we have in inside elexis's datasets. So we have, let's say two senses of noun fancy, which is something many people believe believe is false. And the other one predisposition to like something. And it's concept one and concept two, and we have the Slovene Dictionary, the Dutch Dictionary, and the Danish Dictionary. And we can identify. Basically. [580.0s - 609.0s]
+Something that we would call lemma sense in your dictionary. We can stay on the llama level and identify just. Which headward could be the target from the concept ID one? Or we can go into science level also. So in our Slovenian case it would be illusia and macaroni list. So this would be the two headwords in our sleeping dictionary. So this is basically what. Lex one. [609.0s - 638.0s]
+Should do. And how the result will be visible? Already ANL produced something called European Dictionary Portal, where. Well, scholarly dictionaries, good dictionaries are described and listed. And we want to go one step further so that all the linking that is done can also point to a. Point to a concrete dictionary or a concrete sense. In some other portal which can be done using this same European dictionary portal. And the same thing. So a bunch of links will end up as part of linguistic linked open data clouds. And that's the. [638.0s - 667.0s]
+Basically. Lex one infrastructure. So what will be presented now is grow with dictionaries, then elexis data model which is needed to unify everything. Then linking and dictionary matrix and word sense this immigration. So. [667.0s - 696.0s]
+So just this is the last slide I have. To understand the timeline. So we already started working on that, but the crucial crucial. Points in time are month 24, which is actually end of January 2020 in one year. Where we provide all these pieces of software that you see here. And for the conversion tools, it's one year more so This is why we thought that it's important that we gather. Well, the observer community here at this point because we can start testing our tools that are developed in X1. And the more data we have, the better the tools will work, but real use will be basically. Available in one year. And there is one year to test the whole thing. OK, so that's my presentation. I suppose it's better that we just continue and have the any discussion that we have later, right? So I would like to ask Mohammed to continue.
+
+**AI Summary:**
+This segment discusses the methodology and infrastructure for linking concepts across various linguistic resources, specifically focusing on building the "Lex one infrastructure."
+
+**Key Topics and Methodology:**
+
+*   **Concept Linking:** The system aims to find shared concepts across resources like WordNet, BabelNet, and other dictionaries (e.g., Elexis datasets).
+*   **Senses and Mapping:** The process involves identifying multiple senses of a noun (e.g., "fancy" as a false belief versus a predisposition) across different languages (Slovene, Dutch, Danish).
+*   **Lemma Sense Identification:** The system identifies the "lemma sense" by determining which headwords (e.g., "illusia" and "macaroni list") correspond to a specific concept ID.
+
+**Infrastructure and Output:**
+
+*   **Lex one Infrastructure:** This infrastructure is designed to unify data by integrating growing dictionaries, the Elexis data model, linking mechanisms, dictionary matrices, and word sense information.
+*   **Linking Output:** The system utilizes the European Dictionary Portal to link these findings, ensuring that all connections point to concrete dictionaries or specific senses, ultimately forming linguistic linked open data clouds.
+
+**Timeline and Next Steps:**
+
+*   **Software Delivery:** The initial pieces of software will be provided in January 2020 (Month 24).
+*   **Testing Phase:** A crucial step is gathering data from the observer community to test the tools.
+*   **Deployment:** Real-world use for the developed tools is anticipated one year after the initial delivery, allowing time for comprehensive testing.
+
+============================================================
+

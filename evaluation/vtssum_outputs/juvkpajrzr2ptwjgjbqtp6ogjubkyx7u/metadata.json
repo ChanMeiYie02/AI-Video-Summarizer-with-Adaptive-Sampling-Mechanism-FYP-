@@ -1,0 +1,20 @@
+{
+    "id": "juvkpajrzr2ptwjgjbqtp6ogjubkyx7u",
+    "title": "Dynamic Linear Combination of Two-class Classifiers",
+    "url": "http://videolectures.net/ssspr2010_tronci_dlc/",
+    "info": {
+        "author": [
+            "Roberto Tronci, Department of Electrical and Electronic Engineering, University of Cagliari"
+        ],
+        "published": "Sept. 13, 2010",
+        "recorded": "August 2010",
+        "category": [
+            "Top->Computer Science->Pattern Recognition"
+        ]
+    },
+    "num_segments": 1,
+    "num_sentences": 16,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 759
+}

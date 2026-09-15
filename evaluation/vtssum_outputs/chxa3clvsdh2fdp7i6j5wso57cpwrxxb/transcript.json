@@ -1,0 +1,112 @@
+[
+    {
+        "text": "I'm going to talk about the intelligent info interfaces to information or data and maybe I could actually rephrase them as adaptive or dynamic or some people call them symbiotic because nobody would actually confess of building dumb or stupid interfaces.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So a couple of problems that we are thinking that we are dressed with these kinds of methods. One is called the so-called context bubble, which is not specific to information interfaces or information retrieval. It simply means that if we choose carefully according to our personal preferences, what we read. If they choose to journals that we read and they have served the express certain opinions, then it's very easy to actually end up in a bubble where you just reinforce the views that you had earlier. We can pick lots of political examples of these from various countries, but maybe not spending time on this. But of course now what is thread here is that if we have automatic methods for doing this filtering for us so that they personalize or over personalized, the things that are being shown to us, then of course it's there is a much bigger risk of doing this, even two efficiently. And really getting stuck and so if search engines start doing these two, that's actually really dangerous in the sense that we just don't find what we're looking for. The second thing is that typically I guess when people search for information, either they know how to use that specific search engine, or then actually most often the search intent is actually you specified, meaning that well specified would pay that. I actually do know the keywords and I know what I'm searching for. If I don't then it is underspecified. I'm uncertain and Moreover then my need would change when I'm learn more as I search and this is actually what I mean by exploratory search in the title. The third one is that we obviously are lazy, so there would be good solutions. Relevance feedback. It actually works rather well. Prefiltering of knowledge works pretty well, but we're not using those because we are lazy. 4th one is actually not a problem, it's suggested solution so that we know that people there have been studies about this that people search for information, typically in the in this way that they try to make a jump to close to what you are looking for and then doing local search. And then if that wasn't when you understand that this wasn't what I was looking for, then you make another jump. This is the natural way of searching. There may be other natural ways. But so if we could support this kind of activity somehow, then then the. Information retrieval people's more natural and more efficient.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "OK solutions. Context bubble it is not a full solution but better solutions to the exploration exploitation dilemma could help here. Second one, underspecified, uncertain, evolving information information need. Obviously, we should learn online. This is what I mean by kind of intelligent or adaptive dynamic interfaces. We need to learn the user model as we go. Our laziness yeah, sorry no pain, no gain, but of course as designers of the systems we probably should try to maximize the cane to pain ratio, or at least the efficiency. And the way we are proposing to do that is to make the navigation more natural in the interfaces. So OK, what we mean by by these kinds of interfaces would be.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "This is an example that we call sign at, so it's kind of science retrieval engine. You might pronounce it in a different way, but then you get bad connotations. We are not building those evil systems OK, and this interface we call intent radar for the following reason so that the interface works. So the analogies work so that you are in the center. And then the keywords. Here you can see them now. Sorry about that, too small. They are representations of the intense. So the current system were authorized on the level of keywords, so the keywords are the closer to the sender, the more relevant the system thinks based on the current observations of you as a user. That you could be interesting interested about these, or they could be relevant to you. So this is a visual representation of the intense as the system sees them. So now you can give direct feedback on the current estimates and then obviously you have also the content text text content. Right, how this works? Let's see, but it actually works. Sorry, the font is really small, but now you typically would start a query by typing in something, and now this query is haptics. Then you get initial list of documents, an initial set of keywords, there's haptics in the center, then there's lots of other suggestions here. I'll explain soon how to get to those. Then you can grab a keyword from anywhere from these suggestions or from here bring them here to as close to the center as you wish. At this moment the user was choosing 3D. That would be 3D haptics. This is the real speed or not really particularly well optimized system, so I bet it can be made faster. And now there is medical came in the center and then the user can soon realises that maybe it's not medical. After browsing through it's it's not medical I was interested in. Let's take it out and then let's take user modeling in. OK, this is how it works.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So in a nutshell, what what our solution consists of? So we model the users interests online based on the feedback that the user gives an exploration exploitation tradeoff is taken into account when making the suggestions. And then there's this interactive visualization of representing what the machine at the moment things, so that I can directly communicate with the current estimates. I'm giving feedback to the system while I do that.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "What is under the hood? What I have shown so far is just the upper layer here, so it's the user model which operates on keywords. Test the expiration, exploitation things and feedback there interfacing to the visualized key keywords. Then when the user clicks search, then obviously there needs to be some search engine and some other stuff. I'm not focusing on this part now.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "How to do this? So at the moment this is this simple thing, so we just assume that the interests are keywords. And then we choose a representation for the keywords. In this case it's just the back of document, so feature vector where one feature tells whether this specific keyword occurred in this specific document, which is the entry or the. Column. And then we assume a linear model of the relevance. So the expectation of the relevance is just a linear transformation from these kinds of keywords that I explained, waited by a weight vector W, and then we of course optimize the W and then we plug in any your favorite exploration exploitation solver. In this case, the literal of better hour. So so you just estimate also the upper confidence bound and then just search those keywords where the upper confidence bound is highest.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "OK then then you visualize these and what I didn't emphasize so far is that there are two structures here, so there's the inner circle here, the Gray one, and these are the actual suggestions. And then next I'll spend some minutes explaining what are the rest here. So the.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Logic here is that if you make need to make a choice, then this is a choice of pulling disc keyword telling that this keyword is relevant or not, or or another keyword is relevant so you can see this for. Naturally, you would then ask what comes here.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And typically we would have signs for that, right? OK, let's let's do something like this. Let's put the signs in place.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "And of course, now the question is that if I would pull this keyword, what would come up next? And so let's just put science showing what would come up next. And this. You obviously can easily do, so that if you would give pseudo feedback. So imagine that you would give feedback for this keyword. Which other key verse would be in the top of the list, then then just position them on the brim. That would be a nice idea. Then it turns out that that was slightly harder to.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Element, then we thought. So we just we did slightly different thing. So what we did was that we chose a feature representation for each keyword and then did. Dimensionality reduction is one dimension, which is then the angle here. And that is done for all the keywords in the interim. And then we positioned the keywords in the inner circle according to that. And the feature representation here. I'm not going to details on this is simply relevance across the alternative futures that you would get by pulling each of the keywords that are present. So this actually makes sense, but I'm not spending time on that now unless somebody wants to. And then OK, you just apply your favorite dimensionality reduction method. Of course I'm promoting ours, which of course works extremely well. In this case an otherwise tool. Doesn't.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Project to a.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Means it's OK. Right, yeah, that is why you can see easily, but there is this whole in here. Of course you could do it to a ring, but I think it actually makes more sense to think that it's going to Infinity.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "OK, then there was the retrieval and now I think that the most important things for the retrieval part given the user model, this is the retrieval given the user model is just that it's fast and simple and scalable. So what we did is that we simply rank the documents given simply as possible probabilistic language model, which would be just the unigram model based on the likelihood that they would give to the relevant keywords. OK, and then of course then lots of things are needed to actually make it work, but maybe they are not that crucial.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Thanks. So to summarize. So we have the novelty here is really having a representation that the user. Sees that representation of the intents or interests of the user, that the user then sees as this layout here so that the user can directly give feedback on it and navigate by giving feedback on what it thinks that the system thinks. So it's actually a nice analogy on how this works is that if I don't understand what you are saying, but I know roughly what you are talking about, I could ask a team in this or this or this. Then you can directly give feedback and you will know what I know right. That's roughly the same thing that happens here. That's why it works actually rather. Cost is this working somewhere in some address it is working. I can give you a password but we don't have resources at the moment to make it publicly available.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "OK, So what we did for the demonstration, so I think that most of these principles actually work no matter what the data is. OK, OK, there would be issues if you don't have keywords, so that still need to be solved. So OK, let's talk about text documents. It should work for text documents. Many types of text documents. But what we did so far is if we did this constructed case study of a search engine for all the scientific abstracts that we could get our handle on from these sources. That was, that was something like 60,000,000 and now the users task here needs to be somewhat more difficult than just what you would normally be able to solve by a typed in keyword search. Otherwise, this probably will not help. So we chose the task, which was that think of writing an essay or scientific paper about the topic. And collect data for that. Collect papers for that. So then we actually have a ground truth if we have experts who would then evaluate whether these papers were relevant with you, chose, and whether the essay that you actually then wrote was good. And then we just do a double blind experiment. 30 users students in computer science and the two forced topics for semantic search or robotics. So.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "How does it work? So the most important important measure is task performance. With this here. So this bottom bar is the full blown system that I have been explaining and this is good. This is part. These are the expert evaluations. This one would be an alternative that they don't have the full problem visualization, but we order the keywords according to. The relevance is simply, at least according to the relevance is that our user model gives and then the third one is is just a standard keywords typed in keyword search. Method and the difference is clearly significant, so it actually does improve the quality of the essays that people write. Then we can Additionally looked into the quality of the information that you get, and again this was done by the expert evaluations. So depending on the session, the user and the interface you get you actually get to see read different kinds of abstracts. So now the experts simply in a double implied way to evaluate it with which of these were sensible. Right, so there are three different categories of relevance here, so one is the relevance. Obviously the second one is obviousness and this is novelty. Now in terms of precision, it seems that the methods are roughly the same. Then for recall. Actually the new methods are outperforming keyword search or type query search. If measure that combines them both shows the same story, then if you start to look at the quality of the manipulated keywords, the keywords that the user actually gave feedback on, and again this was evaluated by experts, then you start seeing differences between these two kinds of interfaces so that this full blown system is is actually bringing in higher quality keywords. OK, then one more thing that you can measure is that does it actually help you explore? Of course, you could now argue that is it important, isn't it just important that you come up with a good solution? But if it helps you explore, then maybe you could do other things. It would then generalize to other kinds of tasks easier. And actually what happens is that this is the keywords. How many keywords or how many typed in queries that you type during a search session? This was that how many times did you manipulate keywords and this is all interactions together. So what happens is that people actually typed in equally much. But what happened is that they did lots of other stuff too. So I think the interpretation for this is that people actually did for typos, explaining that they jump somewhere. Then they started looking around, and that is actually rather fast. Then then some to another place. R. OK. One more measure that may be informative is that off the displayed articles after. You manipulated a keyword or after you typed in a query. There was much more novel articles here. After after manipulating keywords are much more obvious things. After doing the keyword search, this is kind of intuitive, isn't it? Right, I think that's the main findings.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Then a final Test. This was another case study with users not reporting all the details here, but this is a usability study in the sense that we simply ask the users given standard question is what how they like the system and now the new system is is the yellow bar and the old system which was in this case what Google Scholar is, is the blue bar. And as you can see, the differences in all of these things. Sorry again for the small form, but it would be intention to continue using the system attitude towards the system and so on. So it was better in all of this. And then the final sanity check with with an eye tracker is that the users actually look at this side in these kinds of sessions. Of course, if they manipulated the keywords they most likely did, but you can manipulate the key verse also on this side so so they actually need some pay some attention to the new interface. So maybe that is the cause or reason for the better performance.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Test to summarize. So my claim would pay that for exploratory search tasks, so this kind of an interface which does interactive in-depth modeling of the sort that I was explaining it does outperform pure type query search. And what we implemented? This claim is based on a system that contains these elements, but of course I don't have evidence of which of these elements are crucial. Could we leave? Maybe some of these out? But we did have a dynamic online modeling of the user interests and there was an elementary or maybe not elementary, but a simple exploration exploitation tradeoff system. And then there was this new kind of visualization system where it's easy to interact and navigate by manipulating or interacting with the estimates.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "This a new system, so we have published three papers so far in conferences this year.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "And this is the bunch of people who have been working on it. Postdocs here have done most of the work with these doctoral students, and this is the full professors who have been involved and there is some information at this web address. Not very much yet, so we should improve on the web page. Thanks a lot.",
+        "start": 609.0,
+        "end": 638.0
+    }
+]

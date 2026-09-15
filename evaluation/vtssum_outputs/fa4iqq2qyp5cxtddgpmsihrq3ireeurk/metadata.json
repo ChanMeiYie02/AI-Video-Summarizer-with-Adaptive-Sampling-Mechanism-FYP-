@@ -1,0 +1,22 @@
+{
+    "id": "fa4iqq2qyp5cxtddgpmsihrq3ireeurk",
+    "title": "Learning and Solving Many-Player Games through a Cluster-Based Representation",
+    "url": "http://videolectures.net/uai08_ficici_lsmpg/",
+    "info": {
+        "author": [
+            "Sevan G. Ficici, Harvard School of Engineering and Applied Sciences, Harvard University"
+        ],
+        "published": "July 30, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Mathematics->Game Theory",
+            "Top->Computer Science->Machine Learning->Clustering",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 208,
+    "num_clips_with_summary": 28,
+    "num_gt_summary_sentences": 52,
+    "ground_truth_summary_length_chars": 6269
+}

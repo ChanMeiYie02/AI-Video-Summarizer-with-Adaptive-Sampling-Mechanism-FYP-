@@ -1,0 +1,97 @@
+[
+    {
+        "text": "Thank you. 1st, for an informal poll, how many of you invest in stock market? Wow so. This talk is about how to use machine learning for stock selection to form a profitable portfolio.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Whoops",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "1st, I'll give a quick introduction, then I'll talk about the stock selection task and then we'll discuss. Describe our new method called portfolio prototype ranking and then some experiment result and conclusion. So the objective is to use machine learning method to select a small number of good stocks to form a portfolio. OK, so it's just like when you buy some stocks you want to form a portfolio. The research question is the research questions are one is learning the very noisy environment that data set and also learning in the very imbalanced data set and our solution is an algorithm called prototype ranking. It's an improvement of previous methods.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So more specifically, the store selection.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Ask. Given information, the stock information prior to week T, can we predict the performance of stocks of week T so you know have previous information, pretty future one, and the training data set actually consists of following some of the previous works and experiments. Only three predicate, three attributes. One is the return of week T -- 1 and then the other is the return of T -- 2. And also the volume ratio, the ratio between the volume of trading of the stock of T -- 2 versus T -- 1 and the goal is the return of the week T and we try to learn a ranking function to rank the test data or the future data. Then we can use that to buy an hyest predicted stock to purchase them. And also if the system can predict some stock. Drop in the price then we will choose the end lowest one too short. Sell well in North America. You can short sell a stock. If you predict the price will drop. By doing so you also make money.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "OK, so the method itself.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Well, prototype ranking is a specially designed machine learning algorithm for noisy an imbalanced stock data. So in this algorithm there are components that specific design for stock data. The process contained 2 steps. In the first step, the algorithm tried to find good prototypes in the training data. In the second step, it uses the K nearest neighbor algorithm on prototypes to rank test data. So here the first step.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Well, first of all, finding the prototypes well prototypes are representative points in the training set because the data size is huge, so therefore we first try to locate some of these representative points in the training space so that we can use those training data representative points in the K nearest neighbor in the next step.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "To find those prototypes, we use competitive learning. Competitive learning has been used in an unsupervised fashion to cluster data, so here are the general steps of competitive learning. I won't go through details, but after you run through those competitive learning you will be able to find some hidden density in the training data by those prototypes.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "However, this competitive learning is specially modified for start data in various steps. So again because of the short paper, I won't go into detail. You can read the paper, but the idea is that you know we try to find people to build a prototype tree and then try to search the prototypes in the predictor space and then adjust prototypes in step three in the goal attributes space in order to deal with the imbalanced data. OK.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "And in the second step we use K nearest neighbor on the prototypes to predict and rank the test example.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So here are some experiment results that data.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Are from the actual New York Stock Exchange, an American Stock Exchange data, and we choose 300 largest market cap stocks as our base and data work from 1962 to year 2004.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "To test the success of our algorithm, we basically well we did a lot of experiments to verify the algorithm, But here I want to present two things. One is in the first experiment we want to see that if we have, I mean we can construct portfolios of various sizes, right? You can have one star, two star or 100 stocks because our algorithm pick up those two end stocks. Remember that. So the idea is you know, the larger the portfolio. OK then. You should see the lower the average of predicted return and also the lower the risk. And that's the idea of diversification, right? I mean you can always pick up the most risky stock and probably have the highest potential return, but the risk is also very high, so we want to see that with the sides of the portfolio changes. Can we observe the fact that you know the larger the portfolio then the diversified the more diversified other stocks in the portfolio, so therefore the lower the average return? But also also the risk is lower. Can this be observed in the second experiment? Is that is our method better than some of the previous methods?",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So here is the result of the experiment. One in the figure above you see those average returns of the average return of our predicted method in terms of the number of portfolios. So again, here are small portfolios and here we have one more stocks into the portfolio and you can see if you only buy two stocks, let's say then the potential return is very high, but then the standard deviation is also very high, meaning that in some weeks you get very high returns some weeks ago. Very low return or even negative return, and therefore the risk is high an when the number of stocks increases in the portfolio they return reduces, but also the risk reduces. So therefore if you have larger portfolio then potentially have much more stable but positive return.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "In comparison with previous methods such as Croupous method, Now I won't go into detail about kupersmith, but it's a well regarded.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Set in financial world. We compare Coopers method in two measures. One is the average return as we have just discussed average return. The other is also a measure used very often in stock market. It's called Sharpe ratio. It is a risk adjusted return. So in that measurement it is simply the return divides by the standard deviation. So these are the comparison. This is our method and this is the Coopers method and this is the return itself and this is the risk. Adjusted return, so in both cases we can see that our method is better than previous methods. So they can.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Vision and I see I'm running out of time.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "But basically the method is a modified competitive learning and K nearest neighbor combination, improved for the noisy and imbalance. Stock data and method as well for stock selection. OK, it predicts that if you have larger portfolio then you have lower average attempt. Also lower risk and the method also outperformed some of the previous methods in the future work. The work where we're doing now is to use that to actually make money for me. Thank you.",
+        "start": 522.0,
+        "end": 551.0
+    }
+]

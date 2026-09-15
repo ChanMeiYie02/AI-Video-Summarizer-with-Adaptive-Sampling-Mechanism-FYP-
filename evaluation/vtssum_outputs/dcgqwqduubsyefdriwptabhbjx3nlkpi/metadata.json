@@ -1,0 +1,20 @@
+{
+    "id": "dcgqwqduubsyefdriwptabhbjx3nlkpi",
+    "title": "Binary Decomposition Methods for Multipartite Ranking",
+    "url": "http://videolectures.net/ecmlpkdd09_fuernkranz_bdm/",
+    "info": {
+        "author": [
+            "Johannes Fuernkranz, Darmstadt University of Technology"
+        ],
+        "published": "Oct. 20, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 290,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 3685
+}

@@ -1,0 +1,20 @@
+{
+    "id": "jmrrnp3srag5uuunuiantaiy2xmdsyrr",
+    "title": "Computer-Aided Algorithm Design: Automated Tuning, Configuration, Selection and Beyond",
+    "url": "http://videolectures.net/icaps2010_hoos_design/",
+    "info": {
+        "author": [
+            "Holger H. Hoos, Department of Computer Science, University of British Columbia"
+        ],
+        "published": "Nov. 15, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 162,
+    "num_sentences": 721,
+    "num_clips_with_summary": 62,
+    "num_gt_summary_sentences": 80,
+    "ground_truth_summary_length_chars": 9921
+}

@@ -1,0 +1,20 @@
+{
+    "id": "qmns7u3xa4b4qmpcrqqfuwxg2viljlo3",
+    "title": "Rejection threshold estimation for an unknown language model in an OCR task",
+    "url": "http://videolectures.net/ssspr2010_perez_cortes_rteu/",
+    "info": {
+        "author": [
+            "Juan-Carlos Perez-Cortes, Technical University of Valencia (UPV)"
+        ],
+        "published": "Sept. 13, 2010",
+        "recorded": "August 2010",
+        "category": [
+            "Top->Computer Science->Pattern Recognition"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 149,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2611
+}

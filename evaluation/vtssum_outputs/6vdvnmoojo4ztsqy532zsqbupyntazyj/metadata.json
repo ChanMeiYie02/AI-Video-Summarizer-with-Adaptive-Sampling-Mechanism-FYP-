@@ -1,0 +1,20 @@
+{
+    "id": "6vdvnmoojo4ztsqy532zsqbupyntazyj",
+    "title": "Conclusions and outlook",
+    "url": "http://videolectures.net/tra08_prista_cao/",
+    "info": {
+        "author": [
+            "Luisa Prista, Head of Unit (RTD-H2)"
+        ],
+        "published": "May 21, 2008",
+        "recorded": "April 2008",
+        "category": [
+            "Top->Events"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 98,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1457
+}

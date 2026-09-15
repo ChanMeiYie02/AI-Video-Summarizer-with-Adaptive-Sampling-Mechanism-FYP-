@@ -1,0 +1,20 @@
+{
+    "id": "vx4ax7snertw3rv2m25ymccws743tctt",
+    "title": "Structured Output Prediction of Enzyme Function via Reaction Kernels",
+    "url": "http://videolectures.net/solomon_rousu_sopef/",
+    "info": {
+        "author": [
+            "Juho Rousu, Department of Computer Science, University of Helsinki"
+        ],
+        "published": "Oct. 14, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 739,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 51,
+    "ground_truth_summary_length_chars": 3608
+}

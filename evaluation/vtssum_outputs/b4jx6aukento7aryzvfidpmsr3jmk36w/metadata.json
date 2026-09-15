@@ -1,0 +1,21 @@
+{
+    "id": "b4jx6aukento7aryzvfidpmsr3jmk36w",
+    "title": "Bioplarch",
+    "url": "http://videolectures.net/festival2017_oezdemar_bioplarch/",
+    "info": {
+        "author": [
+            "Esen Gökçe Özdamar, Namik Kemal University (NKU)"
+        ],
+        "published": "Dec. 7, 2017",
+        "recorded": "September 2017",
+        "category": [
+            "Top->Architecture",
+            "Top->Arts"
+        ]
+    },
+    "num_segments": 80,
+    "num_sentences": 157,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 527
+}

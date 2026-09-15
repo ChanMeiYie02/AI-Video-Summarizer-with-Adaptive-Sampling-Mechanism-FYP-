@@ -1,0 +1,260 @@
+[0.0s - 29.0s]
+Randomized algorithm is an algorithm that is not fully deterministic, but makes some random choices during its execution, so the result can be different on different runs, but it has a good bound on the probability of producing a correct answer, so it makes random choices, but we have a theoretical bound on that or probability and the motivation is that if we have a very good error probability then this is almost as good as having a fully deterministic algorithm becausw. Because if there are probabilities 10 to the minus 100, the probability of your computer is being destroyed by some natural disaster is probably much higher than that, so there's no such thing as a fully deterministic algorithm on Earth. And the advantage of randomized algorithms is that sometimes they are conceptually much simpler, much more elegant, and in some cases where maybe they are even more efficient. So it is definitely worth studying them. And also, if you're if you only care about atomistic algorithms, then you can look at a randomized algorithms. The first step it over to domestic algorithms, and in some cases there are techniques to the randomized randomized algorithm or source or randomized. Go down, give you some idea of finding a determine Istic algorithm.
+
+[29.0s - 58.0s]
+So in this talk I will talk about. Randomized algorithms or mattress problems so important as complexity. The central notion is fixed parameter tractability. We say that the problem that has some parameter K in the input, let's say the size of the social we are looking for or some measure of complexity of the input. We say that such a problem is fixed parameter tractable. If there's a problem solving it at F of K times the polynomial where F is an arbitrary function, possibly exponential function of K. So this means that the running time is polynomial, but there there's some nasty possible. Initial factor that depends only on this parameter K and doesn't depend on the size of the input. In my talk, I will present examples of randomized algorithm, randomized fixed, smarter tractability results. I will start with some very simple, very classical textbook examples and then I will move on to some more recent at more advanced techniques. But before that I would like to make a high level comment on how randomization is different in the context of polynomial time algorithms and in the context of this parameter, tractability.
+
+[58.0s - 87.0s]
+So important time randomized algorithms you use randomization to find something very boring. To believe that on average things are good and we just use randomization to find something average to find something, unproblematic to sign, find something that doesn't have a special situation. On the other hand, maybe this is not true for every randomized FPT algorithm, but for many of the randomized FPT algorithms we use randomization to find something very special. And violin appointment time randomized algorithms. We want that or probability typically to be a constant or at least or polynomial small in randomized FPT algorithms we usually want or sometimes even the error probability to Veladero probability to exponentially small. That's still good for us 'cause because we allow the running time to depend exponentially on this function on this parameter K. So we randomized FPT algorithms. We often use randomization to. To satisfy some about the number of constraints, but we use randomization because we do not know before hand this constraints, because these constraints are somehow related to the solution, But by randomization we do not have to know these constraints beforehand. Think of this distinction as two different dating strategies. So the first strategy is to be a nice guy to be as unproblematic as mainstream as normal as possible, hoping that this maximizes your chances of finding a partner. On the other hand, the second strategy is to be extra vagant do crazy things, paint your head hair pink and have tattoos and whatever, and then hope that by the law of large numbers there will be someone who is turned on by exactly this. Raisin and in this talk we will do precisely that, and it turns out to be a very successful strategy, at least in the context of parameterized algorithms. So we try to find solutions satisfying some crazy constraints, and it turns out that we will have a relatively good probability of finding such solutions.
+
+[87.0s - 116.0s]
+In a randomization are impractical and FPT. Randomization. There are two main source of of the two main ways. Randomization appears. The first is by formulating. The problem is as some algebraic problem and then using algebraic techniques. For example research, word searches palama and I will not talk anything about this. But in undress virtual invited talk on Friday you can hear more about this so please attend at all. In this talk, we will see only put your computer techniques where we are finding randomly some subset.
+
+[116.0s - 145.0s]
+OK, so this is the picture that you will see over and over again in this talk. And I mean this is the picture that I hope you will take home from this talk that we use randomization as a reduction. We have some problem that we want to solve problem A. We do some randomized magic and then after that we have to solve some other problem but that other problem is much easier. So this is not true for every randomized algorithms. But in for the randomized algorithm that I presented today, they will be all of. Or more reduction reduce exam some interesting problem to some problems that are matches here.
+
+[145.0s - 174.0s]
+I start with the. Video with the most classical random randomized example for parameterized algorithms. OK pass problem, which is which is given a graph G and then integer K. We gotta find a pass any pass. Any simple path of length exactly K? This is a this problem is NP hard as it contains a Hamiltonian path problem but but we hope that if for small values of K we might have a more efficient solution. So you can obviously do this in entered OK, but we want to do this in. F of K data times some polynomial and Ann and there are several techniques for doing this, But the first technique where this F of cave was just a single exponential is 2 to the K, not K to the K or not 2 to the two to the care. But this is just two to the order of K. The first algorithm to reach this trying time is due to allow user and speak using the color coding method and you saying that. At valid, KK is smaller than in a big graph. Probably it's easy to find some path of length K, But this is not true. This is a really challenging problem, so no surprise that it took so many smart people to figure out a solution and actually it was posed by Papadimitriou. Sandy anarchist as an open question. Whether you can find a path of length slogan in polynomial time and this was the 1st result answering that. So what is this color coding technique? It's very.
+
+[174.0s - 203.0s]
+Sample. So here is the graph and the assign random. Definitely we assign random colors from one to K2.
+
+[203.0s - 232.0s]
+Services and then we make a crazy requirement. We require that the path.
+
+[232.0s - 261.0s]
+We are looking for discolored 12345. OK, now if we find such a path then then then that's a good solution and we say yes. And if we don't find such a path, we say that no, sorry there's no solution now. Is this a good randomized algorithm? First, if there's no K passing the graph, then obviously there's no passcode color this way, so our algorithm will say no. On the other hand, if there's a case K pass, then there's some probability that it will be colored 123. OK, and this probability is exactly K to the minus K. We have K choices on each vertex and we have K vertices. So by probability K to the minus K. Any given solution will be colored van to 3K and therefore our algorithm will find this path. So if there is a solution then then the probability K to the minus K. This algorithm will find cave Pass and you could say that OK, this is not very good escape to the minus K probability is very low. But by repeating this algorithm we can boost this probability in a very simple way.
+
+[261.0s - 290.0s]
+Let's just say this useful fact that if you have a probability of success P and you repeat your algorithm 1 / P times, then the probability that it does not say yes. So in any of these 1 /, P repetitions is roughly one ovary, so roughly 38%. So if we have the success probability of K to the minus K, then.
+
+[290.0s - 319.0s]
+Dan Danner, after repeating this algorithm, K to the K times, we get a success. Probability of an ovary which is certainly or error probabilities 38. So success probability 62%, which is still still. Is this still is still or not so good, but but then we can repeat this whole thing again. A constant number of times and then we can. We can decrease the error probability to an arbitrary smaller constant by repeating the Holsinger 100 times. We can repeat the error probability of Vanover E to the 100, which is pretty good. OK, this is the idea. I just omitted advancing hard to. Hard to find this pass colored van to 3K.
+
+[319.0s - 348.0s]
+This is very, very easy to vary the exercise, so we have this vertices colored from one to K.
+
+[348.0s - 377.0s]
+Obviously, if that if there's an edge connecting non consecutive numbers, then those edges are you was less so from the point of view of finding such passes. So we can remove those.
+
+[377.0s - 406.0s]
+Look at him, OK, remove those and.
+
+[406.0s - 435.0s]
+And we can direct the remaining balance to the larger color and then all we need is a directed path from from a vertex invite.
+
+[435.0s - 464.0s]
+Van to the vertex in five. So there's a very simple polynomial time algorithm.
+
+[464.0s - 493.0s]
+Like that, and therefore we could reduce finding K path by by this randomized algorithm to finding a van 23K part colored path which is polynomial time solvable, and the success probability was K -- K to the minus K. So the running time for smaller course on probability is K title. OK times polynomial. OK, but in the beginning I promise to two to the order of K algorithm and not OK to the K algorithm so we can do this in a little.
+
+[493.0s - 522.0s]
+It's marked away VSI random colors, but we have a little bit less crazy requirement. Now we just require that the path is colorful, meaning that all the colors appear on it, but not necessarily in order, so 13452 this is a good.
+
+[522.0s - 551.0s]
+Bus. Now, obviously if there is no solution, then there's no color for solution. If there is a K fast, then what is the probability that it is colorful? There are K to the K colorings and K factorial of them are colorful, so by by plugging in Stirling approximation you get E to the minus K as the success probability, meaning that you have to repeat this.
+
+[551.0s - 580.0s]
+K to the E to the K times to have constant error probability. But now it's a little bit more difficult, hard to find the colorful path. Then there's a smart way and not so smart way of doing this. The not so smart ways to try all possible orderings. But then then we get a K factorial in the running time. The smarter ways to use dynamic.
+
+[580.0s - 609.0s]
+Darling, I don't have to go through this in detail, it is it is a nice exercise. So you introduce two to the K variables for each each vertex, meaning that with the meaning that there's a path ending and that vertex. Seeing exactly this subset of colors, you have these two to the K * N variables. You can write a simple recurrence relation hard too hard to compute these values from each other and and in total OK times polynomial time. You can find such a color proof. Passive.
+
+[609.0s - 638.0s]
+It exists so so now. Will this improve color coding? If you have error probability to the minus K and we can solve this easier problem in two to the case times and so the running time is the is the product of these two things. The product of Y2K and the product and two to the K. So it's two to the order of K. Here's about this is randomized.
+
+[638.0s - 667.0s]
+So, so how to do randomize it? And this is the only side I have been on the randomization in this talk. Most of the times it follow uses similar techniques, so the randomization is very simple. If you have the right tool at your disposal. The right tool here is the notion of K perfect family of hash functions. So that is a caper family of hash functions. It is a set of functions map giving especially colors from one to K2 N elements and the property of this function is that for any subset of K elements the family contains a. Coloring, that is that that assigns different colors to this key elements, so there's a. There's a hash function in the family that colors this subset in a colorful way. This is strange requirement, and there's a. It is known that there are there are such a perfect family of functions of small size of two to the order K time slogan size. And now, instead of going through random colorings, we simply. So instead of trying random colorings, we simply go through K perfect family of hash.
+
+[667.0s - 696.0s]
+Functions and this will be good cause because we know that if there's a solution by definition. OK, perfect family will contain at least 1 hash function that is colorful on this solution, and then the same thing works. We will find this colorful path. So you have to understand this definition, but after that it is just plugging it in and and you get a deterministic algorithm instead of a randomized algorithm.
+
+[696.0s - 725.0s]
+So now what we have is affiliated with the K pass problem to the problem of finding a colorful pass. Now we have a data. We have a deterministic reduction that creates that many instances two to the order K that slogan instances and each instance can be solved in that time. So we cannot do to the order K that Terministic algorithm. So color coding is for the simplest and most elegant example, where randomization of years for FPT algorithms, but in a sense it is already too smart. So it's a bit unnatural. Ivy are looking for this coloring, so there's the sense that there's an even more fundamental, and even even simpler examples of how randomization can appear I.
+
+[725.0s - 754.0s]
+Show you some examples, for example, in the case of bounded degree graphs. So in parameterized complexity we have like bounded degree graphs. They are usually easy and usually this can be explained by the fact that that it usually for a vertex the small neighborhood of the vertex that matters, and if you have bounded degree, there's only a bounded number of different small neighborhoods or so, so so most of the vertices are somehow equivalent, and there are even meta theorems showing that certain problems. Expressively, in a certain logical language, are FPT and but for concrete problems and bounded degree graphs you can usually find some solution, but but in my experience a randomization or gives a very elegant and very simple solution on bounded degree graphs. So let's look at this problem dance Cape Vertex subgraphs. We want to find find a set of K vertices that induce the maximum number of edges in use at least images. This program contains a special case OK click problem. So in general, for general graphs we do not expect it to be fixed by under tractable. On the other hand, for bounded degree graphs, there's a very simple randomized algorithm at the running time. Depends on on the on K, the number of vertices, and on the degree of the graph.
+
+[754.0s - 783.0s]
+Algorithm is the following. It's, uh, so this blue thing. Let's say that this blue thing is a social social media 9 vertices in using some number of edges and uniformly and independently at random, we remove every vertex with probability 1, / 2.
+
+[783.0s - 812.0s]
+Now with some probability, two to the minus K, none of the blue vertices are removed. One of the vertices of the solution is removed, so and also with probability two to the K -- K * D. None of the neighbors of the story, all of the neighbors of the solution are removed. Right, because we have K vertices in the solution, the maximum degree is D. We have K times Dean at most K times the neighbors with this probability or the neighbors of the of the solution are removed.
+
+[812.0s - 841.0s]
+So we get to reduce graph like this and removing the vertexes cannot make the problem easier, right? And because we we didn't remove any of the solution vertices, it cannot make the problem any harder, so we so we get with this probability we got an actual anti instance and in this actually it's interesting. We now have the property that the solution consists of disjoint connected components of this graph. So so so we should now consists of this component and that component. So in this region. Graph we have to find a set of connected components that containing at most K vertices, inducing at least M edges.
+
+[841.0s - 870.0s]
+So we have this connected components. Each cell number of vertices and some number of edges and we want to find a subset of them having at most K vertices and at least their matches. So what problem is this? Yes, it's our good friend Napsack. So.
+
+[870.0s - 899.0s]
+What you can do is. Is that we can express this problem as a set of items where the the weight of the items is the number of vertices in the components. The value of the items is the number of edges in in the components and the standard dynamic programming techniques. So the weights are integers and they have polynomial size, so bystander dynamic programming techniques we can solve this problem.
+
+[899.0s - 928.0s]
+Normal time, so again we have a reduction to a polynomial time solvable problem. So here the idea was that the solution is. So we can think of the solution as a witness that the problem has a yes answer and we wanted the randomization to work correctly on this list witness so it is often very, very helpful for thinking about this this way that to think of what is a good witness of a yes answer and vadouvan from randomization. So how do we want the random choices to operate on these witnesses? So to to explain this in more detail, I are to present another example. Let's see this simple problem may.
+
+[928.0s - 957.0s]
+You don't find it that natural, but it is useful for some. For recursion purposes, we want to separate a graph with K vertices in such a way that it has at least two big components. I mean, big means having at least Q vertices in some algorithms based on recursion. This is good, because then we still have a large component, which is which is smaller than the original graph, and in some cases this is helpful. And there's a very simple randomized algorithm for.
+
+[957.0s - 986.0s]
+This so this is a solution, right? Uh, set S with two big components. And again, very move each vertex with probability. Indefinitely.
+
+[986.0s - 1015.0s]
+1/2 and because this is a solution and the witness of the solution is this set S and because these two components are large, they contain two large trees. And.
+
+[1015.0s - 1044.0s]
+Yes, and if it probably 2 to the minus K, we delete all the solution vertices and we probably two 2 -- 2 to the minus Q. We do not delete any of these Q vertices of the three with two to the 9th probability to the minus key. We do not delete any of those vertices so so so after the deletions we get to reduce graph that contains 2 big components. This and that that are that are separated from each other. So what we?
+
+[1044.0s - 1073.0s]
+To do is that we look at the big components of this reduced graph, and if I and we check whether there's two big component that can be separated by K vertices in the original graph if confined to such big components separated in, that can be separated in origin graph, then clearly there's a solution and by this argument, if there's a solution in this graph with that probability, there's two big component that is easily separable and original graph. So I think this shows nicely what I was talking about that here we have a weakness of yes answer cause this thing of this separator S and 2 three is and we want random choices to happen in a certain way on this week.
+
+[1073.0s - 1102.0s]
+OK, so. Yeah, so so video is separation to some number of winning mastic problems.
+
+[1102.0s - 1131.0s]
+And I. I will move on to more advanced technique and which was introduced recently in the context of multi of the multicast problem and then later it was used for several other problems. Unfortunately I do not have time to give a full proof of this and and it would would be may be too technical and not really relevant to this talk. So what I will do is the following that I will present a statement of the technical result. You will not understand this. It will be a bit technical and bit counter intuitive, and then I will present. I will not prove this technical result. And I will present two applications of this result and then hopefully those two applications will make sense. And and then you will see why this technical result is interesting and if you are interested in approved and then you can look at the papers. So what is this technical result?
+
+[1131.0s - 1160.0s]
+So first the setting is the following that we're looking at transfers or problems. What is the transfers? Also, let F be a family of subgraphs in a graph so family of objects and the transfers are is a set of vertices or set of edges such that each object each object. Contains one of the selected elements, so from each each of our our selected set hits, or each of these objects like maybe you have a set of cycles and you want a set of vertices that hits each of these cycles, you want each of the objects should have a representative in our selected set so threads are there is a fancy name. I prefer saying hitting or killing these objects that much more intuitive. And many classical problems can be formulated as transfers are problems addressed. Icat problem is just hitting all the passes from S2 T. This is another way of saying you're cutting us from the multicast problem. It's a heating order passes between the motive in the motor vehicle program we are set of terminals and we want to separate them from each other. This is nothing else than hitting all the passes between the terminals. No directed field feedback vertex set of directed feedback vertex set is hitting all the cycles or directed cycles in the graph, and this problem of graph bipartite graph by factorization or outside for transfers are which is which is removing vertices or edges to make the graph bipartite. This is nothing else than hitting all the odd cycles in the graph by vertices or edges. So we have several.
+
+[1160.0s - 1189.0s]
+Events in this framework. And. We need this definition so first. In our application we will have a set of terminals with some meaning. So we have some special lattices and and and and this family F will have we satisfy this requirement that they contain connected objects. OK, that's not a big requirement probably. And all of these objects intersect. So all of these objects somehow connected to T. And the figure might be misleading. Sorry, so the objects in F are not necessarily joint. You can have many. You're going to have exponential number of objects sinkiewicz as the order cycles in the graph, so. We have in this talk we always have objects are going through these terminals and then we define given a solution as we define the shadow of the solution to be those vertices that cannot be reached from the terminals. After removing this set set of.
+
+[1189.0s - 1218.0s]
+This is Aurora removing this set of edges, so this will be a crucial definition. The notion of shadow of a solution with respect to some set of terminals.
+
+[1218.0s - 1247.0s]
+OK, and then here is the technical result so. We have this notion of shadow and we have discussed condition that every object is connected and goes through T and Now what this result says is that there's an algorithm which computes a sad Z having a certain property having a certain property with some probability. So this set Z has the the probability two to the order of minus. Kate has the probability that there's a minimum F transfers all such that the shadow of the transfers are discovered by the and the and new edge of the transfers. Is contained in this, so this is the edge edge version in on directed graph, so so if there's a minimum transfers are with at most K edges, then with some probability there's a minimum transfers all such that the shadow is covered by the and no edge of this transfer is contained in Z. Some condition you at this point you usually want you should not be able to see why this is good, but let me point out something very, very strange. So this algorithm doesn't know about this set F, so it says that it computes a set Z. Side that with some probability something happens, but this is true for every F. So this algorithm somehow captures capture something that is common in all these transfers are problems. It doesn't have to know F which is good 'cause there would be issues. How to represent F, but this is not an issue because it doesn't know F. So think of this algorithm as as computing a random set that hopefully has has some probability of having a certain relation with an optimum solution. OK, now you can forget about this.
+
+[1247.0s - 1276.0s]
+Few minutes I will start explaining the first application. The first application is a clustering problem. Clustering usually means that you want to partition objects according to certain requirements you want. Typically you add objects that are similar to be close together and you have some some bound, some constraints on the number of size or clusters and so on. In this particular problem we have the following two constraints. We don't have any bound on the number of. Clusters that we want to partition into, but but each cluster must must be so small, should contain atmosphere vertices and there should be at most Q edges going out. And then this is overdefined problem. And we show that this problem can be solved in two to the order of Q times and so it's a FPT parameterized vacuum. So so if you if you'll only a few edges going out, but maybe the cluster size is a large number then then we have such an algorithm. I just mentioned that there is a tool to the order of P algorithm that it uses a different technique. So P is the size of the cluster and Q is the number of edges that can go out.
+
+[1276.0s - 1305.0s]
+And let's say that the cluster is good if it has size at most B and at most square Q edges are going out. And now a trivia necessary condition is that every vertex should be contained in at least one good cluster. Otherwise there's no solution, but.
+
+[1305.0s - 1334.0s]
+In fact, this is a sufficient condition as well. We show in the next slide that if every vertex is contained in a good cluster, then there's a partition into good class 'cause this is not obvious because there's good clusters can overlap, but it is true that there's a. There's a good cluster.
+
+[1334.0s - 1363.0s]
+Why is this true? So every vertex is contained in a good cluster. Let's find a collection of good clusters covering all the vertices such that the total size of this collection is at most as soon as possible. Now it can happen that two clusters in.
+
+[1363.0s - 1392.0s]
+Overlap, but we use this this modularity quality that the the edges leaving X plus the edges leaving Y is that is larger or equal than the edges leaving X -- y and edges living by minus X. So either the edges leaving X exactly the edges leaving X -- Y or the other way around now.
+
+[1392.0s - 1421.0s]
+The number of edges leaving X is larger than equal number of edges, leaving X -- Y. Then we carry plus X with X -- Y. It is still a good cluster because it has not more edges going out an smaller size and then every vertex is still covered by a good cluster and. And it.
+
+[1421.0s - 1450.0s]
+The decrease the size of the color collection a similarly if the other equality holds them Democratic less. Why we divide minus X and this proves this fact that if every vertex is contained in a good cluster, then there's a partition into good clusters.
+
+[1450.0s - 1479.0s]
+OK, So what we have to do is to check whether a given vertex is in a good cluster. And this is trivial to do in enter the queue time because you just guess all the Q edges going out and remove them. But we want to do it in two to the order of cute.
+
+[1479.0s - 1508.0s]
+And this is a strange way of looking at this problem, but this is actually transfers are problem. So what we what we have to hit with? We want to hit with Q edges or the trees of size at least be going through V because we want to reduce the component of the size P. So we want to hit all the trees going through V and and having more than P vertice is. So this is a translator.
+
+[1508.0s - 1537.0s]
+Problem which is good because we can we can. We can involve this theorem. So in our setting now we have a single Terminal V. Or the bad objects are going through the becausw order that objects are the trees of size. Maybe more than P versus 3 is having more than PvP vertices, and this algorithm computes asset Z such that with this probability there's an optimum solution as with these two properties. Right? So. From now on we can assume that this event indeed happens and we have this set Z and there exists an optimum solution whose shadow is covered by the a new edge of this solution is contained in Z.
+
+[1537.0s - 1566.0s]
+OK, so we have this set Z. It induces some number of components and this is the set outside Z. And then we have these two properties and I would like to ask you to sink a little bit about this so that can be the edges of the solution. That is this cluster that we are looking for. So we have these two properties that the shadow is covered by Z and new edge of S is contained in Z. So can we have an edge of the solution up there? No, because no edge of the solution is contained in Z, so there's no edges up there. And can we have an edge here? Now we know that the shadow of S is covered by Z, so this is not easy, which means that that none of the two endpoints is in the shadow, so so so both endpoints of this edge is reachable from V. So what was the point of removing this? It doesn't decrease the cluster size, so there cannot be any edge here and cannot be any edge of the solution there, so.
+
+[1566.0s - 1595.0s]
+Order or the edges of the solution are here. We can we can. We can just remove these edges. Connecting the central talk to those satellite components. So the cluster that we are looking for actually consists of this main part and some of the components out there, so all the other choice that we have is which components to select out there. So we want we do not want to include too many components up there because that increases the size of the cluster, but omitting a component means that we have to delete those edges so we don't want to make too many components. So, So what problem is this? And this is again our good friend, knapsack.
+
+[1595.0s - 1624.0s]
+Becaused because we have we have the same two type of constraints. We have a size constraint. We do not want to include too many. We do not want to include too many components into the central part and we do not want to omit too many components. Becausw omitting someone cost us some edges. So so after this reduction after computing this set. V. Viadrina scenario that can be reduced to the polynomial time solvable knapsack.
+
+[1624.0s - 1653.0s]
+All done. And therefore if we get this algorithm that has success, probability two to the order to the order of Minos order of K and and then we reduce it to a column at absolute problem. I I I will show you another application of this. Maybe maybe then you can. You can see how this works, but this time in the case of in the context of directed graphs. So as I said.
+
+[1653.0s - 1682.0s]
+Earlier the motivate cat problem. Is to break all the terminals from each other in a undirected or directed graph. From the fundamental complexity point of view, the interactive version is fairly well understood. The latest algorithm solves it in two to the K times a polynomial, but but the, but it seems that the directed version behaves very differently and the. Techniques working for undirected graph doesn't work for directed graphs, but. But this new technique that I'm presenting now can be used for directed graphs and we. We will see how. So obviously this is a. This is a transversal problem. Now the family is the set of directives passes going from one terminal to some other terminal.
+
+[1682.0s - 1711.0s]
+And if he had a notion of shadow before, but we need some other notion because we are in a directed graph, there are different ways of interpreting this. So now the shadow. Another setting is the following. These are the terminals. This is a solution. These are the strongly connected components of the terminals. And now this is the shadow. The shadow consists of those vertices that cannot be reached from any of the terminals in the solution, and those vertices from which no vertex of the terminal, no terminal can be reached. And and of course there could be some intersection that cannot be reached from the terminals and they are. And no terminal is reachable from here. This is our notion of shadow Now, so we consider both of these things as shadows. Is that clear?
+
+[1711.0s - 1740.0s]
+OK, and I hear is the directed version that we will use so we have this definition of shadow and we impose the following condition on the objects. This condition is that. So it sounds a bit technical, but every every vertex of the object from every vertex of the object you can go in the object and reach a terminal, and every of every vertex of the object is reachable from some terminal. This is this is trivially true if the if the objects are passes between the terminals. Then obviously every vertex is on a path between two terminals. And nothing but understatement is very similar. We can compute a set Z such that with some probability the following happens. There's an optimum optimum. F transfers are such that the shadow is covered by this set Z and the solution is disjoint. From this set there. And again, this algorithm doesn't have to know F in any way. Yes, so again you guys think of it as some algorithm producing a random set and and from now on we can assume that this random set has the probability property that it is disjoint from the solution and it covers the shadow of the solution.
+
+[1740.0s - 1769.0s]
+So because because this set is disjoint from the solution somehow it nothing interesting happens in this set, right? Because we don't do not break everything anything there. So so we would like to remove this set from the problem because nothing is happening there. But of course removing this set can make the problem much easier. This is not a good idea, but in order to compensate.
+
+[1769.0s - 1798.0s]
+For removing this set whenever there is a fast growing inside this set from A to B. Area.
+
+[1798.0s - 1827.0s]
+We will add the directed path from A to B. So we do this from every pair of vertices. If there's a path going inside the between the two vertices, we just added direct edge because we know that no vertex will be deleted here anyway, so we can, and this doesn't change the problem and after that.
+
+[1827.0s - 1856.0s]
+We can remove this said Z. And the good thing is that. That this doesn't make the problem an easier, and it doesn't make the problem any harder becausw, because by assumption we had a solution disjoint from Z, so this will not destroy this solution. But now this solution will be shadow last. It doesn't have a shadow because the shadow of this solution was covered by Z. So after removing this this set this solution doesn't have a shadow. Alright, so all we have to look for now is a shadow lasso solution.
+
+[1856.0s - 1885.0s]
+OK, so so how does this show less social look like? OK, so these are some interactive components and this is the solution. This is the shadow but.
+
+[1885.0s - 1914.0s]
+What happens if there is no shadow, then, then, then what is this problem that we have to solve? What is this program? Yes, it's not a knapsack, but this time this is the undirected multiway cut problem because now we can observe that. This solution is a motivator and motivate cut in the underlying undirected graph, 'cause these are strongly connected components that cannot be an edge between them. 'cause then there would be a pass from Evanta Tito. So the issue is that originally this was not true. This solution is not not necessarily motivate. Cutting the underlying undirected graph becausw to components can be connected somehow like this. But but here we have no such issue. There are no edges like that. All these vertices are deleted, so so this is actually an under a multi. They cut in the underlying undirected graph, so we can we can.
+
+[1914.0s - 1943.0s]
+We can just stay.
+
+[1943.0s - 1972.0s]
+Involve this previous result on undirected, motivate, cut and reduce the problem in a randomized way to do this. Problem then that we understood earlier. And. Yes, so and if you have the statement of this, this technique of what does it mean to compute such a sad Z, then the proof is actually very very simple. But you have to understand what this statement means.
+
+[1972.0s - 2001.0s]
+And. My final example is a very nice and very recent technique I just. Yeah, so the good thing is that this is this is a very nice technique that is applicable for a large number of problems. And it really changed the way how we, how we look at algorithms on three decompositions. But the bad thing is that I I don't want to introduce three this now. I don't want to talk about dynamic programming is done on trivet. So I apologize for that. So true, it's a bit technical topic and I strongly believe that attributes shouldn't be defined before a coffee break or very early in the morning. So if you know it really is, then you will like this. If you don't know trivets then then you will see a nice reduction and you have. Take my word for it, for that. This is indeed a meaningful reduction, and indeed the problem we are reducing two is in some sense better problem that the program that we started with. So a classical textbook approach to finding a Hamiltonian cycle on a graph of bounded tributes gives you an algorithm with running time K to K, or which is the same as saying 2 to the order of Cal OK. 'cause if you want if you have a separator of size K, you have to remember all possible ways the vertices in that separator separator are matched together are matched by partial solutions and there are. Data replicated locate different ways of this, so you have to remember all these rates and and and and. This gives this running time and it seems that this is the right running time. It seemed this algorithm since so so basically so fundamental that it seems that there's nothing more that can be done, and in fact there are similar problems where we have we have lower bounds showing that under some complexity assumption you need K to the Kate. I'm on a 3D composition of which K and I saw that this is true also for Hamiltonian cycle, but but it turns out that this is not true for Hamiltonian cycle, which was a big surprise that in that despite the fact that the obvious approach shows that. That probably you have to remember that many possibilities. There is a randomized algorithm with running time 4 today. OK, so single exponential, not two to the K log K, so there's another portal. OK times polynomial. And and defenders and. In the rest of my talk, I just show you how Hamiltonian cycle can can be reduced to something gas, which and that something else can be solved in this time.
+
+[2001.0s - 2030.0s]
+The main technical tool that is under. Yes, and I think that from this.
+
+[2030.0s - 2059.0s]
+Replacing three of them are here, roughly or probably.
+
+[2059.0s - 2088.0s]
+OK, so this is the technical result that we are using and I the so called isolation lemma. So let we have a universe you and we have a subset of family of subsets F. And we assign a random weights to elements of the universe between one and. And now we are interested in the probability of. Of having a unique minimum weight element. So depending on how we assign weights, there will be one or more minimum vital minimum weight. The subset in this family but but but if N is large then we have a very good chance that there's a unique minimumweight element. So if N is larger than you or larger than. Some polynomial, a few, then then then we have a good chance of of of having.
+
+[2088.0s - 2117.0s]
+Remove a talent in our setting. the University will be the set of edges of the graph and this family will be the family of all Hamiltonian cycles. There's an exponential number of million cycles. Obviously we don't know them, but this, but you don't have to know F for this isolation lab network. OK, so this Satanta some some polynomially large number and this ensures that from now on we can assume that there's a. There's a unique minimumweight Hamiltonian, so if there's a Hamiltonian cycle then there's a unique minimum weight Hamiltonian cycle. And also because these weights are polynomial if we can guess this minimum weight. So from now on we are looking for a Hamiltonian cycle of wait, wait exactly, see under the additional assumption that there is a unique Hamiltonian cycle of weight exactly, see. OK, and.
+
+[2117.0s - 2146.0s]
+How do we do that? What do we do so instead of looking for Hamiltonian cycles, if we look at cycle covers so cycle cover is a sub graph having a degree exactly 2 on each of the vertices, so it is a set of cycles. Sort of more cycles. Hamiltonian cycle is obvious cycle cover.
+
+[2146.0s - 2175.0s]
+As bad, but about the cycle cover, you can have more.
+
+[2175.0s - 2204.0s]
+Online components so so necessary.
+
+[2204.0s - 2233.0s]
+Cycle. And also, we're not just looking at cycles.
+
+[2233.0s - 2262.0s]
+Reverse, but we are looking at color cycle cover so colored cycle cover each color each cycle is. Assigned to either the color of white or black. Or the other way to look at this is that each vertex has a color and edges and vertices in the cycle cover have the same color. Now of course, the number of colored cycle versus larger than the number of cycle covers, but we know that.
+
+[2262.0s - 2291.0s]
+So each cycle cover gives rise to some number of color cycle covers, but.
+
+[2291.0s - 2320.0s]
+Obviously, each cycle cover with K components gives rise to two to the K colored cycle covers, because for each cycle you have a choice between two different colors. Another. The good thing is that so this means that the Hamiltonian cycle gives rise to.
+
+[2320.0s - 2349.0s]
+Two different colored cycle covers. Cycle cover with two components give rise to four different colored cycle covers. Cycle cover with three components gives that gives rise to 8 different colored cycle covers. So if there's no no Hamiltonian cycle of this weight, then the number of weight, see color cycle covers is divisible by forward because every cycle cover that is not a Hamiltonian cycle gives rise to some number of color cycle covers who's number is divisible by 4. Because they have at least two components, so two to the K is divisible by 4. On the other hand, if there's a unique batesia Hamiltonian cycle, then the number of such color cycle covers is not divisible by 4 cause because they have every cycle cover having more than one component gives rise to some number of which is divisible to four and this unique Hamiltonian cycle will give rise to exactly 2. Color cycle covers. So.
+
+[2349.0s - 2378.0s]
+So what we are doing is that.
+
+[2378.0s - 2407.0s]
+These are the steps of the algorithm. First we assign random weights to the edges of the graph. Then if there's a Hamiltonian cycle done with some good probability, there's a unique Hamiltonian cycle with minimum weight. We try all possible weights and then we count the number of colored cycle covers with that weight. And if the answer is not divisible by 4, then we say that yes, there is a Hamiltonian cycle. And OK, this is nice, but the part that you do not see is why why this problem is better than finding a Hamiltonian cycle. It looks much more impressive like this, accounting it's weighted. It's colored, but somehow Hamiltonian cycle is kind of a global problem that it had. You cannot really verify a Hamiltonian cycle locali because you really have to see whether it it gives a single cycle and not two cycles. On the other hand, this cycle cover thing. It's a completely local problem. What you have to check is that each vertex has exactly degree two. Each vertex has a color that is the same as its neighbor and and therefore in a. Is the part that you will not understand if you don't understand treated so. So in a dynamic programming on a tree decomposition, there's no state space in each bag will be 4 to the K because you just have to remember the degrees of the vertices and the colors of the vertices as opposed to being K to The Cave when you had to leave. Remember a matching of these vertices.
+
+[2407.0s - 2436.0s]
+So with this technique we have a. We have a randomized algorithm, but not unlikely to previous examples. We have a very good probability of success, so the so the exponential factor is not coming from the small success probability, but it comes from the from solving this easier problem that requires 4 to the K times a polynomial and you have to take my word for it that this is indeed an easier problem.
+
+[2436.0s - 2465.0s]
+And OK, so this is the end of my talk. I presented some some examples showing randomized algorithms for parameters programs. I hope you found the malagon 'cause I think they are quite elegant solutions for many of these problems and I mentioned it was that the randomization is sometimes possible by by plugging in standard techniques like caper factor. Hash functions, sometimes it's not known. And yes, and this is a crucial difference, I think that you have to think about randomization with different ways that implement polynomial time. Algorithms that a small success probability is still good for us becausw becausw exponential in K is good for us now, so so small success probability as a function of K is perfectly good for us. And this is the.
+
+[2465.0s - 2494.0s]
+The picture that you have seen repeatedly that we took some problem. We applied some randomized magic and then within a clean way we could reduce it to an easier problem that we could solve by some other techniques.
+
+[2494.0s - 2523.0s]
+OK, thanks very much.

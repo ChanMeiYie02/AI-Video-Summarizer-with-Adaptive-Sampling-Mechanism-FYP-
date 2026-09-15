@@ -1,0 +1,21 @@
+{
+    "id": "ttsn5iv4loeoo7gwrbkygwhccarhckov",
+    "title": "Learning Parameters in Discrete Naive Bayes Models by Computing Fibers of the Parametrization map",
+    "url": "http://videolectures.net/aml08_auvray_lpdnbmcfpm/",
+    "info": {
+        "author": [
+            "Vincent Auvray, University of Liège",
+            "Louis Wehenkel, University of Liège"
+        ],
+        "published": "Dec. 20, 2008",
+        "recorded": "December 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 359,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 2471
+}

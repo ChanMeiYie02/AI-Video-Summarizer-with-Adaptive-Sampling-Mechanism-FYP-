@@ -1,0 +1,20 @@
+{
+    "id": "kisqt4hkb3u62yjeostztagyldkxeyju",
+    "title": "Towards a new Computational Interpretation of Sub Classical",
+    "url": "http://videolectures.net/godelfellowship2011_ilik_tnc/",
+    "info": {
+        "author": [
+            "Danko Ilik, University \"Goce Delcev\""
+        ],
+        "published": "May 20, 2011",
+        "recorded": "May 2011",
+        "category": [
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 234,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 1960
+}

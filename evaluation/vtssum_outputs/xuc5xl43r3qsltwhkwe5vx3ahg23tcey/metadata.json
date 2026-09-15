@@ -1,0 +1,24 @@
+{
+    "id": "xuc5xl43r3qsltwhkwe5vx3ahg23tcey",
+    "title": "Breaking the coherence barrier - A new theory for compressed sensing",
+    "url": "http://videolectures.net/sahd2014_hansen_new_theory/",
+    "info": {
+        "author": [
+            "Anders Hansen, Department Applied Mathematics and Theoretical Physics, Cambridge, University of Cambridge"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Digital Signal Processing",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Information Theory",
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 311,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2330
+}

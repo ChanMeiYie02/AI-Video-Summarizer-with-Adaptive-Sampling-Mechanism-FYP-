@@ -1,0 +1,20 @@
+{
+    "id": "ldwoiawe252oqnamnoatvliqmxj4ul7l",
+    "title": "Inferring Networks of Diffusion and Influence",
+    "url": "http://videolectures.net/kdd2010_gomez_ind/",
+    "info": {
+        "author": [
+            "Manuel Gomez Rodriguez, Department of Electrical Engineering, Stanford University"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 134,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 4420
+}

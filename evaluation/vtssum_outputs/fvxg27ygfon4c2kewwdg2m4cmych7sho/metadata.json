@@ -1,0 +1,24 @@
+{
+    "id": "fvxg27ygfon4c2kewwdg2m4cmych7sho",
+    "title": "Algorithms for Lipschitz Learning on Graphs",
+    "url": "http://videolectures.net/colt2015_sachdeva_lipschitz_learning/",
+    "info": {
+        "author": [
+            "Sushant Sachdeva, Department of Computer Science, Yale University"
+        ],
+        "published": "Aug. 20, 2015",
+        "recorded": "July 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning->Active Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Semi-supervised Learning"
+        ]
+    },
+    "num_segments": 35,
+    "num_sentences": 225,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 2823
+}

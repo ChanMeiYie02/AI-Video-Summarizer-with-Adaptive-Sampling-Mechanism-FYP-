@@ -1,0 +1,61 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.860 --> 00:00:03.330
+>> Before we get into the details of
+
+00:00:03.330 --> 00:00:06.270
+image processing and building models for computer vision,
+
+00:00:06.270 --> 00:00:09.210
+let's start by examining what an image is.
+
+00:00:09.210 --> 00:00:11.760
+Now, to you and I, an image,
+
+00:00:11.760 --> 00:00:14.895
+like a photograph, is a visual representation of something.
+
+00:00:14.895 --> 00:00:16.949
+In this case, it's a photo of landscape,
+
+00:00:16.949 --> 00:00:19.965
+and includes a plane or train, and an automobile.
+
+00:00:19.965 --> 00:00:22.200
+To a computer program,
+
+00:00:22.200 --> 00:00:24.930
+this image is made up of a matrix of pixels,
+
+00:00:24.930 --> 00:00:28.020
+each pixel having an intensity that's represented as
+
+00:00:28.020 --> 00:00:32.205
+a numerical value between 0-255.
+
+00:00:32.205 --> 00:00:36.480
+Now in fact, this image is a color JPEG image.
+
+00:00:36.480 --> 00:00:39.150
+So, it's actually a three-dimensional matrix,
+
+00:00:39.150 --> 00:00:40.575
+with channels for red,
+
+00:00:40.575 --> 00:00:43.995
+green, and blue pixel intensities.
+
+00:00:43.995 --> 00:00:46.930
+For each pixel in the matrix,
+
+00:00:46.930 --> 00:00:49.670
+the intensity values across these three channels
+
+00:00:49.670 --> 00:00:52.940
+combine to create a full spectrum of colors,
+
+00:00:52.940 --> 00:00:55.900
+and varying the pixel values in each layer,
+
+00:00:55.900 --> 00:00:58.870
+changes the overall visual effect.

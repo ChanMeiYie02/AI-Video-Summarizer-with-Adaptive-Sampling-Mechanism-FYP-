@@ -1,0 +1,155 @@
+[0.0s - 29.0s]
+Today I'm going to talk about the stability of inflation maximization.
+
+[29.0s - 58.0s]
+So it is well known that multiple things can propagate in the social network through the social links. So for example, news, idea, innovation and also adoption of new product.
+
+[58.0s - 87.0s]
+So for example, you have got a nice new phone. You like this phone and you like recommend this phone to your friend.
+
+[87.0s - 116.0s]
+Assume that there's a certain probability that you will successfully persuade your friend to buy the same type of phone. Then you may make you attempt your friend after considering about.
+
+[116.0s - 145.0s]
+It may be decide who takes a form as well and also your friend himself also like this product may also want to recommend this product to his own set of friends.
+
+[145.0s - 174.0s]
+So for example, he may make his attempt and his friend are after thinking about it while.
+
+[174.0s - 203.0s]
+Grandma decided to take this one and the other two medicine now too. So at this process goes on the social network. Adoption of this new phone.
+
+[203.0s - 232.0s]
+Propagating.
+
+[232.0s - 261.0s]
+Social network.
+
+[261.0s - 290.0s]
+Ethel cascade
+
+[290.0s - 319.0s]
+So in the previous life I have showing example of diffusion behavior in social network and more specifically is the example of a widely used diffusion model, which is the independent cascade model in the independent cascade model. At the beginning we assume that there is a set of activated users at the beginning. In the pre example, the guy with the new phone is the only element in the set, then each newly activated node you will have single chance to activate is still negative, naberrie with probability PUV and we call them the activation probabilities. In the previous slide, these are exactly the numbers associated with the edges in the social network. And the diffusion behavior in social network can have multiple applications. For example, one could utilize diffusion behavior to promote new invention in order create societal values. Or companies could utilize this phenomenon to carry out their marketing. That is, assume that the company wants to promote my office new product among individuals in the social network. Then one possible strategy to give some free samples of this new product to some of the individual in the social network and the hope is that these people will like this product. I recommend this product with their friends. Finally, trigger Cascade as shown in the previous slide. Then the question to ask is which set of individual through the company gives free samples too? And that is exactly the influence maximization problem which is formulated by camping at all in 2003. That is, to find K peoples in the social network who will generate the largest influence, Brandon social network and a certain diffusion model and leave this talk. I will mainly focus on independent cascade model.
+
+[319.0s - 348.0s]
+Then if you really want to use influence maximization to carry out a real world marketing campaign, then one question remains. That is, where do the parameters puv, namely activation probabilities come from?
+
+[348.0s - 377.0s]
+Because usually even you can observe the social network structure from some sets, for example Facebook or Twitter. But as mentioned by many previous speakers, decoration probabilities which represent the strength of influence between pairs of individual in your social network are usually not directly observable. So imply that you have to infer that somehow as mentioned by the previous speakers. By some algorithm to do network inference.
+
+[377.0s - 406.0s]
+So so currently with the increasing availability of large scale social network data you will have the chance to directly infer your activation probabilities from previous diffusion history on the same social network. So assume that.
+
+[406.0s - 435.0s]
+You run whatever network inference algorithm and you have estimates the activation probabilities associated with your social network and now you're ready to run your favorite influence maximization algorithm to select.
+
+[435.0s - 464.0s]
+That afterwards you may run simulate.
+
+[464.0s - 493.0s]
+And found that you think that can successfully activated a lot of individuals in the social network and.
+
+[493.0s - 522.0s]
+Seems that you're quite happy about this result and eager to apply it for real world where marketing campaign. But wait, what if you estimations of the activation probabilities are not exactly correct? Maybe the little bit of due to the noisy in your observation of previous diffusion histories so forth.
+
+[522.0s - 551.0s]
+Example the ground truth activation probabilities maybe as shown in the graph below. But when you try to select your sister you only you are solely based on the estimated activation probability in the bar graph, so that now there is a probability so that there is possibility that a success which is good for estimating set of activation probabilities may not be necessary good under the ground truth network. So for example.
+
+[551.0s - 580.0s]
+This art may be good for this above network, but under the ground truth social network, it may only activate a few individuals, so under this case.
+
+[580.0s - 609.0s]
+You mean that your marketing campaign will fail? This example implies that the uncertainty in the influence trains would possibly lead to instability of your influence influence maximization algorithms.
+
+[609.0s - 638.0s]
+But you remember that that instability really exists. So in order to answer.
+
+[638.0s - 667.0s]
+This question let's consider even more extreme example. Assume that our social network consists of just two non disjoint. Click it with fixing nodes and we estimate the activation probability for edges in both click.
+
+[667.0s - 696.0s]
+Off by over 16 and now you asked to select exactly one seat. So under this case, which City would you like? Which no, we like to pick.
+
+[696.0s - 725.0s]
+Indeed, by the symmetry of this graph, you can pick up trade node. Let's see that we pick this node in the right click. It.
+
+[725.0s - 754.0s]
+I thought that. We estimate the activation probability for editing the left click a little bit and or estimate that in the right click a little bit. As a result.
+
+[754.0s - 783.0s]
+Out.
+
+[783.0s - 812.0s]
+For example, you may only activate it a few individuals in the. In the click you select. But surprisingly, if you had picked your seat.
+
+[812.0s - 841.0s]
+In the left click you found that.
+
+[841.0s - 870.0s]
+You could activated much more number of individuals in the left click.
+
+[870.0s - 899.0s]
+This case definitely will have this instability issue. But this issue doesn't always exist, so let's consider.
+
+[899.0s - 928.0s]
+About this example again, but now the estimated activation probability. Here is 0.3 for both clicks. We found that instead.
+
+[928.0s - 957.0s]
+Under this Case No matter your estimate, the activation probability a little bit underestimate that.
+
+[957.0s - 986.0s]
+I bet you could roughly activate.
+
+[986.0s - 1015.0s]
+The same number of individuals.
+
+[1015.0s - 1044.0s]
+So here we don't have this instability issue. It turns out that for this simple social network with only one seat selected, we have a clear characterization of when will this instability happens. That is, as long as the activation probability is bounded away from the population space hold of this graph, then we are free from miscibility, but what?
+
+[1044.0s - 1073.0s]
+About more complex social networks, for example this one I use as example in previous life or the activation probability or social with the edges are not uniform, which means that we could not no longer use the population theory to characterize instead.
+
+[1073.0s - 1102.0s]
+Party and that is exactly the question we try to answer in our paper. That is, given instance of influence maximization, can we diagnose efficiently whether this instance is stable or not? The 4th.
+
+[1102.0s - 1131.0s]
+Unfortunately, we don't have a complete answer to this question. As a complete answer to this question implies computing percolation threshold of any arbitrary graph which is known to be a really, really hard problem, but.
+
+[1131.0s - 1160.0s]
+Fortunately, in this paper we provide a useful and practical partial solution for it. That is, we design algorithm. We give an unstable instance or algorithm can correctly fire alarm and telling you that you are now under the danger of instability.
+
+[1160.0s - 1189.0s]
+But on the other hand, we give a stable instance. Then our algorithm may possibly give false alarms.
+
+[1189.0s - 1218.0s]
+So for the previous part of my talk, I'm quite vague about the definition of stability about instability. So let's now try to define that more formally. So in order to do that, we first need a model of misestimation of our activation probabilities.
+
+[1218.0s - 1247.0s]
+So recall that under the sea, under the independent Cascade model, for each ad UV there is associated with the estimated activation probability PUV and you can consider that PUV as a point in the interval between zero and one. Now besides that one.
+
+[1247.0s - 1276.0s]
+In that associate with each ad, there's also uncertainty interval that contains your estimation puv it represents your confidence in your estimation of the activation probability and further.
+
+[1276.0s - 1305.0s]
+Assume that the ground truth activation probability PUV prime could possibly lie anywhere within this uncertainty interval, and that's our model of misestimation with this definite.
+
+[1305.0s - 1334.0s]
+And we define the stability of influence maximization as follows. We said that instance, which is now a combination of the estimation of activation probability of all edges and also the social and certain intervals. We said this instance is stable if the difference in influence is more for all legal ground truth, activation probability, PV prime and for all possible subsets of set K. So indeed, this definition.
+
+[1334.0s - 1363.0s]
+And directly leads to this optimization problem and which we try to maximize jointly or all possible subsets of size K and all possible ground truth activation probabilities. That is, we try to consider the worst case and try to maximize the difference influence under estimated set of parameters and under the ground truth parameters. 1st result if the if the answer of this optimization problem is small then we can guarantee the instance at hand should be stable because here by this joint optimization we are considering about the worst case scenario. So in order to solve this problem.
+
+[1363.0s - 1392.0s]
+If we take a close look at the second Max operation, we found that this part can be sold in Attic Lee by putting all the ground truth activation probabilities either to the maximum or to the minimum within the interval. As a result.
+
+[1392.0s - 1421.0s]
+Can simplify this problem as follows. Which record is the inference difference maximization problem? That is given to influence of influence maximization with with activation probabilities PUV&PV prime such that P with elementwise greater equals NPV prime for all edges UV and let Sigma and Sigma prime with respective influence function or social visits to instance. And we would like to find a set S of that K that maximizing the difference between Sigma and Sigma prime. Which is that we tried to solve the first Max operator.
+
+[1421.0s - 1450.0s]
+So here is our main theorem result that will utilize to throw the previous influence difference maximization problem. Our main theorem say that under the independent Cascade model, the difference between Sigma and six Prime is a nonnegative and submodular function of the set S. So it is well known that the sigmas at the objective function of influence maximization is monotone and submodular, but surprisingly that here the difference between two influence function could also be submodular, but it's no longer monotone. So imply that we could not use the naive hillclimbing greedy algorithm to solve this problem is that we go to a more recent technique with this random greedy algorithm to solve this non monotone submodular function maximization under cardinality constraint. We use the random greedy algorithm. Which is proposed by Buchbinder at all. It has an approximation guarantee, roughly one or E which is worse than the 1 -- 1 or E of the Hill climbing greedy algorithm, and it has the running time, which is the same to the naive greedy algorithm of influence maximization. So once with the result of the previous influence difference maximization problem, we have the following query such that assume ASC set that you sold under estimated set of activation probabilities and we can guarantee that this set could also provide your constant approximation even under the ground truth networks. However, here this see is no longer 1 -- R E is that it will depend on the instance that and more specifically. It will depend on the result of the influence difference maximization problem.
+
+[1450.0s - 1479.0s]
+So instead of going into detail of the proof, which of their own interests, and also the detailed form of this constant, I would like to go to conclusion and talk more about the implication of this work so as well known that noise is everywhere in the social network. So it means that our estimation for the parameters of diffusion models could be also noisy. As a result, the influence maximization could be unstable. It directly calls into question the practicability of the algorithm approach of influence maximization. So in order to tackle with this problem in this paper we propose algorithm that can diagnose this kind of visibility efficiently and by thorough experiment on both aesthetic and real social network. We found that early 10% relative error in your estimation of the activation probability still give you a different approximation. However, when the level of noise is about 20% relative error. If you already large enough for our algorithm to fire alarm. And considering that 20% relative error is quite common in the social network data, first takeaway message you should be really careful when you try and apply algorithm influence maximization for real world problems. Also, all the techniques in this talk can be generalized to other different models. For example, the linear threshold model and the more general triggering model.
+
+[1479.0s - 1508.0s]
+So about the future work, One Direction is to generalize to other diffusion models. For example, the generalized threshold model. Or we could generalize our misestimation model. The current model assume that the maximum duration of each edge is bounded, but what if we want the total of the square division bounded? Also, at the end of this talk, I want to talk a little bit about the big picture of algorithm influence maximization. So that algorithm influence maximization has been proposed for 10 years with thousands of paper published on designing efficient algorithm result without approximation guarantee for different diffusion models. And As for this KDD conference, the algorithm difference maximization even receive Katie time of time test of Time award. However, the algorithm influence maximization, as far as I'm concerned hasn't received an in real world application in industry environment so far. So we may run. There was the reason for that. One possible reason, as we point out in this paper, may be due to the misestimation of the parameter of your diffusion models. But what if that our different models themselves also noisy? So maybe we choose to use the independent cascade model or the linear threshold model make due to their desired mathematical properties of the convenience. They can brought us in the algorithm design, but they may not necessarily represent the diffusion behavior in real life. Accurately enough. So I think perhaps we order to achieve real tractability of influence maximization. We as a community maybe need to step back and think on check how accurate our models. I think that's all for my talk, thank you.

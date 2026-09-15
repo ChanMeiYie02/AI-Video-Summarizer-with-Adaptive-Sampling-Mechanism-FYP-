@@ -1,0 +1,22 @@
+{
+    "id": "7ucv45zzonovipaedh7c67vjty3pik5f",
+    "title": "Theoretical neuroscience and deep learning theory",
+    "url": "http://videolectures.net/deeplearning2016_ganguli_theoretical_neuroscience/",
+    "info": {
+        "author": [
+            "Surya Ganguli, Department of Applied Physics, Stanford University"
+        ],
+        "published": "Aug. 23, 2016",
+        "recorded": "August 2016",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 118,
+    "num_sentences": 1024,
+    "num_clips_with_summary": 50,
+    "num_gt_summary_sentences": 122,
+    "ground_truth_summary_length_chars": 15070
+}

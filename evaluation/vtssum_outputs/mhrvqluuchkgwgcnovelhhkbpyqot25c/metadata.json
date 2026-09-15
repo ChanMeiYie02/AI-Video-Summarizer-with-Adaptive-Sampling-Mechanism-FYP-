@@ -1,0 +1,22 @@
+{
+    "id": "mhrvqluuchkgwgcnovelhhkbpyqot25c",
+    "title": "Collaboration-based function prediction in protein-protein interaction networks",
+    "url": "http://videolectures.net/mlsb2010_rahmani_cbf/",
+    "info": {
+        "author": [
+            "Hossein Rahmani, Leiden Institute of Advanced Computer Science, Leiden University"
+        ],
+        "published": "Nov. 8, 2010",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Neural Networks",
+            "Top->Computer Science->Bioinformatics->Computational Systems Biology"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 122,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2869
+}

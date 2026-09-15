@@ -1,0 +1,22 @@
+{
+    "id": "voq62iywm2a67x7dcsi6nzjdf6bmllpd",
+    "title": "Reductions in Machine Learning",
+    "url": "http://videolectures.net/icml09_beygelzimer_zadrozny_langford_riml/",
+    "info": {
+        "author": [
+            "Alina Beygelzimer, IBM Thomas J. Watson Research Center",
+            "Bianca Zadrozny, Computer Science Department, Fluminense Federal University",
+            "John Langford, Microsoft Research"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 63,
+    "num_sentences": 848,
+    "num_clips_with_summary": 43,
+    "num_gt_summary_sentences": 97,
+    "ground_truth_summary_length_chars": 10896
+}

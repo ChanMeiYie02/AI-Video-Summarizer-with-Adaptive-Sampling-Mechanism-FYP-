@@ -1,0 +1,20 @@
+{
+    "id": "abebfdfuvp5toknpz6d4lkt6vlzylxt5",
+    "title": "Introduction to Big Data Analytics",
+    "url": "http://videolectures.net/eswc2013_grobelnik_big_data/",
+    "info": {
+        "author": [
+            "Marko Grobelnik, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 5, 2013",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 60,
+    "num_sentences": 838,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2254
+}

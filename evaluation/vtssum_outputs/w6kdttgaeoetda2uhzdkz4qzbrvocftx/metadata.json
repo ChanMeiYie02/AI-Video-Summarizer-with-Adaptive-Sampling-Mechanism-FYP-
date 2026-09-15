@@ -1,0 +1,20 @@
+{
+    "id": "w6kdttgaeoetda2uhzdkz4qzbrvocftx",
+    "title": "Bayesian Localized Multiple Kernel Learning",
+    "url": "http://videolectures.net/nipsworkshops09_christoudias_blmk/",
+    "info": {
+        "author": [
+            "C. Mario Christoudias, Linguistics and Philosophy, Massachusetts Institute of Technology, MIT"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods->Multiple Kernel Learning"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 203,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 3236
+}

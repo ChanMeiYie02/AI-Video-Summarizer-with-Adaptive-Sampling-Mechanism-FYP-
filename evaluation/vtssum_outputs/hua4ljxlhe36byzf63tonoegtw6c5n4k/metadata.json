@@ -1,0 +1,21 @@
+{
+    "id": "hua4ljxlhe36byzf63tonoegtw6c5n4k",
+    "title": "Learning with Dependencies between Several Response Variables",
+    "url": "http://videolectures.net/icml09_tresp_ldb/",
+    "info": {
+        "author": [
+            "Volker Tresp, Siemens AG"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Multi-Task Learning",
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 55,
+    "num_sentences": 638,
+    "num_clips_with_summary": 35,
+    "num_gt_summary_sentences": 81,
+    "ground_truth_summary_length_chars": 8518
+}

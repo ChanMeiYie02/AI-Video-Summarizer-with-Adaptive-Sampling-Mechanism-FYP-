@@ -1,0 +1,20 @@
+{
+    "id": "wmkyvpn4rntvco6niixwrdv3gjeqe3mo",
+    "title": "Introductory lecture to sampling and sample pre-treatment techniques",
+    "url": "http://videolectures.net/meet-cinch_modul49_introductory_lecture/",
+    "info": {
+        "author": [
+            "Marko Štrok, Reaktorski center, Institut \"Jožef Stefan\""
+        ],
+        "published": "Dec. 23, 2019",
+        "recorded": "December 2019",
+        "category": [
+            "Top->Chemistry->Nuclear Chemistry->Radiochemistry"
+        ]
+    },
+    "num_segments": 5,
+    "num_sentences": 52,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 1967
+}

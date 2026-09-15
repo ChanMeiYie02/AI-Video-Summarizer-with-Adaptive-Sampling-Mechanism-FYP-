@@ -1,0 +1,207 @@
+[
+    {
+        "text": "So this is a resource paper and there's a war going on since more than a decade. About almost 50 years. So this year we released the resource because it went through many projects and is a joint project between computer science and humanity.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "What we are talking here is about drama. Drama is pervasive. Now, in our culture and usually we have a definition that is this. So it's a story. But this conveyed by characters while they perform live actions. So it's not narrative in general, but drama is particular case. But you can see many types of drama around that are that are rated too. Also, reality shows not only theater movies. Or you have video games, reality shows, and whatever you can think about, it's really pervasive across.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Media now it goes into the digital humanities debate over the address, the challenges of digital humanities. Because of there is a typical debate between what is the analysis of the text or of the performance, and you can see many relationship. Now there have been many scholars that have addressed several issues concerning drama, so you can go to genre writing style. Also, visions of the world, but what we now is usually there is a difference between stories and drama and that they are addressed by narratology in general. So we're going to this special stuff and.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "In this case, there are many ways of encoding, but most of the litter go to stories, so they take many theories from dematologist because they are structural theories and so it's easier to translate them into what is an encoding or some sort of representation in general.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Most of them address either the linguistic layer so we have sort of interpretation and there is a project called Drama Bank project that addresses sort of how to map this text to some intentions and the interpretation of what is the text is about and.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "There are some other that have been built ontologies. Again, most of them concern productive parts. For example, in this case you have that has been applied to the so they go through events typically and entities, and they are trying to address the idea that users can build fan fictions on their user centered user generated content. Our new one I can exploit. What is the content?",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Story at large. Also, this project, again based on an ontology, goes into stories and and entities, and the idea is you can generate some story. So in this case, for from curators from museums that rely on storytelling.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So what we are going here is to identify what are the real dramatic qualities. So it is really the focus. What is their focus of drama? And these are the elements that are shared across cross media, manifestations of drama and they've been identified by many many scholars along the centuries if.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "You go into the core of these issues you obtain for large categories that pertain to drama. Actually actions, so drama consists of actions. Actually, the Greek word drama is about actions, and you have these actions organized into units. And this units. These actions stem from the intentions of the characters who are in the drama, so they have some goals, some internal motivation so. There is no action without the intention that. Is really is going is diploid as an action and this cause conflicts, so without conflict there is no drama, so this is one of the.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Organizations now we have gone in through some scenarios to address this point. Mostly, you can find these details in the paper, but we implemented some of the scenarios made by the neon.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Idology and we collected a lot of literature about drama. There are many scholars addressed these issues of drama and to identify the peculiar entities that we belong to, this ontology and we went into AI technicalities to in linguistics to understand what can be can be a model for those for those entities so.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "In order to do this, we made a very strong debate. Very large debate with the drama, scholarship and we went through a wiki. So in case you're interested, you can find the discussion here, in which we identified and for each. Entity we went through the literature and you can report how we collect the statements for our ontology. Through this wiki you can see the discussion.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "And so you can see that you have these actions that are here. These actions stem from the intentions of the characters that are represented as in VDI architecture for agents. As plans. Plans can be hierarchical, so you have long term intentions, long-term goals, and the short term intention that go to single actions and these actions organized into units. And these units, usually a segmented through as seen hierarchy. It is called and. Action this this plans are the intention of agents who have mental state and try to achieve some goals in going from there. What is the goal of their intentions? And they also feel emotions in.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So we have a taxonomy and in the some parts of the economy are shared with external resources that can go to common sense, knowledge and linguistic schemata, while drama entities go mostly here and you have the structure that our plans and timeline and the set of conflicts and the entities that are the processes. So where actions are in the endurance, so the agents and the objects involved and the processes. Are typically process the deeper Durance are processing States and states can be state of affairs or mental States and these are related to agents.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "This is connected the external resources in terms of links to the resources and patterns in this case.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Also so we can we came out with a number of statements for each of these entities and we elaborate some axioms for those.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So I won't go into.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "This details are just.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Can provide you with. This is a complete drummer. Ontologies at a glance you can see here you have the timeline and the time we organized into units that go to some situation change from some consistent state to another consistent state and these are actions are into units and actions stem from these either key or plans of the agents and agents have their internal state, their mental state they want to achieve some goals because they want to. Or establish some values that can be at at stake at some point. And also you have in hierarchical organization recursive organization of scenes associates organized into units, larger scenes and act. There are many. You can find many experiments with users with Audience General Audience, so you can find some boundaries over the scenes and you can appreciate even if if not, the author is explicitly indicated in. Text you can experience some boundaries, and this hierarchical organization at some point. And of course the actions are the participants of situations according to some schema that we can recognize.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Take someone example. So I think could be clear these are famous scene. Well actually it's not famous for me but for general audience, but it's famous for drama scholars. This is the climax. Scene of hamlet. It is called the nunnery scene. Other than all, before collaborating with with the drama scholars actually in this scene this is, you see that this is a failure and you know well the general thinking is Hamlet wants to revenge his father that was murdered by his uncle Claudius, who is now the King and husband of the Queen, his mother. So the general thing, and so the general plan of Hamlet is to. Go for this so it's a quest for this revenge and he wants to the first part. So the long term goal is revenge and then you have two subgoals. The first one is to really be sure that cloud is the murderer, and the second part is the long term goal. The long term sub goal is to kill the King. So and in the first part, he wants to unmask klaudius, and in this case he put on some show that. Clouds will reveal he was really the murder, but in this clean Maxine, he is meeting of failure, hum. Let this is Laurence Olivier movie and in this in this scene he tries to convince a failure who is in love with him that she must go to a nunnery because the Elsinore court is all corrupted and she is the only honest. Person there, but as you have seen in the beginning of this scene. Behind the curtain there are Claudius and her father Polonius, and the goal here for Philly is to make Hamlet talk because I'm not is pretending to be mad and they want to. Understand that his madness is given by some by rejecting the love of a failure. So the idea is that she tries to make him talk, but actually he he wants to convince her to go to nunnery. But at the end in the climax part of this scene he understands this is a she's trying to do something for somebody else, and so he put the final question, where is your father? And she lies saying. He's at home, my Lord, while he is behind the curtain. So if you go.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Through this you can see that there is a conflict between Hamlet and Ophelia and Hamlet. Is trying to establish his value of honesty and honesty is putting its act biofilia who is lying to him and they have different goals in mind. Affiliates trying to obey to his to her father Authoritie and he's trying to restablish honesty and sending her to a nunnery.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So we may.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "All this we made this representations and.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "We used the ontology throughout these years in men.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "The applications in.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "To validate the resource and they changed over the years. This is an approach for calculating emotions so you have some rules that can say that if your value is at balance because of the effect of another character, you feel reproach for that correct.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "And we may.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Some experiment to do this. Then we encode the summary here so.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Like Stanislavski method in our ontology, and then we made a tool.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Visualizing so this is the scene and you can see the plans of the characters that fail at some point and you understand how it is going, how characterizations are aligned with the actions that occur here.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "And then we are doing this in a large corpus. This is the cherry Orchard.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "By Chekhov and we extend this to music. Now this is the alignment of the text in opera, and what happens in music with measures? And then we propose this for the preservation.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Of intangible Cultural Heritage is Oprah.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Is the ontology an when we are building?",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Now through an interface for annotating. Because ontologies are very tough for people from the humanities, so an interface for annotating units with the timeline and the plans that underline that units.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "And this is a prototype corpus will be released in a couple of weeks. There's a conference on digital heritage here near here in San Francisco. With this we are.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "People are already trying to compare several versions of the same of the same drama.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "It is also used in a practical from the industry. There is a company that is trying to exploit our ontology for classifying scenes from the famous movies in order to be released for professionals.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "General. So this is Drummer Ontology and it has encoded the primary elements of drama, so the so called dramatic qualities and we produce amazing shifted ontologies for each drama and we are validating it through applications.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "We are releasing the corpus and we hope that the interface can induce some people from the humanities to crowd source more dramas in within our corpus and so.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "We'd like to help people use their resource, thanks. You can use this Mike if you want. So yes, thank you very much as quick. Yeah, it's funny because two weeks ago I was reading one of your paper, but I didn't make the connection that is still with Hosanna so very interesting to me because I start to work on the work by Josh faulty. I think you mentioned in the paper the 36 dramatic situation, so we put this also in ontology. So did you include this kind of thing? You work? Also? Vladimir Propp is closely related to 31 functions. And I was wondering if if you're also putting this in this ontology or we could integrate what we have been doing with your work. Actually there is a paper in which we that we publish in the arm as the Agency engine conference. In that case, we show that the 36 situation made by Guild quality can be encoded into drama, so they are sort of by product the shortcut through some of the features you can see here. You see the conflicts and the roles. In that case you can encode in our case. In our ontology, so sort of by product, mean derivative, product of the ontology that is more basic than GAIL, then Pulte situations. Great work, I mean, it seems that you really put a lot of effort in deliberately working this. This context will the work or the instance data will also be available at some point or is is there a couple of weeks? Yes, I mean the corpus with the annotated ontologies and we also release this tool for visualizing the main relations because there are mean we in the tool we realized that. In this tool that This is why we made it that people are more more interested in this alignment of intentions, because every here so they want to instruct actors when do that here? So this thing they need to know what is the goal of that character in doing something. This is the most important part, so we. We abstract from the linguistic part, so actions that are made no linguistic frame. If if you kill somebody, you need the killer in the killed person. You know this thing. So we abstract from that in giving just the alignment to what is going on and each color dot it corresponds to some individual. Yeah, this is sort of like in audio editors interfaces. You have tracks for each character and for each character you have a large plants and individual plans. So hierarchy of plans that. That are. Are aligned with the actions that actually occur here, so this is the timeline that is really happening. This hierarchical structure, thought by the author in this case. So big facts that going on and this is what are the intentions of the characters and the crossed boxes are because that plans failed. So it reveals what what you are going to, but it's easy to check here, so we are releasing also that interface, which makes a very like. This is very complex. This is the simple seen before you have seen. There are many units. Avoid omelette is talking with the failure of India's trying to make him talk. But actually Hamlet is trying to avoid her but he fails and then they start to talk and in this case or failure gives back the gifts by saying. Gives you gave me, he said I didn't give you a gift, I mean. And then you go here and you see that the failure here is a very hierarchical plan trying to make him talking. He's very active. While here you can check that Hamlet is trying to do things, trying to convince her to go to a nunnery, but at some point he realises that she's not honest. So the big fight is here. You can see from the occurring of plans and they end while Hamlet tries to. Demonstrate her honesty and he fails. Becausw she lies. So at the same point everything finishes in the OK Great just to give you a brief thank you. Sorry I was late probably OK. Thank you.",
+        "start": 1160.0,
+        "end": 1189.0
+    }
+]

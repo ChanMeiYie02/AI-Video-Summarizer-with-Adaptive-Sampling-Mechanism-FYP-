@@ -1,0 +1,20 @@
+{
+    "id": "zklq7fvpggv774v6l2ejzdobzegbuo4f",
+    "title": "Linked Data: Now what?",
+    "url": "http://videolectures.net/eswc2010_heath_ldnw/",
+    "info": {
+        "author": [
+            "Tom Heath, Talis"
+        ],
+        "published": "July 13, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 116,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 430
+}

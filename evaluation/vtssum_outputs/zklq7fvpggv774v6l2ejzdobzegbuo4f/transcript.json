@@ -1,0 +1,237 @@
+[
+    {
+        "text": "So I think I win the prize for the most slides and they have 44 to get through in 10 minutes so. So I never thought it agree so much with Aldo Gangemi, so we're off to a good start. I think for the panel, but I want to use this this time to make some controversial and some less controversial statements. I'll leave you to decide which ones they are.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So my first claim is that without Link data would be no semantic web. There would be no semantic web and there could be no semantic web from a technical point of view. If you can publish some data using semantic web technologies, that's great, but if it's not linked, it's not a semantic web from a professional or personal point of view. Then if it wasn't for the success of the linked data activity, then my argument is that the semantic web as a research area and a Technology Strategy would be dead, would be in the in the wilderness. If anyone doesn't agree with me then.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Those of you that were around in 2005 or remember it was a fairly interesting time. No one understood, no one took us seriously. Everyone was rubbish.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "There wasn't even a semantic web beyond our photo files, and even that wasn't really a semantic web. It was just a few RDF. See also statements linking an these files together.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "We were completely bogged down in the HTTP range 14 issue. Would you please raise your hand if you remember the HTTP range 14 issue? OK yeah few diehards in the in the audience. So this is a horrible thing that bogged us down for years and no one could do anything because they didn't know how to how to actually get on. And publishing build a semantic web or web of linked data so.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "That was resolved or that that was a horrible issue. And then all we had to do was just consume the wine ontology to make sure I make things better and hope that things get get eventually better for us. So it was pretty.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Dark time, exciting but dark.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "And then this happened.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "This and this.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "This and this.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "And this and this.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "And this and now we have a semantic web.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So what worked well? Quite a few things worked. The first thing we got clarity the HTTP range 14 issues was resolved. There was a new understanding about how to deal with URA URA aliases which contradicted the previous guidance from the W3C about the architecture of the World Wide Web, and with that clarity we could really we could actually get on and build a semantic web 'cause we knew what to do. We had a set of.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Basis on which to proceed. So that was the very clear set of instructions from the WTC about HTTP range 14. If you haven't heard of this, go away and read it. Highly recommend it.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "The second thing that worked was that we had some shared principles and some norms rather than constantly arguing about some of the specifics of how to publish link data, we actually had a set of principles which were simple enough to implement and specific enough to get on and do something.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "And most importantly of all, I think we took some action. We didn't just sit around and talk about it. We got on, did something, published some data linked together and as well they describe Bootstrap Bootstrap this.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Web so, So what is it?",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Working well, I think. Firstly, there's some kind of terminological confusion which I.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "To clear up, so Link data is a style of publishing data on.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Aweb linking open date.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "It is a project. Open Data is a style of licensing data that is very clear about its recent as very liberal terms of re use and open data is complementary to but orthogonal to link data.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So let's not put openness of data on the critical path to adoption of the linked data principles because not every bit of data that's published as linked data is going to be open and not everybody of open data that's published on the web is going to be public data. So let's be clear about the distinctions between these two and be clear about this when we're communicating this.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "People. So.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Network, so there are a few issues we need to address licensing. I've kind of talked a little bit about. I'll talk quickly about quality and.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Later and then applications. So the links in link data. I mean that's what the whole things about, right? But we've seen in the link community in the web community in the last couple of years. The whole lot of agonizing about the same as issue. So what are the semantics with same as are the appropriate? Is it being used inappropriately by people? Who cares? I mean people in this community care, but no one in the rest of the world cares, no ones complaining because no one is doing anything with the data yet. So no ones taking data using our same as statements, smashing it together. And watching planes fall out of the Sky or nuclear power stations explode. No one cares, so let's just get on with it. Published some more data and wait to see, or at least build the applications that do this reasoning cause these problems and then revisit the issues with a real kind of set of experiences about what these problems actually are so. Need to chill by the pool. That's where the dogs on the inflatable thing.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "So yeah, so more more things about the links. So if you look at the Flickr rapper, which takes photos from Flickr and links it to DB pedia, this is one of the photos you get when you ask for depictions of the film atonement. So this is the cover of the book the.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Is based on. This is a film poster about the film.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "OK, a little bit. This is one of the.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Locations where the film.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Filmed, this is another location. This is a black rectangle.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "These are two people dressed up to go to the premiere.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Film atonement",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "This is another black rectangle and these are some photos from the from Yom Kippur the the Jewish.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Festival on the Day of Atonement.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "This is some more of the same, this is some.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Random piece of artwork from Florida.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "This is a band called Atonement and that.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Some second life characters or something, so these are apparently pictures of or depictions of the film atonement, and I think you'll agree that there's some fairly significant data quality issues there, which I think we need to address. No ones going to build a meaningful application from this from this data. When Andy.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Results that get returned. So the killer app question. So every wants to know. OK, what's the killer app of the semantic Web? Or Link data going to be?",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "Then, well.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "There may not be one. I think we need to accept that link data might be a small incremental improvement to existing ways of doing things on the web that don't change the nature of application we build. Don't change the business model, it might just be a slightly easier way of doing stuff that we're doing already. I don't personally believe that, but we need to accept that.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Possibility. Second answer is if I knew what the link Data Killer app was going to be, wouldn't tell you I'd be building it myself, so that's my own.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Personal secret and you know when we think about linked data or applications as a whole, they just post hoc rationalizations. They're just ways of people looking back and saying, OK, oh wow, actually, the you know Google was the killer app of the of the web, but no one knew that when it was being in development. So let's just kind of get over it. No one cares about the killer app of electricity, refrigeration or television. Now, who cares? We're just living our lives and using it, and assuming that that exists as a core bit of infrastructure that supports our.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "So my request is or might demand actually is no more speculation or obsessive speculation about the link data killer apps, only principled analysis based on literature based on principles and theories. That's going to tell us what in which areas we should focus our efforts to find these kind of transformative applications so.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "So. That's my last slide. Thanks for your time.",
+        "start": 1334.0,
+        "end": 1363.0
+    }
+]

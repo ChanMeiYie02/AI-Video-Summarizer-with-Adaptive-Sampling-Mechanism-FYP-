@@ -1,0 +1,206 @@
+[0.0s - 29.0s]
+Alright, so I can probably stop. Thanks everybody for coming to this last hurdle that separates us from dinner. My name is Paul Alaska. I will in the remaining hours all introduce you to machine learning. Applications are very exciting. Field of computer security or where we have been working at our group at Crownover first since about four five years. So I will specifically focus on the topic of network intrusion detection, which is one of very important problems. As you will see. Before I proceed, I would like to ask something for the audience. How many people consider themselves here? How many people here consider themselves computer scientists? OK, so. More than 1/2. OK, so.
+
+[29.0s - 58.0s]
+I will start in the talk with a short programming quiz. What is the following program do that you can see here on the slide? Now that's a pretty relatively short C program, so maybe let's take a few minutes. Just look at it, and then we'll have some majority voting. Oh, pardon. Time is the spam. OK so I think I guess. I guess we're ready to vote yes. So before I show what the I'll show you, what this program does, yeah. So let us first vote you know what do you think? Who thinks the right answer is a. Do you think I said that's that's alright? OK, so there's one vote for a what about B? Do those for the OK. One of the many votes for C. Convert to CD. OK. So you think that you know what's going to happen? Depending on the file? There are many conditions. Alright, well let's. OK, let's see. Let's see what's going to happen. I'm just going to. Hun. Get back this. Presentation. Anne. OK, let's. Let's do some echo, yeah, so let's let's write something with this file. So you really see it contains, you know something that I've sent there and that's this program is called. Redmap he's going to sleep for awhile, you know, 5 seconds, not more. Do something so. It basically lists, you know, read the file and checks and prints out its content. You know some more diagnostic information that will see what's doing later. Anne. This is something else. Another fun. So if I start this program and send something to the file, you know, while the program runs and I was going to. Show something else. So it's really sort of waiting and you know what's going to happen in this file. It's going to see what's going to happen then. After it's waiting until after the waiting period has elapsed, it reads a file and see what happens. OK, let's try something else. Alright. Now you can sort of anticipate that something is going to happen. Wow, that was a segfault. OK, that's not what we want. It was right in a sense, but it was predictable, so let's try it again. Nothing happened. Let's try once again. Wow, OK. Did anybody notice something? So this is a different shell. OK, right, but that was actually a bash shell. You can see from the from the. From the text at, you know my my my login prompt has changed. Now we can try something else. And write this program as a root. Well, nothing happened. Still nothing happened. Again, nothing happened. Well, it's a little more difficult to do it as a root. So basically the problem is, it's not really that reliable. Is that to do this hack I have to guess the return address of this program, and that's pretty tricky business, so Whoops. Star Wars. Unintentional, so if you see what it's trying to do. Basically the script here. That reads. That read some process information from a running process and find where the stack of this process is located, and then it calls a program which is actually an exploit that uses the stack information too. Well, that's right. Some information into this file that's going to be wrapped and the program that we have seen contains a buffer vulnerability which is being exploited from by this program. So if you look at this. Program that's actually doing the exploit. It contains something that is called a shell code, which is a binary code used for system to open a shell and then. I guess as the return address fills the buffer with some jumper dress fills the buffer with some other. Several information and well, then write this information to file and this information gets overflown into the buffer and the way it works is that if you recall how how parameters are stored on the stack, is the buffer is stored together with the return address. So if we overflow a buffer information in this buffer is going to spill out into the area where return address is stored, and if we're lucky enough to guess the right return address, you know this the. When returning from this function, this command is going to jump back to the return address, which is somewhere in the middle of the buffer, and this is where the shellcode is located. So at the end of the program, instead of returning to the main function of the operating system, we're jumping back to the executable code that has been written into this buffer and opens up a shell. So this is general how this buffer overflow works, and it's actually not that easy to program. There's many exploits of this code that are publicly available. So I basically hacked this program during this meeting for a couple of hours, although I'm not really a hacker, how should it? OK, so.
+
+[58.0s - 87.0s]
+What is it? What's even more alarming if you think about it, is that. The hackers are very good at distributing this information to community, so are certain websites. Including this one that you can hear at that that you can see here on the on the slide. Where exploit actually being sold for money. So this is an exploit auction. Where you can see that you know there are certain man it is not easy to read from that far away that certain exploits against the popular software I just offered for sale, and apparently there are people who are buying them and earning money on this information so. It is getting increasingly increasingly. The hackers are getting increasingly fast at finding vulnerabilities and using them for whatever reasons. You know, some of them are used for so called bots. You know those automatic computers that are sensitive that I used to send spam mails. Another very serious problem is Trion. So these are the programs that hidden programs that run on computers that can read the keystrokes and sweeps and passwords. So these are important issues that. These are very difficult issues that. People in security community are very worried.
+
+[87.0s - 116.0s]
+So. If you think about what we can learn from these examples, essentially one of the main source of secure.
+
+[116.0s - 145.0s]
+Problems with the growing complexity of systems. You know when built evermore. Complicated systems chances are that they're going to have those slips, those buffer overflows, or other vulnerabilities that programmers I just leave there when I'm working under high time.
+
+[145.0s - 174.0s]
+Russia. We can also see that the new attacks can be automated and distributed very fast, so you know most of the programs are most of the hackers do not really launch those attacks by hand. They use scripting languages, so it's since they are in command of very sophisticated programming tools. Of course they they can easily automate.
+
+[174.0s - 203.0s]
+Attacks, so that's why it's very important for us to be able to react to security incidents or. Any sort of security violations.
+
+[203.0s - 232.0s]
+Soon as possible. Finally. Very important issues that we're dealing with an extremely extremely smart. Enemies or smart opponents. As you can see, you know this the way this exploit was constructed. It requires some very intricate understanding of the way how operating systems work. Some very nifty programming things, and because of that, there's a very growing concern that essentially it's an arms race effect that you have seen in some other talks, and spam or web spam that basically. The detection mechanism always have to deal with possibility of attackers eluding them, and this is an issue that's extremely important also in computers.
+
+[232.0s - 261.0s]
+OK, so let me introduce you to the intrusion detection systems, which is the topic that I've been working on for awhile and so basically the idea of an intrusion detection system is that you monitor some network traffic or in general event streams for evidence of attacks, and to use this information for maybe either finding out what's going on or perhaps even controlling the systems operation. So by location the intrusion detection systems can be classified into network costs. And application based. So it's basically depending on what is being observed by operating principles. They are usually one the classical way of doing intrusion detection is based on signatures.
+
+[261.0s - 290.0s]
+Some an emerging field of intrusion detection uses behavior analysis to do the job so.
+
+[290.0s - 319.0s]
+How does a signature based IDs work? So in general it has to solve first of all a lot of technical issues. How to get packets from a network? How to do the packet processing? How to reassemble traffic so that it really looks like you know the normal traffic that is, or the usual patterns that are happening in the in the network.
+
+[319.0s - 348.0s]
+Some intrusion detection systems do some sort of feature instruction because they're trying to do detection some more abstract level than the level of packets, because network packets, as you will see content very, very specific information that is sort of.
+
+[348.0s - 377.0s]
+Difficult to analyze. The key part of a signature based IDs as signature engine, which is basically doing nothing else than string match. So signatures are, you know, specific byte sequences or specific event sequences that people know. That they belong to certain tag types and basically the whole operation of an intrusion detection system using signatures consists of chunking those string matching algorithms very fast and matching every incoming patterns for signs of malicious activity. So this has been fairly successful. There are some quite a lot of commercial projects product also freeware products. This is the general. This is the approach that currently prevails in the computer security community. Several reasons, but we shall later see that it does have its limitations and serious problems, and that's why some new techniques needed for it.
+
+[377.0s - 406.0s]
+Actions. So for couple of other things that.
+
+[406.0s - 435.0s]
+Some utilities for logging reaction setting.
+
+[435.0s - 464.0s]
+So what?
+
+[464.0s - 493.0s]
+Wrong with signature based ideas. So the the first and foremost and maybe the most important problem is that they can only detect something that we know of.
+
+[493.0s - 522.0s]
+So in order for this system to be effective, signature has to be available. There's actually fairly sophisticated infrastructure developed in the security community for maintaining those signatures for finding new vulnerabilities for developing signatures, but still it usually takes some time before signature is avail.
+
+[522.0s - 551.0s]
+Now the problem is that this alot of vulnerabilities are a lot of things that are being observed by major security companies that we don't even know what the vulnerability is. So this is called a zero day exploits. So you know that you know there are some patterns of exploits, but we don't know actually what are the vulnerabilities that are that are being used and this causes a lot of concern because as you can see using automation. One can leverage the damage from this kind of attack in very short time, so there's been actually studies on models of warm proliferation that have shown that a warm can so if equipped with this with a very aggressive distribution strategy can capture all vulnerable Internet services within 15 minutes. There was a study done on some people at Stanford University that have had a model of specific warm distribution behavior that I showed that. This is indeed what could happen. I mean things like that have not been observed in the practice, but you know, some of you may recall like 2001, 2004. There have been major warm outbreaks that have shown very rapid proliferation.
+
+[551.0s - 580.0s]
+So another problem with signature based ideas and this is the issue that has already been raised here. Other occasions is false positive rates, so the problem is that one might think OK signature based IDs are not really sensible to false positives because they only detect what is absolutely true, but it can happen that you know when one is trying to develop a general signature. So general expression that that is that would detect various or different variations of malicious activity that could also be sensitive to. Normal data, so there will be some. You know by chance there will be patterns that also.
+
+[580.0s - 609.0s]
+The normal date. So what's wrong about that one? I think. OK, so sometimes this happens. You know the ratio is not really is not really hot. But the problem is the again the scale of the data that one has to deal with. So if a sysadmin takes like 10 false alarms today's from an idea, you know he'll stay.
+
+[609.0s - 638.0s]
+Trusting the system. Now if you do some calculation, how many? What? What are positive rates one has to have in order to have 10 false alarms today? If you have 200 megabits per second thing? So what you're dealing with is actually millions and millions of packets per day, and it suffices to have an extremely low false positive rate in order to annoy a System Administrator. So. If you think about treating this problem, one should really radically rethink they. The attitude to false positives. That is actually, say, common in the machine learning community. So what are people are interested is actually methods that are reliable with pramil range of false positives, and they're not going to look at anything like 5%, five percent false positive. So this is complete.
+
+[638.0s - 667.0s]
+Out of range of classes. Performance is all.
+
+[667.0s - 696.0s]
+An issue so actually you know doing this this Patch.
+
+[696.0s - 725.0s]
+Scanning is. Nothing else in scanning each packet against a large number of signatures, so this is quite a extensive signature matching a string matching problem. Well, I think OK, faster computers can do better, but eventually one runs into some physical problems that the systems really consume. A lot of energy. One has to cool them down and so so some really if you have seen some some major networking infrastructure, this is.
+
+[725.0s - 754.0s]
+That becomes really an issue. So what, why can we? So what can we do with machine learning in order to?
+
+[754.0s - 783.0s]
+Address those problems so. One thing is of course, you know you've probably seen this picture many times already in this meeting. So in machine learning we understand what it means to. To generalize, So what it means to have good?
+
+[783.0s - 812.0s]
+Guarantees entrance it is also the case that. For machine learning, we learn some compact representation, so think of the signature based approach. This in fact nothing else, and memorizing data and trying to do some very stupid classification by comparing a new packet with something that we have already seen. So it's exactly instance based. Classification is that if you have exact match then you know we do have to have an alarm. Now machine learning offers a major reduction of the complexity of the of the concepts that we're building and that's why we can.
+
+[812.0s - 841.0s]
+Hope to have performance improves and finally what's very important is through anomaly detection. We can detect some novel events, and it turns out that an attacker has to do fundamentally unusual things, so you have seen that, for example, buffer overflow requires some Transocean binary information, and this is infinitely very unusual. Very specific behavior, so they have a good reason to believe that by doing anomaly detection on network traffic. We can detect.
+
+[841.0s - 870.0s]
+Normal attacks.
+
+[870.0s - 899.0s]
+So there's of course a few issues in machine learning that that that that we have to address by applying this algorithm, so we're dealing with some non Victorian structured data, so that's why it's very important to extract meaningful features or somehow to be able to cast those features into Internet.
+
+[899.0s - 928.0s]
+Space in order to run the algorithms. It's difficult to get unambiguous labels for this data, so again, this is you have seen that this problem is. Also typical for other applications of machine learning security domains. So in security the problem is that. In order to get label, you have to analyze some really very complicated information. So if you look at really the raw content of network packets, it's very difficult to really understand what's going on there, so it is a very time consuming process. It might also be impossible to unambiguously tell whether an attack pertains to certain packet, because there might be parts of an attack present in one packet harder than others, and so on. So the text could be really.
+
+[928.0s - 957.0s]
+Very carefully distributed network. We have malicious noise because an attacker might try to disguise selectivity or try to subvert the learning process in order for an algorithm to learn a different concept that is less.
+
+[957.0s - 986.0s]
+Buster detecting attacks and we also have to deal with high data volumes. That's why it's very important to have.
+
+[986.0s - 1015.0s]
+Efficient algorithms.
+
+[1015.0s - 1044.0s]
+So in the remaining of my talk, I will present your structure or I will show you some algorithms of our learning based ideas that we have developed and show some implications. That or some some new machine learning techniques that we had to develop in order to make this system work. So a general structure of our system basically follows the typical.
+
+[1044.0s - 1073.0s]
+Katech children intrusion detection system with two main components being the feature extraction.
+
+[1073.0s - 1102.0s]
+And the detector can.
+
+[1102.0s - 1131.0s]
+And so I will concentrate. I will show you some of the technical details of. Those two parts. So essentially the feature extraction requires analysis of packet information. There are three ways to do this, and. Detectors can in principle be any learning methods that that we know. So anomaly detection, classification, clustering, ranking, etc. So I will present you some of the normal detection algorithms that we.
+
+[1131.0s - 1160.0s]
+So what is so? How do we extract features from network traffic so you can hear you can you can see here the typical structure of a network packet, so it is on a very, very abstract level. It consists of two important parts. So one of them is a header which represents which carries some information from network and the Transport layer protocol. So for example IP and TCP protocols and information in this header usually has a fixed structure, so it means that you know what field has which information, and there are certain bytes that have address information, IP address or port. So this information is really very easy to access and that's why the first idea or. The first approach to network intrusion detection was to sort of extract flat file of features and fixed set of features from the set of information that is readily available. The problem with that is that. Most of attacks. Really use valid header information. So in order to deliver an attack to a target computer, one has to use basically to use a protocol in a valid way. So a packet is going to have a valid IP address. It is going to have some valid combination of TCP flags etc, and in the cases where it doesn't, they're usually very simple methods to prevent such attacks, so there are some kind of attacks that use some funny sequence of packets, but they can be very easily detected by just network configuration, so the results of the intrusion detection systems that use this head information are usually. Very mediocre and a classical example of. At least a data set that is known to use this information is the so-called KDD Cup 99 datasets. So back in the late 90s, people have already thought about applying machine learning techniques and they have built this datasets for KDD competition. But the performance of the best methods was acceptable but not for computer security so. In order to really be able to detect dangerous stuff and a dangerous stuff is using some application abilities, one has to be able analyze payload. And there are several ways to do this. So the simplest way is to consider payload as just a sequence of raw bytes. Um? An advantage of this is that one can. Still, see, you know we can see that the the exploit does have some suspicious byte sequence and one might try to construct some features from those byte sequences that could detect it. So the advantage also is that this feature is relatively easy to come up with an. It does not really require any knowledge of the application protocol that is running, so just take it by a sequence you don't care what application is running. Whether it's HTTP server, FTP server or whatever, so it's fairly easy to actually process this information. Another possibility is to parse input so you can. You can try to build a protocol parser that does take syntactic and semantic information. This is really more time consuming, but you get some more informative features. Also, it is possible to come up with another kind of flat features where we basically use some expert information from the application level protocols. This might be perhaps the most preferable approach, but again, due to launch variability of the protocols, this would be a very time consuming process to analyze those features. So this is usually not done in the field.
+
+[1160.0s - 1189.0s]
+So I will show you how to deal with the byte sequential features using the byte sequences and the key idea here is to again the idea that has also. Are be known in the machine learning community is to embed those sequences into metric space, and one can do this by using various language models over simple language models such as engrams, words, word engrams. One can also basically define any language that is generated by the available Alpha. So Alphabet is in this case 256. Possible byte values, so you consider the set of all possible words from this alphabet. Then you select certain or you define certain language or a subset of this alphabet and you are essentially defining some function that Maps every word in this language into some dimension. So you can see for example if it takes 3 keywords from the HTTP traffic. Add 4 gram XA they get with space and you know this funny percent percentage 5. You'll see that these points after embedding build some interesting data structures that one can eventually traced back to some features of the protocols. You can also see so these data points are colored by, so the blue points are normal data points, and these are two examples of attacks that these features is carefully chosen. Um can be really very discriminative for certain attack instance, so these are for example the kind of exploits that I used that we used in the indoor warm. Very spread out and 2004 so you can see that this very simple information can be enough to.
+
+[1189.0s - 1218.0s]
+Detect attacks. An interesting thing about those this. This kind of embedding is that. Once you have the points in the data and the metric space, there are many ways that you can measure similarity between those points, and this is something that that has not really been very wide used in machine learning, so mostly people have used kernels that correspond to essentially Euclidean distance, and this is basically a simple expression for Colonel, so it's like an inner product of those two very large but sparse vectors. But there are also other ways too. Um? Measure similarity that turn out to be not so difficult to implement from the technical point of view, so you can use various other metric distance system. Manhattan, Chebyshev, Canberra handing you take it there also some interesting non metric similarity coefficients that have been known from the 50s or 60s and various other fields of data analysis. And it turns out that some of them have very interesting characteristics or some very interesting show. Some very interesting performance on the.
+
+[1218.0s - 1247.0s]
+Network data. In order to deal with those various similarity measures sufficiently, we have come up with a way to. Compute those similarity measures and a unified fashion. So basically, if you think about.
+
+[1247.0s - 1276.0s]
+Computing all those formulas. They all boil down to some outer loop that runs over some operations performed on single words so. Because of that, one can show that we have a general. Procedure that performs some operation on elementary elementary operations and you can define those operations. You can define those operations in a meaningful way that turned out to be pretty simple, so this is basically what you have to do on single terms in order to add a Adam up in this abstract abstract frame.
+
+[1276.0s - 1305.0s]
+So what it all goes down to is that essentially would like to design some efficient algorithms. For that, the algorithms that run in linear time that have efficient indexing of all those dimensions because those. The the spaces that will that data into. I extremely high dimensional. Yeah so if I think of you know all possible combinations of N grams in a high dimensional space, it can be a very large number, but you only have a small number of possible engrams in the finite data. So if you're able to index this this. Um? The subset of features an efficient way we can.
+
+[1305.0s - 1334.0s]
+Around the comparison, and it turns out that there are many data structures that can be used for that that we have worked with and we have developed algorithms for some particular hash tables, tries suffix trees and some more advanced features that we have recently developed.
+
+[1334.0s - 1363.0s]
+4. So I will show you how it works in one case, so using the try data structure so some of them may know there's actually a very classical data structure proposed in the 60s and 70s and it basically boils down to. Storing the dictionaries of words in a compact representation. So if you can see here, there's two examples. Dictionaries, bar car and card can be stored in basically two nodes where you share the words car and card in a single representation and you can store some additional information that allow that can tell you the frequency of. Individual terms so you can store the number of insertions which is for example. The word card has been inserted, inserted, or the letter C has been inserted four times or three times on the word car and one time from the word card, and so on. And you also count the number of leaves which are the nodes that correspond to single words in a dictionary. So in this case. This branch has one leaf which correspond to the world bar, and this branch has two leaves in all nodes on the path to car. Because this was one word and then one leaf corresponding to the world card.
+
+[1363.0s - 1392.0s]
+So by using this information you can essentially compare pairs of trees. Some sort of parallel?
+
+[1392.0s - 1421.0s]
+Russell algorithm and basically works as follows. So you traverse the tree.
+
+[1421.0s - 1450.0s]
+Top down.
+
+[1450.0s - 1479.0s]
+Each time checking for the similarity of nodes. If the individual node labeled do not correspond, then you find a mismatch.
+
+[1479.0s - 1508.0s]
+So you find.
+
+[1508.0s - 1537.0s]
+Back
+
+[1537.0s - 1566.0s]
+Now keep going. Then you can also have something that is called local mismatches, which is the local nodes that do have matching symbols but have corresponding difference in the corresponding labels. So this one does have a leaf label and this one does not. So this is also counted as a miss.
+
+[1566.0s - 1595.0s]
+Finally a traverse. Put it down.
+
+[1595.0s - 1624.0s]
+One final match. Turns out that it's a linear runtime. Complexity is linear and this is what we need to do. OK, so you can you have in this case some dependence on the key, which is the number of K grams that to think of having. If you consider K as a constant, we can not interested in extremely large and grant, then the computational complexity is linear. There other data structures where you can actually get rid of this constant, but there more.
+
+[1624.0s - 1653.0s]
+So. It turns out that so once you have this, this representation of the data or this this way to compute similarity measures, you can use a variety of anomaly detection algorithms. That use some geometric notion of animality, so here are for examples. So one notion is, for example the center of mass, where you sort of. Think of the date of being concentrated in some and some compact part of the space and you judge an analogy of points as the distance from the point from the center of mass of the whole data. So it's very simple measure, but it turns out to be quite effective for certain kinds of applications. If you want to do it in the feature space, you have to be somewhat tricky. There's a well known formula for centering in feature space. But you cannot do this online, so there are some tricks to speed up this computation. Another way to do anomaly detection is to use clustering and then measure animality of a point by the as a as an inverse of the cardinality of the cluster that. The point gets assigned to. You can also do some local density measures like the one here uses different. Notions different relationships between the points in the clique between Annette neighbors of a certain point in order to judge its animality. So here, for example, the rationale is. Point is far away from the points in its clique. Then this counts towards the animality, but if all points in the clique aware are separated. Well separated and this is the factor that sort of indicates some sparsely populated areas, so by the balance of those two factors that we come up with a score that is relevant of the analog.
+
+[1653.0s - 1682.0s]
+Report so there are some technical details of how to run those algorithms incrementally, so perhaps.
+
+[1682.0s - 1711.0s]
+How?
+
+[1711.0s - 1740.0s]
+Quicklist
+
+[1740.0s - 1769.0s]
+Those slides. And show some of the experiments. Um? As I said, our goal was to evaluate the ability of our algorithms to detect unknown attacks. And of course we wanted to run those experiments on some realistic data. So we have created our own data set at our Institute where we have invited a penetration testing expert to attack a model system that we have set up in a virtual environment. So basically penetration testing is like white white hat hacking. You know there are companies that. Run this business. So basically testing security mechanisms of companies an will happen to know one of such people and we have invited him to do this work for us just for the sake of data extraction. So we have collected attacks in this way and it also collected data in normal environment by inviting people to use those services. The second data set we have considered the intrusion detection evaluation carried out by DARPA in 1999, so this is the only publicly available datasets for the evaluation. It has actually much larger scale data set. It collects several weeks of information and any problem with this data set is that it was created in a simulated environment. So they have basically modeled a. Large scale air base system. And send some attacks in the system because the system is simulated, there are some artifacts that have been heavily criticized in the security community, but that's basically the only publicly available data set, so we have also run our results there in order to see to make sure results are consist.
+
+[1769.0s - 1798.0s]
+But other work. So the first experiment we have evaluate the impact of barriers of different algorithms on this kind of data. So as I've said, you know, there are many ways of one can define the notion of animality. So we have basically run those algorithms on the sets of features that have. On the average of all possible anagrams that we could use in our traffic. What was interesting is that. Different algorithms turned out to be better for different protocols, so in this table you can see that the area under curve for the lowest 1% of false positives. Of all three algorithms, incomparable. But the best algorithm for each protocol is different. So this basically tells that. The various protocols do have different structure in the in this space that we're exploring, and it's basically a matter of finding out what notion of animality is most suitable to the protocol in order to have relied.
+
+[1798.0s - 1827.0s]
+System. As another comparison, we have run our algorithm have compared our algorithms with a signature based ideas. And so one of the one of the most popular open source ideas is snort, and we have actually Webster surprised that to the extent that our algorithm outperforms snort. So as you can see, especially in the low false positive areas, we're starting from zero. How algorithms have consistently exhibited the accuracies of 80 to 90%, whereas Snort had some problems? Some major problems on the protocols on some protocol, city, HTTP, and FTP. So the reason why it's not is not performing that well is that these protocols have certain features that are not really well defined in the protocol description. So for example. In FTP, the word hello can be interpretable. There are many admissible variations of this letter, so one can, for example, use EHLO. And there's also admitted by the protocol, so there were some kinds of attacks that use this feature that will not present in the signatures. Although we have downloaded really recent set of signatures for those experiments.
+
+[1827.0s - 1856.0s]
+And these are attacks were not detected by the algorithm. So similar results were also observed in the DARPA data set. Again, they had somewhere between 50 and 90% of accuracy at zero false positive rate compared to 30 to 80%. Um? So to interpret those numbers, 11 cannot really claim that an algorithm has zero percent false positive, so it's also the matter of threshold that the message in these results is that we basically get about 50 to 90% of the attacks detected before we get the first false positive. So if you're really paranoid about false positives, we can set a threshold very low, and the system is still going to be able to. Operate somewhat reliably, so those numbers are actually quite acceptable in sick.
+
+[1856.0s - 1885.0s]
+The community. So to conclude, I have shown that machine learning is can be available tool for intrusion detection. So we have seen it as a complementary approach. The signature analysis it is able to detect unknown attacks. So in the experiments that we have run out program to tell you we have. Basically, run those algorithms at the testing stage on the attacks that we have not seen before. We have separated datasets in two completely non overlapping parts and run algorithms on the data that they have not seen before and the algorithms were able to detect attacks with higher.
+
+[1885.0s - 1914.0s]
+Racine low false positives. An we're looking for further application of machine learning and security domain so we can conceive of possibly detecting compromised computers due to their normal behavior. Our current work is on detection, analysis, normal novel malware and also very interesting application is spam detection in voice over IP application so that particular difficulty of panel voice over IP spam spit is that unlike the email spam, you do not really have information to any content there. So basically have to figure out. So once the telephone rings you have lossed. So one has basically to identify anomalous. Behavior from whatever signaling information that runs between those between the spammers computers and the target telephone, and.
+
+[1914.0s - 1943.0s]
+Kind of quite tricky. OK, so that's about it. As a little advertisement, I hope I've shown you tip of the iceberg of what machine learning can do in the computer security domain, and if some of you are planning to travel to the nips myself and rich Lipman from the MIT Lincoln Lab organizing the Workshop on Machine learning by the several environments in general, and also for those in particular for computer security. Are some calls for abstracts and if you have chance to attend this workshop, I think it could be a very interesting discussion of security related issue.
+
+[1943.0s - 1972.0s]
+OK, so that's about it. OK question.
+
+[1972.0s - 2001.0s]
+My question concerns the Slide 62. Click 62. It was you said it for each of the protocol is different color. It was the best where the differences between the figures. Significantly. If you think for example like in a linkage, clustering for SMTP is 756. What was the figure? For example local density? In this case I can't tell it on the top of my head, but the difference was significant. So all of those numbers were basically averaged over. 30 evaluation so well, sometimes even small difference can be significant in this case and had the difference of about. 5 to 10% between the winner. Also the category the best winning category algorithm and so other categories. Another question. OK thanks.

@@ -1,0 +1,147 @@
+[
+    {
+        "text": "Sue we will talk about this learning parameters for discrete naive Bayes models by fibers of the prioritization method. OK, so don't be scared by the title, it's very simple the idea.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "OK, so just to start the night vision networks are also called latent class model. There are different names so you have a distribution on the discrete variables X1, XN, here. And it's simply a mixture model here where you have your Class C and then conditionally on your class, all the variables are independent. So I will talk about this type of model.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So what I'm going to tackle is given some night vision distribution P. I will try to compute the set of parameters, so here the. Probabilities of the hidden variable. So the mixture components, the weights of the mixture and these parameters. So that's the setting. So why do you want? Why do we want to do that? So I think it will lead us to a better understanding of the model. It can also lead us to find new methods to estimate parameters, so the common way to estimate parameters in this with this model is simply the EM algorithm. It can also help us to do model selection, so this was one of the original motivation for me to do this work. It's to calculate a synthetic evaluation of the marginal likelihood of a night vision network. And also give us some clue on the identifiability of the parameters.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So it's very simple outline. First, I will present my result, which is really the core of this talk. Now will talk about some potential applications, so it's really ongoing work, so the applications are not really there yet. But I do have some very interesting results. And I'll talk about some extensions when you can. Once you can compute like the parameters mapped to a naive Bayes distribution. While you can use that to extend this to larger class of models like hierarchical latent class models.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "OK, so. Out first introduce some notation so it's. It's I'll give you a very narrow talk. Some notations so. I have the parameter will repair, tries the distribution. So first a simple notation. Here the weights of the mixture. I'll denote them by W. And here so the probability of observing one variable given certain class. Instead of using this parameter, I will use this one simply by removing the marginal probability, very simple. So.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "I will also introduce another notation. So instead of using the distribution. I will introduce this notation Q notation, so the exact expression is not very interesting in itself. So it's defined recursively in some way. OK, so for any subset of the variables. So instead of using marginal I will use this. OK, so that's the notation very simple. But one thing that's interesting with this notation. Is that if you multiply the way? The weights with this parameter you get 0, so that's a really simple equation that will allow us to do a lot actually. So before talking about that, here is an example of my notation. So instead of having a marginal distribution, P of XII have Q of X, which is always 0. So here for two variables Q of XIXJ simply the probability minus the product of the marginals. So it kind of measures the independence. Between the variables and here is the expression for three variables. So if we have a distribution P. If it's given, then we can also observe that. So there is no parameter involved. And so this Q is actually exactly the. Correspondes really well to the P&R new parameterisation 'cause I get the same type of some type of expression. With this additional equation, that's going to turn out to be very interesting. So with this equation, actually we see that the weight vector.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Is normal is to some pictures from column some here these vectors. OK. So once you know that and if you have N -- 1 vectors where M is the number of mixture components. So if you have this, if you have some vectors like this then you can write an equation like this that basically says that W is a normal to the space. Spanned by these vectors. And if if this is normal, if you want some its component, it's different from zero, then you can scale it. And then you can obtain your. You're a W from these. From these parameters, new parameters. With the vectors a basis. OK so. Here.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "This so if you have some value XI have some random variable. So AT of X, XI is simply the probability of observing XI in the mixture component denoted by T minus the marginal probability. So I'm just given one value of some random variable. I consider the vector T is the index so exactly here. OK, same for W. It's the vector. Of a mixture weights and when you multiply them, they're easy to see. If you have some here. With the W then you get the mixture and then you get marginal, so it's zero. It's very easy.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "But then you can deduce W from urn. These vectors. So this is just some notation here. It's a matrix with the column. Cones are given and this notation is. I remove the teeth line. So we had some. Victorial interpretation. But it's it's simply the normal. And I just want to ensure that I can normalize it.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "OK. So a second result that really is derived from our first normal equations is. I found a polynomial that's of degree M. Whose roots are exactly my parameters. So in the case of equal to, so it's a case that's already been solved. By other people. So you obtain this if you write this polynomial in S. Then in fact, it's factorizes like this, so you can find the roots. Everything is observable here. For Amical three, you have a similar type of polynomial. It's kind of complicated. What you have to look at is the leading coefficient of the polynomial. Here, here, so in the general case. You have one.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Ali Nomial, whose leading coefficient is the determinant of this matrix. And you have other terms here and there, quite complicated to write there. Just sum of sums of determinants of other matrices of the same dimension. OK, and so again. The roots of this polynomials are the parameters were looking for. So of course to be able to write something like that, you need to have. Sufficient you need to be able to write this exactly, so you need to have in a variables to be able to write this. And here of course you cannot have. Two values of the same variable 'cause it wouldn't make sense. You cannot write probability to observe. Exercise is equal to 0 and XI is equal to 1. So you have constraints to be able to write these polynomials. In terms of. How the observable variables are and there are cardinalities. OK, so that's.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "First big result. And my other big result is this equation again. So. Here again you consider a set of values U one to U N -- 1 and minus one values and you consider here some number of other values. X1X key? So if you write this equation, you actually have a polynomial in these variables and something that's observable. To calculate determinant, it's easy. By signing on this column. And then here on the other side, you have one determinant that's. Only consists of observable variables again. So you have simple constraints on the parameters. And it's actually. It was really hard to get to this result because the original problem is all the mixtures components are mixed. And here I obtained something that's very nice in my eyes. And once again you have the same polynomial here. That is, the leading coefficient of our. Previous pulling over the same determinant, that's the leading coefficient over previous polynomial. OK.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So one example, if for my product here on these values I just use one value and I simply have a linear equation. And here this term is equal to 0. So I obtained this. Another example, if M is equal to three, so if I have three components. And I use this. These values are the same as here. That's good 'cause I obtained one. I can obtain one, obtain an equation of polynomial equation linking these two coefficient so I can express 1 as a function of the other.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Alright, so um. I have all these determinants and actually. That's a nice decomposition. So if you consider sets of values. Like this and you write this determinant. And actually, if you look at the parameters, so if these distribution Q is a night vision distribution with M classes, then it will be you can write it like this. So it's simply the product of the weights time, a determinant time, another determinant. Of this matrix. So with this we can write. This determinant? So we'll simply have the product. Of the weights determinant like this and the same determinants with EU instead of the visa. So. When you look at these. When you look at this, it's nice because if you have one. If you have one distribution that's you can represent it with M classes, night vision distribution, but you write this with mplus, one class. Then you can parameterise your distribution with one weight equal to 0, so you have.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "In some implicit equations like this. But you can just use for example for model selection. I think that's one potential application for that. And if you look at the. At this determinant. You see, you have lots of degrees of freedom. For example, in the choice of V1. It doesn't appear. Here and so you can write lots of lots of equations like that, but actually they're all the same because you have some. Some condition here that tells you that they're just going to be multiples of. The others. So we have to be careful which equations are independent. OK, so these are my main results.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Now let's talk about some applications, so the.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Easiest application I see from that is OK. We can have one distribution. We can compute the parameters so well we can. Just if you want to do some learning with that, we can just have some distribution of observed frequencies and then we can try to do the same basically. And it works in theory, but in practice doesn't really work. But I'll talk about that a little later after. So you can also have some sufficient conditions for parameter identifiability. So, um. I will also talk a little bit about that. But if you can solve your equation, then you can talk about the identifiability of the model, or at least you can identify some conditions where it's probably won't be identifiable. And so this was my original motivation. If you want to compute the analytical synthetic approximation to the marginal likelihood, than one method that uses the results of Watanabe, we had some previous talk was about that too. Or is related. Then you need to compute the preimage of distribution. And you need to pay attention to the shape of this set. So I think this is a first step. It has been it's very easy to do in the case where you have two hidden classes equal to. Gets really complicated in my experience when you have more components. And also my implicit equations are probably relevant for model selection, in particular in learning of hidden causes causes, so you have some. Tetra Delta constraints that are used in a. To learn hidden causes and probably mostly with the coaching variables. But if you also have some similar ones. In with this crew.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Variables or the results I've seen are with. Again, the case M Equal 2 and they this is can be seen as a generalization of these results. These equations. OK. So now if I want to focus more on computing the. The preimage in details in my results. So I have here very important assumption, so I have to be able to find. Three sets of values like this. And I have to be able to write these determinants so it impose constraints on these sets of values, 'cause I have to be able like this variable. T1 must not be the same as variable you want. And so on. So if constraint on the number of variables and their cardinality again and then I require that these three determinants are different from zero basically so I can solve my polynomials reitzes correspond to leading coefficient of my polynomial.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "OK, so. If you look at the determinant, these are. These three are equation of determinants different from zero. Basically amounts to these three conditions. So, Dion the product of the weight, must be different from zero. This determinant must be different from zero, so it implies that these vectors must be linearly independent. And so on for all three vectors, all three matrices. OK, and then in this case, while we can just solve our equation, this may not be a good idea to use this equation like this if you want to do it in practice, because it's not very stable numerically, but since it's normal it's there are better methods to do that. OK, so if I have. These vectors I can compute the weights. OK, now I can simply use one of my first result here.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Or one simple version of my other results. I have one linear equation between all these. All these values. So OK, so if I suppose I know this one. Then I can solve everything just like this. So it's simply you compute inverse matrix where you don't even have to invert it, but you just solve some system linear system and then you just multiply it by some other. Some other vector and boom, you get all the other coefficients. So there is a little you have to be careful 'cause here your X must be distinct from V, otherwise you cannot write these equations. But since we made enough assumptions. Like we require that this determinant determinant of this matrix is different from zero, but we also have other determinant, so it all works out. So now the problem reduces to finding the.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Is. These vectors. So OK, so. Here I don't really have a good solution to do that. But you still have my polynomial. And with my polynomial I can find the roots. So basically I can find these sets. But these are roots, so they're not ordered, so I can say, OK, I cannot say this. This corresponds to the first class, and this one corresponds to the first class two. I can't do that, they're just real numbers, and I can distinguish them. And also when you want to compute the parameters map to distribution, you have some trivial non identifiable E in that you can just permute all the. Although you can just relabel your states of your hidden variable. So you can just. To get rid of that, you just fix some arbitrary order on the 11 set.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "And so it's basic ideas. OK, well we fix one ordering. Then we can just try all of them. And then one OK, so we obtain all the parameters so we can test. Oh are the parameters we obtain or do they sum to one or they positive and so on? So you can? And if so then you can just test. Are they map to the distribution we given? It's really naive way to do it 'cause there are like a lot of parameters to test. So one side observation, if. OK, we have the hypothesis. And we are are three. Determinants are different from zero. Well then we can see that if this is verified then we have at most a finite number of. Parameters map to the distribution, which is, I think, an interesting result in its health. It probably has some implications for the dimension of the model in that case. Although I haven't worked out the details. OK. So if you.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "To be a little less naive, you can use some other results I found. Which basically is another constraint on the parameters. So here, in a few words, this really looks like the original parameterisation, except I got rid of the weights. So I have some equation. And everything else is observable. OK with some matrix again. So what we can do is I can just write this result. And. So this is for any set of values. Again, we just want just 22 values for the value, which I know 'cause I ordered them recurly and another one so I can just test. So instead of testing all the orderings at the same time, all the permutations at the same time, I just have one is fixed and I test all the permutation of the other vector. So. So this will reduce the complexity of your algorithm, but I still think it's not the right way to do it. OK.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So probably a better way to do it is to use other results, so I haven't done it yet because I only recently generalized them. But as I told you, in the case M = 3, you can easily solve that and you also get some probably very interesting conditions under which you cannot. Invert for solve polynomial. Anyway, so once you have these, any algorithm to invert parameters. You can try to turn that into.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Algorithm to estimate parameters. So as I told you, basically of the distribution of the observed frequencies, we just try to apply the algorithm. So. So of course, if you just have your, you just compute the pre image. If the distribution that you observe is not exactly when distribution, then can expect to have some. Empty pre image. But actually all the procedures are described are continuous in some sense, so if you're. Or they can be easily modified to be continuous. So if you have your own unknown distribution and as you get more and more samples it will converge to the true distribution an by continuity. Basically your estimate will also converge to the true parameter. And so will it. All works out actually. So I was also testing parameters like free quality. Is this parameter map to distribution and the easy way to the obvious way to change that is simply too? Once you have a parameter, just look if it's minimizes the entropy, the relative entropy so decaled averaging through the observed distribution. But in practice.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "As I told you already, it doesn't work. So first you have an extremely fast growth of the complexity with the number of your M. So it's probably workable for lo M. I don't know, probably into 7 eight or something like that. I haven't tried it or haven't. I don't have any. Patient implementation to try that. So, but the bigger problem is that the estimates are really numerically unstable. So when you try to solve the polynomial, sometimes you'll get you will not even get real roots. So what do you do in this case? Well, you can do anything. And so you will not have any answer 'cause you will not have any parameter that satisfies the constraints. Asymptotically, it's supposed to work, but in practice isn't really work. But so and also we have lots of degrees of freedom in the choice of TU&V. If you have variables. So it's probably important how you pick those. And also you could probably try to somehow pull data 'cause you only use small part of the data. So the nice thing is that you only use Q like the function Q with the two or three variables. So maybe you mean you don't need to have very. It's probably easier to estimate. Correctly, when you when you have small number of variables. OK, and in practice it's really not competitive with the EM algorithm. So it's Maura. Yeah, practically, I don't think it has any value at this stage. So once you have.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "And the algorithm, or a way to compute the preimage? And Ivs distribution, and in some cases you can extend it to these type of trees or you have. Here the leaves are observed and the internal nodes are hidden. Because you have simple observation. OK, if you look at these marginal on these three variables, then it's a. It's small you're interested in, so it's a latent class model naive Bayesian distribution. If you look at X2X3 and X4, then the same you can. It's also an advising distribution, and so on, so you can. If you estimate the parameters of these three distribution, then you can deduce all the parameters associated to these links, and it's also possible to estimate the parameters associated to those links. It's just some linear algebra. I haven't figured out all the details or generalize it properly, but. It would be really nice if we could compute the preimage exactly, not just with some algorithm as I presented.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "OK, so to conclude, I think I presented some very simple polynomial equations. So when you try to actually invert that, you quickly get very very complicated polynomials, and I think the results are obtained are really nice because they're really simple. So I talked to you about how to apply that to a. Estimate parameters for the data. I don't think that's the right thing to do, but you also also get some nice implicit equations and I think they can be used to learn hidden causes from data or maybe. Maybe decide which. Which number of hidden classes are, if you have a distribution but you don't know which one is? And you can try to test for that too. Well, that's all.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Do you know that these are all? Apartment. Hold on. These are all powerful. All the possible. Oh I I I don't know. I don't know, just have some very limited results. But I think it's a good. It's a good clue. This determinant is a good clue into which direction or conditions where I can't solve my equations are. What motivated their choice in the change of coordinates? Well, I don't really have any. There is no motivation. Basically I just all the work was done by induction. It's OK, you have some. You have some results for M Equal 2. Then you can try to work it out. By hand, basically you're with some. Computer try to generalize to three variables and then you get some equation and I just. I just generalize it by hand. So there is no insight.",
+        "start": 812.0,
+        "end": 841.0
+    }
+]

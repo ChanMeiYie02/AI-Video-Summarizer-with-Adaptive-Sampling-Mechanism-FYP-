@@ -1,0 +1,112 @@
+[
+    {
+        "text": "Hello everyone, my name is Jacob Ricky and today I am presenting how to implement some community radio principles on the person aboard. Actually, I'm shopping here how to use the Versa Note as a low cost spectrum sensing device. First I will make a presentation and afterwards I will show you a short demo.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "The outline of the presentation of the following. First, we make a short introduction. Then I will present. I would say some words about the industrial, scientific and medical bands and the regulatory. Then I would say something about spatial sensing. I will shortly present the versatile sensor node platform. The CC 1101, the CC-2500 transceivers and and at the end I will show the measurement setup and the results.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "The wireless medium is a limited resource which is shared among many users, and it requires regulated usage. The transmission of radio waves is regulated by national and international authorities. Which determined. Frequency, location and licensing to different technologies and systems.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "YouTube population of new Wireless Technologies and decreasing frequency demands the license spectrum for exclusive use became a scare resource. However, measurement results show that only 15 to 85% of the licensing of the assigned spectrum bent up to three Giga Hertz is actually utilized and this motivates the concepts of dynamic spectrum access and cognitive radio. Networks.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "The devices which operating Dyson frequency band? Have to follow the statutory rules including effective radiated power, effective, isotropic, radiated power, the bandwidth, the spurious emissions, the duty cycle and also they have to take into account certain level of interference with other system.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "There are many. I I some bands. The lowest ice event is on the frequency 250 megahertz in the United States and 433 megahertz in Europe. The power is still limited to 10 milliwatts, and the duty cycle to 10%. This band is appropriate for long range long range communications, but of the cost of reduced data rate, the next band is on 868 megahertz in Europe and 950 megahertz in the United States. The power here is limited from 5 milliwatts to up to 500 milliwatts with the duty cycle from 1. 200%. This is some band offers medium ranges and data rates. It is divided in eight sub channels that can be seen on this picture and. Well known technology which uses this eisenbrandt is wireless mbus.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "The most widely used Isom band is on 2.4 giga Hertz. The power in Europe is limited from 10 milliwatts and can go up 200 milliwatts in some cases. In the US, it is limited to one Blvd and. Can also go one to one vote for special. Applications. This benthem offers high bandwidth and sufficient data communication range. In this band, their main technologies, ranging from wireless LAN, Bluetooth. Many women wireless Internet protocols which are based on 815.4 standard. There also other proprietary protocols. Many Commercial Code, devices, activities and microwave ovens.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So the increased utilization for these technologies in icing bands causes close interference, and of course performance degradation. And to achieve existence and spectrum sharing among all these those devices which operate in the same is some event we have to apply to obtain knowledge of the wireless medium. By means of spectrum sensing. There are a few does meter detection methods. Unnamed metric method energy detection. An future based detection.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "In our case we used energy detection which was based on the received signal strength indication, which is the estimation of the. Receive signal power. In the chosen channel. So if you want to make a spectrum sensing with this method. We have to make a frequency sweep through more channels. And to do this correctly, we have to say the channel bandwidth equal to the channel spacing as I will show you in the next slides. In our case, we make the ASC detection that way that we first put the. Received on the transceiver in receive mode, and then we wait for a certain amount of time until the FCC value was valid.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Hum. So this is the vertex style sensor note which has been presented today, it consists. Off more models on the core model, there is a 22 bit are my controller which can run up to 72 megahertz. It has 512 kilobytes of Flash, 64 kilobytes of RAM. Many interfaces such USB, SD card, isquare, CSP, UART interface and many general purpose pins. Come on the radio model. We have many options. We can attach different extreme models on it and also. Two models on chip count the CC 1101 ANSI C2500 on the expansion model we have Ethernet and GPRS connectivity. And also we can put on many sensors. There is also this VSP model for.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Power. We use the CC 1101 transceiver for spectrum sensing. 4 sub giga Hertz bands. Distance silver covers all the ice and frequency bands below the sub giga Hertz. It offers excellent receiver sensitivity. Minus 16 DBM at 433 megahertz and minus 112. The payment in 168 megahertz. It has programmable output power up to 12 DBM and with different modulation settings we can achieve data rates from zero point 6 to 600 kilobits per say.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Saint the CC-2500 is a pin compatible transceiver. And it's intended for use in the 2.4 GHz ice event. It has a civil sensitivity of minus 140 PM. It can be programmed with work with power, so up to 1TB M and we can say that away from 1.2 kilobits to 500K.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "It's for 2nd. Both transceivers have differential output. And we converted it to single ended output with a discrete balloon. In between we put a matched LC filter. The filter characteristics for both ships. Can be seen. On those pictures, we see that the filter for the CC 1101. Neighbors good performance. For older ranges from 387 to 928 megahertz. And the filter for the CC-2500. It has a little bit of strange characteristic, but. We see that at the interesting working range. It has a loss about 4 -- 5 to minus six DBM.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "The measurement setup is the following. We used two different versona boards. 01 with the CC 1101 this is that here in the front and one with the CC-2500. This is that one. In Matlab we created a GUI in which we select the frequency sweep range. And according to this settings we calculated the register settings and controlled the person aboard. I will show you this in practice and also we displayed the spectrum.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "In matlab. So. This is the goal here. Um? With these two sliders, we select the lower and higher frequency of the sweep. Then automatically. The appropriate gift values are calculated. And sent over the serial port to the person. But I will show you this lie.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "When we need, we calculate the register settings. We have to take into account the channel bandwidth and the channel spacing. So in between the frequencies sweep range, we have 256 channels. And the the channel bandwidth and the channel spacing has to be calculated so that this whole in between is. As small as possible. And we wrote the programming model of which handles this automatically and calculates the registers which are then sent to the Versa Note. With this we against as we said, the best frequency. With that on the channel bandwidth and hear the channel spacing.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "OK, when we put the. Verse and enter to the receive mode. We have to wait for that amount of time and before we can read the SEC value. And this time is calculated according to this equation. Um, to emphasize. So the 3rd zero. This is this time at the beginning. Spends on the demo delaughter settings and we have to set the data rate of the transceiver as high as possible to have this time. Small one. Then the one this is the time, here, here, here and here. In this time we have to wait that the automatic gain control changes. And then also time T2 that this. Value is savaged. So in practice we we get its value in approximately 4 steps.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "This times are calculated according to those equations, but I won't go into detail what I want to emphasize here is that if we make a frequency sweeps over lunch bandwidths. The channel bandwidth is. And in that case we have to wait only 300 microseconds to obtain the SSE value. But for fine frequency sweeps over narrow bandwidth. We have also narrow channel bandwidth and you have to wait approximately 1.5 milliseconds until we can read the FCC.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "OK, and here is some measurement results. 1st for the 868 ice and bent. Here we can see some. Activity. I'm listening network and here is the GSM channels. We can also. We made the. More precisely, Pontet region and. So it looks like.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Similar for the 2.4 eisenbrandt. Killed a picture. We can see some violent activity and two if we put a microwave near the person we see. Watch disturbances it causes.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So to sum up. We use the personal Bautista low-cost cognitive audio platform. Besides spectrum sensing, quick and use it as a secondary user, which can adapt to primary user. Suspect, then in this case the. Spectrum sensing is performed locali on each version aboard. But this can rise to the hide and not problem. We will have to introduce a cognitive channel and make the network centrally coordinated. Then another application would be to make a spatial temporal map of the spectrum of kupasi. If you have a personal network and the location of the nodes during the idle time. We can sense the spectrum and store it. Maybe today SD cards. And to make afterwards some analysis. And the last application would be so that. Based on the SEC value, we can get the special relationship between nodes. And with this weekend. Taking into account when we build the network protocol.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So that's everything for the presentation. If there are any questions. If not, I will continue with the demo. Here we can see the spectrum on 2.4 giga Hertz. We see. Here is some activity. The sense that is performed with this note. And similar. On 800 megahertz. Here we can see. The GSM network. And some activity in the lower bands. And now I will turn on Disturber. With this it's been out on 168 megahertz. OK, let's see the spectrum. And here we can see the. It's built which is sending data. So that's it from my side. Thank you.",
+        "start": 609.0,
+        "end": 638.0
+    }
+]

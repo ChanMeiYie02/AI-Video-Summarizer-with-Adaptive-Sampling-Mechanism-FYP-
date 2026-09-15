@@ -1,0 +1,22 @@
+{
+    "id": "doapnggxlb2tzvajsp2h5owwxvurxdoy",
+    "title": "Innovative Good Practices",
+    "url": "http://videolectures.net/gender_schiffbanker_holzinger_practices/",
+    "info": {
+        "author": [
+            "Helene Schiffbänker, Joanneum Research",
+            "Florian Holzinger, Joanneum Research"
+        ],
+        "published": "April 6, 2012",
+        "recorded": "March 2012",
+        "category": [
+            "Top->Social Sciences->Society->Gender Issues",
+            "Top->Science->Scientific Research"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 252,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3236
+}

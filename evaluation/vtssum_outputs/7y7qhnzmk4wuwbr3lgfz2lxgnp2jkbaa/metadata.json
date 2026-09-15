@@ -1,0 +1,21 @@
+{
+    "id": "7y7qhnzmk4wuwbr3lgfz2lxgnp2jkbaa",
+    "title": "Tweak Your CMDI Forms to the Max",
+    "url": "http://videolectures.net/clarinannualconference2018_zeeman_tweak/",
+    "info": {
+        "author": [
+            "Rob Zeeman, Royal Netherlands Academy of Arts and Sciences, Meertens Institute"
+        ],
+        "published": "Jan. 14, 2019",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Humanities",
+            "Top->Social Sciences"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 104,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1502
+}

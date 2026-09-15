@@ -1,0 +1,20 @@
+{
+    "id": "3jonmbuzhrfylj6hwzhhxc7hr45uhfe4",
+    "title": "From Manifold to Manifold: Geometry-Aware Dimensionality Reduction for SPD Matrices",
+    "url": "http://videolectures.net/eccv2014_salzmann_dimensionality_reduction/",
+    "info": {
+        "author": [
+            "Mathieu Salzmann, NICTA, Australia's ICT Research Centre of Excellence"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 46,
+    "num_sentences": 139,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 3296
+}

@@ -1,0 +1,20 @@
+{
+    "id": "7ly64u556r4m2qpzcki5j2k57w7zifd5",
+    "title": "An Efficient Algorithm for a Class of Fused Lasso Problems",
+    "url": "http://videolectures.net/kdd2010_liu_eacf/",
+    "info": {
+        "author": [
+            "Jun Liu, Department of Computer Science and Engineering, Arizona State University"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 165,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1969
+}

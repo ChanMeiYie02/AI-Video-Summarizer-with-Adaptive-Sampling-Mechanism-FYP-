@@ -1,0 +1,20 @@
+{
+    "id": "xqxgftloteubnvlkqmn7t7ypj5cbglt7",
+    "title": "Efficient Anomaly Monitoring Over Moving Object Trajectory Streams",
+    "url": "http://videolectures.net/kdd09_bu_eammots/",
+    "info": {
+        "author": [
+            "Yingyi Bu, Microsoft SQL Server Group, Microsoft"
+        ],
+        "published": "Sept. 14, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Data Mining->Anomaly & Streams"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 106,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1950
+}

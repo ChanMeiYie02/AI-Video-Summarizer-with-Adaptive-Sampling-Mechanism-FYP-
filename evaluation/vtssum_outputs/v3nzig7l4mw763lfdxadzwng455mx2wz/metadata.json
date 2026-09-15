@@ -1,0 +1,21 @@
+{
+    "id": "v3nzig7l4mw763lfdxadzwng455mx2wz",
+    "title": "Universal Dependencies for Slavic Languages",
+    "url": "http://videolectures.net/jtdh2016_zeman_slavic_languages/",
+    "info": {
+        "author": [
+            "Daniel Zeman, Institute of Formal and Applied Linguistics (ÚFAL), Charles University Prague"
+        ],
+        "published": "Nov. 7, 2016",
+        "recorded": "September 2016",
+        "category": [
+            "Top->Humanities",
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 69,
+    "num_sentences": 469,
+    "num_clips_with_summary": 27,
+    "num_gt_summary_sentences": 55,
+    "ground_truth_summary_length_chars": 5214
+}

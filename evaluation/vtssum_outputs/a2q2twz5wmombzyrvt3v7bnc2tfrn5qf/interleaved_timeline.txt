@@ -1,0 +1,113 @@
+[0.0s - 29.0s]
+The method for the estimation of nonlinear ODS with the use of regression splines. So this method of stronger intersection with Mr. Proposed just before by Martino, and I hope that it will give some fruitful collaboration or discussion after, and this is work done during postdoc stay in your underwear. Class and on the. With with the University of Amsterdam and your random also on with the flosser Civic in University of every France. So I start with some.
+
+[29.0s - 58.0s]
+General facts that original networks are dynamical design macromolecular macromolecules that interact together within the cell and biologist give us some consideration profiles that can be useful for the identification of these systems.
+
+[58.0s - 87.0s]
+So they usually mathematical models and the expect from us from statisticians on the petition to identify these multiple with multiple models. Usually ordinary differential equations from this data and this formalism can be useful, unused from metabolic or geography networks or signaling pathways.
+
+[87.0s - 116.0s]
+OK, and then if we make some precise assumptions of the kind of models that I used, we have so deterministic behavior for the phone networks because it comes from usually from technical kinetics. These equations given by bookmaker critics are nonlinear because we use a lot of mass action or Mickey Mickey spent in kinetics and we have plenty of fundamental logical parameters to data mine. What we suppose is that we know all the function over equations or to be interactions, so we do not address so difficult problem of the identification of the structure. I start first by presenting the statistical setting on by into.
+
+[116.0s - 145.0s]
+Using the general so called 2 step estimator. And I would give an example of this method with regression splines and we can derive more precise theoretical results on the behavior of the two step estimator. And then I will illustrate it. This method on the refrigerator model presented by mean Question this morning.
+
+[145.0s - 174.0s]
+So we start from the following differential equation. So we have a parameter Theta which represents uresa state or which represent early or modern and we want is important is that F is nonlinear, so we cannot integrate exactly the function with this solution. So we do not know explicitly in across form the solution of the differential equation. We suppose also that we have an initial conditions problem. So we have X0 which are. Most of the time unknown. So we have a. The unknown function is fine, which is indexed by big parameter Theta forms of the system parameter on the initial conditions. What we observe our concentration profiles so no.
+
+[174.0s - 203.0s]
+The concentration profile that is here we have the true functions with the true parameter set Arthur and we have an additive noise. Here, we suppose IID. Which one instance identity J and which have affinity, violence and what we suppose on peace is a big assumption, is that order system is observed. On the classical method for estimating this.
+
+[203.0s - 232.0s]
+The parameter big Theta from the data is to maximize the log likelihood that you can write like this, but as it has been said or the day, this problem is very hard because Phi is unknown. So most of the time we have to integrate vodu and we cannot. It's difficult to have a gradient so we usually local optimization methods are not very easy to implement and the other problem is that. Space is very big, partly due to the fact that we have to estimate also the initial conditions of our system. So maybe a good way on not active way to Vista Mission of ODI is to look for another criterion to maximize. So this is how it will propose and present right now.
+
+[232.0s - 261.0s]
+And maybe a way to do this is to consider the uniqueness conditions in naughty. That is, we can see that our function fetal star is the admin of this following function. That is, is only the difference between the derivative and the directive computed with the vector field evaluated at the right value an. If we move, we must have the value 0 only for this function when we consider. Only function with good initial value. So OK, this is a classical property of these when F is a smooth function. But what we really need for the statistical identification of parameter is we converse in a way. Property that is identifiability property.
+
+[261.0s - 290.0s]
+Which is the.
+
+[290.0s - 319.0s]
+Moving sources, so given 5 given solution that I can observe, I want to be sure that there is only one parameter Theta. So what we want from models that we want to identify is that when my my criterion author Q. Is computed with the true function Firestorm, but when I move the parameter Theta in the vector field expression, then I must have zero only for my true parameter Theta stone. And so with this function we will construct another different estimator from the.
+
+[319.0s - 348.0s]
+Emily. OK, the first idea is to consider that five star can be always estimated from directly from the data by using classical regression tools, nonparametric regression tools. So it's very easy to have an attitude consistent estimator of the true function, and we can also usually estimate the effective of this function by differentiating of estimator hot fire hand. And with this we can apply.
+
+[348.0s - 377.0s]
+Plugging principle in the Oculus stuff function, we replace fiestar by nonparametric estimator so that we get only this criterion computed only with the data. And then I'll definition of the two step estimator is the rate that is we want we took as an estimator the admin of this quotation.
+
+[377.0s - 406.0s]
+Letter depending and what we have shown is that if F is. Is A is A is a uniformly Lipschitz on the on the set of.
+
+[406.0s - 435.0s]
+Amateur space and if we have this more precise identifiability criterion, that is, we want to be sure that our sympathy criterion is strictly positive. Whenever I take another parameter away from the true parameter, then I can assure I can be sure that my estimator is consistent, unlike converge, so this way to the switch with similar parameter is a good way. It's really a good alternative for the classical maximum. Tomato only squares tomato. What we can?
+
+[435.0s - 464.0s]
+Make us comment is that this method is questionable because we can consider. Now that I'm most differential equation with dependent T, we can also an input node variable and you can derive exactly the same equation. There is no big difference.
+
+[464.0s - 493.0s]
+The other thing is that you can choose your favorite nonparametric estimator so that I have it's own wavelets spline, so support vector regression there is no constraint, you just have to take a consistent estimator. You
+
+[493.0s - 522.0s]
+Can choose your echo distance. Usually the most natural ways to take Q equal 2. But if you know that you have some outliers or very big noise, maybe another one estimator is better. So you can adapt from the data. And then.
+
+[522.0s - 551.0s]
+In the in the setting, another interpretation of the method is when you compute the criterion are in queue. Usually you are doing a remind approximation, so you have some to minimize, where, as I represent a subdivision of the segment 0T. So you have to minimize this and you can say that you it's another non linear regression. That is you want to explain your derivative with the current states by using non linear regression function. So what is important to note?
+
+[551.0s - 580.0s]
+Is that we do not need to integrate or system since we deal only with derivatives and another good point is that you can.
+
+[580.0s - 609.0s]
+Component wise estimation, if you write your set of coupled equation like this each component so X square bucket I represents the elements of the vector X that are present in this components. You can finally interpret Theta square bracket. I as a parameter that appears only in this equation you can make. Bye bye for getting all the other components.
+
+[609.0s - 638.0s]
+Because then these parts it's like it was input variables and so you have only some scalar or the East to consider onto estimate, which is very interesting because usually you don't have a lot of parameters you do not have all the parameters in each of the. So finally you can reduce greatly your parameter space and you have only some D small optimization problem to deal with.
+
+[638.0s - 667.0s]
+No, it was scheduled on the way that we can estimate over non parametric function so. If we use regression splines, we can go further.
+
+[667.0s - 696.0s]
+I recall briefly some notations common in splines theory, so splines are a peaceful spring. My functions we define the sequence of breakpoints XI. We have L internal breakpoints, and we have the regularity condition on. The splines are controlled by continuity conditions. By new I continuity conditions as a node points and what is important here is that splines are in fact. Vector space that he spanned by these plans usually is quite useful, and then the dimension is a few spaces linked to the continuity conditions in the following manner. And OK, baby spines are quite nice because I have compact support on their nearly orthogonal, so every computations, every every system that you need to solve. It's very easy and very fast.
+
+[696.0s - 725.0s]
+Then what you can do from your data is to estimate by directly square estimation. That is, you search function like this as a linear combination of your best pranks and the coefficients are estimated by least squares.
+
+[725.0s - 754.0s]
+And if you do this, there is a problem. When you make this particular office assumption, you you go with the problem. Classical problems that you're parametric estimator. You have for the parametric center you have to deal with the classical bias variance tradeoff that is uncontrolled invident parametric literature. These come from the fact that when you estimate your data on your function Phi Phi star from with the with clients OK, you smooth the data, but you have added exact reconstruction of your true function. And the problem is that this is a bias bias, and when you study the asymptotics, you keep this bias. Until as a parametric estimation, and so there is a problem, you have to be quite careful with this bias. A way to deal with bias is to increase. We quality of approximation of your function fine by your baselines, and a way to do this is to is to increase the number of nodes of baseline of.
+
+[754.0s - 783.0s]
+Sprains and you can note that if K and so the dimension of your vector space tends to Infinity by with the with the obvious necessary conditions at the step size of you not partitions tends to 0. Then you can be sure that you will be very good for the other question of Fiesta and the crux is that you may have is difference your capacity of approximation. This tends to zero quite rapidly. That means more faster than the variance tends to zero the variance of your estimation. And you have the more precise results.
+
+[783.0s - 812.0s]
+I hear this if your number of not increase at this rate, with them being the regularity of your function F, then you can show that here you have this rate of convergence for your parameter and you have also the septic normality of this estimator. The problem with the nonparametric estimation is that you don't get the root and classical conversion rates, but slightly. Wells OK so I give no smart example.
+
+[812.0s - 841.0s]
+Other epilator so.
+
+[841.0s - 870.0s]
+It's a system of six of three genes that interact together that innovates. Each other, so which is important in these equations? That is, everything will be observed, so here this is a question evolution for the M RNA concentrations and a for the proteins. Here you have a Michaelis Menten prediction tirman. Here's the dictation term. So what is interesting is that it was proposed in theoretical manner by Elevation Library and then incremented with true equally under tested an experiment and what they wanted us to. What you wanted was. Celery.
+
+[870.0s - 899.0s]
+Oscillation so you can see the proteins for the M RNA concentration, you have exactly the same picture. Suppose that we have.
+
+[899.0s - 928.0s]
+Storing data, so I take only the concentration of protein one because I can make my my estimation component twice. So in red you can see this is a true solution, so that's your observation. You have a 1550 observations and what you do the first step is you estimate with a C2 cubic spline your function you your regression.
+
+[928.0s - 957.0s]
+Anna, you compute the derivatives you do, you differentiate your spring semester in blue. In red you still have the truly effective at. What we do is you compute your active with a vector field. And you you move data in order to minimize the distance between the between the blue and the green line. And this is.
+
+[957.0s - 986.0s]
+What we obtain for 16 parameters to estimate, so it's not so bad that we can say, oh, I'm not very good for the vimax OK, but is very important. Finally easy is that parameters are able to give me correct unlikely functions on what you can do is to integrate then your system.
+
+[986.0s - 1015.0s]
+And here in the innovator you have the solution of your ody that you have estimated with the two step estimator and so OK. So construction is not so bad so maybe I have a great difference with the IMAX, but maybe it's not so important to have a very good precision for this parameter. In conclusion
+
+[1015.0s - 1044.0s]
+So we have purpose a different on alternative estimator.
+
+[1044.0s - 1073.0s]
+For which is specially fitted for the ease in which is consistent on which is well behaved, except that he is not very, very fast. But what is important, it is fast in a numerical numerical sense. That is, the program give you a nearly instantaneous response for your system. For the regulator, it's it's amazing.
+
+[1073.0s - 1102.0s]
+The perspective of this work is to work on the adaptive choice of those for splines because it may depend on the what we want to be want to be good for the estimation of the derivative to be good for vegetarians. Or maybe we need to adapt the classical ways to do it. We are looking also to be a way to ways to emulate our estimator to get the return rate. And it could be interesting to extend this methodology to other mathematical models, maybe differential equations. So partial differential equations and also to other kind of data, not only concentration profiles, but also not count data. OK, thank you.

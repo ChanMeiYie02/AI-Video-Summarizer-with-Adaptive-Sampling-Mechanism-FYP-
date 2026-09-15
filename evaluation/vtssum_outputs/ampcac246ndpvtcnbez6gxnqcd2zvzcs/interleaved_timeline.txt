@@ -1,0 +1,308 @@
+[0.0s - 29.0s]
+Hello everybody, I environment Krishna and I'll be talking about my work pose machines.
+
+[29.0s - 58.0s]
+And the goal of this work is to estimate the articulated two repose of a person in a single image. And here are some of our results on the lead sports data set and we pose this problem as the problem of localising 2D anatomical landmarks, such as the wrist, elbow, etc on the human body. On each of these images and detecting these anatomical landmarks is a hard problem because there's a large variation in appearance and configuration. And to motivate this, I'd like to start with a small example.
+
+[58.0s - 87.0s]
+Here I'm showing you two patches taken from a larger image and one of these two patches corresponds to an actual body part. Anne from purely local evidence, this is very difficult to recognize as to which one of these two parts corresponds to the body part. However, when I reveal.
+
+[87.0s - 116.0s]
+Patched close by like this.
+
+[116.0s - 145.0s]
+Or like this, I believe in which one of these two patches corresponds to a body part changes.
+
+[145.0s - 174.0s]
+Additional.
+
+[174.0s - 203.0s]
+When I reveal a larger Patch which might contain more discriminative image structure or confidence as to which of these two patches actually correspond to body part changes, and indeed with the this information revealed.
+
+[203.0s - 232.0s]
+The lower part, the part outlined in the Patch outlined in blue does indeed correspond to the rest of that person and the other part actually corresponds to the ball. So, summarizing what we've learned.
+
+[232.0s - 261.0s]
+One is that local local image evidence is weak for this problem. However, we can detect certain parts with more confidence than others. For example, we could detect the head with reasonable confidence.
+
+[261.0s - 290.0s]
+Part context is a strong Q. When we when we are able to detect parts nearby, our confidence in detecting harder parts.
+
+[290.0s - 319.0s]
+Just.
+
+[319.0s - 348.0s]
+And larger composite parts, such as full arms are can be easier to detect and they can help in.
+
+[348.0s - 377.0s]
+Localizing smaller, finer parts. So let's put this intuition into action.
+
+[377.0s - 406.0s]
+So we begin with trying to make the most use of the local image evidence. And to detect these parts, we basically look at each Patch in the image.
+
+[406.0s - 435.0s]
+Compute some image.
+
+[435.0s - 464.0s]
+Choose and train a multiclass classifier to classify each Patch into one of the part types or background.
+
+[464.0s - 493.0s]
+And since parts have this highly multimodal appearance variation, we'd like to.
+
+[493.0s - 522.0s]
+Use the best predictor we can use, so we want to use a high capacity supervised predictor that's capable of modeling this multimodal data distribution. And in.
+
+[522.0s - 551.0s]
+This work we use booster random forests, but there's no reason to limit ourselves to this predictor. You could use any predictor even on your network, for example.
+
+[551.0s - 580.0s]
+And confirming earlier intuition, relying purely on local evidence, you can detect parts like the head, neck and shoulder with reasonable confidence. The ideal kind of score map for this problem would be a peak at the right location and low probability everywhere else. But for parts that are lower down in the kinematic chain like the elbow and wrist, you have lots of false positives and tend to be hard to detect, but the.
+
+[580.0s - 609.0s]
+What so we see that local image ever?
+
+[609.0s - 638.0s]
+This week, but certain parts are easier to detect than others and we should be able to use this fact to improve our predictions in our next stage.
+
+[638.0s - 667.0s]
+For example, if you are trying to classify the elbow relying purely on local evidence, we have a lot of false positives.
+
+[667.0s - 696.0s]
+But the fact that the shoulder has a confident detection in its vicinity should be should enable us to improve our prediction for the elbow.
+
+[696.0s - 725.0s]
+And the way we incorporate this contextual information is by describing two types of context features. So the first kind of feature is a Patch feature. So if you're trying to classify a Patch at a particular location, we would extract a Patch from each of these confidence Maps and perform pooling within smaller cells to introduce a little bit of invariants and reduces the size of the feature.
+
+[725.0s - 754.0s]
+The next kind of feature we use is an offset feature, so this offset feature is comprises of offsets from that location to peaks in the score map.
+
+[754.0s - 783.0s]
+So in the next stage. So in the first stage we had detectors that relied on local evidence. In the next stage.
+
+[783.0s - 812.0s]
+We combine the contextual features with the image features to produce new new confidences, and when we do this, we see that lots of the false positives that were earlier in the score match for the shoulder and the elbow have now been removed and we have a peak in a single peak at the right location.
+
+[812.0s - 841.0s]
+And you could rip.
+
+[841.0s - 870.0s]
+This for a number of iterations to improve prediction and.
+
+[870.0s - 899.0s]
+We see that the peak indeed corresponds to the correct location in the image.
+
+[899.0s - 928.0s]
+So in a sense, our algorithm is reduces this hard problem of the sort structure prediction problem of estimating human pose into a sequence of simple class.
+
+[928.0s - 957.0s]
+Fication problems.
+
+[957.0s - 986.0s]
+The second kind of intuition that we had was that larger composite parts that correspond to full limbs can can be easier to detect, and this kind of has been observed in many other works, such as in the post, let's work and the discriminative mid level patches work, and we like to incorporate these additional cues into our model. So the way we do this.
+
+[986.0s - 1015.0s]
+Is by SIM.
+
+[1015.0s - 1044.0s]
+Really instantiating a level of predictors for each level in the hierarchy that we want to model, so as before we had one multiclass predictor that was trying to decide between. The smaller parts, like the rest and the elbow.
+
+[1044.0s - 1073.0s]
+Anne.
+
+[1073.0s - 1102.0s]
+Then we have a new second level predictor which tries to look at larger parts and classify them as full limbs like the arm or the like.
+
+[1102.0s - 1131.0s]
+And we could have a coarser level which probably models the full body.
+
+[1131.0s - 1160.0s]
+As before, we can.
+
+[1160.0s - 1189.0s]
+Compute context features on the outputs of the previous stage.
+
+[1189.0s - 1218.0s]
+But now.
+
+[1218.0s - 1247.0s]
+We transfer the spatial spatial context information across these layers. Why are these contexts?
+
+[1247.0s - 1276.0s]
+So now.
+
+[1276.0s - 1305.0s]
+How a predictor in the?
+
+[1305.0s - 1334.0s]
+Stage uses context features from its own layer as well as context features from other parts in the hierarchy. And I.
+
+[1334.0s - 1363.0s]
+We repeat this for a number of iterations.
+
+[1363.0s - 1392.0s]
+So going over what this looks like underneath in the first stage here, our confidence is for this image. For all the finest level of the hierarchy and we can see that for the head and neck you have good detections. But for all the other parts like the shoulders, elbows, wrists, you have noisy detections.
+
+[1392.0s - 1421.0s]
+In the next stage, we see that lots of the false positives have been removed.
+
+[1421.0s - 1450.0s]
+And. And the prediction improves as we move through stages. Also to note that we also have a background class, so background modeling is implicit in the model.
+
+[1450.0s - 1479.0s]
+If you look at what the Level 2 confidence Maps look like and these correspond to composite parts like the head and shoulders and the full on. Even in the first stage we get decent detections and this allows us to improve detections for the final parts. And as we move through these stages, these predictions improve.
+
+[1479.0s - 1508.0s]
+And in this data set, since these images are cropped around the person, we just get a simple single peak for the person detection. But I'll show you results later on where this becomes useful.
+
+[1508.0s - 1537.0s]
+So just showing you again. Kind of the complete inner workings of the model in the first stage you have predictions for each of these.
+
+[1537.0s - 1566.0s]
+Parts.
+
+[1566.0s - 1595.0s]
+In subsequent stages, these predictions tend to improve.
+
+[1595.0s - 1624.0s]
+Here I'm showing you. A temporal sequence. And in the first stage you can see that the predictions are kind of noisy and might on the top right. And as you move through the stages these predictions tend to improve and. You have peaks at the correct locations in the image.
+
+[1624.0s - 1653.0s]
+So our model reduces structured prediction to a sequence of simple classification problems and the sequential classification paradigm.
+
+[1653.0s - 1682.0s]
+Has been observed, has been used in different domains in natural language processing by Cohen and Carvalho, and Almetal and in computer vision. The auto context paper and many other papers have used sequential classification.
+
+[1682.0s - 1711.0s]
+So to point out some of some interesting properties of this model.
+
+[1711.0s - 1740.0s]
+Training reduces just to training multiple supervised classifiers. There's been a lot of work in the machine learning community in supervised classification, and this allows us to leverage that and just use whichever supervised classifier we would like without reinventing new classifiers.
+
+[1740.0s - 1769.0s]
+Next, the spatial model is learned implicitly by the classifiers in a data driven fashion. We do not have to specify parametric forms for potentials that that define the relationship between the locations of parts instead.
+
+[1769.0s - 1798.0s]
+Classifiers in later stages are allowed to use context features in whichever way they see feet. See fit to give the best predictive performance.
+
+[1798.0s - 1827.0s]
+Our method is related to inference in graphical models in message passing in.
+
+[1827.0s - 1856.0s]
+Such as loopy belief propagation and mean mean field variational methods, the belief of a particular variable is usually expressed as the product of messages arriving from neighboring variables.
+
+[1856.0s - 1885.0s]
+This can be thought of as sequential prediction, where this classifier kind of has this product structure and the features are messages from neighboring variables. However, we are kind of limited to this product structure because of formal probabilistic modeling, and since we are interested in good beliefs for each of these variables, are method can be interpre.
+
+[1885.0s - 1914.0s]
+Replacing this product structure with some general classifier.
+
+[1914.0s - 1943.0s]
+Replacing the messages with context feature computations. And see.
+
+[1943.0s - 1972.0s]
+We use context features from all the parts in the model. It's kind of models a fully connected graph where information from all parts in all levels are used in production.
+
+[1972.0s - 2001.0s]
+And this has certain advantages. When you use a fully connected model, you do not fall prey to certain characteristic errors that arise when you use a simple simplified graphical model like a tree structure model. For example, here I'm showing the error of double counting, where the same region in the image can be explained by more than one part and the reason for this is if you look at the Billy for the left ankle. In this case the Max module, there are multiple peaks and when you perform inference algorithm is allowed to use either of these two. Interpret the image.
+
+[2001.0s - 2030.0s]
+In our method, although in the first stage we have.
+
+[2030.0s - 2059.0s]
+Speak at the wrong location.
+
+[2059.0s - 2088.0s]
+In subsequent stages, using context from other parts, we are able to.
+
+[2088.0s - 2117.0s]
+I obtain a peak in the correct location. Additionally, since we met.
+
+[2117.0s - 2146.0s]
+The hierarchy we can both do pose estimation and detection of parts simultaneously. Here I'm showing you the.
+
+[2146.0s - 2175.0s]
+The confidence from the detection level, which is the coarsest level. So conditioned on this.
+
+[2175.0s - 2204.0s]
+We can now perform.
+
+[2204.0s - 2233.0s]
+Pose estimation within those details.
+
+[2233.0s - 2262.0s]
+And here are some examples of this.
+
+[2262.0s - 2291.0s]
+For evaluation, we evaluate on 2 standard datasets. The lead sports data set and the flick data set.
+
+[2291.0s - 2320.0s]
+Another way to visualize this data set is by showing the distribution of poses. And here I'm just overlays overlaying each pose over each other and you can see for parts like the wrist and the elbow, there's a large number large amount of variation, and those parts tend to be hard to detect.
+
+[2320.0s - 2349.0s]
+So on the flip data set we use the percentage detected joints metric, which is basically wearing a threshold from the ground truth point and see how many directions fall within the threshold and we improve upon the results of the state of the art method by SAP at all from the CPR 2013. Although there's maybe some room to improve in the high precision resume.
+
+[2349.0s - 2378.0s]
+And here are some qualitative results on the flick data set and we are able to handle images with a lot of background clutter and varied poses.
+
+[2378.0s - 2407.0s]
+Here I'm showing you qualitative exam results from the leads data set and for quantitative results I'd ask you to look at our website where we have additional results in an addendum with different metrics to evaluate.
+
+[2407.0s - 2436.0s]
+I analyzing method through the stages. We see that the dotted and dashed line corresponds to using purely local image evidence and adding the second stage increases the performance to a large extent and adding an additional third stage improves performance on difficult parts like the elbow and wrist, but with minor performance gains on hard parts like.
+
+[2436.0s - 2465.0s]
+On the anchor. Here we do a greater spatial analysis to see how much context, how much model is dependent on which context, and we see that.
+
+[2465.0s - 2494.0s]
+By blocking out context for one part and blocking out each of them in turn, the predicted Postal does not.
+
+[2494.0s - 2523.0s]
+Change. So here I'm making it uncertain, equally uncertain.
+
+[2523.0s - 2552.0s]
+And when I.
+
+[2552.0s - 2581.0s]
+Block out.
+
+[2581.0s - 2610.0s]
+Text the more.
+
+[2610.0s - 2639.0s]
+The post doesn't.
+
+[2639.0s - 2668.0s]
+Change much.
+
+[2668.0s - 2697.0s]
+And this is due to the. This is due to the fact that we're modeling.
+
+[2697.0s - 2726.0s]
+Complete graph.
+
+[2726.0s - 2755.0s]
+Fully connected graph.
+
+[2755.0s - 2784.0s]
+A note on efficient prediction. Since each operation is independent for each location in the image, it's parallelizable. Our CPU implementation at a particular scale runs at around 300 milliseconds per frame, and using GPU hardware we can improve that to 100 milliseconds per frame.
+
+[2784.0s - 2813.0s]
+In conclusion
+
+[2813.0s - 2842.0s]
+I showed that local energy image evidence is weak.
+
+[2842.0s - 2871.0s]
+And we use a sequential classification problem classification architecture, which is modular where you can use whichever supervised predictor helps you model the data.
+
+[2871.0s - 2900.0s]
+Part context is a strong Q.
+
+[2900.0s - 2929.0s]
+And larger composite parts are easier to detect.
+
+[2929.0s - 2958.0s]
+And our model implicitly learns these rich spatial and hierarchical relationships.
+
+[2958.0s - 2987.0s]
+Thank you and visit our website for more details. So I have a question about the observation that this is just this can be viewed as three rounds of BP where you're actually learning to pass the messages. Have you thought about doing something really funky that you can just take the message that you've learned in passer till convergence? Like just take the 1st way of passing message and run 'cause you're always stopping at three iterations, right? So if you pass it longer, do things converge to what we expect? If you do this longer? So empirically, I've seen that you do converge and the other kind of empirical observation is that as we add, more stages are precision tends to increase. At least in these, but yeah, there are other ways of doing the same thing where instead of having a single multiclass classifier to predict, you could use a single classifier for each variable. And there you could actually directly emulate what loopy belief propagation is doing. Do we have more questions? Hi, how's your model handle occlusion so parts model is resilient to a little bit of occlusion right now the datasets don't have occlusion labels. But if you have occlusion labels, that will definitely improve occlusion handling. Just another point on that, since we're also doing background modeling that also assists with occlusion reasoning because you know that a particular location corresponds to background with a large degree of confidence, which means that it cannot be. You cannot put apart at that location. I have a question myself actually. You mentioned the relation to auto context. Can you quickly summarize the main difference to the auto context bug? Well, auto context hasn't been used for this particular problem, so. But the difference is I guess are in the architecture. For example, how we capture context using Patch features and contextual features and how we incorporate hierarchies over these parts. Maybe a final question from the audience. That's not the case. Let's thank all our speakers of this session.

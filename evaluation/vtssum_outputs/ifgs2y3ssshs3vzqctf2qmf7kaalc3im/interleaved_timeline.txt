@@ -1,0 +1,44 @@
+[0.0s - 29.0s]
+OK, I am meeting with blue and I will present you our work on discovering deterministic relationships in multi label learning via linked open Data Cloud. No.
+
+[29.0s - 58.0s]
+And let's make an overview of our work. So the main goal is to discover this deterministic relationships among labels, and I mean common parents among these labels. But there are also other types of relationships like mutual exclusion and parent child relationship among existing labels, but these two types. We are noting this work. But but is in our immediate plans. And how we have done this? And using linked open data Cloud and our motivation is to improve prediction accuracy over the multi label learning algorithms and of course to reduce inference complexity. But we will elaborate more in the future in this field.
+
+[58.0s - 87.0s]
+So if you think about multi label learning. And more specifically, for the datasets that deal with this field. It's instance of a data set has some attributes like this. And that is related to one or more binary target variables called labels. This is a sample. All sorts of data set.
+
+[87.0s - 116.0s]
+And I will present you our approach step by step. So the first step of our approach is that organization of our label of the label names of the data set. And the let me let me explain you in more detail what I mean in textual data sets, names of labels make on site with some names of attributes. So let's see here. The big tech data set example where the attribute model has the same name with the late model, the label model, and in order to distinguish these two cases. They may have just had a small trivial word like tag word in front of the label or at the end of the label name. So. And we would like to have the pure word of a label. So we tokenize with a standard set of delimiters. Each label name. This delimiter saradas_space separator, the period and talking that appear in our label names are removed. So Doug and Arthur will be removed and the rest of them are concatenated again with the space we can see here. An example of this process. So the landscape major after a becomes landscape nature.
+
+[116.0s - 145.0s]
+The second step of our approach is to look up its label name in Word Net. So if a word has multiple senses, we assume that the correct sense is the most frequent one according to Word Net, which is based on semantically tagged corpora. Let's see an example example. Trivia are trivial examples. Winter label has two senses according to Word Net. The first one is the call decision of the year. And it is the most frequent one. This is indicated by the number at the end of the sentence. And the the second one is spent the winter, of course. We choose the first one. The same holds for the summer label.
+
+[145.0s - 174.0s]
+In the third step of our approach, we take recursively hypernym, since it's of the determined sense up to the root of word net. So for the winter means with our time label, all these are the hypernym, since it's. It's again a trivial example in a hierarchy form, and the same holds for the other label.
+
+[174.0s - 203.0s]
+In the fourth step of our approach, we examine all pairs of labels. Which we which we managed to find in Word, net of course, and their common ancestors are used for expanding the original label space of the learning problem. But at this point we should notice that our our approach ignores some common patterns that appear at the top of the word hierarchy becausw. These are parents will be added for all label pairs and we think that they will bring no new information.
+
+[203.0s - 232.0s]
+OK, so finally we add these. Missional labels measure quantity, amount. And season, and we don't add these two. Come on parents because they are at the top of the world hierarchy.
+
+[232.0s - 261.0s]
+The last step is here. For every new label for its instance, if at least one of its children is 2, then the specific new label will be true. In all other cases, the label will be false, so. If winter is true in our example, or summer is true, then season will be true. Otherwise season will be false.
+
+[261.0s - 290.0s]
+This is the experiment setup we used calibrated label label ranking and linear support vector machines using the implementations of Mulan an waka, respectively. We experimented on six month labeled datasets that have labels with the clear meanings, not obscure names, split datasets in France. Tested with these percentages and we discuss our results in terms of mean average precision, an logarithm clause.
+
+[290.0s - 319.0s]
+We have two approaches, two versions of our approach. We apply our method in the original data and to the expanded label space using these versions. In the first version, we take into consideration hypernym, since it's of the determined sense of the label for up to two layers. I mean parents and grandparents, and we ignore the following 30 two senses, and in the second version we take into account hypernym seasons, since it's off the determined sense of the. Label for all layers up to the root of word net, and we ignore the five senses shown in red color.
+
+[319.0s - 348.0s]
+And these are the results show for the first version. We can see the number of additional labels. And the same for the second version in order to have an impression of increase over the number of labels and the number of labels per data set that we managed to find in Word net.
+
+[348.0s - 377.0s]
+So lot load 1 version leads to improvements for all datasets in logarithmic loss. Batting for datasets in the mean average precision there is a reduction in two datasets and load 2 version leads to improvements for all datasets, excepting much left 2011 and four, and improves mean average precision for three cases in the other three cases we have a reduction.
+
+[377.0s - 406.0s]
+These are our future work experiments using the lowest common subsume are, instead of all common parents for its pair of labels. Maybe we should add a criterion that determines whether or not to reject this list Commons of Schumer. We can exploit additional resources linked open data like this. It would be wise to make a general first check of all labels in order to detect the domain that they're referred to, and also we are able to select the appropriate sense of the labels based on this domain and not on the frequency given by Ornette. We can also discover additional types of relationships, like I said. In the end, the museum is light.
+
+[406.0s - 435.0s]
+Thank you for your patience.

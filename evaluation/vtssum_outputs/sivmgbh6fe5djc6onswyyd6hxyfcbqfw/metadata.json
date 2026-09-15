@@ -1,0 +1,20 @@
+{
+    "id": "sivmgbh6fe5djc6onswyyd6hxyfcbqfw",
+    "title": "Trust and Design in Social Systems",
+    "url": "http://videolectures.net/cikm08_milic_tadiss/",
+    "info": {
+        "author": [
+            "Nataša Milić-Frayling, Microsoft Research, Cambridge, Microsoft Research"
+        ],
+        "published": "Nov. 19, 2008",
+        "recorded": "October 2008",
+        "category": [
+            "Top->Computer Science->Network Analysis->Social Networks"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 218,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1571
+}

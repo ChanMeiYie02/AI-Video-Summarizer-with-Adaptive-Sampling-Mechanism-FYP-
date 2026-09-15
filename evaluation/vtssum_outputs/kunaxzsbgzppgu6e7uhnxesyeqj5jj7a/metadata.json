@@ -1,0 +1,21 @@
+{
+    "id": "kunaxzsbgzppgu6e7uhnxesyeqj5jj7a",
+    "title": "Formal Query Generation for Question Answering over Knowledge Bases",
+    "url": "http://videolectures.net/eswc2018_zafar_knowledge_bases/",
+    "info": {
+        "author": [
+            "Hamid Zafar, University of Bonn"
+        ],
+        "published": "July 10, 2018",
+        "recorded": "June 2018",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 187,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 68
+}

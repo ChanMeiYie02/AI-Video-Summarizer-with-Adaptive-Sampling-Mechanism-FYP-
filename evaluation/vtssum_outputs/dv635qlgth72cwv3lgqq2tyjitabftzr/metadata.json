@@ -1,0 +1,21 @@
+{
+    "id": "dv635qlgth72cwv3lgqq2tyjitabftzr",
+    "title": "Powering the Next Generation Media Search on the Web",
+    "url": "http://videolectures.net/s3mr2010_van_zwol_pngm/",
+    "info": {
+        "author": [
+            "Roelof Van Zwol, Yahoo! Research Barcelona"
+        ],
+        "published": "March 16, 2010",
+        "recorded": "February 2010",
+        "category": [
+            "Top->Computer Science->Information Retrieval->Multimedia Retrieval",
+            "Top->Computer Science->Network Analysis->Social Networks"
+        ]
+    },
+    "num_segments": 78,
+    "num_sentences": 888,
+    "num_clips_with_summary": 27,
+    "num_gt_summary_sentences": 52,
+    "ground_truth_summary_length_chars": 4730
+}

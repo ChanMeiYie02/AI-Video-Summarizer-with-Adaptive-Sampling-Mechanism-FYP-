@@ -1,0 +1,21 @@
+{
+    "id": "azcxtim33xpei2ibhcth5tlpl2muidqi",
+    "title": "Measurement Errors in Astrostatistics",
+    "url": "http://videolectures.net/nipsworkshops2011_gray_astrostatistics/",
+    "info": {
+        "author": [
+            "Alexander Gray, School of Computational Science and Engineering, College of Computing, Georgia Institute of Technology"
+        ],
+        "published": "Jan. 23, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Classification",
+            "Top->Astronomy->Cosmology"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 38,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 533
+}

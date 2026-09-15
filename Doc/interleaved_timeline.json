@@ -1,0 +1,1480 @@
+[
+    {
+        "time": 0.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Introduction\n**Transcription:**\nHi everyone, my name is Kevin."
+    },
+    {
+        "time": 0.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer monitor, appearing to be engaged in a video call or streaming. He is looking directly at the camera with an open-mouthed expression, and there is a microphone visible in the foreground.",
+        "filename": "frame_0002.jpg"
+    },
+    {
+        "time": 0.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image shows a man sitting in front of a computer monitor, appearing to be recording or streaming, as he is looking directly at the camera. He is wearing a dark blue shirt and gesturing with his left hand while speaking.",
+        "filename": "frame_0003.jpg"
+    },
+    {
+        "time": 1.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be a well-lit room, looking directly at the camera. He is wearing a dark blue t-shirt and is positioned in front of a computer monitor displaying a nature scene.",
+        "filename": "frame_0005.jpg"
+    },
+    {
+        "time": 1.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image features a man sitting in front of a computer monitor, smiling at the camera. He appears to be in a well-lit indoor setting, possibly an office or home workspace.",
+        "filename": "frame_0008.jpg"
+    },
+    {
+        "time": 2.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or home setting, looking directly at the camera and smiling. He is wearing a dark blue V-neck shirt and is holding a microphone, suggesting he might be recording a video or podcast.",
+        "filename": "frame_0009.jpg"
+    },
+    {
+        "time": 2.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely participating in a video call or streaming. He is wearing a dark blue V-neck shirt and looking directly at the camera with a neutral expression.",
+        "filename": "frame_0010.jpg"
+    },
+    {
+        "time": 2.9,
+        "type": "AUDIO",
+        "content": "Today I want to show you how you could take a PowerPoint presentation and convert it into a video for YouTube or any other video service, whether it be Vimeo or anything else or Facebook or wherever you want to upload your video too."
+    },
+    {
+        "time": 3.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, appearing to be engaged in a video call or recording. He is wearing a dark blue shirt and looking directly at the camera with a neutral expression.",
+        "filename": "frame_0014.jpg"
+    },
+    {
+        "time": 4.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely participating in a video call or streaming, given the visible screen and his direct gaze toward the camera. He is wearing a dark blue shirt and appears to be engaged in an online interaction.",
+        "filename": "frame_0018.jpg"
+    },
+    {
+        "time": 5.8,
+        "type": "AUDIO",
+        "content": "And as a foredisclosure before we jump into this, I work at Microsoft as a full-time employee."
+    },
+    {
+        "time": 6.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or room, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that lets in bright daylight.",
+        "filename": "frame_0025.jpg"
+    },
+    {
+        "time": 8.7,
+        "type": "AUDIO",
+        "content": "All right, well let's jump on the PC."
+    },
+    {
+        "time": 11.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or home setting, looking directly at the camera. He is wearing a dark blue V-neck shirt and is positioned in front of a large computer monitor.",
+        "filename": "frame_0047.jpg"
+    },
+    {
+        "time": 11.6,
+        "type": "AUDIO",
+        "content": "Here I am on my desktop and I have PowerPoint on my taskbar here."
+    },
+    {
+        "time": 12.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large computer monitor.",
+        "filename": "frame_0049.jpg"
+    },
+    {
+        "time": 12.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely engaged in a video call or online activity. He is wearing a dark blue shirt and looking directly at the camera with a neutral expression.",
+        "filename": "frame_0051.jpg"
+    },
+    {
+        "time": 12.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely engaged in a video call or streaming, as he is looking directly at the camera. He is wearing a dark blue shirt and appears to be focused on something off-camera.",
+        "filename": "frame_0052.jpg"
+    },
+    {
+        "time": 13.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, appearing to be engaged in a video call or online activity. He is wearing a dark blue shirt and looking directly at the camera with a neutral expression.",
+        "filename": "frame_0053.jpg"
+    },
+    {
+        "time": 13.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely participating in an online video call or streaming. He is wearing a dark blue shirt and looking directly at the camera with a neutral expression.",
+        "filename": "frame_0054.jpg"
+    },
+    {
+        "time": 13.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, appearing to be engaged in a video call or recording. He is wearing a dark blue shirt and looking directly at the camera with a neutral expression.",
+        "filename": "frame_0055.jpg"
+    },
+    {
+        "time": 14.5,
+        "type": "AUDIO",
+        "content": "This is a PowerPoint that comes with Office 365."
+    },
+    {
+        "time": 15.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely engaged in a video call or recording, given the presence of a camera or microphone setup in the foreground. He is wearing a dark blue shirt and looking directly at the camera with a slight smile.",
+        "filename": "frame_0062.jpg"
+    },
+    {
+        "time": 15.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting indoors, likely in a room with a large window providing natural light. He is looking directly at the camera while wearing a dark blue shirt, and a computer monitor is visible to his left.",
+        "filename": "frame_0064.jpg"
+    },
+    {
+        "time": 16.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely engaged in a video call or online activity. He is wearing a dark blue shirt and looking directly at the camera with a neutral expression.",
+        "filename": "frame_0065.jpg"
+    },
+    {
+        "time": 16.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or room with a large window in the background. He is looking directly at the camera while holding what looks like a camera or a similar device in front of him.",
+        "filename": "frame_0068.jpg"
+    },
+    {
+        "time": 17.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or room, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large computer monitor.",
+        "filename": "frame_0070.jpg"
+    },
+    {
+        "time": 17.4,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The speaker introduces himself as Kevin and states the topic: converting PowerPoint presentations into videos for various platforms."
+    },
+    {
+        "time": 20.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or room, looking directly at the camera. He is wearing a dark blue shirt and is holding a microphone in front of him, suggesting he might be recording or broadcasting.",
+        "filename": "frame_0082.jpg"
+    },
+    {
+        "time": 20.3,
+        "type": "AUDIO",
+        "content": "- He mentions that he works at Microsoft as a full-time employee."
+    },
+    {
+        "time": 21.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  A young man is sitting in front of a computer monitor, smiling as he looks towards the right. He appears to be engaged in an online activity or video call, with a bright, well-lit room featuring large windows in the background.",
+        "filename": "frame_0085.jpg"
+    },
+    {
+        "time": 21.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  A young man with dark hair is sitting in front of a computer monitor, appearing to be engaged in a video call or online activity. The background shows a bright window with a view of an urban landscape.",
+        "filename": "frame_0086.jpg"
+    },
+    {
+        "time": 21.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts an underwater view of a person swimming or diving in clear, turquoise water. Sunlight filters down from the surface, creating bright patterns on the water's surface above the swimmer.",
+        "filename": "frame_0087.jpg"
+    },
+    {
+        "time": 23.2,
+        "type": "AUDIO",
+        "content": "- The demonstration will begin on his desktop computer with PowerPoint accessible on the taskbar."
+    },
+    {
+        "time": 26.099999999999998,
+        "type": "AUDIO",
+        "content": "- The specific version of PowerPoint mentioned is the one included with Office 365."
+    },
+    {
+        "time": 27.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **document** or a **screenshot of a software interface**.  **Transcription of significant text:**  * Kevin's Cookie Company * to add subtitle  **Description:** The image displays a screenshot of a video editing or media management software interface. The main area shows a video frame featuring a plate of cookies, and a text overlay on the right side reads \"Kevin's Cookie Company\" with a prompt below it that says \"to add subtitle.\"",
+        "filename": "frame_0111.jpg"
+    },
+    {
+        "time": 27.75,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a webpage, likely a website for a \"Kevin's Cookie Company.\" The webpage features a large image of cookies and text that reads: \"Kevin's Cookie Company\" and \"to add subtitle.\"",
+        "filename": "frame_0112.jpg"
+    },
+    {
+        "time": 29.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: PowerPoint Version Compatibility\n**Transcription:**\n65 it's the latest and greatest version however if you have an older version of powerpoint you should also be able to do this but i just can't guarantee that things will look the same okay well so i have this slide deck and what i'd love to do is i want to add some narration some video on top and then i want to package it all and upload it to youtube as a video so how do i go about doing that so the first thing that we're going to do is click on this pivot option that says slide show so i'm going to go ahead and click on that\n\n**Summary:**\n- PowerPoint version 65 is the latest version."
+    },
+    {
+        "time": 36.25,
+        "type": "AUDIO",
+        "content": "- Older versions of PowerPoint can still perform the requested actions, though the appearance might vary."
+    },
+    {
+        "time": 40.75,
+        "type": "FRAME",
+        "content": "This image is primarily a **document** (specifically, a presentation slide).  **Transcription of the text:** High Level Summary * Sales should increase exponentially. * Customers love our products. * Staff love our company  **Description:** The image displays a presentation slide with a title \"High Level Summary\" and three bullet points outlining key business goals. To the right of the text, there is a photograph of a glass jar filled with white liquid, likely milk, set against a blurred, dark background.",
+        "filename": "frame_0164.jpg"
+    },
+    {
+        "time": 42.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **document**.  Here is the transcription of the significant text:  **High Level Summary** * Sales should increase exponentially. * Customers love our products. * Staff love our company  The image also contains a screenshot of what appears to be a presentation slide within a larger application interface.",
+        "filename": "frame_0169.jpg"
+    },
+    {
+        "time": 42.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a webpage layout, likely a video or article page, featuring a large central image of a plate of cookies surrounded by a grid of smaller cookie images. To the right of the image, there is text that reads: \"Kevin's Cookie Company\". The overall layout suggests a website or online content presentation.",
+        "filename": "frame_0170.jpg"
+    },
+    {
+        "time": 43.5,
+        "type": "AUDIO",
+        "content": "- The goal is to add narration and video to a slide deck."
+    },
+    {
+        "time": 50.75,
+        "type": "AUDIO",
+        "content": "- The next step is to click the \"Slide Show\" option."
+    },
+    {
+        "time": 55.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **document** or a **screenshot of a web page**.  **Transcription of significant text:**  *   Kevin's Cookie Company  **Description:** The image is a screenshot of a webpage, likely a business or product page, featuring a large central image of cookies and a title. The page layout includes navigation elements at the top and a section on the right with the prominent text \"Kevin's Cookie Company.\"",
+        "filename": "frame_0223.jpg"
+    },
+    {
+        "time": 58.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Recording the Slideshow\n**Transcription:**\nUnder here you'll see an option right under the slideshow pivot that says record slideshow."
+    },
+    {
+        "time": 60.416666666666664,
+        "type": "AUDIO",
+        "content": "And what I'm going to do is you could either record from the current slide or from the beginning, but in this case, the current slide is the beginning, so it doesn't matter which one I choose."
+    },
+    {
+        "time": 62.833333333333336,
+        "type": "AUDIO",
+        "content": "So I'm going to go ahead and say from the beginning."
+    },
+    {
+        "time": 65.25,
+        "type": "AUDIO",
+        "content": "Now, a few things that I could do on the screen that popped up."
+    },
+    {
+        "time": 67.66666666666667,
+        "type": "AUDIO",
+        "content": "You see this big red record button?"
+    },
+    {
+        "time": 70.08333333333333,
+        "type": "AUDIO",
+        "content": "Well, that's how I record."
+    },
+    {
+        "time": 71.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a collection of cookies cooling on a wire rack, with a small inset photo of a man. The overall impression is that of a food photography setup, likely for a business named \"Kevin's Cookie Company.\"",
+        "filename": "frame_0286.jpg"
+    },
+    {
+        "time": 71.75,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a close-up view of a cooling rack filled with freshly baked cookies. In the background, there is a white text overlay that reads: \"Kevin's Cookie Company\".",
+        "filename": "frame_0288.jpg"
+    },
+    {
+        "time": 72.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **document**.  **Transcription:** Kevin's Cookie Company  **Description:** The image displays a white document with the text \"Kevin's Cookie Company\" centered on the right side. The left side of the document features a photograph of several cookies arranged on a wire rack.",
+        "filename": "frame_0289.jpg"
+    },
+    {
+        "time": 72.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene appears to be a screenshot from a video or presentation, featuring a large white area on the right with text and a collection of cookies on the left. The text on the right reads: \"Kevin's Cookie Company\".",
+        "filename": "frame_0290.jpg"
+    },
+    {
+        "time": 72.5,
+        "type": "AUDIO",
+        "content": "I could also stop recording and then I could also play it to hear how it sounds."
+    },
+    {
+        "time": 74.91666666666666,
+        "type": "AUDIO",
+        "content": "I have some settings under here where I could choose my microphone, I could choose\n\n**Summary:**\n- The option to record a slideshow is located under the slideshow pivot."
+    },
+    {
+        "time": 77.33333333333333,
+        "type": "AUDIO",
+        "content": "- You can choose to record from the current slide or from the beginning."
+    },
+    {
+        "time": 79.75,
+        "type": "AUDIO",
+        "content": "- Since the current slide is the beginning, recording from the beginning is selected."
+    },
+    {
+        "time": 82.16666666666666,
+        "type": "AUDIO",
+        "content": "- A red record button is used to start recording, and it can also be stopped and played back for review."
+    },
+    {
+        "time": 84.58333333333333,
+        "type": "AUDIO",
+        "content": "- Settings are available to select the microphone."
+    },
+    {
+        "time": 87.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Introduction to Presentation Features\n**Transcription:**\nCamera, I'm in this case see me showing up on here because I'm using my webcam to get my video onto this slide and you have options where you could turn your microphone on and off, your camera on and off, and you could turn on the preview or not the preview."
+    },
+    {
+        "time": 90.22222222222223,
+        "type": "AUDIO",
+        "content": "So it's kind of cool because what I could do is I can record myself going through this presentation, speaking through it, and people can also see me on the video."
+    },
+    {
+        "time": 93.44444444444444,
+        "type": "AUDIO",
+        "content": "So it's a really nice format for say a YouTube video."
+    },
+    {
+        "time": 96.66666666666667,
+        "type": "AUDIO",
+        "content": "When I can also do as I'm going through it is I also have a pen and I have a highlighter."
+    },
+    {
+        "time": 99.88888888888889,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The speaker is using a webcam to record a video of a presentation."
+    },
+    {
+        "time": 103.11111111111111,
+        "type": "AUDIO",
+        "content": "- Users have options to control the microphone, camera, and preview."
+    },
+    {
+        "time": 106.33333333333334,
+        "type": "AUDIO",
+        "content": "- The functionality allows recording oneself speaking through the presentation while being visible on video."
+    },
+    {
+        "time": 109.55555555555556,
+        "type": "AUDIO",
+        "content": "- This format is ideal for creating YouTube videos."
+    },
+    {
+        "time": 112.77777777777777,
+        "type": "AUDIO",
+        "content": "- The speaker also has tools like a pen and highlighter available."
+    },
+    {
+        "time": 116.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Introduction and Company Overview\n**Transcription:**\nHi everyone, my name is Kevin with Kevin's Cookie Company, and today I want to walk through some of our recent results that we've had with the Cookie Company."
+    },
+    {
+        "time": 119.625,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The speaker introduced himself as Kevin from Kevin's Cookie Company."
+    },
+    {
+        "time": 123.25,
+        "type": "AUDIO",
+        "content": "- The purpose of the presentation is to review recent results from the Cookie Company."
+    },
+    {
+        "time": 126.875,
+        "type": "AUDIO",
+        "content": "- The speaker set the stage for discussing the company's performance."
+    },
+    {
+        "time": 130.5,
+        "type": "AUDIO",
+        "content": "## Chapter 2: Sales Growth\n**Transcription:**\nNow, sales have really been growing exponentially."
+    },
+    {
+        "time": 132.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a close-up of a baking tray filled with cookies, suggesting a food preparation or baking activity. In the background, there is a white text overlay that reads: \"Kevin's Cookie Company\".",
+        "filename": "frame_0531.jpg"
+    },
+    {
+        "time": 134.125,
+        "type": "AUDIO",
+        "content": "You see these cookies."
+    },
+    {
+        "time": 137.75,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- Sales are experiencing exponential growth."
+    },
+    {
+        "time": 139.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **document** (a presentation slide).  **Transcription of the text:** High Level Summary * Sales should increase exponentially. * Customers love our products. * Staff love our company  **Description:** The image displays a presentation slide with a title \"High Level Summary\" and three bullet points outlining key business goals related to sales, customer satisfaction, and staff morale. To the right of the slide, there is a photograph of a stack of round, golden-brown cookies, suggesting a business context possibly related to food or retail.",
+        "filename": "frame_0557.jpg"
+    },
+    {
+        "time": 141.375,
+        "type": "AUDIO",
+        "content": "- The speaker pointed to the cookies as evidence of the sales growth."
+    },
+    {
+        "time": 145.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Company Success and Customer Loyalty\n**Transcription:**\nWe's at represents our growth right there and really customers love our products when I say love I mean they really love these cookies and also not only do our customers love our cookies but our staff love working for this company in fact people love us so much that we've enabled to open three additional locations we have a location that we recently opened up in Pennsylvania we have a new Jersey location and we have a New York location in addition to all these other blue dots we are a very big company\n\n**Summary:**\n- The company is experiencing growth and strong customer loyalty."
+    },
+    {
+        "time": 150.8,
+        "type": "AUDIO",
+        "content": "- Customers greatly enjoy the products, specifically the cookies."
+    },
+    {
+        "time": 156.6,
+        "type": "AUDIO",
+        "content": "- Both customers and staff have a positive attitude towards the company."
+    },
+    {
+        "time": 162.4,
+        "type": "AUDIO",
+        "content": "- The company's popularity has led to the opening of three new locations in Pennsylvania, New Jersey, and New York."
+    },
+    {
+        "time": 168.2,
+        "type": "AUDIO",
+        "content": "- The company is recognized as a very large organization."
+    },
+    {
+        "time": 174.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Sales Performance Review\n**Transcription:**\nGuys look at all these locations all over the map."
+    },
+    {
+        "time": 177.22222222222223,
+        "type": "AUDIO",
+        "content": "Now, when we look at sales, sales have been doing fantastic."
+    },
+    {
+        "time": 177.75,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene appears to be a presentation or a screen recording of a business report. The main visible text is: **Q2 Reporting** * Sales were fantastic. There is nothing bad to report.  Below this text is a table with various numerical data, though the specific content is too blurry to transcribe accurately.  In the bottom portion of the image, there are two people visible on the sides, suggesting a meeting or presentation setting. One person on the left is looking toward the screen, and another person on the right is looking toward the camera.",
+        "filename": "frame_0712.jpg"
+    },
+    {
+        "time": 180.44444444444446,
+        "type": "AUDIO",
+        "content": "There's really nothing bad to report."
+    },
+    {
+        "time": 183.66666666666666,
+        "type": "AUDIO",
+        "content": "We've had just amazing performance."
+    },
+    {
+        "time": 186.88888888888889,
+        "type": "AUDIO",
+        "content": "And that wraps up the presentation."
+    },
+    {
+        "time": 190.11111111111111,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The speaker points out the numerous locations on the map."
+    },
+    {
+        "time": 193.33333333333334,
+        "type": "AUDIO",
+        "content": "- Sales have been performing fantastically."
+    },
+    {
+        "time": 196.55555555555554,
+        "type": "AUDIO",
+        "content": "- There are no negative issues to report."
+    },
+    {
+        "time": 199.77777777777777,
+        "type": "AUDIO",
+        "content": "- The presentation on sales is concluded."
+    },
+    {
+        "time": 200.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene appears to be a screenshot of a video editing or media management software interface. The main area of the screen displays a video frame featuring a person (a man) on the left side, and on the right side, there is a title overlay that reads: \"Kevin's Cookie Company\".",
+        "filename": "frame_0803.jpg"
+    },
+    {
+        "time": 202.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a video editing interface with a video preview in the center. The video preview shows a close-up of a person, likely Kevin, and text overlay that reads \"Kevin's Cookie Company\".",
+        "filename": "frame_0809.jpg"
+    },
+    {
+        "time": 203.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Overview of the Slide View Feature\n**Transcription:**\nHey, here I am back on the main slide view and on each slide now you see a video that I can move around to different locations."
+    },
+    {
+        "time": 207.14285714285714,
+        "type": "AUDIO",
+        "content": "Um this is my video of me talking and each slide has that and what I could do is I could simply click on this play button."
+    },
+    {
+        "time": 207.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a video player interface. The video content itself shows a person (Kevin) in a setting that appears to be a kitchen or food preparation area, with a focus on cookies. There is overlaid text on the video frame that reads: \"Kevin's Cookie Company\".",
+        "filename": "frame_0831.jpg"
+    },
+    {
+        "time": 211.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **document**.  Here is the transcription of the significant text:  **High Level Summary** * Sales should increase exponentially. * Customers love our products. * Staff love our company  The image also contains a screenshot of what appears to be a presentation slide within a larger application interface.",
+        "filename": "frame_0845.jpg"
+    },
+    {
+        "time": 211.28571428571428,
+        "type": "AUDIO",
+        "content": "My name is Kevin with Kevin's Cookie Company and today I want and so now what I could do is I could send the deck out to someone that could go slide by slide and they could see my recording or what I could do is if I want to prep it where it's just kind of a package that I could send off to YouTube or Facebook or Vimeo or wherever I want to share this."
+    },
+    {
+        "time": 212.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **document**.  Here is the transcription of the significant text:  **High Level Summary** * Sales should increase exponentially. * Customers love our products. * Staff love our company  The image also contains a screenshot of what appears to be a presentation slide within a larger application interface.",
+        "filename": "frame_0851.jpg"
+    },
+    {
+        "time": 215.42857142857144,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The main slide view features a video on each slide that can be moved."
+    },
+    {
+        "time": 219.57142857142858,
+        "type": "AUDIO",
+        "content": "- The video is a recording of Kevin from Kevin's Cookie Company."
+    },
+    {
+        "time": 223.71428571428572,
+        "type": "AUDIO",
+        "content": "- Users can click a play button to view the video."
+    },
+    {
+        "time": 227.85714285714286,
+        "type": "AUDIO",
+        "content": "- The deck can be shared slide-by-slide or as a package for platforms like YouTube, Facebook, or Vimeo."
+    },
+    {
+        "time": 228.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **document**.  Here is the transcription of the visible text:  **Into**  **Intro Music**  **About This as of Redistribution** This project was created by [link to project]. This project is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.  **History** [Date] - Initial release. [Date] - Update.  **License** Creative Commons Attribution-ShareAlike 3.0 Unported License.  **About This Redistribution** This project was created by [link to project]. This project is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.  **History**",
+        "filename": "frame_0915.jpg"
+    },
+    {
+        "time": 232.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Creating a Video\n**Transcription:**\nNow I can simply click on export and create a video."
+    },
+    {
+        "time": 234.63636363636363,
+        "type": "AUDIO",
+        "content": "So when I'm in do create video, um you can do it in ultra HD which is 4K or 1080p."
+    },
+    {
+        "time": 237.27272727272728,
+        "type": "AUDIO",
+        "content": "So I'll just do 4K and I'm going to create the video."
+    },
+    {
+        "time": 239.9090909090909,
+        "type": "AUDIO",
+        "content": "And what it's going to do is I'm going to use my recorded timings as I was going through it and I also want to use my narrations."
+    },
+    {
+        "time": 242.54545454545453,
+        "type": "AUDIO",
+        "content": "So sure it sounds good, let's create the video."
+    },
+    {
+        "time": 245.1818181818182,
+        "type": "AUDIO",
+        "content": "And now I just have to choose a location so I'm going to put it on my desktop."
+    },
+    {
+        "time": 247.8181818181818,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The speaker can create a video by clicking on export."
+    },
+    {
+        "time": 250.45454545454544,
+        "type": "AUDIO",
+        "content": "- They have the option to choose between 4K or 1080p resolution."
+    },
+    {
+        "time": 253.0909090909091,
+        "type": "AUDIO",
+        "content": "- They plan to use 4K for the video."
+    },
+    {
+        "time": 254.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a webpage, likely a website for a cookie company. The main content of the screen features a large image of cookies and the text \"Kevin's Cookie Company\".",
+        "filename": "frame_1019.jpg"
+    },
+    {
+        "time": 255.72727272727272,
+        "type": "AUDIO",
+        "content": "- The video will incorporate recorded timings and narrations."
+    },
+    {
+        "time": 256.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a web browser with a large white area and some text, alongside a smaller window showing what appears to be a webpage with some content. Below the main screen, there is a smaller section showing a photograph of a man and some food items.",
+        "filename": "frame_1026.jpg"
+    },
+    {
+        "time": 258.3636363636364,
+        "type": "AUDIO",
+        "content": "- The next step is selecting a location to save the video on the desktop."
+    },
+    {
+        "time": 261.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Setting up the video render\n\n**Transcription:**\nWell, we'll just call this Kevin Cookie company video and let's put it on my desktop."
+    },
+    {
+        "time": 265.14285714285717,
+        "type": "AUDIO",
+        "content": "It's going to take a little bit of time to go through."
+    },
+    {
+        "time": 267.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a video player interface, likely for a video editing or viewing application. The main content of the screen shows a video frame featuring a close-up of a cookie, and overlaid text that reads: \"Kevin's Cookie Company\".",
+        "filename": "frame_1069.jpg"
+    },
+    {
+        "time": 269.2857142857143,
+        "type": "AUDIO",
+        "content": "You can see in the bottom right-hand corner, it's rendering the video and depending on, you know, how long it is, how many slides you have, how much video narrations included, uh it might take a little bit longer to go through and render, so we'll just hang out for a moment until it's done."
+    },
+    {
+        "time": 273.42857142857144,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The speaker is naming the video \"Kevin Cookie company video\" and placing it on the desktop."
+    },
+    {
+        "time": 277.57142857142856,
+        "type": "AUDIO",
+        "content": "- The process of rendering the video is currently visible in the bottom right corner."
+    },
+    {
+        "time": 281.7142857142857,
+        "type": "AUDIO",
+        "content": "- The rendering time depends on the video's length, number of slides, and included narration."
+    },
+    {
+        "time": 285.8571428571429,
+        "type": "AUDIO",
+        "content": "- The speaker is instructing the listener to wait for the rendering to complete."
+    },
+    {
+        "time": 290.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Introduction and Presentation Setup\n**Transcription:**\nLooks like it has finished rendering the video."
+    },
+    {
+        "time": 292.6363636363636,
+        "type": "AUDIO",
+        "content": "I'm going to go ahead and minimize PowerPoint and go back to my desktop."
+    },
+    {
+        "time": 295.27272727272725,
+        "type": "AUDIO",
+        "content": "I saved the video files to the desktop and let's uh play this."
+    },
+    {
+        "time": 297.90909090909093,
+        "type": "AUDIO",
+        "content": "Everyone, my name is Kevin with Kevin's Cookie Company and today I wanted to walk through some of our recent modules that we've had with the Cookie Company."
+    },
+    {
+        "time": 299.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a large, mostly blank gray area with a small icon in the center, suggesting a loading or empty state. In the bottom left corner, a small video frame shows a man looking towards the camera.",
+        "filename": "frame_1199.jpg"
+    },
+    {
+        "time": 299.75,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a black video player area against a bright blue, cloudy sky background. In the bottom left corner, a small thumbnail shows a person, likely a man, in what appears to be an indoor setting.",
+        "filename": "frame_1200.jpg"
+    },
+    {
+        "time": 300.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a website or application interface. The main content of the screen features a title \"Kevin's Cookie Company\" and a background image of cookies.",
+        "filename": "frame_1202.jpg"
+    },
+    {
+        "time": 300.54545454545456,
+        "type": "AUDIO",
+        "content": "Now, sales have really so there you see, uh the video was playing."
+    },
+    {
+        "time": 301.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene features a close-up of a cooling rack filled with round, baked goods, likely cookies, with a person visible in the bottom left corner. In the upper right, there is text that reads: \"Kevin's Cookie Company\".",
+        "filename": "frame_1205.jpg"
+    },
+    {
+        "time": 303.1818181818182,
+        "type": "AUDIO",
+        "content": "These cookies that represents our growth."
+    },
+    {
+        "time": 305.8181818181818,
+        "type": "AUDIO",
+        "content": "So here you see a video with my PowerPoint presentation."
+    },
+    {
+        "time": 306.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **document**.  Here is the transcription of the text:  **High Level Summary** * Sales should increase exponentially. * Customers love our products. * Staff love our company  The image also contains a small inset picture showing a person (likely a man) in what appears to be an indoor setting, possibly a business or office environment.",
+        "filename": "frame_1226.jpg"
+    },
+    {
+        "time": 308.45454545454544,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- Kevin introduced himself and his company, Kevin's Cookie Company."
+    },
+    {
+        "time": 311.09090909090907,
+        "type": "AUDIO",
+        "content": "- He stated the purpose of the presentation, which was to review recent modules with the Cookie Company."
+    },
+    {
+        "time": 313.72727272727275,
+        "type": "AUDIO",
+        "content": "- He mentioned that the video was playing and showed cookies representing growth."
+    },
+    {
+        "time": 316.3636363636364,
+        "type": "AUDIO",
+        "content": "- The presentation included a video along with a PowerPoint presentation."
+    },
+    {
+        "time": 317.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **document**.  Here is the transcription of the text:  **High Level Summary** * Sales should increase exponentially. * Customers love our products. * Staff love our company  The image also contains a small inset showing what appears to be a video player interface or a scene with people, but the main focus is the text slide.",
+        "filename": "frame_1271.jpg"
+    },
+    {
+        "time": 318.75,
+        "type": "FRAME",
+        "content": "This image is primarily a **document**.  Here is the transcription of the significant text:  **High Level Summary** * Sales should increase exponentially. * Customers love our products. * Staff love our company  The image also contains a small section labeled \"Company Video\".",
+        "filename": "frame_1276.jpg"
+    },
+    {
+        "time": 319.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Introduction to Video Uploading\n**Transcription:**\nUh it has the annotations that I do there this slide."
+    },
+    {
+        "time": 321.9,
+        "type": "AUDIO",
+        "content": "It has my video down in the bottom right hand corner and then it also has my narration on top of the slide."
+    },
+    {
+        "time": 324.8,
+        "type": "AUDIO",
+        "content": "Um so this is a video that's really ready to go and let's say I had my Kevin Cooky company website or my channel on YouTube that I wanted to upload to."
+    },
+    {
+        "time": 327.7,
+        "type": "AUDIO",
+        "content": "I can now take this file and it is a just an MP4 file and I can just upload that to YouTube."
+    },
+    {
+        "time": 330.6,
+        "type": "AUDIO",
+        "content": "So I'm going to go to YouTube here."
+    },
+    {
+        "time": 333.5,
+        "type": "AUDIO",
+        "content": "All I do is in the top right hand corner I click on this plus button upload."
+    },
+    {
+        "time": 336.4,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The video file is in MP4 format and ready for upload."
+    },
+    {
+        "time": 339.3,
+        "type": "AUDIO",
+        "content": "- The user wants to upload the video to their YouTube channel."
+    },
+    {
+        "time": 341.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **document** displayed within a software interface, likely a web browser or a specific application.  Here is the transcription of the visible text:  **Top Menu/Tabs (partially visible):** *   (Some icons are visible, suggesting navigation options)  **Main Content Area (Text Snippets):** *   \"ANNOUNCEMENT ABOUT [TEXT CUT OFF]\" *   \"**[TEXT CUT OFF]**\" *   \"**[TEXT CUT OFF]**\" *   \"**[TEXT CUT OFF]**\"  **Interface Elements (Labels/Buttons):** *   (Various icons and menu items are present, typical of a modern application interface.)  **Description",
+        "filename": "frame_1367.jpg"
+    },
+    {
+        "time": 341.75,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The image displays a screenshot of a YouTube interface. The screen shows a video player interface with a thumbnail, video title, and related content suggestions. Below the main video area, there are various sections typical of a YouTube page, including suggested videos and potentially comments or descriptions.",
+        "filename": "frame_1368.jpg"
+    },
+    {
+        "time": 342.2,
+        "type": "AUDIO",
+        "content": "- The upload process begins by going to YouTube."
+    },
+    {
+        "time": 345.1,
+        "type": "AUDIO",
+        "content": "- The next step is to click the plus button in the top right corner to begin the upload."
+    },
+    {
+        "time": 348.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Drag and Drop Video\n\n**Transcription:**\nVideo and what I could do then is I'm going to go ahead and show my desktop."
+    },
+    {
+        "time": 349.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The image displays a screenshot of a web browser showing the YouTube interface, specifically a page that appears to be an error or a page with limited content, indicated by a large gray box with a small upward-pointing arrow icon and the text \"Sorry, there is no content.\" There are various interface elements of a web page visible, including a search bar, navigation elements, and a footer.",
+        "filename": "frame_1397.jpg"
+    },
+    {
+        "time": 349.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The image displays a screenshot of a web browser showing the YouTube homepage, which is currently displaying an error message. The central part of the screen shows a message in a non-English language, which appears to be an error notification, and the surrounding elements are the standard layout of the YouTube interface.",
+        "filename": "frame_1398.jpg"
+    },
+    {
+        "time": 349.8125,
+        "type": "AUDIO",
+        "content": "I could drag this video that I just created and I could drag and drop it and upload it to my YouTube channel."
+    },
+    {
+        "time": 351.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The image displays a screenshot of a web browser, likely showing a YouTube page that is currently loading or displaying an error. The central part of the screen shows a message that reads: \"Select Your Account\". To the left, there is a thumbnail of a man, and to the right, there are sections for \"Suggested Videos\" and \"Channels.\"",
+        "filename": "frame_1405.jpg"
+    },
+    {
+        "time": 351.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The image shows a computer screen displaying a login or verification page for \"YouTube,\" with a central graphic and some text. In the bottom left corner, there is a small video frame showing a man.",
+        "filename": "frame_1406.jpg"
+    },
+    {
+        "time": 351.5,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The scene depicts a computer screen displaying a YouTube error message, and in the bottom left corner, a person is visible in a room. The computer screen shows a white background with a message that reads: \"Tablet Error Occurred\".",
+        "filename": "frame_1407.jpg"
+    },
+    {
+        "time": 351.625,
+        "type": "AUDIO",
+        "content": "I'm not going to do that because this is just a mock video that I created just for this walkthrough."
+    },
+    {
+        "time": 352.0,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The image displays a computer screen showing the YouTube interface, which is a digital scene. The screen is displaying a login or subscription prompt, with a white background and some text fields.",
+        "filename": "frame_1409.jpg"
+    },
+    {
+        "time": 352.25,
+        "type": "FRAME",
+        "content": "This image is primarily a **scene**.  The image displays a computer screen showing a YouTube login page with an error message. The screen is the main focus, and the surrounding area suggests a desktop setup.",
+        "filename": "frame_1410.jpg"
+    },
+    {
+        "time": 353.4375,
+        "type": "AUDIO",
+        "content": "But that's really as simple as it is."
+    },
+    {
+        "time": 355.25,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The speaker would show their desktop."
+    },
+    {
+        "time": 357.0625,
+        "type": "AUDIO",
+        "content": "- They describe the action of dragging and dropping a video."
+    },
+    {
+        "time": 358.875,
+        "type": "AUDIO",
+        "content": "- The intention is to upload the video to their YouTube channel."
+    },
+    {
+        "time": 360.6875,
+        "type": "AUDIO",
+        "content": "- They clarify that the video shown is a mock video for a walkthrough."
+    },
+    {
+        "time": 362.5,
+        "type": "AUDIO",
+        "content": "## Chapter 2: Creating Rich Content with PowerPoint\n\n**Transcription:**\nI could create a video in PowerPoint, include my video image on there or webcam image I could have narration on top."
+    },
+    {
+        "time": 364.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer monitor in what appears to be an office or workspace. He is looking directly at the camera with a slight smile, suggesting a casual or professional setting.",
+        "filename": "frame_1458.jpg"
+    },
+    {
+        "time": 364.3125,
+        "type": "AUDIO",
+        "content": "I could have the annotations."
+    },
+    {
+        "time": 364.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or meeting room, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that lets in natural light.",
+        "filename": "frame_1460.jpg"
+    },
+    {
+        "time": 365.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or meeting room, looking directly at the camera while speaking or listening intently. He is wearing a dark blue shirt and is positioned in front of a large window with bright daylight visible outside.",
+        "filename": "frame_1464.jpg"
+    },
+    {
+        "time": 366.125,
+        "type": "AUDIO",
+        "content": "Um you could really make some rich content using PowerPoint and then export it as a speech."
+    },
+    {
+        "time": 366.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or modern workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that lets in bright daylight.",
+        "filename": "frame_1466.jpg"
+    },
+    {
+        "time": 366.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that lets in bright daylight.",
+        "filename": "frame_1467.jpg"
+    },
+    {
+        "time": 366.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window with bright daylight streaming in.",
+        "filename": "frame_1468.jpg"
+    },
+    {
+        "time": 367.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or meeting setting, looking directly at the camera with a slight smile. He is wearing a dark blue shirt and is positioned in front of a large window with natural light coming in.",
+        "filename": "frame_1470.jpg"
+    },
+    {
+        "time": 367.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer, looking directly at the camera. He appears to be engaged in some kind of online interaction or video call, with a bright, well-lit room visible in the background through a window.",
+        "filename": "frame_1471.jpg"
+    },
+    {
+        "time": 367.9375,
+        "type": "AUDIO",
+        "content": "**Summary:**\n- The speaker suggests creating a video within PowerPoint."
+    },
+    {
+        "time": 368.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer, appearing to be engaged in a video call or online meeting. He is looking directly at the camera with a neutral expression, and a computer monitor is visible to his left.",
+        "filename": "frame_1476.jpg"
+    },
+    {
+        "time": 369.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, appearing to be engaged in some form of work or viewing content. He is wearing a dark blue shirt and is looking intently at the screen while holding what appears to be a mouse or similar input device.",
+        "filename": "frame_1477.jpg"
+    },
+    {
+        "time": 369.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer, looking towards the camera. He appears to be engaged in some kind of work or video call, with a monitor visible on the left and some equipment in front of him.",
+        "filename": "frame_1478.jpg"
+    },
+    {
+        "time": 369.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or room, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a window with bright daylight coming through.",
+        "filename": "frame_1479.jpg"
+    },
+    {
+        "time": 369.75,
+        "type": "AUDIO",
+        "content": "- This video could include a video image or a webcam image."
+    },
+    {
+        "time": 370.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or meeting setting, looking towards the camera with a slight smile. He is wearing a dark blue shirt and is positioned in front of a large window.",
+        "filename": "frame_1481.jpg"
+    },
+    {
+        "time": 370.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, appearing to be engaged in a video call or working on a screen. He is wearing a dark blue shirt and looking down at the screen with a focused expression.",
+        "filename": "frame_1482.jpg"
+    },
+    {
+        "time": 370.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely engaged in a video call or online meeting. He is wearing a dark blue shirt and looking directly at the camera with a slight smile.",
+        "filename": "frame_1483.jpg"
+    },
+    {
+        "time": 370.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a window, looking directly at the camera. He is wearing a dark blue shirt and appears to be in an indoor setting, possibly an office or room with large windows.",
+        "filename": "frame_1484.jpg"
+    },
+    {
+        "time": 371.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting at a desk in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a window with a bright, possibly urban, view outside.",
+        "filename": "frame_1485.jpg"
+    },
+    {
+        "time": 371.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer monitor, appearing to be engaged in a video call or online interaction. He is looking directly at the camera with a slight smile, suggesting a casual or friendly atmosphere in an indoor setting.",
+        "filename": "frame_1486.jpg"
+    },
+    {
+        "time": 371.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or meeting room, looking towards the camera with a slight smile. He is wearing a dark blue shirt and is positioned in front of a large window with a bright, possibly urban, view outside.",
+        "filename": "frame_1487.jpg"
+    },
+    {
+        "time": 371.5625,
+        "type": "AUDIO",
+        "content": "- They could add narration and annotations."
+    },
+    {
+        "time": 371.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, appearing to be engaged in some form of work or online activity. He is looking down and smiling slightly, suggesting a positive or focused interaction with the screen in what looks like an indoor office or home setting.",
+        "filename": "frame_1488.jpg"
+    },
+    {
+        "time": 372.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer monitor, appearing to be engaged in a video call or online meeting. He is wearing a dark blue shirt and is looking towards the camera with an open mouth, suggesting he is speaking.",
+        "filename": "frame_1490.jpg"
+    },
+    {
+        "time": 372.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or home setting, looking directly at the camera while holding a microphone. He is wearing a dark blue shirt and is positioned in front of a large window with natural light coming in.",
+        "filename": "frame_1492.jpg"
+    },
+    {
+        "time": 373.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, likely participating in a video call or online meeting. He is looking directly at the camera with a neutral expression, and the background suggests an indoor office or room with large windows.",
+        "filename": "frame_1493.jpg"
+    },
+    {
+        "time": 373.375,
+        "type": "AUDIO",
+        "content": "- PowerPoint is presented as a tool for creating rich content."
+    },
+    {
+        "time": 373.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that shows an outdoor view of buildings.",
+        "filename": "frame_1495.jpg"
+    },
+    {
+        "time": 373.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or meeting setting, looking towards the camera. He is wearing a dark blue shirt and is positioned in front of a large monitor on the left.",
+        "filename": "frame_1496.jpg"
+    },
+    {
+        "time": 374.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting at a desk in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that lets in bright daylight.",
+        "filename": "frame_1498.jpg"
+    },
+    {
+        "time": 375.1875,
+        "type": "AUDIO",
+        "content": "- The final step involves exporting the video as a speech."
+    },
+    {
+        "time": 375.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, appearing to be engaged in a video call or working on a screen. He is wearing a dark blue shirt and looking towards the screen with a focused expression.",
+        "filename": "frame_1503.jpg"
+    },
+    {
+        "time": 375.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting at a desk, looking towards the right side of the frame, possibly engaged in a video call or working on a computer. He is wearing a dark blue shirt and is positioned in an indoor setting with a large window in the background.",
+        "filename": "frame_1504.jpg"
+    },
+    {
+        "time": 376.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  A man with dark hair is seated in front of a computer, looking towards the side with a thoughtful expression. He appears to be engaged in work or a video call in a brightly lit indoor setting.",
+        "filename": "frame_1505.jpg"
+    },
+    {
+        "time": 376.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  A young man with dark hair is seated in front of a computer monitor, looking towards the side with an engaged expression. He appears to be working or interacting with the screen in an indoor setting with a large window in the background.",
+        "filename": "frame_1506.jpg"
+    },
+    {
+        "time": 377.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting at a desk, looking towards the camera while appearing to be engaged in some kind of work or video call. He is wearing a dark blue shirt and is positioned in front of a computer monitor.",
+        "filename": "frame_1509.jpg"
+    },
+    {
+        "time": 377.0,
+        "type": "AUDIO",
+        "content": "## Chapter 1: Introduction and Call to Action\n\n**Transcription:**\npe mp4 file that you could upload to any video service if this video helped you create your first powerpoint that you can now upload online please give this video a thumbs up if you want to see more videos like this in the future please hit that subscribe button that way you'll get a notification anytime new content like this comes out and if there are any other video topics that you want me to cover in the future leave a comment down below i read them and i'll add it to my list of videos to create in the future all right well thanks a lot for tuning in i'll see you next time bye\n\n**Summary:**\n- The video is about an MP4 file that can be uploaded to video services."
+    },
+    {
+        "time": 377.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or workspace, looking towards the camera while holding a microphone. He is wearing a dark blue shirt and is positioned in front of a window with bright daylight visible outside.",
+        "filename": "frame_1511.jpg"
+    },
+    {
+        "time": 378.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting at a desk, appearing to be engaged in a video call or recording, as he is looking towards something off-camera and is positioned in front of a computer monitor. The setting appears to be an indoor office or home environment with a light-colored wall in the background.",
+        "filename": "frame_1513.jpg"
+    },
+    {
+        "time": 378.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting at a desk, looking towards a computer monitor on the left. He appears to be engaged in some activity related to the computer, possibly working or participating in a video call, with a bright, well-lit room in the background.",
+        "filename": "frame_1514.jpg"
+    },
+    {
+        "time": 378.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  A young man is seated in front of a computer, appearing to be engaged in a video call or online meeting. He is looking towards the side and seems to be actively participating in the interaction.",
+        "filename": "frame_1515.jpg"
+    },
+    {
+        "time": 378.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man in a casual blue shirt interacting with a computer monitor, suggesting a work or collaborative setting. He is looking towards the monitor and gesturing with his hand, indicating engagement in a discussion or task.",
+        "filename": "frame_1516.jpg"
+    },
+    {
+        "time": 379.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting at a desk, appearing to be engaged in a video call or a meeting, as he is looking towards a screen or camera and gesturing with his hand. The setting appears to be an indoor office or workspace with a bright background suggesting natural light from a window.",
+        "filename": "frame_1517.jpg"
+    },
+    {
+        "time": 379.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting at a desk, looking down and seemingly engaged with something in front of him, possibly a computer or a device. He is wearing a dark blue shirt and the background suggests an indoor office or workspace with a large window letting in natural light.",
+        "filename": "frame_1518.jpg"
+    },
+    {
+        "time": 379.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting at a desk in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window with natural light coming in.",
+        "filename": "frame_1519.jpg"
+    },
+    {
+        "time": 380.5,
+        "type": "FRAME",
+        "content": "This is a scene. A young man is smiling at the camera in what appears to be an office or room with a large window in the background. He is wearing a dark blue shirt and is holding a microphone.",
+        "filename": "frame_1523.jpg"
+    },
+    {
+        "time": 380.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that lets in bright daylight.",
+        "filename": "frame_1524.jpg"
+    },
+    {
+        "time": 381.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or workspace, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that lets in bright daylight.",
+        "filename": "frame_1526.jpg"
+    },
+    {
+        "time": 382.8,
+        "type": "AUDIO",
+        "content": "- Viewers are asked to give a thumbs up if the video helped them create their first online PowerPoint."
+    },
+    {
+        "time": 383.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a window, looking directly at the camera. He is wearing a dark blue shirt and appears to be in an indoor setting, possibly an office or room with large windows.",
+        "filename": "frame_1536.jpg"
+    },
+    {
+        "time": 384.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a window, appearing to be participating in a video call or recording. He is wearing a dark blue shirt and is looking directly at the camera with a slight smile, with a microphone visible in the foreground.",
+        "filename": "frame_1537.jpg"
+    },
+    {
+        "time": 384.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer, looking directly at the camera. He is wearing a dark blue shirt and appears to be engaged in an online interaction or video call.",
+        "filename": "frame_1538.jpg"
+    },
+    {
+        "time": 384.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a window, appearing to be participating in an online video call or presentation. He is looking directly at the camera with a slight smile, and there is a computer monitor visible to his left.",
+        "filename": "frame_1540.jpg"
+    },
+    {
+        "time": 385.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, appearing to be engaged in some kind of work or online activity. He is looking directly at the camera with a neutral expression, and a portion of a keyboard or peripheral is visible in the foreground.",
+        "filename": "frame_1543.jpg"
+    },
+    {
+        "time": 385.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man smiling and gesturing with his hands while appearing to be engaged in a video call or presentation. He is seated in what looks like an indoor setting with a bright window in the background.",
+        "filename": "frame_1544.jpg"
+    },
+    {
+        "time": 386.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer monitor, appearing to be engaged in a video call or online interaction. He is looking directly at the camera with a slight smile, and the background shows a bright, modern interior with large windows.",
+        "filename": "frame_1545.jpg"
+    },
+    {
+        "time": 387.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man in a casual shirt looking directly at the camera, seemingly engaged in a video call or recording. He is positioned in front of a bright window with a view of an urban environment, and a computer monitor is visible to his left.",
+        "filename": "frame_1549.jpg"
+    },
+    {
+        "time": 387.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or meeting setting, looking towards the camera while holding a microphone. He is wearing a dark blue shirt and is positioned in front of a window with a bright, possibly urban, view outside.",
+        "filename": "frame_1550.jpg"
+    },
+    {
+        "time": 387.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer, looking towards the camera while holding a microphone. He appears to be engaged in a video call or recording session in a well-lit indoor setting.",
+        "filename": "frame_1551.jpg"
+    },
+    {
+        "time": 387.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or meeting setting, looking directly at the camera while holding a microphone. He is wearing a dark blue shirt and is positioned in front of a large monitor on the left.",
+        "filename": "frame_1552.jpg"
+    },
+    {
+        "time": 388.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a window, smiling at the camera. He appears to be in an indoor setting, possibly an office or a room with large windows.",
+        "filename": "frame_1555.jpg"
+    },
+    {
+        "time": 388.6,
+        "type": "AUDIO",
+        "content": "- Subscribers are encouraged to hit the subscribe button for notifications about future content."
+    },
+    {
+        "time": 389.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or meeting room, looking directly at the camera. He is wearing a dark blue shirt and is positioned in front of a large window that lets in bright daylight.",
+        "filename": "frame_1558.jpg"
+    },
+    {
+        "time": 389.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man smiling while looking at a computer screen and holding a microphone. He appears to be engaged in a video call or recording session in a brightly lit indoor setting.",
+        "filename": "frame_1559.jpg"
+    },
+    {
+        "time": 389.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man smiling at the camera while sitting in what appears to be an office or modern indoor setting. He is wearing a dark blue shirt and is holding a black object, possibly a microphone or a piece of equipment, in his hands.",
+        "filename": "frame_1560.jpg"
+    },
+    {
+        "time": 390.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer monitor, looking directly at the camera while gesturing with his hand. He appears to be engaged in a video call or online interaction in a brightly lit indoor setting.",
+        "filename": "frame_1561.jpg"
+    },
+    {
+        "time": 392.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man smiling while looking at a computer monitor and holding a dark object, possibly a camera or a piece of equipment. He appears to be in an indoor setting, possibly an office or a room with large windows in the background.",
+        "filename": "frame_1569.jpg"
+    },
+    {
+        "time": 392.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or meeting setting, looking directly at the camera with a smile. He is wearing a dark blue shirt and is holding a black object, possibly a microphone or a piece of equipment, in front of him.",
+        "filename": "frame_1571.jpg"
+    },
+    {
+        "time": 393.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a window, appearing to be engaged in a video call or conversation. He is looking directly at the camera with a slight smile, and there is a computer monitor visible to his left.",
+        "filename": "frame_1573.jpg"
+    },
+    {
+        "time": 394.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or room, looking directly at the camera while speaking or presenting. He is wearing a dark blue shirt and is positioned in front of a large window with natural light coming in.",
+        "filename": "frame_1578.jpg"
+    },
+    {
+        "time": 394.4,
+        "type": "AUDIO",
+        "content": "- Viewers are invited to suggest other video topics in the comments."
+    },
+    {
+        "time": 394.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or meeting setting, looking directly at the camera while gesturing with his hands. He is wearing a dark blue shirt and is positioned in front of a bright window with a view of buildings outside.",
+        "filename": "frame_1579.jpg"
+    },
+    {
+        "time": 394.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man in a casual setting, possibly an office or a room with large windows. He is looking directly at the camera and appears to be engaged in a conversation or presentation, with his hands gesturing.",
+        "filename": "frame_1580.jpg"
+    },
+    {
+        "time": 395.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or modern room, looking directly at the camera and smiling slightly. He is wearing a dark blue shirt and is holding a black object, possibly a microphone or a piece of equipment, in his hands.",
+        "filename": "frame_1581.jpg"
+    },
+    {
+        "time": 395.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or modern workspace, looking directly at the camera while holding a black object, possibly a microphone or a piece of equipment. The background features a large window with a view of buildings, suggesting an indoor setting with natural light.",
+        "filename": "frame_1584.jpg"
+    },
+    {
+        "time": 396.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in front of a computer monitor, looking towards the camera. He is wearing a dark blue shirt and appears to be engaged in some activity related to the computer.",
+        "filename": "frame_1585.jpg"
+    },
+    {
+        "time": 396.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or meeting room, looking directly at the camera while holding a microphone. He is wearing a dark blue shirt and is positioned in front of a large window with a view of an urban environment.",
+        "filename": "frame_1586.jpg"
+    },
+    {
+        "time": 396.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man in a casual blue shirt looking directly at the camera while holding a microphone, suggesting he is speaking or presenting. He is positioned in what appears to be an indoor setting with a large window in the background.",
+        "filename": "frame_1587.jpg"
+    },
+    {
+        "time": 398.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man smiling and looking directly at the camera while holding a microphone, suggesting he is participating in a presentation, interview, or recording. He is positioned in what appears to be an indoor setting with a window in the background.",
+        "filename": "frame_1593.jpg"
+    },
+    {
+        "time": 398.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or meeting room, looking directly at the camera with a slight smile. He is wearing a dark blue t-shirt and is gesturing with his right hand while interacting with some equipment visible on the left side of the frame.",
+        "filename": "frame_1594.jpg"
+    },
+    {
+        "time": 398.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or modern room, looking directly at the camera while holding a microphone. He is wearing a dark blue t-shirt, and there is a computer monitor visible on the left side of the frame.",
+        "filename": "frame_1595.jpg"
+    },
+    {
+        "time": 398.75,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting in what appears to be an office or bright room, looking directly at the camera and smiling slightly. He is wearing a dark blue V-neck shirt and is gesturing with his hand, suggesting he is engaged in a conversation or presentation.",
+        "filename": "frame_1596.jpg"
+    },
+    {
+        "time": 399.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in front of a computer monitor, looking directly at the camera. He appears to be engaged in a video call or online interaction, with a bright window and outdoor view visible in the background.",
+        "filename": "frame_1598.jpg"
+    },
+    {
+        "time": 400.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man smiling and looking towards the camera while appearing to be engaged in a video call or presentation. He is wearing a dark blue shirt and is positioned in front of a bright window.",
+        "filename": "frame_1601.jpg"
+    },
+    {
+        "time": 400.2,
+        "type": "AUDIO",
+        "content": "- The video concludes with a thank you and a farewell."
+    },
+    {
+        "time": 400.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man sitting in what appears to be an office or meeting setting, looking towards the camera with a slight smile. He is wearing a dark blue shirt and is positioned in front of a large window.",
+        "filename": "frame_1602.jpg"
+    },
+    {
+        "time": 402.0,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man sitting at a desk, smiling and looking towards the camera while appearing to be engaged in a video call or recording. He is wearing a dark blue shirt and is positioned in an indoor setting with a window in the background.",
+        "filename": "frame_1609.jpg"
+    },
+    {
+        "time": 403.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man smiling while looking towards the camera, appearing to be in an office or professional setting. He is wearing a dark blue shirt and is positioned in front of a window with bright daylight visible outside.",
+        "filename": "frame_1615.jpg"
+    },
+    {
+        "time": 404.25,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a man in a casual blue shirt looking directly at the camera, with a window and some interior elements visible in the background. He appears to be engaged in a video call or recording, as he is looking toward the viewer with an open expression.",
+        "filename": "frame_1618.jpg"
+    },
+    {
+        "time": 404.5,
+        "type": "FRAME",
+        "content": "This is a **scene**.  The image depicts a young man smiling and waving towards the camera, suggesting an interaction or a video call. He is indoors, with a window visible in the background, and some electronic equipment is visible on the left side of the frame.",
+        "filename": "frame_1619.jpg"
+    }
+]

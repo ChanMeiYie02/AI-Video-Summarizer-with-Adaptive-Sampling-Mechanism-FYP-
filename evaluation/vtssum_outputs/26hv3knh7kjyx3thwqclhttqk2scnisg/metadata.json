@@ -1,0 +1,20 @@
+{
+    "id": "26hv3knh7kjyx3thwqclhttqk2scnisg",
+    "title": "Net2Net: Accelerating Learning via Knowledge Transfer",
+    "url": "http://videolectures.net/iclr2016_chen_net2net/",
+    "info": {
+        "author": [
+            "Tianqi Chen, Department of Computer Science and Engineering, University of Washington"
+        ],
+        "published": "May 27, 2016",
+        "recorded": "May 2016",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 131,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1618
+}

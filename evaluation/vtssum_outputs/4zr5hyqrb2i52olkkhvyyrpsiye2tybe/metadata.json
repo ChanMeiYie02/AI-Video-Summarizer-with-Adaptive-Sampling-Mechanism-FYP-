@@ -1,0 +1,21 @@
+{
+    "id": "4zr5hyqrb2i52olkkhvyyrpsiye2tybe",
+    "title": "MPI & OpenMP (Part 5)",
+    "url": "http://videolectures.net/ihpcss2016_henty_MPI_openMP_part5/",
+    "info": {
+        "author": [
+            "David Henty, EPCC, University of Edinburgh"
+        ],
+        "published": "Sept. 19, 2016",
+        "recorded": "June 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computers->Programming"
+        ]
+    },
+    "num_segments": 107,
+    "num_sentences": 1008,
+    "num_clips_with_summary": 23,
+    "num_gt_summary_sentences": 39,
+    "ground_truth_summary_length_chars": 3241
+}

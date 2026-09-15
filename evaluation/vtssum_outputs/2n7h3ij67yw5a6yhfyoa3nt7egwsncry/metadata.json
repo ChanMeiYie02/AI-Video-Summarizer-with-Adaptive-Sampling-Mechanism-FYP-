@@ -1,0 +1,21 @@
+{
+    "id": "2n7h3ij67yw5a6yhfyoa3nt7egwsncry",
+    "title": "LEX 1/3 infrastructure",
+    "url": "http://videolectures.net/elexisobserver2019_krek_lex_1_3_infrastructure/",
+    "info": {
+        "author": [
+            "Simon Krek, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "March 6, 2019",
+        "recorded": "February 2019",
+        "category": [
+            "Top->Humanities->Linguistics->Lexicography",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 196,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2051
+}

@@ -1,0 +1,20 @@
+{
+    "id": "jw5jbgvjendcgtndjdajpxkrawr7rfcx",
+    "title": "Infer.NET - Practical Implementation Issues and a Comparison of Approximation Techniques",
+    "url": "http://videolectures.net/abi07_winn_ipi/",
+    "info": {
+        "author": [
+            "John Winn, Microsoft Research, Cambridge, Microsoft Research"
+        ],
+        "published": "Dec. 31, 2007",
+        "recorded": "December 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Statistical Learning"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 441,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 233
+}

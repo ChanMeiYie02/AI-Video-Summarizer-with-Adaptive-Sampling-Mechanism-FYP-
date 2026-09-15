@@ -1,0 +1,20 @@
+{
+    "id": "i2r5ddsrswdbk3r5y5gfr6owofcw7qjn",
+    "title": "Eco Design support in the Rhône-Alpes",
+    "url": "http://videolectures.net/ecodesign2011_rix_nicolajsen_support/",
+    "info": {
+        "author": [
+            "Charlotte Rix Nicolajsen, ARDI Rhône-Alpes"
+        ],
+        "published": "July 6, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Environment->Sustainable Development"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 124,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 4783
+}

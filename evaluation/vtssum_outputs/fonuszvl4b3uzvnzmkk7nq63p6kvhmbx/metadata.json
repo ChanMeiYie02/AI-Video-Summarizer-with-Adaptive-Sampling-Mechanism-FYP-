@@ -1,0 +1,21 @@
+{
+    "id": "fonuszvl4b3uzvnzmkk7nq63p6kvhmbx",
+    "title": "Computational Intelligence and Games for at Home Rehabilitation",
+    "url": "http://videolectures.net/solomon_borghese_computational_intelligence/",
+    "info": {
+        "author": [
+            "N. Alberto Borghese, Department of Computer Science, University of Milan"
+        ],
+        "published": "Sept. 28, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 60,
+    "num_sentences": 505,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 93
+}

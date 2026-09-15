@@ -1,0 +1,20 @@
+{
+    "id": "rt3cyia6k5j25nvfh7gxolkqbefq4lax",
+    "title": "Bio-molecular computing of finite-state automata",
+    "url": "http://videolectures.net/icgi08_sakakibara_bmc/",
+    "info": {
+        "author": [
+            "Yasubumi Sakakibara, Dept. of Administration Engineering, Faculty of Science and Technology, Keio University"
+        ],
+        "published": "Oct. 9, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Bioinformatics"
+        ]
+    },
+    "num_segments": 55,
+    "num_sentences": 567,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2821
+}

@@ -1,0 +1,21 @@
+{
+    "id": "omdkcx2qo4bgp4oyn2nnojihnb6sob5g",
+    "title": "Crowdsourced Affinity: A Matter of Fact or Experience",
+    "url": "http://videolectures.net/eswc2017_lu_crowdsourced_affinity/",
+    "info": {
+        "author": [
+            "Chun Lu, Sépage"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 205,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 193
+}

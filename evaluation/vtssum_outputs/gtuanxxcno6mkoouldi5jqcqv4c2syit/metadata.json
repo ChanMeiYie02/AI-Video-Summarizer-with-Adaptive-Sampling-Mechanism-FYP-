@@ -1,0 +1,20 @@
+{
+    "id": "gtuanxxcno6mkoouldi5jqcqv4c2syit",
+    "title": "An Introduction To Collective Intelligence",
+    "url": "http://videolectures.net/ict08fr_kompatsiaris_ici/",
+    "info": {
+        "author": [
+            "Yiannis Kompatsiaris, ITI - Informatics and Telematics Institute, CERTH - Centre for Research and Technology Hellas"
+        ],
+        "published": "Dec. 4, 2008",
+        "recorded": "November 2008",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 11,
+    "num_sentences": 80,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1452
+}

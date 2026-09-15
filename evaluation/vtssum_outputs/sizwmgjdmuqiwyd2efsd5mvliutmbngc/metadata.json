@@ -1,0 +1,20 @@
+{
+    "id": "sizwmgjdmuqiwyd2efsd5mvliutmbngc",
+    "title": "Open Information Extraction at Web Scale",
+    "url": "http://videolectures.net/ijcai2011_etzioni_webscale/",
+    "info": {
+        "author": [
+            "Oren Etzioni, Allen Institute for Artificial Intelligence (AI2)"
+        ],
+        "published": "Aug. 23, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 49,
+    "num_sentences": 498,
+    "num_clips_with_summary": 34,
+    "num_gt_summary_sentences": 56,
+    "ground_truth_summary_length_chars": 5160
+}

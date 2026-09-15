@@ -1,0 +1,160 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.950 --> 00:00:06.620
+Hi, Today I will show you how to write a waveform
+
+00:00:06.620 --> 00:00:14.209
+that will danse with the music. I prepared a small skeleton that is just composed of
+
+00:00:14.209 --> 00:00:24.780
+an audio element with a mp3 file that will be streamed when I press the play button.
+
+00:00:24.780 --> 00:00:35.370
+The sound is captured in an audio graph using a media element source like we explained in
+
+00:00:35.370 --> 00:00:39.900
+a previous lesson. So let's start from the beginning and look
+
+00:00:39.900 --> 00:00:46.720
+at this example. When the page is loaded we go to the onload
+
+00:00:46.720 --> 00:00:53.530
+listener, we create an audio context because we are going to work with the Web Audio API,
+
+00:00:53.530 --> 00:01:01.600
+and then we are just using the standard way for using a canvas.
+
+00:01:01.600 --> 00:01:07.600
+We get the canvas, and we get the canvas context, so we are ready to draw things in
+
+00:01:07.600 --> 00:01:13.719
+the canvas here. Then we build an audio graph and then we start
+
+00:01:13.719 --> 00:01:20.399
+an animation... and for the moment the animation just draws an horizontal line 60 times per
+
+00:01:20.399 --> 00:01:24.950
+seconds. We will look at it later.
+
+00:01:24.950 --> 00:01:31.859
+Let's have a look at the audio graph. The audio graph is made of a source node that
+
+00:01:31.859 --> 00:01:38.829
+is the media element source. It corresponds to the audio element.
+
+00:01:38.829 --> 00:01:47.479
+Then we create an analyser, this is a special node that will provide on demand the time
+
+00:01:47.479 --> 00:01:54.759
+domain and frequency domain analysis data, and this data will be useful for drawing a
+
+00:01:54.759 --> 00:02:00.919
+waveform or for drawing frequencies that will dance with the music, or for drawing volume
+
+00:02:00.919 --> 00:02:08.250
+meters, or for doing beat detection. We will see examples in the next lessons.
+
+00:02:08.250 --> 00:02:13.989
+When you create an analyser node, you specify the size of the Fast Fourier Transform (FFT), do not
+
+00:02:13.989 --> 00:02:22.090
+worry if you do not know exactly what this technique is. It is just the size that will have
+
+00:02:22.090 --> 00:02:26.250
+an influence on the number of data you will have to draw.
+
+00:02:26.250 --> 00:02:38.129
+Here for waveform, classical values are 1024 or 2048. They must be powers of 2.
+
+00:02:38.129 --> 00:02:47.049
+The number of data we will get depends on this size:  it is exactly the FFT size divided
+
+00:02:47.049 --> 00:02:51.340
+by 2. In this example I set the FFT size to 1024
+
+00:02:51.340 --> 00:03:03.629
+so I will get 512 data... So here is how we can declare a buffer that
+
+00:03:03.629 --> 00:03:10.579
+will get the data. It is called dataArray here and we will use it in the animation loop.
+
+00:03:10.579 --> 00:03:17.700
+So, I've got a source node that corresponds to the audio stream, an analyser node that
+
+00:03:17.700 --> 00:03:24.209
+will analyse the stream, and then I connect the source to the analyser, and the analyser
+
+00:03:24.209 --> 00:03:30.090
+to the destination, and the destination is the speakers.
+
+00:03:30.090 --> 00:03:39.129
+Let's have a look at the animation loop! We clear the canvas, and in the end we call
+
+00:03:39.129 --> 00:03:45.680
+again the animation loop, so that the animation will be done 60 times per seconds... and
+
+00:03:45.680 --> 00:03:52.890
+the way we will draw the waveform is just a set of connected line that we call "a path".
+
+00:03:52.890 --> 00:04:02.340
+The "path" is a way of drawing that we presented during the HTML5 Part 1 course.
+
+00:04:02.340 --> 00:04:11.859
+So here, for drawing an horizontal, flat waveform, we just do a loop on the number
+
+00:04:11.859 --> 00:04:21.700
+of data. Here, we are not using the real data but we will do a loop 512 times and we
+
+00:04:21.700 --> 00:04:30.380
+compute an increment in x, so that depending on the width of the canvas and on the number
+
+00:04:30.380 --> 00:04:36.730
+of data we have got to draw, we will add this increment to the x coordinate.
+
+00:04:36.730 --> 00:04:43.220
+And the y coordinate here is just faked because we use height/2.
+
+00:04:43.220 --> 00:04:54.290
+I can add a random element here if you like, and we will see that I can just fake some
+
+00:04:54.290 --> 00:04:58.200
+data to be drawn. So, instead of drawing this, I will use the
+
+00:04:58.200 --> 00:05:06.850
+real values. How can we get the data? In the animation
+
+00:05:06.850 --> 00:05:18.410
+loop, 60 times per seconds, we call the analyser.getByteTimeDomainData and we pass the dataArray of the correct size.
+
+00:05:18.410 --> 00:05:24.630
+And just after this call, the dataArray will contain the data we want to draw. And what
+
+00:05:24.630 --> 00:05:31.560
+is interesting here, is the value of each data... and we will compute the y coordinate depending
+
+00:05:31.560 --> 00:05:37.150
+on that. I'm just declaring a variable that will get
+
+00:05:37.150 --> 00:05:47.810
+the value. This value is between 0 and 255 because we
+
+00:05:47.810 --> 00:05:57.330
+are working with bytes, and bytes are 8 bits encoded data and the value is between 0 and
+
+00:05:57.330 --> 00:06:06.590
+255. I will normalize it. So now it's between 0
+
+00:06:06.590 --> 00:06:17.240
+and 1. Then, in order to compute the y value, I just
+
+00:06:17.240 --> 00:06:28.350
+have to scale it to the height of the canvas, like this...
+
+00:06:28.350 --> 00:06:36.120
+And now if I play the sound, I've got the waveform that is animated.
+
+00:06:36.120 --> 00:06:43.960
+These 3 lines are very straightforward, just in order to transform a value between
+
+00:06:43.960 --> 00:06:48.660
+0 and 255 and scale it to the height of the canvas...

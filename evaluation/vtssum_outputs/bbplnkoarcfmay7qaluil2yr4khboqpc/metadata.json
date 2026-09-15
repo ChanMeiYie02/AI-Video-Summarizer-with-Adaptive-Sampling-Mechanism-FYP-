@@ -1,0 +1,21 @@
+{
+    "id": "bbplnkoarcfmay7qaluil2yr4khboqpc",
+    "title": "TRM - Learning Dependencies between Text and Structure with Topical Relational Models",
+    "url": "http://videolectures.net/iswc2013_studer_relational_models/",
+    "info": {
+        "author": [
+            "Rudi Studer, Institute of Applied Informatics and Formal Description Methods (AIFB), Karlsruhe Institute of Technology (KIT)"
+        ],
+        "published": "Nov. 28, 2013",
+        "recorded": "October 2013",
+        "category": [
+            "Top->Computer Science->Computational Linguistics",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 128,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2861
+}

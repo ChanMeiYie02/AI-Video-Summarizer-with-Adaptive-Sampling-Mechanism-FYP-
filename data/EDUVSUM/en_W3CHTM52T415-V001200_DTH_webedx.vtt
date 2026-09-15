@@ -1,0 +1,187 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:01.550 --> 00:00:08.120
+Welcome to the WebAudio API lesson! I personnally love this API, playing with it is a lot of fun
+
+00:00:08.120 --> 00:00:13.389
+as you will discover! I hope you will like it as much as I do!
+
+00:00:13.389 --> 00:00:19.470
+The audio and video elements are used for playing streamed content, but we do not have a real
+
+00:00:19.470 --> 00:00:25.849
+control on the audio. They come with a powerful API as we saw during the previous course and
+
+00:00:25.849 --> 00:00:32.899
+the previous lessons of this course: we can build a custom user interface, make our own play,
+
+00:00:32.899 --> 00:00:39.890
+stop, pause buttons. We can control the video from JavaScript, listen to events
+
+00:00:39.890 --> 00:00:48.820
+and manage playlists, etc. However, we have no real control on the audio signal: fancy visualizations
+
+00:00:48.820 --> 00:00:54.610
+are impossible to do. The ones that dance with the music, and sound effects such as
+
+00:00:54.610 --> 00:01:01.469
+reverberation, delay, make an equalizer, control the stereo, put the signal on the left
+
+00:01:01.469 --> 00:01:08.380
+or on the right is impossible. Furthermore, playing multiple sounds in sync is nearly impossible
+
+00:01:08.380 --> 00:01:14.330
+due to the streamed nature of the signal. For video games, we will need to play very
+
+00:01:14.330 --> 00:01:24.470
+fast different sounds, and you can not wait for the stream to arrive before starting playing it.
+
+00:01:24.470 --> 00:01:28.920
+Web Audio is the solution to all these needs
+
+00:01:28.920 --> 00:01:35.119
+and with Web Audio you will be able to get the output signal from the audio and video elements,
+
+00:01:35.119 --> 00:01:40.979
+and process it with multiple effects. You will be able to work with samples loaded
+
+00:01:40.979 --> 00:01:47.590
+in memory. This will enable perfect syncing, accurate loops, you will be able to mix
+
+00:01:47.590 --> 00:01:51.990
+sounds, etc. You can also generate music programmatically
+
+00:01:51.990 --> 00:01:58.719
+for creating synthetic sounds or virtual instruments. This part will not be covered by this course
+
+00:01:58.719 --> 00:02:04.380
+even if I give links to interesting libraries and demos that do that.
+
+00:02:04.380 --> 00:02:12.580
+Letâ€™s have a look at some applications. The first thing I wanted to show you is just
+
+00:02:12.580 --> 00:02:21.319
+want we can do with the standard audio element. So this is the standard audio element [music]
+
+00:02:21.319 --> 00:02:31.769
+that just plays a guitar riff that is coming from a server, but we can get control on the audio
+
+00:02:31.769 --> 00:02:44.650
+stream and do such things like that [music]. As you can see I control the stereo balancing here,
+
+00:02:44.650 --> 00:02:51.650
+and we have a real time waveform and volume meters visualization.
+
+00:02:51.650 --> 00:02:56.239
+Another thing we can do is that we can load samples in memory.
+
+00:02:56.239 --> 00:03:03.330
+This is an application I wrote for playing multitracks songs. So we are loading MP3s and
+
+00:03:03.330 --> 00:03:12.459
+decoding them in memory so that we can click anywhere on the song, I can make loops like this [music].
+
+00:03:12.459 --> 00:03:31.690
+As you can see,
+
+00:03:31.690 --> 00:03:36.230
+we can isolate the tracks, we can mix them in real time.
+
+00:03:36.230 --> 00:03:47.310
+Another application that works with samples in memory is this small example you will learn
+
+00:03:47.310 --> 00:03:56.590
+how to write it in the course: we loaded two different short sounds [sounds] in memory
+
+00:03:56.590 --> 00:04:07.689
+and we can play them repeatedly [sounds] or we can add effects like changing the pitch, changing
+
+00:04:07.689 --> 00:04:15.200
+the volume with some random values and play them with random intervals [sounds].
+
+00:04:15.200 --> 00:04:24.120
+We can see that the application to video games is straightforward.
+
+00:04:24.120 --> 00:04:29.160
+Another thing you can do is use synthetics sounds, we will not cover the techniques,
+
+00:04:29.160 --> 00:04:34.040
+but you can use some libraries. This is a library that works with synthetic
+
+00:04:34.040 --> 00:04:48.699
+sounds, you do not have to load a file for having these sounds [sounds].
+
+00:04:48.699 --> 00:04:56.540
+This is a library for making 8 bits sounds like the very first computers and video games
+
+00:04:56.540 --> 00:05:03.930
+in the 80's used to produce. You can also make very complex application,
+
+00:05:03.930 --> 00:05:30.240
+like a vocoder [sounds], or a synthesizer music instrument [sounds]. Ok you have got the idea.
+
+00:05:30.240 --> 00:05:39.530
+This is all the interesting things you can do, and you can also learn how to debug such
+
+00:05:39.530 --> 00:05:47.690
+applications. I will make a video especially for that, but using FireFox, you can activate,
+
+00:05:47.690 --> 00:05:54.229
+in the setting of the dev tools, the Web Audio debug tab.
+
+00:05:54.229 --> 00:06:01.470
+So I clicked here on Web Audio, and this added a new tab here Web Audio, and if I reload the
+
+00:06:01.470 --> 00:06:07.289
+page, I can see the graph corresponding to the route of the signal.
+
+00:06:07.289 --> 00:06:15.270
+Here we have got a source -this is called the audio graph- so we've got the source,
+
+00:06:15.270 --> 00:06:21.300
+and we've got a destination. The source is the original sound. In that
+
+00:06:21.300 --> 00:06:28.069
+case it is a mediaElementAudioSource node that corresponds to the audio element here.
+
+00:06:28.069 --> 00:06:36.130
+The signal goes to an other node that is provided by the Web Audio API and implemented natively in
+
+00:06:36.130 --> 00:06:42.919
+your browser, it is a StereoPanner for separating the sound between left and right.
+
+00:06:42.919 --> 00:06:51.470
+So then it goes to an analyser here that will draw the blue waveform and finally to the
+
+00:06:51.470 --> 00:07:00.229
+destination, and the destination is the speakers. I also routed the signal to another part of
+
+00:07:00.229 --> 00:07:05.880
+the graph just for displaying two different analysers corresponding to the left and right
+
+00:07:05.880 --> 00:07:09.310
+channels. This is for the volume meters here [music].
+
+00:07:09.310 --> 00:07:17.460
+And if you click on a node, you can see that some node have parameters.
+
+00:07:17.460 --> 00:07:24.650
+On the stereoPanner, that enables me to balance the sound to the left or to the right, you
+
+00:07:24.650 --> 00:07:31.289
+can see if I change that and click again, I can debug the different properties of each
+
+00:07:31.289 --> 00:07:35.520
+node. You will learn how to build this graph,
+
+00:07:35.520 --> 00:07:41.870
+how to assemble the different nodes, what are the most useful nodes for adding effects,
+
+00:07:41.870 --> 00:07:48.560
+controlling the volume, controlling the stereo, making a equalizer, creating fancy visualizations,
+
+00:07:48.560 --> 00:07:56.310
+and so on. Welcome to the Web Audio world and during a
+
+00:07:56.310 --> 00:08:02.050
+few lessons, you will learn step by step how to do such an application.

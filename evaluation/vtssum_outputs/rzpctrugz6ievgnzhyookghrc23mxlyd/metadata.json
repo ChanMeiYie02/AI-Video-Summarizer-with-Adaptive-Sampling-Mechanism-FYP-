@@ -1,0 +1,20 @@
+{
+    "id": "rzpctrugz6ievgnzhyookghrc23mxlyd",
+    "title": "Towards Analytics Aware Ontology Based Access to Static and Streaming Data",
+    "url": "http://videolectures.net/iswc2016_kharlamov_analytics_aware/",
+    "info": {
+        "author": [
+            "Evgeny Kharlamov, Department of Computer Science, University of Oxford"
+        ],
+        "published": "Nov. 10, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 243,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 46,
+    "ground_truth_summary_length_chars": 4143
+}

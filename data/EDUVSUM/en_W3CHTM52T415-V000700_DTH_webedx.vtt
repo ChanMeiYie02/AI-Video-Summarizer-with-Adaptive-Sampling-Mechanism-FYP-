@@ -1,0 +1,187 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.000 --> 00:00:07.450
+Hi! Now we are preparing ourselves for reading the
+
+00:00:07.450 --> 00:00:11.910
+content of the different text tracks and display them.
+
+00:00:11.910 --> 00:00:19.630
+But before that, I must introduce what we call the TextTrack object that is a JavaScript
+
+00:00:19.630 --> 00:00:29.210
+object that is associated to the HTML elements. A track has two different views... maybe it
+
+00:00:29.210 --> 00:00:36.450
+is simpler to say that it has got a HTML view that means you can do a getElementById and
+
+00:00:36.450 --> 00:00:46.010
+manipulate the HTML element, this track element here, from JavaScript.  Or we can also work with its
+
+00:00:46.010 --> 00:00:54.570
+twin brother that is a text track, and this new view is the one we are going to use for
+
+00:00:54.570 --> 00:01:02.690
+forcing a track to be loaded, and for reading its content. And also for forcing subtitles
+
+00:01:02.690 --> 00:01:11.540
+or caption track to be displayed. So we just slightly modify the previous example by displaying the mode
+
+00:01:11.540 --> 00:01:16.670
+The mode is a property from the TextTrack,
+
+00:01:16.670 --> 00:01:25.439
+not from the HTML track. And this mode can be "disabled", "showing" or "hidden". And when
+
+00:01:25.439 --> 00:01:34.729
+it is disabled, reading the video will not fire any event related to the track. We will talk
+
+00:01:34.729 --> 00:01:41.689
+about events later but a disabled track is the same if we have no track at all.
+
+00:01:41.689 --> 00:01:49.850
+A track that is "showing" is displayed in the video, if the implementation of the video player
+
+00:01:49.850 --> 00:01:57.189
+supports that. And a track that is "hidden" is just not displayed.
+
+00:01:57.189 --> 00:02:04.290
+So how did we manipulated and accessed this mode property?
+
+00:02:04.290 --> 00:02:10.670
+The displayTrackStatuses function, that we wrote earlier, displayed the different
+
+00:02:10.670 --> 00:02:19.790
+properties of the HTML track, like the label, the kind or the language. This time, we accessed
+
+00:02:19.790 --> 00:02:26.330
+his twin brother, the TextTrack by using the track property.
+
+00:02:26.330 --> 00:02:33.050
+Every HTML track element has a track property that is a TextTrack.
+
+00:02:33.050 --> 00:02:40.060
+So here, from the current HTML track, I am getting the TextTrack (currentTextTrack).
+
+00:02:40.060 --> 00:02:50.260
+This is the object we use to access the mode and display it here. Another interesting
+
+00:02:50.260 --> 00:02:57.450
+thing is that if we set the mode, if we modify the value of the mode, from "disabled" to "showing"
+
+00:02:57.450 --> 00:03:04.930
+or to "hidden", it will force the track to be loaded asynchronously in the background by
+
+00:03:04.930 --> 00:03:09.489
+the browser. So we added in this example two buttons,
+
+00:03:09.489 --> 00:03:20.209
+"force load track 0" and "force load track 2" because by default, the track 0, the English subtitles,
+
+00:03:20.209 --> 00:03:25.750
+is not loaded. And the chapters, in track number 2, are
+
+00:03:25.750 --> 00:03:32.349
+not loaded either. We are going to force the track 0 to be loaded.
+
+00:03:32.349 --> 00:03:39.239
+If I click here "force load track 0", you see that the status changes - the mode changes to
+
+00:03:39.239 --> 00:03:45.650
+"hidden" and the track now is loaded. So what happened in the background?
+
+00:03:45.650 --> 00:03:50.840
+Let's have a look at the code we wrote. So I am going to zoom a little bit...
+
+00:03:50.840 --> 00:04:00.299
+The button we clicked is this one: "force load track 0" here, called a function named forceLoadTrack(0)
+
+00:04:00.299 --> 00:04:06.360
+that I prepared. What does this function do?
+
+00:04:06.360 --> 00:04:14.299
+It will call another function called getTrack that will check if the track is already loaded.
+
+00:04:14.299 --> 00:04:20.380
+If it is already loaded, then the second parameter here, is a callback function,
+
+00:04:20.380 --> 00:04:24.750
+It will be called because the track is ready to be read.
+
+00:04:24.750 --> 00:04:31.180
+In the case the track has not been loaded, we will set the mode to "hidden" and then we
+
+00:04:31.180 --> 00:04:39.630
+will trigger the browser so that it will load asynchronously, in the background, the track.
+
+00:04:39.630 --> 00:04:45.600
+And when the track is ready, then, and only then, we will call readContent.
+
+00:04:45.600 --> 00:04:52.740
+Let's have a look at this getTrack function that we wrote. It says getTrack, please load
+
+00:04:52.740 --> 00:04:58.520
+me the TextTracks corresponding to the HTML track number n.
+
+00:04:58.520 --> 00:05:05.960
+So here is the function. The first thing we do is that from the HTML track, we get the text track.
+
+00:05:05.960 --> 00:05:11.740
+Then we check on the HTML track if it is already loaded.
+
+00:05:11.740 --> 00:05:18.150
+If it is the case, then we will call the function that has been passed as the second
+
+00:05:18.150 --> 00:05:23.910
+parameter: it's the readContent. And the readContent is just here, for the
+
+00:05:23.910 --> 00:05:30.389
+moment it will not read the content really, but it will just update the status.
+
+00:05:30.389 --> 00:05:37.320
+So if I click on « force load track 2 » for example, it will load the track and when the track
+
+00:05:37.320 --> 00:05:44.889
+is arrived, it will call the displayStatus() that will show the updated status of the track.
+
+00:05:44.889 --> 00:05:51.199
+In the case the track is not here, the readyState is not equal to 2, then we will force
+
+00:05:51.199 --> 00:05:56.199
+the track to be loaded. By doing this we set the mode to "hidden".
+
+00:05:56.199 --> 00:06:04.120
+This may will take some time: you understand that the browser is loading on the Web the
+
+00:06:04.120 --> 00:06:11.139
+track. It may take 2 seconds for example. So we need to have a listener that will listen
+
+00:06:11.139 --> 00:06:17.830
+to the load event. So htmlTrack.addEventListenner('load'...) will trigger
+
+00:06:17.830 --> 00:06:25.680
+only when the track has been loaded, and only in that case we will call the callback function:
+
+00:06:25.680 --> 00:06:31.610
+the readContent that has been passed in the second parameter, in order to read the track.
+
+00:06:31.610 --> 00:06:42.039
+If I look at the console, and if I start again the application. Only the second track has
+
+00:06:42.039 --> 00:06:47.810
+been loaded, I click "force load track 0", it says "forcing the track to be loaded",
+
+00:06:47.810 --> 00:06:53.370
+it loads the track and it calls the callback "reading content of loaded track".
+
+00:06:53.370 --> 00:07:01.729
+If I click again the same button, it says "the text track is already loaded" and I am going to
+
+00:07:01.729 --> 00:07:06.360
+read it now. We cannot load a track several times, if
+
+00:07:06.360 --> 00:07:16.330
+it is already loaded, we must just use it. In the next video, we will show how we can
+
+00:07:16.330 --> 00:07:20.599
+effectively read the content of the track and do something with it.

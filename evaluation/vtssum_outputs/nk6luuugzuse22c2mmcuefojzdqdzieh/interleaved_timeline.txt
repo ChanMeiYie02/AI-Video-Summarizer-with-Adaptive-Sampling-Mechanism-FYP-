@@ -1,0 +1,95 @@
+[0.0s - 29.0s]
+Good afternoon, I'm Rebecca Murphy and I'm going to present a new pyramidal structure. The bounded irregular pyramid which is built using a union. Find the summation process.
+
+[29.0s - 58.0s]
+The presentation is disorganized as we can see in the slide. 1st, I'm going to present a brief introduction about pyramidal structures. 2nd, I'm going to explain how the the bounded irregular pyramid or beep is built. After that I'm going to to present two of the main characteristic of the of the beat, the preservation of connectivity in there tonight. Receptive fields and its capability to represent elongated objects. Finally, I'm going to present some results and the conclusions feature work.
+
+[58.0s - 87.0s]
+I'm going to start with them with the introduction.
+
+[87.0s - 116.0s]
+In the literature we can find 2 main types of of pyramids. They were pyramids, an irregular ones. They will not be time, it's half a reader structure where the estimation process is is fixed. So it comes with two main problems. They're not gonna activity of the of the time receptive fields and in capability to represent a long added audience. However.
+
+[116.0s - 145.0s]
+I am. Thanks to do this repeatedly, hitting. This is true. Thirst can be represented as a hierarchy of images, so this is the the main advantage of this type of structure, because they can be. With an traverse with a low computational cost.
+
+[145.0s - 174.0s]
+Am irregular pyramids in contrast with with regular ones. Have variable that is true too, and estimation processes, so they are that too there today mate layout, solving the problems of regular abilities. However, a classicly irregular approaches half a computational times, which makes impossible to to use them in real time applications. Now there are some some new approaches we try to solve this problem by by reduced by increasing the resolution factor between between levels.
+
+[174.0s - 203.0s]
+The beep is a combination between a regular structural, an irregular warm. The idea is to use a. A regular approach in the homogeneous regions of the input mate. An irregular approach in the in the rest of radians. Thanks to do this combination, the beep solves the problems of. Already, that is true too. A without a low computational computational time, so it's capable to represent the longer that audience and their respective fields are.
+
+[203.0s - 232.0s]
+Alkanet
+
+[232.0s - 261.0s]
+Now I'm going to display how the web is.
+
+[261.0s - 290.0s]
+Is weed. The pizza combination between a four to one regular is true to an Anna simple graph. Irregular one so. The web has two parts, a regular part an an irregular one. Therefore inside of it there are two types notes. They will add notes or not belonging to the regular structure on virtual nodes or not belonging to the to the regular is true to the whole babe can be. Represented as a graph hierarchy where there the base level is there the input image. The process to to build a graph from the graph below has three minus steps. A regular decimation process as union fine. And then to level a generation.
+
+[290.0s - 319.0s]
+And now we're going to see an example of contrition of the of the beep. We're going to suck to start building level one from from level 0. Anne. In the in the base level. All day, all the nodes are regular notes. The first step is a regular decimation process in this. In this process for regular neighbor nodes. We have similar are linked together generating a regular node in the in the upper level, so these four nodes are linked together generating a regular node in level 1. So. The next step is. The next step is our Union find process in a unifying process. Arno first search in his neighborhood for. For I know with Parantoux tooling with it and if it doesn't find this patent then it's go up to the to the upper level. AM.
+
+[319.0s - 348.0s]
+The idea to use a union find growth processes becausw middle school would use this. This method have a. A big reduction factor between levels becausw in these approaches are. Apparent can have week number of of songs. A in the case of the of the bounded irregular pyramid, the Union fine process is divided into super steps. About insert an interval training step which is which is the application of the Union find processing there in the regular part of the web and eventual patent search and virtual node linking step which is the application of the of the Union fine processing. The irregular part of the whip in the case of the of the base level there are not virtual nodes, so the Little Prince search unbeaten no link in step is not performing. Therefore, that the next step is the patent search and interval training step. In this step, our regular know without parent search in its neighborhood for a regular node with parental tooling with it. If it doesn't find this part and then it search in his neighborhood for another regular note without without parent to link with it, generating a little note in there in the upper level, for example, this note sent in its neighborhood for another regular note with parent to tooling with it. But in this case it doesn't find this patent, so it it it search for for another regular node without pattern to link to link with it. Therefore, if. These two nodes are are linked together generating a virtual node. Best, no search in his neighborhood for apparent to tooling with it an. It it finds this note, so it's linked with with it. The same for for the. The rest of nose in the in the emperor. In the same way, these two nodes are linked together generating a Bitcoin node. These other nodes are linked to this parent an answer. Now. All the notes of their level one have been computed, so the next step is the.
+
+[348.0s - 377.0s]
+Interlevel age generation The Interlevel ages are computed taking into account the neighborhood of the revolution windows. In there, in the base level.
+
+[377.0s - 406.0s]
+Now we are going to see how how Bill Level 2 from from level one. The first step is the regular decimation process. But in this case there there are not for regular. They were not, which are similar. So the regular decimation process doesn't produce any any result.
+
+[406.0s - 435.0s]
+The next step is the banning. Certain interlevel training step. This case. These two nodes are linked together generating a bit one note in Level 2. This note is linked to this pattern. These do not are linked together an so.
+
+[435.0s - 464.0s]
+The next step is the beautiful patent search and virtual note linking step. This step is is the same now, but in certain interval training but with virtual nodes. So about one note without patent search in his neighborhood for a node with parent to tooling with it and it doesn't find this no then it search for for another virtual node similar to it without pattern and they are linked together generating another visit. Well known but. In this case. This note the red Biltwell knows search in his neighborhood for. For a weird one node similar to it with parent and it doesn't find this pattern, so it look for. Another red beard? Well no without parent, but it never find this note, so it go up. To the upper level without changes, the same for the virtual green, no.
+
+[464.0s - 493.0s]
+The next step is the Inter level 8.
+
+[493.0s - 522.0s]
+Now we're going to see how how build Level 3 from level 2. In this case, there are not regular notes in the in the level, so. The regular decimation process on there. But in certain interval training step are not performing. So the first step is the virtual pattern search and built well no link in step. In this case, these two nodes are linked together generating a little note. This note is linked to this pattern and this to know are linked together. Now the the process to to build a web stop because there are no more similar Note 2 to link together. So this is the the final structure for the pin. In the case of of this image.
+
+[522.0s - 551.0s]
+Now. I'm going to explain how the whip is capable to preserve the connectivity Indochina reflective field.
+
+[551.0s - 580.0s]
+In the in the receptive field is always generated by the linking of neighbor nodes. So in order to prove that. The receptive fields are connected. Is it sufficient to prove that if two nodes are neighbors then they receptive fields are also neighbors? So in this case for example. These two nodes are neighbors and then they routing windows in the level below are also neighbors. It means that there are at least. To note, one of each parent that are also neighbors, the routine windows of these notes. Our neighbors in the interface level this disruption windows are part of the of the receptive fields of these two nodes. So if this resolution windows are neighbors. The respective fields are also neighbors and the. The linking of these two notes. In the upper level. Originate are affective field. Which is connect.
+
+[580.0s - 609.0s]
+Now.
+
+[609.0s - 638.0s]
+Hey, I'm going to present how the whip is capable.
+
+[638.0s - 667.0s]
+To represent a long editorial. In order to to to prove that a, we must do to prove that there exists a built OneNote who's receptive field is formed by the note of the. Or the longer detergent in the beep and elongated audit forms are connected. Path in the individual level. Then when the when the beep is is built. It disconnected path is divided in a set of resolution windows which are neighbors. If this relative winners are neighbors. The balance of the reduction windows are also neighbors in the upper level, and then they form a connected path in this level and disconnected part can be so debated in a set of reduction windows. If so, this process continues until a level with only a note is. Is rated very effective feel of this note is there is there long at it oil?
+
+[667.0s - 696.0s]
+Now I'm going to to present some.
+
+[696.0s - 725.0s]
+Some of final results. Here in this line we can see some qualitative results. In order to evaluate the whip, we have use a Tina segmentation task. In this light we can see 3 original images. Um, the three of tiny segmentation. We can see us. The beep is capable to extract the demo genius colorations. From there, from the input images, but the most interesting results are the quantitative research.
+
+[725.0s - 754.0s]
+But in order to quantitatively evaluate the web, who has used the key function proposed by or, so we have used this function because it's parameter free. And because it takes into account the following guidelines and their tiny radius must be uniform, the interior of the darians must be simple. Adjust and Ryan must be different. It penalized assistance of small reyers.
+
+[754.0s - 783.0s]
+A in in order to compare the weep with another mythos, have it use. Five of the main irregular pyramids represent in the in the literature have used the classical rock hierarchy. The localized pyramid, the classical here arkie with radio growing stopping the hierarchy of image partitions and the combinatorial pile.
+
+[783.0s - 812.0s]
+In the table we can see them. The average of. Of some results I will have to use 50 mages from the water. Long uncoiled database we can see us the number of of a tiny regions is more or less the same in all the methods and we can also see that the number of levels in the bounded irregular pyramid is less than in the rest of mythos. It becausw apart of the image in the in the whip. Has been processes using a regular approach. But the most interesting result is that they don't panic. You value is. Very similar in the in deep down in the rest of of a irregular pyramid. But a. The beep is at least 10 times quicker. Dundee the rest of. Of methods.
+
+[812.0s - 841.0s]
+So.
+
+[841.0s - 870.0s]
+Now I'm I'm going to present that.
+
+[870.0s - 899.0s]
+Additional feature work. The pizza combination between a regular and irregular approach. The goal of the whip is to solve the problem of regular approach of regular approaches, but with a low computational time. We have use four to one that is true to an A simple graph and a regular destination process combined with the Union fine decimation approach. At the most important conclusion is that the. The the results are quantitative, very similar to the to the results of other regular approach. But this is the solution time in in the in the web is is very very small. Now we are working in increase the degree of combination between regular and irregular parts of the web because now we have a 2 union find processes running the regular part of the whip and one in the regular part of the beef and we are going working in to use only a union find process which. Oh mix. Both parts of the pyramid in order to. To try to solve the chiefing chief variance. Problem.
+
+[899.0s - 928.0s]
+Thank you both for your attention.

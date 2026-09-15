@@ -1,0 +1,20 @@
+{
+    "id": "svxxm6zkvlnkhob5vfjdzzdv6xhojkri",
+    "title": "Exploration Vs. Exploitation Chalenge part 2",
+    "url": "http://videolectures.net/pcw06_hussain_eve/",
+    "info": {
+        "author": [
+            "Zakria Hussain, University of Southampton"
+        ],
+        "published": "April 15, 2007",
+        "recorded": "April 2006",
+        "category": [
+            "Top->Computer Science->Machine Learning->Active Learning->Exploration vs. Exploitation"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 45,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 69
+}

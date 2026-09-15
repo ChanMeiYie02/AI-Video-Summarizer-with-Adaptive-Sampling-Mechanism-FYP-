@@ -1,0 +1,20 @@
+{
+    "id": "tk22rihirko6mk4gq5pmxt2mylmo5w73",
+    "title": "From Bandits to Experts : On the Value of More Information",
+    "url": "http://videolectures.net/explorationexploitation2011_shamir_bandits/",
+    "info": {
+        "author": [
+            "Ohad Shamir, Faculty of Mathematics and Computer Science, Weizmann Institute of Science"
+        ],
+        "published": "July 25, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Active Learning->Exploration vs. Exploitation"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 153,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1089
+}

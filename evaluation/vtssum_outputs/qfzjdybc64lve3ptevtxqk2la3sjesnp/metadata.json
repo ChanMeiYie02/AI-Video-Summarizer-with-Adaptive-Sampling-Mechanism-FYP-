@@ -1,0 +1,20 @@
+{
+    "id": "qfzjdybc64lve3ptevtxqk2la3sjesnp",
+    "title": "Nascent Best Practices of Multilingual SEO",
+    "url": "http://videolectures.net/w3cworkshop2011_lucardi_seo/",
+    "info": {
+        "author": [
+            "Gustavo Lucardi, Trusted Translations, Inc."
+        ],
+        "published": "April 22, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Computer Science->Web Search"
+        ]
+    },
+    "num_segments": 7,
+    "num_sentences": 146,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1532
+}

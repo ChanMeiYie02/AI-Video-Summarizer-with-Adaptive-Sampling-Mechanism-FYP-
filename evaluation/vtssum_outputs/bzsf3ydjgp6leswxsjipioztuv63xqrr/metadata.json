@@ -1,0 +1,20 @@
+{
+    "id": "bzsf3ydjgp6leswxsjipioztuv63xqrr",
+    "title": "Multi-Task Learning and Matrix Regularization",
+    "url": "http://videolectures.net/nipsworkshops09_argyriou_mtlmr/",
+    "info": {
+        "author": [
+            "Andreas Argyriou, École Centrale Paris"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 411,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 3646
+}

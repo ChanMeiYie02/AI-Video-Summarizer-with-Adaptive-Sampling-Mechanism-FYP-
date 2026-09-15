@@ -1,0 +1,266 @@
+[0.0s - 29.0s]
+Thank you for coming to my last. The last talk of the session. I think there have been some really interesting things we've talked about so far. I would like to tell you a little bit about the work that I've done on characterizing individual communication patterns, but I'd like to impress upon you. Is that in the chemical engineering Department? I am interested in sociological problems and I'm presenting this at a computer science conference. So as you might imagine, we might have a little bit of a communication issue. So if you have any questions, feel free to ask.
+
+[29.0s - 58.0s]
+OK, so basically I'm interested in characterizing individuals an sociologists have been doing this for quite some time now, and so if you were to consider a typical population of people, say the characters from Roger Hargreaves Children's book series, you might want to quantify how these individuals behave, how they how successfully, or what have you, and hopefully relate that back to attributes that are unique to those individuals. So, for instance, we might be interested in identifying whether or not Mr. Clumsy is rich.
+
+[58.0s - 87.0s]
+Or not an relating that to something that's unique to Bob. Mr Clumsy, whether maybe clumsiness is related to how successful you are. I don't know, so there are lots of different ways that we can think.
+
+[87.0s - 116.0s]
+Do this, the first is just look at gender, see if they're gendered.
+
+[116.0s - 145.0s]
+In some people the other is by ethnicity. If your race matters or your religious background.
+
+[145.0s - 174.0s]
+Another way is by whether there are geographical factors that play influence in terms of how.
+
+[174.0s - 203.0s]
+Successful you are another attribute that can be important is your social network and there's been lots of talks here at this conference about how to use social networks to gain information, but we're.
+
+[203.0s - 232.0s]
+Really interested in is using activity patterns of these individuals to try to characterize how may be successfully successful and so to give you an idea of how we might go about doing this.
+
+[232.0s - 261.0s]
+If we were to consider the some time series of that, maybe Mr. Chatterbox had.
+
+[261.0s - 290.0s]
+And consider so consider this time series. Try to characterize this activity in a meaningful way. So typically you might do this with some correlation or some other type of statistic. Alternatively, you can do with model parameterisation and there have been lots of papers that have gone along these lines, so the basic idea is you take a model and you parameterize it in some meaningful way that you can compare user a user B.
+
+[290.0s - 319.0s]
+The next way is that you tried it. The next step would be to try to make predictions based on these characterizations and then.
+
+[319.0s - 348.0s]
+Compare these predictions to some output so the predictions might be clustering users based on how similar they are, or classifying them in some meaningful way. Identifying users that are true outliers or even identifying when their behavior changes.
+
+[348.0s - 377.0s]
+So the emphasis of this talk and the real contribution here is to develop a model that is intuitive and that it's very easy to understand and it's simple enough that we can actually compare different users in a meaningful way. And we're going to do is use this parameter model parameter station to do a little toy example of clustering an outlier detection. OK.
+
+[377.0s - 406.0s]
+So when I say human activity patterns or that I want to characterize human activity patterns, what do I really mean? And I think probably the best way to motivate this is to think about I'm getting a little ahead of myself. We're going to consider two datasets here primarily, so I'm interested in doing this in the context of email, and these two datasets come from two different papers which have been published in Proceedings of the National Academy of Sciences and in Science. So the first data set was published in 2004 from and it's taken from a European University consists of are on the order of 1000 users over about a semester, and the second data set consists of data from American University in 2006. It consists of about 10 thousand 100,000 users. Over about four semesters or two academic years. So typically when we think about these email datasets, we think about the network representation. That's what I'm showing here. The static representation of a graph. Another way you can think about it.
+
+[406.0s - 435.0s]
+As a very dynamic representation. So here I'm going to just step through a little cartoon of how this network might change overtime.
+
+[435.0s - 464.0s]
+And what you're going to see is that different people who are being highlighted in red when they send a message are sending these messages along the highlighted links.
+
+[464.0s - 493.0s]
+Anne.
+
+[493.0s - 522.0s]
+Their patterns are quite different each.
+
+[522.0s - 551.0s]
+Individual has different behave.
+
+[551.0s - 580.0s]
+Dear Anne.
+
+[580.0s - 609.0s]
+That behavior is possibly.
+
+[609.0s - 638.0s]
+Quantifiable in some meaningful way. So we want to try to quantify when these individuals are turning red.
+
+[638.0s - 667.0s]
+This figure and use that as an attribute or develop away.
+
+[667.0s - 696.0s]
+Uses it as an attribute in some sort of.
+
+[696.0s - 725.0s]
+Theological analysis. OK, so now what I was saying before is the way.
+
+[725.0s - 754.0s]
+One might think about this in many.
+
+[754.0s - 783.0s]
+It is in the way we like to think about human activity.
+
+[783.0s - 812.0s]
+As in the following, I think it's best Rep.
+
+[812.0s - 841.0s]
+And if we think about it in terms of Little Miss wise.
+
+[841.0s - 870.0s]
+So Little Miss Wise is a very very successful student and she's so success.
+
+[870.0s - 899.0s]
+So that all she really does is sleep, eat, go to class study and send email. So on a typical day for Little Miss, why is she?
+
+[899.0s - 928.0s]
+Might wake up, grab some breakfast, maybe send a few emails before going to class, grab some lunch while sending a few emails, and then go to class again. Study email, you get the ID.
+
+[928.0s - 957.0s]
+And so this kind of this kind of thing.
+
+[957.0s - 986.0s]
+Repeats itself again on Friday and then on SAT.
+
+[986.0s - 1015.0s]
+In Sunday she takes the weekend off, maybe goes to Paris for a conference.
+
+[1015.0s - 1044.0s]
+And then so this is the kind of pattern that we might have for Little Miss wise. I'm not Little Miss wise. So.
+
+[1044.0s - 1073.0s]
+So this is what we might expect somebody to behave like. But actually all we have are the email communication data. We don't know anything about when they're eating or sleeping or going to class or doing their homework. All we know is when they're sending emails and we don't actually know when they're sitting down at their computer saying their emails, which is what I'm highlighting here in orange. All we know is when they actually send emails. So that's all we actually have in the data, so.
+
+[1073.0s - 1102.0s]
+As you can tell, there's lots of uncertainty here, which we're going to quantify.
+
+[1102.0s - 1131.0s]
+With something called the intervent time towel. And that's just the time between two consecutive events that somebody sent their two consecutive email.
+
+[1131.0s - 1160.0s]
+Somebody sends, so there's lots of uncertainty and the question is how can we quantify this uncertainty and a model and use that in a meaningful way to interpret for later analysis? So.
+
+[1160.0s - 1189.0s]
+Probably the most simplest way that we can do this is with something called A plus on process, in particular homogeneous plus on process homogeneous plus on process. There are really two important feature.
+
+[1189.0s - 1218.0s]
+The first is that the probability that an event occurs at any given time is directly proportional to the probability density, but the rate at which those things happen is proportional to probability.
+
+[1218.0s - 1247.0s]
+See the other really important thing in the distinguishing feature about a person processes that it's history independent. So if an event occurs at time T, it's completely independent of what's happened in the past. So this is a pretty naive model in the sense that there are no correlations, and so this rate is proportional to the probability density that something happens at a particular time, and it so happens that when you can do some analytical results, which I'm sure you probably all done in a statistics class of some sort, and if you look at the log linear plot of the probability density of the Inter event times, you can see that it decays exponentially and. This is.
+
+[1247.0s - 1276.0s]
+But what's interesting is when you look at the probability density of empirical users, actual users in the data, it has a very heavy tail.
+
+[1276.0s - 1305.0s]
+And so here I'm showing a log log plot of the same probability density for an actual user in our data set. An what you can see is that this decays much more slowly than an exponential, suggesting that there's some serious flaws with the homogeneous Passan process so.
+
+[1305.0s - 1334.0s]
+Kind of go back to the drawing board and think about what you would expect from an actual user. So the three things I'd like to emphasize, or the first people will have weekly.
+
+[1334.0s - 1363.0s]
+Periodicity's, so we typically work Monday through Friday. We don't really work as much on the weekends, or maybe send as many emails on the weekends. The second is that we have daily. This season that we took.
+
+[1363.0s - 1392.0s]
+Please sleep during the same times of the night and the third is.
+
+[1392.0s - 1421.0s]
+We have these cascades of activity or what we refer to as cascades of activity or email sessions, so we want to try to encapsulate this model in a meaningful way.
+
+[1421.0s - 1450.0s]
+What we've done in previous work is develop a cascading nonhomogeneous periodic posts on process, and that's kind of a mouthful, but hopefully you'll understand where all these phrases are coming from, so the first is that we're going to start from a homogeneous plus on process with a constant.
+
+[1450.0s - 1479.0s]
+Every time.
+
+[1479.0s - 1508.0s]
+Here is the weekly periodicity, so here.
+
+[1508.0s - 1537.0s]
+You can already start to see why the periodic part is important and then the non homogeneous part just refers to the fact that the rate is not constant in time. It actually changes so then we.
+
+[1537.0s - 1566.0s]
+Incorporate further in addition to the weekly activity.
+
+[1566.0s - 1595.0s]
+Turns the daily patterns.
+
+[1595.0s - 1624.0s]
+Activity and these in.
+
+[1624.0s - 1653.0s]
+In principle are.
+
+[1653.0s - 1682.0s]
+Start what we call.
+
+[1682.0s - 1711.0s]
+Email sessions and.
+
+[1711.0s - 1740.0s]
+In these email sessions you can have.
+
+[1740.0s - 1769.0s]
+I've seen either.
+
+[1769.0s - 1798.0s]
+Additional events happen during a Session, 2 maybe 3, and so on and so forth, so you get the.
+
+[1798.0s - 1827.0s]
+Yeah, So what we actually observe in email data then is the project.
+
+[1827.0s - 1856.0s]
+Both of these time sequences under the same time acts.
+
+[1856.0s - 1885.0s]
+And so this is the data.
+
+[1885.0s - 1914.0s]
+They were actually confer.
+
+[1914.0s - 1943.0s]
+And with.
+
+[1943.0s - 1972.0s]
+So in previous work we've shown that actually this.
+
+[1972.0s - 2001.0s]
+Odila statistically consistent with the data we've done.
+
+[2001.0s - 2030.0s]
+Some Monte Carlo hypothesis testing, and I'm not just showing 1 user here, but we've actually done this for several different user.
+
+[2030.0s - 2059.0s]
+So you can get a feeling for the fact that this model is able to encapsulate a lot of different behaviors, and so it offers the potential to actually characterize people and compare them in a meaningful way. Um? So.
+
+[2059.0s - 2088.0s]
+So in addition to those benefits, there are two major downsides with this particular model, which we've done in previous work. The first is that it's very expensive to infer because it uses a simulated annealing approach for identifying the parameters of the model. The second is that it's very difficult to actually interpret the model parameters, so we want to come up with something that actually solves both these problems simultaneously, and so if.
+
+[2088.0s - 2117.0s]
+Go back and take a look at the model. What we observe is that actually there's a hidden Markov structure which can make inference very efficient, so.
+
+[2117.0s - 2146.0s]
+So the first thing that we can notice is that here I'm highlighting the top time series in blue in the bottom time series in red, which correspond with.
+
+[2146.0s - 2175.0s]
+Passive and active state, so you're not really sending email if you're being passive. If you're out walking the dog, unless you have a BlackBerry like everybody does now. Or you're actively sending email on that. You're sitting on the train and actually doing things, so we have these two states. You're either passive or active, and we say that you transition between them with some probability. See and this is the probability that really defines our Markov model, and it ends up being giving reasonable predictions with things that we've empirically observed in the other data set or in our previous study. So the second feature that I like.
+
+[2175.0s - 2204.0s]
+To point out about this model is that we can see.
+
+[2204.0s - 2233.0s]
+Qualify this complicated rate expression that we have for the non homogeneous portion of the model into something that just looks like a product of square pulses an this ends up being.
+
+[2233.0s - 2262.0s]
+Really nice way to represent things and it doesn't actually give away. We can still see that the results are very consistent with the actual data, so we're not losing any any precision when we.
+
+[2262.0s - 2291.0s]
+So the model that we end up having is a 9 parameter model that has intercession rate, the intercession rate so on and so forth. But really, the.
+
+[2291.0s - 2320.0s]
+The two parameters that I'd like to focus on for the remainder of the talk are the start of the day, which we call Tau 0D. Excuse me and the end of the day, Talwandi.
+
+[2320.0s - 2349.0s]
+So what we do is we estimate these parameters for. 400 or so users from the Ekman Moses survey data set, which is the one from the European University, and we estimate these parameters for the four semesters worth of the academic calendar from the American University, which is the cost and what status?
+
+[2349.0s - 2378.0s]
+And what we see when we estimate these parameters is that surprisingly, these distributions are actually relatively similar. When I explain things. So first of all, people tend to start their days basically around the same time. Europeans data set is apparently shifted a little earlier. Perhaps they have more motivation to get up than American students. I don't know. Then this on this. On the right we can look at the end of the day when people actually stop sending emails, or we estimate that they stop sending emails and there's a distinct peak around, say 6:00 or 7:00 PM and another distinct peak for the American University around 1:00 o'clock or 2:00 o'clock. So these correspond with people that are either they basically have a 95 work day or they have along. They basically send emails whenever they're awake. Um? So what I'd like to do is focus for now on the continents and watch data set because it offers us the opportunity to check and see whether.
+
+[2378.0s - 2407.0s]
+These parameters are actually stable overtime, so here we have these four different semesters an you can imagine a couple of different ways that we might observe that these parameter estimate distributions are so stable the 1st.
+
+[2407.0s - 2436.0s]
+Might be that these distributions actually quantify how each individual changes. So at each semester I draw my parameters from these distributions and that tells me how I behave over that time.
+
+[2436.0s - 2465.0s]
+The second possibility is that actually these distributions quantify a difference across population, so actually each person is a very precise point in this in this distribution, and these distributions are there a distribution across the population.
+
+[2465.0s - 2494.0s]
+So we've done is taking a measure of how much variability there is for each individual and compare that with the variability across the entire distribution. So we're looking at the standard deviation of each an looking at the ratio of those two, and what we find is that over 85% of individuals very less than the population, which tells us that these parameters are actually telling us something meaningful about how individuals behave, and it's not something that's you can just pick out of a hat out of this distribution. So actually those parameters when you estimate them are telling you something useful about a person.
+
+[2494.0s - 2523.0s]
+So I'd like to turn our attention now to using this information about how stable these parameters are to kind of illustrate that this might be actually useful for a real application. So here I'm showing five time series as denoted by a through E an what I'd like to post you is that one of them is synthetic. It's not actually person, the other four are an invite anybody to guess which one is the one that's not real. See OK, good guess wrong. So that was a good guess though, 'cause they look very different, right? But actually it turns out that when you look at at the you estimate the parameters for all these different people and you look at where they fall in this in this parameter space of the start of the day and the end of the day you act.
+
+[2523.0s - 2552.0s]
+Fall in different clusters and actually I'm not so sure that you can see from the back, so I'm just going to point. So we are in this cluster down here and then here in this cluster at the top an A is kind of off to the side. It's not actually in either of the clusters. So the bottom cluster actually corresponds with people that start their day around 10 or 11 in the morning and then their day around 6:00 o'clock in the evening. So these are people that only send work emails during their work day. The top cluster corresponds with people that start their day around the same time, but continue sending emails through one or two in the morning. So these are what we called email aholics an basically D and he ended up falling into the same category and it's really hard to tell. In fact, it's nontrivial to tell that actually they belong in the same category considering. There are so few events for user Dee Ann a it, it turns out, is somebody that just sends a lot of emails at particular times of the day. So they send emails from 6:00 o'clock in the evening to maybe midnight. So they start sending emails when they get home from work, and then they conclude. But by the time they go to sleep so. That I just.
+
+[2552.0s - 2581.0s]
+I'd like to, I hope that I've convinced you that actually characterizing individual communication patterns might be on a novel opportunity to make other predictions about user behavior, and with that, I'd like to thank my coauthors, especially Jake Hoffman, who's in the audience Duncan Watts for giving the opportunity to work at Yahoo over the summer, and my advisor, Louis Shamrell. Thank you. So. Using apparel. The other one is to try some unsupervised learning classification approaches. Have you compared? Your approach to. So I mean, we haven't actually done that. The next step, which would be to actually try to classify things and I. Right, so so I mean, I think it's that's an important thing to maybe do as a next step to try to classify individuals. That my understanding you correctly. I mean, we're just we're really proposing here, the model and it's parameterisation. Question is sort of evaluating the model. You know, one way to dollars in a couple of examples and see if you're doing OK. You know intuitively the other way is to compare it against some baselines and all right? Yeah, I understand we have not done that, and that would be definitely interesting thing to do.

@@ -1,0 +1,20 @@
+{
+    "id": "dmp3tpeejq7hlxxn7tvdj3mb52htqvkg",
+    "title": "The Wisdom in Tweetonomies: Acquiring Latent Conceptual Structures from Social Awareness Streams",
+    "url": "http://videolectures.net/www2010_wagner_twt/",
+    "info": {
+        "author": [
+            "Claudia Wagner, GESIS - Leibniz Institute for the Social Sciences"
+        ],
+        "published": "May 17, 2010",
+        "recorded": "April 2010",
+        "category": [
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 144,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 2877
+}

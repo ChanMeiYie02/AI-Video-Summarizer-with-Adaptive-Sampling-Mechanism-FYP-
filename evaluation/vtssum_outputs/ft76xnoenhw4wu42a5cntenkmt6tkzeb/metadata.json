@@ -1,0 +1,21 @@
+{
+    "id": "ft76xnoenhw4wu42a5cntenkmt6tkzeb",
+    "title": "Modulor´s Bastard Children",
+    "url": "http://videolectures.net/matchmaking2017_cano_ciborro_children/",
+    "info": {
+        "author": [
+            "Victor Cano Ciborro, Arquitectura Subalterna"
+        ],
+        "published": "March 3, 2017",
+        "recorded": "February 2017",
+        "category": [
+            "Top->Architecture",
+            "Top->Arts->Visual Arts->Design"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 122,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 306
+}

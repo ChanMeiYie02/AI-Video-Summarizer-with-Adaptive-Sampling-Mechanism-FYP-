@@ -1,0 +1,20 @@
+{
+    "id": "ti74fpuhyk26vgz6xvfxh2vge3zgpmhk",
+    "title": "Goal-Directed Tracing of Inferences in EL Ontologies",
+    "url": "http://videolectures.net/iswc2014_klinov_interences/",
+    "info": {
+        "author": [
+            "Pavel Klinov, Institute of Artificial Intelligence, Ulm University"
+        ],
+        "published": "Dec. 19, 2014",
+        "recorded": "October 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 120,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 991
+}

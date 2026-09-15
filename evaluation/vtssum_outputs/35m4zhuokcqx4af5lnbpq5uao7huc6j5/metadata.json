@@ -1,0 +1,20 @@
+{
+    "id": "35m4zhuokcqx4af5lnbpq5uao7huc6j5",
+    "title": "Truly individualized systems medicine: a hands-on tutorial where participants will resolve paradoxes by using virtual twin/digital-me",
+    "url": "http://videolectures.net/mdo2014_westerhoff_individualized_systems_medicine/",
+    "info": {
+        "author": [
+            "Hans V. Westerhoff, Swammerdam Institute For Life Sciences (SILS), University of Amsterdam"
+        ],
+        "published": "July 21, 2014",
+        "recorded": "May 2014",
+        "category": [
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 55,
+    "num_sentences": 760,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 42,
+    "ground_truth_summary_length_chars": 3655
+}

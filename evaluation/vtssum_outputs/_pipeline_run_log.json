@@ -1,0 +1,592 @@
+{
+    "success": 50,
+    "error": 0,
+    "details": [
+        {
+            "sample_id": "25yl6k2kfhphvxrux5rf3x3ntotgs2fs",
+            "title": "Diffusion and Cascading Behaviour in Networks",
+            "status": "success",
+            "times": {
+                "step_7_embed": 17.19,
+                "step_8_cluster": 1.92,
+                "step_9_summarize_clusters": 37.56,
+                "step_10_final_summary": 257.61,
+                "total": 314.28
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "26g6psjua4czlgwv4ortua7nymlqf3bg",
+            "title": "Scalable Graph Clustering Using Stochastic Flows: Applicatio",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.87,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 23.4,
+                "step_10_final_summary": 59.37,
+                "total": 88.66
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "26hv3knh7kjyx3thwqclhttqk2scnisg",
+            "title": "Net2Net: Accelerating Learning via Knowledge Transfer",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.86,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 24.37,
+                "step_10_final_summary": 63.44,
+                "total": 93.69
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2boy4yyba7e6ktwznf6yctgecrfrxdoi",
+            "title": "Knowledge Graph Embedding for Ecotoxicological Effect Predic",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.23,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 26.23,
+                "step_10_final_summary": 65.76,
+                "total": 98.24
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2bponx5e4o2d6wbtf2yicgmmw2suisje",
+            "title": "Scaling AI Through Multi-Agent Organizations",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.09,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 30.93,
+                "step_10_final_summary": 189.21,
+                "total": 226.25
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2c5fir3apwpabzamronmsk3qp4efoevw",
+            "title": "Information Geometry and Its Applications",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.71,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 26.98,
+                "step_10_final_summary": 117.43,
+                "total": 150.14
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2cd2bvg4pv3qnvhqdhna6nhovc3g5j5r",
+            "title": "A Translation from Logic to English with Dynamic Semantics",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.3,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 31.86,
+                "step_10_final_summary": 312.18,
+                "total": 350.37
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2dlsaebstb43xy3e2p3o4ha27jh7echd",
+            "title": "My 10 Year Research Vision: Face Analysis Systems",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.78,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 24.38,
+                "step_10_final_summary": 70.45,
+                "total": 100.64
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2e7hdruw3sdhbfphc4ohhqp5vcnyznqq",
+            "title": "A Scalable Pattern Mining Approach to Web Graph Compression ",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.09,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 30.44,
+                "step_10_final_summary": 80.88,
+                "total": 117.43
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2eauxz26ijalx6qv5tgev2zxkxa5i5xb",
+            "title": "Welcome statements given by the representatives",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.54,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 30.45,
+                "step_10_final_summary": 231.74,
+                "total": 268.76
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2gt4gftxx46oqxxamujowwnn3jsbbfgv",
+            "title": "High-Performance Computing in the Time of Uncertainty",
+            "status": "success",
+            "times": {
+                "step_7_embed": 8.61,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 35.14,
+                "step_10_final_summary": 249.45,
+                "total": 293.23
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2hjd5t2idv3ksw7zemjv2lcs5nvu3xef",
+            "title": "Six Thinking Hats system",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.12,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 25.37,
+                "step_10_final_summary": 157.64,
+                "total": 189.16
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2hylsmo5vsxffdvwyowo2wnetujwvwus",
+            "title": "Learning Representations for Automatic Colorization",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.76,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 29.28,
+                "step_10_final_summary": 65.57,
+                "total": 100.63
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2injatedmf5nwj5gtxqjflfkb5r7p23s",
+            "title": "Web Rhetoric: Intentionality and textuality on the web pages",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.16,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 27.24,
+                "step_10_final_summary": 137.23,
+                "total": 170.66
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2ip36tjkiksxne4xzaild47euhkibbue",
+            "title": "Autonomously Managing Competing Objectives to Improve the Cr",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.98,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 28.61,
+                "step_10_final_summary": 111.51,
+                "total": 146.13
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2jt4mtghgha6gdr2ddfwmpfe3w4l4jir",
+            "title": "Opening Ceremony",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.28,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 32.44,
+                "step_10_final_summary": 223.67,
+                "total": 262.42
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2l2uulzx2wh4do2ksztv54bjuntu7w7c",
+            "title": "LSD-SLAM: Large-Scale Direct Monocular SLAM",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.2,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 33.2,
+                "step_10_final_summary": 80.5,
+                "total": 119.92
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2lyxa7uf77huw22pvia3ippm7xe54hxp",
+            "title": "From Physiologically Based Pharmacokinetic Modelling toward ",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.39,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 27.04,
+                "step_10_final_summary": 84.82,
+                "total": 118.28
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2n7h3ij67yw5a6yhfyoa3nt7egwsncry",
+            "title": "LEX 1/3 infrastructure",
+            "status": "success",
+            "times": {
+                "step_7_embed": 7.14,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 26.93,
+                "step_10_final_summary": 75.16,
+                "total": 109.25
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2opntyhnydgxqc6ku7a5gwvzvu4zakln",
+            "title": "Time-varying genetic network inference using informative pri",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.42,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 28.24,
+                "step_10_final_summary": 142.16,
+                "total": 176.84
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2pdtraqofhyd7ces6t6wezfybrkasqec",
+            "title": "Live imaging of RNA dynamics for genetic forms of amyotrophi",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.83,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 27.19,
+                "step_10_final_summary": 54.49,
+                "total": 87.54
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2pey2a6jn5avx6tdqpf64syhjiz3sxxx",
+            "title": "Linked Open Data",
+            "status": "success",
+            "times": {
+                "step_7_embed": 8.28,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 20.29,
+                "step_10_final_summary": 27.34,
+                "total": 55.94
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2ph442siaux66tigpbrc7bk4voguzpbf",
+            "title": "Extracting semantic user networks from informal communicatio",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.06,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 24.77,
+                "step_10_final_summary": 113.22,
+                "total": 144.08
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2pnbghpxa2f2ng5ysppjad775za2gsfj",
+            "title": "Plenary Session: The Role of the OER Community",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.78,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 12.8,
+                "step_10_final_summary": 31.44,
+                "total": 50.04
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2ppaweth2heirrsnqzwf2to7v6ngd7km",
+            "title": "KiWi - A platform for building Semantic Social Media Applica",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.01,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 27.22,
+                "step_10_final_summary": 126.89,
+                "total": 160.14
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2qxxxwinqqtuirtz4y5ifqbuizkyjtuc",
+            "title": "\"Why the Semantic Web will never work\"",
+            "status": "success",
+            "times": {
+                "step_7_embed": 7.0,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 30.4,
+                "step_10_final_summary": 383.84,
+                "total": 421.26
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2rdgfdukeigil43bzuycejrzapscrpvl",
+            "title": "Representation and Reasoning with Universal Schema Embedding",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.24,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 35.68,
+                "step_10_final_summary": 310.47,
+                "total": 352.41
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2rq73ai3lklr6riftzovhd4t5ajcipju",
+            "title": "No-Free-Lunch Theorems for Transfer Learning",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.03,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 27.51,
+                "step_10_final_summary": 206.8,
+                "total": 240.36
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2tlkd4nswbenovbgee4lnl4veuulu6jr",
+            "title": "Big Data Techniques For Supporting Prediction of Renewable E",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.02,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 28.52,
+                "step_10_final_summary": 67.24,
+                "total": 101.8
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2usot2jugen3qqnawnobg4k5kxaztnjw",
+            "title": "Transmedia Storytelling and Social Media Engagement",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.04,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 25.6,
+                "step_10_final_summary": 147.61,
+                "total": 179.28
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2wp4vtsmoxbczi4yotdjxrcaampwwdhq",
+            "title": "Rich Probabilistic Models for Holistic Scene Understanding",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.44,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 33.64,
+                "step_10_final_summary": 227.87,
+                "total": 267.97
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2xn6v2ncotut7r4ocvvhh5xgkcibi5qp",
+            "title": "Gaussian Processes and Gene Regulation",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.39,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 33.93,
+                "step_10_final_summary": 282.2,
+                "total": 322.54
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2xtt5nlztx3lxqmpgu3wdj5hmmvgomad",
+            "title": "The Europeana Use Case - Multilingual and Semantic Interoper",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.91,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 27.06,
+                "step_10_final_summary": 70.03,
+                "total": 103.03
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2xvaz7rpppkjhqww5uip35csy2ij3amp",
+            "title": "Ihara Coeficients: A Flexible Tool for Higher Order Learning",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.12,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 28.33,
+                "step_10_final_summary": 114.36,
+                "total": 148.84
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2yfsb56xd6lb5i3gyfq6go3rle6lt7pg",
+            "title": "Determination of fluorine in vegetation - oxygen bomb combus",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.77,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 17.85,
+                "step_10_final_summary": 21.21,
+                "total": 44.85
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2yj5hnvrvdnmptej2o76kvmq2jiglc4c",
+            "title": "Old and New algorithm for Blind Deconvolution",
+            "status": "success",
+            "times": {
+                "step_7_embed": 7.2,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 31.42,
+                "step_10_final_summary": 156.33,
+                "total": 194.97
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2ytl6nnsyif6ec3j6ux5muaeima2l3zs",
+            "title": "Exploring the Political Agenda of the Greek Parliament Plena",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.1,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 26.25,
+                "step_10_final_summary": 58.04,
+                "total": 90.41
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "2zhpmyhivjnrr4iwlvporjcgf34er5em",
+            "title": "An Efficient Sparse Metric Learning in High-Dimensional Spac",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.32,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 24.03,
+                "step_10_final_summary": 42.32,
+                "total": 72.69
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "32uaybjann263mbejcv3qxh2chbgkrmo",
+            "title": "Real-Time 3D Reconstruction and 6-DoF Tracking with an Event",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.56,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 25.0,
+                "step_10_final_summary": 52.34,
+                "total": 83.92
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "33qwrgexhet6ozahcsmj6lecdcek53ac",
+            "title": "Detecting Erroneous Identity Links on the Web using Network ",
+            "status": "success",
+            "times": {
+                "step_7_embed": 7.75,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 27.11,
+                "step_10_final_summary": 92.27,
+                "total": 127.15
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "34o3urxj5jjy2ztwsl2f56tq4wusqjxm",
+            "title": "Space in Time",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.16,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 29.05,
+                "step_10_final_summary": 62.44,
+                "total": 97.67
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "35cr3u72s3gh5ihw2kwwgcgkbox7kfpe",
+            "title": "Flipping with OER: K12 teachers\u2019 views of the impact of open",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.09,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 30.15,
+                "step_10_final_summary": 105.88,
+                "total": 142.14
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "35m4zhuokcqx4af5lnbpq5uao7huc6j5",
+            "title": "Truly individualized systems medicine: a hands-on tutorial w",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.43,
+                "step_8_cluster": 0.02,
+                "step_9_summarize_clusters": 28.47,
+                "step_10_final_summary": 263.97,
+                "total": 298.89
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "35n7gmpa2jk5uh477nuyew4xdrrq6fqx",
+            "title": "Kovinastroj Gastronom, Factroy of catering equipment d.d.",
+            "status": "success",
+            "times": {
+                "step_7_embed": 5.99,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 25.37,
+                "step_10_final_summary": 71.11,
+                "total": 102.5
+            },
+            "errors": []
+        },
+        {
+            "sample_id": "363lcbh3ngxi5p5wammumtsr3lrrgnez",
+            "title": "Smooth, Finite, and Convex Optimization Deep Learning Summer",
+            "status": "success",
+            "times": {
+                "step_7_embed": 6.37,
+                "step_8_cluster": 0.03,
+                "step_9_summarize_clusters": 33.44,
+                "step_10_final_summary": 349.58,
+                "total": 389.42
+            },
+            "errors": []
+        }
+    ],
+    "total_time_seconds": 7775.6
+}

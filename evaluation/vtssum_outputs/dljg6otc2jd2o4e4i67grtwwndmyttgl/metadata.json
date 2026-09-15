@@ -1,0 +1,21 @@
+{
+    "id": "dljg6otc2jd2o4e4i67grtwwndmyttgl",
+    "title": "Scaling Up Deep Learning",
+    "url": "http://videolectures.net/kdd2014_bengio_deep_learning/",
+    "info": {
+        "author": [
+            "Yoshua Bengio, Department of Computer Science and Operations Research, University of Montreal"
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 60,
+    "num_sentences": 588,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1513
+}

@@ -1,0 +1,20 @@
+{
+    "id": "xsadp6xqk74a2h6yv7nud3h2shgcudd7",
+    "title": "Populating the Semantic Web by Macro-Reading Internet Text",
+    "url": "http://videolectures.net/iswc09_mitchell_ptsw/",
+    "info": {
+        "author": [
+            "Tom Mitchell, Machine Learning Department, School of Computer Science, Carnegie Mellon University"
+        ],
+        "published": "Nov. 24, 2009",
+        "recorded": "October 2009",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 603,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2619
+}

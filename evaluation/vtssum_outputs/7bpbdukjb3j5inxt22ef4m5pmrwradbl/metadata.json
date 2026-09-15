@@ -1,0 +1,22 @@
+{
+    "id": "7bpbdukjb3j5inxt22ef4m5pmrwradbl",
+    "title": "Automated Translation: How Does It Work?",
+    "url": "http://videolectures.net/elrc2015_piperidis_krek_automated_translation/",
+    "info": {
+        "author": [
+            "Simon Krek, Artificial Intelligence Laboratory, Jožef Stefan Institute",
+            "Stelios Piperidis, Institute for Language and Speech Processing (ILSP / \"Athena\" R.C.)"
+        ],
+        "published": "Dec. 20, 2015",
+        "recorded": "December 2015",
+        "category": [
+            "Top->Computer Science->Natural Language Processing",
+            "Top->Humanities->Linguistics"
+        ]
+    },
+    "num_segments": 37,
+    "num_sentences": 311,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 1992
+}

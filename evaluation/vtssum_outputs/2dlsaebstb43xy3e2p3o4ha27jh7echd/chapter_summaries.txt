@@ -1,0 +1,134 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+OK, thank you for inviting me here and. I will talk about face analysis systems and my view has much common with Matthew's view about multi modality and and also system systems. [29.0s - 58.0s]
+So. Human faces contain lots of information as as you know, there's identity. Democratic information like gender, age, race, ethnicity. Emotions like happy, sad, angry. And also direction of attention is very important, including head pose and gaze direction. We saw speech. But we have been. Investigating a clot. And faces can also tell about health like pain and psychiatric disease. And even under visible information can be measured from face faces like heart rate at micro expressions. So this face information is very important for. For example, for particular interfaces, intelligent human computer interaction. [58.0s - 87.0s]
+So my. Main vision is that the. Past research on facial image analysis has focused on more or less isolated problems. Like facial features, face description, detection, alignment, face recognition, expression recognition, poles and case estimation, and so on. So my vision is that many sub areas of facial limit Salazar. Already quite mature in major and more focus should be given to the problems of multimodal phase analysis systems. And my grand challenge is to build a seeing and talking face for natural human. Computer interaction. [87.0s - 116.0s]
+As Matthew already mentioned, there are. Some cognitive models of human perception that may give some hints for computational systems, so they are. Psychological models in a part of the F part and then neurophysiological models on the right part. There are elements for xpression analysis, facial speed analysis, directed visual processing, and identity recognition, for example. [116.0s - 145.0s]
+From our group we started to work with faces in early 2000s and. This slide is from 2007. So our future vision has. Build human centered, ubiquitous systems that are omnipresent, invisible, and imminent. So we. Billy, that technical wireless infrastructure will be everywhere in man made environment and from wallpaper to vehicles and close to platform. So you need sensing image in communications, intelligence and of course energy efficiency. In our group we have been studying most of these problems, but in my presentation more about this this. Vision and face analysis. So much innovation will play a key role in sensing and understanding actions, face detection and. Recognition, lipreading gesture recognition and interpreting emotion. So these are from the famous Hal 9000 computer. That was interesting. 2001 Space Odyssey Film and book. And this has been one modification for that we have been doing. [145.0s - 174.0s]
+So example active application is human robot interaction. Their communication with the robot must be. Easy and natural.
+
+**AI Summary:**
+The presentation discusses the rich information contained in human faces, including identity, demographics, emotions, and physiological states (e.g., pain, heart rate). This facial data is crucial for intelligent human-computer interaction.
+
+The speaker argues that past research in facial image analysis has focused too heavily on isolated sub-problems (like detection or recognition). The main vision is to shift focus toward developing multimodal face analysis systems. The grand challenge is to build comprehensive "seeing and talking" faces to facilitate natural human-computer interaction.
+
+To achieve this, the vision involves incorporating cognitive and neurophysiological models to inform systems for expression, speed, and directed visual processing. The ultimate goal is to create human-centered, ubiquitous, and invisible systems—sensing and understanding actions and faces everywhere (from wallpapers to vehicles). Key innovations will focus on sensing actions, face detection, recognition, lipreading, and interpreting emotions, with a practical application being seamless communication with robots.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+For example, for elderly people or for children, or for anyone. [174.0s - 203.0s]
+And we built. It's a system using some some basic methods. For interaction with our social robot. So this system included Segway. Robot and then then. Vision system included. I don't think any some age gender. Recognition, emotion, simple emotion recognition. There was some gesture recognition and a water display for for talking phase. And it had also Kinect sensor for obstacle avoidance and and also communication and visual audio speeds is used for communication with the system. So there's a. Video demo that shows. How to communicate with this system? So it identifies the user. Alec are there any news? Yes, there are totally 20 feats. You're not very want to hear.
+
+**AI Summary:**
+The video demonstrates the development of a system designed for interaction with a social robot, particularly for elderly people and children. The system utilizes basic methods and incorporates several sensors and features: a vision system for simple emotion and demographic recognition (age/gender), gesture recognition, and a water display for the talking phase. Additionally, a Kinect sensor is included for obstacle avoidance and communication, while visual and audio speeds are used for communication. The system is shown to identify the user, and a video demonstration illustrates how to communicate with the robot.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+19 OK PP. News number 19 grows larger, so the Arabia tempered finish education expertise. Porn. Bye, have a nice day. Getting news from the Internet and and making speeds output from that. [203.0s - 232.0s]
+So. When you use computer vision for human computer interaction. It will take play key role. It should be for the company computers be able to data and identify the user like in our system. Here recognize users emotions. We had a simple post expression recognition in our system. Communicate easily by understanding speeds and gestures, so we used audio speeds in our present system. And also some guests are communication from a distance. And provide a natural response based on his observation. And there are also to detect and track human centric. Organize their actions so our system was working in a camera network so it would navigate from 1 one place in the laboratory to another. [232.0s - 261.0s]
+And then I saw some of our key results.
+
+**AI Summary:**
+The system utilizes computer vision for human-computer interaction (HCI) by enabling computers to identify users and recognize emotions (such as posture expression). Communication is facilitated through understanding speed, gestures, and audio, allowing for easy and natural responses, even for remote guests. Furthermore, the system tracks and organizes human actions within a camera network, enabling navigation between different locations. The presentation then shifts to showcasing key results.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+In research for the world's natural hi. [261.0s - 290.0s]
+So first. We started with face recognition in early 2000s and. Best known result is of course face recognition using local binary patterns that was awarded last fall with The Conjuring price for fundamental contributions in computer vision. So we have used this as a basis for. Face recognition and also soft biometrics in our power. He says.
+
+**AI Summary:**
+Researchers began with face recognition in the early 2000s. A notable achievement was face recognition using local binary patterns, which was awarded the Turing prize for fundamental contributions in computer vision. This work subsequently served as a basis for both face recognition and soft biometrics.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[290.0s - 319.0s]
+And. Later, this local binary pattern was extended to space the temporal domain by going through and. And. Then we also introduce how they use. Space with temporal. LBP 4. Recognition of. Post expressions and it. Gave the state of the art results at that time in 2000. Six 2007. And. [319.0s - 348.0s]
+Been used by many others in later studies. And in 2011 V. Shout out that it's possible to recognize spontaneous microexpressions. This is first time that spontaneous microexpressions we recognize, and this was published in ICD Conference 2011. So this face micro expressions are very rapid involuntary. Facial expressions fit reveal suppressed effect, so we. Created a database by people were watching emotional movies and then we recorded when they had some micro explorers. Will do you last? So you can see some very rapid changes in the high rates in here. [348.0s - 377.0s]
+And this is a little speech recognition. Work started around 2006. This video is from our first method that was using LDP. Top operator.
+
+**AI Summary:**
+The video segment discusses the application of Local Binary Patterns (LBP) extended to the temporal domain for the recognition of post-expressions, achieving state-of-the-art results in 2000 and 2007. The work later focused on recognizing spontaneous microexpressions. This was a significant advancement, first recognized in 2011 (published at the ICD Conference), demonstrating that spontaneous microexpressions—which are rapid, involuntary facial expressions revealing suppressed emotions—are recognizable. To achieve this, a database was created by recording microexpressions from people watching emotional movies. Additionally, the segment notes that speech recognition work using LDP operators began around 2006.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+It already worked. Reasonably well and it just published an article a multimedia. So this is using only information from mouth movements. And later we have. Developed more advanced versions and latest one was published in Miami last year. Which was using generative latent variable model to model the Inter speaker variations of visual appearances and those quotes by uttering. [377.0s - 406.0s]
+And heart rate from videos.
+
+**AI Summary:**
+The video segment discusses the evolution of a multimedia analysis technique. It notes that an initial method was successful and focused on mouth movements. Subsequent research developed more advanced versions, with the latest version published in Miami last year. This latest method utilizes a generative latent variable model to model variations in speaker visual appearances and utterances, incorporating heart rate data from videos.
+
+============================================================
+
+### Semantic Chapter 7 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We had last year in in. In CVPR paper, that so that you can measure heart rate, also impractical. [406.0s - 435.0s]
+Conditions there is some. Demo about that using man up Man up video data where you have ground truth available. So it selects Masqueray and then. Removes background background information. And on the craft right, you can see the ground truth data and the measured data data from. Facial videos. So it's. Follows fairly well to the ground truth data. [435.0s - 464.0s]
+And in 3D visual speeds we have also done. 3D animation from 2D video sequences. This was published in India, so you can from 2D video you can get views from different views so you can get kind of 3D information. [464.0s - 493.0s]
+And many of these.
+
+**AI Summary:**
+The presentation discusses methods for measuring heart rate (noting that previous methods were impractical) and a demonstration using facial video data. The method involves selecting a subject, removing background information, and comparing measured data against available ground truth data to show that the results follow the ground truth fairly well. Additionally, the system demonstrates generating 3D animation from 2D video sequences, enabling the creation of various views from the video data.
+
+============================================================
+
+### Semantic Chapter 8 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Parts have been integrated in our. Experimental system system where we can measure heart rate and get it. Both expressions and identity and so on.
+
+**AI Summary:**
+An experimental system has been integrated, designed to measure heart rate, expressions, and identity.
+
+============================================================
+
+### Semantic Chapter 9 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[493.0s - 522.0s]
+But they are. Many talents is so pose and illumination variations in real world. Environment may call face analysis tax much more difficult, and precautions of spontaneous expressions is very hard. I will understanding of visual speech is not as good As for audio, speech and background noise makes audio speech recognition unreliable. And training and testing the system is part parts. Takes lots of time and effort. And how to take into account independence? Dependencies between different facial tasks like software and biometrics, and then identity, emotion and speech recognition. [522.0s - 551.0s]
+So in identity recognition and soft big parameters, problems are caused by. For example, by three depots and lighting variations, and also.
+
+**AI Summary:**
+The system faces significant challenges in multimodal recognition due to real-world variables. Visual speech understanding is hindered by pose, lighting variations, and difficult-to-analyze spontaneous facial expressions. Audio speech recognition is unreliable because speech and background noise complicate the audio input. Furthermore, developing and testing the system is time-intensive, requiring careful consideration of the independence and dependencies between different facial tasks (such as identity, emotion, and speech recognition). Specific problems in identity recognition and soft parameters are primarily caused by lighting variations and environmental factors.
+
+============================================================
+
+### Semantic Chapter 10 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Talking face. For quite awhile, thinking about mostly recognized teams by two from audio increments point but head is moving away. Arbitrary innocence of Chronicle of that tour. And facial expression and audio speeds are also useful for identity recognition, but they have not not been much used. And more interaction would be needed, for example with speech recognition community. It's very difficult to get get. Visual speech papers accepted to. Ordinary speeds conferences, like we tried to organize a special session in Interspeech last year, but it was not. Accepted finally because the quality of the papers was based on previous calls. Not good enough because reviewers were mostly audio audio speeds people, so there should be more discussion between between communities. [551.0s - 580.0s]
+And recognition of spontaneous expressions is very hard. Be cause, for example, facial expressions are not culturally only universal and also kenderaan facial aids affect emotion decoding. And use it use different modalities jointly like speeds, head, body and eye movements. Physiological signals like heart rate, temperature, respiration, galvanic skin response, blood pressure. And you need collaboration with experts from different disciplines like psychology, medicine and others. Sorties graph shows how, how, how you need different modalities and how your emotion is changing overtime and you need to not only emotional state but also in this is the other emotions. [580.0s - 609.0s]
+And. Then about audiovisual speech recognition. So speech recognition in noisy condition is very unreliable. We have seen it in our robot application. If there peoples in the background then speech recognition. Is not good enough. But human listener, can you visual cues like lip and tongue movements to enhance speech understanding? And gender, age and race. Or ethnicity also affects speak speech recognition. Performance. And our understanding of visual speech falls sort of our understanding of the acoustic aspect of feeds, that's why. Our papers and visual speeds are not maybe good enough for speech recognition community. As such and take notes in continuous visual speeds in real world conditions, would be wiped out. If you want to make groundbreaking progress in audiovisual speech recognition, but we are still. Quite far from from that. But hearing impaired people can do it quite well. Collaboration with experts from different easy please would be needed. For example audio spieden. Psychology. [609.0s - 638.0s]
+So here are some conclusions. So human faces contain lots of useful information. And for face analysis systems, multimodal information is often needed, and that should be One Direction. In the future. An face analysis system should not be considered. It would be considered as a whole, but not as a collection of parts because there are interdependencies between different parts and. More interaction between different disciplines would be needed. For example, cognitive Sciences, human computer interaction speeds, graphics. And evaluation of this multiple phase analysis system is very challenging and it requires new test datasets and also system level evaluations. And there are many potential new applications, for example in variable computing. [638.0s - 667.0s]
+That was my. Presentation.
+
+**AI Summary:**
+The presentation discusses the limitations of current methods in multimodal understanding, emphasizing the need for interdisciplinary collaboration and holistic system design.
+
+**Key Points:**
+
+1. **Multimodal Information for Identity and Emotion:** While facial features and audio speeds are useful for identity recognition, incorporating multiple modalities (speeds, head, body, eye movements, and physiological signals like heart rate) is necessary to accurately decode spontaneous expressions and emotional states. This requires collaboration between experts from disciplines like psychology and medicine.
+2. **Challenges in Audiovisual Speech Recognition:** Speech recognition in noisy environments is unreliable. Although visual cues (lip/tongue movements) can enhance understanding, performance is affected by factors such as gender, age, and ethnicity. Bridging the gap between visual and acoustic understanding requires collaboration across fields such as audio, speech, and psychology.
+3. **Future of Face Analysis Systems:** To create groundbreaking progress in face analysis, multimodal information is essential. Future face analysis systems should be viewed as integrated wholes, considering the interdependencies between different components, rather than just collections of separate parts.
+4. **Systemic Evaluation and Interdisciplinarity:** Evaluating these complex multimodal systems is challenging and requires new test datasets and system-level evaluations. Further progress necessitates interaction between cognitive sciences, human-computer interaction, and graphics.
+
+============================================================
+

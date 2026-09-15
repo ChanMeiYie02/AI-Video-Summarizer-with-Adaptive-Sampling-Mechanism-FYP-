@@ -1,0 +1,1362 @@
+[
+    {
+        "text": "Good morning. Morning. That's a pretty good good morning. I will let's try one more good morning. And welcome to Advancing AI 2026. It's so great to be back here in San Francisco and to see so many friends and partners and customers and especially all the developers that are here with us today. And I want to say a big welcome to everyone who's joining us online from around the world.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "This is my absolute favorite event of the year. It's where we bring the entire AI ecosystem together to show what we've been building and where we're going next. And this year, this is our biggest show ever because we have so much to tell you. So let's go ahead and get started. At AMD, our mission is to push the boundaries of high-performance and AI computing to help solve the world's most important challenges.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "AI is the most important technology of the last 50 years and frankly the progress that we're seeing in the industry is just incredible. Like every month, every few months we see something new that was far beyond our imagination and you can already see the impact across every industry. In healthcare, AI is helping researchers identify new drug candidates faster. In science, we're solving problems that we didn't think were possible.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "a few years ago and across every industry ai is changing the way we get work done and the most important thing is we're still in the very very early innings of what's possible now just take a look at some of these charts you know we look at these every year and you kind of see the rate and pace of ai growth a couple of years ago we were just starting people were experimenting with chatbots and you know it was really cool",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "The video displays a line graph titled \"Training Continues to Scale,\" which illustrates an upward trend in \"Training Compute (FLOPS)\" over time, from 2020 to 2030. The graph shows data points for various models (like GPT-3.5, Llama, etc.) and a general increasing trajectory.\n\nThe accompanying audio discusses the scaling of training flops, noting that training flops are increasing by 5x every year since 2020. It highlights the current demand, stating that there are now over 35 quadrillion tokens consumed every month, representing an increase of nearly 160 times in just two years. The speaker emphasizes that the curve is getting steeper and that the demand is significant. The discussion then pivots to the question of where this demand is coming from, acknowledging that training remains important but noting the rapid growth observed in the last four or five years.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "is used for training advanced models continue to increase by let's call it roughly fivex over year and those models are getting better like we're all experiencing that we're seeing better reasoning we're seeing new capabilities we're now seeing a growing number of specialized models and one of the things that i really believe in is there is no one perfect model i think we're all going to use a slew of different models depending on what task you're trying to solve and which industry you're in",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "But the bigger shift is actually an inference and we expected this. We expected that inference would grow faster than training and we can say that in 2026 for the first time the world is using more AI compute to run models than they train them. And we've seen that to a point where we think this year roughly 60% of the global AI compute capacity will be used for inference and the reason for that is actually pretty simple.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "As billions of people every day use AI, the workload shifts from building models to putting them to work, and actually we're going to talk a lot today about agentic AI, and that's accelerating the shift even faster. So, if you think about all of this, you know, we see agents as the next big step for AI, and the most interesting thing is like this is really just started accelerating over the last, I would say, five or six months this year.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So, when we started with LLMs, they were great to answer questions, but we found that to really get the power of AI, you want agents to be able to really answer full questions. So you give it a goal, it keeps working until it solves the problem. And what that means for us in the compute industry, it means that compute demand is growing at an incredible pace. We're actually seeing a step change.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "In compute demand because when you ask the agent to do something it actually has dozens of steps and it has to reason and it has to call tools and it has to access data and it has to keep doing it over and over until it solves the problem and so you need lots of GPUs to do all that reasoning but importantly you also need a lot of CPUs to orchestrate every step around it so when you look at you know just what that means from a market standpoint",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "It's really hard to put this market data up because I feel like every few months we're changing, you know, sort of the perspective based on what our customers are saying. Um, but what we're seeing is that the shift to agentic AI is certainly growing the AI accelerator market very significantly. It was actually last year at this event that we called the AI accelerator market at about 500 billion by 2028, and at that time it actually felt like a.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "big number didn't you think it was a big number but honestly you look at it today and it looks conservative because the ai demand is just continuing to accelerate and you can see it right better models more usage more usage requires more compute and more compute actually builds better models and so we're now expecting that by 2030 the ai accelerator market is going to reach about 1.4 trillion by 2030",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "30 So what do you think about that? Is that a big number? I mean what that means is by the end of the decade the AI accelerator market is going to approach the size of the entire semiconductor market today. And although there will be many different types of accelerators, you know, I'm a big believer and there's no one-size-fits-all as it comes to chips. Uh we do expect that GPUs are going to make up the vast",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "majority of that market because the algorithms are still very much in their infancy and we're still continuing to see the workloads change and that favors programmability in the overall silicon ecosystem. Now, perhaps the most interesting part of the last six months has been, you know, GPUs are only part of the story. What we're actually seeing is agentic AI is creating an entirely new growth vector for server.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "CPUs. Now, I've updated this number a lot also over the last uh, you know, six to eight months, but look, we call it like we see it and you know we were early. I mean we saw from our largest hyperscale customers and you're going to see some of them here today who said, look, as AI inference is going up, we need more server CPUs and so we saw growth um in the server CPU market and uh we said you know last year we thought it might grow, let's call it 18 to 18.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "80% CAGR to an overall market size of 60 billion but frankly what we're seeing is that the rate and pace of agentic AI adoption is much much faster than any of us thought. So we're talking about agents going from millions to billions like where we're able to increase all of our productivity and that requires a tremendous amount of CPU infrastructure and every customer conversation is telling us that this buildout is just beginning.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So based on what we're seeing today and we're going to talk more about how agnetic AI is evolving with CPUs, we now expect the server CPU market to grow by over 50% to over 200 billion by 2030. So let's starting from today, a 25 billion dollar market going to over 200 billion. Um so there's a lot of excitement about CPUs as well. Now, probably one of the things that",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "That is differentiating AMD in how we think about the market is this is not just a data center opportunity as AI becomes a larger part of our daily lives we want the intelligence to run right where the work happens and that means cloud is super important but the devices that we use every day are going to be extremely important and that means we're going to do a lot more at the edge as well with autonomous machines that sense and",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "and in real time and we really believe that you need ai infused everywhere and that's exactly what we're focused on at amd so putting all of that together we actually expect that the market for our high performance and adaptive computing products to grow at roughly a 40% CAGR over the next several years approaching a 2 trillion dollar market by 2030 and frankly the only way you're going to be able to service a market like that is for us",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "work together as an ecosystem there's no one company that can solve it all but this is the opportunity to bring the best and brightest together and we have never been in a better position to lead we have the broadest product portfolio we have the strongest roadmaps we've ever had and the thing that i'm most proud of is we have the deepest partnerships with the companies that are building this future so",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Look, I think we've been very consistent. You know, we've talked about our multi-year strategy, and it's really built around three priorities. The first is just compute leadership. We're building the broadest set of compute engines in the industry so that we have the right compute for the right workload. Second, it's going to be about open platforms. We want everyone to come together in an open ecosystem. We believe an open ecosystem is essential to the future of AI, and that's how we get",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "The force multiplier of everyone coming together and that's open on hardware in terms of hardware standards as well as open on software and that's why we're investing so heavily in our Rockum software and you're going to see that AI has been a tremendous multiplier in this great and pace of progress that we're making um in Rockum and in software and it really means that if we put all of this together we can have our customers deploy",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "AMD hardware faster than ever and the third piece is we're going to get a chance to talk to you about powering AI everywhere so that's AI in enterprise that's AI at the PC that's AI in the physical world and that's adding new capabilities across all of our products so today you're going to see all of that in action we're going to start with compute for the agentic era i'm going to show you a lot of hardware and then we're going to talk about some software and",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "and our overall products from a platform standpoint and we're honored to have some really special guests who're going to join us to really help bring the technology to life so let's start with the data center today amd epic runs on the most important workloads in the world we power the largest cloud providers we power the digital platforms that billions of people use every day and the most important critical systems that are used by the largest businesses",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Including more than 60% of the Fortune 100 are using AMD Epic, and that momentum is just building. Last quarter we reached a record 46% revenue share in the server market and we're continuing to see every major customer move more workloads to Epic. And on the GPU side, our instant adoption has also accelerated. We have a broad set of customers across the largest AI labs.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Cloud providers, leading AI startups, as well as some of the national labs and sovereign AI opportunities are being built on AMD Instinct, and we really appreciate that opportunity. Now, AI compute becoming a lot more complicated, and what we're seeing with frontier AI is it's really raising the bar for what infrastructure needs to do. It takes more than a single chip or a",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "server you actually have to design the entire rack as one system and that requires leading CPUs that requires leading GPUs that requires high-speed networking that connects everything inside the rack and across the data center and just as importantly this is about making these systems super easy to use and so they need to be easy to deploy easy to service and very reliable and that is exactly",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "We built Helios. So today, I'm super excited to launch Helios, the industry's highest performance AI roadmap. Now, Helios is built to train and run the most demanding frontier models in the world at massive scale, and I have a lot of show and tell for you. So, for those of you who know me, you know that I love holding up chips.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "I can't myself sometimes a venet white of chips. Uh but it turns out with Helios, there are lots and lots of components and so you can see these are the chips inside the Helios rock. These are the instinct. Thank you. So this is instinct, epic, and then the pensando chips for networking that are inside each rock.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "and every one of these chips is part of the system. So MI455 is the engine. It's the highest performance GPU in the industry. Then NIS with which drives it is the world's fastest CPU core. And Tensor DPU's actually enables actually connect them with leadership programmability and scale out bandwidth. So I have a few more proofs to show you. Um let's kind of",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "The video shows a presentation or conference setting. In the first frame, a woman in a blue top is standing in front of a large black display or backdrop, with technical equipment visible on the left. In the second frame, the woman is speaking, gesturing with her hand while standing in front of a screen displaying an \"AMD Helios\" graphic with details about a component.\n\nThe audio discusses the physical integration of components within a system. Specifically, the speaker explains that the \"MI455 accelerator\" is mounted on an \"enhanced accelerator module or EAM.\" The speaker clarifies that the EAM is a production module that goes into Helios and is more than just the GPU package, as it integrates the GPU, memory, power delivery, high-speed interfaces, and system management.\n\n**Consolidated Summary:**\nThe video captures a presentation where a woman is explaining the physical architecture of a system. She is gesturing toward a screen displaying information about \"AMD Helios.\" Verbally, she describes how the \"MI455 accelerator\" is mounted on an \"enhanced accelerator module or EAM,\" emphasizing that this EAM is a comprehensive production module that integrates the GPU, memory, power delivery, high-speed interfaces, and system management, going beyond just the GPU package.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Cold plates for liquid cooling all into one compact serviceable module. Pretty cool, right? Yeah. Now, if I just give you some of the specs, we're talking about 320 billion transistors. This is built with TSMC's leading 2-nanometer and 3-nanometer process technology and most importantly, it brings together nearly a decade of",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "The video features a presentation by a man, likely an executive or representative from AMD, discussing their \"AMD Triplet Innovation.\"\n\n**Visuals:**\nThe screen displays a large graphic showcasing an AMD product, specifically highlighting the \"AMD Helios\" and an \"AMD Triplet\" concept. There are close-ups of what appear to be computer chips or components on the display. In the foreground, there is a podium with an AMD logo. The background is dark, suggesting a conference or product launch setting.\n\n**Audio Summary:**\nThe speaker is explaining the AMD Triplet Innovation. He states that it allows them to combine 12 compute and I/O triplets with 432 gigabytes of memory, all connected by leading industry 3D chipstack packaging. He asserts that this is the \"highest performance AI accelerator in the industry.\"\n\n**Consolidated Summary:**\nThe video captures a presentation where a speaker is detailing the AMD Triplet Innovation. Visually, the presentation uses graphics to illustrate the product, specifically the AMD Helios and the Triplet concept, while the speaker verbally explains that this technology combines 12 compute and I/O triplets with 432GB of memory, utilizing 3D chipstack packaging to create what he claims is the highest-performance AI accelerator in the industry.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Hey, and I'm going to talk a lot about CPUs later, but just to give you a high-level view, it's a high-speed 96-core Epic processor, DDR5 memory, all the I/O that's needed to feed the GPUs, all on a single motherboard, and we also have our Selena DPU. This is a critical part of the networking infrastructure and it really allows us to deliver both front-end as well as the scale out and scale across.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "you know ben with overall and this is our volcano ai nick and you can see you know this actually allows us to really have up to six volcano nicks on a board and it uses the open ultra ethernet standard so each helios compute tray includes two of these volcano boards and that allows us to have the scale out and scale up of the scale up networking overall so you put all that inside the rack and we have",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Additional six dedicated networking trays that handle the scale-up networking and those are all connecting 75 GPUs together with UA Link over Ethernet with silicon from our partners and that's what we mean by an open ecosystem. So when you bring this all together, I want to say Helios is simply the best AI rack in the world.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "The video shows a woman, likely a presenter, speaking in front of a backdrop that includes server racks and a large graphic with the text \"SU\". She is wearing a blue blazer and is gesturing with her hands while speaking.\n\nThe audio discusses performance metrics of a product called \"Helios\" in comparison to the competition. Specifically, she states that Helios is delivering:\n*   15% more compute\n*   50% more HBM4 memory capacity and memory bandwidth\n*   50% more scale-out bandwidth\n\nShe concludes by explaining that this means every Helios can deliver more performance for the largest models, more capacity for longer context, and better bandwidth.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "to scale across thousands of racks and now we can kind of come over here and take a look at another very large piece of hardware. Uh this is now the production hardware that customers are deploying and you can see more of that as you go through the um the exhibit center and each one of these weighs more than 160 pounds and stands less than 2 in tall. That's just an extraordinary amount of technology when you",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Look at what's in one of these trays and when you bring these things together the numbers are just incredible more than 18,000 CDNA 5 TPU compute units over 4,600 Zynq PPU cores and 31 terabytes of HBM4 memory all in a single rack that's what it takes to run genetic AI at scale so today I'm excited to announce that Helios is in full production",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "We have shipments on track to start at the end of the third quarter and ramping into the fourth quarter in the second half of the year, and I can tell you customer demand for Helios is extremely strong, and we're extremely proud of the work that we have done across the leading AI labs to adopt Helios, and so let's start with some of our guests today.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "I'm excited to be joined by our newest Instinct partner and one of the leaders in frontier AI to share more about what we're doing together. Please welcome anthropic co-founder and chief compute officer, Tom Brown. Hello, Tom. It is just so great to have you here and um it is really such an honor to be working with uh",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "Anthropik we just we had a big week this week. We did, yeah. So look, um Anthropik has just had incredible success over the last few years. You know, Claude has made such a big impact on the overall industry. Compute is such an important factor in the progress. Can you just talk a little bit about your compute strategy and just how things have been evolving? Yeah. Yeah, and first, thank you so much. Hard to follow with Elias, amazing. Um so with Anthropik uh",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "as you mentioned the the scale of that we're growing as an industry is enormous and so we have been working to make sure that we have the best like different chips and we can use the best chips for the best workloads yeah and look i think you've been really leading in that area and you know i'm i'm happy to say that i've always wanted to be as part of part of",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Yeah, um so I think that like the first the first thing was just Helios is an amazing machine. It's like it's absolutely fantastic. Do we like that? Does it work for us? Um and then and then I think the thing",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "As we were thinking about originally was whenever we're bringing up a new hardware platform it's a big effort. It's like a huge thing and so um as part of the as we were thinking about this we started doing our own evaluation of MI355. Um you guys generously got us a rack to start working and um we expected this to be kind of a big process. Our actual experience was we had one engineer who start doing it. They spun up",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "I reconnected at Tclaud, asked it, hey, bring up this machine left it going over the weekend and we ended up with the graph of the actual performance of our leading model on it just going up and up and up over the weekend and so yeah I I I think that's the testimony of open platform that you guys have made where like anyone like human or AI can now build real models on on",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Tom, I kid you not. When my team told me that you had an engineer working on AM355, I said, \"Hey, like, are we like making sure we help them?\" And they're like, \"They say they don't need any help. They got it all covered.\" And I was like, \"Hey, that's that's uh that's a wonderful story. Thank you for that.\" Now, um, we're also super excited about the work we're doing together because, you know, one of the most valuable parts of this partnership is, you know, Claude and using Claude within AMD. Like, we're big believers in the fact.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "that you know AI is this force multiplier and the more we're able to have the leading foundational models really familiar with the AMD architecture you know the better we're going to be able to service the overall market so can you just you know talk a little bit about how you're seeing Claude really evolve in you know these types of highly engineering specific workloads yeah so i think this is a great place for a collaboration where um in turn like the bread and butter of Claude is doing software engineering and now more and more",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "seen it help out with the type of workloads that you guys are doing also um like design layout which is not quite the normal software engineering but is adjacent and i do think that that is the place where we can work together to make the next generation of chips even better yeah though i think um and also on the software side i think the work that we've seen with claude and and the kernel development has been just incredible so um yeah tom o'brien",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "one of the things for our audience here we we like to talk about the present but it's actually most of us are working on the future so this is really the beginning of you know what we believe is a very strong multi-year you know partnership can you talk a little bit about number one what are you most excited about in the industry and then number two like what can we do more together to really uh to really make sure that we're satisfying those you know key opportunities yeah um",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "So I think the working together for the scale up seems like it's probably the biggest thing that I'm most excited for where it does seem like we're consistently using more better compute results in better models that then add more value to the folks using it downstream. So I think that's the biggest thing and then I think one thing now that we're investing more and more with you guys to and",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "can commit to continue to is security where that's a place where now as machines are getting more complex we can work together to secure things at the chip layer the server level the rack the whole network and that'll help out like not just us but the entire industries stay safe no i think you're completely right we are super focused on the idea of you know how can we use ai to improve every aspect of our product whether it's you know performance power software",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "Insecurity as you said. So, uh really Tom, huge thank you for the uh you know, the real the opportunity to work very closely with you and your team. Our team loves working with you guys and we look forward to everything that we're going to do together. Thank you so much. Thank you. Thank you. All right. So, look, Tom talked about how important performance is and we have been laser focus.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "Okay, I'm ensuring that the real-world performance of MI455 and Helios really comes true when we look at, you know, system results. So, let's take a look at some of those results. So, here's an example. We're running a deepseek v4 flash, one of the latest reasoning models, and we are actually comparing MI455 to MI355. And you know, the key thing is with every generation, we want to make huge leaps in performance.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "We're seeing that at lower concurrency, that MI455 delivers four times the throughput of MI355, but clearly what you see with, you know, larger users um with across the board that you want to increase the number of simultaneous users, you want to increase the amount of work that you can do at the same time. And so at the highest concurrency, we're seeing Helio deliver up to 34 times more throughput than our prior generation. And what that means is",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Users, much faster response and much better efficiency at scale. And performance is just one aspect of it, right? The other aspect and, you know, what I should have mentioned when Tom was on stage is every one of us in the enterprise is seeing our AI budgets go up every single month. Is that right? I just seeing some of that. And so customers really care about cost per token. And with every generation of Instinct, we're driving the cost per token down.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "And that's with more memory, more bandwidth, and much more compute, and we're taking another major step with MI455, delivering up to 18 times more tokens per dollar, so customers can serve far more users with the same investment. And as you think about how that comes together in a rack, many of our data centers right now are really limited by power, so power is kind of the the maximum limiter, and so we tested Helios",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "So over a full range of workloads where you have a fixed rack power compared to the competition and what we're seeing is across the highest throughput workloads, the most interactive applications, all of these leading inference workloads, we're seeing Helios in average of 10 to 15% more performance than the competition and that comes with all of the system work that we've done in the overall system and how that translates to a customer",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "The video features a woman in a blue blazer and black top standing against a plain background. She is speaking, and the audio discusses the Helios frock, highlighting its expected performance and its potential to deliver up to 30% more tokens per dollar than the competition, which is considered a good value proposition. The speaker then states that customer demand for Helios is extremely strong from the largest AI.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "Loves to hyperscale and neo cloud providers. We are working across the entire ecosystem to enable Helios to gather with our OEM and ODM partners. And one of our deepest and earliest partners deploying Helios is OpenAI. To talk about where AI is headed and the work we're doing together, please welcome to the stage OpenAI's head of infrastructure, Sachin Katti.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "Thank you, thank you. Thank you, Sachin. It's so great to have you here and most importantly, we are so thankful for the partnership with OpenAI. We've been through so much on this journey together. So, you're really operating on the frontier of AI. Can you just tell us a little bit of what you're seeing and you know, just what compute looks like for you? Now, thanks. Great to be here. I was trying to thinking about this event and over the last few",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "Yeah it feels like the attendance of this event is following scaling laws as we've been watching WWER over the last two years but more seriously to question we've always predicted that models will evolve where they'll start as chatbots then they become reasoners then they become agents then they become interns and the trajectory has kept up with that right so we're all seeing that models are becoming a lot more capable more agent",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "And tech and able to do very long running tasks let them go and they just take care of it and so all that really means is we need to keep scaling compute right the more compute we scale and throw out training the more capabilities emerge the more compute we scale and provide it to distributing intelligence to the world the more people want to do with it and this is what we see with exploding g token budgets we've seen internally for example",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "Now, I'm aware that not just engineering, but every aspect of the enterprise is beginning to use agents for every part of the work. This is why we need platforms like yours that can that can scale with how quickly the capabilities of these models are scaling, as well as how quickly the whole world is beginning to embrace what these things can do. Well, Sachin, I don't think I've ever ever spoken to you where you haven't asked me for more compute. So he's actually very very consistent.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "Uh look, our teams have been working really closely together. I think it's been a true journey when we think about just all of the technology that we've been doing. Um, you know, last year we announced a really, you know, landmark partnership where you're going to deploy up to 6 gigawatts of AMD infrastructure. You're one of the first, I think you are the first to actually have MI455 racks a few months ago. So, can you talk a little bit about the journey? Now, it's been a phenomenal partnership.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "as you mentioned we were first to bet on amd and we are really thrilled with how that bet is turning out for us start got started on mi300 and expanded very quickly to 355 and it's been really fun for our team to see how it was it was possible to optimize the software stack the networking and everything and deploy our models running on amd infrastructure so as lisa",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "since we just got hands on the Helios racks three months ago and the collaboration has gone to the next level our engineers are working side by side with AMD engineers to optimize the software stack and run gvd class workloads on helios already our fill will probably on stage later talking about how productive and fast that collaboration is so we're really excited about the capabilities helios is already showing us",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "and the expect that will be deploying Helios at massive scale are starting towards the end of this year and then accelerating throughout 2027 like i said i know more faster rate we need it earlier so another thing is you know one of the most exciting parts of our collaboration is actually some of the research work so you're very thankful for the opportunity to spend you're really bringing our best engineers together with your researchers to talk about how",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "So AI should be really implemented and used for, you know, future both silicon and software. So can you talk a little bit about that work? Yeah, I think one of our key bets and I think for a lot of us in AI is about recursion, right? AI recursively improving the systems it needs to run on and eventually obviously AI doing the research itself, right? Today expert engineers spend an enormous amount of time",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "optimizing kernels, figuring out how to translate new models to run them efficiently on different hardware, dealing with all the usual things you think about compilers, communications, libraries, system configurations. what we've been super excited and encouraged by the work we are doing with you is now AI showing the quite potential and demonstrating it in production to automate a significant portion of the work when anyone programs to any",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "so it dramatically has shortened the path from a new model coming up to an efficient production deployment and something that we can much more easily tune to changing workload requirements right and that's that's a big deal so one of the other things that super exciting for us is because amd is built around an open software ecosystem all these things that we are now inventing internally for our own use we believe can we can",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "to bring it to the whole world and allow the whole world to use it for all of the AI models out there not just our models i'm super excited about that i think the idea is that it's really the tide that lifts all boats right as as we work it it helps our work together but it really helps the overall ecosystem so a little bit of your crystal ball looking forward i think we all know that compute is super critical what do you need from the next generation ai infrastructure and you know what can",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "do as uh you know really a key partner to to help you accomplish that mission if you haven't heard already i need more compute more fast work quickly but the key is consistency with with the thing that the whole industry is realizing is it's a systems problem at a data center scale yeah so i think we obviously very quickly internalized that ai was a rack level problem but now it is",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "clear that it's not just a rack level problem it's a rack in a data center so the whole data center is a system and we have to think about how we design the future based on what we know about our workloads what's coming down the line but co-design it with you from CPUs to GPUs to memory networking storage power distribution in a data center and the cooling systems that go with that these are all intertwined and they all have to be co-designed and one of the really",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "fun part about about what we do with you your and your team is how easy and productive it is for us to work with you and give you insight into how we expect the world to change in the future from what our workloads needs are what our models are and how quickly your team responds and turning those insights into better chips better systems better software so that's what worked well really well with my 400 and left shifted a lot of the engineering that worked",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "We needed to do to bring this up online quickly and that's why we are very confident we can productionize those systems very quickly and so really looking forward to accelerating that with a life 500 and beyond and increasingly using AI to actually do that work for us rather than being limited by by humans. That's that's fantastic suggestion and look we really do recognize that input is so so valuable so I have to say thank you again for just the extraordinary",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "partnership the amount of work that our joint teams are doing together and we couldn't be more excited about the opportunities in front of us thank you sachin thank you so much yes all right so now let's turn to the world of CPUs there's been a lot of talk about CPUs recently and i can say that this has been the foundation of our amd data center strategy for the longest time we",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "Launched Epic in 2017 and we've been on a very, very clear mission every generation more performance, more efficiency, more capability for a wider range of workloads. Now, Naples was our first generation, it established the foundation, but Roman Milan really changed the economics in the data center. We did more than what people expected in terms of adding core count and adding throughput and then turned set it up.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "When we expanded our performance and then turned set a new bar for density throughput and total cost of ownership. That's really been the epic formula. A clear roadmap and very consistent execution and leadership that actually grows with every generation. This is why if you look today, fifth-gen Epic Turn is the best server CPU in the world. With up to 192 cores and 384 threads, Turn delivers.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "our performance across a broad range of cloud enterprise and HPC workloads but the thing about the data center is compute never stands still with agentic AI it's actually creating a whole new class of infrastructure and the cpu matters now more than ever and that's exactly what we built venisf for so there's been a lot of talk about agentic AI but it's actually a very new field and what we see is a",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "Server computing is actually splitting across a couple of different workloads. So the first section, you know, is GPU servers, and that's fairly well known. That's where the GPUs job, the CPUs job is basically to drive the GPUs, and so the job there is all about speed. We want the highest frequency cores, we want the fastest I/O, and we want to keep the GPUs fully fed. Now the biggest middle part, this is a larger",
+        "start": 2320.0,
+        "end": 2349.0
+    },
+    {
+        "text": "Grows is actually in agent servers or what we call agent sandboxes and this is actually a whole new class of workload here you execute code you actually call a bunch of tools you actually query data that's outside the model you have a whole bunch of things around it and in this place the priority is actually density so we want the highest performing cores for what to run thousands of agents at once",
+        "start": 2349.0,
+        "end": 2378.0
+    },
+    {
+        "text": "and then we have our traditional general-purpose servers that run the enterprise and here you're going to have a diversity of workloads it's all about efficiency it's running the applications it's running databases it's running data services and all of that is you know what we traditionally say is you know general-purpose server and so with these different workloads you actually need the right cpu for the right workload and epic is the only cpu portfolio that leads for cloud",
+        "start": 2378.0,
+        "end": 2407.0
+    },
+    {
+        "text": "So, Venice is our newest and most advanced server CPU family, and it's actually designed for the agentic era. We're extending turns leadership across every single metric. That is performance, that's efficiency, that's TCO for cloud, that's enterprise efficiency, that's HPC workloads. And Venice starts with our all-new Zen 6 core. We have higher IPC.",
+        "start": 2407.0,
+        "end": 2436.0
+    },
+    {
+        "text": "higher frequency and that delivers up to 1.8 times more performance than turn. That is one of the largest generational gains. I mean, we have been doing this for six generations, but this is one of the largest generational gains in the history of Epic. It's 203 billion transistors built on TSMC's newest 2 nanometer process and it uses a next-generation triplet that supports up to 512 threads per socket and this is actually a really important",
+        "start": 2436.0,
+        "end": 2465.0
+    },
+    {
+        "text": "point I'm going to show you why in a few minutes this gives us the highest compute density but it also allows us to double both the memory and the IO bandwidth so I have a few more chips to show you if that's all right and what's clear is Venice is not one chip Venice is actually an entire family of chips and this is where our trilet architecture becomes a huge huge advantage",
+        "start": 2465.0,
+        "end": 2494.0
+    },
+    {
+        "text": "The video shows a presentation or conference setting. A woman, presumably a speaker, is standing on a stage in front of a large screen displaying information about AMD's products.\n\n**On-Screen Visuals:**\n*   The screen prominently features a graphic with the text \"AMD EPYC 'Venice' Server CPUs\" and an image of server CPU modules.\n*   Below the screen, there is a large graphic displaying the AMD logo.\n\n**Verbal Content (Summary of the 29 seconds):**\nThe speaker is discussing the Zen6 architecture and the portfolio built around it. She introduces a specific product:\n*   \"Let's start with this guy. This is Venice HF. This is the highest-performing CPU that drives AI host nodes. It has eight compute triplets, each with 12 cores, running at up to 5 GHz, with the I/O and memory bandwidth to keep the GPUs completely fed.\"\n\n**Consolidated Summary:**\nThe video captures a segment of a presentation where a speaker is introducing the AMD EPYC \"Venice\" Server CPUs, highlighting the Zen6 architecture. She specifically details the \"Venice HF\" CPU, describing it as the highest-performing CPU for AI host nodes, noting its configuration of eight compute triplets, 12 cores per triplet, a clock speed up to 5 GHz, and sufficient I/O and memory bandwidth to fully support GPUs.",
+        "start": 2494.0,
+        "end": 2523.0
+    },
+    {
+        "text": "This is a CPU that I showed to before shipping inside Helios. Now, this is its bigger brother. It's Venice 256 core. This is the chip that's built for Agentic sandboxes and it also has eight compute chiplets, but each of the chiplets now has 32 cores.",
+        "start": 2523.0,
+        "end": 2552.0
+    },
+    {
+        "text": "The video shows a person holding up a small, rectangular electronic device, likely a computer component or module, to the camera. The audio discusses the specifications of this device, mentioning that it has \"all the way to 512 threads\" and is the \"highest compute density in the industry.\" It further states that customers get \"more agent capacity per watt, per dollar, per rack.\" The speaker then introduces another member of the family, describing this one as a \"Venus 128 core\" and mentioning that \"this guy is optimized.\"",
+        "start": 2552.0,
+        "end": 2581.0
+    },
+    {
+        "text": "for enterprise and drone purpose servers this is the same leadership performance for core but it's in a lower cost lower power design for enterprise applications and this one is really tuned to give customers the best performance for dollar across a wide range of configurations you can see really the power of the family as they come together and in addition with these guys i can tell you that next year we're adding a few other chips to the family we're adding",
+        "start": 2581.0,
+        "end": 2610.0
+    },
+    {
+        "text": "We've Rano, which is the next generation for AI host nodes, and what that adds is a more power-efficient, low-power memory as well as faster interconnect between the CPU and the GPU. And then we're also adding for our high-performance computing or technical computing, VeniceX, which is using our 3D V-cache stacking technology, and we're the first to stack memory triplets right below the compute triplets to accelerate performance even for those types of workloads.",
+        "start": 2610.0,
+        "end": 2639.0
+    },
+    {
+        "text": "So you can see, one architecture, a CPU is not a CPU. There are many different types of CPUs, and for us, one architecture spans dozens of different chips, and that breadth is someone that no other CPU vendor can match. And that's what makes 6 Gen Epic the best CPU in the data center. Now, you're going to",
+        "start": 2639.0,
+        "end": 2668.0
+    },
+    {
+        "text": "What's me because I'm going to take you through some performance because the numbers are just incredible. Um so looking at AI workloads, right? Again, you have different use cases and different workloads. Um you know, starting first with GPU servers. Uh many of the largest frontier models require you to move data between the CPU and the GPU. And in that scenario, Venus moves the data faster than the best competitive x86 processor, delivering up to 1.8 times more tokens.",
+        "start": 2668.0,
+        "end": 2697.0
+    },
+    {
+        "text": "as per second and when you look at the agentic cpu servers and sandboxes because of our density venus delivers more than twice the agents per watt for agent sandboxes and for general purpose applications in this case we're standardizing on a 100 kilowatt rack venus delivers more than twice the performance per watt so pretty incredible results and the gap is even wider if you look at arm processors",
+        "start": 2697.0,
+        "end": 2726.0
+    },
+    {
+        "text": "So if you look at the leading ARM processors when we're comparing at the trip level, Venice supports up to 2.8 times more agents per watt, and when you look at the rock level, Venice is delivering up to 3.3 times more performance per watt, and what that means is at the data center scale, you can just get a lot more agents in the same power envelope.",
+        "start": 2726.0,
+        "end": 2755.0
+    },
+    {
+        "text": "Now, there's been a lot of talk about what matters most for agentic AI. With some saying that per-core performance under load is the only thing that counts, but that's really only part of the story because agentic AI actually runs as a distributed platform and that is across databases and vector stores and orchestration and all of that happens has to happen at once and that requires",
+        "start": 2755.0,
+        "end": 2784.0
+    },
+    {
+        "text": "not just raw speed but you absolutely need density efficiency and per core performance all together and what i'm happy to say is that venus leads across every one of them so when you compare venus against the highest performing arm cpu from our competition epic delivers 20% higher per core performance and when we",
+        "start": 2784.0,
+        "end": 2813.0
+    },
+    {
+        "text": "I like that number. I like that number. Um and when we pair that with leadership core density, we're delivering 2.2 times more performance at the socket level. And so the main point is whether a customer needs per core or per socket performance, Venice is the leader. And there's one more point that a benchmark doesn't really capture because when you think about what genic AI is, it's really like you're adding",
+        "start": 2813.0,
+        "end": 2842.0
+    },
+    {
+        "text": "wasins of employees to your enterprise to your you know sort of traditional workflow and that software enterprises have been running on for years the truth is that software runs on x86 so venus runs all of it and this is where x86 has its advantage you must have the best performance you must have the best density but having that software compatibility is a big big plus so customers scale up their agents on the stack that they already have",
+        "start": 2842.0,
+        "end": 2871.0
+    },
+    {
+        "text": "And now let me just show you what that means at the rock level. So at the rock level what we find is you know density is super important. Everyone's trying to optimize their data center, everyone's trying to optimize their power envelope. And with Venis every major server OEM is offering a broad spectrum of rocks for genetic AI. So what that means is we have the full spectrum from you know 25,000 cores to 50,000 cores and that's more agents per rack.",
+        "start": 2871.0,
+        "end": 2900.0
+    },
+    {
+        "text": "And that gives customers the choice. Um the key is every data center is different and you know with that the flexibility allows you to pick, you know, the right cooling, the right space requirements for what you're trying to do in your data center. So there you have it. Venice, the best server CPU in the industry. And I'm very happy to say also today.",
+        "start": 2900.0,
+        "end": 2929.0
+    },
+    {
+        "text": "Venice is in full production. Customer demand is incredible. It's the strongest we've ever seen for new Epic generation. Yeah. We're we're seeing every major server OEM, every major cloud provider on track to begin rolling out in the fourth quarter as we start with making the broadest Epic launch we've ever had. So with that, I want to turn to my next guest, Hiro.",
+        "start": 2929.0,
+        "end": 2958.0
+    },
+    {
+        "text": "And some of the largest and most advanced compute infrastructure in the world, and it's really been our privilege to partner with them as they've deployed multiple generations of both Epic and Instinct. To share more about our work together, please welcome to the stage Meta's head of infrastructure, Santosh Denardin. Hi, Kevin. Wonderful. It is so great to",
+        "start": 2958.0,
+        "end": 2987.0
+    },
+    {
+        "text": "Thank you for being here. It's good. Um Santosh is a true friend. I have to say it's been a tremendous opportunity over the last few years. My story about Santosh is the first time I sat in his office. He said to me, Lisa, we're going to deploy a lot of CPUs. Please make for they work. And I said, I will. I will. And he lifted it up. I have to say they won't care. But look, Santosh, you know, Meta operates",
+        "start": 2987.0,
+        "end": 3016.0
+    },
+    {
+        "text": "Sure, first of all, thank you. This is awesome. This is like a hardware geek's paradise, right? You come in, we talk about transistors, we talking about hardware, talking about cooling. This is sort of the jam. I like it. Yeah. And I think this is an audience that's receptive to it. They usually talk to audiences that they",
+        "start": 3016.0,
+        "end": 3045.0
+    },
+    {
+        "text": "They have usually either not been to a data center or not really seen a chip ever so this is refreshing I have to say the thing I'll say about I see listen we are seeing sort of demand go through the roof if when you look at inference training recommendation systems that's how a new feed works content creation the demand for that is just exponential right and when i think about sort of the overall Mark has this vision of",
+        "start": 3045.0,
+        "end": 3074.0
+    },
+    {
+        "text": "bring personal super intelligence to billions of people so if you go to sort of facebook or instagram or whatsapp or whatever surface you go to the idea is it will meet you there and will deliver super personalized intelligence right wherever you are and that's why we established this meta compute initiative and because it's a top level think mark himself forces now what that means is that we are now moving away from an area where we used to take servers optimize it right this is what the conversation",
+        "start": 3074.0,
+        "end": 3103.0
+    },
+    {
+        "text": "And we are having many years ago that hey I'm deploying a CPU I really need to maximize performance out of it. It's different now. You talked about how we should be thinking about the whole system end to end. We are we are at a point where we have to look about the whole data center and think about it as one integrated system. Servers, hardware, networking, cooling, power, all of that is not optional. All of that has to work together, right? And this is where I think there's a huge opportunity for collaboration with partners like AMD.",
+        "start": 3103.0,
+        "end": 3132.0
+    },
+    {
+        "text": "because you have to now co-design co-create systems not just deploy sort of something that comes off the shelf right the other thing is by the way flexibility the thing i really liked about what you said is that this is such a big opportunity in the industry right now all of us need to lean in and and sort of work on this together so it needs to be open it needs to be heterogeneous and i think that's no one company one partner that works for us for us",
+        "start": 3132.0,
+        "end": 3161.0
+    },
+    {
+        "text": "for any one of us we need to sort of work on this together and that's why i think you're one of our most most important strategic partners thank you sanjosh and look we we completely agree with your philosophy now you are actually one of our broadest partners because if you think about our work on CPUs GPUs you know we developed the Rockcell OCP systems together you've deployed lots and lots of CPUs so millions of CPUs and you're a lead partner on Venice",
+        "start": 3161.0,
+        "end": 3190.0
+    },
+    {
+        "text": "Sure. Uh, it's been many years. Uh, and the story that laser was saying was many years ago. I think we went from Milan to Bergamo to Turin, now to Venice. So it's four, yeah, at least the fourth generation. So, so long-term partnership, obviously. Uh, I actually think the world is changing in the sense that it used to is every year the new old this day. Like every month. How many months exactly?",
+        "start": 3190.0,
+        "end": 3219.0
+    },
+    {
+        "text": "And now is it's not just a GPU game anymore it's CPUs and GPUs if anything I think CPUs are becoming at least as important if not more you're looking at a world where sort of the workforce the workload is changing because while you have your workhorses and GPUs at the end of the day you there's agentic workloads you have to run tools you have to run systems and all the code that's being generated still needs to run somewhere right so i'm super excited to work on this",
+        "start": 3219.0,
+        "end": 3248.0
+    },
+    {
+        "text": "I think there's a lot to come there and you have to think again. This is a theme that I am assuming will go throughout the presentation that you have to start thinking about CPUs and GPUs as conjoined things. You hand off workloads depending on the workload you employ the right hardware. Yes, now absolutely right and we've gotten a lot of feedback from your technical team. I think that's what I really appreciate about the the partnership with with Meta. Now, clearly you're deploying lots of GPUs.",
+        "start": 3248.0,
+        "end": 3277.0
+    },
+    {
+        "text": "A lot of accelerators and you're also one of our deepest partners on the accelerator side starting with MI300 and then we had um you know a very large us you know strategic partnership announced around up to 6 gigawatts starting with MI450 and what we're doing is is quite unique with Mellanox so can you talk a little bit about um you know sort of the evolution and the MI450 plans again multi-year collaboration i think we started with MI300 we did a bunch",
+        "start": 3277.0,
+        "end": 3306.0
+    },
+    {
+        "text": "It is really nice memory capacity I remember talking to you about that right and then this bunch of fine training we did it was important to sort of deploy that at production scale sort of get hands on experience on both sides 350 is the first time we deployed this on a ranking and recommendation systems so that that's now you know getting into sort of some good numbers and 450 is I think I'm super excited about it we we just got some of the racks and we are going to deploy it across the board because it gets",
+        "start": 3306.0,
+        "end": 3335.0
+    },
+    {
+        "text": "So, it's an opportunity to go and sort of really collaborate. I think the difference big difference between sort of the 300 350 and 450s is that we have had an engineer sitting in the same room talking to each other, co-designing, co-creating like power, cooling. It is like we saying it's not just just a single thing and we are not shy in feedback like they're not shy for sure. And but you're very receptive. So this this is true partnership, right? This is the point about co-designing and co-creating.",
+        "start": 3335.0,
+        "end": 3364.0
+    },
+    {
+        "text": "and and like I saying that there's a huge sort of deployment coming in the more we deploy the earlier we code design the better we are absolutely really really appreciate the effort together on MI450 now when i ask you also about your crystal ball so you look out into the future and you see you know what the next you know few years really means as you push forward in the AI industry what are the biggest challenges and and really opportunities for us",
+        "start": 3364.0,
+        "end": 3393.0
+    },
+    {
+        "text": "This is the industry ecosystem here so what should we be focused on as an industry listen the all of you know about the bottlenecks you know about the power the data centers the silicon like all of these I think are choke points that I think the industries is is waiting on but those are things I'm pretty confident will sort of work or way through at the end of the day I I think the demand is immense people are responding but but the thing that I really want to make sure all of us realize is that we should not think",
+        "start": 3393.0,
+        "end": 3422.0
+    },
+    {
+        "text": "about systems in isolations like how i was saying cpus and gpus are one conjoint system if you start thinking about it that way you should we really need to co design things early see data centers takes years to build okay like one of my favorite stories is mark comes to me and says hey i want a gigawatt worth of a data center as wealth you should have talked to me two years ago it takes time that is the same with silicon right it just takes time so so we need to be starting and sitting down in",
+        "start": 3422.0,
+        "end": 3451.0
+    },
+    {
+        "text": "we're co-designing today for what we need to deploy in 27 and 28 that i think is when we truly unlock sort of powers of the system the systems are amazing the specs are amazing right but think about how much more you can get out of it if you sit in a room and just co-design it today and in 28 we'll be having much better graphs out there petra s excent I completely agree with you um i want to say again thank you we are so so happy with the amazing partnership that we",
+        "start": 3451.0,
+        "end": 3480.0
+    },
+    {
+        "text": "of, you know, across the board and and most importantly, you know, with your engineering teams and we're really are excited about what we're going to do in the future. Thank you so much. Thank you. Thanks. So you heard Santos talk about just the diversity of workloads and um the early the massive scale that you'll require with AI. Now I want to turn to another part of the inference market where the requirements are actually very different. So lots",
+        "start": 3480.0,
+        "end": 3509.0
+    },
+    {
+        "text": "lots of workloads and as inferences are moving into more products and services we're actually seeing it segment into different workloads depending on what you're trying to do some of these are let's call it less interactive so they're really tuned for let's call it maximum throughput or the lowest cost um you know other of these applications require more balanced throughput and responsiveness and then there's this new class of applications that actually want very very fast results you have",
+        "start": 3509.0,
+        "end": 3538.0
+    },
+    {
+        "text": "extremely smart engineers and they don't like to wait and that is where ultra low latency or every millisecond actually matters each one of these types of workloads requires a different type of compute and one of the best ways to reach ultra low latency today is disaggregated inference so if you think about you know the different pieces both prefill and decode are two different jobs so prefill tends to need more compute decode",
+        "start": 3538.0,
+        "end": 3567.0
+    },
+    {
+        "text": "And since need more memory bandwidth and with instinct we have a very balanced machine so that we deliver both great compute and great memory bandwidth but you can actually take this a step further if you know what workloads you're trying to run you can actually let customers tune each of these pieces independently and to address this market opportunity we've been working with Cerebrus so to talk more about what we're building together please welcome to the stage Cerebrus co-founder and CEO Andrew O'Connell",
+        "start": 3567.0,
+        "end": 3596.0
+    },
+    {
+        "text": "Alright man. Thanks. Android, it's great to have you here. It's been an exciting few months uh for you. I know that um for those who don't know exactly what you've been working on. Can you talk a little bit about Rivus and you know what problem you've been trying to solve? Sure. Great to be here and great to be me sort of among people who love hardware. Yes, it's it's",
+        "start": 3596.0,
+        "end": 3625.0
+    },
+    {
+        "text": "Look, I'm thrilled to be here with you and to announce our cool new partnership. At Cerebrus, we build the world's largest and fastest chip. It's a full wafer. And we package this into a system and racks and sister, right? Into racks and then racks into clusters. And we deliver them both on-premise and via the cloud. And you you've had some",
+        "start": 3625.0,
+        "end": 3654.0
+    },
+    {
+        "text": "For customers up here today on the frontier labs, we serve customers like OpenAI and in the hyperscalers like AWS and in the small agentic and the coding space leaders like Cognition. And they they do this because we're blistering fast. There's no question entering that you have some tremendous innovation with what you've been working on and our teams have been collaborating really closely over",
+        "start": 3654.0,
+        "end": 3683.0
+    },
+    {
+        "text": "the last a few years to really have Helios together with the wafer scale engine for ultra low latency inference can just educate the audience a little bit what are we trying to do and what does that mean for customers sure i think what happened and you described it previously is that this sort of ai has moved from being a novelty to being useful and then in some domains in necessity and when something is a necessity people want to use it and they you want to",
+        "start": 3683.0,
+        "end": 3712.0
+    },
+    {
+        "text": "As a quickly into serve this market, this segment of ultra low latency, we we sought a partnership that could extend our our capabilities and our footprint, and there was no better answer than AMD. We we were already an AMD customer as we use AMD CPUs to surround our systems, and we were so excited at the opportunity to build a disaggregated solution that combined AMD CPUs.",
+        "start": 3712.0,
+        "end": 3741.0
+    },
+    {
+        "text": "Yeah, look, the technology is pretty cool. So, just talk a little bit about how it comes together. Sure. So, as I describe what you have with Instinct and the Helios rack, is you have the leader in performance and and memory capacity. And you marry that with our wafer scale engine, which is the leader in",
+        "start": 3741.0,
+        "end": 3770.0
+    },
+    {
+        "text": "in sort of in SRAM and in memory bandwidth and that combination allows us to deliver a solution that is unmatched in the industry so very very exciting i know that customers are excited about what we're going to do together as well so when are we going to have it in market uh later this year and it will be first in the the the the Cerebrus cloud and it will be later at a store near you",
+        "start": 3770.0,
+        "end": 3799.0
+    },
+    {
+        "text": "I think the key thing is we're going to give customers a choice to really put together um, you know, what is the solution that they want and I think we're very very happy to be able to do this together with you. I think it's a huge step up in terms of what we can do for this ultra low latency segment. I think that's right. I think until recently customers sort of they could have sort of high throughput or they could have extraordinary speed and by bringing together",
+        "start": 3799.0,
+        "end": 3828.0
+    },
+    {
+        "text": "uh that the Helios rack with the Cerebrus wafer scaling and we we we give you five times the throughput while continuing to deliver this extraordinary speed it's really something amazing fantastic well on Andrew um huge congratulations to what you and the Cerebrus team have done i mean i think it's been incredible i think you've been clear on what you were trying to accomplish and it's really nice to see not only it come together but us come together",
+        "start": 3828.0,
+        "end": 3857.0
+    },
+    {
+        "text": "The video features a woman speaking, likely in a business or presentation setting. She is dressed in a blue blazer over a dark top and dark pants.\n\n**Audio Summary:**\nThe woman states that they offer a solution that will be \"very, very compelling to customers\" and expresses eagerness to get it into customers' hands soon. She is then thanked by others, and she responds with thanks. Later, she transitions to discussing the product, noting that while they have shown a lot of hardware, software is what turns it into a platform that developers can build on, and she invites people to share the progress.\n\n**Visual Summary:**\nThe woman is the central focus of the video. She is actively speaking and gesturing with her hands while delivering her points. The background is a plain, dark gray color, suggesting a professional presentation or interview setting. The visual action is entirely focused on her speaking and engaging with the audience (implied by the interaction with others who respond).",
+        "start": 3857.0,
+        "end": 3886.0
+    },
+    {
+        "text": "The video begins with a stage setup featuring a backdrop with glowing, abstract digital graphics. A host introduces the next speaker, AMD's Senior Vice President of AI, Vamsi Bopana, to the stage. The host then welcomes the speaker, and Vamsi Bopana responds by thanking the audience and reflecting on the evolution of software, noting that programming AMD GPUs required deep expertise and significant engineering effort a few years ago, and that they have come a long way.",
+        "start": 3886.0,
+        "end": 3915.0
+    },
+    {
+        "text": "short period of time through our open source community collaboration and sustained investment in rockum our software stack amd instinct gpus are powering some of the most important and consequential workloads on the planet but the biggest change is still ahead of us ai is transforming how software is getting built and we are bringing that transformation to rockum and that's what i'm excited to share with you guys today",
+        "start": 3915.0,
+        "end": 3944.0
+    },
+    {
+        "text": "Our software teams have been moving fast with relentless focus on developers. We've invested at every level of the stack in build and test infrastructure so we ship faster. Roll-out releases now go out every six weeks, not every four months. We've continued to expand the work. We do with our AI ecosystem partners and the result, more features, faster performance, and a significantly better out-of-the-box experience.",
+        "start": 3944.0,
+        "end": 3973.0
+    },
+    {
+        "text": "Our strategy that has gotten us here has been remarkably consistent. It's built on two core principles: partner deeply with the open-source ecosystem and build with the right layers of abstraction to enable developer productivity. Open source gives us velocity and scale, and abstraction makes developers more productive. A deep commitment to open source.",
+        "start": 3973.0,
+        "end": 4002.0
+    },
+    {
+        "text": "that has resonated with the community that has truly embraced AMD from frameworks and compiler stacks to inference engines and model hubs AMD is now becoming part of default enablement for the most important AI communities such as Hugging Face PyTorch Jax VLLM and PyGlang This is why new models get day zero support and why the world's most important AI workloads run on AMD today that is a big deal",
+        "start": 4002.0,
+        "end": 4031.0
+    },
+    {
+        "text": "Shift inspired by engineers seeking productivity abstractions have evolved to enable work at the right level of detail hiding complexity when they want speed and exposing control when they need performance from low-level programming in assembly and C to block programming abstractions like Pythonic frameworks we've invested in key abstractions like iterator our kernel library and atom",
+        "start": 4031.0,
+        "end": 4060.0
+    },
+    {
+        "text": "Serving engine gets you peak performance without writing the kernel yourself. FlyDSL is a brand new Pythonic domain-specific language that gives you low-level control with the performance of hand-tuned C++. And Mori, our communications library, helps deliver leadership performance on the latest models like MiniMax. But look, something very very exciting is happening over the",
+        "start": 4060.0,
+        "end": 4089.0
+    },
+    {
+        "text": "Last year I've seen something remarkable inside AMD our engineers are using AI models to generate GPU kernels optimize code debug issues and improve performance and in some cases these AI generated kernels are shockingly good better than what we expected sometimes better than the most manually tuned versions the first time you see this you're a little bit skeptical you run more tests you try to break it you look for what went",
+        "start": 4089.0,
+        "end": 4118.0
+    },
+    {
+        "text": "wrong and then you realize this is real what has happened in general software development is coming to significantly transform gpu programming it's going to reduce the time it takes to bring up workloads make optimization automated and we will remove any remaining barriers to broad adoption we want to put that capability in the hands of every developer so today",
+        "start": 4118.0,
+        "end": 4147.0
+    },
+    {
+        "text": "I'm excited to introduce Rockum.AI. It's an agentic AI platform that brings the capabilities of AI-assisted GPU programming to developers. It starts with the simple idea of giving developers access to the power of an AMD ecosystem through the AI coding agents they already use, whether you're using Cursor, Claude.",
+        "start": 4147.0,
+        "end": 4176.0
+    },
+    {
+        "text": "Codex.rockum.ai helps those agents understand AMD platforms, understand Rockum, and helps you build and optimize your workloads. In other words, we are making those popular coding agents into Rockum superusers. You should be able to describe the workload you want to run, the performance target you want to hit, and then let the agents help you get there. For years we have been building the open-source foundation. Now we are",
+        "start": 4176.0,
+        "end": 4205.0
+    },
+    {
+        "text": "adding an AI assisted layer that helps developers use that foundation faster and more effectively so let me show you what's inside rockum.ai it's built on the foundational capabilities of rockum our core software stack runtime libraries compilers tools framework integration all of the core software that makes the stack work on top of that we built a layer of AI assisted optimization called hyperlum",
+        "start": 4205.0,
+        "end": 4234.0
+    },
+    {
+        "text": "Using HyperLoom, the system can analyze a workload, tune configurations, select and tune kernels, adjust scheduling strategies, and iterate towards performance goals. To give you an example of the power of HyperLoom, I was talking to the lead developer last week. He told me they just pushed through a suite of 14,000 models through HyperLoom, optimizing them and creating valuable insights. This would have been",
+        "start": 4234.0,
+        "end": 4263.0
+    },
+    {
+        "text": "Impossible to imagine. Even with a large team of engineers before, that's the power of Hyperloom. And finally, we provide an AI-native interface for our developers, AI skills that allow coding agents to understand Rocom natively. I'm incredibly excited by what we have built with Rocom.AI. It's going to profoundly transform the way developers interact with our platforms. So let me make this concrete for you with an example. Imagine you are a developer.",
+        "start": 4263.0,
+        "end": 4292.0
+    },
+    {
+        "text": "who wants to optimize mini max m3 with vllm on mi355s today there are many things you need to get right you need the right vllm optimizations the right model recipe the right environment variables you may need to write new kernels or optimize kernels and then you still need to tune all of this with rakum.ai this interaction becomes much simpler so let's see you can say optimize",
+        "start": 4292.0,
+        "end": 4321.0
+    },
+    {
+        "text": "In Mac M3 with HyperLoom enter and behind the scenes the agent does what an expert would do pulls a non-good recipe runs and profiles the workload it creates and tests a bunch of kernel and runtime configurations and it keeps iterating towards target you can actually watch on screen here rockem.ai write a gpu kernel it sees an opportunity write a more optimized MOE group gem",
+        "start": 4321.0,
+        "end": 4350.0
+    },
+    {
+        "text": "and the result rakam.ai delivers a 38% more tokens for second improvement on this specific example this is the experience we want for developers simple to start as pretty cool huh simple simple to start and powerful to optimize we've continued our relentless focus on performance",
+        "start": 4350.0,
+        "end": 4379.0
+    },
+    {
+        "text": "Every release we have delivered significant performance gains on leading models like DeepSeek, Rockum.AI delivers 3.3 times speedup over Rockum 7. This has been made possible by innovations at every level of the stack. Techniques such as the use of block-scaled fused MOE kernels, KV cache quantization, export parallelism, but look, the bigger story is how AI agents actually profile the workload, propose new kernels.",
+        "start": 4379.0,
+        "end": 4408.0
+    },
+    {
+        "text": "extensive configurations and actually validated all of the results that exact same focus is also on delivering performance gains for training on the same hardware rockem.ai improves training performance by an average of 2.4 times through optimized kernels such as fused flash attention more efficient checkpointing and advanced parallelism strategies our engineers have done amazing work to unlock the capabilities of mi455",
+        "start": 4408.0,
+        "end": 4437.0
+    },
+    {
+        "text": "Through Rockum.AI, so I'm delighted to share some incredible results on hardware. On real, running real workloads, we were able to see the system deliver 20 terabytes of memory bandwidth and 20 petaflops of delivered compute. These are the highest demonstrated compute plus memory capabilities of any accelerator platform in the industry today. It's not theoretical, this is measured.",
+        "start": 4437.0,
+        "end": 4466.0
+    },
+    {
+        "text": "Super exciting that we were able to share this on day one. I'm also thrilled to share that the leading AI ecosystem partners who had their hands on MI455 have had a delightful experience. You can see here what they've had to say from end-to-end fine-tuning testing to ensuring hugging face models are getting validated to VLLM and SGLang running well on MI455. We are incredibly",
+        "start": 4466.0,
+        "end": 4495.0
+    },
+    {
+        "text": "encouraged and excited by what the community is about on lock with MI455 this matters because day zero readiness is one of the most important objectives we strive for and that's what rockum.ai enables so now let's look at rockum.ai in action on Helios this time we're going to use a codex front end let's deploy deepseek v4 pro a 1.6 trillion parameter frontier model on Helios now what what",
+        "start": 4495.0,
+        "end": 4524.0
+    },
+    {
+        "text": "The video shows a terminal interface with commands being executed, followed by a description of the process of running an AI model.\n\n**On-Screen Visuals:**\nThe screen displays a command-line interface, likely a terminal, with text output showing commands being run and status updates. There are sections labeled \"Validate environment,\" \"Updated Plan,\" and other lines of text that appear to be related to setting up and running a system. On the right side, there is a green panel with three numbered steps:\n1. Configure Model Serving\n2. Launch & Verify Service\n3. Return Serving Endpoint\n\n**Audio Content:**\nThe audio describes the process of running an AI model using ROCm.AI. It explains that ROCm.AI pulls the necessary recipes, configures the runtime, implements the model graph onto the hardware, and finally serves up the model. The speaker then states that the model is running and asks to test it by providing a simple poem about advancing AI. The poem is: \"Let's sit enter. Is not a pretty cool poem?\"\n\n**Consolidated Summary:**\nThe video demonstrates the process of running an AI model using ROCm.AI. The on-screen terminal shows the setup and execution steps, which correspond to the three stages listed on the right panel: configuring the model serving, launching and verifying the service, and returning the serving endpoint. The audio narrates this process, explaining that ROCm.AI handles pulling recipes, configuring the runtime, mapping the model graph to the hardware, and serving the model. After confirming the model is running, the speaker tests it by inputting a short poem about advancing AI.",
+        "start": 4524.0,
+        "end": 4553.0
+    },
+    {
+        "text": "This is the experience we want to give our users. The developer should not have to manually reason through every layer of model architecture, kernel selection, comp strategy, and rack-level deployment. AI is transforming this experience and that is a very very big shift for GPUs hardware and software. Now, there are few organizations shaping the frontier of AI as much as OpenAI.",
+        "start": 4553.0,
+        "end": 4582.0
+    },
+    {
+        "text": "You heard Lisa and Sachin talk about our partnership. It's been truly wonderful collaborating closely with the OpenAI technical team to make rapid progress with Rockum. To talk about how they are advancing the frontier of software development and our collaboration. I'm delighted to welcome to stage Philip Tillay from OpenAI.",
+        "start": 4582.0,
+        "end": 4611.0
+    },
+    {
+        "text": "Thank you for joining us here, Philip. So just so you all know, Philip is the creator of Triton, one of the most important software innovations in modern AI infrastructure. It's a huge privilege having you here. Thank you. OpenAI has always pushed the limits of infrastructure. So, you know, can you tell the team a little bit here today as to how your team actually develops GPU software and how have technologies like Triton evolved?",
+        "start": 4611.0,
+        "end": 4640.0
+    },
+    {
+        "text": "for sure i'll first of all thank so much for having me i was here two years ago as my great player to be back now look a way off looking at things is there's no one way to fit all applications and we really try to meet users where they are so for that reason we've developed multiple solutions so for workflows where speed of iterations is more important we've developed python as you mentioned so this is typically what researchers will use but",
+        "start": 4640.0,
+        "end": 4669.0
+    },
+    {
+        "text": "Fine, we've been in a case where we've had to hyperoptimize performance and Triton didn't give us the level of control that we wanted, so we've developed Gluon for that, which is a lower-level language and this has been really able to optimize our kernels for AMD among other things. And yeah, like our agents have become extremely good at both of them and we've worked with AMD on both of them as well. Yeah, and you know, more and more what",
+        "start": 4669.0,
+        "end": 4698.0
+    },
+    {
+        "text": "Sing is agents slowly taking over like yeah they're getting just very good as you just mentioned that at writing this kind of could amazing so look I think the work you have done with Triton and now Gluon right it's been really really moving the ball forward for the entire industry now we began our work together with 300 and you know extended to 350 but now we're collaborating at a different scale with 450 and Helios so would would love to hear your thoughts on how that collaboration has been going",
+        "start": 4698.0,
+        "end": 4727.0
+    },
+    {
+        "text": "And how has that experience been? Yeah, super well. It feels like ages. I think we started years ago on hardware co-design, you know, when MI450 was like in the very early prototyping stages. I think we were able to work really well together and it's so nice to see the outcome of that. And the chips, um, and more recently we've been working very, very deeply on software enablement for MI450, both for our models, but also for the broader Transcribe",
+        "start": 4727.0,
+        "end": 4756.0
+    },
+    {
+        "text": "Okay, so the Helios racks, you know, so tell us a little bit about that. Yeah, yeah, it worked like we got the chip",
+        "start": 4756.0,
+        "end": 4785.0
+    },
+    {
+        "text": "Yeah, we got the chip and you know very quickly like like a single engineer in a few days was able to confirm that you know everything worked. Obviously like we have to optimize performance more. Um but we're very confident we can get in a very very good place. Awesome, that's awesome to hear. So look, one of the more amazing things that we've done recently, right, is our teams have collaborated even more closely in terms of",
+        "start": 4785.0,
+        "end": 4814.0
+    },
+    {
+        "text": "you know using AI to program AMD GPUs so you know would love to hear your thoughts and anything you can share with the audience yeah no everyone in this from knows how much agents are taking over our jobs in the sense as kernel engineers and yeah it's been amazing just to see like how much better they've got over just the past six months and just now they're extremely good at generating just",
+        "start": 4814.0,
+        "end": 4843.0
+    },
+    {
+        "text": "at quality GPU kernels in a way that we are not before and it's been very great collaborating with AMD on just like making sure that agents not only are capable enough you know but also have the all the right context they need to be able to make good decisions and and good optimizations it's great to hear yeah i think you know the quality of code that's getting produced by AI assisted kernel generation has been truly remarkable through our collaboration",
+        "start": 4843.0,
+        "end": 4872.0
+    },
+    {
+        "text": "very excited now as you look ahead right you know what crystal ball do you have for us for the future of ai software ecosystem and collaborations like ours yes so there's two things that really come to mind one you know as we keep talking is just how good agents are are getting and the other one is i think how much the open approach to software of amd is enabling not only for our own app but i think for the industry as",
+        "start": 4872.0,
+        "end": 4901.0
+    },
+    {
+        "text": "Oh, you know I talked a little bit earlier how we've been collaborating on LLVM code generation. LLVM is an open-source project, the entire compiler stack from AMD's open source, and that has allowed us to make our agents really good at very, very low-level code generation down to, you know, scheduling instructions in assembly, and this has led to like very, very significant performance gain that I don't think we would have been able to achieve in in a fully closed-source stack.",
+        "start": 4901.0,
+        "end": 4930.0
+    },
+    {
+        "text": "Yeah, that's one of the real sort of big value propositions that we have to offer, right? Because everything that we do is in the open and the fact that AI can actually pick that up is a big one. Yeah. Thank you, Philip. We truly appreciate the partnership and we're really excited about what we're going to build together. And my pleasure. Thank you so much for having me. What you've just heard is extremely important when we combine better abstraction.",
+        "start": 4930.0,
+        "end": 4959.0
+    },
+    {
+        "text": "with AI-assisted development and close hardware-software co-design, we can create some incredibly powerful capabilities and that's exactly aligned with our strategy. Now, everything I've shown you so far has been about AI, but Rockum is also a great stack for developing high-performance and scientific computing applications, from frontier models to climate simulation, we use the same Rockum, the same library, same AI-assisted development.",
+        "start": 4959.0,
+        "end": 4988.0
+    },
+    {
+        "text": "Openstack for every single workload and in fact when you look at our roadmap we've retained that very strong focus on HPC and scientific computing just like MI455 leads in AI compute with FP4 and memory performance and MI430X leads HPC compute with FP64 and memory performance two platforms purpose built for two very different classes of workload the MI430X is built by",
+        "start": 4988.0,
+        "end": 5017.0
+    },
+    {
+        "text": "Merging our modular chiplet architecture to deliver a purpose-built variant with native FP64 hardware, giving customers leadership performance across AI and HPC in a single platform, and this is hardware double precision, not emulation for the scientific community that distinction is everything. This product delivers 288 teraflops of FP64 compute, nearly nine times better than competition.",
+        "start": 5017.0,
+        "end": 5046.0
+    },
+    {
+        "text": "and the same leadership, memory capacity and bandwidth of MI455, the MI430X ships in the first half of 2027. This is why leaders in sovereign AI love this product. The first sovereign Xscale AI factories in both US and Europe are being built on the MI430X. Discovery at Okrish National Labs and Alice Rock with Synus and GenSys.",
+        "start": 5046.0,
+        "end": 5075.0
+    },
+    {
+        "text": "Europe so look as we look ahead let me leave you with this thought every so often our industry goes through inflection points we've all felt it when neural networks first started recognizing cats and dogs when transformers changed what was possible with AI i believe we are experiencing another one right now a real inflection in the ability of AI to program complex hardware systems building on",
+        "start": 5075.0,
+        "end": 5104.0
+    },
+    {
+        "text": "For Syria, that's been exposed from open-source software and leveraging the power of abstracted interfaces, AI is making it dramatically easier to program AI systems. We cannot wait what you will build with it. Thank you. Now, AI is getting progressively infused into all forms of computing.",
+        "start": 5104.0,
+        "end": 5133.0
+    },
+    {
+        "text": "The video shows a presentation or conference setting. On the screen, there is a large blue background with the word \"AMD\" prominently displayed in large white letters, along with some subtle light effects. A man dressed in a suit is standing center stage, speaking into a microphone. To the right, another man is visible in the background.\n\nThe audio begins with a speaker discussing how enterprises are experiencing a shift with their own unique requirements. The speaker then invites Dan McNamara, the Senior Vice President and General Manager of Compute and Enterprise AI, to the stage to talk about this transformation. Following this introduction, the speaker thanks Vanti and greets the audience. The audio concludes with the speaker expressing pleasure in bringing someone (presumably Dan McNamara) to the stage.",
+        "start": 5133.0,
+        "end": 5162.0
+    },
+    {
+        "text": "due the third pillar of our strategy which is powering AI everywhere and your all the vision behind this has remained the same for several years for us you know to deliver the right compute engine to the right workload and then continuously drive optimization points optimization points across our entire portfolio from CPUs GPUs networking and FPGAs so building on what we've already shared",
+        "start": 5162.0,
+        "end": 5191.0
+    },
+    {
+        "text": "I've covered how our strategy comes together across our enterprise portfolio and how the foundation we built with the CPU franchise has truly positioned us for the next era of AI across multiple deployment models. So Lisa talked about the frontier model and hyperscale landscape and just the rapid and massive advances we've seen over the last 6 to 12 months. And those advances are driving the adoption of AI well beyond",
+        "start": 5191.0,
+        "end": 5220.0
+    },
+    {
+        "text": "The cloud and as AI continues to grow it will demand compute beyond the massive purpose-built data centers that we all know and love extending into enterprise personal and physical AI and each of these brings a new or unique set of requirements enterprises are usually constrained by power and cooling personal AI is usually must operate within a fairly limited compute and memory footprint and physical AI must perform",
+        "start": 5220.0,
+        "end": 5249.0
+    },
+    {
+        "text": "reliably in real-world demanding environments and AMD is the only company delivering a complete portfolio that spans all of these model development models so I just mentioned that our journey began and with the day in the data center with our CPU franchise and I want to touch on it a bit with each generation of epic our strategy has been to listen to our customers, address their evolving needs and deliver the highest performance",
+        "start": 5249.0,
+        "end": 5278.0
+    },
+    {
+        "text": "What's total cost of ownership and the fastest time to value? As Lisa mentioned earlier, we've introduced many industry firsts across our generations that our enterprise customers has actually asked for. And that customer focus has brought us to where we are today with Epic as the leader in enterprise computing. In the last three years there's been very, very strong adoption across enterprise with the world's largest companies moving more and more",
+        "start": 5278.0,
+        "end": 5307.0
+    },
+    {
+        "text": "For cloud spend, and it's reflected in the number of phases. First, public cloud, where our VM consumption has grown at 76% quarter over the last three years, and for on-prem deployments with our OEM and ODM partners, uh is growing quite quite aggressively across key industries. But just as important, this position allows us to understand truly the diversity of the workloads that our enterprise customers run every day.",
+        "start": 5307.0,
+        "end": 5336.0
+    },
+    {
+        "text": "and each workload places new demands on the CPU some require maximum thread count some depend on per core performance while others depend on memory bandwidth with cache efficiency or IO performance the really important point is that there is no single skew that solves every enterprise application and that's why our epic portfolio with venus spans 8 to",
+        "start": 5336.0,
+        "end": 5365.0
+    },
+    {
+        "text": "156 cores with a range of power, frequencies, and IO capabilities, giving customers the flexibility to choose the right solution for their workload and most importantly, at the most optimized cost. So Lisa mentioned this earlier and now we all know we we covered that and she showed how very we have strong leadership about across AI host nodes and the agentic workflows.",
+        "start": 5365.0,
+        "end": 5394.0
+    },
+    {
+        "text": "but i wanted to show you how venus actually leads across the general purpose workloads of the enterprise and these workloads that are running, you know, cost our customers line every day as you can see we have a minimum of two and a half x the performance across our competition across these very very important enterprise workloads so now as we all know agentic ai is is you know really the next major transition for the enterprise",
+        "start": 5394.0,
+        "end": 5423.0
+    },
+    {
+        "text": "and it truly is a force multiplier for enterprises and adoption is accelerating in fact the latest data here shows that nearly every enterprise next year will have some form of agentic deployments and as enterprises move from you know pilots to production deployments we talk we've talked to the CIOs all the time and they have looking at three major things first predictable infrastructure cost and token costs",
+        "start": 5423.0,
+        "end": 5452.0
+    },
+    {
+        "text": "Secondly, making sure the data is secure, and then lastly, and sometimes this is overlooked, right? Integrating AI into their existing infrastructure. It's not all greenfield out there for the enterprise customer. So, to solve these problems, we truly believe that it's a going to be a distributed deployment model that leverages frontier models, cloud services on pre-existing infrastructure, and of course, AI clients.",
+        "start": 5452.0,
+        "end": 5481.0
+    },
+    {
+        "text": "As AI's move from chatbots responding to, you know, agent-driven real-world writing code, summarizing documents, and running complex flows, the requirements have evolved also. And those are exactly the requirements we've been designing for for multiple years. So, while AI will be deployed across all these environments, the on-prem deployments in our enterprise customers have fairly unique constraints.",
+        "start": 5481.0,
+        "end": 5510.0
+    },
+    {
+        "text": "First and foremost power cooling really chaul big challenge in space and of course costs remain top of the list for CIOs that are trying to you know drive things forward with the data in the AI world and then lastly the full solutions they need to need to be easy to deploy that's that's been common for many many years for the enterprise but it has to that's something we're very very focused on so",
+        "start": 5510.0,
+        "end": 5539.0
+    },
+    {
+        "text": "Thanks, Laura. I'm very happy to announce the launch of the Instinct MI350P. So today every enterprise wants AI in the data center, but the challenge is how do you add those capabilities without starting over? That's exactly what the 350P is designed to solve. It's an air cold.",
+        "start": 5539.0,
+        "end": 5568.0
+    },
+    {
+        "text": "GPU designed to fit within the power and cooling of enterprise servers today without a facilities upgrade, making it easy to bring LLM scale inference to today's enterprise data center, and at the same time there's no compromise in capability, a single MI350P can support up to 260 billion parameters, allowing customers to run the majority of enterprise AI workloads on a single GPU and in the economics.",
+        "start": 5568.0,
+        "end": 5597.0
+    },
+    {
+        "text": "We're actually even better and more compelling. The 350P delivers more than four times the tokens per second per dollar than the competition. It's pretty cool. And it actually turns the customer's existing data center into an AI data center. Now, we all know that benchmarks are one part of the equation, right? The other part is really",
+        "start": 5597.0,
+        "end": 5626.0
+    },
+    {
+        "text": "Hey, does the advantage hold up across the actual workload Jira run and the business-side fronts? So we tested a set of workloads, uh, enterprise use cases using production models and the 350p delivers much higher productivity than the competition delivering up to two to five times tokens per faster tokens per second than the competition. So if you think about that, that's more tokens per second, more work completed, more",
+        "start": 5626.0,
+        "end": 5655.0
+    },
+    {
+        "text": "users supported all at a lower cost for the business so another area that i wanted to talk about is our earliest customers are our own amd it team and they're a tough group to work with even for us so but they they they put us through our paces and you know really this has been our model from day one is we want to put our technology into our own data center first",
+        "start": 5655.0,
+        "end": 5684.0
+    },
+    {
+        "text": "like many companies, many enterprises were looking at how to deliver AI services to our employees based but also manage costs and protect our data and managing control the data so we focused on two use cases that we wanted to try out and first was autonomous threat detection and you know that is probably one of the faster growing agentic applications that we're seeing today and the second was you know a personalized AI assistant running on open cli",
+        "start": 5684.0,
+        "end": 5713.0
+    },
+    {
+        "text": "Although these run route requests through the router and the gateway sort of tests the complexity, the sensitivity of the information and the server level requirements. So some requests are sent to the frontier model while others are routed to open weights models running on Epic and an MI350P. So with intelligent routing, we reduced our token cost by 43% while delivering up to",
+        "start": 5713.0,
+        "end": 5742.0
+    },
+    {
+        "text": "FreeX fast response times for the workloads running locally. So we believe this is how enterprise AI will be deployed. But we also know that from our history here with Epic that enabling enterprise takes a whole lot more than great silicon. It requires a complete ecosystem of software and solutions. And over the last several years we've truly grown and expanded our enterprise AI.",
+        "start": 5742.0,
+        "end": 5771.0
+    },
+    {
+        "text": "AI ecosystem today we support numerous AIISVs provide zero day support for all all of the industry's leading open models and deliver robust frameworks that help customers bring AI into production as fast as possible and it's all built on trusted platform software and OEM partnerships that enterprises rely on every single day now everything i just shared comes down to one goal",
+        "start": 5771.0,
+        "end": 5800.0
+    },
+    {
+        "text": "for us and that's helping customers deploy AI where it creates the most value for them whether it's in the cloud, on-premise or in the edge at the edge so to bring this to life I'd like to welcome Jeremy Leg chief technology officer at AT&T hey crew good to see you Jeremy yeah thanks for having me yes us",
+        "start": 5800.0,
+        "end": 5829.0
+    },
+    {
+        "text": "Great, it's kind of a homecoming. I grew up in the East Bay, so it's good to be back. Yeah, fantastic. We really appreciate you joining us today. So, look, I think everyone knows AT&T is the largest communications company, one of the largest in the world, and I'm sure half of the half of them out there probably have AT&T network right now, but you know, hopefully more than half. But yeah. But, you know, AI is touching way more than the network and you and your team",
+        "start": 5829.0,
+        "end": 5858.0
+    },
+    {
+        "text": "Sure, happy to. At NTT we're now burning about a trillion plus tokens per month and that number has gone up dramatically. It's moving up double digits and so this is now becoming very pervasive inside of the enterprise. We've got over 100 GenAI models.",
+        "start": 5858.0,
+        "end": 5887.0
+    },
+    {
+        "text": "And production across across our enterprise as well and those are stretching from you know things that I think a lot of folks are doing in customer care things that we're doing in fraud but also things that you wouldn't necessarily think about like where is the best place to place a cell tower or RAN that is the most effective use of it inside of a network so all of these things are happening across our enterprise but they're happening at a scale that is not necessarily normal",
+        "start": 5887.0,
+        "end": 5916.0
+    },
+    {
+        "text": "we get over 300,000 calls a day the transcription of those calls is an enormous workload and then driving the insights out of those calls that we then bring back to the business is another set of insights so it's a really interesting thing and now we're beginning to actually rebuild entire workflows inside of the company beyond just the point use of a use case so as we think about HR as we think about finance and we think about different kinds of",
+        "start": 5916.0,
+        "end": 5945.0
+    },
+    {
+        "text": "things that each of those organizations do cash forecasting things that we do on onboarding employees as examples we're now gentifying those entire workloads yeah so it is you know we work closely with your team and and we've had many conversations it's it's truly amazing the number of actual you know opportunities you're addressing with AI so can you know super broad range of use so can you just explain sort of how what are the key",
+        "start": 5945.0,
+        "end": 5974.0
+    },
+    {
+        "text": "learnings in moving these two ai at enterprise scale and then maybe a bit on what we've done together sure i mean it'll start it at a place that i don't think everybody starts from here which is the human you need world class teams in order to do this and you need people that think and workflows there's an enormous amount of what i call racing from stoplight to stoplight folks are going from zero to 100 and then they hit the next stage of the work",
+        "start": 5974.0,
+        "end": 6003.0
+    },
+    {
+        "text": "lower and then there's a red light and they haven't worked their way all the way through that so i would start with people and the quality of the people that you that you that she really have across your enterprise in order to do these things the second point is we are big believers in data sovereignty and data sovereignty for us means not being tied to a specific chipset not being tied to a specific model or specific set of development tools you need as an enterprise",
+        "start": 6003.0,
+        "end": 6032.0
+    },
+    {
+        "text": "Manage your data, your data is your fuel in terms of how you implement AI across that broader enterprise. What we've done with AMD and AMD's been such a great partner in this is leveraging open-source models, leveraging different sets of chipsets, building our own models, let training other models. We're one of the few companies in the world that's actually post-trained a model on AMD and then been able to drive equivalency in terms of performance and accuracy with other more expensive.",
+        "start": 6032.0,
+        "end": 6061.0
+    },
+    {
+        "text": "chipsets in the marketplace so as we have done that we've been able to drive down token costs essentially through money balling across all of these different models and leveraging that human capital in a way that's made a big difference to our company and so increasingly even though token consumption is going up we're able to manage that underlying token cost at enterprise scale which is not a small thing yeah it's just it's a bunch of great work another area that's",
+        "start": 6061.0,
+        "end": 6090.0
+    },
+    {
+        "text": "It's sort of groundbreaking which is exciting also you're the first telecom company to actually train a model on AMD and also you're you're driving fully open source models in telecom. So tell us about that experience and why you felt like that was needed. We felt like the industry was moving down a path where folks were only going to use closed source models to solve solutions and while closed source models are an important ingredient in that we didn't want to lose sight of the fact that open source models are going to be a very",
+        "start": 6090.0,
+        "end": 6119.0
+    },
+    {
+        "text": "an important part of the solution so we we announced what we call OTel 1.0 that's the open telco ai model a bit over a year ago so now and we had over 18 million downloads of that model since then um we're excited to announce today the launch of OTel 2.0 which is a more advanced set of models that we have trained on amd and we're now making that available via open source across the broader industry and i think",
+        "start": 6119.0,
+        "end": 6148.0
+    },
+    {
+        "text": "going to give folks an opportunity to see that not only do you need to think about leveraging models but you also need to think about training those models and how they work across your enterprise such as great we we certainly appreciate the partnership and you know i i we really feel like this is germane to the conversation it's exactly what we've been talking about today and i just want to thank you again for joining us and and the partnership thank you you're a big part of it thank you",
+        "start": 6148.0,
+        "end": 6177.0
+    },
+    {
+        "text": "Okay, so let me close with one last point. We've established ourselves as a leader in enterprise computing by listening to our customers and delivering the right solutions for their workloads. Today, we're extending that leadership to help customers accelerate their AI journey. This is our vision for powering AI everywhere and to expand a little bit beyond the data center into uh",
+        "start": 6177.0,
+        "end": 6206.0
+    },
+    {
+        "text": "Physical and client AI. It's my pleasure to introduce Mr. Jack Yun, who leads our computing and graphics group. Thank you. Thank you Dan. It's great to see so many friends, partners, and developers here in San Francisco. Today we have seen how India is building the foundation for AI in a data center.",
+        "start": 6206.0,
+        "end": 6235.0
+    },
+    {
+        "text": "AI transformation, we cross two more gradients, intelligence becomes personal and touch that can understand and act in the physical world. Those are two frontiers I want to explore a few here today. Let's begin with personal AI. Enterprise AI is already reshaping the data center, but agentic AI will extend far beyond it. Agents are the next great productivity multiplier. The jump from software that responds to",
+        "start": 6235.0,
+        "end": 6264.0
+    },
+    {
+        "text": "If with the complete work, a personal agent can double what one person can do, a team of agents can multiply up by ten, and as agents gain more capabilities, after they can grow exponentially, but that promise has a compute consequence. Unlike a single AI query, these agent reasons call tools, encode to other agents, and run non-stop. This has come more capable and pervasive.",
+        "start": 6264.0,
+        "end": 6293.0
+    },
+    {
+        "text": "So, with token consumption, meaning that demand will require every layer of the computing ecosystem to scale together, data centers remain the foundation for frontier AI in the most demanding workloads, but edge and client systems can extend that capacity, putting more intelligence closer to where data is created and where the work gets done. The PC is already one of the most powerful compute engines ever placed in the hands of individuals.",
+        "start": 6293.0,
+        "end": 6322.0
+    },
+    {
+        "text": "Across billions of devices, enormous computing capability is being deployed every single day, yet it's potentially remains largely untapped, putting that capacity to work changes economics of computing, more workloads can run on systems that're ready in place, reducing overall infrastructure costs and allowing data centers to focus on the largest most demanding tasks, and local computing brings inherent advantages.",
+        "start": 6322.0,
+        "end": 6351.0
+    },
+    {
+        "text": "So with few applications remain responsive and your system keeps working even when your network does not and thanks to a new generation of smaller, more capable AI models we're beginning to unlock that potential and the unlock is happening faster than anyone expected last August GPT-OSS needed 120 billion parameters to score 80 on GPU.",
+        "start": 6351.0,
+        "end": 6380.0
+    },
+    {
+        "text": "Hey, just seven months later, Q3.5 scored even higher with only 9 billion better performance with 13 times fewer parameters. This is not an incremental improvement, it's a dramatic shift in the compute required to deliver advanced intelligence, and this is a trend, not outlier. Smaller open models are closing the frontier gap in extraordinary speed.",
+        "start": 6380.0,
+        "end": 6409.0
+    },
+    {
+        "text": "Quant3.6 27 billion pram module now outperforms leading frontier mice for pre-generation on graduate level reasoning at a fraction of the size and cost. That changes what is possible. Workloads once reserved for the cloud can now run on a puff compute engines designed for personal AI compute. Let's map these map.",
+        "start": 6409.0,
+        "end": 6438.0
+    },
+    {
+        "text": "Performance breakthroughs in any platforms. Ryzen AI 400 supports masses of the 24 billion parameters, more than enough for Q3.5 9 billion for substantial headroom. Ryzen AI Max extends that capability to mass as large as 200 billion parameters, running natively on a personal system. This is not reduced AI, compressed to fit on a PC.",
+        "start": 6438.0,
+        "end": 6467.0
+    },
+    {
+        "text": "is a new class of personal computing built to run powerful models where the work actually happens and this is exactly what led us to build risen ai halo we wanted to give developers a platform powerful enough to run these models locally yet simple enough to use every day with a 120 gigabytes of unified memory and support for models up to 200 billion parameters",
+        "start": 6467.0,
+        "end": 6496.0
+    },
+    {
+        "text": "can build, test, and iterate locally directly on their desk. Rise and AI Halo embodies the future of personal AI for everyone, a future that shortens the distance between an idea and a working model. For developers, that means a dramatically more efficient and optimized path from experimentation to deployment. And as Vati showed earlier, rockum.ai is making",
+        "start": 6496.0,
+        "end": 6525.0
+    },
+    {
+        "text": "making hardware programming radically more accessible developers can understand modify and optimize code for rockum even without deep rockum expertise and better yet the same open source foundation extends across all of amd's hardware developers can use the frameworks and tools they already know start locally on rise AI halo and scale across the full amd compute platform",
+        "start": 6525.0,
+        "end": 6554.0
+    },
+    {
+        "text": "Platform without rebuilding their work and we're not stopping there. Today we're expanding our partnership with Hugging Face, dipping the open AI ecosystem directly on Rise and Halo. Powerful compute only creates value when developers can quickly access the right models, optimize them for the platform, and turn them into real applications. Together, Indian Hugging Face will deliver.",
+        "start": 6554.0,
+        "end": 6583.0
+    },
+    {
+        "text": "Hello, aftermost performance for open models and genetic workflows. How cause that? In along with co-engineer libraries and toolkits designed to help developers spend less time configuring infrastructure and more time building. And Larry this year every Ryzen AI Halo box will include a full year of Hugging Face Pro, putting",
+        "start": 6583.0,
+        "end": 6612.0
+    },
+    {
+        "text": "Power a partnership in developers hands from day one, freedom and more power to the user. This is how we accelerate innovation in the AI era, and we are already pushing that vision further with Gorgon Halo. And seeing its believing, look at how small and beautiful this box is.",
+        "start": 6612.0,
+        "end": 6641.0
+    },
+    {
+        "text": "The video shows a person, likely a presenter, holding up a black electronic device, possibly a computer or a component, while speaking. The audio discusses technical specifications, specifically mentioning an increase in unified memory from 128 to 192 gigabytes, the largest unified memory pool in its class, and an increase in mouse support from 200 billion to 300 billion parameters. The speaker then thanks someone named Laura and concludes by stating that this is no longer limited to a single platform form factor, mentioning that this is achieved together with the world's leading OEMs.",
+        "start": 6641.0,
+        "end": 6670.0
+    },
+    {
+        "text": "How to browse powerful personal AI systems from laptops and workstations to mini PCs and developer platforms that means developers, enterprises and creators can choose the right system for the way they want to build and work. Personal AI is not a concept, is a category and is available right now on AMD. We now have all the pieces, models efficient enough.",
+        "start": 6670.0,
+        "end": 6699.0
+    },
+    {
+        "text": "where is powerful enough software stack is open and ready in open horizons says like lemaner server can route workloads to the right model and right compute the technology is here the next challenge is taking it from one developer's desk to thousands of users across an enterprise cisco sees and believes in that future the same way we do to take us deeper into how we turn that vision into the enterprise scale reality please join me walking to the stage",
+        "start": 6699.0,
+        "end": 6728.0
+    },
+    {
+        "text": "Hello President Chiproc Officer Cisco. G2, how you doing? All right, I am. You look great. We do too. It's a joy to join me here today. Congratulations. Thank you. Now, Chief, the United talk about inflection point and for past few years, interests spent time just building intelligence. The next phase is how we deploy this tech at scale into enterprises. You spend so much of your time talking to CIOs, tech.",
+        "start": 6728.0,
+        "end": 6757.0
+    },
+    {
+        "text": "So leaders, what are they telling you? What's changing? Well, firstly, it's a really exciting time to be alive in tech. And if you just take a step back right now and see what's happening, there's actually a fundamental shift that's happening in the patterns of influencing. So if you think about the patterns of influencing that existed during the chatbot era, there was human-led. It was very, very spiky. You ask a question, you get an answer. What you're starting to see with agents is they're working 24/7. Um they're they're very consumptive on bandwidth and on infrastructure.",
+        "start": 6757.0,
+        "end": 6786.0
+    },
+    {
+        "text": "So you're starting to see a much more persistent pattern of kind of demand signal for infrastructure right, you know, we usually joke around internally humans click but agent swarm. Yes, you know. And so as you start to see this what you're going to have is a tremendous amount of and there's there's two big concerns that are also there which is one is every customer is concerned about security and every every every customer is concerned about cost. So what you're starting to see happen is",
+        "start": 6786.0,
+        "end": 6815.0
+    },
+    {
+        "text": "Inference is not just going to be limited to the data center. Inference is going to be distributed everywhere and there's a whole new class of computing that's emerging with this deside computing that you just announced where there's going to be inference that you're going to have a laptop or a desktop where humans work and they might have a desktop computer where agents are kind of going out and running their jobs on behalf of humans. So that's that's what we're seeing essentially on workflow line G2 and that's exactly the shift we're seeing.",
+        "start": 6815.0,
+        "end": 6844.0
+    },
+    {
+        "text": "AI is moving closer to employees, compute has to move closer as well, right? The PC is no longer just a productivity device, it becomes an intelligent node in the enterprise. But the deployment touches everywhere we create a new fabric CIOs that you and I talk about so much. We do. Yeah. How do operate thousands of these systems with the security, governance and control enterprises require? G2. How is Amianus Cisco solving this and what are we building together? Yeah, so this is a",
+        "start": 6844.0,
+        "end": 6873.0
+    },
+    {
+        "text": "It's an exciting time because what you're starting to see is there's a few things that need to really be done. You can't just go out and deploy your desktop computers and hope that everything works out in the enterprise. You need to make sure that it's governed, it's managed and so there's a few things that are really important. Number one, you have to have an appropriate amount of network bandwidth to satisfy the needs of the agents that you that you're going to run locally. So there's notion of network infrastructure that can get modernized to keep up with the",
+        "start": 6873.0,
+        "end": 6902.0
+    },
+    {
+        "text": "Needs that you're going to go out and generate is going to be very important. That's number one. Number two, like I said, every customer is really worried about token costs, and so we need to make sure that we can actually contain the costs of an agent's consumption of tokens when it actually starts to go up and down, we need it. Exactly. Uh number three then is how do we monitor agent behavior for safety and security so that if it does start to do things that we don't want it to do, we can in runtime provide enforcement guardrails.",
+        "start": 6902.0,
+        "end": 6931.0
+    },
+    {
+        "text": "and then fourthly it's just the overall safety and security uh that you need to have from an apparatus perspective to get this entire thing humming in the way that you wanted to. yes, just to scare how you and I think very alike. so i mean this apparatus not just bring add every device as you unite talked. how do we enable entire to deploy, manage it with confidence while we take a look at what we're building the past uh few weeks and months. yeah, it's it's exciting. so basically what we've done is there's a full stack that you can start to think about. so what you",
+        "start": 6931.0,
+        "end": 6960.0
+    },
+    {
+        "text": "You folks have done with Halo as you've got um you've got a nicely isolated secure agent sandbox, you've got intelligent routing, you've got an MCP, um you know kind of um you know course out of integrations and then well we've done above that is we've made sure that you have the right level of security policy enforcement. We've also got the the right level of observability so that it's an end-to-end resilient infrastructure stack. Its observability of how is your",
+        "start": 6960.0,
+        "end": 6989.0
+    },
+    {
+        "text": "Um, your apparatus and the infrastructure working, is the agent behavior being done in the right way? Can you observe the agent behavior and are the tokenomics within the guidelines that you want them to be? Um, and then we have as a single unified management plane, a control plane that can look at every single um, in a dimension that you have and be managed within one environment. And so that's kind of the the full stack and we are really really excited about it.",
+        "start": 6989.0,
+        "end": 7018.0
+    },
+    {
+        "text": "Alright, as to our team's love working with your team G2Now, how's all managed? How does a CEO deploy this at scale? Yeah, so let's let's take a look at what this looks like, right? Because what we would have is this is Cisco Cloud Control, which is the overall management plane. So if you happen to have um, you know, Halo devices on every desktop, which which it might actually get to, uh what you want to make sure that you do is you are able to go out and manage um your entire estate of",
+        "start": 7018.0,
+        "end": 7047.0
+    },
+    {
+        "text": "not just your hello fleet but also what you have running on the data centers as well as what you have running in the cloud so you can provide you can provide full visibility for that entirety of the estate and then once you've got that well what we also have is this notion of how do we go out and monitor tokenomics and so is um the agent behaving the way that it's that it needs to behave is the agent actually going out and being overly consumptive at which point you should be able",
+        "start": 7047.0,
+        "end": 7076.0
+    },
+    {
+        "text": "any individual halo device so that you can make sure that you can quarantine it no i love this they've got you see the return on invested capital it could pay for itself in three or six months even even quicker exactly so what you see over here basically is you can tell how every single agent is performing and whether or not they're consuming way too much or you know kind of token cost and if they are how do you actually contain the costs as you're going through it no i love this g2 now everyone asks is wondering when can they buy this yeah when can they when is this open",
+        "start": 7076.0,
+        "end": 7105.0
+    },
+    {
+        "text": "Everyone, what's the good news is you can buy the Halo um already today. And then what we're doing is we're making sure that we provide this entire management apparatus um that's currently in early availability for select customers, but we'll have it in general availability in the US in early fall. So we're excited to make sure that we can provide not just the compute but all of the apparatus that's needed to go out and manage this so that you can have inference running in the cloud.",
+        "start": 7105.0,
+        "end": 7134.0
+    },
+    {
+        "text": "You can have inference running in your data center, privately or you can have inference running on your desktop side. Cheetah, we're so grateful for parsh and you and Cisco, we're excited. Thank you so much. Congratulations, take care, Cheetah. Okay, thank you. What you just saw, principal vision skin is seemingly securely for personal devices all the way to the cloud, but in the age of AI, it could be pervasive and it will be everywhere.",
+        "start": 7134.0,
+        "end": 7163.0
+    },
+    {
+        "text": "Next frontiers where AI leaves the screen and enters the world. And frontier is physical AI. The ultimate application of agentic frameworks in a digital world and an agent plans and completes a task. In a physical world, it must also sense motion, navigate uncertainty, and protect people. Here, intelligence does not just produce an answer, it produces an action.",
+        "start": 7163.0,
+        "end": 7192.0
+    },
+    {
+        "text": "As this becomes actions, latency becomes safety, and reliability becomes trust. That is why the promise of physical AI is so incredibly powerful. It is not about replacing human potential, it is about amplifying it, giving surgeons greater precision, keeping people out of harm's way, making farms more productive, supply chains more resilient, and factories more efficient. The best technology does not make people out of",
+        "start": 7192.0,
+        "end": 7221.0
+    },
+    {
+        "text": "Smaller, it gives a much greater reach. For more than 20 years, Andy has helped power the core capabilities that robox depend on, from sensing and functional safety to deterministic control and precision motion. That foundation is very trusted by many of the companies defining the future of robotics, and now that foundation is coming alive in extraordinary ways. These are not machines following a script.",
+        "start": 7221.0,
+        "end": 7250.0
+    },
+    {
+        "text": "The beginning to receive the world reason through uncertainty and act with purpose the promise of physical AI already in motion the next era of robotics is not programmed there is autonomous what traditional robots execute instructions autonomous robots are given an objective if I'm there they determine how to achieve it and they do this all at once and all in real time",
+        "start": 7250.0,
+        "end": 7279.0
+    },
+    {
+        "text": "We work to orchestrate intelligence, motion, and safety continuously, and every part must respond at the speed of the world around it. That demands an entirely new kind of robotics brain, and to solve that, we rethought its architecture from the ground up. Today, I'm so excited to introduce the AMD Crea AI system on module powered by Ryzen AI embedded.",
+        "start": 7279.0,
+        "end": 7308.0
+    },
+    {
+        "text": "100 Different CPU, GPU, NPU and unified memory together in one compact open standard architecture. This allows robots to process perception, AI reasoning, and do it all simultaneously and in real time. The architecture is different, but the results are decisive.",
+        "start": 7308.0,
+        "end": 7337.0
+    },
+    {
+        "text": "In third-party testing against Nvidia Jetson Thor, CreaDeliver delivers 3.4 times better real-time results, 2.3 times more concurrent agents, and 1.6 times more CPU capacity. That means faster reactions and greater headroom for the robot to take on more complex work, and all this without compromising control or safety.",
+        "start": 7337.0,
+        "end": 7366.0
+    },
+    {
+        "text": "As AI robotics takes more than a powerful brain, developers need a complete path from idea to a machine operating in the real world. Today, we are introducing AMB's Crea AI Robotics Developer Platform. Dennis Schmidt first turn key open, fully integrative.",
+        "start": 7366.0,
+        "end": 7395.0
+    },
+    {
+        "text": "Thank you, Laura so much. This center is the Crea AI system and module paired with a robotics carrier card designed for sensing and connectivity built on Rocker and ROS 2. This platform gives developers everything they need to move from concept to prototype in days and the same module carries forward into production.",
+        "start": 7395.0,
+        "end": 7424.0
+    },
+    {
+        "text": "We have no migration or redesign needed at the finish line. You can build faster and move from imagination to deployment with absolute confidence. This is the breath only Andy can bring to Thames Robotics, from a first signal to the final motion. Andy Crea for the brain, Verso for the spine, Zink for the joints, and Spartan for the sensors. Each layer purpose built for Transcribe the following speech segment in its original language.",
+        "start": 7424.0,
+        "end": 7453.0
+    },
+    {
+        "text": "role working together in one intelligence system connecting perception and high-level reasoning to real-time control the future will not be defined by one model one machine or one company but we built in the open across silicon software systems in an ecosystem moving forward together from the cloud to the PC and now into",
+        "start": 7453.0,
+        "end": 7482.0
+    },
+    {
+        "text": "Scottworld, Andy continues to build a compute foundation for intelligence everywhere. We're Lisa focus on a future. So, Lucan argument and expand what people are capable of achieving. The next era of AI will not just be behind a screen, it will be all around us. And now, to bring it all together and take us to what comes next, please welcome back Lisa to the stage.",
+        "start": 7482.0,
+        "end": 7511.0
+    },
+    {
+        "text": "Hi Lisa. All right, thank you, Jack. And it's been a big day. We've covered a lot from our data center products to enterprise AI to personal and physical AI and the software that ties it all together. This is the strongest product portfolio in our history, and I we believe it's the strongest portfolio in the industry. But it's really just the beginning because what our customers count on is not just",
+        "start": 7511.0,
+        "end": 7540.0
+    },
+    {
+        "text": "Hey, they really count on us looking ahead and pushing the bleeding edge of technology. So I want to spend the last few minutes giving you a preview of what we're working on. Starting with CPUs, in 2028 we're going to introduce Florence. Florence brings the next gen 77 cores. It's leading edge process technology. It's a new set of AI compute extensions to really ensure that we have all of the AI capability and it supports the latest memory technology.",
+        "start": 7540.0,
+        "end": 7569.0
+    },
+    {
+        "text": "logies and we're not stopping there we're already deep in development of Ravenna our eighth generation epic family built on Zen8 and that family is already well under development for 2030 now to give you a little bit of a flavor forance is again going to extend our biggest advantage with epic it's all about product breath and having the right foundation and also the right family for each workload so you have forance we",
+        "start": 7569.0,
+        "end": 7598.0
+    },
+    {
+        "text": "Ferrara, you have Fidenza and it's really built on a full family of CPUs that is optimized for these different workloads. That's giving the customers the right CPU for every workload and that is our commitment with Epic. Now, moving to Instinct, we are continuing our cadence of delivering a new generation every single year. MI500 brings next-generation HBM. It brings a larger scale.",
+        "start": 7598.0,
+        "end": 7627.0
+    },
+    {
+        "text": "To main because scaling is everything and it introduce new copper and optical interconnects and with MI600 it's powered by our CDNA next architecture and it's already deep in development for 2028 Now to give you an idea of what we see from a performance standpoint every generation of Instinct has delivered a major big step up in performance and with MI455 we've talked a lot about it delivering 35 times more",
+        "start": 7627.0,
+        "end": 7656.0
+    },
+    {
+        "text": "Throughput compared to MI355, but we're really, really excited about MI500. What we see is another opportunity to take a major step up and actually bend the curve again. So MI500 will deliver the largest generational leap in the history of Instinct, putting us on track to deliver more than 2,000 times higher inference throughput in just four years.",
+        "start": 7656.0,
+        "end": 7685.0
+    },
+    {
+        "text": "The video features an older woman in a blue blazer speaking. She is discussing the progress of a project, mentioning that they are working with customers on a design point, that MI500 is exciting, and that customer feedback is fantastic. She then instructs the audience to look at the CPU, GPU, and networking roadmaps to see the complete cadence of their rack-scale systems, concluding that AMD will deliver a new Helios system every year.",
+        "start": 7685.0,
+        "end": 7714.0
+    },
+    {
+        "text": "performance, more capacity so that we can run larger models, more agents at better total cost of ownership, and that gives our customers the complete predictable roadmap to plan and scale their infrastructure for years to come. So lots of exciting things in store over the next few years. So with that, let me wrap this up for this morning. Today, I hope you saw a little bit about how, you know, we're really looking at that compute",
+        "start": 7714.0,
+        "end": 7743.0
+    },
+    {
+        "text": "from every angle so every aspect of AI compute whether you're talking about Helios or MI455 or Venice for the world's largest AI systems or you're talking about MI430 and MI350 for sovereign and enterprise AI you saw the passion and buzz here with RockML AI it's so good to see how much has come through that platform in terms of making developers make it much much easier for developers to access the AMD platform",
+        "start": 7743.0,
+        "end": 7772.0
+    },
+    {
+        "text": "You'll track talked about Gorgenhalo and our new Crea AI platforms really bringing together the leadership of the end-to-end AI story including PCs and physical AI. So lots of new information, but I want to say a very very special thank you to all of our partners who joined us today because it is really through those partnerships that we're able to do the most amazing things together. So if I just leave you with the final thought, when I think about where AI is",
+        "start": 7772.0,
+        "end": 7801.0
+    },
+    {
+        "text": "Today, the biggest change that we see is we're no longer talking about what might be possible. We're actually seeing how AI can have real and significant impact across every industry and every part of our lives, our personal lives, and I have to say that I've spent my entire career in tech believing that high-performance computing can make the world an incredibly better place, and I have never ever believed that more than",
+        "start": 7801.0,
+        "end": 7830.0
+    },
+    {
+        "text": "The video features a woman standing on a stage, speaking to an audience. She is dressed in a blue blazer and dark pants. The audio is a speech where she discusses AMD's focus on building technology, roadmaps, and partnerships, emphasizing that the current moment is exciting for their engineers. She states that this is the next phase of AI, where they are making AI and giving AI the tools and capabilities to bring meaningful real-world impact.",
+        "start": 7830.0,
+        "end": 7859.0
+    },
+    {
+        "text": "The video shows a presentation or event with a stage setup featuring large screens displaying information. On the screens, there are various graphics and text, including one that mentions \"AMD\" and another titled \"Co-innovating with the AI Ecosystem.\" A person is visible on the far left of the stage. The audio features a speaker thanking the audience for joining them, stating, \"To build all of that together with you, our ecosystem. Thank you so much for joining us today.\"",
+        "start": 7859.0,
+        "end": 7888.0
+    }
+]

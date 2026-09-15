@@ -1,0 +1,21 @@
+{
+    "id": "6pyls3rtwhm5lhccm6mguss5ihiep5ml",
+    "title": "Mining Advisor-Advisee Relationships from Research Publication Networks",
+    "url": "http://videolectures.net/kdd2010_wang_maarrpn/",
+    "info": {
+        "author": [
+            "Chi Wang, Department of Computer Science, University of Illinois at Urbana-Champaign"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Databases"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 142,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1417
+}

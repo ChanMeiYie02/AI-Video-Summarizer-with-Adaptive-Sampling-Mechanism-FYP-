@@ -1,0 +1,24 @@
+{
+    "id": "qe4uwkfnno57vek37piraivwidxfymro",
+    "title": "Viral Marketing NetworkX",
+    "url": "http://videolectures.net/NTUcomplexity2017_ling_viral_marketing_networkX/",
+    "info": {
+        "author": [
+            "Feng Ling, Institute of High Performance Computing (IHPC), Agency for Science, Technology and Research (A*STAR)"
+        ],
+        "published": "April 3, 2017",
+        "recorded": "March 2017",
+        "category": [
+            "Top->Science->Complexity Science",
+            "Top->Computer Science",
+            "Top->Data Science",
+            "Top->Mathematics",
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 37,
+    "num_sentences": 802,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2045
+}

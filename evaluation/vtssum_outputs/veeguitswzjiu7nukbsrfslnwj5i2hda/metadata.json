@@ -1,0 +1,21 @@
+{
+    "id": "veeguitswzjiu7nukbsrfslnwj5i2hda",
+    "title": "Implementing the \"Wisdom of the Crowd\"",
+    "url": "http://videolectures.net/colt2014_mansour_implementing/",
+    "info": {
+        "author": [
+            "Yishay Mansour, Blavatnik School of Computer Science, Tel Aviv University"
+        ],
+        "published": "July 15, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Crowdsourcing",
+            "Top->Computer Science->Logic"
+        ]
+    },
+    "num_segments": 60,
+    "num_sentences": 562,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 3786
+}

@@ -1,0 +1,82 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:01.040 --> 00:00:03.270
+>>The canonical example of
+
+00:00:03.270 --> 00:00:05.520
+classification is predicting this species
+
+00:00:05.520 --> 00:00:07.170
+of iris flower based on
+
+00:00:07.170 --> 00:00:10.035
+the numerical measurements of its sepals and petals.
+
+00:00:10.035 --> 00:00:12.900
+But what if rather than its measurements,
+
+00:00:12.900 --> 00:00:15.300
+we want to train a machine learning model to predict
+
+00:00:15.300 --> 00:00:19.180
+an iris species based on a photograph of the flower?
+
+00:00:19.180 --> 00:00:23.850
+Well, an image is just a matrix of numerical values.
+
+00:00:23.850 --> 00:00:26.160
+So we could flatten the matrix for
+
+00:00:26.160 --> 00:00:28.800
+each of these images into a vector.
+
+00:00:28.800 --> 00:00:31.110
+Of course, we'll start with data for
+
+00:00:31.110 --> 00:00:33.030
+which we already have some ground truth.
+
+00:00:33.030 --> 00:00:36.855
+So we know the class of iris to which each image belongs.
+
+00:00:36.855 --> 00:00:39.375
+When we do this for all of our image,
+
+00:00:39.375 --> 00:00:40.830
+and we end up with an array of
+
+00:00:40.830 --> 00:00:43.580
+vectors containing pixel values that represent
+
+00:00:43.580 --> 00:00:46.010
+the features of our images and an array
+
+00:00:46.010 --> 00:00:49.205
+of integer values that represent the class labels.
+
+00:00:49.205 --> 00:00:54.090
+These then are the x and y values for our model.
+
+00:00:54.380 --> 00:00:58.100
+Next, we will split these arrays to create
+
+00:00:58.100 --> 00:01:02.760
+a subset for training and hold back a subset for validation.
+
+00:01:02.950 --> 00:01:07.560
+Then we're ready to go and train and validate our model.
+
+00:01:07.820 --> 00:01:10.050
+When we're happy with the model,
+
+00:01:10.050 --> 00:01:11.890
+we can take a new image.
+
+00:01:11.890 --> 00:01:15.365
+We can extract the pixel value features,
+
+00:01:15.365 --> 00:01:17.810
+and we can submit them to the model to
+
+00:01:17.810 --> 00:01:21.050
+predict the species of the iris in the picture.

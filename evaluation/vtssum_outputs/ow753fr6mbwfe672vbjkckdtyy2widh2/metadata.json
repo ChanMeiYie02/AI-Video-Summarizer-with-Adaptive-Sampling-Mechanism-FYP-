@@ -1,0 +1,24 @@
+{
+    "id": "ow753fr6mbwfe672vbjkckdtyy2widh2",
+    "title": "Can a Computationally Creative System Create Itself? Creative Artefacts and Creative Processes",
+    "url": "http://videolectures.net/iccc2014_odonoghue_creative_processes/",
+    "info": {
+        "author": [
+            "Diarmuid P. O’Donoghue, Department of Computer Science, National University of Ireland (NUI) Maynooth"
+        ],
+        "published": "Aug. 8, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Philosophy",
+            "Top->Social Sciences->Psychology",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Machine Learning",
+            "Top->Arts"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 228,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1410
+}

@@ -1,0 +1,21 @@
+{
+    "id": "afwozwhcahhqr5vg2jl34tf6pllr2dm7",
+    "title": "Introduction to Linked Data: Background Technologies and Standards, Motivating Application Scenario",
+    "url": "http://videolectures.net/eswc2013_hogan_mcginnis_linked_data/",
+    "info": {
+        "author": [
+            "Aidan Hogan, DERI Galway, National University of Ireland, Galway",
+            "Jarred McGinnis, King's College London"
+        ],
+        "published": "Nov. 5, 2013",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 76,
+    "num_sentences": 467,
+    "num_clips_with_summary": 38,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 4958
+}

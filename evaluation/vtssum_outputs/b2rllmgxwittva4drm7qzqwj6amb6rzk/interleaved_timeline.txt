@@ -1,0 +1,182 @@
+[0.0s - 29.0s]
+Good morning everybody. I'm going to talk to you about our work and efficient Fusion move algorithm for the minimum cost lifted multicut problem, and I'm tossing buyer and his work was being done. Dress or recruiter, an freight unbraced. So since my.
+
+[29.0s - 58.0s]
+You might not be familiar with the Multicart objective, and specially not with the lifted multicut objective. I'm going to spend some time to explain this. Then I'm going to show on your algorithm and some cool applications and benchmarks.
+
+[58.0s - 87.0s]
+So the multicut objective it's also known as correlation clustering. So what are the ingredients we need? So since we want to cluster.
+
+[87.0s - 116.0s]
+Off we need first a graph. And we have edge weights for any weights. So the objective is basically just find a clustering which minimizes the sum of weights between clusters. We can model attractive forces with positive weights and repulsive forces with negative weights. The number of clusters does not need to be specified, so we just ran the multicart algorithm and the optimal number of clusters will be just given by the result. We can formulate this as an LP where we have one variable per edge and 0 means this variable does. Edge is not cut, 1 means it's cut. Furthermore, we have we have weights, they're negative if they favors the edge to be cut, and they're positive if they want the edge to be not cut. In addition to that, we need a set of constraints to ensure that this is a valid segmentation without dangling edges. Please don't try to understand the constraints just from looking at that. Let's have a look at example. So here you see a super.
+
+[116.0s - 145.0s]
+The segmentation of an image and the corresponding graph. We have weights for any edge and if we omit the constraints for one second, it's basically just thresholding. Any negative edge will be cut, positive edges won't be cut.
+
+[145.0s - 174.0s]
+As we see here. But then we get a problem. So as we see on the very right side, the edge between the node three and eight is set to be.
+
+[174.0s - 203.0s]
+But there is a pass of uncut edges.
+
+[203.0s - 232.0s]
+Connecting those two nodes so it's not a valid segmentation, and this violates the constraints you see above. So we can add these constraints iterative.
+
+[232.0s - 261.0s]
+In the cutting plane fashion, until there are no more violated constraints and we get the optimal clustering.
+
+[261.0s - 290.0s]
+So the multi cut is used for image segmentation, so often you have an edge detector from the CNN or even older canny edge detector. And if you just threshold this edge detector you could open ends as you can see on the third image indicated with these red errors and if we just plug this into the multi card objective the cycle constraints will remove these open ends and we will get a valid optimal segmentation with respect to the edge indicator we used.
+
+[290.0s - 319.0s]
+Furthermore, this is used for closed surface segmentation for connectomics. So here the goal is to extract an unknown number of neurons from electron microscopy data and of course we have attractive and repulsive terms between the Super box let's.
+
+[319.0s - 348.0s]
+So now let's talk about the lifted Multicard objective. So why do?
+
+[348.0s - 377.0s]
+We need it, so let's have a look at this tiny 3 * 2 grid graph and let's use some edge weight.
+
+[377.0s - 406.0s]
+In this case, we just use negative edge weights. So the optimal multi.
+
+[406.0s - 435.0s]
+Result will be to put any node in its own cluster. Since any edge wants to be cut. So now let's add a reward.
+
+[435.0s - 464.0s]
+For the node one and six to be in the same cluster well and now even.
+
+[464.0s - 493.0s]
+Which would just be to add an edge between them and give it a high weight, in this case 5. So let's solve this again with the multi cut. What we get back is there.
+
+[493.0s - 522.0s]
+Gordon believes that node one and node six are in the same cluster because there is edge which is not cut between them and connects them. But if this is an image, what we really want is the following.
+
+[522.0s - 551.0s]
+We would like to have node one and six to be connected in the original graph, and this additional edge which is here colored in green should should just give us the energy and does not.
+
+[551.0s - 580.0s]
+Should not work with connectivity, so we want to use these additional edges just for energy, not for connectivity. And.
+
+[580.0s - 609.0s]
+This is exactly what the minimum lifted. Multicut objective from beyond Andres is doing. So, let's formalize this again, we have a graph.
+
+[609.0s - 638.0s]
+And we have additional edges here, just one additional edge in green, but it can be arbitrarily many. And we have edge weights.
+
+[638.0s - 667.0s]
+So the setup is exactly the same as the multicart. We have the same constraints as the multicart, so if you look at the con.
+
+[667.0s - 696.0s]
+Duration you see above the edge between node one and two is set to be cut, but there is a path.
+
+[696.0s - 725.0s]
+Connecting them so the set of constraints will forbid this.
+
+[725.0s - 754.0s]
+Configuration. We need a few more constraints, so if.
+
+[754.0s - 783.0s]
+The additional edges cut as you see in the in the configuration above, there must not.
+
+[783.0s - 812.0s]
+Your path between the endpoints of this additional edge as you.
+
+[812.0s - 841.0s]
+And see here. So this configuration is ruled out by the 2nd set of constraints and last but not least.
+
+[841.0s - 870.0s]
+If the additional edge edge is not cut, then we need to make sure that in the additional graph there is in the graph there is no cut between those nodes.
+
+[870.0s - 899.0s]
+As you can see here so.
+
+[899.0s - 928.0s]
+Is this complicated constraints we can enforce that these additional edges are just used for energy but not for connectivity, so doesn't idle P and this scales horribly. So if we want to use it for large images, we're basically doomed. So what can we do about it?
+
+[928.0s - 957.0s]
+So here in our paper we propose a Fusion move for this problem. So in a Fusion move set up, it's all about combining two solutions into one single solution, which does not worsen the energy. So how can we implement this?
+
+[957.0s - 986.0s]
+Let's just look at at some arbitrary solution for this problem where some edges are cut so matches are not cut. Intersect.
+
+[986.0s - 1015.0s]
+Solution now we ask for all edges which are neither cut.
+
+[1015.0s - 1044.0s]
+In solution A&B, those are the edges which you can see here in bold. So what we can do, we can just add must link constraints for any of those edges which are neither cut in A or B and since those are must link constraints, we can just contract these edges.
+
+[1044.0s - 1073.0s]
+And what we get back is a way smaller graph, and on the smaller graph we are unable to optimize the lifted multicard problem more easy since it's way smaller graph you have fewer edges and fewer nodes so.
+
+[1073.0s - 1102.0s]
+It's just optimized this, then we get some edges to be cut back and some are not cut and we can basically use these results and project them back to the.
+
+[1102.0s - 1131.0s]
+Original graph which you can see here. By construction solution, a anbia both indefeasible set of this procedure. So we are guaranteed to not worsen the energy. So here you.
+
+[1131.0s - 1160.0s]
+See it again summarized. We have two solutions we ask for any edges which are neither cut in both of these solutions. We can add must link constraints for all these edges contract the graph. Get a smaller problem. Optimize it there. And use this result on the original graph. Of course, this is a straightforward generalization for Fusion moves from Victor Lipinski and Fusion moves for correlation clustering. It's a fast and scalable algorithm. We can easily make a parallel algorithm out of this, and it leads to state of the art results. If you want to know more about about this algorithm, specially how we generate the proposal and so on, please visit us at our poster. And now let's look at.
+
+[1160.0s - 1189.0s]
+Cool applications So what?
+
+[1189.0s - 1218.0s]
+Use this algorithm. Most four is for segmenting neuron data. As you can see here. So this is from the SP 2003.
+
+[1218.0s - 1247.0s]
+Challenge and what we would like is to assign any neuron its identity, which is color tiers. So everything which has a different color is a different neuron and we want to extract these neurons.
+
+[1247.0s - 1276.0s]
+So first we start with CNN and learn the membrane probability.
+
+[1276.0s - 1305.0s]
+Will lead to results like this. Then we get so.
+
+[1305.0s - 1334.0s]
+For pixels, and now, let's look at a different angle on this problem so.
+
+[1334.0s - 1363.0s]
+Here we have the Super pixels.
+
+[1363.0s - 1392.0s]
+You have to notes in there.
+
+[1392.0s - 1421.0s]
+Rough and we have all these local edges in the.
+
+[1421.0s - 1450.0s]
+Of course we learn the edge weights of the local edges.
+
+[1450.0s - 1479.0s]
+And color them accordingly. But what we do is the lifted multicopters we can add.
+
+[1479.0s - 1508.0s]
+And local edges, so edges which are not adjacent in the graph. And we can learn these if they should be cut or not cut.
+
+[1508.0s - 1537.0s]
+So we do this and then we optimize this with the Pro.
+
+[1537.0s - 1566.0s]
+Host the algorithm so we get some edges back which are cut and some are not cut. And we get.
+
+[1566.0s - 1595.0s]
+These results, which are really close to human performance so.
+
+[1595.0s - 1624.0s]
+Our code is available, so not only the code photos over, but a complete pipeline to get these results on on neural data. And using this code we get good results in this public available leaderboard of this challenge, so.
+
+[1624.0s - 1653.0s]
+So what you see here at the very bottom is the performance of about 2012. This was the year of the competition. Then there was some improvement over the years and what you see at the top is our CNN. So our CNN by itself is a tiny bit better than the others. But if you use our lifted Multicut pipeline on top of the CNN, you see a quite big boost in performance. As I said, the code is available on GitHub. Feel free to clone it. What we did in addition.
+
+[1653.0s - 1682.0s]
+As a stress test for the Sullivan. So if you if you might know the Berkeley Segmentation database and there you have multiple ground rules instances for each image and what we did here is, we generalize the work of our lotion called Burger from 2012, where we want to combine multiple segmentations into one reliable segmentation. So here no RGB data is used whatsoever, so we just use the segmentations to combine them. So here we work directly on the pixel level. Connect any pairs of pixel within a graph distance of five. So there's a really huge problem and a stress test for the solver. And you optimize it with the proposed algorithm. You can see the results on the very top right, and if you use another solver which is also working on on this objective, which was the state of the art before algorithm, it leads to these result.
+
+[1682.0s - 1711.0s]
+Twitch do not look that good. So as I said, we.
+
+[1711.0s - 1740.0s]
+Paralyzed algorithm and you can see if we run it with eight threads, it's about 3 times faster than in a single thread mode, and we get better energies and better results than any other solver.
+
+[1740.0s - 1769.0s]
+That's on, I hope you come to our post on and if you have questions let us discuss the math and all the applications there. Thank you.

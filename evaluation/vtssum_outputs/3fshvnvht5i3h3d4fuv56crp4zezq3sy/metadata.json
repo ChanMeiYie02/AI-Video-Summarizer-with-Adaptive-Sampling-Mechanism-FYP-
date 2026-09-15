@@ -1,0 +1,25 @@
+{
+    "id": "3fshvnvht5i3h3d4fuv56crp4zezq3sy",
+    "title": "Self-reinforcing expectancy effects on pain: Behavioral and brain mechanisms",
+    "url": "http://videolectures.net/rldm2015_jepma_expectancy_effects/",
+    "info": {
+        "author": [
+            "Marieke Jepma, Faculty of Social and Behavioural Sciences, Leiden University"
+        ],
+        "published": "July 28, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences->Psychology",
+            "Top->Social Sciences->Economics",
+            "Top->Medicine->Neuroscience",
+            "Top->Technology->Engineering->Electrical Engineering->Control Engineering"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 165,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1914
+}

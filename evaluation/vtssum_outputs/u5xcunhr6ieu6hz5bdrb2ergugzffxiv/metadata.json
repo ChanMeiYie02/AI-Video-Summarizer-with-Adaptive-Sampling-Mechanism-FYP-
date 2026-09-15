@@ -1,0 +1,20 @@
+{
+    "id": "u5xcunhr6ieu6hz5bdrb2ergugzffxiv",
+    "title": "ATT: Analyzing Temporal Dynamics of Topics and Authors in Social Media",
+    "url": "http://videolectures.net/acmwebsci2011_naveed_topics/",
+    "info": {
+        "author": [
+            "Nasir Naveed, Institute for Web Science and Technologies (WeST), University of Koblenz-Landau"
+        ],
+        "published": "July 19, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Computer Science->Social Media"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 160,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1434
+}

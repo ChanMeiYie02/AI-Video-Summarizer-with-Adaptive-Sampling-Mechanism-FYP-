@@ -1,0 +1,11 @@
+[0.0s - 29.0s]
+Hello everyone, I would like to talk about our research.
+
+[29.0s - 58.0s]
+Topic modeling is a widely used approach to analyzing large data collections, and it has been applied to much type data. For example, and takes on digital image data. Marketing around circular data. Some prior models for March app data can't capture dependencies between data types successfully. Quality air that's very that's pending state. However, in this case they needed to switch higher pay, but in other words. Here the paper it means the data type to be generated fast.
+
+[58.0s - 87.0s]
+Now they proposed shimko LDA in an extension of quality air. The quality air can estimate the topics over paper towards fast. And then estimated estimated topics of other words based on the topics with paper it. On the other hand, over Shimko early air charges, the proportion of the paper. For eight years type. In other words, she got a chance to meet the best paper type at the world level in each document.
+
+[87.0s - 116.0s]
+I will show some of the results of our experiments. The estimated that seem quite yet your emerging under documents of Wikipedia in Japanese, English and Spanish. Compare the effectiveness of shimmer and prior models. The left failure shows it shows the titles of documents and the corresponding private proportion. As you can see from the results of amount. As you can see from the examples of Mount Fuji, providing and NFL seem quiet here, assigns the papers reflecting the tractor districts of the language. The right table shows that of finding counterpart task. Amy finding English documents. Given Japanese documents on the same topic under the past. English Bulldog of some quality air is better than that of any other model. How much is the results which demonstrate that? Quality Air works more effectively than other prior models, and. And it is more likely than quality air. Thank you.

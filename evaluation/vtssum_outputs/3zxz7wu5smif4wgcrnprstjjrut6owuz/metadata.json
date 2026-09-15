@@ -1,0 +1,21 @@
+{
+    "id": "3zxz7wu5smif4wgcrnprstjjrut6owuz",
+    "title": "Adopting Semantic Technologies for Effective Corporate Transparency",
+    "url": "http://videolectures.net/eswc2017_mora_rodriguez_semantic_technologies/",
+    "info": {
+        "author": [
+            "Maria Mora-Rodriguez, Department of Engineering Mathematics, University of Bristol"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 336,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1280
+}

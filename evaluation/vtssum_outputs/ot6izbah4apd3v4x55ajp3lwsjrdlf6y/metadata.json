@@ -1,0 +1,20 @@
+{
+    "id": "ot6izbah4apd3v4x55ajp3lwsjrdlf6y",
+    "title": "Linear Projections and Gaussian Process Reconstructions",
+    "url": "http://videolectures.net/learning06_candela_lpgpr/",
+    "info": {
+        "author": [
+            "Joaquin Quiñonero Candela, Facebook"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "October 2006",
+        "category": [
+            "Top->Computer Science->Machine Learning->Gaussian Processes"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 541,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 3501
+}

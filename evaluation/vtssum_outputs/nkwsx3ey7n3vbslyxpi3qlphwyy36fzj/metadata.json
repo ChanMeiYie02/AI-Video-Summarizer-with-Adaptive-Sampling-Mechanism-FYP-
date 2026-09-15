@@ -1,0 +1,21 @@
+{
+    "id": "nkwsx3ey7n3vbslyxpi3qlphwyy36fzj",
+    "title": "Multi-Assignment Clustering for Boolean Data",
+    "url": "http://videolectures.net/icml09_frank_mac/",
+    "info": {
+        "author": [
+            "Mario Frank, Department of Computer Science, ETH Zurich"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 245,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 1630
+}

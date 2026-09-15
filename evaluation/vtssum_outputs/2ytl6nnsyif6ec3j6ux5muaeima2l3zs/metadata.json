@@ -1,0 +1,22 @@
+{
+    "id": "2ytl6nnsyif6ec3j6ux5muaeima2l3zs",
+    "title": "Exploring the Political Agenda of the Greek Parliament Plenary Sessions",
+    "url": "http://videolectures.net/parlaCLARIN2018_pontiki_political_agenda/",
+    "info": {
+        "author": [
+            "Maria Pontiki, Institute for Language and Speech Processing (ILSP / \"Athena\" R.C.)"
+        ],
+        "published": "May 30, 2018",
+        "recorded": "May 2018",
+        "category": [
+            "Top->Computers->Digital Media",
+            "Top->Humanities->Languages",
+            "Top->Social Sciences->Society"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 95,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 2542
+}

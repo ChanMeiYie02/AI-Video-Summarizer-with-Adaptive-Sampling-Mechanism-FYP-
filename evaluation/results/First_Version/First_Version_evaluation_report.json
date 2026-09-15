@@ -1,0 +1,144 @@
+{
+    "timestamp": "2026-05-07 20:51:21",
+    "samples_evaluated": 5,
+    "samples_skipped": 0,
+    "evaluation_time_seconds": 0.23,
+    "aggregate_metrics": {
+        "rouge1_f1": {
+            "mean": 0.2419,
+            "min": 0.0968,
+            "max": 0.2921,
+            "count": 5
+        },
+        "rouge2_f1": {
+            "mean": 0.0346,
+            "min": 0.0173,
+            "max": 0.0714,
+            "count": 5
+        },
+        "rougeL_f1": {
+            "mean": 0.1197,
+            "min": 0.0717,
+            "max": 0.1573,
+            "count": 5
+        },
+        "rouge1_precision": {
+            "mean": 0.2154,
+            "min": 0.0539,
+            "max": 0.393,
+            "count": 5
+        },
+        "rouge1_recall": {
+            "mean": 0.4073,
+            "min": 0.2137,
+            "max": 0.629,
+            "count": 5
+        },
+        "rouge2_precision": {
+            "mean": 0.0268,
+            "min": 0.01,
+            "max": 0.0465,
+            "count": 5
+        },
+        "rouge2_recall": {
+            "mean": 0.0691,
+            "min": 0.0134,
+            "max": 0.1545,
+            "count": 5
+        },
+        "rougeL_precision": {
+            "mean": 0.1035,
+            "min": 0.0399,
+            "max": 0.1789,
+            "count": 5
+        },
+        "rougeL_recall": {
+            "mean": 0.2223,
+            "min": 0.0973,
+            "max": 0.3509,
+            "count": 5
+        }
+    },
+    "per_sample_scores": [
+        {
+            "rouge1_f1": 0.2769,
+            "rouge1_precision": 0.393,
+            "rouge1_recall": 0.2137,
+            "rouge2_f1": 0.0173,
+            "rouge2_precision": 0.0246,
+            "rouge2_recall": 0.0134,
+            "rougeL_f1": 0.1261,
+            "rougeL_precision": 0.1789,
+            "rougeL_recall": 0.0973,
+            "prediction_length": 2206,
+            "reference_length": 2982,
+            "compression_ratio": 0.74,
+            "sample_id": "22axpf7xhjwrzdzw7w77yc7mukreba37",
+            "title": "Multiple hypotheses testing in functional neuroimaging applications"
+        },
+        {
+            "rouge1_f1": 0.2894,
+            "rouge1_precision": 0.2458,
+            "rouge1_recall": 0.3517,
+            "rouge2_f1": 0.0313,
+            "rouge2_precision": 0.0266,
+            "rouge2_recall": 0.0381,
+            "rougeL_f1": 0.1191,
+            "rougeL_precision": 0.1012,
+            "rougeL_recall": 0.1448,
+            "prediction_length": 3038,
+            "reference_length": 1599,
+            "compression_ratio": 1.9,
+            "sample_id": "22gipsfuw7sfapbpjtl3jg4vankygwyk",
+            "title": "Wordnet as a crowd source for untreated languages, concepts, and data elements"
+        },
+        {
+            "rouge1_f1": 0.2921,
+            "rouge1_precision": 0.1902,
+            "rouge1_recall": 0.629,
+            "rouge2_f1": 0.0714,
+            "rouge2_precision": 0.0465,
+            "rouge2_recall": 0.1545,
+            "rougeL_f1": 0.1573,
+            "rougeL_precision": 0.1024,
+            "rougeL_recall": 0.3387,
+            "prediction_length": 3075,
+            "reference_length": 730,
+            "compression_ratio": 4.21,
+            "sample_id": "23g3hw5ev4e6aedpxz4bioljs4hbznyl",
+            "title": "Variational Inference over Combinatorial Spaces"
+        },
+        {
+            "rouge1_f1": 0.2543,
+            "rouge1_precision": 0.1943,
+            "rouge1_recall": 0.3682,
+            "rouge2_f1": 0.0348,
+            "rouge2_precision": 0.0265,
+            "rouge2_recall": 0.0504,
+            "rougeL_f1": 0.1243,
+            "rougeL_precision": 0.0949,
+            "rougeL_recall": 0.1799,
+            "prediction_length": 3413,
+            "reference_length": 1233,
+            "compression_ratio": 2.77,
+            "sample_id": "23lodsglh6szbglcsf7majriphobtjct",
+            "title": "X, Y, Zebra"
+        },
+        {
+            "rouge1_f1": 0.0968,
+            "rouge1_precision": 0.0539,
+            "rouge1_recall": 0.4737,
+            "rouge2_f1": 0.018,
+            "rouge2_precision": 0.01,
+            "rouge2_recall": 0.0893,
+            "rougeL_f1": 0.0717,
+            "rougeL_precision": 0.0399,
+            "rougeL_recall": 0.3509,
+            "prediction_length": 3944,
+            "reference_length": 298,
+            "compression_ratio": 13.23,
+            "sample_id": "24xldsebz466gltqlhn3irrjjxx73px7",
+            "title": "Creating dynamic online courses"
+        }
+    ]
+}

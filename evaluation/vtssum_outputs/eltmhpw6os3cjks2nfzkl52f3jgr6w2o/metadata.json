@@ -1,0 +1,20 @@
+{
+    "id": "eltmhpw6os3cjks2nfzkl52f3jgr6w2o",
+    "title": "Standardization for the Multilingual Web: A Driver of Business Opportunities",
+    "url": "http://videolectures.net/w3cworkshop2013_von_freyberg_web/",
+    "info": {
+        "author": [
+            "Hans-Ulrich von Freyberg, Cocomore AG"
+        ],
+        "published": "June 19, 2013",
+        "recorded": "March 2013",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 133,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2188
+}

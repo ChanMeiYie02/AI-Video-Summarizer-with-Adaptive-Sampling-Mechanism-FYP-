@@ -1,0 +1,242 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+Hi, my name is Sylvia Masuda. I'm working in the old group in the Department of Computer Science in University of Sheffield, and there is a bit of background to this talk and initially about a few weeks back with you. We thought that Anna Lisa would be presenting it. But then few days back we knew that Vita would be presenting it, and three days back I knew that I would be presenting it and we kind of have a feeling that this talk might be jinxed so. So maybe the roof I'll fall off. So anyway, I'm not an expert in information extraction or information retrieval, but I'll try to explain this talk to the best of my knowledge. So what we're trying to do here? [29.0s - 58.0s]
+It is to exploit knowledge that is often buried within an organization and with that knowledge we want to generate semantic profiles and using these profiles we would like to use them in an organizational knowledge management context. Now before I start, I'd like to explain what I'm. [58.0s - 87.0s]
+Mean by informal communication. By informal communication, we mean that the communication within an organization which is not been archived by the organization and being used by the organization. These examples include informal emails, meeting requests, meeting records, things we discuss while we meet on the corridor of chats. Instant messages, but for the context of this talk I would be focusing on emails. [87.0s - 116.0s]
+To give an example, what are the kind of emails that we send around that? Are that we include in this type of communication? There is an example where people talk about Christmas. Food people talk about some blogs which might be interesting. People talk about some call for papers which may be interesting as well. And what we would ideally want to do is to fire to pick up who sending these emails to whom. And in addition to that, we want to pick up what are the topics of these emails and using this information we want to build a network of people and build their profiles on the basis of the emails they've sent or been received. Now how do we do that we? [116.0s - 145.0s]
+Receive our approach to be a threefold approach. Initially we collect the features. And then we generate user profiles on the basis of that features and then we use these profiles and in in a in an organization and. So we look at emails that have been sent around and we. Convert them to user profiles and use these email users user profiles on the basis of. Visualization systems or browsing systems or information retrieval systems. So I'll go through each of them and discuss what we what we've looked at from the previous literature so. [145.0s - 174.0s]
+When we talk about collecting features from emails, we've looked at some. We've looked at some literature where people have been looking at exchange frequency. People have been looking at how people communicate with each with each other within an organization. They look at things like absolute frequency thresholds. They look at static profiles. They look at building static profiles. People look at building dynamic profile profiles on the basis of time. Um, people looked. Have looked at contents of these emails and look at how we can determine expertise or how we can analyze relations between content and people, or how we can extract personal information like name, Age, address, contact and so on. [174.0s - 203.0s]
+While generating user profiles, what people have also looked at is by monitoring user activities on the web. Can we generate user profiles by analyzing tweets or Twitter content? Can we generate profiles? [203.0s - 232.0s]
+
+**AI Summary:**
+The speaker introduces the goal of exploiting buried organizational knowledge by generating semantic profiles, which are then used for organizational knowledge management.
+
+The core focus is on defining and analyzing informal communication, specifically focusing on emails (which include topics like Christmas, food, blogs, and calls for papers). The goal is to identify senders, recipients, and topics to build a network of people and create user profiles based on their communication history.
+
+The proposed approach involves a threefold process:
+1. Collect features from communication data.
+2. Generate user profiles based on these features.
+3. Utilize these profiles within the organization via visualization, browsing, or information retrieval systems.
+
+To collect features, the talk reviews methods such as analyzing exchange frequency, absolute frequency thresholds, static and dynamic profiles, analyzing the relationship between content and people, and extracting personal information (e.g., name, age, address). Additionally, the methods discussed include generating profiles by monitoring user activities on platforms like tweets and Twitter content.
+
+============================================================
+
+### Semantic Chapter 1 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+And people have been profiling users and bring measuring how similar people are to others about other people and defining them on the basis of binary functions. Whether I am similar to another person and non binary functions. So what is the strength of our similarity and the features that are typically exploited? Our geographical features, location, age, interests, social interests or even Facebook friends, Facebook interactions, likes, pictures and so on that are shared between two people. [232.0s - 261.0s]
+And while using this profile, people have been looking at making use of profiles in on the basis of information retrieval. So can we customize search results and better provide better results to users on the basis of their profiles? Can we? Can we customize recommendations or suggestions while people are searching? [261.0s - 290.0s]
+So when we gather all of this information together, we want to answer one simple research question that does increasing the level of semantics in user profiles outperform current methods. So what we want to do is we want to infer similarity among users. And we want to understand how well this similarity that we automatically infer. Alliance with human judgment.
+
+**AI Summary:**
+The video discusses the methods of user profiling and similarity measurement. It highlights how users are profiled using various features—such as geographical data, age, interests, social connections, and social media interactions (likes, friends)—to determine similarity, often using binary and non-binary functions.
+
+The application of these profiles is focused on information retrieval, aiming to customize search results and provide personalized recommendations and suggestions to users. The central research goal is to investigate whether increasing the semantic complexity within user profiles improves similarity inference, and to evaluate how accurately the automatically inferred user similarity aligns with human judgment.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[290.0s - 319.0s]
+Now, in order to do this, we've got to start off by capturing information. So I'll give a brief demonstration of a video that we've compiled where a user enters a topic of a particular meeting, and this isn't capturing meeting requests, so users mentioned what time they want to meet. They want to mention what time the meeting is going to end. They also mention where who is hosting this meeting. Um, other details. As in who are going to attend this meeting, I'll just skip through this and just explain while it goes and they also mentioned where they're going to meet, so we have all of this information during generation of this email and. Once that's done, we add in what is the meeting going to be discussing and and that is then sent off to the back end data store and we we store this information. Now the other thing that we can do is we can archive emails. We can collect a lot of emails and then archive them and then upload to our service and add some descripcion at some details to that to the archive so that we don't want content this is. Or we know the president of this information. And then we pass it onto background service. We see that there is some processing involved and then we see in the end that this data has been archived. [319.0s - 348.0s]
+Now, once we've done that, we want to look into the experiments that we want to. We want to conduct, so we've been looking at emails that have been sent to within the Oak Group and these emails have been sent to the entire group. So to the entire mailing list of the group. And we've collected this emails over a period of 10 months. As far as I remember correctly, and we've collected 1001 emails and the total number of users were 40 and the number of active users who have been sending more emails and receiving. So they have been 20 and the number of users that participated in the evaluation has been 15. [348.0s - 377.0s]
+Now what we do is we collect the features from these from these emails and we look at three types of features. We look at keywords we looked at named entities and we looked at concepts. So in order to extract features from these emails, we look at a service which is called Java automatic term recognition. We've looked at open Kelly Web service to provide us with entities, and we've looked at Wiki fight to provide us with context their contents concepts. [377.0s - 406.0s]
+And we tried to compare them and we've measured. We've we've measured similarity between what one person is and what another person. So we've measured similarity between two persons using the Jaccard index. And we've done it for all of the different types of information we've collected. And then we asked users if they what they feel they are sick. [406.0s - 435.0s]
+The two, so we've asked participants to to provide their perceived similarity with their colleagues and from a professional and social point of view, and also looking at the points or topics of interest. So we've asked people to say that, do you think you are similar to this person, and how much similar do you think they are? So from a scale of 1 to 10, we've asked him, are we similar to this person, and how much are you similar to him? [435.0s - 464.0s]
+And and then we looked at how we could evaluate it. We've considered the 3 three ways of the three collections that we had for keywords, concepts as well as entities, and we've tried to correlate those those numbers that we had with what the users? [464.0s - 493.0s]
+And this is the results that we've achieved. And we tried. [493.0s - 522.0s]
+Sum it up by taking an average of it, and we realized that the concepts start to show more significance. So from what here, what we realized is that users. Find themselves similar to other users and if we match that with keywords named entities and concepts, we've realized that people find concepts to be a good measure of finding similar users. [522.0s - 551.0s]
+
+**AI Summary:**
+The demonstration begins by outlining a process for capturing meeting information (topic, time, host, attendees, location) to generate an email, which is then stored in a backend data store. Subsequently, the system processes and archives emails, adding descriptions before passing them to a background service for archiving.
+
+The core experiment involves analyzing emails sent to a group over ten months, collecting 1001 emails from 40 users. The process involves extracting features from these emails, specifically keywords, named entities, and concepts, using tools like Java Automatic Term Recognition and Wiki fight.
+
+To evaluate the results, participants were asked to rate their perceived similarity to colleagues (on a scale of 1 to 10). The study measured the similarity between individuals using the Jaccard index and correlated these scores with the extracted features (keywords, entities, concepts).
+
+The final results indicated that concepts proved to be the most significant measure. The study concluded that concepts are effective indicators for finding similar users when correlated with keywords and named entities.
+
+============================================================
+
+### Semantic Chapter 2 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+Now, how do we use this information? We look at user profiles and we could we could use this in an organization by looking at emails that people send around, and by looking at retrieving these emails on the basis of user experience or user profiles and we also look at how we can visualize these emails. In knowledge management perspective. [551.0s - 580.0s]
+So we started with a tool that is called simnet. Similar provides a radiograph of all the users in a particular organization, and it tries to color code the emails that they've been sending to their colleagues by representing the sent mails as Orange mails and receive Mail says Green Mails and when you click on one user you can also find out the tag cloud of all these emails that have been sent. And you can also browse through these emails by providing dates, so you could see how an hour network changes over a period of time. And you could also plot the similarity between 2 users by by drawing lines between users. Now the next thing we focused on was to make use of similarity and make use of expertise within an organization. So here we show the old group and we show the different kind of expertise that is there in the old group when we click on one of them, we provide all the users who are experts in that particular topic. Now these have been generated by the extraction system that we've been developing. And this is a force directed layout approach and this is a radial layout approach. So what we've thought is first directed layouts can show very well relations among individuals. They can show very well relations among people in the industry, in the in, the organization, radial layouts are very good at showing enter interactions. They're very good showing how people have interacted with in this organization. So the next step was that we wanted to combine both of these approaches to come up with a different kind of visualization. Which is looking at force directed layouts as well as providing information in a radial graph. [580.0s - 609.0s]
+
+**AI Summary:**
+The system explores using user profiles and organizational emails for knowledge management.
+
+The tool introduced is Simnet, which provides a radiograph of users and color-codes emails (Orange for sent, Green for received). Users can view email tag clouds and plot the similarity between users.
+
+The focus then shifts to leveraging organizational expertise. The system displays expertise within a group, identifying users who are experts in specific topics based on an extraction system.
+
+Two visualization approaches are discussed:
+1. **Force-directed layouts:** Effective for showing relations among individuals in the industry or organization.
+2. **Radial layouts:** Effective for showing interactions and how people have interacted within the organization.
+
+The final step is to combine both force-directed layouts and radial graphs to create a comprehensive visualization method.
+
+============================================================
+
+### Semantic Chapter 2 (Part 3)
+
+**Original Timeline (Subtitles & Frames):**
+So we've modified the simnet. Tool and this is an example that I'll be showing you so here. The two loads up with clusters of everyone in the group and these clusters are based on. The expertise that we found. And as you see that when it loads up it, it spreads out everywhere and it uses force directed approach to spread out these clusters. And each of these clusters are radial visualizations which show interaction within this cluster and also interaction to other groups from other clusters. The users can freeze notes and move them around as they want. So that it's easier for them to play around with it, I'll just go back. Now the interesting thing that we've noticed over here is that all of these people were members of one group, but we see a lot of people from technology in general, so this is a cluster that we used where we couldn't define which group they would be falling into. So this is a cluster where we've seen that these people interact more with other people and also work on things like social web. This is a cluster where we've seen people are working on information retrieval. And this is these are people who've been talking about a lot of politics. These are people who've been working on a lot of knowledge representation, so building ontologies. Now when we combine everything together in this exploration tool, we've realized that people do not talk much amongst themselves and people talk to other people, other people from other research areas. Reaching that, this is because a lot of people collaborate with other people from other research groups or other research areas within one group. And they send emails among themselves, but they do not around people who've been who've been associated with the same expertise. And there's another reason why this is possible is because people are people work to tend to work out there to talk to people who are working on the same projects. So HCR people do not talk too much with amongst themselves, though they have some level of interaction but they talked to a lot of people from technology from social or from information retrieval and that is possibly because they haven't been grouped according to projects. If we had grouped them according to projects. You would probably see a lot of Inter cluster intra cluster communication. So here is an example where the user lays out the network as they want and then the user is searching for a topic which is Twitter and once it does that you can see that the system has highlighted 5 individuals among the network who have talked more about Twitter and over here the user is adding another topic which is human computer interaction. So this user is looking at people who've been talking a lot about Twitter as well as human computer interaction. And this system helps pick up the people who've been talking more about it and suggest experts. Now when you click on one user you get a highlighted list of all the emails that that's been sent around the whole network. So when you click on that, you get an updated tag cloud. So this tag cloud combines all of the emails that have been highlighted and gives an overview of what are the emails that have been sent around. Now we also have access to all these emails that have been shown here. So once a user. Clicks on a particular selects a particular topic. So for example, the user is selecting chocolate and the user sees that there are four people around the network who talked about chocolates. The user can Scroll down and find a list of all of these emails. So we are currently in the process of looking at how we can improve this system.
+
+**AI Summary:**
+The video demonstrates a modified tool called "simnet," which visualizes group interactions by clustering individuals based on expertise. These clusters are radial visualizations showing both internal and external group interactions.
+
+The analysis highlights that people in the study are members of a single group but span diverse areas (e.g., technology, social web, information retrieval, knowledge representation). This suggests that people collaborate across different research areas rather than communicating only within their immediate expertise group. The system illustrates that this lack of communication is linked to not grouping individuals strictly by project, suggesting that project-based grouping could increase intra- and inter-cluster communication.
+
+The demonstration then showcases the tool's functionality:
+1.  **Topic Search:** A user searches for a topic (e.g., Twitter) and the system highlights relevant individuals within the network.
+2.  **Expert Suggestion:** The system suggests experts based on the search results.
+3.  **Email/Tag Cloud Analysis:** Clicking on an individual reveals a list of all associated emails, which generates an updated tag cloud summarizing the highlighted communications.
+4.  **Topic Filtering:** Users can select specific topics (e.g., chocolate) to find related individuals and their corresponding emails within the network.
+
+The segment concludes by noting that the team is currently focused on improving this system.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We are showing this around to people and getting their feedback and trying to understand what could be improved from this system. For example, the freeze nodes. We've realized that force directed layouts are sometimes not very suited for a lot of people, and in that case they can freeze the nodes and they can move it around as they wish. So we've basically looked at how we can profile users.
+
+**AI Summary:**
+The team is gathering user feedback to improve the system, specifically focusing on features like freeze nodes. They realized that force-directed layouts are unsuitable for many users, suggesting a solution where users can freeze nodes and move them freely. This research is informing their strategy for profiling user needs.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We looked at. We realized that semantic profiling would be more helpful and would outperform normal profiling on the basis of keywords and named entities, and we've looked at how we can use these profiling in a knowledge management perspective. [609.0s - 638.0s]
+So to conclude, dynamically no model users expertise from information communication, informal communication exchanges. We've generated semantic user profiles from textual content generated by users, and we've made used of Barrett knowledge within an organization. Now this knowledge would never be used ever and this knowledge can tell us a lot about what people talk about within themselves in the social context, not only about work but also about social. And. [638.0s - 667.0s]
+When we when we think about it, we've we've decided on working on a lot of future directions, so we are planning to work with an organization with knowledge workers on long term trials of the system. And we we are also looking at ways of exploring new visualizations to facilitate real time visualization of dynamic networks and profiles. And we also try want to connect profiles to linked open data to get how we could follow the links and get more information about people and their profiles. This is a list of references that you might find helpful, but I don't think it would be helpful now unless I freeze this slide for the next 5 minutes. This is the other Slackware things so. That's it and would like to ask questions if anyone. Very interesting work.
+
+**AI Summary:**
+The team explored the use of semantic profiling, determining that it is more effective than traditional profiling (based on keywords and named entities) and is highly valuable for knowledge management.
+
+They demonstrated how to generate dynamic semantic user profiles from user-generated text and utilize organizational knowledge (Barrett knowledge) to understand what people discuss in a social context, including both professional and social interactions.
+
+Looking ahead, future plans include conducting long-term trials of the system with knowledge workers. They are also exploring new visualizations for real-time dynamic networks and attempting to connect user profiles to linked open data to enhance information retrieval about individuals.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I got three questions. First is about the definition or difference between the concepts, keywords and the named entities what, what exactly is the concept you mentioned in this in your context. So from what I understand concepts are looking at semantic contexts. The keywords are just plain keywords that are extracted from the text. Keywords include phrases or just keyword. Know they're just keywords OK and then then the end. It is our services and then people's name organizations, peoples name and well. These are basically identified from the open Calais web service and these are basically all the results that we get from the open claim. But what other concepts here? Just semantic concept. What exactly isn't in the email with what exactly concept in the email? So so? These are semantic concepts that we could identify using this wiki fi web service and I I'm not quite familiar with the Wiki Wiki Fi Web service, which if I from what I understand Wiki Fi is a service that enables you to send some text and it replies with a set of concepts that are semantic. Concept from some ontology. I believe sonomia yes, I believe so. I'm not very sure of how the web service works, but I wouldn't want to. Yes yes yes.
+
+**AI Summary:**
+The speaker clarifies the differences between various information types: concepts, keywords, and named entities.
+
+*   **Keywords** are simple terms extracted directly from text.
+*   **Named Entities** include people's names and organizations, which are identified using the Open Calais web service.
+*   **Semantic Concepts** are broader ideas identified using the WikiFi web service, which is described as a service that uses an ontology (like Sonomia) to return semantic concepts based on input text.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I believe so. Yes, oh so is this concept related to Wikipedia? Yes, OK, I'm not sure if it has any link to DB pedia though, but it could. It could be DB pedia concept. But I'm not sure of that. I see that does for interesting and then regarding to your map in the simnet. If you can go back to that visualization there. Yeah, you know that previous one. Just yes this one. OK said there's a link from certain user to another user. Is it just? I mean that the message first time I don't see a direction and 2nd is it the two CC included or just two in this case? So this is 2 NCC include two SEC OK? Alright, this my last question is, I mean that I think is really interesting research and you measure the similarity between the users right after you build this profile models. What do you plan to use it?
+
+**AI Summary:**
+The discussion revolves around the relationship between a concept and Wikipedia/DBpedia. The speaker asks about the connection between a specific concept and DBpedia. They then transition to a visualization, referring back to a previous map in the simnet. The conversation continues by exploring how links are established between users and the structure of messages (specifically questioning the inclusion of "2 NCC" or "two SEC"). Finally, the speaker emphasizes the importance of the research, highlighting the measurement of user similarity after building profile models and inquiring about the intended use of these similarity measures.
+
+============================================================
+
+### Semantic Chapter 7 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+You know, do you? Do you plan to use it to infer possible actions upon emails? If I receive email from user A, what should normally what I need to do is I need to decide what to do with that reply immediately or put it aside for awhile. The lady or something like that, right? Have you thought of doing something like that? Basically help users determine the importance or priorities of email. Something like that.
+
+**AI Summary:**
+The discussion focuses on using a system to infer possible actions based on emails. The goal is to help users determine the importance or priority of incoming email replies, deciding whether to act immediately or put them aside.
+
+============================================================
+
+### Semantic Chapter 8 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I'm not sure if I get the question correct, but I think this might help that we've realized that in an organization, experts that are hard to find. So the way we are going to use this profiling within an organization is to pick up experts from a list of people. Is it OK to come back? But how do you define experts using the similarity between the users in this case? So OK, so we don't only use the similarity, but we use the profile. So in the profile we get a list of concepts and we use those concepts to identify peak people who are experts or who know more about that cause this concepts about these concepts on the basis of the interactions they are having with a lot of people we've looked at only email, but we could possibly look at other kinds of interaction. And we could possibly wait interactions based on that. I mean, I guess I'm still not quite clear how you decide who is expert dependently concept, but I'm I think this is really interesting work. Thank you.
+
+**AI Summary:**
+The discussion focuses on identifying and utilizing experts within an organization. The proposed method involves using user profiling and similarity to identify experts. Specifically, the system uses a profile containing concepts to pinpoint individuals who are experts or possess deep knowledge about those specific concepts based on their interactions. While the initial data source examined was email, the potential for including other interaction types is also mentioned.
+
+============================================================
+
+### Semantic Chapter 9 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Thank you very much. Interesting talk indeed. I would like to make a new or say raise a concern here by bad tours for the whole area. Did the people including you ever forward about a privacy issue here? Example in Germany it's not even possible to look at emails after they have passed the certified spam filter is not allowed to even for companies. So if they do just in case or fairs in, you know an endangered situation or a dangerous situation. Say I, I know that there are, you know, some tools out there which are used in a prototypical phase just to show as a proof of concept that applying these methods. You can search for experts of topics, but you know just a second thing is, even if that would be allowed. And even if your technique is being applied, even the public, which I doubt it will ever be because of these privacy concerns. If so, let's assume then what happens?
+
+**AI Summary:**
+The speaker raises a concern regarding privacy issues, specifically asking if the participants have forwarded information about privacy concerns. They use the inability to access emails after passing the spam filter (citing a restriction in Germany) as an example. The discussion then shifts to tools used for proof-of-concept methods, questioning whether these techniques could be applied publicly or by the general public, emphasizing that such application is doubtful due to significant privacy concerns.
+
+============================================================
+
+### Semantic Chapter 10 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+For example, if I'm. Member of a cluster and I click on that onto a fellow user. You know, in my in my Department and suddenly I got. I get, you know also documents which I'm not even, you know, supposed to see in the attachments. For example, you know documents about contracts or documents about your financial issues etc. So how do you deal with that?
+
+**AI Summary:**
+A user describes a scenario where, while interacting with a fellow user within a cluster, they unexpectedly receive sensitive, unauthorized documents (such as contracts or financial records). The speaker inquires about how to handle or address this situation.
+
+============================================================
+
+### Semantic Chapter 11 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Yes, I think I should have mentioned that before, but. Basically these emails have been retrieved that have been sent to the Oak mailing list, so there is a mailing list which has been set where we're receiving these emails. But this but the mailing list isn't CC or in two, but there are other information of other people receiving these emails, so it's so we are not looking into private emails that have been sent. We're looking at the public emails within the mailing list and we're trying to use this information. We are trying to extract this information from the public emails. So that is another fact that I think if we look at personal emails, we would get much better results, but we cannot do that. So we have to work with the public emails that we have access to only and for the second point, if if I'm not sure, sorry repeat. If you look just you know, just in four parts at the emails which which are being published. On the public mailing list of a company, that's also fine, but nevertheless I've made out there.
+
+**AI Summary:**
+The team has retrieved emails sent to the Oak mailing list. However, they are restricted to using only public emails within the list, as they cannot access private emails. They acknowledge that personal emails would yield better results, but they must work with the publicly accessible emails available to them.
+
+============================================================
+
+### Semantic Chapter 12 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I mean, there are legal issues here nevertheless, so the second issue was if you identify an expert. So how do you make sure that that only parts of the contents of the interview of a profile for user will be shown to the similar in quote marks users? Now you see this is just one.
+
+**AI Summary:**
+The discussion addresses legal issues and a technical concern regarding content access. Specifically, the speaker questions how to ensure that only specific parts of a user's profile interview content are shown to similar users.
+
+============================================================
+
+### Semantic Chapter 13 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+You know what you did is you identify, but then how to process? You know how to push the relevant information in order to foster the interaction between the users in one cluster, because that also concerns of course private only, not private. Information is strong, but you know information which is not supposed to be viewable by by all users of a cluster. Yes, I think that's a very interesting point. Will be lost folks. Because I think there is a question about authentication, privacy and security within an organization. So what we're trying to do is we're trying to make this be available to users from after an authentication has occurred, but in that case we have another question. Go. Sorry. Not yet, but when we are porting it over to an organization for the long term trial, we will try to do something like that with an authentication. But then there is an interesting question there. As in do I see an expert an expert in let's say, security? But do am I allowed to know that information? Do I even want to? Do I even have the authority to know who is an expert? So I think that goes into a lot of user modeling within a security context. Just want to mention that one of the reasons Facebook has. Headquartered its privacy group in Ireland, is one of the ways I think answers to questions that they can't do that in Germany, and they do that in Ireland with German user data. Yeah, attachments to emails as part of your semantic annotation. You do OK, not yet.
+
+**AI Summary:**
+The discussion focuses on how to process and push relevant information to foster user interaction within a cluster while maintaining privacy. A major theme is the necessity of authentication and security within an organization to ensure that sensitive information is only visible to authorized users.
+
+Specific points raised include:
+*   The challenge of determining who is authorized to access specific information (e.g., determining if a user is an "expert" in a field like security).
+*   The need for robust user modeling within a security context.
+*   The role of authentication in making information available to users.
+*   A reference to Facebook's organizational structure, noting how data handling and privacy groups (e.g., Ireland vs. Germany) are managed.
+*   A mention of semantic annotation related to attachments in emails.
+
+============================================================
+
+### Semantic Chapter 14 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We do not consider that yet. You haven't OK, but that is, that is something that we can. We will probably be confused if you can refer to what Fabian presented where they they have Twitter messages. And links to that if you. If you do semantic annotation of that, you will have better profiles. You'll get far better profiles.
+
+**AI Summary:**
+The speaker cautions that certain elements are not yet considered. They warn that referring to Fabian's presented content and Twitter messages without proper handling might lead to confusion. The speaker recommends performing semantic annotation on these sources to achieve significantly better profiles.
+
+============================================================
+

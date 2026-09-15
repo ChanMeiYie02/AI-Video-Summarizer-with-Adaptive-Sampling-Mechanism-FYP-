@@ -1,0 +1,20 @@
+{
+    "id": "dswynaanb72ovgfvczir5e6u43dlzdoq",
+    "title": "Registration and Recognition for Robotics",
+    "url": "http://videolectures.net/aaai2011_konolige_registration/",
+    "info": {
+        "author": [
+            "Kurt Konolige, Artificial Intelligence Center, SRI"
+        ],
+        "published": "Sept. 28, 2011",
+        "recorded": "August 2011",
+        "category": [
+            "Top->Computer Science->Robotics"
+        ]
+    },
+    "num_segments": 37,
+    "num_sentences": 582,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 848
+}

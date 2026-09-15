@@ -1,0 +1,21 @@
+{
+    "id": "77y5ldzqiwpfa72v4k7sn52szjbdbuey",
+    "title": "CLAMS: Computational Linguistic Applications for Multimedia Services Image Archival Data",
+    "url": "http://videolectures.net/clarinannualconference2018_pustejovsky_data/",
+    "info": {
+        "author": [
+            "James Pustejovsky, Brandeis University"
+        ],
+        "published": "Jan. 14, 2019",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Humanities",
+            "Top->Social Sciences"
+        ]
+    },
+    "num_segments": 78,
+    "num_sentences": 446,
+    "num_clips_with_summary": 26,
+    "num_gt_summary_sentences": 42,
+    "ground_truth_summary_length_chars": 3836
+}

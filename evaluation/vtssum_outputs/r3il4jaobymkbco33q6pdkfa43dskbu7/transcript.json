@@ -1,0 +1,322 @@
+[
+    {
+        "text": "So you have a cigarette, and so I work at the Max Planck to like some extent on applications of machine learning to neuroscience. So for instance, some of the problems we have is such as class. Robert tells you. I mean when you get brain signals, there are many different components due to many different sources, some of which may be interference and some of which are important. You want to separate the important ones. Another problem we encounter is that if you record. From electrodes you get many neurons. They all have different spikes at different times, and you might want to know like which neurons are making what spikes, and what makes them spike. So these are other applications that you can use machine learning for. These will motivate a bit. Some of the methods I'll talk about today, so I won't speak about the details of the neuroscience.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Of things OK, so the talk is going to have three components. The first one is my view of independent component analysis, so I know that class Robert has talked to a bit about this already. I'll be giving a view from a slightly different direction. So that's going to then motivate the next part of the talk, which is kernel independence measures. This is one of the things I work on. So this is basically the sort of philosophy or underlying thing is that given some number of pairs of random variables, can you determine if the distributions that generated this random variables are independent or dependent? So one obvious application of this is ICA, but general independence test has much wider implications and just source separation, so I'll talk a bit about that. The last thing I'll go over is this thing called the two sample problem, which is that you get 2 samples and you want to know if they are from the same distribution or not. And yeah, this is a problem which is very interesting if you've got, for instance the neural spiking that I talked about. And if you want to work out if it's the same neuron which is generating the spikes that you measured on different days, or if it's a different one.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Yep. Is that better and everyone read it OK good? OK, so just some notational conventions. I write random variables in a sensory front, and I will overload the notation for distributions and densities, so a distribution and the density will be written as a capital San serif P. And also I'm using covariance matrices, which I'm sure you know what they are.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Tie. Right then, so OK. First I'll talk about ICA in a sort of.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "No sense. So this is just a page of notation, so you know what I say is you have independent sources. You mix them linearly with the matrix, which I'm going to call A and then you make some observations. And then what you're trying to do is to estimate the unmixing matrix. Now the important sort of way to think of ICA is that you're really only caring about the matrix, and so you don't want to try and workout what your sources are. All you want to say is that they are independent and you want to estimate the matrix. You don't want to estimate anything else about your sources. So what I'm going to do first is to talk about a very simple case where you actually know what your sources should look like. And then you want to just solve for the matrix, and I'm going to sort of use that as a springboard to talk about more.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "ICA methods? So this is when you have a sample because of course you don't have the true densities in real life, so that's my notation for this.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "And examples classes talk to you about OK, so here is toy example of ICA just to sort of get everyone familiar with the diagrams that I will be using. So the first source is uniform. It has a distribution which I've drawn a sample from. It's flat, the second one is bimodal it.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "As to peaks. And when you multiply this by a matrix, this is the kind of transform that you're making, so you can have some share. You can have some rotation you can sort of stretch it in the X&Y axis. And you're trying to work out what the matrix is that made this transformation.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So, given that you actually know what the source densities look like, there are actually some respects in which you can't recover the matrix that combine them. And I'm going to just talk about some of these examples now. So in the first example, you know that both have a probability density functions are Gaussian. And you're mixing them this time with the matrix that rotates them. And even though you know what the sources look like, you cannot recover this rotation.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Matrix. So here's basically an illustration of that. You have your input sources on the left, which I'm always going to draw in red, and then you're rotating them and you can see that you've just got a sphere and you're rotating this randomly, but there's no way, even though you know your sources, that you can recover the matrix that makes them.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So here's another example here. You have two sources that are the same. And you are again rotating them, so by 45 degrees you can recover the well. You know that the sources are not independent and so you can make some effort to recover them by rotating them backwards. But when these sources are rotating by 90 degrees, when you swap the source order, of course you can't know that you've done that because the sources are the same. So again, even though you know your sources, you can't recover them.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "OK, the final example is if your sources have a symmetric distribution around the origin and then you just flip them so your mixing matrix is a flip. In that case, again, you're not able to recover this matrix, so you know your sources, but this is an uncertainty in your recovering of them. So that's just a summary of these things. The other thing I mean you can't separate signals to the everywhere constant, because this is a meaningless.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Thing to do? The Gaussian case I talked about. Another case is that if this is sort of a point that gets made later, if you only care if your signals are independent, you can't recover their amplitude because you don't know in a sense how big the signals were to start with, as compared with how big they are made by the matrix, and so if you're saying only that you want independent sources, you can't recover how much the sources made each. Sorry, the mixing matrix made individual sources bigger or smaller.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "OK, so the first step of ICA is decorrelation, so I know clouds.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Commit about this. So I won't sort of talk too much, but yeah, the idea is that you multiply the sources by a matrix. Which is going to make them.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Have zero correlation. So to show what this means, here's an example. You've mixed the sources with a completely random matrix. That's the central picture. And then on the right hand side you can see the source is decorrelated, although it's a bit dim. So basically what this means is that having the correlated the source is all you need to do is to rotate them to recover them. So the decorrelation is recovering all of the mixing matrix except for rotation.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Now just a quick drawback of doing the correlation and rotation separately, is that in fact you don't get as good an estimate of the unmixing matrix as you would get where you to solve for it, like in its entirity. So solving for the whole matrix is much harder, but splitting it up in this way is a way of saying that you think that getting the decorrelation right is much more important than getting the remaining part of the matrix right, and so if you sort of go through and do the analysis, you can find that the precision with which you can recover the mixing matrix is less. If you do it in two steps and if you do it in one. Generally this doesn't matter, but it can matter. For instance, for sources which have unbounded variants and things like that.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "OK, so what's left is to recover the rotation. And so here I've sort of enlarged the pictures that you saw earlier.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So rotation matrices look like this. So in two dimensions, the rotation matrix is parameterized by only one parameter, which is this angle of rotation. For higher dimensions, you can generalize this so you can have rotations about the XY and Z axis, which I've written there, and so on.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "So let's again look at the case where we know what our source density looks like. So what I say. What I've drawn up in the top RAM, you have an estimate B of your unmixing matrix. And you have P hat of S, which is your source density. So that's what you believe your source density to be. And The thing is that here you your source density model is correct, but your unmixing matrix you don't know you're trying to estimate it. Now the estimated density of your observation matrix given your source model and given your estimate B is given by this central expression, there P hat of X. Which is basically yeah you can. You can find the expression for that as a function of B and it's a function of the source densities. Now to recover B you can maximize the expected log likelihood, which is the expectation of the log of your estimated density function. And when, yeah, when you sort of have to estimate this with a sample, you get the bottom expression there where you can see the expectation of the log is now computed empirically on the basis of the sample that you observed. But bear in mind that the source Den.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "City is correct here. So here the sources are both mixtures of Gaussians. What you do in this case is that you rotate them by 45 degrees and you get the central picture there. And on the right hand side, I've written the log. Likelihood is a function of the angle of rotation, so the red bar in the center is the correct answer, and then the log likelihood is is the blue curve and you can see that the log likelihood is maximized when your unmixing matrix has the correct angle.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Say yeah, this is. Now where this is wrong and where this also creates problems in real ICA is if your model is incorrect. So imagine your input sources to Laplace densities, so that's sort of very heavy tailed densities, which I've drawn on the left hand side and you rotate them by 45 degrees, but you use the same model that I used before, so these mixtures of Gaussians. Now you can see that the best rotation that aligns these samples with the model is in fact one that doesn't change it at all from 45 degrees, because that's the point at which the density of the mixtures best overlaps the model. So using this incorrect model for this source combination is going to give you the worst possible answer, which is that it's going to give you the most independent sources rather than the least. So this is a risk you do when you're using a model which isn't correct.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "OK, so now I'm going to talk about ICA as it's done in practice and this is using contrast function.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So, just to recap on something I talked about earlier, you remember that you can't recover the sources for certain operations because this is sort of inherent ambiguity. So if you swap the source ordering, for instance, you don't necessarily recover them. If you swap the sign, you don't necessarily recover, and if you re scale likewise. So basically what ICA should do is not to try to recover this source matrix exactly, but only up to these ambiguities.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "And So what I what people define then, is something called a contrast function, which is 0 if and only if the recovered sources are mutually independent. So this means that it doesn't care about these ambiguities in the mixing matrix, it only cares about getting independent sources, and the sources recovered will still be independent despite these ambiguities. So this is sort of ideal of a contrast function, but in practice what people really do is that they have something which they want to be the smallest when the random variables as independent as possible, so it's not necessarily going to be 0 and the random variables are not necessarily going to be independent, but people would like them to be, so it's a sort of in practice. Yeah, it's not this nice idea of being 0 independence. And the other thing is that maximum likelihood with the correct density model we're going to see is going to give you the best possible contrast that you can get.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "OK, so I'm going to talk now about how maximum likelihood with the correct densities gives you a contrast function. So you can decompose the maximum likelihood into a sum of two terms, a constant term and a KL divergent between the density of the unmixed sources. So this is this P of BX up there, and the model density of your sources. Since this is the P hat of S. So the KL divergent is something which is 0 if and only if the two densities are the same. So this is something which is going to be 0 when you're unmixing by multiplying the observations by your estimated matrix. B is equal to the original sources. So obviously when your density model is correct, that's exactly the definition of a contrast function, so.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Now another one which is very nice thing in theory is the mutual information. So this is going to be equal to 0 if and only if the joint density has the same as the product of the marginal densities. So this is the same as saying it's zero if and only if the random variables are independent. Now people don't use this in ICA because it's basically hard to estimate empirically. So in 2004 someone actually did a paper on this where they used a very clever method to estimate mutual information. But before that it had kind of been.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Ignored. So you can actually simplify this expression in the following way. You have a sum of three terms, the sum of the entropies of the unmixed source is the entropy of the observations, which is constant with respect to the unmixing matrix, so you can ignore it analog determinant term, which you can ignore as well because it's zero when you're when you're having a rotation matrix. So it's equal to 1 rather. So this means that as far as optimizing over the unmixing matrix is concerned, you only need to care about the sum of the entropies. And entropies are easier to estimate the mutual information, but actually I mean not. It's still quite tricky. So rather than using entropies, what people do instead is to use the expectation of some nonlinear function of the observations so this nonlinear function in an ideal world would be the log of the density, but since density estimation is a tough problem, you use some other nonlinear function.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "So this is an example of some nonlinear functions that people use, so there's infomax, which is sort of heuristic. And fast ICA as well. I mean generally what these functions try to do is to sort of describe in some cartoon sort of term the properties that you care about. So if for instance you cared about non gaussianity, you could expand the densities about the Gaussian using the gram shalya expansion and then you could use a low order approximation to this and then you could say that this captures the properties that you care about and that all of these other sort of properties are less.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Interesting. So we're going to see shortly how this works in practice. So first of all I need to define something called kurtosis, which is a statistic which describes certain properties of random variables. So basically it's sort of describing in a way how spread out the random variables are. So Super Gaussian source has very heavy tails and so it's sort of very spread out and a sub Gaussian source is something that's more compact and more concentrated about the origin. And some contrast functions are described explicitly in terms of the kurtosis. So this bottom one there the Jade type contrast is defined in this respect. And others implicitly need the kurtosis to be big or to.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "A small so I've just given an example now of two sources and then mixed versions for Super Gaussian for sub Gaussian. So the uniform source density is a sub Gaussian example and the Super Gaussian one is much more heavy tailed, so you can see it's got a lot of sort of outlier.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "OK, now here is just applying these contrast functions that I defined to sources which are both Super Gaussian and sub Gaussian. And you can remember that these contrast function should be smallest when you get the correct answer. So here you can see in fact that for Jade, when the sources are Super Gaussian, the contrast is biggest. When you get the correct answer. And Conversely, the infomax an fast ICA contrast the biggest at sub Gaussian sources. So this example is quite simple. You could say, well, you can just make a test if it's super Gaussian or sub Gaussian. If it's yeah, if it's super Gaussian, you just flip Jade around. If it's sub Gaussian, you just flip IMAX and fast I see around. But I mean this is this is sort of a quite simple example and in practice you can get a much more subtle difference between the true characteristics of the sources.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "What you're looking for? So this means that if you're using a fixed nonlinear function and you're trying to take the expectation of this function, and say that this is a bit like the entropy, then you will be able to find sources that trick that. And this kurtosis example is 1 example. But there are others as well. So if you're using an algorithm on the Internet, you have to be careful with it. And yeah, Klaus also talked about some tests of how good a particular nonlinear function is in estimating. Like yeah, the independent sources.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "OK, so if your sources are not IID, then there's another trick you can do which is on this slide. So basically, if your sources are like music sources for instance, then they depend on their values in the past, so sound wave or something is not going to be independent at each time instant, but the value of the signal is going to depend very heavily on the values it had at previous times. So this means that. When you're separating sources that have this property, you can do much better than to just make them independent at any given time instance, which is that you can actually say that the source one source at any particular time should be independent of all the other sources at every possible time in the past. So if you have a criterion which measures independence, you can measure it not like between the sources, not only at the present, but also between one source and it's past values. You basically have, like many, many more constraints than you would have and you should be able to get a better solution like that. So I'm going to give an example here where we just use correlation instead of independent. So it's just a sort of proxy measure for independence. And you can also define the correlation here. Between a signal and it's past values. So this is the correlation of like a vector of sources at time T and the vector of these sources. Yep. T rump. Yes, sorry, that's a chief. Another tell. By the way, yeah, so that means that if you have station resources, it's not going to change this covariance matrix when you measure it at different times, but only the delay. With respect to which you measure, it is important.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "OK, so this now can give you a nice optimization problem. So this top line here says that you should have no correlation with the signal and itself at any at any given time, and so basically you're multiplying. Your observations by the truth and mixing matrix and then you're getting something that should look like a diagonal, so no signal should be correlated with any other. But you can also do this with this time delayed correlation, so you multiply it with the same true and mixing matrix, and you should also get something which is diagonal. So a signal should only be correlated with itself at past times and not with the other signals. So this then gives you an optimization problem with respect to one matrix, which you can just solve. So you do a bit of algebra and you get this expression, which is a closed form solution for the unmixing matrix. Now, if you have multiple time delays, then there's a procedure called joint diagonalization and that allows you again to recover your sources in this case, and so you can sort of jointly solve for all of the time delayed.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Equations. OK, so this was.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "The quick introduction to ICA and now I'm going to talk about kernel independence measures. So these are basically kernel functions of your variables, which is zero only at independent. So in this sense there are contrast function as is used in ICA, so they're more than decorrelation. They take into account high order dependence as ICA, as mutual information does. Um? Now, a great advantage of these kernel independence measures, which we're going to see is that they make sensible assumptions about smoothness. So there's an underlying density function which is smooth and the kernel functions will make certain assumptions about how smooth these densities are. Tell you what this means in practice, but it basically means that they're very much more robust than than some other methods. Um, so applications are independent component analysis. Someone has used it for feature selection, so finding innocence features that are important for making predictions. And I've used it also for finding dependence detection in the visual cortex. So when you take an MRI scan of the visual cortex, you have a certain amount of activity going on and you want to know if activity in different parts is independent or dependent. So if there's some sort of Co processing going on.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "OK, so the particular kernel independence test I'll talk about is called the constraint covariance or cocoa. And it has the three properties which I've described here. It's an independence measure for universal kernels. Now I'll say what it means to say kernel is universal shortly. And I will also talk about how to make a statistical test of independence using the constraint covariance. So this is a different application to ICA. You just want to test if variables are independent or dependent. I'll talk about where dependence is hard to detect, and this will also be where the smoothness assumption comes in, and I'll also talk about how to choose the kernel because you have, like if you're using a Gaussian kernel, you have a kernel size and you have to choose that. Anne. And yeah, I mean the great advantage of this test and this is like oh, good independent tests have. This property is set as your sample size increases, the chance that your test is wrong is going to drop very fast. And I'll also talk about I've used this method in ICA and I'll say where it's good.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "I see as well. OK, so let's just look at what it means to detect dependence. So first I'll talk only about second order dependence. So you get these pairs of points which have drawn here, so you get X1 and Y1 together. They're in different spaces. These spaces can be high dimensional and you get X2 and Y2 and so on. And you want to know is there any dependence between the distribution of X and the distribution of why? So are X&Y related in?",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Anyway. So one way to do this, which is a second order method, is that you basically take the interview, choose two directions, One Direction in the X space and one in the white space. And you take the inner product of every point in the X space with its direction and every point every point in the white space with its direction and so then you get 2 vectors which are as long as your sample size. And then you basically take the covariance between these vectors. So you take the inner products. Now if this is 0 for every pair of directions that you can choose, then there's no second order dependence between the X and the way, so there's no correlation between the X and the way. Yeah, in the.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Case. So how do you generalize this to general measures of dependence as opposed to just second order? So what you can do then is to map your points into some infinite dimensional space. So this is the arcade chess. So this mapping I just remind you it has like it's infinitely long and it's got basically nonlinear functions of your input. So the higher the index, the more rough like the less smooth these nonlinear functions are, and it's also got these scaling factors in front of these nonlinear functions, and so as the index of the scaling function gets higher, these also becomes smaller. So you basically emphasize less and less the rougher and rougher functions. And so now you can do exactly as I described in the previous slide, so you can choose two directions in these infinite dimension feature spaces. You can take the inner product of each of the points with these infinite dimensional features, and you can obtain the covariance between these inner products and this is going to be 0 only at independence as modular. Some property of these. Um? Which is the universality. So just a thing to pay attention to. First, I've written here the same nonlinear function for the X and the Y, but they don't have to be the same. There can be different. The other thing is that I've divided here by the arcade just norms of these projection vectors. So because we're in an arc AHS season, our functions and these are KHS norms are roughness penalties, So what you're saying here is that you want to find basically functions of your random variables which are not too rough, which have high covariance, and This is why you need a roughness penalty. If you allowed your functions to be arbitrarily rough, then you could make the covariance between them. Arbitrarily big, so you have to have some sort of constraint on these functions, and so that's why you have this.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "OK, so now if you want to compute this in practice, you need to use the kernel trick. So this basically takes this infinite dimensional problem and makes it reasonable intractable. So this is a lot like what you see in kernel PCA. Here, I've abused notation a bit. The problem on the previous slide is equivalent to this problem, where these are the infinite dimensional projections and this is an infinite dimensional covariance matrix between these enormous vectors. Now when you have a finite sample, you have this empirical estimate of this infinite dimensional covariance.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "You also can write your directions that you project on as linear combinations of the map, sample points, and the reason for this is that any component orthogonal to them would just vanish when you take the inner products on this slide. In that top equation. Now that you have. OK, so you then OK. I'm defining my kernel function now as being the inner product between the sample points.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "And then doing this allows you to write the equation from a couple of slides back entirely in terms of these matrices of inner products. So this means that now you are able to solve it. I mean, this is this standard approach.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "OK, so the constrained covariance is 0 if and only if the random variables are independent. There are actually other methods that have this property as well which are quite similar to this, so I should just mention them. So here I've taken a covariance. You could also take a correlation. There are also some other generalizations which are bounds on the mutual information, which I won't go into here, but they are also related to either the covariance or the correlation between these infinite dimensional vectors.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "OK, so now I mentioned universality several times. So why is it that the kernel needs to be universal? So the best way to say this is to describe what happens when it isn't. So here is a kernel that isn't universal. It's explained kernel, and here I've taken the spectrum of this kernel and you can see this spectrum has some points at which it's 0. So what this means is that if you define. Um? OK, so you remember a few slides back. We had these infinitely infinite dimensional vectors. In the feature space. So basically, if your kernel has some zeros, it means that it's effectively crossing out certain points in these infinite dimensional vectors, so it's the same as saying that it's going to penalize frequencies at this over functions at these frequently frequencies infinitely much. So if your density. Has components at these frequencies. Then you're going to have a lot of trouble. So if you're penalizing these frequencies infinitely much, then these functions here are trying in some sense to adapt to a density which has very strong components at a point where there infinitely penalized. So they're basically not going to be able to detect the the dependence encoded at these frequencies.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "OK, so now I'll talk about him doing statistical tests of independence. Using this constraint covariance. So for this I'll just give a quick overview of statistical testing terminology. So you have a space of probability distributions which you partition into two subsets, which is this calligraphic P nought and its complement? And you have some probability measure which is taken from somewhere in this space. Now what you want to test is the hypothesis of whether your PZ is in calligraphic peanut or it isn't. So the null hypothesis is we define it as being that PZ is in peanut and the alternative hypothesis is that it isn't. Now you don't have access to PZ. In practice, what you have is a sample from it. And what you want to do then is to say that if the sample is in some particular region, you will reject H. Note, you will say that PZ is not in P0. And if it's outside this rejection region in some acceptance region, then you accept that the null hypothesis is true. So I mean, this is quite abstract, so in practice, what you need to do is you have to compute some function of the sample, which is called a test statistic. So usually this Maps to the real line, but it doesn't have to. And then you have basically intervals on the real line which this test statistic falls into, and some of these intervals of the rejection region and the remainder of the acceptance region. So just to give a concrete example, if you compute a sample mean. Then you might want to say is this sample mean positive or not? So it's sorry is the underlying mean that generated this sample mean positive or not? So to test this, what you would do is you would say, well, is the sample mean not too far from zero in the positive direction, and if it's if it's sort of like, you know if it's close to 0 or negative then you would say Yep, I believe that the true mean is not bigger than 0. And if it's very, very positive you say, well, then it's very unlikely that the true mean is less than.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Here. OK, so now we want to say. I mean you can make any number of tests and you want to say how good a particular test is. So there are two kinds of errors that a test can make, so one is a Type 1 error, which is you reject the null hypothesis even though it's true. And then there's the Type 2 error which you accept the null hypothesis, even though it's false. So it's very. Messy to remember which is which, but nonetheless. So from this you can describe the power of the test. Which is the probability under the true distribution that the sample is in the rejection region. So what this means is that you want the power to be close to zero when the null hypothesis is true, because that means that you want it to be very unlikely when the null hypothesis is true that you saw your sample goes in the rejection region and you reject the null hypothesis, and likewise it should be close to one when you're in the complement of peanuts. So when you should reject the null hypothesis, the probability of rejecting it for a particular sample should be high. Now the level of the test is something that here, as a user have to specify. So what this is is an upper bound on the probability of making a Type 1 error. So what you're going to do is, you're going to say, well, my test should have this upper bound, and then the quality of the test is then innocence determined by how bad your Type 2 error can be. Dependent on this upper bound. So I mean, this is, I mean the upper bound is something you specify, but it doesn't let you cheat. So if you're saying if the mean if you're testing that the mean is less than or equal to 0, you could say, Oh well, I'll say it's always true, and then my Alpha is going to be 0. But of course, then your Type 2 error is going to be dreadful. It's going to be 100, so yeah.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "OK, so now I'm going to talk about specifically testing independence. And one difficulty in testing independence is in fact that no test, no matter how good, is going to do it perfectly. For a finite sample size. And I'm just going to give a quick example of this. So here you've got your total set of probability distributions over a particular vector, and you partition this into two sets. So one set is the set of all possible independent random variables and the other set is all possible dependent ones. Now what you can say now is my test statistic is a very simple one. It's just some test. We don't care what it looks like, but it's going to return one when you're dependent and zero when you're independent. So very, very simple to make a test with this statistic. It's just is it one or is it 0? And we don't care about how we got this answer. We just say, like magically, we got the best possible tests that can give us this answer. And what's more, you say that you have this upper bound? This is your design which is Alpha on the Type 1 error. Now you can prove that for a finite sample size there is. There exists some very very tricky distribution. Which gives you a Type 2 error greater than one minus Alpha. So if you say I want my test to have a probability of type 1 error of 5%, then for any finite sample there's going to be a really tricky distribution that will give you a 95% type 2 error, no matter how good your test is. Um? So the way I can tell you the way you can construct this, this very bad example is very simple, so you have your independent distribution. And then you have independent one, which is a mixture of this independent guy and then some dependant one with very very small probability. So what this means is that if you take some number of samples from the dependent one, it's very unlikely that you'll ever see the independent distribution. You need a huge number of samples before you see it, and so that means that for, like for any sort of large sample size, you can make the mixture weight of the dependent component so small that you're just basically never going to see it for the number of samples that you drew, and so your Type 2 error is going to be as large as you want it to.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "OK, so this is a very like that. Example was a very simple example of a hard to detect dependence. So now I'm going to talk about a bit of a tougher example, which is where like it's going to describe why you need to make good smoothness assumptions. If you're going to do a test. So the joint density function I'm going to use for this example is a kind of weird one. So it's a constant term plus a scaled product of these nonlinear functions. So these are the same nonlinear functions that we saw earlier for the kernels. So and then for the infinite dimensional OK, just so it has the same property as this coefficient gets bigger, these functions get rougher and rougher, so you can imagine a density that's getting rougher and rougher as your coefficients as the L term gets larger. Now The thing is that as you increase the L value, what this is going to do is to make the constraint covariance arbitrarily small. Now, the reason for this is these norms in the denominator. So as this gets rougher these functions are going to try and match the density which is generating the random variables. But if the density is very rough then these functions will be also very nonsmooth. This denominator is going to become very large, and this quantity is going to become very small. And the bigger the L said, the rougher the density. The smaller the constrained covariance will be.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "Um? Now just to give you an example, I mean here I've used is my nonlinear function. This product of sinusoids. And up here you have a case where this L is very small. You have a smooth density and you can see here just from this 500 sample that the X&Y are dependent. Because yeah, if X has values around here, then yeah. I mean you can sort of see that the density is changing, whereas in this case when you have a very rough density from 500 samples, you can't even see that it's not just a uniform density and a uniform density over X&Y is an independent density. So in fact, what you want is that for your test statistic not to tell you when it only sees 500 samples. Yes, I'm really sure that it was this density, so your test statistic has to be smaller when the density is rougher. Otherwise it's going to mislead you. It's going to tell you that it found some extremely difficult dependence, which you would need millions of samples to detect reliably, and so This is why having this function norm penalization gives you a test which is robust against making this.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Mistake. And so this is how it works in practice. I've got rougher and rougher densities. This blue line here is the constraint covariance, and this red line is the constraint covariance for this sample size when the density is uniform and you can see that for these last two. The constraint covariance is statistically indistinguishable from the value you would get with the uniform density. So what this means is that you don't have enough samples at that point to detect that the random variables are dependent.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "OK, so now I've described the constraint events. I'll just talk about how you're going to get a test of dependence from this statistic so you know that it's zero at independence, and you know that it's going to be positive when it's not independent. So what you want to do is to do a test that the constraint covariance is going to be 0 or not zero or positive basically. So what you can prove, and I won't talk about how this is done, is that the empirical constraint covariance is going to be converging quite fast to the population one. So with high probability as you get more samples, the empirical estimate of the constraint covariance is going to be close to the population one, and the rate at which it gets closer is this term. Here, one on Route 10. So what you want to do is to then say is the constraint covariance bigger? Then this term. This term has two components of interest, so one is the Alpha. This is the probability of the random variables being independent, but you believe that their dependent and so this you have to control. You have to tell it that. And the other thing is 1 on Route N. So this is saying that as you get more samples this threshold is getting smaller and so your test is just going to say is the empirical constraint covariance bigger than this threshold? If it is, then you say they're dependent. If it isn't, you say they are independent and this will give you a test of size Alpha. So that's yeah, just reminding you what Alpha means, yeah? And this is this kind of has an interesting sort of philosophical implication, because what it's saying also is that as you get more samples for whatever else you choose, your Type 2 error is going to drop to zero at a fast rate at rate one on route end. So this is kind of weird because you can also show like independently that any regression method even like one that gets an arbitrarily good error for infinite data, is going to can learn this regression very, very slowly, so you can find you can invent a very tricky regression problem which is going to make even the best possible algorithm learn very, very slowly. But what this result is saying is that it can detect that random variables are dependent very fast. So your your Type 2 error is dropping very fast. So what this means is that even though you can't necessarily do regression between the random variables, as you get more data, you can nonetheless detect quite quickly as you get more data that there is a dependence, but.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "In them. So that's quite weird. OK, so. On a sort of more practical note, choosing the kernel size. So I've defined this function, which is going to in fact change as the kernel size changes. And you want to know effectively like what kernel size to choose. So I'll just describe now how to do this so. As a reminder, here's the arcade. Just normal function, and so here you've got these terms here, which are the Fourier coefficients of the kernel. And So what this means is that for rougher functions, so when these components at large I a big you're going to penalize them more because these inverses of the Fourier transform of the kernel are going to grow. So what this means in a sort of concrete sense is given by this drawing here. So I've drawn two kernels here. One is a very wide kernel and one is a very narrow kernel. OK, so you just changing the kernel size. Now the Fourier transform of these have the exact opposite property. The narrow kernel has a very broad Fourier transform because it's sharp, so it has high frequency components and the thick kernel has a very narrow Fourier transform because it only needs components at low frequencies. So what this means is that when you use an arrow kernel, you're going to penalize rough functions less because the inverse of this is going to grow more slowly than you will if you use a very broad Colonel. So a very broad kernel gives you a very large penalty for, uh, functions. So this might lead you to think, well, OK, if I can make. Um? If I can make rough functions not penalized at all. Then I could make my constrained covariance arbitrarily big. Because you could just make the kernel smaller and smaller. You can make the function norms in the denominator less and less penalized, and yeah.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "But in fact this is not true. And the reason is because the constraint covariance is computed on the basis of a sample. So what this means is that as you drop the kernel size, your constraint covariance is increasing, but only up to a point. And at this point even the samples from a space like your examples, so your samples from any one variable and no longer even similar to themselves, and so then it's going to drop again. So basically what this means is that your Alpha your upper bound on the Type 1 error is something that you set that to minimize the Type 2 error. For this Alpha you should choose your kernel size that maximizes the constraint covariance. So. If you maximize the constraint covariance, then basically that means that if for the if you optimize your kernel size to make cocoa as big as possible, and even then it doesn't cross the threshold for dependence, then you're absolutely sure that no dependence exists between them. So it's in a sense somewhere sensitive tests that you can get. Um?",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "In that respect, yeah. OK, so the other application of this would be independent component analysis, so you've got a contrast function. And yeah, it makes sense to do ICA with it, so this one. It doesn't have the tricky properties that you get. Yeah, it doesn't have the tricky properties you have with the fixed contrast functions. And the reason being that. Yeah, you basically, these functions are adapting to the density and so you can't sort of create a density which is in a sense contradicting the nonlinearity that you've chosen to unmixed signals. So in practice I'll just a couple of notes on performance, the kernel methods, and I think a lot of the modern methods, like the ones using like true estimates of mutual information. The one is there's another one using true estimates of entropy, so these at the moment are still too slow for large scale problems, so if you've got more than around 16 sources then you're in trouble. The kernel methods specifically have better resistance to outliers than any other method that I've tested, so this is an advantage. And the other thing is that source code ptosis doesn't affect performance. So you saw that a lot of the classical methods are. Nonlinearity is a very sensitive to kurtosis and this isn't true of the kernel methods and a lot of modern methods as well.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "So I'll just show you what I mean. So here this is an experiment that I did. Hey, this is a performance of performance measure of how accurately you mix C samples, so it said divergents measure between the true mixing matrix in your estimate of it. And here I've adjusted the kurtosis of the sources. So I've got here 2 classical methods when is fast ICA and when is Jade and you can see that both of them in the vicinity of zero kurtosis very badly. So these fixed nonlinear functions. When you're getting close to 0 kurtosis are going to give you a lot of trouble. And here this bottom line here is all of these modern methods, so some of them are kernel methods, some of them are other methods which adapt to the sources and you can see that they basically don't care at all about the kurtosis. So this is basically the advantage of using. More sophisticated method that depends on the source densities rather than just fixing your nonlinearity and hoping that the source densities conform.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "To that. OK, this experiment now is outlier resistance, so don't worry bout this graph. This graph is basically the measure of divergents. Again, this is the number of outliers. So what you're doing is that you mix your sources and then you add some random outliers to this mixture. And here is fast ICA which is terrible. Here are some other modern methods that use estimates of the mutual information or use estimates of the entropy, and these are the kernel methods and the kernel methods. You can see much less sensitive than other methods that we can compare with.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "OK, so I'm going to talk now about the two sample problem.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "So this is a completely different angle to testing independence. Although yeah, there are some similarities to some of the techniques we are going to use when we compared to kernel ICA. So the two sample problem is basically you are given two samples and you want to test if they come from the same distribution or a different distribution. So the example I gave earlier was the spike example you want to test if the spikes you measured on different days come from the same neuron or from a different one. So you want to know if you can aggregate the data that you collected over these two days or not. Another case is speaker identification. So you have basically somebody who talks a bit. You get samples from this speech and then you have some sort of database of where he's still previously and you want to know if it's the same person or not. Another example is comparing paintings. You take patches from images and then you sort of use that as a way of modeling particular painter style, and then you have another painting. You take patches from that you want to know if it's the same paint or not.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "So the test statistic we're going to use for this problem is something called the maximum mean discrepancy. Again, we need our arcade just to be universal, and that's for reasons kind of similar to why we needed it for independence testing. And this is our definition. So you basically you take the supremum of all functions with unit norm. Of the difference of the expectations of these functions. So what you're trying to do is, you're trying to find a function which in a sense encodes the difference between the density that generated the X and the density that generated the way. And if whatever function you choose, you can't get this to be different then the density that generated these two is going to be the same. So this is the sort of idea.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "Behind it. OK, so now I'm going to talk about how to compute this with kernels, so there's a subtlety here, like when I talked about covariance. In fact, you have to be a bit careful when you're defining these infinite dimensional covariance matrices, so there it's a bit messy, but here I'll just describe what's going on in a bit more detail. So what you want to know is how do you define here? You have a mapping of some function, some random variable to an arc ahs and you want to say what does it mean to define the mean of this infinite dimensional mapping? Like what is the meaning of this mapping in the arc HS? So what it is? I mean, you need to know that because you want to say well, what do I do when I take an inner product of a function in the dark Ages with them in? And what we can do is to define the mean basically as being the inner product, the expectation of the inner product of this mapping with. Some function and so basically it's defined the mean element in the arc. HS is defined such that when you take an inner product with another element in the RKHS, you get the expectation of the function of that element. So, but nonetheless it's some infinite dimensional vector. It just happens to be the one that has this property. So the other trick I'm going to use this one. If you take the norm of a vector in the RKHS, that's the same as taking the biggest function in the unit ball and taking the inner product of that function with the vector.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "OK, so now we can define this maximum mean discrepancy in terms of kernels using the two things on that last slide. So first of all you can define this difference in the expectations of X / Y as the inner product of an arc HS function with these mean elements that we've defined. OK, that's by the definition of the mean elements. OK, now this is equal to the norm. By this trick we used to define the norm. You have a square here because that's from there. The norm is the inner product of something with itself when it's squared. And now you've got inner products, so you can use the kernel trick, and that's what we've done down here. Now the subtlety here is that you've got here at X&X Dash. So what you have to do in fact is make an independent copy of the X so that you can do this, because otherwise you would get some coupling between the things if they were the same. So this is just something you need to bear in mind.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "And where it causes complications is when you're making an empirical estimate. And So what happens if you get IID samples from PX&PY? To sort of get an empirical version of this independent copy trick what you need to do is take the sum only over those random variables with different indices only over the sample points. Sorry with different indices. So what you're doing is you've got your sample X which has endpoints and you take the sum only over the dissimilar ones, and then there's M * N -- 1 of those.",
+        "start": 1827.0,
+        "end": 1856.0
+    }
+]

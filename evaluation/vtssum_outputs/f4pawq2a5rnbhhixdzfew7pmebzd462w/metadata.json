@@ -1,0 +1,20 @@
+{
+    "id": "f4pawq2a5rnbhhixdzfew7pmebzd462w",
+    "title": "Science, Models and Theories",
+    "url": "http://videolectures.net/sscs06_bullock_smt/",
+    "info": {
+        "author": [
+            "Seth Bullock, University of Southampton"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "March 2006",
+        "category": [
+            "Top->Science->Complexity Science"
+        ]
+    },
+    "num_segments": 13,
+    "num_sentences": 396,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 2783
+}

@@ -1,0 +1,20 @@
+{
+    "id": "cosaxqs6wukmfiry7h5xixpo2o5aiico",
+    "title": "Progressive myoclonus epilepsies – on the way to precision medicine?",
+    "url": "http://videolectures.net/kolokviji_lehesjoki_myoclonus_epilepsies/",
+    "info": {
+        "author": [
+            "Anna-Elina Lehesjoki, Neuroscience Center (NC), University of Helsinki"
+        ],
+        "published": "Sept. 22, 2017",
+        "recorded": "September 2017",
+        "category": [
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 66,
+    "num_sentences": 502,
+    "num_clips_with_summary": 25,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 6243
+}

@@ -1,0 +1,20 @@
+{
+    "id": "yyqg4dkxoltmtmlfochqymoxz5lka7g7",
+    "title": "A Worst-Case Optimal Join Algorithm for SPARQL",
+    "url": "http://videolectures.net/iswc2019_soto_join_algorithm/",
+    "info": {
+        "author": [
+            "Adrián Soto, Pontificia Universidad Católica de Chile"
+        ],
+        "published": "Dec. 10, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 74,
+    "num_sentences": 194,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 593
+}

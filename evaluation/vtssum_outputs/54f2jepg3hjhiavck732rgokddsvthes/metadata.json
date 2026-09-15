@@ -1,0 +1,20 @@
+{
+    "id": "54f2jepg3hjhiavck732rgokddsvthes",
+    "title": "3D Morphable Model Construction for Robust Ear and Face Recognition",
+    "url": "http://videolectures.net/cvpr2010_bustard_3dmm/",
+    "info": {
+        "author": [
+            "John David Bustard, School of Electronics and Computer Science, University of Southampton"
+        ],
+        "published": "July 19, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Computer Vision->Face & Gesture Analysis"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 86,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 220
+}

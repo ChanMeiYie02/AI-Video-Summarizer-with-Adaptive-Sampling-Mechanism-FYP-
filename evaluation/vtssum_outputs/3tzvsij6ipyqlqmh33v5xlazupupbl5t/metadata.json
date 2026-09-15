@@ -1,0 +1,22 @@
+{
+    "id": "3tzvsij6ipyqlqmh33v5xlazupupbl5t",
+    "title": "Neural Networks",
+    "url": "http://videolectures.net/deeplearning2016_larochelle_neural_networks/",
+    "info": {
+        "author": [
+            "Hugo Larochelle, Twitter, Inc."
+        ],
+        "published": "Aug. 23, 2016",
+        "recorded": "August 2016",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 65,
+    "num_sentences": 728,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 4586
+}

@@ -1,0 +1,717 @@
+[
+    {
+        "text": "Two things. First of all, thank you for inviting me. It's ironic about to be in a in a commentary, optimization workshop and video applications Guy, but I guess I'm the applications guy today an I've had great students to work with and this was one of course, and this work here is really work of colorina definition of Angora Veda Khaled and Dafna are in the audience and you can ask him all the hard questions. And it's about thinking about how to deal with the challenge of information overload.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "And if I think about the challenges of next century, for example, are impacting the environment, I really need to make better personal choices and be more informed in a natural place to go for information is of.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Course the web, but as we know there's so much stuff out there I don't know what to trust. I don't know what's good and I don't know what to get what I want.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So, for example, naively I can think about doing going to Google and typing carbon footprint and out of the four million hits that I get in return. How can I know what to do about reducing my carbon footprint? For example, now going to conferences. Same for every other issue, so if so much information out there, I'd like to figure out better ways to think about where should I start. Or should I?",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "This on an right now. The way we think about these problems are we go to Google. We type a query. We get some answer back and that answer is a set of documents with outputs and if we're not happy with that set, we iterate by changing your query. So type something else, get something back, types of feedback and hope for the best and what we'd like to do as part of this effort is thinking about new.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Ways of expressing what your information needs. Maybe new ways of representing the output of such a system, and new ways of providing richer forms of interaction between a user and such information system. And so we're playing this environment and I'll talk about a few different examples of what we've done in this domain. So.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "I'll start with a Ferrari of blogs which we started working on a few years ago with Andreas and the type of the task that we worked here with colleague Dafna. An Angora was the idea of dealing with the fact there are millions of blog postings every day, and sometimes some stories get a lot more attention than they should. In in my opinion and will get back to the microphone part. So for example, you might remember few years ago the story about lipstick on a pig got a lot of attention in the media and you might think this is a very important story, but it might be obfuscating other stories that turn out to be more.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Important time, for example, the fact that our economy was starting to go down. And so, with all this post things that are happening, how can I find out the ones that are most important to me?",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So we're going to talk about is selecting a few sets of important stories that cover what's being discussed and their important to particular user. So if you take a particular day, January 17th, 2009, this word cloud, besides the word, represents how prevalent those words were in the blogosphere on that day. Anybody remember what's happening? January 17th, 2009? Spinner well enough. Obama's inauguration, beginning of Israeli Gaza conflict. An NJM anybody messing with New York? So.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Plane landing on the Hudson River. Remember Plane landed US Airways now, so these are the stories and what our system we call turning down the noise in the blogosphere will do is select a subset of stories that covers was being talked about in the blogosphere on that day. But the issue is what's important to you might not be the same.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "What's important to me? So if I don't think about personalizing this, the types of articles that I get in return but.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "But if I'm for example ziedan, I'm more interested in fact, Barcelona Cream, Man United. At.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "And the types of stories that I want to know. I started to talk about the Manchester City Football Club, the Steelers American Football Club or Kaka Player in the team that should have won the 2010 World Cup. I said the one never should have one, so.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "We're going to talk about first is thinking about how to model the blogosphere, and then how to personalize from it. And this is going to be our first example. I'm going to give two other examples of taming information overload after this one, so let's start with modeling the blogosphere.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So the idea is there's a.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "A lot of blogs out there and we're going to do something very simple to extract some features when they find computer problem. There is some coverage function from these features and we're going to solve a computer optimization problem that selects a set of posting. There we show to the user so.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "This is the first part an an in terms of features. You can do all sorts of things, so I'm not going to detail today, but we can do low level features like named entities and so on. We can do high level features like topic models an these features represent the types of characteristics.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Particular document, so for example, you can imagine a set of documents or postings touching a different set of features, and if I choose to read a particular article, for example, the article in Blue, we can say that article covers Obama by a certain amount. And our goal is selecting a set of articles A. The cover Obama, as much as possible, and this is true minus not just Obama, but all sorts of other features that we care about. And there's lots of.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Authorities in modeling such problem which we're not going to detail. So for example, some features are more important than others. Turns out that Barack Obama is more important than Carlos Guestrin to some people. And. The fact that an article doesn't cover feature completely but covers it in some kind of probabilistic way. And again, I'm not going to watch a lot of detail, but this is a natural way of doing this and then put you guys in the paper. But based on this now.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Of coverage, we can define our Community transition problem that says I will maximize the function F of a that takes the coverage that I have for a particular feature. Obama, by subset of articles a an average is over the features according to some weights. WF and those are given. This is a hard combinatorial optimization problem. Maximizing afas isn't be hard, but this is a submodular problem. I know there were some other talks about submodularity. I'm not going to go into that. The greedy algorithm gives you 1 -- 1 over approximation for this problem, an algorithm that. And this worked on before. Self is very fast and gives the same guarantees for this problem, so you can actually model the problem as a submodular function optimize.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Mission and you can do some interesting things, so I'm going to start by showing you for this approach where we go from blogosphere exception features define a similar function optimization problem and give you some posts.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "We can do a user study that measures how well the model fits the users interest, and we took some data in Challenge 2009. We use two types features topic models, an named entities and common noun phrases. So lower level high level features and user study involved 27 subjects with two metrics, and I'll talk about the metrics.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So topicality user first metric and the idea is how much does the articles that I give you refer to stories. They're important today. So if I give you an article, is a topical with respect to other thing.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Is it happening in the blogosphere today? And.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "The question we ask the users an in this user study in this part of the user study what we found out was. That our approach is compareable to something called Google Blog Search Yahoo Buzz and was better than some other methods like Dig and we did as well as that.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "And second metric was redundancy. What can happen is you can be very topical by just talking about the most important story again and again and again in a very redundant fashion. And we don't want that.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "And what we can do is ask the question, is the story redundant with respect to the other stories that have already shown you today?",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "And in this metric, Google doesn't do as well. This shows a lot of redundant stories. Yahoo Buzz this quite well and we do about the same. Anne.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "So in summary, what's happening here is that we had about the same performance as Yahoo. Buzz, but Yahoo. Buzz was able to use a lot of other side information like click through rates, search trends, user voting and so on. And we just use text information, so I think there's a lot of potential to improving the experience if we had access to this kind of richer features. Now.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "So. I talked about coverage very briefly and I'm going to talk about the other aspect. I'm very interested in, which is personalizing what kind of information.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "I give you so. Call it, for example. Student is very interesting politics, so he's very interesting. For example, stories about Barack Obama. I am very interesting stories about Britney Spears. So I don't want to see anything about Barack Obama in my stories. The question is, how can I learn the fact that I care about Britney Spears and color cares about Barack Obama in terms of what stories I show you?",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "And so the task here is to go from the blogosphere. Define a coverage function, selects a set of postings, but now the user is going to give me some feedback on the posts. I like this one. I don't like the one I want to be able to personalize to be able to change their coverage function to something that fits my particular interests and select set of posting their good for my particular interests. And I'm going to talk about how to do that in an online learning style.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Rhythm. So the idea here is very simple. We start from FA, which is the weighted sum over features or how well a cover particular feature and we're going to introduce an extra set of weights pie, which is how much does this particular user care about feature F. So my Piper amount is zero. My part for Britney Spears is 1.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "And so we want to learn Pi based on user interaction and so for some as I said, for some users devices will have different magnitudes depending what their interests are. No, the way we do this is that we show you a set of stories.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "The cover, a set of features and based on the stories you might tell me, I like some of those I don't like others and I get some reward in an online fashion online algorithm type of sense, and from this reward that figure out in the natural way multiplicative update algorithm that says Barack Obama should be bigger or summer audience should be higher. But Zidane inbreeding spheres should be lower and we iterate getting some user feedback. Getting some reward multiplicative updates and so on. And this provides a very natural interface for learning a submodular function. And learning this. Linear version of submodular function. We still submodular function that we learn in an online fashion. So.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "So the question is, is this a reasonable algorithm? How do we know it's doing this?",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "I think, and in an online service. Learning sense, you ask yourself, how good is this algorithm with respect to the best vector pie of preferences I could have done in hindsight.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So I could ask, I learned a particular pie or showed a particular set of articles for user.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Then I could go back and ask, given the articles in the ratings and so on, what would be the optimal fixed pie that I could have used for the user in hindsight?",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "And if I can do as well as that, then somehow I'm doing good thing.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "And it turns out that this algorithm for turning down the noise actually achieves no regret. That is the difference between the optimal fixed by in retrospect and what we learn goes to zero as the number of iterations increases. In a natural rate for this type of.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "So this was the first problem that we looked at in terms of personalizing and fitting. So users interests and thinking about taming information overload because I want to find a set of good articles for you by extracting and learning this personalized coverage.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "So in the. Oh, I am just very quickly show a couple of results in this. Or how is the personalization so Gaurav, one of our students is very interesting stories about India and it turns out that if you just look at that we talked about blogosphere, not a lot is talked about with respect to India as opposed to other topics. So he had to interact with the system a lot to get to Taylor to his needs. And what happened was after a few epochs of interaction there was one story about Indian after 10 epochs is a couple and after 15 networks of interactions. There's a ton of stories about India being shown a lot more. Some of these were not even in the top 100 stories would show without personalization. Yes. Yeah, so the question is if the interaction is just like this, like an article and I just care about articles that have to do with a rare topic of sorts, then let's say you know Whistler weather. How far, how far do I have to go before I get to anything? And that's why in the models of interactions that we've been working on, we're trying to figure out new ways of interacting there, not just about like in this like. Of a particular document, but for example, I like a particular feature I don't like a particular feature which I think are much more natural in that sense.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "And in terms of user studies, we did a user study where we generalize personalized posting the totally unstructured way. So the user just interact with the system, told him what they like or don't like, and they didn't know whether or not the underlying system was being tailored to them or not. But we compared the kind of results we got from both.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "It turns out that we got a better user satisfaction when you had this personalized.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Oh, by the way, side note, if anybody wants to stop the break, these ideas of selecting what is most prevalent in the blogosphere turned out into this art installation that we put into new computer science building, and I can give you a demo of this installation that is based on the algorithm.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Such a prequel, so going back. We think we want to think about new ways of phrasing. Complex information needs new ways of. Output information needs and new ways of interacting for system and they will say that turning down the noise in the blogosphere was our first effort in this direction and the main focus was on this interaction part. Figuring out how to incorporate user feedback. The next couple examples that I'll show you are about phrasing more complex information needs and thinking about more structured outputs. Although there will be very natural ways of interacting with the system on both of them, the first one is very close to my.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Start outside and it's about more complex information dealing with more complex information needs the fact that we have 28 workshops in parallel. I guess 14 and 14 in this conference is an example of. Side to side effect.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "For an example of a truly significant information overload for the scientific community. The fact that so many papers out there I can keep track of what's going on in my field, let alone learn new things and connect to other fields and be able to come up with the kind of insights that I think makes science progress. And this is not a new issue. In fact, 2 1/2 centuries ago. It was said that there will come a time when it will be easier to go into nature, measure something than to find the book that has that measurement of that truth. And I'll claim that. That time is now. Based on the how much would reinvent things since it's an so there about you know data set that we've been working with. About 10 million papers and the other 100,000 conferences is, I think, a bit overwhelming for us to deal with an the only tool we have for it.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "Basically these days is keyword search, so this a comment or optimization workshop I'm going to ask a question. If I want to figure out if there is an approximation algorithm for submodular function maximization which does not require integral value functions. What query would you post to Google Scholar? Yes. Carlos guestrin challenging but if I could say, you know, here's a classic paper about submodular function optimization. What other papers were highly influenced and cover the types paper highly influenced by this one. This is the Wolseley work 1982. That's a much more natural question. He is not an alternative.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "11:30 some more time and your related work sections that are skimpy. I've already cited this papers. What other papers should I cite? What are the papers should I cite to make sure that I cover what's being discussed in my field, so the idea here is, I think, quite natural.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Positions, which is to think about a set of papers rather than a keyword. That kind of qualify what kind of research I've been doing and give me a set of relevant papers that I should read based on those. And this is work of collarini. So I'll start without dealing with interactions and I'll bring interactions and very, I think, beautiful way. The color that is brought into the problem.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "So here's my query set of papers. This is the ones that I read so far. A natural thing to ask is, are there some children of these papers? If something sites all of these, then that's a competing approaches should compare against. Or if something is cited by all of these, these's seminal paper should read the problem is that.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "This just direct interaction, rarely happens. You're not so lucky and you have to think about more complex interactions within the citation graph.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "And so. Well, we've looked at is given a set of query paper skew. The question is, is there a high degree of influence between Q and the set of papers A then consider showing the user and influence can be looked at in many ways. Cited work. Previous research by the same authors in novel Insights that the authors might have and we capture that with a very natural model that. Measures how much author. How much paper might influence another paper, but a key key issue here, and I think a key contribution is that citations are not free. They depend on what context. I don't just cite another paper. I cite them with respect to a particular topic or.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Particular issue I'm thinking about, so there are many things that I've been thinking about. For example, the simplex algorithm, multinomial and so on, and my influence with respect to another paper might be with respect to simplex, but not with respect to multinomial's. And we try to capture it.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "Data in the model.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "And. The existence of a path is not sufficient. We have to measure how strong.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "The path is, so I'm going to show you a couple of examples. If you take the LDA paper, it cites a bunch of different papers, but with respect to the word Bayesian, then the LSI paper I think is the strongest.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "Oceanship well and simplex for sure, and with respect the word mixture maybe a paper about them is the big.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "This influencer and what we measure is for each possible concept or word, that we care about, and for each edge in this graph we have a parameter Theta, that we estimate that characterize.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "Is how much the PLC paper has influenced the LDA paper with respect to the concept Bayesian? And we annotate the graph with this term for each concept an now we can ask.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "How much does X influence Y with respect to a particular concept C? And it becomes a very natural probabilistic question, and the way we've modeled as is by saying every edge is associated for probability, and we have an influence if if we were to sample these edges and ask yourself what is the probability that X is still connected to Y. So what is probably the existing path between X&Y in G given this edge is being active with probability Theta? Turns out that this is a Sharpie complete problem, but we have a very natural approximation algorithm for it.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "So with respect to this notion of influence, we come up to objective function. So for a particular set of papers Q there are input we want to find the set a that maximizes the influence between C office concepts within a particular query paper and the set A. And we average this over the queryset. We average this over the concepts, and we have some weight which has to do with the prevalence of concept C in paper Q. So if the paper is about Bayesian, then, then that counts. And maximizing this with respect to find investor papers. K is a hard problem, but this is a submodular optimization problem and we can get a near optimal solution quite efficiently. This is the basic setting.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "We're given a set of query papers. We maximize objective function to give you a set of relevant papers in output. But I haven't talked to at all about user interaction. How does the user interaction come into the picture? And it's really annoying to have to go through papers and say I like this one. I don't like that one. What does that mean? How much does care about? How can I think about these in a more natural way that has minimal impact on the user? Meaning the user has to give us the minimum possible information and I still give you some trusted results because a fundamental issue is I might get a set of papers back there are from let's say. The Southern Brazilian Symposium on Evolutionary Computing. Ann, you may or may not care about that and so would like to do is give you sources that you trust.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "And this is not so easy because you trust different communities, trust different people even though they're similar researchers differently with respect to particular terms. So respectful term network at NIPS you might think about Jeff Hinton. Are you AI? You might think about you, the Pearl. OK Didi, you might think about John Kleinberg. Each one is a researcher who is similar in their own right, but they may have different meanings to different communities, and now goal is to give you papers from the right types of people for the types of community that you are interested in.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "And this kind of feedback you can imagine would be very hard to do and very onerous on the user. And I think one of college insights in this problem is to think about how to do this in a very natural way. And the natural way is to just take your bib tech file. So based on that big tech file I can learn the notion of who you cite, who you trust, who your community is, and who you trust with respect to the word network and from that. Or maybe from the list of favorite conferences and journals that you read. I can give you a set of personalized answers, and you can get some very interesting things. So, for example, you can not say about me, but from somebody else's perspective. So what does Steve to the Nobel Prize winner recommend there? I've read when I'm doing research on energy issues. Or what does Jeff Films suggest that I read with respect to this paper that we're working on? Which is, I think also a natural way to get a different perspective into a particular research problem. So.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "Based on this, there's a very natural way to incorporate into the objective function based on the trust set of papers B that we give, and I'm not going to go into a lot of detail, But basically measures how much authors trusted with respect to a particular.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "Except. And we naturally incorporate this into the objective function by adding some extra weight into the influence term. Meaning, do I trust at least one of the authors of paper papers in a? So based on this and again.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "Modular function optimization, Carly did a user study. There? Think really captures what we need to do in this type of domain. It's a very natural user study. There were 16 PhD students and you have to think about how we do is study to measure the papers that you might want to read. So what he did was take one of the papers of the subjects an take the citations of that paper and imagine that the subject was reading those papers when writing that particular article. And those are the inputs, and he compared against a few other couple variants of of our algorithm and a few other things related relational topic model work on information genealogy an with Google Scholar, Google Scholar. You need a particular query. So what color did was ask one of the Co authors of the paper to provide queries that you might use in Google Scholar in the time they were writing this particular article. And this is double blind study. And here are the results.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "To go through this very briefly, but basically on every on several metrics, it seems to be doing quite well. So first of all, they offer the service, found the papers that we provide more useful overall in doing the research and the.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "More must read papers. They found that the work was more trustworthy. The ones presented in alternate.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "Methods. They found that the approach provided more novel results. That the user should have known about. And Interestingly, pretty much every subject after the study. Came up to us and ask can you show us the papers can give you the list of papers that we saw during the study because of several things I should have known from my research that I didn't know until we tried out this system. Such a prequel?",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "And on pairwise comparisons, our approach provides more diverse answers, so less redundancy than alternative methods.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "And just as a little side note, colors also went ahead and did that kind of postmodern thing. Anne took our own citations and apply the apply the algorithm to think about what we should read, and by that we learn about. A totally separate piece of work using collaborative filtering for doing this kind of analysis, which we should have known about, but we didn't know about because it was not from our community and we went ahead and compared to that too. So it was actually useful for us as well.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "So this was an example where we phrase more complex information need the final.",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "Example, they will show today is thinking about more complex outputs, not just a list of papers you should read but representing more structure. More structured answer.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "And. The idea here is about connecting the dots is hard to understand what's happening in the world is easier to understand when you have a context about the story.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "So for example, if you take our economic crisis and you pick two New York Times articles one about the housing bubble in another one about the bailout bill, somehow you feel that you are connected together. There was something difference between housing bubble and bailout build, but you don't know what. What Dafna shahaf? One of my students did this come up with a really neat way of dealing with this, so give.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "To input papers, what she does is give a set of articles to smoothly bridges beat.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "In the two. That if you were to read this New York Times articles about mortgage crisis that came from the housing bubble and the data in the Congress Act and the bailout plan, and so on, you'd understand better this story that came about in relationship to the two. I think this is a beautiful new way of thinking about connecting stories on the web or connecting stories on on the real world and understanding it better will happen.",
+        "start": 2320.0,
+        "end": 2349.0
+    },
+    {
+        "text": "So the idea here is how to connect the dots between any two articles and.",
+        "start": 2349.0,
+        "end": 2378.0
+    },
+    {
+        "text": "A natural way, so I'm first going to start by formalizing. This is an objective function, and then we'll talk about how to find a good chain connecting this article. Sorry, that was not a sneeze. There was a chain.",
+        "start": 2378.0,
+        "end": 2407.0
+    },
+    {
+        "text": "So. What's a good chain are very natural thing to think about this shortest path, so I could think about taking a set of New York Times articles. My starting and end point building some kind of graph among these may be based around the similarity metric and then finding shortest path between the two articles. What would happen if I do that?",
+        "start": 2407.0,
+        "end": 2436.0
+    },
+    {
+        "text": "So what you get is something like this. Let's say you take an article voted Winski scandal in another one about the Florida recount. Well, you get is very interesting chain that comes out of it from the Clinton trial to Microsoft trial for Microsoft. I'll to some Microsoft market issues to some European market issues too. And the relation of Palestine from Palestine to the Palestinian voting to the voting in the US. And what's happening here is every link between these articles is strong.",
+        "start": 2436.0,
+        "end": 2465.0
+    },
+    {
+        "text": "So everyone has a strong pairwise relationship, but there's no overarching theme. There's no overarching story. This is I mentioned, Postmodernism and Daphne is very interesting for us modernism. If a, what kind of literature is 1 where every pairwise link might be strong, but there's no overall theme?",
+        "start": 2465.0,
+        "end": 2494.0
+    },
+    {
+        "text": "And you might think about this as a kind of stream of consciousness. Style writing so although every link is wrong, there is no theme that goes connect to them and Alternatively what.",
+        "start": 2494.0,
+        "end": 2523.0
+    },
+    {
+        "text": "Daphnis algorithm is able to do is from the risks and talk about something about the trial. Then from the trial to this impeachment from the impeachment from being pitched. This acquittal to Gore trying to distance itself from Clinton in this time to the elections coming here. And then we all know what happened in the end. And so this is a natural smooth chain that connects.",
+        "start": 2523.0,
+        "end": 2552.0
+    },
+    {
+        "text": "Two articles and when we talk about is what makes this coherent. What makes this chain intuitively better than the others?",
+        "start": 2552.0,
+        "end": 2581.0
+    },
+    {
+        "text": "And if we think about the shortest path chain, what was happening is every pair? Was coherent, so there's a pair those coherent with respect to their Microsoft. When the current respects their markets and so on. But there's no overall theme.",
+        "start": 2581.0,
+        "end": 2610.0
+    },
+    {
+        "text": "And so every transition is good, but it's a jittery kind.",
+        "start": 2610.0,
+        "end": 2639.0
+    },
+    {
+        "text": "Transition Alternatively, if you look at the more coherent chain, you see that Clinton is going on the whole time Lewis going on most the time. Impeachment was a thing that permeated a lot of articles and so on, so there's bigger stretches. Or of influence with respect to a particular term or for a particular concept, and so will make a good chain is 1 where you have this bigger stretches or more prevailing themes. And when that formulate would often does for make the very nice optimization problem that I think captures this notion and is able to guarantee is provided you change, they have this coherence.",
+        "start": 2639.0,
+        "end": 2668.0
+    },
+    {
+        "text": "So.",
+        "start": 2668.0,
+        "end": 2697.0
+    },
+    {
+        "text": "I'm only going to very briefly talk about how to do this, and I'm going to talk about. Thinking.",
+        "start": 2697.0,
+        "end": 2726.0
+    },
+    {
+        "text": "About transitions first, so I have a set of articles and one thing that can happen is every article shares a lot of things with the neighbors likely winski Clinton, so on and the last article has a pretty weak link. Just about Microsoft. And intuitively, it looks like this change is almost good, but when you get to the end it fails and we're really judgmental and we measure change based on its way.",
+        "start": 2726.0,
+        "end": 2755.0
+    },
+    {
+        "text": "This link, So what we really should be doing is not measuring. Say the average performance between these relationships.",
+        "start": 2755.0,
+        "end": 2784.0
+    },
+    {
+        "text": "But measuring the worst case performance because a bad link ruins the whole thing in the sense, and So what we do is measure coherence in terms of the worst case within the chain of how connected the articles are. So this is the first notion of a plugin.",
+        "start": 2784.0,
+        "end": 2813.0
+    },
+    {
+        "text": "And of course, this is a course notion and we need to deal with measure influence that depends off a particular term, just like in the paper setting depends on Bayesian. Here we have to depend on Clinton Lewinsky and so on an since the.",
+        "start": 2813.0,
+        "end": 2842.0
+    },
+    {
+        "text": "The papers are not connected to each other in any particular graph because this is a New York Times article is not not clear how you measure how much one article has influenced another with respect to the term Clinton.",
+        "start": 2842.0,
+        "end": 2871.0
+    },
+    {
+        "text": "Anne, what definitely did and I'm not going to have a lot of time to talk about this or any time to talk about this is even though there's no edges in the data set, should define a very natural random walk based algorithm that measures influence between pairs of articles with respect to a particular word, even though there's no links. And it's a cool representation that I think captures what's going on in this model. So given this.",
+        "start": 2871.0,
+        "end": 2900.0
+    },
+    {
+        "text": "Notion of influence. What we're going to do is try to maximize it somehow. And we want to make sure we have this global Clinton theme all.",
+        "start": 2900.0,
+        "end": 2929.0
+    },
+    {
+        "text": "Long so on the left side we have the bad case where it's very jittery and change topics also on the right side we have the one that we want where Clinton is prevalent throughout the chain. And so. If you notice, the one that's changing topics everytime needs a lot of words to be coherent, because in it's Clinton for the first link in this Microsoft for the second market, for the third, and so on, while the one on the right only needs a few words. Because the words are prevalent throughout many many segments longer segm.",
+        "start": 2929.0,
+        "end": 2958.0
+    },
+    {
+        "text": "So what we do is we cut the number of segments the user might. The chain may use or. Sorry, the number of words they might use and we optimize over that set. And so in that sense, if we only allow three. Words to be used to measure with a chain is on the right side. We're going to get a good score because we only need 3 words to capture what was happening well on the left side. The three best words will get a score of 0, because for example, the first link will have no supporting words for it. And will be dealing with the worst case. So basically the idea is we want to find a small subset of words that capture what the whole underlying chain was about. And when I say words, it can be topics can be all sorts of features.",
+        "start": 2958.0,
+        "end": 2987.0
+    },
+    {
+        "text": "And so the idea here we go back to optimization. Problem is not just measuring the worst case influence, but with respect to whatever terms we call active in that change, and we maximize over the activations and we do some kind of constraint optimization where we limit the number of total active words you may use and so on. These other constraints in the problem.",
+        "start": 2987.0,
+        "end": 3016.0
+    },
+    {
+        "text": "So this is our underlying optimization problem trying to find the chain whose weakest link is good and who does and doesn't use many words to capture or many terms to capture what's happening in that chain.",
+        "start": 3016.0,
+        "end": 3045.0
+    },
+    {
+        "text": "So the question is how to find a good chain and this is a hard problem. Turns out to be an NP hard optimization problem and doing some kind of brute sort search is out of the question and So what? Definitely is something very natural. She didn't LP based relaxation of it and. They can actually be forming.",
+        "start": 3045.0,
+        "end": 3074.0
+    },
+    {
+        "text": "Linear program.",
+        "start": 3074.0,
+        "end": 3103.0
+    },
+    {
+        "text": "And because it's a linear program, instead of giving you this link is in. This link is not in. You get a value between zero and one for every edge, and the question is how do you round this? How do you get one particular chain that connects SMT? And.",
+        "start": 3103.0,
+        "end": 3132.0
+    },
+    {
+        "text": "Definitely come up with a very natural rounding schema so you start from the source you pick next node with a particular probability based on the edge weights you pick the next one, and so on. And this is my output chain based on this rounding schema and. Well, she was able to do is provide approximation guarantees with respect to the answer that you get both special length of the chain of get, which is not always going to be the same system. There is some randomization and with respect to the underlying objective function. Of this rounding. So this.",
+        "start": 3132.0,
+        "end": 3161.0
+    },
+    {
+        "text": "Is the overall idea where we start from formalizing this idea of a coherent chain and then using this LP based relaxation to be able to find a good chain? For this community optimization prob.",
+        "start": 3161.0,
+        "end": 3190.0
+    },
+    {
+        "text": "And so let's go into some value.",
+        "start": 3190.0,
+        "end": 3219.0
+    },
+    {
+        "text": "And again, because this problem is really about how much the user understands a particular information problem, we need to do a user study to understand how much they like it or how good it is. And we compared to a few things like shortest path, Google Timeline. Which is a new feature in Google Event Threading, which is an algorithm that forms clusters of articles and then we picked a representative article from each cluster. An here is some I'm going to show you some anecdotal examples and I'll show you some more quantitative.",
+        "start": 3219.0,
+        "end": 3248.0
+    },
+    {
+        "text": "Examples, so here is first in the example. Many of us remember the OJ Simpson trial. Some of us might be a little young, but there was a. You know there's a trial in the beginning and then there was acquitted. So one algorithm. This is a double blind study. They were going to do a few guys. One algorithm provide the following output. Given the simple trial, there's something about trial strategies having several killers. The Delta Book deal there. Jason have some CNN transfers, some other murder case happening at the same time to The Simpsons verdict. Thankfully.",
+        "start": 3248.0,
+        "end": 3277.0
+    },
+    {
+        "text": "That was not us. That was Google timeline. An alternative. Hint starts from Simpson's trial, talks about braces, discussions that occur during trial talks about late police involvement in the trial, talks about some racism errors that happen during the trial because of this involvement that led to the verdict. So it's not connecting the dots, and I think it's a one of the many natural ways to think about what was happening during that time. And I'll get back to the one of many natural ways in a moment. So.",
+        "start": 3277.0,
+        "end": 3306.0
+    },
+    {
+        "text": "So. Definitely is a study of 18 users showed different articles evaluating different metrics.",
+        "start": 3306.0,
+        "end": 3335.0
+    },
+    {
+        "text": "And I'm going to do this quite quickly, but for different types of stories like the election.",
+        "start": 3335.0,
+        "end": 3364.0
+    },
+    {
+        "text": "Then run and so on.",
+        "start": 3364.0,
+        "end": 3393.0
+    },
+    {
+        "text": "Compare different.",
+        "start": 3393.0,
+        "end": 3422.0
+    },
+    {
+        "text": "Rhythms and turns out that connecting the dots does quite a bit better in terms of effectively capturing this.",
+        "start": 3422.0,
+        "end": 3451.0
+    },
+    {
+        "text": "Sorry, according to users.",
+        "start": 3451.0,
+        "end": 3480.0
+    },
+    {
+        "text": "And. Another metric, though doubt, was coherence of the story, how coherent it was, how relevant that was, very how much.",
+        "start": 3480.0,
+        "end": 3509.0
+    },
+    {
+        "text": "Redundancy there was.",
+        "start": 3509.0,
+        "end": 3538.0
+    },
+    {
+        "text": "And again, I'm not gonna go.",
+        "start": 3538.0,
+        "end": 3567.0
+    },
+    {
+        "text": "A lot of details.",
+        "start": 3567.0,
+        "end": 3596.0
+    },
+    {
+        "text": "But there was significant results showing that approach proposed does quite well in these metrics.",
+        "start": 3596.0,
+        "end": 3625.0
+    },
+    {
+        "text": "So I'm just going to close up by thinking about the bigger picture so I don't have alot of time. So we start by saying we're going to think about something beyond keywords beyond just sort of arts output and some more natural interactions and just.",
+        "start": 3625.0,
+        "end": 3654.0
+    },
+    {
+        "text": "Using the keywords so a chain really thinks about. Just sorry the connecting the dots thinking about two docs documents going back through chain doesn't talk at all about.",
+        "start": 3654.0,
+        "end": 3683.0
+    },
+    {
+        "text": "User interaction, so this plays a little bit of drugs question. What kind of knew user interactions might have, so one is refinement. I might ask what is more, they can show you between this chain. These nodes in the chain.",
+        "start": 3683.0,
+        "end": 3712.0
+    },
+    {
+        "text": "But another natural one is to say what is the user's interest. If the changes about this topics are user might say I'm less interested in the racial aspects that I'm in the DNA aspect, so here's feedback. That's based on particular features, and I think there's a nice connection to some work that under McAllen did where you looked at expected value of features as a way to learn classifiers. So you were doing some kind of active learning where you're looking at thinking about individual features and thinking about how much a user.",
+        "start": 3712.0,
+        "end": 3741.0
+    },
+    {
+        "text": "Like so part of the aspect so.",
+        "start": 3741.0,
+        "end": 3770.0
+    },
+    {
+        "text": "What Dafna can do is say, for example, you have something about OJ Simpson's trial that goes from the DNA evidence and talks about. Add to the verdict and you might say I'm less interested in verdict and more.",
+        "start": 3770.0,
+        "end": 3799.0
+    },
+    {
+        "text": "Interesting, the racial aspects. You might get something that talks about delay, police and so on. Another aspect.",
+        "start": 3799.0,
+        "end": 3828.0
+    },
+    {
+        "text": "Trial, you say? No, I wasn't interested in that. I was really interested in blood and glove and I don't know how many of you remember this, but.",
+        "start": 3828.0,
+        "end": 3857.0
+    },
+    {
+        "text": "Is another thread about DNA evidence bloody glove? If it doesn't fit? Yes, The Simpsons and everybody remember The Simpsons. Summer Simpsons episodes. Such a great episode. Anyway, so by interacting with the system you can get personalization covers different facets of this Sigma.",
+        "start": 3857.0,
+        "end": 3886.0
+    },
+    {
+        "text": "Event. And same kind of ideas from all.",
+        "start": 3886.0,
+        "end": 3915.0
+    },
+    {
+        "text": "Learning might be useful here and in the user study it gives you some improved performance and user satisfaction.",
+        "start": 3915.0,
+        "end": 3944.0
+    },
+    {
+        "text": "And again, I'm kind of rushing through this, but just stepping back, I really think it's interesting to think about new ways of representing information needs. Figure out what the right optimization problems solving this. They give you some structured output, not just a list of documents and some richer ways of learning where users interest might be. And so.",
+        "start": 3944.0,
+        "end": 3973.0
+    },
+    {
+        "text": "I'm just going to very briefly talk about where we're going next. 'cause I think this is an exciting way of thinking about these types of problems, so I just talked about, change the connect to articles S&T.",
+        "start": 3973.0,
+        "end": 4002.0
+    },
+    {
+        "text": "There's a lot more that you can do, and what I'm really interested in is this. This is an information overload by itself. It's an issue map. How many people have seen an issue map before. This is a few feet. This is a hand generated thing that took a lot of time. Many many many many many many many hours.",
+        "start": 4002.0,
+        "end": 4031.0
+    },
+    {
+        "text": "Where is that for query like computer things select a set of important documents and. Annotated structured relationship between these documents. So let me zoom in.",
+        "start": 4031.0,
+        "end": 4060.0
+    },
+    {
+        "text": "Can computers think? Well this article says computers can't think because computers can't. Machines can't have emotions which is supported by this other article that says the concept of feeling only applies to living organisms. Which is disputed by this other article that talks about the fact that we can imagine building something that has feelings. Pretty cool. Imagine if you could do this not just by hand. A big positive, but for any query. If I want to understand what's happening online learning, I get a map of online learning this annotated and explains the relationship between the papers and explains what happens with new contribution.",
+        "start": 4060.0,
+        "end": 4089.0
+    },
+    {
+        "text": "If we could build this automatically, I think it could really change the way we do science.",
+        "start": 4089.0,
+        "end": 4118.0
+    },
+    {
+        "text": "So this is just an idea before we might go with us and what we'd like to do is start from more complex information is like a set of papers and endpoints of a chain. Think about new optimization algorithms, which is, I think, with this workshop is about they provide some guarantees for solving a problem where the output is not just a set, but more structured and richer interactions, like I like. It's like online learning Bibtex files, feedback on concepts and so on, and I think overall under multiple is a service will see that this type of research direction is very promising. As a way of dealing with information overload. Thank you very much. Pizza. Yes. Some people have argued that the cure for information overload our social networks and Lagerfeld. Bringing people should be interested in what I would be interested to hear. What do you think about that approach and how could think about putting that approach into their work? Then I I the question is. Can social networks help US deal with information overload? Kids it can hurt us soo right. If you look at my Facebook stream, but I think they can be extremely helpful. Love to be able to do this building in user preferences and other people's preferences in the same framework. We had some issues with data. This hard to get data for particular domain and so Cal has a very interesting idea where data from one domain can be useful in another one. That kind of transfer learning kind of style, but I think this is a natural thing that we have not yet explored very much here. And this loss we can do yes. Understood I talk a lot about inference, but I think not so much about parameter estimation parameters for these tasks or models not noticeable. Now we have some natural models with parameters that we learn in natural, perhaps naive ways, and I think there is a lot to do with coming up with. More. Richer models and better ways of learning those parameters. So. Yes so. It might be sort of a possibility of sort of a richer, get rich get richer scenario happened, OK? Read knowledge through diversity serendipity. So I love this question and I the question is, is there a danger for richer getting richer and you can notice brings brings diversity. I learn about new things and get was connecting with things and I get this question many facets and I'm going to kind of pose in a different way. A lot of people have asked me if I'm so. If I personalize you so much, then I'm going to end up with something that's so biased. For example, in research you only learn about your little community because I'm looking at your big tech file and I think that one thing that we're trying to do is good for is empowering. By understanding your bias and empowers the system to break your bias. In a sense, if I know what papers you cite. Then I can learn not just what you said, but things you should know about 'cause some other people who are highly influential have done. And maybe they connect to you in some way. So I think, and the same thing we can think about New York Times, Fox News being biased, but I'm buying the New York Times Fox News bias by reading that if I know what my biases, I configure new things that are interesting in the diversify your knowledge and so in a sense, I think this is an opportunity and not a problem. By doing it in an automated system like this. Nando. Number for. I cannot hear play. Just just ask the questions. Do you like? Just looked at Google Blog, not since this works so badly and I notice it actually is quite a crappy linear interface in comparison to Google News that groups items that are identical or similar. What would you say? I think the user interface is key for doing right thing. The user studies were all on the same interface, so the users did not see Google interface with some other one. So I think that that was not. A problem in the user study, but I think and one thing that I'm interested in. We talked some HCI people about is coming up with better user interfaces to tame information overload. So the answer is yes. But I don't have the answer. Thank you.",
+        "start": 4118.0,
+        "end": 4147.0
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "id": "tszodir6bbzxomjwo2obcegfs3qzzgou",
+    "title": "Machine Learning for Stock Selection",
+    "url": "http://videolectures.net/kdd07_ling_mlfss/",
+    "info": {
+        "author": [
+            "Charles X. Ling, University of Western Ontario"
+        ],
+        "published": "Aug. 14, 2007",
+        "recorded": "August 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Clustering",
+            "Top->Social Sciences->Economics",
+            "Top->Computer Science->Machine Learning->Instance-based Learning"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 79,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1660
+}

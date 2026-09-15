@@ -1,0 +1,21 @@
+{
+    "id": "lw7msckjdb7chavwcld3tqppwrs6b3ei",
+    "title": "Modeling rare events: online advertisement targeting using machine learning and data mining",
+    "url": "http://videolectures.net/mmdss07_shanahan_mre/",
+    "info": {
+        "author": [
+            "James G. Shanahan, Church and Duncan Group, Inc."
+        ],
+        "published": "Dec. 3, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 87,
+    "num_sentences": 590,
+    "num_clips_with_summary": 32,
+    "num_gt_summary_sentences": 58,
+    "ground_truth_summary_length_chars": 5735
+}

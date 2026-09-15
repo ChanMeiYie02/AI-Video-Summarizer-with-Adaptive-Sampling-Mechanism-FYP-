@@ -1,0 +1,22 @@
+{
+    "id": "22gipsfuw7sfapbpjtl3jg4vankygwyk",
+    "title": "Wordnet as a crowd source for untreated languages, concepts, and data elements",
+    "url": "http://videolectures.net/WNLEXworkshop2018_benjamin_crowd/",
+    "info": {
+        "author": [
+            "Martin Benjamin, Michigan State University"
+        ],
+        "published": "July 24, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Humanities->Linguistics->Lexicography",
+            "Top->Computer Science",
+            "Top->Data Science"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 502,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 1599
+}

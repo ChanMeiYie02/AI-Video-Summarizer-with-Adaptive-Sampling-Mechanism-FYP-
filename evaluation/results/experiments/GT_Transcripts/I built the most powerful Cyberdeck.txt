@@ -1,0 +1,1058 @@
+0:00
+This is the most powerful Cyber Deck in
+0:03
+the world. [music]
+0:09
+[music]
+0:17
+[music]
+0:29
+We have to talk. [music] In my nine or
+0:31
+so years of doing YouTube, I've used
+0:34
+this about three or [music] four times.
+0:36
+This is called 2020 extrusion, aluminum
+0:39
+extrusion. And every time I use it, I
+0:41
+get threats. People are ticked. I got
+0:44
+people saying I ruined their day. I got
+0:46
+people saying they would have rather
+0:47
+like shattered a mirror than watched the
+0:49
+video.
+0:50
+Yeah, that Do you hear that little
+0:52
+clicky click? I'm happy with that.
+0:55
+You got people saying that like now
+0:57
+their firstborn son will not be the same
+1:00
+because of the way I chose to cut the
+1:03
+aluminum extrusion. I mean, you would
+1:05
+have thought I like kicked these guys'
+1:07
+dogs and spit in [music] their sandwich.
+1:09
+Okay. And so here's what I did. I went
+1:11
+out. I bought a band saw. I I did some
+1:13
+research first. I made sure that was the
+1:15
+right thing to buy. I bought a band saw.
+1:17
+I drug it in here
+1:22
+and then I left it in the freaking box.
+1:24
+Look me in the eyes. Look me in the
+1:27
+eyes. You [laughter]
+1:29
+Because my I cut it how I want. I'll cut
+1:31
+it with saw. I'll cut it with scissors,
+1:33
+bro. I'll sit here for two weeks with
+1:36
+one pair of scissors and I'll stinking
+1:37
+scissor. You know what?
+1:40
+You can leave. Probably don't leave.
+1:41
+Don't leave. Okay. Please don't leave.
+1:44
+A Cyber Deck is [music] a futuristic
+1:46
+portable, fully custom PC typically
+1:49
+powered [music] by a single board
+1:51
+computer like the Raspberry Pi. They're
+1:53
+designed to carry out the task of the
+1:56
+maker's choosing. Whether that be
+1:57
+[music] general computing like your
+1:59
+grandma's laptop or monitoring the
+2:01
+situation like a true [music] man's
+2:04
+setup.
+2:04
+It's like a keyboard and mouse. You've
+2:06
+got a display, a battery, and some sort
+Cyberdeck 1 (Easy)
+2:09
+of nifty way to get [music] it all to be
+2:11
+together. It's basically like the ultra
+2:14
+dongle, giga dongle, all built into one
+2:17
+to where [music] everything's just like
+2:18
+dongled perpetually in perpetuity.
+2:22
+Perpetuity dongle. Okay. So, you could
+2:25
+call it the perpetuity dongle if you'd
+2:27
+like from now on. The world's most
+2:31
+powerful perpetuity dongle. That's what
+2:34
+I'm building. But most importantly,
+2:35
+[music]
+2:36
+they look freaking sick. They look
+2:38
+freaking cool. [laughter]
+2:39
+Got your keyboard that's plugged in
+2:41
+directly to the Raspberry Pi.
+2:43
+Sometimes you might look at these and be
+2:44
+like, "But what the heck can it do that
+2:46
+a [music] laptop can't do?" This is a 40
+2:49
+pin GPIO header. You can control motors
+2:51
+and robotics and all kinds of cool
+2:53
+stuff.
+2:54
+And if that's not your speed, you can
+2:55
+plop on what's called a hat. It plugs in
+2:58
+perfectly and enables you to do things
+2:59
+like run local LLMs faster [music] or
+3:02
+have things like motion input. Tons of
+3:05
+doohickeys, man. And come on, it's all
+3:08
+[music] about the doohickeys. If there's
+3:10
+one thing I've learned in all these
+3:12
+years of building stuff.
+3:13
+So, in order to close it, I got to take
+3:14
+off the knob and then it shuts. It's
+3:17
+that the first time I build something, I
+3:19
+want a bigger screen, faster processor,
+3:21
+[music] and these hinges are kind of I
+3:23
+always just wish I could do it one more
+3:25
+time.
+3:28
+[music]
+3:29
+So, you've probably heard of the
+3:31
+Raspberry Pi, but have you heard of
+3:33
+this, the orange pie? With CyberDeck
+3:36
+2.0, I wanted to be more precise. Since
+3:38
+these are totally custom, designing it
+3:40
+in 3D first is necessary. With 1.0, I
+3:43
+measured manually to attach everything
+3:45
+to the keyboard. While filming all of
+3:47
+this, good guy Keyron released 3D step
+3:50
+files of all of their keyboards.
+3:52
+Panned out. Look at that. I have the
+3:54
+exact design that is top tier. That is
+3:56
+stinking top tier. Which meant the
+3:58
+perfection satisfaction level was going
+4:01
+up.
+4:01
+Citrus, baby. Citrus.
+4:04
+Instead of reprinting the entire base of
+4:06
+the keyboard, I wanted to make an
+4:07
+attachment that could simply bolt on and
+4:09
+use the existing threads. So, I extend
+4:12
+the bolt holes, use them as a cutting
+4:13
+tool, clean it up a little bit, and
+4:15
+boom. Now, whatever else I design, I
+4:17
+could 3D print it all in one, and it'll
+4:18
+just bolt on perfectly. So, I cut out a
+4:22
+place for the battery. Made some
+4:23
+mounting holes for the orange pot. Made
+4:25
+sure all the ports weren't blocked. Got
+4:27
+these cool looking support beams for the
+4:28
+monitor. Made a spot to store the touch
+4:30
+pad.
+4:39
+Oh,
+4:41
+wa. Oh, boy. Be pretty neat if it just
+4:44
+fit perfectly first try.
+4:47
+The same thing but longer.
+4:51
+Oh my goodness. Oh. Oh, that's just top
+4:54
+tier.
+4:56
+[music]
+4:58
+Dude, like a stinking glove.
+5:02
+There were significant improvements over
+5:05
+the first Cyber Deck.
+5:07
+These are heat set threaded inserts
+5:10
+which allowed the hinges to be [music]
+5:12
+mounted flush.
+5:13
+That is extremely satisfying. You got to
+5:16
+You guys, you got to see this. Hold on.
+5:17
+I get this camera down here. You got to
+5:19
+see this. That's nice.
+5:22
+And these are called torque hinges,
+5:24
+which hold the position they're left in.
+5:28
+[music]
+5:34
+The Ankor [music] Prime's high output
+5:37
+and compact size were essential to
+5:39
+creating a more powerful Cyber Deck.
+5:44
+When you melt PLA 3D printed items, it
+5:48
+puts a fresh credit card size piece of
+5:50
+plastic in your brain, but it smells
+5:53
+nice.
+5:55
+[music]
+5:58
+All right, round two. First one didn't
+6:01
+uh didn't boot. Probably because it's
+6:04
+arch, by the way.
+6:05
+200 hertz. Ooh, and the resolution and
+Cyberdeck 2 (Medium)
+6:08
+the touchpad. Oh, baby.
+6:12
+This feels nice. I feel I'm going to
+6:15
+actually use this one for various tasks.
+6:17
+Something inside my nerd guts just went
+6:21
+nice.
+6:24
+Nice.
+6:25
+There it is, baby. Oh, we got blinky
+6:28
+light. Look at that blinky light, dude.
+6:30
+Ankor Prime power bank powers the whole
+6:32
+thing. It shows the [music] direct
+6:33
+wattage of each thing individually. So,
+6:35
+USBC orange pie is going out this USBA
+6:37
+into the doohickey. Look at the
+6:38
+doohickey. And now here's the thing.
+6:40
+because of this whole USBC [music]
+6:41
+power delivery thing. This can charge
+6:43
+the whole thing. And it will go back
+6:46
+into Ankor Prime power bank OLED. 120
+6:48
+Hz, dude. Hinges. Check the hinges out.
+6:51
+Designed myself. Look at that. And it's
+6:54
+so torque hinges. We're double dongled
+6:56
+out. It's 16 GB 16 gold bar. HDMI here
+7:00
+to to feed this display. But this HDMI,
+7:02
+bro, it's a built-in capture card. So,
+7:04
+this is just a 90° dongle. That's HDMI
+7:08
+in. So, you know how like you're doing
+7:09
+Zoom calls and stuff and you want the
+7:11
+camera to be better, but you got to get
+7:12
+like a capture card and you got a USB
+7:14
+out to the capture card and have like a
+7:15
+bunch of cables and stuff, dude. Not
+7:17
+here. Not here, bro. Let me show you.
+7:19
+Check this out. I'm going to show you.
+7:20
+Regular stinking HDMI cable. Just plug
+7:22
+it in. Apple Magic Pad just freaking
+7:24
+works. We got a slot for it. Just stick
+7:27
+and store it away. Check this out, bro.
+7:29
+It's rigid. Like, you don't have to
+7:32
+You just plop it down, whip that bad boy
+7:35
+out, and you're and you're doing
+7:36
+whatever you got. You're hacking the
+7:38
+main frame, bro. You're the man in the
+7:39
+chair.
+7:40
+Hold. I bet it's cheese.
+7:41
+Cheese.
+7:42
+Pies. We got cheese. Dude, Linux users
+7:44
+just hungry.
+7:45
+Oh, bro. That's cringy. My hair looks AI
+7:47
+generated,
+7:48
+bro. Look at it. Just built
+7:51
+the Anchor Prime power bank [music] can
+7:52
+run this whole thing at max load and
+7:55
+charge my phone to 100% simultaneously
+7:57
+[music] in under 30 minutes.
+7:58
+Dude, and it's tiny. That has more USB
+8:01
+wattage output
+8:03
+than that.
+8:04
+This charging base will get you to 50%
+8:05
+in 21 minutes. And you can dual input to
+8:08
+get that down to 13 minutes. 250 watt
+8:11
+input, baby.
+8:12
+Okay, this is sick. But we got to be
+8:13
+honest. Okay, the first one, Raspberry
+8:15
+Pi one, that was that was elementary
+8:17
+level. This one, I'm going to actually
+8:20
+use this. This is sick. But I wouldn't
+8:23
+call this ultimate. I need the
+8:25
+undisputed most powerful. All the knobs,
+8:27
+all the doohickeys. I need the most
+8:30
+perpetual [music] of dongles.
+8:36
+[music]
+8:38
+If you'll just forgive me in advance,
+8:40
+I'm really about to nerd out. [laughter]
+8:42
+I'm really about to nerd out. The term
+8:44
+cyber deck comes from this book in the8s
+8:47
+called Neurommancer. The [music] deck
+8:48
+was a way to jack into the Matrix,
+8:51
+cyberspace, but this was the '8s, so
+8:53
+they didn't even like know of the
+8:54
+internet. It read your brain directly
+8:56
+and ported you into like a virtual
+8:58
+space, which was referred to as a
+9:00
+consensual hallucination. And honestly,
+9:03
+a big [music] hallucination is what the
+9:05
+internet kind of feels like today. My
+9:07
+first step was just choosing what I
+9:09
+wanted it [music] to do. There's so many
+9:10
+options. Unlimited freedom, almost too
+9:13
+much freedom. See, everything you can
+9:14
+buy off the shelf today is designed for
+9:17
+everybody all at once. By default,
+9:20
+they're all generic and bland and do the
+9:22
+same thing. But this, the Cyber Deck, is
+9:25
+[music] designed for you.
+9:28
+With that much freedom, you have to be
+9:29
+careful. You see, pride, pride is
+9:32
+dangerous. Why do you want the ultimate
+9:36
+cyber deck?
+9:38
+The process is essentially design it in
+9:40
+[music] 3D, make sure it fits, build it
+9:43
+in real life, and then repeat the
+9:45
+process [music] for every component you
+9:47
+desire. The first big choice I had to
+9:49
+make was like what's the architecture
+9:51
+going to be? What kind of CPU am I going
+9:53
+to use? See, like, am I going to use ARM
+9:55
+[music] cores like on a Raspberry Pi
+9:57
+that are a little more efficient but
+9:58
+less powerful or like a full-fledged x86
+10:02
+architecture on the CPU? Not [music] a
+10:04
+nerd, by the way, because I knew I was
+10:05
+going with a 27in screen. Everything
+10:08
+portable always has a two small screen.
+10:09
+[music]
+10:10
+I'm a big man. That meant I needed a
+10:12
+full custom build of the mounting
+10:15
+system.
+10:16
+And then I thought, why not both? Like
+10:19
+the little salsa girl. Why not both?
+10:21
+DDR9000
+10:23
+24 GB per stick coups so don't drop it.
+10:28
+[music]
+10:28
+So I went with the latest Intel CPU for
+10:31
+the x86 full-size computing I was going
+10:34
+[music] to do.
+10:35
+This has the best power consumption to
+10:38
+performance. I also reverse slurped the
+10:40
+thermal paste for the best [music]
+10:42
+cooling.
+10:43
+Then went with the Latte Panda Sigma for
+10:45
+an even lower power desktop option with
+10:48
+a KVM connecting them both to the
+10:50
+screen. Dual PC KVM setup. Portable
+10:54
+all-in-one 27 in 500 Hz display. [music]
+10:58
+The ultimate nerd setup.
+11:09
+You ever heard of the term scope creep?
+11:12
+It's the uncontrolled growth of a
+11:15
+project's goals once [music] it's
+11:17
+already begun.
+11:18
+And this has to be the most powerful
+11:20
+Cyber Deck in the world. The most
+11:22
+powerful [music]
+11:23
+of all the undocumented portable
+11:26
+computers in the world.
+11:30
+I peed in the pool a lot as a kid.
+Pool pee
+11:34
+Thought I [music] was smarter than
+11:35
+everybody, you know. Look at those
+11:36
+dummies getting out of the pool all cold
+11:39
+and wet. Walk [music] to the bathroom
+11:41
+with grass and debris on their feet. Big
+11:45
+dummies. [music]
+11:46
+What do you think the chlorine's for?
+11:48
+What? Algae? No, man. It's for pee. Had
+11:52
+to have been [music] 10 years later when
+11:54
+it finally clicked, too. That I was also
+11:57
+drinking the pool water. [music]
+11:59
+Chlorine didn't bug me. I like the
+12:01
+flavor.
+12:02
+Kind of thought it tastes good.
+12:06
+I don't think it [music] had any
+12:07
+permanent effects though,
+12:11
+for sure.
+12:12
+[music] Right.
+12:15
+I mean, I stopped drinking pool water.
+12:19
+That's [music] the only way I could know
+12:20
+what it takes to build the world's most
+12:22
+powerful cyber deck. [music] And I know
+12:25
+what it takes. It just takes one more.
+12:29
+If I just have one more gigabyte of
+12:31
+dedicated [music]
+12:31
+WAN, just one more doohickey, one more
+12:34
+knob, one more dial.
+12:39
+Just give me one more mounted OLED
+12:41
+[music] display. One more functionality
+12:44
+and redundancy for the functionality and
+12:46
+just a few more [music] watts of
+12:47
+overhead. It never ends. The race
+12:50
+against an immeasurable scope and I was
+12:52
+creeping the scope, man. And I couldn't
+12:55
+give up.
+12:58
+So if pride leads to [music]
+13:00
+uncontrollably wanting something just
+13:02
+out of reach perpetually,
+13:05
+how could it ever be finished?
+13:09
+the world's most powerful cyber deck.
+13:11
+What would it take? And would it be
+Cyberdeck 3 (Hard)
+13:13
+enough?
+13:15
+[music]
+13:19
+It's time.
+13:22
+[snorts]
+13:24
+This whole day has felt like a fever
+13:25
+dream.
+13:27
+This
+13:29
+is the ultimate cyber deck.
+13:34
+Now, let me show you what it all does,
+13:35
+dude. toggle some [music] stuff on.
+13:38
+Yeet.
+13:39
+I haven't turned everything on yet. It's
+13:41
+my first time. These are all battery
+13:43
+powered. [music] I mean, this is all
+13:44
+battery powered. I don't dude. We got
+13:47
+the big stinking, you know. We got the
+13:48
+big red button. Big red button. I'm
+13:50
+going to show you [music] what it does
+13:51
+at the end cuz I'm a YouTuber. Believe
+13:53
+it or not, the hardest part of this
+13:54
+entire project was the power delivery to
+13:57
+everything because to be a Cyber Deck,
+13:59
+it has to be mobile. So, I have a DC
+14:01
+toAC converter for the monitor, a DC UPS
+14:04
+for all of [music] my hacker tools and
+14:06
+peripherals, and then the Latte Panda
+14:08
+runs on this battery. [music] I found
+14:10
+out later that it actually shuts off
+14:12
+under load, but the Ankor Prime power
+14:14
+bank [music] saved the day. It handled
+14:15
+all of the wattage output no problem.
+14:18
+Even the Latte Panda under max load.
+14:20
+And it monitors temps. Make sure we're
+14:22
+good.
+14:23
+Oh, dude, our knobs.
+14:25
+Our knobs are coming. Oh, look at the
+14:27
+blue underneath that knob. Oh my
+14:30
+goodness. And the AC power should turn
+14:33
+on. Okay, here comes the display.
+14:35
+[music]
+14:39
+Nice. [laughter and gasps] It's working.
+14:44
+[sighs]
+14:45
+Oh my goodness. And so that's the KVM
+14:48
+button right there. [music] So it says
+14:49
+no signal. So we're going to press the
+14:51
+KVM button and that should connect it to
+14:54
+the Latte Panda, which is now booting
+14:56
+up. Oh, and it's on. And then this
+14:59
+should just It just works. Okay. Okay.
+15:04
+The big freaking ball, dude. Yeah. You
+15:06
+know we about to do the peely. Oh
+15:11
+yeah.
+15:15
+The KVM just works. The display just
+15:17
+works. Everything is just working. Let's
+15:19
+log in.
+15:21
+Oh, it's working.
+15:23
+Let's freaking go.
+15:27
+Oh my goodness. This is sick. We got a
+15:30
+blinky light back there. Touchscreen
+15:32
+knob. Look at that knob. Okay, two
+15:34
+knobs. You know what they're for? You
+15:36
+know what these knobs are for? Knobs and
+15:39
+dials. They're for monitoring the
+15:41
+situation. You know what I'm saying?
+15:44
+Monitoring the situation. Check this
+15:46
+out. We got buttons. Oh yes, dude. So
+15:49
+that starts charging this with that
+15:51
+button. Goodness. How is this all just
+15:53
+working? Like I look at those buttons,
+15:55
+bro. Oh, and then we got USB on the back
+15:56
+of those which dongles into this via
+16:00
+buttons. And then over here we've got
+16:02
+I'm working on something spot. Okay. So,
+16:05
+every time you're working with one of
+16:06
+like a little single board computer or
+16:08
+like something you need to program, you
+16:09
+got to get out a display and you got to
+16:11
+get out a mouse and keyboard and you've
+16:12
+got to like find a way to connect it to
+16:14
+Wi-Fi. So, right here, perpetually
+16:16
+available dongles and then on top of
+16:19
+that, this will fit anything. You can
+16:21
+just grab the thing. I'm pretty excited
+16:23
+right now, not going to lie. I've been
+16:24
+working on this thing for a battery
+16:26
+powered. No mains going to it, dude. So,
+16:29
+like, what does this stuff actually do?
+16:32
+Mobile hacker station. Receive, [music]
+16:34
+transmit, capture, and replay radio
+16:37
+frequencies.
+16:38
+It can do all kinds of insane stuff.
+16:40
+There's a button combination on this
+16:41
+thing. You can accidentally press the
+16:43
+FBI will show up at your house.
+16:44
+A button, microphone, ESP32. It can
+16:47
+receive radio waves as well. You can
+16:49
+also send IR signals. Got a couple of
+16:51
+them there in case you want to pocket
+16:52
+one. Seed [music] Studios Meshtastic
+16:55
+device, just free off-grid text
+16:56
+messaging. In addition to that, we've
+16:58
+got this over here, which is the Flipper
+17:00
+Zero you've probably heard of. So, Wi-Fi
+17:02
+cameras, ring cameras or whatever, they
+17:04
+can be deoff send them a little ping and
+17:06
+they'll basically like disconnect. Walk
+17:08
+into Lowe's, you can send out a thing on
+17:10
+here that basically [music] pings every
+17:12
+single department that's like, "Hey, we
+17:14
+need help." You've got like nearfield
+17:15
+communications, credit cards, like you
+17:18
+can scan credit cards, your own, of
+17:19
+course. bad USB. So, you can like plug
+17:21
+this into someone's like Windows
+17:22
+computer. Boom. And it shoots out the
+17:24
+code automatically like imitates itself
+17:26
+being a keyboard. No, nobody knows how
+17:28
+to give you the dishwasher you just paid
+17:30
+for. And you can help there. Nobody in
+17:31
+the store working there. And I'm not
+17:33
+mad.
+17:33
+Before pressing the big red button, the
+17:35
+Ankor Prime [music] power bank is the
+17:37
+dedicated power delivery system for all
+17:39
+of my cameras, all of [music] my phones,
+17:41
+all of my single board computers. 140 W
+17:45
+power delivery is what saved this Cyber
+17:47
+[music] Deck. Under sustained load, all
+17:50
+the other batteries I tried just
+17:52
+couldn't keep up. But the output on the
+17:53
+Ankor Prime was more than enough.
+17:56
+[music] If you want to always stay
+17:57
+charged, keep your projects running
+17:59
+consistently, check out my link in the
+18:01
+description. [music] It supports the
+18:02
+channel and helps me do projects like
+18:03
+these. And thank you to Anchor for
+18:05
+sponsoring this video. [gasps] But
+18:07
+there's a there's one more thing. So the
+18:09
+big red button, the big red [music]
+18:10
+button is for mains. If you connect if
+18:13
+you connect to mains and this is the
+Pressing the big red button
+18:15
+part I'm scared about because I don't
+18:16
+know if this is going to do it. I don't
+18:20
+I don't know if this So, first we flip
+18:21
+this switch and it should light up.
+18:23
+Okay, that Oh, the RAM's flashing. Okay,
+18:27
+the RAM started fl I mean the bars of
+18:29
+gold started flashing. So, that's like
+18:30
+your charge port. But then you also have
+18:32
+this the big [snorts] red button.
+18:36
+And I haven't pressed it yet. This is my
+18:38
+first time pressing it. I'm gonna do it.
+18:44
+Oh,
+18:47
+we going Oh, the
+18:50
+dude.
+18:52
+Gamer mode.
+18:54
+I wasn't I kept saying, man, I'm not
+18:57
+going to say gamer mode. That's dumb.
+18:58
+But look at it. Oh,
+19:03
+please work. Please [music] work. Please
+19:04
+work. Please work. [screaming]
+19:07
+This the most fun.
+19:09
+I'm in docked mode, [music] not gamer
+19:12
+mode. That's dumb. See, and after all
+19:14
+this demonstration, we still have 81%.
+19:16
+Got hours going. Okay, this is [music]
+19:18
+the highest tier of desktop class.
+19:21
+Android phone obviously has a battery in
+19:23
+it and you can take it out remotely
+19:24
+control the PC,
+19:28
+right? You're hacking the main frame and
+19:35
+I don't read very much. I tried to read
+19:37
+the book. I couldn't do it.
+19:41
+I got seized at a school that [music]
+19:43
+barely existed and then never went to
+19:44
+college.
+19:48
+But I read one book every day. Says we
+19:51
+came from dust.
+19:54
+Shoot. The world says the same thing.
+19:56
+And they all just argue [music] how the
+Destroying it
+19:57
+dust ended up in that shape.
+20:02
+So if all we get here is a pride that
+20:04
+leads to drink and pee
+20:07
+and a thirst for power that [music] can
+20:09
+never be quenched,
+20:15
+[music]
+20:15
+then I don't want it.
+20:24
+We're watching Nicholas
+20:25
+just passing through.

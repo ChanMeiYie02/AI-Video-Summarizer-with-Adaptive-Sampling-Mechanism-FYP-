@@ -1,0 +1,24 @@
+{
+    "id": "maziy2ic3kucdoryg2uk72d6dmsoollk",
+    "title": "Mining complex dynamic data",
+    "url": "http://videolectures.net/ecmlpkdd2011_tutorial_mining/",
+    "info": {
+        "author": [
+            "Grigoris Tsoumakas, Department of Informatics, Aristotle University of Thessaloniki",
+            "Arthur Zimek, LMU Institut für Informatik, Ludwig-Maximilians Universität",
+            "Myra Spiliopoulou, Faculty of Computer Science (FIN), University of Magdeburg",
+            "Irene Ntoutsi, LMU Institut für Informatik, Ludwig-Maximilians Universität"
+        ],
+        "published": "Oct. 3, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Data Mining->Temporal & Streams Mining"
+        ]
+    },
+    "num_segments": 65,
+    "num_sentences": 597,
+    "num_clips_with_summary": 37,
+    "num_gt_summary_sentences": 85,
+    "ground_truth_summary_length_chars": 9906
+}

@@ -1,0 +1,21 @@
+{
+    "id": "foajcspdb477j456wq3y7x3sbr5s26jo",
+    "title": "Confusion-Based Online Learning and a Passive-Aggressive Scheme",
+    "url": "http://videolectures.net/machine_ralaivola_online_learning/",
+    "info": {
+        "author": [
+            "Liva Ralaivola, Aix-Marseille Université"
+        ],
+        "published": "Jan. 14, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Supervised Learning"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 25,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 1170
+}

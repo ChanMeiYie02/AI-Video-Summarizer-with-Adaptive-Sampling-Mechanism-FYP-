@@ -1,0 +1,20 @@
+{
+    "id": "7m5g3mkrqmfjpm5iluyxjfxf3xilra75",
+    "title": "Variational Optimisation by Marginal Matching",
+    "url": "http://videolectures.net/abi07_lawrence_vap/",
+    "info": {
+        "author": [
+            "Neil D. Lawrence, School of Computer Science, University of Manchester"
+        ],
+        "published": "Dec. 31, 2007",
+        "recorded": "December 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 27,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 401
+}

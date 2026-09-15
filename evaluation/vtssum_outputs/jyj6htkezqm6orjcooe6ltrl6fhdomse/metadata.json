@@ -1,0 +1,20 @@
+{
+    "id": "jyj6htkezqm6orjcooe6ltrl6fhdomse",
+    "title": "Fitting a Graph to Vector Data",
+    "url": "http://videolectures.net/mlss09us_spielman_fgvd/",
+    "info": {
+        "author": [
+            "Daniel A. Spielman, Department of Computer Science, Yale University"
+        ],
+        "published": "July 30, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Graphical Models"
+        ]
+    },
+    "num_segments": 55,
+    "num_sentences": 699,
+    "num_clips_with_summary": 30,
+    "num_gt_summary_sentences": 58,
+    "ground_truth_summary_length_chars": 6547
+}

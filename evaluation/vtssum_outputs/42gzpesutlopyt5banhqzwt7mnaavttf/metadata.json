@@ -1,0 +1,22 @@
+{
+    "id": "42gzpesutlopyt5banhqzwt7mnaavttf",
+    "title": "Use and Evaluation of Wordnets as Lexicographical Resources",
+    "url": "http://videolectures.net/WNLEXworkshop2018_lindemann_wordnets/",
+    "info": {
+        "author": [
+            "David Lindemann, University of Hildesheim"
+        ],
+        "published": "July 24, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Humanities->Linguistics->Lexicography",
+            "Top->Computer Science",
+            "Top->Data Science"
+        ]
+    },
+    "num_segments": 42,
+    "num_sentences": 402,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 3539
+}

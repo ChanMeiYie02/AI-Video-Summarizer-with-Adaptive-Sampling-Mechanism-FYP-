@@ -1,0 +1,24 @@
+{
+    "id": "dshsqw6m4v3f275nre4kgp5knof7fsnh",
+    "title": "Exploiting Information Extraction, Reasoning and Machine Learning for Relation Prediction",
+    "url": "http://videolectures.net/eswc2012_jiang_relation_prediction/",
+    "info": {
+        "author": [
+            "Xueyan Jiang, Ludwig-Maximilians Universität"
+        ],
+        "published": "July 4, 2012",
+        "recorded": "May 2012",
+        "category": [
+            "Top->Computer Science->Information Extraction",
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Logic",
+            "Top->Computer Science->Machine Learning->Bayesian Learning",
+            "Top->Computer Science->Semantic Web->Ontologies"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 192,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1746
+}

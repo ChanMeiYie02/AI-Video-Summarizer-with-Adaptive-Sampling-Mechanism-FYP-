@@ -1,0 +1,21 @@
+{
+    "id": "sj643cvjajfud6oyzfjdbsxowalvz6lj",
+    "title": "Graph Evolution via Social Diffusion Processes",
+    "url": "http://videolectures.net/ecmlpkdd2011_ding_graph/",
+    "info": {
+        "author": [
+            "Chris Ding, Department of Computer Science and Engineering, University of Texas at Arlington"
+        ],
+        "published": "Oct. 3, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Network Analysis",
+            "Top->Computer Science->Social Media"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 269,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 2414
+}

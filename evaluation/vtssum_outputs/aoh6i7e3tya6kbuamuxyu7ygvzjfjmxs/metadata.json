@@ -1,0 +1,20 @@
+{
+    "id": "aoh6i7e3tya6kbuamuxyu7ygvzjfjmxs",
+    "title": "Opening Ceremony",
+    "url": "http://videolectures.net/iswc2016_chairs_opening_ceremony/",
+    "info": {
+        "chairman": [
+            "Yolanda Gil, Information Sciences Institute (ISI), University of Southern California"
+        ],
+        "published": "Nov. 10, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 45,
+    "num_sentences": 240,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 2641
+}

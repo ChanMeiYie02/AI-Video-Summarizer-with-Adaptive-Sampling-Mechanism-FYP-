@@ -1,0 +1,24 @@
+{
+    "id": "77aihaq62ihlyxklmgmqhmi47uo4ofqv",
+    "title": "Creativity in Conceptual Spaces",
+    "url": "http://videolectures.net/iccc2014_chella_conceptual_spaces/",
+    "info": {
+        "author": [
+            "Antonio Chella, University of Palermo"
+        ],
+        "published": "Aug. 8, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Machine Learning",
+            "Top->Arts",
+            "Top->Philosophy",
+            "Top->Social Sciences->Psychology"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 215,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 708
+}

@@ -1,0 +1,20 @@
+{
+    "id": "ezs37necyvithhqdljr7gxyok2vpnwh3",
+    "title": "A Framework for Probability Density Estimation",
+    "url": "http://videolectures.net/ripd07_david_fbd/",
+    "info": {
+        "author": [
+            "Shai Ben-David, School of Computer Science, University of Waterloo"
+        ],
+        "published": "Feb. 25, 2008",
+        "recorded": "December 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 110,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 398
+}

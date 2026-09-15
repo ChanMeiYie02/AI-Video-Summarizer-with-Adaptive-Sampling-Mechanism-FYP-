@@ -1,0 +1,145 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:02.604 --> 00:00:03.740
+IAIN MURRAY: Welcome back.
+
+00:00:03.740 --> 00:00:04.580
+I'm Iain Murray.
+
+00:00:04.580 --> 00:00:09.040
+And we're now looking at the sensors and devices section of the course,
+
+00:00:09.040 --> 00:00:11.350
+or things as we would rather call them.
+
+00:00:11.350 --> 00:00:14.570
+So you may be wondering where we're talking about The Internet of Things.
+
+00:00:14.570 --> 00:00:15.730
+What is a thing?
+
+00:00:15.730 --> 00:00:18.430
+Well, this is a thing.
+
+00:00:18.430 --> 00:00:19.750
+This is a sensor.
+
+00:00:19.750 --> 00:00:22.360
+It's a sensor that reads something about the environment.
+
+00:00:22.360 --> 00:00:23.360
+We can read many things.
+
+00:00:23.360 --> 00:00:27.700
+We can read gas level, CO2, humidity, temperature.
+
+00:00:27.700 --> 00:00:30.940
+Lots of different items.
+
+00:00:30.940 --> 00:00:32.540
+This is also a thing.
+
+00:00:32.540 --> 00:00:33.280
+It's a speaker.
+
+00:00:33.280 --> 00:00:35.000
+It's something that has an output.
+
+00:00:35.000 --> 00:00:38.110
+So if you look at them together we have a sensor, which is an input,
+
+00:00:38.110 --> 00:00:40.100
+and an actuator, which is an output.
+
+00:00:40.100 --> 00:00:42.100
+In this case, a speaker, or it could be a motor,
+
+00:00:42.100 --> 00:00:46.040
+or it could be a relay or something else that performs an action.
+
+00:00:46.040 --> 00:00:48.730
+They need to be connected to a computer.
+
+00:00:48.730 --> 00:00:51.560
+And generally we use very small computers like this one.
+
+00:00:51.560 --> 00:00:53.370
+This is a microcontroller.
+
+00:00:53.370 --> 00:00:56.620
+And this is a device that reads the input from the sensor
+
+00:00:56.620 --> 00:00:59.420
+and can output some action to the actuator.
+
+00:00:59.420 --> 00:01:05.610
+So if we look at our microcontroller, our input sensor, and our actuator,
+
+00:01:05.610 --> 00:01:08.320
+and we put these together that is a thing.
+
+00:01:08.320 --> 00:01:10.900
+And this is the thing that we connect to the internet.
+
+00:01:10.900 --> 00:01:13.810
+Of particular interest this is a really small thing,
+
+00:01:13.810 --> 00:01:16.056
+but you can also have very large things.
+
+00:01:16.056 --> 00:01:18.430
+If you look at the case study later on of the engineering
+
+00:01:18.430 --> 00:01:22.030
+pavilion at Curtin University that is a thing on the internet.
+
+00:01:22.030 --> 00:01:25.622
+So an Internet of Things, thing, but that is not small.
+
+00:01:25.622 --> 00:01:26.830
+It's a three storey building.
+
+00:01:26.830 --> 00:01:30.850
+So we tend to talk about devices and things.
+
+00:01:30.850 --> 00:01:33.520
+These terms can be used somewhat interchangeably.
+
+00:01:33.520 --> 00:01:37.360
+A thing, as we've mentioned, is a sensor or an actuator
+
+00:01:37.360 --> 00:01:41.860
+connected to a small computer that reads something about the environment
+
+00:01:41.860 --> 00:01:44.830
+or acts on an element within that environment.
+
+00:01:44.830 --> 00:01:47.500
+A device, we tend to, and this is not always true,
+
+00:01:47.500 --> 00:01:51.650
+but we tend to talk about this sort of thing as a device.
+
+00:01:51.650 --> 00:01:55.630
+It's something that has other uses, is intelligent, but it contains sensors,
+
+00:01:55.630 --> 00:01:57.970
+it contains the communication methods that we
+
+00:01:57.970 --> 00:02:00.980
+need for the Internet of Things, but it serves other purposes.
+
+00:02:00.980 --> 00:02:02.380
+So it becomes a device.
+
+00:02:02.380 --> 00:02:04.570
+So we've had a chat about the device and things
+
+00:02:04.570 --> 00:02:07.340
+that we'll be examining in this course.
+
+00:02:07.340 --> 00:02:10.630
+So let's go in and we'll explore a few of the different types of sensors
+
+00:02:10.630 --> 00:02:13.020
+that are available to us.

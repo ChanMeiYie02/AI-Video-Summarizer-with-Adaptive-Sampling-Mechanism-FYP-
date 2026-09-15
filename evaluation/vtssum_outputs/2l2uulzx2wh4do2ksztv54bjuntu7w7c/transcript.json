@@ -1,0 +1,157 @@
+[
+    {
+        "text": "Hello everybody, I'm going to present Alice DSLAM which stands for large scale direct monocular slam's joint work with Thomas Drops and Daniel Cremers.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "I want to start by just showing you a video and what you can see here is I'm moving the camera around while I'm moving it around, which is just a normal webcam. It's being tracked in real time and the environment is reconstructed on the screen there on the CPU of laptop.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So this is obviously structure in motion or monocular slam, and it's a very popular topic. There has been a lot of research on that in the last 15 years. Here are just some examples. And there has been a lot of progress in the last 15 years, which to know part is to no small part, is due to better computers we have now but also the methods that we use now are not the same like as the methods we used 15 years ago. Still. Most of these methods are based at some point or another on key points or features or landmarks.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "But in some point the pipeline is always this that you have the input images and then you extract some kind of features, Sift, surf. It might also be small line segments or patches. Take take out the images and just work on these feature observations to reconstruct geometry. So for tracking, minimize for instance reprojection error for mapping you estimate point positions, Patch normals, line positions and so on. Now the direct approach and Alice. This lamb is a fully direct method, completely skipped this step. So in contrast to the free talks, it's all before we do not use features. Instead we take the raw images as they come and then do tracking and mapping directly on full images. So for tracking we minimize the photometric error, which is minimization of intensity differences instead of point different distances and for mapping we estimate kind of the most basic geometric information there is, that is. Pixelwise depth information.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Now, why would you want to do that? Here's an example. You can see a key point by SLAM system, and others do slam on the right. Tracking is actually done in real time at 30 frames per second. We just show keyframes here. The big difference is that why Keypoint based approaches can only use image corners or straight line segments? Islam uses everything that's colored in the image. That is, everything that has gradient. Which gives a much denser and nicer map with less outliers. What you can see there?",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So how does it work to do monocular slam in real time entirely without key points? And I hope that in this talk I can give you a rough idea of how we can do that. So there's three main parts, tracking, depth estimation and global map optimization, which I'm going to go through one after the other now, so let's talk.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "With tracking. For now, let's assume we have an old keyframe with a depth map. And we get a new keyframe and we want to track that.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So we have the old keyframe and I'm always going to visualize depth Maps as color coded depth superimposed on the RGB on the black and white image. Um now?",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "We get a new camera frame and we can sort of render this new camera frame from the keyframes perspective so we can back up into the keyframe using the depth. And now assume.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Brightness constancy we can say OK, those two images should be the same so we put it in our function sum over all pixels and minimize it.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Minimize it using the Gauss Newton algorithm, which turns out to be very similar to a forward compositional formulation of Lucas Kanade, which has been around for over 25 years I think. Um? And directly uses all the pixels to directly get the six degrees of freedom pose of the camera relative to the keyframe now.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Of course, that's kind of the romanticized clean version. In practice, you need to add some small things. For instance, we do a multiresolution approach to attract large motions in order to overcome the nonconvexity of the error function. We use a human norm instead of L2 norm in order to be robust to outliers and occlusions, and moving objects and so on. We introduce a sort of statistical normalization which respects all error sources on residual including depth noise and intensity noise. And then it looks roughly like this. So here you can see the image first on a core scale and then find out finer being tracked. It actually runs very fast in real time on a single CPU core. You can track it in real time no problem.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So that's the tracking part. The thing is, for in order to do that, we need a depth map and this depth map. If you're using a depth camera, you get it for free, so that is why this kind of tracking is very popular for Kinect based approaches. Here we have to have to estimate it.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "That's the epitome.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "In component we represent depth Maps probabilistically, so for each pixel for which we have depth, which are all the pixels that have image gradient for all the color pixels, here we have Gaussian probability distribution on the inverse depth of that pixel. Under Gaussian probability distribution is step by step refined or filtered overtime by integrating more and more stereo comparisons with other frames. I'm starting with a very small baseline, explicitly taking advantage of the fact that we have a video so we can start with a small baseline and slowly increase the baseline and keep all the information in order to make it run in real time on the CPU, we do a very strict information selection, so we only do stereo if it's actually worth the cost. Which kind of motivates to hold simulants idea because for pixels where there's no gradients, there is not going to give us any information. So we leave them out. In practice, it looks somewhat like this, so here you can see the April Alliance segments that are searched in each frame it slow motion. You can see that in the beginning if new new hypothesis are initialized, there's a large red line, meaning that there's still a lot of variance, and we don't know where to look at, but then it gets smaller and smaller, and in the end it's just these small green lines tracking kind of the edge or corner or whatever radiant it is. We then add small edge, preserving smoothing to kind of put a prior in there towards smooth depth Maps. Distance based keyframe selection to select new keyframes.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "And that's the depth map estimation component. So we have this loop. Existing depth map is used to track and you frame. This frame is then used to either make up a new keyframe or refined than UK. The old key frame using stereo and then the new keyframe is used to track new frames. There is this classical circular dependency which we need to initialize. This is actually one of the nice things we can.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Just initialize it using a random depth map so we start off with random depth map and then take this kind of alternating optimization between pose and depth map. Take care of it, which works in most cases in practice. Um? But so far this is just in the dormitory. It's no slam and it's not large scale slam. So that's where the third part comes in.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Global map optimization. So we do that by representing the world as a number of key frames and doing a pose graph of those key.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "The first important thing that you need to notice here is that monocular slam, so the absolute scale is not observable, so drift overtime. So after a certain time after loop we not only have accumulated error in position and rotation, but also the scale has changed and we need to take that into account.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "And we do that by proposing a novel version of direct tracking on SIM three directly, so rotation, translation, and scale. Um? To directly line 2 keyframes with two depth Maps and get the scaled rotational translation between them. So we start off with the same tracking as before, just minimizing the photometric error, and now we add two small things. So first.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "We replace rigid body motion by rigid body motion plus scale. Mathematically, it works the exact same way. And 2nd we added a second residual term which says OK in addition to image intensity staying the same. Also the depth should stay the same, so that's the second term which kind of is the difference of depth values? You can minimize it.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Zach time way so. Gauss Newton optimization with with a little twist, multiresolution approach, human norm statistical normalization, which also takes care of balancing these two different units against each other. Um, and then we.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Put the result into a post graph framework where we optimize over deposes in the graph. Each keyframe has a 7 dimensional post, so each keyframe has position, rotation and scale. In the plots and videos will kind of visualize the scale as the size of the camera first term.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Now, in practice it looked like this, so the camera moves more and more. Key frames are created more and more constraints are found and the more constraints are found, the more the individual depth Maps shift into place and are scaled rotated and translated to make up a nice model. And you can also see that this model includes edges, for instance, or densely textured surfaces, not just points.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So this is the whole algorithm. What I showed you so far doesn't really qualify as large scale, so let me show you.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Example, which is a bit more large scale. Here you can see the random initialization, it's just a green random dirt and now the camera starts moving and it converges quite quickly to a good depth map. Black means very close to the camera, then red, green, blue is very far away. This is about a 6 minutes trajectory. Computations done in real time only on the CPU. Actually the whole algorithm is optimizable to a GPU and could run much faster on GPU even. Now you can see the accumulated drift and also scale drift, and there's one duplicated found whole thing shifts into place and you get a nice big map. The total of 800 keyframes, 11,000 constraints and 51 million points.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Here's another example which is about twice as big. Um? 12 minutes, 36,000 frames tracked in total, 1000 keyframes and roughly 18,000 constraints. One nice thing is that for each point in a depth map we not only have the depth, but we also have a measure on how accurate it is. So what we do for these visualizations is we just put a threshold on the variance and say OK, we just want display the points that have a certain accuracy so we don't display all 100 million points, which would be a lot of points. We only display the ones that are sufficiently accurate, which gives a very nice map which. Also agrees with Google Maps. Now.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Because we can do that in real time on a CPU, we can also do it on the smartphone. This short preview for our eyes. My paper, which is going to be published tomorrow. Officially I think in Munich, so here we do the same thing on smartphone and use it for a small augmented reality application. Again, you can imagine that having the semi dense representation where you have a lot more information about edges in the image as well. Gives you better opportunities to do augmented reality.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "OK, so to summarize. There are three main components that make LSD slam work direct tracking, which is direct image alignment which is then used both for loop closure, constraint, constraint tracking as well as initial frame tracking. Um? We give a kind of general formulation as Gauss Newton minimization only manifolds. Which time can be used?",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Cement stereo by filtering over many small baseline stereo comparisons and Bayesian Fusion of the information we get coupled with a strict information selection, so we only do stereo if it's actually worth the cost. And that makes it run in real time on CPU. And third pose graph optimization, including scale. So simply post graph optimization to make a large scale global consistent map outfit.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Now. To conclude. LSD slam is a large scale, fully direct monocular slam system. We don't even need a separate keypoint based initializer. It's it's a very first system that's without key points and can work on this scale. It runs in real time on CPU you can expect even much faster results on the GPU and probably most interesting Lee, we're also decided to publish the source code within the next week, so we're going to put it open source, including some datasets, both videos, so you can try it out without having a webcam as well as point clouds. If you just want to use a point cloud for further processing. Thanks for the attention. Questions great results and I'm a big big fan of direct intensity based methods are really glad to see these. My question is could you comment on how this differs from the work that was done in the early 90s by the Sarnov Group and direct intensity based methods for 3D reconstruction? From what I could tell, the main additions here were the large scale and the real time. Are there any additional things that I'm to be honest? I'm not entirely sure which work you're referring to. It started with the worth of. Work of Keith Hannah and undone. The reconstruction of 3D camera motion and depth using direct intensity based methods and then it continued to the plane plus parallax work that lots of us did. Also using direct intensity based method. If you're not familiar with, I'll give you some references later, like the only work that early that I'm a familiar of is from Canada and Solinski and matches actually where they do this similar kind of depth map estimation, but only for planar motion and without tracking. So I'll give you some references later, yes. Hi I have a over here. Well, you have your intensity constant intensity assumption and I saw this works for outside scenes. So how do you handle this? Can you comment on what happens if the intensity changes if the lighting changes, so you're right and some of the sequences I showed there were pretty drastic lightning changes auto shutter. Being complicated so it actually works fairly well even if there is lighting changes, because we only use image regions with certain gradient and lightning changes only have have a bad effect if the lightning change is bigger than the gradient you're using. So if there is a black and white edge and before and after the white is a bit brighter and the black is a bit brighter, but apart from that the edge stays the same place, then it doesn't actually make a difference. We have experimental support for kind of a feen lightning estimation, so estimated the whole frame got a bit brighter and compensate for that, but it's not in there yet. Hi I have a question from the balcony. Do you have any quantitative results on the drift, especially in the large scale as well as on the pose as well as the three point reconstruction? Yes, so we have benchmark results on the pose estimation accuracy. Unfortunately, there's not many good benchmarks out there for monocular slam, neither for stereo or for depth depth or kynec based slam, and in both cases or formula slam you have certain unobservable modes which you don't have for stereo or depth based slam. So many of the directories don't work for any monocular for anymore algorithm, but the ones that do work we do have numeric results in them. Maybe I missed this, but how do you detect loop closure from the your keyframes, yes, good question. So there's two ways we can do that. So one thing we do is we just try to track on a very coarse resolution on close by frames that have a certain overlap, which is very fast, because if you do it on a small resolution it's 30 * 40 pixels and you can very quickly decide whether it's a potential disclosure or not. In order to detect the really large loop closures, which for instance, the one where I showed the one big loop. Where you can't do that, do it. That way we use an appearance based loop closure detection algorithm open popping up in that case to kind of tell us. OK, this frame might be a loop closure. Try tracking it. But for the for the other sequence I showed with the chairs and umbrellas, we didn't use him up because there all the loops are so small that the accumulated drift is small enough. Hey I have a question. I can imagine that intensity based approach breaks faster part if the baseline bit between 2 frames is is to far away, yes, do you have any experiments of benchmarks on this? How far you can go here so we don't have numbers, but by experience you're right it does. It is inherently based on having a video and not only individual frames with a large baseline. So we need a certain frame rate. Let's say 30 frames per second and then it's no problem because then you have those small baselines always or like either you have a small baseline or you have a good initialization for tracking from the previous frame. If you only want to apply it to 5 frames per second video or 10 frames per second video, then the motion has to be sufficiently small. OK, so then let's thank the speakers of the session again.",
+        "start": 870.0,
+        "end": 899.0
+    }
+]

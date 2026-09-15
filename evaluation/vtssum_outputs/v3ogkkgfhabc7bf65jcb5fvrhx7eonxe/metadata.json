@@ -1,0 +1,21 @@
+{
+    "id": "v3ogkkgfhabc7bf65jcb5fvrhx7eonxe",
+    "title": "Preparing and sharing data with the ELRC repository – and what happens next",
+    "url": "http://videolectures.net/ELRCworkshop2018_giagkou_ELRC_repository/",
+    "info": {
+        "author": [
+            "Maria Giagkou, Institute for Language and Speech Processing (ILSP / \"Athena\" R.C.)"
+        ],
+        "published": "May 29, 2018",
+        "recorded": "April 2018",
+        "category": [
+            "Top->Computer Science->Natural Language Processing",
+            "Top->Humanities->Languages"
+        ]
+    },
+    "num_segments": 49,
+    "num_sentences": 194,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 1952
+}

@@ -1,0 +1,20 @@
+{
+    "id": "qh3swlq2tduuzglwo3msfkzkfu4kd6sd",
+    "title": "Learning Models, Supermodels, and Ensemble Models of Dynamic Systems",
+    "url": "http://videolectures.net/sumosummerschool2013_dzeroski_dynamic_systems/",
+    "info": {
+        "author": [
+            "Sašo Džeroski, Department of Intelligent Systems, Jožef Stefan Institute"
+        ],
+        "published": "April 24, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 57,
+    "num_sentences": 343,
+    "num_clips_with_summary": 41,
+    "num_gt_summary_sentences": 71,
+    "ground_truth_summary_length_chars": 10228
+}

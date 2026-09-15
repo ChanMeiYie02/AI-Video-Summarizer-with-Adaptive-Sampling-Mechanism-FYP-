@@ -1,0 +1,24 @@
+{
+    "id": "lbor2wmmlox4ihr7y7ofyw7vhws3r3vt",
+    "title": "System Dynamics of Healthcare",
+    "url": "http://videolectures.net/NTUcomplexity2017_matchar_dynamics_healthcare/",
+    "info": {
+        "author": [
+            "David B. Matchar, Duke-NUS Medical School"
+        ],
+        "published": "April 3, 2017",
+        "recorded": "March 2017",
+        "category": [
+            "Top->Science->Complexity Science",
+            "Top->Computer Science",
+            "Top->Data Science",
+            "Top->Mathematics",
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 249,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1873
+}

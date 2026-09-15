@@ -1,0 +1,20 @@
+{
+    "id": "hlsacwdhddseelh6mifct6yqltsn6bya",
+    "title": "Designing novel inorganic and polymer systems with enhanced dielectric and electromechanical response",
+    "url": "http://videolectures.net/kolokviji_bobnar_designing_inorganic/",
+    "info": {
+        "author": [
+            "Vid Bobnar, Condensed Matter Physics, Jožef Stefan Institute"
+        ],
+        "published": "Dec. 16, 2019",
+        "recorded": "December 2019",
+        "category": [
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 382,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 4301
+}

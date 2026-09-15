@@ -1,0 +1,20 @@
+{
+    "id": "km6tifilgjujfrmeb4ev4ftznds2f7xa",
+    "title": "Sufficient covariates and linear propensity analysis",
+    "url": "http://videolectures.net/aistats2010_guo_scalp/",
+    "info": {
+        "author": [
+            "Hui Guo, Faculty of Mathematics, University of Cambridge"
+        ],
+        "published": "June 3, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 129,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 3031
+}

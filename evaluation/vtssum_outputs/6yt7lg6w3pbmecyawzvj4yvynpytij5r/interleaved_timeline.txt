@@ -1,0 +1,59 @@
+[0.0s - 29.0s]
+OK so I will do this. Do the first half of the speech and then we will just switch over. OK, I will talk a little bit of about feature extraction from audio content from music data. And on their applications.
+
+[29.0s - 58.0s]
+Um well. What is the? What is the motivation behind our task of work? We want to extract information from audio. And then. Create more high level semantic information from these low level features.
+
+[58.0s - 87.0s]
+Or just start with the feature extraction itself. Very briefly, go to some applications and then intensive will talk about the area project, where they try to improve the sound quality of. Music. And using a. Results of our feature extraction to improve their. Algorithm.
+
+[87.0s - 116.0s]
+Well. On this slide you can see on the left side some classical piece of music. It's Philly, sit by Beethoven and on the right side it's, I think freak of the leash by Korn. Heavy metal. Um? For a human, the difference between these two song are obvious, but for a computer. There. Hard to guess. So what we do now is we transfer transform. The audio signal into. Well, into a feature vector. And we do this by. Well, in the first step we apply a clear free transform. And then apply some like acoustic models. And then.
+
+[116.0s - 145.0s]
+From this data we can calculate some. Statistical. Well, some. Statistical data which we communicate emulate to the to the SSD feature set.
+
+[145.0s - 174.0s]
+From this step on we go.
+
+[174.0s - 203.0s]
+To extract the rhythm patterns. We in this step we apply a second foray transform, again, apply some psychoacoustic models, and then calculate the median and get a 1440 dimensional vector, which. Represents. Well, the rhythm structure of its of a piece of music. It's not only the. The beat.
+
+[203.0s - 232.0s]
+So beats per minutes or something like that. This is in the next step very well. Simplify deriven patterns.
+
+[232.0s - 261.0s]
+If you want to use these features. With your own music. We've created our web service, wrapped around a web service around our feature extraction. What would you can either just use our very simple client? To upload the music and extract back to extracted features, or of course you can also. Integrate this web service into your own applications.
+
+[261.0s - 290.0s]
+It's quite straightforward, you just select the music. Select the feature you want to have and hit the.
+
+[290.0s - 319.0s]
+Button and well, it's in progress. We need about 3 to 4 seconds per song. But and of course you have to add the time to transfer the data to.
+
+[319.0s - 348.0s]
+So now we have the features.
+
+[348.0s - 377.0s]
+Now we want to do something with them. We can use these features, for example for music classification, genre, classification for Mood analysis, artist identification. Um? And so on and on the Internet. Next step we can use this to.
+
+[377.0s - 406.0s]
+Well here for classification we. We had we had quite good results in the Music's 2006 contest.
+
+[406.0s - 435.0s]
+You can then use these features to create a map of music. Where you can have easily and no overview of over large music collection. This map is based on the self organizing map by Conan. Um? And. Well, on this map you had music that sound similar forms well, so to speak islands. And you can now select one of these islands and. Listen to music that. It's not by the same artist, maybe not by the same from the same genre, but sounds well similar. What you can do on also do is you just draw a path through this island. Through these islands. And now you have a playlist which starts in war in one corner, in one shocker. And then smoothly moves onto another another shoulder. Or another kind of music? We've also a.
+
+[435.0s - 464.0s]
+Implementations for mobile devices. Where you can. Stream the music over the Internet or use the mobile device as a remote control for for your audio player. You're even farther. Play some application we saw in the slide before.
+
+[464.0s - 493.0s]
+And again. So to speak, for home use, we have created a website.
+
+[493.0s - 522.0s]
+Chris it creates these Maps of music, so you just take the features you receive from the web service in the step before sent them again to the.
+
+[522.0s - 551.0s]
+Web service. And get back your own personal. Map of.
+
+[551.0s - 580.0s]
+Music. So this was my part of the speech. Incenso please.

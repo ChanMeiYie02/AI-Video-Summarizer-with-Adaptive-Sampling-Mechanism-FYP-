@@ -1,0 +1,92 @@
+[
+    {
+        "text": "My name is Alyssa Ritchey and I am a PhD student at University of Perugia. This is a joint work with Felda Baranello cristianini that we developed while.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "I was at University of Bristol and this talk I will briefly introduce sequence labeling. Will present in particular discriminative approaches for sequence labeling learning. I will introduce a new algorithm that we developed and it is based on this score maximization. Finally we will present some experimental results and discuss some computational issues behind our methods and then I will conclude with some ID.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Yet for further works, sequence labeling basically is the task of assigning labels. Why to a sequence X? For example, sequence labeling arising must have many application, for example in part of speech tagging, X can be the sequence of words in a sentence and then then why it can be part of speech tags. Usually either Markov model are used for labeling, but there are too many drop. There are too many. To draw back in using traditional hidden Markov model, the first drawback is that conditional independence assumption sometimes are too strict to model the sequence labeling problem. Another problem is that the training is realized in a generative fashion and with maximum likelihood approach.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "To overcome these difficulties recently, some models called discriminative models has been introduced. They basically specify the conditional probability instead of the joint probability, but more importantly, they don't require an strict independence assumption. So when labeling an observation, arbitrary past and future observation can be taken into account. Moreover, arbitrary feature of the survey shun can be considered. In this way it's more easy to represent the long range dependencies between observer.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Mission. And the usual framework that is adopted in discriminative approaches for sequence labeling is to model the problem as a multi label supervised classification task. So basically they output IRA sequences and in the task is given a training set of input output values of sequences. We want to learn a function H from the input space to the output space such that the optimal output label sequences can be reconstructed from the given input sequences. An official test sample of pair of sequences, usually to do to perform this task are a linear score function that model the interaction between input and output sequences is introduced, and it is a function of vector of parimeter tita. And then once the parimeter are determined, the prediction can be made by computing the argmax of this call.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Function. And in this talk, for simplicity we I just consider a model of chain conditional random field. We hmm feature. It means that I just consider in that graph two kind of feature feature that model the interaction between an observation at step K and associated the label at step K, and that we can call a mission feature and then some transition feature that. More than the interaction between the between the two adjacent labels in this framework in this core is simply given by the logarithm of the conditional probability. Then Parimeter Tita contains the vector that contains the logarithm of transition and emission probabilities and feature vector containing the associated statistics.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Sufficient statistics? So basically the task we are interested in is given a training set T we want to find the parimeter set Theta such that the given area Newton's test sample. We can reconstruct the label sequences given the observed sequences and the most straightforward approach in discriminately among the discriminative approaches is to define 01 loss and to minimize an upper bound on the empirical risk. In the training set an in this way, the number of incorrect label sequences is minimized, and this is basically the approach that is using most of the algorithm like conditional random fields, Max merging algorithms or in the mark or perceptron.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Average perceptron? What we propose it and you motivation to solve this problem and we define a new optimization criterion that we think is more appropriate for long sequences and non separable cases. We want to minimize the an upper bound on a ranking loss. In practice we want to minimize the number of pages that score larger than they given correct pace. To do that, we define our objective function to be the disk or. This car is a statistic measure that basically in our case. Defined in this way, we consider the distribution of all possible scores, and we want to separate and this car is the difference between the score of the optimal payer. Is there a minus the mean of the distribution divided by the standard deviation? So basically maximizing this object, we want the score of the optimal pair is maximally separated from the bulk of all incorrect one. So we want to maximize the distance between the score of the optimal. And the mean of the distribution measured in terms of.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Other deviation to solve this problem we have to put the disk or are in a form that we can optimize it, optimize it and in particular we define. We see that this card can be expressed as a function of the para meters. In particular, it is very easy to see that the mean of the distribution is a linear function of the parameter and the variance can be expressed as a function of the parimeter as well. So basically the finding the vector B that contains the difference between the feature associated to the optimal pair and mean vector, and we can, we can see that the discovery is a function of the parimeter data, so we are ready to optimizing it if we know how to compute the matrix B and the vector B and the covariance matrix. See this is not an easy.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Ask because basically the number of possible label sequences given an observation sequence is used. In particular is exponentially in the language of the sequences, but we have devised an algorithm to compute each term of the mean vector and covariance matrix by dynamic programming algorithms. And here I'll show an example of themselves or algorithm for computing the mean of this statistic associated to transition and emission probability. An offer on observation queue at state P. This algorithm is similar to the forward algorithm in HMM. The only difference is the recursive formula that make consent to obtain the mean of the emission probability at each step of the dynamic programming tables. Basically, I just show the algorithm for emission probabilities of observation. Sleepy, but to compute all the other element of the matrix C and then vector me move, we simply change the recursive formulas and some.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Initial condition. They basically I don't have time to go in detail in the algorithm at the basic idea behind this algorithm. Is that mean values can be computed considering that the expected value of a sum of variable step K is given by the expected values or the sum of the previous step plus the expected value of current step. A similar philosophy can be adopted for 2nd order moments and variances can be computed by just centering the 2nd order.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Moments. Until now I have just considered the discord for one pair of. For one payroll input, output pairs of sequences, but we're interested in defining the discord for the interior training set. This can be done quite easily if we assume that the contributor of each pair in the training set is independent from the other space, and we can see easily that the mean of the training set is basically given by the sum of the mean of each pair, and this happen as well for the variance. And so basically we can put the discord of the training set exactly in the same form of the discord for just one pair, having defining the vector V star and sister in the metric system. And so we get the problem that we want to solve. It is to maximize the discord of the of the training set an. To solve this problem is quite easy since we can observe that this problem is invariant to scaling and the. Through the monotone intensity of the square root, we can put the problem in the order form on the right side. So we have a quadratic programming problem with the linear constraint. Or better, we can simply solve find the method the vector or optimal vector by inverting the symmetrix multiplying. Parmie and to solve to invest these metrics, even if it's quite large size, we can adopt fast. Can you gather my gradient method?",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "I am going to show some results associated to this method an in the first experiments we just consider some artificial data. We consider hmm feature in conditional random field an where then the size of the observation alphabet is 4 and the size of the Eden alphabet history. So we have 21 para meters. We consider random sequence of length. Then we want to do their mind the optimal parameter vector, Theta. But since the sequence are generated randomly this these optimal vector parameter may not exist, so we plot the training error or in terms of learning of labeling accuracy when the training set size varies. So basically we plot the learning curve an. Here we can see that this car it is the blue curve outperform conditional random field, maximum margin algorithm and. Either Mark Perceptron, voted Perceptron Ann and it is the blue line. But we need another experiment we considered with the same data. Also slightly different version of our algorithm that consider the Hamming distance between levels and we compare it with a maximum margin algorithm that also considered the Hamming distance. In this case we see that the algorithm compatible performance but. If we analyze the training time, we see that our approach is much more faster when the training set size increase.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "You know there's Perimental. We consider real data. We're going to see the task of named entity recognition. That is basically the task to locate name entities in text. An entity of interest can be location, person, organization, and in particular we consider the Spanish new wires artikkel corpus for the special session of Natural Language competition in two.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "1002 we consider, in particular 300 sequences with an average length of 30 words. We have to assign 9 labels and that are basically non name, beginning and continuation of person, organization, location, initial Launius names. We consider two set of feature HMM feature in set S1 and Insert S 2 S 1 feature plus hmm features of the previous next towards this demonstrated that our. Method apply not just to change conditional random field with hidden Markov feature but also to arbitrary features that can also be spelling features. Even if I didn't report results here. So basically if I consider you can just dip your disk or approach. I can see that outperform Max margin algorithm either Marco Perceptron, conditional random fields and again if the version of the coming with me. Loss is considered. The performers are compatible with the Max margin algorithm with Hamming loss.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "And then one problem that we have, you know we had in developing our algorithm is that for large feature space and the computational cost becomes large. In fact the main bottleneck is the computation of the metrics. See because its side then it's a quadratic in the number of the parameters. But for example we we solved this problem in two ways. The first solution is to exploit the structure and the sparseness of these metrics and here and we saw that if we consider just HMM features, the number of different values in the symmetrix is linear in the size of the observation alphabet are. Here I have reported an experiment for all of the Symmetrix 4. This data observation alphabet size equal to four and then. And on the observation alphabet sides equal to four and the state alphabet sides equal to three and we see that there's a lot of redundancy in the symmetrix.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "And second another solution that we device and what we don't do not investigate so much is the user sampling strategy for computing the mean vector Moran, the covariance matrix C. And basically I show some results on an artificial data set. We consider random sequences again and we have that the state alphabet size is fixed to two, while the observation alphabet sides. Increases we compare the performance into in term of labeling error of the approach with the discord and approach with the discord with metrics computed by sampling on just 100 parts, and we see that performance in term of error compatible. While the approximate technique is much more faster if we consider the training time that are.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Parentheses. So to conclude, I have presented the new method for discriminative sequence labeling. We see that the accuracy is compatible with the state of the art algorithm. Like Max modern approaches, we see that this method is easy to implement, uh, since it relies on dynamic programming for metrics computation and simple optimization problem. This method is pretty fast for large training sides and a reasonable number of features. Since I mean and variances can be computed. The computation of mean and variances can be parallelized and can you get the gradient technique can be used for inverting the symmetrix. Here I have presented an application of this method to sequence labeling. But we also analyze the problem or sequence parts learning and sequence alignment and future work could be to test the scalability of this method to large data sets using approximate technique or to develop a dual version of the algorithm with kernels. Thank you for all your attention.",
+        "start": 493.0,
+        "end": 522.0
+    }
+]

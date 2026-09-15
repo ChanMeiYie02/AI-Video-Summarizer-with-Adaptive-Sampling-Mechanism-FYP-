@@ -1,0 +1,13 @@
+# Final Multimodal Video Summary
+
+The segment begins by outlining the development and scope of the platform’s infrastructure, noting that while virtual access is established, the core platform infrastructure is currently being built, with work on the infrastructure initiated recently and the Rolex 2 project already underway. The primary focus shifts to detailing the tools and services provided under the grant agreement, which are designed for digitization, conversion, and alignment.
+
+The proposed LAX One infrastructure includes specialized tools for segmentation and conversion, enabling the integration of data into Linked Open Data, and linking tools designed to provide conceptual interoperability, utilizing resources like BabelNet to link disparate data. This infrastructure is specifically aimed at handling retro digitized dictionaries, offering tools for content segmentation and a viewer to access structured dictionaries online.
+
+To ensure a uniform data model across various resources, the system utilizes the Grobet Dictionaries tool to convert unstructured resources, such as old Word documents, into a structured TI format. This allows for the development of a standardized system that handles various dictionary types, including modern Slovene, Dutch, and Danish, by exploring linguistic coding variations.
+
+A key methodology involves converting dictionaries into specific data models, such as the T-like 0 or Elexis data model. This conversion process can be performed either by selecting only the most important parts or by performing a full dictionary conversion. The specific workflow involves uploading data in a custom XML format, identifying key dictionary elements (like definitions and examples), and converting them into a TI format compliant with the chosen data model, or manually aligning the schema.
+
+The system’s core methodology centers on building the Lex one infrastructure, which aims to unify data by linking concepts across various resources, including WordNet, BabelNet, and Elexis datasets. This process involves identifying multiple senses of a noun and determining the lemma sense by mapping headwords to concept IDs. The resulting data is then outputted through the European Dictionary Portal, forming linguistic linked open data clouds.
+
+The segment concludes by discussing the crucial elements of the data pipeline, emphasizing the identification of dictionary matrices, which link essential parts like headwords, senses, and examples. Finally, the speakers outline the timeline for software delivery, noting that initial pieces will be provided in January 2020, followed by a crucial testing phase and deployment, with real-world use anticipated one year after delivery.

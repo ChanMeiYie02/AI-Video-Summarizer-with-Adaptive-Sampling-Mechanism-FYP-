@@ -1,0 +1,407 @@
+[
+    {
+        "text": "Thank you for having me here. Um? And I think it yeah. Peter was mentioning that there is not yet a theory of complex systems which I fully subscribe to, but we have to work on a theory for complex systems. That's I think that's our task and one component. Of that theory will be too. To understand the statistics of power laws. Everything you touch in complex systems will have power loss. If you have studied physics. Everything in physics was designed almost everything was designed. That you could describe it with Gaussian functions or exponential functions. Almost everything in physics was dominated by Gaussian statistics. Almost everything in economics is dominated by Gaussian statistics. Um, but basically everything in the real world is not. Based on Gaussian statistics, as we will see and it's therefore extremely important to learn about the. Statistics of power loss and. Lock in the previous lecture has already begun. 22 show you one way of of getting power loss. What I would like to do now is to show you a handful of ways of how you get power loss. And.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "And at the end I will show you also. An idea of ours, how you can get power laws, and that's that's.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Work that you can find published. Here, so power laws are everywhere.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "It's hard to control them compared to. To galaxians. Doing the mathematics for power loss is a pain and but it's doable, but it's it's boring and hard and you make mistakes and. But just wait this, but the computer does not care. That's a good thing. Yeah, and.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "I will now just show you a couple of situations where power laws are coming from. Some of them overlap with what you have just previously seen. Just to give you a taste where these things come from. Lock has shown you the city size distribution, so there's very few huge cities big cities. And many many many small cities. And power loss. Is there anyone who does not know what a power law is? Could be if you don't know. It's a function that if you plot it in double logarithmic plot. When X is our logs. Is almost as is a straight line. Then you have a power law. Can you see something like almost a straight line in the tail of it? Then we slopilly still call it a power law. This is not the straight line. So, and there's a region where it's. Certainly not straight. Shaded here. But there's another region weighs more or less straight. And that's in the region were interested in when we. Why are power laws important? Because they decay so slowly if we plot. Not the power law. If we plot an exponential. This is a function that decays. Somehow? If we put the power law in contrast. It goes like this. It does not decay. At the at the reasonable distance here, this can be a factor of 100,010 thousand bigger than this one. That's that's implicitly why it's so much more easy to deal with. Exponentials and Gaussians because they decay after a certain range you just. Don't care about them anymore, whereas with power laws they decay slowly and the way they decay. Is. Contains a lot of information. Which is sometimes critical, OK, city sizes? Alright. Distributed like powerloss rainfall.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Is maybe a self organized triticale phenomenon. So the size. The amount of water that comes down in an individual rainfall. If you make a histogram of many rainfalls is a power law. Origin could be. It is a self organized critical thing.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Landslides is not happening in Singapore, but everywhere else in the world. Is that that mountains? Come down the size of these landslides are power law distributed. The damage is.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "In euros. Due to hurricane damage, is a power law distributed? So meaning there is view a few. Hurricanes that are extremely costly and many hurricanes that cost not so much.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Um? The credits in the financial system are distributed as Powerloss. Very few huge loans. Many very few. Big credits in the system. Very very many small credits in the system. Very nice Paolo Forrest.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Fires look has shown us the size of a forest fire. Um? Every every time a forest is burning in different regions in the US you get one dot. If you plot the frequency of the. Size distribution of how much area is burned? This is a power law.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "The moon traitor Distribution is a power law. Very nice power law. Now, why, why? What does that reflect? That reflects the energy of meteorites that have. They are floating around in space. So why are they power log distributed? I will show you a way of understanding this one. It's certainly not. A self organized critical phenomenon behind the energy distribution of meteors. There's no feedback. Of meteors. Once they fly, they fly and and. I followed Newton's laws but there is no self organized stuff. If you look.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "At the at the energy distribution of gamma Rays. That come from the sun. The power law, of course not really good, Paolo. Morris",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "If you look at movie sales. The power law.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "If we look at health care costs, the power law. Look at particle physics. If you look at the.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Crew for those who are physicists. If you look at the cross section. Of. Particle events. No, if you look at the energy distribution. Of particles. Then they come out from experiments with accelerators. You find the power law. I will show you again a new mechanism that might explain that. It's also not the self organized critical. Phenomenon that leads to this. Words.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "In a book, lock has shown you is the famous sip flaw. If you. Are not sleeping well because you have jet lag or something, and if you have a very bad book to read. And then you can do. Very boring thing. You can count the number of words in your book. And then you can order the boards according to the frequency. How they appear must be really bad literature, but. Exists. And then if you ordered your word, the words in order of appearance, then you see that the most frequent word appears. End times say 1000 times. The second frequent word appears half of that time. 500 times the third frequent word appears 1/3 of that. 1000 / 3 is 333. Etc. The thousands most important word appears one time. Yeah, this is super slow. A power law within exponent of negative one. There is at least five mechanisms that explain. This power law. One is preferential. Attachment. One is. A mechanism that lock told you it's monkeys writing on a typewriter. And I'll show you a third one. I'll not a Mandelbrot, who was also mentioned in connection of fractals. He had a here's an explanation for this law, which is. Very unrealistic. Um? And I'll show you another ternative. Citation.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Of scientific articles are distributed like power laws. Website.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "It's our distributed power loss. So how often are people clicking on different web pages? Are clicking very few times? Very few pages are clicked on millions of times. Most. Web pages are clicked on very few times. We come. I'll show you a mechanism that might explain. The reason why this is happen? Also not the self organized critical process. Book sale",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Telephone calls earthquake magnitude.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Our old powerloss earth.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Quake magnitudes is the Richter law. Block has told you. That's maybe the power law that you learn earliest in your life. The number of seismic.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Events is a power law. Social events like war.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "I riddled with power laws.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Intensity killings in wars sizes of.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Wars. Is all powerloss wealth distributions in populations? Our power laws.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "People are. R. Debating if this is really true, specially for. People who are. Not so wealthy. Like all of us, we would be on that end. In that region, it's certainly not a power law, but. In details, again of the wealth distribution in almost all countries. It's a power law. The way how?",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Family names are distributed in the United States. Is a power law and we have not mentioned.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "All of these things yet, so whatever you take a network. You will find. Yeah, literally thousands of examples of where you find power loss or approximate power loss in networks. Wherever you look in biology and Physiology, you will find power laws. People from the Santa Fe Institute could explain. Literally dozens, maybe hundreds, of these power laws with within one single framework. So very beautiful work by Jeffrey West. Who gave a lecture at this course last year? Dynamics in cities. So how do people? What's The Walking speed of people in a city? This is a power law. If you plot The Walking speed against city size, this is a power law. If you plot the earnings or the income of people in a city as a function of city size, this is a power law. And again, dozens more of these power laws. Fragmentation process is if you are. If you have a spaghetti, if you break it and if you keep breaking it if you look at at the end. Of the distribution of fragments. In many situations, if you follow certain breaking rules, you will find power laws. Um? Many variations of random walks are power laws. In physics, crackling noise. What is crackling noise? You can think of taking a sheet of. Paper and you could. Trash it or not, not crash it. You could just. I don't know the English word. You could crumble it. You could crumble it, and if you put the microphone next to it and if you analyze the the. Sounded makes the power law, and there's of course. Hundreds of phenomena in the real world that that follow this. Um? The way black outs are. Happening in the industrialized world is powerloss, the fossil record. So even in ancient times. Is full of power laws. How often you see what kind of bird in in in in bird watching things is power loss, terrorist attacks, a power loss. ETC etc etc etc. Show me something that's not a power law, so it's. And then you will show me some some things in physics maybe. So why?",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "They come from this. Maybe? Four class.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Ways of understanding where parallels come from and let's just go through them that you know that. It's not that there is 100 ways of generating power laws, it's a handful of ways. The first time where people understood where Powell's come from is from statistical mechanics. Lock has told us about this a little bit. 2nd Way was the theme of locks talk. Power loss come from systems that behave self organized critical. If we have multiplicative processes. We get power loss. And if we have preferential processes, we get power loss. These are the four classics of getting power loss. Let's discuss them a little bit.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "In statistical physics, powerloss arise at. Phase transition at a critical point. So if you think of a magnet and you you're heating this magnet, then this will not be a magnet. But if you're cooling that magnet, there will be a critical temperature at which magnetisation appears is the Curie point. You have. All I don't know. Maybe it's not all heard of this. His temperature is the magnetisation. If. Temperature is very high. What are atoms doing? They're flipping around like mad. They're not organizing, they're not aligning. And there's a critical temperature that Curry point at which. Magnetisation starts appearing is a critical point. And at this point. We see. That if your computer correlation function between the spins of these atoms. At this point, you get power laws in these. Distribution functions. Here. The distribute here the correlation. Correlation functions are exponentially decaying. At this point, they become power loss. This is where in statistical mechanics. People found. Found out and understood everything about power loss. If you have one material. One magnet. Then there is very often more than one. One physical phenomenon that you can describe. It's not only magnetisation, it's also the susceptibility or other things. And to many of these different phenomena, there exists a different power law exponent that characterizes. Um? The material. So there's a handful of exponents that characterize a phase transition. In physics and this collection of exponents is called the critical exponents. With these critical exponents, you can correct, arise what's happening you can you can classify. All materials basically. And. What is the fantastic thing about this? Is that also every model? That you can make the icing model which was mentioned, for example has exactly has also a number of exponents. And if the exponents of the model match the exponents of your material, you know. That your. Modern is exactly the exact model for your material. So this is one of the few cases where you know that your model, even though it's unrealistic, is predicting the system exactly. This is what people call universality. And is one of the the triumphs of physics in the 20th century, I would say. We have her.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Everything about self organized criticality I will not. Mention much, let me just mention a couple of examples. So. Also, here I should mention some examples. It's magnetic materials. Basically, in physics it's kind of boring set of examples. Set of examples for self organized criticality gets much more interesting. So earthquakes, all sorts of collapse processes. All sorts of disasters. Lots of. Dynamics in the economy. In the financial systems that are going on, is is related to self organized critical systems.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Intermission. 3rd Classic mechanism to get power loss is multiplicative process is what is the multiplicative process. All know and if you have random numbers. We're not too crazy. Which are not from a too crazy source, meaning that these random numbers have a finite variance. But if you, if you generate random numbers. And if you add them up. The sum of these random numbers. Will always be Gaussian distributed, since the. Central limit theorem. Is anyone here who has not heard about the central Limit theorem? No, you already. OK. What happens if you multiply random numbers exactly? The same random numbers that we had before? Let's multiply them. From which distribution is the product from? Now. Huh? What is the question? So. First thing is we. Or the first thing is that you tell me you know when you are adding random numbers. The sum of this will be from a Gaussian distribution. The question now is, if I'm not adding these numbers but multiplying them. From which distribution is the product from? K. You could find out easily. If you are multiplying. 2 numbers. And even take the logarithm of it. This is the same as adding. Two times the logarithm. If A&B is random numbers, the logarithm of A&B. Is random numbers. Does it change the variances? It does, but it keeps finite. If I'm adding random numbers, what do I get? A Gaussian OK, so I know. That the logarithm of multiplying random numbers gives a Gaussian. So if I take this log away. By putting in an exponent and exponentially in front then. I get. The distribution for the product of random numbers. OK, and it's. The distribution is called lognormal. Normal because the Gaussian is there and the log because there's a log here. OK. The lognormal distribution is very, very close to a power law. It's of course not the same. But for many situations. When you have data, for example, you cannot really say. Is this a power law or is this? Is this a lognormal distribution? And a situation that if you put some constraints on how you draw these random numbers. If you put some constraints on it, the lognormal will become. Then um. The distribution function will not become a lognormal, but inexact power law. So multiplicative processes with certain constraints will lead. To exact power loss. That's why this multiplicative processes are a classic way of generating power laws. So what could these constraints be? Could be that any any random number that you are sampling should be larger than a given minimum. For example, that is enough already, or that the sum of all random numbers is above or below a certain threshold. Constraints of this type are enough to produce. Exact power loss from multiplicative processes.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Locke has also mentioned this a little bit. Peter has mentioned it. Power laws arise through preferential process is preferential processes are processes. Where the frequency or the strength of a process depends on. On the previous strength of frequency of how often a similar thing has happened in the past. Simplest example is how scale free networks grow. Peter has shown as a movie this morning where you're adding one node to a network after another. And what the node is doing, it attaches somewhere to the network. And how does it do that? The probability that it attaches to a node? Um? Is proportional to the number of links that node already has, and we call it preferential attachment. If you keep doing this, you will generate a scale free network. What is a scale free network? It's a network with a power law. Um? And what is the power law? The degree distribution is a power law. Is there anyone who does not know what the degree distribution is? Yep, good. If you have a network. Um? And you grab in blindly into that network and you pull out one of the nodes. Then you can ask how many. How many links does that node have? The probability of finding X or K links in in any given node. Is called the degree distribution. Probability of finding a node with a certain degree is the probability this is the degree distribution. And this degree distribution is a power law. And if it's Apollo, you called it the whole network scale, free network, scale free, and power law. Is used in the same way. It's the same thing. Is that clear to everyone? Why power laws are scale free? Since we. Yes. Yes I can. Um? Language. Information is not a preferential process. I'm almost sure it's not, but a very famous person. Herbert Simon try to understand sips law by a preferential process. Well, he assumes that I'm forming texts. In the way that I. The probability of using a word the next word in a sentence, for example, is proportional to how often I have used that word. In the text before. If I'm doing that. I get cheap slaw. For exactly the same reason why we get scale free networks. If the next words, probably if the probability of using a certain word as the next word in a sequence is proportional to how often have I used that word in the sequence, I get a power law. Afford frequencies. That's not how we're producing language. In fact, it's exactly what your English teacher told you not to do. Don't repeat words too often. Yeah, especially if you use words many times. Avoid them, don't don't. So that's the reason why I put it here. This is models that use. Preferential process is to understand language formation. That does not mean. That that's a good way of understanding it. So there's a couple of other mechanisms where.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Where we? We don't go into it. Levy stable process is. Lead to power loss under certain. Conditions you look that up on Wikipedia. That's classic statistics. Also, classical statistics is extreme value statistics or record statistics. Um? Yes, in statistical mechanics was popular for some time. To talk about return times, how long, if I'm somewhere in phase space, how long does it take? If I'm if I'm having a process, how long does it take to come back to the to this? First point. In many systems, return time distributions or power loss. And.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "We did not. We don't have any any tool now with these mechanisms that I've shown you, we don't have anything to understand. Power loss from dynamical processes that are history dependent. Many processes in the in the world. Depend on the history, meaning that that. The next steps that you take depend on what you have done before. Yeah. A little bit.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Um? Or the only mechanism that we have discussed? That is, doing that is preferential attachment. Where the whole history matters. What your options for the future. But this is. Just a very particular point, very particular. Way of seeing things. This preferential attachment. I'll show you something much, much broader in scope. So. A history of path dependent process means that the future depends on the history of all the past events. Yep. Very often you have processes. Where? As they unfold, they get more and more constrained. The the for example, the more education you get. The more constrained is your career path. The more you learn, the less you will do completely random things. Yeah. So there's many processes in this world. Where the sample space? Is reducing as processes unfold?",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Talk about this. So we'll talk about sample space reducing processes. Maybe the simplest way of thinking of a sample space reducing process is that if you have a set of dice, if N dice. And die number one has one face every time you throw it, it gives one so stupid I. That number 2 has two faces. It's a coin. Give one or two. Then you can have a dye with three faces. I don't know how to produce one, but you could think there is one and I number N has N faces. And the sample space reducing process is now a process of this kind that you take the biggest die within faces you throw it. Whatever number it gives, let's say it's 17. In the next time step, you take dice #17. And throw this one. Now you get the number between one and 17. Whatever you find, let's say seven, you takedown #7 and keep doing that until you hit one. Every time you're throwing the dice. You're reducing the number of possible numbers you can get. Maybe the simplest way of thinking.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "I think that sentence formation is exactly of this kind. When we when we are producing a sentence, we have to pick a first word. We where do we take it from? We take it from the English vocabulary, so here's the English vocabulary. I can pick any word and start a sentence. Is taking the big dice with N faces. I've end different words to choose from? My lexicon has N words. I just picked one word. To start with. Starting my sentence with the Wolf as soon as I pick this word. I have lots of constraints. I cannot pick any other word. Why do I have constraints? Because there is grammar. And days context. So if I pick if I pick. Announ then I'm now forced to use a verb I cannot. And who is telling me this grammar if I'm not doing that, it's bad English. So. As soon as I pick something, I'm reducing the total space of possibilities to a subset of it. And as soon as I pick a verb. I am again. Constraining myself to to another subset of words, and this keeps going until I come to the point. To the point. Yeah. OK, so usage of language is. Sample space.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Reducing process. Here's another way of.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Seeing a sample space reducing processes, he process it. Basically a staircase. Which is numbered from one to 10 and you have a ball which is allowed to help random distances but only downward. OK. So it can never can go down. But can never must not jump upward. If we have a staircase that's flat. Meaning that the ball can go left and right, we just have an ordinary random walk at every point in time. We jump left or right. Then our distribution function of how often we visit state one up to 10 is a flat distribution of uniform distribution. If we are looking at this process. The distribution function. Will look like something like this. We visit state number one as many times as we start the process. We visit. State #2 less than this three, even less than that, etc. And it turns out to be. That",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "The probability of visiting state number I is equal to 1 / I this is exactly tips law. The simplest power law distribution that you can get. Yeah. So P of I is I to the power negative one that's what people called sips law Alpha, the exponent being negative one.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "So.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Um? You have to prove that that that this is the result. For this idiotically simple process. We're not going to prove it, but.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "This is all of of what the proof is, it's it's. 10 lines basically.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Yeah, so this guy.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Does away. Of explaining Zipf's law as a sum. As a sample space reducing. Process. Most processes are most. Most. P of X or I. Is proportional to X to negative. Alpha most. Exponents are not negative one. In many processes you find that Alpha is close to negative one. But most of the time it's not. And. So. How can we make our theory a little bit more general? We can. Say that in principle we have to jump down. This decades here, but with a certain probability. We can also jump upward again. That is nothing else but saying I'm combining this. The pure staircase process, where I can only jump down. I combine this process with this process. I'm adding. In a sense, adding these two processes. And let's see what's happening then.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "So we denote. Um? This staircase process, where we only can go downward by 5. And in the process where we can jump left and right. By 5 sub R random walk. If we give different weights to both of these processes, Lambda to this decades process, one negative Lambda to the random process. We can, it's another proof of 10 to 15 lines. We can prove that the probability distribution of finding state number I. Is. I to the negative power of Lambda. So now we have already a match. Stronger theory, now we can already explain. Every exponent. Between zero and one. OK. Maybe half of all the processes in the world have that. Um?",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "That's the proof for it. It's not longer than that.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "And if you don't trust it, you can program it in a little MATLAB code. Maybe you can do that, as in. Exercise I don't know. Yeah, you can simulate it. You believe me that that this is the case?",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "Um? This. This law that I've shown you this way of producing a power law is extremely robust. What do I mean by that? So if we have if we have again a random process. Why we put different? Probabilities prior probabilities to visiting the states. So visiting state. Six is has a much higher probability than visiting state #3 or for example. When we are. Sampling that process, we're letting the ball jump left and right. We will get the probability distribution. That's it looks something like this state #6. Will be visited many more times than state #3. OK, why? Because the prior probabilities? The problems which are depicted here as the width of these intervals here. Is just, it's just that. If we have this deck case process where we also have the same prior probabilities here. We could imagine that we would also get something like this. But we don't. We get again tips law. We get exactly this thing again. With. Alpha being negative one. This is completely. Crazy if you think of it. Alright, not crazy, it's unexpected. And no, no matter how you change these prior probabilities. You will always get this power law. This is a sign of extreme robustness and this might explain why you observe power loss so so so often because no matter what your how you're designing your system in detail. In detail means fixing the prior probabilities of how often visited. Often states should be visited. If you don't have this staircase dynamics on top of it. No matter how you design your system in detail, you always get this law.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "OK.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "We can even take out huge parts of our staircases huge parts of our sample space, and we still get this.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "Um? Good, let's try to find applications for this.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "And what I would like to do in the next couple of minutes is to. How much more time do I have? 5 minutes OK or. No, that's according to schedule. This I know myself. But I started much later. OK. Um? You can view this kind of process. As. A. As a as a diffusion process on a network. A network that has 10. 10 notes. And you can jump from node to node, but on every node has a number. But you can only jump from one node to the other if the if the if the number. Where you're jumping to is less than the number you're starting from. OK, so it's a directed graph. And since you're not allowed to jump upward, there's also no cycles in this graph, so it's a directed.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Cyclic graph. This process is a diffusion process on a directed acyclic graph. Meaning that every time you have a diffusion process on and on such a network, you are going to have. Tips law. Present. And this is. A big statement tips law in what and how often you're visiting nodes. So the most that note that you're visiting most is visited end times. The node you're visiting, 2nd. Most frequently is in half is visited in half times, the third most visited node is visited in third times, etc. So this magic sips law appears whenever you have diffusion on a directed acyclic graph.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "OK, so we need a graph.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "Need numbers? We have to give names to the.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Notes so that we can direct it otherwise. Otherwise, we cannot direct it. And then we just.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "At. Diffuse.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "Whenever we start, we can only go along the line for the errors are pointing. And if we're counting how often we visit which node and then order it, make a rank frequency distribution out of it, we will get this curve.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "OK. Now. And acyclic directed. Graph.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "This process is the same as an eighth is a fully connected acyclic directed graph. What if it's less than fully connected? Typically fully connected networks are pretty boring. So.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "If they are not fully connected. If you're taking out links. Then you still gets it slow. Why? Because we have this extreme robustness sitting there. Yeah, we can cut out things I've shown you before in on the slide and still this is present.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "So here's an example. Here's the link density. This is a fully connected graph. Here he is not connected at all, and everything in between. This is the exponent. Alpha here, which is 11111 for thousands of. Simulations on small networks, it's always one and only if it gets very, very sparse. The exponent comes down.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "That's the topology of the network meter. No, it does not matter. If you have a scale free graph or an exponential graph or any release network taken from from. From the literature and if you have a diffusion process on it, it will always give you this distribution in the visiting times of nodes.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "So. Why, because prior probabilities are irrelevant for the system?",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "If we put weights on the links. Does it change? No, it does not change. We get exactly the same negative. One exponents. We get this graph.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "Things start happening if we allowed to introduce cycles. Now we had it a cyclic, but if we introduce cycles, if you allow things to go in in loops. Depending on the density of cycles, we now see the slope change. OK, so now it's not only negative one, it's anything between zero and one. So by measuring the visiting times. Of. Notes in a network. I can deduce. The density of cycles in it. Which makes things much much simpler than counting triangles.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "So sleep slow is an image.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "A tractor. No matter what the network topology is, no matter what the link weights are, you always gets if slow exactly zips law, meaning Alpha being one. And if you have cycles, exponent becomes less than one, but it remains an exact power law.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "Can we get exponents larger than one? Meaning that we go from zero to Infinity? Do we have that spectrum present? Yes. What do you have to do?",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "You have to. If you start with the ball here. As soon as you start jumping. You doublet. Yeah, you're fragmenting it. So one ball lands here whenever this one starts going down, it doubles. Assume if it doubles, this Alpha becomes A2. If it triples. Alpha would become three. If every time the thing splits into 17 particles, the exponent will be 17. OK, so the splitting rate becomes your exponent here. And through this you have a mechanism. With which you can. Explain any power law. So whenever you have a sample space reducing process at hand. And you know about the details of it. Meaning is it is it coming from a diffusion on a network or is it the result of a fragmentation process? These are fragmentation processes. And here we come back to the moon traitor distribution, which is about what this is about, somewhere between 3:00 and 4:00. You can cover it. All with this little concept here of this staircase process.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "This. So now I'm out.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "Time I guess. Which is not really true, but.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "But let me just finish by mentioning that whenever you're searching for something, every time search is involved in anything. And if your search is a good search. You have a sample space reducing process. What is a good search? Good search is that you don't have to look if you lose your keys. That you don't have to look at every square centimeter of this room to check where this thing is. But if I if a good search is if I open the door. And then I close it and say it's not in here. Every step I make excludes many possibilities. Then I have a good search. So whenever you're searching for something, you have a sample space reducing process and you should observe power loss. Do we observe these power laws?",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "Yes, we do the click rates.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "For example, on web pages, very often. When you're clicking on the page, this is the result of a search process. Through whatever engine can be Google or can be a suggestion from a friend tried to look for this, then you're searching for something and sure enough, you will find you will find. Power laws there exactly of this kind.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "In some companies. Um? They are looking how the employees are as actively searching for. For things, for example, when you're writing computer code, how often? How do I find a piece of code that I need? How do I search for it? Companies keep track of it. And for different companies. When they when you analyze the clicking behavior or searching behavior of their employees, you find always the same power law always seems slow. Huh? Meaning that the guys are doing good searches.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "OK, so maybe to summarize. Whenever we have diffusion processes on cyclic directed graphs. We understand the power laws that come from that whenever we have fragmentation processes. And observe power laws. We have an explanation for that. Whenever we have search processes, we have an explanation for that. Also, we think sequences of human behavior. So they says recent works on it shows fantastic power laws. Is sample space reducing? So I think that's a theory for it. Games like the Game of Gold is for. A large part. For large parts of the game it's ample space reducing everything you do constrains you. And you find fantastic power loss in the game of Go, which we think we can explain. We're looking for a PhD student tool. To really show that.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "Yeah, OK. And what did I show you? Many processes in this world are history dependent. This. Sample space reducing. Processes are an example for history dependent processes. Simple history dependent processes. Anne. I showed you that power. Exponents depend on the noise level in the system. I did not tell you what I mean by noise. By noise I mean how strong is the component of the pure random walk? Remember when we combine these two things where we go down and the other one where we are not going down? The one where we're not going down. This is a random walk. This I call noise going left and right with the same probability and so. The strength of these. Of the noise determines the power law. So we can use. This is the measurement of exponent of inferring what's the intrinsic noise levels of processes. I've shown you that this mechanism of sample space reducing statistics is extremely robust. No matter what what the topology of a network is, what the links are, etc. It simply doesn't matter. You always get this distribution. Good. And I've shown you that every search process and every fragmentation process. Can be. The statistics of these processes can be explained by this. Thank you.",
+        "start": 2320.0,
+        "end": 2349.0
+    }
+]

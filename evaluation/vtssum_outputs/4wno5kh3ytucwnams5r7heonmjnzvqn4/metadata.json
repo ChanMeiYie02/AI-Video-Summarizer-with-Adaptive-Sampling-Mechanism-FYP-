@@ -1,0 +1,20 @@
+{
+    "id": "4wno5kh3ytucwnams5r7heonmjnzvqn4",
+    "title": "Planning Ahead: Stream-Driven Linked-Data Access under Update-Budget Constraints",
+    "url": "http://videolectures.net/iswc2016_gao_planning_ahead/",
+    "info": {
+        "author": [
+            "Shen Gao, Department of Informatics, University of Zurich"
+        ],
+        "published": "Nov. 10, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 184,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2294
+}

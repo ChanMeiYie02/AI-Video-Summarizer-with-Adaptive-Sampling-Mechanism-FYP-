@@ -1,0 +1,9 @@
+# Final Multimodal Video Summary
+
+This video explores the application of embeddings to enable reasoning and navigation within knowledge graphs (KGs). The session introduces the concept of knowledge graphs as structured sets of nodes and relations, and defines the task of knowledge graph completion, which involves predicting missing relationships. The ultimate goal is to use embeddings to facilitate complex reasoning, such as multi-hop reasoning and answering various query types like path queries and Query2box.
+
+The discussion further details how to embed KGs, using a specific biomedical example involving entities such as drugs, diseases, adverse events, and proteins. The methods for querying KGs are categorized into simple one-hop queries and complex path queries, which involve chaining multiple relations sequentially to find answers.
+
+A major challenge highlighted is the inherent incompleteness of knowledge graphs, particularly in biomedical domains, where crucial relationships are often missing. This incompleteness, coupled with the computational burden of traversing dense graphs for path queries, leads to exponential complexity.
+
+To overcome these difficulties, the video proposes the solution of "predictive queries." Instead of performing explicit traversals, this approach formulates queries as predictions, allowing the system to implicitly account for missing information and noise. This method generalizes link prediction to multi-step prediction, enabling the system to answer any path query by predicting the specific entities that serve as the final answer. The focus shifts the task from traversing the graph to predicting the target entities, resulting in a more robust and efficient approach for knowledge graph reasoning.

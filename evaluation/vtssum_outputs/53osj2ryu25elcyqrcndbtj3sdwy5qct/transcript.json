@@ -1,0 +1,282 @@
+[
+    {
+        "text": "So the topic of today's talk is. Global media monitor. So we work in our research group on several topics and this line of activities dealing with texts, social networks, social dynamics and everything related somehow ended up during this year into a system which I will demonstrate later, which is something which we could call global media monitor. During this talk I will present. What are the ingredients? What one needs to do so that you can observe the world? And what can basically come out of it? So there are several steps, so just before going to the slides, so here you see the pretty much the last thing or one of the last things which I will show in presentation. So this is now live picture. Showing global events which are happening right now, so I hope Internet will work. So if Internet works then I will be able to show lots of demos. If doesn't work I have everything on slides as well but somehow the demos will be way more impressive. OK, let's go to slides and I will be switching to demos. Let's close this screen for now. You will get slides with all the links, so I guess there's no need to do any. Notes so global media monitoring.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "There are a couple of topics which we will cover, but you will see them on the way.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Just quick introduction what topics we will try to or what questions will try to answer today. So first where to get data if we want to do some kind of global media monitoring. So once we have data this means documents. So what can we extract from documents? Then one bit is well, documents can be in many languages. How to connect languages between each other? Then OK, we collect this because we try to observe events. So what is an event? So this is typical questions. So what's an event? Several answers, but we'll stick with something a little bit more practical. Then when event happens, many people report about it. So it appears this news bias or diversity of reporting. What can we tell about this? And then towards the end, we'll go a little bit deeper in how to. Visualize how to present this complexity which appears every day. So the system which you saw before identifies per day roughly 10,000 events. So these are not just the top events, but also events from the long tail which which are relevant for somebody somewhere in the world. So now. The question is how to present this complexity, which appears pretty much in real time as we talk now in kind of sensible way so.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Here's the list of demos for the case. Internet wouldn't work. You can always go to them, they're all open. Which we will check during the talk. News feed, so this is the crawler and Reacher. This means enrichment of the documents crossing reality. Diverse news. This is news, diversity and news bias and event registry, so this is the last system which use already before then. So this is just list of pointers so that you will.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Be able to track them later. So what's our overall goal? So first to collect data from global media in real time, so this is certainly one. But the requisite for everything guys, then to identify events and track evolving topics. Because events evolve into bigger topics and so on. So we would like to track this. We would want to assign stable identifiers to events so each events, so we have many registries. Many ontologies, many directories. Yep. Global Media media from all over the world, so this would be definition of global. People TV's are coming but here I will talk about textual media at the moment, yeah? We have another project, so next year I'll be able to present these as well. So global media in this sense means written text which we can get from all over. So assigning this table identifiers to vent. So I said we have many ontologies, directories, whatever, which typically represents entities of some kind. So Wikipedia would be good example DB, pedia, Freebase and so on. Mostly these are entities. There's no database of events where each event would get its own ID and somehow we would refer to this event with certain identifier. So this is one of the goals. Then one important goal is also to identify events across the languages because. Each culture, each language has its own well important distribution values, and so on. And if we want to observe the whole world somehow, we need to go across the borders of the languages, then detect diversity of reporting. So we'll see. This provides rich visualizations. You will see some of those and also to export data in such a way so that, let's say anybody else would be able to use this system. So roughly. Most of these goals are achieved so.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Basically now will. So the rest of presentation will go through this architecture box by box. So. So basically there are four major steps on the left side. Well, it's input data. This would be mainstream news blocks Twitter possibly. Then we have this preprocessing steps. So semantic linguistic annotation, crossing valatie duplicates all many problems will touch just the most important ones event construction. So this means clustering cross lingual cluster matching. So it's hard to join these clusters. In the information vent infobox information extraction and identifying related events so that we will be able to identify event sequences and heretical events and all this. Terms and topics which we'll touch later on, and all this will come out come up into the system, which we call Event registry, which has an API interface plus user user interface and. Lots of visualizations, so we will see this later on, so this is of interest. So this is roughly the architecture and now we'll start with the first stage first. Where to get the data and then we'll go step by step. Well.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Collecting media data. So.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Up where to get references to news publishers. So this is our source of data, so there are many sites out there, mostly link farms. Capture basically to sell the X. Which one of these topics for link farms is also collecting news media? They mostly are not very high quality. So far the best one which we got is this address. Wikipedia List of newspapers. If you go there first to have well by continent then let's see if we select Europe we would get by country then if it, let's say select Greece then only in Greece this would be set of subtopics and then we say just Athens newspapers. Daily political newspapers in Athens we would get. Well this is just part of the list so there are many many. Of this newspapers which are mostly online, of course, which one needs to collect. So currently we have in our database roughly. 60,000 so online sources which are crawled all the time plus on the top of it. So I want charges but also blocks. So we have 250,000 most influential blocks. Block can be well. Blocks generally can be very trashy as well, so it's important to have some kind of trustfull blocks and. We collected so so just recently they bend this sitesotechnorati.com probably know the site they were maintaining database of blocks and small taxonomy of top blocks per topic and they were generating this ranking of the most thrustful blocks. Just recently they bend this anyway. We crawled the whole thing so we have them it's had. Their database 1.3 million blocks. And then we basically checked all of them and only 250,000 roughly changed in the last half a year, so. Do you have an estimate of what the fans will stay with this collection bandwidths? Uh, OK, this will be in the next slides. Roughly the intensity. Sure, sure, yeah, benefits of course it's it's not critical. But this is roughly if if you want to make your own collection, so this is the recipe how to get them. The trouble is with Wikipedia, they don't have the standard way of. Of describing this list, so each page is. Slightly different so, so we had to.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "There's a little bit more work for this. Now, once we have set.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Of newspapers like this, these are just pointers to home pages, so now how to get the content from this publisher?",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So example from New York Times, but pretty much this works for any other newspaper. This is the home page for which we which we get link typically update from Wikipedia or from somewhere else. We need to go typically into HTML. Usually we would get link to RSS feeds, so this is the proper way of doing it. I mean proper rate. This poor man's way of doing it actually, now I will tell you why. So this is this line which we need to find. Again, most of the publishers use this, but not everybody, so you need to be a little bit innovative, but mostly you can find this. From this link you get to the list of articles which are currently there and well. Then you get to the actual article. There's another set of troubles. Then, once you get this, you need to clean this and so on. I won't go into the details. These are unpleasant troubles, but we solve them somehow. Basically the problem is how to extract title metadata in the content out of this massive HTML, which is sometimes very unclear works. What includes about what's all there? So content usually just a small proportion or small portion of it. The whites at these RSS is poor man's way of doing it. Let's say the big companies like Bloomberg for instance. They don't care for our set. They include also RSS. But they crawl everything, even the newspapers which don't have RSS and they take the contents from brutally from the website and collect the content in this brutal non RSS way as well. So the difference now answering to vary. So in this way we collect per day around 350,000 articles. So this means like couple of articles per second. So they have eighty 80,000 seconds, right. 350 would mean like 45 maybe articles per second which which is not big bandwidth. Bloomberg for instance collects 1.2 one point, 3 million articles per day. With this brutal crawling. But there are 10s of people working on that crawler. For us it's maybe. 25% of one person working on this so it's kind of not manageable to compete with them.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "OK, now what about? The service which we developed. So this is the service is called News Feed IG SSI which crawls all the sites. So as I said before, 60,000 mainstream publishers. These are mostly RSS feeds plus a couple of special fees which we have 250 K most influential blocks. Free Twitter feed is included as well. OK, everybody can have it as I said. So roughly 350 K articles per day. Half of them are English, the rest are in other languages. Now if you want to use.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "This. So you go to this address. We have Python script which well, this is the this Python loop. The full script is not too long, so this is the full copy of it so you can get this feat.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Oh so each document which you get which this news news feeds cross, you get in such an XML, so which is fairly clean stable XML which includes content, metadata and many other things. If you want more details, there's a paper on this bit more detail, so this is something which is. Available OK. Now with Yep. Just a quick aside. You need a password for Internet. Contact me and I can pick you up. Director so password protected for this IPR Copyright issues, but generally for research shouldn't be a big problem. OK, now we went through this first phase. How to collect the data so pretty much everybody using this kind of service or if you write your own crawler somehow can connect it.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "The next stage is document enrichment, so from the crawler we get. Textual documents now the question is. What can we extract from these documents so that we can? Creates all the follow up services on top of it. So.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So on this slide I tried to collect all the levels or what we at least can extract from the. Documents at the moment there might be a couple of more but heavier extractions as well, but this mostly is sufficient for let's say today's standards. So just these are three groups of, let's say. Extractions, one would be more like a lexical level. This one is very simple, just tokenization of text and sentence splitting. So this is just input for the next stage where we do linguistic level. So this would include typically part of speech tagging where we assign word types to the words deep parsing, reconstruct the Part 3 from each sentence. I feel that is related to something called natural language processing. Visiting natural language processing. Yes, exactly. But natural language processing is a big carrier and you have plenty of problems, plenty of solutions, so and here we try to touch the ones which are relevant for news processing, so these are typically in a pipeline. So the parsing then we would extract, triples. Triples would be input for a couple of other notations down there named entity extraction is very popular ones and then semantic level. So this is where it gets more interesting. The first one is coreference solution, so this would mean we replace the pronouns with proper names, let's save. Yeah. So so English is really well covered. We have infrastructure for six more languages. As part of this excellent project and we would like to extend it a little bit more so, but English is really well covered. The trouble is that English is so much ahead of in terms of infrastructure or available infrastructure. So much ahead of every other language, including European ones, I mean, But you have the long tail of languages which don't have anything so generally. The friendlier languages for processing what we obviously English. Then Spanish, French, German, so this would be the well. The second leak check maybe? Chinese, if you have access to the tools and then then you have the third level, which would include most of the rest of European languages and then the long tail, which I don't even know why. I know this because there was another project called Metanet which did this analysis. How much each of the languages is supported so so English? Then you have this couple of major languages, European languages and then pretty much everybody else. The system currently be. Sir. We don't support Arabic language is Rabak languages is. Otherwise they're quite well supported. The cause of all this American investments, as far as I know, but we don't have tools for this, so we didn't include them at the moment. Although Arabic languages should be. Should be fairly easy once we decide for it, so currently working on Chinese so that changes would be covered properly for us in this stage. This speech was more important to cover so that 2 answers to this question. For. 7 languages we support. More less. This part of the pipeline for another 400 languages. We support a little bit lighter level which you will see on the next, including Arabic, including languages which. Never heard of so. So just to go briefly through these stages, soca reference. This is pretty important stage which not many people are aware of. Let's say if you have two sentences like Tom went to town, he was happy. So this he replaced it with the Tom so we know well Tom was happy. And if you have, I don't know President Obama did that and that. And then in the rest of the docking would be just president or just Obama. So we would want to merge all these named entities into one. So this is also pretty important element because we kind of compress the content of the text into this single points of our single entities, although they have different surface forms. Semantic labeling. This means once we identify entities, we would want to link them to, well, DB pedia, freebase, others and so on. And this includes also this immigration. So if let's say if you have this classical example which I'm usually showing if we have Brazil, Brazil can mean many many things. Country, city. Movie song many people are called Brazil and so on which Brazil. So we want to find the right one. So this is this immigration I won't talk too much about this. Sort of, we can deal with this problem, but nobody is really perfect here. Topic classification we assign categories to documents. You will see this later summarization we would like to assign importance to particular parts of the text so the ones which are more relevant to understand the content would get higher rates. Less relevant information would get a little bit lower and the last bit. So we're still working on. This is fact extraction. We would like to extract the useful facts from the text. So this is. So. Set of annotations. Which one could think of? There might be a couple of more, but they are more sophisticated and I didn't even cover them. So.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "What do we use so we have system called enricher? Yep. Previous line.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "What's the difference between triple extraction and fat extraction? I mean triple is just linguistic construct, subject, predicate, object. In fact, no triple triple is just. Subject predicate object. If you want. If you want to transfer, understand it as a fact. So this means that it's semantically connected. Then I would call it fact. So which would mean company acquired Company a acquires Company B so. So this is just semantics. Linguistics. You can do this level without knowing what was actually in the text. Here you need to have some a little bit of a logical knowledge in the back. So this is how I would differentiate these two levels here. Although I agree, I agree that they are. We do this to do this.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "OK. Enricher, so there's a system. Again, it's a web service which you can also use. I will damn it. So demo service web service switch on the input you put in ASCII text. An you get the graph consisting from triples. We get name entities. We get topic categories we get. Is RDP IDs? And so on. So this is a web service consists.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Set of. Well, submodules which do all the OR most of them, they are most of this enrichments are annotations which are mentioned onto slides before. And it exports data in XML or RDF. So this is simple way of using it. About let me show the live demo so this access the web service, but I will show just the visual visual demo so they copied text into this window and we say in rich if we press here we get XML if you press here we get RDF. So. Seems that it's not working today. I mean, for operational things we use. Another version, OK, doesn't work. Today doesn't matter, I mean so. Believe me it works. Elena said before that the trust level here is high, so even if. Yeah, I don't know. I mean, it worked during the night actually. Yeah, I'm not sure if I believe the story. OK, let's go further and the rest of the services will work I guess. OK, so. So this is this level of how to annotate the text, so it's pretty important level, because this is a prerequisite for many steps from now on. So the next important bit is crossing.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Reality, so this is something which is not usually addressed properly or systems are. Even companies wouldn't wouldn't even touch this issue, so we need to differentiate two terms, so one is called multilinguality and one is crossing reality. So at least the way how we use these two terms. Let's say website can be multilingual. This means go to the website and you change the languages. But information is not necessarily connected, just multiple languages. Crossing reality is something where we.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Woods one to. Connect information uh, across the documents, leaving are being written in different languages, so this is that's why it's cross cross England. Technically, we can do this with machine translation, so let's say we. Take Arabic text, we translate it to English. We take Slovenian text, we translate it to English. We take whatever Chinese text translated to English, and then we operate with English language tools. This would be possible. Problem is that usually machine translation is not expensive. It's slower and. Also, machine translation doesn't work always. But mostly the main trouble is really. Cost and speed. So. That's why we, as part of this X like project, we developed a module called X Link. Since we didn't need all the everything, what machine translation provides? So another thing is also the machine translation doesn't exist for many links from, let's say Google Translate. I think it translates like 7 T languages, roughly 70. So if we want to go beyond 70 basically doesn't exist. The infrastructure for this. So this X link. We took a different approach, so I'll just briefly describe it without the slide. So basically we constructed an artificial Interlingua, so an intermediate language which is purely statistical. And so all the documents in different languages.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So this is the list of languages which we support. Are mapped into this Interlingua, and this Interlingua has one nice feature. So if you take Chinese document and Orebic document which take which talk about the same thing, they would be mapped pretty much to the same point. So we can compare the content of the documents and the other function which we have is. We can categorize these documents into the same schema. I will make them on this. So why exactly this languages are not some others. These are top hundreds Wikipedia languages and how we learn this train. This artificial statistical language is basically. Took Wikipedia, we used maybe I can show. Well. Let's see if you go to Wikipedia. Like this? Saxon. You should tell me really well I don't know. They have their own Wikipedia which is among the top 500. Language is actually Italian dialogue. Yeah, I saw some silence but low Saxon satisfies OK. So. Well, I mean we can check but. So this is the list of top 100 Wikipedia as you see, the top one is English with 4.5 million documents, Swedish, Dutch and so on. So the 12th one is above 1,000,000. Then we have Doc Wikipedias which have few 100,000 documents. And. Simple English. And then there are Wikipedias which have like 10s of thousands of documents so. So. So we can check. So we took all the languages which are we have, well, pretty much 20,000 and above document, so this provides still enough signal that we can basically extract the terminology. So let's load German. And So what we use, let's see if we. So. Say whatever London. So this is Wikipedia page from London. Come on getting slow. OK, so this is the English text about London, but here on the left we have also this other versions of the text about London. These are not translations, mostly they're not translations, they're just comperable documents. They talk about the same thing that includes what we extract basically, or what our assumption assumption is that these documents include similar terminology. Now. Now it comes, it will come to this big data principles. So if you have lots of documents. Then you can basically illicit extract the the. So each document basically or each link provides one constraint in this very high dimensional space and we through machine learning. Somehow we extract this terminology, since this is the definition of that intralingual interlingual which we construct. OK, let me show you now the. The demo how this works. So.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So this is I will show this life. I prepared everything just for the case we wouldn't have Internet. So this is again the web service which which is open, so it lives on one machine. The memory footprint is roughly 200 gigabytes, so this means all these. Wikipedias are in there, all the mappings. So the Interlingua and all the mappings for each language into the Interlingua. Something is coming. Yeah, OK. So this is just the front page demo. So here we have two documents. One is in English, one is in Chinese and now what we can do with these two documents so we can select also texts in any other languages which I showed before, but. For the demo we have changes, right? So we can compute similarity between these two documents. So from this information travel or text mining, you know that one of the very basic operations is causing similarity between two documents. Usually we calculate this cause in similarity between document two documents in the same language and give some result between zero and one. One means documents are two documents are the same, 0 means they are completely different. So now what we developed here? It's a cosine similarity which operates across all the 100 languages. So here we have English and Chinese, and we compare them. What documents are about soccer and similarities? 0.5, which is, let's say, fairly high. Another function which we support, which might be even more important is also we can categorise the documents into the same taxonomy so. Tiger Isatin Dimas category or the taxonomy, which I will show later. So this document is categorized or we assign keywords like game, Sports, soccer, SoC. OK, these are set of keywords. Now we can also do this for Chinese. And. OK, sport soccer. This document is also boughts soccer. So just to show you this demause. Since this will appear later on as well. Desmos is still, I guess the largest taxonomy on the on the. On the web. Sorry, 10 minutes. 10 more minutes. Then I need to speed up. Anyway, here we have million categories. So three of million categories, and we categorized these documents into. This big taxonomy, so for all 100 languages taxonomy is mostly in English. It's only in English really, and so this service can do. Categorization for all the languages. OK, let's proceed now otherwise. We want to come to the.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "News reporting bias. OK, so this is just one intermediate. Topic which I will touch and then will come to the last part, which is really the key of the talk. So neutral.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Voting bias. So here we have an example of the same event in Iraq, which were which was reported by two different media. One was CNN 1, one was Al Jazeera. And you see that it's really the same thing, except that the the bias or the view or how they reports about the same thing is very different. So these guys are referring to British murders while here soldiers, right? Although the factual information is pretty much the same.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So this is one small experiment which so we compare 300 aligned articles describing same events, one from Aljazeera, one from CNN. And then we try to. Check which terminology is characteristic for CNN and which one for Al Jazeera. So here you would see that CNN will talk about insurgents and terrorists and so on. While Aljazeera will talk about rebels, fighters and so on. So this is this came out without any. Yeah, do.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Link. So there's a system which you can download on IFI PET. It's called diverse in use, so there's a couple of screens. Where you can basically browse this information and see different point of views for current events.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "So this is so this diversity. In this app we can see through 3 three major three different dimensions. One is geography. So where is the content being published from? So here we can differentiate like Aljazeera or CNN or Democratic and Republicans and many others. So this would be geographical dimension subtopics. So each event has also different types of terminology so. We can select this sub topics and the third one would be sentiment. So we can say well show me just happy news or show me just bad news and so on. Plus we always generate automatically summary. Also for whatever we select. So with few more minutes I could show the demo for this. But if I've have just five minutes. Have them. Do you separate the terms which may be demoted? So murderer resistance fighter to the murder is an emotive terms. You separately just so, so in this particular case we don't do this, because here we try to cover all the topics and that particular terminology is collectivistic only for certain type of events. Oh or.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "OK, let's continue. So event representation just couple of. So.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "North, what about what is an event? So events? If you look at the events. Immedia usually events with appear, so each document is one data point. Events usually would be even. Event would be usually anomaly or some densification of these data points on a particular part of the space. So this is very philosophical. Description of event. Usually we would do this in two ways, either through clustering. So this is this unsupervised way. We're just clustering. Technique would detect this densification in the data space and would say, well, this seems to be an event. Or we pre build classifier which would classify certain things into certain event types.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "We have several representations of events, so. One very practical one would be feature vector events representation, so this would be very classical text mining or information travel type of representation of event, second level structured event. Or is the presentation is more like extracting info box for an event. So this is what you might have seen yesterday. You are showing the. Foster the presentation and the third one is Deep Inventor presentation where we would really want to reason about the information. So this one is still a little bit. It's not science fiction, but it's so expensive that nobody would really do it, but. It's possible. OK. Fuel.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Comments on this feature vector based representation? How can we along which dimensions which we can represent an event, so one very important one is topical. So what is being talked about? So this is one dimension social dimension. So which entities are mentioned? The third one temporal, in which time period it happens? Geographical where it happens. So the location publisher. So who is writing about the event and also what we saw before sentiment and. Bias, So what was the emotional emotional signal coming from that text? So. If you detect an event like a cluster of documents, we can with the tools as described before, they extract all these dimensions and this is now the definition of our event and this is very scalable. So here we can operate easily with millions of documents, yeah? You give different weights to the news according to the publisher. No, no. All publishers are at this stage the same. I would guess that using the feature vector you find these events more quickly than the structured logs exactly. Estimate how what the lag is, how long it takes to find really structured information about a new event. So I have a couple of slides on this, so currently seems like if you want to have usable structured events, it's usable means high precision, high recall, which is usable for, let's say, publishers, then without manual intervention it's almost impossible, so it is. It is a lack. So what I have two slides on this. But basically, uh, she's the right person to talk to. The idea there is to make the system well, use the annotator so crowdsourcing or expert sourcing, which some publishers would have you would be able to cover with this like thousands or maybe 1000 events per day and the cost per event should be really incense or 10s of cents. So this is the setting which we are targeting. We did quite some very common automatic extraction, but somehow it's really hard.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "So this is another view to this feature Vector Inventor presentation which is part of this event registry system. So here we search for Chicago related events. So this would be Vercoe geography. This is who the social part, the content part and the temporal part. So this would be the four of these dimensions.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "No very asked about structured events. Uh. Representation, so this would be an example of structured events, so this is. Infobox from Wikipedia. About this tsunami and earthquake. Sad, so currently with this today's technology, we cannot reach automatically. We cannot extract automatically structured events to the degree which would be, let's say, usable by professionals. So this is 1 quick comment on this, but so we are working.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "On this, so currently, let's say one prerequisite would be event taxonomy. There's no proper event taxonomy out there by everything. What we checked so far, you have just partial event taxonomies which would target. I've got this done or some parts, but something which would cover everything. What can potentially appear in the news so it's not out there. And so this would be this is just part of it with part of this event taxonomy which we are developing at the moment. So this would be I don't know. Natural disasters you will see there on the right and a couple of others, so this is a Josh is the right person for this.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Uh, on the poster yesterday you saw this prototype which extracts info boxes for you.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "OK, there are just maybe two more relevant terms when we talk about events. One is event sequences. So the point here is that once we have events, we would like to connect them into a bigger storylines, and the storylines can be more like linear or also hierarchical. So let's say war in Ukraine is 1 big thing, which consists from many smaller events and we would want to do both so the linear events and also hierarchical. Here is an example.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Of linear one. So let's say event would be Microsoft Windows 9. Announcement so this is one event which happened on April 26.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "So the system can extract all the related events. So there are many of them, and since each band has this temporal.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Dimension we can put all these events into a storyline, so this is scrollable, left, left and right. So we have a timeline and we see how the whole story evolves.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "Likewise, we have hierarchy of events, so we have big story. Very good Thatcher's life. Night events and well, this would be the very concrete event, so this is an example now which I took from the left to be honest, but we can calculate this.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "Things as well. So let's say this would be if we ask this event registry system for show me Microsoft Events, then we would get this hierarchy which, well by going deeper down we would get more and more.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Uh. So. Ho. Focused on a particular topic, which, whatever it is, and then we can visualize this further. OK, this is just to mention this and now.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "I have really just the last topic, so 2 minutes. OK so I have slides for this, but let me show you like. So this is pretty web heavy. I mean it's a lot of data. Needs to be transferred. Hopefully it will work.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "OK. So this is the first screen which you saw before, so here the system would just show what's currently going on. But we can always ask for something. Let's say show me Ukraine. Related events so currently in the database we have like. Events for last half a year. So the system said OK, it has 29,000 events related to Ukraine, so this is 1 event. 2nd events, certain event and so on. So 29,000. So let's like this one. So this one has 275. Store articles from different sources. OK. Maybe in the meantime I can show you just a couple of highlights from this event registry and will check just a couple of them life. You'll see use already this tracking, which is life.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "For a short so each event can be. Can show the profile, the social and content profile.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Then you can extract. Since we do all the annotation, we know exactly what the entities are there, so we know our people, locations, organizations and so on and how they are interlinked. So we're adding here this relationship. For each link, we can.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "New trending, so there's one visualization of trending through time. Other couple of nice visualization.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "On this. So then we categorize events into these demos. The first 3 levels of demos. So here for instance, you would see that. SoC issues labor would have for this particular query, whatever it was has almost 2% of events. The other parts would have different so. Let's say Ukraine. Ukraine is not just about war, it's about the Olympics, about economy about whatever. So but war would take recently good portion of it.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "Then we talked about crossing reality. So for instance, this is 1 event. Obama, NSA? So we identify events across the languages. So 89 English articles, 11 Spanish, 5 German so. This would be articles from all three languages describing the same thing. Then",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Each event has different dynamics of reporting, so here is an example of this. Obama. And it's a topic. See how it was reported. So the peak was here and then usually bounces. So this was reporting in German, and Spanish is harder to lines. Usually different languages would have different dynamics because of the time zone change and importance and couple of other things.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "We showed already the. Timeline so here is just another view to this timeline where our target event which we were observing is here. But here we have have all the related events on a timeline, so we see how the story involves.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "And. The last slide from this section. So here we have complete description also about how to. Exports so first event receives Jason everything what you saw there you can get through this API. Plus we have export to BBC storyline ontology. So this was done by Yash. So if you want details I actually the right person and sparkle endpoints works as well or should supposed to work as well. So the whole event traders have everything what you saw before then. This visual form. Basically it's exportable. So.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "One last light so. One last one one last so. A future.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Follow-up project, so once having this kind of infrastructure, basically what else one can do or what we are working on right now. One is this understanding global social dynamics, so this is very academic question. So how the SoC functions? We are integrating television with event registry. So in the same way as we have this life publishing of articles, television is also live channel but slightly different data modalities. So there we do speech recognition, video processing, object recognition and so on. Face recognition. And the idea is somehow to connect this event register also with the. And television channels so that project we have company with 250 TV channels and this will be soon integrating then one topic which starting working on is event prediction or event consequence prediction. So when an event happens you would be interested in what are possibly possible followups or what kind of consequences. Could happen becausw. All these things happened in the past. And the last bits, which is also related is this Microsoft called Micro reading or machine reading where we would want to understand the content of an individual document. Pretty much in detail instead of. So sometimes it's much easier to understand. Let's say thousands of documents. One document is really just. There is much harder because statistics doesn't work anymore then. So these are a couple of follow-up projects and this is the last slides. I have this other demos which we don't have time for it right? OK, thank you.",
+        "start": 1595.0,
+        "end": 1624.0
+    }
+]

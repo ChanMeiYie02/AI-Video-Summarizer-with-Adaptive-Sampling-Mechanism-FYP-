@@ -1,0 +1,21 @@
+{
+    "id": "thxjwdr24bwvabnqbuajkls7vvlomkfs",
+    "title": "Complex Event Detection And Prediction In Traffic",
+    "url": "http://videolectures.net/sikdd2014_kazic_event_detection/",
+    "info": {
+        "author": [
+            "Blaž Kažič, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Dec. 1, 2014",
+        "recorded": "October 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 92,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2187
+}

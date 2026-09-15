@@ -1,0 +1,21 @@
+{
+    "id": "lrx4rz3koybhmmcky4ssghsmfa45jhif",
+    "title": "Graph Embedding in Vector Spaces by Means of Prototype Selection",
+    "url": "http://videolectures.net/gbr07_riesen_gevs/",
+    "info": {
+        "author": [
+            "Kaspar Riesen, University of Bern"
+        ],
+        "published": "July 12, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Preprocessing",
+            "Top->Computer Science->Machine Learning->Structured Data"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 191,
+    "num_clips_with_summary": 23,
+    "num_gt_summary_sentences": 46,
+    "ground_truth_summary_length_chars": 6368
+}

@@ -1,0 +1,20 @@
+{
+    "id": "cl4wwvbh64yi7qe6zaa33sqduqqgl7sj",
+    "title": "Label Ranking with Abstention: Predicting Partial Orders by Thresholding Probability Distributions",
+    "url": "http://videolectures.net/nipsworkshops2011_cheng_thresholding/",
+    "info": {
+        "author": [
+            "Weiwei Cheng, Mathematik und Informatik, Philipps-Universität Marburg"
+        ],
+        "published": "Jan. 24, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Astronomy->Cosmology"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 221,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2900
+}

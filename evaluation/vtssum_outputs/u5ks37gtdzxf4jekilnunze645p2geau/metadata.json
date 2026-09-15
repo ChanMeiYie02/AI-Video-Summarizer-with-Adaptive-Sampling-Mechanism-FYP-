@@ -1,0 +1,21 @@
+{
+    "id": "u5ks37gtdzxf4jekilnunze645p2geau",
+    "title": "Express path to interoperable solutions – Case of the Oncology Institute of Vojvodina, Serbia",
+    "url": "http://videolectures.net/seehealth2010_striber_devaja_epis/",
+    "info": {
+        "author": [
+            "Dubravka Striber‐Devaja, Oncology institute of Vojvodina"
+        ],
+        "published": "Feb. 19, 2010",
+        "recorded": "January 2010",
+        "category": [
+            "Top->Medicine->Informatics",
+            "Top->Technology->Interoperability"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 154,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2785
+}

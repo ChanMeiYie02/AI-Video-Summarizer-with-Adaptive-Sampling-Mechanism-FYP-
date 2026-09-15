@@ -1,0 +1,6 @@
+sample_id,title,rouge1_f1,rouge2_f1,rougeL_f1,rouge1_precision,rouge1_recall,rouge2_precision,rouge2_recall,rougeL_precision,rougeL_recall,prediction_length,reference_length,compression_ratio
+22axpf7xhjwrzdzw7w77yc7mukreba37,Multiple hypotheses testing in functional neuroimaging applications,0.2769,0.0173,0.1261,0.393,0.2137,0.0246,0.0134,0.1789,0.0973,2206,2982,0.74
+22gipsfuw7sfapbpjtl3jg4vankygwyk,"Wordnet as a crowd source for untreated languages, concepts, and data elements",0.2894,0.0313,0.1191,0.2458,0.3517,0.0266,0.0381,0.1012,0.1448,3038,1599,1.9
+23g3hw5ev4e6aedpxz4bioljs4hbznyl,Variational Inference over Combinatorial Spaces,0.2921,0.0714,0.1573,0.1902,0.629,0.0465,0.1545,0.1024,0.3387,3075,730,4.21
+23lodsglh6szbglcsf7majriphobtjct,"X, Y, Zebra",0.2543,0.0348,0.1243,0.1943,0.3682,0.0265,0.0504,0.0949,0.1799,3413,1233,2.77
+24xldsebz466gltqlhn3irrjjxx73px7,Creating dynamic online courses,0.0968,0.018,0.0717,0.0539,0.4737,0.01,0.0893,0.0399,0.3509,3944,298,13.23

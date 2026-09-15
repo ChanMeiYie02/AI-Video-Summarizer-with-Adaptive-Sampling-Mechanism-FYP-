@@ -1,0 +1,20 @@
+{
+    "id": "j4btp6qoubadoilaoizuhare6es4z3vk",
+    "title": "Porting Contiki OS to VSN",
+    "url": "http://videolectures.net/wsn2010_smolnikar_pcos/",
+    "info": {
+        "author": [
+            "Miha Smolnikar, Department of Communication Systems, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 16, 2010",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Computers->Networking"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 173,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 46,
+    "ground_truth_summary_length_chars": 4481
+}

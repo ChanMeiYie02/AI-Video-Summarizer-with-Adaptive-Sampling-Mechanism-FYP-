@@ -1,0 +1,20 @@
+{
+    "id": "25yl6k2kfhphvxrux5rf3x3ntotgs2fs",
+    "title": "Diffusion and Cascading Behaviour in Networks",
+    "url": "http://videolectures.net/mmdss07_leskovec_dcbn/",
+    "info": {
+        "author": [
+            "Jure Leskovec, Computer Science Department, Stanford University"
+        ],
+        "published": "Nov. 28, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 77,
+    "num_sentences": 721,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 494
+}

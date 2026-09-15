@@ -1,0 +1,20 @@
+{
+    "id": "wwweloqrzwnvrbhg6rly4qnt4ukruumq",
+    "title": "Unsupervised Learning for Natural Language Processing",
+    "url": "http://videolectures.net/uai08_klein_ul/",
+    "info": {
+        "author": [
+            "Dan Klein, UC Berkeley"
+        ],
+        "published": "July 30, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Natural Language Processing"
+        ]
+    },
+    "num_segments": 101,
+    "num_sentences": 736,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2638
+}

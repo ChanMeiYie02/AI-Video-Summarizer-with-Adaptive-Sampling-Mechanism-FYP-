@@ -1,0 +1,20 @@
+{
+    "id": "g2ic6iu2z4gmy56d27zkwlvbwx5np25t",
+    "title": "Best Practices for Multilingual Linked Open Data",
+    "url": "http://videolectures.net/w3cworkshop2012_labra_gayo_data/",
+    "info": {
+        "author": [
+            "José Emilio Labra Gayo, University of Oviedo at Gijón"
+        ],
+        "published": "July 12, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 213,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 3171
+}

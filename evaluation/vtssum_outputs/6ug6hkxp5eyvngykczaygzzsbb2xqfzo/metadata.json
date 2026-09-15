@@ -1,0 +1,21 @@
+{
+    "id": "6ug6hkxp5eyvngykczaygzzsbb2xqfzo",
+    "title": "MWE experiment: outline and results",
+    "url": "http://videolectures.net/3rdAnnualActionMeeting2019_cibej_mwe_experiment/",
+    "info": {
+        "author": [
+            "Jaka Čibej, Center za jezikovne vire in tehnologije (CJVT), Univerza v Ljubljani"
+        ],
+        "published": "April 8, 2019",
+        "recorded": "March 2019",
+        "category": [
+            "Top->Humanities->Languages",
+            "Top->Computer Science->Crowdsourcing"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 235,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3570
+}

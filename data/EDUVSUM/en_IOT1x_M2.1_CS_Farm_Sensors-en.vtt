@@ -1,0 +1,295 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:02.930 --> 00:00:05.980
+SPEAKER 1: Well, all of the cows have a responder on them,
+
+00:00:05.980 --> 00:00:11.190
+which is a thing which has a motion sensor in it,
+
+00:00:11.190 --> 00:00:16.120
+and it also has a transponder in it.
+
+00:00:16.120 --> 00:00:18.205
+Well, it's very robust design.
+
+00:00:18.205 --> 00:00:20.830
+They're very strong, because the cows aren't very easy on them.
+
+00:00:20.830 --> 00:00:22.060
+They knock them around.
+
+00:00:22.060 --> 00:00:25.286
+They hook their collars on trees sometimes and try to pull them off.
+
+00:00:25.286 --> 00:00:26.660
+They've got a very strong collar.
+
+00:00:29.800 --> 00:00:31.660
+It's fairly easy to fit.
+
+00:00:31.660 --> 00:00:32.910
+They've got a battery in them.
+
+00:00:32.910 --> 00:00:35.779
+They've got a five-year life of the battery.
+
+00:00:35.779 --> 00:00:38.070
+After that five years, you have to buy a new responder.
+
+00:00:38.070 --> 00:00:43.570
+They're $140 each, so we need to get value out of them.
+
+00:00:43.570 --> 00:00:48.330
+The data from the motion sensor is sent back to the dairy herd.
+
+00:00:48.330 --> 00:00:52.750
+It's sent back to the computer, so that we know which cows are on heat
+
+00:00:52.750 --> 00:00:58.850
+or which cows are ill and not moving.
+
+00:00:58.850 --> 00:01:01.679
+If the cows are on heat, they tend to run around a lot more.
+
+00:01:01.679 --> 00:01:04.470
+And they actually eat a bit less, because they spend all their time
+
+00:01:04.470 --> 00:01:07.130
+running around after other cows.
+
+00:01:07.130 --> 00:01:12.760
+And the computer will pick this up and show us a spike on the graph.
+
+00:01:12.760 --> 00:01:15.460
+And we'll look up the graph of the cow and find
+
+00:01:15.460 --> 00:01:23.689
+that if she's had a heat period 21 days before or 18 to 24 days before hand,
+
+00:01:23.689 --> 00:01:25.480
+we'll know that, that was her previous heat
+
+00:01:25.480 --> 00:01:28.450
+and this is a pretty good chance this is actually a heat and not
+
+00:01:28.450 --> 00:01:30.760
+some other incident.
+
+00:01:30.760 --> 00:01:36.029
+And then we'll make the decision to mate that cow.
+
+00:01:36.029 --> 00:01:39.070
+We've got a drafting system in the dairy where the computer will actually
+
+00:01:39.070 --> 00:01:42.760
+draft those cows off, because it knows that those cows are on heat.
+
+00:01:42.760 --> 00:01:47.370
+And then we just need to check up on the reasons why it drafted the cow out
+
+00:01:47.370 --> 00:01:49.310
+and make sure that she's just on heat.
+
+00:01:49.310 --> 00:01:53.440
+With the conductivity sensors we have in the dairy,
+
+00:01:53.440 --> 00:01:56.470
+that lets us know when the cows got mastitis.
+
+00:01:56.470 --> 00:02:00.240
+Their milk conductivity increases.
+
+00:02:00.240 --> 00:02:02.890
+It becomes more conductive.
+
+00:02:02.890 --> 00:02:07.780
+So it will show a spike in the graph.
+
+00:02:07.780 --> 00:02:14.380
+And when it has a spike in their graph, the alarms will come on in the dairy,
+
+00:02:14.380 --> 00:02:16.510
+and we need to go and test that cow.
+
+00:02:16.510 --> 00:02:20.560
+And we'll actually do a physical test on the cow to see if she's got mastitis.
+
+00:02:20.560 --> 00:02:24.980
+And if she has then we'll treat her and deal with the problem.
+
+00:02:24.980 --> 00:02:27.260
+It just makes our mastitis treatment a lot easier.
+
+00:02:27.260 --> 00:02:29.890
+And we're able to pick up cows very quickly,
+
+00:02:29.890 --> 00:02:32.290
+and treat them before the mastitis gets hold of them.
+
+00:02:32.290 --> 00:02:35.820
+And actually, cure a lot of the cows that previously we weren't curing,
+
+00:02:35.820 --> 00:02:39.220
+because they'd had mastitis too long before we detected them.
+
+00:02:39.220 --> 00:02:44.950
+One of the things with the actual activity meter is, if a cows not eating
+
+00:02:44.950 --> 00:02:49.500
+and we know she's in the herd, we know that cow's sick.
+
+00:02:49.500 --> 00:02:53.000
+And we need to actually identify her when she comes in the herd
+
+00:02:53.000 --> 00:02:54.100
+and draft her out.
+
+00:02:54.100 --> 00:02:57.600
+The numbers attached to the cow, which is this number here,
+
+00:02:57.600 --> 00:02:59.410
+attached to this responder.
+
+00:02:59.410 --> 00:03:04.000
+I programmed this one to draft the gates.
+
+00:03:04.000 --> 00:03:08.260
+As the cows walk through the antenna like this one here, the ID is read.
+
+00:03:08.260 --> 00:03:12.640
+And then the gates on here, hopefully, will work.
+
+00:03:12.640 --> 00:03:16.420
+[CHUCKLE] And then the gates will open and close,
+
+00:03:16.420 --> 00:03:19.720
+and we'll draft off the cow into wherever we want to go.
+
+00:03:19.720 --> 00:03:21.940
+This is a dairy parlor in the dairy.
+
+00:03:21.940 --> 00:03:25.590
+We have the computer monitors behind each cow.
+
+00:03:28.220 --> 00:03:31.510
+There's a whole heap of data comes on behind each cow,
+
+00:03:31.510 --> 00:03:38.170
+so that we can find out different things that we need to do with that cow.
+
+00:03:38.170 --> 00:03:42.850
+This particular cow, is a cow with high somatic cell
+
+00:03:42.850 --> 00:03:48.160
+count, which we divert her milk out of the system and feed it to the calves.
+
+00:03:48.160 --> 00:03:51.780
+And we have a separate line being this line here,
+
+00:03:51.780 --> 00:03:59.400
+which we attach to the milk line from the cups just like that,
+
+00:03:59.400 --> 00:04:00.870
+and seal the thing off.
+
+00:04:00.870 --> 00:04:02.935
+So we're not using the milk meters here.
+
+00:04:02.935 --> 00:04:06.760
+So to put this cow on, because the computers recognize her
+
+00:04:06.760 --> 00:04:10.530
+as a cow that's not to be put on line, if I lift the cups up here,
+
+00:04:10.530 --> 00:04:12.850
+it won't activate the cups.
+
+00:04:12.850 --> 00:04:16.149
+I can't actually put those out there and put them on the cow.
+
+00:04:16.149 --> 00:04:20.350
+So I have to go through a process of pushing these buttons here
+
+00:04:20.350 --> 00:04:23.090
+to activate the machine, so I can put that on the cow,
+
+00:04:23.090 --> 00:04:26.640
+which we will be out here.
+
+00:04:26.640 --> 00:04:30.140
+With the other sets of cups, I just have to lift them up and put them
+
+00:04:30.140 --> 00:04:33.085
+straight on.
+
+00:04:33.085 --> 00:04:35.402
+And same to take the cups off the cow, because it
+
+00:04:35.402 --> 00:04:36.610
+won't come off automatically.
+
+00:04:36.610 --> 00:04:37.818
+So we have to do it manually.
+
+00:04:37.818 --> 00:04:43.420
+These here are our milk meters, which actually tell us how much milk the cow
+
+00:04:43.420 --> 00:04:44.520
+is giving each time.
+
+00:04:44.520 --> 00:04:49.300
+As the cow's come in here, the transponder reads the cow number.
+
+00:04:49.300 --> 00:04:55.540
+And it knows where the cows are in the dairy, so from lots one to 20.
+
+00:04:55.540 --> 00:05:00.280
+And this is position number 20 here, or 19, or whatever.
+
+00:05:00.280 --> 00:05:04.570
+So it knows that cow number 10 is in position number 19.
+
+00:05:04.570 --> 00:05:07.315
+And she's got to have two kilos of grain.
+
+00:05:07.315 --> 00:05:12.220
+It will automatically drop two kilos of grain out of that particular feeder
+
+00:05:12.220 --> 00:05:13.760
+for that cow to have.
+
+00:05:13.760 --> 00:05:17.350
+And we do that so that we've got cows that are on 20 liters,
+
+00:05:17.350 --> 00:05:18.990
+they'll only have two kilos.
+
+00:05:18.990 --> 00:05:22.390
+20 liters of milk will only have two liters of grain.
+
+00:05:22.390 --> 00:05:27.370
+And a cow that's on 45 liters of milk, I think she's on seven kilos of grain,
+
+00:05:27.370 --> 00:05:30.990
+so she'll get seven kilos of grain dropped for her.
+
+00:05:30.990 --> 00:05:31.870
+But that's in a day.
+
+00:05:31.870 --> 00:05:35.860
+So she coming in, in her first one, she only get three and 1/2 kilos,
+
+00:05:35.860 --> 00:05:39.120
+and then another three and 1/2 at the night time milking.
+
+00:05:39.120 --> 00:05:42.370
+The equipment we have here has allowed us to milk more numbers
+
+00:05:42.370 --> 00:05:45.100
+without having to employ more staff.
+
+00:05:45.100 --> 00:05:48.680
+And that we're managing things better.
+
+00:05:48.680 --> 00:05:52.900
+And to manage those cows, a lot better that we are milking.

@@ -1,0 +1,24 @@
+{
+    "id": "nqc6xkt2qzgfhlq6nvkbvg33nitzcsbi",
+    "title": "Mondrian forests: Efficient random forests for streaming data via Bayesian nonparametrics",
+    "url": "http://videolectures.net/sahd2014_teh_mondrian_forests/",
+    "info": {
+        "author": [
+            "Yee Whye Teh, Department of Statistics, University of Oxford"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Digital Signal Processing",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Information Theory",
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 245,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2258
+}

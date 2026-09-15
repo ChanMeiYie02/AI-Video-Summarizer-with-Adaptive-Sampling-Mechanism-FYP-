@@ -1,0 +1,431 @@
+[0.0s - 29.0s]
+Hi, my name is Linda home and I would first like to thank the organizers better. How much effort does it take for messages from school? Specially I would like to thank social for inviting me and give it some for arranging stuff for recycles. Effortless for me. Come here. So I am from different communities in the summer school is targeting so I'll be using maybe slightly different terminology that they are interested. Therapy. So.
+
+[29.0s - 58.0s]
+First, let me introduce myself. I come from Czech Republic Rock, Czech Technical University in Prague. During the popular cybernetics and Visual Recognition group. Leave work in a community just collection of groups that are interested in computer vision and similar stuff which is called since information perception and besides computer visual machine learning, pattern recognition, robotics, medical imaging and some other stuff. I personally and my subgroup is interested in image retrieval, classification, object detection, geometry and robustness. So I am running this small subgroup. I find those dog and for PhD students you can see Operating International Group. Cooperate with interesting people who cooperate on interesting projects. For example, recently have received this Facebook. Facebook Partnership, which means that they are not going to donate some supercomputer with many GPU cards, which will improve our seed up our researching deep networks and will also multiply the electricity bill. So we are open to cooperate, cooperate, so if you are interested in the things that I'm speaking about. Going to join as a busy student or postdoc or that you have ideas to collaborate otherwise, please contact me, speak to me.
+
+[58.0s - 87.0s]
+So I will speak about commit retrieval and switches specific object which is wrong. Then I will try to put something that will be interesting to this Community, so having a large collection of images and trying to get something out of it, some statistics, some to learn something out of it without any annotation will speak about importance of geometry will be pushing that a lot. Then I'll speak about different stuff. Different approaches that are related to English retrieval. Finally, I'll also speak about or remove stuff with. Mission your own networks, and then if there's time I will do some more work with them even more than just so far.
+
+[87.0s - 116.0s]
+So first image retrieval. So what I mean by that? I will try to show you if. The connection Internet connection problems, so we have. Collection of 7 million images downloaded from Flickr. These are fun makeup. Explore more images. We have indexed them. This is running on a single computer and you can. You can use very by example Richie images. So what does it mean? Similar as in Google instead of typing constraints, issue an image and the engineer returns images Frank by the relevance first nature images. Next page of results. Pencil and you can. You can play around with this. You can search for. Also, the image suggest modeling Dora. In Oxford also quite popular landmarks we have lots of images you can try to also search for tiny objects like this like those. And you will see that there are. Most members are all around of sorts, so you don't find justice particle around, but you get you get all the stuff around. What about please? But the North faces faces. You get faces, not necessarily of the same person. Masterson better face. So you could fix this racist racist. Downloaded from Flickr. There are lots of faces and actually our gets two faces at some point as well. Question, my computer is running that search right now. You know that that is that is running this different computer running back in the product. This is just. Interface.
+
+[116.0s - 145.0s]
+This way we don't single permission. So. The first approach to image retrieval was published in 2003 by just a shirt. Sanders is among the sculpted ever grow. It was inspired by text engine search and most of the bank offers approaches are basically following the same structure. As this work with lots of improvements, so first. You detect features vocal features in the images that you describe them. Then you better run times then into a bag of words representation. Then you run some rescoring and then you finally run some spatial verification, which is the only thing that significantly differs from this retrieval using text you don't have sense, so you don't have spatial information without ever distribution features or words in different, so I'll speak quickly about all these aspects.
+
+[145.0s - 174.0s]
+So for us local features, local features. This is a overall network, so some people use feature points, key points, anchor points, distinguished regions. What would we mean by that? You detect. R. In images, local batteries that are easy to detect another images under change of illumination in point? Why are we interested in local features? Well, in their solution and we take, we take Noble descriptor. Then if you are describing that we are describing the uploader, not the language itself. So we want to be robust operations, background culture. So that's why we are looking for local features. The first thing that you want. The picture is distinguishable so that you are able to detect it repeatedly into into different. So if these features this feature detector wouldn't be enabled because not a single feature repeats, and this is this is a big thing. I'm not going to go into the details, there are lots of lots of work being done in this area, so let's assume we have some reasonable future detector. It actually gives you a repeated features.
+
+[174.0s - 203.0s]
+And then if you will, just for Imagemagick, if you're just too images, you describe the intensity or the images around those feature around those features by descriptor, which is some high dimensional, say 120 dimensional vector and the descriptor has the property that they've dispatches look alike then. The vectors are close and if the patches are different than the vectors are different and then we just find nearest neighbors. Inspectors, you have some correspondence, systematic correspondences. You can then run some robust estimation of geometry, and in the end you have. You have matching this world in one image corresponds to which Patch in the other image, and what we are going to try to do is to run this for one query, one image from one side and millions of images from the other side.
+
+[203.0s - 232.0s]
+So how do we measure retrieval? Pull it so we have a very I mean this time database and database from similar level images in simulated images and based on what we retrieve we are trying to measure. Typically it's precision recall. So precision is number of relevant return so far divided by the number of returned images so far, and recall is number 11 divided by total number or so. If you have databases. Images ingrown around just to display. Then if we retrieve this image which is obvious there around then we have precision. Vons or 1 /, 1 returned and three Cole Open 200 and divided by total number of five product images. And then we go to second image again. Relevance or precision states record releases then false positive. Regal stays because knowing you're relevant in energy, but precision drops, and so on. And then we have this curve and this course supplies. Ideally we would first like then all the relevant images and then or lack thereof and images, so it would be the curved stick to the right top corner. If you want to. Use just one number. We can. We can look at the area under this curve, ideally one. Less than 150. So this is a measure, again adapted from text retrieval, and it is used in system of measure for me too.
+
+[232.0s - 261.0s]
+So now I also think work so we have images for offline snatcher indexing images so you detect features. The features are basically locations and some position and also some extent typically to be invariant affine transformations you substance. So you start the position as a geometry and also the shape of the others. Then you take the error covered. Those lips sees you. Geometrically, normalize and you put the metrical normalize and you get the adventures. Then you son of a descriptive favorite descriptor, being descriptive, just difficult histogram operated regions. Which turns out to be discriminative and at the same time insensitive to small misdetection or small misalignments of undetected features in construction worker. Which is this correct or composition? I'll spend more time on this and then you have for each image we have a list of visual words that are in that image. You also sort of geometry for.
+
+[261.0s - 290.0s]
+Special verification then very time you get that image pictures you understanding your complies them and you have a list of features that are inside your brain and then you go and basically saw all the documents that have the same visual words in them. Use inverted files or indices format then you then. Form based on this scoring some initial ranking and then go and verify that everything that means better not only similar patches are in those images, but they are distributed in the same manner. Or if you want whether there exists 3D camera position that 3D structure so that the patches will project into one and do the other image Simon simultaneously. Typically use ransack and then you re rank. So basically filter out mismatches that are generic and inconsistent and that is when you get the results.
+
+[290.0s - 319.0s]
+And then. So I said if you are matching 2 images, you can afford to have the whole descriptors to find nearest neighbors under descriptors. But if you have many many images, each image has many many features you cannot afford to store all descriptors of all images because it would be. It would be too expensive to store them and it would be too slow to search in them. So you do vector quantization, which is essentially approximating the distance by zero Infinity. Distance so you partition features things in themselves, but this thing is features that are in the same cells. Identical medicine. O features that are in a different cell are different. A completely different business. In advantages it is very efficient because you can if you want to access everything that is similar you can have just a list and you can access it in linear time with a number of similar features.
+
+[319.0s - 348.0s]
+Davis also disadvantages and are known as quantization effects, so if you're very features here, then the closest feature is just has just infinite distance so you don't ever hang it also. It can happen, and it typically happens in the most distant feature can actually begin this identical. So this might be some source of problems you can. We can miss some images you can. You can introduce some mismatches, but overall if you have enough features you hope in images and you hope that you have that you will have sufficiently many features to be able to retrieve the magic images.
+
+[348.0s - 377.0s]
+So vector quantization and salsa posters are doing clustering so difficult way to constrain 100 vector quantization is used in training set of feature descriptors and rancher schemes. This can be slow because we typically use very large number of clusters simulator, so this can be distant. This can be prohibitively slow, so I'll speak about ways to help.
+
+[377.0s - 406.0s]
+How to see how people speed this up? So now we have. We have the vocabulary that we are able to get from image to local features, to descriptors to visual words and now how we describe images. Well, we described him as a histograms of visuals that appear in ghost images. So let's have at image that has three features there to descriptors of two of them for into the cell official Guardian, one for some to the selfish or OK. So you will describe. Dissemination as a Instagram and has that looks like then and then you have another image. You have another Instagram. Idea is that those sectors are fast, so we have developed during the number of cells is much larger than the number of features in the images. So you have you have many variables zeros in Windows.
+
+[406.0s - 435.0s]
+And then again inspired by. Mr. Jewel, for the initial scoring that seems to work quite well. You just reply you cosine similarity which is basically dot product of normalized vectors and it turns out that the Philippines are sparse and actually think ignore most of the zeros and we don't even have to store them and you can compute. Sign efficiently by multiplying only those elements and Thurman Zero in practice. Your database you have you can. You can start for example as a sparse matrix, which is very traditional case in the 1st. Video Google and in Rose Shoe store database images. You also start normalizing constants. It is important to store it in on the database are on their side pages. Ignore it because of the only change multiplicatively discord of multiplication. Loading The same for all of them, so it won't change the rank order images. And then the road in the initial error can be performed by just adopt product in sparse matrix and and actually it turns out that for example, month law stores the sparse matrices as inverted files. So it's basically.
+
+[435.0s - 464.0s]
+Nothing special or nothing so inverted file. So for each. So instead of storing. Descriptors are very visual words for each image, use or for each visual are, which produces over fears. It is equivalent, so we can. You can easily get from 1 from 1. Representation to the other. If you speak about matrix representation, is just transposing the matrix. And then if you.
+
+[464.0s - 493.0s]
+I agree and then you just take the. Inverted lists, or the indices that are in the query that correspond to the visual person telling the query and you basically perform voting. So document ID 6S one so it gets one vote and so on and in the end we just kinda moves. And and you look at the initial ranking.
+
+[493.0s - 522.0s]
+Is very efficient in her scenario complexity in the number of documents and the interpretation of smoking is flying. It's my natural also you can see that we are assuming since we are summing the evidence, we are assuming the independence of each of the visual arts, which often is reasonable assumption but also speak about about. Cases services mergers can go really bad.
+
+[522.0s - 551.0s]
+And in the end, whatever. Surely ranking QS initial rank use? You can use geometric information to remove space.
+
+[551.0s - 580.0s]
+So.
+
+[580.0s - 609.0s]
+People have tried many companies starting from games or smokable. Aries fixed conversation that is extremely fast but provides very poor. Compensation doesn't really work for image retrieval. Agglomerative clustering, on the other side. It provides very nice, very nice clustering, but it is rather slow and then it will be running from problems. If you want to assign. The unseen features into into into the clusters, so people came up with a number of methods of.
+
+[609.0s - 638.0s]
+Think about form, then hierarchical clustering. Use you first partition. You could just face into smaller, smaller number of clusters and then you are pushing those clusters an again and again until you get very high number of of. Cells in the end, and this is much faster than originally came, means because she will only look pay and you can also run it on multiple machines or can be fast easy. Turns out that it provides not so good conversation because if you if you split your day, dances are high up in the hierarchy then you will never recover from that, and often it happens with this balance so that there are way more. Symbolic themselves and the other sites are almost empty.
+
+[638.0s - 667.0s]
+Approximate game means the same complexity as hierarchical means. It is better conversation and it's basically came easily reprioritized. The nearest neighbor search. In the assignment phase by approximate nearest neighbor phase. Oh
+
+[667.0s - 696.0s]
+Next, next method is often used and brings nice results. Is called coming coming up. I love this because this is an idea. So instead of going for a large number of visual words you go for smaller number visual arts and you attach some minor signature. Do each feature. In each of themselves by disagree. Running over sensitive hashing random projections so you use multiple random projections you store. The binary code and then you look into the cell and you also need to. Into at points and into the binary. Signatures and you select those with sufficient way smaller in distance. So this way you can get you can get a much better notion of similarity, only underhand its usual market. So people are using like 32 bit or 64 bits. But if you if you use just the inverted file, it typically takes only it's 11 bits of use some compressed version so. You get it. You get better compensation, but at the cost of the three or six times higher footprint which. Might be too expensive.
+
+[696.0s - 725.0s]
+So people are also trying to. Holiday in the problems man. A good conversation. Afraid so instead of assigning very feature into just a single visual word, you can do something soft. Something like something similar, multiple assignment. So instead of assigning it to one visual, verbal assigned to a multiple visual verbs and you can do it with approximate nearest neighbors, they typically returning not only the approximate nearest neighbor but the list of nursing personal payments into a number of them and also the hierarchical K means. Naturally has artisoft assignment, so you just go one level up to level self and you assign to everything that falls into definitely good at such.
+
+[725.0s - 754.0s]
+No. The. Vector composition order vocabulary construction that gets the best results is actually learn for convert, so the idea is. That you will be. Over segment the the space of. Feature descriptors so do the self sufficient small so that you are almost certain that if it's in a single cell and it's almost almost surely the same, the same feature, but now you would have too many false negatives. So if you take very many. Future metrics and you will learn a function or block probability that would say OK if I observe feature in this cell, focus with probability. Or where else should I look? Find the matching features so this is advantage is that it can learn metric that is not necessary. I'll do which it turns out that the optometric is not in most of the formal study feature descriptors is not the optimal metric an A. It can also run very efficiently. Do this with this.
+
+[754.0s - 783.0s]
+A bit later, so now I'll switch to. I'll switch to. Something that is called min hash. So so far the retrieval was we have one crime and a database and we are trying to find that particular query in the database. So now I will try to match all images against all images in the database and basically trying trying to find work this week eating in the database.
+
+[783.0s - 812.0s]
+So Min hash is basically a local existence division onsets, so we go instead of histograms. We will represent the images as sets of visual words and as a local establishing is defined by a set of hash functions and probability distribution. Overdosage functions for that tells you how to solve this issue functions and according to this probability. If you draw the hash functions according to this probability, then you should have the probability that two sets 2 images have the same hash. With the probability of the similarity of those two images, an here similarity is the set interest listed overlap, which is the size of the intersection over the size of the medium. So you can see that if do since are identical, they will get similarity wrong and it use it sarcastically disjoint. Your guys have similarities zero and typically we are somewhere in between, so this similar this notion of similarity. The more features did more visual words do images have in common than or similar layoff?
+
+[812.0s - 841.0s]
+So how does it grow up so the hash function is basically a permutation of the vocabulary. And it's drawn uniformly so so each of the permutations as the same probability and footprint order representative of each set, is the smallest element from this set according to this. Ordering girl according to discrimination. So if you have here the ordering then F is the smallest. And if this instead run. So if this represents a different set one iface also in the other sense of FX represented can be another set. Now we choose a different function. Is this any, so? I assume the 1st, so a is representation for this function on the person and the smallest in the circumstances be sober representation is being. And I will say the probability that during presentations here will be the same. It is. Proportional or is it over similarity? Then if you're going to have the estimate of the similarity, we simply count how many, how many times do cells have the same min hash and this converges to their similarity? So in this case. The estimated similarity formula currency management system.
+
+[841.0s - 870.0s]
+Biologically similar to this one. So in if you are speaking about images of, we have to pick away and become more sizable amount. Typically you get around 2000 features per image and it is sufficient to have hundreds of hashes to step in there.
+
+[870.0s - 899.0s]
+So. Do show that actually. This way you generate some of this. This hashing procedure has the proper pay that the two sides will have the same in hash with the probability equal to their overlap. It is quite nice, but need very hard to show it, so I'll spend some time on this. So if you look at the Union or blue sets then the min hash D ordering will select the smallest element of this Union and it is. Yes, it can be any of them with the same probability. So in the case is for example a. Then you are guaranteed that the representation of both of the sets will be a, because a is the smallest in the Union and eight is also in the intersection, so it must be selected as a representation of set bond and also on the Step 2. On the other hand, if the minimal with respect to the hash function is from this Union. You said that this is not is a element that is not in the intersection. Then it's guaranteed that do sets are going to have different representation, because this is going to ever see because it's smaller in the Union, so it must be this more smallest indeed. In this is I do. My model, so therefore it cannot have the same communication, and so on. And in the end he says that the probability of each of those is equally likely, so the probability that the two cents will have the same min hash is exactly their server.
+
+[899.0s - 928.0s]
+So how does it work? We have now in representation. So in order to be more discriminative, the group individual hashes in fewer sketches. Which are basically established organizations, and we had them each of them into into separate hash table and we miss for all the images in the database.
+
+[928.0s - 957.0s]
+Then we check for sketch collisions. If you observe such caution, that means that the whole is supple of diminishes is the same, and this might be that those two documents actually have something in common, can go an under measure, compute their similarity from all. Minish is everything that forms and permit tests, and this happens with probability that that's involved with similar the same similarity of people sets. The number of the size of the sketch and the number of matches the number of hash tables you are going to use. So in particular, let's move. This protocol.
+
+[957.0s - 986.0s]
+Before sketch size 3 and 512 hash functions and here you have a similarity and hanging. When you have the purple adopted 0. And this method has been originally used for near duplicate images, which is also you can see that you are almost certain to getting a look at images immediately with very high probability. And this is probability also got related images animated images.
+
+[986.0s - 1015.0s]
+Yeah, it's almost zero probability. On this side, I just want to show it is. The similarity of min hash. This computer doesn't have to be just the set overlap. It can be very more complicated, and it's it is something we actually buy, trick in SH that you change the distribution of. Or from which you draw from hash functions formula from a set of your hash functions. And this way at 0 cost, you can significantly improve results.
+
+[1015.0s - 1044.0s]
+So now we are getting pretty interesting stuff. How can we use this language to actually get clusters of images of this important?
+
+[1044.0s - 1073.0s]
+So if you have an issue to your, you can do very nice stuff. You can take one image in your database in turn and try to play with it. And then you just keep the graph there. Vertices are the images and edges are linking images that are simple or contender destination. Unfortunately, this undertake in the number of images and you can do this for 5000 images. You can do that for 100,000 images forbidden images you will wait forever. So.
+
+[1073.0s - 1102.0s]
+Instead. But again proposes you quickly get some sense of the clusters by a method that has normal recall, but their low false positive rate, which would be in our case manage and then just use those images to grow the seeds to complete their customers. Well, what can happen? That you get a nice clusters, but it also can happen that you misunderstood because you just don't let it sit there.
+
+[1102.0s - 1131.0s]
+So back to back to this graph of the probable appropriately images. So here we are not so much interested in Europe because we are more interested in images that are orders of the same object.
+
+[1131.0s - 1160.0s]
+So here is for some of the of the small similarities, and this is the lock save with probability of retreat probability of retreating. And here are some examples of image Resident Evil picture like to get and they were somewhere in between those two so they have they have probability for travel between say 5 having 30% which is not much.
+
+[1160.0s - 1189.0s]
+I think is the 300 not really interested in getting all the links in the cluster. We are happy if you get one link from the whole cluster and then we lose some other method to compute cost. So if you have two images, we have just 6% which is 95 and 94% probability that we won't retrieve. If you have more images than probability that we will not retrieve a single pair of those now and the increasing size of the cluster, the probability that he is.
+
+[1189.0s - 1218.0s]
+We will not get a single link in the clustering goes quickly now and this is for something like that. The image is it goes. It goes below 2%.
+
+[1218.0s - 1247.0s]
+So this way we are. We can efficiently find clusters will have with our large. We have rather high probability that we will miss the small ones, but there's something nothing that we will be worried about because if you clusters are small, they're probably not so interesting. Anyway, this is just the probability of not retrieving single a single link. In a cluster, depending on the cluster size. And teleported arbitrary, say, average. Similarly in the cluster. And we are speaking about and I'm trying to find clusters in a millions of images. So clusters of size and the images that's. Easily achievable.
+
+[1247.0s - 1276.0s]
+So summary first you should use Minhash to retrieve. Possible gosser seeds and more special verification to remove four sources and then use image retrieval to complete the customers. It can happen that domestic lawsuits.
+
+[1276.0s - 1305.0s]
+This one. There is some assumption that the probability that if you don't get one of the links is independent of the probability that you will not get the other link. So we have measured this and it actually seems that helps with develop then. The probabilities of not reading Richard being a links in clusters is independent.
+
+[1305.0s - 1334.0s]
+So application
+
+[1334.0s - 1363.0s]
+Welcome back to, for example, learning Handbook abilities.
+
+[1363.0s - 1392.0s]
+So here on this clustering or. Millions of images that need to make images we actually mission be found correspondences between features. So here you can see examples of the future patches and their variants. This is safe projected into two most discriminative. Access using PCA so you can see that this is nowhere close to Goshen Solutions or L2 is actually very impact measure for similarity of those features, and you can use those dose feature tracks to actually try to learn the similarity or the metric for the feature matching. So let's just run over 5 million images and we got something like. After billion features in future tracks.
+
+[1392.0s - 1421.0s]
+Here are some more examples. Off the future tracks. The important thing is a device available. Online.
+
+[1421.0s - 1450.0s]
+You can further improve.
+
+[1450.0s - 1479.0s]
+I'll just quickly go into it. It turns out that for large vocabularies, selecting commit hash also selects a spatial location on the future, so you can take the feature and you can select just not. Some discussion notes from the whole image that we can actually cycle only those that are nearby because we are interested in low quality because of occlusions and the current counter and you can select minicius from neighboring features in space and scale as well. And you can also switch switch as before and you can also get. Some geometric invariant further allowed to discriminate between possible sketch.
+
+[1479.0s - 1508.0s]
+And this way you can discover even small objects. So these are. This is an example object which which we've seen also in the demo I was showing. So this is the sketch. That has been matched. This is the supporting features and this is the segmentation and so this object that has very few pixels in the whole data.
+
+[1508.0s - 1537.0s]
+Things have been then discovered in hundreds of thousands of images without any supervision. So no one went and said, OK is the only salt lamp post. Grand Supervised discovery project.
+
+[1537.0s - 1566.0s]
+Another thing comin hash making useful is discovery of Kaufman so features.
+
+[1566.0s - 1595.0s]
+So as I said, we buy. Summing the evidence, we assume independence on the features and into features are not independent. Then we come there many times because if you observe bond and we have a high probability of observing another, but we complete this independence, we summon, Summon Summon and we we overcome. So as an example, whether this program or not here you can see images of. A search of Liberty. There's some racial science and also an Sydney Opera House well. Would make up Earth season is water. Facts and railings. So if.
+
+[1595.0s - 1624.0s]
+Do an if you have such a query and you actually like where did you get up there? Because there are way more water features that are not the same that different but they are correlated. So if you observe one of them are very likely to observe all of them. So what you would like to actually do that over to like to get is 2 in advance. Homer Cooccurrence of features. So which features are you? Observe one of them are likely to observe a together. And you can reserve a single drink. So previously we are saying images are similar if they have features in Common Now, we can say features are similar. If they appear in the same images. So basically interchanged role of images and visual words. You can run them in hash as before and as a result you get the groups of features that Pierre Simon simultaneously in images and then you can downgrade their contribution or. Eliminate them completely and suddenly you will get a starter home town Hall.
+
+[1624.0s - 1653.0s]
+Um, typical example software coming features. As I said, three links X breaks so you can see these are the best features here I think is they are not. Repeated features because they look they do not look a lot the same ratings. They do look alike, but they appear together so you just cannot be start them. Based on our discussion over disappeared 100 times, each of them that you once but there will be thousands of them.
+
+[1653.0s - 1682.0s]
+More examples Walter.
+
+[1682.0s - 1711.0s]
+More examples, Flickr images. It turns out that facial features. Appear in many images and they appear together even with glasses are discovered this way.
+
+[1711.0s - 1740.0s]
+So is it? Is it actually difficult to find such comparing features? And it turns out it is difficult because if you look at the frequency. All visual words limited small that is higher than the most of our of appearance of the frequency of conquering features. So for example, if you went for a greedy algorithm and you are trying to combine the most frequent features, then you would basically have to go through all possible paths. And if you have a temper 7. So sort of visual vocabulary so we can be 14.
+
+[1740.0s - 1769.0s]
+So now. I'll briefly speak about geometry image retrieval and it's.
+
+[1769.0s - 1798.0s]
+So is here anyone familiar with? Half transform or answer? OK, so half half transform is one of the ways how you can. We can find Jonathan consistent. Or model consistent data and you basically for each. Data point you generate a set of of Sybil parameters of the model with pass through this data point and you cast the votes into some descriptors table parameters. And you do this for every single data point and those parameters that have the most votes are consistent with the highest number of data points, and this could be. Your your data that are supporting this particular model. It can be fast. It natural supports multiple model fitting, but it can be extremely memory demanding. If you have large and large number of parameters and one of the biggest problems in this matter is that you have to be really careful with the parametrization because we are measuring the similarity of the models in the parameter space and it might be quite difficult. So in terms of. Line parameters screen find parameters pharma transition. But this is meaningful if you go for fundamental matrix estimation then you have 7 degrees of freedom. Extremely large tables with me and it's very difficult to say whether ranged efficient matrix is similar to each other based on on the entries in the matrix. On the underground side it is hypothesized unverifiable, it's randomized which some people may not like. Typical is slower than bolting, but it requires no extra memory and. The quality of the model of how well the model fits the data is measured in some reasonable metric. For example, you can measure images distance in pixels, so you are able to tell whether existence is 3 pixels. That is OK, and the distance is 200 fixes this properly. Not so good there as it might be difficult to say if the element of fundamental matrix is 3.5 or 3.400. It's weather is similar on.
+
+[1798.0s - 1827.0s]
+So run some quick.
+
+[1827.0s - 1856.0s]
+I'll show this on a running example of fitting online so you have points that are online. There are some error on those points measured, and there are also forms that are completely wrong now just. In endive image retrieval, you can imagine those as matches their features fall into the same spatial into the same Visual World Cup. Completely different variables. That descriptive summary form. How does it proceed? If you go for this virus. Person's great .1, which means a single point. If you drag it sufficiently far in good with the school year estimate.
+
+[1856.0s - 1885.0s]
+So RANSAC you select the minimum number of points that define the model for line is 2.
+
+[1885.0s - 1914.0s]
+You fit the model if you do line.
+
+[1914.0s - 1943.0s]
+Compute the distance of all the points to the line and use it.
+
+[1943.0s - 1972.0s]
+At some point in time, sufficiently quotes are supporting this line and the others are not, and then we.
+
+[1972.0s - 2001.0s]
+Give me this. Ugh.
+
+[2001.0s - 2030.0s]
+So you have fly.
+
+[2030.0s - 2059.0s]
+Optional of going supporting and. Menu or Miss Lucky you can stop and you can say OK this is my line but is sufficiently close is supporting the languages of this far away. It's no good. Um?
+
+[2059.0s - 2088.0s]
+You can you can compute how many how many samples Unity Grove. If you know you know statistics and if you know how much you want to be confident in your solution. So this may seem terribly inefficient, so new things is efficient. Who thinks it's inefficient? Who is Slovenia? So.
+
+[2088.0s - 2117.0s]
+It turns out that this extremely efficient. So for example, in the example of trying things and we have maybe or something two points and have half the data on the line and half later off the line. Then with probability of 95% then samples you will have to do on. So it is very efficient. This is one of the things that if you if you look at any 3D reconstruction at an image stitching, this is for this morning consult.
+
+[2117.0s - 2146.0s]
+So. To summarize. The input is a set of data points which can be, for example, of matches in the two images. They also mean function that from a minimal sample gives you more parameters and then with the cost function it gives you for each data point the quality of the faith and you also need difficult some partial saying this is good. This is bad as the output you get the best parameters optimizing the cost function and also division within inliers and outliers. Windows simple, you repeat enough times to complete the probability of an important problem in the serpent in the solution is actually higher. Stop interested. You generate the hypothesis you randomly sample your computer parameters in the second step, you computer cost. You just sort of. I suppose, the model investors. Used since 89. Most popular things. Just another business theaters. In such form it doesn't matter. So if you read the paper that compares to 1 Lawrence, I just don't even believe it.
+
+[2146.0s - 2175.0s]
+There has been so many papers improving every single for civil.
+
+[2175.0s - 2204.0s]
+So I have listed in just those papers that have stuck in it and there probably more. There are more than that are calling the method differently, but I would like to point out to two publicly available. Implementations one is specific to do matching. So homography and abortion matter estimation is optimized to be fast and it is really good. And the other one is called Yusuf. And that is a model modular framework. There are many different of those approaches are implemented as objects and you can just say OK, I can do this type of sampling and this type of local optimization and you can basically. No mix and match the best. Combination for your specific problem.
+
+[2204.0s - 2233.0s]
+So now he thinks who more recent stuff and we don't go and use the geometry.
+
+[2233.0s - 2262.0s]
+So if you want to use material from all browsers including, you might be interested in asking what's this or what is that, so I can let let's actually try. So can you please try to deflect through the Internet? Doesn't seem to be responsive.
+
+[2262.0s - 2291.0s]
+So you can go and query that you got such a result you will get correct location on the query and if you bear with this thing it will also bad correct location or repairing. So if you wanted to ask what is this which would be happy with those results. Probably not field. We would like to get results on that if you ask what is this, you know we get results with are very similar to last week's that just showing up in place. You would like to get actually asthmatic source, explaining the current region as possible. So it's fine. Did you get there? I'm. So. This is 1 possible formulation or novel formulation of retrieval.
+
+[2291.0s - 2320.0s]
+So getting the most similar results you actually would like to get most similar results under certain constraints. In this case geometric constraints. An impromptu. Either you may be interested in maximizing the number of relevant pixels in the results, or maximizing the scale change, or maximizing retention viewpoint so that you can see. No. This around corner and stuff like that. Um, another concern. Maybe like high fertility change so you can ask him how does this thing group?
+
+[2320.0s - 2349.0s]
+Tonight. And The thing is centered. Missing borough retrieval may not be really helpful because if you are asking for maximal change of scale there actually the best answer. The best result can be in Backreference, completely dissimilar. They infect can happen thinking, because the features detected here out too small to be reproduced here. So you might be interested in. In actually getting things that are left completely different description and the way how to get there is not to try to get it in one go. Comparing descriptors value to get a sequence of images that link the original very end results.
+
+[2349.0s - 2378.0s]
+You can also ask different questions, so instead of more these days there is this so we can have a detail of something and instead of getting more images of value, actually are interested in local answering visit detail in some context.
+
+[2378.0s - 2407.0s]
+So another another application you might be interested in. Not only in a specific thing, but there might be asking Global Chris interesting on this building and if my interesting combining both people.
+
+[2407.0s - 2436.0s]
+Photograph the walls or people photograph with the highest. Detail you can automatically get. All the thousands building so you show an image, you get all the details.
+
+[2436.0s - 2465.0s]
+Here is some comparisons of this shows high resolution transform, so this shows the prices that are for the grass, photographically day hikes resolution. And here we can see. So this is our Patten from the original image and this is for testing retreat and you can see that. You can significantly improve our resolution. You can use it then for signal construction.
+
+[2465.0s - 2494.0s]
+Or 4. For.
+
+[2494.0s - 2523.0s]
+Super resolution you can also so people, especially tourists tend to frame objects with their photographs of the object is in the middle and the edges of the photograph are actually frame format of that object. So if you ask. What is the most photographic gene that is framed by such a large? Rectangle then you can get a Sony other objects that are basically yeah other objects without this big and this is the region that this will be most. Are photographing Mystic objects.
+
+[2523.0s - 2552.0s]
+So now let's let's move up to some so far includes the user was asking, almost trying to browse the images. Now let's have a look into something automated. Studio construction
+
+[2552.0s - 2581.0s]
+So it might be that role to use image retrieval for 3D reconstruction. You get that image, you have a database of images you created this image, you get the most similar images and then you very Windows images in turn. Any better. Always the top most similar images in Regina retrieve anymore and Suddenlink. You might get into the position that you have with those images and now between running out trying to retrieve it more and more images, you're still getting the same results. So basically the set of nearest inverses Coast and then you won't be able to do frequency might be able to do cigarette construction. You will get flight argue triumph. If you put a texture on it, it would look nice bumped. You wouldn't get. You may not again the whole.
+
+[2581.0s - 2610.0s]
+Object, So what we did we? Tightly coupled, the retrieval and structure from motion, so we use structure from motion views retrieval to get better images for search for motion. So not only nearest neighbor search but also this scale change and to get images from the right from the left which will improve this reconstruction in structure for motion. And then we also restructured promotion as a very good validation of our original. So if you make a similar construction. Over the images then it's very likely that they are actually from the same. Send location and you can use this to verify matches and to get to get to crawl more images and also you can you can use some statistics of this vehicle structure and if it feels that you might need more images from certain views you can you can query. You can design queries so that you can get more images.
+
+[2610.0s - 2639.0s]
+So as I said, you might be interested in. Getting own thanks which will improve distributor construction. You might also be interested in getting details which will improve the quality of the 3D reconstruction of the details, and you certainly would like to be able to crawl. Ideally building or get different viewpoints. So cyber offenders provide growth so that you will get more.
+
+[2639.0s - 2668.0s]
+No. 3D reconstruction so. Let me show you some results, so again no notation, just images. You start with a single image. You have 7 million images. And you run through the construction so we can see. This is assuming reconstructed point. From here you can see color coding. The level of details that is being reconstructed, so that's the distance between nearest 3 point to each point and the red means that it's 5 millimeters apart and it goes through. 7 million for that area? No, it's 7 million. Like you downloaded images, you have free of all images and they think it's 3000 images. Then suppose images of of the Boko. Of the specific location. You can see the public rules and he hears from time to time image that is taken from the position of the camera. Notice that is looking. At the moment, so I'll just. So this is our big triumph. You can see that you get so people are taking photographs from almost everywhere and starting coming single image. You can get very nice reconstruction. We've also tried to start from different images and you get pretty much similar constructions of the overlap of the images that are used during construction, goes above many impressive. I want to go to this park crossing so here you can see we started with an image that was on the whole thing and you can see both is. So this is point, This is not intense reconstruction misinformed route and by retrieving. Holy resolution images from this old film. Before so you can get through such a U reconstruction. It works, so this is something this coffee drove in Prague outside and also inside so it works. Every. So how much time do I have? So 20 minutes. Including.
+
+[2668.0s - 2697.0s]
+So very recent star services. Last year Mississippi beyond this year, so we moved from. Sounds reconstruction for headcount students will construction so and you not interested also and change of elimination so we would like to get reconstructions that did spend a night.
+
+[2697.0s - 2726.0s]
+Difference between difference between this person events reconstruction so sparse reconstruction? You get the point. Cloud data points correspond to local features. There is dense. You are trying to make a sweep on from every single pixel in the image. So you are not matching feature points. You get first feature points to get through this structure and then you would you basically what you do you run a correlation? Of every single fix low in one image to every single pixel and yet not every single according to the geometric constraints, or it's longer pickle lines and you are trying to basically establish matches for every single pixel images and that makes 3D reconstruction with this then. So instead of trying to use moving this pops, you're smoking this price there. I didn't call it's moving. You are trying to find. Expensive for the single pixel. You can get this moving, but they are it's not. You are using more information than for me for this purpose. So there is some fundamental at this moment then. Because of this, because of this correlation that is involved and if you have a mixture of Dayton plant images. Ben's answer construction has.
+
+[2726.0s - 2755.0s]
+Some artifacts because if you have a day image and micromanage, you are able to match the local features be cause they are for the metrically normalized but then then you go for the correlation then the elimination can be drastically different and the correlation just just fails. So.
+
+[2755.0s - 2784.0s]
+So how's the weather? Be careful. So basically denser construction that is obtained from the mixture of dayan images in light images and this really secure construction and less reconstruction from their own languages in natural images so well, these two are looking quite OK.
+
+[2784.0s - 2813.0s]
+When you can see artifacts here.
+
+[2813.0s - 2842.0s]
+Every.
+
+[2842.0s - 2871.0s]
+So just forget the rules.
+
+[2871.0s - 2900.0s]
+Um so. If you have separated night night and day images. You can get. You can get up. Vance reconstructions without artifacts. Or with less artifacts, but it is also disadvantages that typically have very less images are taken during the night and certain parts will not even be linked up at all. So I know you have no images there or just like since we can't see anything there.
+
+[2900.0s - 2929.0s]
+So what we would like to do, we would like to get a 3D reconstruction during the day during the night, automatically separate then and then merge those two reconstructions because, well, it's obvious that you have more images during the day, so the regular searching during the day, not more information, but sometimes there are things that are ambiguous. During the day line, but if you put light from above then you can get certain details that are not visible during the day or so different illumination. We can bring more information, so fuse geometry gives as normal. Then it's reconstruction as possible.
+
+[2929.0s - 2958.0s]
+And then we would also like to learn how things that are invisible in one of them abilities can be colored in. In this model.
+
+[2958.0s - 2987.0s]
+For some reason, so we gotta. We saw that image collection. Then the applying hash get clusters with clusters will collect images, it's possibles as before and we have now. All the images are there and these are the images and languages as well. Our bipartite graph images are one type of vertices and three points are another group of artists.
+
+[2987.0s - 3016.0s]
+This. And images are collected through the points that. Actually detected and reconstructed in front of soldiers.
+
+[3016.0s - 3045.0s]
+And then use some prior so the color is typically good prior so many images and activities and the institutions that entrance exams. So you sample histograms, including the site about severe constructed with projected points and taking some time off when you get into the distribution on the object.
+
+[3045.0s - 3074.0s]
+You train a CNN to get to get your priorities and then you scratch off to actually.
+
+[3074.0s - 3103.0s]
+Great day and night images. This works quite well and then you just supply center so beautiful instruction you have dense all day and night mode with this important that both stores dense models. One underlying sparse 3D model. So basically if using those to Melissa's very simple you just you just use the coordinate system given a virus.
+
+[3103.0s - 3132.0s]
+We just merged them.
+
+[3132.0s - 3161.0s]
+So you have you have the first model and then certain parts are reconstructing during dinner today and during the night involved. So from these you can learn the color transfer. So if you see certain color or certain distribution of colors in purchasing here. You know that it looks like that during the day, and you know how it is during the night and then you can use this one function to actually transfer everyday color into the night color. Even in the parts where we have no images for anything.
+
+[3161.0s - 3190.0s]
+So suddenly can get automatically then make images. You can do 3D reconstruction. You Can Dance reconstruction. You can learn color transfer. Um? How to color? The parts of the scenes that are not visible, so again short video, will he go. Incidentally, construction during night and we will be switching day and night, so this is this is a bonus room makeover marking back and then we have you are changing day and night. Reconstruction. Just speed it up.
+
+[3190.0s - 3219.0s]
+So some more results. You have examples of the image in this verse from examples of languages they model, like model and Noble color in line so you can see that sometimes you gain a lot of information for the Mac models and then see how much less during the night then we are able to do.
+
+[3219.0s - 3248.0s]
+So finally I'll get to yet unpublished. Work is going to be presented at PCB and next month. Then we have very good expertise in retrieval using Bank of words and you would like to use this to actually improve. You know with your networks.
+
+[3248.0s - 3277.0s]
+So hold out in challenges offered here you would like to return images that are taken from different viewpoints.
+
+[3277.0s - 3306.0s]
+You would like to retrieve images that have significantly illumination change.
+
+[3306.0s - 3335.0s]
+You would like to be up in sensitive to occlusions.
+
+[3335.0s - 3364.0s]
+And you would like to distinguish between objects that look similar about but actually are different. So how? Mural network approaches this well we just so what's up. Lots of examples of those things and you hope that the neural network will learn and or generalize. And will do excellent work. You would like it too.
+
+[3364.0s - 3393.0s]
+So there has been. Malcolm, this people first tried to use pre trained network that are pre training to for classification and the idea is that if you're able to recognize objects or from the same class then the same object in different different viewpoint should have very similar very similar descriptor.
+
+[3393.0s - 3422.0s]
+And it works, but the problem is that it has been trained to. Recognize things from the same class and. For the training, this all these things, all the buildings very same class. So you are basically learning, optimizing something and in the end you want to use it for something else. It works, but not optimal.
+
+[3422.0s - 3451.0s]
+Diane um. People trying to pay the networks take certain part of the network extracted descriptors, but before actually using them use some fine tuning so they they have taken some training data with our specific to image materials. For example from the same location. And they and they run a few. Hours, days of retraining so that the network is doing more stuff that you are actually asking to do.
+
+[3451.0s - 3480.0s]
+Nevertheless, still, if you have, you have trended down. But this is not a building but it is labeled specific buildings. There we can get images that are. Normal metabolism classically seen building but not the same object, and here well if you if you train. This and that is the same. Then you probably first of all, you would like this to be retrieved and you have very little hope of this. Generalizing, because if you have images similar to that, it is unlikely image similarity that we actually from from the place that as the other similar image so.
+
+[3480.0s - 3509.0s]
+Um? We see some time by. Value on our English at all. Presented him with CPR. Next one is slightly different, different approach, but again lots of training data and training data is now selected so that it actually is from the same location.
+
+[3509.0s - 3538.0s]
+So. The problem is that you have JOBS Act images, but you still miss 1 degree of freedom and that is the direction that you're looking at. So you are training on images from the same location, but still it is not necessarily. So that you are looking for the same object.
+
+[3538.0s - 3567.0s]
+So. Uh, I'm updating lots of data is a big big problem, so. Just simply, we are grouped in image retrieval vertical front and it works quite well. So why don't we use the results of that training? I mean your own network.
+
+[3567.0s - 3596.0s]
+The advantage of distributed construction is that you know the position of the camera. You know the orientation, you even know how my name features you see in two images together. So you are able to control everything and you are able to select group.
+
+[3596.0s - 3625.0s]
+Training data.
+
+[3625.0s - 3654.0s]
+So what is this training data? So if you have example comparison, first thing might be. Two tank image that has in the neural network the most similar descriptor. So this is for example what is being used in a metal on the location and from this location the image that is. The most similar descriptor with the current state of your neural network has been selected as positive means, so it doesn't really drinking information, it just prevents the network to learn a function that will spread things that are already corresponding. To make them listen over, another approach might be useful directly from backup works, and you say most similar in the converse should be similar a CNN. So you feed the most similar. Image in the conference that works good. You can relax that you can use this reconstruction. You can say OK, I want I want things that are close enough if enough matches to be similar. So we are actually actively pushing. Injecting viewpoint insensitive, insensitive they into network.
+
+[3654.0s - 3683.0s]
+Lego bricks. You also would like to get negative images so you have you have reconstructions, you know that you were not unable to merge those reconstructions, so you can take image from one under construction. And if it's similar to image from another city construction, you can be pretty sure that these are different things. So what people typically do, they mind for hardly got this images. So what is different about this very similar descriptor and you try to generate are well. Example, I'm not an African. Go for second hardest insert hardest, but unfortunately they are not uncorrelated, so if this is hard image then this is these are unlikely to be happy just as well, but if you use almost inverted images. As far as negative, we just you want you actually want improve the network that much. So what we can actually do, you can enforce that they got the villages selection in different places. So you can mind different heart negative images for each of them carries. This turns out to be an extra.
+
+[3683.0s - 3712.0s]
+So now what we used to use the Siamese architecture so the the query and the database image are passed through the same. Now say my natural and then for matching pairs you are. Realize if if if we distance only descriptors is too high.
+
+[3712.0s - 3741.0s]
+And for negative signals in the distance is low beam.
+
+[3741.0s - 3770.0s]
+Use contracted loss, which is basically. If it's close enough in school, if it's cool too far apart, you get lots of analyzation for positive.
+
+[3770.0s - 3799.0s]
+Bears forget if there's if it's too close, it's bad. If it's for doing something, it's OK. We don't care how far, how similar.
+
+[3799.0s - 3828.0s]
+Let's just all then thing that is also very important for people to be very important than brings lots of improvement. Is vitamin code the final descriptors, so typically descriptors are not distributed innosphere Dallas in some alley. Oops and Noble people I found to be extremely helpful is to squash. The absolute circle and eventually drop least informative dimensions soon. Did you go get both better? Better discriminability and lower dimensional descriptors. Well we have. We have training or we have to be there or we have was a different examples and they get examples. So you can do something more complex you can do actually supervise something. So instead of re PCA we basically first item the space of matching pairs so that basically any subspace is equal informative for matching pairs. And then if you want to do if you want to do. Our dimensionality reduction. Then we keep those dimensions that are most discriminative for matching pairs.
+
+[3828.0s - 3857.0s]
+So we did experiments on November's data science. But this is working. We have excluded all these reconstructions that any of the images in those reconstructions would match any of the images in the best sense. So this way we are sure that we are preventing overfitting tool Buddhists.
+
+[3857.0s - 3886.0s]
+And you can see that. Mom. So, um. Choice, also negative images, so these are curves. How we how we mean average precision evolves on two datasets, so Ben is actually measured on the test data, but it was most it was not used for picking the best for picking the best network it was being picked on the validation set and it is labeled by the star so you can see that the. And the two negative. So did the negative mining that uses different different clusters and positive mining that uses. Different images, and I'm not a demo, similar works.
+
+[3886.0s - 3915.0s]
+Yes. Puma. We also tried how sensitive this tool, uh, how well it generalizes an invisible. Turns out that if used too few clusters then you get me not so good results, but up to certain points, including more and more clusters doesn't really improve their.
+
+[3915.0s - 3944.0s]
+Let's March this is the importance of the dimensional.
+
+[3944.0s - 3973.0s]
+Addiction. We also tried how well it generalizes Overfits by joining another model that will include in the training set all the constructions, even those without other buildings that are used in the test set. Even those images without being the distance they used in training. And it seems that it generalizes well. It does not work because the improvement over not using those. It's just small, so if it was difficult overfitting debuse would be much higher.
+
+[3973.0s - 4002.0s]
+I'm not sure if it's feasible, so this is comparison with something we are those most things in Star are result of BF produce tickle, BYOB grayish, but it's better than previously are breathlessly going on so, so we are pretty much there will be at ECC deposited. Thinking that results in this, but until we see these are these are the best results.
+
+[4002.0s - 4031.0s]
+Um?
+
+[4031.0s - 4060.0s]
+So somewhere. On so I went through a quick introduction to make sure to go and back of words. I spoke about something that may be of interest to this community. How I mean hash? Methods can be used to get image clusters or two minus appearance in the data. Then I spoke about. How retrieval of the geometric constraint can help either user or secure? You have better signal reconstruction and in the end. I have shown that if you if you if you are able to get lots of. Fully automatically annotated 3D models then you can you can without any user annotation or without any user. Time of train much better. Sienna Networks for retrieval and if I have one more minute, I will just.
+
+[4060.0s - 4089.0s]
+I feel I've heard the ice, so we are doing. We are going to summer school in product we've done. It was first in touring noises graph, regretted every single every summer. So it was like 2 weeks ago. If you are interested in computer vision and you like sports that will be disclosed for you. Check out for next year. I think it will be online. In the spring. So what we do we.
+
+[4089.0s - 4118.0s]
+Lectures in the morning and in the afternoon. By the way, great lectures in in computer vision. Anne.
+
+[4118.0s - 4147.0s]
+Then so this would be the lecture.
+
+[4147.0s - 4176.0s]
+And then in the afternoon lectures actually go and play sports with the students. So it's very interactive. It's very. It's not fun, especially with Fedora. And. Yes, so far. Never question during the elections or not, I think. There are. There are great questions during the elections. You mean the students do? Yes, I think that because then they will be afraid. OK, so if you have questions to lecture for programs. OK questions. Little bit confused about the setup. Experimental setup for gelastic experiments. Or do you train the same as network or at this game training Spanish macro comparison Fastenal store or you have to train and test in the same series so will be can you can do it across datasets, so even more formal excluded Oxford exclusive price. It works without not in either of those two. So the result is showing our training for distributed constructions, so there not a single image from the best set is mentioned earlier. Images in your construction. And then we perform a more experimental be included all the training data. All of this data, and it has not improved a lot. So from that we conclude that it's a trend of overfitting. I'm thinking about the perspective from making models of historical images. But most important. You presented. How many positive evidence do you need to reconstruct the point of music? How you doing? That's a tough question, it is. Is it closer to 50 across the 2000s and now it's less than 50 features typically because you rarely get a. Similar looking features that are distributed in the 3D in the same position, and it's a different object. So it happens, uh? It happens in his wonderful, unsystematic instruction that actually things are similar in once you once you do not pay enough attention and actually match something that is not matching the new, then you can. Typically, what happens if you do that, that you have the same building and manage one side to the other side, and then then you have to be at artifacts in your partitions on the same thing, about 50 is typically. Quite strong convictions. Let's take the speaker.

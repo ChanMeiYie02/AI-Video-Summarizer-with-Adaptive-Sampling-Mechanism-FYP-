@@ -1,0 +1,95 @@
+[0.0s - 29.0s]
+OK, so this is work by myself and Matthew Blaschko. Who is this guy here and who is soon looking for a job so.
+
+[29.0s - 58.0s]
+Need to mention this. So the purpose of this talk is to find taxonomies in data. So this problem, what we're going to do is.
+
+[58.0s - 87.0s]
+Well, it's it's split into sort of two parts, so one is to assign the data to clusters and then to fit a tree structure to these clusters, and we want to do this simultaneously. And so we set the window. Yep, Yep, the way that we do this is basically by maximizing the dependence between the original data and the clustering and tree fitting of the data. And our dependence measure is going to be something called the Hilbert Schmidt independence criterion, which I'm going to introduce. So this is a kernel dependence measure.
+
+[87.0s - 116.0s]
+So, just briefly, what we're going to be able to achieve with this procedure. One hand in visualization because if the data is sort of nicely sorted into a tree structure, you can visualize it easily. Also, if the underlying data really does have a cluster structure, you can improve the clustering results by forcing it to fit that structure. So if the underlying data really looks like a tree, and you force it to fit a tree, then your clustering becomes more accurate. So this is what we found.
+
+[116.0s - 145.0s]
+Alright, so this is the talk structure. I'm going to begin with an introduction of the dependence criterion that we're going to use. And then going to talk about basically how this applies in the clustering and fitting of some. Dependent structure to the data. Then I'm going to talk about numerical taxonomy and what it means to fit data trees and how that fits in. With the above sort of part of the talk and then finally I have some results both on text and on images to present.
+
+[145.0s - 174.0s]
+OK, so let's start with the Hill which made independence criterion. So this is going to be partly a kernel talk. So we have two. Reproducing kernel Hilbert spaces F&G so F is on our input space, so our original data SpaceX. G is on our clustering space way, which I'll define later. And well, F has kernel K&G has kernel L. So these are basically inner products between feature mappings of the.
+
+[174.0s - 203.0s]
+Later, so yeah. Now to define dependence between the domain X in the domain, why we're going to use a covariance operator? So this is basically a generalization of a covariance matrix, but two infinite dimensional spaces, potentially that they don't have to be. So what does this operator do? So it's a mapping from one space to another space, such that when you apply it to a function in G and take the inner product with F, you just get the covariance between F&G. So this is basically the death.
+
+[203.0s - 232.0s]
+Mission of the operator. So this operator might be infinite dimensional, in which case it's kind of hard to sort of see what it's doing. But you can compute statistics on it, and in particular will be concerned with it till which met Norm. So the sum of the squared singular values of this operator, and this is a way of determining how much dependence there is between variables. So it's exactly by analogy with a covariance matrix.
+
+[232.0s - 261.0s]
+So even though this is a quite complicated nonparametric statistic of dependence, it turns out that it's very easy to compute all that you need to do is take the trace of a product of matrices. So this K matrix is the matrix between data points, the gram matrix. So the kernel matrix between data points in the input space. The L is the kernel matrix between the clusters. And then this H is just a centering matrix in which need not concern us, it's just a. It's not dependent on the data.
+
+[261.0s - 290.0s]
+Alright, so again, it's kind of hard to know exactly what the covariance operator is doing, so I'm going to try and illustrate what it means using just a very simple toy example to give people some idea of what it is. So here you have two variables X&Y. Which are dependent, but in this case I'm correlated to make the problem more interesting. And basically, of course we can't visualize the covariance operator, but we can visualize the functions that correspond to its largest singular value. So what these are, these are the functions of unit norm in F&G which maximize. This expression here OK, and these functions mean that this is equal to the maximum singular value for those particular functions. So what these are smooth functions that take these original variables and give them a strong linear dependence as they can subject to being smooth? And this is what you've got here. So you can think of a whole series of such functions where each pair is orthogonal to the previous pair, and each of them tries to maximize the dependants object to this orthogonal orthogonality constraint. So if you take the sum of the squared functions, this is sort of a summary of all of the dependence that can exist between X&Y and this is a sort of way to think about this dependence criterion. So this is a bit of a cartoon of this, so for more detail you should look at the papers on the topic, but that just gives an idea.
+
+[290.0s - 319.0s]
+Alright, so now we're going to use this criterion in our setting of clustering and taxonomy.
+
+[319.0s - 348.0s]
+Fitting. So here is our main objective function. What we ignore for the moment, we can ignore the denominator and just look at the numerator. What this is, is the Hilbert Schmidt independence criterion between a centered. Matrix KA gram matrix K. On the inputs and this cluster of matrices here, which Instagram matrix.
+
+[348.0s - 377.0s]
+For the clustering. So what we've done is we've decomposed this gram matrix into two components. When is a cluster assignment matrix? So that's a matrix of K columns, where K is the number of clusters and each row has a single one in it, which means that you're assigning each point to a as an individual cluster. OK, and then this matrix. Here is a gram matrix between the clusters, so this is an inner product between the clusters and says how similar the clusters are. So our goal overall is to learn both of these, and I'm going to sort of talk about how to do that. Now, the reason for the denominator is because of this way here. So if it wasn't there, you could just increase this function here by making the way arbitrarily large. So this is just to make sure that that's not possible.
+
+[377.0s - 406.0s]
+OK. So before talking about how we optimize that, just a note on related work, the most closely related work is this algorithm here called classic. Which basically gives you your way in advance and then optimizes the numerator with respect to pay. So this is what sort of started us on this topic of research. You can also recover normalized cuts if you set Y to be I, and then you set the input gram matrix in accordance with this expression here. So this a matrix is basically the distance between points in a graph and then the matrix is the total wage flowing out of each node in the graph, so that's another link. There's also kernel target alignment, which looks like this, but. Also contained in the denominator, a normal of M and doesn't have centering done in the same way that Alice is, so that's the third link.
+
+[406.0s - 435.0s]
+Alright, so that's the problem setting, so before trying to solve it in its generality, we're going to look at some special cases, and these cases are going to provide us with ingredients which we're going to use in our final algorithm, even though there any towards specific sort of subproblems. So in the first case, let's just say that Pi is a vector. And why is the identity matrix? So then the problem simplifies into just solving this ratio here.
+
+[435.0s - 464.0s]
+And we can rearrange this to get this eigenvalue problem. So basically now you're just looking for the eigenvectors and eigenvalues of your input gram matrix, and so up to rotation. What this looks like is basically spectral clustering, where this is your input matrix.
+
+[464.0s - 493.0s]
+So here is another subproblem. Imagine that you're given. A cluster assignment and you want to find the best possible gram matrix on the clusters? Well, then it's basically straightforward. You have a constrained optimization problem. You solve it in the usual way and you get this expression here. So if you plug this back into the original criteria.
+
+[493.0s - 522.0s]
+You get this quantity here is being the optimal cluster assignment. So you might say then well, the problems kind of solved. You say this is my cluster assignment, then you substitute that you get your way, then you're finished. So why might you not want to do that? The reason is because all that we've said about why is that it should be positive definite, and what we're interested in is actually imposing more structure on the way, and in particular, we want our cluster our clusters to have a tree structure, and we hope that this is going to improve our clustering as well as.
+
+[522.0s - 551.0s]
+Visualization.
+
+[551.0s - 580.0s]
+So this is going to be then the topic of the the next part.
+
+[580.0s - 609.0s]
+OK, so now I'm going to just introduce some concepts from numerical taxonomy and then this will lead to the actual clustering algo.
+
+[609.0s - 638.0s]
+Them. So what we have is a matrix way, which is the inner product, like the gram matrix for the clusters. From this we can compute distances between the clusters. And what we want to do is to be able to take those distances and to fit a tree to the clusters. Now for this to be possible and for the tree to be unique, these distances have to satisfy a four point condition. Which is written here. So I've just done a small drawing here to illustrate what this means. So what we want is that the distance from A to B plus the distance from C to D is less than or equal to the larger of the sums of this distances and these distances. So the way I've set it up now, this one and this one are the same, so you hit the upper bound. And likewise, if you add this distance in this distance, it should be smaller than the larger of these two sums, and in this case that satisfied. So for this toy example, the four point condition is satisfied. So in the course of our optimization, obviously the four point condition is probably not going to be satisfied.
+
+[638.0s - 667.0s]
+At some point, and So what you're going to do is that at some stage in the algorithm, we get a distance matrix. And we want to find the closest distance matrix in some sense to which you can fit a tree. And there's an algorithm to do that by Jabhat Al. It's the one we use. And finally, once we finish running our algorithm, we can fit a tree. Using this DT using very old algorithm by Waterman ET al. OK, so these are now all the ingredients that we need. So let's go to.
+
+[667.0s - 696.0s]
+The actual algorithm itself. So one thing to emphasize, of course, there's not a unique solution for this algorithm, it's just going to converge to something local, but nonetheless what we found is that it tends not to need many re initializations. So our input is a gram matrix on the initial data and we output a cluster assignment and a gram matrix which satisfies the four point conditions when you turned it into a distance matrix. We initialize just using spectral clustering. Then we iterate. We solve for Y given the cluster assignments. We turn our gram matrix into a distance matrix. We find the closest. Matrix that satisfies the four point conditions and then we go backwards to a gram matrix. So this is the iteration to get way and then we update our cluster assignment as well. So just a brief note on what goes on here. So this is again a greedy search. What you do is that for each of your data points you look to re assign it to another cluster such that you maximize the overall quality of clustering criterion and you iterate through your data points. We assigning points to clusters until basically you reach some point where you get no further improvement. And so that's how that works.
+
+[696.0s - 725.0s]
+OK, so that's the algorithm. Now we have some results.
+
+[725.0s - 754.0s]
+So this is a data set which was in the original paper of some metal. There's a number of very attractive researchers who are showing different facial expressions. And what we can see is that, well, hopefully the researchers are grouped by identity of by their identity first. So the same researcher with different facial expressions is close. And then these guys are further from these guys or these guys, for instance. And you can see that this clustering here or this tree fitting works very well. So it sort of gives you an answer that you would expect.
+
+[754.0s - 783.0s]
+So now let's compare to what was done earlier. So what you can see here is a number of possible tree structures that you could impose on the data, and so if you remember from the original algorithm of Song ET al. What they did is imposed a structure on the data and then tried to cluster accordingly. So. On the table below you can see the results, so this 1st result here is spectral clustering where you don't impose any structure on the data. And this number here is the relative entropy of the cluster centers compared to the true cluster identity. So basically smaller is better. And corresponds to a more accurate clustering. So spectral clustering is pretty good of all of these possible structures that one could impose. The best clustering is obtained with Structure B and that's exactly the structure that first groups people by their identity, and then by their facial expressions. So this seems to work. But the trouble with imposing these structures is that imposes a distance matrix or a gram matrix on the data, which might not be a reflection of the true distance matrix because some. Peoples faces, for instance, are further away than others, so this one's kind of an outlier for some reason. Um? So if you allow yourself to learn the gram matrix as well, then you get a higher quality clustering. So this is a way to improve the cluster.
+
+[783.0s - 812.0s]
+Help. OK, so we also ran the algorithm on the NIPS data set and we got the following tree here. So you can see that it's actually grouping things very sensibly, so reinforcement learning is out there. Bayesian learning, discriminative learning, neuroscience hardware said the VLSI things and so on. And you'll also notice. So what we have to impose in advance here is the number of clusters, and here you have this cluster sort of stuck in the middle somewhere called miscellaneous.
+
+[812.0s - 841.0s]
+And if you look, I mean, these are basically so this table. Here are the words that occur most often in the particular cluster here, which don't occur in the other clusters. So these are kind of the informative words. But of course we don't use these in our clustering, we're just using these for display purposes. And you can see that the miscellaneous is kind of. It's a bit everywhere, so there's a lot of. There's a bit of control theory in there. Actually, maybe it's more of a control theory one. Anyway, yeah. But all of the other ones behaving quite reasonably, so yeah. Actually, I think these labels are wrong. Yeah. No, I think the labels are wrong. OK so. Oh dear yeah. Anyway, so you can see that this is a neural one. This one is a reinforcement learning one. This one is neural networks and so on, so unfortunately. These labels are correct, but the table these headings are incorrect. Anyway. So let's see if we can find miscellaneous. Probably not, yeah.
+
+[841.0s - 870.0s]
+So one more thing is that you can perturb the spectrum of your input gram matrix by basically forcing your kernel to look more like a will to have a similar spectral structure to. So to have all that singular values more close to unity. And you can sort of see the effect that this has on the clustering. So. What this is doing now is basically as you're increasing. The amount of I hear. All of these structure is being lost progressively and eventually you get something that effectively just looks like a star where every set of faces has its own cluster, but the relation between the cluster is lost. So this is a way of illustrating. Basically like the importance of the gram matrix on the quality of the clustering and how it sort of captures this structure.
+
+[870.0s - 899.0s]
+OK, so that's basically the conclusion of the talk, so we have a dependence measure that we optimize both well to create a clustering. But in optimizing this we also fit a tree structure to our clusters and this results both in good visualization and also in improved clustering performance. So at the moment I guess the biggest shortcoming of our work is that. The method for finding the cluster assignments given the distance matrix is a bit well, inefficient and also probably not optimal, so we'd like to improve that. OK, so thank you. There's a question. Yeah, I'm not sure, so you want to impose a graph structure on your way. I mean, what graph structure would you have in mind? Yeah, I mean, OK, I think it would be for sure. It would be interesting.
+
+[899.0s - 928.0s]
+So. If you look, I mean if you know the original submittal paper. They look at a whole lot of different structures besides trees, so they have, for instance, a rotating teapot, and in that case obviously the structure is circular, and so on. And at the moment of course we're not able to learn that. So basically the points for extending it would be these two points. So what you'd need to be able to do is to find at this point here a distance structure that corresponds to whatever graph constraint that you want to impose, which is close to the distance which you currently have in your algorithm. And then you need a way to take that distance matrix and turn it into a graph, which I guess is the easier problem of the two. But this step is the one that is probably the main thing that you'd need to look at here. OK.

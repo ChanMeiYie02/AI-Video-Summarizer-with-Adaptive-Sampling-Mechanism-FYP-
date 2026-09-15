@@ -1,0 +1,20 @@
+{
+    "id": "y5oogpzu7owksunovz26fascj7tnrcsk",
+    "title": "Model Selection in Markovian Processes",
+    "url": "http://videolectures.net/nipsworkshops2011_mannor_markovian/",
+    "info": {
+        "author": [
+            "Shie Mannor, Department of Electrical Engineering, Technion - Israel Institute of Technology"
+        ],
+        "published": "Jan. 25, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Markov Processes"
+        ]
+    },
+    "num_segments": 53,
+    "num_sentences": 523,
+    "num_clips_with_summary": 30,
+    "num_gt_summary_sentences": 50,
+    "ground_truth_summary_length_chars": 5563
+}

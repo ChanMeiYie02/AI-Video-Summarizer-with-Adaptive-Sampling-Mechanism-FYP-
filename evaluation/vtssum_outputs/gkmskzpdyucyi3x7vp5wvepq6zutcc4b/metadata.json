@@ -1,0 +1,20 @@
+{
+    "id": "gkmskzpdyucyi3x7vp5wvepq6zutcc4b",
+    "title": "Three Hours on Multiple Classififier Systems",
+    "url": "http://videolectures.net/aop09_roli_thomc/",
+    "info": {
+        "author": [
+            "Fabio Roli, Department of Electrical and Electronic Engineering, University of Cagliari"
+        ],
+        "published": "Dec. 3, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Supervised Learning"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 450,
+    "num_clips_with_summary": 26,
+    "num_gt_summary_sentences": 74,
+    "ground_truth_summary_length_chars": 8900
+}

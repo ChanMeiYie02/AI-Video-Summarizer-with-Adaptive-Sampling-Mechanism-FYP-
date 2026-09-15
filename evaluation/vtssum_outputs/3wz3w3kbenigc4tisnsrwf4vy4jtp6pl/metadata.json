@@ -1,0 +1,21 @@
+{
+    "id": "3wz3w3kbenigc4tisnsrwf4vy4jtp6pl",
+    "title": "Getting Practical: Support for Open Education projects at your institution",
+    "url": "http://videolectures.net/ocwc2014_tovar_practical/",
+    "info": {
+        "author": [
+            "Edmundo Tovar Caro, Universidad Politécnica de Madrid"
+        ],
+        "published": "June 23, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society->Public Policy"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 60,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 533
+}

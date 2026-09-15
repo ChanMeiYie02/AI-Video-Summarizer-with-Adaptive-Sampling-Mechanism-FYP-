@@ -1,0 +1,20 @@
+{
+    "id": "qio4m44432cqxoyobhjmvennz5mdeziq",
+    "title": "A Least Squares Formulation for Canonical Correlation Analysis",
+    "url": "http://videolectures.net/icml08_ji_alsf/",
+    "info": {
+        "author": [
+            "Shuiwang Ji, School of Electrical Engineering and Computer Science, Washington State University"
+        ],
+        "published": "Aug. 29, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 263,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 49,
+    "ground_truth_summary_length_chars": 4067
+}

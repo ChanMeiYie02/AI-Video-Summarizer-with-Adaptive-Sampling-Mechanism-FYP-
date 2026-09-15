@@ -1,0 +1,20 @@
+{
+    "id": "tgs3opzmydqeyn4bpcr4kiw2jpzifiu7",
+    "title": "Fast Online Learning through Offline Initialization for Time-sensitive Recommendation",
+    "url": "http://videolectures.net/kdd2010_chen_folt/",
+    "info": {
+        "author": [
+            "Bee-Chung Chen, LinkedIn Corporation"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 218,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 3289
+}

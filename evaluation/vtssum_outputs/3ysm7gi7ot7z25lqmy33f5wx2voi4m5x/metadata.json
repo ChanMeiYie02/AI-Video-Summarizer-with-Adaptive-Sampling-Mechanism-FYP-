@@ -1,0 +1,24 @@
+{
+    "id": "3ysm7gi7ot7z25lqmy33f5wx2voi4m5x",
+    "title": "Semantic Graphs Derived from Triplets with Application in Document Summarization",
+    "url": "http://videolectures.net/sikdd08_rusu_sgdt/",
+    "info": {
+        "author": [
+            "Delia Rusu, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 7, 2008",
+        "recorded": "October 2008",
+        "category": [
+            "Top->Computer Science->Semantic Web->RDF - Resource Description Framework",
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Text Mining",
+            "Top->Computer Science->Text Mining->Document Summarization",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 50,
+    "num_sentences": 244,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1434
+}

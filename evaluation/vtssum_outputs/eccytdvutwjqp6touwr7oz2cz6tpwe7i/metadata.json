@@ -1,0 +1,20 @@
+{
+    "id": "eccytdvutwjqp6touwr7oz2cz6tpwe7i",
+    "title": "Linked Open Data Session",
+    "url": "http://videolectures.net/w3cworkshop2013_dunsire_open_data/",
+    "info": {
+        "author": [
+            "Gordon Dunsire, Independent Consultant"
+        ],
+        "published": "June 19, 2013",
+        "recorded": "March 2013",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 37,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 761
+}

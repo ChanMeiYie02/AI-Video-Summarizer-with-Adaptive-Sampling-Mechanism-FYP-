@@ -1,0 +1,21 @@
+{
+    "id": "43mclumf7y2srkeornpdyt2dsqbu3qu4",
+    "title": "Information Cascade at Group Scale",
+    "url": "http://videolectures.net/kdd2013_eftekhar_information_cascade/",
+    "info": {
+        "author": [
+            "Milad Eftekhar, Department of Computer Science, University of Toronto"
+        ],
+        "published": "Sept. 27, 2013",
+        "recorded": "August 2013",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 123,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2821
+}

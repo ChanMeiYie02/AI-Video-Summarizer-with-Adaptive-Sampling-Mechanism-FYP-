@@ -1,0 +1,107 @@
+[
+    {
+        "text": "Good afternoon everyone. So today I'm going to show you the results of this project. Best pet cities approach to spinal cord metabolism in ametropic lateral sclerosis which was conducted between Jenna Venturina Ann and with and National Research Council of Italy.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So obviously in LS we miss something there that is the treatment and effective treatment for a LS, but we missed something before that. In particular, the lack of markers for disease diagnosis. This is prognosis and for treatment response.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So we tried to develop a method or an automatical method, to detect the spider McCord metabolism in a LS.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "We enrolled 30 patients with spinal on Saturday Lessa and we compare data from those patients with data from 30 control subjects without any story of node never degenerative disease. All patients underwent a pet CT scan after FPG administration.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "And the strength of our method is that the only variable that was defined by an external source was the boundaries, where the boundaries of the region of interest. In particular, we define the cervical segment of the spinal cord are as the region between the skull base and the code or face of the six C7 virtual body and the dorsal segment as the region between the cuddle phase of C7. And the counter phase of the 12.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "We used a mathematical approach in order to detect the spinal canal and spinal cord within the region of interest. To make it simple, this method missing this mathematical method is called the half transform which is initially used to analyze satellite images in order to detect ship trajectories within the row satellite images. As you can see, this is a raw image after the first step. You get the tiny imperfections within the road image which are marked with these dots and they have transformer is able to link those dots with the straight lines. At the top of one of those two straight lines, you can see a ship, so we couldn't use this initial after transform, but we use an evolution of the Hough transform, which is able to use not straight lines about curves.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "We use the trifle convexity's curve, so in order to detect the spinal canal within the region of interest and we.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Use the day... family in order to detect within the spinal canal this spinal cord.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Once we get those curves, so we created masks are in order to detect, to extract the average metabolism in the spinal cord and in the spinal canal we considered the cervical segments and the segment and the doors are segments alone. But we also used a weighted average in order to detect the whole metabolism of the whole spinal cord and spinal kernel.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So now I'm going to shoot. I'm going to show you the demographic and clinical characteristics of the population. We enrolled as you can see, the demographic characteristics of the LS patients and control subjects are pretty similar. 6066 for an age of PET CT scan identical, ideal body weight and identical male to female ratio. Regarding any less patients, we performed pet CT scanner about one and half year after Aln sunset and the LS FRS Me mean score was a 3921. Patients were on riluzole therapy during the PET CT scan and the 13 patients died during the follow up phase. So.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Moving to the analysis of the volume, as you can see here, you see a saggital plane view of the city scan and hear a volume filling. With our mathematical approach of this panel panel on the bottom of the slide, you can see a correlation. Straight correlation between ideal body weight and spinal cord volume and the spinal canal volume. And here we see the two groups in solid bars, the candle volume and in slash bars the. Eyrecourt volume. Anne.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "With our mathematical method, we did not find any differences between the spinal cord volumes and spinal canal volumes in the two examined groups. Considering the whole region of interest, the cervical segment and dorsal segment. Moving to the.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Metabolic activity, as you can see, we found some differences here you can see here and here. We can see the extrapolation, the extraction of the path analysis for the spinal cord and right next to the metabolic activity of the spinal cord. The car registration of PET scan and CT with maximum intensity projection. As you can see in the bottom, we found an unexpected unexpected difference. In a less patients, in fact we.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "I found that FDG pet FDG uptake was significantly higher in a less patient in the whole spinal cord and in the cervical segment.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "We then decided to see whether there were some variables that could influence our analysis, and we performed this analysis using age at scan sex deley between PET CT scan and a LS sunset therapy with riluzole and also functional impairment assessed with a LS FRS.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "We did not find any difference again between with. With those variables and the metabolic activity.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "We then decided to perform a postdoc analysis, Sir, regarding survival. Anne metabolic activity in order to perform this analysis that we consider only patient, the only LS patients and we divide with stratified patients according to a threshold that was placed on the 5th decile of hypermetabolism. We stratified patient in high hypermetabolism and low hypermetabolism. As you can see, there are some differences in patients in those patients as subgroups of patients. In fact, patients with.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Higher hypermetabolism showed a higher mortality rate in comparison to those with lower hypermetabolism. Those this analysis was also performed with a multivariate analysis with Cox Proportional method for hazards, and we found that higher hypermetabolism showed another ratio of 24 compared to those with lower hypermetabolism.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "In conclusion, this method is able maybe to open a new window onto the pathophysiology of ALS, and we found that an uptake in FDG unhappy metabolism may reflect inflammatory medication mechanism within the this disease.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "We are. Currently I enrolling more patients, 50 more patients in order to optimize the image analysis in order to confirm the putative prognostic and the metabolic signature of the disease in order to dissect whether there are correlation between segmental functional disability and the hypermetabolism.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Maybe in the future, if that our data is confirmed, spinal cord are pet city could be included in a clinical trials to assess treatment response. Thank you for your attention.",
+        "start": 580.0,
+        "end": 609.0
+    }
+]

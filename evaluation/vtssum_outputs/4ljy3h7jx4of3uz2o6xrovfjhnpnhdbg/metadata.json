@@ -1,0 +1,20 @@
+{
+    "id": "4ljy3h7jx4of3uz2o6xrovfjhnpnhdbg",
+    "title": "Dynamical Logic",
+    "url": "http://videolectures.net/ssll09_schmitt_dlog/",
+    "info": {
+        "author": [
+            "Peter H. Schmitt, University of Karlsruhe"
+        ],
+        "published": "April 16, 2009",
+        "recorded": "February 2009",
+        "category": [
+            "Top->Computer Science->Logic"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 730,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 50,
+    "ground_truth_summary_length_chars": 3616
+}

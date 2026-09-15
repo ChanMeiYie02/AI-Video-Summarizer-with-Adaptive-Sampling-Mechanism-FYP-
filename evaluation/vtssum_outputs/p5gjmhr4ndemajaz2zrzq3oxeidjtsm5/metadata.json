@@ -1,0 +1,21 @@
+{
+    "id": "p5gjmhr4ndemajaz2zrzq3oxeidjtsm5",
+    "title": "Dynamic Planning for Link Discovery",
+    "url": "http://videolectures.net/eswc2018_georgala_link_discovery/",
+    "info": {
+        "author": [
+            "Kleanthi Georgala, University of Leipzig"
+        ],
+        "published": "July 10, 2018",
+        "recorded": "June 2018",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 46,
+    "num_sentences": 195,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2417
+}

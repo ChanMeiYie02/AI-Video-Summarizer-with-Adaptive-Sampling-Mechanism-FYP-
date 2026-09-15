@@ -1,0 +1,598 @@
+0:04
+So let's talk next about knowledge graph completion tasks and various methods to accomplish,
+0:12
+uh, knowledge graph completion. In particular, we'll talk about methods that are, uh, that right now will have cryptic names,
+0:19
+but it will become, uh, clear: TransE, TransR, DistMul, and, uh, ComplEx.
+0:25
+So I'll, I'll introduce what these methods are, and we'll be in particular interested, what kind of relationships can these methods capture and predict?
+0:34
+So let's think about, uh, knowledge graph completion task. Where basically we are given an enormous knowledge graph,
+0:41
+and the question is, can we impute- can we predict missing information? Because the knowledge graph is incomplete.
+0:48
+And the way the knowledge graph completion task works is that we are given the head node, we are given the relation, uh,
+0:54
+type and we'd like to predict the missing tail. So notice that this is slightly different from
+1:00
+classical link prediction task where nothing is given, we just say, predict what links are missing in the entire graph.
+1:07
+Here we would actually say, aha, we are interested in this particular node, we are interested in this particular, uh,
+1:13
+relation type and we wanna ask, you know, where is, uh, this particular author?
+1:19
+Which other, let's say, genres is this author connected to? So for example, uh, JK Rowling, right, the, uh,
+1:27
+Harry Potter author is connected to, let's say, uh, genre science fiction.
+1:32
+So that would basically be, uh, something we would wanna predict. So what we are given is the head node,
+1:38
+we are given the relation type and we wanna predict the tail. Um, the way we are going to do this is we are going to do through node embeddings, right?
+1:48
+So every node, every entity in the knowledge graph will have an embedding. And we are going just to use shallow embeddings.
+1:56
+So basically it means we will wanna learn an embedding vector for every,
+2:01
+uh, entity type in the, uh, in the knowledge graph so that we can then do prediction well.
+2:07
+So the point is, we won't be using GNNs, um, we'll just assume we are doing shallow encodings.
+2:14
+But you could also, uh, use GNNs if you would like. So, uh, knowledge graph representation will be
+2:21
+such but knowledge graph is represented as a set of triples: head, relation, tail, right?
+2:27
+So head is the source, relation is the type of a relation, and tail is the endpoint of the relation.
+2:33
+So head could be, you know, I know Barack Obama and, uh, relation would be nationality and the tail would be United States.
+2:42
+So the key idea how we wanna do this is that we wanna model entities and the relations as embedding points and vectors in the embedding space.
+2:52
+And we wanna associate entities and relations with shallow embeddings, as I mentioned.
+2:58
+So we are not using GNNs just for simplicity to keep our life simple. Um, and then the idea is that given a true triple: head, relation, tail,
+3:07
+the goal is that the embedding of head, relation should be close to the embedding of the tail.
+3:14
+Um, so I know this is a bit abstract right now. So let me give you, um,
+3:21
+explanations how can we embed head, relation and how do we define this closeness, uh,
+3:29
+that the embedding of head, relations should be close, uh, to the tail. And really, all different methods we'll talk
+3:36
+about differ how these closeness and how this, uh, embedding is produced.
+3:42
+The simplest idea, and the kind of the most natural one, is called TransE.
+3:47
+And Trans- TransE basically has this intuition of translation. Where basically the idea is that for our triple: head, relation, tail,
+3:56
+we wanna learn the embedding of the head, we wanna learn the embedding of the tail, and we wanna learn also the embedding vector r. Um,
+4:06
+and we, and the idea would be that we want it- we want to find these embeddings in such a way that head plus the, uh,
+4:14
+um, of- plus vector r is- gives me the, uh, the point, uh, where the t is embedded, right?
+4:23
+So for example, if, uh, um, um, Barack Obama, uh, nationality United States, then I want,
+4:30
+I want them to be embedded in such a way that if I start with the head, we start with Barack Obama,
+4:35
+I move according to this relation vector r, I would end at the point where United States is embedded.
+4:42
+And of course, I don't want this to only work for, uh, let's say Barack Obama, I'd like to w- this to work to be true for any person and their,
+4:52
+uh, their country of birth, right? So for example, if in this graph, I don't know, um, it would be, uh,
+4:57
+myself here as well, maybe on a point here. Then if I would move according to this vector r here,
+5:03
+I'm from Slovenia, so my nationality should be Slovenian. So the, the country of Slovenia should be mapped somewhere here, right?
+5:10
+Basically I would apply the same translation and, uh, hopefully the- the- the- the country that is
+5:17
+embedded close to that point is the country of my, uh, nationality, all right?
+5:22
+So here's, uh, here's, uh, here's the idea. So the scoring function, uh, that would measure proximi- that would measure proximity between the head and tail,
+5:33
+would simply be head plus this vector r minus, minus the tail, right?
+5:38
+It basically says what is the distance between h plus r, uh, and, uh, the point, uh, t?
+5:44
+And here I could use, let's say Euclidean distance if I would like. So this is what is Trans, uh, TransE.
+5:50
+Basically it wants to learn these translations in the embedding space so that you can get from head,
+5:56
+according to a translation that's- that is the relation specific, to the, uh, to the tail,
+6:02
+uh, of that, uh, relation. Um, s- I will- I- I won't go into details basically of the learning algorithm.
+6:10
+But essentially the idea is that you wanna have entities and relations that are first initialized, uh, uniformly, right?
+6:17
+You want an embedding for an entity, you want to learn the translation vector for a relation.
+6:22
+You s- you- these are all the parameters of your model. You would, you know, sample a positive example, a positive triplet.
+6:29
+You would, for example, sample ,uh, what is called a corrupted triplet, where you would have the head,
+6:34
+the relation the same, but you would pick kind of a random tail. You would pick a country that is not the- the- the true country, uh,
+6:43
+of nationality, and then you would say, let me try to, uh, find the embeddings, uh, the values for head, relation,
+6:50
+and tail such that the distance between, uh, the real tail and the corrupted tail,
+6:55
+uh, the real tail, uh, and the embedding of h, uh, plus r is smaller than the distance between the h plus r and the corrupted tail,
+7:05
+which basically means a country that is not, uh, the true nationality. And you can basically do, uh, the learning.
+7:13
+So now, uh, that we have done this, this sounds like a great, very natural idea.
+7:18
+What is cool about it is that now we don't only think of- of the embeddings as points in the space,
+7:25
+but we also learned this vector r that allows us to move or translate,
+7:30
+uh, between different points. It allows us to move in a given direction. Um, and of course the question is,
+7:36
+what kind of relationships is this type of approach able to, uh, learn?
+7:41
+And when I say what kind of relationships, I really mean relationships with different, uh, properties.
+7:47
+For example, some properties might be symmetric or reciprocal, right?
+7:52
+If, uh, person 1 is a roommate of person 2, then person 2 is also a roommate of person 1, right? It's mutual.
+8:01
+Um, for example, then there's- there might be relations that are called inverse, right?
+8:06
+If I am someone's advisor, then that other person is my, uh, advisee, right?
+8:12
+So advisor and advisee are kind of inverse relations. Whoever is in a relation of advisor, in one way, advisee is in the other, uh, direction.
+8:21
+So the question then becomes, can we corre- categorize this type of relation better than sort of relation properties?
+8:28
+And, uh, are these knowledge graph embedding methods like the TransE that I discussed?
+8:34
+Are they expressive enough to model these patterns? So the- the relation patterns,
+8:40
+uh, we are going to discuss are, uh, four. First is symmetric and antisymmetric relations, right?
+8:47
+Like, uh, family, roommate are what we call symmetric because they are reciprocal, right?
+8:53
+If I'm your roommate, you are also my roommate. It cannot be only one way. Um, antisymmetric would be, uh,
+9:00
+would be part of hypernym, hyponym. So it's basically one is with relation,
+9:05
+uh, with the other, but not the other way. Uh, inverse, uh, relations would be like advisor advisee.
+9:13
+Where if I'm related to you with one relation, you are automatically related to me with the- with a different relation,
+9:19
+uh, then it would be, uh, transitive relations. For example, uh, friend of, which would be if x is friends with y and y is friend with z,
+9:28
+then, uh, x and z are also friends, right? So this would be one way of having the notion of transitive relations.
+9:36
+Or if you think about relationship type, trans- uh, those are also transitive. That for example I say, my mother's husband is my father.
+9:44
+So, um, you know, that's, uh, that- that's also saying, aha, if- if you start with me and you- you
+9:51
+tra- you transform according to the mother relation, and then you take the mother point and transform
+9:56
+according to the fa- husband relation, uh, you should arrive to the same place if you take myself and
+10:02
+transfor- me- me according to the father relation, right? The two, uh, the two,
+10:07
+uh, uh, the two embeddings should meet. And then another important thing is that there are, uh, 1-to-N relations.
+10:15
+For example, student off, right. I can, uh, have multiple students or I can have multiple advisees.
+10:22
+So I can have 1-to-N, uh, relations. So these are different relation patterns we are going to consider,
+10:29
+and what we are going to do next, is- is we are going to look whether TransE is able to capture these type of relations.
+10:37
+So, for example, let's first talk about, uh, antisymmetric relations. Uh, what would this mean is,
+10:43
+uh, h is, uh, related with t, uh, t cannot be related, uh, with h according to the same relation,
+10:51
+like, uh, part of, uh, hyponym is an example. And- and TransE captures this, right?
+10:57
+Because if I go from head, um, according to the relation vector r, I arrive to the tail but now we find that the tail and again,
+11:05
+apply this relation transformation, uh, r, I don't get back to h. I get to some other point.
+11:12
+So this means that, uh, um, um, TransE naturally captures this antisymmetry,
+11:19
+uh, of relations that have this property. Another of the questions is,
+11:25
+can TransE capture inverse relations like advisor/advisee, right? So if, uh, if h and t are related by r2, then,
+11:34
+you know, there's some other r1 that makes, uh, tail and the head related, right? Can we model, uh,
+11:40
+inverse relations? Yes, we can. Uh, in simply the r2- the- the vector r2 should simply be the negative,
+11:48
+uh, of the vector r1. So it means that from head according to r1, I move to tail.
+11:54
+Then if I wanna move from tail back to head, I just move in the opposite direction. So in TransE, this is naturally captured and naturally doable.
+12:02
+So inverse relationships are possible. How about composite or transitive relations?
+12:09
+So I, uh, where I say if x and y are related and y and z are related,
+12:14
+then x and z should be related as well, right? So in TransE you can simply do this by, uh,
+12:21
+by saying r3, uh, is simply a summation of r1 and r2, right? So if I go from x via r1 to y- to y,
+12:29
+and then I go from y via r2, uh, to, uh, z, then I can basically simply go from x to z according to,
+12:38
+uh, r3 and r3 is simply the vector r1 plus vector r2. So again, we can do, uh,
+12:45
+composite relationships with TransE, uh, easily. So how about some relationships types that are- uh that TransE cannot capture?
+12:56
+So for example, interestingly, uh, TransE cannot capture symmetric relationships, right?
+13:03
+Relationships, uh, um, uh, where it's- uh, where like family or roommate that are reciprocated, right?
+13:10
+Basically saying if, uh, h- h- h is related with r to t, then t should be related to h with r as well and- and the point is this right?
+13:20
+If you go from h according to r to t, then what you'd like to do is apply the same r to t as well and get back to
+13:27
+h and the only able- way you are able to do this is to make r to be 0,
+13:32
+which basically means that h and t are embedded on top of each other. But that is not good because h and t are different entities.
+13:40
+They are distinct entities with distinct properties. So this means that TransE cannot embed and cannot do this kind of,
+13:49
+um, sy- uh, symmetric, uh, reasoning or it cannot model, uh, symmetric, uh, relations.
+13:56
+And then another part that, uh, TransE cannot do is 1-to-N relations, right?
+14:03
+The idea is that if I have a head, um, uh, and, uh, and, uh, relation,
+14:08
+and maybe this is a 1-to-N relation. Uh, then basically I wanna- I wanna go from head according to relation r to t1
+14:15
+and I also wanna be able to go from head according to relation 1 to t2, right? Both exist in the knowledge graph.
+14:22
+For example, student of, right? I can be a mentor or I can have two students simultaneously.
+14:27
+And again, TransE cannot model this type of relations because again, the only way for this to work would be that t1 and t2 map into the same vector, they
+14:37
+map into to the same point in the embedding space so that when you go from h according to r,
+14:43
+you arrive to the same, uh, point. But again, this is not- this is not good because this would mean that
+14:49
+t1 and t2 are the entities embedded in the same point. So they are indistinguishable from one another.
+14:55
+But in reality t1 and t2 are completely different entities. So this is what TransE cannot, uh, model.
+15:03
+So let's look at a different method called TransR are that will allow us to fix some of these issues, all right?
+15:13
+So what we have seen so far is that the TransE models, uh, trans- a translation of any relation in the same embedding space.
+15:22
+So the question is, can you design a new space for each relation and do the translation in a relation-specific space?
+15:31
+And the method that proposed this idea is called TransR, and it models entities as vectors in the entity space,
+15:38
+so entities as points and models each relation as a vector in rela- in the relation space together with a relation specific,
+15:48
+uh, transformation or projection matrix. So, um, let me give you the idea how this works.
+15:55
+So the idea is, as I said, TransR models entities as points, uh,
+16:00
+and for every relation, we are actually going to learn two things. We are going to learn the translation, uh,
+16:06
+relation vector and we are going also to learn this projection matrix, uh, M for every relation.
+16:13
+So the idea is, right, if I want to, uh- uh- what- the way I'm going to now predict relations.
+16:19
+If I say are h and t related, uh, by relation r,
+16:25
+I'm first going to apply matrix, uh, matrix M to both points and basically transform them
+16:30
+into a new space and then in this new transformed space, I'm going to kind of apply the TransE, um, intuition.
+16:38
+So basically I'm going to use this vector to move around. So, um, right, I basically,
+16:45
+take the original embedding. I transform it according to the matrix M, which basically means I scale it,
+16:50
+I rotate it, I translate it, and then I apply my vector r, uh, in there.
+16:55
+So, uh, you know, what will this buy me? For example, what this buys me is that it allows me to model, uh, symmetric, um,
+17:04
+relations because imagine, uh, again a symmetric, uh, relation like roommate reciprocated right?
+17:10
+Then basically, I can run a roommate specific, uh, function, uh, specific, uh, projection matrix,
+17:19
+uh, M that will take two different points and map them into the same,
+17:24
+uh, underlying point, into the relation specific, uh, space. So it means that two people that are roommates,
+17:31
+um, will be able to be mapped into the same point. So that now here, uh, I'll be able basically to say,
+17:37
+uh, no translation needed, r is 0 and I'm, um, I have this, uh, symmetric,
+17:43
+uh, relationship, uh, right now. So this is- what this allows us to do, which for example, TransE was not able to do.
+17:51
+Um, how about anti-symmetric relations? Um, again, we can easily do this, right?
+17:58
+Because for example, the translation matrix, uh, can- can, if I have- if I take two different points,
+18:05
+the translation matrix can- can again transfer, uh, into this relation specific spa- space in such a way
+18:11
+that the two points don't collide and then the same way as in TransE, um, uh, we are able to do,
+18:17
+uh, the same thing here, right, from head according to the relation I get to t, but from t according to the relation,
+18:24
+I don't get back to, uh, head. So this is also possible, so it can model both symmetric as well as anti-symmetric, uh, relations.
+18:33
+Can, uh, uh, um, uh, this TransR also model 1-to-N relations, right?
+18:41
+Uh, like student of? Uh, and actually again it turns out it can. TransR can model this because again,
+18:48
+we have enough flexibility in the projection matrix r that can learn how to take,
+18:54
+let's say t_1 and t_2 and map them into the same point so that when in this relation specific space,
+19:00
+I go from head according to the relation, I arrive exactly to t_1 and t_2 that are embedded to the same position.
+19:08
+So in the original embedding, these are two different points but in the, uh, let's say the relation specific embedding
+19:15
+that is achieved by this transformation matrix M, I can enforce t_1 and t_2 to be in the same point.
+19:24
+So these 1-to-N relations can naturally be captured. So, um, this sounds great, right?
+19:30
+It seems we have kind of fixed, uh, all the issues with, uh, trans, uh, -TransE.
+19:36
+We can also do inverse relations because, uh, the same as we were do- able to do them in TransE,
+19:43
+we can do them in TransR, right? So basically we just, uh, uh, -the transformation matrices for both relations have to be the same and then,
+19:51
+you know, one translation vector is the reciprocal or the inverse, uh, of the other, uh, translation vector.
+19:58
+Um, what is the issue? What trans - what tra- what does, uh,
+20:04
+TransR- what is it not able to do that TransE, was able to do?
+20:09
+Is one thing: is composition relations, right? In, in TransR, you cannot do this type of compositional relations, right?
+20:18
+Meaning, uh, remembering, uh, uh, where you say, a-ha, if x, x is related by y with r_1 and y is related with z with r_2,
+20:27
+then, uh, x and z are related by r_3. This was very easy to do in, uh, TransE because everything was in
+20:34
+the same space and you just kind of moved, uh, around. Uh, but in TransR we cannot do these compositional relations.
+20:41
+Um, and the reason for this is that each relation has a different space and we know how to
+20:47
+model from the original space to the relation-specific space, but we don't know how to model between different, uh,
+20:55
+relation-specific, uh, spaces. So these relation-specific spaces are not naturally, uh, compositional.
+21:02
+So, uh, this means that the, uh, compositional relations, uh, TransR, uh, cannot, uh, do.
+21:10
+So, um, this was second method, uh, we discussed. So let's now talk, uh,
+21:17
+about the third method as well that, uh, is, uh, -that is based on what is called bilinear modeling.
+21:24
+Um, and so far, right, we were using, uh, the scoring function simply as a,
+21:30
+as a distance in the embedding space. Like in TransE and TransR we said the head plus relation should be close to the tail.
+21:38
+But, um, now what if we change, uh, the embedding, uh, the,
+21:44
+the way we're scoring different relations? What if we change this function n-l, f?
+21:49
+But it won't be, uh, distance anymore but something more interesting. So for example, uh, this DistMult, uh,
+21:58
+is simply saying let's embed entities and relations as vectors in the,
+22:03
+uh, in the embedding space. Kind of similar to TransE. But let's use a different, uh,
+22:09
+scoring function rather than using the distance, uh, as in TransE. Uh, let's use, uh,
+22:14
+this type of scoring function where we basically just, uh, have this bi- bi-linear model when we say the score is simply,
+22:22
+a coordinate wise product of h, r, and t, right? So the idea is if I have,
+22:27
+uh, h, uh, r and t, I simply multiply these things, uh, uh, entry by entry,
+22:33
+sum it up, and that is my score. And the idea is if, uh, head relation tail, uh, is true,
+22:40
+then the score should be high and otherwise, the sh- the score, uh, should below.
+22:45
+The way you can think of this scoring function is that you can think of it as a hyperplane,
+22:52
+uh, in the embedding space. So basically, wha-the way you can think of it is you can think of it
+22:58
+as cosine similarity between h times r, uh, and t. And cosine similarity is simply a cosine of the angle between two vectors.
+23:09
+Um, and what this means is that if the two vectors are orthogonal,
+23:14
+then the cosine similarity will be 0, and if two vectors are completely aligned, uh,
+23:20
+the cosine, uh, similarity will be, uh, will be 1. Uh, another thing that is important is that because
+23:26
+this now defines like a hyperplane in the embedding space, this dot product can either be positive or it could be negative.
+23:34
+And whether it's positive or negative, this tells me whether the, the point lives, lies on the left-hand side or whether it lies
+23:42
+on the right-hand side of the, um, of the hyperplane. And hyperplane is really defined as a vector that is, um, uh,
+23:52
+that is orthogonal to this hyperplane and this vector is simply h times r, right?
+24:00
+So basically h times r, uh, defines a hyperplane that is orthogonal, uh,
+24:05
+orthogonal to it and then, uh, the, the tails, uh, that, that are related to h according to relation r should
+24:13
+fall on the same side of the hyper- hyperplane as this, uh, um, uh, uh, normal vector is,
+24:20
+and tails that are not related to it should fall on the other side, uh, of the hyperplane.
+24:25
+So that's, uh, the intuition and the idea how this DistMult, uh, works.
+24:31
+So can it do 1-to-N relations? uh, yes it can.
+24:36
+Uh, the reason, the reason for this is because we can think again of, of a, of a, of a hyperplane and if,
+24:43
+uh, if, uh, I have 1-to-N relations, then t_1 and t_2 should fall on the same side or should fall on the same distance on or,
+24:53
+uh, from the, uh, hhyperplane and that's easy to achieve. Um, in terms of symmetric relations,
+25:00
+again, we can, uh, naturally model this, uh, because, uh, multiplication is commutative, right?
+25:06
+So we can flip the order in which we multiply things and we'll get, we'll get to the same value. So because, uh, um,
+25:12
+summation and multiplication are commutative, um, this is, uh, naturally true.
+25:17
+Uh, however, the limitation are anti-symmetric relations, right? Like a hypernym, part of where uh, uh and, uh,
+25:26
+the-the idea here is that DistMult cannot model antisymmetric relations.
+25:31
+Um, again, because of the, uh, commutativity, uh, of, uh, summation and,
+25:36
+and product, it means you get symmetry but you don't get, uh, antisymmetry, right?
+25:42
+Um, h times r times t will always be the same as t times r times h and that's, that's the issue.
+25:50
+So, uh, we can- DistMult cannot do that. And then the other thing DistMult cannot do is modeling inverse relations, right?
+25:58
+If, uh, uh, h and t are related with r_2 then they should also be related,
+26:04
+uh, in the different direction with r_1. Like advisor, advisee type of relation. Um, and the reason, uh, um, uh,
+26:11
+DistMult cannot, uh, model this is, uh, because, uh, uh, for- because of the fact that it does not model rel- uh,
+26:19
+inverse relations so the only way to model inverse relation would be that r_2 and r_1 are equal.
+26:26
+But semantically this does not make sense because then the embedding of the relation advisor is the same as the embedding of the relation advisee.
+26:35
+So basically this would mean that if I'm your advisor, you are my advisee but at the same time,
+26:41
+if I say, are you my advisor as well, the answer would be yes and am I your advisee,
+26:47
+the answer would be yes as well. So it will be like two symmetric relations rather than a inverse relation.
+26:54
+So this is where, uh, DistMult fails [NOISE]. Um, and then the last place, uh, where, uh,
+27:02
+DistMult fails is, uh, composition, uh, relations, right? And the problem is that DistMult defines hyperplane for,
+27:11
+uh, each, uh, head, er, relation pair and the union of hyperplanes induced by this,
+27:18
+er, by this composition of relations cannot be expressed by a single, uh, hyperplane.
+27:24
+So kind of, you know, a union or an intersection of hyperplanes is not a hyperplane, uh, anymore.
+27:31
+So that's why- th- that's the intuition why composition relations, uh, are also not possible.
+27:37
+So the last method I want to talk to you about is called complEx.
+27:43
+And the idea here- the reason why I want to do this is that we don't necessarily have to embed points into the simple Euclidean er,
+27:51
+you know, er, real, uh, space. We can also, um, have complex vector, uh, embeddings.
+27:58
+We can embed them in complex spaces, right? So ComplEx embeds entities using in the complex vector space, right?
+28:05
+Where every- every point now has, uh, two, er- it has an imaginary part and a real part.
+28:12
+And the one concept from, um, com- uh, ComplEx algebra that is important to keep in mind is
+28:18
+this concept of co- complex conjugate, where you basically say, if u is a complex number with a real part a and imaginary part, uh, b,
+28:28
+then a complex conjugate of it is simply that it's not plus b times i, but is minus b times i.
+28:35
+And this, uh, notion of complex conjugate will be important as we analyze, uh, this model.
+28:41
+So the way you can now think of this is that in ComplEx we can actually use, um,
+28:46
+the scoring function that is simply, uh, similar to the, uh- to the ComplEx- uh,
+28:52
+to the scoring function in DistMult. But we are only then taking the real part of the- of the ComplEx function because,
+29:00
+uh, this is- er, this will give me a complex number. So I wi- want to only take,
+29:05
+uh, the real, uh, part of it. So let's quickly analyze, uh, this approach as well.
+29:11
+So can it model antisymmetric relations? Uh, yes, it can. Uh, the way- the way we,
+29:17
+uh- we can do this is that basically we can achieve that for, uh, different, uh, um, uh, relations.
+29:25
+Uh, we get basically high or low value of our scoring function, uh, basically due to the, uh,
+29:31
+asymmetric modeling of complex, uh, conjugates. Because here we are using,
+29:36
+uh, the complex, uh, conjugate. Uh, can we model symmetric relations? Again, um, yes, yes,
+29:43
+we can because we can simply say the imaginary part of the relation, uh, to be 0, um, and then, uh,
+29:50
+because everything works in- in- in- in the real part, uh, we are able to model, uh, symmetric relations, um, as well.
+29:58
+And then, you know, can we mo- can complex model, uh, symmetri- uh, inverse relations as well?
+30:05
+Uh, yes, it can. How? By setting, uh, r- um, uh, by setting r_2 to be, uh,
+30:12
+com- complex conjugate of, uh, r_1. Um, and this basically means that, uh,
+30:18
+the real part of the two er, will be, uh, exactly, uh, the same because what differs is only,
+30:25
+uh, the complex, uh, part. So that is, um, uh, in terms of modeling inverse, uh, relations.
+30:34
+Uh, how about composition and 1-toN relations? Um, because, uh, ComplEx shares this property with DistMult,
+30:44
+meaning it uses the same, uh, scoring function, then it turns out that ComplEx also cannot model composition relations as well as,
+30:51
+uh, 1-to-N uh, relations because it uses kind of a very similar, uh, scoring function.
+30:57
+So this basically now concludes, uh, our discussion of different knowledge graph embedding,
+31:05
+uh, methods for knowledge graph completion. We- we went through four of them. We went through TransE,
+31:11
+TransR, DistMult and ComplEx. And what is interesting is that each of these methods has a bit different idea, right?
+31:20
+Um, the- the two- first two methods embed into the- into the,
+31:26
+um, real, uh, space, so into the Euclidean space. Uh, but one uses the translation, uh,
+31:33
+idea for every relation, while TransR also uses this, er, um,
+31:38
+transformation matrix, er M. And, uh, here I show different properties or
+31:44
+different relation types that these methods can model. Um, TransE is the only one that can model composite relations where they can be composed.
+31:52
+Uh, DistMult changes the scoring function, um, and, uh, and ComplEx actually embeds, uh,
+32:00
+not into the Euclidean space, but in the complex space. And the reason why I wanted to show you
+32:06
+these different methods is to see kind of the diversity of options that, uh, embeddings, uh, allow you,
+32:12
+uh, to work with and, uh, a lot- give you a lot of freedom how you define your predictive model.
+32:19
+So how do you do now knowledge graph embeddings in practice? Uh, different knowledge graphs may have
+32:26
+drastically different relational patterns and different properties. So it is not that there is one method that works best, uh, on all of them.
+32:36
+It really depends on what kind of, uh, relationship types you are interested in modeling and,
+32:43
+uh, what kind of relations do you wanna predict. If you really want to predict, uh,
+32:49
+1-to-N relations and model 1-to-N relations, then don't use TransE.
+32:54
+if you really care about composite relations and these kind of compositions,
+32:59
+then use, for example, TransE. If what you care about, uh, for example,
+33:05
+would be antisymmetric relations, don't use DistMult, um, and so on.
+33:10
+So it really depends, uh, on- on the graph and what you wanna do. In general, you know,
+33:16
+TransR are and ComplEx have the most kind of- are able to model the most,
+33:21
+uh, diverse set of different, uh, relation types. So what you can always try is try with TransE because it's very,
+33:30
+uh, simple and has a very nice intuition. And then you can use more expressive model like complEx, uh, TransE.
+33:37
+You- there's also an notion, a model called trans- RotatE, which is TransE, but with complex embeddings.
+33:45
+Um, so there is a lot of different approaches and different, er, uh, ideas here.
+33:50
+There is a paper linked up here that s- uh, that serves as a very good follow-up, uh, reading if you are interested in this topic.
+33:58
+So to summarize, we talked about the, uh, knowledge graph, embedding a knowledge graph completion task
+34:05
+as one of the very important task in knowledge graphs. And we talked about four different methods.
+34:10
+TransE, TransR, DistMult and ComplEx, er, models with different embedding space,
+34:17
+and with different type level of expressivity, allowing us to mi- model, uh,
+34:22
+different types of um, relationships.

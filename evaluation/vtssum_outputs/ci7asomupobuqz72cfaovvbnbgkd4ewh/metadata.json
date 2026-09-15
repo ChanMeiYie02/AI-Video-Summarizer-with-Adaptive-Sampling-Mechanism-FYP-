@@ -1,0 +1,21 @@
+{
+    "id": "ci7asomupobuqz72cfaovvbnbgkd4ewh",
+    "title": "How do public sector values get into public sector machine learning systems, if at all?",
+    "url": "http://videolectures.net/lawandethics2017_veale_public_sector/",
+    "info": {
+        "author": [
+            "Michael Veale, Department of Science, Technology, Engineering and Public Policy (STEaPP), University College London"
+        ],
+        "published": "July 24, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Data Science",
+            "Top->Social Sciences->Law"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 179,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 4754
+}

@@ -1,0 +1,20 @@
+{
+    "id": "xfw3uu63ikcc4mhbmlp27f2czlvlqnu7",
+    "title": "The Continuing Metamorphosis of the Web",
+    "url": "http://videolectures.net/www09_spector_cmw/",
+    "info": {
+        "author": [
+            "Alfred Spector, Google, Inc."
+        ],
+        "published": "May 20, 2009",
+        "recorded": "April 2009",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web"
+        ]
+    },
+    "num_segments": 53,
+    "num_sentences": 467,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1558
+}

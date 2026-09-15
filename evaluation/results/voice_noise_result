@@ -1,0 +1,41 @@
+# Voice Noise Evaluation Walkthrough
+
+We successfully set up and ran the voice noise evaluation pipeline for **Gemma-4-E2B** on the speech enhancement training/testing dataset (`28spk`).
+
+---
+
+## 🛠️ Changes Made
+
+1. **Created Evaluation Script**:
+   - Developed [run_voice_noise_evaluation.py](file:///c:/Users/admin/Desktop/Meiyie/evaluation/run_voice_noise_evaluation.py).
+   - Added deterministic sampling (using seed `42`) to select exactly 100 samples per noise category (25 per SNR level: 0dB, 5dB, 10dB, 15dB) for a total of 1,000 files.
+   - Built a pure Python Word Error Rate (WER) edit distance calculator and a text normalizer to ensure no external dependencies are needed.
+   - Integrated incremental checkpointing to allow safe resuming.
+
+2. **Executed Evaluation**:
+   - Successfully transcribed all 1,000 sampled noisy WAV files using the native `google/gemma-4-E2B-it` model on local GPU.
+   - Compared transcriptions against ground truth labels and generated a detailed performance matrix.
+
+---
+
+## 🔬 Validation Results & Findings
+
+The detailed results are documented in [voice_noise_report.md](file:///c:/Users/admin/Desktop/Meiyie/evaluation/results/voice_noise_report.md). Key findings include:
+
+### 1. Overall Performance
+- **Total Samples Evaluated**: 1,000
+- **Overall Word Error Rate (WER)**: **25.19%**
+- **Overall Exact Match (EM) Accuracy**: **48.00%**
+
+### 2. Model Noise Capability
+- **Acceptance Threshold**: Gemma-4-E2B is capable of accepting noise levels at **15 dB and above** (maintaining an average WER below 15%).
+- **Degradation under Extreme Noise**:
+  - At **15 dB**: **12.26% WER** (High accuracy)
+  - At **10 dB**: **15.75% WER** (Acceptable accuracy)
+  - At **5 dB**: **22.42% WER** (Moderate degradation)
+  - At **0 dB**: **50.34% WER** (Severe degradation, high transcript hallucination rate)
+
+### 3. Impact of Noise Type
+- **Most Robust Category**: **Car** noise (Overall WER: **8.55%**). Even at 0 dB, the model achieved **6.3% WER**, showing outstanding resilience to low-frequency engine rumble.
+- **Most Disruptive Category**: **Babble** noise (Overall WER: **62.84%**). At 0 dB, babble noise causes **154.3% WER** due to the model confusing the background crowd voices with the primary speaker.
+- **Other Severe Categories**: **Meeting** (**33.93% WER**) and **Restaurant** (**34.76% WER**) ambiences similarly degrade transcriptions because of competing background speech.

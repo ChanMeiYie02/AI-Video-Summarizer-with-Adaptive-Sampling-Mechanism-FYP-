@@ -1,0 +1,20 @@
+{
+    "id": "avrzhsbatj2bixbrnwvz5m522cabphad",
+    "title": "Information Theoretic Model Selection in Clustering",
+    "url": "http://videolectures.net/nipsworkshops09_buhmann_itm/",
+    "info": {
+        "author": [
+            "Joachim M. Buhmann, Institute of Computational Science, ETH Zurich"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 307,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 4225
+}

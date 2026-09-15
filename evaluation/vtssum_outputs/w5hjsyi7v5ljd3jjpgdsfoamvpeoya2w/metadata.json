@@ -1,0 +1,20 @@
+{
+    "id": "w5hjsyi7v5ljd3jjpgdsfoamvpeoya2w",
+    "title": "DBToaster: Aggressive Compilation Techniques for Online Aggregation",
+    "url": "http://videolectures.net/akbc2010_koch_fivm/",
+    "info": {
+        "author": [
+            "Christoph Koch, Department of Computer Science, Cornell University"
+        ],
+        "published": "June 7, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Business->Management->Knowledge Management"
+        ]
+    },
+    "num_segments": 46,
+    "num_sentences": 640,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 219
+}

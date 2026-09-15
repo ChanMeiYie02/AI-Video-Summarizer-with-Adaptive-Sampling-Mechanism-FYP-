@@ -1,0 +1,20 @@
+{
+    "id": "cwkwyhn3plutaujpjughfed7q37zjbff",
+    "title": "Opening of the 1st International Workshop on Knowledge Diversity on the Web",
+    "url": "http://videolectures.net/diversiweb2011_madalli_opening/",
+    "info": {
+        "author": [
+            "Devika P. Madalli, Indian Statistical Institute, Bangalore"
+        ],
+        "published": "April 22, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Computer Science->Web Mining"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 73,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1294
+}

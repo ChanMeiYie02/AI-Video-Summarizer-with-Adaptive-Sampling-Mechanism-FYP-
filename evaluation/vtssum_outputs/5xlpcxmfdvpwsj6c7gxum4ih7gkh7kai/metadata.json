@@ -1,0 +1,20 @@
+{
+    "id": "5xlpcxmfdvpwsj6c7gxum4ih7gkh7kai",
+    "title": "Efficient Indexing of Repeated n-Grams",
+    "url": "http://videolectures.net/wsdm2011_huston_eir/",
+    "info": {
+        "author": [
+            "Samuel Huston, Department of Computer Science, University of Massachusetts Amherst"
+        ],
+        "published": "Aug. 9, 2011",
+        "recorded": "February 2011",
+        "category": [
+            "Top->Computer Science->Web Search"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 190,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 2234
+}

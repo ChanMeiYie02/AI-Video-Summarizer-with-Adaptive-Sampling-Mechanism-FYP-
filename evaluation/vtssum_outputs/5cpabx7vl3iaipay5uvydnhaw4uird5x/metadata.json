@@ -1,0 +1,21 @@
+{
+    "id": "5cpabx7vl3iaipay5uvydnhaw4uird5x",
+    "title": "Frontiers in e-commerce personalization",
+    "url": "http://videolectures.net/kdd2014_subramaniam_e_commerce/",
+    "info": {
+        "author": [
+            "Sri Subramaniam, Groupon, Inc."
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 600,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 54,
+    "ground_truth_summary_length_chars": 4495
+}

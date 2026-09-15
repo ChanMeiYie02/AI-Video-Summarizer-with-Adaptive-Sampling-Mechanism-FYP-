@@ -1,0 +1,233 @@
+[0.0s - 29.0s]
+Express my gratitude for the organizers and anyone responsible for suggesting my giving a talk here and also for humoring me to not necessarily talk about something computational semantic related. The I should perhaps give a little. Path regarding what would prompt me to talk about. Computational linguistic applications for multimedia services.
+
+[29.0s - 58.0s]
+This is a reporting on collaborative work that we've been doing for about six months with WG BH Archives, whose director is Karen Cariani. Who is actually giving a talk on Wednesday here about the GBH WGH archives? What I? Would like to do is to.
+
+[58.0s - 87.0s]
+Talk about the role that. Semantic and syntactic. Processing of media. Which is. The core of Clarence Mission really can provide as. Discover ability resources there is that term again. Example is favorite term language resources, but the tools associated with the resources to enable discover ability over media of variety of sorts. Multimedia in this case. My path to this is not. Really unusual, it actually is fairly directed, so I've been working on computational semantics over text for more years, and I'd like to really admit she already did admit so 35 years so I won't hide that over the last 10 years I've been working on multimodal. Data and the semantics associated with. Visual data. Gesture. As well as text and speech. Through that work which involves images, videos, but also the recognition and expression of gestures and speech ensemble together in peer to peer communication. Which is one of my primary areas of research. I was able to actually. Merge this with another area of research that I've been very committed to. For at least 15 to 20 years, which is the development of standards within ISO but also. Also, standards which are. Not necessarily, I so related, such as space and I so time L as well as the development of platforms for annotation of various types of data. And I've tried to promote various. Platforms for such things. Annotation environments with many of my colleagues and students. Recently the. Work on multimodal semantics has led me to find a home in actually trying to annotate and extract information from video and images, so I have a couple of grants that have led me to trying to try to extract information through semi supervised annotation of images and video, as well as linking that to text. Now this happens to relate to. Metadata to two archives that I've been familiar with from being a Bostonian for many years, namely W GBH and the corpora associated with W GBH, which is news and Frontline and Nova, and masterpiece theater and other things that we are Co. Co edited and Co directed by the BBC and in discussion with Karen Cariani and others at WGH. Became interested in trying to provide. Tools to enhance the metadata. After discovering what problems there were. With the archival assets that they have, so I'm going to describe this initial work that we've been doing, and. Try to relate that to some of the themes which are so dear to declare and work. So I'll start with the laps work that we've. We've been working on for about close to 10 years, actually, and then I'll introduce what is this project called Clams and then go through a couple of demo scenarios of how this can actually be deployed in the context.
+
+[87.0s - 116.0s]
+Of the American Archive of Public Broadcasting, which is APB.
+
+[116.0s - 145.0s]
+You'll hear more about this on Wednesday when. Karen Cariani gives her presentation briefly though. The American Archive of Public Broadcasting.
+
+[145.0s - 174.0s]
+Is close to 100,000 assets comprising about 50,000 hours of. Video an audio that go back to the 40s, nineteen 40s. Over public television and public radio that is chaired by the Library of Congress and W GBH and it's a historical treasure, it should be treated as kind of a national treasure as much as any sort of national archive, really. The problem with the.
+
+[174.0s - 203.0s]
+Assets as currently. Deployed which you can go to americanarchive.org and examine is that the Searchability discover ability and the general problems that you hear in claren over the past. Whatever would be 10 years actually then to 2008 have been trying to address how to leverage computational tools. To improve the experience of searching. Anne browsing and then utilizing an, then exploiting in your own research. So we are computational linguists, most of us. But the real. Customers are. The Economist, the historians, the digital humanities researchers, the linguists, historical linguists, and other archivists as well. Who would love to have access to such data? Many of you here have already deployed successful platforms for such tools, so I would like to discuss some of the initial steps that we've been making towards this goal.
+
+[203.0s - 232.0s]
+The first element of this that I'd like to discuss that. That began the investigation into. Putting tools together in a common platform is something called the language application grid.
+
+[232.0s - 261.0s]
+This. Where is started as a collaborative effort. Between Brandeis and Vassar, NASA, Nancy and Chris, Siri, who's here from LDC and Eric Nyberg at CMU. We have been funded by the National Science Foundation for. A number of number of rounds very successfully. This builds on work that really started back in 2005, actually initially with the unified linguistic annotation framework, which was also with Chris and Martha Palmer and others, and then something that was called silt. That was Nancy and myself, but it also is ground on the language grid panacea, lingua grid, and other web service networks that have been worked on and develop within the NLP community.
+
+[261.0s - 290.0s]
+So. Very much like the efforts within Claire and the lapse grid. In really a smaller funding profile and environment. Is a framework to create a service of discovery, composition and reuse for tools. And the goal here is, as with. The overall goals of Claren is to promote sustainability and usability. An also importantly interoperability, and so I'll focus today on interoperability of NLP components. But not just NLP, but as we move into other media assets and other media type, we have to look at things which are going to be interoperability with other sorts of media, aren't we? So it's based on the service oriented architecture, the SOA where we have web wrapped pipeline architectured applications which allow us to do loosely coupled analysis and pipelines.
+
+[290.0s - 319.0s]
+So I'll just zip through this somewhat quickly because I believe this is going to be fairly shared. Goals for the community here. The language application Grid, which is laps. Is going to. Support and has supported in small form not not anywhere near the clear and development of integrated NLP applications. So. One thing that has been facilitated by having LDC's contribution is to be able to navigate through licensing issues and a really very very nice harbor. Kind of painless way.
+
+[319.0s - 348.0s]
+The NLP processing tools that we have and you can go to too. Laps grid and laps galaxy.org to see what we have we have. All the basic NLP processing tools that you could imagine at 1st at first glance and mono and multi lingual corpora in lexicons available, and what we enable is a kind of black box composite servicing.
+
+[348.0s - 377.0s]
+So the. Current frameworks just to motivate some of this, and I think it's important to. Discuss the role of lapse as a open architecture that does not force you to adopt A specific. Type of of pipelining or workflow. Composition or architecture, such as in UIMA or gate. The tools for which, by the way we actually have. Within laps, so they actually are tools themselves within the services themselves within the market.
+
+[377.0s - 406.0s]
+Alright we as I mentioned, we are based on the open service grid which is developed by an ICT in Japan and were linked to the the Kyoto in other Asian grids as well.
+
+[406.0s - 435.0s]
+The architecture. Is as diploid through Galaxy which initially started. In the bioinformatics community, and I believe some within Claire and have started. Using an adopting some of the workflow structure that Galaxy provides the very nice environment. To essentially be able to take the services we have your web browser interface user.
+
+[435.0s - 464.0s]
+And essentially able to. Communicate with a lot of different manager nodes through the Galaxy architecture itself. Pipelining in a fairly seamless. And very simple structure in architecture.
+
+[464.0s - 493.0s]
+Now the. Evaluation services that we allow provide for comparing various workflow structures dynamically so you can best configure and optimize the application of 1 tool over another. For example, in a complicated pipeline to test out, for example, which dependency parser would be best suited for your particular data set, or what part of speech. Or named entity recognizer and so on and so forth would be the best for the style you have, and that's a very nice tool that's been provided by the CMU.
+
+[493.0s - 522.0s]
+So. The the Galaxy project.org you'll see the the workflow engine for the Galaxy and then as deployed within laps.
+
+[522.0s - 551.0s]
+So that the basic idea is you pick a tool and we have type compliance. Of the IO of the tool to allow you to. Select only the appropriate. Tools to be new dled as the output too. The tool that you've connected to, so there's a type compliance. And this is not actually part of Galaxy. This is part of our own introduction of the the. The exchange the interchange format that allows you to essentially do kind of type checking on the tools before you actually do a run. And that's really quite nice.
+
+[551.0s - 580.0s]
+So. The interoperability that's enabled is through soap and whistle. By developing this interchange format the LAF Soul if this allows us to Rep a tool and to essentially not worry about the compliance of the IO to another tool and this is what within the text. Based domain of whatever we're dealing with in terms of NLP application, this allows us syntactic and semantic interoperability, so the syntactic. Is handled by Jason LD and the Semantic interoperability is enhanced by using the link data. Component Jason LD. So.
+
+[580.0s - 609.0s]
+So why Jason LD? Well, I don't want to go into this in too much detail because I believe this is speaks for itself. It's lightweight. It's based on RDF and it allows for us to have very very simple mappings to other graph based formats. An will also enable reference categories mapped in other repository's that are not component parts of the lapse create itself.
+
+[609.0s - 638.0s]
+OK. Now. Lapse uses Jason LD is a standard format for the payload, so the converters to and from Jason LD deliver in other formats, and some are wrapped to produce and consume Jason LD.
+
+[638.0s - 667.0s]
+So the logic flow is very straightforward in terms of client server communication, which is not represented here. But I have data I've got. For example, a gate service. I want to basically be able to map that to a UIMA service and maybe then push that to something that comes. From open NLP, perhaps something provided from Stanford. All of these are going to be essentially completely compliant and play together in the same in the same environment, the same. In the same general toolkit, and that is one of the advantages of this. This is enabled through the exchange vocabulary that.
+
+[667.0s - 696.0s]
+As part of the web service. Web service protocol. The WCV has this terminology for any particular linguistic object that we're particularly interested in for an application and that is consuming or being consumed by a tool.
+
+[696.0s - 725.0s]
+So the exchange vocabulary has a type hierarchy with inheritance that here. For example, we can see the different annotation types. I've got paragraph sentences, noun chunks, verb chunks, etc etc. Everything that we would be familiar with from the literature as consuming and generating data types. You can. Browse this if you want. Add vocab lapse grid.
+
+[725.0s - 754.0s]
+OK. I will skip over that now.
+
+[754.0s - 783.0s]
+What we've done in the context of a Mellon grant that we had for. Looking at some of the Hathitrust data with Indiana and Illinois over the last three years, we deployed the lapse grid in the context of.
+
+[783.0s - 812.0s]
+They hardly trust. Data capsule. Now the. Kathy Trust Research Center. Created a data capsule. So that researchers could explore the in Copyright component of the Hathitrust data. Anne. That meant we had to deploy the. Laps as. Something which would have secure access and stay within the data capsule. So this was actually a very interesting challenge, so I'm sure you're familiar with the trust. It's 50 million volumes that were the scanned digitized content from Google that has been part of the research library. Of Illinois and Indiana. Another preserves and the. The challenge from Indiana, Illinois was to say, OK, we have a lot of tools for doing topicalization, topic spotting and some basic OCR, but what about named entity recognition without parsing? What about some more sophisticated tools so they came to us to see whether or not we could actually deploy that in the context of a secure environment within a virtual virtual machine and that that project just concluded quite successfully with. With us showing that these tools within that data capsule are deployed.
+
+[812.0s - 841.0s]
+So the structure for that was deployed as Docker images in the data capsule that were dedicated and did not communicate with anything outside of the data capsule itself. Any tool that we had that was requested by the researchers were any tool was actually native to the server that was directly dedicated to the data capsule. And that was actually really very interesting project.
+
+[841.0s - 870.0s]
+The. We removed the Galaxy front end as essentially something that wasn't necessary because we didn't need. They didn't really need to have sophisticated pipelining and workflow structure. As I said, that was deployed as a Docker swarm on the physical machine. That allowed the in Copyright data to be secure and licensing issues were never really compromised.
+
+[870.0s - 899.0s]
+So the. What this allowed to the researchers was enhanced search and discovery. And this was complementing actually quite nicely. The traditional volume level bibliographic metadata which was being created by the Hathitrust in terms of what they were contributing to the metadata for search. They're all they were adding to that named entities events as well as other multi word expressions and things which might be more CL related data types from any R for example.
+
+[899.0s - 928.0s]
+The next. Effort we had, which goes towards creating this interest in the multimodal, and video data was. Started by this. Collaboration that Nancy and I had with Earhart in Tubingen Jan in Prague, which was essentially away. Of testing whether the authentication and other aspects of interoperability between Claire, Indian, Linda, Claire, and. Could be linked to the laps tools and the laps architecture.
+
+[928.0s - 957.0s]
+The first thing that was on the plate in terms of. What we needed to address was the authentication an authorization. So the. The first the first challenge was essentially addressed by prog and then tubing and associates at Vassar. To try to find the best means of. Allowing for institutional. Access from the current claren. And the current laps users and user base to make sure that we could utilize and access seamlessly each others applications.
+
+[957.0s - 986.0s]
+Part of the. Step that was required after the authentication and. The authentication infrastructure was in place is to essentially ensure syntactic and semantic interoperability. And this is going to be the key for moving into multimodal data as well, so. Web licked uses a TCF text corpus format, while laps has the laps interchange format. The The Protocols are different between both domains, so we needed to be able to map 1 to the other through converters.
+
+[986.0s - 1015.0s]
+Which were created. The vocabulary from lapse and the schema set from TCF. Found their ways. Into a concept mapping index which allows for this type of transfer and conversion quite quite successfully. So the semantic interoperability allowed for. The mapping between the basic core applications that we've looked at so far, much more work needs to be done to look at more sophisticated and broader range of applications. That's current work that we're actually pursuing right now.
+
+[1015.0s - 1044.0s]
+The obvious difference between our being soap and. Rabbits being restful was. The requirement of a converter between those and the metadata converter was. Constructed and successfully deployed now.
+
+[1044.0s - 1073.0s]
+Gives rise to a very nice integration between web list and the laps. Grid, which is summarized here where I have converters for the formats, the interchange formats. That allow me to essentially go in through either one. I can go in through web based or through apps deploy and call and actually pipeline a tool from either location. Which is really, really nice. There are so many other so many resources that are available through Claire and that we have no access to. We just don't have in our toolkit, but we can actually have access to from the marriage of these two. So this integration, interoperability that to go back to Antonio Examplea and early work from the early calls from Nicoletta from 25 years ago about interoperability. Are partially achieved by this type of careful mapping of the protocols, the interchange formats and the infrastructures.
+
+[1073.0s - 1102.0s]
+That leads me to. The interest that is at hand now, which is to try to bring some of these tools. 2 Morse to Richard. Data types that involve more than just language multimedia.
+
+[1102.0s - 1131.0s]
+So the clams architecture is really to be. In the service of what is called an eye, a moving image archives. And this is an entire area that I'm just becoming familiar with. So Mia and the associated. Datasets of video which many of you here in the audience and the Claron workshop have been dealing with, for I believe for many years. Require different interchange formats because you're dealing with video you're dealing with with images. You're dealing with time based content and indexing. That are just not part of the problem of text analysis, so. This is a kind of general archivist, researcher to a web browser has a front end. Workflow engine essentially able to load up. Some data and perform some analysis.
+
+[1131.0s - 1160.0s]
+Now the interchange formats for laps and for many of the applications within Claire and Dr. And Linda are text based. Or language based. The annotations within laps are in lift and they are always anchored to a character offset. So we did show that we have successful integration with bibliographic data in the potty, but we need to.
+
+[1160.0s - 1189.0s]
+Move. Two image archives and moving image archive. So there's two different types of archival sets. There's images as in. Flickr 30 K An visual genome and just other sorts of CPR based datasets, which are of course used in the vision community, but also moving image archives. So within MI Amia you're going beyond text data. Time based media, video and audio and we need to do an analysis of time based media. So it's not based on characters, obviously. So, but of course, as you know, the results of such mihn will be subject to linguistic analysis. If I want to do character analysis or content analysis of text within an image, and so audios can be transcribed text data as we know with with alignment and videos have text inside this caption, logo, subtitles, etc etc. Now this is an area of quite considerable research, but there's still very little diploid work on this. That is actually available to a working archivist. So what we need are analytic tools for multimodality.
+
+[1189.0s - 1218.0s]
+So we've been working on a multimedia interchange format in myth which handle video, audio, text on image and transcripts. This creates an alignment between these different media and annotation types and then subsequently allows for multimodal analysis. So we have the initial. Initial draft of this and it's deployed. I'll show you in a demo if the servers up. And this has easy IO. Believe it should be no significant difficulty in mapping this to lift and then there by two TCF in Vebb licked for use. Any tool that would be available in. Claire and D for example. So.
+
+[1218.0s - 1247.0s]
+Basically, the way this would work is I have an MF encoded video. I do a demux on it, I get my audio on my video track. And I able to. Essentially I need to have pointers to the external files. I need to have pointers to the internal content, internal regions, etc etc. As you would have for region analysis and then doing analysis of subregions of text.
+
+[1247.0s - 1276.0s]
+So the type hierarchy for clams is. I have in terms of the media type I've got time based data, video and audio character based data can be conventional linguistic data. And then I have region based data which is bounding boxes on still images. Mutation types are going to be down to the media type obviously, and then I'll have special multimodal alignments such as a forced alignment and character based things like that.
+
+[1276.0s - 1305.0s]
+So I'll have character start end for text for named entity tokenization classic things like that for video and audio. I'm going to have time stamps, frame numbers etc etc. I'm going to want to do for example Ching. I'm going to want to story segmentation sound classification to recognize things that are not not speech but are trains and whistles and dogs. And then for image annotation I've got bounding box, classic bounding box annotation. So.
+
+[1305.0s - 1334.0s]
+The conventional time timestamp boxes I'm going to have essentially one index to a particular time, and I'm going to have ID block that I'm going to have from frame to frame in order to be able to do Co reference.
+
+[1334.0s - 1363.0s]
+This classic classic.
+
+[1363.0s - 1392.0s]
+Rotation of that.
+
+[1392.0s - 1421.0s]
+So I'll show you in a second, the actually. Maybe this is time to do it the platform prototype. So. Let me go.
+
+[1421.0s - 1450.0s]
+Through the workflows. So we have news hours and video from the the 90,000 assets that WGH American Archive has. You're able to select an asset video. You're able to select maybe a nice transcript if you want to do forced alignment. We are able to perform some filtering such as bar and tone detection. For example, I'll show you some of these and then do some noise segment filtering and.
+
+[1450.0s - 1479.0s]
+Then I'll show you another workflow, which is to do a forced alignment with and without a bar and tone filtering.
+
+[1479.0s - 1508.0s]
+So let me show you now some of the. I can. To this. OK, hopefully this will be working. Alright, so. I'll select a Connecticut public television. Text. So this is you see that this is an example. This is an example of the video for the 1st. 30 to 60 seconds I have bars and tone. Then I have this late. OK, so this is what I want to do is this late? I'd like to be able to just pause that for a second that's late. Is something that we'd like to do text segment, text region analysis. So there's a nice text region analysis algorithm that was just published last year at CPR, which uses neural net architecture which will recognize the text segment and then we perform tesseract to do OCR on that and we get a about a 90% accuracy. The time expression if I perform. If I do the OCR and then I can run that through one of the lapse applications such as Heidel time which is wrapped heidel time will recognize that. Convert that to ISO time L which then allows me to create the metadata which then goes back to the metadata format addition of the asset, which then could hopefully eventually be added to something like vlog for search. So that's the idea. So that's one thing that we need to do. There's graphics on the page. This is the all these things are quite difficult to recognize. I'm sure many of you know this. And. Little stylized and then there's another thing which is really quite difficult is what's called the Chiron, the lower 1/3, which I'm sure you're familiar with when you have the lower 1/3. Video. Well this is very slow. OK let me just stop. OK so maybe just so. So let's just say stop this guy. So I have. I want to basically show I'm going to add the service of East detection. That's the frame. And then I'm going to add the service of doing an OCR. OK, and then then I'll perform Heidel time. OK. And then I deploy the workflow. And. I download it and I got a sample myth output which basically is this wrapped data that I'm not going to go through and examine, But basically is something which would be compliant with the ISO time L. Format which I mentioned before another example would be to take. News hour. And let's say I want to forced alignment. So I take an audio and video and I take a video and I take a clean transcription that has no trend that has no alignment. Ann, I want to apply. The. The MFA, the Montreal 4 cyliner. And. I could actually I could do bars and tone detection which actually cleans it up a little bit. So because the bars and tone will actually take out some of the confusion that the Montreal forced aligner actually runs into, and then I deploy it and the same thing it'll output and I'll get the forced alignment output that I don't need to show you. So that's the idea. There one of the other tools that we've been deploying is something called Elf, which is the event loop.
+
+[1508.0s - 1537.0s]
+Station Finder. So basically it's given A-frame in a video. What's the most likely seen type? So this is scene recognition. Now this has worked.
+
+[1537.0s - 1566.0s]
+We've been doing for a number of years in the context of multimodal lexecon construction, something that started in coling 2016 whenever how you ever had a workshop on on basically resources that we were interested in terms of multimodal resources and creating a lexecon where you have information associated with a number of modalities, not just a semantic type, but also the video or visual image of something associated with it, as well as its acoustics or sound. So in the context of this work, we have seen types and they specify where events happen, so seem recognition is of course a very very steady problem in CPR and vision, but it's not necessarily adapted to the type of data that we have here. An we are benchmarking our algorithm against the algorithms that have not been trained on the data for within GBH and of course by. Virtue of our training we're performing better than, say, the places to places. Two algorithms from MIT, so.
+
+[1566.0s - 1595.0s]
+Let's just let me just walk you through a little bit of how this works. Do I have like 5 minutes? What do I have? Thank thank you. So first we started, we created an event localization corpus which was founded on the Flickr 30 K. You're familiar with 30K, is having essentially annotations describing each image so. You
+
+[1595.0s - 1624.0s]
+Classic sort of five annotations for a picture, but what we do so this is these are crowdsourced annotations that Flickr provided. For images, and so a man and two kids on a boat, two children wearing lifejackets. What we did.
+
+[1624.0s - 1653.0s]
+Well, we took those and we crowdsourced annotations of where it was happening. According to the places to hierarchy which.
+
+[1653.0s - 1682.0s]
+Was essentially. Either indoor or outdoor weather was man made. Indoor, or whether if it was outdoor, whether it was a natural outdoor scene or an artificial outdoor scene such as a sports field or something like that. These are some of the classic hierarchical hierarchical classifications used in vision and.
+
+[1682.0s - 1711.0s]
+So. What we did was we adapted this by training it on some of the news hour data. So the question is, given an image, what's the most likely location type? So we did a pre trained places 2 model RESNET 5050 layer convolutional neural net Anna text model which was also a 2G R or NN and.
+
+[1711.0s - 1740.0s]
+That gave good results for the Flickr. Now then we took that model and adapted it. We trained it on the news hour data specifically, so we took one video and then we extracted the frames, one frame per second and annotated with the scenes such as this is indoor. This is a this is a studio shot and we train the model on the annotation frames. Now what we did.
+
+[1740.0s - 1769.0s]
+Do with the change the ontology to adapt to essentially. TV news, as it were, so we had bars and tones, blank screens, graphics on screen, guest in a studio guest out of studio ahead with the graphic. Things like this so they.
+
+[1769.0s - 1798.0s]
+Basically, these are the kinds of scene ontologies barn tone I've got. Text in a picture I've got just graphics that is on the record. I've got the classic talking head with a graphic, then I've got a talking head outside and then natural a person. In front of a natural in front of an artificial outdoor scene and then so on and so forth.
+
+[1798.0s - 1827.0s]
+And so these were. Then
+
+[1827.0s - 1856.0s]
+So we took that and did transfer learning. We train the last layer to classify according to this new ontology.
+
+[1856.0s - 1885.0s]
+And without some of the merging of categories, we got a 73% accuracy by category. You can look at the results here, but there.
+
+[1885.0s - 1914.0s]
+Some interesting things to point out, so this was really hard to point out because effectively this is a Reporter at a desk versus a guest in a studio, and what you really what the model actually had to do was to identify an individual such as layer or mcniell, whatever some individual versus some studio guest. So this is actually we combine this talking head category and we achieved over 86% F measure.
+
+[1914.0s - 1943.0s]
+Another thing which was difficult, which is graphics on a scene versus on the left versus this other thing which was a video it was it was a show about an art. And art show. And there are other things which were very confusing, such as online shopping, which were web pages and things like that. So if we if we combine those, we essentially can merge the results of that and get actually something close to 87%.
+
+[1943.0s - 1972.0s]
+The.
+
+[1972.0s - 2001.0s]
+OCR within a within a box. OCR in characters in various patterns does not work well, and so this is because.
+
+[2001.0s - 2030.0s]
+Is this is a digital slate? OK, now in the early copies early video as you are aware. If you have access to. Two shows before the 80s. You have slates which are handwritten, and those are quite difficult, but they are at least on a clear background on a steady background. So what's interesting about this is check this out. This is a this is a slate. Notice the date which we've recognized with Heidel time through this various MMIFF mapping to lift too. Heidel time OK, but notice the mention of the director and the producer.
+
+[2030.0s - 2059.0s]
+OK, so East, which is this neural net text box recognizer recognizes those we do.
+
+[2059.0s - 2088.0s]
+OCR on that, here's the bottom third, which is more difficult to recognize because of the noise behind it. Notice the white of the shirt, so this this comes out quite difficult to understand, however. By virtue of doing some sort of entity coreference we have referenced of Unger in Douglas as as information that allows us to say this could be Douglas because I'm not really reading that.
+
+[2088.0s - 2117.0s]
+And then you've got the credit roll, which also has additional information that we can use to create additional support for a particular hypothesis in our model, that maybe that is Douglas. And maybe that is Unger, for example.
+
+[2117.0s - 2146.0s]
+So. Finally.
+
+[2146.0s - 2175.0s]
+What we've done is forced alignment example that I showed you. We are currently using the Montreal 4 cyliner. We'd like to use assets and tools that are part of the web link resource kit and we're talking to Ehrhardt about that and but this essentially is really critical for multimodal analysis, which allows us to do. Eventual text tiling and then segmentation in a Ching format so.
+
+[2175.0s - 2204.0s]
+So the forced alignment is is still very limited in terms of just the transcription based forced alignment, but we've been experimenting with is to use some of the tech scene. The scene classification to give us kind of prior to the idea of where is this Ching actually starting and also the bars and tone identification also greatly enhances. Some of the segment boundary identification.
+
+[2204.0s - 2233.0s]
+OK, so let me just close up here.
+
+[2233.0s - 2262.0s]
+I hope I've given you some not totally incoherent summary of what we're trying to do. This is really early work. A lot of it's really green, and we're probably repeating mistakes and false starts that many of you have done and overcome. Maybe perhaps many years ago, but. We were having fun doing it the. Future work is to continue on with the chaptering. Some of the scene recognition is work that we're continuing anyway with our multimodal work. And I think the multimodal entity Coreference which I mentioned just now. He's actually quite promising to help do some of the disambiguation as well as to help enhance some of the information coming from the sparse models that we get for OCR. Obviously, much of this relates to the content based video retrieval work that's gone on for years, and I think some. Interesting shared work and shared challenges could be developed around these types of multimodal tasks that are not just the kind that have been promoted by by NIST, but in fact maybe something that's closer to the hearts of the Claron community, and we could perhaps talk about that. I think I'll just close there. Thank you. Thank you very much.

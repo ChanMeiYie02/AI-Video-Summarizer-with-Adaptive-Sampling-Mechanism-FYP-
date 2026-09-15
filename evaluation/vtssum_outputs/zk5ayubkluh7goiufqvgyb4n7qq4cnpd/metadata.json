@@ -1,0 +1,21 @@
+{
+    "id": "zk5ayubkluh7goiufqvgyb4n7qq4cnpd",
+    "title": "Computing Geo-Spatial Motives from Linked Data for Search-driven Applications",
+    "url": "http://videolectures.net/eswc2015_both_linked_data/",
+    "info": {
+        "author": [
+            "Andreas Both, Unister Holding GmbH"
+        ],
+        "published": "July 15, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 195,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 1287
+}

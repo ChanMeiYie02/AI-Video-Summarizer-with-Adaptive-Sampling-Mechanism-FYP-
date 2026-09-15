@@ -1,0 +1,20 @@
+{
+    "id": "b2qsg4vx3gb26yoktg36xu3372wrzvck",
+    "title": "Adoption of Linked Data Best Practices in Different Topical Domains",
+    "url": "http://videolectures.net/iswc2014_bizer_topical_domains/",
+    "info": {
+        "author": [
+            "Christian Bizer, Department of Information Systems, Freie Universität Berlin"
+        ],
+        "published": "Dec. 19, 2014",
+        "recorded": "October 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 178,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 3271
+}

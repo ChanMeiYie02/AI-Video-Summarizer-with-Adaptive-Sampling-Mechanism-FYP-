@@ -1,0 +1,87 @@
+[
+    {
+        "text": "I'm speaking for John and Dan. My name here on the slide is just the cause when he explained this to me so that I will talk about it. I had some comments, so we decided that they should put my name too, but this is an outcome of agreeing to talk about it, not the reason that I was I'm talking about. OK, so the the idea is that it relates to the.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Talk about two that we had earlier this morning. The problem is that there are many, many tasks in which you would like to learn a probability distribution. But as we know from the work that but we talked about this is impossible. I mean, it's too hard. You cannot learn distributions from samples. So the question is, what aspects of the distributions? And such that on one hand, so we want if you just want to do rather than learning a distribution, just learn some to predict some function. Then we know that we can do it. We have all the theory of classification to do it. So the question is, can we find some kind of a compromise? We don't want to learn the distribution fully, but we don't want just to concentrate on one task wants to learn some aspects of the distribution that will allow us to perform. A collection of tasks, so somewhere between just learning classification function and learning the complete distribution, which this is impossible, this is doable. We want something in between. So.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "The idea. OK so here is. There is an example here which I don't know how useful it is. It mate looks a bit more complicated than the issue that it comes to demonstrate, but here you are trying to learn one tasks distributions by one class SVM and you can say that if you require constraint that the sum of coefficients of your kernel is 1 then you can view the kernel as a probability distribution and the. Task of learning distribution can be translated into the task of learning account.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "And then it turns out this problem of one class SVM was addressed by. Imagery and and vapnik and they were trying to learn the full class. They were trying to. An and put constraints that. Imposed on the kernel to represent the full distribution over the sample, and it turns out that if we put less and less, if we look at the number of constraints that they put in distribution, we're trying to make the kernel reflect exactly distribution, and in order to do that we have to put on the kernel and number of constraints which corresponds to the number of sample points, and that if we look at the error of the kernel as a presentation of the distribution as the number of constraints go grow, we see that. Rather than needing the full number of constraints with the sample size, we can get pretty good approximation to distribution, which much less constraints and in some sense that was the I think the motivation of John for looking at this notion of just approximating the probability distribution rather than learning it precisely, but that's just.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Example, and I think that the definition is more clear so. Definition The key notion is this notion of attached. Touchstone, Touchstone, class so attached or class is. A class of you have a collection of functions. And these are the functions that you are interested in being able to estimate. So rather than trying to learn a probability distribution, I say I want to learn a collection of functions over this space. I want to be able to estimate all of those functions, and I want to learn the probability distribution just to the extent that I can carry out all the tasks, estimating all the functions in F. On top of it, what he also adds is a probability solution over F. In some sense, it tells you how important are the different functions. Maybe I don't need to know to approximate in the same quality all of the functions, but some functions are more important than others and I want to be able to approximate them better. Others I don't care about having else, so I have a class of functions. This is what I want to conclude to know about the distribution and have a distribution about over this class of functions, which is some kind of kind of. Prior, what task from F is going to occur and now? If we are, we have an unknown probability distribution. And we have some approximation by say, a final sample. We will say that the error of this approximation is the expected over this version of the functions of the error that we make on each of the functions. So again, we want to learn a probability distribution, but we say this is too difficult. Rather than learning is a distribution, we have a class of tasks that we want to perform and we want to take a sample P head and say this sample performs well with respect to this collection of functions. If the expectation this is over the probability, I'll pick each function of the error that I make in estimating F from the sample. This is estimated from the sample this is. If itself, if this this. Expectation is my arrow. And with respect to this sample, so this error is with respect to the function class F and to the probability over these functions PF. And now what we want to show is that when we what conditions over the class of functions F suffice to guarantee that we can have low error in this sense. So we know that if the function F is the class of all measurable functions of our space, this is impossible. These are the results of not being able to learn a probability function. We know that if the class F contains just one function, then we can do it. So we want to find conditions on F that will allow us to approximate it from.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Spinal samples here is an example that if I have here a distribution, that's my probability distribution and what the class of functions that I'm trying to learn is the probabilities of the corners. So I take a corner, which is what it is. In the first quadrant, I take such a corner and I want to be able. My class is the class of all possible such corners. And it turns out that in this case I can from finite sample estimate, uniformly the probability of all of those corners, although it will not be possible to estimate the probability distribution itself. So my hour. Estimation for a corner will be just the number of points here in this corner. I have three points, so my estimated for the weight of this corner in this distribution would be 3 over the number of sample points ahead.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "An another, so this is a reference from John to the talk that I'll have in the afternoon. So we define we were looking at the problem of trying to do change detection in streaming data. So you have a stream of real values and it's generated by some distribution and you want to be able to detect when does this underlying distribution that generates the data. When does it change? For example, you see prices in the stock market. You want to know when does the trend in the stock market change and you're just watching those numbers as they come so. 4222 solve this problem. We developed this notion of some restricted distance between two distributions that I'll talk about in the afternoon and this is we have some kind of attached own class. The class of subsets that interest us and we just look at the Super moon of the difference between the two distributions over members of this class. And this could be viewed as a particular instantiation of this general framework of touchstone class and probability over it. And similarly, the given quantity of ambiguity and is a famous theorem tells you that you can estimate the probability of all intervals on the line uniformly for every every probability solution. For every interval of the line, if you count the number of points that fell in this interval and divided by the sample size, you get a pretty good estimate of the probability of this interval, and you can bound the. The quality of the approximation, regardless of what the distribution is, that even clarity remain. This could also be seen as a particular instantiation of this general approach.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Yeah, and we can talk about so another one is you take you have functions which are we have class of functions over with the same binary vectors of values and we want to know what are the marginals when we project them to a subset of the variables and fix the value in the variables. So it's like you have a set of each function is you can think of it as a string and now you only want to estimate the probability of all the strings that. I hold my I hold a bunch of strings like this. All the strings that on those coordinates path through my fist and anywhere else they go anyway they like and I want to estimate the probability of this set of strings. So these are the kind of things that that you can do with this touchdown class. How well I haven't started yet, OK?",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And so the role of so basically what I'd have would be able to say, just describe the problem to you and maybe the main result so. But the one of the distribution is a set is somehow reflects which function we think we are more likely to need to approximate well, and the we can take. The uniform distribution is just as if we don't have any information and we can take the more knowledgeable distributions if we know which functions are more likely to occur in our tasks.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And now we can define the learnability of such a touchstone class. So we have a class of functions, and we have a distribution over it, and we want to define a notion of learnability an we say that touched on class is learnable. If we can have a uniform convergence rate for the approximation of all the functions of all the functions in this class.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "And then. The 1st result is that one can characterize this learnability in terms of the Rademacher complexity of this touchtone class, so this is an object that we can well define, and it's not difficult to see that if we do have abounded random complexitiy, then we can learn a class of functions in this respect.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "And then.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "The 2nd result is that. Right, so the 2nd result gives you a condition on when can you bound this random complexity and this is for the case that our functions are kernels. So if you have a family of kernels and we want to, this is called the support vector density estimation and we want to use them to estimate a probability distribution, then we have here abound on the router market complexity in terms of the bound on the norm of the kernels. So putting those two results together tells us that in this case we can learn a class of kernels. So if we have a bound with rather more complexity, 1st result said that we can learn it in terms of a bound on the other one capacity and the 2nd result says that for this type of functions we can bound the Rademacher complexity and therefore we can learn classes of support vector machine, estimations of probability distribution and let me just jump to the conclusion.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So the comparison is equivalent. Classes are classes over which we have uniform convergence, and this is what we use. The fat shattering dimension for. That's the work of. Alone at all, which myself included in there at all. And here there is a comparison which tells you that these two approaches, kind of independent. None of them includes the other glyphicon teleclasses contain things which cannot be learned, as in this framework. In this framework can capture things which cannot reach an article, then cantelli classes, but I don't have time to explain what given container class.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So. And they are.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Paraments that showed.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "This works very nice in practice, so in summary, we introduced a new framework for learning family of task over distribution and there is the theoretical justification for this approach and experiments that show that it really works in practice. Thank you.",
+        "start": 464.0,
+        "end": 493.0
+    }
+]

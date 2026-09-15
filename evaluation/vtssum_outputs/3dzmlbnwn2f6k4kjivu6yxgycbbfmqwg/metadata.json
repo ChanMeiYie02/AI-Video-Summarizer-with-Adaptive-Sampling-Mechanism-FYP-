@@ -1,0 +1,21 @@
+{
+    "id": "3dzmlbnwn2f6k4kjivu6yxgycbbfmqwg",
+    "title": "Metabolite identification and molecular fingerprint prediction via machine learning",
+    "url": "http://videolectures.net/mlsb2012_heinonen_metabolite/",
+    "info": {
+        "author": [
+            "Markus Heinonen, Department of Computer Science, University of Helsinki"
+        ],
+        "published": "Oct. 23, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods",
+            "Top->Biology->Molecular Biology"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 332,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 55,
+    "ground_truth_summary_length_chars": 4110
+}

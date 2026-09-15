@@ -1,0 +1,22 @@
+{
+    "id": "up2kyqqm62lqd5rhng2njnrckyiqzefg",
+    "title": "Introduction to Theano",
+    "url": "http://videolectures.net/deeplearning2016_lamblin_theano/",
+    "info": {
+        "author": [
+            "Pascal Lamblin, Department of Computer Science and Operations Research, University of Montreal"
+        ],
+        "published": "Aug. 23, 2016",
+        "recorded": "August 2016",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 60,
+    "num_sentences": 745,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 79,
+    "ground_truth_summary_length_chars": 7857
+}

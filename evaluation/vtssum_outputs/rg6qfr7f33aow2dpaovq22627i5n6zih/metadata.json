@@ -1,0 +1,20 @@
+{
+    "id": "rg6qfr7f33aow2dpaovq22627i5n6zih",
+    "title": "Stochastic Dual Coordinate Ascent Methods for Regularized Loss Minimization",
+    "url": "http://videolectures.net/nipsworkshops2012_shalev_shwartz_minimization/",
+    "info": {
+        "author": [
+            "Shai Shalev-Shwartz, School of Computer Science and Engineering, The Hebrew University of Jerusalem"
+        ],
+        "published": "Jan. 16, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Optimization Methods"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 173,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2589
+}

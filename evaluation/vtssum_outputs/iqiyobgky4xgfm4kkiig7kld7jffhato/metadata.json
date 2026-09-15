@@ -1,0 +1,21 @@
+{
+    "id": "iqiyobgky4xgfm4kkiig7kld7jffhato",
+    "title": "Strategies for future power-trains",
+    "url": "http://videolectures.net/tra08_steiger_sfp/",
+    "info": {
+        "author": [
+            "Wolfgang Steiger, Volkswagen AG"
+        ],
+        "published": "May 21, 2008",
+        "recorded": "April 2008",
+        "category": [
+            "Top->Environment",
+            "Top->Business->Transportation and Logistics->Technology"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 212,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1176
+}

@@ -1,0 +1,24 @@
+{
+    "id": "dby36xnl7jweeole7xzof6vhdtcwo2le",
+    "title": "Emergence of Power Laws",
+    "url": "http://videolectures.net/NTUcomplexity2017_thurner_power_laws_emergence/",
+    "info": {
+        "author": [
+            "Stefan Thurner, Section for Science of Complex Systems, Medical University of Vienna"
+        ],
+        "published": "April 3, 2017",
+        "recorded": "March 2017",
+        "category": [
+            "Top->Science->Complexity Science",
+            "Top->Computer Science",
+            "Top->Data Science",
+            "Top->Mathematics",
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 81,
+    "num_sentences": 841,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 2201
+}

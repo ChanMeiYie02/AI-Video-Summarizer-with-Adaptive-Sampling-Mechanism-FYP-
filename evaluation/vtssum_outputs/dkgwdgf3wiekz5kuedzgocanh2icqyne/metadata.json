@@ -1,0 +1,20 @@
+{
+    "id": "dkgwdgf3wiekz5kuedzgocanh2icqyne",
+    "title": "The SEPSES knowledge graph: An integrated resource for cybersecurity",
+    "url": "http://videolectures.net/iswc2019_kiesling_sepses_knowledge_graph/",
+    "info": {
+        "author": [
+            "Elmar Kiesling, TU WIEN"
+        ],
+        "published": "Nov. 27, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 182,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1228
+}

@@ -1,0 +1,262 @@
+[
+    {
+        "text": "Hi, will this talk is an image segmentation for the Pascal competition.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "In the Pascal competition we have 20 object categories plus a background class and this work is on how we do, how we might do that with the help of object detection.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Others. So the big picture is this. We instead of going straight from a photograph to a segmentation, we run a detector for every category and try to use the bounding boxes in conjunction with the pixel information from the original image to then somehow work torda segmentation. Furthermore, we use.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Part based detectors. So that in addition.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "To the root bounding boxes we also get part bounding boxes and we try to use all of those to work toward a segmentation. Now the big problem with this, when you actually try and do this, you run into the problem that the bounding boxes overlap, just like in this picture. This is a big problem because then a pixel can be has. The can be claimed by potentially many detections. Now, the way that we deal with this, the primary step that we take Tord dealing with this problem is that we use a layered representation.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Or object detections. So what does that even mean? It just means we get the object detections and we order them by depth from the camera. Just like how you have ordered layers in a paint program like Adobe Photoshop, it's exactly the same concept, but of course this immediately begs the question, how do you? How do you know the correct ordering? How do we know that the horses in front of the woman, for example, and I'll get to that little a little bit later on? But for now I want to mention.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "I want to say a quick word about related work. There's a wide variety of related work on combining segmentation and recognition. And Furthermore, there's also a line of work on layered models like our own, starting with Wing and Adelson in 1994. This has been pursued primarily in the video domain. For us, however, we are, as you know.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "King with static images. So step number one for us. Then as we run detectors for every category over the image. Now. Another problem with this is that the the local detectors. Output scores that are not comperable across object categories. So we seek to remedy this by finding by kind of calibrating the detectors and the way we do this is we. Find thresholds for each detector that maximize segmentation accuracy and we create segmentations straight from from the detections kind of making these box segmentations. As you can see.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And we find that the optimal thresholds for each. Object detector varies widely across the classes, and now with these new detector thresholds we can kind of use it as a new bias term in a way so that hopefully the detectors are calibrated in some sense.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So that's so we're done with detector calibration and no. So now we can go back to what we're here to do, which is segmentation. And so before I go on, I kind of want to give some intuition for how we approach the problem. What we do is well, when we work toward multiclass segmentation, when we're looking at a.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Google Pixel, we don't try to find that pixels class label, at least not directly. Rather what we do is we try to find to which layer that pixel belongs or which picks which layer it comes from. Alright, so let's focus on a single pixel just for this example. So Pixel I now to allow for background pixels. We just pretend that there's a background detection. That's all the way in the back. Alright, it's this background layer that we just define into existence and then. We model the layer assignment of pixel I as a random variable ZI, so that means.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Zi could be 0.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "It could be one.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Or it could be 2. Now, if you repeat this kind of layer assignment for all.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "I then maybe you'll get something like this now. Something to notice here is that color could be really useful here, and in fact we could loop over all the layers and learn about the color distribution.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Each and now this is really useful. For example, in say, we could see this portion right here and we could say, given the dominance of red and given the color models, it probably should have been assigned over to layer one. So that's the into it.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "And now I want to delve into the mathematical machinery that we use for the problem, which is basically everything I just showed you. But in some symbolic form rather than in picture form. So we're after the most probable layer assignments, right? So what that means is we want the Z vector that just maximizes that term right there, where X are the RGB values for the pixels, Theta are the color models like I showed you in the picture, and D pie are the order detection's. Just like I showed you in the picture. Now the way we compute this term is. First and foremost, we make a independence assumption so that it breaks down into a product over pixels, and then the term for each pixel further breaks down into two more terms shape turn, which is the probability of our particular layer assignment given just the detections, no color or anything like that, and then the next is the color likelihood term, which is the probability of seeing that pixels color given the color model for the for the layer assignment that you make. So if XI is maybe a reddish kind of color. Given the data for the card for the car layer, it'll probably be a high value. If it's data for the Theta for background, maybe it'll be a little bit lower. So we do.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Inference by coordinate descent. This is actually just like in the picture. We make layer assignments. And then given those layer assignments, we loop over the detections and fit color models to the layers and then with those color models, we can further refine our chip away at our initial Z estimate. And then with that we can go back and learn color models again. And then just refine Z again and just keep doing that until convergence.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So far so good, but. Right now all I've done is layer assignments and color and shape, but there's nothing about any kind of use of any kind of bottom up grouping constraints like such as the presence of contours, separating object boundaries, and the way we make use of that kind of information is that we run a segmentation engine over the image, and then we require that all pixels within a superpixel share the exact same label. I.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "And so that amounts to the following. We just do exactly the same thing, but we constrain Z to live in this set of pixel labelings consistent with the superpixel image. So I've shown you the inference procedure, but I haven't actually showed you how we even compute those orange and blue terms right there, so I want to get into that now the color term is easy to handle, we just build RGB histograms for each layer. Then you look up in the histogram and you're done. You have the probability, but the shape term on the other.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "It is a lot more complicated, alot trickier to deal with. So for that first step is to learn shape priors. So the way we build shape priors is I'm going to focus on the person category for now. We run the person detector over the whole training set and we grab the the true positive detections and then we kind of average the ground truth segmentations and so we end up with the shape prior for.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Person class, but that's not everything we do because we're called that we are using a part based detector and so we can go through the exact same procedure.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Build prior shape priors for the parts and Furthermore. The detector outputs one of two mixture components and so we.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Can do the exact same thing for both mixture components.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Now we repeat this process.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Building shape priors for all the classes.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "You notice that they. Shape priors for the parts are in general more clean than the than are the root shape priors. For example, on the upper right you can see the legs, whereas in the root prior you really.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Can't. Here it is for the bottle of class. There's not much intraclass variability within the bottle category, but you can see that it would be kind of helpful, because if the bottle is large, then maybe the parts can kind of hone in on those, and so you have a shape prior that's more kind of tuned to that particular in.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "So now we have the shape priors and that's all we need. Now we can go and build this distribution that we were after and to do that, we do so iteratively. We start from back to front an. I'm going to illustrate that with this picture and these detections.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "And I'm going to look at one pixel in particular to illustrate the process. So as I said, we start from back to front, so we're at the back and all we know of is the background layer. So then that means pixel I is background with probability one, so it has the following distribution. And so now we.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Move up another step 'cause we're going from back to front and we encounter a person detection and thanks to that persons. Thanks to the person shape prior, we believe that that person occupies that region of space with probability, let's say .9. So that means that this pixel is goes to the background detection for the background layer with probability 1 -- .9 zero point 1.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "So now we take another step forward toward the camera and we believe that this person hits that region of space with probability, let's say 0.01, because it's far away and that's what the shape prior tells us. And so that means that the other two terms get multiplied by 1 -- .01 or .99.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "We continue in this match.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Owner until we.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Hit the front most detection. Now something to notice here is that the car is rather blurry, right? You can't really make out any kind of form so.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "We can do the exact same thing, but making use of parts.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "We make use of parts by.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Pasting the shape right?",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "As for the parts right on top of the shape.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Prior for the roots. And as you can see in the end we have a layer distribution which is kind of more tuned to the particular instances. In this image like you can see the tires for example, so it's tuned more for this car rather than the car class in general. So at this point I've showed the inference procedure and how we compute those two terms. So I've shown everything except for how we actually get that. Ordering the depth ordering Pi, the permutation and so the secret to computing that.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Is. There is no secret. We just try every single permutation. So what that means is we start with one permutation, find the best Z for that permutation, and remember it. Now go to the next permutation, do the exact same thing and just do that for all the permutations. And remember the best that you ever found. And use that to construct the final segmentation.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "So I want to show some results now that was the whole model. The. Legend in the lower left indicates the pixels indicates the class that we mark the pixels with. Black means background.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "So this image on the left is a special one in that it illustrates something. It illustrates. Kind of the linking of disjoint object segments separated by an occluder. So for example, we would never interpret this as one large horse with three tiny horses at the bottom. We know because they're assigned to the same layer that it's part of 1 horse instance. And the the image on the right is important because it shows how our model correctly layered the table in front of the person.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Here is some examples. Here are some examples of. Our model segmenting images with many people interacting with multiple objects we tend, we turned. It turned out that we did very well on the person category.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "And here are some examples with. People with different kinds of bikes in the bottom image you can notice that it correctly put the person's leg in front of the motorcycle.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "So here are results on the segmentation challenge. I unfortunately don't have time to go through it in detail, but the gist of it is that. We tend to do very well where the detector does well.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "But here's the more important analysis. This is kind of a breakdown of our performance on the competition, and in it the each column corresponds to our performance after just removing some portion of the code and seeing what happens. So finding that portion of the code and basically commenting it out and seeing what happens. And this yields some really nice insights, like for example the bicycle or super pixels are useful for segmenting bikes. This makes sense because kind of the low level segmentation cues are useful for kind of getting those high contrast beams of metal that make up bicycles. The color the color models are useful for people. Because you know, people wear different colored clothing and that helps kind of link those pieces together and on the bottom we can notice our average performance across all classes and we find that every component, the color superpixel and parts given improvement in general, but the ordering doesn't seem to play a big role, but there's.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Reasoning for that, there's a reason for that, excuse me. And the reason is. First and foremost, let me go back one.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Step when we did this, no ordering. Test. What that means is that rather than searching over orderings, what we did was we just ordered them according to detector score.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "That's already kind of helpful because detectors tend to have high confidence on unoccluded objects, and so when you order by detector score that tends to be that tends to perform reasonably well. And. The primary reason though, is that on the Pascal competition, most images have just one object, and then when there are more within one object and when those objects overlap, they typically are of the same class. You always see people overlapping with people. You always see sheep overlapping with sheep, but you hardly ever see people overlapping with sheep, for example. And so when it's two objects of the same category overlapping each other. What that means is. Then the order that you render them on it makes no difference in the final segmentation because we're making class segmentations rather than object segmentations.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "And so this is the end and in conclusion. What I've done is what I've given is. I've proposed a simple kind of layered model. For sending object detections into segmentations. And this, and in doing so, we're able to kind of leverage the performance of very powerful discriminatively trained detectors as well as sophisticated low level segmentation algorithms. And. Despite the simplicity of the model, we were able to perform rather well on the Pascal competition. Getting first place in. Some categories, including segmenting humans.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Thank you.",
+        "start": 1479.0,
+        "end": 1508.0
+    }
+]

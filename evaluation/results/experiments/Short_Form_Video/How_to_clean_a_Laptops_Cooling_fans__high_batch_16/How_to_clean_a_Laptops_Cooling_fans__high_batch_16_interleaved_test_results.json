@@ -1,0 +1,173 @@
+[
+    {
+        "chunk_id": 0,
+        "start_sec": 0.0,
+        "end_sec": 29.0,
+        "included_frames": [
+            "frame_0103.jpg"
+        ],
+        "analysis": "The video begins with a view of a laptop and a monitor. The speaker greets the audience and introduces the topic: cleaning the cooling fans on the laptop. The speaker instructs the viewer to start by making sure the device is powered down, and then demonstrates turning it off. After confirming it's powered down, the speaker mentions that they will flip the laptop over to begin the cleaning process."
+    },
+    {
+        "chunk_id": 1,
+        "start_sec": 29.0,
+        "end_sec": 58.0,
+        "included_frames": [
+            "frame_0121.jpg",
+            "frame_0140.jpg"
+        ],
+        "analysis": "The video shows a close-up of a laptop on a wooden desk. The screen displays a dark background with the text \"MR.DARKCORE\" in white. A hand is visible in the upper right corner.\n\nThe audio discusses removing the back panel of the laptop. The speaker states, \"Removing the back panel. So the first thing I'm going to do is I'm going to take this Philips head screwdriver to remove the seven screws which hold the back panel on.\"\n\nThe visual evidence supports the audio, as the laptop is positioned for disassembly, and the discussion is focused on the physical task of removing the back panel using a screwdriver."
+    },
+    {
+        "chunk_id": 2,
+        "start_sec": 58.0,
+        "end_sec": 87.0,
+        "included_frames": [
+            "frame_0250.jpg"
+        ],
+        "analysis": "The video shows a person interacting with a laptop and a small guitar-like object. The person is holding a blue object, which they refer to as a \"little guitar-lookin' pick thing.\" They are placing this object into a groove behind the computer where the laptop meets the backplate. The speaker explains that they will continue working around to pop all the little clips in the back, and eventually, the object should work itself off. The video concludes with a shot of the laptop and the area where the object was inserted."
+    },
+    {
+        "chunk_id": 3,
+        "start_sec": 87.0,
+        "end_sec": 116.0,
+        "included_frames": [
+            "frame_0389.jpg",
+            "frame_0455.jpg"
+        ],
+        "analysis": "The video shows a close-up of a computer's internal components, specifically the motherboard, cooling fans, and a battery.\n\n**Visuals:**\n*   The initial frames display a view of the computer's interior, highlighting the motherboard with various components, including CPU cooler fans and RAM slots.\n*   A battery is visible, and a hand is shown interacting with the components.\n*   The video transitions to a section where a battery is being disconnected.\n*   The final visible frame shows the cooling fans, which the speaker mentions cleaning.\n\n**Audio Summary:**\nThe speaker is providing instructions on how to perform maintenance on the computer. They instruct the viewer to first **unhook the battery** located in the area shown. They then direct the viewer to follow a specific wire in the back and to **\"shimmy it way out pretty much.\"** After this action, the speaker confirms that **\"the battery is disconnected.\"** Finally, the speaker points out the **cooling fans** and mentions that they have already cleaned one to ensure proper cooling."
+    },
+    {
+        "chunk_id": 4,
+        "start_sec": 116.0,
+        "end_sec": 145.0,
+        "included_frames": [],
+        "analysis": "So, but I have to take this one out anyways to remove this one. So, let's start with that. There's a little cable right here. I'll just pretty much go and pop it off. And this fan is held down by three screws, so so one right here, and another one right here. Okay."
+    },
+    {
+        "chunk_id": 5,
+        "start_sec": 145.0,
+        "end_sec": 174.0,
+        "included_frames": [
+            "frame_0597.jpg"
+        ],
+        "analysis": "The video shows a close-up of a computer's internal components, specifically a motherboard with two cooling fans mounted on it. The speaker is discussing the fans, stating, \"And the last one's great here.\" They then observe that one fan is pulling out, and the speaker notes, \"Yeah, it's pretty much pulls out like that.\" The speaker then explains that since they have already removed one fan, the remaining one is only held down by one screw, implying it will only have two screws in total. Finally, the speaker says, \"But first let's...\""
+    },
+    {
+        "chunk_id": 6,
+        "start_sec": 174.0,
+        "end_sec": 203.0,
+        "included_frames": [
+            "frame_0741.jpg",
+            "frame_0773.jpg"
+        ],
+        "analysis": "The video shows a close-up of a person's hand working on a piece of electronic equipment, likely a computer or a similar device.\n\n**Visuals:**\n*   **Frame 1:** A hand is holding a component, possibly a part of a device, and appears to be manipulating it. In the background, there is a visible circuit board or internal component.\n*   **Frame 2:** A hand is holding a fan-like component (which appears to be a cooling fan) and is connecting wires to it. The person is then looking at the fan, and the camera focuses on the fan, which has visible dust on it.\n\n**Audio Summary:**\nThe audio discusses the process of cleaning the equipment. The speaker instructs the viewer to \"connect the wires out of it,\" and then points to the fan, noting that \"you can actually see there's dust sticking around here.\" The speaker then explains the cleaning method: \"so I'm going to use some isopropyl alcohol and some Q-tips and pretty much just start scrubbing it.\"\n\n**Consolidated Summary:**\nThe video demonstrates a step in cleaning an electronic device. The visuals show a hand manipulating components and then connecting wires to a cooling fan. The audio narrates this process, instructing the viewer to connect the wires and pointing out the dust on the fan. The speaker then details the cleaning procedure, stating they will use isopropyl alcohol and Q-tips to scrub the dust off."
+    },
+    {
+        "chunk_id": 7,
+        "start_sec": 203.0,
+        "end_sec": 232.0,
+        "included_frames": [
+            "frame_0849.jpg",
+            "frame_0917.jpg"
+        ],
+        "analysis": "The video shows a close-up of someone cleaning a fan. In the first frame, a hand is holding a fan, and another hand is using a white stick to clean the fan's blades or housing. The second frame shows the fan being held, and a hand is touching the fan, with a voiceover stating, \"Okay so this fan actually looks pretty good now. Got a lot of the build-up of dust off there so...\"\n\nIn summary, the video depicts the process of cleaning a fan, with the visual action of using a stick to clean the fan coinciding with a verbal comment about the fan looking good after removing dust."
+    },
+    {
+        "chunk_id": 8,
+        "start_sec": 232.0,
+        "end_sec": 261.0,
+        "included_frames": [
+            "frame_0995.jpg"
+        ],
+        "analysis": "The video shows a person cleaning a laptop. The person is wiping dust off the laptop's interior, as they mention they are going to \"pretty much clean the laptop\" because there is some dust visible. They are focused on removing the dust from the system. The person also mentions that they had another video planned but accidentally deleted one while recording a previous video about file management."
+    },
+    {
+        "chunk_id": 9,
+        "start_sec": 261.0,
+        "end_sec": 290.0,
+        "included_frames": [
+            "frame_1061.jpg",
+            "frame_1089.jpg"
+        ],
+        "analysis": "The video shows a close-up of a computer motherboard being worked on.\n\n**Visuals:**\n*   The first frame shows a hand holding a small tool, seemingly manipulating a component on the motherboard.\n*   The second frame shows the same hand using a tool to interact with a small tab or connector on the motherboard.\n*   The overall scene is focused on the intricate components of a computer's main board.\n\n**Audio Summary:**\nThe audio discusses the process of repairing or upgrading a computer, specifically mentioning:\n*   The need to apply new thermal paste to the CPU and GPU.\n*   The possibility of redoing the work if a board is got.\n*   The importance of the correct reinstallation order for fans, noting that they cannot be placed back in randomly due to specific tabs or connectors on the board.\n\n**Consolidated Summary:**\nThe video visually demonstrates a hands-on repair or maintenance procedure on a computer motherboard. The audio narration explains the technical steps involved, such as applying thermal paste to the CPU and GPU, and emphasizes the critical importance of installing components like fans in the correct sequence, referencing specific tabs on the board to ensure proper function."
+    },
+    {
+        "chunk_id": 10,
+        "start_sec": 290.0,
+        "end_sec": 319.0,
+        "included_frames": [
+            "frame_1219.jpg"
+        ],
+        "analysis": "The video shows a close-up of someone working on a computer's internal components, likely a laptop or desktop. A hand is manipulating a part of the device, and the screen displays a circuit board with various components.\n\nThe audio discusses a procedure for reassembling or adjusting a component. The speaker explains that a certain part is meant to go \"underneath of it\" and then instructs to put a fan back in first, after repositioning a wire. The speaker then suggests that technically, both components could be placed in a certain way.\n\nIn summary, the video visually demonstrates a hands-on technical task involving internal computer hardware, while the audio provides step-by-step instructions and explanations for the procedure being performed."
+    },
+    {
+        "chunk_id": 11,
+        "start_sec": 319.0,
+        "end_sec": 348.0,
+        "included_frames": [
+            "frame_1349.jpg"
+        ],
+        "analysis": "The video shows a close-up of a computer motherboard. A hand is visible in the frame, interacting with the components. The speaker is instructing the viewer on how to reassemble the computer. The speaker says, \"So now I'm just going to take the screws and very much fasten them back down. I'll actually start with this one.\" The video then shows the speaker fastening down the fans on the motherboard. The speaker continues, \"Right, so the fans are fastened back down, so all you got to do now is plug back in these little...\""
+    },
+    {
+        "chunk_id": 12,
+        "start_sec": 348.0,
+        "end_sec": 377.0,
+        "included_frames": [
+            "frame_1400.jpg",
+            "frame_1457.jpg",
+            "frame_1496.jpg"
+        ],
+        "analysis": "The video shows a process of opening and working on the internal components of a laptop.\n\n**Visual Analysis:**\n*   **Frame 1:** Shows a close-up of a laptop's internal components, including a motherboard, various cables, and what appears to be a hard drive or similar component. A hand is visible on the right, seemingly interacting with the components.\n*   **Frame 2:** Focuses on a section of the motherboard and other internal parts. A hand is shown manipulating a component, possibly a connector or cable.\n*   **Frame 3:** Shows a close-up of the bottom of the laptop, revealing a fan header and a battery. A hand is using a pen or tool to point at the battery area.\n\n**Audio Analysis (Based on the provided transcript):**\nThe audio discusses the steps involved in the repair or maintenance process:\n1.  The speaker mentions \"fan headers\" and notes that they are \"pretty much going one way.\"\n2.  The speaker then instructs the viewer to turn the laptop around.\n3.  The final instruction is to \"hook back up the battery,\" suggesting the next step is to reinsert the battery.\n\n**Consolidated Summary:**\nThe video demonstrates a technical procedure, likely a repair or upgrade, on a laptop's internal hardware. The visuals show the user working on the motherboard and other internal parts, including fans and connectors. The accompanying audio guides the viewer through the steps, first addressing fan headers, then instructing the user to turn the laptop over, and finally telling them to reconnect the battery."
+    },
+    {
+        "chunk_id": 13,
+        "start_sec": 377.0,
+        "end_sec": 406.0,
+        "included_frames": [
+            "frame_1561.jpg",
+            "frame_1620.jpg"
+        ],
+        "analysis": "The video shows a close-up of the internal components of a laptop, specifically the motherboard and cooling system, followed by a person holding and examining the laptop's exterior.\n\n**Visuals:**\nThe first frame displays a detailed view of a laptop's interior, showing the motherboard, various components, and cooling fans. The second frame shows a person's hands holding the back panel of a black laptop, which has the \"Pavilion\" logo visible on the lid.\n\n**Audio Summary:**\nThe audio discusses the cleaning and maintenance of the laptop. The speaker mentions that the cleaning is \"pretty much done\" and that the laptop is \"pretty much clean.\" They state that new thermal paste and cleaning of the fan were performed to help keep the laptop cool. The speaker concludes by explaining the next steps: taking the back panel off, reassembling it, and pushing down around the outside of it.\n\n**Consolidated Summary:**\nThe video begins by showing the detailed internal components of a laptop, including the motherboard and cooling system. The audio then explains that the cleaning process is complete, noting that new thermal paste and fan cleaning were done to improve cooling. The speaker concludes by outlining the final steps for reassembly: removing the back panel, putting it back on, and pressing down around the exterior."
+    },
+    {
+        "chunk_id": 14,
+        "start_sec": 406.0,
+        "end_sec": 435.0,
+        "included_frames": [
+            "frame_1673.jpg",
+            "frame_1728.jpg"
+        ],
+        "analysis": "The video shows a close-up of a person working on a black electronic device, likely a laptop, on a wooden surface.\n\n**Visuals:**\n*   **Frame 1:** A hand is visible on the top right, seemingly interacting with the device. The device itself is black with a greenish-gray bottom edge.\n*   **Frame 2:** A hand is actively engaged with the bottom edge of the device. A finger is visible near a screw or a point of assembly. Another hand is visible in the background, holding a small white object (possibly a tool or a screw).\n\n**Audio Summary (Based on the provided transcript):**\nThe audio discusses assembly or repair steps for the device. Key points mentioned include:\n*   \"Make sure that is pretty much right up against the other side of the plastic so your screws line back up.\"\n*   \"And take your longer screws, put them in the back.\"\n*   \"Oh yeah. I don't know if you can see that that well, there's blue stuff on here. That is actually loctite.\"\n\n**Consolidated Summary:**\nThe video sequence depicts a hands-on process of assembling or repairing a black electronic device. The visuals show hands manipulating the device, with one hand near the bottom edge and another hand in the background. The accompanying audio provides instructions for this task, specifically guiding the user to align screws against the plastic and to use \"loctite\" (blue stuff) for securing parts, particularly the longer screws placed in the back."
+    },
+    {
+        "chunk_id": 15,
+        "start_sec": 435.0,
+        "end_sec": 464.0,
+        "included_frames": [
+            "frame_1764.jpg",
+            "frame_1790.jpg"
+        ],
+        "analysis": "The video shows a close-up of a laptop, specifically its bottom panel, resting on a wooden surface.\n\nIn the first frame, the laptop is visible, and a hand is holding a small tool (possibly a screwdriver) near the top edge of the laptop, suggesting a maintenance or repair activity is in progress.\n\nIn the second frame, the laptop is shown again, and the audio discusses securing the screws to prevent them from loosening during travel or use. The speaker then mentions that since everything is reassembled, the next step is to apply thermal paste.\n\nIn summary, the video depicts the process of assembling or repairing a laptop, with the audio providing instructions on securing components and the subsequent step of applying thermal paste."
+    },
+    {
+        "chunk_id": 16,
+        "start_sec": 464.0,
+        "end_sec": 493.0,
+        "included_frames": [
+            "frame_1858.jpg",
+            "frame_1956.jpg"
+        ],
+        "analysis": "The video begins with a close-up shot of a person's hand interacting with a laptop on a wooden desk. The hand is visible as it moves across the surface, suggesting an action is taking place.\n\nThe audio begins with the speaker saying, \"So, open up your laptop and just pretty much make sure it powers on.\" This is immediately followed by a visual confirmation: the laptop screen is shown as powered on and displaying something, with the speaker stating, \"As you can see here, it is powered on and it's back to normal so yay, I'm done.\"\n\nThe video then transitions to a wider shot of the speaker, who is looking directly at the camera. The background shows a room with windows and furniture. The speaker continues, \"So that's going to be it for today's video and I hope you enjoyed it and if you did, please drop a like and if you have any questions, comments, concerns or even suggestions, please leave them down below.\""
+    },
+    {
+        "chunk_id": 17,
+        "start_sec": 493.0,
+        "end_sec": 522.0,
+        "included_frames": [
+            "frame_2061.jpg"
+        ],
+        "analysis": "The video begins with the text \"THANKS FOR WATCHING!\" displayed on a black screen. Following this, a voiceover begins, asking viewers to consider subscribing to the channel if they enjoy the content, stating that it would help the creator a lot. The voiceover concludes with \"and I guess that's it, so until the next one. Thanks and bye.\" The screen remains black after the voiceover finishes."
+    }
+]

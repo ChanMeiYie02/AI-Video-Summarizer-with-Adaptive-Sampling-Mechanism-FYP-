@@ -1,0 +1,257 @@
+[
+    {
+        "text": "OK, thank you for the introduction. So my name is Samuel Peltier. I did my PhD mostly in regarding computation of emoji groups and since one year now I am at prep and work together on this new approach and we present now a common work. So with Adrian. Action game Daniel homesick. So the this talk with focused mainly about.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "The topology Ann where we'll see that within this context is 2 objects really look like the thing.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So let me know, have a look at the outlook of this talk. So first of all I will recall some topological backgrounds, but topological properties. Then I will present a graphical method for computing amaji generators and explain the main drawbacks of this method and then give some motivation about why using homology within computer vision context after that will prevent. Our new method, which is based on the use of pyramids and I will show that this new method overcomes the main drawback of the graphical method and I will show some experiments for 2D images.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "OK, so in many domain of computer graphics and computer vision it is a common process to use combinatorial structure for. For handling objects divided into cells of different dimension. Any vertices, edges, faces, volumes and so on, and depending on the area, different kind of structure have been proposed. For example in rendering or computational geometry we use simplicial structure, where in each dimension cells are simplices. I mean that ices ages triangle destroyed one and so on in image representation. All grids, we mainly use some chemical structure mainly based on the notions of pixels and voters. And in computer aided design or image to activation, we use cellular structure where which allowed to under sell that have no precise constraint or regularity. We mainly form here this structure based on Maps on generalized Maps.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So come on problem in all this domain is to compute structural properties of these objects in otherwise topological properties, meaning that they are properties that characterizes the structure of the object and not their precise geometry. So different topological invariant.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "I've been introduced so yeah, just the main goal of topology can be seen at this. The idea is given two object is to know if you can obtain one from the other by a continuous deformation. One can think about an elastic transformation. Meaning that from for obtaining one object to the other, you cannot create wholesome tear. The object, for example, from the political point of views is sweet objects or the soccer ball. The rugby ball on the tennis ball. They are topologically equivalent because you can obtain one from the order by such an elastic transformation.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "In another hand, you cannot obtain the donut, for example, from a soccer ball by such a transformation, because you. You have to create a tunnel here so this object are topologically different an although there is a difference between this bowling this object which is a golf ball and the difference is that the gold ball is full and this both are empty, so this object contained cavity and this one do not. So more formally that we say that this object and this notion correspond to the notion of. Or morphisms? And if two objects are on our freedoms there that says their own morphic. So in general, finding this is function that describes this transformation. So finding a new move homeomorphism between two objects is a difficult problem. Topological properties have been introduced, which are properties that are preserved by.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Only on morphisms. So there exist several topological invariants an we mainly concentrate of homology, so for several reasons. So first of all it is classically studied in algebraic topology, so there's tons of books and many result on a nice theory build, so we can. Use this office rather.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "You can see that homology, the powerful topological invariant for several reason. So first of all it is defined in any dimension and in the same way. So one cannot. That homologies also contains other topological invariants like earlier characteristic, so also provided complete classification of clothes faces and they can also be used for knowing if. Close manifold is Oreo.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Table on it. And finally, when we deal with discrete data as we do in with computers as nice stuff with homology, is that an emoji of an object is directly linked to the structure of an object, which is not the case for any topological invariant like multiple groups, for example. So informally, hamaji can be defined as the study of how cells of an object.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Put together now let's see what homologies characterizes so informally we can say that, logic characterizes hold certain objects in any dimension. So what are these holes in any dimension Dimension 0. This characterizes the connected components of an object.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Dimension one whole of dimension one is eternal. So for example, let's consider this to the object. It contains 3 tunnels that can be productive. Eyes is here, so why all of dimension 1? Cause each hole can be surrounded by a closed curve, which is 1D dimensional.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Who is another example? So the strip which contain also one thinner now?",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Holes of dimension 2. Correspond to cavities. So, for example, let's consider this object, which is a sphere which correspond to the soccer ball, for example. So this do not contain any external but another kind of holds or cavity, which can be described by the entire surface of the sphere. So whole of dimension 2. Here you see that this. Beauty is characterized by a closer face, which is also two.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Emotional. Here's another example, so name called the Tourists and concerned about the tire off of a car. It contains also a cavity which is also described by the entire surface of the Taurus and two tunnels, so which are rounded in blue here.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "OK, no home computing homology allowed to know how many holes you have in your object for any dimension and computing amaji generators provide another.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Information which is to locate and correct the right information. For example, if I compute homologies for this object and we know that it's made of 1 connected component and that it contains sweeteners and by computing.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "It's generators. I will have the closed curve that runs the holes.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So for this there is a classical method, so the Augustan algorithm which allows to compute homology generators in any dimension and for any kind of objects.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "And the main drawbacks of this method is that it is based on the use of incident matrices. So I will just put them on the on the next slide, and so if you object is subdivided very subdivided, you'll have to deal with huge incidence matrices and this general algorithm also is time complexity is for general cases more than CU an. Finally the. Plus more back for this method is that we have no control of the geometry of the resulting generator. For example, we can obtain this.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Generator.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "But also this one or this one, and at least we know that all the holes will be characterized around it. But we don't know the geometry of the resulting generators, and in this work.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Interested in obtaining optical noise generator of the source? One will really fit on the border of the objects.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "OK, just two example. I've computed homologies generators of dimension one of two classical objects in topology so namely the Mobius Strip and that service. Anyone can see there are. Not very smooth, so. The idea is with this new matter that we provide. For having this nice generator.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "OK, now if you want about this incident matrices, the idea is to describe for any.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "You mention. The boundarie of the sales regarding to sales of lower dimension. For example, let's consider this simple simplicial complex. This incidence matrix characterizes the border of each triangle regarding to the edges, for example.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "In the first column you can read that the bounderies of F1 is a one plus a 5 -- 8 two and this is describing in the matrix. And so each column corresponds to a triangle, and so so this means that the more check divided is an object to. The biggest are the metrics you have to deal with, so this is a key point that is really important to try to reduce the subdivision of the object that where you want to come.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Two terminology. So starting from this incidence matrices, the idea of Augusta method is to do some transformation into a particular form Goldsmith normal form, which is the uniform which also expresses the memory of the cells. But in another basis. From this we can obtain.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Waiters. So now just some points to explain why we want to use this logical information within computer vision context. So the idea is that homology can be used to describe entire classes of images. Images that are in the same class of this common property of they have the same number of tunnel cover.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "And so on. So for example, it has been used in medical image analysis too recently to analyze video sequences of beating hearts.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Also, recently on mythology, when when considering alloy of metals, the idea is that home energy is used there to analyze resulting molecules, and by counting the number of tunnels in order to evaluate the quality of the resulting method.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Yeah, also some. Possible applications that we intend to investigate. For example, in image to image categorization where, for example, this three images of three different groups, even if they are complete, different shapes or colors, they have this common properties that the whole have one terminal.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Another possible application of this information is for moving object contexts where an object within a video frame sequence can be seen. Formation of an object within his home energy class. Or maybe we can. It can be used for knowing where it changes of class. For example, if you analyze the chip maybe at some some frame it will turn on. You will see the under appear and then we can detect some key frame with this.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "And finally, a possible application can be attracting people phone number here with and we have a project with ACV about striking and within this context one can think also but.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Using this information. OK this night to show that when one wants to compute the number of of 4th of an object and there are quite many words, especially in computer computational geometry, algebraic topology and then one once is interested in computing generators of this homology groups, there are very less words and finally about computing noise generator. To the best of our knowledge is. Only this paper of the mode in which is in preliminary draft version. So this is the idea of computing that generator is quite new top.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "OK, now here is a method. So we start with a segmented image. So let's consider this blue region, which is a base level is pixel.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Region. The idea is to build the pyramid out of it, such that in each level of the pyramid it represents the same object. So which had the same topology but with less cells. So the idea is to merge some cells in order to open a higher level to again present here. The main concept. After that I will detail the operations that are used for building these pyramid and so this simplifications are done. Until we reach the top of the pyramid where no simplification operation can be done anymore.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Once we have this pyramid, we compute homology generators of the on the subdivision that is homologically equivalent to the bottom level of the pyramid, but which contain very few cells. So basically on the top level we can we use algorithm method, but it deals with very small matrices and one.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "We have this generators. The structure of the pyramid. With this structure we can don't project them in each level of the pyramid. In particular, in this way we have so generator on the base.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Full of the pyramid. So tonight's properties of this method is that. As I said we, we compute hamala generators with very small majorities and all the nice properties that this generators they always fit on border of of the default. On this property for for the moment is is proof for for 2D, but this method remains valid as long as one can build the pyramids that topology is preserved for any dimension. This Augusta method on the top level can be applied for any dimension.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "OK, so here are the two. Operations of simplification that are used to build the pyramid. So first one the removal operation illustrated here on the four pixel image. So in yellow you have the corresponding adjacency graph and if an age in each side of an edge there are two. New region with same label. The two regional different. Then you can separate the H and open a new Tab division, which is a logically and topologically equivalent but with less cells contain. Here that you have less faces and less pages. Second operation of simplification is a construction operation. For example. For example here, starting with this subdivision, we can contract this edge and we come up with another subdivision which contains also let's say there are one edge and one vertex less, and one can remark also that a removal on the dual graph correspond to contraction, the adjacency graph and Conversely. A contraction in the dual graph corresponds to a removal on the adjustments.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "Rap. OK, now I will explain how old generator are done projected within the pyramid. So let's consider that we have a generator on one level of the pyramid, which for 1D generator. No skill, and we focus on.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "One vertex of this of this curve.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "The idea is that. We know that this surviving vertex correspond on the lower level 2 to a tree that. That I've been contracted to this vertex, so this we can be the one vertex itself, but can be more general like this. So three, and the idea is that knowing the two incident. Ages there is only one path inside the tree. So we replace the the ages of non level K2 this path.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Then we obtain the corresponding generator on the lower level. And this is done for every vertex and for every level, and in this way we have a generator in each level. And how do we prove that this generator on? On the way on the top level, fit on border and that the delineation preserve this property. It's proven in any level of the pyramid.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "OK, we validated this approach with the segmented images, so of course if one wants to compute emoji, we do not encourage people to use emoji for computing. Reports for 2D images, but this is a first step that validates the method and the Arduino is to extend for higher dimension. So here you have the resulting generator with practical Augustine method. Anyone can see that it's quite chaotic. I mean, this obvious generators much more information than just #4. Themselv Donald. On the other hand, this way you can see that the generators that are computing with our new approach griffitt on boarded. And here you have the number of. Of cells in the base level of the pyramid. So basically with the classical method we have to deal with matrices that are the size of 15,000 by 30,000. And here you have the number of cells after the simplification on the top level, and as you can see we deal with very small matrices.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Here is another example where we can draw the same conclusion. Can see the number of of senses.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Really reduced. OK, as a conclusion we provide a new method for computing homology generators and we prove that this generator fit on borders for for them.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Unfiltered image is not the idea it will be to extend this result for pyramids of higher dimension images and especially we plan to use. Journeys of communitarian Maps and generalized communitarian Maps. See smell it to an ocean of Canonical homology generators, meaning that among all the possible generators that's around each hole, maybe this one that will fit on border can be used for the application that tracking, for example. And I want to point out that recently we submit this project which is so about computing homology within image context.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "And this within this project. So we will turn to attack different problem and see how this homological information can be used within image context with and we want to investigate the following point in particular. So first how the stability of generator on the image operation that can be with operation of simplification. But one can also think about operation of smoothing and holders. I'm also can be of interest to study how the powerful of this homiletical information regarding classification of images. And then want also to investigate different kind of combinatorial structure that can be used for representing images as cellular one simple ones, simplicial ones, in order to finally obtain. Efficient computation algorithm.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "OK, thank you. I just want to mention that before that we have. Open position for students that want to work on this project and also on other projects. You can find the address in front of the door. Thank you.",
+        "start": 1450.0,
+        "end": 1479.0
+    }
+]

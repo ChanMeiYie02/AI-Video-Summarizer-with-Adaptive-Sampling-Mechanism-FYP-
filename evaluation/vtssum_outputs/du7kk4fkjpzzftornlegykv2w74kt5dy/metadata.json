@@ -1,0 +1,22 @@
+{
+    "id": "du7kk4fkjpzzftornlegykv2w74kt5dy",
+    "title": "Deep Learning (hopefully faster)",
+    "url": "http://videolectures.net/deeplearning2015_coates_deep_learning/",
+    "info": {
+        "author": [
+            "Adam Coates, Baidu, Inc."
+        ],
+        "published": "Sept. 13, 2015",
+        "recorded": "August 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 65,
+    "num_sentences": 736,
+    "num_clips_with_summary": 47,
+    "num_gt_summary_sentences": 81,
+    "ground_truth_summary_length_chars": 9675
+}

@@ -1,0 +1,21 @@
+{
+    "id": "3pawwxwsl4n5j5eiipugb7jiauocv7ot",
+    "title": "Linked data and services",
+    "url": "http://videolectures.net/sssc2011_norton_vrandecic_linkeddata/",
+    "info": {
+        "author": [
+            "Barry Norton, British Museum",
+            "Denny Vrandečić, Institute of Applied Informatics and Formal Description Methods (AIFB), Karlsruhe Institute of Technology (KIT)"
+        ],
+        "published": "Sept. 5, 2011",
+        "recorded": "August 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 730,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 3803
+}

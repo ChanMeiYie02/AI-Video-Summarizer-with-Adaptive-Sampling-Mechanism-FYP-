@@ -1,0 +1,21 @@
+{
+    "id": "n6h7ptwxmnpisgvfzqcouv5q5rzgwp4t",
+    "title": "Towards a semantic repository of data mining and machine learning datasets",
+    "url": "http://videolectures.net/sikdd2018_kostovska_machine_learning_datasets/",
+    "info": {
+        "author": [
+            "Ana Kostovska, Department of Knowledge Technologies, Jožef Stefan Institute"
+        ],
+        "published": "Oct. 23, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 78,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1258
+}

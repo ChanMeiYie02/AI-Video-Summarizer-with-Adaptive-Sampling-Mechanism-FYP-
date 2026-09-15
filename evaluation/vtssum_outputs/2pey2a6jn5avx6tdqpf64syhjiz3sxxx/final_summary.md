@@ -1,0 +1,7 @@
+# Final Multimodal Video Summary
+
+The segment opens with the introduction of the Linked Open Data panel, chaired by John Davis of BT, followed by introductions to the distinguished panelists. The core topic is defined as Linked Open Data (LOD), which addresses the challenge of data being trapped in silos by making data publicly available and providing standard technology to easily link and query it.
+
+The discussion then moves to the concept of the Open Data Cloud, emphasizing the availability of massive datasets exposed by governments and organizations, noting that 16 billion triples are now public. Sparkle is introduced as the standard query language for accessing this data. The core vision is to leverage linked data standards to combine previously disparate data sources, enabling the creation of new applications, with the goal of allowing data to flourish on the data web, as envisioned by Tim Berners-Lee. The discussion subsequently pivots to the practical themes of the panel, focusing on the commercial opportunities presented by linked open data and the barriers that might impede their realization.
+
+The discussion format is structured around short presentations from each panelist, followed immediately by a reaction Q&A session where panelists ask questions of one another. This is then followed by a broader, open discussion incorporating audience questions and dialogue among the panel members.

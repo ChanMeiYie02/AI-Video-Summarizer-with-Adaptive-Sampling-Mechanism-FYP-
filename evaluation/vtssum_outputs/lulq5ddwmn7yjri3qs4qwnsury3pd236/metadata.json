@@ -1,0 +1,20 @@
+{
+    "id": "lulq5ddwmn7yjri3qs4qwnsury3pd236",
+    "title": "Using Graph-based Metrics with Empirical Risk Minimization to Speed Up Active Learning on Networked Data",
+    "url": "http://videolectures.net/kdd09_macskassy_ugbmermsualnd/",
+    "info": {
+        "author": [
+            "Sofus Attila Macskassy, Facebook"
+        ],
+        "published": "Sept. 14, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Data Mining->Multi-Relational Mining"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 157,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 2196
+}

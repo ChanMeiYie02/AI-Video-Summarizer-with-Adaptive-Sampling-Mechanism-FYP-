@@ -1,0 +1,23 @@
+{
+    "id": "myxrxz33raemkux6ka65yd7ibvdf33is",
+    "title": "Multi-task Learning",
+    "url": "http://videolectures.net/roks2013_pontil_learning/",
+    "info": {
+        "author": [
+            "Massimiliano Pontil, Department of Computer Science, University College London"
+        ],
+        "published": "Aug. 26, 2013",
+        "recorded": "July 2013",
+        "category": [
+            "Top->Computer Science->Optimization Methods",
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines",
+            "Top->Computer Science->Compressed Sensing",
+            "Top->Computer Science->Machine Learning->Regularization"
+        ]
+    },
+    "num_segments": 48,
+    "num_sentences": 610,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 2747
+}

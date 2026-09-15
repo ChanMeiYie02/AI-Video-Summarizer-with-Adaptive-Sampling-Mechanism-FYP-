@@ -1,0 +1,21 @@
+{
+    "id": "y6atofbmstz4h2gr7tml53257fv5xw7p",
+    "title": "Bridging the Gap Between Formal Languages and Natural Languages with Zippers",
+    "url": "http://videolectures.net/eswc2016_ferre_natural_languages/",
+    "info": {
+        "author": [
+            "Sébastien Ferré, University of Rennes 1"
+        ],
+        "published": "July 28, 2016",
+        "recorded": "June 2016",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 244,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 43,
+    "ground_truth_summary_length_chars": 4355
+}

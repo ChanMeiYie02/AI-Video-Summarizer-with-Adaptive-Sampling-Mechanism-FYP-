@@ -1,0 +1,21 @@
+{
+    "id": "atznmmupjpemrvbffgugpipt5vondjlj",
+    "title": "Exact Bayesian Pairwise Preference Learning and Inference on the Uniform Convex Polytope",
+    "url": "http://videolectures.net/nipsworkshops2011_sanner_convex/",
+    "info": {
+        "author": [
+            "Scott Sanner, NICTA, Australia's ICT Research Centre of Excellence"
+        ],
+        "published": "Jan. 24, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning",
+            "Top->Astronomy->Cosmology"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 364,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2300
+}

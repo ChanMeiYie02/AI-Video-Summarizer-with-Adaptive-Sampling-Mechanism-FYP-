@@ -1,0 +1,23 @@
+{
+    "id": "6roabmuuwcca6hxyxn667ostsbcnow56",
+    "title": "Addiction: from impulse to compulsion",
+    "url": "http://videolectures.net/sinapsa_belin_impulse_to_compulsion/",
+    "info": {
+        "moderator": [
+            "Blažka Orel, Biosistemika, raziskave in razvoj, d.o.o."
+        ],
+        "author": [
+            "David Belin, Cambridge Neuroscience, University of Cambridge"
+        ],
+        "published": "Feb. 7, 2017",
+        "recorded": "January 2017",
+        "category": [
+            "Top->Medicine->Neuroscience"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 1221,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 802
+}

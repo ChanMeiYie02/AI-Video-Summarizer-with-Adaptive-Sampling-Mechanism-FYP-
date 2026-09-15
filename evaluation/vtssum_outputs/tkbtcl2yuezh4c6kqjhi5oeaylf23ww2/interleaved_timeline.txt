@@ -1,0 +1,143 @@
+[0.0s - 29.0s]
+This is joint work with Yolanda Gaylor and Craig Knoblock, who's here. And then a bunch of people from ISI. And our domain experts and users from the University of California, Merced. So.
+
+[29.0s - 58.0s]
+Let me give you a little bit of context of why we're doing what we're doing. So the idea is we have the environmentalist scientist who's worried about the health of rivers. And you know, there's what the River will do if you leave it alone. And then what happens to the River because of human intervention? And the true question is, can we manage the River effectively so that everybody is happy there? The farmers and the fish and everything. And the question is your. Can you solve restore the natural behavior?
+
+[58.0s - 87.0s]
+And there are all these influences on the River. So our case study is in the Central Valley of California on the Merced River, where our environmental is. Access station and there are a bunch of sensors on the River. And the question.
+
+[87.0s - 116.0s]
+That he's worried about is. Basically what happens is that. To help the fish the salmen. It was decided that they would release water to the River twice a year. And you know this is a study of what happens to the flow of the River when they do that. And the question is, you know what happens to the fish and the health of their River when they do this, and so that's what Tom Harmon, Tom. Wants to MoD.
+
+[116.0s - 145.0s]
+And understand. And so. No. What is the effect of the farmers? And then what do we tell the farmers if we want to say you shouldn't release water or you're not going to have water?
+
+[145.0s - 174.0s]
+So what he wants to model is, you know, for many of here is called aquatic photosynthesis. Which is, you know? How is the algae processing the sunlight and producing all kinds of byproducts? And they have sensors for this? And the idea is basically collect all the data from the sensors, understand what's going on, and do an analysis. And.
+
+[174.0s - 203.0s]
+The idea is that the analysis it would be nice if we could produce analysis really fast so that when some disturbance happens to their River they can manage the River and release more water or release less water, or do this. But to do that the analysis have to be.
+
+[203.0s - 232.0s]
+I'm. So this is Tom and this is the workflow that. He wants to run. And you're at the top in blue. I don't expect you to read this. This is not important that you understand the details of the workflow as of the complexity of the workflow. So there's data sources at the top. Then we need to munch the data and prepare it so that you can run it through the models. And that big green bubble there is the kind of model that Tom wants to run. And then produce results. And when he explained to me this, I said piece of cake. What's the big deal? Just get the data, run it through the software and computer charge.
+
+[232.0s - 261.0s]
+And so the idea is this should be very fast. You know automated runs every day collects data from the sensors down those data from the site's annual keeps.
+
+[261.0s - 290.0s]
+Just running. But I was shocked to discover the reality is very different. It's very painful. It takes a lot of time to prepare the data to make sure that you have every piece of data in the right format and to choose the right model becausw you know if it's dark, you need to use one model and there's less sunlight. There's another model that's more accurate, so when you really get into the details, this gets complicated and it becomes a craft. And so the idea is, can we help him do this much more effectively?
+
+[290.0s - 319.0s]
+So why? Why is it so painful?
+
+[319.0s - 348.0s]
+And. Yeah, I'll just blame Microsoft. Yeah. And no, I mean seriously. What happens is that the scientists and you know Tom in particular, and I think with his representative of many in his field. Do all the data preparation in Excel. And what that means is that they are editing fields in Excel to clean them and all that. And then you know they have their simulations in whatever language they are, and then they glue all the pieces with our scripts. Any other than something changes and there are scripts break and the models don't run and you're by the time he tells me that by the time they get this all going, you're with cleaning the data, making sure the sensors are working takes more than a month to run analysis, and this is not good because you know you in a month you can't be timely to actually tell the authorities what to do with the River. You know you should have done this year 29 days ago is not so good. So.
+
+[348.0s - 377.0s]
+You know he uses multiple tools if you're running workflows for the scientist is always hard. It's hard to learn. It's ad hoc and basically the data is not flowing through the workflow. You know he's off pushing it through the workflow, and so lot of work.
+
+[377.0s - 406.0s]
+So this is what we bring to the table as computer scientists. So Craig and I have been working on a data preparation system. Basically a data integration system called Karma. And I'm gonna tell you about Karma. Yolanda has been working on a tool called Wings that does the semantic workflows and the idea is that we connect this tools together using semantic metadata to basically automate the workflow and help the scientists run this in. As of 24 all the time.
+
+[406.0s - 435.0s]
+So I'm going to solve going to the details of the tools and at all the time be telling you about where does the semantic metadata play a role and what is the idea. So let's start with the data sources. There are three kinds of data sources. And the first one are tomsson sensors. And the other ones are basically sources maintained by California. And they are behind websites. That not necessarily have a web service, so the first thing we did was really to implement web services to be able to download the data from the California Department of Water.
+
+[435.0s - 464.0s]
+So let me show you karma. So this is our our Karma's screen and the idea here is we give the the user at the environment that looks like a spreadsheet. It has a data part table where they'll see their data and then in the bottom is where you do all your operations and the first one that I'm going to show you is to invoke a web service and I'm going to show you how to invoke a web service to download data from the California Department of. Of water, so here.
+
+[464.0s - 493.0s]
+The user. Selects the kind of data and then they're not all the sensors that they can download data from. And then there's a date. And the user does that and they get their data.
+
+[493.0s - 522.0s]
+And the data gets populated into this into the worksheet, so the scientists now can download the data very easily just by using the web services. But this is all fairly conventional.
+
+[522.0s - 551.0s]
+Now what happens is that when they download data from all these different sources, for example, all the time formats are different. You're from see that the California site the dates are just those big numbers from Tom Zone sensors. They come with a different time stamp and then the model software. The simulation software requires dates in a different format and this is just an example of how they waste a lot of time, so let me show you how you deal with this problem in car.
+
+[551.0s - 580.0s]
+Now the issue, if you do this in Excel is that if you want to do 30 days and you have two files for each day from this sources, then you have 60 files that you need to clean. And if you want to run this continuously, this is real.
+
+[580.0s - 609.0s]
+Out of work. So in karma we have support for cleaning by example.
+
+[609.0s - 638.0s]
+And the idea is that you have your source with the the date that you want to normalize or clean, and then the user provides an example. And then what the system does is it infers a general rule from those examples or one or more examples and then shows the user what the system would do if it was to apply that rule to all the data. If the user approves it, then the system does that to all that.
+
+[638.0s - 667.0s]
+Data. So similarly your you clean all the your sources. Now once you've cleaned your sources, you have a bunch of different sources that have a bunch of different data. But what you want is 1 big table with all the data, because that's what your modeling software wants. So we have all these sources from the C deck that have different types of information that are needed for the model and then Tom's own data that is also needed. Now what you need to do is join these sources. Now the sources sometimes have your observations at different time, granularities and so on. So you want to actually integrate them at, you know, on an hourly basis, because that's what he wants for their model. So we need to do a few more cleaning operations at. I'm not going.
+
+[667.0s - 696.0s]
+Show you. And then invoke Karma's ability to integrate. And so let me show you what the integrated data looks like. It just looks like a spreadsheet with all the data and the way the user does this is that basically he clicks on that integrate button and then he chooses columns from the other sources to add to this source, and the system infers that they join conditions automatically and so through the user he's just adding columns to his source, but the system is doing this joint queries underneath to be able to bring the data from the other tables.
+
+[696.0s - 725.0s]
+Now, while the user does all this, you're doing it by example, so you might wonder, you know this looks like doing it in Excel, sort of differently, but still you know it's a manual process. Now the idea is that Karma actually records all these operations into us.
+
+[725.0s - 754.0s]
+Script. I'll show you a little bit of this script so it has all the operations that the user did for.
+
+[754.0s - 783.0s]
+One day and then. The script actually can be used for any data any day, so it can be parameterized by day and then they can incorporate this into the workflow and it's of runs all the time.
+
+[783.0s - 812.0s]
+Now, after you've prepared your data the way we connect to the workflow system is, we view the workload system as another web service. And you know, we connect with wings. But similarly, you could actually substitute at different. For workflow system, so you select the the integrated data set and you say I want to publish it to wings.
+
+[812.0s - 841.0s]
+And then what happens is that the data is published.
+
+[841.0s - 870.0s]
+Wink, but in addition, your karma automatically generates metadata for all this data that has been integrated. It basically computes the average values of all the the columns, the minimum value and things like that and include that in metadata. And wings is going to use that made up the metadata to reason about. So what workflow component needs an how to basically orchestrate the workflow and and this off? Clever idea here is that the user didn't have to solve enter metadata by hand. The system. Your karma basically infers the metadata automatically.
+
+[870.0s - 899.0s]
+So let me tell you a little bit about wings, so shifting gears here. So this is the conceptual workflow that Tom wants to execute. It can be modelled in wings in a graphical user interface. And then it gets executed. Now this execution diagram is kind of interesting in that the workflow you specified in a sense for one day, but it executes for 30 days, so many of the branches of the workflow are solved, replicated and wrong many times. So the workflow splits the big file into daily files. It runs a model every day, so you get this off. An interesting diagram of how the workflow is executing. And this is also one of the clever things of wings, because in normal workflow systems people have to actually specify all the notes in the workflow. So this one in a sense has a kind of iteration that is.
+
+[899.0s - 928.0s]
+Very helpful for this.
+
+[928.0s - 957.0s]
+Now the metadata is can be browsed within the workflow system. So here are all the files for all the 30 days and you know the user can go and look at the metadata for each of the input file.
+
+[957.0s - 986.0s]
+So let me so focus on how. Wings users the metadata to actually, you know, do the right thing and so they they they key thing of this workflow. Is that there's these three different models for how to compute this photosynthesis thing? And they work depending on the on the speed of the water on the floor. So for high flow there's one model that's more accurate. For low flow, there's another model that's more accurate, and the idea is that in karma we've encoded the flow of the on each input file as metadata, so that then wings can reason about. Your which model to invoke by looking at the metadata that came from the source file. So every day can be executed using a different name.
+
+[986.0s - 1015.0s]
+Model. So here's the metadata. I don't expect you to read the workflow, but the basic idea is that this is the metadata for one of the input files.
+
+[1015.0s - 1044.0s]
+And so. The metadata is used to solve set parameters, so it needs to know the lat long of the sensor to be able to compute. So how how much light there is during that day? And then you know it extracts that information from the metadata and it passes it to the right workflow component. And this is of specified in the in the in the workflow system. So you have multiple sensors, it can do different.
+
+[1044.0s - 1073.0s]
+Things.
+
+[1073.0s - 1102.0s]
+Now the other clever part is choosing their model, which it also does based on the metadata. And so it it basically chooses what of what workflow component to run for each day based on how much meta data and what the values of the flower.
+
+[1102.0s - 1131.0s]
+So once the workflow executes, you get all your results.
+
+[1131.0s - 1160.0s]
+I'll show you the results in detail. This is of typical of workflow systems. You get lots of output files. You're all this. You know flows an model outputs for every day. The workflow will eventually just produce, uh, diagram. But the nice thing is that the user can actually inspect all the intermediate results of the workflow, plus wings keeps carrying follows through with all the metadata. And the metadata is also associated with the output files. So then when the user looks at the output files, they can see where they came from, what the parameters were and it. And this is published together with their results, so that other people can basically look at their results where they came from, and then they can replicate.
+
+[1160.0s - 1189.0s]
+Workflow. So this is an example of the metadata that gets generated with each. Output file and.
+
+[1189.0s - 1218.0s]
+You know one of the clever things that can be done is somebody can then query and say your show me solve all these models that use a specific algorithm to compute your this mataba lism estimates and then you get basically all these files that use this model and this allows other people anybody to inspect how these things were produced or they want to see if this is a good algorithm that they could use in their own workflow. They can basically query the results from here to do.
+
+[1218.0s - 1247.0s]
+That so at the end of the day, let me go back to the goal slide, which was we have a bunch of sensors and we want to do the analysis.
+
+[1247.0s - 1276.0s]
+And you know these are the workflow results once they get charted. And you know, for the purposes here, it's not important that you know what they mean. It's it's a chart that shows how metabolism changes day by day, and you know the red line shows the best, the model that we computed an. If you are an environmentalist, you'll see that your chose the right model. Depending on the floor. Which made Tom very happy because this is something that he was struggling with.
+
+[1276.0s - 1305.0s]
+Basically, as far as I'm concerned we did what we wanted your automate this new or like a bottling factory so now he has his students running this workflow all the time. So what used to take him a month to prepare now he's done in his running in a daily.
+
+[1305.0s - 1334.0s]
+Basis. So let me be solved in summary, basically what our focus is is tools for end users. So yes, I can configure all kinds of foul things, an RDF, and you're our scripts, but Tom Kent and his students can't, and so the idea is to provide an environment where they can do this graphically. They do the data preparation by example. They configure the workflow in a graphical user interface and then they have this metadata that is flowing through the system doing basically the right thing. Choosing the right model, passing parameters and karma also made it very easy to capture this metadata so that people don't have to solve manually enter metadata because they just don't want to. And the tools provide end to end support. We can import data from services, an spreadsheets and databases and then clean it, integrated and then so feed it through the automatic workflow execution and then we capture metadata for the results too, so that the results are repeatable are inspectable and are queryable. So maybe I have a. So this is how far bumpersticker meta data inside.
+
+[1334.0s - 1363.0s]
+So a little bit about related work. I think that the tools that are more relevant. For the you know, the data integration and data cleaning are data Wrangler from Stanford. If you haven't seen it so very clever system where you can do all kinds of data manipulations easily, but you know they don't capture metadata, they don't model the data, you're just. You're working at the syntactic level. Same with Google refine. Workflow systems are, you know, they. These are some examples used in by environmentalists, but even if they capture metadata, they don't. It's only for provenance. We're capturing metadata and associating it with the final output, and also with the intermediate results. So everything has meta data, everything is curable and everything you can see where it came from.
+
+[1363.0s - 1392.0s]
+So really like the practicality of this, this seems like a very important problem to solve. The one thing that concerns me though, is that you're actually asking these users to change their tool set. An I'm wondering, you know, I see absolutely all the value of karma it has. You know, a lot of very clear functionality for cleaning up these datasets and harvesting other data, but I'm wondering if they're used to using Excel. Is there any possibility that we could be instrumenting Excel to do this and then connecting that with the our scripts that they normally do to capture not just the problems, but also as you say, the process so that we actually have repeatability and we have the ability to go back and actually query to see what was done with this data? Yeah, that's that's an excellent question. And I so fat. Wonder about the same thing all the time and there's an effort in process to basically provide or Microsoft is willing to solve support plugins for Excel to do this kind of thing. Now I I particularly don't believe that you can solve fix something that's really not meant for the job. If you look under the hood in karma, there are sophisticated learning algorithms that learn about the data and do the cleaning. It will you know if you went to the one of the workshops, you can see how it builds models of the data. And so we think that Karma brings its own kind of value. And also I see other tools that are cropping up like data Wrangler and Google refine that are really meant to work with data not to have lots of formulas in between the different cells. So maybe we are doing a tool that is what the scientists need, and I think it's still an open question whether we provide. Enough added value that they would say, well I like Excel, but I'm willing to learn this and you as a researcher. This is what we are. This is our hypothesis that we we can actually do this much better using a different kinds of techniques. So in your some of your examples, you actually show the metadata and it seems like you're using an ontology specifically engineered for your particular domain. How easy is it for someone to take your system and use a different ontology? Maybe air quality? Because my wife actually does air quality, so she might be interested in something like OK, I mean. So basically the otology that we used in this use case was an ontology that basically was developed. For this use case, but if you have your own ontology, for instance, in karma we can model the date according to any ontology of the users preference. So the idea is if you have your own ontology, we can model the data according to that ontology and then the metadata will be modeled according to that ontology. So yes, you could use any ontology you want. We are basically agnostic about the ontology. You know we used one and then all the RDF just looks according to that, but. Yeah, that's not built in. I'm wondering how resilient the system used to changes in the data format. I mean, if the data changes or does the user need to do again, teach the system in order to in order to create new metadata and so on? Or does the system have some way to to adapt itself to these changes? OK, yeah, that's a good question to currently. They met if the data formats change, you reload it to in the system and then the the the semantic typing algorithms that we have will recognize data that still looks in in the same format and if it's in a different format from what it was before, but the format that Karma has seen before, it will correctly model it. If it's a new format that Karma hasn't seen at all, then the user has to retrain it. And if the structure of the data changes enough, then our algorithms to map it to the ontology might not be able to do it automatically and the user will have to correct that too. So there's some resiliency, but we don't have specific smart about saying, well, it used to be like this. Now it's like this. Let me adapt everything. We we just solved. Leverage the pieces that you know the system has been trained on before. OK, thank you very much for OK. Well thank you.

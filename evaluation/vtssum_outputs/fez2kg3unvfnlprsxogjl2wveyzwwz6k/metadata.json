@@ -1,0 +1,20 @@
+{
+    "id": "fez2kg3unvfnlprsxogjl2wveyzwwz6k",
+    "title": "Information-Theoretic Metric Learning",
+    "url": "http://videolectures.net/lce06_davis_itml/",
+    "info": {
+        "author": [
+            "Jason Davis, Stanford University"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "December 2006",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods->Multiple Kernel Learning"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 181,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 36,
+    "ground_truth_summary_length_chars": 3792
+}

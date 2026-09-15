@@ -1,0 +1,25 @@
+{
+    "id": "l6s3wromgtlvyqas6vhxzq5uhpr47wvs",
+    "title": "Neural coding of upshifted, downshifted, and blocked outcomes in the rat (lateral) orbitofrontal cortex",
+    "url": "http://videolectures.net/rldm2015_schoenbaum_neural_coding/",
+    "info": {
+        "author": [
+            "Geoff Schoenbaum, National Institute on Drug Abuse (NIDA), National Institutes of Health (NIH), U.S. Department of Health & Human Services"
+        ],
+        "published": "July 28, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Medicine->Neuroscience",
+            "Top->Technology->Engineering->Electrical Engineering->Control Engineering",
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences->Economics",
+            "Top->Social Sciences->Psychology"
+        ]
+    },
+    "num_segments": 79,
+    "num_sentences": 459,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 788
+}

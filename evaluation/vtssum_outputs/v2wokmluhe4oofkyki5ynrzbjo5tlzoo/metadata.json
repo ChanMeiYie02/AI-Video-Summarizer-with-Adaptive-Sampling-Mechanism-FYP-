@@ -1,0 +1,23 @@
+{
+    "id": "v2wokmluhe4oofkyki5ynrzbjo5tlzoo",
+    "title": "Active, Semi-Supervised Learning for Textual Information Access",
+    "url": "http://videolectures.net/iiia06_krithara_asslt/",
+    "info": {
+        "author": [
+            "Anastasia Krithara, Xerox Research Centre Europe, Xerox"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "July 2006",
+        "category": [
+            "Top->Computer Science->Text Mining",
+            "Top->Computer Science->Machine Learning->Active Learning",
+            "Top->Computer Science->Machine Learning->Semi-supervised Learning",
+            "Top->Computer Science->Information Retrieval"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 186,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 3810
+}

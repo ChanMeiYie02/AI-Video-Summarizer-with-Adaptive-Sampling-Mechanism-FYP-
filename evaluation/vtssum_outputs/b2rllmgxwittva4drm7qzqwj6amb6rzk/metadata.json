@@ -1,0 +1,20 @@
+{
+    "id": "b2rllmgxwittva4drm7qzqwj6amb6rzk",
+    "title": "An Efficient Fusion Move Algorithm for the Minimum Cost Lifted Multicut Problem",
+    "url": "http://videolectures.net/eccv2016_beier_efficient_fusion/",
+    "info": {
+        "author": [
+            "Thorsten Beier, University of Heidelberg"
+        ],
+        "published": "Oct. 24, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 61,
+    "num_sentences": 144,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 687
+}

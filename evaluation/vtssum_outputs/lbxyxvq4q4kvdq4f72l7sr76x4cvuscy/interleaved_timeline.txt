@@ -1,0 +1,74 @@
+[0.0s - 29.0s]
+So I'm pasquala from Eurocom and this is again a resource paper and I'm presenting a graph for classical music.
+
+[29.0s - 58.0s]
+So which works have been composed by Mozart when he was very young? How many words have been composed and added the Premier in the same city an which composers at the chance to direct their own work in a performance during last 10 years? So this a lot of other question can be answered with remotes that is French project that has been a lead for four years almost. And what I'm presenting now. Is the main outcome of this project that is.
+
+[58.0s - 87.0s]
+The music Knowledge graph that contains metadata about artists, works, performances, scores and also a set of tools that we have developed and used during the scope of the project, but actually are enough general to be reused for other situations.
+
+[87.0s - 116.0s]
+So the answer to the question that I shown on 1st lights are actually present in archives of a musical institution. Here we have 3 examples that are totally out of the three partners of adoramus projects. Are the National Library of France, Radio France and the Philharmonia Party. The problem of this archives is that there are a lot of different formats that cannot speak one each other and this is a waste because there is a lot of possibility to reach one archiver from the other by discovering overlaps. But it is not possible. Moreover, not all this archives are publicly accessible. So what we want we wanted to do during the project is. To apply the semantic web approach in order to solve this problem. So we.
+
+[116.0s - 145.0s]
+Went through four different task for building the dramas graph for each of them I will present to not only the outcome but also how and with which tool we have got it. For.
+
+[145.0s - 174.0s]
+The data modeling we rely on. The dynamics model that is has been developed during the project as an extension of Peru that on his own, A is the union of FRB are with the distinction between the different states that a cultural object can have so that work, expression, manifestation item and see docs here M that give inheritance to. I'm also the concept that every cultural object came from an event that generated the resource. So.
+
+[174.0s - 203.0s]
+This is more or less what you can have with the remotes. Actually is much more big. The graph that human that you can build as you see that is the part in green that is the composition. Here there is the work that has been composed with all the different properties and here we have a great performance in Berlin, in red and in purple there is a publication of the score that have been released in Vienna. And do not go.
+
+[203.0s - 232.0s]
+So much in the detail, these are some of the properties and classes that we have had. An R for example capable of described exactly the casting the instrument that you need for performing work in which quantity. If they perform on soul and so on. An every notes that you want to touch them. In place of this multilingual circles we actually use.
+
+[232.0s - 261.0s]
+A set of controller vocabularies for music that actually have been published presented two weeks ago in his mirror that contains information about general instruments, function, musical key, etc. Collected and creative editorial way more than 11,000 concept and this is actually a recommendation is a master to see if you are working on musical project.
+
+[261.0s - 290.0s]
+So the main instead of challenge for data conversion is dealing with different formats up to see we work with the three different institution. Each one has their own format, some of them are extraction from a relational database, some other like this. Unimarc intermark are actually dialect of this line.
+
+[290.0s - 319.0s]
+Brillion format that is called Mark that is actually very complex to interpret. Becausw each field that is indicated by this tags as a different meaning. Respect on the position in the record in which is. So this is actually a standard in librarian word. Nevertheless also, librarians are not so happy about it. So for dealing with this complex formats, we realize Mac to RDF.
+
+[319.0s - 348.0s]
+That is a converter that works with three different steps, so the first one is parsing the file, interpreted every part and put everything on this place in a graph.
+
+[348.0s - 377.0s]
+The second part is to extract information from the comments that editors wrote informal free text in the document, with the disambiguation with the controlled vocabularies.
+
+[377.0s - 406.0s]
+And the third one is this string to vocabulary node module that replace all the literals that are in the graph with their correct your eye from controlled vocabularies.
+
+[406.0s - 435.0s]
+So Mac 20F let us to convert archives in Marketo graphs, but we had order data set that we wanted to convert. For that there was no solution that develop adult converters. That's still reuse some things like this thing to vocabulary model that is actually quite general. You can use also on your project also in different domains, so the results are. Five different graphs.
+
+[435.0s - 464.0s]
+That actually contains overlaps. So for example, this is the description of Moonlight Sonata in the graph of National Library and in the graph of Philharmonia Terry. As you see, there are obviously things in comments, but also a lot of differences in the title in the general in casting missing information and so on. So the question is how to discover if in between two entities. I need to put SMS link or not so that.
+
+[464.0s - 493.0s]
+Challenges for this task is that not all the works of the values for all the properties, obviously. That seem very similar entities in the graph, like Beethoven Sonata number one in between Santa number two are described very similarly, but the nose means that are the same thing. So trivial comparison of strings does not work, and Moreover there are lexical differences abbreviation that different institution had in the original data sets.
+
+[493.0s - 522.0s]
+So we tried a different existing data linking system that actually were not performing very well on those data. Given that those challenges and so our solution was to.
+
+[522.0s - 551.0s]
+Developing new under that we called Legato in Italian legato is the connection of two notes or a phrase of nodes that have to be played, connected, linked together. So I really gotta works.
+
+[551.0s - 580.0s]
+So first we group words by composer, so we're not comparing perform works by Mozart and works by Beethoven. Obviously. Then we have this property filtering that removes the institutional identifiers also all that long string comments that have no sense to compare because they are different by natural. The most important part is this instance. Profiling that property by property extract all of the literal values and represented them as a bagel world. That can be then a projected in vector space. Those vectors are used in two parallel tasks that are a normal classical traditional vector based instance matching so. That tried to interlink everything that looks similar in the vectors. And more. Complex algorithms that try to instead increase precision that is a key ranking and key. Discovering ranking that is performed on cluster or similar vectors, the idea is that for each cluster we try to search for the keys that maximize cluster by cluster. The differences of work. So the outcome of this key discovering ranking algo.
+
+[580.0s - 609.0s]
+Atma produces some links that actually are more precise than the first one and are used for correct all the other ones that we find in the first phase. So legato has been presented also at the AEI campaign over last year, and was among the top ranking system, especially for Dynamos.
+
+[609.0s - 638.0s]
+Done. So the data linking can produce four different situation. The best one is when we have a triangle, so we are interlinking data set two by two if we have finally completely closed triangle. We are quite sure that the algorithm performed well. On the other hand, if this triangle has an empty node empty oono open vertex. This is for sure conflicts an we should. Remove something we rely on experts validation for understanding which link we have to remove and Moreover expert are are used also for validate single links and to understanding if we can infer some missing links between one of the three. Edges.
+
+[638.0s - 667.0s]
+So finally, what is in the graph so you can find their persons corporate bodies that are orchestras, Charles publisher and so on. All obviously musical works then concerts, forcing coordinate sets. So concepts have been programmed but not yet. At the place and also publication of books that contains scores. What I want to underline is that this data set the does not live alone, because we already started to Inter linking it to the page of Wikidata Musicbrainz starting from the artist. Uh.
+
+[667.0s - 696.0s]
+As future work, we're producing more interlinking with Musicbrainz. Actually, there is a collaboration or running on and will be soon interlinked. The musical works, we will interlink internally. The performance between the different graph. Moreover, we are trying to create bridges with other communities, less music ologist streaming services that can have a benefit from this kind of data to running application that are now using those data are Overture that is the explorative search engine. And as is. This page and a knowledge based recommender system that give you the most similar works to the one that you are looking to and this dynamic chart was two which you can ask information from your favorite composer and.
+
+[696.0s - 725.0s]
+Look for next concert that will be opening nearby you in next weeks. So I leave you with this light, so that is a recap of all the pointers that you can find useful. Of course there is the data dreams.org that is the access point to the data, especially to those particular points. And I underlined also the GitHub page. Contains all the tools that I shown you and data dumps of the data that of drama, so I let also the link to this presentation on the footer. Thank you very much for your attention. So perfect timing, we have time for few questions. Thank you for the talk pascuala. I had just a very quick question about one of the studio you have presented that is the mark two or the F1, yes. Implementation that you have developed is based only on retreiving musical music metadata or can be used for any kind of mark records available in the world, such as. Also, I don't know books, Challen articles and so on, so obviously what we thought is a conversion from Mark to the demos model, so the big answer is no, but there is also the answer that is yes, so that is that is. The mark interpretation part can be easily extracted or disables are open source and it will work. Obviously for any marker file. So that I mean for books an other kind of material just you should select one of the of the part of the market where DF library. So this was great. The actually my question is about Mark 2. There's been so the successor to Mark is the resource description and access vocabulary, which is actually RDF based. I'm curious if you actually consulted that model to integrate with yours since you were had a lot of overlap and you're actually using Ferber, which they just scored that do not really actually, we just wanted to try to have a different approach so that the edges to go beyond the traditional approach. That library stuff so we have not considered this. Maybe it's a good thing to look into for the future work of the project. Thank you. Yeah, thank you for the very impressive work and like it alot. One extension I could immediately think of is to link to literary works that have been the basis for such musical. So like we just heard before, it is something we could plan to do. Or yes, this is actually the reason for which FRBRO has been used. So the fact that it is already already inside the librarian world as already. All the possibilities to represent books or text. Features and so on. It let it. Well, it is a useful starting point to connect everything. So for example, the text that had been used for a specific orpro, for example, that is actually not a musical resources but is a text or resource, can be represented with the traditional FRBRO and then integrated in the system. So we have done this. Uh. Especially for that also underverse musical objects that are being used in other sources like movies, so that you can always represent movie with FRBRO and. Put a link where the movie incorporates our specific work. Thank you very much.

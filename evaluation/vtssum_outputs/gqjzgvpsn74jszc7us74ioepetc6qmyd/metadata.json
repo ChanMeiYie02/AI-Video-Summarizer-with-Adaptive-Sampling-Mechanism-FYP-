@@ -1,0 +1,21 @@
+{
+    "id": "gqjzgvpsn74jszc7us74ioepetc6qmyd",
+    "title": "Visualising the Cluster Structure of Data Streams",
+    "url": "http://videolectures.net/ida07_tasoulis_vtcs/",
+    "info": {
+        "author": [
+            "Dimitris K. Tasoulis, Imperial College London"
+        ],
+        "published": "Oct. 8, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Clustering",
+            "Top->Computer Science->Data Visualisation"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 171,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2766
+}

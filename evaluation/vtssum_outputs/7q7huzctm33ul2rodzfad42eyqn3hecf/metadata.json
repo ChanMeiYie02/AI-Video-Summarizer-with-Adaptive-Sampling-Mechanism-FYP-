@@ -1,0 +1,20 @@
+{
+    "id": "7q7huzctm33ul2rodzfad42eyqn3hecf",
+    "title": "Can particles at the nanoscale result in better drug delivery systems?",
+    "url": "http://videolectures.net/slonano07_kristl_pnr/",
+    "info": {
+        "author": [
+            "Julijana Kristl, Faculty of Pharmacy, University of Ljubljana"
+        ],
+        "published": "Jan. 18, 2008",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Technology->Nanotechnology"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 211,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3222
+}

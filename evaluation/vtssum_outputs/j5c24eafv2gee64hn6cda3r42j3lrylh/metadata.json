@@ -1,0 +1,24 @@
+{
+    "id": "j5c24eafv2gee64hn6cda3r42j3lrylh",
+    "title": "Haptics and its Application in Multimodal User Interfaces",
+    "url": "http://videolectures.net/icme2012_tan_haptics/",
+    "info": {
+        "author": [
+            "Hong Z. Tan, College of Engineering, Purdue University"
+        ],
+        "recorded by": [
+            "IEEE ICME"
+        ],
+        "published": "Sept. 18, 2012",
+        "recorded": "July 2012",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computer Science->Human Computer Interaction"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 620,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2083
+}

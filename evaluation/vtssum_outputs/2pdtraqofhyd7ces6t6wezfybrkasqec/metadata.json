@@ -1,0 +1,21 @@
+{
+    "id": "2pdtraqofhyd7ces6t6wezfybrkasqec",
+    "title": "Live imaging of RNA dynamics for genetic forms of amyotrophic lateral sclerosis (ALS) in zebrafish",
+    "url": "http://videolectures.net/encals2017_munoz_ruiz_lateral_sclerosis/",
+    "info": {
+        "author": [
+            "Raphael Munoz-Ruiz, Institut du Cerveau et de la Moelle épinière - ICM"
+        ],
+        "published": "July 21, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Medicine",
+            "Top->Medicine->Neuroscience"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 98,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 2531
+}

@@ -1,0 +1,21 @@
+{
+    "id": "xomd3towqzpkgbzjhr5gvfxfowfs5bcg",
+    "title": "The \"Digital Territory\" as a Complex System of Interacting Agents, Emergent Properties and Technologies",
+    "url": "http://videolectures.net/eccs07_stamatiou_dtc/",
+    "info": {
+        "author": [
+            "Yannis Stamatiou, Department of Mathematics, Department of Computer Science, University of Ioannina"
+        ],
+        "published": "Dec. 3, 2007",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Science->Complexity Science",
+            "Top->Computers->Digital Media"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 147,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3423
+}

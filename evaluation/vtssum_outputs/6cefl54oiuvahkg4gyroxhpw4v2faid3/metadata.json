@@ -1,0 +1,21 @@
+{
+    "id": "6cefl54oiuvahkg4gyroxhpw4v2faid3",
+    "title": "The Social Signal Value of Emotion Expressions: The Impact of Context and Culture",
+    "url": "http://videolectures.net/fgconference2015_hess_context_culture/",
+    "info": {
+        "author": [
+            "Ursula Hess, Department of Psychology, Humboldt University of Berlin"
+        ],
+        "published": "July 2, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Computer Vision->Face & Gesture Analysis",
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 59,
+    "num_sentences": 534,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 42,
+    "ground_truth_summary_length_chars": 3358
+}

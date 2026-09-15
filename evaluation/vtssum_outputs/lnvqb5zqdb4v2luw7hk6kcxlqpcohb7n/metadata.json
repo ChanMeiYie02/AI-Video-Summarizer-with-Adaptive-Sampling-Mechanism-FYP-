@@ -1,0 +1,21 @@
+{
+    "id": "lnvqb5zqdb4v2luw7hk6kcxlqpcohb7n",
+    "title": "Uncovering signalling differences between primary and transformed hepatocytes using cell-specific logic-based pathway models",
+    "url": "http://videolectures.net/cancerbioinformatics2010_rodriguez_usdb/",
+    "info": {
+        "author": [
+            "Julio Saez Rodriguez, European Bioinformatics Institute"
+        ],
+        "published": "Nov. 29, 2010",
+        "recorded": "September 2010",
+        "category": [
+            "Top->Computer Science->Bioinformatics",
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 270,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1453
+}

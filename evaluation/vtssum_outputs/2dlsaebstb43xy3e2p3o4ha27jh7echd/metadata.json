@@ -1,0 +1,21 @@
+{
+    "id": "2dlsaebstb43xy3e2p3o4ha27jh7echd",
+    "title": "My 10 Year Research Vision: Face Analysis Systems",
+    "url": "http://videolectures.net/fgconference2015_pietikainen_face_analysis/",
+    "info": {
+        "author": [
+            "Matti Pietikainen, Department of Computer Science and Engineering, University of Oulu"
+        ],
+        "published": "July 2, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Computer Vision->Face & Gesture Analysis"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 190,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 3754
+}

@@ -1,0 +1,20 @@
+{
+    "id": "vbmsvdkquewcbm7umfewotq76nefotoi",
+    "title": "3D head pose estimation from multiple distant views",
+    "url": "http://videolectures.net/bmvc09_zabulis_3dhp/",
+    "info": {
+        "author": [
+            "Xenophon Zabulis, Foundation for Research and Technology - Hellas"
+        ],
+        "published": "Dec. 1, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Computer Vision->Face & Gesture Analysis"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 161,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2629
+}

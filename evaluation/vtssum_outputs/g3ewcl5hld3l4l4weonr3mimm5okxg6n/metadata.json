@@ -1,0 +1,20 @@
+{
+    "id": "g3ewcl5hld3l4l4weonr3mimm5okxg6n",
+    "title": "Temporal Development and Collapse of an Arctic Plant-Pollinator Network",
+    "url": "http://videolectures.net/licsb09_wiuf_tdc/",
+    "info": {
+        "author": [
+            "Carsten Wiuf, Bioinformatics Research Center, University of Aarhus"
+        ],
+        "published": "April 16, 2009",
+        "recorded": "April 2009",
+        "category": [
+            "Top->Computer Science->Bioinformatics->Computational Systems Biology"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 267,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 695
+}

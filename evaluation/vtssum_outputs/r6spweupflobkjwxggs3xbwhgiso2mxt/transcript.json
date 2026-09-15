@@ -1,0 +1,157 @@
+[
+    {
+        "text": "Hello, my name is Eugene Charlie. I'm from it my University it's in Saint Petersburg, Russia and today I want to present our work. It's more like a or can progress still so it's work on semantic publishing of cultural heritage data. No.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "It's a joint work together between. Information science and semantic knowledge. Laboratory of my University with Meta facts and be smart. It's to companies that. There he is a very experienced in semantic technology and they are very connected to the lab.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So let me start from brief outline of the presentation, so I'll start from this description of power goals and data providers currently then. I moved to this description or concrete desk we solved. Then I will tell you about high level overview of the system, including which software we use and which kind of data we have, import it and then I will go deeper into the data creation and publishing topics, including ontology, model, acquisition, transmission, etc. Then I will continue with the description of end user application and finish my presentation with evaluation metrics.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So the main objective of the Russian linked culture code is to create a knowledge graph which brings together the sources of knowledge on Russian cultural heritage. For example museums, libraries, archives algorithms, etc. All knowledge in the cloud could be interlinked and published in the form of linked up data on the based on the Seahawks, ERM, intelligent. The project also focuses on development of convenience tools for data, published navigation, analysis and visualization.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Currently we have signed agreements with two. Once in the first one is the Russian Museum, which holds the largest collection collection of Russian art in the vault. So, but it mainly aimed for general public and tourists. So it's my audition of them. The second one is consumer and it's. It's a museum which belonging to? Russian Science Academy. They might have a biggest in Russia collection of anthropological artifacts. And as you can see, there's two very different partners, so they provide us with very different challenges. For example, if we can easily represent data of the Russian Museum, which is like just Fine Arts. But the second one is provides more challenging tasks to represent the topological data, which could very, very. For different. So in our biggest challenge is to integrate this very difference data sources to one or knowledge graph.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So those were. Our long term goals. And that's today I want to tell you about our current progress. In the end of 2014 we started pilot project with the Russian Museum. It was aimed mainly for representation of data which was already openly available on one of Russian museum sites. So we face changes of data representation, integration with external sources in our case is the DVD. And also we injury enriched data and provide with rich visualization.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "The system, their architecture of the system could be explicit logically to three pieces. But the way this data sources we have counted three data sources. First time is Russian Museum has quite. Simple structure. So it provides us with just general information about artworks and their authors. The second one is the British Museum. We reuse the story because it's very high quality. As a result, both just to use it, and the third one is DB pedia, which were used just to enrich original, very poor data with the additional information from external sources. In the middle layer is is where our software works. We have using controller. Meta facts Knowledge graph platform. It's Latin for visualizing. Semantic data by providing their tools for like digits or templates for classes etc. And we also use Bliss garf blazegraph. It's triple stuff from the steps for managing data and providing us with the. Sparkle endpoint so. This is the top level is where benefits more abstract. You know we on this level we made. It consists mainly of. Configured templates and widgets for specific tasks. We also have a mobile app and we also have a possibility to extend our system with third party apps through this article endpoint. So I'll",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Skip next slide because I.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Dimensions do this. They can deal with information.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So and then move to them that acquisition. So the Russian museums data has a very simple structure. It's mainly consist of two main entities, it's artwork and author. And so author has a type. Artwork has a type like drawing, painting, etc. Then his title Dimensions where was created and also has a segmentation. An author, just his name and text notation.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So this is how the author is represented on in the ontology, so it has a type. E 21 person It's stock cerium class to represent persons as you can see that there is a dashed line and the solid lines so dashed lines is what we fetched from the PDF. So we have. The linked authors with dedicated persons where it was possible. Then the author is connected to the other information through the intermediate entity called Production.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "There it's green line. So production, it's it's it's event of creating creation of some kind of artifact. So because stock symbol is even centric model, so there there's such kind of answer. Play central role in integrating different kind of knowledge so you can see this production. Connect author with its his creation and also keep its provides with the dates 19 data creation of the artwork. They get over the. Another information connect so. Artwork so you can see Orange. Orange... Glasses that we gathered from. British Museum and things are results. Our our picture could be described as portrait. It has specific height and width and it consistent. It was made from oil and canvas, so this analysis was made was gathered by. British Museum apology.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So this more detailed example on how we raised ontology so. Which museum celebrates? So basically it's just us 'cause it's built on top of skulls. Combine it with the Seahawks, erm.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Another important part of data representation, it's structured text annotation with the Pedia spotlight. So, but like if you don't know, it's a series that could annotate structure checks with in leaked dipity entities. For example, there's part of text and attention to the portrait of Ruin Stain by wrapping. So you can see a spotlight annotated, for example, Antonio Rubinstein with the. The deep dark Entity which is also person. By the author. It does not provide us with any symbolic semantic meaning, for example, because we don't know how. Relates to this picture cannot automatically infer this, but this great weight, so add some valid for user because he provides additional ways to explore the knowledge for the user.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So, um, interlinking with Pedia was the most valuable task in terms of edit earlier. It provides system with a lot of new information. So it was made in two steps. The first steps and the first time it was semi automated. So we just queried the Wikipedia search API and with personal names and our script asks user for just pick up accordingly related entity and then it creates the also miss link. On the second stage we just used. Semantics fuzzy string matching algorithm just to connect other persons that were not covered by previous step.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So, um. Let's move to visualization. Um? So yeah, we use the class templates for visualized persons and artworks and also custom pages to provide the structure to our side. So we have a set of widgets like people to your timeline research and those all those switches are configured by Sparkle queries.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So in this example of. Person class template. It contains some how to. The six different representation types, including textual for Appalachian, birthdate, sanitation, hyperlink. It's Wikipedia for Wikipedia article caused its place, etc. So I want to point out that we have, for example, if some link points to deeper resource if you click it, it will get to the page where our system fetches information from Wikipedia article. So users are not. I'm not leaving our site and it stands in on our side to enrich said article from Wikipedia. So, um.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "I show you some examples. So we can see a page of Ilya Repin and you can see text or annotation with the links that link to duplicated entities. Also, date of birth of death place averted was gathered by from DPM because those data was not available in the original data imported.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "This is an example of important Wikipedia article. This tells you more about.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "And this is an example of pirate people to you, which just set of thumbnails and you can filter them. So for example, in this case that filtered images with still life. But you can also add some data closest to filtering.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "This is an example of timeline. So you can see the preview of the. There's some kind of artwork and also there is a link to which she can go to the model description of this artwork.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "You also have a search widget which you can for example. There you just enter the portrait in IT returns the the entities with which which is a portrait.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "And this example of the map widget, this birthplace is. You can see it was also gathered by. From the pedia. So we can put it on the map and see where author birth born. I think.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "And this is all the anthology visualizer. It's was made by the smart. And then it starts. You can explore the ontology from, for example, this central entity is wrapping and you can see all connected classes. An entities from right from.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "And this is our mobile app. It's very simple. You can just make a photo of image of the of the picture in the museum and just analyze this image and fetch the corresponding entity from the our server and presents you on mobile phone.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So it's all about description of the system, and I also talk about which evaluation. So the goal of evaluation was to understand how complete is our data, and we split our. Metrics to the three simple to three groups at first on its general metrics. It contains simple avoid statistics. Also provides us with number of art works and authors. The second one is. Original data matrix. It means that we wanted to show how complete was data that was from Russian Museum. And also we were interested in how well interlinked process was. I mean, how much of actually he gave us.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So there's not just metrics and there's 121 artworks we imported from the Russian Museum and to 165 persons.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "There's a original data matrix you can see that. Data from Russia museum. It contains about not it's in many cases incomplete. For example, there's only about 70% of. Auto Descripcion store every to every picture we have. Also, but another just fine. I think almost more than 90%.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "End the interlinking metrics. We successfully interlinked, but 85% of authors on the first page which was semi automatic about 40% and the other 60% worse. Interventions by on the on the second stage which was mentioned. So. And the letter numbers are presenting. How much additional information or give us? For example, there is only 60% for the birth and death dates and then birthplace and death place it's about 20% of authors were added with this value and also influenced influenced by information that was not very popular in. Wikipedia.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "So I must conclude my presentation. It's with some results I know, so we figure out the Seahawks are in provides a great ways to integrate data related to cultural heritage, so it's really easy to just get things together. Then in Lincoln is a really great way to enrich in each initially put dates. I would information so the user can explore knowledge, so even better and appliance meters are great tools for rapid prototyping, but they are very hard to find. You know, for example, when you. Want to make some kind of very special? Gallery for example something.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "So thank you. You have questions. Thank you. Very interesting talk, so it's nice that your method XRM since a lot of other museums are mapping to the same ontology there, so I'm curious where you going next with this. I mean, it seems like you have a few example applications and stuff. Do you have plans for actually building other kinds of things on top of the data you've already mapped? In fact, we have a big plans to. To have a more I Glossary project mean bigger projects with the Russian Museum and other museums. But it is really hard to set up because it's a bigger organizations in you can. It will move in very slowly at the beginning so we don't even have access to all of the data of Russian museum 'cause they have different departments and rigorous structure. So it's very hard. So just organize the things. But Consumer also provides us. US with data. As it turns out that they already had experience with publishing data as she looks at him, but it was about five years ago and by some reason they didn't. I don't know they don't use it, so we just. In the process of taking their data so even more. So maybe maybe a follow-up question from me. Have you any experience if the tools are really used by users and what they say about it? If they are asking for specific features and didn't have a? User server at the moment we don't have. So it was just a pilot project to start work with the museum organizations. So in after that pilot projects was succeeded. We have signed really those official agreements with the museums, so continue our work. But to develop a more user oriented apps I would say not just wiki pages. So I think that the meta facts and your mobile app is not yet user oriented. You can use mobile app, but it only for small subset of. It can be used for only subset of. All pictures in the museum. Because the museum is very big and we have a lot about 900 pictures. So that is it planned that it will go into production. So some more questions. OK, maybe I have another one on Slide 23. I think you did some short some search interface. Yeah, I just want to ask, is this entity search or is it keyword search? Or do you know I don't know much about it because it's was in recently updates of meta facts platform so I didn't get really insights how it works but. Maybe I can, I can show you how it's configured if you're interested. OK, so but it seems that it Maps it to the ontological concept, no, but you can you can. You can tune it so it will be mapped to entities. Pretty sure about it. Yeah it just was set up to them up to just titles. OK, what else so how is this picture matching done? Picture matching it was? In fact, it was done also, but not by me, but it has some preprocessing stage so it extracts some features from feature pictures and then when you make a photo it like such extracts features and compares it with database. Of all the process pictures. OK, but how the algorithm works you don't know. I don't know, OK? Have some more questions. Maybe could you go to the fire almost final slide about the percentages with yeah? So maybe that was a little bit, at least for me. It was a little bit too fast. What does this first and second stage mean? And yes, it was. As you can recall with some. Where is it? Our interlinking process has been done in two stages, so the first one is like a semi automated so query. Just Wikipedia search and the user just chose was choosing. Right candidate of next and on the second states performed 5 transmission of the old image authors. And with the our database gathered from Russian Museum. So in that way we got almost more than 80% of interlinked authors, so this is really evaluated, correct matchings? Or is it just our performance? We performed kind of subjective valuation just by looking at the data. It seems to be correct. So you did it by yourself for all of the mappings. Yeah, OK? Nice work. Yeah so. Yeah, so the so basically you're saying can you, can you infer from that that something like authors that 60% of the authors that you have in your museum are mentioned in DB pedia? Is this something that could serve from 8085%? But there's sometimes it was interfering with Russian DD Pedia and it contains a much lesser data. So much for that English division. OK, then let's say thank you say again, thank you.",
+        "start": 870.0,
+        "end": 899.0
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "id": "r6spweupflobkjwxggs3xbwhgiso2mxt",
+    "title": "Towards the Russian Linked Culture Cloud: Data Enrichment and Publishing",
+    "url": "http://videolectures.net/eswc2015_cherny_russian_heritage/",
+    "info": {
+        "author": [
+            "Eugene Cherny, ITMO University"
+        ],
+        "published": "July 15, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 253,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2587
+}

@@ -1,0 +1,23 @@
+{
+    "id": "eor77ng2rejvfsnlrbrncoa66lujvhos",
+    "title": "Tracking Concept Change with Incremental Boosting by Minimization of the Evolving Exponential Loss",
+    "url": "http://videolectures.net/ecmlpkdd2011_grbovic_loss/",
+    "info": {
+        "produced by": [
+            "Data & Web Mining Lab"
+        ],
+        "author": [
+            "Mihajlo Grbovic, Center for Data Analytics and Biomedical Informatics, Temple University"
+        ],
+        "published": "Nov. 30, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Boosting"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 210,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 3425
+}

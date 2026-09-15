@@ -1,0 +1,21 @@
+{
+    "id": "5vdfcbdmjdcm6sx3xyu2klvlx6ausm3b",
+    "title": "Training and Testing of Recommender Systems on Data Missing Not at Random",
+    "url": "http://videolectures.net/kdd2010_steck_ttrs/",
+    "info": {
+        "author": [
+            "Harald Steck, Bell Labs, Alcatel-Lucent"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Databases"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 199,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 4079
+}

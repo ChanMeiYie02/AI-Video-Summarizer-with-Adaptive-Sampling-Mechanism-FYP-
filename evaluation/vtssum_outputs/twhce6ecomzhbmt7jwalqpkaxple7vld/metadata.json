@@ -1,0 +1,21 @@
+{
+    "id": "twhce6ecomzhbmt7jwalqpkaxple7vld",
+    "title": "Statistical learning of biological networks: a brief overview",
+    "url": "http://videolectures.net/licsb08_dalche_slb/",
+    "info": {
+        "author": [
+            "Florence d'Alche-Buc, Université Evry Val d'Essonne"
+        ],
+        "published": "April 17, 2008",
+        "recorded": "March 2008",
+        "category": [
+            "Top->Computer Science->Bioinformatics->Computational Systems Biology",
+            "Top->Computer Science->Bioinformatics"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 233,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2070
+}

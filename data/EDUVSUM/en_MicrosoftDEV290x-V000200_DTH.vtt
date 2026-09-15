@@ -1,0 +1,73 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.710 --> 00:00:03.780
+>> Edge Detection is a technique that uses
+
+00:00:03.780 --> 00:00:06.780
+filters to find abrupt changes of pixel values,
+
+00:00:06.780 --> 00:00:08.280
+which often indicate the boundaries of
+
+00:00:08.280 --> 00:00:10.410
+shapes or objects in the image.
+
+00:00:10.410 --> 00:00:13.830
+To begin, we convert color images to grayscale,
+
+00:00:13.830 --> 00:00:16.950
+so that we're only dealing with a single channel of pixels.
+
+00:00:16.950 --> 00:00:21.105
+Then, we apply particular type of filter called a Sobel Filter,
+
+00:00:21.105 --> 00:00:23.610
+after one of its inventors, Irwin Sobel,
+
+00:00:23.610 --> 00:00:25.470
+along with his colleague, Gary Feldman,
+
+00:00:25.470 --> 00:00:26.820
+conceived of the idea of using
+
+00:00:26.820 --> 00:00:30.375
+a three-by-three filter to find gradients in images.
+
+00:00:30.375 --> 00:00:34.080
+The technique is performed in two stages.
+
+00:00:34.080 --> 00:00:36.690
+First, this kernel is
+
+00:00:36.690 --> 00:00:39.755
+applied to find the horizontal gradient for each pixel,
+
+00:00:39.755 --> 00:00:41.645
+let's call that Gx.
+
+00:00:41.645 --> 00:00:45.860
+Then, this kernel is applied to detect the vertical gradients,
+
+00:00:45.860 --> 00:00:48.030
+which we'll call Gy.
+
+00:00:48.440 --> 00:00:51.440
+Then, we just add the squares of the x and
+
+00:00:51.440 --> 00:00:54.230
+y gradient values calculated for each pixel,
+
+00:00:54.230 --> 00:00:55.940
+and take the square root to determine
+
+00:00:55.940 --> 00:00:58.010
+the length of the vector described by the pixels.
+
+00:00:58.010 --> 00:00:59.540
+Then, we can calculate
+
+00:00:59.540 --> 00:01:02.545
+the inverse tangent of those values to determine its angle.
+
+00:01:02.545 --> 00:01:06.400
+That will reveal the edges in the image.

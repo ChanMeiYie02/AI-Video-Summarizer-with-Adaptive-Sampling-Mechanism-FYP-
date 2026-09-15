@@ -1,0 +1,24 @@
+{
+    "id": "u3jzax7xvslg2qdpvjnt6eq5bcfe6lbs",
+    "title": "Observing Linked Data Dynamics",
+    "url": "http://videolectures.net/eswc2013_kaefer_data/",
+    "info": {
+        "introducer": [
+            "Olaf Hartig, Hasso-Plattner-Institute, University of Potsdam"
+        ],
+        "author": [
+            "Tobias Käfer, Karlsruhe Institute of Technology (KIT)"
+        ],
+        "published": "July 8, 2013",
+        "recorded": "May 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 206,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2327
+}

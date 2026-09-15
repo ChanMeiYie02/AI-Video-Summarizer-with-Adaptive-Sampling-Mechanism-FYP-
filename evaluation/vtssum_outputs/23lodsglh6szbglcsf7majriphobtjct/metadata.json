@@ -1,0 +1,20 @@
+{
+    "id": "23lodsglh6szbglcsf7majriphobtjct",
+    "title": "X, Y, Zebra",
+    "url": "http://videolectures.net/fa_denari_zebra/",
+    "info": {
+        "author": [
+            "Neil M. Denari, Neil M Denari Architects, Inc"
+        ],
+        "published": "April 19, 2019",
+        "recorded": "April 2019",
+        "category": [
+            "Top->Architecture"
+        ]
+    },
+    "num_segments": 113,
+    "num_sentences": 593,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1233
+}

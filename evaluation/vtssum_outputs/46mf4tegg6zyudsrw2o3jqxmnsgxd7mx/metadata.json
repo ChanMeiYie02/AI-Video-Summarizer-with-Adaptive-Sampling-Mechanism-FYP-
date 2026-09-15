@@ -1,0 +1,20 @@
+{
+    "id": "46mf4tegg6zyudsrw2o3jqxmnsgxd7mx",
+    "title": "Who Uses Web Search for What? And How?",
+    "url": "http://videolectures.net/wsdm2011_weber_wuw/",
+    "info": {
+        "author": [
+            "Ingmar Weber, Qatar Computing Research Institute"
+        ],
+        "published": "Aug. 9, 2011",
+        "recorded": "February 2011",
+        "category": [
+            "Top->Computer Science->Web Search"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 214,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1584
+}

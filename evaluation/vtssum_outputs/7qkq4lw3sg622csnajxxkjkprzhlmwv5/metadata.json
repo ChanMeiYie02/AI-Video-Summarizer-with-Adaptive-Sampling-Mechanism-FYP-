@@ -1,0 +1,20 @@
+{
+    "id": "7qkq4lw3sg622csnajxxkjkprzhlmwv5",
+    "title": "A subjective tour through foundations and modern trends",
+    "url": "http://videolectures.net/isba2016_petrone_modern_trends/",
+    "info": {
+        "author": [
+            "Sonia Petrone, Bocconi University"
+        ],
+        "published": "Sept. 1, 2016",
+        "recorded": "June 2016",
+        "category": [
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 35,
+    "num_sentences": 437,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 86,
+    "ground_truth_summary_length_chars": 11192
+}

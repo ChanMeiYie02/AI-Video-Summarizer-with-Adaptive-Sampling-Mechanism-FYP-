@@ -1,0 +1,262 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:06.770 --> 00:00:12.890
+Expression is a combination of objects and operators that computes a value.
+
+00:00:12.890 --> 00:00:18.260
+Many expressions involve what is known as the boolean data type.
+
+00:00:18.260 --> 00:00:21.700
+Objects of the boolean type have only two values.
+
+00:00:21.700 --> 00:00:24.620
+These are called True and False.
+
+00:00:24.620 --> 00:00:28.980
+In Python, you need to capitalize these words, True and False,
+
+00:00:28.980 --> 00:00:33.380
+for Python to understand them as boolean type.
+
+00:00:33.380 --> 00:00:35.370
+Let&#39;s just check very quickly.
+
+00:00:35.370 --> 00:00:42.180
+If we type True, Python tells us this is a boolean object.
+
+00:00:42.180 --> 00:00:47.580
+Or if we ask Python, what is the type of False, with F capitalized,
+
+00:00:47.580 --> 00:00:50.280
+Python tells us this is a boolean object.
+
+00:00:50.280 --> 00:00:54.370
+Note that if I don&#39;t capitalize false, Python
+
+00:00:54.370 --> 00:00:56.340
+doesn&#39;t know what this object is.
+
+00:00:56.340 --> 00:00:57.920
+It doesn&#39;t understand that.
+
+00:00:57.920 --> 00:01:01.260
+So you need to be sure to capitalize your boolean types.
+
+00:01:01.260 --> 00:01:05.770
+Operations involving logic, so-called boolean operations,
+
+00:01:05.770 --> 00:01:08.440
+take in one or more boolean object and then
+
+00:01:08.440 --> 00:01:11.690
+they return one boolean object back to you.
+
+00:01:11.690 --> 00:01:16.790
+There are only three boolean operations, which are &quot;or&quot;, &quot;and&quot;, and &quot;not&quot;.
+
+00:01:16.790 --> 00:01:18.720
+So let&#39;s try these out.
+
+00:01:18.720 --> 00:01:22.930
+Let&#39;s start with &quot;or&quot;. &quot;Or&quot; between x and y
+
+00:01:22.930 --> 00:01:29.240
+is going to be True if either x is True or y is True, or both are True.
+
+00:01:29.240 --> 00:01:36.510
+So for example, if we say True or False, then Python returns True.
+
+00:01:36.510 --> 00:01:39.480
+True or True would also be True.
+
+00:01:39.480 --> 00:01:45.080
+So the only time &quot;or&quot; would be False-- if both the first and second object
+
+00:01:45.080 --> 00:01:48.080
+surrounding &quot;or&quot; are False.
+
+00:01:48.080 --> 00:01:51.600
+&quot;And&quot; is only true if both objects are True.
+
+00:01:51.600 --> 00:01:57.180
+So if we type True and True, the answer is going to be True.
+
+00:01:57.180 --> 00:02:03.720
+However, if we turned the second True to False, &quot;and&quot; is going to be False.
+
+00:02:03.720 --> 00:02:08.979
+So in order for &quot;and&quot; to be True, both of the objects need to be True.
+
+00:02:08.979 --> 00:02:11.960
+Finally, we have the &quot;not&quot; operation, which
+
+00:02:11.960 --> 00:02:15.350
+simply negates the value of the object.
+
+00:02:15.350 --> 00:02:20.740
+So if we say not True, Python gives us False.
+
+00:02:20.740 --> 00:02:25.550
+And if we say not False, Python returns to us True.
+
+00:02:25.550 --> 00:02:29.730
+We often need to compare objects in our programs.
+
+00:02:29.730 --> 00:02:34.310
+There are a total of eight different comparison operations in Python.
+
+00:02:34.310 --> 00:02:37.440
+Although these are commonly used for numeric types,
+
+00:02:37.440 --> 00:02:40.490
+we can actually apply them to other types as well.
+
+00:02:40.490 --> 00:02:43.390
+For example, if you&#39;re comparing two sequences,
+
+00:02:43.390 --> 00:02:46.380
+the comparison is carried out element-wise.
+
+00:02:46.380 --> 00:02:49.800
+So you&#39;re comparing the first element of your first sequence
+
+00:02:49.800 --> 00:02:53.860
+to your first element in your second sequence, and so on.
+
+00:02:53.860 --> 00:02:56.510
+The result of a comparison like this is always
+
+00:02:56.510 --> 00:03:00.400
+a boolean type, either True or False.
+
+00:03:00.400 --> 00:03:04.640
+It&#39;s perhaps easiest to understand these comparisons through a simple example
+
+00:03:04.640 --> 00:03:06.400
+that involves numbers.
+
+00:03:06.400 --> 00:03:08.700
+So let&#39;s try out a couple of them.
+
+00:03:08.700 --> 00:03:10.970
+Let&#39;s say you are comparing two numbers.
+
+00:03:10.970 --> 00:03:15.090
+We might ask Python, is 2 less than 4?
+
+00:03:15.090 --> 00:03:17.410
+Python returns True to us.
+
+00:03:17.410 --> 00:03:23.480
+We can also ask, is 2 less than or equal to, say, 2?
+
+00:03:23.480 --> 00:03:26.700
+And in this case, the answer is again True.
+
+00:03:26.700 --> 00:03:32.040
+We can test for equality by using two equal signs.
+
+00:03:32.040 --> 00:03:35.680
+2 is equal to 2, so Python returns True to us.
+
+00:03:35.680 --> 00:03:40.060
+And finally we can ask, are two objects not equal to one another,
+
+00:03:40.060 --> 00:03:43.850
+by using the exclamation mark or exclamation point.
+
+00:03:43.850 --> 00:03:49.520
+In this case, the answer is False, because two is equal to 2.
+
+00:03:49.520 --> 00:03:53.700
+These two comparisons are used to test whether two objects are
+
+00:03:53.700 --> 00:03:55.710
+the one and the same.
+
+00:03:55.710 --> 00:03:59.910
+Notice that this is different than asking if the contents of two objects
+
+00:03:59.910 --> 00:04:01.030
+are the same.
+
+00:04:01.030 --> 00:04:04.120
+So let&#39;s see what this implies using a little bit of code.
+
+00:04:04.120 --> 00:04:07.510
+We could ask Python if the list that contains
+
+00:04:07.510 --> 00:04:14.100
+numbers 2 and 3 is the same as the list containing numbers 3 and 3.
+
+00:04:14.100 --> 00:04:17.190
+The answer is, of course, False in this case.
+
+00:04:17.190 --> 00:04:23.470
+If we modify the second list, now both lists have the numbers 2 and 3 in them.
+
+00:04:23.470 --> 00:04:25.280
+The answer is going to be True.
+
+00:04:25.280 --> 00:04:28.110
+The lists are identical in content.
+
+00:04:28.110 --> 00:04:31.650
+However, if we wanted to ask if the first list is
+
+00:04:31.650 --> 00:04:38.310
+the same object as the second list, we would use the &quot;is&quot; comparison.
+
+00:04:38.310 --> 00:04:40.960
+And Python tells us that this is False.
+
+00:04:40.960 --> 00:04:44.160
+If we&#39;d like to know if the first list is not
+
+00:04:44.160 --> 00:04:49.390
+the same object as the second list, we can use the &quot;is not&quot; operation.
+
+00:04:49.390 --> 00:04:52.250
+And in this case, Python returns True.
+
+00:04:52.250 --> 00:04:55.070
+So we actually have two lists here.
+
+00:04:55.070 --> 00:04:59.620
+They happen to have the same contents, but we do have two objects.
+
+00:04:59.620 --> 00:05:03.180
+That&#39;s why this comparison returns False.
+
+00:05:03.180 --> 00:05:07.550
+How would we test equality of two numbers that are a floating point
+
+00:05:07.550 --> 00:05:09.550
+number and an integer?
+
+00:05:09.550 --> 00:05:15.850
+So we can see how testing if 2.0 is equal to 2.0 returns True.
+
+00:05:15.850 --> 00:05:20.500
+But what happens if we ask Python, is 2.0 equal to 2?
+
+00:05:20.500 --> 00:05:26.320
+In this case 2.0 is a floating point number, whereas 2 is an integer.
+
+00:05:26.320 --> 00:05:29.050
+What happens in this situation is the following:
+
+00:05:29.050 --> 00:05:34.390
+Python takes the second number, which is number 2, an integer-- it turns that
+
+00:05:34.390 --> 00:05:36.380
+into a floating point number.
+
+00:05:36.380 --> 00:05:41.060
+The floating point representation of the integer 2 is 2.0.
+
+00:05:41.060 --> 00:05:45.350
+So now we are comparing implicitly 2.0 to 2.0.
+
+00:05:45.350 --> 00:05:48.240
+Therefore the answer is going to be True.

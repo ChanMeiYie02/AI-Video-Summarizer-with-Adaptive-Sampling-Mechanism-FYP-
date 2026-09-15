@@ -1,0 +1,20 @@
+{
+    "id": "tf64mzycx3c32yss5jb2zfjywt4k62me",
+    "title": "Observing LOD using Equivalent Set Graphs: it is mostly flat and sparsely linked",
+    "url": "http://videolectures.net/iswc2019_asprino_sparsely_linked/",
+    "info": {
+        "author": [
+            "Luigi Asprino, University of Bologna"
+        ],
+        "published": "Dec. 10, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 137,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1118
+}

@@ -1,0 +1,21 @@
+{
+    "id": "sqnaoreootovpdx732d3ezloafo6flo4",
+    "title": "Large Scale Image Retrieval and Mining",
+    "url": "http://videolectures.net/miningdata2016_chum_scale_image/",
+    "info": {
+        "author": [
+            "Ondrej Chum, Faculty of Electrical Engineering, Czech Technical University in Prague"
+        ],
+        "published": "Jan. 31, 2017",
+        "recorded": "September 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Data Science"
+        ]
+    },
+    "num_segments": 144,
+    "num_sentences": 852,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2237
+}

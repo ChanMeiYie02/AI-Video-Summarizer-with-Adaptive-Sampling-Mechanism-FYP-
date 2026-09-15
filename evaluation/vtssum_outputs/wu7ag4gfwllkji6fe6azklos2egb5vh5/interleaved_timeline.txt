@@ -1,0 +1,125 @@
+[0.0s - 29.0s]
+Hi, my name is Matt and this is joint work with my advisor Daniel Day at the University of Rochester.
+
+[29.0s - 58.0s]
+OK, so a quick summary of this talk is going to parts in a quick summary of it is. The first part is that using certain learned tree substitution grammars have lower perplexity and test data, which is something we should expect, but they do so with roughly the same size grammars as treebank as the standard treatment context free grammar. So.
+
+[58.0s - 87.0s]
+Just as a quick review, I guess there's a bunch of overlap here with Mark stock, But a standard CFG. This is just a picture of a rule from the tree Bank, which is about 50,000 sentences that have been manually annotated bilingual. It's like this and.
+
+[87.0s - 116.0s]
+So you can see just one example right there in.
+
+[116.0s - 145.0s]
+Tree substitution grammar is essentially a context free grammar, except that nonterminals can rewrite a sub.
+
+[145.0s - 174.0s]
+Trees of arbitrary size. So here the boxed nodes represent boundaries on these rules, so you can see the taskbar, its frontiers on NP, and then the lexical word should and then VP. So TST is our context free grammars. They have the same distribution over strings, but we can do different things with them with language modeling. So really, a big.
+
+[174.0s - 203.0s]
+Album with tree substitution grammars is how to learn them, so in the in the tree before the treebank annotations, the context free grammar, the standard treatment grammar is just.
+
+[203.0s - 232.0s]
+Implicit in the parse trees. But with trees, tree substitution grammars, we have to find away basically to find hidden biscuit, cut up the tree and find out where the boundaries between the rules are to find the derivation that we think produced that. So 11 approach popular approach is done pretty well as the data Orient Orient parsing approach where you essentially take all subtrees as your as your grammar. And actually I mean this goes way back before 2001, but there's a long line of work by run spot in doing that and another.
+
+[232.0s - 261.0s]
+Approach could do is EM where you just kind of guess the derivations and literally iteratively guest the derivations and account subtrees. But so problems common to both of these approaches is 1. Is that we? It's over fitted to the training data, so we have just grammars that don't generalize as well as we'd like to, and also we just have a representation problem. There's an exponential number of subtrees in the tree Bank, so actually representing them in memory is a problem so we like.
+
+[261.0s - 290.0s]
+Better way to do that, so a number of groups did that this year and. We had a paper at ACL where we adapted Sharon Goldwater's work for segmentation doing final logical segmentation to this task, which is essentially a segmentation task as well so we can address the overfitting problem by using dear slave process prior that discourages large subtrees. So here we just access the non terminal and we sample the rewrites for each. Non terminal. Using a base, measure that. The first outside the product is a geometric distribution on the number of rules that constitute each subtree, and then the real properties themselves. We get from maximum likelihood estimate from the tree bank. And so there's other ways you could do that, but that's the.
+
+[290.0s - 319.0s]
+We did it and we address space efficiency. Is this approach if use collapsed Gibbs sampling that as Mark mentioned, that that addresses this problem because we have to maintain counts for rules that are exist in derivations from the current state of of the corpus.
+
+[319.0s - 348.0s]
+So here's just a picture of sampling from two different initialization initialization points. The top is just the treebank initialization and the bottom is spinal spinal grammar, which I'll discuss in a second, and you can see just going through the first 100 iterations. How this how these were visiting every node in turn and sampling whether we should make that a boundary point or not, and. So that this is just doing 100 iterations and you can see that it hasn't. Really these trees are actually quite different, so that's there's a couple issues related to this, which I'll discuss, but one of them is that you get. You do get different grammars depending on.
+
+[348.0s - 377.0s]
+Where you stop and whether you take a single point estimate or sum over them.
+
+[377.0s - 406.0s]
+So, but one interesting aspect from those grammars is so here's a picture of if you parse the 23rd section of the Wall Street Journal and then read out all the rules that you used in parsing it and then plot a histogram by subtree size where size is the number of lexical items in each rule. These are two plots that you get. It's a log scale on the Y axis, so one is the DOP grammar and the circles are the sampled grammar. So this is kind of a. It distribution you might expect, but then if you look.
+
+[406.0s - 435.0s]
+The actual grammars themselves, the DLP grammar, just taking that as representative of a previous approach has just this huge grammar, which is basically flat across the whole. Yet you have all these items with 12 lexical items on them which don't generalize very well whereas.
+
+[435.0s - 464.0s]
+The picture for the sampled grammar is much more natural and efficient to represent.
+
+[464.0s - 493.0s]
+OK, so the experiments for this. For this paper, um, so we just we took three days.
+
+[493.0s - 522.0s]
+Grammar is one. Is the treatment grammar and then we used a spinal grammar which is just taking each lexical word an maximally, projecting it up. So you get. Us every subtree is 1 lexical item on them and it goes up to the highest internal that has that word as as its head.
+
+[522.0s - 551.0s]
+And then we also have a sample grammar and these are just three different pictures of. What does? What the derivation state for a particular subpar stream? The training data look like?
+
+[551.0s - 580.0s]
+And so, here we've graphed the size of these grammars versus the perplexity in the test data, and the major point here is that the treebank grammar. Has you can see that as the square on the top and the sampled grammar, it has much lower perplexity, and it hasn't lost much in terms or hasn't hasn't grown much in terms of size. And then we also have variations with the spinal in the treebank grammar. In the sampled grammar we also add in all accounts from the tree bank rules. No, those are the whole the whole on binary string subtrees. I'm sorry. Would know this is actually just parsing OK, so when I parsed the rules were binary idea, but then I. You know unflattened them into the whole rules. So, but some of these rules do have like skeletons on them, but the model is not a lexicalized model. And so the spinal we had to add the treebank that'll I'll talk about that more. In second we had the tree bank accounts in just because it was too brittle to build up to parse the entire Test Corp.
+
+[580.0s - 609.0s]
+With. So we don't have spirit. Be nice to you know. Perplexities, kind of stand in for actual language, model performance on a task like machine translation and we were able to do that for here. So instead we generated some pseudo random text and then look at the perplexity scores on what is essentially grammatical garbage so. Here's an example sentence. The way we generated the pseudorandom text. Is we took NP's and just randomly permuted them and that seems kind of arbitrary, but it's just the first thing we tried and we wanted to do something syntactic in contrast to somebody else who did this for training discriminative language models where negative examples were sampled from a trigram model.
+
+[609.0s - 638.0s]
+So if you parse, if you then get scores on this here better is in the upper left hand corner and this is basically just rotated on as a mirror image. So you want worse perplexity scores, ungrammatical text, worse being higher, and so we basically get the same thing that repair the sample grammar isn't much bigger, but it has much. Thanks, this ungrammatical sentences are worse. But this is again basically just flipped or mirrored image over a horizontal axis.
+
+[638.0s - 667.0s]
+OK, so just as a preface to talking with the second part of the paper. So if you look at these tree substitution grammars that that you learn, I said earlier. Basically, context free grammars because you can take these and just the internal nodes of a subtree are irrelevant when you're doing parsing language modeling. They don't contribute anything, so you can just remove them, and that's actually what we do when we parse with it. And if you want to test parse accuracy, you just maintain that mapping and put him back into score against the gold standard trees. But you don't need to do that when you're doing. Beginning perplexity measures, so you can kind of look at this as. Initial structural learning is that we've stripped out the tree substitution grammar that was learned, stripped out nodes that it didn't think were contributed to this. So here you can see just any node. That snap box has been removed and we have a slightly different tree, and that's the one that we parse with after after finalizing it.
+
+[667.0s - 696.0s]
+OK, so with that observation, what we were kind of curious is that we know that by lexical parsing models are just much better parsers than a standard PC FG model. So the question is if this is learning slightly different structures, we wonder if training those more complicated by lexical grammars on these newer structures would give us further increase in. Or decrease in perplexity, which is an improvement. And they do.
+
+[696.0s - 725.0s]
+So that's there's some caveats to that, but I'll, I'll get to that. So just a quick review. CFG parsing.
+
+[725.0s - 754.0s]
+The generative models you just replace each non terminal with all of his children in one act and that has a probability associated with it. And then you just recurse and take it down to the leaves with by lexical.
+
+[754.0s - 783.0s]
+Parsing hits a bit more complicated, so you generate one particular model which counts Model 1 so you have an internal you generate it's. Its head tag and head word.
+
+[783.0s - 812.0s]
+And then from there you generate the head child and then you.
+
+[812.0s - 841.0s]
+2. Then you generate the sibling label.
+
+[841.0s - 870.0s]
+It had tags and you do all those independently and then each of these is conditioned on a lot of the history.
+
+[870.0s - 899.0s]
+And then finally generate the headwords of each of these head tags and labels and it's called by lexical parsing. Because in this last probability. Distribution here we have or conditioning the probability of word on the headward. So we have this. Lexical dependency, which is computed computed over these structures.
+
+[899.0s - 928.0s]
+And then you just recurse. So these parsing models do much better than a standard model and parsing.
+
+[928.0s - 957.0s]
+You see, and also have lower perplexity. So one point before we show we train these accounts. Model training procedures. Expect expect free terminals above all lexical items. So in order to do that, when you have rules that have lexical items in them, you have to introduce this deterministic pre terminal above lexical items so you can see how we've done that in this grammar transformation. We take this rule here. Anta so basically any any any word that doesn't have a pre terminal above it. We introduced a deterministic pre terminal that expands directly to that lexical item.
+
+[957.0s - 986.0s]
+And then we can train the counts model over it. So in this is a.
+
+[986.0s - 1015.0s]
+Is showing a problem that arises when you do that. So this is basically a problem that's inherent to trying to use these tree substitution grammars with words on the frontiers which we have shown are better for perplexity, but we can't adapt this better model to take advantage of them as much as we'd like, and part of the reason.
+
+[1015.0s - 1044.0s]
+That is because of the way the back off structure is defined in the columns model. So there's this three.
+
+[1044.0s - 1073.0s]
+Level interpolation, where when you generate. The label and head tag of a sibling child. Its condition first.
+
+[1073.0s - 1102.0s]
+Done the parent label in the head label Head Tag and had word and then whether it's left or right of the head, and then you interpolate that with a more limited estimate. So normally when you do this you get less sparse statistics, but when you have lexical items on the frontier, you this interpolation structure doesn't give you less sparse statistics because we still have this even in the third level of this interpolation we still have this by lexical dependency because of those. Deterministic pre terminals that were introduced so because that we couldn't parse.
+
+[1102.0s - 1131.0s]
+With the spinal grammar at all and what we had to do, and we've had problems with some of the sample grammars and we had to especially just take all the subtrees that we learned. And instead of extracting the lexicalized subtree we as a work around to this, we just detached the.
+
+[1131.0s - 1160.0s]
+Lexical items, so they became separate rules. So before we had this sbar rule that although we went all the way down to should. And now it's a bigger rule, but it only goes down to the NP and then the model tag and the VP. And so then we have a separate rule of MD goes to should, so we're losing what we would suspect is the part of the advantage of this model, which is the lexicalization.
+
+[1160.0s - 1189.0s]
+We still get some improvement in perplexity scores using this parsing model trained on these sampled grammars, so the D denotes this detachment, so again, we have the treatment grammar, and we have a sampled in the sample plus tree Bank, and so basically. Hi perplexity. Actually, oh, I'm sorry. So here is plotted the scores on the grammatical versus the ungrammatical. So you want low perplexity on the grammatical and high perplexity on the ungrammatical pseudo pseudo text, so upper left is better than we see. Getting real counts from the sample plus spinal does the best here. And the it's it's harder to analyze exactly what's going on to speak, partly because the model is more complicated. But there's definitely just what I went over as a clear problem. It's something that we could probably fix to be able to generalize these. More complicated parsing Model 2.
+
+[1189.0s - 1218.0s]
+These different structures that are learned with tree substitution grammars. So that's all. The absolute values of the complexities seem on the high side and how does it compare to like standard track record? So it's all about the in the paper I have the trigram bigram, so it's well above that and I didn't put in the talk, so people have used parsers. As tried, evaluated them for Plex it before turning at a paper where you did by lexical parsing and get improved over the baseline so. I think there's I mean, I think there's improvement in there to be had so. So in here we had well above the. The trigram baseline, but. I mean, you could get something better. Yeah, yeah, and it's hard to compare with their previous work 'cause they had a different size vocabulary which makes it hard to compare perplexities and things like that so.

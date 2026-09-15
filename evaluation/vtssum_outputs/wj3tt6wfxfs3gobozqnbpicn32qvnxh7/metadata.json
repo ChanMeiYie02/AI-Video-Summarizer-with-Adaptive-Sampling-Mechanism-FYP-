@@ -1,0 +1,20 @@
+{
+    "id": "wj3tt6wfxfs3gobozqnbpicn32qvnxh7",
+    "title": "Co-Operation Management - CeBeNetwork GmbH",
+    "url": "http://videolectures.net/brussels06_essic_omcg/",
+    "info": {
+        "author": [
+            "Daniel Essic, CeBeNetwork Engineering & IT"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "May 2006",
+        "category": [
+            "Top->Business->Networked Organizations"
+        ]
+    },
+    "num_segments": 1,
+    "num_sentences": 19,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 408
+}

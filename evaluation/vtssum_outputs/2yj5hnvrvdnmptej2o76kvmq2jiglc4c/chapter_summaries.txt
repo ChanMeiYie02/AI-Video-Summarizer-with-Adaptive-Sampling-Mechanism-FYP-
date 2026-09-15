@@ -1,0 +1,328 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+Thank you. This is work. Steven was kind enough to mention a lot of the work I've done recently in blind convolution on solve that work is done by a not as is this work. But one more person I'd like to thank here is a mayor Feder who is a professor of information. Tell him University and in some sense this talk is an argument for coffee breaks. I think it's better to leave the door open because people were complaining about oxygen. So basically I was on a several committees with the.
+
+**AI Summary:**
+The speaker expressed thanks and acknowledged work recently done in "blind convolution." They specifically thanked Steven for mentioning this work and also thanked Mayor Feder, a professor of information at the University. The speaker also mentioned being involved in several committees.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+With mayor and during the coffee breaks we started talking about what each of us were doing, and. He pointed out to me that there's a lot of interesting work on blind deconvolution done in the communication theory world and that we should really take a look at it and essentially that's what the bottom line of this talk is. We should really take a look at it so it's more as the previous speaker said, the computer vision people should like the image processing people, but there's even a broader community out there that we should all be familiar with. [29.0s - 58.0s]
+OK, so why do? Why do I think it's great to work on blind convolution? It's because it's like all my favorite problems. It's Anil post problem. You're given the single image why I need to reconstruct you 2 images. So there's an infinite number of possible solutions and that's what makes it an interesting problem to work on. [58.0s - 87.0s]
+Despite the fact that this is a little post problem, in recent years we've been able to solve it, which is really quite impressive. And again, if you look sort of at the history, it's true that people in all sorts of communities have looked at blind deconvolution over the years. I think for me, really, starting with Rob's work in 2006, the amazing thing is to actually get this to work on real images. Real camera shakes even though you know there's no problem. We're just making up these priors that are may or may not be correct, but you know, lots of different methods Now can take an image like this. And come out with the Blur kernel, which is what's shown here in the insets, and with the sharp image over here. Really. Just many people sitting in this room, but I think it's it's good to sort of sit back and reflect on the fact that we can actually solve this.
+
+**AI Summary:**
+The discussion focused on blind deconvolution as a key area, suggesting that computer vision and image processing communities should become more familiar with it. The speaker explained that blind deconvolution is an interesting problem because it involves reconstructing two images from a single input image, leading to an infinite number of potential solutions. Despite being a challenging problem, recent advancements have made solving it feasible on real images, even dealing with real camera shake. The speaker noted that various methods can be used to solve this problem, demonstrating the capability to generate blur kernels and sharp images.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I think it's quite an achievement. [87.0s - 116.0s]
+Almost all of these methods, and also I guess the methods mentioned the previous talk are basically Bayesian message with the sparse prior, so we know that if we look at the derivatives of natural image and we plotted histogram, it's going to have this non Gaussian distribution. Heavy tail distribution, often modeled by penalising for the absolute value of derivative race to the Alpha, where Alpha is a number between zero and one. Is a 70 norms that were mentioned earlier? And that gives us the joint distribution of both the image unknown image X and the unknown burchenal K given the observed image Y. And given this joint distribution, there are two directions 1 could go. You could try to do global map, find the latent image X and the unknown filter K which maximizes this posterior probability of there should be a - here, or minimizes this energy function over here. Night and I and billing for Adobe Reader paper for years ago, pointing out that this is guaranteed to fail. That is that if you actually. Find the global optimum of this energy function. In blind image deconvolution you always get the wrong blur kernel. Anything is, we thought by writing this paper, we would stop people using it, but it hasn't all happen.
+
+**AI Summary:**
+The discussion focuses on image deconvolution methods, primarily utilizing Bayesian message with a sparse prior. It explains that the derivatives of natural images follow a non-Gaussian, heavy-tail distribution, which is modeled by penalizing the absolute value of the derivative up to a specific Alpha value. This setup defines the joint distribution of the unknown image (X) and the blur kernel (K) given the observed image (Y). The proposed solutions involve either finding the global map to maximize the posterior probability or minimizing the associated energy function. A warning is issued that finding the global optimum of this energy function is guaranteed to fail, noting that in blind image deconvolution, users will always obtain the wrong blur kernel.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+In fact, it often works well in practice if you don't keep iterating it. If you stop the iterations and you don't find the global optimum, this is a surprisingly sort of an embarrassingly successful method. And I'll say a few words. I think our current understanding of why that is, but the algorithm that is guaranteed to succeed is when you integrate over the latent image and just maximize over P of XP of K. So you find the most likely derivative most likely filter blur kernel while integrating over X, and that it's a very simple proof to show if your images are sampled from a prior and everything is all you're basing assumptions are correct. This will succeed this, on the other hand.
+
+**AI Summary:**
+The speaker notes that a method works well in practice without extensive iteration. However, the guaranteed successful algorithm involves integrating over the latent image and maximizing over P of XP of K. This process finds the most likely derivative/filter blur kernel while integrating over X, which is simple to prove if the images are sampled from a prior and assumptions are correct.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Even if all your assumptions are correct is guaranteed to fail if you globally optimize it. OK, so that was a very.
+
+**AI Summary:**
+The speaker discusses a critical caveat regarding assumptions and optimization: even if all initial assumptions are correct, the process is guaranteed to fail if a global optimization is attempted.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[116.0s - 145.0s]
+Introduction For where we are in computational photography. And now I want to talk about the consequences of our coffee break. We're following the suggestion, familiar Feder. We went and read a little bit about what people in communication systems do. I think the most interesting thing is that the vast majority of their approaches are not map approaches. They're not Bayesian approaches. These different approach. And they have us in some sense stronger correctness guarantees than we have. They can prove things or will find correct blur kernel under stronger conditions, weaker conditions, more general conditions. So I'll talk about the my main message, the. A corollary of this is that actually some of these math XK algorithms, the ones that, as I mentioned earlier, are guaranteed to fail, can be thought of as doing an approximation to these old algorithms, and that can explain some of their success. [145.0s - 174.0s]
+OK, so I don't know how many people have seen this. This is a 56 K modem. You know when you turned it on in the old days and having people ever had dial-up modems, there would be this. I since we're being filmed, I won't try to reproduce the signal here, but there do this very pleasant sound where the modem would emit a synchronization tone. And why is it doing that? It's the solver deconvolution problem, right? So when the modem transmits information over a phone line, or this is of course true for any communication system. If you transmit X of T, what you receive on the other side is. Linear combination of X at different delays where you know the signal reverberates through the medium and basically the received signal. Y is a convolution of X with an unknown blur kernel, so it's exactly the same problem that we face in camera shake. So how do you solve it again in the one version is again this synchronization sequence basically is a known X, so the modem sends out a particular tone that the receiver knows, and then the receiver just has to solve, and this is the LMS rule that many of us learned in our neural network class. Is an iterative algorithm for finding the blur kernel when X&Y are both known. And that's good for short communications, but if you have a very long communication. Setting the Blur kernel will change overtime, so sending the communication the synchronization signal in the beginning is not going to give you the right blur kernel because it keeps changing overtime. And so here and so there's been a lot of work in this field on blind deconvolution because you want to re estimate this blur kernel automatically during the long communication protocol. Here these are two papers that I think everyone all of us should read. One thing you can't see the font, but this is 1980 IEEE Trans. Transaction communications in 1980, which does blind deconvolution. And this is actually, I think this is from 1998 by shelving Weinstein, which is mostly what I'm going to talk about. This paper reinterprets this old algorithm in the way that I found it easier to understand and has more generalizations. OK, so how do these classical algorithms work? [174.0s - 203.0s]
+And really, the mathematics behind it is very simple. It's based on the central limit theorem. And So what they?
+
+**AI Summary:**
+The discussion covers the foundations of computational photography and the challenges in solving the deconvolution problem in communication systems.
+
+**Key Topics and Concepts:**
+
+1.  **Computational Photography Approaches:** The speaker notes that most approaches in communication systems are not map or Bayesian methods, offering stronger correctness guarantees and the ability to prove results or find blur kernels under more general conditions.
+2.  **Algorithmic Approximation:** A key insight is that certain algorithms guaranteed to fail can be viewed as approximations of older algorithms, explaining some of their success.
+3.  **Deconvolution and Communication:** The central problem discussed is the solver deconvolution problem, where the received signal (Y) is a convolution of the transmitted signal (X) with an unknown blur kernel. This is analogous to camera shake.
+4.  **Solving Deconvolution:**
+    *   For short communications, the blur kernel can be found using the LMS rule (an iterative algorithm), provided a synchronization sequence is sent.
+    *   However, for long communications, the blur kernel changes over time, making the initial synchronization signal insufficient.
+5.  **Blind Deconvolution:** The focus shifts to blind deconvolution, which aims to automatically re-estimate the blur kernel during the communication protocol. The speaker references foundational papers in this field, specifically mentioning a 1980 IEEE Transactions paper and a 1998 paper by Shelving Weinstein.
+6.  **Mathematical Basis:** The classical algorithms are grounded in the central limit theorem.
+
+**Concise Summary:**
+
+The lecture contrasts computational photography approaches, noting that effective methods offer stronger guarantees than traditional map or Bayesian approaches. The core technical focus is on the deconvolution problem in communication systems, where the received signal is a convolution of the transmitted signal and an unknown blur kernel. While the LMS rule can solve this for short communications using a known synchronization sequence, the challenge for long protocols is that the blur kernel changes over time. Therefore, the critical area of research is blind deconvolution—automatically estimating the blur kernel during communication.
+
+============================================================
+
+### Semantic Chapter 7 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+What they point out? This is again the Shelvy and Weinstein. Exposition if you take here, I'm showing communication signals. Of course, for 1D signals, but since I'm so used to looking at images, I'm going to show them as an image. So think of this as time goes like this as scanlines. So here's our original signal states a bit. It's either A plus one or minus one. Histogram will look like this when we blur it. So what is blur? Do really right blur? Does linear combination every pixel here or every received symbol is a linear combination of these IID signals. So what does that mean about the distribution of Y? It should be Gaussian, right? Again, these are independent random variables. Every bit is independent. That's the crucial assumption. So every bit here is independent, so it has this histogram of plus one or minus one. Here every every received. Vector is a linear combination of these independent random variables, so it's going to look like a Gaussian. It's not, of course, it will look like a Gaussian if the bertran were infinitely big. And that's not really the case that we're interested in, but it will always be more Gaussian than this. And you can measure gaussianity as many of us in this room know by looking at the crew ptosis. So here the kurtosis was one. This was a + 1 -- 1 signal and the crisis of the Gaussian is 3 and this signal is not exactly Gaussian, but it's kurtosis approaches three. This is the standard definition proptosis. We divide the signal by standard deviation and measure the 4th moment, and if it's a Gaussian, we get three out. And if these are sort of sub Gaussian signals, their kurtosis was less than one to begin with. So after blur they become, their kurtosis increases and it becomes more Gaussian. [203.0s - 232.0s]
+Here is a different kind of communication signal which has this super Gaussian behavior, so it's a sparse signal everyone most of the time the input is close to zero and every once in awhile we get a sharp peak around 0, so it's Christos is 26. When we blur it again, what happens? We're averaging independent random variables. That makes things more Gaussian, and we don't go all the way to three. We go to five here, but it's always the case that the Blur signal will be more Gaussian. Then the original signal I'm really that, all that is, is the central limit theorem. [232.0s - 261.0s]
+
+**AI Summary:**
+The segment explains the properties of communication signals and their distribution using probability theory, focusing on Gaussianity and the Central Limit Theorem (CLT).
+
+The speaker first introduces a 1D signal (A+1 or -1) and discusses how blurring these signals relates to the resulting distribution. They establish that if a received vector is a linear combination of independent and identically distributed (IID) signals, the resulting distribution (Y) should be Gaussian.
+
+Gaussianity is measured by kurtosis (proptosis). A truly Gaussian signal has a kurtosis of three. The segment explains that blurring independent signals increases Gaussianity, making the signal approach a kurtosis of three.
+
+Subsequently, the speaker introduces a second type of signal—a sparse signal that is mostly close to zero with sharp peaks. They explain that blurring these sparse signals also increases Gaussianity, causing the kurtosis to increase towards five.
+
+Finally, the segment concludes by linking these observations to the Central Limit Theorem, which explains why blurring independent random variables leads to a more Gaussian distribution.
+
+============================================================
+
+### Semantic Chapter 7 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+OK, so this gives us a very simple algorithm for blind deconvolution. This should be 1990. And then here's the algorithm. I can just really write it down very simply. So one thing is, we're not going to solve for K. The Unblocker will suffer the inverse filter. The equalizer they call it, so E is a filter that when we it's the inverse of can we apply it to our blurred image or alert signal we get back the original thing. And the only thing again compared to what we were talking about in the previous talk, and almost all the work in computational photography, we need to know a lot about the prior distribution over our signals in blindly in computational photography. Here we don't need to know that all we just need to know a sign we need to know is the original kurtosis less than three or greater than three. If it's less than three, like in the plus 1 -- 1 signal that I showed you earlier, what you need to do is just. Find equalizer such that when you convolve Y with that equalizer, the kurtosis is maximal. And if it were Super Gaussian, sorry here. Should be minimal here. We want to minimize the kurtosis and he want to maximize the kurtosis. And I'll show this in picture why that is. But if the original signal had a kurtosis that was less than the Galaxy, and then what we want to do is minimize the kurtosis as much as possible. If the original signal had a crisis that was greater than that of a Gaussian, wanna maximize the proptosis? And this very simple algorithm comes with a very strong guarantee that it's guaranteed to find the correct. As long as the X is where ID this is guaranteed to find the correct inverse filter and there are no local minima. Again, this is much stronger than what we can usually show for our blind convolution algorithms, where before lucky we find the criterion with global optimum gives the right lower kernel. Here it's even not only that is correct, but there are no local Optima either. Any stationary point of the kurtosis. Is going to give you the correct one and the proof is really 3 lines. [261.0s - 290.0s]
+We will do it. Remember, the main thing to remember is a central limit theorem that says that blur makes signals more Gaussian. So let's start with the Super Gaussian case. So if our original signal had a kurtosis greater than three, the algorithm just says find an equalizer so that when we apply to our blurred signal, the proptosis is maximum and what we want to show is that that will only will be maximal if and only if K is the correct East is the inverse of K. OK, so how do we show it?
+
+**AI Summary:**
+The speaker introduces a simple algorithm for blind deconvolution. The process involves defining the equalizer ($E$) as the inverse filter, which is applied to the blurred signal to recover the original signal.
+
+A key element of the algorithm relies on the prior distribution of the signal, specifically using the signal's kurtosis (the fourth moment) to determine the procedure.
+
+**The core rules are:**
+1.  **If the original signal's kurtosis is less than three:** The algorithm seeks an equalizer that maximizes the resulting kurtosis after convolution with the blurred signal.
+2.  **If the original signal's kurtosis is greater than three (Super Gaussian case):** The algorithm seeks an equalizer that minimizes the resulting kurtosis.
+
+The speaker asserts that this simple algorithm provides a strong guarantee of finding the correct inverse filter because it eliminates local minima, unlike many standard blind convolution algorithms. This guarantee is based on the fact that any stationary point of the kurtosis will yield the correct result. The demonstration concludes by reiterating the importance of the Central Limit Theorem (which states that blurring makes signals more Gaussian) and confirming that for the Super Gaussian case, maximizing the kurtosis will only occur if the equalizer is the true inverse filter.
+
+============================================================
+
+### Semantic Chapter 8 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Here? Is our D blurred image. I keep saying image, but it's a signal. Here is our deep alert signal X star. It's a convolution of E with with Y&Y is K * X. So basically our hypothesized X is the convolution of something with the original signal. This original signal is IID, so any convolution of it is always going to be more Gaussian than the original X. The only way you could maximize this quantity is if Y times if he is the inverse of K and you get a Delta function. So X equal to X and the other thing you'll always have kurtosis less than X, yes? Support this evening system. Let me repeat the question so much.
+
+**AI Summary:**
+The speaker is discussing a "deep alert signal X star," defining it as the convolution of E with $Y$ and $K * X$. They hypothesize that $X$ is the convolution of something with the original signal. The speaker notes that since the original signal is IID, any convolution will be more Gaussian, and that the kurtosis will be less than the original signal $X$. The condition for maximizing this quantity is when $Y$ is the inverse of $K$, resulting in a Delta function.
+
+============================================================
+
+### Semantic Chapter 9 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Yes is asking. What happens if he does not exist? If the inverse kernel does not exist, and that's a good question. The simple proof assumes that this that the inverse kernel exists there are there are generalizations where you don't need to assume that the filter is invertible, but we're going to assume for now that filter is invertible. So this is clearly with.
+
+**AI Summary:**
+The speaker questions the scenario of a non-existent entity and asks what happens if the inverse kernel does not exist. While acknowledging that there are generalizations where the filter does not need to be assumed invertible, the speaker assumes the filter is invertible for the current proof.
+
+============================================================
+
+### Semantic Chapter 10 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Multiple kernels so they all satisfy. Basically IDK equals Delta or a shift of Delta, so you can get different shifts. Of course, if you don't have Delta, if you have data center, Dizzy Wright at one or two, you'll get the exact same kurtosis, right? But those are the only stationary points of this algorithm. That is, you're guaranteed to find not even the global optimum. Any local optimum will either give you the correct T or a shift of E. Which is really getting much stronger than what we can prove using our algorithm. [290.0s - 319.0s]
+So here's a proof by pictures. Here's the original signal. Here it's histogram, Christos is 26, we blur. It is what I showed earlier. We get things that are more Gaussian. Kurtosis is 5. The point is that we apply a wrong E to this, so we get something here and that gives us a clue to 614 which not coincidentally, is between 5 and 26, right? No matter what we do, when we apply a blur function to, this will get a number between 14 and 26. And the maximum will be when we have the right E will get 26. Any other inverse filter will give us a number that's less than 26. So by maximizing the kurtosis, we're guaranteed to find the right thing. Yeah. Are you giving us happy with averaging a low pass filters and blurs in this sort of thing? Does approval for all convolution filters. Yes, it doesn't matter. Actually this is a very confusing thing, but if you do a 1 -- 1 filter. In terms of the central limit theorem, it's exactly the same thing, right? You don't have to average it's long. Take a linear combination of independent random variables. You end up getting. Gaussian things coming up. The crypto SIS approaches to criticism. Yeah, so it has nothing to do with low pass and high pass. [319.0s - 348.0s]
+OK. So let me just summarize. What we learned by looking at this literature from communication theory. So basically the algorithm is very very simple. You don't need to know whether the original signal, sub Gaussian or Super Gaussian. It has a universal proof of correctness. If you ever read a paper in IEEE Transactions on information theory, I think the most common word is universality depends, I guess, on the years in which you read information theorists are very keen on universality, which means that these are algorithms that work regardless of the distribution over X. You don't need to know the foreign P of X as opposed to sort of Bayesian approach where we try to model very well. Although prior distributions, universal algorithms are supposed to work for any. Prior distribution and this is an example of such an algorithm. Of course you don't need to know P of X you do. You do need to assume IID. And you need to know just a single bit is a sub Gaussian super Gaussian. But given that you know these things, you don't need to know the prior or you don't need to know prior, even approximately. You just need to know that it's IID.
+
+**AI Summary:**
+The speaker presents a proof for the algorithm's correctness based on maximizing kurtosis, demonstrating that it reliably finds the correct solution despite applying incorrect shifts or local optima. The proof uses signal examples and histogram analysis, showing how maximizing kurtosis guarantees the correct result.
+
+The discussion then shifts to the universality of the algorithm, highlighting that it does not depend on knowing the specific distribution of the signal (e.g., sub Gaussian or super Gaussian). The algorithm works regardless of the distribution P(X), provided the variables are assumed to be Independent and Identically Distributed (IID). This universality holds true even when considering linear combinations of independent random variables, linking the algorithm's foundation to the Central Limit Theorem and Gaussian processes.
+
+============================================================
+
+### Semantic Chapter 11 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I mentioned this earlier. It has this global convergence property, which is much stronger than what we can prove even though they use very simple iterative algorithms, they can show that any stationary pointer algorithm is correct. There are no no local Optima, and you know I talked a lot about math and proofs, but I think the main thing to notice is that this algorithm is used in millions of devices, so you know what this is. This is a cable set top box. So they all cable set top boxes apparently use Goddards algorithm from the 70. So it's been used in radio transmissions in the 80s. Cable set top box in the 90s, wireless communication, so the Wi-Fi standards, the Wimax standards. All of them have blind deconvolution inside the standards and some of them use this algorithms and for me this is so we can ask questions about it. Non variability, numerical stability, noise. But the fact that it works in millions of devices means we should pay attention to it and try to see can we use this for blind image deblurring? [348.0s - 377.0s]
+OK, so here's an insight that actually appears in the Ferguson all paper from 2006. But if you look at the derivatives, so again the strong assumption in communication theory is that the individual X is are independent, and that's certainly not true for pixels. Pixels are not IID. But if you look at derivatives and they're not exactly, I'd either, but they're more independent, but it is true that when you blur an image, the kurtosis approaches that of a Gaussian. So here's the image we saw earlier.
+
+**AI Summary:**
+The speaker discusses an algorithm that possesses a strong global convergence property, no local optima, and is highly effective, being utilized in millions of devices. Specifically, this algorithm is used in cable set-top boxes (since the 1970s), radio transmissions, and wireless communication standards like Wi-Fi and Wimax, which incorporate blind deconvolution. Given its widespread use, the speaker suggests exploring its potential for blind image deblurring. The discussion then transitions to a statistical insight regarding image theory: while individual pixels are not independent (IID), derivatives might be more independent, and blurring an image causes its kurtosis to approach that of a Gaussian.
+
+============================================================
+
+### Semantic Chapter 12 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+It's histogram looks like this. It's heavy tailed that produces 20. Here's the histogram after blurring where the green is the original histogram. So basically blur it again, this is camera shake. It's not necessarily uniform blur. ORENCIA form, it ends up decreasing. The tails and making things more Gaussian so the kurtosis went from 20 to 17. So indeed things become more Gaussian. [377.0s - 406.0s]
+So this suggests a new class of blind deblurring algorithms. Where now we're going to get this blurred images input. And we're going to search for X&K such that Y is when we blur X with K, we get Y and we make X is non Gaussian as possible. And again, the assumption is blur makes the derivatives more Gaussian. If we search for the K so that the universe is non Gaussian as possible. This should if the derivatives are IID, this algorithm will probably find the blur kernel, and this Matias goes. It goes back to your question. This particular definition of the algorithm doesn't require the inverse anymore. We solve specifically for X&K and not for the inverse. So how? [406.0s - 435.0s]
+We measure non gaussianity mentioning the crypto sis since this is nips we have a long history in this community of different measures of non gaussianity. Very nice papers.
+
+**AI Summary:**
+The speaker analyzes the effect of blurring on a histogram, noting that blurring (simulated by camera shake) decreases kurtosis (e.g., from 20 to 17), suggesting that the process makes data more Gaussian.
+
+Based on this observation, the speaker proposes a new class of blind deblurring algorithms. This approach involves searching for parameters $X$ and $K$ such that blurring $X$ with $K$ produces a target image $Y$. The core assumption is that the blur process makes the image derivatives more Gaussian, and the algorithm searches for $K$ to maximize non-Gaussianity in the original image $X$. This formulation allows the algorithm to find the blur kernel without requiring the inverse. Finally, the discussion touches on measuring non-gaussianity, referencing various measures in the NIPS community.
+
+============================================================
+
+### Semantic Chapter 13 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+By varnon. All these people who worked on ICA. Could you basically kurtosis just one form of a normalized moment? You take the signal divided by standard deviation and measure the 4th moment. That's the kurtosis. But actually, what environment makes the points? That's not really very good measure of non gaussianity, because the 4th moment is very sensitive to outliers. You're better off actually using an Alpha that's less than one. So you take the normalized moment with an Alpha less than one. And that also acts as a measure of non gaussianity. But it has a different. Different directionality, so the crypto SIS is very large for these sparse distributions, and decreases. For Gaussian distribution. These are log probabilities, so this is the Gaussian quadratic. This is the Laplacian. This if there is more sparse distributions and the purchase goes from 25 down to three if you use Alpha less than one. I think here used Alpha equal to 1/2 it goes in the opposite direction, so the sparsest solutions have low normalized moments, and it increases as you approach the Gaussian. So we can either minimize this normalized moment, or maximize this normalized moment. So I'm going to choose to minimize this normalized moment and you'll show you'll see that that gives an algorithm that's very interesting to look at, so we minimize the normalized moment of X and want to search, because that will make X as non Gaussian as possible. [435.0s - 464.0s]
+OK, so here's the algorithm we're given Y, which is a blurred image. We look at assistant. We look at the histograms at the derivatives, not not the original image. Why is our derivative the derivative? Are blurred image here that histogram and we search for an X in the K such that when we convolve X with K we get Y and we also want to make X is non Gaussian as possible? I make exit non Gaussian as possible so we minimize absolute. The 1/2 moment of X but after it's been normalized normalized moment and this algorithm is guaranteed to find the correct blur kernel if the derivatives were IID. Now this looks very familiar. [464.0s - 493.0s]
+Sure. If you look at this algorithm where you minimize the sparsity, the 1/2 moment of X. Plus this term, these are these map global map algorithms that do map both an X on K. So this algorithm is guaranteed to fail. It's. [493.0s - 522.0s]
+This algorithm is guaranteed to succeed. [522.0s - 551.0s]
+Guaranteed to fail, guaranteed. [551.0s - 580.0s]
+Succeed.
+
+**AI Summary:**
+The discussion covers statistical measures of non-Gaussianity, contrasting the kurtosis and normalized moments (using an alpha less than one) to determine the distribution properties of data. The speaker proposes minimizing the normalized moment of X to maximize non-Gaussianity.
+
+The core topic then shifts to an algorithm designed to find a blur kernel (X) given a blurred image (Y). The proposed method involves using the histograms of derivatives instead of the original image and searching for an X such that its convolution with K yields Y. The goal of this algorithm is to minimize the absolute 1/2 moment of X (normalized moment) to ensure X is as non-Gaussian as possible. Finally, the segment compares two related algorithms, asserting that one method is guaranteed to fail, while the proposed optimization algorithm is guaranteed to succeed.
+
+============================================================
+
+### Semantic Chapter 14 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+What's the difference this line over here? If you to minimize to maximize the non gaussianity, you want to minimize the normalized moments. If you just, I'm sorry. I'm too many buttons here to press. [580.0s - 609.0s]
+If you just if you just minimize the moments, that's not a good idea. That doesn't minimize non gaussianity because it doesn't have a standard deviation here. You can always minimize this one half moment, the unnormalized one, by sending the distribution to 0, having all points go to zero. But if you. [609.0s - 638.0s]
+Optimize the normalized moment and the variance is always. Fix this minimize. This actually looks at the shape of the distribution. Makes it as long as possible. Yes, go ahead. For all my problems when you actually try to solve it in both X&K, you're guaranteed to fail. Yes, we can always take this and think of it as a certain prior in a map formulation. Yes, I think this is. This is true when I say guaranteed you cannot. [638.0s - 667.0s]
+Always. This does not have another prior on K. This, particularly the one that is guaranteed to fail, is the one where you have no prior on K or noninformative prior on K or sparsity prior on K. There are ways to put very complicated priors on K that will make less basically with the prospect approximation. Does that make this guaranteed to succeed after all? But those are not. I wouldn't call them priors over K because they don't really correspond to what we think happens with real world relationals. It's just a hack to get this thing to. To succeed, but this algorithm, as is basically what we showed in our 2009 paper, the global minimum of this is always going to be the Delta kernel. That's the main point.
+
+**AI Summary:**
+The discussion focuses on minimizing moments and managing priors in an optimization algorithm.
+
+The speaker distinguishes between minimizing normalized moments (which minimizes non-Gaussianity) and unnormalized moments. They argue that minimizing the normalized moment and variance is key to optimizing the distribution's shape.
+
+The speaker discusses the limitations and failures of various priors on K (kernel), specifically noting that noninformative or sparsity priors on K are guaranteed to fail. They conclude by asserting that, based on their 2009 paper, the global minimum of the algorithm is always the Delta kernel.
+
+============================================================
+
+### Semantic Chapter 15 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Pencil, the other one exactly which is highly difficult. Then you're guaranteed to succeed.
+
+**AI Summary:**
+A challenging task is presented, assuring the listener of guaranteed success.
+
+============================================================
+
+### Semantic Chapter 16 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+It's a very very. [667.0s - 696.0s]
+Wait this one. Yes, this is guaranteed to succeed. If you find the global optimal, that's correct. [696.0s - 725.0s]
+Where is this going? [725.0s - 754.0s]
+Fail. OK, so is this a new algorithm? Well, it's not that knew it. Of course it's not you because it's we're just importing an algorithm that's been around from the 80s, but is it a new algorithm in image processing? Well, no. So if you look at this very nice paper by Dilip and Rob from this year, they proposed minimizing what they call normalized sparsity, which is the minimum over X&K the blur constraint plus the L1 over the L2 norm of the signal. Plus some prior over K and this is exact. Can be seen as minimizing non gaussianity. That's not the way they derived it, but we can think of it as if you think of this over this as X bar. This is the minimizing non gauss maximizing non gaussianity of X. So that can be seen as a special case of this class of algorithm. [754.0s - 783.0s]
+I think the more interesting thing are these very mysterious algorithms. Witcher map XC with bilateral filtering algorithms? So this is a graph Asia Paper from 2009 and you know, I just refuse to believe that this algorithm would work. Then I visited tubing, game and Highland Steven was saying they were using this algorithm actually works, so let me explain how it works. It's a lot like the map excal rhythms we solve for X offer case. Offer Excel for K and so if you just iterated these two steps, the algorithm guaranteed to fail. But they have this extra step where after solving for the hidden image, so here's your predicted image. Here you solve in this case. This is for new software. The blur you get a sharp image. You go back here and if you were to go to here, that would be the standard algorithm. Sharp image blurring will sharp image blur Trimble here what they have is another step where you take your predicted sharp image, applied bilateral filter to it. An by zeroing out the low gradients, increasing the high gradients, applying shock filters, all sorts of things that are very difficult to understand where they come from, and that's crucial. This is what they told me when I visited.
+
+**AI Summary:**
+The discussion focuses on evaluating algorithms in image processing, contrasting existing methods with newer approaches.
+
+The speaker dismisses the idea that a proposed algorithm is new, noting that it imports techniques from the 1980s. They then introduce a modern approach by referencing a paper by Dilip and Rob, which proposes minimizing "normalized sparsity"—a technique related to minimizing non-Gaussianity.
+
+The speaker then delves into a specific, complex algorithm involving graph matching and bilateral filtering. They explain that while a standard iterative approach (solving for X and K) is prone to failure, a successful method incorporates an extra step: applying a bilateral filter to the predicted sharp image. This post-processing step involves zeroing out low gradients, increasing high gradients, and applying specific shock filters, which are crucial for the algorithm's success.
+
+============================================================
+
+### Semantic Chapter 17 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Again, if you take away this step, it doesn't work anymore. But still, you know nobody really knows what this algorithm is doing when you iterate it. Many times will happen and there is a way to see these algorithms that actually Max maximizing the non gaussianity of X, because again, this step of taking X and going to X bar is similar to requiring that. That we keep the variance of X constant. It's not exactly the same, but there was a way to write algorithms very similar to this one that is guaranteed to succeed, and this is an insight we get by looking at these old algorithm. [783.0s - 812.0s]
+OK. [812.0s - 841.0s]
+So what is this bias? The point of this talk is trying to link what's already known for the people who make modems to what we can do with room camera shake. So obviously that allows us to understand some recent algorithms. So for example, the Krishnan Fergus algorithm didn't have, I think, a proof. Of correctness or maybe did have under some conditions, this generalizes the conditions under which we can prove. That is, if this, if the derivatives are really IID, then we can show that that algorithm will succeed. But that's a big if when I just said it. Filters are not really IID and suggest ways to improve them. So for example, if we replace the one simple derivative filters with filters that look more like ICA, this predicts that will do a better job because the filters will be more independent. And it also suggests looking at iterative algorithms that people in communication theory or familiar with that have this global convergence. I don't know if any computer vision or image processing algorithm that has these global convergence guarantees would be great if we could have. [841.0s - 870.0s]
+OK, so I'm done at the title of the talk is old and new algorithms for blind deconvolution. So the new algorithms are typically math algorithms. I repeated what we showed a few years ago. Some of these algorithms are guaranteed to fail, but they still work even when they're not supposed to. The old algorithms and communication theory usually are not math algorithms. They have universal guarantees, global convergence, and I think the most important thing they used in millions of devices, probably as in this room we probably have many devices that use some variant of this algorithm. And I think this connection can help us understand and improve image blurring algorithms. Thank you. So Matthias was mentioning the fact that a lot of people don't use the variational methods because they think they're very complicated to optimize, and I think that's one reason people use these Matic scale rhythms are guaranteed to fail because they're very simple to implement and to generalize, and Matthias was referring to papers that we had last year where we try to really do a very tutorial version of the variational method. And show that it's really not very difficult, doesn't quite a lot of computation, but I don't think that's been a great success that most people I talked to will still rather use. Unfortunately the mapics cases so simple. Also, I see Joseph is here. If you look at the amount of work that Oliver and Joseph had to do to derive the variational approximation in. It's not just programming work, I'm saying it's also a lot of mathematics often to get the variational things to work. There's lots of equations. And unfortunately people don't like to use it. These algorithms don't have any of these integration. I mean system in global optimization. Sorry this one. So I think these are much more likely to be used. By other people, because there's no integrals here, it's just optimization. There is a normalization step which makes the optimization a little bit more difficult, but again, there's so much work that people have figured out how to optimize these things. Like that I think. I think I'm much more optimistic people use this than the variational methods. On the left is might work better.
+
+**AI Summary:**
+The discussion focuses on improving image processing algorithms by linking old theories with modern techniques. The speaker explores the use of algorithms like the Krishnan Fergus method, noting that improvements can be made by replacing simple derivative filters with more independent filters, such as those based on ICA.
+
+A key argument is the value of established algorithms from communication theory, which offer universal guarantees and global convergence, suggesting they provide a useful framework for understanding and improving image blurring algorithms.
+
+The speaker then contrasts variational methods with optimization-based methods. While variational methods are often avoided due to complexity in optimization, simpler, optimization-based approaches are generally preferred because they avoid complex integrals and global optimization systems, making them easier to implement and generalize.
+
+============================================================
+
+### Semantic Chapter 18 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+This is a different question. I mean this has guarantees of success under IID assumptions. Innovational methods don't. Necessarily those ID assumptions. So I repeat the question if we literally Stephen was saying if we literally translate the. The communication theory algorithms. Where are they? They often software the equalizer. [870.0s - 899.0s]
+And there's a question, whether in blind convolution for images, whether this equalizer will be will make sense. So we've done a little bit of experience on this. You can often find very good equalizers that are compact. Even for realistic blurs. And there has been a lot of work in the communication theory world saying what happens if you place the true E with E. That's guarantee that's a compact. And you can still prove correctness under certain cases there, so I'm less worried about that.
+
+**AI Summary:**
+The discussion centers on the guarantees of success for methods under IID (independent and identically distributed) assumptions, contrasting them with innovative methods. The speaker then discusses the role of communication theory algorithms, specifically where these algorithms are used to implement equalizers. A key point is the relevance of using this equalizer in blind convolution for images. The speaker notes that compact and effective equalizers exist, even for realistic blurs. Finally, the text addresses theoretical work in communication theory concerning the placement of "true E" with "E," which ensures guaranteed correctness under certain cases.
+
+============================================================
+
+### Semantic Chapter 19 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I'm more worried about what Matthias question is sometimes. You know, there are frequencies that were zeroed out, and he doesn't really exist, and so you have to replace it, maybe with the leader filter, and then whether the math the math is more tricky. I'm not totally sure that that algorithm we can prove the same things about, but we did try. If you take just a blur in this database that are not as online, she has a number of. Camera shake blur trails only found you can do a very good job of finding a compact equalizer for those. OK, let me just repeat the question.
+
+**AI Summary:**
+The speaker expresses concern regarding a specific question asked by Matthias, discussing technical solutions for signal processing. The conversation revolves around handling frequencies that have been zeroed out, the necessity of using filters (like the leader filter), and the complexity of the underlying math and algorithms. The speaker also mentions attempts to prove properties of an algorithm and discusses finding a compact equalizer for data affected by blur and camera shake trails.
+
+============================================================
+
+### Semantic Chapter 20 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So again the mystery is of this map. Thing is, even though we wrote this paper saying it can't possibly work. It's used a lot so many people run it where is. [899.0s - 928.0s]
+Yeah, this algorithm. So if you globally optimize this, we show that's guaranteed to fail, and yet there's been a number of papers who use it, and the question was why does it work? Well, one option is people stop it before they find the global optimum, and the other option is local minima and both have. But both of these answers are correct. That is, there is often a local minimum or a saddle point around the correct X. So if you optimize only in certain directions and you're lucky not to go in the other directions. That will work. And it's also true that people always stop this early. Yes, I'm wondering what. Noise in the snow. Gosh, entity things. Is that an issue? Yeah, so actually if the noise is Gaussian, which is the typical assumption that just makes things even more Gaussian. So in the original shelving Weinstein paper, they prove that will also work under gas additive Gaussian noise. But again, I think the most impressive thing is it works in modems that have noise. It's not a mathematical, so it must be work with noise. Yes, no, no, this is a very long repeat the question.
+
+**AI Summary:**
+The speaker discusses the paradox of a specific algorithm, noting that despite theoretical evidence suggesting it cannot work, it is widely used. The reason for its success is explained by two factors: users often stop the optimization process before reaching the global optimum, or the algorithm successfully navigates local minima or saddle points by optimizing in specific directions. Regarding noise, the speaker confirms that the algorithm still works under Gaussian noise, citing research, and noting its effectiveness in real-world systems like noisy modems.
+
+============================================================
+
+### Semantic Chapter 21 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+That's a very interesting question. He tried to make the image is non Gaussian as possible and we felt was asking well, can't you make it too sharp can't you over sharpen it? And there's a proof here that you can do it with a linear. That's the nice thing with a linear equalizer. As long as you restrict yourself to linear equalizers, you can. [928.0s - 957.0s]
+Would be much more non Gaussian in the original image. So that's very. [957.0s - 986.0s]
+You can keep cranking it up and you'll never overshoot, unlike many other algorithms. And again, it's the central limit. [986.0s - 1015.0s]
+Here on the. Any other thing as long as you play linear filter, any other thing even it's very high pass, it will be more Gaussian in the original thing, so maximizing non gaussianity will always find you the correct thing. It's a good question since it's based on the Central Limit theorem. How many samples do you need in order to? Prove that it moves, yeah, so let me repeat the question. I keep mentioning the central Limit Theorem, which says that things become Gaussian and the natural questions. Well, maybe this needs very big blur kernels for the central Limit theorem can. I was just using Central Limit Theorem as shorthand. The proof is actually for any blur. Even of size 2. So blur monotonically sort of makes you more Gaussian. Infinite Blur will make you Gaussian, but the kurtosis becomes closer to the process of a Gaussian. Even with just a tap filter. That's what they actually showed in the paper. I didn't want to go into that proof, but even with the two tap filter, you already guaranteed to be more Gaussian than the original 1. If you have a very large number of taps will become Gaussian, but with two taps already become organizing. The question was whether. Whether there's a connection so that these new algorithms. [1015.0s - 1044.0s]
+The old new algorithms, whatever.
+
+**AI Summary:**
+The discussion focuses on techniques for maximizing non-Gaussianity in images, specifically addressing how to achieve a non-Gaussian image while avoiding over-sharpening.
+
+The speaker highlights that using linear equalizers can achieve this goal. They emphasize that as long as linear equalizers are used, maximizing non-Gaussianity will lead to the correct result. The concept is linked to the Central Limit Theorem (CLT).
+
+The speaker clarifies that the CLT suggests things tend toward a Gaussian distribution. They explain that even simple filters, such as a two-tap filter, make the resulting image more Gaussian than the original. Although infinite blur makes an image fully Gaussian, even a small blur is sufficient to make the image more Gaussian. The core question explored was the relationship between these new algorithms and older methods, examining whether a connection exists between them.
+
+============================================================
+
+### Semantic Chapter 22 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Basically add another term or another constraint. You instead of measuring the moment of actually measure the moment of X divided by standard deviation, and so they look a lot like this and the question was whether this extra term maybe could be understood as some some approximation that gets stored map Ki. Think that's a great question, I don't know, but I would like to emphasize that the guarantees of correctness are different. The map K are proof that will succeed. Assumes that X samples from the prior. Like all Bayesian methods, if X if you don't have the prior correct, you're not guaranteed to succeed anymore. These newer algorithms, which are the old algorithms, don't require any knowledge of their universal, they just require the IID assumption. So even if we made that connection, there's something stronger from these other way of thinking.
+
+**AI Summary:**
+The discussion focuses on adding constraints and measuring variables (X divided by standard deviation). The core topic is whether an extra term in the measurement can be considered an approximation stored in map Ki. The speaker emphasizes that the guarantees of correctness differ, noting that map K serves as proof of success, provided X samples from the prior. A key point is that unlike all Bayesian methods, newer algorithms do not require knowledge of the universal prior, only the IID assumption.
+
+============================================================
+
+### Semantic Chapter 23 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+OK, great thank you again.
+
+**AI Summary:**
+The speaker expresses thanks and satisfaction ("OK, great thank you again.").
+
+============================================================
+

@@ -1,0 +1,20 @@
+{
+    "id": "qftehzimukfrnmuh3doenf7qz7mbcq5v",
+    "title": "Cross-lingual Linking of News Clusters in Various Languages Avoiding the Usage of Bilingual Linguistic Resources",
+    "url": "http://videolectures.net/iiia06_steinberger_cllnc/",
+    "info": {
+        "author": [
+            "Ralf Steinberger, Joint Research Centre, European Commission"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "July 2006",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 54,
+    "num_sentences": 587,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 47,
+    "ground_truth_summary_length_chars": 5300
+}

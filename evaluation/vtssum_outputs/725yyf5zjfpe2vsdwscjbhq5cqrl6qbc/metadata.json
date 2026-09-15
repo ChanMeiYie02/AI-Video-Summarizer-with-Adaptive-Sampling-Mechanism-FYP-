@@ -1,0 +1,21 @@
+{
+    "id": "725yyf5zjfpe2vsdwscjbhq5cqrl6qbc",
+    "title": "Ground Facts, Rules and Probabilistic Inference for Cyc",
+    "url": "http://videolectures.net/ida07_witbrock_gf/",
+    "info": {
+        "author": [
+            "Michael Witbrock, IBM Thomas J. Watson Research Center"
+        ],
+        "published": "Oct. 8, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 591,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2320
+}

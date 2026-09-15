@@ -1,0 +1,20 @@
+{
+    "id": "2c5fir3apwpabzamronmsk3qp4efoevw",
+    "title": "Information Geometry and Its Applications",
+    "url": "http://videolectures.net/etvc08_amari_igaia/",
+    "info": {
+        "author": [
+            "Shun-ichi Amari, RIKEN Brain Science Institute"
+        ],
+        "published": "Dec. 5, 2008",
+        "recorded": "November 2008",
+        "category": [
+            "Top->Mathematics->Geometry"
+        ]
+    },
+    "num_segments": 46,
+    "num_sentences": 338,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 463
+}

@@ -1,0 +1,25 @@
+{
+    "id": "khd6d27y4w67wubgvaj3z6ce62scpwv4",
+    "title": "Robots learning from human teachers",
+    "url": "http://videolectures.net/rldm2015_thomaz_human_teachers/",
+    "info": {
+        "author": [
+            "Andrea Thomaz, College of Computing, Georgia Institute of Technology"
+        ],
+        "published": "July 28, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences->Economics",
+            "Top->Social Sciences->Psychology",
+            "Top->Medicine->Neuroscience",
+            "Top->Technology->Engineering->Electrical Engineering->Control Engineering"
+        ]
+    },
+    "num_segments": 70,
+    "num_sentences": 293,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 3323
+}

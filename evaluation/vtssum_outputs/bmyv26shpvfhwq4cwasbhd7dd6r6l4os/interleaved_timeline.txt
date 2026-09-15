@@ -1,0 +1,176 @@
+[0.0s - 29.0s]
+Radar, thanks for coming. Thanks for waking up for those of you who are jet lag like myself.
+
+[29.0s - 58.0s]
+Let me tell you about this paper by first setting the broader context into which this work fits.
+
+[58.0s - 87.0s]
+Namely, that of sparse representations. So this is a powerful idea that's had a big impact across many fields, but the starting point is really the observation that many types of data turned out to be sparse and appropriately chosen basis. This will be the setting for this talk.
+
+[87.0s - 116.0s]
+Let me describe this in a bit more detail. So for our purposes, a set of data will be a collection of vectors in RN. You can think about it as a collection of images or other types of signals.
+
+[116.0s - 145.0s]
+And the important thing is that for some dictionary, which is just an N by N matrix, we can write Bisa buys the product of a * X abide here. I'll refer to A is the dictionary. It's over complete. If there are more columns than rows and I'll refer to exhibi as the representation of the data. Now for a given dictionary there of course many choices for how we could represent the given piece of data, but it really won't be interested in today.
+
+[145.0s - 174.0s]
+Is looking for some notion of a simple representation if it exists, so in particular, sparse 11 with at most K nonzeros. So many of you now may be familiar with things like sparse recovery, which is really the setting where a is known and by is known and we'd like to compute a sparse exhibi if it exists that solves the linear system. Now dictionary learning instead.
+
+[174.0s - 203.0s]
+Is the very natural generalization from a learning context to the setting where a is unknown. So the basic question will ask is can we learn a from random examples? Can we automatically fit the basis to our data and find a basis that enables a sparse representation if one exists?
+
+[203.0s - 232.0s]
+So before I get into the details of the actual stochastic model, will study, let me tell you a little bit about some of the history and applications of dictionary learning, so it's also referred to as sparse coding. You'll hear that often.
+
+[232.0s - 261.0s]
+Now, as you might expect, that has many applications than things like signal processing and statistics, where of course you know hand design dictionaries which are various families of wave. Let's play big role, so you'd expect that automated tools for finding bases are also powerful may play key role in some of the fundamental tasks like denoising, edge detection and super resolution and also blocked.
+
+[261.0s - 290.0s]
+Fashion now their uses in machine learning. Follow a slightly different pattern where the idea is that really sparsity is used as a regularizer to enforce that you're finding a simple model, so that you hope when you learn a classifier on top of it. It generalizes well even played a key role in some recent work in deep learning, which really takes it to another extreme, or instead of justice looking for sparse representation, you're looking for composing sparse representations.
+
+[290.0s - 319.0s]
+And curiously, the first introduction of this work was not from any of these fields, but was from computational neuroscience, where the idea is that if you buy dictionary learning to a collection of natural images, it turns out that what you end up with our filters that have a lot of the same properties that the neural response patterns do in the visual cortex.
+
+[319.0s - 348.0s]
+So now let me actually get into what the stochastic model is now. Of course there's a long history of sparse recovery, but I just want to summer.
+
+[348.0s - 377.0s]
+Does it tell you one result? Because we'll only be interested in studying dictionary learning. In cases where we can perform sparser covering, it only makes sense that Ryan learn dictionaries, which afterwards you can then use the dictionary to actually perform sparse recovery.
+
+[377.0s - 406.0s]
+So with that in mind, there's actually this slightly less known work on sparse coverage. I think it's really beautiful work by Donoho and Stark and Donna. Hello on what are called incoherent dictionaries, so this is really nice and general framework that captures many things that were studied before a special cases. The idea is to define a parameter mu called the incoherence which measures the Max over all pairs of columns of the inner product between them divided by root N. So the point is that the smaller mu is, the more uncorrelated the columns are. And as it turns out, the easier it is to perform sparse recovery, and in particular, this work really clarified a lot of the work that happened in signal processing beforehand, because people had studied specific dictionaries and studied recovery for them, things like spikes and signs, which turned out to just be a special case because they're in fact incoherent. So the main work was that first of all, Donahoe and Stark and Donovan well proved that information. Theoretically, you can recover unique solutions.
+
+[406.0s - 435.0s]
+Because in fact, if X is case bars, then if K is at most Rudan over 2 mu, then in fact X is the uniquely sparsest solution of this given linear system. So it's at least uniquely defined. And Moreover, algorithmically you can find it too, because in fact, L1 minimization does the trick. So I want to emphasize this point because many of you are probably mostly familiar with things like the restricted isometry property and compressed sensing, which I would argue that in fact that's a little bit more applicable to settings where you get to choose A and then you can work up to linear sparsity, whereas a much richer family of dictionaries turn out to be incoherent, and it's much more natural setting the study when you think about the dictionary is something you want to learn that you don't have control over, but it's intrinsic to the problem type. So.
+
+[435.0s - 464.0s]
+So now you know with this sort of goal in mind that we want to study dictionary learning in cases where we actually can solve sparse recovery. Well, what cases can we actually solve sparse recovery?
+
+[464.0s - 493.0s]
+The first one is rather simple case for sparse recovery as well. If a itself is full column rank, then I can certainly find sparse solutions because I can forget about the fact that they are sparse and just solve the linear system.
+
+[493.0s - 522.0s]
+It turns out that the dictionary learning problem here is much more interesting, and there was this beautiful work in last year's cult by Spielman, Wang and Right, which informally all stated. For now, there's a polynomial time algorithm to learn dictionaries which have full column rank, provided that the sparsity of the observations you observe is about ruden.
+
+[522.0s - 551.0s]
+And the model in which they studied it is the natural stochastic model thing, so there's some unknown dictionary which would like to learn some basis which enables a sparse representation. And what we observe are random samples. The Form 8 * X where X is chosen to be case bars. By definition we choose IT support uniformly at random among all sets of size K and condition on its support. We choose the nonzero values independent.
+
+[551.0s - 580.0s]
+So I'll mention that what's nice about these types of models in these types of results is that they tend to work and much broader. You know they're not too brittle to these types of stochastic assumptions, so this is in contrast to things like independent component analysis that are quite brittle to their assumptions.
+
+[580.0s - 609.0s]
+Now the main work that we consider in this paper is that Ryan generalized to get algorithms for Overcomplete dictionaries. Remember that these are dictionaries have more columns than rows and the reason for really considering these dictionaries that these are the ones that have played the key role in a lot of signal processing and statistics. It's because Overcomplete dictionaries are more flexible when you get to choose more columns than rows, you can better fit your basis to a given collection of data.
+
+[609.0s - 638.0s]
+So in this sense, Overcomplete dictionaries turn out to be more expressive in terms of what families of signals you can sparsely represent using them.
+
+[638.0s - 667.0s]
+And the main result here is we consider this case where a is incoherent. Going back to this work of Donna and Stark and Don Aliquo and remember.
+
+[667.0s - 696.0s]
+That they were able to get sparse recovery as long as K is about roonan over to mute. And that was exactly the right information theoretic threshold. Beyond that, X is not necessarily the uniquely sparsest solution. So our main work is in the same stochastic model we're able to do dictionary learning for almost the same sparsity. So instead, K goes up to root N over mu login. So we're losing an extra log in factor and getting almost up to the Donna Hello bound.
+
+[696.0s - 725.0s]
+I'll mention briefly that what I'll show you actually the sort of main technical point that I want to get across in this talk, is that actually the main connection is between this problem and a purely graph theoretic question about overlapping clustering in random graphs. See most of the heuristics for dictionary learning. They have this flavor of alternating minimization, where you guess one side and compute the other, fix one an alternate back to the other. So there's really a chicken and egg problem of if you knew the dictionary, you could find the sparse representation and vice versa. And really the question will be motivated based on if we don't know the dictionary. What can we still learn about the representation beforehand? That's a sense in which we'll get an overlapping clustering.
+
+[725.0s - 754.0s]
+I'll mention that independently and concurrently Agarwal at all, which will be presented in this conference, gave algorithm for learning incoherent overcomplete dictionaries with quite different techniques that works up to K equals enter the quarter overview.
+
+[754.0s - 783.0s]
+So now let me quickly tell you about the connections that overlapping clustering. This is the main sort of technical points that I want to get across. Remember that what I really want to understand is what can we learn about the representations without knowing the dictionary and let me start off with a basic question.
+
+[783.0s - 812.0s]
+What if I give you 2?
+
+[812.0s - 841.0s]
+Samples B&B Prime, which have representations X&X prime, then a natural thing we could ask is do X&X prime do their supports intersect? Is there a common column of the dictionary that they both contain and using the representation?
+
+[841.0s - 870.0s]
+So now let me denote by white squares the zeros and black squares the nonzeros, so indeed.
+
+[870.0s - 899.0s]
+Here they have an intersection.
+
+[899.0s - 928.0s]
+And Moreover, if we take X&X prime and take their inner product, it's easy to see that if that inner product is nonzero, they definitely have an intersection. Now, if it's zero, we don't really know, because you know, maybe they do. Maybe they don't. Maybe they do, and we just had the wrong cancellation and they happen to be 0.
+
+[928.0s - 957.0s]
+The main point about what makes dictionary learning easier in the incoherent case is that there are these various uncertainty principles that are really the basis for sparse recovery. I won't get into those, but what they in essence show the corollary for our purposes is that for K sparse vectors X&X prime, it turns out that with high probability, the inner product between B prime and B turns out to be very close to X&X prime.
+
+[957.0s - 986.0s]
+So really, the way I want you to think about this is just by giving access to the samples by taking their inner product. We get an answer to a simple pairwise test.
+
+[986.0s - 1015.0s]
+We should think about it as now if we build a graph on the samples and connect pairs of samples whose inner product is at least 1/2 in magnitude, we should think about it as a simplified random process just for the purpose of this talk that.
+
+[1015.0s - 1044.0s]
+Really, the probability of an edge between B&B Prime is 0 if they don't intersect in their supports. And let's say it's half. If they do so, let's pretend this are random graph model.
+
+[1044.0s - 1073.0s]
+And now let's get to the main need. So the point is, where are the clusters in this overlapping clustering problem? Well, we can look at all of the examples. All the samples be where exercise non zero. We can call that a cluster CI. Now the key point is that this is a little bit different than the standard clustering in random graphs model, because these clusters are overlapping after all CI and CJ. There are plenty of examples which have both XI not equal to 0 and XJ not equal to 0. So these clusters will have considerable overlap.
+
+[1073.0s - 1102.0s]
+And really, the main question is can we find these clusters efficiently in this random graph model?
+
+[1102.0s - 1131.0s]
+And the main starting point is the answer. This technical question think about the following thought experiment. What if I gave you 3 examples with representations XX prime X double prime and I told you that pairwise each of their supports intersect? So there's one cluster that contains both X&X prime. There's one cluster that contains both X&X double prime in one cluster that contains X prime and X double prime. That doesn't necessarily mean that there's one cluster that contains all of them together, so that's the main question. Is is this the scenario from our pairwise tests?
+
+[1131.0s - 1160.0s]
+Or is this the scenario where they just happen to intersect in different clusters? It's the fact that the clusters are overlapping. That makes this an interesting quote.
+
+[1160.0s - 1189.0s]
+Action and the main point.
+
+[1189.0s - 1218.0s]
+So that actually we can use fresh examples to be able to figure out which of these two cases occur. So think about it.
+
+[1218.0s - 1247.0s]
+This thought experiment, the first cases where they all three do intersect in one column. Well, what it means is how easy is it for a new sample Y to come along and hit all three of them pairwise all. Why would have to do is it would have to contain this one element.
+
+[1247.0s - 1276.0s]
+So the probability that Y intersects all three is at least K / M because we're choosing K sparse vectors over a domain of size M.
+
+[1276.0s - 1305.0s]
+Yet in contrast, now if we have three that don't intersect in a common intersection point, but they pairwise do.
+
+[1305.0s - 1334.0s]
+Well, the key point is that with high probability, if you take any pair of samples, their common intersection will be constant size at most C, and then you can show through simple comment oral argument that the probability Y intersects all three is about oh of K ^3 / M ^2. So with this allows us to do is just by counting the number of examples that hit all three together we can give a simple triple test that will distinguish between. Do these triples have a common intersection or do they not? Now we'll need higher order tests.
+
+[1334.0s - 1363.0s]
+The real version, which I won't get into.
+
+[1363.0s - 1392.0s]
+But essentially, I claim that this really solves our overlapping clustering problem. So what if we take this test as a primitive? The fact that we can answer these sorts of queries. Do these triples have a common intersection or not?
+
+[1392.0s - 1421.0s]
+Now, how can we build the entire cluster? What we could do is we could take a pair of examples, X&X prime and compute all the X double primes which that triple satisfies the pass.
+
+[1421.0s - 1450.0s]
+What that really outputs is a union of clusters corresponding to the intersection of the support of X in the support of X prime. So in general this triple test gives us a way to output clusters which the minimal elements will actually be the true overlapping clusters we're looking.
+
+[1450.0s - 1479.0s]
+After all, for each cluster filled with high probability, be some pair that uniquely identifies at some pair XNXX prime, which the intersection between them is exactly I. So when we do the triple tests for that will get only the cluster. See ya.
+
+[1479.0s - 1508.0s]
+So at the end of the day, we can clean it up just by Outputing inclusion wise minimal sets in this.
+
+[1508.0s - 1537.0s]
+Play. And as I mentioned, in order to actually get up to this Donahoe quote bound of roughly rude an overview with use higher order tests and analysis through essentially piercing numbers, but I'll.
+
+[1537.0s - 1566.0s]
+I'll take that offline and what I really want to emphasize is that now our problem is easy once we have some idea of what the representations look like, it's easy to get unbiased estimators for the dictionary columns. In fact, let me give you two different ways of.
+
+[1566.0s - 1595.0s]
+So the first one is, what if we can take these clusters? CI, which are all the examples where XI is nonzero? And what if we can partition this cluster into the things where XI is greater than zero, and where XI is less than zero? This in turn we would just have to average one of these sub clusters and would get an unbiased estimator of AI.
+
+[1595.0s - 1624.0s]
+That's one way to do it. In fact, you can even go back to some of the popular approaches and practice things like K. SVD, but I won't get into which you could even just take these clusters where exhibi is non zero and the intuition is that if you look at the direction of largest variance, that should somewhat be in the direction of AI because you're oversampling the things that use that column, so that should be the direction of largest variance.
+
+[1624.0s - 1653.0s]
+Roughly and then finally we show that altering minimization works when we're close enough to the true dictionary. So what that allows us to do is eventually get a geometric rate of convergence for the decay in our error. That's what allows us to do things like get log one over epsilon for the dependency in the sample complex in the runtime.
+
+[1653.0s - 1682.0s]
+Alright, so I guess I'm how much. What's the time? 2 minutes alright.
+
+[1682.0s - 1711.0s]
+I guess I'll just say thanks and take questions, so this was helped by at least emphasize the main points about why dictionary learning is natural. I think incoherent is really the right place to study these things, and really, I think there's an interesting connection between dictionary learning and overlapping clustering in random graphs, so I'll leave it at that for now, but thanks.

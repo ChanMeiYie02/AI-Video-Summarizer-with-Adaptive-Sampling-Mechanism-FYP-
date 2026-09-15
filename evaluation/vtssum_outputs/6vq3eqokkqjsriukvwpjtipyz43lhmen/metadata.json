@@ -1,0 +1,21 @@
+{
+    "id": "6vq3eqokkqjsriukvwpjtipyz43lhmen",
+    "title": "The alluring promise of objectivity: Big data in criminal justice",
+    "url": "http://videolectures.net/lawandethics2017_plesnicar_big_data/",
+    "info": {
+        "author": [
+            "Mojca Plesničar, Institute of Criminology, Faculty of Law, University of Ljubljana"
+        ],
+        "published": "July 24, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Data Science",
+            "Top->Social Sciences->Law"
+        ]
+    },
+    "num_segments": 13,
+    "num_sentences": 220,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1987
+}

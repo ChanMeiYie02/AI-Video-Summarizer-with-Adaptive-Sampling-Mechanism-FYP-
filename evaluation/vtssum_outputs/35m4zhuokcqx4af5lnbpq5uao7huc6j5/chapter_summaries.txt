@@ -1,0 +1,592 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+And the second speaker in this workshop where we're clearly. Putting things together for training and systems medicine and this comes from pharmacokinetics pharmacodynamics on one side. You see some chronobiology happening. You see some various different modeling methodology's agent based modeling and you'll also see some cancer related modeling of signal transduction and that's my part. Emphasis is really there on the on how one can actually do this oneself.
+
+**AI Summary:**
+The speaker discusses the interdisciplinary focus of the workshop, emphasizing the integration of pharmacokinetics (PK) and pharmacodynamics (PD) for training in systems medicine. Key topics covered include chronobiology, various modeling methodologies such as agent-based modeling (ABM), and cancer-related modeling of signal transduction. The core emphasis is on the practical application of these methods.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+But that is obviously depends on whether you like to do this or not. So it's a hands-on idea, and then we have to do our prayers that the hands-on methodology works, which was already pronounced. That this depends on local environments that we have not do not quite have under control, but we'll see. I. So this is towards truly individualized systems medicine, and we're truly individualized. This is medicine. I'd like to provoke discussions if necessary. I mean something different from personalized medicine or something more extreme. Personalized medicine you could say. Well, it's a doctor coming after the patient going and coming into the doctor's office and. The patient is 17 years of age in between 17 and 19 and this person gets a treatment that is 4 persons in between 15 and 20. So let's cohort based but very very well many, many different cohorts. I looked at so it is almost it's personalized. You would recognize it's personalized. With genomics we get genome sequences and then of course we realize that every person is different. No exception except identical Twins. So you could go as far as trying to put that in the difference between individuals from the genome. And then it becomes individualized, so it's an extreme case of being personalized. It will be individualized. This is not yet in place. Sometimes it is and it will become in place. And of course, if you do that, you can also become more individualized on the other aspects. If you then ask whether they have the person has eaten German sausages and spinach and drink drunk white wine and has run 101 hundred meters yesterday evening, your resolution also goes to the individual level because very few people will have done that together with a specific disease. So in that sense, even the personalized medicine, which is as you have it now may will, may or will in the future develop into individualized medicine. If if that can be done so at this point of the perspective, it's a future look monthly to prepare for that. But you could also see where you now can prepare for that, but you use it in in the personalized medicine, as it is done now. [29.0s - 58.0s]
+
+**AI Summary:**
+The discussion centers on the distinction between current personalized medicine and the ultimate goal of individualized medicine. While current personalized medicine relies on cohort-based treatment (e.g., treating patients within specific age ranges), true individualized medicine goes further. This level of individualization is driven by genomics, where analyzing unique genome sequences allows for treating every person differently, moving beyond simple group comparisons. Furthermore, true individualization can extend beyond genetics to include individual lifestyle factors (diet, exercise, habits). The speaker posits that current personalized medicine is a stepping stone, and it may evolve into truly individualized medicine in the future.
+
+============================================================
+
+### Semantic Chapter 2 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+And I'd like to introduce that concept a bit towards personalized medicine, and for that reason I have a movie now I don't know what you will have to see. Our movie director is making a different movie at the same time, so that may be challenging, but we'll we'll see. We are all unique and incredibly complex when it comes to our human biology. The number of molecules that make up our human bodies is gigantic, and the ways in which they all interact is mind boggling. But science has become very good at measuring huge amounts of biological data like our personal DNA sequenced our proteins and metabolites. If we could make all this data useful, we would be able to provide much better healthcare. Making healthcare and medicine more successful, more reliable, faster and less expensive is one of the greatest challenges of the 21st century. To make sense of all our biological data healthcare needs revolutionary new information and communication technologies. And deliver truly personalized medicine. So how do we get there? By making computer models of our biological data, we can make detailed health checks or simulate medical treatment before applying it. Computer simulations already help us everywhere, whether models tell us tomorrow's weather and we test airplanes in the computer before we build them, so why not use simulations in medical care? Well, the human body is more complex than the weather or airplanes, but computers keep improving. Health simulations can be made if we measure biological data and make mathematical models that run on smart and powerful ICT. So what are these mathematical models? Trillions of molecules make up ourselves and billions of cells make tissues and organs, making a huge network that is our body. So when we're ill, our network has some problem. If doctors could analyze our network and the computer, they could simulate. Which treatment would work best? We could all own a virtual patient model to help us throughout our lives and both curing and preventing disease. Our personal health models will allow us to make breakthroughs in treating complex diseases. Healthcare will become more effective and less expensive. Annual high tech industrial and economic opportunities will emerge, creating a stronger and healthier society or we will lead the way in modernizing medicine. OK, so that is a movie that explains this individualized medicine, which you will be happy to endure later. Then I'm sure I apologize. [58.0s - 87.0s]
+So this and after that I had this this item here which means we now have a one hour tutorial and there will be a much longer tutorial about. Personalized medicine systems medicine in Como in September. So if you have people you know people interested in this or yourself interested in this, by all means feel welcome to come there.
+
+**AI Summary:**
+The speaker introduces the concept of personalized medicine, highlighting the incredible complexity of human biology (trillions of molecules and intricate interactions). While science can measure vast amounts of biological data (DNA, proteins, metabolites), the challenge is making this data useful to improve healthcare.
+
+To achieve truly personalized medicine, the solution lies in using computer models. By creating mathematical models based on biological data, doctors can simulate treatments and health checks before application. This approach allows for the creation of virtual patient models to help cure and prevent disease, leading to more effective, less expensive healthcare, and creating new economic opportunities.
+
+The segment concludes by announcing that a one-hour tutorial and a longer tutorial on personalized medicine systems in Como will be offered in September, and invites interested individuals to attend.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Damiana will also teach there again and various other people like Jonathan Carr, Mateo Bybee, recently bowling. [87.0s - 116.0s]
+OK, now that was the first interaction. The second introduction is that we're talking about the implications of networks for disease, and we're looking at the implications for networking itself. So how important is networking for disease? And that is a major aspect of systems medicine, because in the past the way genomics has interacted with medicine has been through and emphasize on single genes rather than on the networking of jeans. And the networks come with certain properties and it will be useful. It may be useful to learn about those properties and to try them out in models that are relevant for system medicine. And one of these cases is in oncology and cancer and one pathway one can use to illustrate this is to map kinase pathway map kinase pathway may be known to you. To whom is the map kinase pathway known? Right, I would expect that. To whom is, isn't it known?
+
+**AI Summary:**
+The discussion focuses on the implications of biological networks for disease and systems medicine. The speaker emphasizes that networking is a major aspect of systems medicine, contrasting the past emphasis on single genes in genomics with the importance of understanding gene networks. The segment suggests that learning about network properties and testing them in relevant models is crucial, citing oncology and cancer as an example, specifically using the MAPK pathway to illustrate these concepts.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+To you it's known now. So the map kinase pathway has to do with signal transduction that is, a familiar familiar thing for you. Basically, cells get signals from the outside cells get protein signals, sometimes to grow or to differentiate to become another cell type. And in cancer that's very important. That decision normally your cell becomes either stays itself its own cell type of liver cells, states, liver cell or a non differentiated liver cell. Differentiates to become a liver cell as internal changes. It does this in response to a signal that comes from the outside that binds to receptor and then the cell responds. Also be that the cell doesn't differentiate, doesn't say itself doesn't differentiate into another cell, but starts dividing and then it can become a tumor cell. And that's why this is relevant. EGF is a word that stands for epidermal growth factor. That obviously means it is a growth factor for the skin that is secreted by cells there and that stimulates other cells to divide. So if you have a wound, there's a bit of skin lacking. Then this factor is secreted and it stimulates cells five of us to grow. And then to heal this, heal the wounds history so that's irrelevant an it's one of the pathways that occurs of course in sit in the cell. And you see, you see a map of the cell which was made by Hanahan and Weinberg in 2000. In the context of cancer. It's one map of the cells, so I am very active in another type of map of the cells. That's the metabolic map. So there's also a metabolic map of human cells, and that is a now a complete map since 2 years that's complete. Metabolism is chemistry, SO1, molecule being converted to another molecule, being converted to another molecule. That's one part of life conversion of 1 molecule to another molecule and the other part of life is regulating that by signals. By extracellular growth factors, telling the cell. Now you have to become a liver cell and therefore now your chemistry has to change all the molecules you're converting has to change and that is signal transduction regulation, signal transduction and that is this map. That map is not complete. This map is not complete. But it may become complete, but it's already very sizable. As you can see, and somewhere in here is the map kinase pathway. So that is actually here where you would have a growth factor. It's hard to see, so that's that. That's why I pointed out this is a growth factor like this EGF epidermal growth factor that binds to receptor and goes to other proteins group and source to Russ. And then this is the map kinase pathway that then phosphorylates at the end. A another protein here or a set of proteins that bind to the DNA and activate gene expression and then you get a whole change of the cell type so that the map kinase pathway is is an important pathway. Now if you it's hard for you to see, but it's quite significantly in this pathway that here there's an arrow running from the growth factor to the receptor tyrosine kinase. Do these factors to Russ and as an error from Russ too rough and a rough to make. And from Mac to map KM2 map KK. And and I'll be emphasizing that because there's something wrong with that arrow. That arrow is wrong. It is one of the issues I'd like to point out an you can show that this is wrong by using a model. Of these pathways are mathematical model, so that's the context we are in. We have briefly so we have models now in the previous talk where you can compute. How you drug redistributes? So that's a very concrete question here you ask about understanding principles principles that may explain why tumors developer where they don't develop May explains, may explain why you have only one, why you do not only have one Uncle Gene, but many oncogenes, and may explain why there's various types of Uncle genes. Uncle Gene said tumor suppressor genes, for instance. OK.
+
+**AI Summary:**
+The segment explains the role of the MAPK pathway and signal transduction in cellular processes, particularly in the context of cancer.
+
+**Key Concepts:**
+
+*   **Signal Transduction:** Cells receive external signals (protein signals) that regulate growth or differentiation. In cancer, this signaling dictates whether a cell maintains its identity or initiates division to become a tumor cell.
+*   **Growth Factors:** Examples like Epidermal Growth Factor (EGF) are secreted to stimulate cell division and growth.
+*   **Metabolic Maps:** The cell's metabolic map (converting molecules) is regulated by signals and growth factors.
+*   **MAPK Pathway:** This pathway is crucial for cell fate change. It involves a growth factor binding to a receptor tyrosine kinase, activating a cascade that leads to proteins binding to DNA and activating gene expression, resulting in a change in cell type.
+
+**Critical Points:**
+
+The speaker emphasizes the detailed mechanism of the MAPK pathway, noting the specific sequence: Growth factor $\rightarrow$ Receptor $\rightarrow$ MAPK pathway $\rightarrow$ Phosphorylation $\rightarrow$ Gene
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[116.0s - 145.0s]
+Now.
+
+**AI Summary:**
+The dialogue indicates a transition or immediate action ("Now."). No specific events or visual details are provided for this segment.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+This. Comes from the perspective that if you look at life Sciences and they look at the fact that we can seek and sequence entire genomes, you would expect that if we can do all that, we should be able to deal with disease very well. Cancer, obesity, diabetes? Why can't we cure these diseases? And I think that's partly because we did something wrong. Collectively we thought about these diseases in the wrong way. And this is maybe the wrong way of thinking about it. We still have complexity here where we look at many genes, so we just look at 4 genes here, but this would be 27,000. Yeah. And it could be quite a number of functions is an example of four, and there is. Quite a few nutrients. Thank you. Eat and this could be. These are many more than four of course also, so don't look at the four. But this means we have all lines like this where one nutrient that's important now leads to 1 gene and that one function. So there is indeed in this case is strict gene to function and gene to nutrition relationship. And if this were the case, if this were true, it would be easy 'cause you would know if one function doesn't work. That's what you call a disease. Then it's due to that gene. If that function doesn't work, it's due to this gene. It's not due to that in that right it's only due to that gene or due to lack of that nutrient. So this would be could be very complex. 27 thousand of these lines that would be very complex in that sense, or at least many multiple. But it would be simple in the sense that there is a function to Ginta nutrient relationship. I'm putting this up 'cause you might think this is silly. Tradition, because this is how we've been working alot last 30 years. We were hoping and it would have been great if this would have been true, that there was a function to gene, maybe to nutrient relationship. If you have a certain disease you can look for gene. And that Gene tells you what's wrong. You may not believe me, but this is true. This is history of science. You may not believe me. This is true, but the word uncle gene means this. This is what you Uncle Jim means. The word Uncle Gene comes historically from the fact that people in the 80s were searching for the gene that causes cancer. And now you, you know we are wise in cancer but still people are loud, presently looking for the gene that causes Alzheimer and the gene that causes Parkinson. And if you read the New York Times every now and then, you'll see that the gene for Parkinson disease has been discovered. So people like some people are still looking for that. And then of course, the gene hasn't been discovered because this is gene that correlates with Parkinson for 2% three percent. If you're lucky. But still, there's this focus. People are expecting that you'll find a single gene, single disease relationship. And it's wrong. And you know that this is wrong, because if this were true. Then an Organism with 100 functions should have 100 genes and I happen to have 27,000 jeans and you also we also have 27,000 jeans. I do a lot in my life, but I don't have 27,000 functions. It's nice. I don't have 27,000 diseases. Also, I couldn't have 27,000 disease, so that's not true here. You would have that every disease would be caused by a single gene or nutrition defect. So is cancer always caused by the same G? Is diabetes always caused by the same gene defect or by the same nutritional effect? Now we know that's not the case.
+
+**AI Summary:**
+The speaker argues that current understanding of disease is flawed, suggesting that the complexity of genetics and nutrition has been overlooked.
+
+The core points are:
+
+1.  **Flaw in Current Thinking:** Despite the ability to sequence entire genomes, current approaches to treating diseases like cancer, obesity, and diabetes are insufficient because of a misunderstanding of the underlying biological mechanisms.
+2.  **Gene-Nutrient Relationship:** The speaker highlights the existence of strict relationships between genes, functions, and nutrient deficiencies. Specifically, a function failure might be due to a specific gene or a lack of a necessary nutrient.
+3.  **Complexity vs. Simplicity:** While a direct gene-to-disease relationship might seem simple (a single gene or defect causing a disease), the reality involves vast complexity (e.g., 27,000 genes).
+4.  **Critique of "Single Gene" Search:** The speaker dismisses the expectation that every disease is caused by a single gene or nutritional defect (the "Uncle Gene" idea). While some genes correlate with diseases (e.g., Parkinson's), the existence of such a direct, singular relationship for every disease is incorrect.
+
+============================================================
+
+### Semantic Chapter 7 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Much more complicated than that. Much, much more complicated than cancer. Any cancer. This simplest cancer is caused by three GS3 mutations, retinoblastoma, three mutation, and even then you need more than that. But that's the simplest. So that isn't true, and also so it's not a single gene. And it's also not the same set of genes. So cancer, if it is caused by if it would be caused by 20 genes, it sometimes seems to be these 20 jeans. And another time it's three of those and 17 others, or is a complete different set of 20 genes that has caused the June and you get this from looking at the tumor, taking it from a patient, see consuming it, and seeing which genes have changed so so this is not true. It's not right.
+
+**AI Summary:**
+The complexity of cancer is much greater than initially thought. While some simple models suggest cancer is caused by a small number of mutations (like three GS3 mutations), this is inaccurate. Cancer is not caused by a single gene or a single set of genes. Instead, cancer can be caused by various combinations of genes—for example, 20 genes, or a subset of 20 genes combined with 17 others, or a completely different set of 20 genes. Identifying these specific genetic changes requires analyzing tumors and patient samples to determine which genes have been altered.
+
+============================================================
+
+### Semantic Chapter 8 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[145.0s - 174.0s]
+So what is right? And it's more like this so.
+
+**AI Summary:**
+The speaker is asking a clarifying question ("So what is right?") and presenting a revised perspective ("And it's more like this so"), suggesting a need for confirmation or direction.
+
+============================================================
+
+### Semantic Chapter 9 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So basically if you look at these, what's not different and that's important. It's different in the sense that if you go from between the from the nutrient to function, there's not one gene in there, but there's multiple genes. So that's the pathway linear pathway though. But this already tells you now that if you like this function, there's something wrong with this function. You shouldn't be looking for one gene, which you should. You should recognize the fact that this could be 3 jeans an in a realistic example could be 27 if it's a linear path with 27 factors, so you should expect actually. G diseases are not monogenic, not Mona factorial is completely obvious if you look at it from this perspective, why is it obvious? Because systems biology has by now show that indeed this is how it looks if you go for a function, you see a function is achieved. Muscle contraction. Actin myosin actomyosin. These ATP needs a synthesis of actomyosin. The ATP is made in the mitochondria needs the mitochondria mitochondria need by related needs. Glycolysis we know that this is what it is. So we should expect that functions have my multigene. An if you look at this diagram, so here you need this function. This disease can be caused either by this scene or about that, or by that gene. If you look at this and you can also see that from the Maps if you inspect them then this function can be caused either by this gene deletions or a problem with this gene. Problem with this gene, and in this case it's a problem by this gene and that gene 'cause these can substitute for each other and the nutrient can lead to this, either through that route or through that route. So it's either or.
+
+**AI Summary:**
+The core message explains that genetic diseases are typically multifactorial, not monogenic, as pathways involve multiple genes rather than a single gene.
+
+The speaker uses the example of muscle contraction, detailing the biochemical process: muscle contraction requires actomyosin, which is synthesized using ATP generated in the mitochondria, which in turn rely on glycolysis.
+
+The summary emphasizes that diseases can arise from either the pathway itself or specific problems within individual genes (such as deletions or defects). These gene interactions can substitute for each other, leading to multiple routes that cause the final outcome.
+
+============================================================
+
+### Semantic Chapter 10 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Any of these, but this is either or.
+
+**AI Summary:**
+**Chunk Summary:**
+
+[Please provide the Raw Video Chunk (Spoken Dialogue and Visual Scene Descriptions) for analysis.]
+
+***
+
+*(Once the input is provided, the analysis will be performed here. Example of expected output structure:*
+
+**Example Output (If input were provided):**
+
+The video begins with a close-up shot of a person entering a brightly lit kitchen. They immediately begin preparing ingredients on a counter. Next, the scene shifts to a dynamic shot of the person mixing ingredients vigorously in a bowl, followed by a close-up of a timer counting down. Subsequently, the person stops mixing and places the mixture into a pot on the stove. The final segment shows the finished dish being served on a table, concluding the cooking process.)
+
+============================================================
+
+### Semantic Chapter 11 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+It makes it confusing. Yeah, OK, so if you have this type of thing then of course you see that an Organism with 100 functions should not have 100 genes with many more. So that looks like reality. Every disease need not always caused by a single gene nutrition effect. This disease can be caused by this, this or that. And it's not always the same combination that is the observation that's called multi factorial disease. But even here this may help a bit, because multifactorial disease has two aspects, and I thought it had one aspect. The fact that many factors are are causing a disease that was obvious maybe recently. But it doesn't have to be the same set of factors that makes it even more confusing. [174.0s - 203.0s]
+OK, so so that is. That is why we need to look at these things in a different way. Now supposedly now looking at this it's also important if you have this pathway and you look at this then. I've said this function can be caused by a lack of discipline or lack of this scene, or lack of this gene. You might think it might be true that this is the rate limiting step of the pathway. Now this is the right limiting step and therefore really what you in practice, fine. There's only diseases that relate to this team. Give that like a function. So the question is, would that be would not be happening in reality? Is this always the rate limit except maybe the first one is always the right limiting step and therefore I could still be wrong that a single gene would be causing this this disease and that's where we get to systems, medicine, systems, biology. You need a bit of sophistication, some tools to deal with that, and these are conceptual tools and then either very refined experimental tools or computational tools.
+
+**AI Summary:**
+The discussion addresses the complexity of disease causation, emphasizing that diseases are often multi-factorial, meaning they are not caused by a single gene or factor. It highlights the need to look beyond single gene effects and identify multiple contributing factors. The speaker then shifts focus to pathway analysis, questioning whether a specific step in a pathway is truly the rate-limiting step. Ultimately, the text stresses that dealing with this complexity requires "systems, medicine, biology," utilizing sophisticated conceptual, experimental, or computational tools.
+
+============================================================
+
+### Semantic Chapter 12 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Modeling tools.
+
+**AI Summary:**
+**Abstractive Summary:**
+
+The segment focuses on modeling tools.
+
+============================================================
+
+### Semantic Chapter 13 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[203.0s - 232.0s]
+And that is what I'm going to talk about now. So one way, one way you could establish whether this gene, whether this is how can you establish whether this is the rate limiting step where you can say well, let me knockout that gene and see if there is an effect on function. And when you do that then of course, yes. You see, there's no flux possible if you delete this no function. [232.0s - 261.0s]
+But that would be true for all G. So the question whether this Dean is limiting or that gene is limiting cannot be addressed by knocking it out, but it can be addressed asking whether this is limiting by looking at the heterozygotes, for instance, going to 50% gene dosage or by inhibiting it and then asking, OK, do we have an effect on function? So you shouldn't really be looking at knockouts to determine this, but you should be looking at changes of activity.
+
+**AI Summary:**
+The speaker discusses methods for determining if a specific gene is the rate-limiting step in a process. While knocking out a gene can show that no function is possible (indicating the gene't is critical), it cannot definitively determine if the gene is limiting. Instead, the speaker recommends assessing limiting status by examining heterozygotes (e.g., 50% gene dosage) or by inhibiting the gene to observe changes in activity. Therefore, changes in activity are a better approach than using knockouts to determine if a gene is limiting.
+
+============================================================
+
+### Semantic Chapter 14 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+And that.
+
+**AI Summary:**
+**Chunk Summary:**
+The segment consists only of a concluding statement ("And that."), indicating the end of a preceding discussion or point.
+
+============================================================
+
+### Semantic Chapter 15 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[261.0s - 290.0s]
+Is now to introduce a tool. Which is insistence. Medicine Systems medicine is not only making models. This is medicine is also tools. Computational theoretical mathematical type of tools. To make our understanding. Sharper to make ourselves more intelligent, intelligence means understanding things to help us to understand things. And this is one of these tools so that I'm going to introduce to you now. So this is a plot where you would have a function plotted as a function of. Say gene dosage or enzyme amount. There's something either a transcription factor and you have various concentrations. Here there's very little. It is very much an. Of course, when you have very little of this transcription factor, you get let little transcription, so you get less, less function, and then when you have a lot of the transcription factor, you will have a lot of function, and then you might have thought that this is a straight line, it just goes through the roof, but at some point in the pathway something else becomes limiting. So if you don't gave. Give more of this transcription factor. The function doesn't increase anymore because the problem is now somewhere else, so you would expect a curve like. This wouldn't have to look precisely like this, but it could look like this. And if you look look at it like this and then ask whether this transcription factor now is rate limiting is limiting the function. You would see that here it is. Here it changing the amount of that transcription factor has an effect, but here it is no longer. So that's where you want to have a measure of and that would could be the slope of this line. So if you look at the slope of this line, then here, because the slope of the line is very almost horizontal, it doesn't really matter what the activity is of this factor, so that is not the rate limiting step. But here here it would be. So you want to capture that how you capture that is by going through the slope actually. [290.0s - 319.0s]
+And you come to a concept that is called the control coefficient of flux control coefficient. Which is really the slope of this line, and you can also translate it in a way and talking about it like this. Suppose I make a 1% change of this activity of this transcription factor, and I look at the percentage change in flux and I divide the two. So that's this J for flux, the percentage change in flux. If you have a 1% change in transcription factor or enzyme activity. That is. What we call the control coefficient. Now what does that mean? Well, that means if there is a 1% change in transcription factor activity and this leads to 1% change in function. Then this becomes 11 means full complete. So that means if you flux really the function really precisely follows that factor. If you change another case now, if you change that enzyme activity or the transcription factor and there's no change in function, then this is 0 / 1 becomes 0, so this coefficient is 0. So if you change the transcription factor, there's no effect on function. You gotta 0 control coefficient. So that means yeah true, because that enzyme apparently does not limit this flux, it doesn't control the flow. So those those two extremes are obvious.
+
+**AI Summary:**
+The speaker introduces tools for enhancing understanding, specifically focusing on modeling biological systems. They illustrate how to plot the function of a process (like gene dosage) against a transcription factor concentration, highlighting that function often reaches a plateau due to a limiting step. The slope of this curve is used to identify if a transcription factor is rate-limiting.
+
+The core concept then introduced is the Control Coefficient of Flux Control Coefficient. This coefficient is calculated by comparing the percentage change in flux to the percentage change in the activity of the transcription factor or enzyme. A control coefficient of zero indicates that the enzyme does not limit the flux, meaning that change in the factor activity has no effect on the function.
+
+============================================================
+
+### Semantic Chapter 16 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So either is completely. Controlling or it's not controlling at all. The strengths of this is. You can also use it now when you sort of hear that is sort of half way in between, then you could have if you now decrease this enzyme by or this transcription factor by 1%, you're affecting the flux could be only oh point 3% and this would be open 3 / 1 would be our .3, the control would not be none. It would not be complete one, but it would be 30% or another case 50 percent 10%. And and that in in physics is irrelevant in chemistry is irrelevant because it's either full control or no control. In biology, I'll show you it's absolutely dominant is very, very important because biology is very subtle. We have these pathways, multiple factors. You could think that the first step is is limiting. But of course there's evolution. So if the first step is limiting and their selection pressure, then your solution evolution would have selected for overexpression of that factor. 'cause there's not enough of it really, so it would be overexpressed. And when you express it, it would lose the rate limiting nature of its step. So Evolution has worked to a balancing away or factors that are completely limiting, and that has the effect. Of course, if you do that, then other factors in a pathway become limiting. Something has to be limited, so evolution has been a game where things that we're limiting have been overexpressed definite become less limiting than other things become limiting. Are being overexpressed so you end somewhere in a compromise situation. Usually I'll show them. [319.0s - 348.0s]
+OK, now this can be translated into also this term. This is really the relative change. The change in flux divided by reflects itself. It's the relative change, same as a percentage and relative change here if you like that more. If you're more math. [348.0s - 377.0s]
+Magically inclined, you will recognize that this is the log log derivative. Now this is the natural logarithm of the flux. And this is the natural logarithm of this, and it's a log log derivative. Therefore could also think about this as an Excel sheet. You plot J versus E, and then you divide the changes by of J&J and the change of E&E. And then you just click and the Excel becomes a log log Excel and then you have to slope. I mean it's various ways of looking at this, but this is for me the most intuitive way I'd like to think about it like this.
+
+**AI Summary:**
+The discussion centers on the control mechanisms in biological pathways, the role of limiting factors, and the mathematical representation of these changes.
+
+**Key Summary:**
+
+The speaker explains that biological control is either absolute (full control) or non-existent (no control). In biology, this is crucial because pathways involve multiple subtle factors. The key mechanism involves limiting steps: if a step is limiting, evolution favors the overexpression of that factor, which effectively removes the rate-limiting nature of that step. This balancing act ensures that other factors in the pathway become limiting, leading to a compromise state.
+
+The segment then transitions to mathematical concepts, defining relative change (change in flux divided by the original flux) and introducing the log-log derivative. The speaker suggests using a log-log plot for flux versus another variable to visualize these changes, making it an intuitive way to analyze the system.
+
+============================================================
+
+### Semantic Chapter 17 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Other people like to think about it like this so it can be in between in principle, but I haven't shown this to you. I mean, this is now a handwaving story, but I haven't actually demonstrated.
+
+**AI Summary:**
+The speaker is introducing a theoretical concept, noting that others often consider it in a specific way, but emphasizes that they have not yet shown or demonstrated this particular point. They clarify that the current explanation is conceptual ("a handwaving story").
+
+============================================================
+
+### Semantic Chapter 18 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[377.0s - 406.0s]
+But it's. So OK, so now we will have to test whether bar sites have a single rate limiting step, because that's how I started. Is it maybe so that possibly have anyway single rate limiting step and then cancer pathway would have a single rate limiting step? And I would still find one Uncle Gee, maybe one Uncle Gene for breast cancer? Maybe one Uncle Gene for kidney cancer or subdivisions of this. You might expect that still haven't excluded that I need experimental data.
+
+**AI Summary:**
+The speaker discusses testing whether bar sites possess a single rate limiting step, and subsequently asks if the cancer pathway also has a single rate limiting step. They explore specific examples, such as whether "Uncle Gene" relates to breast cancer or kidney cancer, concluding that experimental data is required to confirm these pathways.
+
+============================================================
+
+### Semantic Chapter 19 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Probably to exclude that. So yes, it could be that one of these controls equals one completely limiting. Then all of the others are not. Limiting and it could be that there is a distributed control and we are here. Then various sees may have values in beta. [406.0s - 435.0s]
+OK, now there's a already very historical, I'm afraid to say paper. 1983 ages ago that looked at one of the fundamental processes of life that is making ATP, and you need a lot of that, and doing that in mitochondria so this is sort of a diagram of mitochondria. But I realized this, so this is probably not so easy to understand, but this is a mitochondrial inner membrane. This is the electron transfer chain. This is the thing that makes proteins that pumps protons across the membrane, makes a membrane potential. Oxygen is being used there. Proteins are being pumped across. These proteins make a membrane potential and then this process flow back and they make through an enzyme that makes ATP. And this ATP is being made in the mitochondria, and then it has to be exported in exchange for ADP and then his ATP does something useful for sore legs glucose maybe. Or makes optimizing contract. There's also phosphate involved is also probably examples. What I'm doing here is impressing you, buy it with the fact that it's a pathway. I mean many people thought about this.
+
+**AI Summary:**
+The segment discusses control mechanisms (limiting factors and distributed control) before transitioning to the fundamental process of ATP synthesis in mitochondria.
+
+The main focus is on the process of oxidative phosphorylation:
+1. The system involves the mitochondrial inner membrane, which houses the electron transfer chain.
+2. This chain uses oxygen and pumps protons across the membrane to create a membrane potential.
+3. These proton pumps create a membrane potential.
+4. The process flows through an enzyme to produce ATP within the mitochondria.
+5. The resulting ATP is then exported (in exchange for ADP) to perform useful cellular work, such as powering processes like glucose transport or optimizing contracts, involving phosphate.
+
+============================================================
+
+### Semantic Chapter 20 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Well, you know it's obviously only thing that's really important. Is ATP synthesis, so it must be. This enzyme has all the control obvious, right? I think people said David Wilson said. Must be this one, because this actually delivers the ATP, so that must be the rate limiting step. Other people say, well, it must be cytochrome oxidase, which is here because that is most irreversible, so that's the rate limiting step. So were various people thought just like in cancer? OK, there must be D oncology and this was the answer for these control curves. That question one is one of them, one and the other zero, and I need to convince you whether that's true and you can see it's pretty convincing. That's not true. It's not. So that is one is one of this is zero, it is distributed. And this happens in pathways whenever you look at pathways. It's like this. So. [435.0s - 464.0s]
+The control is not any single step in biology. Again, in chemistry physics, yes. So that's why physicists and chemists and mathematicians that have looked at chemistry and physics rule Jesus. This biology is too complicated. Let's forget about it. If you're interested really in biology and in curing people, yeah, you have to live with biology, right? If you can't start looking for Higgs bozon's, it's irrelevant. So this is our job. OK, so if it is networks and if many factors are important. Family. [464.0s - 493.0s]
+To deal with it as networks. So now we'll deal with the map kinase Cascade as a network. [493.0s - 522.0s]
+And there's various models already in existence. Beautiful models by the half, and they have birth holding Co by Doug Lauffenburger and also beautiful model. Or a twin bed is it is a good friend, but it's very simple so you'll laugh at this model, but it's very nice because it is because of its simplicity. [522.0s - 551.0s]
+It allows you to demonstrate things so really it really abstracts from the from this growth factor party. This this step that you see in Bob Weinberg's diagram as well. So it's confusing to everybody. I suppose this is our full receptor. This is inactive receptor. This is active receptor receptor, EGF receptor becomes activated in this step, which means it binds this EGF epidermal growth factor. That then actually in a set of steps. Leads to the activation of a kinase that phosphorylates here this protein. Which is a Mac. Doesn't matter what it is, but it is cold like that is itself a kinase that activates. That's what's my fascinated people about this that phosphorylates rough another protein and ruffles for lights work. What do these projects mean? Well, they're kind of nice and relevant to know because there in this list of languages 170 uncle genes we have now. All of them feature, so that's interesting. Also GDF receptor. So these are these are this is a case where actually we're talking about multiple oncogenes apparently being all important and an there will be an issue here that I'll try to make that you might expect that one of them is important. Is completely limiting and therefore would have a control coefficient of one and all the other zero. I would think I would expect that, and it's not true, and that's one of the things we may discover. Another thing is that this is in essence Bob Fibers Parkway, because I emphasized there was an error leading from the GF receptor to rush and then from Russ too. To make an informed Mac too rough and rough to work right? That's what these arrows look famous paper at 2000 year, false. Many of you will have seen this and there's a reason version in 2012 I think. Yeah, famous paper. Very good paper, except it's wrong. So things can be good and wrong at the same time. And we'll talk about why this is. This is ridiculous. [551.0s - 580.0s]
+OK now OK, so for me to remember, this is how they're all called. Oh, actually yeah, Mac is the middle rough.
+
+**AI Summary:**
+The discussion begins by identifying rate-limiting steps in biological processes, focusing on ATP synthesis (via an enzyme) and cytochrome oxidase. The speaker addresses control curves and pathway analysis, noting that control is not restricted to a single step but is distributed across pathways.
+
+The speaker then shifts the focus from complex biology to network modeling, arguing that dealing with biological systems requires treating them as networks. The specific example introduced is the MAPK cascade, noting that various models exist (e.g., Lauffenburger and the twin bed model).
+
+The explanation delves into the mechanism of receptor activation, detailing how an inactive receptor (like the EGF receptor) becomes activated upon binding an EGF, leading to a kinase that phosphorylates a downstream protein (Mac).
+
+Finally, the discussion touches on the complexity of multiple oncogenes and their control coefficients, noting that unexpected results may emerge. The speaker critiques previous literature regarding signaling pathways, emphasizing that even seemingly validated papers may contain errors, highlighting the nuanced interplay of biological mechanisms.
+
+============================================================
+
+### Semantic Chapter 21 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Is there OK got the wrong way around. OK yeah, now what you then do is look at the rapid test is work and how does it depend on all the concentration so you get rate equation. [580.0s - 609.0s]
+And this is a way of writing the right equations. Vida first rate V for velocities right? First reaction as a function of the Vmax of the first reaction, and then there is a KM. Sorry I concentration of R and there is a KM of our that sort of thing. Some of you will notice from their biochemistry anyway. All of you will know that this is not necessarily easy equation. It's a difficult regression and it looks horrible. OK now part of what we're going to do. Of this facility that we've built is nice. [609.0s - 638.0s]
+Yeah, 'cause you don't need to model. That's not a concept here you. [638.0s - 667.0s]
+Actually don't need to know these equations, not the concept here. You're going to assume that somebody has made this model, and you're going to trust it, so it's not your aim to be critical of this model at this moment.
+
+**AI Summary:**
+The speaker discusses the formulation of a rate equation, defining it as a function of reaction velocities, Vmax of the first reaction, and the Michaelis constant (KM) related to the concentration of R. The speaker acknowledges that these equations are difficult and complex. They then transition to the practical application, stating that for the facility being discussed, the audience should not focus on modeling the equations but rather trust a pre-existing model.
+
+============================================================
+
+### Semantic Chapter 22 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Could do this in another point. I was not your aim to improve the model. You want to use the model to discover something. And this is also something that's not so commonly said in systems biology. As many people want to do something they want to their ultimate aim in life is to make a model or something, or their ultimate aim in life is to understand that data point or to fit a data point. At sometimes your aim is to understand something.
+
+**AI Summary:**
+The speaker clarifies their objective, stating that their goal is not to improve the model, but rather to use it for discovery. They emphasize that this type of aim is less common in systems biology, contrasting it with the typical goals of creating models or fitting specific data points. The speaker concludes by asserting that their ultimate aim is simply to understand data.
+
+============================================================
+
+### Semantic Chapter 23 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Why does it work like that? Why do we have not one Uncle Gene but many uncle genes WHI are particularly the three in the list of Uncle genes? Why does Rush need to be attached to the membrane? Also, a question like that and that you could do basically by doing an experiment in vitro in vivo or maybe in cell lines or in silico when you have a model like this. Sometimes you can understand how the network works. Typically network properties. You could figure out without even touching a test tube. I touch steps to a lot. I'm not a theoretician. I'm a hybrid, but. You can also do it sometimes with the model. [667.0s - 696.0s]
+That's good news. If you can trust these models, yeah, and sometimes you can because others very serious people have worked on this and they've done good work, although sometimes there may be errors in that, so you'll have to realize this as well. So the idea is not to model here, but use a model to discover system principles, maybe even to discover where you should target the drug. To get rid of a parasite. Can you imagine that? So sometimes people have made models they haven't even thought about getting rid of tumors or getting rid of Trypanosoma brucei or getting rid of malaria that just made a model. You could use this model and then find where in the network you should target your drug, use somebody elses work OK, and that is because these models, if they are a replica of reality, that's of course what's needed. So not all models you could use to do this, but some of them claim to be an image of reality. And that is what this model is. [696.0s - 725.0s]
+OK, so that's what we're going to go for. This is the simplest version for now, so we end up with this. So part of that is the slides that I already showed you, but if you sort of look half waist and. [725.0s - 754.0s]
+Get obviously here. [754.0s - 783.0s]
+That's what I discussed already. Hat will get to doing something useful. Now there's a couple of paradox I already mentioned this. Paradox one in most textbook pathways, looks like this. You may consider this silly or not, but it's like a brain teaser. So people write this and sorry this isn't the kinase and that phosphorylates this protein, which is another kinase. And there's another protein kinase, and this is a transcription factor. You got a cascade of kinases. Anne, this makes no sense statement. There's something wrong with this. So what is wrong with this? Let me ask you anybody knows. Why is this a scheme that you should? If somebody shows, is in in a talk, you should stand up at the other side. This makes no sense ridiculous. Or if it's in the paper, you should reject the paper. I mean most papers have these schemes, so mostly this doesn't happen to papers, but. Anybody know very good? Because then I'm not being paid the enormous sums of money by Damiana to stand there. [783.0s - 812.0s]
+To do this, and another paradoxes is only the first kind, is the limiting step or?
+
+**AI Summary:**
+The segment discusses the utility and application of computational modeling in biological systems and critiques the validity of signaling pathway descriptions.
+
+**Key Topics and Events:**
+
+1.  **Computational Modeling:** The speaker emphasizes that computational models (in silico) can be used to understand complex network properties and system principles without performing physical experiments. This approach allows researchers to discover system principles and identify potential drug targeting sites.
+2.  **Model Reliability:** While models can be helpful, users must be cautious, as model errors exist. Researchers should use these models to discover principles rather than relying solely on them, and models must be validated as replicas of reality to be useful for applications like identifying drug targets for parasites or tumors.
+3.  **Critique of Pathway Schemes:** The speaker highlights the need to critically evaluate signaling pathway diagrams. They point out that inconsistencies, such as a cascade of kinases leading to a transcription factor, can indicate serious flaws in a scheme. If a pathway makes no logical sense, it should be rejected, regardless of the source.
+
+============================================================
+
+### Semantic Chapter 24 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Or, or maybe it's the second or it's the third. Yet all three kinases have been reported as Uncle genes. How is that possible if there's only one limiting step?
+
+**AI Summary:**
+The speaker questions the possibility of three kinases being reported as Uncle genes if there is only a single limiting step.
+
+============================================================
+
+### Semantic Chapter 25 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+OK, well, so that has to do with the fact that there might be. It might be distributed, but if this is 33%, that is just the 2%. And this is just 3%. Then maybe they can really be Uncle Jeezy. Maybe only if they're all one. So that could they all be one? How could you have three? Limiting started limiting steps in the path? [812.0s - 841.0s]
+OK, and I the first phase is important. It goes that I mean they're also phosphatases here. Do they have any role? Could there be more important? Maybe then the kinases is that where we should target drugs rather than at the kinases. People only think about the receptor until now an the kind axis of many. Not many people I should not say this is but when we did this work nobody thought. [841.0s - 870.0s]
+To foster this target. [870.0s - 899.0s]
+OK, that's #4 so and the idea is you sort this out yourself in the remaining time. And for that you used the next heat modeling handout, but it's really the next PowerPoint. [899.0s - 928.0s]
+Slides on this one, so you should look for this one. Which you should find in this handout. And then the idea is you have some sort of a machine which is called a computer with you. And then you go through this website. And if we if it also tried this out, but you saw that this is not a guarantee, but hopefully you can hook onto this. And then you can start to do this. Here you'll recognize it at some point. You reproduce that scheme. This means you're in the wrong on the right track. [928.0s - 957.0s]
+And then you you can play with this you see what it is. You can ask questions to this scheme. Say you only want to look how this develops in time. And you want to look at certain things only or you want to change properties. You want to eliminate the phosphatases. For instance, you can do that with this, so that's the idea of running through this net this. [957.0s - 986.0s]
+
+**AI Summary:**
+The discussion moves through several key points:
+
+1.  **Biological Targeting:** The speaker discusses biological pathways, touching upon percentages and limiting steps in a process. A focus is placed on the role of phosphatases versus kinases, suggesting that drug targeting should focus on the kinase axis rather than just the receptor.
+2.  **Computational Modeling:** The speaker directs the audience to a specific handout or PowerPoint slides for further information. The core methodology involves using a computer and a website to test hypotheses and reproduce schemes.
+3.  **Scheme Refinement:** The goal is to run through a network (a model) and ask specific questions, such as observing temporal development or eliminating components (like phosphatases). This iterative process helps identify incorrect approaches and leads to a refined understanding of the system.
+
+============================================================
+
+### Semantic Chapter 25 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+This scheme here so that is I see a fair so. Let us know if this if this works for you. OK, Are you ready for this? OK, so let's see if it works here. How many of you got this far, either collectively or individually? Showing this screen? Yeah, all of you, yeah, I guess you're right that's what I thought. We do evaluate model and then we see lots of things which is very confusing. But it will have realized that this is time. On the on, the horizontal axis is time on the vertical axis, concentrations of all the players in this game X1X2X3 and the phosphorylated forms of them and the receptor RNRN. I think one of the issues was to identify that are decreases very rapidly. The active receptor decreases very rapidly and that is the way the calculation is set up. At T0. This there was a lot of EDF present. Able to activate R and then the EGF was washed away outside so this was activated and then of course it through reaction one it comes in activated slowly, but it's fairly rapidly in fact in a few seconds it is. I think you will see that. And that is enough. So you get sort of a pulse of R and then both of our activates this kinase. This gives a posavec swampy that gives a pulse of X 2P and it gives a pulse of X3P. Let's have worksheets, so intuition behind that and that is also what you see in this simulation now. So if I do evaluate model again, I should be seeing this again. But it's it's too many to look at. OK, yeah, hopefully. That's what that's what you saw in the last picture. Yeah. OK, now basically we've seen this picture, so let me give up on that one. Then we will increase the time span. What's the idea to make it more visible there so that you can? Demos tell the computer where to look over which time spent to look and not to look at everything. So maybe the interesting stuff is not the receptor itself. You may have seen that this decrease very rapidly as I just said when we look at only the phosphorylated forms of the proteins and maybe at X3 at the same time and. Let us try to see whether it does calculate that, yeah, OK, so this this you might have seen and. I wanted to look at the same time at this picture, so this is the the network diagram, right? Here just for you to be reminded this is X3 that starts high and goes down and there's an X3P. It's hard to see, but it's this curve that went up, so that's this form X3P. It went up and then back down and these are mirror images. So that's a simple question.
+
+**AI Summary:**
+The speaker is presenting a simulation and model to explain complex molecular dynamics. The visualization maps the time on the horizontal axis to the concentrations of various players, including proteins X1, X2, X3, and the receptor RNRN.
+
+Key points of the explanation include:
+*   **Reaction Mechanism:** The model is designed to show rapid decreases in the active receptor. At time T0, the process involves the activation of R, followed by the washing away of EGF, leading to a rapid activation of the receptor.
+*   **Output:** This sequence results in a pulse of R, which activates a kinase, generating pulses of X2P and X3P.
+*   **Visualization Strategy:** The speaker suggests that to better understand the results, the visualization should focus on specific components rather than trying to track everything. Specifically, it is important to observe the rapid decrease of the active receptor and the phosphorylated forms (like X3P) simultaneously.
+*   **Molecular Dynamics:** The speaker points out that molecule X3 starts high and decreases, while its phosphorylated form (X3P) briefly rises and then falls, noting that these curves are mirror images.
+
+============================================================
+
+### Semantic Chapter 26 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I can actually do this. Oh, but then I lose that. So. If you look at the scheme X3 and actually P. Oh, maybe you can look at your hand out at the scheme. So that I can. Click in here on the outcome of the computation and then the question is why are X3 and X3P? Why are their mirror images so the sum of the two is is constant one? Why is that? Yeah, interconverted, so there are no reactions that do not bring X three piece to something that isn't X3 and vice versa. She said that at least that that thing works that you want might understand, but something that might be interesting is that if you look at these phases so there's phases of activation of X, one X1 gets phosphorylated and then X2 and X3 and you might ask questions about that, what would you have expected? Intuitively I would have expected actually that it wouldn't. It would be so that once X one is faster is activated. Also X2 is phosphorylated and also X3 is phosphorylated. But here you see that X3 is for instance phosphorylated already long after X one has become D phosphorylated. Actually, of course you can also understand this because you activate this and then after that that and after that. So you also find that.
+
+**AI Summary:**
+The discussion focuses on analyzing a biological scheme involving components X3 and X3P, questioning why these mirror images maintain a constant sum and are interconvertible. The speaker then shifts to discussing the phases of activation and phosphorylation of X components. Specifically, it highlights a discrepancy in the timing of phosphorylation: contrary to intuitive expectation, X3 is shown to be phosphorylated long after X1 has become phosphorylated.
+
+============================================================
+
+### Semantic Chapter 27 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+But the third question wasn't at all obvious to me. It still isn't, but you see that in this case, and if you look at the parameter settings after three kinases, they're identical. Still, the amplitude of the three are different. So this one the X3 phosphorylated is high maximum is it goes up to 5855% or .55? Is the third protein the second protein goes up to 20% phosphorylation and the first only 15%? Complication of signal. Yeah, so you have an amplification of the signal and that is then what it does. Even though these parameters are all the same. So that's that is the answer that we wanted to have OK. Then now I must follow this routine. What is the next thing to do so that is what we did? [986.0s - 1015.0s]
+And then we saw this. This is actually this. [1015.0s - 1044.0s]
+But and then it said we looked at that plot. [1044.0s - 1073.0s]
+And we ask these questions, yeah? And then the next question was can we now simulate what the effect on of the kinase activities is on the phosphorylation of factor #3? So then you only look you set up the system such that you only look at Factor 3 and you change the. K5 that is the rate constants belonging to the middle kinase II kindnesses from 120 point 8, and that's what I've done, and I sort of prepared for this. And then you then I saw this.
+
+**AI Summary:**
+The speaker discusses analyzing the complexity of signal amplification in kinase phosphorylation. They note that despite having identical parameter settings across three kinases, the amplitudes of the signal are different (e.g., X3 phosphorylated reaching 5855%, while others are lower).
+
+Following this initial analysis, the speaker outlines the next step: simulating the effect of kinase activities on the phosphorylation of Factor #3. This involves setting up a system focused solely on Factor 3 and manipulating the rate constants (K5) of the middle kinases (KII), specifically changing them from 120.8, as part of the planned simulation.
+
+============================================================
+
+### Semantic Chapter 28 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+And you may have seen the safe if you go through this.
+
+**AI Summary:**
+The speaker mentions that the audience may have seen a safe if they proceed through something specific.
+
+============================================================
+
+### Semantic Chapter 29 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+This is where we started the situation. This is after you actually change this K5 from 120.8 so reduce it by 20% and you get this effect and this is then the X3P and this is the X3, their mirror images. Again another question is what you would have expected.
+
+**AI Summary:**
+The segment describes the starting point of the situation, detailing a process where a variable (K5) is changed from 120.8 to reduce it by 20%, resulting in a specific effect. This effect leads to the introduction of the X3P and X3, which are identified as mirror images. The segment concludes by posing a question regarding expected outcomes.
+
+============================================================
+
+### Semantic Chapter 30 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So this middle kindness you change activity reduce activity. And what would you have expected for the? For the phosphorylation of the third project, I would have expected that the amplitude would go down. Yes, that's what you see.
+
+**AI Summary:**
+The speaker is discussing how a specific change (referred to as "middle kindness" or a related activity modification) reduces activity. They then address expectations for the phosphorylation of the third project, stating they expected the amplitude to decrease, and confirm that the observed result aligns with this expectation.
+
+============================================================
+
+### Semantic Chapter 31 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+But I would also have expected that the. The position now the the second kind eyes is slower, so therefore the peak would be delayed. Because the rate of activation is less than the peak would occur like here rather than here. So here it happens. Here I now activate a inactivated step that leads to this peak and therefore I my intuition would have told me I go down. OK, that's true, go down, but I also get slower, so the peak the position of the peak will be delayed. OK, this is nice or not.
+
+**AI Summary:**
+The speaker discusses a delayed peak, attributing it to a slower position of the eyes and a reduced rate of activation. They explain that the peak occurs in a different location than expected, noting that activating an inactivated step leads to this peak. They conclude by acknowledging that their intuition regarding the movement direction was incorrect, but confirmed that the peak position is still delayed.
+
+============================================================
+
+### Semantic Chapter 32 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So I'm half right. So this is where a model this type of activity can make you aware of where your intuition made me aware where my intuition failed. Maybe maybe you would have seen this rightly, but I saw it wrongly. I had it half right amplitude down, but I would have expected this to be delayed an in. [1073.0s - 1102.0s]
+Fact then the question is, can you do this for the other two kind ISIS? [1102.0s - 1131.0s]
+And I also did that prepared for this. And when you do this for the if you now look at the third protein and not at the second kind, we already did this. But if you look at inhibit the first kinase, that's this case, and this is inhibiting the second kind of. Again, my expectations would have been that the amplitude would go down. This is sort of the wild type situation. These are the two mutants or the two patients. If you wish then I would again have expected yes, the amplitude to go down, but the thing to be delayed and it is not delayed. So apparently if you kinases do control the amplitude but not the time it takes for the peak. This is rather an abstract exercise, but in fact it isn't because there's evidence in the literature that tell you that that suggest that this later phase, the fact that sort of the X3P, which is a transcription factor, continues to signal for a long time, enhances the probability of not differentiating the proliferating, so this is tumorigenic. This area longer times sort of the system stays on too long to be active, and if then some other event happens. Then the cells proliferate so that is why, whereas this peak. This timing is good for differentiation, so the balance between this area and that area is the sides about proliferation and differentiation. So here in this case you would have no effect on the on this being a tumor, so but it would be less differentiating sense. It would be good to inhibit this guy has no problem. [1131.0s - 1160.0s]
+OK, now down here of course, how would you define this? This measure and you come? [1160.0s - 1189.0s]
+Back to this control coefficient. [1189.0s - 1218.0s]
+By by really eyeballing this change, you could define what percentage decrease we could measure, what percentage decrease I have of this amplitude? And what percentage change do I have in the duration of this peak? And you divide this by the 20% of this case, changing the kindness activity that you've done. [1218.0s - 1247.0s]
+And. [1247.0s - 1276.0s]
+You would see you would get. [1276.0s - 1305.0s]
+
+**AI Summary:**
+The discussion explores how specific molecular activities, particularly kinase activity, affect the amplitude and duration of biological peaks. The speaker contrasts intuition with experimental results, noting that while amplitude might be expected to decrease upon inhibition, the timing of the peak is often not delayed.
+
+The central point is that kinases control the amplitude of the signal but not the time required for the peak. Furthermore, the text suggests that the prolonged signaling of transcription factors (like X3P) enhances tumorigenicity by keeping the system active too long, preventing differentiation. The balance between proliferation and differentiation is crucial, and inhibiting certain factors may be beneficial for differentiation without necessarily preventing tumor formation. Finally, the segment describes a method for defining the measured change, involving calculating the percentage decrease in amplitude and the change in peak duration.
+
+============================================================
+
+### Semantic Chapter 32 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+And. [1247.0s - 1276.0s]
+You would see you would get. [1276.0s - 1305.0s]
+Out that if you do this for the amplitude that the control coefficient of this second kindness, that's this example is 1. One and I then surprised it's one. What would your expectation have been? Or maybe this would be our expectation, so this tells you that the second kind is in complete control of the phosphorylation of the third protein. That's OK. Is apparently the rate limiting step and I just tried to indoctrinate you that this would never happen again. That control would be distributed. It would be 30% here. So the percent here 30% it. So I was wrong, right? But I'm always half right and half wrong apparently, so I'm half right and half wrong. Yes, this is said true that this is now full control. Second, kindness. But if you do the same computations for the 1st and the 3rd. You find that they're also controlling to something that's very similar to one. So the solution is now very paradoxically, that there are three steps completely controlling, so we have three rate limiting steps, three times full control in this path, right? Not quite full control. It's not 100%, but it's close to 1. OK, so I told you phrase it in the general dogma is there is 1 right limiting, step OK. And then I told you about that's true for metabolic pathways, metabolic miles, a total control is 1. It's distributed over three factors maybe, or a number of factors. So they all become lower than one. And here you see that the. At. One of them is 1, so it looks like there's a red limiting step. Fully rate limiting, but now three of them are one. Unexpected what is happening here?
+
+**AI Summary:**
+The speaker analyzes the control mechanisms within metabolic pathways. They argue against the simple model of a single rate-limiting step, suggesting that control is distributed across multiple factors. Although no single step achieves 100% control, the analysis indicates that three factors are highly controlling, with the total control being distributed across three steps. This finding challenges the initial assumption of a single rate-limiting step.
+
+============================================================
+
+### Semantic Chapter 33 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+My.
+
+**AI Summary:**
+Chunk Summary:
+No meaningful content provided. Please provide the raw video chunk data (dialogue and visual descriptions) for summarization.
+
+============================================================
+
+### Semantic Chapter 34 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Should be one. So that's a big problem in detail, because in that field in my yard metabolism to some of the flux control coefficients are one. Anne Anne Anne is that now still true and it is still true? So the mathematics of that I can, we can prove analytically. It's still true.
+
+**AI Summary:**
+The speaker is questioning a point ("Should be one") regarding a problem in detail concerning metabolism and flux control coefficients. They then seek confirmation on whether this statement remains true, concluding by asserting that the mathematics can analytically prove its validity.
+
+============================================================
+
+### Semantic Chapter 35 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So how can this be so? There's some and in fact I must not modify 1/2. The answer is we're not looking at the flux, we're looking at the concentration. But then the summation theorem is 0.
+
+**AI Summary:**
+The speaker questions a premise and then provides an explanation for a result. The core argument is that the focus should not be on "flux," but on "concentration." The conclusion is that the summation theorem equals zero.
+
+============================================================
+
+### Semantic Chapter 36 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+But that's also difficult, because now we have OK. We have a sum of three of numbers. Three of them are one, but the total sum must be 0. How can that be done? So we need a negative control coefficient. What does that mean? Well, that actually means if you if you inhibit that step, you get more of a result. OK, now where and you and that is what you see when you do these simulations. Let me go to. [1305.0s - 1334.0s]
+I'm going back to the scheme 'cause you now look to the scheme. Get which would you be able to tell us how we are now looking at this? And we said somehow it is hard to understand, but there's some of the control of the rate limiting Ness must be zero. It's just some mathematics. Then sum of numbers must be 0. The control of this one is 1. This is a one and this is the one. So we have a sum of numbers. 3 ones already, but the sun must be 0. The mathematician had told tells us this is actually very important because the Romans had no idea that this could happen. the Greeks had no ideas, only the Arabs and the Indians. They figured out the number of one negative and positive. So sum is 03 ones. There must be negatives now. This must be easy. Which could be the negatives? The phosphatases yeah we just forgot about them. We thought they were not relevant. These are the four stages. What would that have to mean? While they would have to mean if you activate them by 1%. X3 goes down. Rather than app. Is that silly? So if you activate this phosphatase, would you expect the amplitude to go down or up? Yeah, so it's completely natural. Actually, this is what you should have expected in the 1st place, so if you activate this one then this becomes lower. If you activate this one with more thinking. Also lower. So yeah, completely natural. So in fact what you see here, you have six very limiting steps, very important steps 3 + 1, three minus one, and the sum of the whole thing is zero. That's what you get now. What's the implication of that we have? Maybe 5 minutes you see. If you run through this and the worse if you do the simulations with the phosphatases. Then
+
+**AI Summary:**
+The discussion focuses on the mathematical constraints governing the simulation and the interpretation of experimental results.
+
+The core mathematical principle established is that the sum of all numbers must equal zero (sum of three ones must equal zero). This requires the introduction of a negative control coefficient. The speaker explains that inhibiting a step leads to a specific result.
+
+The speaker then details the mechanism, noting that the rate-limiting control must be zero. The derivation involves calculating the balance of positive and negative numbers, referencing historical mathematical developments (ancient vs. modern understanding).
+
+Specifically, phosphatases are identified as potential negative components. It is explained that activating a phosphatase causes the amplitude to decrease (go lower), which is a natural expectation.
+
+The segment concludes by summarizing that the system consists of six limiting steps (e.g., 3 + 1, 3 - 1) that must sum to zero, and noting the implication of running simulations involving the phosphatases.
+
+============================================================
+
+### Semantic Chapter 36 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+[1334.0s - 1363.0s]
+You see that indeed they also have strong control on the amplitude. [1363.0s - 1392.0s]
+But if you. [1392.0s - 1421.0s]
+And continue in in the exercises, you'll see that if you now play around with the phosphatases. You see? That if you activate the phosphatases that the amplitude goes down negative control. But then the amplitude also shifts in time. And and this is very potentially very important, because this means that if you really think about cancer, an if this indeed has to do with activation later in time. It's what the literature tells us. And the kinases are pretty irrelevant. Is the phosphatases that matter? They determine. Whether you got into that fight, so that's what you see happening in the simulations now. So let's go to the paradoxes where also, what's the best way to do this now? [1421.0s - 1450.0s]
+That would come out of the. [1450.0s - 1479.0s]
+So the question is asked. Yeah, this is the questions asked. So if you if you play with this model, you'll find these questions and I already addressed this one in most textbooks. These routes are shown like this. Does this make sense? And one of the. Simulations. So first of all, we already saw that it doesn't because it really looks like this and you could say, well, the phosphatases are not important and in a human wave fashion you tend to think like this, because ultimately what's important that this gets phosphorylated. So therefore the kinases are what matters because that leads to phosphorylation. But really for the steady state but not for the study site for the level of X Ray P is the other ones that are important as well equally important. So that was the answer to fund this is this is this does not make sense for that reason, but there is another reason. One of the simulations we all I was also ask you to eliminate the phosphatases. Make them zero and then simulate this an. Did you see what came out of that?
+
+**AI Summary:**
+The discussion focuses on the regulatory mechanisms of amplitude and cellular signaling, specifically addressing the roles of phosphatases and kinases in a biological context (implied cancer).
+
+The speaker explains that activating phosphatases causes the amplitude to decrease, but this shift occurs over time, suggesting that phosphatases are critical for determining the outcome in the simulation. The literature indicates that phosphatases are more important than kinases in determining whether a cell engages in a specific biological process.
+
+Addressing the paradox of whether phosphatases are truly irrelevant, the speaker refers to a simulation where phosphatases were eliminated (set to zero). This simulation yielded different results, leading to the conclusion that both kinases (important for steady state/phosphorylation) and phosphatases are equally important for the measured level of activity. Therefore, the initial assumption that only kinases matter is insufficient.
+
+============================================================
+
+### Semantic Chapter 37 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Did anybody get that far? So if you did this, what you would have seen is that the X3P goes up. And it doesn't come down again, so you don't have this this like this, but it does this. And it stays up all the time. Can you understand that why that happens? So basically in this scheme I put in a little bit of EGF you have goes again again goes away, and then my EX3PX3 becomes completely phosphorylated. Can you understand that? Yes, you can, because there's nothing that defaults related, right? Even a fluctuation here if you wait long enough it will get completely Fast forward. So this means that any of these schemes and this is not only the map kinase their complete rubbish, because what really determines the state of these factors is the balance between what phosphorylation, what dephosphorylates or if it is. If it is ubiquitin elation, it's what ubiquitin lights and deubiquitinating lights hardware so that so. That is why it makes no sense. This passes, and of course, had we realized that a lot longer than people would have focused on the first phase is much more. A lot earlier. [1479.0s - 1508.0s]
+OK, so it's not only the first kinase, OK, then he said never say, OK, we already know that from other fields, but now we have transduction. We have possibility of three rate limiting steps and three others that are negative 6. So you get also has to do with this amplification. [1508.0s - 1537.0s]
+Idea OK, other phosphatases at all important you would think intuitively, not because they work negatively. And as humans we don't like negative things. But you've seen that they are equally important for the amplitude. And if you look at the lifetime of this peak. And more important, they determined the time this speaks for us, OK? [1537.0s - 1566.0s]
+And so there can be more important now. One other thing is that we should look at is this personalization. So. [1566.0s - 1595.0s]
+Here we here we here we have a computation that is done. So this is the healthy case. These are in fact identicals. So these are these are identicals before anything is done. Then these are two different individuals. They have a prolonged 3P and that is because in this patient think of them as an individual. They have a decreased activity in the first phosphatase by a single nucleotide polymorphism, and this individual has a decreased last phosphatase activity. And if you see that you see that in both cases there is an effect on the. On the. In both cases they have a prolonged X3P, so both of them have a longer duration here. That's what you should look at, so they're both cancer candidates for increased cancer development. These two individuals, but at different individuals, and that has to do with individualized medicine, so this could be you have two patients with a tumor, but they are different. The course of the tumor is different, and now you apply a standard drug, a drug working on the middle phosphatase, and the essence is that you see that the effect of the same drug on the two individuals is completely different. In this one it works, and in this one it doesn't.
+
+**AI Summary:**
+The discussion focuses on the molecular mechanisms governing signaling pathways, emphasizing the balance between phosphorylation and dephosphorylation.
+
+Key points include:
+1. **Signaling Mechanism:** The duration of a signaling peak (like X3P) is determined by the balance between phosphorylation and dephosphorylation/ubiquitination.
+2. **Role of Phosphatases:** Phosphatases are crucial not only for negative regulation but also for determining the amplitude and the lifetime of signaling peaks.
+3. **Individualization:** The importance of personalized medicine is highlighted. Variations, such as single nucleotide polymorphisms (SNPs) that decrease phosphatase activity, can prolong signaling duration in individuals. This leads to different responses to the same standard drug, demonstrating that the effect of therapeutic agents varies significantly based on individual molecular profiles.
+
+============================================================
+
+### Semantic Chapter 38 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Yeah. So the drug on the middle foster faces more much more effective in video 4 than any individual 3. So that's just what you can get out of this.
+
+**AI Summary:**
+The drug administered to the middle foster faces is stated to be more effective in video 4 than any individual 3.
+
+============================================================
+
+### Semantic Chapter 39 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+This is a very. This is a very important message. Also one of the important messages here is that the duration. Is important. Only dated duration is supported, so you can figure out these principles and be surprised. I was surprised. Second individualization, as you also say is important and 3rd connected to that you can actually do it if you have a patient which has a single nucleotide polymorphism in its tumors, why not put it in the pathway and see whether the drug you have and the present drugs are now working on, not on the second kind is but on the GDF receptor whether they should actually work differently? I mean, you can say that. Individualized medicine is impossible, but it's just not true. You can do it. The question is whether it will work, what the outcome is of the computation, but you cannot say that you cannot try to implement it, OK. Thank you very much for the attention for this.
+
+**AI Summary:**
+The speaker emphasizes the importance of duration and individualization in medicine. They argue that individualized medicine is achievable, even when dealing with specific genetic factors (single nucleotide polymorphisms in tumors). The focus should be on computational analysis to determine if current drugs effectively target specific receptors (like the GDF receptor), rather than concluding that individualized treatment is impossible.
+
+============================================================
+
+### Semantic Chapter 40 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Yeah alright.
+
+**AI Summary:**
+The speaker acknowledges or agrees with something ("Yeah alright.").
+
+============================================================
+

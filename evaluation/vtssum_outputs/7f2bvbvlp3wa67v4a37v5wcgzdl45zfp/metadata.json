@@ -1,0 +1,21 @@
+{
+    "id": "7f2bvbvlp3wa67v4a37v5wcgzdl45zfp",
+    "title": "Query Log Mining",
+    "url": "http://videolectures.net/qlm09_silvestri_qlm/",
+    "info": {
+        "author": [
+            "Ricardo Baeza-Yates, NTENT, Inc.",
+            "Fabrizio Silvestri, Facebook"
+        ],
+        "published": "May 26, 2009",
+        "recorded": "April 2009",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 50,
+    "num_sentences": 989,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 856
+}

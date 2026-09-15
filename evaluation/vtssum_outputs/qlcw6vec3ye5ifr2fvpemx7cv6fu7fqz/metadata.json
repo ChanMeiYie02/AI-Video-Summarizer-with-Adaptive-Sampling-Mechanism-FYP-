@@ -1,0 +1,21 @@
+{
+    "id": "qlcw6vec3ye5ifr2fvpemx7cv6fu7fqz",
+    "title": "Linguistic annotation of social media corpora: To what extent do we have to adapt existing encoding standards and tag sets?",
+    "url": "http://videolectures.net/slovenscina2015_beisswenger_linguistic_annotation/",
+    "info": {
+        "author": [
+            "Michael Beißwenger, Faculty of Culture Studies, TU Dortmund"
+        ],
+        "published": "Dec. 21, 2015",
+        "recorded": "November 2015",
+        "category": [
+            "Top->Computer Science->Natural Language Processing",
+            "Top->Humanities->Linguistics"
+        ]
+    },
+    "num_segments": 44,
+    "num_sentences": 371,
+    "num_clips_with_summary": 26,
+    "num_gt_summary_sentences": 52,
+    "ground_truth_summary_length_chars": 9335
+}

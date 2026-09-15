@@ -1,0 +1,21 @@
+{
+    "id": "47vjunhmfwpkpx5mm55ypjcs65zooimy",
+    "title": "Graphical Models for Structural Pattern Recognition",
+    "url": "http://videolectures.net/mlss06au_caetano_gmspr/",
+    "info": {
+        "author": [
+            "Tibério Caetano, National ICT Australia"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "February 2006",
+        "category": [
+            "Top->Computer Science->Machine Learning->Pattern Recognition",
+            "Top->Computer Science->Machine Learning->Graphical Models"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 701,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1384
+}

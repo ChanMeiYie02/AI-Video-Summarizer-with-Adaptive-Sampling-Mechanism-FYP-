@@ -1,0 +1,221 @@
+[0.0s - 29.0s]
+Yeah so hi everyone, I'm going to present our work which is called a worst case optimal join algorithm for spark well, so I'll say.
+
+[29.0s - 58.0s]
+With an introduction OK.
+
+[58.0s - 87.0s]
+So we all know RDF graphs and their language.
+
+[87.0s - 116.0s]
+Sparkle
+
+[116.0s - 145.0s]
+So for instance, in this case we have a query where we're asking for all all the friends of someone that has a bad name dinci. OK, so one would expect that that this.
+
+[145.0s - 174.0s]
+The query is are later using graph based.
+
+[174.0s - 203.0s]
+But instead of that, we are still using traditional join.
+
+[203.0s - 232.0s]
+Algorithm to process a query like this. So the main issue here is that this particular Lisa language to query graph based storage is but we are still using traditional joint algorithms. So how about using?
+
+[232.0s - 261.0s]
+New techniques then, with this question in mind, I.
+
+[261.0s - 290.0s]
+Gone I'm going to show a whole. We implemented our worst case optimal join algorithm in an RDF database. An also hold this algorithm algorithm perform with respect to the existing approaches, so some pretty.
+
+[290.0s - 319.0s]
+Various first, I will use the.
+
+[319.0s - 348.0s]
+A usual syntax and semantics of spark. Well this is a triple pattern, OK?
+
+[348.0s - 377.0s]
+OK, I I will talk about basic craft.
+
+[377.0s - 406.0s]
+Patterns, which is a set of triple patterns like this an in this style. I will only consider the default graph.
+
+[406.0s - 435.0s]
+Also, the result of this particular query is set of mappings. For instance this could be.
+
+[435.0s - 464.0s]
+EA.
+
+[464.0s - 493.0s]
+The result set for this query we have in this case.
+
+[493.0s - 522.0s]
+Data mappings an maybe we can have more an I will call P / D the set of mappings obtained when the basic pattern P is evaluated over a graph D. OK, Ann.
+
+[522.0s - 551.0s]
+Also, I have to talk about the Adm bound to understand the worst case optimal algorithms. Then suppose the following conjunctive query in a relational settings. This query is a joint query an also we know the cardinality of each one of the relations. So a valid question is what is the?
+
+[551.0s - 580.0s]
+Maximum number of results of Q when we evaluate a query or D then we can.
+
+[580.0s - 609.0s]
+Calculate an upper bound for the number of results in terms of the cardinality of the relations an this value is called the DM bound, and is a tight bound for the number of results.
+
+[609.0s - 638.0s]
+Certain query the classic example here is this query which is a triangle. We are using three relations an all of the relations has cardinality and so the Adm bound say that the number of results of such query is always less than NA by three on three by two. OK.
+
+[638.0s - 667.0s]
+So when we use traditional doing algorithms to evaluate this query, if we consider the subquery error join S in that subquery in the worst case, we will have N squared result and that means that with the standard doing algorithm that evaluate a query pairwise in a lefty plan join algorithm will take at least O of N squared. But we know that the size of the way is at most the Adm bound so. We would like to have some algorithm that runs below the Adm bound an.
+
+[667.0s - 696.0s]
+That's what we call a worst case. Optimal join algorithms are the algorithms that runs below the AGM bound. So in this case our case optimal algorithm to resolve the query in almost a oh of the aging bound of the triangle query.
+
+[696.0s - 725.0s]
+And there are a lot of examples of this kind of algorithms, like lip three, you in my sweeper head rezan so one. So we started this.
+
+[725.0s - 754.0s]
+Because we firmly believe that the work is optimal, algorithm will be an improvement for RDF database, so for that reason we implemented the.
+
+[754.0s - 783.0s]
+Leapfrog join a little tree in algorithm on an RDF database. OK so.
+
+[783.0s - 812.0s]
+I will start with an example to explain what the algorithm does. So if we have this graph I which talks about a winners of the normal price.
+
+[812.0s - 841.0s]
+An I put this query. This query is asking for every person that wanna price an which also their parents also want the same price. Then if we consider the 1st three triple patterns it happens that that we are considering the cross product of the winners in our graph.
+
+[841.0s - 870.0s]
+In this case, we have all these combinations that are a 125 possible mappings. So the cross product is expensive for the database, but we know that the number of results of this query is less than that because then we are filtering the variable X2 and A2 by the one that has a mother and father. So we want another technique to relate this.
+
+[870.0s - 899.0s]
+So we adopted the Leap Rock Trio in for RDF databases.
+
+[899.0s - 928.0s]
+I will explain what the algorithm does, so consider the same example.
+
+[928.0s - 957.0s]
+Then we need to fix variable ordering. In this case, is X one X2X3 and X4 and what we do is the following. First we start.
+
+[957.0s - 986.0s]
+The variable X one and we have to find a possible binding for the variable. We will find that novel is a possible value in the group.
+
+[986.0s - 1015.0s]
+Tough. So when we fix this variable, we will.
+
+[1015.0s - 1044.0s]
+Find for a possible bye bye.
+
+[1044.0s - 1073.0s]
+You for the variable X2 and then we have that X2 have to be linked to novel via the property winner. An extra also has to have a mother and a father, so the possible bindings here are A8 for instance and then we will seek for a variable X3 which is the father.
+
+[1073.0s - 1102.0s]
+And then we will, we will. We will see that we don't have a possible mapping that that.
+
+[1102.0s - 1131.0s]
+That can continue this procedure. So the variables for.
+
+[1131.0s - 1160.0s]
+He doesn't have a possible value here, so we have to do a rollback and.
+
+[1160.0s - 1189.0s]
+We will start rolling back. We don't have another father for I for 8.
+
+[1189.0s - 1218.0s]
+So we will come to X2 again and we will seek for the next possible mapping so.
+
+[1218.0s - 1247.0s]
+That one the normal price in this guy in this case is Irene and.
+
+[1247.0s - 1276.0s]
+We and then we will seek another possible bindings, in this case pier and.
+
+[1276.0s - 1305.0s]
+And we have here or first table that they are mapping that is the result of the of the basic pattern that we have here.
+
+[1305.0s - 1334.0s]
+So intuitively we have two steps. The first step is the lift lip lock step where when we're computing the intersection of the variable X and then this is similar to take all the triple patterns separately, evaluate them over the graph, and then compute the intersection when we are projecting the variable that we are asking for in such in some iteration an. Once we have this step, which is the leapfrog.
+
+[1334.0s - 1363.0s]
+Also have the variable elimination step. Then we fix the variable ordering. In this case we consider X one to XN, an for each value of B found in the Leapfrog step. We start replacing the values on the basic pattern that we call it variable elimination because we're replacing the variables by concrete values that are present in the in the graph. So we iterate this process first with X, one X2 and.
+
+[1363.0s - 1392.0s]
+So one then we are eliminating the variables, replacing it. But by the possible constant that that satisfy the basic graph pattern. OK, so that's the that's the idea of the algorithm. The algorithm is not ours is proposed sometime ago. The original algorithm is the lip trio, and this is a version that we implemented in an RDF data.
+
+[1392.0s - 1421.0s]
+So what we did is to implem.
+
+[1421.0s - 1450.0s]
+And the algorithm in the engine. About Gina. We wanted to do this a showing that it's possible to implement the algorithm, but without doing huge modifications to the graph. And for this we have to work a lot with the indexing of the graph. So we know that.
+
+[1450.0s - 1479.0s]
+In RDF databases, the idea of indexing is to take the possible orders of the tribbles and store them in a separate B + 3. For instance, if I have the triple SPO, it has to be stored several times like SPOPOS and so on in separate blast. 3 for the values in the graph.
+
+[1479.0s - 1508.0s]
+M. And then a idea of this is to compute the Leapfrog step, which is a kind of intersection of values using an adaptive intersection algorithm. This algorithm, the only the only requirement of the algorithm, is that it assumes that that each each one of the triple patterns. When we project the variable we're searching can be navigated in an increasing order, so this is not.
+
+[1508.0s - 1537.0s]
+Now the basic idea is that we can achieve or or or or or bound a just a creating some more indexing indexes in the database. The three first index are native of Pasadena and we have the 2nd three indexes and slightly extending the blast 3 of a Gina. We will will be able to. Perform a intersection of variables in a logarithmic time with respect to the graph. Is fact.
+
+[1537.0s - 1566.0s]
+It's two or theorem that the implementation of Flip Flop 3 and that we have is in fact worst case optimal, so this is fine. We have theoretical guarantee, but we need more so.
+
+[1566.0s - 1595.0s]
+In summary, the classic approach is to query the indexes and decide the best order of triple patterns and then execute a traditional join algorithm. But what we're doing now is the result query variable by variable. Fixing the values that we are finding. So it's like more dynamic and then perform their work. This optimal algorithm. Then we have this theoretical guarantee, but we have.
+
+[1595.0s - 1624.0s]
+I need to understand how this algorithm performs in real world so we.
+
+[1624.0s - 1653.0s]
+Anne's a bunch of experi.
+
+[1653.0s - 1682.0s]
+The first thing we do is to compare our approach with the original one of a Pasadena using Devil in Benchmark. OK, Ann.
+
+[1682.0s - 1711.0s]
+Then we saw that that the running time of our algorithm with respect to, uh Pasadena, is almost the same. It is competitive, but we have to have in mind that that there are limits is not proposed for testing only BP's but but testing several operators of the Sparkle query language.
+
+[1711.0s - 1740.0s]
+So today's specifically the behavior of BBS we used to set of experiment. The first one is what Dave and the second one is proposed by us, which is we got up benchmark an. We wanted to compare our approach with a three of the most use RDF database. The results before we.
+
+[1740.0s - 1769.0s]
+These are the following. There is a lot of information here, but but the important thing is that the dots are the average time of execution of each one of the use cases.
+
+[1769.0s - 1798.0s]
+In in what if an? The idea here is that in fact or.
+
+[1798.0s - 1827.0s]
+PRISM performs considerably better in this benchmark, and also tends to be more stable than the minimum time and the maximum time for the queries is is always a kind of bound an and then we wanted to try the key steps of our algorithm against existing solution. The key steps are the leapfrog step and the variable elimination so.
+
+[1827.0s - 1856.0s]
+It's why we created a or own benchmark based on the graph of weed data. We created a 17 query template sandwich enerate randomly A50 query paper template.
+
+[1856.0s - 1885.0s]
+These are the template. The first row is to test the Leapfrog processor and the 2nd row is to test the variable elimination and then.
+
+[1885.0s - 1914.0s]
+We run the experiments for single variables. These are the results. A summary of the.
+
+[1914.0s - 1943.0s]
+Is that the total time of execution of the benchmark? Is 4 seconds for our implementation and the most notable speedup happens when when the variable is in the object? And then.
+
+[1943.0s - 1972.0s]
+Again, for multiple variables we have again a nice. Performance of our algorithm against the existence solution, But here a bit also outperforms our approach in some use cases.
+
+[1972.0s - 2001.0s]
+And this is mainly because the variable ordering that we are choosing is not optimal and so is choosing a triplet pattern ordering, which is better. Anne.
+
+[2001.0s - 2030.0s]
+Well, finally a the idea here.
+
+[2030.0s - 2059.0s]
+Is that to the best of our knowledge, this is the first work about worst case optimal algorithm in spark well and we showed that in fact is festival solution and this technique in graph based storage works well. The effort and also a we saw that in practice or approach performs better in running time and also tends to be more stable.
+
+[2059.0s - 2088.0s]
+And well, as a future work, the first thing is that we need to understand how to choose the variable ordering, because we're fixing it now and we know that in words this optimal algorithm. This is the key part of the performance. And also we would like to try another algorithm that can improve the behavior of RDF.
+
+[2088.0s - 2117.0s]
+Databases here are some resources. The first one is this. The debate. The web page of the benchmark. Here's my contact. I have the links of the paperin, the source code for implementation and the benchmark that we created.
+
+[2117.0s - 2146.0s]
+That's all, thank you for your attention. Thank you any questions. Hey. You, you said as future work, you want to find the good order for the variables. Did you tell us actually what how you decide on the order? At the moment? Yeah, for deciding the variable ordering, what we do is OK. Do you? Do you have the join algorithm of Pasadena, which decides the doctoring of triple patterns? So in base to the order of triple patterns in base, kind of the order of appearance of the variables. In the original agreement of Pasadena, we decide our variable ordering. A it's like to copy the thing that Apple Tina. Did before. Great work so actually one thing that didn't become totally clear to me in how far is the algorithm streaming. So in this toy example, you only had one binding. Do you compute compute all the bindings for each variable in each step? And is it a blocking computation where you need to maintain large set of intermediate results in main memory? Or could this implemented in a fully streaming way pipelined essentially no no. What we did is to implement it not in memory. Actually it performs with the disk. Pages so. But one, the way that the algorithm works is that we first fix a single variable. We find the intersection of variable, but we don't compute the entire interception, just find one possible binding and then we start with the rate. If one finds a binding there and then, we go for the next variable, finding a possible binding, and that's all you have to keep in memory at the current binding on up. Pointer to the next one, but you don't need to have everything in memory here. Yeah, maybe to go in the same direction and. Did you say that you select one variable before, like doing the bindings and so on, but you select it, taking the first one? Or are you considering maybe as a future award to have some statistics on the on? Maybe the predicates to you know. First select the first one before rolling up as we were doing. Like is there an idea of using statistics on the data set before hand? OK. The what we say to LF before is that we choose the variable ordering that Pasadena used before, and that ordering is, according to the statistics that Apache Nahhas. So in base of the statistic, Albertina ordered but not for, not for variables but for trivial buttons. And we do some kind of direction to to have variable ordering, which is kind of. Quite distinct for the original 1. But yes, we started the statistic, but in terms of choosing a smart variable ordering, there is a lot of work actually in the field of of the guys that study worst case optimal algorithm is it is not clear how to decide the variable ordering in this kind of algorithms. Let's stand thank the speaker again.

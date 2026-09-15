@@ -1,0 +1,23 @@
+{
+    "id": "a2a37qfa4ruynt5a6nyyxkyxuqtjt56e",
+    "title": "Multimodal nonlinear filtering using Gauss-Hermite Quadrature",
+    "url": "http://videolectures.net/ecmlpkdd2011_heess_quadrature/",
+    "info": {
+        "produced by": [
+            "Data & Web Mining Lab"
+        ],
+        "author": [
+            "Nicolas Heess, University of Edinburgh"
+        ],
+        "published": "Nov. 30, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 149,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 2352
+}

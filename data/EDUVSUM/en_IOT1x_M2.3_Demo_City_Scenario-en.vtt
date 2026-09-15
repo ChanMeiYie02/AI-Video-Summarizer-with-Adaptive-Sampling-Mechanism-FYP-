@@ -1,0 +1,88 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:02.880 --> 00:00:07.090
+INSTRUCTOR: The next Internet of Things scenario using Packet Tracer,
+
+00:00:07.090 --> 00:00:16.110
+we'll look at what might be useful in a smart city type of situation.
+
+00:00:16.110 --> 00:00:22.120
+So if we have cars driving around, there's
+
+00:00:22.120 --> 00:00:33.600
+an old car and carbon monoxide detector to detect the exhaust gases coming out
+
+00:00:33.600 --> 00:00:34.545
+of the car.
+
+00:00:34.545 --> 00:00:38.210
+I'll activate the car by holding down ALT and clicking.
+
+00:00:38.210 --> 00:00:39.615
+There's the dirty exhaust gases.
+
+00:00:42.470 --> 00:00:48.890
+And then say this is a tunnel or a poorly ventilated area, we
+
+00:00:48.890 --> 00:00:56.720
+can put a fan in place so that ultimately whenever too many gases are
+
+00:00:56.720 --> 00:01:01.550
+detected by the CO detector, when an old car is parked in the area,
+
+00:01:01.550 --> 00:01:07.940
+the fan can be activated to blow them away and protect
+
+00:01:07.940 --> 00:01:11.430
+the health of the people in the area, clear the tunnel out,
+
+00:01:11.430 --> 00:01:13.949
+or some other similar situation.
+
+00:01:13.949 --> 00:01:15.740
+Obviously, at the moment, I'm just clicking
+
+00:01:15.740 --> 00:01:18.600
+on these they're not at all connected.
+
+00:01:18.600 --> 00:01:21.440
+We can look at that later on as to how they might connect
+
+00:01:21.440 --> 00:01:25.330
+to each other over different networks.
+
+00:01:25.330 --> 00:01:28.120
+While we're in the smart city situation, they
+
+00:01:28.120 --> 00:01:32.530
+have a street lamp here which detects light,
+
+00:01:32.530 --> 00:01:36.160
+so it will only come on when it's dark enough to be needed,
+
+00:01:36.160 --> 00:01:40.500
+and motion so it will only come on when there's a car near by.
+
+00:01:40.500 --> 00:01:44.025
+You can see as I move this car here the M lights up green
+
+00:01:44.025 --> 00:01:46.362
+showing that it's got motion detection.
+
+00:01:50.060 --> 00:01:50.950
+OK.
+
+00:01:50.950 --> 00:01:55.270
+That's a few different ways you can make use
+
+00:01:55.270 --> 00:02:02.270
+of devices such as street lamps or carbon monoxide detectors
+
+00:02:02.270 --> 00:02:05.110
+or being connected to each other via the network
+
+00:02:05.110 --> 00:02:10.660
+to make things talk to each other and provide Internet of Things type
+
+00:02:10.660 --> 00:02:13.760
+solutions automatically.

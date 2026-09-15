@@ -1,0 +1,92 @@
+[0.0s - 29.0s]
+Hello, I'm Malcolm decosta. I'm a doctoral student at the Computational Physiology lab at the University of Houston and today in my.
+
+[29.0s - 58.0s]
+So I'm going to talk about how we extract physiological data from the face of the paranasal region and use it in an application such as the perception analysis.
+
+[58.0s - 87.0s]
+Now this.
+
+[87.0s - 116.0s]
+Ception is defined as the act of purposely misleading somebody, and there are several reasons why one may do so. Like to escape from punishment or to escape embarrassment etc. However, deception analysis is especially important in cases such as criminal context or cases where timely detection is very important and these are applications where the work I present find relevant.
+
+[116.0s - 145.0s]
+Now, deception is a cognitive effort. Deception starts in the brain and then precipitates peripherally through behavioral observations or peripheral physiological indicators. And as we heard in the keynote, these need to be analyzed within proper context to determine if a person is being deceptive or not. Now both these techniques differ in some respects. Be.
+
+[145.0s - 174.0s]
+Behavioral observations generally are more qualitative, while physiological measurements are more quantitative in nature. Behavioral observations can be controlled to some extent. However, it's very difficult to manipulate your Physiology. And finally, behavioral observations had the quality of being unobtrusive. Most physiological measurement techniques are generally contact based. Our approach addresses this problem and we use thermal imaging to do so unobtrusively.
+
+[174.0s - 203.0s]
+Now to give you a little background, thermal imaging has been used in the past in deception analysis using the periorbital channel. Um? In my work, we explode the very nasal channel around the nose. And this measurement channel was first introduced by Doctor Shastri as a method for measuring sympathetic arousal. He was able to use sympathetic arousal to measure stress, and this method was validated against the classic EDA on the fingertips, and it was found that the responses in the paranasal region, the equivalent to the responses on the fingertips. Hence, now that we had this. Contact free method for measuring electrodermal activity. We are using it for the first time in a deception analysis context.
+
+[203.0s - 232.0s]
+So now in order to study deceptive behavior, we needed to simulate a more crime. And in studies like this, some things that sometimes go unnoticed by technologists is that the design of the experiment is equally as important as the method being used. So I will focus more on the design. In my talk, but more details about the procedures are present in the paper. This study was a collaborative effort by various groups and the groups that the group that I belong to falls under the realm of the Technology Group. We worked with the psychology group to codesign this experiment at the University of Arizona where it was run. And finally, there was an evaluation group which was a sole Holder of the ground truth regarding which subject was truthful and deceptive. And some essential design considerations while designing an experiment like this is to make the experiment as real as possible so that you have the participants fully engaged in it. Give them some high stakes in order to push them to perform better and to motivate them to perform.
+
+[232.0s - 261.0s]
+Now in this experiment. Simulated crime was the act of stealing a ring.
+
+[261.0s - 290.0s]
+This experiment was run at the University of Arizona. Under some IRB guidelines, and when subjects arrived, they first went through the consent process, then they listen to a set of prerecorded instructions and this told them everything that they needed to know to participate in the study, including giving them a particular role whether be truthful or deceptive. After this, subjects went over to the room where this ring was present and over there they were greeted by a Confederate researcher who was part of this whole act and he would welcome them into the room. Next he would leave the room under the pretext of going and finding out where this interview would take place. Now it was at this time that deceptive subjects were already pre programmed and knew that there was a ring on the table and they would take it and put it in their pocket. While truthful subjects would just wait. When he.
+
+[290.0s - 319.0s]
+But back he would then lead them to the interview and the interviews here were conducted by trained interrogators from various areas of law enforcement agency and they interviewed the subjects about their involvement in stealing the ring for about 15 to 20 minutes. And the interview you most importantly followed the read interview style which consisted of questions which were easy and difficult.
+
+[319.0s - 348.0s]
+An all the motive for all subjects over here. The goal was to convince the interviewer that they were innocent and did not take the ring, and in order to help them perform better, there were financial incentives. So if you were able to convince the interviewer that you were truthful successfully, you would get an additional $50.
+
+[348.0s - 377.0s]
+We used a mid wave infrared thermal imaging camera from floor and this was capable of recognizing temperature differences as low as 0.025 degrees Celsius. And the configuration we used with 100 millimeter lens and placing the subject at about 13 feet away allowed nearly the entire subjects head to cover the image plane an we recorded data at 25 frames per second and hence we had sufficient temporal and spatial resolution to extract this perspiration signal.
+
+[377.0s - 406.0s]
+Now in this study, the signal of interest is perspiration from the paranasal region. The study was very realistic, an imposed no constraint on the subject motion. They were able to move freely and realistically. Hence we had to use a tracker to track the region of interest. And from this region of interest we extract perspiration like the blue dots that you see here. We we used a. Morphology based method to extract this perspiration the way perspiration manifests itself in thermal imaging is in the form of high spatial frequency and this method was developed by one of the coauthors.
+
+[406.0s - 435.0s]
+Next, we want to identify sympathetic arousal's and sympathetic arousal's are caused in response to a stimuli, so. We first had to identify these arousals and these arousals are caused in response to the questions posed by the interviewer. Is there any reason why your fingerprints should be on a desk on the 4th floor of this building? So we use the audio channel which was synchronized with thermal data to identify this stimuli and we we identify the start and end of each question. So how do we use this question level segmenting is we used it to do further an interview level segmenting.
+
+[435.0s - 464.0s]
+So as I said before this interview followed the Read interview style, which consisted of questions of easy nature meant to make the subject feel comfortable, and then immediately the demeanor of the interview changes and the questions turn more stressful. So this way there are sequence of easy, stressful, easy and stressful questions. So based upon that we grouped questions and made a segment so we segmented our interview. To give you an idea of an easy question. What colors of the walls are in this room? An example of difficult question. On the 4th floor of this building.
+
+[464.0s - 493.0s]
+So based upon this grouping, we then split the perspiration signal that we extracted for this entire session into six segments corresponding to this interview segment, in which we did.
+
+[493.0s - 522.0s]
+So now from one single perspiration signal book, first session, we now have six perspiration signals to work with.
+
+[522.0s - 551.0s]
+Now, most importantly, what is the feature? The feature over here.
+
+[551.0s - 580.0s]
+Is the rate of periodic city of perspiration now? Why would this be of interest? It's because of the fact that sympathetic arousal's are basically a neurophysiological effect. And the way neurons communicate by the pattern of firing impulses. And during a period of high arousal due to stress, these neurons fire at a higher rate and hence we calculate the rate of perspiration for which we use a wavelet analysis based method capable of computing this bouts of perspiration.
+
+[580.0s - 609.0s]
+So we for the entire signal once we once we have already segmented this perspiration signals into six segments. We apply this method on each of these six segments and get our features and we populate our feature tables.
+
+[609.0s - 638.0s]
+Now let me tell you that all subjects experience stress during this interview or any interview for that matter, because interview by Nature is a stressful process.
+
+[638.0s - 667.0s]
+However. Truthful subjects are. Are stressed out equally with respect to relevant and irrelevant questions. They uniformly are stressed, however. Deceptive subjects are most stressed during the.
+
+[667.0s - 696.0s]
+Irrelevant questions, so we look at the differential in the perspiration rates. During these two types of questions.
+
+[696.0s - 725.0s]
+And and I translated this hypothesis into a simple formula where if the mean rate of perspiration during the relevant segments are greater than the mean rate of perspiration during the irrelevant segments, we categorize the subject as deceptive and we did. And we did this just to test the strength of the feature which we proposed.
+
+[725.0s - 754.0s]
+We also applied our features to various common machine learning algorithms.
+
+[754.0s - 783.0s]
+So initially we knew the ground truth of none of these subjects. We first acquired ground truth for 25 subjects, and we trained our models on this. Once we had done, we applied a method on 15 subjects in a blind prediction.
+
+[783.0s - 812.0s]
+This graph over here represents the correct classification rate of truthful and deceptive subjects in the training set.
+
+[812.0s - 841.0s]
+And this graph represents the same in the test set. Now this graph represents the overall classification rate of truthful and deceptive subjects in the training and test set. Here we see nearly consistent classification rates across various classifiers. Secondly, we see that the classification rate during the test set is nearly as similar to that during the training set.
+
+[841.0s - 870.0s]
+In conclusion very nasal perspiration tracks.
+
+[870.0s - 899.0s]
+Receptive behavior on. In essence, this is a new and exciting method because it does something very similar to electrodermal activities on the fingertip which is measured using contact probes and. Most importantly, this is very similar to a very traditional method using the polygraph and one of its most important channels in making in use. In making the deception decisions. Finally, we were able to achieve this. These results due to good psychological theory which was. The selection of appropriate interview styles. And. Good experimental practice by blending the works of various groups together, including keeping ground truth hidden from experimental and finally good Physiology theory which is relevant to the context to use this neurophysiological effect. The firing of the neurophysiological effect. And finally, to end my talk, we see that performance scales up during the test set. Thank you.

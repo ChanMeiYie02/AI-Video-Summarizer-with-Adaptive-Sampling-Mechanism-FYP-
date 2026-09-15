@@ -1,0 +1,22 @@
+{
+    "id": "4ux4lfgu62im6zlk2rw4ujxvkhs43rk3",
+    "title": "Challenges in Ontology Learning with Focus on Crowd Sourcing",
+    "url": "http://videolectures.net/solomon_bradesko_ontology_learning/",
+    "info": {
+        "author": [
+            "Luka Bradeško, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Oct. 17, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Computer Science->Knowledge Extraction",
+            "Top->Computer Science->Crowdsourcing",
+            "Top->Computer Science->Information Extraction->Ontology Learning"
+        ]
+    },
+    "num_segments": 51,
+    "num_sentences": 664,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 3791
+}

@@ -1,0 +1,20 @@
+{
+    "id": "qikkkxhf2j2thpw5td2hdisfi57gvbry",
+    "title": "Algebras of ontology alignment relations",
+    "url": "http://videolectures.net/iswc08_euzenat_aoar/",
+    "info": {
+        "author": [
+            "Jérôme Euzenat, INRIA Grenoble Rhône-Alpes"
+        ],
+        "published": "Nov. 24, 2008",
+        "recorded": "October 2008",
+        "category": [
+            "Top->Computer Science->Semantic Web->Ontologies"
+        ]
+    },
+    "num_segments": 53,
+    "num_sentences": 275,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 3327
+}

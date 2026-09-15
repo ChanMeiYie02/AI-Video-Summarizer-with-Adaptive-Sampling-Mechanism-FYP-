@@ -1,0 +1,24 @@
+{
+    "id": "qswi42udjfjze7zvc4k2fjrjcze56g3p",
+    "title": "The landscape of the loss surfaces of multilayer networks",
+    "url": "http://videolectures.net/colt2015_choromanska_multilayer_networks/",
+    "info": {
+        "author": [
+            "Anna Choromanska, Department of Electrical Engineering, Columbia University"
+        ],
+        "published": "Aug. 20, 2015",
+        "recorded": "July 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning->Active Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Semi-supervised Learning"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 56,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 2061
+}

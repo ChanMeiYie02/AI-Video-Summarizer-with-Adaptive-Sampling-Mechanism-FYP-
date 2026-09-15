@@ -1,0 +1,21 @@
+{
+    "id": "j6foqtc6sjkeg5sbs6hkif2ka22cvt5u",
+    "title": "Social Robotics - From Cognitive Science to Robots in the Real World",
+    "url": "http://videolectures.net/interACT2016_sagerer_social_robotics/",
+    "info": {
+        "author": [
+            "Gerhard Sagerer, Bielefeld University"
+        ],
+        "published": "July 31, 2016",
+        "recorded": "July 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 107,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 567
+}

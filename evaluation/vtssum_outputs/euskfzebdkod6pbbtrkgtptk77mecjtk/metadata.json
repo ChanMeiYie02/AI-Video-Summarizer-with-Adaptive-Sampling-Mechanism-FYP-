@@ -1,0 +1,20 @@
+{
+    "id": "euskfzebdkod6pbbtrkgtptk77mecjtk",
+    "title": "Visualization of text document corpus",
+    "url": "http://videolectures.net/cov05_fortuna_vtdc/",
+    "info": {
+        "author": [
+            "Blaž Fortuna, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "November 2005",
+        "category": [
+            "Top->Computer Science->Data Visualisation"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 230,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1329
+}

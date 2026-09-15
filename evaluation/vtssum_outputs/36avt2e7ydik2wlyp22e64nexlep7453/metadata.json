@@ -1,0 +1,20 @@
+{
+    "id": "36avt2e7ydik2wlyp22e64nexlep7453",
+    "title": "Managing research institute",
+    "url": "http://videolectures.net/wsdebate08_lah_turnsek_mri/",
+    "info": {
+        "author": [
+            "Tamara Lah Turnšek, National Institute of Biology"
+        ],
+        "published": "Oct. 22, 2009",
+        "recorded": "May 2008",
+        "category": [
+            "Top->Business->Management"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 330,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 37,
+    "ground_truth_summary_length_chars": 4518
+}

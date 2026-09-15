@@ -1,0 +1,21 @@
+{
+    "id": "ko6uh6vwxynwqdl3hq35hvn6szk4g3dg",
+    "title": "From Queriability to Informativity, Assessing “Quality in Use” of DBpedia and YAGO",
+    "url": "http://videolectures.net/eswc2016_ruan_queriability_to_informativity/",
+    "info": {
+        "author": [
+            "Tong Ruan, East China University of Science and Technology (ECUST)"
+        ],
+        "published": "July 28, 2016",
+        "recorded": "May 2016",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 123,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 3463
+}

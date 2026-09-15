@@ -1,0 +1,122 @@
+[
+    {
+        "text": "OK, do you hear me? Well good. Yeah, I already present in fact a couple of companies at the moment and we here see them here, which is Kilgrave. We localize matronic and Anbia loom here. We are a couple of people who had a lot of problems in interoperability. In fact, our clients had these problems and we sat together. I think last year in Limerick and we said let's stop complaining and let's stop waiting for X Live 2.0 let's start moving and let's try to get some experience. Let's have our tool communicate with each other. And then see.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "If that works or not, I had this title and pragmatic approach to interoperability in language technology. I want to change it a little bit. First of all, it's an agile approach. I think what we're doing here try things out in iterative way and if it doesn't work, just stop and start something you and last but not least, I think we're mainly working in translation technologies and just to the respect of all the people who are really working in language technologies, I want to kind of downsides.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "We are doing here. The industry that we're living in is a niche industry. Everybody needs it, but it's in fact not not big enough enough. The funny thing is that especially the translation industry is very non technically. Most of the people that are within this industry have been translators and then got some experience in technology, but they are very few. For example computer science within this industry, so it's a it's a. It's an interesting mix that we have there. It's a non technical travel industry but it's experience driven industry. And there's very few interest in it's very little interest in looking out of the box and thinking out of the box at the same time. This industry is getting more and more important in the technology is getting more and more important overtime. So that's why we believe it's very important for us to.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "To achieve this interoperability. There are from our point of view, enough standards at the moment for us, but they are very complex. There's this notion of tool providers saying, OK, I support this standard, and in fact there's not really supportive. It not not many of the standards have reference implementation, and very few of them as we heard, have some verification tools and All in all, there is very little exchange within tool providers as there's no organization for tool provide.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Yes, and so on. This is a chart that Chris and I think referenced two of the X lift conference. You don't need to know much about X lift on the left. You see a lot of features that are supported by ex left on on top. You see different tools and these two lines are the two features. The two only features that are supported by all tools. So if you take something from that tool and want to have it in that tool, these two might be the only ones that are kind of interpreted by that tool. This is what standard support in our industry at the moment. Tells us.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "And. Therefore we had a couple of discussions. What is interoperability for us and one of the nice definitions was by Gabor of Kilcrea. He said, we need to have lossless exchange of data between technologies from different vendors and the ability of these technologies to work together in a mixed environment. So this is what we're looking for an we're looking for to achieve this in a very short period of time and then see.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "It works or not. Why we need it? We need to have innovation within our industry because monolithic solutions are usually slow and it's very hard to get innovative small modules in these parts. And the other thing is of course, fair competition. It is important that the best tool is in is in place and not the only tool that kind of works within that environment. Therefore we believe that we that we need that and in fact we're all competitors working together.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "But it makes sense. Standards are important and it is very important to continue the development of X live.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "But we are sure that it's bound mindsets we need to have a common understanding what we need to do, and we need to promote the idea and why it's important, not just to have that check box in the next RFP. OK, I support TMX 1.4 B or whatever it is really about. I want I need to believe that it's necessary to be able to take data out of my tool and import it into another tool without any.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Us and that leads to to some common values that we need to agree to and we for we started to agree to these couple of values and we want to.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Promote that a little bit further. Therefore the basis of our work is what we called the Interoperability Manifesto. I won't go too much into detail and it's still a draft for the moment. It was for us for to just understand what are common names and well, using interop abilities. And to me is coming from the software side. It's it's the HL manifesto has changed the way we worked and it has changed our life and we believe that the Interoperability Interoperability Manifesto can also change our life within.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Industry. So interoperability now as I said, is four parties talking every two weeks and mainly trying to get to her.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Current implementation as soon as possible as possible. At the beginning it's mainly NHL approach to two. Interchange specifications to really support the lossless interchange of data. And.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "This is what we are working on at the moment to do this. We're doing some very bad things. We're pushing standards over the edge, and in fact we are for example using X live as a basis and we know of a couple of things that are missing. Most of all, X live has too many features, So what we did is we put some kind of specification on X lift and agreed to not using feature XY set and at the same time we added an additional feature B to X which is really bad because of course it only works with the four system that we're working on.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "At the same time, we accrete with the X50C. For example, to push back all our experience to the standards if they fail, or if they work, because in fact we want to use X live 20 with all the features that we think that are important next year, and I would just promised us.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "We can do that. The main three modules that we're working on at the moment is to define how content is described and there we use a modified X lif way. Then we need to put push a package around that that content an within our industry. There is no existing standard for that, and in fact I would be very happy to hear that there is a perfect standard in a different industry that we could adapt here. At the moment we are using some something we just made up and that might get into a standard in the future. And for transportation protocol, we're working on, standards were using web services, and so on, and all that is space and regularly reviewed. If it fits to the ideas in the aims that we're working on. But as I said, basically it's bad.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "But it's something that is should should come come to result very soon. One of the basic approaches we did to to come up with the solution was to disclose our our concepts. So we told each other what do we do with the data that you send us or how do we get to the data that we sent to you and to us? That is really the foundation of intro abilities to understand what the other one wants to do with it. An of course our situation is different to, for example Microsoft where you might be. Need to be interoperable with 1000 tools. Our industry has. I don't know 2030 tools that you might we might need to to communicate with, so this is really something that is much easier for us that it might be in some.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Other industries. The second thing is that we agreed that all our reference implementations would be open and open source. So even as three of the tools are proprietary and only one is open source, we agreed to open source these parts to enable other people to understand what we did and how. We did this and I think that this is very important for future standards to to really have these open reference implementations that developers can very easily.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "See perhaps adapt, and so on, and then coming back to the HL approach is really the early real life usage. There is a three month period between starting of the reference implementation that just happened to the first real and high volume usage, just to see if it works or not and if it doesn't work we will stop things. We would throw it away or if we see a chance of changes we will modify it, but it's not something where we're working for five years to come up with a new standard. And then the world has changed an and we are so happy with that. It's finished. The standard we need to use it. This is part of the agile approach and let's.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "See how it works and important thing and part of the specification is to have test scenarios to verify if the round trip really works and as the definition of what we want to do is quite easy lossless support, an exchange between tools, the roundtrip sending things through one, 2, three or four tools, and then seeing what was lost is quite quite good too.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So it's good to run. A problem for us at the moment is is a more theoretical one. How are standards NHL referring to each other? Is there something like NHL standard? Can there be something like NHL standard is as if they were talking about standards in a higher level than HTTP or HTML5 to something where where it's really about a complex, combination of linking of toothpaste two systems. Can there be a natural standard that might change in half a year and this is something we don't know at the moment. An with four tool providers it might be easy when we're 10 or 20 supporting their tool. That really might be hard and that is something where we don't have too much experience in standards and we we decided not to go through the standard committee here. Even if we talked to them. But I think it would be good for organizations like the like the W 3C for example to provide some framework. For initiatives like us to ensure that in the future we might put that into standard on by builder standard,",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "See out of that. So I already discussed most of the problems of this issue. It's really just off the beaten tracks and off the standards and we don't know if we can scale this approach. And of course our industry is dominated by a very large player in the discussion is can we? Can we start something like this without the biggest player in this industry? An on board? So there are a couple of problems and.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "The good part about it, as I already said, we will soon know if it works or not, and to me that is really one of the modification of putting a lot and one of the motivations to put a lot of effort in this. It's just that I know that it's a limited point of time that we will be working on this and then we have that will have very soon feedback if things are working or not at the moment it looks quite good and we're quite satisfied with the first prototype round trips that we did. And one of the other benefits that I have out of this project is that it's really great to talk, to talk and to work with people who might be competitors in the market. But at the same time had the same problems. And so on. And this is already something that led to some other. Working together beside this interoperability now thing and that was great for us to see that this this can work. So.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So that was it for me. Thank you.",
+        "start": 667.0,
+        "end": 696.0
+    }
+]

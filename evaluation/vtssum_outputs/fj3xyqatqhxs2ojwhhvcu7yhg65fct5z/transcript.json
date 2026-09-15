@@ -1,0 +1,32 @@
+[
+    {
+        "text": "Let's start our workshop. Thank you for coming at such an early hour. So this is the workshop on New Frontiers and model order selection. And when I told people that we are going to make this workshop on new Frontiers in model order selection, the first question that was asked by many people is what is actually model order selection? So.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "OK. So model order selection. It's generally a tradeoff between model resolution and it's statistical reliability. So if we have finite amount of data. Then we can't build a very fine model, and it's a question to what extent do we model data when we have a finite. Number of data points.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Now what are new frontiers in model order selection? So model selection was quite well studied in supervised learning and in this workshop we wanted to bring more attention to other problems such as an enforcement learning, active learning or maybe you have some other problems. Which go beyond supervised learning and. This has the problems that we want to discuss at this workshop.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So the organizers here again, it's me. Robbie sitting here, Nicola Francois and John.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "And our sponsor is Pascal to network. They supported our invited speakers and some of the students that came.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Here. And this is the schedule. So we will start with Shy then Amir Masoud. Then we will have a short break. Then all lyrical membrane Peter hour. Then you will have the ski break. If you didn't put your poster yet then please put it during the skybreak John Langford. Then we will have the poster session nationalities be and at the end we will have panel discussion which I hope will be very interesting and lead to some new ideas.",
+        "start": 145.0,
+        "end": 174.0
+    }
+]

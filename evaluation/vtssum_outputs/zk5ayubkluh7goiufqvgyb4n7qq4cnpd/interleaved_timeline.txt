@@ -1,0 +1,128 @@
+[0.0s - 29.0s]
+Welcome to the talk. The talk is about computing geospatial Motors from linked data for certain applications. As said, this will talk from a company. The company is called Unister.
+
+[29.0s - 58.0s]
+That's the first thing I would like to present, because I assume that nobody, even the German ones, don't know. Eunice to Becausw Unistar is an E Commerce company that has a multi brand strategy. That means that our major brands are web portals, Pieterse, web portals in particular which are known by their brand. But the users of these brands will not do not know the. Um? We do not know the company behind that, so you install operates, maintains, develops and everything else with these web portals. Is these PC services. So we have this kind of integrated Peter C model organized in three segments. First travel which is very strong, in particular in Germany we are the market leader in two online travel segments comparison and ventures ventures is everything that is too small or that's new that we're collecting there?
+
+[58.0s - 87.0s]
+Everyone, the research and development Department where I'm the head of is Hester task. To make something out of weapon data technologies. But in particular focus on beta search so that we can use it and our web portals. Of course you know that if you use a bit to see service then that doesn't mean all the time that you search something. Even clicking in searching and most almost dead portraits.
+
+[87.0s - 116.0s]
+The talk is under the hood of the work was done under Hood after Juno Project was funded by the FP 7 and has a claim of making the weapon exploratory place for geospatial data, and if you turn around you can see Accent Ganga who is also part of the method your Journal project.
+
+[116.0s - 145.0s]
+OK, so do you know when the natural I will just briefly give an overview of that. Well, of course we would like to focus on geospatial knowledge and integrate them into a linked open data cloud or in linked data. In general we would do it for a lot of data.
+
+[145.0s - 174.0s]
+And we would like to connect in this way. These kind of what we call isolated eyes are islands of your special special information which are most of the time. For example change shape files or databases that collect something like that. For example, open student with the best example for that. It's in spatial information system, but it's not interlinked well.
+
+[174.0s - 203.0s]
+For who are we doing this? Of course, you know as a as a broader context, but considering Unistar speak to see Company, of course we would like to push this information that is available as linked data or generous public data. Put the push into the user such that they will benefit. Take a benefit out of that so if they have more background information deck it can perform, hopefully better searches and so get get faster. Their results will get better results, that depends.
+
+[203.0s - 232.0s]
+OK, just the last slide to the Journal Project, we have seven partners at Data Research Institute's German software company called Proximity Institute. Michaela pooping or Sylvia on to software company of Switzerland Open Link. You might know opening. Set up to. Cheapest orbital also units of course, and University of Leipzig. There the ASW group. OK, so you see we have a strong industry focus in this project.
+
+[232.0s - 261.0s]
+OK, let's look at an example what we would like to push to the customers to the users of RP to see portals. If we look at such an example like winter Holidays with culture, that sounds sounds easy, but it isn't because you cannot interpret this query. We can just interpret this query if you have annotated this information or make have made it available through some sparkle query, for example that this executed if the user asked for this specific topics. So. That's not an materialized information right now, it's not not available there, so we have to divide this information from the available datasets.
+
+[261.0s - 290.0s]
+So for example, the possible interpretation might be defined by some domain expert. That winter Holidays is connected to all regions, all places where mountains are there. At least three schedule.
+
+[290.0s - 319.0s]
+For example, that might be a definition and cultural might be places that offer cultural points of interest, or at least the minimum number of cultural points of interest, so both sounds easy, but we don't have this information right now. We just have these geospatial information into information systems, for example, not interdict most of the time, but not classified, and so on and so on.
+
+[319.0s - 348.0s]
+So if you look at the problem, then from the user perspective they need the data the data needs to be accessible and they need to be accessible in an easy way 'cause our beta see use or the users in a bit to see context. They're not experts or something like that that just typing in what they have in mind. So we have this kind of. Intention this kind of vague motive they are targeting by typing in some words.
+
+[348.0s - 377.0s]
+And funding data perspective. We see that of course we have many datasets that are available and some of the datasets all today. Maybe many datasets are interlinked, so we have many features for the training of this. Of these motives of these vague geospatial errors, we would like to extract. OK, and this is a process we are following. So from the user's perspective we would like to train it while using big data in this.
+
+[377.0s - 406.0s]
+And just to give you the context with your following at all of our broker following the link data lifecycle and the link that the life cycle we are right now here. So we assume that the data is Internet, currently incorrectly. That's a good quality. And so on and so on. So that's not our problem. We just focus on the search right now or focus on the preparation for the search in the search.
+
+[406.0s - 435.0s]
+So our research questions are driven by the definition definition of geospatial regions of interests. This kind of motives that are expressed in the search query that was taken from another talk out of the another. Another research we have done in the HCI field where we focused on what they use dim, and so that's not a formal definition or something like that. That's the right from the experiments with the users. And do special regions of interests are a motive that can be defined as reason for research as well as particular conditions, like how much Reporter should cost? So it's kind of vague, not not not something formal where we can say well, it's it's between this and that. Then you get it out, something like that. That's not possible, and those big motives are appearing alot. If you say well, just give me a cheap product or I would like to buy a cheap TV then you don't know what cheap means you have to interpret. What does cheap mean. So we have to analyze. What are the prices that are available and what segment of this prices might be considered as cheap?
+
+[435.0s - 464.0s]
+And our research question for this talk or the paper was. For the paper under research questions, can one use machine learning techniques, techniques on features of linked data for computing motives and the second question was it is beneficial to create to aggregate data from different sources? So do we have to work on integrating data via the link data paradigm?
+
+[464.0s - 493.0s]
+And.
+
+[493.0s - 522.0s]
+Of course, now it's question what kind of sources to reduce and talk, and these datasets were extracted from rather most interesting. Geospatial entities are end very high quality entities. That's why not high quality is not for the first one of course, and the first one is DV Pedia. We have collected from DB pedia. We always collect from the pedia entities, reduce special position. It was very important thing for us because then we have some kind of. What's interesting for people in general? Secondly, we use a status at Network Natural Earth nature of provides created attributes for populated places and also polygons for counties for States and so on. But we only use counties in this experiment, and 3rd we use geonames data set and fetch all the attributes for geospatial entities and just for node, I've mentioned that before the data was entering before, so. We have not and then was created manually. For example natural El Paso. Kind of council that decides what what attributes should be published and if this has a quality that is good enough. So that seems to be checked somehow. So we assume that all of these interlinking is done very well. What was checked by also?
+
+[522.0s - 551.0s]
+Our approach for the paper is that we would like to compute this region while extracting related entity. These from the pedia. As I have mentioned, second step we define the training data set by an expert committee for the gift motive. Here, the Expert Committee has three experts on the domain. We will show and I will show in the case study later and third people use the training set to join the relevant places that might be considered. As relevant for the given search motive.
+
+[551.0s - 580.0s]
+And this will be checked right now in the case.
+
+[580.0s - 609.0s]
+Study in the case studies educational regions. So educational regions means we chosen this type as type of there's a DV pedia type that is called education. So it's collecting something like schools, colleges and universities. Sometimes there are also some other instances that cannot be interpreted by well. But of course we have data enough so that does these outliers doesn't. Metal.
+
+[609.0s - 638.0s]
+If you plot this educational entities on road map, then we see that of course there is some. There are some regions where there are way more education entities. For example, the United States, Europe or parts of Europe, India. This part of Australia, Japan and so. So that might be possible to compute. But as we have as we are interested in actual user queries, users will not ask what on the world isn't interesting. Interesting region for education. For education, so we pushed it down too.
+
+[638.0s - 667.0s]
+Junior level. The character. And if you just look at Central Group, of course have considered all countries countries. But we look at at Central Europe and we see that it's easy for accounting to recognize just from the map what might be an interesting region for. In this case education. For example Germany. There Sperling, even hotspot years in hot spot here for France, Paris of course. And so on Copenhagen over here so. These might be interesting regions, but of course these are just points on the map, so a user might figure out what happens right now, but we would like not to have the user figuring out, but to have our automated automatic process to figure out what other interesting regions.
+
+[667.0s - 696.0s]
+So.
+
+[696.0s - 725.0s]
+And for doing that as a sample of a three step process and the first step, we extracted education institutions I type from the DB pedia.
+
+[725.0s - 754.0s]
+G Second DV defined training set by three experts and they had the question, is the considered place important with the relation to education in this country? So it wasn't as in regional characterizes as I ordered range.
+
+[754.0s - 783.0s]
+And 3rd, we use the training set to learn the relevant places.
+
+[783.0s - 812.0s]
+Yeah, and just as a reminder. First question was, is it beneficial to aggregate the data from different sources and to simulate this dynamic fetching of data and integrating it in a training set we?
+
+[812.0s - 841.0s]
+Used as approach three steps for the iterative integration of LinkedIn.
+
+[841.0s - 870.0s]
+First we just used DB pedia and populated places of natural, which is kind of a core data set so there not not many attributes we have not so much information at not so very created. Secondly, we add the at all features that are available available at natural offered populated places, so it simulates that we have integrated this data set dynamically and 3rd step we integrate all features that are available at June. Names for the populated place.
+
+[870.0s - 899.0s]
+And also just the node after each step you make the feature selection to get it into a form that we can represent the cause. I know that there are many many attributes available, so it's not possible to throw all the attributes that that were used on the train. You can show everything that has significant impact on the quality.
+
+[899.0s - 928.0s]
+The experiment the setting was that we have in the training data, 881 samples of training data, so 881. Populated places where the quality but weather experts say that they are the experts had made a statement that they are sure about that. So all these vehicles have quite of. Quite sure, quite sure that this is that their statement is correct and we have normalized statement of the experts from zero 122 relevant and irrelevant, which means that relevant was one to zero and all above one was. Social event and. All above, one was considered as relevant.
+
+[928.0s - 957.0s]
+For the training process, very few speaker. Each value was computed, 1YR200 runs, so it's quite awful. Good average, and we used bramans random for us because our cross validation with other models have shown that this subtest results.
+
+[957.0s - 986.0s]
+OK, let's have a look at the results. If we look at the results then we see three column table where the first data set as a set, just the entities available in the populated places and we created here the entities that are nearby 10 kilometers nearby, 25 kilometers 50 kilometers. Also, only information that we are using here, so no other attribute or something like that in a second. Of course we use all the features from D1 and Add all the attributes from. Natural Earth and these are the ones that have impact on the training.
+
+[986.0s - 1015.0s]
+And in the third step, and that's interesting, we should discuss the data we have added other information from June names and you can see that just one has had impact on our quality. So this first my assistant three steps and if you look at the true positive false positive rate and F measure, you see that. That approach worked while extending the data set with more features. We are unable to increase the true positive various way to decrease the false false positive rate and to increase the F measure. You can see that the impact was not not so large. That's an interesting fact becaused your names provides a lot of data, but they don't seem to have much impact on that.
+
+[1015.0s - 1044.0s]
+And this same get the same impression by looking at the precision at area under the Roc curve and data currency where we can see that the quality increases until the last feature is available.
+
+[1044.0s - 1073.0s]
+OK, now I come to conclusion. I've presented an approach for answering common community. Questions that might be. Express queries from common users. We focus on geospatial motives in search query, which is very important cause more than 80% of the spatial information or the inputs of information hasn't geospatial character, and in particular, if we look at the general industry, then of course everything is about some kind of spatial dimension. Our approach is based on machine learning. We have this iterative data integration, so we used to link data paradigm to get more features for our.
+
+[1073.0s - 1102.0s]
+And right now it's possible to answer this question. Spent all of this with. Contra is represented AS22 topics and then it will be. Can be answered for users.
+
+[1102.0s - 1131.0s]
+If we look at our two research questions just a second, if you look at our two research questions, we can see that for the first research question. We see that the product was enabled for the rival regions of interest. Do spatial search Motors are covered with good quality? That was very important for us because in a bit to see if you you have to be sure that the things you are providing are not confusing the user, because if the users confused then switches to a competitor and that's something we would like to prevent and but we have seen that this approach is is very time consuming because we need these expert read things they need to. We need experts or they have to get informed about the topic. Which is very time consuming, so that's.
+
+[1131.0s - 1160.0s]
+This advantage and if we look at the second research question, we see that the quality actually increases if we integrated data and. Even if you have kind of duplicate attributes, so attributes that are available in several datasets even then the information is increasing.
+
+[1160.0s - 1189.0s]
+Just show it because I've forgotten the dimension. If we look at this, you see that here is the population as attribute provided by Geo names and in D2 there was already the population of the places. So even if you have several attributes provided by different different datasets, you increase the quality. In our experiment.
+
+[1189.0s - 1218.0s]
+And but of course, there are some major open questions that have to be answered of additional research. For example how to reduce the manual effort. That's very important issue, because if we would like to create for all all possible intentions, these spatial regions and of course it cannot be done manually. And then it's important and important question how to handle low quality in the datasets, because here we have a high quality data set and doesn't achieve. We have just achieved. .8 at the F measure and another important issue is how to compute regions unrelated to populated places. Because as a set of considered entities in close to a populated places, and if you have some regions, for example, we're just Windows ports is available, then there is no large populated places available.
+
+[1218.0s - 1247.0s]
+OK, so take away messengers. Certain applications need needed to bridge the bitter user intentions that things so users have expressed their buyers search query data helps to. Spatial models can be covered by following this approach and as most important research question is how to reduce the manual effort for this. Thanks for your attention.

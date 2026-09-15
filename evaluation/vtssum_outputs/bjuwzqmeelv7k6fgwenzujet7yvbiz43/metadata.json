@@ -1,0 +1,20 @@
+{
+    "id": "bjuwzqmeelv7k6fgwenzujet7yvbiz43",
+    "title": "Romanian Civil Engineering scenario",
+    "url": "http://videolectures.net/ice2011_moisescu_romania/",
+    "info": {
+        "author": [
+            "Aurelian Mihai Stanescu, University Politehnica of Bucharest"
+        ],
+        "published": "July 20, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Business->Enterprise Interoperability"
+        ]
+    },
+    "num_segments": 11,
+    "num_sentences": 259,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 205
+}

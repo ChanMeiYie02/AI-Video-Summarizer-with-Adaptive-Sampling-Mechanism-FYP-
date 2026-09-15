@@ -1,0 +1,21 @@
+{
+    "id": "djqxq3ipngzkj3q4zls4tl6r7gj22tuj",
+    "title": "smartAPI: Towards a more intelligent network of Web APIs",
+    "url": "http://videolectures.net/eswc2017_zaveri_smartAPI/",
+    "info": {
+        "author": [
+            "Amrapali Zaveri, Maastricht University"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 164,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2789
+}

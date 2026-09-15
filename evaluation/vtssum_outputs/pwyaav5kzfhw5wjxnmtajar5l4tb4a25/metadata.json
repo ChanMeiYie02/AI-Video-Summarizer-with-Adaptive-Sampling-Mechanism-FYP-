@@ -1,0 +1,21 @@
+{
+    "id": "pwyaav5kzfhw5wjxnmtajar5l4tb4a25",
+    "title": "Audience Segmentation Based on Topic Profiles",
+    "url": "http://videolectures.net/sikdd2017_kladnik_topic_profiles/",
+    "info": {
+        "author": [
+            "Matic Kladnik, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Dec. 8, 2017",
+        "recorded": "October 2017",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 144,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2762
+}

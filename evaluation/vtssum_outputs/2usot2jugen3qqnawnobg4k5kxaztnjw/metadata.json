@@ -1,0 +1,21 @@
+{
+    "id": "2usot2jugen3qqnawnobg4k5kxaztnjw",
+    "title": "Transmedia Storytelling and Social Media Engagement",
+    "url": "http://videolectures.net/matchmaking2016_bozanic_media/",
+    "info": {
+        "author": [
+            "Sara Božanić, Institute for Transmedia Design (ITD)"
+        ],
+        "published": "March 21, 2016",
+        "recorded": "February 2016",
+        "category": [
+            "Top->Architecture",
+            "Top->Arts->Visual Arts->Design"
+        ]
+    },
+    "num_segments": 73,
+    "num_sentences": 382,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 1823
+}

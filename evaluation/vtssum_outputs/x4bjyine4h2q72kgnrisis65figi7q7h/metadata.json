@@ -1,0 +1,20 @@
+{
+    "id": "x4bjyine4h2q72kgnrisis65figi7q7h",
+    "title": "Hierarchical Model-Based Reinforcement Learning",
+    "url": "http://videolectures.net/icml08_jong_hmb/",
+    "info": {
+        "author": [
+            "Nicholas Jong, University of Texas at Austin"
+        ],
+        "published": "Aug. 4, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Reinforcement Learning"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 253,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1699
+}

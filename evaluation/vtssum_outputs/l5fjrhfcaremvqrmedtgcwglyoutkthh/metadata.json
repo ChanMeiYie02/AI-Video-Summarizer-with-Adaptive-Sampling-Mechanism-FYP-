@@ -1,0 +1,20 @@
+{
+    "id": "l5fjrhfcaremvqrmedtgcwglyoutkthh",
+    "title": "Adopting Semantic Technologies in Public Health Documentation",
+    "url": "http://videolectures.net/iswc2017_decourselle_public_health/",
+    "info": {
+        "author": [
+            "Joffrey Decourselle, LIRIS"
+        ],
+        "published": "Nov. 28, 2017",
+        "recorded": "November 2017",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 78,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 479
+}

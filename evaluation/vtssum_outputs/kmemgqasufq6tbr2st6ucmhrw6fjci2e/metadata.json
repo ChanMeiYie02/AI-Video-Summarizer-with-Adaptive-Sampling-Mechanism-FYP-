@@ -1,0 +1,20 @@
+{
+    "id": "kmemgqasufq6tbr2st6ucmhrw6fjci2e",
+    "title": "A ranking stability indicator in bioinformatics",
+    "url": "http://videolectures.net/cancerbioinformatics2010_jurman_rsi/",
+    "info": {
+        "author": [
+            "Giuseppe Jurman, Fondazione Bruno Kessler"
+        ],
+        "published": "Oct. 11, 2010",
+        "recorded": "September 2010",
+        "category": [
+            "Top->Computer Science->Bioinformatics"
+        ]
+    },
+    "num_segments": 5,
+    "num_sentences": 38,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1660
+}

@@ -1,0 +1,21 @@
+{
+    "id": "kyhonw6zndcjoqd4gw76f6wl6gxcfaqo",
+    "title": "Modern Bayesian Nonparametrics: beyond Dirichlet and Gaussian processes",
+    "url": "http://videolectures.net/nipsworkshops2012_ghahramani_bayesian/",
+    "info": {
+        "author": [
+            "Zoubin Ghahramani, Department of Engineering, University of Cambridge"
+        ],
+        "published": "Jan. 16, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning",
+            "Top->Computer Science->Machine Learning->Gaussian Processes"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 435,
+    "num_clips_with_summary": 27,
+    "num_gt_summary_sentences": 53,
+    "ground_truth_summary_length_chars": 8268
+}

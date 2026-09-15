@@ -1,0 +1,170 @@
+[0.0s - 29.0s]
+Memory card albertone. I work as a researcher at the Institute. Apply mathematics information technology, which is part of the Italian National Council of our research. In this presentation and going to introduce a link quality metrics, a metrics about quality, which is which I'm at measuring the multilingual again. When you compliment a zaro's, costs are whether it's interlinked. Desiring so.
+
+[29.0s - 58.0s]
+Football. Let me explain the motivation that are behind our work, in particular why we care about quality and links at quality. As member of the Linked Data Community, we are all very proud that the link had opened a data cloud is rapidly growing and such as rapid growth growth. Is attracting plenty of people that are not directly involved in the technical stuff of link data people like?
+
+[58.0s - 87.0s]
+This nice girl. Was main interest is trying to exploit the data that we exploit as we exposed as linked data in order to answer her own data, set an own experiment and. Well, in this case the curve looks like condition, but she could have been an environmental analyst or data journalist or whoever is somehow interested in exploiting data from third parties.
+
+[87.0s - 116.0s]
+So. Driver. Quite the there is a quite a long tradition inequality from information system and many of the works coming from the information system have been retargeter and extender. In order to deal with the quality of data set in the linked data.
+
+[116.0s - 145.0s]
+But still there are no ground concept about what makes the links at suitable for a target application, and this is a big.
+
+[145.0s - 174.0s]
+Yeah, becausw. If we consider one of the most interesting promise of blood, namely, to make the web evolving in a global data space, and if we consider that is by means of. The links at that we connect the different data set in the load. We think that. Links at an data set are both First Citizen in the linked data of course, and as consequence linked links at quality should be as important at data set quality. So.
+
+[174.0s - 203.0s]
+Couple of years ago I started thinking about the heroin, the load cloud an what, the error in the Lord are good for.
+
+[203.0s - 232.0s]
+So we started from. The definition of links. After that you can find in the specification of void. Anne and link.
+
+[232.0s - 261.0s]
+That is, something is a special kind of data set which is connected subject data set with.
+
+[261.0s - 290.0s]
+A object data set. Anne.
+
+[290.0s - 319.0s]
+The it's made of a set of links and according to void there are expected to be all the same time.
+
+[319.0s - 348.0s]
+So in my previous research. I have focused on all same as link set in this war.
+
+[348.0s - 377.0s]
+OK, I who will focus on Scotts exact match links at why is why I'm focusing on this cost exactly match ruling set while we're working?
+
+[377.0s - 406.0s]
+In European project M Plus in which we are providing. A framework of desire for environment. That his name Lustri. And well. We are exposing as linked data. Some knew this or like hearth and test and we're also connecting this desire to well known and popular environmental Desiree like Gamut and agrovoc and one of the problems that we had was. Demonstrates the value of the interlinks that we were providing when you stop, when, when you know that you have finished your work, providing an interlinks. OK, so. That's why we are considering Scossa exact matching set.
+
+[406.0s - 435.0s]
+Our proposal is a scoring. It's the links at importing which is a quality scoring function only exact which is expected to answer to the question. Algorithm is the link set to import object data set info into a subject score cities arrow. The quality measure is defined. The overall quality measure is defined in terms of average contribution of. Each single link. So in the rest of the presentation basically I will show some example on the single links in order to deliver the idea that is behind the formulas that we have adopted and you can. You can apply the. Did the idea on the link set by using the mathematical average. So importing on the link some is this link input for the formula which, given a link evaluates the percentage of values not present in the subject bug anable from the object through the link. So let's see what this sentence mean.
+
+[435.0s - 464.0s]
+OK, I have to say that in the paper we have a quite accurate mathematical formalization here. In order to deliver the idea I'm going to. Use a simplified view of the of the formulas OK and so. The former is is this is an. It is based on duration.
+
+[464.0s - 493.0s]
+Considering a link.
+
+[493.0s - 522.0s]
+Our tree you can hear him. OK.
+
+[522.0s - 551.0s]
+It is based on duration duration between the number of element value attached to the subject. Entity involved in the link in the link and.
+
+[551.0s - 580.0s]
+The Union, the cardinality of the values that are associated to the subject and object element attached to the link, and then you have this. 1 minus that basically invert the logic of the aeration in this way.
+
+[580.0s - 609.0s]
+We have that. The link importing is the maximum. When you don't have any value on the subject, OK, But you have some values to be imported from the object. Of course, in this formula you have that. When?
+
+[609.0s - 638.0s]
+There are no values in the subject and in the object here. This union is zero and this formula would be not define it. So by definition, when there are no values in the subject and the object we define our importing as zero OK. With the disease formula.
+
+[638.0s - 667.0s]
+In practice. We can assess how good is a link. When you try to import information from object data set. And the. Of course we are interesting in differentiated the importance of the links according to different properties Anna language. So we can ask. For example, if the link is good or algorithm is the link when importing preferred label in English, OK?
+
+[667.0s - 696.0s]
+Anne. Let's see the an example.
+
+[696.0s - 725.0s]
+We focus on the link to here and the value of the preferred label associated associated to the object. Entity is only dog dog.
+
+[725.0s - 754.0s]
+Is already present. And the subject entity, so it's not available.
+
+[754.0s - 783.0s]
+Importing OK and.
+
+[783.0s - 812.0s]
+Actually, our formula will return 0.
+
+[812.0s - 841.0s]
+Another example, this time we consider the alternative label for the link 2IN Italian, so we are we are trying to discover I'll go there is the links the link to when importing alternative label in it.
+
+[841.0s - 870.0s]
+Volume.
+
+[870.0s - 899.0s]
+And associated to. Why three? We have a cannulae know? Can you?
+
+[899.0s - 928.0s]
+We know is not present in the subject, but there are in the subject there are there aren't alternative label so.
+
+[928.0s - 957.0s]
+Death.
+
+[957.0s - 986.0s]
+Contribution of this link is 100%. Another example.
+
+[986.0s - 1015.0s]
+Veloster. OK, we can also. Assess the importance of a link in dependently disregarding the language OK?
+
+[1015.0s - 1044.0s]
+For example in this case.
+
+[1044.0s - 1073.0s]
+Looking at.
+
+[1073.0s - 1102.0s]
+Back to the Scotts alternative. Available for the the important capability of L2. We can see that the alternative label cannulae know and Poppy, Poppy, Poppy are associated to the object data.
+
+[1102.0s - 1131.0s]
+Puppy is already present in the subject.
+
+[1131.0s - 1160.0s]
+And so can you. Leaner is the only value. Valuable to be imported.
+
+[1160.0s - 1189.0s]
+And the value of the importing is. 50%. Why is 50% becausw? We are in some sense. We are trying to complemented the data set through the links at so we are measuring the contribution of the link with respect the complemented data set and the complemented data site at the end would have both puppy an annually know as alternative label so the contribution is one out of two.
+
+[1189.0s - 1218.0s]
+OK.
+
+[1218.0s - 1247.0s]
+You can. No. OK, you can use the importing also for other kind of. We have property as brother.
+
+[1247.0s - 1276.0s]
+Back to you.
+
+[1276.0s - 1305.0s]
+I did it then it's.
+
+[1305.0s - 1334.0s]
+On the.
+
+[1334.0s - 1363.0s]
+Yeah.
+
+[1363.0s - 1392.0s]
+Paper.
+
+[1392.0s - 1421.0s]
+And we want to stress the use of importing in order to deal with incomplete language coverage.
+
+[1421.0s - 1450.0s]
+Which is a problem that arise when this cost preferred label after label are provided in older spec to the languages for only for a subset of that resource concept, and this problem is quite common in. Also very popular is out.
+
+[1450.0s - 1479.0s]
+Basically apply our.
+
+[1479.0s - 1508.0s]
+The measure. 22 links at that. We were producing 2 links between hearth. That is one of the keys are we are exposing an links that are between harthan jamet gamut and Earth. To Agra book.
+
+[1508.0s - 1537.0s]
+And the result of our testing is are these two graph.
+
+[1537.0s - 1566.0s]
+You can see we.
+
+[1566.0s - 1595.0s]
+Applied the links at the importing to prefer the label and you have this kind of graph in which all the languages. Covered by J Meter and Agra. Vaca are different access and you have the access total that represent the number of the. The important is regarding the language. Well, which is the best link set? Between the links that we provided.
+
+[1595.0s - 1624.0s]
+It's it's not so easy to say because it depends on the language. Actually you have that hardware is. The link that Janet is very good is this. Red line is very good for summer languages, but there are some. There are some languages that are cover only through the link set to Agra book, and if you look at the result for the scores alternative label you have that the situation is quite the opposite. It seems that. Adorable is better than a jam it. So it's basically depends on what you are, which kind of which sector of a language you are considering. The point is that this kind of. Importing allow you to. Inspect the capability of the link sector and the potential that you have in terms of multilingual gain when you implement the. Subject is out with respect the link sector and is a deeper analysis with respect to the simple number of linker that is often used in order to compare the link set.
+
+[1624.0s - 1653.0s]
+So our. The conclusion IRA contribution is. Two fold. On the one hand, we draw the attention to the critical issue of links at quality. 100 other hand we are proposing links after importing which is which has been demonstrated in some real links after example. At. As future work we are trying to investigate the relation that there is between the important that we have proposed and the completeness of complainant complemented. These are actually there is an experimentation that we did and we have already submitted paper to wise in which. We demonstrated that these importing is a good estimator for the quality of the complemented that is our. Of course, we also know that we are covering just we are not fully characterizing the link sector quality. I mean there are many dimensions. And so we are already working in other kind of scoring function in order to cover to fully cover the quality space and different dimension of lyngsat quality, that's all.

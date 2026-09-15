@@ -1,0 +1,21 @@
+{
+    "id": "d54zdcrf6hozvah7btyy3ur44ctu4s7i",
+    "title": "Robust PCA and Collaborative Filtering: Rejecting Outliers, Identifying Manipulators",
+    "url": "http://videolectures.net/nipsworkshops2010_caramanis_rcf/",
+    "info": {
+        "author": [
+            "Constantine Caramanis, Department of Electrical and Computer Engineering, University of Texas at Austin"
+        ],
+        "published": "Jan. 13, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 66,
+    "num_sentences": 441,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 2888
+}

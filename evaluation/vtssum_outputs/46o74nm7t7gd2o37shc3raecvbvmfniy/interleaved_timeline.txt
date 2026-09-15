@@ -1,0 +1,92 @@
+[0.0s - 29.0s]
+Good morning everyone. My name is Jason and today I'll be talking about some of the work I've done for my PhD thesis.
+
+[29.0s - 58.0s]
+So intrinsic image decomposition is the problem of decomposing a scene into multiple intrinsic properties. For example, given some observed image like this, I want to decompose it into two intrinsic properties, the intrinsic shading image and the intrinsic reflectance image. The shading image captures how much light is reflected from the surface, whereas the reflectance image captures the intrinsic albedo or color of the surface and under a Lambertian surface model, the observed image can be decomposed into the product of the shading and reflectance images. So intrinsic.
+
+[58.0s - 87.0s]
+Image decomposition, as a long studied problem in computer vision dating back to the 1970s. Some of the previous work is focused on analysis based on a single observed image and some work has focused on multiple image analysis. In this EP there's actually work on object specific intrinsic image analysis for human faces, and even for different media such as RGB, D and video. And there's many, many other references for intrinsic image analysis that I won't have time to talk about today. But I wanted to focus on some relevant previous work to start. So.
+
+[87.0s - 116.0s]
+I wanted to start with the most recent state of the art method from Baron and Malik from a bunch of papers over CPR and ECC over the past couple of years called serfs. Surface is very different from most intrinsic image algorithms because they model the full 3D shape and seen. They actually model the normals of the surface and also infer the lighting conditions that are apparent in the scene, and they show some really cool results in their paper. They can actually modify the underlying shape and reflectance and the lighting conditions of the scene and do some really cool things. They also show that they obtained state of the art numerical results on a ground truth data set. But when I read this paper, the first thing I thought was that this approach is very different from previous intrinsic image analysis, which typically works in the 2D image plane. And so I ask myself, is moving to 3D really necessary for this type of problem? And it turns out that as we'll see in a couple of slides, you can actually obtain state of the art results without moving to 3D and still working in the 2D image plane. So to understand how we're going to do that.
+
+[116.0s - 145.0s]
+We need to rewind a little bit and review the first kind of intrinsic image decomposition algorithm called rednex. So right next has a few constraints that they impose on the problem. The first is that image gradients should match reflectance gradients at detected edges. So for example, if we take a look at these images here and zoom in on.
+
+[145.0s - 174.0s]
+Small window.
+
+[174.0s - 203.0s]
+And let's assume that.
+
+[203.0s - 232.0s]
+Is black box in the left is a detected edge of the original image. Retinex enforces that the gradient in this black box matches the gradient in the inferred reflectance image. Furthermore, it assume.
+
+[232.0s - 261.0s]
+Is that the shading image should be smooth and uses that information to proper?
+
+[261.0s - 290.0s]
+8 The edge information away from the edge an to infer the entire shading image globally. So right next has proven to withstand the test of time and it still works very well on numerical datasets. However, there have been some improvements since its original.
+
+[290.0s - 319.0s]
+Development in the 70s and one of those investments is the observation that the reflectance image is actually sparse. There's kind of a discrete set of colors that exist in a lot of reflectance images and a lot of recent work in the past couple of years has really exploited this fact to improve on the state of the art. Now I'm going to focus on one particular piece of work by Peter Geller and coauthors from NIPS 2011 and.
+
+[319.0s - 348.0s]
+They basically do is append an additional constraint onto rednecks, which says that the reflectance values in the reflectance image come from a sparse set of colors. And they've shown that that this additional constraint really boosts right next to achieve state of the art results. However, they have also found that the first constraint, this gradient matching constraint retinex, is also relevant in obtaining the state of the art results, and without it they can't achieve the best. It turns out that this gradient matching term is all over the place in intrinsic image analysis, and it's not. At least, I wasn't really convinced that it was really something that was necessary. And as we'll see in a couple of slides, this term, like the 3D terms that Barron has used in the past, is actually not necessary to achieve state of the art results in intrinsic image analysis.
+
+[348.0s - 377.0s]
+So let's overview alittle bit about how the algorithm for Peter Sellers work works. So the first thing you do is do K means clustering on the original image and then you find the actual cluster means corresponding to those. Those K different clusters conditioned on those cluster means we optimize to find the shading image which is imposed to be a four connected Gaussian Markov random field. Then you iterate through these steps over and over until everything converges. There's still some open questions in this algorithm, though. For example, how do you set K, the number of clusters in the original presentation? K is set via training data, and so you assume K to be a fixed number across all images. So for example, in this Panther image that I'm showing on the bottom, there is actually about 7 distinct colors in the reflectance image. But you can imagine different images might have different numbers of colors. For example, this box in the bottom left has three distinct colors. And this side of the Cup has two distinct colors, and so we really would think that case should be image dependent. Furthermore, the four connected Gaussian Markov random field imposes a certain smoothness assumption on the shading image, and we're not actually sure if this smoothness assumption is generic enough to capture all different types of shading images. Some shading images like the Panther are pretty smooth overall, whereas some have very abrupt changes like the cache shadows in this box, and some are overall extremely smooth due to the slowly changing normals. So our solution to these problems is to take advantage of recent developments in Beijing nonparametrics. So let.
+
+[377.0s - 406.0s]
+Look at the problem again from the top. So we have some observation, some observed image.
+
+[406.0s - 435.0s]
+And that's decomposed into the product of the shading and reflectance image. Will actually find that it's easy.
+
+[435.0s - 464.0s]
+To work in the log domain where these terms become additive. So our idea.
+
+[464.0s - 493.0s]
+It is actually pretty straightforward. It's an extension of region on parametric ideas and will combine a Gaussian process for the shading image with a Dirichlet process. Gaussian mixture model for the reflectance image. So that's quite a mouthful, especially for people that don't work in Beijing nonparametrics much, so I'll try to break it down into separate pieces and build up the idea.
+
+[493.0s - 522.0s]
+So let's start with the shading image. Instead of using the traditional Gaussian Markov random field for this smooth field, we're going to use a Gaussian process denoted by G&G is generated from a zero mean Gaussian process with covariance kernel Kappa. So just as a reminder, Kappa the covariance kernel controls the smoothness of our prior and for different kappas we can achieve different types of functions. So in one dimension these are samples from three different Gaussian processes, and as we move from the left to the right, we get smoother and smoother functions. But again, G is our prior for this shading image and so we need to move to 2D.
+
+[522.0s - 551.0s]
+And these are what images would look like from generated from the Gaussian process. And again you will see the same trend that as we change Kappa we get different smoothness constraints and as we move to the right here we're getting smoother and smoother images. So this is the prior we choose for our shading image.
+
+[551.0s - 580.0s]
+Next, for the reflectance image, as I mentioned before, we're using a Dirichlet process Gaussian mixture model. So DP GMM's are typically used to model data that looks something like this 2D Gaussian mixture model data. In this work, we're using it to model the reflectance image that you see above. So.
+
+[580.0s - 609.0s]
+I'll try to build up this mixture model from the ground up and hopefully give you some intuition as to why it should work. So we start with PIE which is generated from a stick breaking process and pious this infinite length vector that puts a prior on what cluster is a pixel should be assigned to soapies an infinite length vector that sums to one. Then for each pixel I we assign it to a cluster via ZI. ZI is an index into a cluster, and for the particular reflectance image on the top, the Z that we would want is something on the bottom. So here color corresponds to a discrete. Index and it says that all the green pixels have one unique reflectance color and all the orange pixels have another unique reflectance color. So on and so forth. Then for each cluster we generate Ameen Ameen color that represents the reflectance color, so we can think of mu as a mapping from these integer indices, ZI that range between one and Six 2 an actual RGB color. In this case, we're generally in our eye for the reflectance color. And using these two things, we generate a reflectance image that's piecewise constant that looks something like this. And now.
+
+[609.0s - 638.0s]
+It's basically it for our model. We combine these two different models to form our observation. So below we have our Dirichlet process mixture model an we depend on the Gaussian process shading image to generate our observation. And our observation is generated from a normal distribution with mean of the Gaussian process plus our display process mixture model.
+
+[638.0s - 667.0s]
+So let's look at this equation in a little more detail to see how we can do inference on it. Just.
+
+[667.0s - 696.0s]
+To recap, we have three unknowns, the Gaussian process G, the reflectance colors mu, and the cluster indices. Z&X represents the observed image. One way to do inference in this model is an iterative approach, which is similar to what Gallery used in his work in 2011. What that would look like is we can do inference on G conditioned on the reflectance image. Sorry, so we're basically inferring the shading image conditioned on the reflectance image here, and because of our particular construction, this basically boils down to a Gaussian process regression. Then conditioned on the Gaussian process, the shading image, we infer the reflectance image, which is composed of these reflectance colors and the cluster indices. And if you're familiar with Bayesian nonparametrics, this boils down to your typical Dirichlet process Gaussian mixture model. Then inference in the overall model could just iterate between inference in these individual models. Unfortunately, such a scheme would not actually produce very good results. To see why that's true, let's assume that our first step that Gaussian process regression is off by a factor of negative 3. Then in the second step, when we do the reflectance estimate, it would compensate for that negative three with a positive 3.
+
+[696.0s - 725.0s]
+And then when we go back and iterate to do the Gaussian process regression again, that positive three is an error, and we compensate that with a negative three, and so these errors just keep propagating over and over, and there's no chance of us fixing it. This happens in real images also. So for example if we have this box image and this particular shading image from our first iteration, we see that overall it's pretty good, except for that the cash shadow is not completely captured by the shading image and so when we infer the reflectance image conditioned on this shading image, we see that some of the shading bleeds through to the reflectance and we see this cash shadow that's bleeding through then condition on this reflectance image, and when we infer the shading image, we're just kind of reinforcing that error, and it's just. Propagating again and again, and there's no hope of us fixing this in this iterative procedure. So we're going to drop this.
+
+[725.0s - 754.0s]
+Idea and basically move to a marginalized Markov chain Monte Carlo approach. So I won't go into the details too much because it's a bit of math, but the overall idea is that we can actually we've shown in the paper that you can marginalise over the Gaussian process G and the reflectance colors mu. And by this marginalization we don't have this propagating error term that happened before. As such we can infer Z are clustered indices directly from the data X. Furthermore, we've developed an inference scheme that allows us to do large split and merge moves and move around the space very efficiently. To visualize that what we do is, we start with everything being in one gigantic cluster and in one iteration we can actually split that into two different clusters and another iteration three, so on and so forth until we've actually converged. And in general, because we're using a Dirichlet process prior, we can actually discover the number of components from the data. Additional details if you are interested in additional details, feel free to come. Talk to us at the poster or read our paper.
+
+[754.0s - 783.0s]
+So let's look at some results. So here I'm comparing the proposed method on the right to two state of the art methods by Peter Geller and John Barron. So across the board, alot of times we're actually doing better than previous results. So for example, if you look at this box image, both previous approaches have the shading image kind of bleeding into the reflectance and the reflectance kind of bleeds into the shading as well, whereas ours doesn't suffer from that problem in the bottom image, we see a similar thing. Even for more smooth shading images and especially we see it in the reflectance, sorry. In the shading image where part of the reflectance has kind of bled through and you see the pattern of the Cup on the shading.
+
+[783.0s - 812.0s]
+Our work doesn't always work the best, and you can't really see that because of the projector, but trust me, it doesn't look good. This particular frog image we have actually not separated the top part of the frog from the bottom part and you see that there's this error. It's easily understandable though, because the Dirichlet process puts this bias on a sparse number of components and it just basically decided not to split the green from the white and also in this bottom image we see some of the reflectance of the text, kind of bleeding through into the shading. These are.
+
+[812.0s - 841.0s]
+Additional results from the MIT intrinsic image data set. And we can.
+
+[841.0s - 870.0s]
+So do some numerical comparisons. So what I'm showing here are three error metrics, a shading error, metric reflectance, error metric and joint error metric over reflectance and shading. This is rednecks performance. This is Gellers work. This is John Barron's work and this is our proposed method and I should note that our method is actually trained to optimize this joint metric on the right, and so we wouldn't expect it to outperform other methods on the 1st metric. But it's kind of it's kind of nice that it. Does outperform others in the reflectance metric? So in sum.
+
+[870.0s - 899.0s]
+We've presented a Bayesian non parametric extension to Peter Sellers work in 2011 and we've shown that we don't need to model full 3D models or use rednecks gradient terms to achieve state of the art results. All results are shown below. Ann will be posting code within the next couple of weeks at the address shown below. Thank you. Actually 2 questions. First, on real images like the MIT database is not so realistic. How does it run on real images? And the second question is you so you have two contributions. Kind of the. Have different prior compared to Gala and then have a different optimization with instead of iteration you do marginalization. Can you give an idea which one is more important? Yes definitely. Those are great questions. So for the first one on real images, unfortunately there's not very many ground truth datasets with real images in intrinsic image analysis because it's very hard to get the ground truth. So we've tested it a little bit on some real images. I ran it on pictures of my coauthors for fun and it looks plausable. But it's very hard to judge whether it's performing better than other algorithms, Unreal images, so hopefully that will inspire people to create better datasets and more data sets. The second question, which is which contribution actually makes the difference, thanks to some reviewers. We've actually done some more extensive testing on different contributions, and we found that both approaches actually helped to achieve state of the art results, so we've removed kind of the different priors and fixed K, so we don't have this during the process. And the result degrade a little bit and we've also used kind of a similar iterative approach that was similar to Geller's work, and the results also degrade a little bit, so I think it's really the combination of the two that are able to combine and achieve state of the art results. There is a new benchmark on intrument intrinsic image decomposition from Cornell that was presented at SIGGRAPH this year. The papers called intrinsic images in the wild. The benchmark is unreal world images. It would be great to see the results of your work on that benchmark. Great thank you. I'll test it out. Sorry, I think we have to move on then. Thanks, Jason.

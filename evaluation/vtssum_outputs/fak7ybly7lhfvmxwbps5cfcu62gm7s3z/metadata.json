@@ -1,0 +1,20 @@
+{
+    "id": "fak7ybly7lhfvmxwbps5cfcu62gm7s3z",
+    "title": "How Does the Brain Compute and Compare Values at the Time of Decision-Making?",
+    "url": "http://videolectures.net/nips2010_rangel_hdbc/",
+    "info": {
+        "author": [
+            "Antonio Rangel, Computation and Neural Systems, California Institute of Technology (Caltech)"
+        ],
+        "published": "Jan. 12, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 585,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1672
+}

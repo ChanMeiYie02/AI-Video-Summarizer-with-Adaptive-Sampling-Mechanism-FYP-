@@ -1,0 +1,22 @@
+{
+    "id": "gybsij6y3i3jwhfe4hzautiwinebkmcp",
+    "title": "Decision Support: The DEXi Toolbox and its Applications",
+    "url": "http://videolectures.net/AIindustrySeminar2019_bohanec_decision_support/",
+    "info": {
+        "author": [
+            "Marko Bohanec, Department of Intelligent Systems, Jožef Stefan Institute"
+        ],
+        "published": "May 18, 2020",
+        "recorded": "February 2020",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences"
+        ]
+    },
+    "num_segments": 45,
+    "num_sentences": 240,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 2295
+}

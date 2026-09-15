@@ -1,0 +1,20 @@
+{
+    "id": "ryljs6tl6j4lm7uu3uw6negn7gzyg6qh",
+    "title": "Sample-Based Planning for Continuous Action Markov Decision Processes",
+    "url": "http://videolectures.net/icaps2011_mansley_markov/",
+    "info": {
+        "author": [
+            "Chris Mansley, Department of Computer Science, Rutgers, The State University of New Jersey"
+        ],
+        "published": "July 21, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence->Planning and Scheduling"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 169,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2559
+}

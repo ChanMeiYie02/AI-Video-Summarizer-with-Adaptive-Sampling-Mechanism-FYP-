@@ -1,0 +1,21 @@
+{
+    "id": "zrpl6screjjwxuqmx2qwqfez5rfnyyyy",
+    "title": "New Methods and Application Domains for Stimulus Driven BCI's",
+    "url": "http://videolectures.net/bbci2012_desain_stimulus_driven_bci/",
+    "info": {
+        "author": [
+            "Peter Desain, Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen"
+        ],
+        "published": "Dec. 3, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Technology->Neurotechnology",
+            "Top->Medicine->Neuroscience"
+        ]
+    },
+    "num_segments": 79,
+    "num_sentences": 726,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 385
+}

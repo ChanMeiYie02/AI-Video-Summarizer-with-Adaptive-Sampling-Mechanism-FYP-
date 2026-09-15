@@ -1,0 +1,22 @@
+{
+    "id": "73scchuy4s2ftxtinn2xl5ide4ycts7q",
+    "title": "EMundus Europroject First report",
+    "url": "http://videolectures.net/ocwc2014_nascimbeni_mcgreal_emundus_report/",
+    "info": {
+        "author": [
+            "Rory McGreal, UNESCO Chair on Open Educational Resources (OER)",
+            "Fabio Nascimbeni, MENON Network EEIG"
+        ],
+        "published": "June 23, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society->Public Policy"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 173,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1578
+}

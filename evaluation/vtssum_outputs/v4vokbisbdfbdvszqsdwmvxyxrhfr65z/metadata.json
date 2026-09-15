@@ -1,0 +1,20 @@
+{
+    "id": "v4vokbisbdfbdvszqsdwmvxyxrhfr65z",
+    "title": "Local is Global: Effective Multilingual Web Strategies",
+    "url": "http://videolectures.net/w3cworkshop2011_hurst_strategies/",
+    "info": {
+        "author": [
+            "Sophie Hurst, SDL"
+        ],
+        "published": "April 22, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Computer Science->Web Search"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 180,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2803
+}

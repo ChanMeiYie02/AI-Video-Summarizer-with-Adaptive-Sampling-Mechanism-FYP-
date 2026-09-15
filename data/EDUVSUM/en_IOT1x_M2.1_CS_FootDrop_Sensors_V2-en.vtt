@@ -1,0 +1,82 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:02.147 --> 00:00:03.980
+SHIVA SHARIF BIDABADI: This system which has
+
+00:00:03.980 --> 00:00:07.180
+been designed for this specific study is a kind
+
+00:00:07.180 --> 00:00:11.140
+of a device using three separate IMU devices placed
+
+00:00:11.140 --> 00:00:14.680
+in three color coded 3D printed boxes.
+
+00:00:14.680 --> 00:00:19.270
+And the sensors will be attached to the different sections of the lower limb.
+
+00:00:19.270 --> 00:00:23.530
+For example, in this case, thigh, shank, and foot off the subject.
+
+00:00:23.530 --> 00:00:29.020
+And the data from this device will be captured simultaneously
+
+00:00:29.020 --> 00:00:32.860
+to the receiver dongle that connects to the laptop
+
+00:00:32.860 --> 00:00:35.320
+and collects the data from the devices.
+
+00:00:35.320 --> 00:00:38.990
+Having this device attached to the body section,
+
+00:00:38.990 --> 00:00:42.040
+we can provide some information about the movement
+
+00:00:42.040 --> 00:00:43.460
+of that section of the body.
+
+00:00:43.460 --> 00:00:46.900
+For example, angle of the thigh during the walking trial.
+
+00:00:46.900 --> 00:00:53.765
+For example, positive and negative movements in the whole gait cycle.
+
+00:00:53.765 --> 00:00:57.430
+The sensors in the devices are Inertial Measurement Units
+
+00:00:57.430 --> 00:01:02.020
+which is a kind of sensor that consists of accelerometer gyroscope,
+
+00:01:02.020 --> 00:01:07.780
+and magnetometer in a single unit that provides a good range of information
+
+00:01:07.780 --> 00:01:09.910
+about the movement.
+
+00:01:09.910 --> 00:01:16.070
+Each three devices have the same sensor inside them, just numbered.
+
+00:01:16.070 --> 00:01:20.320
+Accelerometer actually reads the acceleration of the device.
+
+00:01:20.320 --> 00:01:24.100
+for the angle of velocity in different directions, x, y, and z.
+
+00:01:24.100 --> 00:01:28.120
+And a magnetometer also looks for the magnetic field in the area.
+
+00:01:28.120 --> 00:01:33.540
+It could get noise easily by any magnetic field near the sensor.
+
+00:01:33.540 --> 00:01:36.970
+But in general, the readings that we're going
+
+00:01:36.970 --> 00:01:41.920
+to have from the inertial measurement unit is the acceleration in three axes,
+
+00:01:41.920 --> 00:01:45.130
+the magnetic field in three axis and also the angle
+
+00:01:45.130 --> 00:01:48.330
+of velocity in three different axis.

@@ -1,0 +1,21 @@
+{
+    "id": "pzpwqfpygkcwnmpc5n7n5sv4ieqkmpda",
+    "title": "Transitive Re-identification",
+    "url": "http://videolectures.net/bmvc2013_brand_transitive/",
+    "info": {
+        "author": [
+            "Yulia Brand, Department of Electrical Engineering, Technion - Israel Institute of Technology"
+        ],
+        "published": "April 3, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 124,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 692
+}

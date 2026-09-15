@@ -1,0 +1,20 @@
+{
+    "id": "mrj6dvu7p2pgsyzcalttedwpuiwr3wdc",
+    "title": "An attempt to understand a very rare brain degenerative disease",
+    "url": "http://videolectures.net/zv_scoles_attempt_brain/",
+    "info": {
+        "author": [
+            "Giacinto Scoles, Princeton University"
+        ],
+        "published": "Nov. 12, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Science"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 688,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 710
+}

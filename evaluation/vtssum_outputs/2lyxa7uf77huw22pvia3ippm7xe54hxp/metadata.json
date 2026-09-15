@@ -1,0 +1,20 @@
+{
+    "id": "2lyxa7uf77huw22pvia3ippm7xe54hxp",
+    "title": "From Physiologically Based Pharmacokinetic Modelling toward System Biology",
+    "url": "http://videolectures.net/pim07_bois_fpb/",
+    "info": {
+        "author": [
+            "Frédéric Y. Bois, INERIS - Institut National de l'Environnement et des Risques Industriels"
+        ],
+        "published": "Nov. 6, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Bioinformatics"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 201,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 3098
+}

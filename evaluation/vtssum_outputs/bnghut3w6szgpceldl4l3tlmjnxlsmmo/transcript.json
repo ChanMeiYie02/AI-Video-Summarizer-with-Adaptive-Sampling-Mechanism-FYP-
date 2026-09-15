@@ -1,0 +1,57 @@
+[
+    {
+        "text": "So I'm much younger.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Joke representing linguistic engineering group East of computer science, Polish Academy of Sciences and it's going to be about the Polish parliamentary corpus was already talking about this corpus.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Year ago in Sofia where we have this Clarion Plus workshop on parliamentary records and there were many many people present there. So I will just summarize what what's new in the corpus because it's a short paper in a short talk so I just have 15 minutes so the Polish parliamentary group corpus is a large collection of documents that are linguistically annotated in various levels and which come from the proceedings of Polish Parliament. Are also some other data, such as interpolation questions, but the core are the talks from the settings, so the Polish same corpus which we created as part of CSR project which is in turn part of meta. Net projects in 2011 was intern extended with new data and new analysis in the course of Clarin project. And that's what I'm going to talk about so. It was a Polish same corpus before now we added Senate. We added new data to have it current and we added some historical data and that's what's the most important, because now the corpus has data from 100 years and Daria was showing at least of corpora that are integrated with chlorine. This one wasn't shown that just because probably it's not yet visible in Clarin and we just looked at the table and said that it's going to be. The third largest, so it should be integrated quite soon. It's available for downloads at the PPC website, and I guess you will have the presentation afterwards, so you will be able to have a look at the links later.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So the data sponsor. As I told you before, 100 years of time which creates some technical problems even with the newest data. So from the technical point of view, the data can be split into this free periods and we had to deal with different issues as far as conversions are concerned. So even the newest data or where available as editable PDF files that were created by means of converting a DOC files in the Polish Parliament. So there were several formats available. Currently there are publishing it in HTML, but what we did was that we just took this original DOC files and we extract the text from that. But that's just the new data. Some older data between 1989 and 90. Three were only available. There are also available as PDF files that look the same, but we're just images inside, so we had to OCR them and manually verifying. Proofread them before they could be further converted to TI and what we recently discovered recently means one year ago or so is that the same library created huge amount of data that were not really linked anywhere, so they were just available in their database. They could be searched if you knew the link somehow, but I would call it a. A deep web rather than anything else, so I just located them, contacted them and we got their permission to include. These data into our corpus so they were high quality scans, were prepared by the library of same and they were. Really prepared in cool resolution with all confirm. Install the standards manually cleaned after scanning so they were really perfect but they were images so we had to do the conversion. Finereader, OCR and another set of proofreading. That's not me. OK, so what's funny is that many people think that just putting all your data into the fine reader will just give you a nice corpus that's at least search above. It's not the case here, 'cause for 100 years, Polish Parliament uses the two column format for their proceedings, and finally does sometimes has problems with merging the text from 2 columns. And then it's it's very difficult to do anything with it. After its count. So our proofreaders are just looking at what fire does and are correcting areas. While why recognizing the text there? So the text is quite good quality. But it involves some physical work. Thanks to Clarion we can do it currently.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "And apart from this technical periods, the data from 100 years. As you can imagine, probably in all of the countries, but in Poland it's clearly visible. It's ponds free, interesting political periods. That's the most interesting stuff for the digital humanities. So we had pre war pull down at the Second Polish Republic and we had done the Polish People's Republic. So that's between the end of war an 1989. And the Third Polish Republic, since there until today and you can see there were three different periods with different number data sizes. But as you can see, the second public Republican today is almost the same number of of settings. the Senate wasn't there in the time of the communist time, I would say, so they were fewer settings that.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "The data are stored in TP5 and I already was telling telling about that and writing about that in in a paper about the post. Same corpses, just a short snapshot of what's there. So we have the automated linguistic analytics of many on many levels starting with the structure of utterances and then organization, lemmatization, disambiguate it, post tags, syntactic groups, named entities, and confidential links. And so you can do many useful things with that. As you can imagine.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Anne. Taking into consideration the fact that we have this huge amount of data, you can do many useful things. On top of that. So we have developed several applications. The most obvious thing to do is just make put it into the search engine. So as long as the data here are compatible with national corpus of Polish which could just take the search engine that we are using for the national corpus of the. Polish, just called Polycarpe and we could offer this data in. For search in this search engine, but at the same time several researchers from not from our institutions were involved in the whole process and.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "A guy who was helping with some other projects for developed for the researchers from the digital Humanities developed their own search engine that also apart from the linguistic view that Polycarp offers, offers some metadata based view of of what's there as well. So we have two interfaces, search interfaces, search engines running at the same time. And when you have such nice data, you can perform some several advanced analysis based on that, and that's the section.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "That was the was I was writing about in this future, and current and future work in the paper that was submitted here. So now it's more current in the future. Another colleague of ours developed the night interface similar to Google Ngram Viewer. You're probably familiar with that. So when you have the data from 100 years, you can just see how many times a term or phrase. Kurt over the years, so it's uses both at this picture, shows the absolute frequency, but you can also see the relative frequency is probably more more relevant, and that's a nice example that I will tell you about. A couple of words more because I. So when I was looking for a nice example to present here, I just came upon a text somewhere at the show Charlotte. So at the analysis of. So just an that's wasant really proved with the data we can see now clearly that it's true that the word communism was not used in the communist times in Poland, in between the war, the end of Warren 1989. But the word socialism was used instead because the communism was the ultimate Marxist goal that was valid for the Soviet Union and not for. The countries in the bloc, so they were just avoiding it and you can see that the socialist base well frequently used in the coming years was almost not used at that time, but at the same time the opposition where you was using the word communist for describing the political system in Poland, and when they seized power in 1991 in five because there was this two year. When the so called contract Parliament was present in Poland. So the field first. Really free election happened in 1991. There was this change in rhetoric, so the opposition came to power and they started using communism in the official speeches. So that's done by me. But it's quite nice analysis could be used by some researchers in political studies. I guess you can see in the in the data such things happen. So.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So what we are currently doing with this data we are trying to develop some more tools over over the data and of course add some new data to the to the corpus. So as far as the tools are concerned, there is a nice corpus creation engine being developed in Clarion, that's called Coco Salmat it's using. Still one another search engine that sent us a Dutch search engine and apart from just offering a corpus creation tool, we would like to offer certain sample corpora that could be used by the user of this corpus creation engine to learn how to use it and to see how. How to search? Engine works so we are now. We would now have just the basic version of it, but we intend to develop some statistical queries frequently. Some graphical summaries of the corpus that's being created and could work well with such a large amount of data as we have in this Polish parliamentary corpus. And so I just said it on the 1st slide that we have recently developed the. Concept of alive corpus here. So when the new settings appears and the data is being published on the website of the Polish Parliament, it's being downloaded and processed on the fly just to be able to offer the newest data already in the corpus. So to download and both in the search engine. So there are two seatings plans for Tuesday and Wednesday and we will be able to test it with the new data is include is include there.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Oh yes dear. Yeah, that's more or less it, so I still have two minutes for questions. Thank you.",
+        "start": 290.0,
+        "end": 319.0
+    }
+]

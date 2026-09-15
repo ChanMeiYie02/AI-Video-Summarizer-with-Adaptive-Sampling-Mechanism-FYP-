@@ -1,0 +1,23 @@
+{
+    "id": "lcbdckllenr4ej2axe2asrd7kzjwgxxc",
+    "title": "The Graph-guided Group Lasso",
+    "url": "http://videolectures.net/roks2013_wang_graph/",
+    "info": {
+        "author": [
+            "Zi Wang, Department of Mathematics, Imperial College London"
+        ],
+        "published": "Aug. 26, 2013",
+        "recorded": "July 2013",
+        "category": [
+            "Top->Computer Science->Optimization Methods",
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines",
+            "Top->Computer Science->Compressed Sensing",
+            "Top->Computer Science->Machine Learning->Regularization"
+        ]
+    },
+    "num_segments": 61,
+    "num_sentences": 182,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1398
+}

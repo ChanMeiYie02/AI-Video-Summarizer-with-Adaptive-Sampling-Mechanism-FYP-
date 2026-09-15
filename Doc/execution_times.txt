@@ -1,0 +1,14 @@
+PIPELINE EXECUTION TIME REPORT
+==================================
+
+1. Extract Frames: 42.89 seconds
+2. Extract Audio: 11.79 seconds
+3. Compute Frame Diffs: 1224.07 seconds
+4 & 5. Parallel VLM & ASR: 12.77 seconds
+6. Build Timeline: 0.03 seconds
+7. Embed and Search: 6.27 seconds
+8. Cluster Subtopics: 0.17 seconds
+9. Summarize Clusters: 19.52 seconds
+
+==================================
+TOTAL TIME: 1317.52 seconds

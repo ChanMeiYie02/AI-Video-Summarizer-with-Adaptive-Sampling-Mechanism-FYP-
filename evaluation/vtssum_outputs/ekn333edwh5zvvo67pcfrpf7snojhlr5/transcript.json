@@ -1,0 +1,122 @@
+[
+    {
+        "text": "Like to focus in this talk on a specific phenomenon which we called lexicographers lacuna's. It is question what to do when the form which should be ahead form is missing in the data. So despite the fact that we we did the research and check data, I think it can be applied to any language basically. But on languages with flexion it's it's. It's something that you can. See quite often, so first.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Well, let me say something about Lacuna's and their types and how did we identify lacunas? Not only that, we wanted to find out how frequent this phenomenon is. We also wanted to know what to do with it. So we would like to present also our recommendations for those who so unfortunate that they had to actually deal with the phenomena because they write the dictionary. And finally there's a summary. So lacuna's lagunas. In general, might be words where some form in the paradigm is missing. They have an incomplete paradigm. That's something we would not focus on. Our focuses more.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Narrowed down to those situation in.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Which the word or the lexeme has an unassisted the dictionary form. The issue is at least our knowledge. A little bit unresearched so to say. So we do not find. Solution to this question. So solution to the question, should the lexicographer reconstruct the unattested word form and that's that means that he or she pays attention to his or her intuition? Or should he or she leave it as it is? So first of all, we should say that.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Check the tradition is that the dictionary forms are usually singular nominative nouns and Infinity for verbs, and we know that in other traditions it might be different, but no matter how these traditions started or how they continue their still we there will still be a room for this kind of animally when the when the dictionary form is missing. So there are still lacunas.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "If we want to identify llacuna, it is not a hard task at all, because you simply find those lexemes or lemmas in the corpus. Yeah, in the corpus which do not have the dictionary form, so that's that's not the the the tricky part that Ricky.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Part comes with the fact that it is not a big deal if a word occurs in a corpus 3 times and does not have a dictionary form because this word from probably would not get into the dictionary anyway. But the problem is, what if there is Alexi Mollema occurring in the corpus, say 300 times or 3000 times and still the dictionary form is unattested. So for our research we started with corpus which is called since 2015 it's. 100 million representative corpus of written check of contemporary written check in which we identified 400 nouns. 400 verbs and 1000 objectives which are candidates for lacunas. I will show you in a minute how we did it, but for for the understanding of our of our talk it is necessary to show you the table. Don't worry if it's if it's too much information on slide you will see the table. Many times again and again during the presentation stating that there are different types of lacunas and that these types differ in respect. How? Frequently are they employed by different part of speech, so zero. Signals that this type of lacuna is not present, for example, within nouns plus and two plus, is means that it's quite quite frequent case. Regarding the columns, the restricted clickability are actually two types we found out suitable to distinguish between terminological multiword expressions. An non terminological multiword expression or idiomatic multiple expressions, and the 3rd and 4th column for those lacunas where the absence of the dictionary form is actually caused by incompatibility of the lexeme of the semantics of the lexeme. With the semantics of the representational representative grammatical category. So for example, you see some examples if you rule out all these four columns and still the word does not have a dictionary form, then the last thing which remains the last factor which remains is that you do not have enough data and that's why you have not attested the dictionary form. In order to verify this, we have the opportunity to go for a larger corpus. That's why we chose. To verify these in a larger cups, which is called sin version Six, which has four billion of words. But that's not the case of many dictionary approaches, because when you compile a dictionary, you usually use the largest available corpus. But for our research it is possible so we can verify actually, if the if it is the case of the like.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Of data, so to wrap it up. Two types of lacuna systemic where there is actually a reason for not adjusting the dictionary form, such as I've done, are which means married woman which cannot be found in masculine. Donnie even within the gay couples we usually use different words, not Danny and this part will be attested by expected frequency. As I show you in a minute. And second type is that we do not have a lack of. We do not have enough data in order to find out which words are.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Actually relevant for us, we chosen. We've chosen to go for expected frequency of the dictionary form, and we calculated this way. So it's a probability of the representative grammatical form times frequency of the lemma that gives us the frequency of the dictionary form, which should be expected. But to be on the safe side, we did not go for the first 4 expected frequency of 1, but we've calculated the binomial confidence interval. And we wanted to find a value for which the lower bound of the binomial confidence interval is 1 in order to be on the safe side. So we've we've started with the value 3.8 and from this formula we can also calculate what is the minimum frequency of a lemma. For which it is reasonable to start the research, for that to identify lemmas which do not have the dictionary form and they. By all means should have the firm attested, so now it's time for Dominican for her recommendations.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Thank you. So now we know how to find lacunas in a corpus an let me walk you through our analysis and suggest some recommendations on how to deal with them in a dictionary.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "This is a decision tree. That is following our process. And we have to ask some questions. The first question, of course, is, is the dictionary form in the corpus at all? If it is, then there is no problem of course, and if it's not, then the second question is, is the frequency of the lemma high enough so that we can really expect that the dictionary form? So that we can find the dictionary form in the corpus and we can calculate calculate that by the equation we've seen earlier. If dilemma is not frequent enough, then it's actually not our problem. It's problem of the lexicographer. They have to, lexicographers have to decide whether they want to include non frequent lemma in their dictionary. If the lemma, however, is frequent enough, then our next question is, is dilemma always part of an idiom? If yes. Then our recommendation is always do not reconstruct the dictionary form and actually use the whole idiom or multiword expression as a multi word headward in a dictionary. If dilemma is not always part of an idiom, then there are other common reasons that differ according to the parts of speech, and we've seen it. A while ago an now I will show you more about it.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Um, let's start with verbs because they are the easiest ones. We've analyzed around 400 verbs frequent enough. To have dictionary form, but they still didn't. And most of the time there is no collocational or grammatical restriction, and the main reason for lacunas. In verbs, is a lack of data. In most cases, the infinitive which is the dictionary form, was actually found in a larger corpus. There are some rare exceptions. Two idioms in the 400 verbs meet Mr Onnoghen bevolo. And aside from the the idioms, small group of infrequent iteratives. With semantic preference for past sense, so not for infinitive. And those we guess would be found in a yet bigger yet larger corpus. So our recommendation is to reconstruct. All the missing infinitives, with exception of the idioms.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Objectives are a little more complicated. Um? By the way, the dictionary form is nominative singular masculine. And objectives are very formally regular in check and have to end with long way or sometimes with long eye. An objectives are specific cause they depend formally and semantically on the noun. So the main reason for Lacunas in objectives is limited clickability, terminological. And non terminological. We actually, well. You can see the example of casalena yellow Nova. Hyaluronic acid recce. Selena is the only color kit of the word. Uh Hilo Renova and it's feminine, so we will never find in our small Corp corpus 100 hundred million words will never find this word in masculine. Um? We have different recommendations for both groups. Terminal terminology, the function of terminology is to describe the world around the phenomena of the world around us. And we can expect that the world and its description will change overtime and new words and new multi word terms will be needed. So our recommendation for terminology is. That the dictionary forms should always be reconstructed. And ready for new combinations. On the other hand, components of non terminological multi word expressions. And especially idioms should be not reconstructed and the whole multiword expression or idiom should be included in the dictionary. Be cause they are not expected to change on a regular basis, such as is the case in terminology. Small number of.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Ejectives is semantically incorrect incompatible. With the grammatical category of the. A dictionary form which is either. Of singular or masculine, mainly it's masculine. We've heard the example of done a married woman also Jihad, NE and NE are only used in feminine. Seldom. We can find even semantic incompatibility with singular, like in Word, countless Miss Chittani. So our recommendation for the B1 and B2, we suggest that the headward should be as close as possible to the dictionary form. For B1, it's nominative, singular, feminine, and for B2 it's nominative plural masculine.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Dictionary form for an ounce in check is nominative, singular, and lacuna Sarcos cost both by restricted clickability and by grammatical anomaly or limitations. There is the highest number of idioms in this type of lacunas. And restricted Clock ability is often the cause of an extremely reduced paradigm where there is one form only, an often it's not the dictionary form and that applies to both idioms as well as. Other multiword expressions. Another frequent reason. From",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Using a dictionary form is grammatical animally. As I said, either an incompatibility with the representative grammatical category, which is singular. So Plurale tantum we have many of them in check, and. Or preference for grammatical category added and representative. One which is again plural because there there is only like the singular is the only question. Um? The good reason for this is Quintuplet. Which for non linguistic reasons often occurs. In a corpus in plural. So for Lacunas enounce we recommend. If the. If the lemma is a component of multiword expression, or an idiom, then again. We should not reconstruct an. We should use the Multiword expression as a headward, and that opposite to practice in older check dictionaries where hypothetical forms were created and used as head words with marked by an* up for be. The Headward again should be as close as possible to the dictionary form, so in this case of Floralia tandem, nominative plural, and for C we should reconstruct and. Certainly comment on the preference in the dictionary.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So this was the situation in check and now as a summary, let me offer you a marginal view. I will repeat myself, but in a different way. So the general general view of Laguna types hopefully useful for you. As lexicographers maybe in other languages as well? If, uh, terminology.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So. If the lacuna is caused by restricted clickability in terminology, which is the case of objectives. In check very often, then do then do reconstruct the dictionary form because terminology adapts to the new phenomena and new descriptions. If dilemma with Laguna is.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Is an idiom component. Or a component of non terminological multiword expression. Or maybe if you want to fixed collocation as we have seen, especially with the check nouns, then do not reconstruct the dictionary form and use multi word. The Multiword expression as a headward.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "If the lemma doesn't allow the representative for the representative grammatical category. Example of floralia tantam. Then do not reconstruct. And keep the headward as close as possible to the standard dictionary form.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "K. If there is only a preference for a non representative grammatical category. Such as the case of quadruplets. With preference for plural, then do reconstruct the dictionary form and certainly add marker gloss or usage note. And finally.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "If the lacuna is not caused by any of the previous cases, but only by a lack of data, as was the case with the check verbs. Then do reconstruct. The dictionary form, because there is no risk of introducing a non existant form into the description we are. The dictionary. And.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Here are some references.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "And thank you. We compiling the dictionary really deal with this kind of problems a lot and I'm pleased to say that we did treat most of them the way you recommend, so I'm really happy that our opinion is the same. And thank you very much for all the suggestions and say statistical background for us to deal with this problem. Thank you, that's that's really comforting that we arrived at the same conclusion under independently. Thank you. Please, Sir, any more questions. Yes. It's more of a comment than a question, but I think you have raised a general issue because. Any lemma register is going to come out very unevenly from matching against any corpus, so there will always be gaps, and I think the only sensible thing to do is to assume that the pattern for how these things should be dealt with exists in the heads of the language users, and after all you have access to written language you don't know what people are saying out there, so I would feel quite confident about reconstructing. Thank you for the comment, of course, that's the obvious danger that we might reconstruct, something that is not actually in the head. Unfortunately, spoken corpora are even smaller than than the small one. Is Dominic Appleseed small corpus that we used, so we cannot verify actually. But the reason why we did this study is to make the setting of the experiment such as we. So to verify the lacuna Synlogic corpus, which is not usually the opportunity normal lexicographer has, so we would we wanted to verify if the lack of data is often the case, and it is for verbs. So that's the comforting part. Yeah, I am. I want to say the opposite of Audrey and just to be just to be difficult. And because John Sinclair, Alas, is in his grave and but I do remember and I. Sinclair was against lemmatization. I think on the grounds that very different things are going on. In meaning and with different form, different inflected forms. Now of course it may be different in check, which is much more highly inflected than English, but but why not just record the? Why not take the most frequent form of the lemma as the base and then relate all other cases to it? I don't know whether it could work. Well, the answer is probably because the tradition is different, but you probably would not like to hear this. Well, I don't want to go. Yeah, I know I don't want to go to the discussion whether a dictionary should be a list of Limassol word forms, but once we decide to go for the second option for lemmas, then we have to somehow deal with it. It's I think we cannot do it. Here this way Anan over there the other way. So yes to go for the most frequent word form means that for. Some lemmas which do have attested dictionary form. We still would have to treat them As for example, instrumental case, because it's an instrument which is usually used in check in instrumental case, despite the fact that we all know what the nominative cases and despite the fact that we have the nominative case attested. It made explanation under the under the under the instrumental. No I would not, because you know that's that's completely against iteration. I mean if we opted for this. It's against the tradition. I mean if we go for this type of tradition, then. No, no, no, that's that's that's that's what I wanted to say. I just wanted to say that that's different discussion. So once we did the decision to go for this type of solution, then we have to make some kind of decision so we don't do not discuss the first decision. We just make the recommendation for what's next. But maybe it's also the middle for online dictionaries and paper dictionaries. If you're if you produce your data online, you just give it an Canonical forms. So is is a user. Probably will be searching for this particular vote form and and and then it's all solved so. Well, yeah, Canonical form. Is it like user user research will be involved also so users probably look are looking for those words in Canonical forms. Definitely they don't reconstruct it in their heads and then they're going to look at an online dictionary so, but with online resources we are very flexible. So maybe it's not that important issue. I would do think it is an issue of presentation anyway, so for example those objectives which do not appear in my screen. Home such as Donny Merritt 4 used only for women in check. You should not expect users to query. Tested and not any non existent form. So yes you should present the lexeme in a way it which is suitable to the reality. Yes, sometimes you should stick to the intuition. That's what I'm saying because we all know that however large the corpora are, these are just samples, yes. And the fact that the word is not in the sample is not a mistake of the word, it's it's not something we should punish it for it because you know, it's a sample and we made the sample an. It might not be representative. It might not be large enough and. Many, many reasons. So I'm afraid we don't have anymore time for questions. Thank you again. It was very, very clear presentation. Thank you.",
+        "start": 667.0,
+        "end": 696.0
+    }
+]

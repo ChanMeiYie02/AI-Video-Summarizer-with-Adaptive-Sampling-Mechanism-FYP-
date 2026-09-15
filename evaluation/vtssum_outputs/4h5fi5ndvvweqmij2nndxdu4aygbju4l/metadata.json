@@ -1,0 +1,25 @@
+{
+    "id": "4h5fi5ndvvweqmij2nndxdu4aygbju4l",
+    "title": "Gaussian Logic for Predictive Classification",
+    "url": "http://videolectures.net/ecmlpkdd2011_kuzelka_gaussian/",
+    "info": {
+        "produced by": [
+            "Data & Web Mining Lab"
+        ],
+        "author": [
+            "Ondřej Kuželka, Czech Technical University in Prague"
+        ],
+        "published": "Nov. 30, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Classification",
+            "Top->Computer Science->Machine Learning->Supervised Learning",
+            "Top->Computer Science->Machine Learning->Gaussian Processes"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 207,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1234
+}

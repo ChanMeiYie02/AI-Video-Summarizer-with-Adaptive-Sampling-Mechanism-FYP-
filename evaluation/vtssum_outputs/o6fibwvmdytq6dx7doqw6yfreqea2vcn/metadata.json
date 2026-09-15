@@ -1,0 +1,21 @@
+{
+    "id": "o6fibwvmdytq6dx7doqw6yfreqea2vcn",
+    "title": "Domain-Independent Quality Measures for Crowd Truth Disagreement",
+    "url": "http://videolectures.net/iswc2013_aroyo_crowd_truth/",
+    "info": {
+        "author": [
+            "Lora Aroyo, Department of Computer Science, Faculty of Sciences, Vrije Universiteit Amsterdam (VU)"
+        ],
+        "published": "Nov. 28, 2013",
+        "recorded": "October 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Events"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 156,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 908
+}

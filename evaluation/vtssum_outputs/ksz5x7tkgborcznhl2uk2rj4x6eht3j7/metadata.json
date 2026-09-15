@@ -1,0 +1,20 @@
+{
+    "id": "ksz5x7tkgborcznhl2uk2rj4x6eht3j7",
+    "title": "Visualizing sloWNet",
+    "url": "http://videolectures.net/elex2011_fiser_slownet/",
+    "info": {
+        "author": [
+            "Darja Fišer, Faculty of Arts, University of Ljubljana"
+        ],
+        "published": "Dec. 2, 2011",
+        "recorded": "November 2011",
+        "category": [
+            "Top->Humanities->Linguistics->Lexicography"
+        ]
+    },
+    "num_segments": 13,
+    "num_sentences": 184,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1985
+}

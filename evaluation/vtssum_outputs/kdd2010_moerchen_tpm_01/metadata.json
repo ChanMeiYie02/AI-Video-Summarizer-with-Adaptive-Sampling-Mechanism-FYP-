@@ -1,0 +1,22 @@
+{
+    "id": "kdd2010_moerchen_tpm_01",
+    "title": "Temporal Pattern Mining in Symbolic Time Point and Time Interval Data",
+    "url": "http://videolectures.net/kdd2010_moerchen_tpm/",
+    "info": {
+        "author": [
+            "Fabian Moerchen, Siemens Corporate Research"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Pattern Recognition",
+            "Top->Computer Science->Data Mining->Pattern Mining Applications",
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 897,
+    "num_clips_with_summary": 34,
+    "num_gt_summary_sentences": 103,
+    "ground_truth_summary_length_chars": 12309
+}

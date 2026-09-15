@@ -1,0 +1,147 @@
+[
+    {
+        "text": "Our paper three layered approach to facade parsing. Is dealing.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "With mostly with semantic segmentation or building facades. So this is one of the greatest challenges in urban modeling, not only to identify the facade elements, but only but also what their layout is in the image. So starting from an initial image seen here on the left, from a rectified image of a facade, we want to identify what the elements are like. Here you can see the legend on the right where the windows are wall, balcony, door and so on. So we want to get the labeling of the image. So.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "The main difference between US and previous work is that we do not use shape grammars. Let me be a bit more clear so previous works such as the bullet all utilizes shape grammars as priors and their algorithm. So for people who are unfamiliar with the term shape, grammars is a set of shape. Grammar is a set of rules that are applied in shapes, so starting from an initial shape like the red one on the left, the rules are successively applied, refining the shape until one has reached the final shape. Seen on the right, which is an instance of a building. In this example, has Manian building in Paris. So there are two reasons why using shape grammars is bad. First, they impose heavy priors upon the building structure, so it is assumed that the building that you are reconstructing has to follow the same style as the shape grammar. So if the shape grammar doesn't have enough variation in it, you simply cannot reconstruct the building correctly. Second, it's not easy to construct shape grammars. You need an expert and you need manual work for a person to write it. So what we propose is a system that does not use shape grammars as priors but still achieve superior performance. This.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Is the overview of our approach, so you can clearly see the three layered architecture where we start from an initial image on the left we have the bottom layer where we segment the image. Extract features from super pixels and classify each of the Super pixels into one of the semantic labels. Then we augment this information in the middle layer where we introduced object information such as positions of doors and windows, and finally in the top layer we encourage the final reconstruction to be more architecturally plausible by introducing not high level architectural knowledge through week architectural principles. Finally, we also show how we can use the output of our system in a procedural reconstruction scenario. So let's go a bit.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Into details first the bottom layer.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "We start with a rectified image of a facade and we segmented using mean shift. Then from each of the Super pixels we extract the appearance, geometry and location features and now we want to classify each of these super pixels into one of the semantic labels. So as a classifier we used.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Recently introduced recursive neural networks by social at all. The main structure is displayed in this picture. I cannot really go too much into details because of time constraints, but the main idea of RNN recursive neural network is that it creates a parse tree of an image by. By by recursively combining segments into super segments until it has reached until it has reached the final notes or until it has reconstructed the entire image. What's important for us, however, is that after we run the algorithm on a test image for each of the segments, we get probability distribution over the semantic labels, and then we can take the maximum likelihood estimate.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Label each superpixel with it an gets labeling that looks something like this so you can see that the output is quite noisy. This is due to misclassifications by RNN and also due to the errors in the initial segmentation. But we don't want to be constrained by the initial segmentation. We want to reason about higher knowledge, so that's why.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "We move to the middle layer where we introduce. Objects through usage of specialized component detectors.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "What we do is we train separate detectors for Windows and doors, and each of these detectors gives us a set of bounding boxes with the appropriate scores. So now we want to. Merge this information coming from the detectors with the information coming from the bottom layer. How do we do this?",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "We set up a mark of random field over the image. And we utilize the standard Potts model where we seek to minimize the total energy defined by the sum of.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Potentials which encourage the neighboring segments to take the same labels so it's a smoothing prior plus the unary Patel.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Shows which is the combination of potentials of the RNN and the probability Maps that we get from the detectors. So we solve this energy minimization using graph cuts.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "And obtain an image shown on the right. So when you compare it to the bottom layer, output shown on the left, you can see that some of the windows on the second and third floor are now correctly filled in. Also the door gets filled in. There are some of the elements that were small elements which were false positives which were removed, so it is better, but it's still not perfect, so we still haven't used any information. We still haven't used any priors on the facade structure. But what we can do?",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "And what we do in the top layer is reason but higher level architectural knowledge. And this.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "We encode through a set of weak architectural principles, so these principles and code this higher level knowledge and it can be seen those principles can be seen in the table on this slide. So the main difference between principles that we propose and shape grammars are twofold. First, our our principles are much more flexible, so there are generic and there can be reused on a variety of building styles, unlike shape grammars which have to be written specifically for a certain style of a building. We also show that we can use these principles on two different datasets. 2nd. So the shape grammar imposes a hard constraint on the facade structure, so your final reconstruction has to be the instantiation of the grammar. We don't do that. Our principles are simply stop constraints which are only enforced if there is enough image support for that. Let me take an example. Facade. Symmetry is one of the principles. What we do there is we sweep a vertical line over the image. We calculate the symmetry score for the left and the right part. If that's if the maximum symmetry score exceeds the threshold that we get on validation set, then we enforce the principle and what the enforcement does is shown in the table. So it can either add elements which were not found before, or it can remove the false.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So after we have applied our architectural principles on the middle layer outputs, this is what we get. So the you can see that the final output is much more structured. Also the windows in the bottom in the first floor have been filled in by using another principle of windows similarity. So now we have a much more structured output. Now I will say something about evaluation.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Forward. Algorithm we tested it on two different datasets, first one being the ECP for such database which contains around 100 images of a single style of his main buildings. It has already been used by previous work, so the main problem with this data set.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Is that the original labeling of the original ground? Truth has been done been created by using a shape grammar which simply wasn't expressive enough to cover the variations in the style. So as you can see on the left, some of the annotations are imprecise.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Sometimes even plainly wrong like in the roof windows which are misaligned. They're aligned with all the other windows in the facade, but they're not allowed aligned with the actual ground truth. So what we did is we re annotated the entire data set. We then ran the. State of the art algorithm and our approach on the new annotations. And we make these annotations available online.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So the results that we get are shown summarized in this table. You can see that we outperformed the state of the art methods by a large margin even when using the outputs of the lower layers and that's our. And the accuracies per class. Normally get better as we get go up in the layers, But what's interesting to see, however, is that final total pixel accuracy is actually highest in the second layer. So why does this happen?",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So on the left you can see the output for a test image of the middle layer and on the right the output of the top layer. So when we evaluate it with the ground truth, we see that the actual pixel accuracy of the middle layer is higher than the accuracy of the top layer, but the overall visual effect on humans is much more pleasing on the right image, so the total pixel accuracy might not be the best or the only measure of performance of the algorithm.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "We can also take the class accuracies. And then we can see that if we do that, that we get. In constant improvement in all of the layers.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So these are some of other outputs on of our system, so starting from an initial image, the outputs of bottom, middle and top layers respectively compared to the ground truth in the far right. But we also.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Validated our approach on a different data sets on the different datasets. Each database which contains 60 images of various building styles. The images were not rectified and they contained significant amount of clutter and a different label set, so they had also vegetation and car so forth.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So the output that we some of the example output that we get on. On this data set and we also outperform the state of the art. For more details please check the paper.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Also we can we show that we can use the output of our top layer in an inverse procedural modeling scenario where we create 3D models by instantiating elements from a library of 3D elements at the exact positions which are predicted by our top layer labeling. We encode this as a set of rules in city engine and commercial software, and then we render it also with projecting the texture of the shop for greater visual effect. And these are some of the results that we get. So in.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Summary We developed a novel thriller approach for facade parsing, where we show that we can significantly outperform state of the art even without using hard priors of shape grammars. And instead of that, we proposed the concept of weak architectural principles. More general principles which can be reused on different datasets. There are a couple of interesting. Directions future directions. So far work we can try to instead of relying on these grammars to begin with on something that human had to design to actually try to infer grammatical hierarchical structure from the data itself, so.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Thank you for your attention. Is is a grammar really really that much more rigid than your your soft constraints? So, as I explained before, the grammar simply has to be designed. It's hard to design one grammar to rule them all. Let's call it like that so. Normally the power of the grammar in comes from its ability to restrict the search space. When you're parsing the grammar itself, so you have to constrain the grammar so that you are able to parse it in the first place. So if you're using grammars that are too generic, you simply don't get any improvement. If you're using grammars that are style specific, then you have this problem of not. You're not being able to parse different styles. And of course. If we replace grammars with a set of like kind of library of rules which can be directly valued in the image in the images, we get a more flexible approach. The other thing is that sometimes grammars cannot express all of the things that we want. For example, if we saw this House minion shaped grammar cannot express. A lot vertical alignment of windows because it was written in a way that that it first creates the floors. So what happens is it's sometimes easy to express, let's say, alignment in One Direction. While it's very hard and to do it in the other. Our principles can be directly checked in the images and enforced if there is enough support for it. How does your mother do with general viewpoints? I mean out of plane retention in plane rotation or general perspective views? So the first data set that we use, the ECP data set, already contain rectified facades. And for the second data set that we tried, the translator set. The initial images were not rectified. So we performed automatic rectification on all of the images into each data set an we haven't seen on that data set. We haven't seen a single failure of the automatic rectification procedure, so it simply extracting line elements in image in the images and then from that as estimating the vanishing points. So it's a pretty standard procedure. Which we found to work quite well. OK thanks. OK, let's thank the speaker.",
+        "start": 812.0,
+        "end": 841.0
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "id": "4lqsxzk3msfztzwd7vloctqijvlmlu3x",
+    "title": "Mining Research Topic-related Influence between Academia and Industry",
+    "url": "http://videolectures.net/ecmlpkdd2011_tang_mining/",
+    "info": {
+        "author": [
+            "Wenbin Tang, Department of Computer Science and Technology, Tsinghua University"
+        ],
+        "published": "Oct. 3, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Network Analysis->Social Networks"
+        ]
+    },
+    "num_segments": 42,
+    "num_sentences": 194,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2564
+}

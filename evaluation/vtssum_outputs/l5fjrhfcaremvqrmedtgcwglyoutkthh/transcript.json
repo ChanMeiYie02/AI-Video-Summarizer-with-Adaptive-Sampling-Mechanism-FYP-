@@ -1,0 +1,77 @@
+[
+    {
+        "text": "My name is Frederick ocelli. Come from France. And the project. The young projects I'm going to present your lies between 2 great domains which are digital libraries and.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Of course, semantic technologies. So for 20 years this digital library community agrees that the old fashion cards system still used today by most of libraries have showed its limitations for transmitting information and representing bibliographic information. An now with the emergence of semantic technologies, users of digital libraries expecting. More Van de van. What we can do actually with online public access catalog like semantic search like graph navigation and so on so.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "The big picture of what we do with my company portion. On the one hand, we have catalogs of bibliographic records and on the over and we have users wanted to make rich queries. Advanced queries on this bibliographic information, so we have to create new knowledge basis with which are able to answer this advanced knowledge. This rich knowledge and to illustrate this project. I will talk about one project we add of migrating forward 1000 record from the public public domain which come from the second biggest library hospitals in France. And it's basically if you know it.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So when you have to migrate hundreds thousands of records, you cannot do it as to do it manually, you have to rely on automatic process to transform the records into a knowledge base and in the bibliographic domain the most known process is called the verbalization, which means transforming the records into the Ferber semantic model. And when you see the existing Ferber isation tools, most are providing list of mappings from the fields. Of the records to the attributes and classes of Ferber. But the problem is in it was the problem in our context. When you want to directly use this kind of tool. You like to to get to get advanced knowledge to get rich relationship mostly investools the conversion of the records gives. Did disjoint Ferber graphs and finally you just have transform your record into RDF maybe, but you are not really able to answer advanced queries from users like multiple editions. Complex relationship between Journal. Particles and so on.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So we decided to evaluate recent and available verbalization tool in the domain, and we solve that. It both this was true that. Actually, mappings provided by these two likes to handle advanced patterns from from the bibliographic context, and so you have some example of graph we made from the Bieber benchmark for benchmark for interpreting the bibliographic record and all tools like so it's error rate in extracting advanced patterns. So you see that all the tools are not ready for getting this advanced patterns.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So is the big picture and the challenge for us is finding a way to not just make a basic conversion of records into the Ferber ontology, but making a deep knowledge interpretation of the knowledge from the records to create reusable and interesting and knowledge base. And also also a second challenge to it efficiently of course. So we provided a novel approach to interpret records. I will not have enough time to go into detail this approach, but the idea is we built analyzers from the literature on the interpreting week record on blue graphic relationships and families, and automatic analyzer are able to scan the fields of the records an extract, advance the advanced button we are looking for. And create views on the data for the interpretation also provides mechanism to model with the ontology elements the patterns that we are looking for for the migration. And then we obtain immigration model. Which can be you?",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Used directly in. In the migration tool to perform the verbalization in the end and the actually organization model is available in RDF.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So some example, some really is example of what the tool can do from the records you have example of on the left jonar record and two articles. So Analyzer was able to detect a relationship and implicit relationship between the Journal and the article, and so it automatically proposed knowledge pattern to this. This button was previously model up from from. What we found in the literature in digital libraries, like for instance the the realization of the article on the bottom as not its proper manifestation infer but its relationship to the manifestation of the Journal. So it's quite verbal, technical but. Never mind.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And other things we can do with our approach is to. Also we add two more and more complex things like in the two article you have the same author but. On the on the on one record the author because it's Cyantific Cyantific catalog it as a scientific affiliation from this record, so we cannot just model like basically provided by the Ferber conceptual model. 2 works related to the same person, but we are to introduce something like a blank node or subsumption class. We decided for this project to create Cyantific agent which is related to an affiliation. To correctly model this kind of thing.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So in the end we were able to produce complete migration model of advanced pattern for for this catalog. But we are actually looking for reusing. Some of the patterns for other projects. It's promising, but for this project we are at night. She just knighted buttons, including five 100 mappings, and this way of modeling advanced button before creating the mappings was really convenient in this project cause it was easier to discuss with owners of the catalog of the knowledge we want to represent in the end in there. In their knowledge base and this morning we had a great talk of quick, no bulk and this kind of methodology and migration model can be implemented in, tool. For instance, to perform the migration and also it was convenient since the things we decided to organize the knowledge pattern into a graph which can be which can be read. By immigration tool. So we could benefit from the graph representation, but of the inheritance between conditions, the reuse of some mappings to improve the performance of the global system. So the for this catalogue of 500,000 records it last less than an hour of processing, so we were able to make iterative tests of migration until it was satisfying.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "We also evaluated approach with the benchmark Bieber and our results were way better. But it's normal. We are considering advanced button over tools. We will compared to note. So in the end.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "The data migrated once it was satisfying for the our client was integrated into solution we provide, which is natively based on Furber for managing bibliographic data, and you have couple of graphical interface to represent information like text rule, you have intellectual information on the top and for for instance multiple additions on the bottom textual edition and. Electronic addition of this office article. We also playing with the all the possibilities of Ferber, an knowledge base is to create interest, interesting navigation interfaces like this one, which will be on the next release of service. You are a walk.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "The same walk like this, but in the center.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "The authors on in green related concept indexing the walk on the blue and so related walks from this concept.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "And to finish, this is not the end of the road immigration. We are also walking. And what once we are able to. Produce advanced pattern in the knowledge base from the migration. We are also trying to complete an aggregate a new advanced button from external sources and we are building a module 2 to extract this kind of advanced pattern from over sources like you have an example here with data being if National Library of France and the pedia. And we also working on semantic search from service. That's all for me. Thank you very much.",
+        "start": 406.0,
+        "end": 435.0
+    }
+]

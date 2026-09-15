@@ -1,0 +1,20 @@
+{
+    "id": "qnydotqcnidyqw5pznqc4kxkbuufrdml",
+    "title": "Semantic Patterns for Sentiment Analysis of Twitter",
+    "url": "http://videolectures.net/iswc2014_saif_sentiment_analysis/",
+    "info": {
+        "author": [
+            "Hassan Saif, Knowledge Media Institute (KMI), Open University (OU)"
+        ],
+        "published": "Dec. 19, 2014",
+        "recorded": "October 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 153,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2971
+}

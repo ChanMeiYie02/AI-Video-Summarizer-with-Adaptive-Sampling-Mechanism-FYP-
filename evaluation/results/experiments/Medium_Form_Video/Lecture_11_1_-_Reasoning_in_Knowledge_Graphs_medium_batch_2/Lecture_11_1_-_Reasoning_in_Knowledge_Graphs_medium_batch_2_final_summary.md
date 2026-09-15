@@ -1,0 +1,7 @@
+# Final Multimodal Video Summary
+
+The video introduces the methodology for reasoning over Knowledge Graphs (KGs) using embeddings, focusing on performing multi-hop and logical reasoning to answer complex queries and make predictions. The session outlines various query types, including one-hop queries, which traverse a single relation, and long relation path queries, which involve chaining multiple relations sequentially.
+
+A central challenge discussed is formulating and answering queries over incomplete KGs, where necessary relationships may be missing. While path queries are defined by starting at an anchor entity and traversing a sequence of relations to find an answer, the incompleteness of the graph makes it impossible to enumerate all possible facts.
+
+To address these challenges, the system explores knowledge graph completion and the difficulties associated with traversing dense, probabilistic graphs. The proposed solution is "predictive queries," which aims to answer path-based queries by implicitly imputing missing information. Instead of explicitly traversing the graph, this approach reformulates the task by predicting which entities serve as the answer to a given query. This shift allows the system to robustly answer path queries over incomplete KGs at test time, generalizing the task of link prediction and enabling the system to predict the correct answer entity.

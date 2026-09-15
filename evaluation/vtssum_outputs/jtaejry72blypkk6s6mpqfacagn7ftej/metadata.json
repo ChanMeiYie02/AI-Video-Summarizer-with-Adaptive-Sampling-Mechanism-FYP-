@@ -1,0 +1,22 @@
+{
+    "id": "jtaejry72blypkk6s6mpqfacagn7ftej",
+    "title": "Plenary Session: Interregional Cooperation on OER",
+    "url": "http://videolectures.net/oercongress2017_khribi_cooperation_oer/",
+    "info": {
+        "author": [
+            "Koutheair Khribi, Arab League Education, Culture and Scientific Organization (ALECSO)"
+        ],
+        "published": "Oct. 12, 2017",
+        "recorded": "September 2017",
+        "category": [
+            "Top->Technology",
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 109,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 977
+}

@@ -1,0 +1,9 @@
+# Final Multimodal Video Summary
+
+The lecture introduces the concept of reasoning within knowledge graphs (KGs) using embeddings, focusing specifically on the task of Knowledge Graph Completion, which involves predicting missing relationships. The core objective is to enable multi-hop and logical reasoning to answer complex queries, such as multi-hop, path, and conjunctive queries, by effectively embedding the knowledge graph and its relations.
+
+The video defines query types, distinguishing between one-hop queries—where an entity is linked to a single relation to find a result—and path queries, which involve chaining multiple relations to establish complex logical relationships. The system aims to answer these queries by performing knowledge graph completion, predicting the missing relations that are necessary for traversal.
+
+While traditional methods rely on explicit graph traversal, the inherent incompleteness and sparsity of knowledge graphs pose a significant challenge, as missing relations can lead to missed facts. Furthermore, standard knowledge graph completion methods can become computationally expensive, potentially leading to exponential complexity when attempting long path queries.
+
+To address these limitations, the proposed solution is "predictive queries." This approach reformulates the problem by framing queries as predictions, allowing the system to implicitly impute or complete the missing knowledge within the graph rather than explicitly calculating and traversing every potential edge. This method generalizes simple link prediction into a multi-step prediction task, enabling the system to handle complex path queries and robustly deal with incomplete or noisy knowledge graphs by predicting the final answer entity directly.

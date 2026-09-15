@@ -1,0 +1,21 @@
+{
+    "id": "6kzziiynlujmf5nipd3eg6x5ujvm7meo",
+    "title": "Slovenian criminal intelligence activity and protection of privacy",
+    "url": "http://videolectures.net/lawandethics2017_zgaga_criminal_intelligence/",
+    "info": {
+        "author": [
+            "Sabina Zgaga, Faculty of Criminal Justice and Security, University of Maribor"
+        ],
+        "published": "July 24, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Data Science",
+            "Top->Social Sciences->Law"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 117,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 3044
+}

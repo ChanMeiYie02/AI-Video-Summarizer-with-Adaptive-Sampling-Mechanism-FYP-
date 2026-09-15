@@ -1,0 +1,20 @@
+{
+    "id": "momeknl7bmhkyeirrwv4axdpiuhc5ejp",
+    "title": "Segmentation-robust Representations, Matching, and Modeling for Sign Language Recognition",
+    "url": "http://videolectures.net/gesturerecognition2011_sarkar_segmentation/",
+    "info": {
+        "author": [
+            "Sudeep Sarkar, Department of Computer Science and Engineering, University of South Florida"
+        ],
+        "published": "Aug. 24, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 249,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1310
+}

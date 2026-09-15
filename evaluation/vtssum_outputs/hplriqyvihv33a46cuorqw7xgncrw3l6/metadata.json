@@ -1,0 +1,22 @@
+{
+    "id": "hplriqyvihv33a46cuorqw7xgncrw3l6",
+    "title": "What is personal in search: the economic value of personal data and user empowerment",
+    "url": "http://videolectures.net/searchcomputing2012_monteleone_data/",
+    "info": {
+        "author": [
+            "Shara Monteleone, Institute for Prospective Technological Studies, Joint Research Centre, European Commission"
+        ],
+        "published": "Nov. 26, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Business",
+            "Top->Social Sciences->Economics",
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 106,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 1914
+}

@@ -1,0 +1,20 @@
+{
+    "id": "p4pthzth4dvpot3ronm7ze3x4epfz653",
+    "title": "Inducing Implicit Relations from Text using Distantly Supervised Deep Nets",
+    "url": "http://videolectures.net/iswc2018_gliozzo_implicit_relations_distantly/",
+    "info": {
+        "author": [
+            "Alfio Massimiliano Gliozzo, IBM Research"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 179,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1172
+}

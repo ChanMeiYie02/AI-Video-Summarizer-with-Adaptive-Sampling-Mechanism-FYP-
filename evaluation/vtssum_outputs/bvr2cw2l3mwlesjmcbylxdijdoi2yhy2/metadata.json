@@ -1,0 +1,21 @@
+{
+    "id": "bvr2cw2l3mwlesjmcbylxdijdoi2yhy2",
+    "title": "Type Ia Supernova Inference: Hierarchical Bayesian Statistical Models in the Optical and Near Infrared",
+    "url": "http://videolectures.net/nipsworkshops2011_mandel_inference/",
+    "info": {
+        "author": [
+            "Kaisey S. Mandel, Harvard-Smithsonian Center for Astrophysics"
+        ],
+        "published": "Jan. 23, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Astronomy->Cosmology",
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 40,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 607
+}

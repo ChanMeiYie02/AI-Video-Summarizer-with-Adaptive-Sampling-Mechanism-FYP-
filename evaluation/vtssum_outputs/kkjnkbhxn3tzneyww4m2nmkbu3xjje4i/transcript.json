@@ -1,0 +1,102 @@
+[
+    {
+        "text": "And this is a Journal with similar value. And.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Well, these are some of my talk. We will start talking about content based image retrieval. Then how we call with this problem from the Pack Nation point of view and particularly as a distance distance based problem and then we will show our proposals to improve previously proposed approaches in the literature.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Well, the problem consists of looking for pictures in large databases when no other information apart from the images themselves are available. The main challenge in incontinence base image retrieval consists of identifying meaningful, meaningful concepts to objective representations of the images, and then we phase what is so-called is semantic gap, because usually the features we are dealing with are not very closely related to the concepts the user usually wants to reach.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "From the database. This makes the problem very, very challenging. So the promise to define what is to be searched for. And this depends on users. Some form, then some form of user interaction is required to make the problem solver, or at least easier. One of the approaches to the so called relevance feedback in which the process is, is an iterative process in which the user is giving judgments to refine the kind of search and to define what is to be searched.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Or this is a typical interface in which some images are retrieved from the database and then the user is able to, in our case to just select which images are relevant and which images are not relevant. In this case the first one is the. The initial query, the initial image and the other ones are. Ordered in terms of proximity according to the current distance or score used, which is also displayed and then the user is just marks what exactly he is interested in. Note that. All of these images are just loosely related to the to the first one, so this is because from the point of view of features. Then for example Sketch Sky plays a important role in this. Hey.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Example. Well, we can see the problem as if we were we were dealing with three different spaces on 100. There is this semantic space where abstract concepts are trying to be represented. This is what we are interested in, and then other concepts. But then we have images, images, raw images. That are represented in another space in which, well, this kind of relation may be or may not be something like this, and emergence regions are we want to turn this problem into an easy problem from the petrol engine point of view, in which some areas easily defined, for example in terms of distances, Euclidean distances, for example, could represent what we are interested in returning from the database so. This kind of transformations is what we would be interested in, but is this to be a very, very difficult problem?",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Well, in our work we just were interested in. Dealing with distances and we were trying to improve or or give proposals overprivileged proposed distance based approaches. So the kind of representations we have been using this work are very easy and general ones based on color. We used color histograms and two other databases and other kind of shape and textual descriptions. For example grammar, granulometry's, governor. Filters and several others, very general ones. And we we are looking at the. The difference is that the interactive part of the algorithm makes a not not giving importance to the particular features we are using. So maybe we are not solving our problems in the best possible way, but we want to assess the different methods of the different proposals we are consid.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Bing. Well run feedback consists of using images that have been privileged judged by the user in the previous iterations. To use this information to refine the kind of scores or the kind of ranking we are in. Interesting in the database. This can be looked at as a maximization problem, in which we want to characterize the probability of relevance. We talk about relevant images and non relevant images in the Declaration with regard to the query or the user desire. We represent this probability using only the sample of previously judged images. That's the only information we are dealing with. No criterion function is explicitly given, and in our approach only yes, no judgments are considered.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So the problem basically basically clicking is that. Assuming that there is. There is a function or a probability of relevance on in the feature space space we are using. The problem is to obtain or generate or struct a convenient way to represent this information.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Well, the basic nearest neighbor approach to relevance feedback image retrieval. Is to use the ratio of the first relevant to UN relevant. Nearest neighbor so. At the end we are measuring distances in our particular feature space. We measured the distance to the first relevant neighbor and the first non relevant neighbor and then use this ratio to decide to sort all images in the database. This transforms into what we are displaying. This image where we are displaying. Positive or relevant. Judged images as + and negative or UN relevant non relevant images US crosses. And then we are showing us white pixels displacing the feature space where the score is maximum. So this represents the relevant region and the dark. Pixels are the UN relevant region, so assuming that we have images distributed into this space then we will rank them according to this. Value we should explain here. This basic approach is surprisingly good compared to other classical approaches to relevance feedback, but they they have. This approach has several problems that we were trying to solve. One of the problems. Is be cause this Rachel doesn't not does not take into account the absolute values of the distances, so we can have quite high regions around here which are far both from positive from negative images. We can see these.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "More clearly in this picture. When we have this display here with which we very, very highly ranked. Well, this is one of the problems that that may be important in some databases for some queries.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Another problem also also reported in the literature is that as we are dealing with maybe quite after genius databases with very unbalanced concepts in terms of higher probability of finding one of our other concepts, we can have a different regions in the feature space which are very, very differently populated. So this means that we have. Like previously judged images in these two types of zones. Decsystem will tend to retrieve much more images from this place. And not so for from this one. And this in some particular query this could be of could be important because some places of the feature space will not be appropriately sample it when retrieving images. Well, these were the two main problems we were trying to solve.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Both. For these, we propose some improvements to the basic needs neighbor approach to image retrieval. The first one is to try to get slightly more smoothed estimates of their property of relevance by including a moderating term. Basically, to take into account the absolute values of the of the distance. In our case, we include a factor, a term we call it moderating term. To wait in. An appropriate way, well, this is not you Ristic anyway, but we tune in this way the relevance score which we are using, which is the one which is showed. The only important thing is the ratio for the ranking, so this one with this term instead of the usual one, which is this one.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "This has the effect of of giving slightly, but enough smooth estimates we can show here. The difference is this would be the. This is the previous figure with the original estimate, the original radio and with them alleviate modified ratio. We have this kind of estimate so in places far both from positive and negative examples. Then we have a lower ranks. For this simple simple example, we have this this effect. Well, we could argue that we could try to tune this this ratio based on more information. Well, we're working on this, but this is the one we.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Who used in the in the work? Apart from this, to tackle the problem of sampling appropriately, the whole positive region, we use the local search strategy to retrieve images. That consists in the following. We instead of of using a unique score, we use a different score for each different positive or relevant image we have. And then we retrieved images in turn from each one of these of these positive images. That means we we retrieve images in terms of the position in each one of these rankings. In this way we sample. Equally, all different positive. Zones in the feature space. Well, this is an easy solution, but. This is what we implemented apart from. D Smith is most.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Estimate. And then we did an extensive experiments with values, databases and with various different groups of descriptors or features, and in particular the ones in the. Report here is we have three different databases of different sizes. And as usual in these kind of works, we these databases are labeled and we're using the labels provided with the databases as an indication of the images are relevant or not relevant to images are relevant to each other if they have the same label. The number of different labels classes is also shown and we split the features into groups. Different kind of features. The first one is always color, either histograms or or descriptions of the color and the other ones are. Shape and textural descriptors. Different ones for different databases. We didn't give importance to this big cause. Our intention is to compare the origonal or basic nearest neighbor method with our proposal and also with our proposal with buzz with the two. Modifications separately. And that's what we.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Yeah, showing Euclidean distances are all always used except for color histograms, where Mr. Misters intersection is considered. The distance given or scores given by the different groups of descriptors are combined linearly in the same way for all methods. We performed 500 different random queries on each database and then we present the averaged position pair iteration. We use 10 iteration relevance feedback initiation. At each iteration, 50 images are judged automatically based. In on the corresponding label, these numbers are quite high with regard to the what is practical, but we use these high numbers to emphasize the difference between the methods. The average precision at a could of value of 50 is shown for each one of the databases.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Well, these are the results for the three databases. And well apart, apart from our method, outperforms the other proposals, but I think it's more interesting the behavior. The separate behavior of the two proposals, 'cause we were quite surprised that, for example, in the. In the first database, which is a small one, these are images taken from the web. And we see that none of the two separates improvements is able to improve the results, but when you combine the two of them, then we have a significant improvement, at least for the last iteration. Another base which is the well known coral database. With our features and we can see that the the smoothing this Musa estimate is not able to improve. But the local search strategy gives a very high improvement, very similar to the one which is obtaining when you combine the two of them. And finally in the database, which is corresponds to photographic album, which is very very bitter genius. Observe the absolute values are much lower. Then in this we have a different kind of behavior. The fact that makes the method works better significantly is precisely the Smith, the improved estimate. So these were the results.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "And. As a conclusion, an unimproved version of the basing his neighbor strategy for relevance feedback. An image retrieval has been proposed. In particular, Unsmooth estimate of the of the probability of relevance based on the neighborhood. As we introduced and combined with a local search strategy to equally sample different zones of the feature space, the method is able to overcome some of the known because they were reported drawbacks of the original approach. And this approach could be further extended by learning, rather opting the smoothness level to local data that we are working on this now. User query notation is also under consideration, and finally the approach can be easily extended to work with soft answers instead of years. No answers that have been considered so far in our work.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "That's all. Thank you very much for this talk. Questions from the audience. Ample of time. Do you consider that the using some previous feature selection or something like that could help to improve this this performance? Well, we haven't considered this, but of course the problem is that you have no previous information. You have to build your your estimates on the fly as you are as you are judging images. If you have previous information and you could. Just prior to do this, have a good selected set of features. Then we of course would be OK, but if you have to do this kind of feature selection on the fly, this is. Ever better you can use an active learning approach, something like that online learning approach for feature selection and could be you can do that I think would be interesting to you can do that, yes, could not be optimal. That may be useful. Difficult to talk about, optimal to hear? Yeah, thank you. Health questions. Turn. So you identified the problem of the differently populated regions in feature space and your smooth estimate helps overcome that, and you're using a linear simple linear combination of the scores. So do you think if a different combination method would help that problem or not? You are talking about the linear combination of the different descriptors or or you are talking about the what I call the combination of the final rankings because. OK, I was talking about the combination of descriptors. Anne. Your question is that and the question is will that help your problem of the different populated regions in the feature space. Well, I I can see how because I mean if when we combine different descriptors. In our case, one descriptive confront color, one other comes from this kind of textural descriptor. That one. And then we combine them in that case with our linear combination without fixed. Anne. Well, yes, but the problem is that we don't have information to do this kind of thing, I mean. It's very difficult to because because you don't know what the query or the desire of the user will be. If the user wants bolts, then color is not important. You have both different colors. If the user wants the blood, then color is important so the queries are interactive or not. Yes. Well practice then this is like a close. Further questions. Well, I would like to take the opportunity to talk right so I'm not so familiar with retrieval kind of task. But when I see somebody who uses nearest neighbors, of course the first thing I think about is can you. What would the problem be solved? Partly if you would allow more neighbors in your. In your measure and in the literature they are. There are proposals to make the estimates more stable. There is a problem to use second neighbors instead of 1st neighbors. You could use several neighbors then, but the problem is that we have a very very very small sample size problem, specially in the first iteration, which are the more important in practice. So it's you have a very unreal, unreliable estimates. You could introduce more neighbors, but. 'cause I had an impression that. Your estimate can move completely away from a region where it has already been estimated well, but maybe this is good. Yeah true, yes yes you might then yeah, it's a very difficult problem because I mean features are quite unconnected from. OK. Well, thanks just let's thank the speaker again.",
+        "start": 551.0,
+        "end": 580.0
+    }
+]

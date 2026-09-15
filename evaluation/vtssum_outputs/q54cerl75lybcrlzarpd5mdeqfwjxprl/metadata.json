@@ -1,0 +1,20 @@
+{
+    "id": "q54cerl75lybcrlzarpd5mdeqfwjxprl",
+    "title": "Graph Colorings and Matchings",
+    "url": "http://videolectures.net/fmf07_potocnik_gcm/",
+    "info": {
+        "presenter": [
+            "Primož Potočnik, Faculty of Mathematics and Physics, University of Ljubljana"
+        ],
+        "published": "Nov. 8, 2007",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Mathematics->Graph Theory"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 506,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 60,
+    "ground_truth_summary_length_chars": 4339
+}

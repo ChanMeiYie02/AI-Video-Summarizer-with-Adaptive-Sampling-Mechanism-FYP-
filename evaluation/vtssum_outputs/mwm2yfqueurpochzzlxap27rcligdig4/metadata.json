@@ -1,0 +1,24 @@
+{
+    "id": "mwm2yfqueurpochzzlxap27rcligdig4",
+    "title": "Optimal compressive imaging for Fourier data",
+    "url": "http://videolectures.net/sahd2014_kutyniok_fourier_data/",
+    "info": {
+        "author": [
+            "Gitta Kutyniok, Institute for Mathematics, TU Berlin"
+        ],
+        "published": "Oct. 29, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computer Science->Digital Signal Processing",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Information Theory",
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 350,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3503
+}

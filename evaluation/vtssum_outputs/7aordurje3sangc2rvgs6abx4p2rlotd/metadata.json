@@ -1,0 +1,23 @@
+{
+    "id": "7aordurje3sangc2rvgs6abx4p2rlotd",
+    "title": "Cluster Projects I: SECTOR and DESTRIERO",
+    "url": "http://videolectures.net/esr2015_mauthner_fiorentino_cluster_projects/",
+    "info": {
+        "author": [
+            "Mario Fiorentino, National Interuniversity Consortium for Informatics (CINI)",
+            "Jana Mauthner, Fraunhofer IAO"
+        ],
+        "published": "Dec. 1, 2015",
+        "recorded": "November 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Information Security",
+            "Top->Technology->Systems and Cybernetics"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 112,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1412
+}

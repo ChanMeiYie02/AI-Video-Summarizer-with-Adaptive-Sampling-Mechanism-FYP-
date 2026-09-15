@@ -1,0 +1,20 @@
+{
+    "id": "ssocbw3za63ywkcsedskky2lem2wogmk",
+    "title": "Informal sentiment analysis in multiple domains for English and Spanish",
+    "url": "http://videolectures.net/is2012_stajner_sentiment_analysis/",
+    "info": {
+        "author": [
+            "Tadej Štajner, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 16, 2012",
+        "recorded": "October 2012",
+        "category": [
+            "Top->Computer Science->Natural Language Processing"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 314,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 1964
+}

@@ -1,0 +1,106 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:06.800 --> 00:00:10.340
+You use Linux every day, whether you know it or not.
+
+00:00:10.340 --> 00:00:16.220
+Over 850,000 Android phones running Linux are activated every single day.
+
+00:00:16.220 --> 00:00:20.540
+Compare that to just 30,000 Windows phones, according to the latest reports.
+
+00:00:20.540 --> 00:00:26.220
+That means 100 Android devices have come online just since you started watching this video.
+
+00:00:26.220 --> 00:00:32.060
+Nearly 700,000 TVs are sold every day, most of which are running Linux.
+
+00:00:32.200 --> 00:00:35.320
+8 out of 10 financial trades are powered by Linux.
+
+00:00:35.340 --> 00:00:38.780
+9 out of 10 of the world's supercomputers run Linux.
+
+00:00:38.820 --> 00:00:43.940
+Google, Twitter, Facebook, and Amazon are all powered by Linux.
+
+00:00:43.940 --> 00:00:47.720
+So, how is Linux developed to achieve all of this?
+
+00:00:47.720 --> 00:00:51.879
+Unlike other operating systems, like Windows or IOS,
+
+00:00:51.880 --> 00:00:57.480
+Linux is built collaboratively across companies, geographies, and markets,
+
+00:00:57.480 --> 00:01:02.080
+resulting in the largest collaborative development project in the history of computing.
+
+00:01:02.080 --> 00:01:10.680
+Just since 2005, about 8,000 developers from almost 800 companies have contributed to the Linux kernel.
+
+00:01:10.680 --> 00:01:18.800
+These contributions have resulted in 15 million lines of code, 1.5 million lines written in just the last couple of years.
+
+00:01:18.800 --> 00:01:23.780
+Consider that Homer's ethic Iliad poem is a mere 15,000 lines of text.
+
+00:01:23.780 --> 00:01:28.120
+The novel War and Peace just 560,000 words.
+
+00:01:28.120 --> 00:01:31.480
+But it's not just about the sheer number of lines of code.
+
+00:01:31.480 --> 00:01:34.920
+It's also about how quickly Linux is developed and released.
+
+00:01:34.920 --> 00:01:39.040
+For example, a major new kernel comes out every 2-3 months.
+
+00:01:39.040 --> 00:01:42.160
+Compare this to years for computing operating systems.
+
+00:01:42.160 --> 00:01:46.360
+This is made possible by a unique collaborative development process.
+
+00:01:46.360 --> 00:01:52.220
+When submitting code to the Linux kernel, developers break changes into individual unit called patches.
+
+00:01:52.220 --> 00:01:57.040
+A patch describes the lines that need to be changed, added or removed from the source code.
+
+00:01:57.040 --> 00:02:04.800
+Each patch can add a new feature, new support for a device, fix a problem, improve performance, or rework things to be more easily understood.
+
+00:02:04.800 --> 00:02:10.540
+Developers post their patches to the relevant mailing lists, where other developers can reply with feedback.
+
+00:02:10.540 --> 00:02:20.480
+When the patch is close to being release-ready, it is accepted by a senior Linux kernel developer or maintainer, who manages one or more of the 100 different sections of the kernel.
+
+00:02:20.480 --> 00:02:25.200
+While this isn't a guarantee that it will go to the mainline, it is certainly a good sign.
+
+00:02:25.200 --> 00:02:28.140
+Here it gets an even more extensive evaluation.
+
+00:02:28.140 --> 00:02:32.500
+When the maintainer finishes their review, he or she will sign off on the patch,
+
+00:02:32.500 --> 00:02:41.700
+and send it on to Linux creator and Linux Foundation Fellow Linux Torvalds, who has the ultimate authority on what is accepted into the next release, and what is not.
+
+00:02:41.700 --> 00:02:45.880
+Nearly 10,000 patches go into almost every new release.
+
+00:02:45.880 --> 00:02:49.431
+About 6 patches are applied to the kernel each hour.
+
+00:02:49.440 --> 00:02:53.240
+Linux's rate of development is simply unmatched.
+
+00:02:53.240 --> 00:03:01.600
+Today, Linux is dominating on mobile devices, in the enterprise, and web infrastructure, data centers, super computing and more.
+
+00:03:01.600 --> 00:03:05.280
+What's next? Because together, we're ready.

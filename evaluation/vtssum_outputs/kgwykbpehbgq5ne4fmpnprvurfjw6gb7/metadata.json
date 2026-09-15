@@ -1,0 +1,20 @@
+{
+    "id": "kgwykbpehbgq5ne4fmpnprvurfjw6gb7",
+    "title": "(V3) Configuration",
+    "url": "http://videolectures.net/fmf08_boben_conf/",
+    "info": {
+        "presenter": [
+            "Marko Boben, Inštitut za matematiko, fiziko in mehaniko (IMFM)"
+        ],
+        "published": "Oct. 30, 2008",
+        "recorded": "March 2008",
+        "category": [
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 607,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 2678
+}

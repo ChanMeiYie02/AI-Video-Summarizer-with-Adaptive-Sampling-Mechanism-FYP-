@@ -1,0 +1,21 @@
+{
+    "id": "ev62o6lsoshtufgtl6slututm563rfrn",
+    "title": "Visualizing Lecture Capture Usage",
+    "url": "http://videolectures.net/wave2013_brooks_capture/",
+    "info": {
+        "author": [
+            "Christopher Brooks, Department of Computer Science, University of Saskatchewan"
+        ],
+        "published": "April 26, 2013",
+        "recorded": "April 2013",
+        "category": [
+            "Top->Computer Science",
+            "Top->Social Sciences->Education"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 189,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1191
+}

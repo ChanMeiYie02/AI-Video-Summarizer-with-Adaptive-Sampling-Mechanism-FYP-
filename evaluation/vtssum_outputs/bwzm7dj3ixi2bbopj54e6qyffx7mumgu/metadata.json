@@ -1,0 +1,21 @@
+{
+    "id": "bwzm7dj3ixi2bbopj54e6qyffx7mumgu",
+    "title": "Predictive Modelling in the Wild: Success Factors in Data Mining Competitions and Real-World Applications",
+    "url": "http://videolectures.net/kdd09_rosset_perlich_pmw/",
+    "info": {
+        "author": [
+            "Saharon Rosset, Tel Aviv University",
+            "Claudia Perlich, Dstillery"
+        ],
+        "published": "Sept. 14, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Data Modeling"
+        ]
+    },
+    "num_segments": 53,
+    "num_sentences": 738,
+    "num_clips_with_summary": 36,
+    "num_gt_summary_sentences": 118,
+    "ground_truth_summary_length_chars": 14664
+}

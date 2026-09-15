@@ -1,0 +1,60 @@
+# Python & Virtual Environments
+vts/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Heavy Media, Frames & Extracted Data
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wav
+*.mp3
+data/frames/
+src/data/
+outputs/
+outputs2/
+outputs - Copy/
+evaluation/vtssum_outputs/
+
+# Archival & Temporary Files
+archive/
+scratch/
+*.exe
+*.tar
+*.zip
+*.tgz
+~$*.docx
+*.log
+
+# IDE & OS Specific
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Streamlit Local Cache
+.streamlit/secrets.toml

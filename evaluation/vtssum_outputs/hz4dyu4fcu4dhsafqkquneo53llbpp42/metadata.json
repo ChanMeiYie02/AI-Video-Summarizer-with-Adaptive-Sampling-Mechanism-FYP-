@@ -1,0 +1,20 @@
+{
+    "id": "hz4dyu4fcu4dhsafqkquneo53llbpp42",
+    "title": "Modeling Celtic Violin Expressive Performance",
+    "url": "http://videolectures.net/icml08_ramirez_mcve/",
+    "info": {
+        "author": [
+            "Rafael Ramirez, Pompeu Fabra University"
+        ],
+        "published": "July 28, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 212,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1999
+}

@@ -1,0 +1,20 @@
+{
+    "id": "avsflcg6msxt7wj5x44rblauvflkml5k",
+    "title": "GADGET SVM: a Gossip-bAseD sub-GradiEnT SVM solver",
+    "url": "http://videolectures.net/icml09_hensel_gbg/",
+    "info": {
+        "author": [
+            "Chase Hensel, Department of Computer Science, Columbia University"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 165,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 1064
+}

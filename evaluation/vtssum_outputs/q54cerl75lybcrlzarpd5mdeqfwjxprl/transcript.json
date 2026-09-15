@@ -1,0 +1,192 @@
+[
+    {
+        "text": "OK, so let's continue with our. Discussion about graphs. This is still rather basic. Topic. Today we will going to talk about graph colorings. Most of you already familiar with that. And then we'll say a couple of words about matchings. There are two kinds of colorings of graphs. One in one kind of coloring, so we color vertices of the graphs and the other kind of coloring sweet color edges.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "The graphs, so let's begin with vertex colorings. Suppose that we have a graph G with vertex set V and add set East. And let's have a finite set of colors C. So elements of C will be colors. Usually colors will be just numbers from one up to K, say or something. But it could also be like red, green, yellow, etc. A vertex coloring or bottom on your torch in Slovenian. Is simply a function which Maps from the vertex sets to the set of colors. That's easy. Now the coloring is called proper. If two adjacent vertices receive different colors. There are of course proper and non proper colors. If you want a proper coloring. Colorings if you want a proper coloring. You have to be careful not to color two adjacent vertices with the same color, and we say that graph G is K vertex colorable. If there exists a proper vertex coloring with K colors. Now, of course, if GSK colorable then it's also L colorable for any L which is larger than K, right? 'cause nobody insisted on using all the colors. Any K colorings also nail coloring for being greater than K. So we can define the chromatic number of a graph or chromatic Nashville and Slovenian which is. Simply the minimum number of colors did we need to color the graph properly?",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Here we have two examples. The left hand side of this picture. We have the graph of the cube. Or as we can see, we can color its vertices with two colors red and blue in this case. This coloring is proper. Are we cannot color the Peterson graph on the right hand side with two colors as we will shortly prove, but we can color it properly with three colors. So the chromatic number of the cube is 2 and the chromatic number of the Petersen graph is 3.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Oh couple of more examples. The complete graph on North vertices will have the chromatic number equal to N. We need N colors to color the complete graph on North vertices properly. That's more or less obvious. Every every vertex has to have its own color. As for the cycles, if we have a cycle of even length then we need two colors to color it properly and two colors suffice because we can just color every second vertex, say blue an every second thread, and we have an even number of vertice is we can do that. Consistently. On the other hand, we have if we have a cycle on an odd number of vertices, then two colors will not suffice. That's also rather easy to see, but three colors will do, right? There's also an easier observation if we have a sub graph of a graph. Then the chromatic number of the sub graph cannot exceed the chromatic number of the. Larger graph. Death. Trivially. Proven. And we have this immediate corollary. Translated so of the last two facts. If G contains a cycle of length, then the chromatic number is at least three. So any? Graph that contains a cycle of fault length is a sub graph.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Needs at least three colors. Now let's discuss graphs with chromatic numbers. One in two. Well clearly the only graph that has chromatic number one is the so-called Angeles graph, right? The complement of the complete graph. 'cause as soon as you have an Ant you will have to color each and its endpoints, which distinct colors. So you will need at least two colors for that. No, an easy observation. If the chromatic number is at most 2, then the graph is bipartite and vice versa. If we have a bipartite graph, then we can color it with two colors an. I won't really give you the proof, but just think of. Color classes as bipartition sets. If you have a bipartite graph color. Vertices in one by partition set C. Random varies in the order by producing sent blue, and you'll obtain a proper coloring with two colors and vice versa. If you have a proper coloring which two. Colors then. I just put all red berries in one side in. Blueberries on the other side and you will get a bipartition. OK, so we've.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Already seen on the previous slide. Right crawl.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Three that. Agraffe with chromatic number. At most you cannot have cycles of odd length. Well, it's a little bit surprising. Perhaps that the converse holds as well. So if G contains no cycles of AUGMENT, then chromatic number is at most 2. Let's see if we can prove that.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Without loss of generality, we can assume that the graph is connected, 'cause otherwise we'll just prove it for each connected component and. I put together all the components to obtain the result. So let's assume that G is a. Connected graph and it contains no cycles of odd length. Let's choose a vertex. Any vertex V. Ann for any other vertex U, let's color it blue. If the distance from V to you is even, and let's color it dreads if the distance. To this origin, V is op. Um? Now, if this is not a proper coloring, maybe I should? Use a pen. Drawing sketch. So we have this vertex V here, and suppose that this is not a proper coloring. That means that there are two vertices somewhere. Say X&Y. Um? Which are adjacent. And are colored with the same color. Say. Let's say that they're both red. Which color do we have? Yeah red. Well, these are both rant. That means that the distance from X to V is odd as well as the distance from Y2V. So we have. A shortest path from X to V and a shortest path from Y2V. I. And they're both of odd length. Do you have a sketch? Next slides. No, I don't. Let's call this path BX and this path PY. Now if I consider. The path. Oh how. PX and then edge XY and then the inverse of the path PY that would be. This walk here. I will obtain a walk a closed walk 'cause it starts and ends in V off. Odd length, right becausw the length of PX&PY have the same paroki they're both odd or they might as well be both, even if these two colors would be both blue, so the sum of the length will always be even. Plus we have an additional edge, so we obtain a walk of odd length. Now all that we need to. Do to complete this proof is show that if we have a closed walk of length then we also have a closed cycle cycle of odd length because you know these two paths may intersect, like here. So we cannot really claim that this is a cycle of log length, but it is a closed walk of ugliness. And I'll ask. That EA to show you how to prove this next week. During. Exercise session. And then of course we obtain a contradiction.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Now if we put all these results together, we get the following well known characterization of bipartite graphs. If G is a graph, then the following statements are equivalent. Oh, geez, Bieber type it's chromatic number is at most two. Angie contains no cycles of. Odd length. These are three equivalent definitions of a bipartite graph if you wish.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Oh OK, let me just define what a click is. If we have a set of vertices. Then we call the set of vertices a click if the induced sub graph on this set of vertices is complete, so a click is a set of vertices where any two vertices are adjacent. Here's 2 examples of the clicks. Any triangle in a graph is a click, and also any edge in fact is a click, right? Well. Any set of adjacent vertices is a clique. Here we also have an example of a four clique clique of size 4. Of course, any subset of a clique is.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "The clique itself. A maximal clique would be. A click that is not contained in any. Otter Creek so if we go back to the.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Previous examples. Um? These two clicks are infects maximally. Add any other vertex. We lose the proper key of being a clique. Um? But on the other hand, if we take these two vertices, say these two vertices form a clique but not a maximal clique, 'cause this click is containing a larger click.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Anne. We should distinguish this notion from a notion of the largest click, largest click. Is the click with the largest number of vertices among all clicks. Of course, any largest clique will also be a maximal clique, but not the other way around. You might have maximal cliques. There are distinct and some of them may be larger than the other. Um? So not all maximal cliques or necessarily. My.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Actually we have an example here. If we if we have a look at these two vertices, these two vertices form maximal clique right? This click is not contained in any larger click, but it's not the largest clique because this click is has more various.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Oh let's. Do you know the size of the largest click in a graph G biomega of G? Oh Anne now. Why did I define a clique? Well, because of this. Oh, nice result here. More obvious result since the chromatic number of the complete graph is N. And since a click is in fact sub graph which is sort of isomorphic complete graph, it follows that the chromatic number of any graph is at least. The size of the largest peak cause we need numbers. If this is N we need numbers to color the vertices of the click. So. So that's a lower bound for the. Chromatic number chromatic number is always larger or equal to the size of the largest clique, So what would be? The upper bound. Can we? Have you know given a graph? Is there an easy way to? Say at least approximately what its chromatic number.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Be. And here is a very famous result by Brooks. Which says that the chromatic number of any graph in sum is somewhere between the size of the largest clique. And. The maximum valency of the graph. The maximum valence of the graph plus one. Remember this capital Delta of G. That's violence. The largest values that we have in a graph. Now Moreover, well, actually this part is very easy, but Moreover, and that's not so. Trivial, unless the graph is a complete graph or a cycle of odd length. These are exceptions. The chromatic number is actually bounded above by 1 less than here, so bye. The. Maximum violence. We've already proved this first part here, right? So we're only concerned with the upper bound.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "OK, let's try to prove this result. Oh again, without loss of generality, we can assume that the graph is connected 'cause you know coloring connected components is. Once we color the connected components, we also obtain a coloring of the complete graph of the food graph. Oh, and as I said, we already know that. The first part of the inequality holds. So what we need to show is we first need to show that the chromatic number is indeed. Bounded above by. The maximal by Delta plus one that would be the first step and then show that in the case when the graph is not complete or out cycle, we can actually improve this bound by 1. Proving part one is surprisingly easy. It's very easy to find. A proper coloring with Delta plus one colors. So in the algorithm is here, well, let's. Name the colors. The Delta plus one colors simply by numbers from one to Delta plus one. Let's order the vertices of the graph in some order linear order. And color the first vertex with color 1 first vertex colored with one.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "We have an example here. Yeah, we do OK, so here's a graph. Here are the number. Here are the colors 123 and four and I ordered my vertis is in some order. In I assigned the first color to the first vertex. So what do I do next?",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Oh suppose that we've already colored some vertices. Or we go to the next vertex next in that line. And we choose the smallest color. Remember, the colors are actually. Numbers. Choose the smallest here that it does not appear among its neighbors yet, so the smallest possible that step and color it with that color. The vertex with that color. And then repeat this procedure until all the vertices.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Vertices are colored OK. I'll demonstrate this example on this drawing. So as I said, I colored the first vertex with the first color, which is blue on this slide. Then I moved to the second vertex vertex 2. I cannot color it with Blue becausw one of its neighbors is already colored with blue, but I can color with red, which is the next color in the line.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So I colored with dread. Similarly for three vertex three, well, I can color with blue, right? 'cause none of its neighbors are.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Colored blue yet, so the color with blue. I moved to four. I can't color with blue 'cause you know, three is already colored blue, so I color red.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Now I go to vertex 55 can be color.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Blue, so let's color it blue. Now 6. 6 cannot be colored with Blue Cross. Five is colored with blue cannot be covered with red cause. One of its neighbors is red already, so we choose yellow.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Which is the third color in the line? And similarly for the vertex #7. Or we can't use blue and red, so we will use. Yellow",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Oh why is this? Not a very good example 'cause we didn't really need four colors, right? Three sufficed. Or but you know in principle. Well, since the maximum balance is 3. Oh, it's 4. Maximum balance is 4. Oh Alan, you deleted the wrong edge from this example. Anyway, I mean it's quite obvious that this procedure will give you. In the worst case, maximum violence plus one color.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "OK, that proves the first part. Now in the rest of the proof, we may assume that the graph is not a complete graph or a cycle of odd length. And we have to show that in this case the coloring you know the Delta plus one coloring can be. Phil around little bit changed a little bit so that we that one of the colors disappears. We can get rid of one of the colors. That's what we need to show, and that's the idea of the proof. We colored the graph as I explained earlier, with Delta plus one colors, but it could happen that that procedure before actually gave coloring with less than Delta plus one colors as it happened. In fact, in this, in this example, then we stop right. We're done in this case, but let's say that we indeed needed Delta plus one colors to do that. And. I want to get rid of the last color color Delta plus one and let's call this color green, right? It's easier to talk about green colors color than Delta plus one color. Um? So I want to get rid off the green color. And let's as always denote the set of green vertices that we have in the graph. OK, so I want to change this coloring a little bit so that this S becomes an empty set in the end. Or OK, so suppose that we have a vertex, a green vertex V such that. One of the non green colors does not appear among its neighbors, so let's take a green vertex. Let's have a look at their neighbor at its neighbors. And if there's no. If there is a color. Not green, which does not appear. Among its neighbors. Then we can simply color this V. That's color OK and it will. The coloring will remain proper. And let's apply this procedure throughout the graph. OK, so let's get rid of these nonessential green colors. We call this procedure killing an essential greens, right. We kill all greens that can be cured simply. Like here, for example, there's a. There is a situation. We have four colors here, blue, red, yellow and green, and we have a green vertex such that one of the non green colors does not appear among its neighbors, namely, the yellow does not appear among its neighbors. Well, simply change this green to yellow and the coloring will remain proper. Now let's think of the coloring that we get after killing all unessential greens. We obtain. A Delta plus one coloring of proper Delta plus one coloring. Now think of this in which each green vertex. As well as Delta, it has to each in green green vertex has to have the maximum violence. Why well? Because if the violence is smaller then surely. There will be at least one color among among colors from one to Delta, which is not used. 'cause simply we don't have enough neighbors to use all the colors. So everything green vertex has to have the maximum valence Delta. And also know two neighbors of VR of the same color. It cause if two of its neighbors would be of the same color. Then again one color would be missing. There wouldn't be enough neighbors to use up all the colors 'cause we have Delta non green colors. So that's the property of the coloring that we get after killing unessential greens.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Now the second procedure, and this is really a nice. Trick which is used often in problems like this. That's why that's why I wanted to present this proof to you. The second procedure allows us to push the green color. From any green vertex to any other vertex along a path, and let me describe this. Car. Procedure to you? Well, first, I mean, let's kill all unessential greens again. Um? Or after killing an essential greens. Of course it might happen that are there aren't any green colors anymore. Then we can stop right? Because we already obtained Delta coloring. So. Or it might happen that. The only green color that we have. Is already in that vertex X2 which we want to push the green color and then we're happy as well so. In this case, we stop the procedure. Otherwise, let you so we have a path P. From V, which is a green vertex 2X which is either green or any other color. And we have a path here. Let's let's call the first vertex on this this path. You since we killed unessential greens. Uh. No green neighbor of you this you can have several green neighbors. One of them is surely V, but it might have other green neighbors but no green neighbor of few. Or can be of the same color? Sorry, no neighbor of any green neighbor. If you can be of the same color as you write, it cannot happen that say this green neighbor of you has another neighbor which is also blue. Why? Because we killed on all unessential greens right in after killing on all unessential greens. We know that no two neighbors of the green green vertex can be of the same color. So if we look at these green neighbors of you, the only neighbor of these green neighbors which is blue is you. That's what we know. But what can we do then? Well, we can change the color of you into green and change all green neighbors. The colorful green neighbors of you in 2 blue. The color of you right? And that will keep the property of properness right the coloring that we obtained will still be proper. Y well, I mean we swap blue and green locally, so there will be no problems that you. But can there appear a problem at one of these neighbors? Well, no, becausw, blue does not appear anywhere else here. So coloring if we color this vertex blue everything will be OK. As soon as we color this green, of course. OK, after doing this.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "We get something like this, right? So we change the color of you into blue and the color of all green neighbors of you into. Whatever was the color of you before. And now we just yes. Yeah, but we don't care right now. At this point, well, we do actually 'cause we kill unessential greens again so. Just repeat the procedure, but instead of taking the vertex V and the path from V2 X, we sort of shorten the path we start with you and. Proceeds to. 2X so we go to step one, which is first killing an essential greens an. Doing Step 2. And what will we get at the end? Well, in the end you see, this green color is being pushed from V2 U and then it will be pushed from U to that yellow neighbor of you on the path and so on. At the end this green color will be pushed all the way to X. What will happen with the rest of the colors along this path? Well, if you think of it, it will be sort of shifted cyclically. You see this. Color blue that we have at V was at you at the first step of this procedure, so this blue that used to be it U. What's shifted to V in the next step? This yellow will be shifted to U and green will be pushed. And so on. So what will happen in the end? Well, whatever was the color color pattern along these P. This pattern will be shifted. One step towards V and the color of V which used to be green will be moved to X. The region of colors or somehow shifted along this path. Cyclically. Anne. What else did we change? Well, we did change colors of some of the neighbors of the vertices along this path, but only those that were green OK, we only change the color of those. Vertis is. Adjacent to the path that were green. So the change that we got here was only we got rid of some green colors. And we change the colors along the path and nothing else. Yes. Before disappears, right? If you have a non essential of course. Yeah it might happen that this color is unessential. It can be cute. Yeah, and that's a good thing that can happen. Or you don't increase the number of greens? Yeah, at least, yeah. Actually, you do decrease the number of greens unless. Well, let's. Let's keep that it's not really important, as long as you don't increase the net.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Programs. Now let's choose a vertex X. Well, let's choose this vertex X to be the vertex of smallest violence in the graph, right? I mean there are several vertices in the graph and they have. They might have all the same valence, or there might be some vertices at larger or smaller violence, and we choose one with the smallest finance. And then for each green vertex. Oh, say V, let's choose the shortest path from V to that X and let's push the green color from V to this particular X. Now what will happen? I mean, the only vertex with color dream in the end will be X. Because we pushed all other greens into this cool guy X. Now, if the valence, So what do we get in the end? We get a coloring where? Only the vertex X is green. Now, if the variance of this particular X is not maximal. If it's not Delta. If it's strictly smaller than Delta. Then these nonessential green color can be killed, right? Remember, I mean whenever we have a green vertex which is not of maximal violence, we can kill its green color. We can change its green color into something that does not appear among its neighbors. And we're done right? 'cause then we killed all the green colors. So what if falls from this is that we may assume that the graph is regular, that. The minimal violence in the graph is actually equal to the maximal values of the graph. OK, so from now on we can assume that the graph is regular. And this is actually. This was like the main trick in the proof. Now the rest of the proof splits into two cases. One cases when the graph G is 3 connected, and this is the hard case an. Then there's also a case where G is not three connected an. That's a more technical case, but easy. And. We'll leave that for you to prove. I mean the second part, so let's assume that the graph is 3 vertex connecting so that there are no vertex cuts of size.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "2. Let's say Rockies 3 connected. Since we assume that the graph is not complete, there must be 2 vertices in this graph which are not adjacent. Say X&Y. X&Y and let's push. Uh. All green colors to this X so. We can assume that this poor guy X here is the only green vertex in the graph. Also, in particular, why is not green? Or now remember why has to be a maximal valence. The graph is regular. So since one of the colors does not appear since the green color does not appear in the neighborhood of Y an since Y is not green, there's only Delta minus one colors available. For coloring the neighbors of Y, that means that two of them have to be of the same color. We have less colors than neighbors, so two of them have to be of the same color, so U&V. Or now what?",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Now consider the graph where the graph G prime obtained from G by removal of you envy. So let's consider the graph where these two words actually do not appear. Now, since GS3 connected, that's where 3 connected is comes in. G prime, so the graph obtained by removing U&V is still connected. Right, that's the definition of free connectedness by removing two vertices we do not lose connectedness. So we can find a path from X to Y. In this graph, Ann, let's say that this is this path. This path does not go through U&V. And let's assume that this is the shortest path from X to Y. An let's push the green color that used to be at X to Y along this path. Right, let's do this. Let's apply this procedure of pushing again. Ex used to be green if you remember. Anne, why you?",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Used to be blue right axis to be green, whi used to be blue, So what will the pushing do? Well it will rotate colors along this path so this vertex will become blue. This vertex will become yellow and this green will be pushed to Y. In it may have changed some other green colors in the graph, but remember we assume that the only green vertex is X, so that's the only thing that happened here, right? The only thing that changed while pushing this green was colors of vertices on this path.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Oh but what happened now? Well, we obtain the vertex YA green vertex, which has two neighbors of the same color. Meaning we can kill this green right whenever we have a vertex such that. Two of its neighbors are colored the same. We can kill the green color. This vertex in particular, we can color it yellow, right? Because yellow does not appear among the neighbors of war.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "And we're done. Right 'cause the only vertex of green color was why? We got rid of all greens. And. The theorem is proved in this.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "What remains to consider is when the graph is not three connected. Or Anne. We have like 2 cases here. One is that we have a vertex cut of size 1. So we have a cut vertex or we have a vertex cut of size 2. And the rest of the proof is by induction on the number of vertices you have. I mean it's tech.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "In code, but not really too difficult. The main idea is you know if we have a vertex cut. The graph looks like this by removing removing V you get several connected components. By induction, you can color each of these components with Delta colors and then, if necessary, necessary by renaming some of the colors. In some components we can actually achieve that the color vertex V is colored by the same color in each of these components, and then we just glue the colorings together.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "An similar trick works when we have. A2 cuts cut off sites too. Then the graph looks like this. Well, there might be some other components sticking out this XY. But again, you know by. Careful application of induction. We can. See that colorings of these components. Can be changed slightly to give a coloring of. Food graph and that's going to be one of your home works. Um? Why does it say homework two should be one? I think that somebody hasn't been using the latest version of the slides. One of the three authors of the slides. Anyway, this is homework one finish the proof of the theorem. In the case where you have a cut of size 2 and I guess that ends. These are lecture. Will. Reconvene in 15 minutes.",
+        "start": 1073.0,
+        "end": 1102.0
+    }
+]

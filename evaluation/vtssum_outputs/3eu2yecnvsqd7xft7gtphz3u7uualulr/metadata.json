@@ -1,0 +1,20 @@
+{
+    "id": "3eu2yecnvsqd7xft7gtphz3u7uualulr",
+    "title": "Textual Entailment as Syntactic Graph Distance: a rule based and a SVM based approach",
+    "url": "http://videolectures.net/pcw05_zanzotto_rbsba/",
+    "info": {
+        "author": [
+            "Fabio Massimo Zanzotto, University of Milano - Bicocca"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "April 2005",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 269,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 1812
+}

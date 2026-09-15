@@ -1,0 +1,23 @@
+{
+    "id": "i6kphh33ws7hy4wrko4laxpzcd3gvrn2",
+    "title": "Structured Low-Rank Approximation as Optimization on a Grassmann Manifold",
+    "url": "http://videolectures.net/roks2013_usevich_grassmann_manifold/",
+    "info": {
+        "author": [
+            "Konstantin Usevich, Department ELEC, Vrije Universiteit Brussel"
+        ],
+        "published": "Aug. 26, 2013",
+        "recorded": "July 2013",
+        "category": [
+            "Top->Computer Science->Optimization Methods",
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines",
+            "Top->Computer Science->Compressed Sensing",
+            "Top->Computer Science->Machine Learning->Regularization"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 241,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3514
+}

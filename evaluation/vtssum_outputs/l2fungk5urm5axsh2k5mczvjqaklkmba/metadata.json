@@ -1,0 +1,24 @@
+{
+    "id": "l2fungk5urm5axsh2k5mczvjqaklkmba",
+    "title": "Depth Extraction from Video Using Non-parametric Sampling",
+    "url": "http://videolectures.net/eccv2012_karsch_sampling/",
+    "info": {
+        "author": [
+            "Kevin Karsch, University of Illinois at Urbana-Champaign"
+        ],
+        "chairman": [
+            "Aude Oliva, Computer Science and Artificial Intelligence Laboratory (CSAIL), Massachusetts Institute of Technology, MIT",
+            "Silvio Savarese, Department of Electrical Engineering and Computer Science, University of Michigan"
+        ],
+        "published": "Nov. 12, 2012",
+        "recorded": "October 2012",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 42,
+    "num_sentences": 124,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1229
+}

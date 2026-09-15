@@ -1,0 +1,24 @@
+{
+    "id": "immuh7qydbznhavrq56wgld44qmj3cpy",
+    "title": "A Look at Some Dynamics of Social Networking Following the Jobs Ecosystem",
+    "url": "http://videolectures.net/icwsm2012_perisic_networking/",
+    "info": {
+        "author": [
+            "Igor Perisic, LinkedIn Corporation"
+        ],
+        "published": "July 6, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Computer Science->Social Media",
+            "Top->Computers->Social Networking",
+            "Top->Computer Science->Databases",
+            "Top->Social Sciences->Society->Social Networks",
+            "Top->Social Sciences->Society->Social Issues"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 765,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 2911
+}

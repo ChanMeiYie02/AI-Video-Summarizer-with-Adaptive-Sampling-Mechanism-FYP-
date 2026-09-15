@@ -1,0 +1,107 @@
+[0.0s - 29.0s]
+So this is joint work with Simon Colton and Theresa, Ya know?
+
+[29.0s - 58.0s]
+The flow of flour framework. I'm paraphrasing the title of the paper 'cause the full title mentions that we're building a framework for. Automated process construction. And we cover aspects of constructing, from scratch, optimizing processes, and altering them to get into work, and flower is short for flow chart writer, so we're kind of innovating trying to get the software to innovate at the process level.
+
+[58.0s - 87.0s]
+So what is flower? It's a Java based platform for the development of creative systems. In IT systems are represented as flowcharts and in the flowcharts individual nodes are task specific processes to do something. And we have data transfer between nodes. We have the notion of output variables from one node and input parameters into another node.
+
+[87.0s - 116.0s]
+And this is what when we submitted the paper, this was our desktop version and you can see it as a flow chart there. This is a poetry generation system and the individual nodes doing particular tasks, lots of them, and on the doesn't look very good. Actually sorry about that. On the left is the how you set the parameters and how you set up the relations between these nodes and it allows you to run them run.
+
+[116.0s - 145.0s]
+I'm So what it's made up of this flow chart creating tool and editing tool and we've got a big library of mainly NLP nodes. At the moment and then this QR code for running these flowcharts and we've got a framework where people can write their own nodes and put them into the library. And we've been working on tools to do the automation to kind of automatically create flowcharts and to optimize them.
+
+[145.0s - 174.0s]
+So yeah, the motivations for this project are primarily we wanted a a platform where we could start. Experimenting with software, developing its own process is handing over that aspect of the responsibility. And we're more interested in kind of discovery rather than setting up a process to solve a particular task, we kind of want to create. Get the software to create some systems that surprise us that you know just it comes up with the process and it produces an artifact that we weren't looking for that. But it's valuable to us. Secondary motivation is it's created us. We've now got a nice development environment and we wanted we have a nightmare sharing code in our group. So we're going to start putting everything into into this flower framework so that we can start using each of these tools. And we want to get hold of your tools as well. You know we want to kind of put them in there, and hopefully we can start collaborating and cooperating on projects.
+
+[174.0s - 203.0s]
+Read the paper for the background. There's background automating at the system in innovating at the system level hasn't been done massively has been done in a few areas. Mike's done a bit evolutionary. It covers it. I LP it's around normally problem related rather than exploratory. I'm we didn't set out to do another flow charting system because we've flow. Charting systems are brilliant. We just happen to think that it's a good paradigm and we're using. That's just and we could have used existing systems, but we didn't because we want to get control over everything we're doing. We were and they kind of. What we come up with is quite simple, so we you know we built it from scratch and we've got control.
+
+[203.0s - 232.0s]
+And we can do what we want with it, so I'll talk to you about what we've got. We've created shows some of the systems have done so by the library, and I'll talk about the automation an.
+
+[232.0s - 261.0s]
+Yeah, so here we go. I can if I'm lucky I can show you what we've got. So I mentioned Java before and you probably want to play deal, so we've we've now. Just this is hot off the server. This is the web interface to this. This is so this is running on our server back in Goldsmiths. I'm going to open this up to you all soon so you can start playing around and you can build your own systems and it's the interface allows you to do things like drag things around and create flowcharts. All the standard gooey stuff you can add nodes, so a little library of nodes that we have. You can add them in mainly NLP text. And you can set the parameters for nodes. So here you go. This is a dictionary node and you can say what kind of frequency of words you want and how many you want. And you can see when it runs it's produced 5700, twenty 72 words. And you can combine them together so you can create links between nodes where you define the output on this side and you map it to the input. So I'll say more about that in a second. On this and you can do things like switching around all the kind of standard GUI stuff. This particular chart creates poetry. So it takes a a dictionary. It gets a bunch of words. It finds the objectives, it finds a miserable, objective, negative objective and it sends up to Twitter and Twitter comes back with a load of tweets and then we kind of sanitizer tweets to get rid of swear words. Things like that. Map the tweets together for footprint, which is kind of syllable counts and riming and combine it all into a given template to produce a poem so we can run this hopefully. This is all taking place on a. Goldsmith Server and it should give us a poem if we're lucky. There you go. The most miserable poem it came up with. On being confusing. Good for my talk, isn't it? So let's just produce tea poem that's so selected. The most miserable poem, and we can change the sentiment, and we can say, well, rather than rather than giving us a really negative theme for our poem, we can have a really positive theme for our poem. So it's never really, and if we run that again. Should give us a really positive point. Hopefully on being very clear and talking well. Hopefully. So what's it come up with? So let's get this out. The way on being innovative, fantastic have receded this or something. So great, so yeah, it creates a poem so. The system allows us to create system systems like this. And underlying this. Is a.
+
+[261.0s - 290.0s]
+Is a script and so all those nodes are Java classes and they extend this process node class and they each come with a process output class which is a box of output that the the process will create and. What a flow chart is is just a list of these nodes, one after the other, and you say how the output of one which bit of the output of 1 you're interested in. By giving that kind of address and say I want the particular part and that Maps into the next one. Next node based on how that's parameterized and the system will workout based on how data is transferred.
+
+[290.0s - 319.0s]
+What the run order is.
+
+[319.0s - 348.0s]
+But um, So what? We so as I said, the main motivation is to kind of study this potential for or innovating at the process level. And we've tried to come up with something where we hit the right level of complexity because. We want the system to be flexible enough to kind of give us everything that we're interested in. All the systems are interested in, but not too complicated.
+
+[348.0s - 377.0s]
+So you have this kind of idea of electronics kits for kids. And there's been work done on kind of automating making systems out of these little nodes, and that's like one of the scale you want to kind of find. This way you can. There's enough levers, but not too many. I mean the other end of this.
+
+[377.0s - 406.0s]
+Oil is this where you can go to Maplin and you can get whatever you want. I like this by the way Google have put in a little man with the football for the Street View. There's just this month and you can go here and that's your space of of systems that you can create so it's finding the sweet spot so it's like the Apple versus Android you want to give up control so that you don't overwhelm, but there's plenty.
+
+[406.0s - 435.0s]
+You are plenty to work with, but dispersed the search space is still gigantic. You know there's all these different nodes, all the ways you can parameterise them and the values for the parameters. All the ways you can pick from the output the ways you can combine one node with another. There's all those choices. Slightly reduced by the fact that you can kind of put restrictions on the parameters and you can certain parameters match into certain inputs. Set an output so you can type things, but it's.
+
+[435.0s - 464.0s]
+Gigantic. So we we we didn't go very far with our automation. We start. We dipped our toe. We've looked at a few different ways. And we wanted to really do more before we got to the store, but we spent a lot of time working on the web version, but we looked at. Creating a flow chart and getting the system to optimize it for you. So changing parameters and.
+
+[464.0s - 493.0s]
+Because this takes a lot of time, so Sammy did one experiment where he wanted a system to do tongue twisters, and you can kind of feed it a regex to come up with. With the way the tongue twisters that are within a bulk of texts. So we were looking through 100,000 Guardian articles. Does anybody understand this regex? I understand RDX from maximum 5 minutes at a time, but that comes up with kind of. Tongue twisters that are in those 100,000 texts, but there's others in there, so we want to get the system to kind of come up with these regexes for us, and this is the kind of thing we want to do. We want to be able to say. Just find us regexes. And because we don't want to Wade through it. So we.
+
+[493.0s - 522.0s]
+This little system that Simon did and it will generate. Regexes. If I switch to that. And then there's all these parameters so you can pick the number of words you want your tongue twister, and we want the system just to say go through them all and say I found tongue twisters for you, so we run this. We got the system to automate that for us and it.
+
+[522.0s - 551.0s]
+It went through and it said well, if I if I set my parameters in these five different ways then. They give us a certain yield of tongue twisters, and we can. We can automate that so we don't have to spend all this time coming up with the right parameterisation. And here's some examples of tongue twisters that it did.
+
+[551.0s - 580.0s]
+And also when we did the work that supports the wind project coming up with the kind of concept words that start or whatev and the different relations, I don't know if you remember, so give me an animal that can do this and then invert it and you get an animal that couldn't do this. Coming up with those kind of relations and those keywords takes a lot of time and we didn't find everything everything so we autumn.
+
+[580.0s - 609.0s]
+I did that and we got the system so well, you know, give us check everything and tell us what we missed and it was successful. The details in the paper it told us that those relations that we should have considered, they give us a yield of what ifs. And also we looked at kind of.
+
+[609.0s - 638.0s]
+How can we change instead of using animal? What could we use that we wanted? We can use word net to say, well, an animal is an Organism, it's a type of Organism. So instead of Organism instead of animal you could pick other organisms like flora and so so we can get the system to kind of replace these parameterisations to give us. Other ideas of systems that we might set up?
+
+[638.0s - 667.0s]
+And then, with the poetry generation system we looked at, how could we optimize it? Because it takes about eight 9 seconds to run, which isn't a massive amount of time. But if you want to run it multiple times. It's a it's a pain, so we want to get the system to say well what can I change about it so it still runs quicker, but it still gives us poems. And so we came up with an algorithm and it looked at the big time issue. Is the word list the yellow one in the middle, which is a text rank key phrase extractor and that takes a lot of time. It takes a lot of time because Twitter gives it a lot of information, so it's about kind of finding out what's the reason for optimal for the problem. And it found out that if I just reduce the number of tweets then runs quicker, but it still gives you poems. So these things, if you're doing it by hand, it takes time.
+
+[667.0s - 696.0s]
+It's just better if the system can do it for you. All these we want to kind of introduce into the GUI front end. So you write your flow chart and say it's vaguely what I want. Now you make it better and we did automated construction of flowcharts from scratch, so we said we want to generate poetic couplets. And we know roughly what a system like that will look like. It will have a Twitter Guardian or text area, so you'll have something that retrieves text for us and we want to get the key phrases out of there. We might want to do a bit of kind of sentiment analysis and sends categorization. So if you want to put that, put one of those in and then we want to get riming or footprint matched couplets. So we said to the system. That's vaguely what it's going to look like. That's what your system like come up with some systems and. Save us the trouble. So there are. You know, even with that, there's a. There's a massive search space there, so there's 108 different combinations of nodes. Thousands of parameters and millions of different variables that you can define and we run it hundred 200 times and we got some. We got some successful running processes out and they output between one and 4 million couplets H. Stand.
+
+[696.0s - 725.0s]
+So one of them it automatically created for us was this one. It's got five nodes in us. It picked it, picked a node that. Selected 17 Guardian articles. From the first week of 2012 and it picked a neutral article from that using the. In terms of sentiment, using the second node and then it got all the key phrases out of there and found those that started with an adjective. And match them together based on the syllables and it gave us rhyming couplets like actual bodily harm, Metropolitan Police, Chief Inspector, working, domestic violence.
+
+[725.0s - 754.0s]
+And another one that really caught our eye was just four node one and what the system is actually doing is it's working in the underlying script syntax that we use to define these. These systems so I can show you the script and. On this one. This this is kind of so this was a level that we work in and this is the automation works. Works at that level and this one. This car I it. It uses the node it picked, selects texts from Churchill speeches. And it gets the key phrases out there and it selects the ones with really extreme sentiment. And it matches and by footprint and it gave some really kind of interesting couplets. So great battle, despairing man really kind of emphatic stuff. And we use.
+
+[754.0s - 783.0s]
+These it produced a total of 52 couplets and we got in touch with Russell Clark and he brought them together and put them into a poem for us. So there's a bit of kind of human level curation going on at the end. And created this. This poem, which was given to. A Radio 4 programme and a few guys. Few poets and English experts from Manchester University. I think it was wasn't it. They had to look at it and they commented on its part of that. Radio forward documentary, which I think is still available.
+
+[783.0s - 812.0s]
+So in summary, we've got a system that does what we want it to do. Its God, we've done the automation that we want to do, and it's got good promise for code sharing and collaboration, and it's currently being used. It's supporting the wind machine, the online win machine, and really we've come a long way since the paper. So hopefully people will actually use it because.
+
+[812.0s - 841.0s]
+It's it's on the web now. There's lots of future work. We just dipped our toe. We want to look at this evolution aspects of process generation 'cause every aspect have been applied to hardware generation using electronics. And there's quite a lot of overlap there. Want to get better at assessing whether it's come up with a good system or not? I'm.
+
+[841.0s - 870.0s]
+Tons of stuff, but we want to make the better. We want to give it to you guys to use and hope that you use it. We really want you to contribute to the library and well, we want to help you want to pull your web services in there. Metaphor magnet we want to get neova on there but the bits of Nova that may go together. We want those as well. Everything we want to put on the. We design things like we want all these buttons on the front end. So automation we want to be able to say. Now I've got a system run this everyday and email me the results. Run this everyday at this time and tweak the result. Dual download this system as a as a little jar file and let me put it on a website so that anybody can use it. There's lots of stuff that we need to do. We want to build our systems we've not gotten real solid idea of looping so we were interested in there's a number of ways we can do it, so we want to be able to get systems that we can run iteratively and. And train and learn.
+
+[870.0s - 899.0s]
+And things so yeah. And then we want to get. We want to get it running with all the nodes. With all your systems running on our server all the time and creating things, and as soon as a new node gets added in, it just keeps running and creating new systems and giving us things that we never thought it could do or with crazy overlaps of everything that we've got in our field and tweeting the world about it.
+
+[899.0s - 928.0s]
+So you got a sales pitch. It's hopefully out in around July. We're going to help you. Please contribute your nodes get involved, will help you put our nodes on there, and hopefully you'll have benefit other.
+
+[928.0s - 957.0s]
+The it's going to be free. It's going to be free.
+
+[957.0s - 986.0s]
+It's going to be free.
+
+[986.0s - 1015.0s]
+Free free.
+
+[1015.0s - 1044.0s]
+Free. Thanks, that looks really exciting and I just wanted to say that I love Java so I think we should make it. The official collaborative tool for computational creativity. It's just like this is really such a dumb technical question. It shouldn't be in the questions section, but. What is what are you doing to get that on the web? What framework are you using to get that in a browser? That's all JavaScript and jQuery. And then it talks to PHP. OK, so there's a Java server and then the front end is completely separate from the West. And I mean in advance, are you able to just publish the API for the interfaces that we'd need to? Yes, I didn't cover that. Yeah, it's a very simple class and you've just got to implement a process. This kind of do your work. Function and we want to make it be able to call to any language so Java can do that. You can wrap it around Python And C++ whatever, so long as it just implements that method. That's it basically and produces a certain class of output, so there's 22 classes. And we want to do a very kind of minimal framework that you can download so you can run it and unit test your node and then you can email it us and will upload it and you can play around in a test environment. OK, so first of all, I think it's really a great great idea to make such a platform. They would like to try to use it, but what you showed it was the processes that you show. They are performed linearly. OK, so did you think about extending this and make it possible to like letting the processes cooperate? In parallel or yeah, I mean there's there's a few things in terms of scheduling that we've got to look at. Yeah, I mean if it goes into branches then we should get. We've got 4 servers that we can branch that onto it. I mean, if it because the modules here were just one by one and the output from one wants input to the to the other. So is it possible that for example 2? To modules give output to one or and they are working parallel. Yes, I mean it doesn't work like that now they would be, they would be executed sequentially, but we want to do that. I mean, we've got to suck it and see a little bit because we want to make it multi user. And so there's going to be. People running different flow charts at the same time, so we've got to deal with that and then then we've got to think about in the individual flowcharts. How can we spread that load? But we've got 4 servers we want to kind of farm it off. Thank you very much.

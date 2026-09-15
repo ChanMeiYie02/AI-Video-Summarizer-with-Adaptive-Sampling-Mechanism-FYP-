@@ -1,0 +1,22 @@
+{
+    "id": "dvh2ph4yvyqqekpb4pcq3kcoilhvxsyn",
+    "title": "How to discount Information: Information flow in sensing-acting systems and the emergence of heirarchies",
+    "url": "http://videolectures.net/cyberstat2012_tishby_bellman_equation/",
+    "info": {
+        "author": [
+            "Naftali Tishby, School of Computer Science and Engineering, The Hebrew University of Jerusalem"
+        ],
+        "published": "Oct. 16, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Physics->Statistical Physics",
+            "Top->Mathematics->Control Theory",
+            "Top->Mathematics->Optimization"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 645,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2676
+}

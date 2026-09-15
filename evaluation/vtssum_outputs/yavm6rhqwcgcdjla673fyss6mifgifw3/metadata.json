@@ -1,0 +1,24 @@
+{
+    "id": "yavm6rhqwcgcdjla673fyss6mifgifw3",
+    "title": "A Musical Composition Application Based on a Multiagent System to Assist Novice Composers",
+    "url": "http://videolectures.net/iccc2014_navarro_musical_composition/",
+    "info": {
+        "author": [
+            "Maria Navarro, University of Salamanca"
+        ],
+        "published": "Aug. 8, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Arts",
+            "Top->Philosophy",
+            "Top->Social Sciences->Psychology",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 13,
+    "num_sentences": 131,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 231
+}

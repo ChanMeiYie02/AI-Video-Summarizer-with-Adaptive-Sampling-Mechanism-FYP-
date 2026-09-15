@@ -1,0 +1,22 @@
+{
+    "id": "6qd2zc5lokzc7zx7ywjkqs6rugybujoj",
+    "title": "AI Applications in Medicine and Pharma",
+    "url": "http://videolectures.net/AIindustrySeminar2019_dzeroski_ai_applications/",
+    "info": {
+        "author": [
+            "Sašo Džeroski, Department of Intelligent Systems, Jožef Stefan Institute"
+        ],
+        "published": "May 18, 2020",
+        "recorded": "February 2020",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 212,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 3902
+}

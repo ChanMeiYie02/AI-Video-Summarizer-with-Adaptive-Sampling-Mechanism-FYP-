@@ -1,0 +1,20 @@
+{
+    "id": "dsvgf2zsgvk7tad7ybp3adlmgtxmegfk",
+    "title": "Alan Turing and Number Theory",
+    "url": "http://videolectures.net/turing100_matiyasevich_number_theory/",
+    "info": {
+        "author": [
+            "Yuri Matiyasevich, St.Petersburg Department of Steklov Mathematical Institute, Russian Academy of Sciences"
+        ],
+        "published": "July 10, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 142,
+    "num_sentences": 745,
+    "num_clips_with_summary": 32,
+    "num_gt_summary_sentences": 53,
+    "ground_truth_summary_length_chars": 3771
+}

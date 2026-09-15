@@ -1,0 +1,20 @@
+{
+    "id": "g3qwqvgu52l25ux6abnmjf7oqoxev2nu",
+    "title": "Reinforcement Learning",
+    "url": "http://videolectures.net/mlss09uk_littman_rl/",
+    "info": {
+        "author": [
+            "Michael Littman, Department of Computer Science, Rutgers, The State University of New Jersey"
+        ],
+        "published": "Nov. 2, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Reinforcement Learning"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 1112,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 3440
+}

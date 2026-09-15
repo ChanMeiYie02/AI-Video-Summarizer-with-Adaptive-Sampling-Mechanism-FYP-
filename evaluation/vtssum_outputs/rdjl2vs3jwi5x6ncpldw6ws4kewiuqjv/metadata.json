@@ -1,0 +1,21 @@
+{
+    "id": "rdjl2vs3jwi5x6ncpldw6ws4kewiuqjv",
+    "title": "Learning to Combine Discriminative Classifiers",
+    "url": "http://videolectures.net/kdd2010_lee_lcd/",
+    "info": {
+        "author": [
+            "Chi-Hoon Lee, Yahoo! Research Silicon Valley"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Pattern Recognition"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 150,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 3713
+}

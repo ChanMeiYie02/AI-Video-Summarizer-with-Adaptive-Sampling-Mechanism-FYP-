@@ -1,0 +1,48 @@
+Guideline Steps
+
+0. Type wsl
+
+
+1. run the server 
+--------------------------------------------
+/home/admin_mtds/llama-cpp-turboquant/build/bin/llama-server -m /mnt/c/Users/admin_mtds/.cache/huggingface/hub/models--unsloth--gemma-4-E2B-it-GGUF/snapshots/f064409f340b34190993560b2168133e5dbae558/gemma-4-E2B-it-Q4_K_M.gguf --cache-type-k turbo3 --cache-type-v turbo3 -c 32768 -ngl 99 -fa on --host 0.0.0.0 --port 8080
+
+
+
+
+2.Activate virtual environment
+------------------------------------------------
+
+source ~/vts_linux/bin/activate
+------------------------------------------------
+
+cd /mnt/c/Users/admin_mtds/OneDrive/Desktop/Meiyie
+----------------------------------------------
+3.python src/main.py
+
+
+
+
+
+(vts_linux) admin_mtds@mtds1:~$ cd /mnt/c/Users/admin_mtds/OneDrive/Desktop/Meiyie/
+(vts_linux) admin_mtds@mtds1:/mnt/c/Users/admin_mtds/OneDrive/Desktop/Meiyie$ 
+
+
+cd src/ui
+
+4.streamlit run app.py --server.maxUploadSize 1000
+
+.\vts\Scripts\python -m streamlit run src/ui/app.py --server.maxUploadSize 1000
+
+
+https://youtu.be/lIQBtpsrjVw?si=ReXA5fxeW0Tfg_2w
+
+
+---------------------------------------------------------------------------------------------------------------------
+wsl bash -c "source ~/vts_linux/bin/activate && cd /mnt/c/Users/admin_mtds/OneDrive/Desktop/Meiyie && python evaluation/run_pipeline_on_vtssum.py --limit 5"
+
+sample 1 - 317s
+sample 2 - 248s
+sample 3 - 55s
+sample 4 - 
+sample 5 - 

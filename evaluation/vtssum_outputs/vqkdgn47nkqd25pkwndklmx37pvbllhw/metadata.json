@@ -1,0 +1,25 @@
+{
+    "id": "vqkdgn47nkqd25pkwndklmx37pvbllhw",
+    "title": "Science and web 2.0",
+    "url": "http://videolectures.net/web_nolte_web/",
+    "info": {
+        "recorded by": [
+            "Artificial Intelligence Laboratory",
+            "Center of Excellence Cognitive Interaction Technology (CITEC)",
+            "Artificial Intelligence Laboratory"
+        ],
+        "author": [
+            "Mathis Nolte, Bielefeld University"
+        ],
+        "published": "March 24, 2012",
+        "recorded": "February 2012",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web"
+        ]
+    },
+    "num_segments": 2,
+    "num_sentences": 136,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 197
+}

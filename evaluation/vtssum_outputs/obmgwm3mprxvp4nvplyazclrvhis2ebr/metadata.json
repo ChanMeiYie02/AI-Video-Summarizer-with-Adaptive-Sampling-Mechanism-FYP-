@@ -1,0 +1,22 @@
+{
+    "id": "obmgwm3mprxvp4nvplyazclrvhis2ebr",
+    "title": "Quantum information and the Brain",
+    "url": "http://videolectures.net/nips2012_aaronson_quantum_information/",
+    "info": {
+        "author": [
+            "Scott Aaronson, Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, MIT"
+        ],
+        "published": "Jan. 16, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Information Theory",
+            "Top->Physics->Quantum Mechanics",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 542,
+    "num_clips_with_summary": 29,
+    "num_gt_summary_sentences": 79,
+    "ground_truth_summary_length_chars": 9969
+}

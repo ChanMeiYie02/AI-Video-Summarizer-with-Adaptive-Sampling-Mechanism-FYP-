@@ -1,0 +1,20 @@
+{
+    "id": "knikayeq72izo6gydqzmax5bxqr2p2by",
+    "title": "Is the Web a Web of Documents or Things?",
+    "url": "http://videolectures.net/ijcai09_wang_itwwdt/",
+    "info": {
+        "author": [
+            "Xiaoshu Wang, Renaissance Computing Institute"
+        ],
+        "published": "Aug. 3, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 752,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 46,
+    "ground_truth_summary_length_chars": 3323
+}

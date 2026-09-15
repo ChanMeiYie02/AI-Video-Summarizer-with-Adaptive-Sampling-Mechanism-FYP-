@@ -1,0 +1,20 @@
+{
+    "id": "572lomafe3yozz7ek3drxxxl4yh6mos4",
+    "title": "Querying Semantically Enriched Sensor Observations",
+    "url": "http://videolectures.net/eswc2011_calbimonte_observations/",
+    "info": {
+        "author": [
+            "Jean-Paul Calbimonte, HES-SO Valais-Wallis"
+        ],
+        "published": "July 7, 2011",
+        "recorded": "May 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 51,
+    "num_sentences": 335,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2071
+}

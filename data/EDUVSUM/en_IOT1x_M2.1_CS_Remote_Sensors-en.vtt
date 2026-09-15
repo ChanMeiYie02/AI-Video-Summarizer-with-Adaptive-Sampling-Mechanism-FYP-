@@ -1,0 +1,175 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:03.010 --> 00:00:06.420
+IAN HOWARD: How do you actually know when things need maintaining?
+
+00:00:06.420 --> 00:00:10.530
+You either work on a time-schedule basis--
+
+00:00:10.530 --> 00:00:15.240
+but if you try to save money and try to do maintenance smarter, then
+
+00:00:15.240 --> 00:00:20.340
+really what you should be doing is on a predictive-condition monitoring basis.
+
+00:00:20.340 --> 00:00:24.030
+And so that requires the use of sensors--
+
+00:00:24.030 --> 00:00:29.250
+sensors that actually measure the behavior of the equipment--
+
+00:00:29.250 --> 00:00:30.720
+can be vibration sensors--
+
+00:00:30.720 --> 00:00:33.570
+can be pressure-- can be strain gauges--
+
+00:00:33.570 --> 00:00:36.275
+can be sound microphone sensors.
+
+00:00:38.850 --> 00:00:42.810
+So these sensors, traditionally, are very expensive,
+
+00:00:42.810 --> 00:00:46.830
+but now you can get really quite cheap sensors.
+
+00:00:46.830 --> 00:00:50.190
+And as far as The Internet of Things goes, what you really want to do
+
+00:00:50.190 --> 00:00:56.090
+is to have those sensors embedded in the equipment with its own power supply
+
+00:00:56.090 --> 00:00:59.130
+or battery supply or renewable energy--
+
+00:00:59.130 --> 00:01:02.340
+energy harvesting supply, and then have some means
+
+00:01:02.340 --> 00:01:05.450
+of digitizing that signature--
+
+00:01:05.450 --> 00:01:08.880
+whether it's pressure or strain or accelerometer--
+
+00:01:08.880 --> 00:01:13.620
+acceleration-- and then to be able to communicate that sensor
+
+00:01:13.620 --> 00:01:18.600
+information to the web.
+
+00:01:18.600 --> 00:01:20.880
+That's really where the Internet of Things comes in.
+
+00:01:20.880 --> 00:01:24.690
+So I have here an example of a sensor that we put together
+
+00:01:24.690 --> 00:01:26.440
+more than 15 years ago.
+
+00:01:26.440 --> 00:01:31.050
+And this was designed to fit onto large rotating equipment.
+
+00:01:31.050 --> 00:01:35.250
+And it has inbuilt in there a MEMS transducer, which
+
+00:01:35.250 --> 00:01:39.150
+measures the acceleration, and also has a thermometer to measure
+
+00:01:39.150 --> 00:01:41.470
+the temperature of the device.
+
+00:01:41.470 --> 00:01:45.300
+So when we developed this, we realized that okay the concept really
+
+00:01:45.300 --> 00:01:50.970
+would be to embed these into remote machines
+
+00:01:50.970 --> 00:01:54.700
+and often in places that are not very accessible.
+
+00:01:54.700 --> 00:01:58.170
+So you really don't want to have these battery powered
+
+00:01:58.170 --> 00:02:01.710
+and then every three months have to actually replace the batteries.
+
+00:02:01.710 --> 00:02:06.090
+So that brought us into the research topic of energy harvesting.
+
+00:02:06.090 --> 00:02:09.389
+And there are many different types of energy
+
+00:02:09.389 --> 00:02:11.940
+we can extract from the environment--
+
+00:02:11.940 --> 00:02:16.140
+for example, solar or wind energy.
+
+00:02:16.140 --> 00:02:18.330
+But we've been working-- because we're looking
+
+00:02:18.330 --> 00:02:23.190
+at vibration-- we've been working on energy harvesting from the vibration
+
+00:02:23.190 --> 00:02:24.450
+environment.
+
+00:02:24.450 --> 00:02:29.220
+And there are different techniques for extracting energy,
+
+00:02:29.220 --> 00:02:33.540
+but we've been looking particularly at the piezoelectric energy harvesting.
+
+00:02:33.540 --> 00:02:36.720
+So I've got an example here of a piezoelectric beam
+
+00:02:36.720 --> 00:02:38.220
+that can be used for that.
+
+00:02:38.220 --> 00:02:41.970
+Here is a miniature piezoelectric beam.
+
+00:02:41.970 --> 00:02:45.630
+And it would be clamped to the machine.
+
+00:02:45.630 --> 00:02:52.300
+So it's base-excited vibration, and this beam then vibrates back and forwards.
+
+00:02:52.300 --> 00:02:56.450
+So what we find is per meter per second squared--
+
+00:02:56.450 --> 00:03:03.660
+or per g-- you can extract fractions of a milliwatt of energy
+
+00:03:03.660 --> 00:03:07.780
+from these devices if they're operating at resonance.
+
+00:03:07.780 --> 00:03:10.820
+Now a fraction of a milliwatt might not sound very much.
+
+00:03:10.820 --> 00:03:16.050
+But actually, because it's generating power continuously,
+
+00:03:16.050 --> 00:03:20.460
+over the days, weeks, and months, you accumulate a lot of energy.
+
+00:03:20.460 --> 00:03:27.600
+And so, then, you can couple that with smart supercapacitors
+
+00:03:27.600 --> 00:03:34.230
+or other recharging devices to recharge your batteries and so on, which
+
+00:03:34.230 --> 00:03:36.720
+gives you enough energy-- enough power to be
+
+00:03:36.720 --> 00:03:41.870
+able to communicate that information from the sensor-- from the smart sensor
+
+00:03:41.870 --> 00:03:44.170
+to the internet or to the web.
+
+00:03:44.170 --> 00:03:48.570
+So there's a vast array of applications now
+
+00:03:48.570 --> 00:03:53.090
+in industry for these kinds of devices.

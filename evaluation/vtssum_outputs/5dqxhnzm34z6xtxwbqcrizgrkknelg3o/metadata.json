@@ -1,0 +1,20 @@
+{
+    "id": "5dqxhnzm34z6xtxwbqcrizgrkknelg3o",
+    "title": "Visualizing Cauchy’s Interlacing Property for Line Distance Matrices",
+    "url": "http://videolectures.net/cov05_jaklic_vcipl/",
+    "info": {
+        "author": [
+            "Gašper Jaklič, Inštitut za matematiko, fiziko in mehaniko (IMFM)"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "November 2005",
+        "category": [
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 255,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2454
+}

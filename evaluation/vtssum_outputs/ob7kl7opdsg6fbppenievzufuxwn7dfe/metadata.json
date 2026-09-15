@@ -1,0 +1,21 @@
+{
+    "id": "ob7kl7opdsg6fbppenievzufuxwn7dfe",
+    "title": "Knowledge technologies for network organisations",
+    "url": "http://videolectures.net/ess07_jermol_ktno/",
+    "info": {
+        "author": [
+            "Mitja Jermol, Jožef Stefan Institute"
+        ],
+        "published": "Oct. 17, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Business->Virtual Enterprises",
+            "Top->Business->Networked Organizations"
+        ]
+    },
+    "num_segments": 80,
+    "num_sentences": 726,
+    "num_clips_with_summary": 25,
+    "num_gt_summary_sentences": 46,
+    "ground_truth_summary_length_chars": 5754
+}

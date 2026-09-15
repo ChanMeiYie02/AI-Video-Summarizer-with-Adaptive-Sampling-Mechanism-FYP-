@@ -1,0 +1,20 @@
+{
+    "id": "vhavfpw3o27uhv65ihzzevf2xebf4t55",
+    "title": "A Formal Semantics for Weighted Ontology Mappings",
+    "url": "http://videolectures.net/semantic_serafini_ontology_mappings/",
+    "info": {
+        "author": [
+            "Luciano Serafini, Fondazione Bruno Kessler"
+        ],
+        "published": "Dec. 10, 2012",
+        "recorded": "November 2012",
+        "category": [
+            "Top->Computer Science->Semantic Web->Ontologies"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 47,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 338
+}

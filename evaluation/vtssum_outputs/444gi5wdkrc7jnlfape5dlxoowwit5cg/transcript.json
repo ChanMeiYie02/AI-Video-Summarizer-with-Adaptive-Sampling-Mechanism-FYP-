@@ -1,0 +1,407 @@
+[
+    {
+        "text": "OK, well thank you for inviting me. I'm very honored to give this talk. So before I start, I'm sure there's.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Couple of Masters student in the room that are looking where to do their pH D an. We started a PhD program in Robotics a couple of years ago in Georgia Tech and applications are due December 15. OK, so you're all very welcome. We actually just graduated our first couple of students and one of our students. My check Mark just became assistant professor at University of Washington, so. It's an exciting program, so if you want to become faculty in North America, this is one of the ways to do it, OK? Alright. Well, so actually during my graduate.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Karere I did something on the side which which which is Monte Carlo localization which is applying a particle filter too. Robot localization, I really just took the work from Isard and Blake and applied it to robot localization and it turns out that this is my most impactful piece of work ever and I'll tell you why, OK, any undergrad can program this up in 10 minutes. OK so here is 1 lesson I learned is you know nobody looks at my PhD teases actually, but this thing is so simple and so impactful precisely because it's so simple. So here's a lesson for aspiring grad students. Don't make your stuff too complicated, you know if it's really easy to implement, it will have a lot of impact. So I started out in robotics and so this work also led through another student in Sebastian Translab.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "2 running particle filters an entire trajectory's, so there's a problem in robotics called simultaneous localization and mapping where you were not only trying to localize the robot, but at the same time build a map of the environment, and so if you run a particle filter, not just some location, but on the entire trajectory, you can optimize the map for each particle and see how good it is, and that's in the weight of the particle, so that's the idea behind fast slam. Which which which is still influential in robotics these days. Now that's all with two delays words. So the state of the art back then was the sick laser range finders that have 2D. You know, given occurs enough to the laser points and I wanted to show this video from Ryan Eustice.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Who kindly shared a lot of his work with me that I'll show in this talk. So this is the campus of. University of Michigan. But created with 3D Lidar point clouds. OK, so this is a robot going around and creating point clouds from 3D LIDAR measurements. So that's that's robot mapping in 2013 vastly large. Clouds of 3D points. But you don't need lasers to do that, actually, so one of the very cool things that happened in computer vision in the last 10 years is that the ideas that were developed in the 80s and 90s on 3D reconstruction structure from motion really took off in a new way in large part.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Do the work of Noah Snavely at University of Washington. Steve side so so noise now at Cornell actually and photo tourism and Photosynth are sort of direct. Results of his work and he's famous for doing things like.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "You Google for images safe of Dubrovnik, so these are his images is his work so just want to stress that and you get maybe 10,000 images back. Then the genius of number was two very robustly. Do the correspondence of wide baseline correspondence between images.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Build a 3D point cloud completely from images. Which which is, you know, as impressive as this 3D Lidar point cloud, right? And so each of these in frustums here is one of the cameras, not the images, that Noah took. These are all images taken by tourists while walking around in Dubrovnik, and so that's you know, amazingly, inspiring work. But it's just 3D. OK, so when I came to Georgia Tech, I got together with a student grant Schindler.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And we decided to sort of bridge this towards 4 dimensional mapping. So the idea was that we took a collection of historical images. In this case is from Atlanta. And in this case, we did the correspondence manually, but we could build a 3D model of Atlanta with little time slider at the bottom, and so we could scrub through time and go and see the city actually appear and disappear as we scrub through time. So Atlanta is pretty cool, because in fact it was burned to the ground by Sherman in sort of the 1860s at the end of the Civil War. So you can really see the city which is now 5.4 million people. Sort of rise up from nothing. Now grant. Moved out.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And he did something really cool. One of the side projects. Again, side projects are really important for grad students. Is this app he made is called Tri Mentionable, which is a 3D scanning app for the phone, so he's now doing that, but I told him, look, you know before you graduate and go off and do your iPhone app. Nobody cares about Atlanta, right? Atlanta, it's you know you have Coca Cola and you have Georgia Tech and you know.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Um? So first to New York and then you can graduate and it has to be fully automatic or manual clicking on building. So inspired by the work of Noah etc. He did this fully, automatically segmented out the buildings, did his analysis of time, which you can do by gross occlusions. I could build a 4D browser of lohrmann.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Atom. So, so here's a couple of images. We have a lot of images from the 1920s, nineteen 30s, and also a lot near, you know, when. Granted this work. Turns out it's quite hard to find images without rights of New York. So it's in between that. There is also a reason why it's lower Manhattan. I don't know whether people here ever visited New York. Probably half of you definitely did so, so everybody visits the Statue of Liberty in New York, right? That's one of the big tourist attractions, so they then take the boat back to Battery Park. And on the way they take pictures of lower Manhattan. So that's why there's a lot of them, even back in the 1920s, nineteen 30s.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Alright so so, but I'm I'm here so this is the inspiration. You know this large scale 3D mapping, large scale 3D reconstruction, but I'm here to tell you actually about my secret weapon.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Which I've developed. Try to understand in the last 10 years so there's ten years of work of me very slowly understanding connections between different and disparate subfields of engineering, and I'm going to tell it all. OK, so you don't have to go through this 10 years of slogging through the connections. It's about factor graphs and I'll make the connection between factor graphs. I'll tell you what they are and then I'll make connections with sparse linear algebra, and then I'll give you sort of a compendium of things that we did once we understood that connection, the last bit is a new preconditioning method that we applied to structure from motion and also catch some future directions. But before I do, I.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Acknowledge the people that made all this possible, so there's a bunch of my students and postdocs and some alumni that I singled out here that have contributed heavily to this talk. And there's also a number of people from MIT, Michigan, Toronto and Freiburg that contributed movies and snippets of their work. That I'm going to show off, so not everything that I'm showing here is our work. It's also work that was inspired by the things that we that we brought out. Of course, you know we're sponsored by various funding agencies, and I'll talk a little bit about that as well. Well, start with something very, very boring.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Which is Boolean satisfiability. You're all envisioned, probably because you know you didn't like that stuff. I mean, look, you know, come on in, it's boring, right? It's a formula it you don't even know what's going on, and so it's what is going on is there is a bunch of variables and you have to give an assignment true or false for each of these variables to make this Boolean formula through? Well, it turns out it's actually much more exciting than it looks. So here's a graph, OK? And all of a sudden you see that there is actually 5 variables. It was not very easy to figure that out from that. And each of these factor nodes is a Boolean formula and it is connected only to the variables that play in that formula. Alright, so you you have you have variables. You have factors and this is a factor graph, right? And this gives you a graphical representation of what the problem is that you're trying to solve. OK, so so another you know a subbranch from spound.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Artificial intelligence is actually constraint satisfaction. It's also a big topic in graph theory, so so for example, the graph coloring problem is if you have a bunch of provinces in a country. In this case Japan.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "And you would like to color them such that no province neighboring province has the same color. You would create variables and then these factors here would say, well, you're not supposed to give any of these provinces the same color. Again, the problem is very apparent. The structure of the problem becomes very apparent once you phrase it as a factor graph. So this is discrete and the factors are also discrete, sore one or zero, it's allowed or it's not allowed.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "In graphical models, I'm very I'm very sure that all of you are familiar with Bayes networks, so Bayes networks are these graphical models is the most famous graphical model where now the variables are typically discreet as well. But these these these variables have conditional probability densities on them or distributions, meaning this is now continuous as a probability, and so it's actually trivial. To convert this to this different graphical model, which is a factor graph for now, each of these, for example, this is the probability of smoking or non smoking. This is the famous Asian Network. This factor would say, well you know 5050 for smoking. OK so it's quite easy to convert any base network or by the way if you're into segmentation or image image denoising, any mark of random field is better represented as a factor graph. Then as a market random field OK. So this is still discrete variables, but in robotics, an instructive promotion.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "What we have is continuous variables. So now we have continuous variables for example. So here is a Markov chain which is the location of the robot at time zero time. One time two and they are linked by these probabilistic constraints which are derived from odometry. The robot moves, it gets a measurement, it's a noisy measurement. So here is a probabilistic constraint between zero and one at the same time the robot sees a bunch of landmarks and every landmark is unknown. We don't know where it is, but there's a. Every measurement induces a probabilistic constraint between the pose and the landmark right? Now, this is still fairly abstract. Let me show you a small example.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So here's a small example of a little robot. Which is kind of cute, right? It's like a little spider feeling its way, and so this is a fairly old graphic from back when my daughter was still excited by the stuff I did. You know she's 14 now. It's there's no all hope is lost. Well, you know we saw this this little robot. The idea is well, we would like to know where the rabbit was and very all the things that are that it saw again. You will see that factor graphs when you show the graph. The structure of the problem becomes completely.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Parents. So here is a factor graph associated with this problem. So we have the the Markov chain backbone and then each landmark is seen a number of times from several locations and for example this one. We already know that this one is not going to be determined because it's only seen from one location, but here where you have all these dense connections will get very good information on the trajectory on the landmarks. So you can see the structure of the problem. OK, these are these are continuous and non linear by the way so.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So each the densities that are induced by solving these factor graph. Are typically non linear and so we linearize in a nonlinear optimization fashion. Al talk about about the mostly linear factor graphs, but you should know that this goes into a big nonlinear Levenberg Marquardt style optimization. And if I.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Structure from motion. This is a movie made by by my student, young John John. This is Chicago and these are actually images taken by Grand, Junior and so you see this is sort of the graph of connectivity between all the 3D points and the cameras, but really it's also the structure of the factor graph, right? Good so OK, so so at least I hope that I convinced you now that factor graphs are very cool way to look at the structure of the problem and see in one glance. Oh that's interesting. That's the information I have. Those are the connections. And also maybe this is sort of the difficulty of the problem if very dense vector graph might be a very difficult problem. Very sparse linear like structure is easy and that would be a great intuition if you have that intuition. In fact, I will. I will show you.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So. How to compute and do inference in factor graphs? And I'll also show. Hopefully the connection with linear algebra and so you already know this algorithm actually from secondary school. In Britain, but 85% of you is not from Britain anyway, so so you know the.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "The thing before high school, probably you learn about this algorithm First United Connection with with the The boring Old way to do structure from motion and slam is you calculate this large sparse Jacobian matrix, which is the derivative of each of your constraints with respect to each of your variables. It's a large sparse matrix, but the structure of that matrix is exactly the factor graph. Every factor here is a row in the matrix. Every variable here is a column in the matrix. Alright, so so this one I put you is way more intuitive than this one. Right now, but we have to. We have to pay homage and.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "You know how do you normally solve these large linear systems? Well, what you do is you take this big curbing a.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "And you form what is known as the system of normal equations and you solve it by inverting the Hessian A transpose A. But nobody does that by inversion. You do it by factoring the matrix. So this big hashing, which is a square symmetric matrix, is factored into an upper triangular matrix R. And once you have that matrix, this is something very crucial. You can do back substitution on your variables and you have the solution. OK, so this is something to understand that once you are here, you have solved the problem and you can go to the next nonlinear iteration and so the only thing we need to know is how to factor this into that. Now.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "You know, if you ask a linear algebra person, how do you do that? Well, they'll tell you. Well, you can either fax or a transpose a directly using Cholesky factorization, or you can do it on a directly using QR factorization. Good, well great, you know. We type that into Matlab and you're done right. Yes, yes, you're done, but I wasn't done. I wanted to know what happened inside OK and this is the connection I want to make. I will tell you what QR factorization is, even though if you read the sparse linear algebra books it's really boring. OK, but it's really actually exciting. I want to, you know, give you the inside.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Also, that looking at the sparse structure, so here is a little slam problem and here is our matrix. It's sparse, but it doesn't tell you much, except that it's sparse. Here's here's another.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Sample. It's a sparser environment at MIT. This is an infinite corridor, and the R matrix is very sparse. Environment is very sparse, but you don't get a lot of intuition from this. That is because there is none to be gotten. OK, so matrixes are very clumsy ways of writing down graphs. OK. And so I will tell you about.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "This algorithm, which is is the elimination algorithm. But before I do, I'll do a little detour. If I would ask you what is the coolest science fiction? Propulsion mechanism in you know what would it be? The warp drive. see I got the same question, yes, but the one that you actually could actually do. You know that there is 1 actually working. The ion drive. The ion propulsion system. So there is a spacecraft at this moment that is flying. You know somewhere in the solar system with an ion propulsion drive. This will come back to the talk in a minute. It's taking this long detour and it'll stop on the way. I'm a little planetoid called Vesta, which must have been the inspiration behind the Microsoft operating system. Which is a little planetoid, but it's real. Target is actually another planetoid called Sarah's, and Sarah's was, you know. 150 years ago I guess was was at the same level of Pluto. It was a planet, it was just discovered. It was the hottest scientific object of its time and inspired Gause to develop linearly squares and the elimination algorithm. OK and Don, which is the spacecraft, will reach Sarah's in 2015, so will have a gas revival in two years. OK, so let me now tell you about Gaussians. Idea, which is the elimination algorithm in which you already learned about in secondary school. You take a factor graph, so here's a little factor graph. You can also write it down in a boring old sparse linear algebra way, so I did that for you. OK, so if you like linear algebra, you can follow along on this side. You take this vector graph and you say, let's let's eliminate one variable at a time. Let's make the problem simpler. OK, instead of looking at 5 variables, let's just look at L1, which is the land.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Mark up here now looking at all the factors connected to L1. You will find that it's only connected to certain other variables which are called the separator of L1. In Degraff, these two variables separate L1 from everything else in the graph. Not a big deal now right? There's only two other variables left, but in general there's a million OK. So so, so that induces a small joint probability distribution on L1 and separator. And any joint distribution can be factored. In a.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "In a conditional and the smaller joint on the separator. So a conditional we already know how to represent. Actually that's a little Bayes, not fragmente, so here we now have a base node on L1 which depends on its separator and we also have to pay a price. The prices that we now have a joint density on X1 and X2. They are not correlated and they might not have been correlated before. OK. This is by the way you can do this with systems of linear equations and then you have gas Jordan elimination. OK, so you will induce you will solve for one variable and you now have a new equation on the variables that you that you touched in the process. What happened in the sparse linear algebra case is that all the nonzeros in the L1 column disappeared, because now it's just a function of X1 and X2 and it has no more constraints on it. Good so you keep doing this in some ordering will do L2 next.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Which induces a factor on X3. Getting out all the nonzeros disappear in the L2 column and you keep doing this OK.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Until.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "So.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "What you reaches this stage where now the factor graph has been transformed into another density trans representation, which is the base in that. At the same time, by the way. The sparse matrix here became a sparse upper triangular matrix. OK, but that's the cool thing, right? That's that's boring, right? This is arbitrary, or it doesn't tell you anything, but this is a Bayes net, which is now the solution to your problem. OK, so QR factorization I just gave you QR factorization, but the cool way takes a factor graph and transforms into a Bayes net. And the Bayes net has a structure which is.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Which has a matrix which is upper triangular which just means there is no operator. Angular just means directed acyclic. OK, which is a base network is a DAG. Alright, let's see this at work on a couple of more interesting graphs or here.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Is a little movie made by my student young. The answer here is a circle, an elimination each way. And here is the resulting Bayes net. Or here is a planar graph. These are some.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Set examples and you get elimination eating away, and here is the Bayes net that results. OK. Good so so two things that I told you is. You know, factor graphs are cool, right? And even QR factorization is cool. OK, it takes a factor graph, turns it into a Bayes net, and it was invented by. Buy gas well, the Chinese will say no. No 2000 years ago we did it. Which is true, but they did it for three variables. Is a cow or horse and a pig, and there's a little recipe on how to figure out the weight of each when you put them two at a time on a scale, which is a small little sensor Fusion problem. 2000 year old? Here is a recipe, but Gauss reinvented it. And being Western centric, we called it Gaussian elimination. Alright, so once you have this connection between sparse linear algebra and graphical models OK, and also realize that it's much bigger than sparse linear algebra, remember I I talked about Boolean satisfiability constraint satisfaction, you know. Mark of random fields. All of these can use the same algorithm to do inference so so. So sparse linear algebra is really the very special case of this story. When you have linear constraints on Gaussian noise, OK?",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "You have this connection, though there is a whole lot of things that you are now inspired to do OK. You broke open the QR factorization buksan. So in the last five years.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "We've built a tool box which really does a large scale optimization. It's called GSM for Georgia Tech smoothing and mapping 'cause it was mostly applied to robotics in the beginning, but now we do structure from motion and in fact it also solves sudokus, so the same algorithm template it in a different way will solve a sudoku. So there is some C++ and you just create this factor graph very quickly. And I'm going to call optimize. And there's a whole MATLAB toolbox on top so you can do it in MATLAB if you'd like. Now, one of the things that you quickly realize and sparse linear algebra people definitely did is.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "That the elimination ordering in which you eliminate these variables is crucial. OK, that's the secret. That's the problem actually. So finding this optimal ordering. So here is the one that is really nice. It leads to a fairly sparse graph, another ordering in the same graph can lead you to a fully dense Bayes network. And that's the difference between 10 milliseconds or an hour. Even large graphs, I mean literally it's that stark. OK, you can be very, very unlucky in choosing an ordering. And as with all good things in life, the optimal ordering is NP hard. OK to find it. But there is some very good heuristics. For example, here is.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "What is called approximate minimum degree where you pick a node to be illuminated which has sort of the smallest degree in the graph that is left. And it does something reasonable, OK? Another very very nice heuristic is, well, let's divide and conquer. If you have a big graph, let's cut it into pieces and solve each of the pieces and so it's.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "This is what happens here. So we cut sandwich first. Do this piece and then this piece and then this piece and then this piece. And in fact one of my colleagues, Dick Lipton. Prove the theorem that in planar graphs you can always cut it with a separator that is only size square root of N, which then leads to a full elimination algorithm which has limited which is has an upper bound of order N to the 1.5 in terms of solving and he did it with charge and it's a famous result in finite element methods. OK, but finding these separators themselves is NP hard OK. Nevertheless, these things we applied also for.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Doctor promotion this is work by Kinny who's not about Microsoft Research and so here is the Saint Peters Basilica datasets. City of Ricks, alisky. And so he cut up this large graph into different pieces and then solves each one separately and then you can do that out of course, so you can sort of load in a part of the graph, solve it, put it back to disk, and then load the next one. So now you can be very large structure from motion problems, sort of on a single core computer by leading them in one of the time one at a time. Now you can do this recursively. So actually Dick Lipton's result was about.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Recursive Lee cutting a graph. So this is the nested dissection algorithm and icing. Also, I'm just going to run this again. Is that the problems are independent so we can solve each of these little subtrees that create that is created in parallel. OK, so you don't have to wait for one side to be done before you can solve the other side. So I also actually this is very recent work when he was still, you know.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "When he was already at Microsoft, we did a variant of search for Motion, which is called hyper structure from Motion, where we take the hypergraph reflector graph and recursively cut it up. So this is the Grand Canal datasets, again courtesy of UW guys, and solve each of the small pieces. Put some together, you know, solve them, put them together, and then finally put the whole thing together. So that's sort of a an alternative to the bundler way of. Of adding one frame at a time or one image at a time. So so. So we did some things in computer.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "Vision in robotics. Alot of people are starting to adopt factor graphs, sort of computational substrate. So here's some work by Tim Barfoot at the University of Washington. They do a lot of space robotics so they have this Mars yard somewhere in Canada. And they have a Rover that makes sort of explorations in this Mars Yard, and they they use GSM for example to to solve their Maps. But I want to highlight the work of my former student.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "Michael Kiss so the. Let me let me just show you this this when Michael was graduating this robotics data set was still a little bit challenging. Now it's sort of a trivial data set. But but the he Michael is inspired by the fact that you know if you have a factor graph and you are robot and you're building this factor graph, it grows and grows and grows and keeps growing and you have to solve this entire factor graph every time. And the question was can we do this? Incrementally, can we reuse the results from before to do less work? And in fact there is incremental factorization methods in linear algebra that Michael applied in his thesis, so here.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Michael and this is the main idea behind this. You have an upper triangular matrix and if you add a couple of constraints or factors, it turns out that the only things that will change when you put these factors into R is a small piece at the very bottom. OK, and so Michael took this idea and published incremental smoothing and mapping back in 2008. And that's been quite successful, but it's still use this matrix paradigm. So I was still finding out these connections between graphs and matrices, and I couldn't convince Michael it was only when he got to MIT. So so Michael is a research scientist for John Leonard at MIT now, but just accepted a position at Carnegie Mellon's assistant research professor. So he's going there. The you know it's only after you got a mighty that I convinced him. Let's look at what this incremental factorization means in graphs. OK, now it turns out that if you take a large factor graph. And factorize it into a Bayes network that Bayes network has a very definite structure. You can discover the cliques in that base network. And you can create a tree of cliques, and that's called a clique tree and in machine learning is actually known as junction tree. So what happens is really you're creating a junction tree when you solve this. And as you do this incrementally, you can edit this junction tree so that only the small parts you just rearrange it a little bit, and so with very little computation you can continue to keep your solution alive, so allow show and movie. Of this junction tree, and this is literally what goes on in our code you will see a snapshot of our code as it is doing, solving an incremental smoothing and mapping problem. OK, the data set is courtesy of adults and at from Michigan.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "So synthetic data set, so here's the tree. Right and only the Reds clicks at the very top in an exploration scenario will be re computed. These great leaks are all conditions that are pointing down towards the pass and are never to be changed. OK, it's only also when you close a loop. There might be some flash of red when a lot of variables have to be re illuminated, but most of the time. I say 99% of the time, you know when you're not closing loops, things are just constant time. It's pretty amazing. So we just published last year in GRR and this is sort of a collaboration with with MIT, but it's built into into GT Sam. So again, after awhile it becomes a little bit unwieldy, but this is simply dumping the data structures from GSM into a graph is visualization and I'm showing them on the screen. And I'm really proud of this, because this is, I think, the state of the art in sort of incremental inference in graphical models, OK? Alright. It turns out that Michael when he.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "MIT created a C++ implementation of I Sam.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "And it actually has a lot of impact, so so one of the sort of scanner mouse which actually does slam as you scan over a document, uses I Sam inside. OK, there is these little spheres MIT spheres that are up in the space station that are using ICEM to help localize themselves, and one of the cool.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Projects that Michael did with, in conjunction with the University of Michigan is to do ship Hull inspection for the Navy, so they have these small underwater Rovers. And they map things like the bottom of.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "Aircraft carriers, so I'll show this movie from Ryan uses at the University of Michigan, but this is collaboration with Michael, which is, which is why they are using ICEM inside. One of the very cool things about this movie is that this has been mapped a couple of times. This the underside of this ship and the second time the Rover goes around it goes up from under the surface has a little Periscope and does the loop closures by doing scene recognition based on the previous. The patterns on the side of the ship with the Periscope isn't that amazing. Cool, you know. So this is very recent. I'm really showing you sort of cutting edge of what goes on in robotics here and so this is from August 2013. Which is last month. So. Alright, I'll just show you this a little bit. You still have the problem that you're creating these very long trajectories as you go, and so you know trajectory is keep growing up in complexity. You could argue that the environment stays is constant in complexity here. This room is static. Once you've seen everything, it stays the same. OK, there is dynamic objects etc, but but what is actually growing complexity constantly is if you take a camera. Through this environment many, many times, the complexity of that trajectory grows unboundedly, so one of the things that Michael work Tom is to enable long-term visual mapping. So this is inspired by.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "His advisor at MIT, John Leonard, who is really interested in this lifelong mapping where they think datasets of this is very cool. Building the status center at MIT. I hear it's leaky as hell though, so don't be too jealous. You know it's Gary likes, likes, looks and not necessarily. Waterproof roofs. But they took a data set here over a period of six months, traveled 11 kilometers and have 630,000 frames that they want to. Integrates.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "So here Michael John used I Sam to create. A pose graph, so graph on the poses. The very cool thing here is that they actually go up and down with the elevator, but they as a closed loops later even though they don't see anything in the elevator except for their accelerometer readings, they can build a consistent 3D model nevertheless. But they they use a technique where they. They don't add every pause into the graph. Instead, if the pause is close enough to oppose that you have already seen, they just add relative constraints between pauses that they've already seen, so that's what they call a reduced post graph, and so the result of all this is a 10th floor map of the status.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "Center right, I think they couldn't get into the bigger basement here. They probably didn't have permissions to go into the loading dock, but here this is a status center map, so this is a six month 11 kilometer data set. Ryan used. This is at the University of Michigan and here this robot with a 3D lighter. And he did 25 mapping runs over 15 months. And logged about 150.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "Yes, so he has a sort of competing reduced post graph method. Here is a movie of what's happening, so this is the factor graph as it is growing overtime. So it's 25 mapping sessions. And he uses a child, you tree approximation, which to two clicks in this graph to get a much lower complexity graph that can be kept sort of in reasonable computational time. As you do, it is very long term mapping efforts so that work has appeared at a workshop, but it's actually only going to appear at Iris in Japan this fall. So again, this is very novel work. This is not my work, they use this factor graph, so I just wanted to show you what people are doing with factor graphs. Cool.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "So I do want to tell you about one last idea that we developed in the last couple of years and is more focused on computer vision. This is work by my student young DM. Where we we will be first developed in robotics and applied it to computer vision. So let me let me show you this. My hope is that I'm going to demystify one last linear algebra technique that you've heard about and never really wanted to understand. You know, if your linear algebra class was any like mine, it could turn you off to linear algebra for the rest of your life, and it nearly did for me. And I only discovered later in life how cool all this stuff was, but I had a very old professor and he was not interested in actually making us excited about this stuff. Plus it he used may tricias.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "So here is a graph OK. Anne, it's of a city, and so take a moment to tell your neighbor which city this is. Meet your neighbor. Tell your neighbor which city this is. Oh, come on, talk talk. Oh hint hint, it's not Paris. It's not London. OK. All right outer hint. This is a thing called the Forbidden City. Alright, OK good, so this is actually a sort of an open street map. We got it from Openstreetmap and build a factor graph. It it it's Beijing. And of course, Beijing doesn't have an Eiffel Tower. But if it had an Eiffel Tower.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "Would be very very useful. Because you see an Eiffel Tower has this nice property that you can see it from many places. An if you're lost in the city and you look around, you know if you see the Eiffel Tower like at least you're oriented in the world, right? So it provides very strong orientation constraints. Unfortunately, it is very useful property for mapping and localization, and you know Google might be interested in mapping Beijing. Right is also detrimental to gas. Gas is idea of eliminating one variable at a time and the reason is that once you eliminate a variable, you create a clique. And that click is the size of the separator. So now you create a new factor, disconnected all these variables that were that separator and the nasty thing about Eiffel Towers. So I called this the Eiffel Tower problem. Is that it is connected to many many many variables in your graph and that will basically make elimination grind to a halt. So either you eliminate the Avatar last, which you can do, or you come up with some other technique. This is by the way, Eiffel Tower is not to be taken literally. If you do structure for motion with a camera that has a single calibration, OK, that collaboration is connected to all the camera and all the measurements in the graph. And so when you eliminate those calibration parameters you have an Eiffel Tower problem on your hand, right? So so elimination is a direct method. It does a direct factorization of your problem so.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "So another ways to do it iteratively to use conjugate gradient, say to serve down the gradient of your objective function, but that can be very slow to converge. So and why is it slow to converge? Well, because this objective function and it can be long and narrow, which by the way, the narrowness of it is the largest eigenvalue divided by the smallest eigenvalue is called the condition number. OK, so the game is to have an objective function that has small condition number, IE the best objective function is spherical and for which an iterative method converges in one step. So we decided to look into using direct methods.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "Subgraphs this is inspired by the graphical nature of this problem. We took Beijing. We started a little spanning tree, started at the Forbidden City as the root, and ran a spanning tree all around Beijing. This is a tree by the way. This is the matrix that corresponds to this tree, but you wouldn't know it's a tree. From looking at this OK, you can only see that you know when you look at the graph in detail, But it turns out that trees with an elimination algorithm are trivial. It's like a knife through butter. OK, it's order N in terms of solving it, so we take this whole problem, which is fairly complex and dense because of all these loop closures. And we solve. We take the spanning tree. We solve that using the direct method, but then use it as a preconditioner for the hard part that's left in the hard part. Or all the loop closures. OK, and the effect of this of you is taking a sub graph which communicates globally throughout the graph. Is that all the remaining variables? OK, so all the remaining constraints are actually fairly uncorrelated once you take out this global information, what happen?",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "This is that you take a very long and skinny with objective function with small large condition number and turn it into something that's almost vertical and that is what preconditioning is. OK, it's just reparametrization of your variables using constraints that are long term. Global. So I asked young Young to create an animation to make that really visible. So here is that.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "Same factor graph of that little robot that could. And this is the solution of all the variables. I pinned it down in the middle. I just gave a hard constraint in the middle and what I asked young man to do is take the largest eigenvector mean associate with the largest eigenvalue and put a sine wave to it. So now you can see that variables. Here and here are very correlated. If this moves up that goes down and vice versa, and that's detrimental to iterative methods, OK? But if.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "Take a spanning tree. And solve it. It's really easy to solve. What you see is that this correlation is also there in the spanning tree. In fact, this long long range correlation is almost exactly the same correlation as you got for the entire problem. So what you do is you take the entire problem, you solve the spanning tree an you take that correlation out of the problem, so you precondition. So what we're doing is repair and tries. In terms of the difference to the solution from this spanning tree and what you get now.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "When you is a condition number that is much much smaller OK and there is almost no correlation left in this graph. So that's the intuition behind preconditioning. So we applied this to large scale structure for motion problems.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "At I CV 2011, we were briefly the fastest circular motion method out there. But then Samir Agrawal and their gene and the geniuses at Google outdid us. But here is a sort of intuition for structure from motion, so here's the Chicago data set. Again, this actually is a solution of the sub graph. That young young creates, so it's sort of a fuzzy version of Chicago. Most of the information and most of the correlation is there, though, so if you use this as a preconditioner for the full problem again, it becomes much, much better conditions.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "Same on the famous Notre Dame datasets, from from Noah. Or in some ear.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "Venice datasets, so you get these fuzzy versions which have most like 99% of the information. Is there already. Everything else is sort of topping off. And topping off is easily done using conjugate gradient. So if you look at the condition numbers.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "Of a couple of really good and large datasets, this is from RCB paper. You will see that this condition numbers decrease drastically.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "Good so so factor graphs are cool. Gauss was a genius and you already know the algorithm. It fails when you have Eiffel Towers where Eiffel Tower is a more generic term than just Eiffel Tower. But but you can then use these elimination methods as preconditioners. Some future directions and I'll stop. We're working we're running GSM is downloadable for free. If you're wondering about the license, it's not GPL, it's it's BSD you can do with it whatever you want, OK, but internally we're running with GSM 3.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "Which is brought to you by DARPA, which is a defense agency in. In the US, and they want something that's really fast and can run in embedded mode, and we're doing they're giving US data sets that I can talk to you about, but are very, very challenging. OK with lots of different sensors, and so I think we published a plug and play sensor. Paradigm for which factor graphs are actually ideally suited and our play is very interested. And one of the things that they're paying us to do is actually make GTM faster, more reliable, more robust, and so it will be a fully multithreaded. He will do all these subtrees in parallel on multiple cores and still have the Matlab toolbox etc, so. So again, there is. You know there's some ear has a solver for structure from motion, which is awesome. OK, which is called Sarah's. OK, this is the planet from gaseous planet. But we do. We do not only search for motion, but also submitting a mapping and even sudokus, alright? That's one of the things that.",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "That DARPA, trosa does, is is the problem of very long term navigation. So you know what if you would fly for seven days without GPS? OK, one of the things that happens is that you lose your numerical accuracy. There is so much uncertainty at the end of this long Markov chain. If you don't do any loop closures that you everything blows up, and so we're looking into backbone methods, sort of a. A mix between direct and preconditioning to get rid of that blow up, and I think there's a lot of promise here for robotics. Another is.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "Can we completely eliminate the front end? All this correspondence hunting in structure for motion and robotics is one of the things that make it problematic. An idea of adults and is. Well, who needs correspondence if instead of using Gaussian densities and quadratic errors, you use robust error metrics, maybe you don't even need to have a front end, you just throw all your constraints in in a big soup and whether they are correct or not, you'll have the optimizer figured that out, so he used that small Intel data set that I showed before. And here is the standard Gaussian noise model an if you have outliers here, 100 errors, it goes, it goes to hell. But if you use robust error metrics like called M estimators, you're tolerant and you just don't care. And then finally something that I'm looking at with my students and postdocs.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "Now is also how to do distributed mapping over multiple robots. Actually, this is not the final slide. Here is a final slide. We've done a lot of mapping in robots and with cameras, but we're not really controlling these robots as they fly or drive or.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "Swim. And it turns out that there is a paradigm in control called model predictive control which is really trajectory optimization and I was looking at that. I'm saying, hey, that's interesting. GT Sam is very good at optimizing trajectories, so could we role in model predictive control into GSM in a seamless 11 factor graph based framework? And so that's that's the future for me is. So how can we roll in model predicted control into the whole thing? I guess I will.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "Stop there, alright thank you. Yeah, I've two question actually. One is from your last slide here, something with the geometric with Lee algebra. And do you usually algebra? Yes, I didn't even mention this but but but yes, I'm sort of just like Tom. Actually a little bit obsessed with Lee Groups and Lee Algebra. And so GD Sam. Can take actually can take any manifold object and we're doing optimization on. For Lee groups the Li algebra, but in general the tangent plane of these of these spaces. So yeah, Lee algebra is sort of core built into GTA San. Is it? Or a covariance estimation? Or is there any? Why are you interested actually? Oh, the reason is, you know, solely algebra asserted the nicest way of taking care of things that like in rotation matrix has 9 numbers in it. But that's really it is only three degrees freedom. So you look at this as a League group and then do optimization on the algebra at anytime is simply simply the way you should do it, and you get covariances on the Lee Group on the algebra actually so. You know it's. Does it give any advantages? It's the right thing to do, that's you know. Also, the lease Ledger lies presenting better. The others. Say all this errors all the covariances. I'm not sure whether it provides any real great advantages except getting rid of over parameterizations, which people tend to do if sort of the first thing to try is overparameterized and optimizing that, and then you get. Sub optimal solutions. That's right, but I'll be happy to talk a lot about Lee groups and Liagre offline. My second question is, you talk about Mahatma. You organize your graphs. But yeah, for organizing your graphs with different methods, do you? My first check how your problems looks like and then you reorganize the graph or you start different methods and see which one is better. Um? So the time comes with this, you know, heuristics built in, like you know, cutting grass into pieces or approximate minimum degree and they work for a large variety of problems. But it's true that you can beat NP completeness by taking domain knowledge and building that into your ordering heuristics, and so for example, if there are structural motion people in the room. A big trick that's all that's even in hardly in system book is the sure compliment you first get rid of all your landmarks by doing a sure compliment on this. And it turns out OK. The way I view the sure compliment is it simply an elimination choice you eliminate first your landmarks and then your cameras and you automatically recover the sure compliment so there could be better orderings. Actually then justice sure compliment ordering. So so yeah, trick that you can play papers that still need to be written. Or if you have domain knowledge about a very specific problem. Think about what the best ordering is for these problems and creates orderings and optimization schemes tailor made for your problem. For subgraph for preconditioning, does it matter which choice of spanning tree you use? Is? There are some spanning trees better than others? Yeah, yeah, that's a great question. It turns out that you know we. I truly invented this. OK, I truly invented this idea of using a sub graph as a preconditioner, but then I discovered that in the last 10 years. In the theory community in computer science, they've been looking at something called support graph theory, where they have exactly the same idea. OK, so like, damn, you know I could have gotten some prize or something, but no, no. But it turns out that the condition numbers of these original problems live up here, and when you throw in a subtree, it goes down very very quickly. Now you could go down even deeper, and the theory people are interested in. So what is the optimal sub graph there? And they came up in something called low stretch spanning trees. Low stretches is a proxy for how good the spanning tree is. Really, how you know how good it is at communicating information through the graph. And so young young uses loss thread. This idea of low stretch spanning trees in his ICD paper. So he does assure compliment Rick finds a low stretch spanning tree in the camera matrix or the camera graph and then adds a little bit of edges to the points back. And now he has a complete spanning tree. Cycle. Exactly exactly so. So when you have a cycle, long cycles are bad. They stretch the graph out. That's right exactly. Yeah, great intuition. Thank you. Yes, I hope so. Factories are cool. Download GT Sam alright.",
+        "start": 2320.0,
+        "end": 2349.0
+    }
+]

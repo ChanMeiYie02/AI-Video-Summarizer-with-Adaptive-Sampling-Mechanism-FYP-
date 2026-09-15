@@ -1,0 +1,20 @@
+{
+    "id": "5dd6n5l4korbda4nkrpultivjq6ejbl5",
+    "title": "Ontology-Based Data Access to Slegge",
+    "url": "http://videolectures.net/iswc2017_kontchakov_data_access/",
+    "info": {
+        "author": [
+            "Roman Kontchakov, Department of Computer Science and Information Systems, Birkbeck College, University of London"
+        ],
+        "published": "Nov. 28, 2017",
+        "recorded": "October 2017",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 225,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2345
+}

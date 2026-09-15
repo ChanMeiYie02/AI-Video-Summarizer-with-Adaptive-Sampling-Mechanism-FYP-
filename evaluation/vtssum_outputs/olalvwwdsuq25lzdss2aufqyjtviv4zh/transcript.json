@@ -1,0 +1,242 @@
+[
+    {
+        "text": "OK, so thank you very much and thank you today. Yes Infr people for organizing this summer school. They have done a great job. This is my school, so if you have any question in between or if you want to give some feedback about the tools or about some of the concepts that I'm going to present, please interrupt me and the presentation OK so.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "First of all, my name is Carla with I work for a company in Spain called Isaako. We are a spinoff of their research country in Catalonia, an we have several departments, including the commercial world, belong to the R&D one where we got involved in several European players during this years. Like active. Of course, local neon and so on, basically around topics of the semantic Web knowledge management.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "OK, so what's the purpose of this talk? Well, the first day and even this morning with the Eagles presentation. Paul Warren, an Eagle, presented the main concepts and terminology around the active project. I'm sure Paul explained how. We integrate the social software and Web 2.0 applications in active, how we understand. I the notion of context. How we exploit semantic technologies in a lightweight manner. Even Marcus and he presented some stuff about mining and how we create predictive predictive models for working context, an Ant task. But today during this presentation. I'm going to focus on what we understand as knowledge processes inactive. I guess that you are familiar somehow with the notion of business processes. Something that Igor is playing during this during his presentation. An in general business processes are very static oriented to business goals. Anne. Not very flexible in comparison we understand or there is a different kind of process known as knowledge process. Sometimes informal process, other times known as art. Processes which are driven by the user, which are very flexible depends on their skills, their knowledge, their background. Because in every step in every activity they have to think about the which is the better Ness action to follow or to carry out the whole process. So today we are doing this presentation. We are going to focus on. Explaining what we understand as knowledge process, give some definitions an information about what other authors understand as knowledge processes an we will see how we have implemented, designed, and implemented several tools to deal with this knowledge processes.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "OK, introduction is mainly divided into 2 parts. The first one is about what about the terminology. What we understand that knowledge process. On the notion of knowledge worker, the notion of knowledge worker and the second the second part is the different approaches that we have implemented mainly. We can divide this approach into four a framework for knowledge process which is a top down approach to model in a very flexible manner knowledge process and we have several tools for that so that this has been introduced by you got this morning. The second approach is knowledge filters which offer. I am a connection between the Semantic Mediawiki an on the user, their approaches, some refactoring and optimization tools and measures in order to compare knowledge processes and see which one performs better or gives gives more satisfaction to the user and so on. And their final worries about security and privacy around knowledge workers around knowledge process.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "OK, when we started. Analyzing the term knowledge process, we discovered that's an author related. The term with the notion of knowledge workers. My knowledge worker is basically the one who works primarily with information or the one who develops and uses knowledge in the workplace. This definition was given by Peter Drucker in late 50s Anne. Well, there are two funny funny things about the definition. It's a very good one, but the problem is that if you look on the Internet for this information for this definition is quite hidden. It's not easy to get. This definition, because other people has defined in several ways, the term summer people don't use a clear definition of knowledge worker. And the second point is that using this definition, the most people or most of the people that I know can be considered considered a knowledge worker. If you think about techniques, technicians or researcher PhD students, engineers. They need to think they use their knowledge to. I don't know to write a proposal to write out the level to come out with a new idea for an algorithm. Anne. And. That something important is something we are facing nowadays. There are more and more people working as a knowledge worker. They need to use their experience and knowledge to carry out their daily activities. Is something different in comparison with the business processes because it's oriented to the user.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "But we have more, more modern definitions around the term Thomas of import define knowledge workers as people who think for a living and discuss who they are they do or how they number. Their number is increasing, but important thing within this definition is that they introduce the. Then the relation with companies. He said that the main purpose of knowledge workers is to increase the economic productivity. And this is related to knowledge driven work. So if we.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "We look at. The typical situation of a knowledge worker, I would say that. Of course they have to achieve a particular goal, but mainly they have to to answer several questions. For example, they ask themselves what they have to do to. Carry out the process which are the steps for scheduling a meeting or for writing a proposal for the next call. They ask themselves how to do it. OK, it's better if we send an email to some. People who from people who may be interested in the project. Or maybe I can check the last call and see different interests and so on. They try to answer what to look. Sometimes a lot of information over there. Sometimes the information is with the Corporation in. In repositories where people can look for. Sometimes or a lot of times I can talk with my with my colleagues because they know how to how to they have experience in a similar in a similar process and maybe they can help me in order to carry out the process. Sometimes I cannot trust all the people because they weren't succeed or because they didn't have enough information when they tried to run the same process. I have to clarify when I have to act when I have to send invitations or when I have to. Invite people to otelco. I have to at the same time I can ask myself how to share this knowledge. OK I have. I got some experience when I'm running this process. How can I share this information with my colleagues within the company? Basically, I can ask myself what's happening around other proposals. For example, how can, how can I feed this information into with my experience?",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Basically this this gives the opportunity the opportunity to have particular definition of knowledge worker in the project inactive, and we say that knowledge worker is a specialist or an expert in the process. It could be on at ministered unreceptive assistant dedicated to knowledge intensive work, as I say. They need to use their their minds based on their experience, skills and context. They take decisions to create new knowledge out of existing pieces of work and basically a very important thing is that they need to interchange ideas with others sharing this knowledge with other colleagues to improve their knowledge processes. This is a much narrower definition. Now the worker is an expert in terms of of knowledge. An interesting thing is that this definition put an emphasis on on the enterprise scope. Which is very related to the goals of active.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "OK, so if we look at any Corporation or potato, there are two main processes as we as we explain before. On the one hand we have business processes. Which are. Static statically formalize. Trains are. State our state all kind of exception are captured on a lot of people are involved with very specific roles. In general this is done through one of the multiple enterprise applications available in the in the market ASAP or Microsoft dynamic and so on. But in general companies are very interested in defining the their core business processes because they improve the business value. They can get benefit out of out of it. On the other hand, there are other kind of processor processors allocated at the end of the tail of this graph which are non formalizes, formalized processes which are more. User focus on user related. Anne. It mainly depends on the experience and skill and judgment of the knowledge worker to be carry out. The point here is that expressing all this process is complicated because they are maybe less repetitive. But the number of processors are much larger because you have to sum all the available processors at the end of the of the tail. And at the same time these processes are these non formalized processes are very important cause. If we look at the case of soccer, for example, we don't have any business process too. To get the travel expenses, for example, it's something important for me because I want my money, my money back. It's something I need to deal with my company because they don't care so much if they don't pay me, but it's something that I really care.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "OK, so. This type of processes are very related to the different types of workers. On the one hand, and mainly from the past, from the industrialization days we have operators which had various structure, various structure work with a lot of procedures, control techniques, compliance policies. My basically workers knew what we had to do in a very specific day. Ask task after task. But nowadays most of the people in their daily work. And depends on their knowledge. They they must be every day is different. They need to be much more dynamic, flexible. They need to be more adaptive. They they must foster cooperation with coworkers. They have to change information. And they have some daily works and sometimes they they depending on the internal and external factors they have to modify the order of of these activities. Sometimes they can't code because they have to. They have to answer some emails, important emails, but it's not a big deal because you know that you can schedule the rest of your week. To allocate these tasks.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "And around processes there. I mean, there's some, there's some some. Definition out there around workflows, business processes, but it's not quite clear what knowledge prophecies, so I'm sure somehow you're familiar with the definition of workflow. It's taking forever for notebook, then basically workflow is finished set of sequential parallel activities two year by event. Numa. I think it's clear.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "On the other hand, we can say that the business processes are collection of sequential parallel activities necessary for processing economical economically relevant objects. And this is important because somehow our business processes are kind of workflow with the bands an steps, but it's economically driven and this puts the definition in a clear clear business scope.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "OK, so. We know what the workflow is. We know what I'm business process is, but where our knowledge process while we gave our first definition and we said that knowledge processor collection of loosely defined and ramified activities necessary for protection of user relevant data and to achieve user user relevant goals. We have a lot of discussion about this definition and we have a more complete one afterwards. But basically, if you look at the definition, it seems quite easy. You have a simple sequence of different tasks. It's driven by the user, the user decide when to move from 1 task to another because they have because he he has in mind the final goal. But basically it's not as simple as that. 'cause if you look at for example, if you want to schedule a meeting and you have the first step is running Doodle Pool send invitations with limitation an set. The final final date. It may happen that doodle. Is not online. And in that case you cannot carry out. You cannot perform the second activity and you have to decide what to do instead of two. And maybe I can use a different service. Maybe there's a Spanish service code to see you. Maybe you can use that one. There's not a huge difference. Maybe you can send invitation directly so you can only you only need to confirm that the final date. But basically this can happen with any activity and with any tasks. So basically the situation becomes more complex. And it happens all the time that there are different types. Some possibilities between them, and that's the reason, because we say that knowledge process process servers are ramified set of activities because it becomes a very complicated graph where you have connection between all possibilities. Of course the user is not aware of the complexity of this graph because he know in his mind he has a very. Clear set of steps. But it's something we need to deal if we want to create a platform as well as we want inactive where there are some where there are huge number of users and they can share this knowledge between them and they can help each other and so on.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "OK, so as a summary.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "This table certain main difference between the between a business process and knowledge process. So a business processes driven by business goals. It depends on the scope. Is that the company is the enterprise is a static cause. It takes a lot of time to drive the business process in a company. It's something very established, very fixed the the business processes are formalized, their tools for that, so you can define in a very precise way the different steps. How do you find people with different problems are involved in the steps I'm shown are externally coordinated in the sense that of course there is someone coordinating the protest Paris on behalf of the company. And there are two tools for analyzing monitoring and optimizing the business process. On the other hand, we have knowledge processes which are driven by. They usually depends on on the on the goals that any knowledge worker might have very in their daily in their daily work. Discuss here is individual because it only refers to the user or sometimes to a small groups of people, close colleagues, and so on. The nature is dynamic because there are a lot of a lot of elements to take into account and for the same reason are very informal because it's not establishing a paper, sometimes it's only on emails and from one knowledge worker to another one or sometimes someone. Has created a spreadsheet template for for request for requesting a travel. Answer One is spontaneous is something that the user decides on the fly when they have to deal with some particular goals and is not monitor or because there are no available tools yet to analyze and monitor knowledge processes.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "OK, but if we look at a simple example to figure out what I'm knowledge processes, we can see we can put this one the hiring process. If we, we can imagine that we work for a company. And. There are some actors in the in this example and the boss. Phone Alice, who is hiring experience? OK, there's a new back and see in the company. OK, this starts in the knowledge process for Allison said, OK, now Alice knows. That there are set of steps to be performed in this knowledge process, he said, OK, I know that I have the information given my given by my boss. So I mailed this information about the job description to the hiring manager. To notice him, there is a new backends in the company. Afterwards he said, OK, I have to process information in the internal website. To search for some possible candidates so she goes to the internal website, see fill out the information. And then and then see fonts the her assistant to say, OK, there's a new back and see it would be nice if you can find some people who would fit in this new new position. So in this case, Bob, who is the real assistant, goes to different online services regarding jobs an send back and send back. Different emails or send different image to the possible applicants to this disposition. As well as received emails review. Reviews the possible candidates. Send information back to send information today if they have the higher manager. I see factor. She finally starts the interview process where she setups different interviews with the candidates. She carry out there or see run the interview process by phone. And then see send some information about the candidates to the to the manager to decide who is going to take the. The deposition, so here we can see. That the number of people involved is quite small. Is not this tablet different steps that Ali should carry out too? Randy's hiring process, but she knows. She has the knowledge to do it. She interacts with other people, so relative receives the information mainly by email or having some phone calls. And basically it's quite difficult or the current tools. Are not. As good as they should be to monitor the process or to monitor how the process evolves overtime.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "But of course. There are of course there are relationships between knowledge, processes and business processes. Sometimes business processes are we. We have some business process, country or knowledge process. Let's imagine that we have a new project in our Department and I need to run or. I need to hire some people. So it's not part of the business, but. It's obvious that I need or we need people to too. We need people for the project. So that's an option at this point. Can trigger noise processes. On the other hand, knowledge process can trigger business processes. For example, when I schedule a meeting outside of our offices. And we need to. Of course we need to pay them the facilities we need to pay the room, the drinks and so on. And that's part. That's established code. There is a template for that. It is a set of steps that need to be. Performance, own. So in that case, a knowledge process could trigger a business process. And of course, our connection between them, because basically. Yeah, something that might happen.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "OK, and how this knowledge process can evolve overtime. So basically when. If we look at this example, we at the beginning when we are starting the process, we there are a lot of tasks available from T1 from the seven depending on the context the user has to decide which is the. Next task. And in this case in T1 Hillside, Bob decides that T one is the. The best ask to be selected because it is one of the measurable tasks and according to the context is that is a more proper one. OK, so in T1 he selects the Wan the first time frame he he takes 212. To run whatever whatever the task is that asks about. The number of admissible tasks are reduced because T1 has been selected, but depending on the context, knew tasks are available in this case. T3 could be available to be selected. However, Bob instead of T3, select the two because they can't decide that is that one is is much better, and because his experience knows or based on his experience, he can say that T2 is the right one and this happens all the time where the number or the admissible tasks are changing and evolving overtime and Bob must select the follow up activity.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "OK, however, when I've been putting the example of. Requesting or hiring process. There are multiple knowledge processes running in a company for example. Bob can prepare representation and he go to and REL, then identify some information, copy that information over the PowerPoint, passed information to another person, and save the presentation. However, this there are other people preparing presentation at the company, so it might be the case that Alice. Prepare a different presentation in selecting a different order of activities. Instead of identifying information as the task. Two, she opens the PowerPoint. Then she follows the usual steps, OK? However, in the future, Bob can also modify the order of. Of how he prepares them a presentation instead of, for example, identify information she, as a second step, she he will talk to another person. The important thing is that within a company there are multiple. Knowledge processes running all the time. Ann. This is something we can mine and we can analyze to get some information about that we can. We can somehow extract templates and patterns of what the user with the users do and give this information back to the user as a suggestion as a recommendation of how the process should should look like. And of course it's a step depends on the experience, knowledge and skills there are. There will be a set of prayer post conditions, sun depends coming from outside or maybe from the same company. Connections with other knowledge processes or business processes or no. This information should be taken into account when we come out with.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "With that template. So basically the idea is OK, we can, we can do it manually, maybe because we have some kind of domain expired or or maybe from the mining process analyzing the logging we can say OK, there are a lot of people. Running the running the hiring process or running the process. Preparing a presentation, but we can straighten plate. Somehow I can play this standard to be reusing the company, and that's something interesting from the from the company point of view, because it can improve. Activity of the users. The knowledge workers he can give some insights about some knowledge with hidden somehow in the head of the knowledge workers.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "OK, so having in mind these different features within knowledge processors we we can say that the knowledge processes are loosely defined and structure ramified, collection of activities which was the initial definition. But we can say as well that is not fully defined in terms of structure or the order of activities depending on the knowledge and depending of depending on external events, an even internal events, the order on the structure of the knowledge process knowledge process can be different. Basically, knowledge process depends on on require decision in every step to define which is the follow up activity. Because for the same reason depends on different factors, external factors and internal factors. And this decision is based on the context, of course, but it's based as well on the knowledge and experience that the knowledge worker has. I'm basically the final. Final statement is that knowledge processes are very complex, but the dynamic ramification that can be analyzed by mining an by analyzing what the user does is one of the key features.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "OK, so. So far we've seen what we understand this knowledge process, the different definitions given so far. On the different feature of knowledge knowledge process. But the question here is OK, why is this important for for active 1, the point is that they are out of sight out of informal processes within a company an. We there are not enough tools to deal with them. There are enterprise level application like Microsoft Dynamics and so on to deal with business processes, but there is no way to define the process right in our proposal. Is scheduling a meeting and preparing or preparing a bit. And there's a clear net I need. It's a need for having tools for supporting informal processes. We context aware. In mind that there are certain events coming out out of the company or within the company. We need to keep the process driven by the user because it's the user who mainly knows what is the best decision to be taken an. On the contrary of the complex enterprise level tools, we want a lightweight, lightweight approach to help the user in the data activities. To be as much flexible as possible.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "And we finally came up with definition of knowledge processing active so. Basically. Of the main worlds in activities, support, knowledge processes. Supernotes processes in their daily activities to help them to be more productive. To be more proactive in terms of their daily activities. They will remind us that River of the process they will define or we they will decide which is the next step. And we will try to use several tools tools to identify recurring sentence sentences or sequences or patterns or templates within within a process to help the other knowledge. Workers in similar situations. Well, the final purpose is that having these tools an having these lightweight formalization of knowledge processes, we can finally in case the knowledge workers efficiency an finally improve the company in terms of productivity.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So the second part of the agenda is the different approaches that we have implemented, designed and implemented in active.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Basically are divided into 4. The first one is. Is the framework for knowledge process? Basically if it provides features to create the fine, create and share knowledge process within active. It is very related to the taskbar. The taskbar shown by Igor this morning. The second approach is the knowledge filters approach connecting the Semantic Mediawiki that we use as a template repository. With the knowledge or with the daily activities of the user. The third one is different tools and approaches to compare and to optimize knowledge process and the final one is about security and privacy.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Well, an important thing is that all these tools will cover the the knowledge process lifecycle. There's a knowledge lifecycle like create, refine, insurance, search and compare and so on. But basically what we what we have here is a similar one. We will try to cover this knowledge process lifecycle in order to complete the whole life cycle. So we will give tools to define, capture and acquire knowledge processes within a company. We will provide tools for sharing knowledge, process and retrieve information from knowledge process repository's. Anne. To help the user and in their daily activities, we will provide search facilities. To know what's happening, for example, in your company in related activities or processes and we finally will provide tools for comparing knowledge processes and to present that information to the user.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So the first approach was the framework for knowledge process. It provides methods to create and restructure processors during the runtime. Basically, is composed by several competitors by several elements, but all of them are included as part of the active taskbar presented this morning. Bye bye bye. Cool idea is. To help the user, and that's the reason because we follow a top down approach is a very flexible manner of defining tasks. The user only needs to. Type the number the name of the process and give some meta information. They can assign resources. I need the user who decides which is the next step, which is the next task control. So the first component in the framework is the task pane, which offers, which has been explained this morning by Igor. It offers facilities to create and manage processes. The second one is the attach recording for recording what the user does an from the different events gather from the from the active MQ. They can edit and modify the the recording process according to what he understands. And finally we have the task with who guides the user through a set of steps to facilitate to several some of the different. Particular purposes that they can have in this framework. For example, selecting a template or creating a new template. In coordination with these elements, we have a task. Service basically defines the. The process model that we we follow, which is very simple. It provides methods to restore this process and to share this process among the different knowledge workers. And at the same time it offered connections to the mining and production stuff which is developed as part of a different work package inactive. And finally we have this semantic Mediawiki that we use as a template repository.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "OK, as I said, the service Has's main goal to define. But we understand us. My in terms of updates and relationships, we have implemented a very simple model for that. It offers it gives the opportunity to define processes an subtasks within the process. You can you can identify which is the follow up task and which are the resources assigned to the different process. But at the same time, it connects the top down and bottom up. Approach the top down provided by the knowledge by the knowledge process framework and the bottom up approach provided by the mining stuff.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "The second element element is the task pane. As I said, it's the user oriented top down approach to deal with knowledge processes. It was on this morning by eager. It offers basic process and tax manipulation features like create a new process, delete process, modify your tag or Keith or include meta information as part of the process you can modify the security of the process and so you can assign resources to the. Into the 2:20 you can assign resources to process. It is tracked automatically metadata from the. From there from the resource. You can import and export. Process from the touch with our. Because there may be some processes are public, or some people had had made them. Made them public, you can synchronize or the task pending synchronized with the different services provided by the active Knowledge Workspace, so basically. An all the metadata is synchronized. It provides the the search facilities econnect. Abilities provided by the by the active Knowledge Workspace.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "The second element is the context visualizer. Which was also shown by this morning and the idea here is that you can visualize the relationship between the different elements within a context in terms of the different resources, tasks and users in the context. You can get meta information of each element on the left. Um? You can see that some relationships are in red, 'cause that means that. There is a direct direct. Relationship relationship between the between them. Basically it means that for this document the whole Warren and Thurlow were part of the of the. Included as authors of the document. They are depending on the time on depending on the relevance of the of the element. In the context, the icons have the icons have different side. I'm some filter filtering option are provided to facilitate the visualization of the of the working context.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "OK, sometimes instead of creating everything from scratch for scratch. It's more likely to be easier to perform some taxing guideway. The reason because we implemented a task with her to offering some guidance guidance. In terms of some specific steps to create a process template to select a particular process or to modify the privacy or the security. Metadata. The idea here is that instead of creating everything from scratch or yes. Just trying to figure out what's what's in the task with the service, you can run any of these processes too easy. The too easy to make it to make it easier to process. This is only this is the example of. Creating a process template where the task with our guides, the user through 4 main steps it offers the possibility to. To add to annotate the template with some metadata. You can create tasks, you can assign resources, it offer hints about how this task and these resources should be. Basically, you can support that information. To the semantic Mediawiki are to them to a particular file.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "A different approach is the process recording something that you mentioned this morning as well, so basically. That touch recording or the process recordings are feature which enables the knowledge workers to record the sequence of actions within the system. When we, when knowledge worker open. Word document we get an event in the active MQ, and that information is gathered by the different but different applications and we capture that information to allow the user to. An to allow the user or to give the user. An idea of how the process could look like. And after collecting the different events that user can modify the tax or can create different tags, collecting different actions within one particular tags and modifying or moving up and down the different order of the activities.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "So basically on the left here we have how. After clicking on them. On the play, the processors recording starts an we gather information about what the user does. For example, here he opens a document. Then he navigates to different URLs. This information can be saved and then can be modified in order in order to make or to modify how the process looks like an from that recording process, the user can modify it to have three main activities like check. Like OK? Gator knowledge process for preparing submission where the first activity is check regulation an it's related with a document collaboration full document. The second activity is check a set of website and finally the final activities should make a proposal.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "OK so I say the framework stores brothers templates on the Semantic Mediawiki. The knowledge processes are stored in the attached with are in the service, but Protestant later store on the Semantic Mediawiki. This is how the Semantic Mediawiki for cadence. One of our use cases look like where the different processes are stored. The purpose for this is that the other knowledge workers can. Ray used that information and those knowledge processes. An they even offer some very simple visualization of this knowledge process within the within the Semantic Mediawiki with some meta data available. Basically, for each process there is a wiki page for each. For each task activity there is another wiki page explaining or giving more information, more detailed information, including some metadata.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Behind what we have is some some wikicode where. Where we have sun. Ax for process or users and so on, representing what our knowledge prophecies in within the semantic.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "That week the second meeting approaches the knowledge filters which are. Simple components to provide connection between the knowledge bases. In our case the Semantic Mediawiki. And the and the interaction given by the user and they have developed 2 main tools as the wiki and the Office Smart Tag plugin.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "So basically, the idea of that as the week is that the user can can articulate, articulate their his knowledge or the query that they want to query to the system through several keywords, because very simple way of expressing what we do want to look for, these keywords are interpreted using some mechanism of keyword translation, creating so a set of. Queries against the Semantic Mediawiki. And there are different possible interpretations of these of these keywords. They ask the user to verify which interpretation is the right one, and depending on the interpretation you give different answers.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So this is. The first step where the user query the user type some keywords, in this case publication semantic web search. So.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "On the web. The system as the wiki give some information about the possible interpretation for the keywords. This information is or. This interpretation interpretation I created. Creating several queries against the wiki so the user can select which is the which is the right one.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "And according to the selection of the user, it gives the different. They respond. The answer to the query where in this case we can see that for. The publications semantic web. They the system, have found a set of possible publications.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "The second approach within the knowledge filters is the office smartac. Plugging it offers connection between the. I'm the word application and the Semantic Mediawiki. So basically when the user is typing it, it happens that it show up some. An information icon order. And that means that there is the term has been recognized as one of the tents available within on the Semantic Mediawiki. So you can. You can invoke the contextual menu Ann's For more information about the term. You can view this monkey data associated with the term knowledge, or you can include the description of knowledge as part of the document and so on. So basically connects what you have in the Semantic Mediawiki. Um, with the with the office tools.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "OK, so there approaches about refactoring and optimization optimization. So from the beginning of the presentation we have seen that knowledge processes are. Very flexible. Are complex and complicated sometimes and can be executed in several ways. So the question is if we have two different knowledge processes. Two different executions of knowledge process. How can we say which one is the better one? See if we look at this example. For example, we could say that the first one is better because it's faster because has less task, for example. OK, but maybe the second one is better because you get better satisfaction, satisfaction, user satisfaction when you add this new task. Or maybe that both are similar in terms of performance, but maybe the first one is much more expensive because it uses some other sternal resources. So the point here is, how can we compare knowledge processes and how can we increase the efficiency of performance? Increasing the flexibility and simplicity.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "OK, I'm what we have developed. Here is a framework mainly based on three steps. We have defined a set of metrics to compare knowledge processes. Then we have defined an indicator, a common indicator too. Do you sign and unique value to compare knowledge process and then we have implemented to tools around the idea of refactoring knocked in optimization? So which one is the refactoring tool and the second one is context ified which will be presented which are going to be which is going to be presented by.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "So the first step was to define some metrics to quantify knowledge process. We have defined three main three main kind of metrics. Depending on the kind of confidence that we can, we can depend on the level of confidence of the measure. Basically, we say that there are some objective measures which are which has high level confidence. Because we can somehow measure this, this values of these measures, for example the size or the performance or the external call cost. But we also define other measures like dependability, which means the number of inputs and outputs of the knowledge process diversity. Which means or which? Which is about the different types of input and output that knowledge process can be or the. For example, the structural complexity, which is about the number of the admissible activities or tasks within a knowledge process. The second type of metrics are the user dependable values. We basically depends on the. An depends on users preference, like. Like the tool that he used or the connection to a specific tool with a specific person from his social network and so on. And the subjective values are measured with a low level of confidence typo there. Because it contains subjective information like the quality of the result or the satisfaction with the process from the user perspective.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "OK, so we have this information but there is no way of saying saying which knowledge process is better in terms of. Of overall, or using an overall indication. Because we have defined mechanism to aggregate all these measures into a final one. Something we could we have called knowledge process trace indicator which basically represents a trade off between high level confidence metrics metrics that are which are we we can we can measure somehow with low level confidence measure depending on the perception of the user. For example the satisfaction. We have we have used some mathematical background to aggregate all these. All these measures and finally we got a number for comparing processes.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "OK, so the first approach within this this. This section is something called the refactoring tool. Taking from the from the programming field, refactoring means that we can apply a series of transformation within the code. With no impact in the final goal of the of the of the goal, but providing in the case of knowledge process, providing a new kind of structure or new structure with better design or perform performance. For example, if we have. This just figures the first one is composed by three branches, so we could. We could delete, delete the the final, the final one, modifying the modifying the structure. Because we have discovered that that one is unused. Melissa unused branch. Or in this example, we can see that we have a linear process, but somehow it happens that sometimes it makes sense to have parallel activity. Because maybe it's more efficient, or because maybe it uses less exceptional cost and we can create a task. The call of the noise processes. The same is still driven by the user, but we have modified the structure of the process with a very small with very small transformation.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "An we have implemented this tool. We try to compare. Our knowledge process which we want to refactor an related knowledge, processes an templates. So basically using mining or because are related somehow. Maybe the user has? Maybe the user did run the process in the path you can compare. The different different processes and apply. And apply some refactoring transformation on the top. We have the different measures for the process and on the right we have the measures for the selected task. In this case there is no note I selected. On the tool is design or is oriented to a visual comparison. So basically the user can check what contact the difference between the different processes and then he can. He can apply simple transformation like create a new task or join two different tasks, delete one of them or split split a task.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "OK, so. Yeah, I think so. So the second tool about optimization is context. If I was going to be presented by Gregor.",
+        "start": 1363.0,
+        "end": 1392.0
+    }
+]

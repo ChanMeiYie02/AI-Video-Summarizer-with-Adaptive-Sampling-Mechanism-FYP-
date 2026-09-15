@@ -1,0 +1,20 @@
+{
+    "id": "mbg3p2rfprbn2iaxgno36e2nwpy3rvpu",
+    "title": "Convergence rates of nested accelerated inexact proximal methods",
+    "url": "http://videolectures.net/nipsworkshops2012_villa_methods/",
+    "info": {
+        "author": [
+            "Silvia Villa, Istituto Italiano di Tecnologia"
+        ],
+        "published": "Jan. 16, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Optimization Methods"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 111,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 612
+}

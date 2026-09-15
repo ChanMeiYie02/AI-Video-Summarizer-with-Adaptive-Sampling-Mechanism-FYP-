@@ -1,0 +1,21 @@
+{
+    "id": "kzlbcyr4ij67qbmj3q4dx2vco7xbwtfy",
+    "title": "WiseMarket: A New Paradigm for Managing Wisdom of Online Social Users",
+    "url": "http://videolectures.net/kdd2013_cao_wisemarket/",
+    "info": {
+        "author": [
+            "Caleb Chen Cao, Department of Computer Science and Engineering, The Hong Kong University of Science and Technology"
+        ],
+        "published": "Sept. 27, 2013",
+        "recorded": "August 2013",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 45,
+    "num_sentences": 190,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 1857
+}

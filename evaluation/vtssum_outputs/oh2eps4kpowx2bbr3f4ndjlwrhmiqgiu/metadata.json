@@ -1,0 +1,21 @@
+{
+    "id": "oh2eps4kpowx2bbr3f4ndjlwrhmiqgiu",
+    "title": "Bringing Data Science to the Speakers of Every Language",
+    "url": "http://videolectures.net/kdd2014_munro_data_science/",
+    "info": {
+        "author": [
+            "Robert Munro, Idibon"
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 51,
+    "num_sentences": 351,
+    "num_clips_with_summary": 36,
+    "num_gt_summary_sentences": 51,
+    "ground_truth_summary_length_chars": 6439
+}

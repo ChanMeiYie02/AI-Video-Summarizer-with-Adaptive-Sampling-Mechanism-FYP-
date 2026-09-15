@@ -1,0 +1,21 @@
+{
+    "id": "b6ubva5le662jyubgj7wbv4lnsunb3i4",
+    "title": "Product Selection Problem: Improve Market Share by Learning Consumer Behavior",
+    "url": "http://videolectures.net/kdd2014_xu_consumer_behavior/",
+    "info": {
+        "author": [
+            "Silei Xu, Department of Computer Science and Engineering, Chinese University of Hong Kong"
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 159,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 2992
+}

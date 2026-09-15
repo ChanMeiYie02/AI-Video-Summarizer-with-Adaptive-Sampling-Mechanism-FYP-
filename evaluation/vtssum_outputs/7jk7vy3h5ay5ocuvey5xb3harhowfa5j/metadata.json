@@ -1,0 +1,20 @@
+{
+    "id": "7jk7vy3h5ay5ocuvey5xb3harhowfa5j",
+    "title": "CEP - Complex Event Processing",
+    "url": "http://videolectures.net/coinplanetdataschool2011_stuehmer_cep/",
+    "info": {
+        "author": [
+            "Roland Stühmer, FZI Forschungszentrum Informatik"
+        ],
+        "published": "Dec. 23, 2011",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 72,
+    "num_sentences": 623,
+    "num_clips_with_summary": 43,
+    "num_gt_summary_sentences": 73,
+    "ground_truth_summary_length_chars": 11682
+}

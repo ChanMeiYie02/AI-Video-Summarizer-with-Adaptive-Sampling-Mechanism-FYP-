@@ -1,0 +1,20 @@
+{
+    "id": "dgjteoa7m27tygogplgze7gy4hpum4z7",
+    "title": "Real-time processing on intensive web streams",
+    "url": "http://videolectures.net/eswc2010_grobelnik_rtpoiw/",
+    "info": {
+        "author": [
+            "Marko Grobelnik, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "June 30, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 778,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1395
+}

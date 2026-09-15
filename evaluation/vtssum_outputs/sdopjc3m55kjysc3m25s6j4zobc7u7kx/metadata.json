@@ -1,0 +1,22 @@
+{
+    "id": "sdopjc3m55kjysc3m25s6j4zobc7u7kx",
+    "title": "Building flexible and engaging content collections in a breeze",
+    "url": "http://videolectures.net/internetofeducation2013_ioannidis_breeze/",
+    "info": {
+        "author": [
+            "George Ioannidis, IN2 search interfaces development Ltd"
+        ],
+        "published": "Dec. 10, 2013",
+        "recorded": "November 2013",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web",
+            "Top->Social Sciences->Education",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 225,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 1777
+}

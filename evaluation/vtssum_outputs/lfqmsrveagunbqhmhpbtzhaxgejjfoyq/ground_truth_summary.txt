@@ -1,0 +1,1 @@
+So XML documents are data objects which have tree like structure hierarchical structure. Therefore, I propose the clustering approach, which is called multilevel clustering.

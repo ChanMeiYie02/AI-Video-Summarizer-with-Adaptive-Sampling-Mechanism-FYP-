@@ -1,0 +1,20 @@
+{
+    "id": "mgc4ong546zqv6tbjh5khnwbceetkkm4",
+    "title": "Linked Data in Linguistics for NLP and Web Annotation",
+    "url": "http://videolectures.net/w3cworkshop2012_hellmann_data/",
+    "info": {
+        "author": [
+            "Sebastian Hellmann, Department of Business Information Systems, University of Leipzig"
+        ],
+        "published": "July 12, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 138,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 2057
+}

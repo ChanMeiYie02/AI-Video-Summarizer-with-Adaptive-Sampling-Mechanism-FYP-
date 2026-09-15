@@ -1,0 +1,20 @@
+{
+    "id": "hbzd2hpulkqgu5mcx7bekon3qhoylql4",
+    "title": "Vision of the cloud computing from the Red Hat / JBOSS perspective",
+    "url": "http://videolectures.net/classconference2012_little_vision/",
+    "info": {
+        "author": [
+            "Mark Little, Red Hat"
+        ],
+        "published": "Nov. 16, 2012",
+        "recorded": "October 2012",
+        "category": [
+            "Top->Computers->Software"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 425,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 53,
+    "ground_truth_summary_length_chars": 4842
+}

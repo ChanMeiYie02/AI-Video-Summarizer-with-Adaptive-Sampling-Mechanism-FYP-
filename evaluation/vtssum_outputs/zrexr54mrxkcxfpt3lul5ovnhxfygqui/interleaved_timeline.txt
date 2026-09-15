@@ -1,0 +1,161 @@
+[0.0s - 29.0s]
+Memory about the straight line. One thing is is construct something called struggling translation. Here what you do is divide each straight line into a number of sub segments. Length of the subset need subsegment is the distance. Play supply. The. 6.7 century should be some settings, but what happens is that they will expand and manner which reflects the shape in the straight line. And then we take the. Triangulation of the sort of takes the incentive points of the image Regents arises construction recurring Bill Grubbs remember this directionality? Straight lines in the image.
+
+[29.0s - 58.0s]
+I want to deal with the full graph. You gotta simplify it right to bring back some of their structure, because this might be regarded as redundant. The two graphs of which can be computed will make graph which simplified the structure. Most of these is a paper graph paper as we do is use construct a circle on edge on each edge of graph. Then what we do is we check to see whether that circle contains another node. Instead of opening up the road, then you delete the page itself. So this is prunes away redundant adjacency relationships. Starting with sophisticated version of this is the neighborhood graph that is relative neighborhood graph is probably constructing a circle from the issue. You construct a mood, so that means if you have two circles.
+
+[58.0s - 87.0s]
+They sent it to you. Find edge. Look at the intersection of those two circles. Just finds his shady Blue Ridge in here and it's blooming contains a. Additional node then what we do is, we believe corresponding age. So that's why you are pulling back the edge structure through labor after simplifying cross structure.
+
+[87.0s - 116.0s]
+Recommendation I will talk about it. Is a shocker of? Shut up arises in skeletal representation shape, so here's a giraffe or regardless, with computer vision axis. Skeleton so every point on that maybe access. We could construct a circle is by tangent to the boundary of the object. So we choose a point we could construct every point on the skeleton so it just touches in by fashion way the battery. Now that's what we do is we can. We can move it on the skeleton and recall what happens to the radius that circle. So you can imagine the circle behavior and other displays if the library is tapering, then what happens is that the circle increases or decreases on the Franklin radius. If we have a construction. Then so probably come back here then what happens is the circle has a radius, has a local minimum. If we have a boundary of a beautiful width, then the greatest service constant, then finally we can have a little bulge on the boundary, in which case the radius of circle is locally maximum. And So what we can do is we can fulfill sampling into the radius of 500 circle as we travel along different instead of branches and that allows sensitive tribute. The skeleton in a manner which tells us something about the geometry of the boundary difference. With Jonathan Foundry, I'll come back to this representation made wrong because I should use it, provide data for one of my one of my examples.
+
+[116.0s - 145.0s]
+OK, so. That really finishing my 2 pieces of that sort of motivational right first will probably work, and Secondly setting up the picture of how graphs come about in computer vision. Now I want to do is to get started stuff into more technical aspects and talk to you little bit about how we could try to measure the similarity of graphs, particular how we can capture that similarity in a probabilistic way. So why don't we do it in the next? I guess 40 minutes or so, but it's talking about array in which we can model types of errors occur or variations occur in the grass. To measure these in a probabilistic manner to get developer problems, distribution, little caption.
+
+[145.0s - 174.0s]
+OK, so the starting point for this work is a. Motion. And it was published in family back in 1997.
+
+[174.0s - 203.0s]
+And the idea is as follows. Let's suppose we're trying to match two brothers. And this growth potentially have different numbers of nodes and edges. What we're trying to do is to mark at each node in one graph. You know the demographics in correspondence with it. So what can go wrong if we were trying to form this process? Well, first of all I don't know how to make the initial tests. Probably correspondences are going to have to somehow initializes process assigning correspondences nodes, and so they're going to at the outset of the process are going to be assignment errors. I'm going to displace. No correspondence is and what I'm going to do is trying really freaking figure placement of those motocross policies so that they. They satisfy age constraints. In practice, this may sound like cloud problem, but it's it's relatively easy capturing a number of different ways. In a sense of chocolate, if I'm trying to match the paragraphs, a structural errors and so, for instance, graphs on matching, they have different numbers of nodes. So for instance there may be additional nodes due to the fact that my image segmentation segmenter is pulled out of fools, regions or fourth quarters or full sections of the shop graph. And then maybe missing nodes due to the fact that my image Segmenter hasn't been chewed up in numbers detected image structure. So the graphs are going to have different numbers of nodes due to. Addition or loss of nodes and this means the edge structure is also going to be different.
+
+[203.0s - 232.0s]
+So let's sum this practice of formalize this problem. What I'm doing with the script for simple graphs, undirected graphs, just nodes and edges. And let's assume that we don't have any attributes, either overloads or on the edges and the edges are waiting. Ronald, who is to find the function F which is going to map from the modes of unravel. Thankful photograph onto a second graph and which I'm going to Colorado. What I want to do is to try to find this function in a way that satisfies constraints provided by pages into drugs. So let's consider this right.
+
+[232.0s - 261.0s]
+Slightly. Brute force way doing this. Suppose that I have. These two. Personal browse here comes match. You might develop these numbers. Saturday is the same time for nothing to match. In fact, might develop. These doesn't discuss it will start components behavior growth. So I'm doing this. I'm taking units which consists of the node tool, those pages and all those limits are connected to that center mode by hedge. So I got. Here is I've got one graph, but the signal is a pretty speedy surrounding it. In order to conveniently over here what I have is I am rough journey has two nodes in it and drop it looks here at Lake in the bottom 23. So how my going to compare those two drugs? What am I going to regret this kind of brute force approach? What I can do is I can make these graphs in the same size by adding padding mode. Here is a dummy node for today. So let's assume that I have official guests of, let's call that gamma. Which is a set of correspondence is between the lobes of this graph here and padded bra over here. Suspected of. Correspondence is sent copies in pairs. Not going to take this. Simple graph here. ABC D Magic 123CO23D. Then the principle happens is that the. I can be sure about the identity of the center node here. Then the surrounding roads could obviously be computed in cycle Canada and that will also give me a consistent pattern. Correspondence is so mappings between ABCD 123 W. Even here you see, there's a little just cited presentations of 2 three dummy around data center node. So let me cool is set here this set of. I'm in full destruction. Between First off and second round theater here, what we see is there are there 123 and six of these. So I can do so much about the probability of my initial guess like correspondances between the nodes of these two graphs I may have. Cases which of these these nodes in correspondence with these over here? What I can do is I can justify the base formula. So the problem that you got my respect to somewhere over all these possible structures in that things. Gavin, this time to be best. And Furthermore that I can do is I can assume that the if I take out the best I can assume that they assignments in the different modes are independent. That means I can factor probably counting this as a probability of the map of McKay given the label on expected signing binding instructions only happening here. So this is just going to be some of product conditional probabilities. Find my project. This problem is distribution here. Alright, I can do is I can make the very very simple error model consumer to error process is operating one of those is an assignment error process which just says if I made an error in my initial guess as to which node corresponds in Minecraft correspondence which over another. Let me say that every process operates with probability P. And then the other error code says that operates is factor five quarter missing node in the second graph I have to insert a dummy to compensate for it so I can do is I can buy consume the probability of inserting the dummy is being fine. So everything is hungry and I successfully match or node to the sidelines is along demanded by the structure, reserving mapping. Then what happens is that neither of the process is assignment error process with the dummy insertion process of operators in that case. So the probability of its Avengers online supply comes online spel. OK, now let's assume that. Now this will take a case. Now, the mapping that I have and it's going to be equal to mapping multiple instruction survey map, including two to nose correspondence in public assistant, one for you to start reserving memory and that load is not a diary. This means what happens is I made an assignment error, but I haven't had to insert a Wii and had to make a structural modification to graph, so there's probably long lines P5. There's no dummy. Have made assignment error. Then now what happens if I try to match paper dummy node or elsewhere download is then what happens is I have forwarded by here because I need in the case of loving search dummy. What we can do is we can try to extend. This is simple model. The only thing is actually a three month graph too. Sorry for number 3 number as I've shown here and.
+
+[261.0s - 290.0s]
+Extend it to graphs, but their arbitrary number of nodes in regions. I'm considering an article numbers of dummies. So I can make three different measurements on the stage of the match. One of them is I can compute the Hamming distance between the my current assignment understructure deserving that day. That's the number of areas assignment errors that made you pull in H. I can compute number dummy nodes that I require that's different. The difference in the size of two graphs are matching. And then I'd like to do is I consider the other rule size of problem, that's a maximum of the science into crowds. Two structures I'm considering, so I do that. This probability distribution just simplifies down to long lines. Being high comes online speed to the size of there are plans having distance. Find some number of early. Dumb insertions then. Idaho lines keep items before having distance. Another assignment errors that may I have P5 the number of W nodes that is very simple. Probability distribution takes demencial depends on how many distance number dummy numbers in science graphs. But in principle right then average this like an intake. This measure if it's feasible to evaluate it. If the grasshopper can be what I can do is I can decompose the graphs I'm dealing with into something. Like this, an average is probability of inside the units and then try to somehow maximizing probability by reassigning the correspondences between pairs of graphs.
+
+[290.0s - 319.0s]
+No, I'm not playing with you before this optimization problem. That is great news sent by Greenfield Clinic search engineers, people, group search, whatever you want and result in Gainesville. Generally speaking, going to be kind of proportional image. Computational resource information problem. There's not one of the problems that underpins this. This kind of approach is it's this computational complexity and what happens if I start to want to take larger units here. I want to insert more than one dummy node, then the number of the structure preserving mappings pros exponentially for the number of number of dummy insertions. Also, the size of units only. So this problem is going to be played by. Computational complexity. One problem is to his packages from the complexity of the problem. Create these neighborhoods strings. With this work, we did this and like for example the trying to match neighborhoods of strings. Second approach is something that focus on more details this week off the ground spectral approach that will allow us to get.
+
+[319.0s - 348.0s]
+Rise the at the graph. Subpoena more local way and I'll show you how we can extend this. This publishes revolution into the spectral domain.
+
+[348.0s - 377.0s]
+Headaches.
+
+[377.0s - 406.0s]
+That shows a little example of how we can. Solve this problem for producing more computational texted by trying to reduce the neighborhood configurations to strings. And if you're interested in this, there's a paper that appeared in in Hamming in I think 2000 resource it by Richard Myers rituals and myself. OK, so that's.
+
+[406.0s - 435.0s]
+Some. Let's not start.
+
+[435.0s - 464.0s]
+Think about the how we might. Matches hope that this problem into a matrix setting and tried to. Make the recovery is that correspondence is a little bit more elegant. So this is special correspondence matching what I'm doing that if you want to have a picture of it is trying to extend well beyond this algorithm that finds the permutation that brings graphs and correspondence by taking out a product of the Cedar vectors and adjacency matrices. But it would be trying to do. In this part of the tool is extended database where we have different numbers of nodes. Right, I know to be doing this using an algorithm solve this problem, but I need to do something to treat the correspondences between the graphs, missing data, set up incomplete, unlikely function for the problem, and then I'm going to try to find a solution to that. Using an eigenvector method. So that is a quick hold hands. How many of you heard of EM algorithm? How many goals? OK.
+
+[464.0s - 493.0s]
+So it's located. So what we're doing here is kind of probabilistic approach from matching. Use matrix factorization. The idea is to use the eigenvectors of job from Jason Matrix. Trying to find a solution. Well, this is a sitting on top of the arms algorithm and really contribution here is put everything into a low brightness setting to use PM Alpha funding solution. Select some.
+
+[493.0s - 522.0s]
+Let's review. Only algorithm save more. It does. So let's suppose I put a few drops major Alpha blocker off. We're not going to do is. I'm going to float the adjacency matrix today, tomorrow, Friday and the adjacency matrix and walk around my head. World Series confrontation Matrix which minimize the previous goals between the data matrix and commuted. From Jason to Matrix, so other side I've written matrix transpose out painful because I'm using text mode in PowerPoint and I couldn't do equation. So that there will be on this album is that they. Matrix S minimizes comedias distance is found by performing, signifying the composition of the data graph model, rather basic matrix making schemes. So the singular value decomposition takes the. It doesn't look like I'm a competition. We have a matrix to direct you dial matrix, transpose to US intellectuals and worked on the RV show is that we can do to save your battery composition on model graph, adjacency matrix, and they'd rather basic matrix data. Setting simulated simulated view model from city elections be for the data graph. Thankfully of approximation to the permutation matrix is just becomes transpose of you. It's only going to work if we have the same number of nodes in data graph and look around, let's say matrices Dee Ann at the same number of rows and columns. So what we do is to show how people that try to develop an algorithm that will admit different size of the grass needs of this problem. So this is the.
+
+[522.0s - 551.0s]
+In the approach. We need to do is we're going to consider the number of nodes N broad node. And David will be assignments or perform some other rather than later uploads as sort of hidden variables and what we want to do is to try to find a likelihood of hidden variables and then try to recover the maximum likelihood set variables using VML. What are really going to be doing here is focusing on how this ranking function is exactly what we will see is strong parallels between this what I did in the example that discovered. We'll start to see how the exponential distribution enters into problem.
+
+[551.0s - 580.0s]
+So let's set up some matrix representation. What I want to do is to have a set of indicated variables that Tommy whether or not paraphrasing correspondence. So assume you've got an OK from the data graph, unknown Alpha from the model graph, and if those two nodes are in correspondence configuration, end of my algorithm essay Alpha team for one but not in correspondence, essay Alpha is equal 0. Now I have two Jason matrices. I have Big Brother Jason Matrix D and the elements of this one. If you notice a very connected by an edge, 0 otherwise and then we have similar matrix adjacency matrix multiply. So that's three matrices in my my problem. This is a. These two square matrices of different size, the number of rows and columns induced matrices are equal to the number of nodes in the later afternoon. Other modes of model graph. This matrix is rectangular and it's it has both. The problem is given by the number of nodes later after number of nodes in the whole graph. So this is the problem.
+
+[580.0s - 609.0s]
+Suppose that GD is. I hate Pearl Jam is my mobile graph. And this isn't correspondances. Between the loads of the photograph later on, or I want to do is right now, probability of observing the data growth given the world growth concession correspondence. Is it automatic? Loads of these drugs. So it is the as it was very discouraging. EM algorithm. These correspondences are going to be regarded as in variables, and they're going to be assumed to rise through a noisy observation process. So the idea here is to effectively to construct the mixture models over the possible correspondences between the data graph nodes and the models that do that. What I do is I factorize the. Drop everything, paper notes and I assumed each of the data graph nodes potentially actually truly programmable modes and then some other days. So the probability of observing the data graph even along Grafton said correspondence is the product over the Haven graph, knows some local the model graph nodes, probability of seeing node XA electoral given by offering model graph in the second correspondence is. So what we want to do is try to construct a model of this observation density which leaves the. In terms of performance indicators, thanks.
+
+[609.0s - 638.0s]
+So what we do is we can we can apply based here in the factorize the. Right over the performance indicators you do that or happens is distribution becomes product over the longer after numbers of product innovation, graph modes. Phoenix Alpha in. While I'm texting beta recipe Rita is the effectively correspondence inspector. So let's say we assume that they.
+
+[638.0s - 667.0s]
+Effectively, correspondence indicators what ended? They now want to do is to try to find the arrival. Which will make the performance indicators. So they built this patient with loads of different graph. So to do that we do in working terms of this. Yeah. And let me know which way today we consider JB M, Alpha, Beta, SV. So will put back on that's doing is asking is telling us whether the nodes XA and XB in the later afternoon correspondence with mobile offer might be the model graph and if when we test the pictures we multiply the later application, see. Maybe it will project 60 element and Alpha beta. The correspondence indicates 80 feature that's equal to 1. Then what we're seeing is a pair of nodes to consistently connected by edges with zero. Then this is this condition is not satisfied. Now I can do is I can turn to the. The idea of having an error process is used in Decatur variable. Trying to account for the observation of the correspondence indicators under the assumption that this is variable followed follows balloon distribution. Do I have is I have a opponent PC probability that the. Her blood great match. That's good buddy. ABDL computer SP feature and then probably very correctly match is just 1 -- 8 * 4 minus indicator. So this is now beginning to sort of playing the role that Hamming distance did when I was developing this model. In the discrete case they wrong. So if I could.
+
+[667.0s - 696.0s]
+Now substitute this back into the factorization.
+
+[696.0s - 725.0s]
+What happens is products database, I think effectively happens is this. Products here environmental distribution. So if I. Define take the probabilities inside the product inside the exponential. Then the probability that I see no a invasion graph given no doubt from the model profit center correspondence, is just K times. The sum is indicated. Variables over the center of loans which connected to the load. A photograph. Constantly review is just a lot of fun. Lightspeed, the divided by fear. It's the development here using the new model for the correspondence indicators, large write down exponential distribution from the observation density, you seem OK. Those are all people know about them over after second correspondence is. So what I want to do is to then take this this observation density and two computer log likelihood function for certain correspondences using the observation entity. So if I do that.
+
+[725.0s - 754.0s]
+Hey. I like your function is is just some of those in the face, Prof kinds of law of the sum of these probabilities here. That seems that we couldn't even write this down as a. Estimation problem, but of course these diseases are heading, so we need to approach it in slightly different way.
+
+[754.0s - 783.0s]
+So. Street correspondence in pages hidden instead of writing down credit card like a function, which I've done here, what we need to do is to write down the expected operator function under Friday. Apparatus of the DNR order. So what we want to do is take estimates of the correspondence implications for these matrices, correspondence, indicators. We what we want to do is to make a new estimate of correspondence indicators operation plus one even estimate at iteration pen. And so the algorithm says that we want to solve this problem that we need to write down the expected or lacking function that simply the probability posterior probability of Alpha given a correspondence in the pages times log of the observation density. So if we what we can do is we can now rewrite this. This expression, in terms of a set of correspondence probabilities and the logarithm of the of the observation density, so we go back.
+
+[783.0s - 812.0s]
+Observation density is exponential fold. It's some of these. The. Matrix matrix and the correspondence indicator. So if we substitute back in.
+
+[812.0s - 841.0s]
+This expression here, it turns out that the expected alright with function she says the sum over pairs of notes and later on as opposed to Model graph QL Alpha, which is just the posterior probability of no delpha, even though David correspondence in pages times the personal log of portion ality constant from the exponential distribution, and then the the argument that the exponential distribution here. So that's the that's putting the effectively problem now into the form of a expectable right through function. So probably an algorithm requires decimate is to. Just to confuse this equation, the first of the the correspondence indicating his answers were after the segment of the posterior probabilities, which we could in fact knowing distribution estimate from correspondence indications. Alexa's purpose will be further.
+
+[841.0s - 870.0s]
+So far the operating system VM algorithm you notice right two steps maximization step, which is to find maximum likelihood correspondence in the pages and expectations that produces workout posterior probabilities. So.
+
+[870.0s - 899.0s]
+The maximum likelihood correspondence indicators just going to maximize them through S have given the indicators we had in the previous iteration. We turn our attention to the expected alright in function.
+
+[899.0s - 928.0s]
+And it turns out that.
+
+[928.0s - 957.0s]
+This first part here will be influenced by a correspondence indicators, so it's just this term here which you don't have to turn our attention. And in particular, what we can do is we can replace these. Stations here. My matrix multiplications. What happens if you do this?
+
+[957.0s - 986.0s]
+It turns out that the the components of the expectable platform function that determines the correspondence indicators is just minus the trace. The transpose of nature objects matrix times matrix of posterior probabilities, evaluation, iteration eight times the make the model graph adjacency matrix times I minus the correspondence indications. And this is Isaac really matter, so we can produce this. The task of finding problems in inventory is maximizing price of beauty and Q&A. And St. What is done? Is it stated we have by using the? Distribution policy pages because for maximum likelihood problem into trace maximization problem. So that's that's now reduced. The algorithm to function multiple editors statement in terms of matrices. And what I need to do now is to explain to you how the how we can find this maximum likelihood matrix correspondence indicators. So this maximizes trace function.
+
+[986.0s - 1015.0s]
+So what we have to do is to borrow an idea from an algorithm developed by Christopher Longuet Higgins and I stop. What they show is that if you have a choice maximization. With his sword. First we trying to find matrix bar. It maximizes trace here. Then we can find the. Solution using singularity composition. What we do is find the solution is we take this matrix, the duty queue and we perform singular value composition onto it. So we like this is be deltas baggage for matrix beauty. And then the matrix R maximizes trace just becomes duty. So this will give us a matrix that maximizes grace and probably is the. This problem all I wanted was the matrix S we made up of several indicators and there's nothing about this matrix. Guarantees that the government is going to be very qualified and looking to guarantee anything positive. So what we do is we use simple you Ristic protect this matrix and we assign the proper formulas. Indicate if you want. If the element Alpha is wrong, maximum of our consumer otherwise. So if it's if the yellow is not going through important maximum, then we set the correspondence indication 10. That's not the case. And then.
+
+[1015.0s - 1044.0s]
+Now we have the new correspondence indicators. What we can do is we can just proximal to the distribution exponential distribution, and we can use the. Ian algorithm beautiful theory of abilities. So there's really steps in the algorithm. It's what we're doing is where we were taking this this price. Matrices with finding promising pages using this touristic. Really and then once we have the appropriate backpack into the expectations set with the algorithm update posterior probabilities. And then we're just iterating through these two steps. So this typing is interesting because it does.
+
+[1044.0s - 1073.0s]
+Number of entrances with the algorithm. First of all, using simulated composition, but importantly what we're doing is where we have. Taking the problem into the main, we have different numbers of nodes in the two graphs because what we're doing is we're performing senior value composition on this rectangular matrix here. So here it is.
+
+[1073.0s - 1102.0s]
+What I've done is I have taken through the translation somehow sequence. I showed you earlier and we find this number of pairs of use as the camera and.
+
+[1102.0s - 1131.0s]
+Here, here, the past abusive were taking and carrying firstview this with the subsequent viewer using that chain of superimposed images on top of each other here. So you get some appreciation of differences in the image as the camera pans Lotus. Initially there might be insignificant volume reached final image in sequence. They really are quite large. So that's. Show
+
+[1131.0s - 1160.0s]
+Initial post compensates between first image on the second image in sequence. Very good what you see is the. For Xbox Correspondence, is is indicated by having parallel rides. Now what happens is that we're going to rotate the.
+
+[1160.0s - 1189.0s]
+Seconding Slightly Stoopid food package matches.
+
+[1189.0s - 1218.0s]
+Now we started flares creeping in. And.
+
+[1218.0s - 1247.0s]
+The.
+
+[1247.0s - 1276.0s]
+Sorry.
+
+[1276.0s - 1305.0s]
+Where is Idaho? This number, called his phone number, photographs. These are number of correct responses. These number full squad is holding season easily. Notice which we did not respond to exist because the Matrix arms to radius. So what we see here is that we don't really pick up a significant fraction of the various till we reach the cost efficiencies.
+
+[1305.0s - 1334.0s]
+This is what happens if we apply the elements. Obviously applying for Yama reciprocal because we have to find a pair of images where the number of nodes are the same. So you go back to my table here.
+
+[1334.0s - 1363.0s]
+How's two and how school? Coincidentally, both have 32 forms in terms that means we can apply for beyond algorithm.
+
+[1363.0s - 1392.0s]
+This is what you get, and it's quite a mess, so it seems that our algorithm is not only dealing with the. Size graphs match, it's also. Results. Structure. This is.
+
+[1392.0s - 1421.0s]
+The algorithm for the same image pad.
+
+[1421.0s - 1450.0s]
+And then we got up. This algorithm we've added additional nodes into the images. Increase. Here is Rich Wilson 97 album book who is the Spectral algorithm here and then down here is a money. Well there's money through algorithm. Here is a algorithm attempts made Kathleen feel powerful, robust. So they are going to be $35.
+
+[1450.0s - 1479.0s]
+The question is that iteration like done here, is shown in full, but we have another correct correspondence is first iteration number. You see, it goes up and reaches convergence around the 2015 and 20 iterations.
+
+[1479.0s - 1508.0s]
+This is called here show happens if you keep number no space. Very the age structure in graphs. And what we see here is the output from up here. Then we are rounding underneath is disappeared. So experience.
+
+[1508.0s - 1537.0s]
+OK, so is it summarizes.
+
+[1537.0s - 1566.0s]
+Hungry. What I've done is I've shown how you can use the amount of rhythm. Graph matching refers to transfer size, then structure and copes with Zach Braff action. Break. Especially after them which. Text approach to problem. Trying to convert frustrations using I think technique and then by spring that change to the screen is extracted from drugs using the activator technique. So backing up.

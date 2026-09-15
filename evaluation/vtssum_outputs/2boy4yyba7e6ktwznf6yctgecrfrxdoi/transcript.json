@@ -1,0 +1,202 @@
+[
+    {
+        "text": "Yes, so I'm American PhD student. That's Norwegian Institute for water research. And today I'm presenting the in use case for effect prediction in the Norwegian Institute for Water Research. So about the context, there are millions of chemicals that can.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Affects the environment and the species living in the environment. And we can make an assessment of this of the risk to this environment, but this requires a high degree of reference data. So in this project in this newspaper, we tried to mitigate some of the problems with this with the use of.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Organisms and also experimental effort I money so will look a bit further into the ecological risk assessment where this work is supposed to be used, so you can have it.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Posure to the chemical in the environment. For example, in the Lake and then we have the reference effects data. Which we then combine into so-called risk quotients. Here it's a simple fraction, but it's more complicated in real life. And this is obviously restricted by the effect. And then we can calculate some risk for.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "A group of species. It can be just a single species, or it can be all the species living in an ecosystem.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "And then we can identify further species that may be susceptible to these chemicals.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "And then also describe how and which chemicals affect the speech. The organisms, which again can be put to the.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "To the left or given to the laboratory's new hypothesis for the. For testing.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And then to mitigate this, we have created a knowledge graph embedding approach and therefore we need a knowledge graph. Which has multiple benefits, obviously, but. So to gather this.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "State that we use the. US Environmental Protection CS Eco tox database. And together some.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Species data which we need to make predictions. We use the NCBI taxonomy. And then.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Finally, together, chemical classifications and features. We use the Kemble database and the Pub Chem database and then the Eco Tox database uses proprietary chemical identifiers. So therefore we need to align them to the chemical data. We gather. We do this through.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Maybe later we're lucky enough that we collector has this alignment. And then the effects also need to be aligned with the species database. Which we use.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "This log map for which gives us, which gave us a recall of about 400 on the few test cases we were able to gather from the literature. OK, so.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Moving on to our effective prediction problem. So let's say we.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "A set of chemicals and set the species.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "And these each have.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Their own hierarchies.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Totally separate. And then we can have pot.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Examples in the experiment. So a specie or chemical affects the species. In some way.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "And then we have some negative samples where the given concentrations given concentration in the experiment did not. Give any effects to the species. And then we are here. We limit ourselves to binary classification, because that's just the stage we're at at this moment in time. So to solve this problem. We have developed three models and the first is based on some taxonomic different taxonomic distance.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So, for example, do we want to figure out this? Does the chemical three affect species 3?",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "And then we can find the closest species which has data attached to it. Which species 2? And then figure out.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Yes, it affects species 3. This is a very simple model, but it's one that's proposed to be used by researchers at the Agency for Water Research. And then we go further anet.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Susan Mcclary perceptron mobile",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Which just uses one of them codings as inputs.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Pastor dense layer and I can.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "United and pasta.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Seriously dense layers before we get our.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Addiction. Finally, our knowledge graph embedding models replaces the input to this to this model.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "With the chemical classification and species taxonomy.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "We use we have used in this work three different models which were chosen because they are widely used in the literature and how short and good results.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "And then I want. Final thing is that we optimized embeddings at the same time as we optimize the prediction model. This is sort of to squeeze the embeddings or push them in the direction to optimize for the be optimized for the task at hand.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "So. You can look at some results. The baseline model, which is a taxonomic difference. Yes, it's very hard to equal, but lacks in prediction position. Which is not. Great, but one free thing I forgot to mention is that we do favor equal because we want to protect the environment. So false positives are not necessarily bad, but we don't want to give the laboratory all the possible combinations of chemicals to test. So introducing the.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Little receptor model. Yield so much better balance between precision and recall.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "And then we can introduce our Knowledge graph embedding input layers. Which yields us better recall and better F2 score? And we can even improve our since we. I want to improve our F2 score. We can actually reduce the decision threshold.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "0.3. Jeld quite good results compared to the multivariate perceptron and the baseline mobile. So summary, this is quite quick this talk, but that's fine.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "The summary so. Fuck. OK, so one of the benefits of creating almost graph not just for the prediction is obviously improved data access. For researchers in the field. So we are shown that this introduced introduction.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Cultures improves for binary predictions. And the next. Pieces of research to continuing is expanding. The large graph with all relevant data such as habitats or rules generated by researcher domain researchers. Also explored the user more sophisticated model as the talks with him before. We can definitely need to use more other types of models and then obviously because we want to predict concentrations in the future, we will move. I would like to use this obviously in the risk assessment pipeline and therefore we need to. Need to predict chemical concentrations. So, and the resources are available on GitHub, so just go download it and then come and visit us as poster 466. Thank you. We have time for questions.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Please. Negative samples, yes. I've been known to be negative, yeah, so. Yeah, it's an it's a. In the data it's presented us. No effect concentration, so at the concentration that tested in the experiment, they observed no effect. Yeah, it's no. It's it's a fact. Yeah, but obviously the concentrations. The higher concentration, more likely unaffected, will occur anyway, so they could have just tested on a low concentration. It's about 60% positive or negative. Yes please. So the Research Institute does a lot of work for governments or local and global for assessing risks for. For a lot of ecosystems, so the final. Obviously this is early stages in my PhD and also for this project. But this data should be. Or this predictions would improve this risk assessment. And therefore can improve our understanding of how different chemicals can affect the ecosystem. Interesting ideas for some work. We have fun in risk assessment. Similar sort of environment. Yeah, yeah. Yes so. That resets obviously. The If you said no upper limit to the search range of the baseline, it will find everything. But but we set some upper limits so that it doesn't, because if you don't set an upper limit, you will get recalled one because you will find everything right. But we need to limit the search range. We can talk about it later at the post if you want it. Is there another question? Yes. Would you consider? Yes. Yes, so in our work we work mostly with what in water, but obviously freshwater and saltwater. They're quite different conditions for chemicals, so especially for the chemical side, the they are affected or their changed molecularly based on in which sort of environment or in? Which is import very important temperature, temperature, pH. Everything will make the big difference, so this is future. Work.",
+        "start": 1131.0,
+        "end": 1160.0
+    }
+]

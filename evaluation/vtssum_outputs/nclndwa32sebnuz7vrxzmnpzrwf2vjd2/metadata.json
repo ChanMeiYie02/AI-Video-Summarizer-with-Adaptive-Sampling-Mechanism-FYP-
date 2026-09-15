@@ -1,0 +1,21 @@
+{
+    "id": "nclndwa32sebnuz7vrxzmnpzrwf2vjd2",
+    "title": "An Introduction to Mining Big and Complex Data",
+    "url": "http://videolectures.net/miningdata2016_dzeroski_maestra_intro/",
+    "info": {
+        "author": [
+            "Sašo Džeroski, Department of Intelligent Systems, Jožef Stefan Institute"
+        ],
+        "published": "Jan. 31, 2017",
+        "recorded": "September 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Data Science"
+        ]
+    },
+    "num_segments": 49,
+    "num_sentences": 322,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 3983
+}

@@ -1,0 +1,127 @@
+[
+    {
+        "text": "Observation. Fix should be low rank and penalizes rank over Dublin. And this is controlled by the plant lamp. Since we know that the rank function is difficult to optimize later, commentarial function so typical.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Approaches to. Consider the metric W as a product of two matrices, you and we. And we optimize you and we iteratively. So this is.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Solution obtained by this way is a locally opting because this is not a convex problem. So another approach is to relax.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "The rank function to other functions, while commonly used relaxation, is dressed now. So the case number is basically our convex relaxation of the rank function. So what's that rational for metrics W breaking through the singular value decomposition and the trace norm is just the summation of the singular values. So did you consider the if you put on the singular values in a vector, this is basically the one of the vector or singular value, so that's why the justification why this paper is printed this decision. Ella chess now. To customize the rock function with address now is equivalent to a user open up to approximately 0 now. Tell you this is Walker.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Consider the general formulation of. We have our loss and we have our regularization which would be penalized, not doubling. So in this case, the W is metrics variable and we also make assumptions the F is differentiable and is a great general effect is limited continuous, which is this definition? Unfortunate thing is that right now is not smooth, that it is not differentiable, so we can not compute the gradient. So if this will investigate the developed method to. How to avoid this nothingness?",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So before we start, we consider why other settings rather than metric completion, so we already discussed this metric conversion. We have this M is observing metric is a low rank matrix. We want to consider and weigh. Replace the rank function with face. Now this is a metric conversion problem, consider the. Version is the single paper and recently by counties in order to show that if the metrics I am satisfying certain conditions and if it is a low rank by minimizing this function, the exact solution can be recovered by minimizing the personal instead of the rank function and the case number can be used in other settings. Such as a multitask learning. We have a multiple tasks and W is a metrics. Each column correspond to a task. So for tasks we have uncovered metrics and. My population for my task is to penalize the rest of doubling. Another interesting problems is from metric conversion considerably. To Mecca and back. In this case, each data point is basically a matrix instead of vector and we. Apply a weight matrix. Are the data points and we also want to penalize the train of Dublin. These are the sample problem which involves not that many others.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So unfortunate thing is Crystal is not smooth so far not most problem. Well, natural algorithm to solve this problem is apply the subgradient and we know that the. Have a great day, can be completely lost. Most functions and this is a basic after step with. We basically there. This is similar to gradient descent for smooth problems, only difference is we replace the gradient with the subgrade. Which we did not have the F drive. So the convergence rate of the subgradient descent is. Big ol one over square root which. Except for this one, in this case, the W star is the optimal solution, so they said if you go on step, the function will be guaranteed to close the optimal solution by a certain amount.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So some remarks are something that isn't there. Someone theoretical proofs that if you work on. If you use a blender for not most problems. This is already the optimal convicted right. You connect. This is one over square root OK. Is under the assumption that it is a first order black box. If you only use a greater information and then you do not exploit the structure of the particular function. So that means that if you do not. The structure of this is already the best you can get, so in our work we basically use the special structure of the personal tool. Actually, the convergence rate.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So in particular, in this work we first develop an extended gradient method which can work as 1 / K. And if I start this algorithm, we further user access acceleration technique to accelerate this algorithm to our place where. And another room.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Talk about our algorithm is. The lower case, where is the optimal convergence rate for even for smooth problem. So by saying This is why we basically said not motion effect of that is not have been totally removed. OK, probably you get into the translator. Consider the gradient decent for smooth problems. So we only we just do not consider the translator and we can.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "That's most lost. We minimize the FWF is smooth. And we use a. We can use a gradient descent. And here we use a gradient instead of subway. Another view of gradient descent is we can. Rewrite this. This turn into this one, so basically. Then some applications are this a reformulation that reformulation basically considered to pass. The first one is the linear approximation at the W, K -- 1. This is the last point. So let's give us some nutrition why we need to graduate? Because we at a time point kW K -- 1, we compute the gradient and we do linear approximations that point and we. Have another tool called regularization. Basically wanted the WK to be not too far away from W K -- 1 because the linear approximation is only accurate in the local neighborhood or W K -- 1. So by looking at the greater dissent in another different view, we can basically incorporate the trace now.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So how about her? How do we deal with the?",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Because the reason why we need the grinder is we want to compute the linear approximation, But if the last most term is not very complicated like that right now, while we just did it directly, so that's our basic intuition. We just. Father's master because the producer, linear approximation and the regularization and for the northmost we just put it into directly without any approximation. So by doing that way, we basically want to exploit the special structure of traditional. If you can see the other three terms together and that that can be relating as this problem and a is defined basically at the, this is basically if you ignore the translator and this is you go one step by following the gradient of the smoother. So we basically doing well this kind of problem, so we imagine that if we can solve this problem exactly, the convergence rate should be the same as the graduation because we put the Northwestern directly without any approximation, it won't affect the convergence rate. The capital that this is true. It turns out that that some of these are this problem can be solved. The inexpensive form is electric.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So this is considered. It is our age is the previous slide. The this basically said that if the. Optimal. See for this problem is we just compute the the. Optimal doublets, or even see the order fixed. So we basically compute the singular value decomposition of the matrix tablet and we apply thresholding other similar values. So previously the. At this point, the only difference with the. W is we apply some thresholding, other singular values of the Sigma Lambda which is expressed this way. So by doing that we can solve the on each step. We just compute the SVD outfit and we apply social.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So this is our extended gradient method. We basically we choose. Hopefully the stepsize SK and we do Granger dissent or the smooth part of the function. And after that we do some thresholding on the resulting W~ key. Then some little bit of complications are the. So started to choose the step size, but I choose to not to discuss the very detailed here because this thing is quite involved and difficult to understand.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So by that time I I just give you some applications. We basically start from an initial value which is supplied by the user. How do we decrease it by multiplicative factor, which is less than one until he is satisfied? And we can prove that if SK is smaller than one hour till sometime. This is this is the 1 / L L is the latest concept of the function smooth function. This kid is a smaller than Ceylon. Our condition is guaranteed to be satisfied. So at each step we use a. The step size over the last step as our initial way. This is basically reduce the number of files and each iteration. So the reason why we need kind of this step size strategy is.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Approval conversions we need this. So we have we drink can prove that if we generate the sequence WK by our extended gradient algorithm, we can prove that our convergence rate is basically 1 / K. So the next step is we used.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Acceleration techniques developed by natural. To accelerate our gradual method. So the basic idea is the convergence rate of greater distance, which is 1 / K is not the optimal convergence rate for smooth problems. And next often others developer the extrapolation techniques to accelerate this. That idea is in great condition we. WK it doesn't compute the gradient and WK and we do go. This supposes direction with Richard WK password, either acceleration technique. We do not do the gradual distant at the current point. We do interpolation at W K -- 1 and WK and we do gradient descent and some point along this line there are several methods. To determine the exact point on this line, and we use wild, consider. This is the point we want to use, denoted as the calculus one, and we do great. You're decent at this point, we get W. So this is the gradient descent and this is acceleration technique. So this is our.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Or accelerated gradient method. The difference with our extended method is. At this gradient decent step originally we did at the W K -- 1 point and at least in this algorithm we do this at the decay. They say it is the. Is a. The interpolated part. And I did just that. We also need to update the coefficient or do the interpolation and we obtain the the K plus one, which is a is a linear combination of the last two approximate solutions, which is WK&W came in as well. So this is only the. This is the extra work we need to do compared with the our first algorithm. Basically we need to maintain the last two histories. So weak.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Prove that if we generated two sequences instead of 1, which we denoted WK&DKZK is interpolation sequence and WK is approximate solutions. And if we generate the sequence by following our accelerated gradient method, we can prove the convergence rate our our algorithm is 1 / K ^2. So we have some remarks about the. This convergence rate it is approved is a natural book that if the optimal convergence rate of a greater distance for smooth problem is 1 / K ^2. So for smooth problems if you use black Box 1st order assumption, this is the best you can get.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Power in valuation with Rama. Multitask formulations and we compared our two algorithm with the multi task feature learning algorithms. Which is a convex multitask formulation. We run. Our ads are. For the headset with a different percentage is training and it is literal. Is running time over each of the methods. We can see that the accelerated gradient method is. Much more efficient than the extended growth, greater method, and it is also more efficient than the multi task feature learning algorithm.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "We also want to see how the acceleration techniques works precisely, so the this is for two datasets. We brought the convergence of the extended gradient method and the accelerated gradient method. We can see that. Especially at the beginning part, the acceleration techniques is quite effective, or both of the datasets.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So in conclusion, in this work we proposed two algorithm to Southwest Normal regularize problem that is extended gradient method and the accelerated version the. Basically improve the convergence rate of the separator from our case square square root OK to run over, and further accelerate that to our case group. In future work we want to consider using some approximate SVD techniques to reduce the computational cost, because currently at each iteration we still need to compute one activity, which could be computationally expensive. And another feature work is currently we consider the traditional regularize problem. We basically have a smooth last term and present at other classes of problems involved with involved. Minimize the case number W subject to certain constraints, and we want to adapt our algorithm to this kind of problem. With that I.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Question.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "I. So this is essentially using nested. Baby squid. Animation. Recently based on this, time is forever. Normalizations is exactly like that, so we watch the special happening. Hey, I think you mentioned that is the second part of the paper which deal with how to accelerate the mass of the. Greater Mesa part is that only works for the standard form. That only works for smooth problem that our first party to deal with. How to deal with the non smooth part and the second part is to accelerate that to do the optimal convergence rate. Yeah yeah yeah yeah. I also I also aware with the work by little recently that developer how to deal with the Northmost plan, but in his work the differences there are two key differences and like that more details in the paper. The key differences in his paper he used entire history over the like the WORKW K -- 1. But in our metrics case if you keep the entire history that could be. So in our case we already need to keep lost to history as we move on with through our history, except the last two and another one is his method. He uses 2 projections at each iteration. In that case we need to compute device with each iteration. In our method we only use one projection and it's one next week. Avoiding STD's. What is pensive? Whale the point. As far as I know, it's very difficult to avoid SVD completely in the trace now because the transform involved some of the singular values. Metrics and many cases, you can just render. The probabilities in the sparse in the missing value estimation case. If the original matrix is sparse, we could extend our method to the case that we only compute SVD. Other sparse work instead of the full version if the matrix is sparse enough, that should work. I often see. Singer. Say that again. Would be better. Avoid the SVD. At the end of the day, you come to it like 1000, STD's also substring singular values, and that's very expensive. Is. Before all the desktops that user experience at the inner loop. Incremental. Stop stop CCP. Looking for awhile and take nights or Matlab. They don't do it. Go to let it be. So are there any positions? OK, so let's think this.",
+        "start": 696.0,
+        "end": 725.0
+    }
+]

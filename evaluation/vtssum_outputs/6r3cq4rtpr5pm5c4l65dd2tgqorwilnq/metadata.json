@@ -1,0 +1,21 @@
+{
+    "id": "6r3cq4rtpr5pm5c4l65dd2tgqorwilnq",
+    "title": "Data Mining Vs. Semantic Web",
+    "url": "http://videolectures.net/solomon_milutinovic_dmv/",
+    "info": {
+        "author": [
+            "Veljko Milutinović, Department of Computer Engineering, University of Belgrade"
+        ],
+        "published": "March 20, 2007",
+        "recorded": "February 2006",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 42,
+    "num_sentences": 587,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 304
+}

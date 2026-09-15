@@ -1,0 +1,217 @@
+[
+    {
+        "text": "This is the third lecture of this course in the second semester. Don't be silence case. Currently in Mexico and he. Ask me to do. Give a lecture on. V3 configurations. Uh. Solo. Tell some general theory first, he probably hurts. And definition of incident structure already. Video and I'll. Also tell what the designs are, and then I'll switch to configurations. And I'll tell something. About victory configurations. We'll go through several families of V3 configurations and some small examples of well known classical configurations and configurations arising from special families of graphs which are. Called cages.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Can't all conclude this with? Theorem which tells how to. Iteratively construct all this configurations. All these V3 configurations. Oh well, let me start. With the definition of incident structure. Well incident structure. You probably heard this, but I'll repeat for the sake of. Completeness and notation I'll use later. Configurations. Incidence structure is a triple. PBI where P is a set of. Points B is a set of blocks and I is a binary relation between points and blocks. Uh.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "They told P elements of PR called points and elements of B are called blocks and. That purse PB. Awkward flex. Well, instead of. PB belongs to. I will write usually peace. PIB? Euro. Quotation for for relations and we use more geometric expressions. Such as the point P lies on the block, BB passes through PP. Is on BP&B are incidents and so on. Those blocks are usually called. Also lies. Special cases. This also gives you configurations with configurations. We use the expression line or.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Book. Well, small example of an incident structure is. This one just. For example, we have. 13345 so the set of points is. Alright this. This way the set of points are his numbers, one to five and the blocks are just. Subsets of this set P so. Here we have one block and I write it as a line joining this points. And the remaining 4. Blocks or lines? Well, this is a very. Small incident structure is not regular. One blocks half. Four points on them and the other blocks have two points on them. This points are of violence. To this point is surveillance 4. Well, let's see also more regular. Resident structure.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "It's called final plane. I'm sure also. Also. You have seen this before, but. Here we have. Points from zero labeled from zero to 6. And blocks are this. Set this seven sets of. Size. Three and withdraw this structure. In in the plane. Presented in the plane.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "We obtain this. Picture. This is an example of incident structure. This one is more regular. All clients have violence 3. There are also three blocks through each point, each block castrey. Which box has three? I. Points on them. Let's go back.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Well. There is also connection between incidence structures and graphs. You know this also and. We can assign to each. Incidence structure, its incidence graph, or lazy graph. And this is a bipartite graph with. The black vertices representing points of this structure be white vertices representing blocks of this structure. And there is an edge joining two vertices of a graph. If and only if the corresponding point and line are incident. Help. Ha. Let's see this example of final play.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Here we have. Final play seen before and then we have a graph on the left. We have white vertices which represent blocks. And we have black practices which represents represent. Points. Yeah, OK, and each. To vote assistant is graph. In this graph are. Are connected precisely when. This point lies on this. Ah. Block so Block 561 is incident with points with points or vertices of a graph 561. Lifting this graph. This graph is. Graph theory is called, he would grow. It is. Well known graph. Partly because it is an incidence graph of such famous incident structure and power for other reasons, but for other reasons. Also well.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "The other well known family of incident structures. Are the designs probably hurts something about desires and some? Undergraduate course video or not? Well, I'll just present. The mileage is right out and finish show definition. Nothing, nothing more cause. I just to give you another example of incident structure, not just configurations so that you. See that.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "There exists something else. Not only configurations, places and structures. Well, what are the designs? Let this four parameters be integers. Offerte design anti design with blocks of size K. And index Lambda. Is an incident structure. With the following properties, this is a very irregular incident structure. Well, we have V.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Points. Each block has size K. And for each T subset.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "That",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "The subset of size T. Of the set of points, there are exactly Lambda blocks containing this. Huh? And notation is. Well.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Notations T minus VK Lambda and S Lambda index and. TKV rating. Reverse order well, this two notations are commonly used, one in one books. One in the other books, sensing some books both at the same time. I. Well.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Final plane is. 73112 design with parameters 273 and one. Why is that? Well. Huawei cell.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Because we have seven points. KY3 becausw",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Each block has size 3. And why that 21? Becaused each two points. Are contained in. Remember each D subset?",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "We have T2 each T subset of. Points. Are contained in exactly Lambda blocks.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Lambda is 1 so each two points are contained in a precisely one. Block and this is true.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "It's two points are contained in precisely one block. This too, and this one. This two in this curved block. And so on. So this is. Design with this three parameters. Well, we have. Other.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Examples of.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Desires certainly no. What's? Find projective planes are. From geometry class. Oh, this are this can be this. Projective planes can be defined also as. Two designs with Lambda one. And. Which have the same number of points as. Blocks search designs may not exist, so if they exist, they we call them. Projective planes of order K -- 1. And we also have. I find place finite F on please. Every. Two design with parameters and square and and one. If it exists, of course, is called a finite affine plane. Well, just to draw your example of 1F I'm playing. Uh. An example of. Find projective plane. Is this final plane. Order 2 1F I'm playing. Simply UK. This. Structures. FM play visit. Well we have.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Four points. Each two points. Each block has size 2 and every two blocks every two points are on precisely one. Block so this is a fine play. Of order 2. Well. No.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Oh finally, how to configurations? Configurations are. Convenient aureal configurations. We have also geometric configurations. You will hear more about geometric configurations, probably in one over following. Lectures, but will limit now to combinatorial configuration style. Skip that word for Minotaur real talk just of configurations. The RBC is an incident structure of points and lines. These blocks are called lies now as are in the case of. For example, finite. Projective planes on time please. Such that there are viewpoints and beelines.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "This parameters fix. Number of points and lines. There are lines to each point and K points on each line. OK, so this is. Regularity post on this conditions of. Find supplies.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Two different points are connected by mostly online and.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Lines intersect. At most one point. So each different points are connected by mostly one line. So this case is not allowed. Two points would be on. Two different blocks. For the same time. Well. Configurations where?",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "V is equal B. And then we have R = K. This four parameters are not independent. We'll see this on the next slide. I called symmetric and we shorten this notation to VR, just. OK. Well here is also.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "One small preposition which gives a connection between this. Parameters if there exists. VR VK configuration, then we have what we times R equals BK. Right, why is this true? Very simply, you just count all flags. Two different ways. Or edges of the levy graph in two ways. This is easy for the second equality. Let's take one point and count all points on incident lies. Well. If you take one point. We have how many lines passing throught our lines. So we have. 1 two are lies. How many points we have on each line K. Yeah. We have this one. And. K -- 1. Here also we have K -- 1 points and here. Also we have K -- 1 points. Together, how many points we have. Are Toms came on this one? Lost this one. OK, so the number of. But is of points is greater than our times. K minus this point OK? Well, this conditions are not. Sufficient? Well, for example, they are sufficient for V3. Configurations if we have. R and K3. If such V3 configuration exists. Then we have. RR is 3 in the case of the three configurations and K is 3 three times two is 6 plus one is 7. So this we is greater than. 4 = 7. Actually, all configurations with. We seven and eight and so on exist. And. This is also the case for V. RB3 configurations. They exist if this necessary conditions are fulfilled. But there is no. 43 seven configuration although. This condition could be satisfied if it would exist, but it doesn't exist if it would exist, this would be a projective plane of order. 6 but it is now that this one does not exist. So we have. In this case. Well, let's. See some example.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "We have we have. Fan of plane. Or projective plane afforded to? We saw several times this is. 173 configuration. Ask we have seven points. 7 lines. Each point is contained in three blocks and each. Look for lines in. Each line contains 3 points. So this is a basic configuration and each. Oh there are. There is at most one line to reach up two points this also. True, because it is a design already so. Well, another example. Oh is for example 93 configuration. Well, this is a 93 because we have. Symmetric configuration because we have how many we have. 09 points, 9 lines, 9 blocks. It's regular, it's. Each point has three lines through it, and on each line we have three points. OK, and. Every two points. Lie. Most one. Line. OK. Why is not? Why is this for example not? To design. To design with for example parameter Lambda. Well, if it would be. The case of. Two designs we have that every two. With parameter Lambda we have that every two points must lie on one. Precisely in one block here is not the case, for example this. 2. Points are not connected by any line. So this would not be right to design with Lambda one. But it is a configuration so. Final plane is also design. For this purpose configuration is not there. Design. Is not up to design so. So so so different. Different different sets. Different families. Oh well, each to design with.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Number one is also configuration. With our something can be something. And wish we left for an exercise so. You get exercise, you get homeworks or something. Or do you? Alan gives you. OK, well he'll give you this. Thank you. And projective plane of order K is is not difficult to to count all these lines. More or less trivial projective plane of order K is K ^2 + K + 1. OK, plus one configuration. So this projective planes are configurations.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Two designs are configurations with Lambda, one and. Now. Some other families of configurations. Not only. Oh designs and projective planes. Oh well. Here is a definition of. Cyclic configuration. So called cyclic configurations. Precisely. Offer cyclic V3 configurations with base block. Scold base Block 0 AB. Well, how do we construct? Such a configuration? Well, we take. A&B from other. This is Evie. This is a. Oh set off. Points. Baby is. Set off. Integers from zero to V -- 1 and the addition and multiplication will be or. The addition will go mode modulo V here. So for the for the points we take. This integers and for the blocks we take this triples. We take zero AB and then we add 1 to each element of this block. And we do this. V * V -- 1 times and we get also be blocks. Well, if such an incident structure is. V3 configuration, then we call it a cyclic V3 configuration with base Block 0 AB and we denoted by. I'll denoted by the symbol sick V&BB with this base block OK. Well, of course you have to be careful. When you select this acen piece. If a is equal to be, this and this will not be a configuration, obviously. And if you take a zero and. It's awesome that configuration you have to be.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "A bit careful, but. Not. So for example. Many of these small configurations. Small example operational cyclic configurations. For example, final plane is a cyclic configuration. We saw this beginning when I. There were all this lines. Have a funnel plane working down that. Actually it was a cyclic configuration with base blocks 01 and three. Well, different base blocks can give you an isomorphic configuration, of course. Or not isomorphic configurations? Well, let's see something about. Graphs and we are BK configurations. Well, we have a proposition here which tells that incident structure is a VRB configuration if and only if. Its incidence graph is. OK, regular and has got greater than six. What is good? Girls is length of the shortest cycle in there. Graph. No. Say something cute. Probably now from rough Syria. Oh no. Why is this true? Well, we have three points, so we will have. We black vertices representing points and be white vertices representing lines. And since each point is on. Are blocks. Our lines. We have R. I just going from each vertex on this point side of this bipartition graph and similarly if you take 1 white vertex representing the line we have K. Ha. Points on each line, so we'll have. K edges going. From each of the line vertis is OK. No, you're not. You can see that the RE is equal. BK. Why you just count all edges into different ways. We have hard times V Block V edges, or if we count them from this side we have V * K. Addressing these graphs, and so we are must be equal BK. This was something. We didn't prove, and one of them. Proposed.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Missions before. Uh. Well. So it is RK regular know. This means that one side has. And one side of the graph. But this is half. Villains are in the other side. They have a landscape. This means our regular and has got 6. At least six well. Since the graph is Barbara Tcisd, it's good. Is even. Why it can be 4? Well, what would? A four cycle in a graph. Mean lady graffney. It would mean that. That this two points. Presented by this practices lie on. Two different. Lines, but this is. Forbidden. OK, so four cycles correspond. To two lines intersecting into points, which is forbidden in the case of. Configuration so. This is. Also true. Well. Every. A remark. Well, lady graph doesn't uniquely determine our configuration, just a lady graph bipartite with guard 6. The time is uniquely if you. Say which side are points and which side are lines of course. Otherwise, if you don't do this. It can give you 2. Configurations. 2 dual configurations. OK, what means do? What is a dual incident structure using exchange? The role of points and lines in the internal structure and. This is quite a dual incident structure. Do all configurations so on. Oh well, example labor graph over cyclic configuration. Is what? This quarter ZV covering graph over. This graph. On the left. You heard something home. Their own covering graph in one of the lectures. I don't know. Probably Sunday mileage told you this. OK, so if we remember how? How do you construct this graph from this graph? Well, you multiply each of these vertices. Zed V Times from zero to be minus one, and you connect this. Are you connected them? The way this arrows tell you, you can take this point. You jump 0 times, so you connected with this one above. It and this one tells you that you have to jump. 2. Verticies? In the above line and this bit here tells you that you have to jump 3 times and above line. So you can. Can describe this. Graphs also in this way. And this really is. Graphs over 60 configurations physical configuration. Obvious. Oh offers cyclic configurations with this base block 0-AB. Because you just move this well each next. Line will contain. Points which are labeled by. This labels plus one. So we will get a cyclic configuration by definition. OK, so.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "What is the offer particular interest when you speak of configurations? Well. You can. Construct them well. One task is that you try to construct. How all? Configurations or non isomorphic configurations? Well, you can reduce this task to graphs until try to construct our K regular bipartite graphs with God's greater 6. And if you construct all these graphs. They give you all configurations. OK. Regular bipartite graph with girth greater 6. Or you can try another way you can try to construct. Bigger configurations from smaller configurations. This was done. For. V3 configuration there is a construction method and people use this constructor construction method to enumerate all non isomorphic V3 configurations. Will see this will see this at the end of this lecture. And the other thing is that we try to realize configurations in there put in plain with points and lines. So that you really represent this points and clients offer this abstract combinatorial thing in the Euclidean plane with points and lines, so that blocks will be lines. And. Points will be points, so. Hopes. We saw here well in the case of final plane. Well, where is it?",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "It's here so in the case of piano playing, this is not a realization of this. Incident structure of this configuration in the. Euclidean plane because we have this curved line here OK? So people are interested in the condition when a configuration can be constructed in the. Good playing without a curved line. Here you can't do this. In the case of. Where is it? In the case of purpose configuration, you can do this. All this point.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "All this lines of abstract configuration of combinatorial configuration are also represented in the plane as lines. So.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "OK. Let me just before the break, just look at this. Table. This is a new.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Duration of V3 Configuration which was done. By computer mostly. Well, let's start with seven. We have 173 configuration. Finally, we have 183 configuration. If you remember. Don't be so scared elections. Did he speak? About this that he. Oh yeah. Probably he told you that this is that was some 8 three configuration. Well, we have 393 configurations 10. Country configuration 31. 11 three configuration and so on. The number of configurations increasing increases. Very, very rapidly. Well, in the second column B we have. What do we have here? A number of self jewel configurations. When is a configuration is self dual? If it is isomorphic to its dual aggression? OK, so. Have also. Enumeration of. See what is see. A new number.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Point transitive configurations or? Yes, you can study. Our configuration.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Which are transitive on the set of. Points what does it mean? That their existence. Automorphism, which acts transitively on the set of points which. Maps every point to. Every other point. So here the number of such configurations is considerably smaller. Huh? And in the column D. Oh",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "We have a number of cyclic configurations. Well, this is also small number. We have 173 cyclic configurations.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "We have only one isomorphic, although we have a. Big choice of baselines only in the case of. Well. When we is 12 we get. Three configurations, cyclic and so on, and what is in the column E. Well. There we have a list of non connected. Configurations when are configurations connected? Well, when the lady graph is connected. So when do we get the first non connected configuration obviously at. 14 We have an unconnected configuration. Consisting of two final planes. 14 points in 14 lines. Oh of two independent final configurations and then this number increasing increases a bit. Well, this list was obtained by a computer by some people in Germany. And other properties were. Where are investigated other not only point, transitive also edge transitive and black president and some other things. I didn't have space to put it here. OK, so this is a numeration so. Not all this of this. Configurations are interesting, interesting, of course. We'll focus on later on some interesting examples. Ah. Interesting families of these reconfigurations and. Will present this small with three configurations where the number of them is not so large. But after the break. OK, you make a break.",
+        "start": 1218.0,
+        "end": 1247.0
+    }
+]

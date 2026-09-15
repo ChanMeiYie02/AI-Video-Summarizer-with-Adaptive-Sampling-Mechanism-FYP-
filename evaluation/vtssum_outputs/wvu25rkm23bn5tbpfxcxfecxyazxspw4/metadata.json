@@ -1,0 +1,20 @@
+{
+    "id": "wvu25rkm23bn5tbpfxcxfecxyazxspw4",
+    "title": "Visualization and Prediction of Disease Interactions with Continuous-Time Hidden Markov Models",
+    "url": "http://videolectures.net/nipsworkshops2011_leiva_murillo_disease/",
+    "info": {
+        "author": [
+            "Jose M. Leiva-Murillo, Universidad Carlos III de Madrid"
+        ],
+        "published": "Jan. 23, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Markov Processes"
+        ]
+    },
+    "num_segments": 7,
+    "num_sentences": 21,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 172
+}

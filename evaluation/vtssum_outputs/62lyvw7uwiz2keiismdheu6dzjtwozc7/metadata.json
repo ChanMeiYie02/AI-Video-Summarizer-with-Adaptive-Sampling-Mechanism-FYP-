@@ -1,0 +1,20 @@
+{
+    "id": "62lyvw7uwiz2keiismdheu6dzjtwozc7",
+    "title": "Introduction to the SEALS Platform",
+    "url": "http://videolectures.net/eswc2011_garcia_castro_seals/",
+    "info": {
+        "author": [
+            "Raúl García-Castro, Technical University of Madrid"
+        ],
+        "published": "June 20, 2011",
+        "recorded": "May 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 214,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 1850
+}

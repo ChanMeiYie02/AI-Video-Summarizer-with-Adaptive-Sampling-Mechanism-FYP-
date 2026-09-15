@@ -1,0 +1,293 @@
+[0.0s - 29.0s]
+Thank you to the organizers, organizers for inviting me to be here 10 years almost to the day from the time that I gave my computers and thought award talk, and in fact, the.
+
+[29.0s - 58.0s]
+Our slide that I'm going to present. Is. Actually, the last slide that I used in my computers in thought talk 10 years ago, which was a slide where I talked about the importance of bridging different things, bridging logic and probability. Using that as the basis for bridging between reasoning and learning, and ultimately using that. Looking forward as bridging between low level perception and high level understanding, and much of the work that I've done since that talk in the last decade has focused. Certainly the computer vision part has focused on trying to bridge this gap between perception and understanding.
+
+[58.0s - 87.0s]
+That's what I hope to tell you about today, so let's talk about what it means to go from perception to understand that if this is an image that we hope to, we hope to interpret what we would like to do is we would like to move beyond just labeling pieces of the image in isolation, but rather to come up with a holistic interpretation in the same way that a person might use so to come up with an interpretation that says a man wearing a backpack smoking a cigarette, walking a dog. Now, for those of you who haven't done computer vision, this might seem fairly trivial. I mean, it's obvious that that's what's going on here. But if you actually start thinking about what computer vision does and how it might be applied to this image, you realize that the cigarette is about 3 pixels wide and 10 pixels long. Is a white stick, and the only way to possibly infer that it's a cigarette is by realizing that it's part of a man's mouth that is at the man's mouth, and that means it could either be a cigarette or lollipop, and given that it's a grown up, it's probably a cigarette, and that's not the kind of reasoning that a computer naturally doesn't. Certainly, computer vision algorithms today are not capable of doing that kind of influence in general. The same issues come up with the backpack, which is an undifferentiated black blob, and backpacks come in many shapes and many colors. The leash is almost invisible, so how could you possibly infer that the man is walking the dog if you weren't using context? So what I'd like to tell you about today is some of the work that we've done to take a few steps. Certainly not the.
+
+[87.0s - 116.0s]
+Away in this direction. Again, clarify the difficulty of the problem. Let me talk about how object detection is done today. This is a caricature, but it's not that far off from the truth, so we want to detect cars in an image. So we give the algorithm A. We give a machine learning algorithm. This is better. OK, sorry, so we give a machine learning algorithm. A bunch of examples of bounding boxes that contain cars and a bunch of examples of bounding boxes that don't contain cards and it learns to distinguish cars from non car bounding boxes and then given the new image like this we take each bounding box and we place it on the image and we ask is this a car yes or no? Does it pass our threshold? Well, what about this one and this one and this one and this one and that one and not look now one? Now the problem of course is that we don't know the scale of the car because it's a 2 dimensional projection of a 3D World. So we. To run this at different scales as well, and so if you do that with the best sophisticated machine learning algorithms and run this on this image, trying to detect three object classes, a car, a Moat.
+
+[116.0s - 145.0s]
+Cycle and a person. This is what you get so. There's a person right there. That's a motorcycle. It did detect this car. Correct weakness these other two, but on the other hand found one there and one there. This is fairly typical of computer vision algorithms, and it's not because there stupid. The people who build these machine learning up based algorithms for computer vision are very smart and they put a lot of thought into constructing the best learning algorithms that they can. It's because they don't see the whole.
+
+[145.0s - 174.0s]
+Picture. And So what I'd like to tell you about is 2 things. The first is the work that we've done in holistic scene models, and that's going to have two parts. And then the second half is going to be focused primarily on machine learning and develop some new machine learning techniques that we've developed that are instrumental in trying to do better understanding of semantically complicated objects, and I hope that the second part of the talk will be of relevance even to those of you who don't specifically care bout compute.
+
+[174.0s - 203.0s]
+Vision, so the first part of the talk is work primarily by my student YN Lang. Together with Stephen Gould and that's it.
+
+[203.0s - 232.0s]
+Understanding of indoor scenes. So here are the goals that they can. Image of the scenes such as this and indoor image and to recover what the global scene geometry which gives us a notion of scale and where the floor and walls are so that we can better detect and identify objects as well as what are the furnitures that the Occupy the seats are. Target output is a box that identifies the boundaries between the major faces and the furniture layout. The problem is this is not an easy problem because these clutters these furnitures. Occlude boundaries and obscure the appearance of major faces and so it's very hard for computer vision style algorithm to know that behind this bed and this cabinet there's actually a wall, and that this is where the wall is, so this is not.
+
+[232.0s - 261.0s]
+Trivial problem, so we were not the first identify this problem year before we wrote our paper. A very nice paper by head out all came out and they said well since these two problems are difficult and interrelated, we're going to basically try and train algorithm to solve each of them. So we're going to train an algorithm that labels the box. We're also going to try and label an algorithm that identifies the clutter, the furniture, and then we're going to iterate by long over these two different stages, estimating the box and labeling. The the the the labels of the of the pixels in the image as to whether they are cut or not. Now this is the paper that we started out from. Only decided to take a different approach which as you'll see is a running theme throughout this talk which is to try and let the algorithm figure things out for itself. So rather than labeling the rather than giving it a training set with labeled clutter, we're going to only label the boxes and we're going to let the algorithm figure out for itself what. What is the clutter now that has? The obvious advantage of requiring a lot less labeling effort, but as you see it also has other advantages that I'll get to that I'll get to at the end of this segment. So here we're going to model the clutter layout as latent variables. Latent means that they run observed at training time, not just the test time. So the algorithm has to train inferring what the where the clutter is, and then we're going to employ Max margin learning for joint model of the clutter and the box, and I'll talk about Mega Max margin learning in the second half.
+
+[261.0s - 290.0s]
+So what is So what is the overall formulation of the model that we used here and that we're going to use elsewhere in the talk is is what's called an energy function, or also known as a log probability. So this, so this is what it would look like, and so here X is the input. In this case it's the image. Why is the target output, which is the observed output? Is the box parameters, age is the set of latent variables, which in our case is a binary mask for each pixel, or each super pixel in the image. Specifying whether it's clutter or part of the box, this is a large feature vector that basically says forgiven configuration of imagebox parameters and latent variables. Does this make what are some features of that configuration jointly? So, for example, how uniform are the walls? Or how even is the box and things like that? So these are this is a large feature vector from which we hope to use to identify how good different configurations are, and this is the learned weights that we're going to have our model learn. And then given this energy function which which we learned, we're going to label the overall scene by finding the optimal the highest scoring configuration of both the box emulator very.
+
+[290.0s - 319.0s]
+OK, so this is great and we did maximum large margin learning using state of the art method that I'll talk about later. And this is the output that we got. This is the inferred box. In some of those scenes you can see that it's not that great. And what's more important, this is the inferred clutter, and you'll notice that in all of these images, half the room is labeled as clutter. Basically, in some images, everything but the clutter is labeled as clutter. Which basically gives the come brings us to the conclusion that latent variables, although very powerful modeling tool or actually a tricky thing to work with, because often they end up taking in directions that you don't want to and will come back to that.
+
+[319.0s - 348.0s]
+Um? So how do you ground the latent variables? So here we chose this approach that basically introduces an informed prior about what latent variables with the latent variables ought to look like. So in particular, we added another term to the energy function, and we said for this energy there's these two terms. First part is that major faces, like the walls or the floor should have pretty much consistent appearance. If you take out the clutter. So everything but the clutter should be pretty uniform. Now that by itself is not enough, because one way to achieve uniformity of the faces is to have just a single pixel in each. It's not going to be really uniform, so you don't want that. So the other thing is the penalty on the total amount of clutter, so you don't want to get to a degenerate solution where everything is cluttered. Everything is labeled with butter, so it turns out that if you add this very small amount of prior knowledge, each of these is a very simple term. You end up with an informed fire about latent variables that guides the process towards a non degenerate.
+
+[348.0s - 377.0s]
+Solution. And so going back to this example here we have the learning without prior terms which we saw in the previous slide. And here we have learning with prior terms and you can see that was identified as clutter. Now is effectively only the clutter, and so this drove the latent variables towards a much more reasonable solution in this space.
+
+[377.0s - 406.0s]
+So does that help? Let's look at some quantitative results. So this is the pixelwise classification error in terms of the major faces. And this is the paper by hydel at all, and they achieved a 3026% misclassification rate using their previous unsupervised scheme, where they didn't label the clutter. And then they managed to bring it down to about 20 with labeled quarter we got. A very significant reduction in the error. Even though we had unsupervised clutter, that is the comparison point for this is the first bar, not the second bar, because this used the same amount of annotation as this. Without the prior, as you saw, as you would expect, the results are not quite as good, but here is the most interesting bar in this whole chart. If you give the algorithm the ground truth clutter at Test time, and the training time, it performs considerably worse. Huawei.
+
+[406.0s - 435.0s]
+Look at that. So here is the hand labeled clutter by human experts who labeled the clutter, and you can see that lots of things is that our algorithm chose to label is clutter. The human didn't choose to label as clutter the entire cabinet. Everything that's on the walls.
+
+[435.0s - 464.0s]
+And in some examples, including this one, nothing was labeled as clutter, even though there's two or three distinct pieces of furniture in the room. Which basically indicates the human labeling for these latent variables aren't necessarily the thing that the algorithm performs best with, and that's something that will come back to. It's a running theme of this.
+
+[464.0s - 493.0s]
+OK, so that was the first thing yet. Moving to the second vignette, let's talk about outdoor scenes and this is work by primarily by my PhD student Steven Golden. Like postpone Kumar together with.
+
+[493.0s - 522.0s]
+And she go. So here are goals that they can outdoor scene like this and basically to construct again a pixelized scene segmentation that identify specific objects as well as the classes to which they belong. But at the level not have bounding boxes with absolute pixel by pixel, assign each pixel to a particular object and object class. So here we're going to use the same idea. We're going to define this energy function and notice at the moment there are.
+
+[522.0s - 551.0s]
+Latent variables will.
+
+[551.0s - 580.0s]
+After that, and so we're going to define this energy function with.
+
+[580.0s - 609.0s]
+So on the next slide and what this energy function does is it introduces these variables that assign each pixel to a region, so we're region is something that is semantically and geometrically coherent, and so variables that we have in the model are the pixel to region assignments as well as various characteristics of the different regions, like their semantic label with, whether it's a car ground or or water, whatever the geometry, whether it's vertical, horizontal or Sky. And then various other things, including the location of the horizon, which is also inferred in the image. So this is the model and basically models. Try the model tries to assign each pixel to a region while respecting the global coherence of the scene. And I'll show that in.
+
+[609.0s - 638.0s]
+The structure of the energy function in the next slide. So this is my energy function. Initially the basic model just had these three terms. First tried to use image features to identify the location of the horizon. Things like vanishing points. It also had a bunch of terms that related each region between the semantic label, the geometry in the horizon. So for example, it says first of all that if you're labeling this region as a tree then it should be kind of. Green and free. It should be vertical and most likely it's going to be above the horizon. Now know that none of these were imposed on the on the energy function. This was all learned from data, so this was just we incorporated the term into the energy function that allowed the model to learn this characteristic of natural scenes. And then finally we had a contrast term that tried to encourage the model not to fragment the scene into tiny little pieces, but rather to merge together adjacent regions that had similar color and texture, and so that gave rise to these large coherent regions that provided a much more robust model. So this.
+
+[638.0s - 667.0s]
+The region they small let me show you some results, so this is what you see here. Or is the class labels what you see here is the geometry including the inferred horizon and you can see that by and large it actually gets pretty good segmentation, so not perfect. Oranges is foreground object, blue is water Gray Sky and by and large you see purple is Rd. You can see that it works pretty well. Green is grass and so on, so it actually it actually works pretty well in segmenting out even fairly fine boundaries, although there are some failure modes, like here for.
+
+[667.0s - 696.0s]
+So what can you do with this? Well, one thing you can do with this, which is kind of a cool demo that I that is very visually appealing is if you partition the scene into these geometrically coherent regions. You could actually now do a 3D reconstruction from a single monocular image, so you can by identifying the horizon by assuming that the camera is about 1.8 meters off the ground. You can estimate the camera tilt and buy from that. You can basically. Figure out how the camera is looking and then predict the the region 3D position using Ray projection. So what does that mean for the object for the red object here, whose bottom is not included? We can figure out where how far it is from the camera. Approximately the green object has its bottom included, so we can't know exactly where it is on the ground plane, but we know that it can't be in front of the red object and it can't be so far back that it would be visible above the top of the red object, which actually gives you a little fairly small range of options as to where it might be. And so we picked the midpoint.
+
+[696.0s - 725.0s]
+So here are some examples of 3D reconstructions of very different images. And you can see that it actually does pretty well at figuring out what's in front of what, and that's from a single monocular image based purely on a semantic reconstruction. OK.
+
+[725.0s - 754.0s]
+The next thing you can do with this is go back to the object detection problem, which is the one that I highlighted the very beginning of the talk, and for that we augmented the model in addition to having pixels and regions. We also had objects and we could have objects that are comprised of multiple regions. So for example, here is a car that's comprised of several different regions, and so we have an additional set of variables that represent regions object assignments. We also commensurately extended the energy function, so here is the object model that basically says if this is a region or a bunch of regions that are. Together, form an object and they were expecting it to have a certain appearance. So for example, we're expecting a wheel in the bottom corner and various other image features that people typically use for identifying objects, so that's one term, and notice that it also relates the horizon because we also expect certain objects to be above the horizon and others to be below the horizon, and then the final, and perhaps the most interesting term in this whole energy function is the context term that relates objects to adjacent regions. So here, for example, the model learns again this none of this is pre imposed. It learns of cars are typically found on roads. Cows are typically found on grass, and vaults are typically found on water, and this is actually really significant because distinguishing, for example, Rd from water using image features alone is very, very difficult. They're both often grayish and have a certain amount of texture, but if you find the car on top of it, it's very unlikely to be water, and if you find the boat on it is very unlikely to be road, and so the object model can inform the regions and vice versa, and you get from this holistic model much better results than you get. By thinking about each piece of the image.
+
+[754.0s - 783.0s]
+Isolation. Phone is showing again some examples. This is a typical sliding window detector results and I'm showing you the talk to detections per image. So here are the top two highest confidence people in this image. One is indeed over there, but the other ones over there. These are the top two car detections. It's missed the real car entirely and put both cars over there. Now to be fair, the third detection really is that car but still and for some reason that's a cow. OK, our model which has a much deeper knowledge of context, understanding of contexts not only correctly outlined the one and only person in the scene and correctly more or less outline the only car visible in the scene, but also missed the cow that doesn't exist. That's good.
+
+[783.0s - 812.0s]
+Now again coming up with more quantitative results, here are several different graphs. This is the baseline object detection. This is precision. This is recall, so standard curves the baseline sliding window detector for all three of these object classes. The blue is a region based model and the red is what we would do. How well we could perform if we had perfect segmentation of the image into regions, which of course we don't. But it kind of gives you a sense of how well we could perform. So what we can see is that we get significant improvements in precision by considering regions and contexts. And if we have. OK, I'm going to have to never mind. But if we had, we could get near perfect detection, but but we don't, and so there's still obviously a way to go between.
+
+[812.0s - 841.0s]
+The red line. So now getting back to latent variables. Here we basically didn't, didn't assume latent variables. We assume that our training data was fully supervised. But now let's think about what that means. What is a person give us when labeling regions in an image which we did by obviously by Amazon Mechanical Turk? So this would be the ground truth label for the car object. And here is another ground truth label for this car. And for this tree, and so on. And then when you think about it, you realize that you know cars. A car isn't a single homogeneous region in terms of appearance, or for that matter, neither is it. Tree nor person, and so that the fact is that human specified regions are not the most discriminative necessarily from the perspective of computer vision algorithm. So what would happen if instead of having giving it ground from labels, we will let the human who would let the computer rather pick for itself? What are the late? What are the regions the pixel to region assignments that are most discriminative for its own purposes?
+
+[841.0s - 870.0s]
+So here we learn, we train the model again with latent variables in coding these correspondences and what you get is a consistent improvement across all object classes with the most or almost all of the classes with the single most significant improvement being on the foreground class, which is the one we would expect there to be a biggest room for improvement. So that's kind of so. That's kind of a pleasing result that again choose letting the algorithm to this only thing variables is a good thing, which of course let us to be much more ambitious if we can do.
+
+[870.0s - 899.0s]
+That let's really tackle multiclass segmentation in the broadest sense of the word. So now let's have not five or six or ten object classes, but let's have 30 object classes that really pretty, much ultimately 100 or 1000 object classes, but not yet, but really basically label each pixel in the scene is corresponding to real semantic class. So here we would like from this input to basically label this entire set of pixels as an airplane. This is a person ground, Rd, and so on. Sky so great, but do we have?
+
+[899.0s - 928.0s]
+Label training data for this. Well, we don't. We have various bits and pieces, so we have fully supervised foreground data from something like Pascal VOC, which is a standard computer vision data set were they have kindly labeled for us the labels for all foreground regions, but the background is left as generic background and we saw how important it is to have labeled background in terms of the interplay between background and foreground.
+
+[928.0s - 957.0s]
+The data set that we constructed, now known as the Stanford background data set has fully specified background classes, but the foreground are labeled as generic foreground, so we don't have a data set that has both at the moment. Now. Certainly we could construct one. We could put this all on Amazon Mechanical Turk and get that amount of fully supervised label training data, but that would be kind of mean missing the point, because in a day.
+
+[957.0s - 986.0s]
+And to all these datasets, we also have thousands of images that are labeled at the level of bounding boxes. Um, we're somebody only tells us that this is. This box contains a bus, and this one contains a car, but it doesn't give us a pixel level annotation, and it would be fairly expensive and time consuming to label all of these thousands of the level of the individual pixels.
+
+[986.0s - 1015.0s]
+Not to mention the millions of images that exist on Flickr image net, Google images and so on, where we're the only label this given is car and you don't even know the bounding box of the car in the image. Certainly we don't want to label those at the level of individual pixels.
+
+[1015.0s - 1044.0s]
+So that again calls out for, so we'd like to use all of these images in training the kinds of models that we're talking about, and that immediately calls out again.
+
+[1044.0s - 1073.0s]
+The use of latent variables. So how would we formulate this as a latent variable model? Well, some of this is fairly straightforward. So for example, if we have a an image that's only labeled correctly at the label at the level of foreground, so we know the annotation of the foreground object. But we don't know the class label of the of the background classes and so. And so. My computer is stuck. OK, and so we have now a latent variable that actually has two components. First, as the assignment of region pixels to regions, which is, which is the one we had previously. But we also have latent variables that tell us how the background is assigned to appropriate classes, and that's something that we need the algorithm to infer during training, because that's not labeled your own training. But we so we think we have a labeling that says it's specific classes in the background must agree with the fact that is.
+
+[1073.0s - 1102.0s]
+And similarly. Similarly for the other. For the background case, what about bounding boxes? Say we only have we have an image accent Ry says. Here is a cow somewhere within this bounding box. Again, the latent variables tell us the partition into regions as well as the detailed segmentation of the image, and we have a constraint now on the bounding box assignment that says every row and every column in the bounding box must contain a pixel labeled with the bounding box class, because otherwise they would have made the bounding box maybe smaller. So this is a constraint on latent variables. That we need in order to make use of these very weakly labeled.
+
+[1102.0s - 1131.0s]
+And then finally going towards the most weakly labeled instances that you might find on on Flickr image net. Here the images is XY, just says cow somewhere in there and again the latent variables are the same and we have a constraint that somewhere in the image there needs to be a region that's labeled with cow in this case. So great, we now have a latent variable formulation. We applied our greatest and best latent variable.
+
+[1131.0s - 1160.0s]
+Learning method and. Basically we got a zero point 7% improvement by including all of those images in the data. Well, OK, that's on the background data set. Maybe on Pascal, which is a foreground data set. We're going to do better. Well, no, actually not. We did worse. In fact, here there's absolutely no improvement by using all of these weakly labeled images in in our current classification problem. And the problem is so basically using this large amount of weakly labeled data provides only marginal improvement, if any. And the reason for that is that inputing latent variables is hard, that is, to come up with this with what these latent variables ought to be is a challenging problem, and can introduce enough noise that it outweighs the benefit of having so.
+
+[1160.0s - 1189.0s]
+Much more data. Which brings me to the second part of my talk, which talks about learning latent variable models and the specific idea of self paced learning or having the algorithm pace itself in computing latent variables. And I'm going to talk about two different examples of this, one at the level of instances and one at the level of model. And this is work that was really led by my post doctoral on Kumar in my PC.
+
+[1189.0s - 1218.0s]
+So let me take a short digression into Max margin training, which is a topic that I'm sure many of you are familiar with. So go through it fairly quickly, so this is the the grammar and finger extension of binary support vector machines to the multiclass setting. So just as a reminder, we are still in the case where we're trying to find we're labeling. Why by optimizing an energy function which is a dot product of weights and the feature vector and the Max margin. Formulation which is a straight generalization of the standard SVM criterion, basically has the following pieces. We're trying to minimize the norm of the weights, and I'm hoping this is familiar to most people here, which is why it's going to be pretty quick. Some of the weights plus a weighted sum of the of the slacks and so subject to the constraint that the weight of the ground truth label, while I for the I TH instance is not only greater than the than the score of any other label for that instance, but also greater by a certain margins. This is why it's called Max margin classification and the slap basically is my ability to say, well, I can't label this instance correctly within the margin, so I'm going to allow myself not to do that correctly, but I'm going to have to pay for it. Objective function, so this is exactly the same as the two class formulation, except that I have for all Y here for all of the other possible labels for the for the instance X.
+
+[1218.0s - 1247.0s]
+Now in 2000 and three 2004, this framework of multi class SVM was extended first by my student Ben Tasker and Carlos Guestrin and subsequently by by forcing welcomes group to the notion of structured outputs. Where why isn't just a set of labels 1234, but rather an entire multi dimensional vector giving rise to potentially exponentially many labels. So why for example can be the entire segmentation? Avacyn, assigning each pixel to a class, in which case we have number which is exponential in number of number of labels, which is exponential number of pixels in the scene. So other than that, the formulation is actually fairly similar other than turning why from a from just an ordinal to a vector, we now have exactly the same formulation. The only other changes that the margin now can depend is not just the 01 loss given. Did you label this as the correct class or not? But then actually depend on some notion of distance between the ground truth in the alternative labeling so that you might choose, for example, to penalize Lessa segmentation that. Just a couple of pixels oph relative to penalising a segmentation that's you know has half the image labeled incorrectly, so you can have a loss dependent margin that allows different instances to requite allows you to require different levels of margin from different instances. Depending on just how wrong they are. So this was a nice nice formulation. It by itself is not is not a huge leap because you just basically changed the space of lies. The real issue of course is that this has exponentially many constraints because we have a constraint that specifies the margin for every single possible labeling wine. As I just told you, there's exponentially many of those. So how does one deal with that? Well, these two papers presented two different methods are.
+
+[1247.0s - 1276.0s]
+Paper in 2003 basically made the observation that for models that are tractable in a certain sense, basically ones that look like a tractable graphical model, admit a polynomial size formulation that is exact as a quadratic program. So you could actually solve it using exactly the same kinds of techniques that you would solve any other support vector machine. In the subsequent paper, by forcing your Kings group, they came up with a more general approach that also is in easier to implement, which uses cutting planes so that instead of constructing a single QP, basically add constraints one at a time and that has a lot of elegant properties. Specifically, it often requires only map inference relative to this graphical model so that it admits algorithms that are much more tractable and don't require that we compute the partition function or run full scale probabilistic inference. And they actually showed using very nice proof that for many models only polynomial number of cutting planes is required for close to optimal learning, which means that by generating enough bad solutions in this problem, if you generate a polynomial number of those you've converged to something that is actually correct. Are close to correct, so that was a big development in this whole technology is now used really ubiquitously in computer vision as well as in other areas, including natural language and others. For learning structured models using a Max margin form.
+
+[1276.0s - 1305.0s]
+In 2008, 2009, this framework was first extended to the case of latent variables. So the latent SVM model, which was first proposed by Felzenszwalb, McAllister and Ramanan, basically the energy function, just like in the first few slides that I showed, was extended by introducing a latent variable, and that gave rise to the following formulation. That looks exactly like the previous one that we showed before, except that these additional latent variables are entered into the into the energy function. And what basically gets what basically happens is that these have to be imputed in the case of the ground truth annotation. So the best imputation of H, which is this Max over the hi. So the best imputation of the best completion of the hidden variables that's consistent with my ground truth label needs to be better by the margin than any other imputation. For any other label. So this is sort of the thing that I would most pick this consistent with my ground truth. Has to be better than anything else.
+
+[1305.0s - 1334.0s]
+OK, and so, um, these two papers came up with an algorithm called SCCP which has the following structure. It starts with an initial estimate of the parameters and then it imputes the latent variables using those current parameters. And that's again, then using map inference, whilst the latent variables are imputed, this turns back into a standard. Under Dassem and that you can solve using your standard techniques and then the process repeats. Because you now have better parameters, so you can think of it as kind of like expectation maximization or kind of like or variant of coordinate descent. So fairly straightforward method for dealing with latent variables, which I'm sure all of you have seen before in different contexts. And you can prove that this converges to a local optimum of this objective function. But the critical question is how well can you impute.
+
+[1334.0s - 1363.0s]
+Hi. So let's look at some examples in the context that I showed before. So here is 1 example. Remember, we don't have the background information here, so let's see how we can compute it. Well, here the Sky is white, the grass is green, the road is Gray. Basically any half Lane algorithm can impute those pretty correctly, and the answer is it does, so this isn't.
+
+[1363.0s - 1392.0s]
+Easy example. Here's another good one. The Sky is white or kind of grayish. The grass is green, the water is blue. Imputation works great. Unfortunately, not all images are create.
+
+[1392.0s - 1421.0s]
+Equal here is a different one. Here you're trying to impute the foreground, which is immediately much harder. Problem is this a cow. A horse. Cat. Remember, the algorithm doesn't hasn't been trained yet. It doesn't really know What Car what cows look like and how they differ from horses. And sure enough, if you try and impute this, you get this unholy mess that I think is half sheep. Half something half how I think it's some.
+
+[1421.0s - 1450.0s]
+So our mix. Here's another one. Well, this one is a pretty nasty one. The Sky is red. The mountains black and sure enough, if you try and impute this you basically end up with some completely ridiculous imputation once again. So not only.
+
+[1450.0s - 1479.0s]
+This is are the same. So now we were inspired by going back to human learning, and let's imagine that we were trying to teach this kid math and we said all of what we know into one in one session. It's not going to go over really well. So what happens if rather we teach them?
+
+[1479.0s - 1508.0s]
+He should the way we teach, or ought to be, teaching children by doing things one stage at a time. That works a little bit better, so why don't we try?
+
+[1508.0s - 1537.0s]
+You do the same with our algorithm. Start with easy examples and then consider hard ones. And this is an actually an idea that was proposed contemporaneously with our work by Yoshua Bengio at all I see Mail 2009 and. It says let's label some images is easy, others are hard, and then trying train the model on the easy examples first, then only then start to impute the hard work. The problem is that easy for humans is not the same as easy for computers and this is the case that I've been making throughout this talk.
+
+[1537.0s - 1566.0s]
+So we have easiness is not some objective thing that you can determine in advance the property of datasets and it's a property with classifier you're using. You can't look at an instance and in isolation say whether it's easy or hard and that the computer who has a much better sense of what's easy and hard for it should figure out for itself. With instances are hard for it right now in the current stage of the algorithm. So with this intuition in mind, we came up with an algorithm called self paced learning, which this is the original. The original SCCP algorithm.
+
+[1566.0s - 1595.0s]
+We basically we now all. We now add a set of variables VI which are 01 labels and we only count and basically VI means if you guys want it says the instance is included in the current learning iteration. VI Zero, it says that it's not included and you can see that by the fact that VI multiplies the stock. So you don't pay any penalty for getting unincluded instances wrong. So so basically the example is easy. I should include it, and if it's hard then I should know that by itself you know gives the algorithm all the incentives just label everything is hard and say my work is done so obviously want to penalize it for choosing not to label instances and so we add an additional penalty term for all of the instances that it chose not to label. And then that forces it, or to choose some of the hard examples to label eventually and we're going to anneal this factor K. To eventually force it to label all of the examples. Now, in order to solve this, we relax this to A to a set of continuous variables, another in the interval 01, and then it turns out that it's a BI convex optimization, which can be solved efficiently using alternate convex search, and I'm not going to.
+
+[1595.0s - 1624.0s]
+Other details, so now the algorithm says start with an initial estimate W 0. Impute the latent variables. Update WT plus one by solving this biconvex problem and then having done that, I'm going to hopefully have a better model, so I'm going to decrease going to new my penalty so that I'm forcing the algorithm to include more instances.
+
+[1624.0s - 1653.0s]
+So let's look at what that does. This isn't a simple illustration of a 01 of a binary classification problem. Initially at the early stages, K is large. I don't really care if I use, don't use so many instances so it's only going to choose to label instances that are far from the decision boundary. As the algorithm progresses, the penalty becomes larger and so eventually I'm going to move to the regime where I have to label everything, including if it's confusing, but hopefully by this point my parameters are good enough that my imputation for the latent variables.
+
+[1653.0s - 1682.0s]
+Pretty reliable, so let me demonstrate this on an example because I think visually is going to become very clear and I'm going to use a much simpler example. The one of you so far. This is a standard example of object detection. The input X is an image, the output wise. A class label, which in this case is one of six mammal groups, were doing a simple 01 loss, and the latent variable is the bounding box where the object is going to be found. Given a bounding box, I can now apply any of my favorite learning algorithms that do bounding box detection. So for example, we could use a standard so-called hog detector. For those of you have heard the term, but any any algorithm that detects the classified bounding boxes can be used in this setting. The problem, of course, is that we don't know rhat is latent using the training.
+
+[1682.0s - 1711.0s]
+So let's look at some examples. This is the iterations of the algorithm of blue on the left of the CCP algorithm, which is the one that that was there before. And this is the self paced learning variance. And what you see here is blue if the if the example is used in training in red. If it's not, and remember whether it's used or not as the decision of the algorithm makes, so CCP doesn't get a choice, it has to use all of the all of the images, which is why the bounding boxes here all blue. But you'll notice that an iteration one the inferred bounding boxes. That the algorithm chose not to use are almost invariably wrong. Where is the one that it shows yes to use are almost invariably.
+
+[1711.0s - 1740.0s]
+This is iteration 5. The bounding box is changed a little bit, but it's still not sufficiently confident about these, even though this one's pretty cool.
+
+[1740.0s - 1769.0s]
+Right, but by iteration mine it nailed both of these mounting boxes and in fact chose to use them, whereas this one is still not sufficiently confident. And in fact it's still a little bit.
+
+[1769.0s - 1798.0s]
+But by iteration 13, it's basically imputed the hidden variables correctly and chosen to use.
+
+[1798.0s - 1827.0s]
+All the examples. So quantitatively, this is my object detection baseline task. What we see here is the test error for SCCP versus self paced learning and we see a healthy improvement in of 1.5% in in the test error. We applied this to actually four different very very distinct problems that involve latent variables. I'm not going to show you all four of them just going to show you one more to demonstrate the generality of this of this algorithm. So this is finding DNA motifs where you know that a protein bound to a particular region of the DNA but don't know exactly. Word bound and you'd like to identify the motif that allowed the protein to bind to the DNA. So here X is the sequence Y is bind Ng bind and H is the multi position. And again we see a very healthy improvement of about 5% in test area.
+
+[1827.0s - 1856.0s]
+And then finally, these are results that arrive yesterday. This is of some initial results on the Pascal VLC challenge and this is accuracy as opposed to error, so higher is better. And again we can see healthy improvements both in test accuracy and an average precision, which is a metric that's often used in computer vision.
+
+[1856.0s - 1885.0s]
+OK, so now let's go back to our diverse data learning and the whole image segmentation thing that started out this this whole discussion. So here's an example. Input image. Here is the in Ferd labels from the from the original algorithm that we started out with and here and notice that it's labeled. All of this I think is grass and that's role and hear the inferred labels are considerably better. And again that translates to significant improvements in performance. Across all different classes for both the Stanford background data set and for the Pascal DLC data set. So some classes are a little bit worse, but almost all classes are considerably better. Which shows that if you train your algorithm correctly. Computing the hidden variables carefully, then you can make good use even a very weakly annotated data.
+
+[1885.0s - 1914.0s]
+The final piece of this is a very new work. It's actually still under review, which tries to take this intuition as in.
+
+[1914.0s - 1943.0s]
+Get a different, slightly different direction, which is the question of model selection, which is one that I'm sure that all of you have ever applied machine learning have faced of OK. Which classifier should I use? And specifically, for example, which kernels should I use that he's a linear kernel? A cubic kernel quit the kernel?
+
+[1943.0s - 1972.0s]
+So let's go back to the human learning motivation and let's again take some do this kind of as a simple example, imagine when somebody asks you to teach them physics. You start out with a very complicated model. The general theory of relativity.
+
+[1972.0s - 2001.0s]
+Rob.
+
+[2001.0s - 2030.0s]
+Very successful. But what about if we start with a?
+
+[2030.0s - 2059.0s]
+Simple model.
+
+[2059.0s - 2088.0s]
+And then a slightly more complicated.
+
+[2088.0s - 2117.0s]
+1. And then the most complicated one. Maybe that's going to work better so.
+
+[2117.0s - 2146.0s]
+Let's see if that applies to computers, so here are our three, three kernels of increasing complexity, and we're going to rely on the theory of multiple kernel learning, which was proposed by Bocklin creator Jordan in 2004, and what that says is we're going to use a weighted average of different kernels. So here we have the different kernels side one side 2 and so on, and there's a bunch of coefficients that wait with. What way do you want to include each of them? And So what we have is actually, like, really, really, really long kernel. That is, the aggregate of all of these different pieces of kernels. And so you can think of the kernel as a weighted combination was called the conic combination of the different of the diff.
+
+[2146.0s - 2175.0s]
+Sub kernels, and then how does one do multiple kernel learning? Well, you basically put this big big kernel into the matrix and you optimize simultaneously, not only over the weights of the learner and the slacks but also over the weights of the different kernels so that you try and pick the kernels. That gives you the best loss on your training set. Well, that's great, except that if you actually optimize this objective as written, it encourages the most complex kernel because the most complex kernel fits best to give me the lowest slacks it's going to. It's going to give the best classification performance on the training data, and so if I try and optimize two training performance, I'm going to.
+
+[2175.0s - 2204.0s]
+Profit. So. What we're going to do is we're going to introduce into this a penalty on model complexity and the specific model complexity that we're going to use is what's called the Rademacher complexity. It's a way of measuring the complexity of a kernel, and so we're going to learn in a way that encourages the algorithm to pick simpler models. And now let's think about what that does in the context of latent.
+
+[2204.0s - 2233.0s]
+Labeling. All. So we start with an initial estimate. And we're going to use that to impute. The um, latent variables, and then we're going to go and update both the weights and the kernel weights by solving this convex problem, and then we repeat.
+
+[2233.0s - 2262.0s]
+So let's see.
+
+[2262.0s - 2291.0s]
+Think about what this algorithm, which is we call self paced multiple kernel learning or known to its friends as spam.
+
+[2291.0s - 2320.0s]
+So here is the spam kill behavior. What happens in early iterations? In early iterations the hi's are almost invariably incorrectly imputed. Which means that the cyyz are going to be large even for complex kernels because even for complex kernels, if the bounding boxes right, you can't get things correct, because it's effectively a random prediction problem. And at that point the algorithm tries to optimize for this complexity term and therefore it's going to prefer simple kernels. Which are going to not overfit.
+
+[2320.0s - 2349.0s]
+Dana in later iterations the hi's are more likely to be correctly imputed, which means that society is going to be small for the correct kernel and then hopefully you're going to prefer the more complex kernels so that you can minimize the total sum of the slacks. So let me show you that that and know that this behavior happens without ever kneeling the term Lambda, which represents the strength of this term.
+
+[2349.0s - 2378.0s]
+So let me show you that this actually works in practice. This is exactly an example of the balance of the imputed bounding boxes relative to cubic kernel, which is the one that performs best on this data set. And so here is just a plain cubic kernel and the system fill. This is iteration one, it's the same, it's the same because they both start out in the same place.
+
+[2378.0s - 2407.0s]
+By iteration 3.
+
+[2407.0s - 2436.0s]
+Spam Kill has moved many of the bounding boxes to the correct place. We don't.
+
+[2436.0s - 2465.0s]
+If any improvements for the cubic kernel, because basically it's over fit to this particular set of incorrectly computed bounding boxes. Now stuck and can't.
+
+[2465.0s - 2494.0s]
+Iteration 6 we've now nailed. That one as well. This still doesn't know very.
+
+[2494.0s - 2523.0s]
+Not. Here, iterations and it moves that actually in the.
+
+[2523.0s - 2552.0s]
+Direction and basically have convergence Pamphile has nailed bounding boxes for all of these objects, whereas this one is still very far off because it overfit to the incurred.
+
+[2552.0s - 2581.0s]
+Tations so if you actually look at that quantitatively, what you see here is the behavior of linear, cubic, quintic, UU weighting of the kernels in spaniel, and we see that other than the linear kernel which performs pathetically all of them achieve affectively, 100% accuracy on the training data, and that's because they are over fitting. On the other hand, on the test data, the linear kernel still performs pathetically, but all of the other ones also performed not very well because they've overfit to the trading banophen incorrect imputations. So the stronger kernels overfit. The noise invitations get stuck at a local optimum where Spackle only uses the strong kernels. When the imputations are accurate.
+
+[2581.0s - 2610.0s]
+Waiting this local optimum and if you want to see this even more quantitatively, this is the score of the overlap of the bounding boxes between the imputed bounding box and the ground truth bounding box, and what you see here is over iterations. This score of how well these match up and you can see that the cubic kernel, which is the one that performed best, never achieves an average intersection of greater than 0.8, where Stanfield gets to 0.9, three or two or so.
+
+[2610.0s - 2639.0s]
+And again, to show you this is not a fluke for this data set, this is the DNA binding motif and you can see here the linear kernel actually performs better than these other guys, but spam kill performs significantly.
+
+[2639.0s - 2668.0s]
+So to summarize. The first conclusion is the pixel level scene. Understanding this is for the first part of the talk, enforces coherent coherence. In the scene interpretation and consistency of context, so you don't get, for example, that this is a cow. Which is what it was inferred to be. Um? But on the other hand, if we want pixel level scene understanding that we need a heck of a lot more training data than we currently have, because pixel annotations are still very laborious even with all of the Amazon Mechanical Turk, and so we only have those in limited amounts. And Furthermore, even if we can get somebody to label them the human annotations don't necessarily line up with what we do.
+
+[2668.0s - 2697.0s]
+Like to see. So the second conclusion and this, I think, is a broad conclusion for machine learning in general, not just for computer vision, is that we need to come up with ways of making better use of training data. We need to be able to use weekly label data. We need to use diverse data that has different levels of annotations, including unsupervised data and so on. But in order to do that, you need to be able to deal correctly with latent variables. Because as soon as you have weak labeling, it means that implicitly or explicitly, there's a bunch of variables.
+
+[2697.0s - 2726.0s]
+Unlabeled in your training data. And the third conclusion from the third part from the last part of the talk is that if you're training latent variable models, it's important not to jump too quickly. Don't immediately force your algorithm to solve the hardest instances, or to use the richest model. Rather, let the algorithm gradually adapt to increasing levels of complexity.
+
+[2726.0s - 2755.0s]
+So let me prove I found this looking around. I don't know how many of you are familiar with the Khan Academy, which is this really amazing resource on the web for teaching kids math. This is an article from KQED that talks about the future of the school day for teaching children math as well as other topics, and it talks about the importance of self paced learning where every student works at his or her own pace. Students, working groups and so on.
+
+[2755.0s - 2784.0s]
+So what about if we have the following every algorithm working at his or her own pace? Different kernels, working groups, and helping each other and the data set full of diverse weakly labeled instances that give algorithms practical knowledge and experience?
+
+[2784.0s - 2813.0s]
+So let me conclude by thanking the people who did the work. I've already mentioned all their names. I won't read this again as well as my funding sources and thank you for your attention. And I'm happy to take questions. Well, Tom is getting a microphone so. So I love to talk. One question though is. You needed to have a data set where some of the instances were actually easy. Yes. DNA data that you might not have such things, although I've never given up. I guess that's a valid question. What makes some DNA instances easier than others? I think. That's a really good question. I think that's partially it's a question of how many almost motifs there are in the in the DNA surrounding the actual motif of whether it looks more like the random background distribution. But you're right that if I have a data set where all instances are equally hard, this is likely this at least the as the self paced learning. The first one is likely not to work. Intuition why you didn't have to. To the anneal the the Lambda parameter. Sure, because then go back because it's close.
+
+[2813.0s - 2842.0s]
+So in the early iterations, even with a fixed Lambda the hi's are going to be incorrectly imputed because the WS are just wrong and so the cyyz are going to be large no matter which currently used, because even the most complex curtain kernel can't fit the noise that well and so given that option of fairly large size, regardless of whether you use a simple kernel or complex kernel, the Rademacher complexity turn takes over and says well in that case, since I can't win on the. On the accuracy anyway, may as well at least win on model complexity, whereas in later iterations as the HI is become more correctly imputed than using the simple kernels doesn't fit to them quite as well, and I'm going to use the most complex kernel that fits well the imputed labels, but even then I'm not going to necessarily. We have graphs of that in the paper, even there it doesn't go all the way to quit the kernels. At that point, it sort of stops where CU has most of the mouse because. Because that's sort of the right tradeoff point where the size are about equally good and but you lose on the Rademacher complexity. I have a question about the first part of the talk and the notion of clutter and working more in natural language and speech in speech recognition. Actually, the lesson learned was the notion of culture is not good. I mean right now the best speech recognition algorithms for this so called garbage models. So they explicitly model every detail of the clutter in the sense that said nonspeech things like, you know, even cutting and so on on this explicitly model. Now my question is. Envision another expert. Whether it's a good idea to really start with running Club in general, because what is clutter for one task may be non clutter for another one. If you look at the picture from a different perspective, let's say you are looking at the traffic scene from Homeland Security perspective. Some things which may be clutter in the normal classification is a session is essentially no clutter for the purpose we are looking at this picture and so on so. That's my question. I need a job. The lesson from speech or about the notion of of you know, distinguishing clutter in one cluster is only another good boundaries between vision. It's another case. OK, so first I think the use of the word clutter, which we did not invent because we adopted it from the previous paper, was probably misleading in this regard. We have no intention of throwing out the clutter. In fact, the clutter is the furniture, and often some of the most interesting aspects of the scene are the are the so called clutter. The reason it's clutter is because it clutters up your ability to detect the box, which is why they originally used the word clutter for that particular thing. Now, the experience that people have in computer vision in general is very similar to what you're reporting from speech, which is the throwing away things that are not the thing that you're trying to detect is losing valuable information, which in this case would be contextual information about where the object is. So specifically when people have done, for example, detection. Sorry, object classification, you actually often do worse by focusing only on the bounding box of the object and removing any of the contextual information. Nevertheless, identifying what where the object is versus where it's not is very valuable information for guiding the features of the of the algorithms so that you know to wait those differently, perhaps, and so that's what the latent variables are doing is they think this is where I think the object is and I should treat the feature inside this box differently from the features. Outside this box, even if the ones outside this stuff are so informative, there informative in a different way. So the experience is very similar to what you described and the word clutter here was just chosen because of the specifics of the application that that that that the original construction of the worker. But it's a very good point, so thank you for asking them. Question. So let's take the speaker, yeah?

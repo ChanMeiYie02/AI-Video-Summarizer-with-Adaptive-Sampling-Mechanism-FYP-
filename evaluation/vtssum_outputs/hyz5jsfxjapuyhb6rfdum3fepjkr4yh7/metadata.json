@@ -1,0 +1,21 @@
+{
+    "id": "hyz5jsfxjapuyhb6rfdum3fepjkr4yh7",
+    "title": "Panel on Data Protection and Security on the Web",
+    "url": "http://videolectures.net/eswc2014_staab_panel/",
+    "info": {
+        "panelist": [
+            "Steffen Staab, Institute for Web Science and Technologies (WeST), University of Koblenz-Landau"
+        ],
+        "published": "July 30, 2014",
+        "recorded": "May 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 53,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 780
+}

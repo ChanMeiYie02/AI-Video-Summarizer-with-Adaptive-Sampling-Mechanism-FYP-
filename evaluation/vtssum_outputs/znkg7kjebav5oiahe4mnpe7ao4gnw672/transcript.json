@@ -1,0 +1,632 @@
+[
+    {
+        "text": "OK, so good morning everyone I'm running and this is joint work with my advisor Gen level and where from produce. So let me begin with the sorry.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Sorry. Let me begin with an overview of the key issues we are trying to address in this work.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So the sentences in this slide will be made more precise in the moment, but here our first motivation is that although relational learning methods have been applied mainly to sync to a single network, there has been no theoretical study of the properties of these learning algorithms, so.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "I will so we attempt to address this issue by a first study in the asymptomatic behaviors of these relational estimated hers in the sense that the training graph grows to Infinity. Based on this analysis, we attempt to further address the practical issue in relational learning, which is combinatorial blowup of computational complexity. Since the relational models grows with the training data size, an structures in the data needs to be better explored.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Our asymptotically analysis result indicates that this exploration can be done in the context of joint learning and disjoint learning. We will improve, try to improve the quality of this joint learning by using Asymptotical results. So with these goals.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "In mind, let me now introduce some background in relational learning first.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Here is the conventional setting of machine learning where we assume that the data instances are samples from the underlying lying population of ID instances where.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Each instance has. An attribute vector X and.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "It's the labels, so these two aspects carry over to the relational setting. However, in relational domains we have, we can observe the natural links between data instances which encode the probability distribution probability dependencies between the data instances, so they are no longer ID.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And this is a key difference between relational learning and ideal learning. We attempt to use the dependency to improve prediction performance.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "More specifically, in our setting, we assume that the the domain is consists of a single graph, meaning that each instance is potentially dependent on and everything else. There are actually many examples of such domains, including World Wide Web and social networks.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Now let's do this. Let me describe the learning and inference tasks in single network domains.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So during training we observe fully labeled training subgraphs from the underlying network and we learn relational model.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "During application we observe another sub.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Graph from the.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Underlying network an it could be.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Partially labeled or.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Fully unlabeled, we apply the learning model to collectively classify the the unlabeled in.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Senses so in this work we will focus on the training aspect. Our analysis is built on previous work and the most popular approaching relational learning. The Markovian relational model.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Most.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "There has been a number of previous work in this model, for example, relational Markov networks, relation Markov logic networks, and relational dependency networks. Two major aspects of these Markovian relational models, Markov assumptions and click templating. The Markov properties, just as in a Markov network model, the.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "As for the click templates, each click type is defined on a small repetitive sub graph structure.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "For example, edgewise.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Clicks are defined on the edges.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "And a node centric click is defined on each instance and its related instances. Each click type is.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Going to be rolled out all over the training graph and this results in.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Joint probability distribution of all the labels of the in.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "And seeing the training network and.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Here we can see that T is template.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "See other clicks.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "And we assume the potential function to be of log linear form to simplify the notations. In our analysis. We further assume that the we have only one.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Templates and the joint distribution reduced to this form.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "And we have explicitly written out the log linear potential potential function here.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "We use file to denote the feature extracted from each click also.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "So we use N to denote.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Number of clicks in the training graph.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "And we can see that the Markov network model different. Formulated here is actually actually grows with the training graph size. This is very different from the conventional use of Markov network to ID data where the size of Markov network is always fixed.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So again, here is a joint distribution of the labels given the attributes and direct learning approach.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "You would be maximizing this likelihood.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "And this will involve enumerating all of the labels in the graph jointly. You can see very clearly from the partition function where the summation is over the space of all possible joint labelings, and the complexity grows exponentially with the number of instances in the training graph, which is generally intractable.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "So another approach which has been explored in relational learning for single networks is pseudo likelihood.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "In the work of relational dependency network here we consider a generalized version of it where we partition.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "And the graph into components and then the pseudo likelihood objective will be factorized over.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "The components so each factor is going to be a conditional probability over the joint labeling with.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Each component an given given the labeling.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "In the mall.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Of blanket so the.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Key difference between employee and Emily is in the partition function. We can see that the. Partition function of mpoe is only integrated over the space of the joint labeling within each component, so that the computation.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Does not remain fixed when the training graph size grows, so here we use. Now we use M to denote the number of pseudo likelihood components and. The number of similar likelihood components will grow with the training graph size becausw. We assume that the pseudo likelihood components to be of bounded size. So by an asymptomatic analysis we.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "Meaning that both end and then grow to Infinity.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "OK, now with this background we can take a closer look.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "At the key in the first key issue so. Although these Markovian relational models have been successfully applied to many single network domains, there it is not clear whether they are theoretically justified. First question to ask is whether these estimators will converge properly as we acquire more and more training data.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "So in single network domains, acquiring more and more training data will correspond to acquiring a larger and larger training graph, so this is different from the conventional asymptotic analysis.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "So now we are going to outline the conditions in which the estimators are syntactically consistent and normal. Smith",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "To do an asymptomatic analysis, we.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "First need to need the probability measure of Markov network to be to exist for infinite networks. So this can be satisfied by a sufficient condition which is local finiteness. It has two aspects. First we assume each node has a bounded degree. Then we assume the click potential function to be bounded, so.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "So this local finiteness assumption ensure the existence of an infinite Markov network for the model to converge we also need a.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "Further assumption which we call weak dependence. It's assumed that the total covariance of each click with all the other clicks in the network is finite. Intuitively, this assumption means that the correlation is concentrated quite locali so.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "For each, for any local click, if the correlation with all the other clicks in the graph decays very rapidly.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "With respect to graph distance. Then this total finite total variance assumption assumption will be satisfied.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "In the literature there are several other weak dependence assumptions. Especially in sequential data there there are various mixing conditions, and in fact these mixing conditions usually imply our finite code. Total covariance assumption here.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "OK, so now we explain why we need this weak dependence assumption.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "First, some notations we review from the literature of standard exponential families. The gradients of the log.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "Play hood function the only.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "So here is that we normalize the log likelihood function by the number of clicks in the graph so that the log likelihood function does not go to infinite.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "And similarly we have the gradient of the log pseudo likelihood function, where the expectation is taken is conditioned on the Markov blanket of each component. So the immediately implication of weak dependence is a law of large number or gold density type of result. It says that the.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "The average of feature values will converge to their expectation in probability, so we can see that both.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "These two gradients will converge to zero in probability. And we can further characterize the.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "Sympathetic convergence rates by Central Limit theorem type of results. We have proved in the paper that the convergent.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "Distribution of the Group of the gradient is normal.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "And also for the pseudo likelihood, so the.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "Asymptotical variance of the Murray here can be interpreted as the article variance of feature values within the network for the.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "MPL yet involves two covariance matrices that KDV here can be interpreted as covariate. The article variance of feature within each component and see can be interpreted as.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "The between component covariance.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "OK, so now we have a first justification of relational estimators for single network domains. Both the Emily and NPR asymptomatically consistent, so both.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "Estimators will converge to their true parameter value in probability based on the previously mention.",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "Assumption local finiteness, weak dependence and technical assumption. The identifiability of parameters which is standard.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "For the analysis of exponential families. So again to remind you here, Theta N is estimated from training graph of size of N clicks while the employee is indexed by the number of pseudo likelihood components.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "So our proof of consistency is based on the textbook lemma. And it consists of three conditions. Here we only mention the key ingredients for the proof of. The ME for the sake of time so.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "If we let the MN the random function MN to be the log joint likelihood of of the of the data. So here note that this is the joint data likelihood to be differentiated from our conditional estimator, which is conditioned on X. This is for the purpose of linking the conditional estimator to the generative joint distribution.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "So the first condition can be verified by the previously mentioned law of large numbers, and the second condition the right hand side minus obstructed by the left hand side, is essentially the KL divergences between the two global distributions, parameterized by Sita Zero and the.",
+        "start": 2320.0,
+        "end": 2349.0
+    },
+    {
+        "text": "And by using local finiteness we can reduce it into local KL divergent switches. The KL divergences between the two local conditional probability distributions because these local KL divergences strictly positive. This second condition follows and thus.",
+        "start": 2349.0,
+        "end": 2378.0
+    },
+    {
+        "text": "3rd condition can be verified based by using the convexity of log partition function.",
+        "start": 2378.0,
+        "end": 2407.0
+    },
+    {
+        "text": "So.",
+        "start": 2407.0,
+        "end": 2436.0
+    },
+    {
+        "text": "So now we have the same topic as consistency. Based on this we can use the Delta method to convert the central limit theorem for gradients into the asymptotic normality of the estimators. So we have the asymptotic normality of the Emily here. The symbiotic variance is the same as in the central limit theorem. V can be interpreted as the within component auto covariance. And similarly we have the asymptotic.",
+        "start": 2436.0,
+        "end": 2465.0
+    },
+    {
+        "text": "Normality of the employee an again till the V.",
+        "start": 2465.0,
+        "end": 2494.0
+    },
+    {
+        "text": "Is the within component.",
+        "start": 2494.0,
+        "end": 2523.0
+    },
+    {
+        "text": "Auto covariance see it.",
+        "start": 2523.0,
+        "end": 2552.0
+    },
+    {
+        "text": "The beat.",
+        "start": 2552.0,
+        "end": 2581.0
+    },
+    {
+        "text": "Component covariance, so now we can compare these two estimators by.",
+        "start": 2581.0,
+        "end": 2610.0
+    },
+    {
+        "text": "Comparing their their eyes.",
+        "start": 2610.0,
+        "end": 2639.0
+    },
+    {
+        "text": "Arctic variants. So the 1st result is quite intuitive. The smell is asymptotically more efficient than the employee and special cases that when the PL components.",
+        "start": 2639.0,
+        "end": 2668.0
+    },
+    {
+        "text": "Independent of each other, the equality will hold, so Secondly.",
+        "start": 2668.0,
+        "end": 2697.0
+    },
+    {
+        "text": "We can also compare the different pseudo likelihood constructions. Basically the employee with cause the partition is asymptomatically more efficient than an employee with.",
+        "start": 2697.0,
+        "end": 2726.0
+    },
+    {
+        "text": "The partition, so at this point we.",
+        "start": 2726.0,
+        "end": 2755.0
+    },
+    {
+        "text": "We have finished the discussion of the first issue. As for the second issue we mentioned in the beginning that we are going to explore the structure in the data by a tradeoff between disjoint and joint learning. So by disjoint learning conceptually it.",
+        "start": 2755.0,
+        "end": 2784.0
+    },
+    {
+        "text": "Means that we can partition the graph into.",
+        "start": 2784.0,
+        "end": 2813.0
+    },
+    {
+        "text": "Conan's and then the joint objective.",
+        "start": 2813.0,
+        "end": 2842.0
+    },
+    {
+        "text": "Be approximately optimized by optimizing a factorized objective. So in the asymptotical analysis we have by comparing the join the app same tatic variances we have already. Partially addressed the disjoint learning issue, we know that the final partition will be worse than the. Then the cause of partition, but in.",
+        "start": 2842.0,
+        "end": 2871.0
+    },
+    {
+        "text": "Practice. Usually the partitions are not strictly final causes and each other, so these results are not immediately useful. We are now going to further explore the asymptotical variance to improve.",
+        "start": 2871.0,
+        "end": 2900.0
+    },
+    {
+        "text": "MPL",
+        "start": 2900.0,
+        "end": 2929.0
+    },
+    {
+        "text": "So ideally we want to optimize the asymptotic variance.",
+        "start": 2929.0,
+        "end": 2958.0
+    },
+    {
+        "text": "So all of the involved matrixes are not cannot be efficiently evaluated.",
+        "start": 2958.0,
+        "end": 2987.0
+    },
+    {
+        "text": "But we can approximately optimize either the within component covariance or the between component covariance.",
+        "start": 2987.0,
+        "end": 3016.0
+    },
+    {
+        "text": "This might be related to the graph clustering algorithms. However our pseudo likelihood components typically very small or and possibly overlapping clusters of nodes which are not typically dealt with by component by graph clustering algo.",
+        "start": 3016.0,
+        "end": 3045.0
+    },
+    {
+        "text": "So in this work we simply investigate a simple heuristic which maximizes the within component linkage greedily, and we compare this approach to a random construction based on breadth first search or depth first search.",
+        "start": 3045.0,
+        "end": 3074.0
+    },
+    {
+        "text": "Over the same model. So here are the estimation results on the on the synthetic data. We evaluate the mean square error of the estimation. We can.",
+        "start": 3074.0,
+        "end": 3103.0
+    },
+    {
+        "text": "See that usually the MLB.",
+        "start": 3103.0,
+        "end": 3132.0
+    },
+    {
+        "text": "Without seeing the lowest estimation error, and but unfortunately it can only be applied to very small networks, the heuristic approach usually achieves fastest estimation convergence.",
+        "start": 3132.0,
+        "end": 3161.0
+    },
+    {
+        "text": "Among all the mpoe constructions, and it significantly up for.",
+        "start": 3161.0,
+        "end": 3190.0
+    },
+    {
+        "text": "Perform the random construction an.",
+        "start": 3190.0,
+        "end": 3219.0
+    },
+    {
+        "text": "Not surprisingly, the lower order pseudo likelihood components converge most slowly.",
+        "start": 3219.0,
+        "end": 3248.0
+    },
+    {
+        "text": "So in conclusion, the heuristically constructed employee improve estimation accuracy.",
+        "start": 3248.0,
+        "end": 3277.0
+    },
+    {
+        "text": "So estimation convergence, so we also want to know in real data whether the our pseudo likelihood component heuristic construction can improve classification accuracy at all. So we apply our method to the Purdue Facebook.",
+        "start": 3277.0,
+        "end": 3306.0
+    },
+    {
+        "text": "Network and here are two classification examples where we predict the gender and political view of the instances so.",
+        "start": 3306.0,
+        "end": 3335.0
+    },
+    {
+        "text": "We also compared to the baseline independent learning approach. We can see that relational learning indeed improve over.",
+        "start": 3335.0,
+        "end": 3364.0
+    },
+    {
+        "text": "And learning and then we see that the random construction doesn't really achieve good performance relative to the Singleton and pairwise construction construction in real data.",
+        "start": 3364.0,
+        "end": 3393.0
+    },
+    {
+        "text": "But our heuristic achieves consistently better or equivalent performance across the number of training graphs.",
+        "start": 3393.0,
+        "end": 3422.0
+    },
+    {
+        "text": "So inclusion we can say that heuristically constructed mpoe can improve classification as accuracy as well.",
+        "start": 3422.0,
+        "end": 3451.0
+    },
+    {
+        "text": "To conclude.",
+        "start": 3451.0,
+        "end": 3480.0
+    },
+    {
+        "text": "In this work, we have done an asymptotical analysis. Of the employee and the MLB for relational learning. Single network domain.",
+        "start": 3480.0,
+        "end": 3509.0
+    },
+    {
+        "text": "Things and our study indicates that a better tradeoff between joint learning and disjoint learning can be achieved by maximizing within component.",
+        "start": 3509.0,
+        "end": 3538.0
+    },
+    {
+        "text": "Clarence and we experimentally investigated heuristic peer component construction algorithm and show that it improves the estimation accuracy and classification performance. This only provides a starting point for more sophisticated algorithms based on asymptotically covariance.",
+        "start": 3538.0,
+        "end": 3567.0
+    },
+    {
+        "text": "We believe that further exploration in this direction will be very helpful for the relational learning community. Becausw, the relational model, grows with the training graph size and the real network has a lot of structures, especially the high clustering coefficient, which has not been well explored in relational learning algorithms. On the.",
+        "start": 3567.0,
+        "end": 3596.0
+    },
+    {
+        "text": "Theoretical side we are currently trying to characterize the convergence rates in the finite data region. This can.",
+        "start": 3596.0,
+        "end": 3625.0
+    },
+    {
+        "text": "Use the talk, thank you.",
+        "start": 3625.0,
+        "end": 3654.0
+    }
+]

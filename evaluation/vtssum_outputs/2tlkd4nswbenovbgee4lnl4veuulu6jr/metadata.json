@@ -1,0 +1,21 @@
+{
+    "id": "2tlkd4nswbenovbgee4lnl4veuulu6jr",
+    "title": "Big Data Techniques For Supporting Prediction of Renewable Energy Production",
+    "url": "http://videolectures.net/emender2015_masciari_big_data/",
+    "info": {
+        "author": [
+            "Elio Masciari, Istituto di Calcolo e Reti ad Alte Prestazioni (ICAR), National Research Council (CNR)"
+        ],
+        "published": "Oct. 22, 2015",
+        "recorded": "October 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Technology->Energy"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 161,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2519
+}

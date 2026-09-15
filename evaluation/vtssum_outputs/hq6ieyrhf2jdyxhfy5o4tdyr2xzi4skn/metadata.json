@@ -1,0 +1,20 @@
+{
+    "id": "hq6ieyrhf2jdyxhfy5o4tdyr2xzi4skn",
+    "title": "Experiments with Non-parametric Topic Models",
+    "url": "http://videolectures.net/solomon_buntine_topic_models/",
+    "info": {
+        "author": [
+            "Wray Buntine, Faculty of Information Technology, Monash University"
+        ],
+        "published": "Feb. 20, 2015",
+        "recorded": "January 2015",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 88,
+    "num_sentences": 632,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 880
+}

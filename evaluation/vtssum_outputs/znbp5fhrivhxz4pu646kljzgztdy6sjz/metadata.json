@@ -1,0 +1,24 @@
+{
+    "id": "znbp5fhrivhxz4pu646kljzgztdy6sjz",
+    "title": "Award ceremony",
+    "url": "http://videolectures.net/ijcai2011_intro_awards/",
+    "info": {
+        "moderator": [
+            "Toby Walsh, NICTA, Australia's ICT Research Centre of Excellence"
+        ],
+        "author": [
+            "Gerhard Brewka, Intelligent Systems Department, University of Leipzig",
+            "Sebastian Thrun, Stanford University"
+        ],
+        "published": "Aug. 23, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Events"
+        ]
+    },
+    "num_segments": 9,
+    "num_sentences": 89,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 683
+}

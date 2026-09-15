@@ -1,0 +1,407 @@
+[
+    {
+        "text": "Hi, I'm Mohamed, I'm gonna present ignore that this is a joint work with decent Ordonez, Joseph Redmond and Ali Farhadi. Let me refresh some near memory for you.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Most of us have been sitting either side of this desk, either asking our advisor or mentor for a project to work on, or trying to convince him on a project, but.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Regardless, these days always the answer is deep learning and when it comes to deep learning, the very first step is to ask for.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "The GPU server and hopefully a beefy one and the reaction obviously is.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "This is.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "The beefy machine I'm talking about this is what we really need to run a state of the art recognition methods. Our recent.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Learning methods are so expensive in terms of memory computation and power. For example, the amount of power that we need to classify a single image is enough to perform world changing tasks to blow there.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "By this specific hair.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "That can make the world great again. Now that you're all very convinced that our recent deep learning method is so expensive, let's look at.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "One of the most common deep learning pipeline in computer vision, convolutional neural network where is single image has to go through several convolutional layers and a.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Solutional operations are applied between two tensors of real values that has a lot of floating point operations. For example, in Alex Net it requires 1.5 billion floating point operation. In Weegy network it requires about 20 billion floating point operations, and this amount of floating point operation is so expensive for CPU and that's why we need GPU. But do we really need the floating point operations?",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Most of the recent deep learning methods are using 32 bit to represent data and operations, but reducing the precision we can save in memory and computation. In this work we take this idea to its extreme scenario and we reduce the precision to 1 bit where we represent only positive and negative values are recent. This study shows that the parameters of convolutional neural network can be represented by a binomial distribution, so we can. Transfer the operations in the plus one and negative one to the operation in the bitwise domain. For example, the multiplication can be translated to the ignore operation and the addition and subtraction can be translated to bitcount operation and these operations are so efficient that.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "We can easily implement them in most of the processors and they are so efficient that we can use them in low power device. All we need to do now is to figure out a way to create a neural network can use binary operations. OK, now.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "We know that the critical point of the convolutional neural network is the convolution operation that requires addition, subtraction and multiplication. Now what if we binarize the weight filters? Then we can implement convolution without any multiplication and finalizing the filters, saves memory for us in 232, about 32 X, and save computation about two 2X, but we can go even one step further and binarize both the input and the weight filters. Now we can implement convolution without any arithmetic operations. And only with logical operation X nor and bit count. In this case we also save memory in by 32 X, but also the computation about 58 X.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So throughout this talk we refer to the network with binary fade filter as a binary rate network and then network with both input and the weight filter binarized as a next door network, let's see.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "How we can create a network with binary weight filters so in this?",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "No convolution, we usually element.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "The product the weight filter with all the spatial location of the input tensor.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "And a piece of this convolution is the input tensor, X is elementwise product by an input rate filled by await filter in the real value. So we want to find the binary version of the weight value that approximate this element wise product. This directly translates to finding the binary version of the weight filter and this trade solution will be taking the sine function of the weight filters, but that introduces a huge.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Amount of quantization error too. Sorry to intrude. To compensate for this quantization error, we introduced.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "In new scaling factor in our binarization function here, we want to optimize both for the scaling factor Anna binary weight filter that we that minimize the reconstruction error for the original weight filter. Luckily, this has a closed form solution and we can use this course with solution to estimate the convolution between two real value tensor by a binary rate Anna single scaling.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "But now how can we train in neural network with binary rate filters and a straight solution or a native solution?",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Is we just train a neural network with real value parameters and at the end we just binarize the weight filters, but well that seems.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "That does not work easily, so here I'm showing the accuracy of the method of the full precision in compared with the naive solution using Alex Net trained on image net on top one measure. So unfortunately, binarization of the weight filters destroy all the information in the parameters of the neural network and the main challenge here is to find a set of.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Great filters that if we binary.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Is it we can rely abli class?",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So for the categories of the objects in the image and for that we adopt A modified version of stochastic gradient dissent as follows.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "First, randomly initialize the weight filters.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "And then we pick a random image and then we take a copy of.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "The original wait filters and then we binarize.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Using a closed form solution, then we forward.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Cast image to the binary rate filters, then we.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Compute the loss function at the end, and then we compute the.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Agent in backward pass with respect of all the binary weight filters. Once we have the gradient, we cannot.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Data original weight filters with a proper learning rate and the rest will be lots of lots of iteration until convergence. And if we train our.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Using this algorithm, we can match the accuracy of full precision network.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "This.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Is a method that the convolution does not use any multiplication and also it saves memory by factor of 32 X and it saved computation by factor of about 2X. Now let's see.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "How we can train?",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Ignore it.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "It's.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "In external, the problem is very similar to the winery rate network. Here we only want to have the both input and the weight filter to be binary, and we already know that this.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "Healing factor is very important, so we introduced two scaling factor, one for the binary weights and the other one for the binary input now.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Can convert this problem to the problem of single tensor binarization. So for that we already know the closed form solution and using this solution we can find the solution for both the input and the weight filter. So now we can approximate the convolution between 2:00.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Value tensor by convolution between two binary sensor and a single matrix scaling. If we adopt this convolution into our training algorithm.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "We will get this accuracy, so here there is still a lot.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Large gap. In order to understand the this gap, we need to scrutinize the structure of the.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Neural network, so this is a typical blocking structure in CNN is start with convolution and followed by batch normalization, activation and pooling and in our case the activate.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "There is usually sign function. But here the input to the.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "Pooling layer will be a binary matrix and then the output of the pooling after the Max.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "We often we unity matrix. This means that we are almost passing no information to the next convolutional layer, but not. Also we lose information in the forward path, but in.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Backward plus we also often see more than one Maxima. That means that we don't know which one to be penalized. So one would assume that.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "With switching between two layers we can solve this issue, let's see.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "Here the input of the pooling layer is a real value matrix, and then the output will.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "We often positive metrics and then the.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Activation will turn it to the unity matrix again, so again we're losing information for the next layer, but here.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "If we don't have the penalization problem in the backward pass, this is.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "The proposed blocker structure for the binary neural network as a next door net. So here it starts with batch normalization activation and then followed by convolution and pooling. Here the input of the convolution.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Is a binary matrix that generates a.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "Lvalue matrix, which goes to.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "Pulling in the pooling will get a positive metrics and this goes to the next layer.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "For the batch normalization and then the mean centering of the.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "Batch normalization generates negative value for us, and when that goes to the active.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "And it creates a proper binary matrix to pass through the next layer. And if we put together.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "All the pieces we can get this act.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "Yeah, see which we improved by 14% over the default blocking structure of CNN and we only lose 13% in compared with the full precision network. Note that this is.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "A method that reduces the memory by factor of 32 weeks. It means that the very large models like widget can be represented in a few megabytes.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "And we get to this speed to the extent that we can run this state of the art deep learning on this CPU of low power device. We will also.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "See the similar trend in top one in top five accuracy showed with darker color here and our method is not specific to Alex. That is a generalized solution that can be applied even to other networks, for example.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "We run it on deeper network on Resnet and we see this similar trend and same same thing happens for the.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "Eaglenet now to showcase the efficiency of our method, we run object with.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "Action where we want to. Localized and recognize the categories of the objects in the image in the Lost City Pier.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "My coauthor Joe presented the fastest object detection on the on his GPU powered laptop.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "This was his laptop. Now what if we run Yolo on this?",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "CPU of a fairly strong laptop.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "This would be this bit in which we can perform object detection on the CPU of a laptop, but Yolo empowered by X North.",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "It can run in real time in the CPU of the laptop.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "And this is the speed that you can see. But the power of ignoring it enables us to push even further. We we want to run deep.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "Learning on the CPU of a low powered device. So in fact we are able to run object detection on a cell phone and here I want to show you a live demo of object detection running an iPhone and because I cannot project it directly here, alley is there and running a real time object detection and iPhone there for you. You can see that he's doing the demo there. So here we gotta have some fun objects and these are these are like the detections zebra. I think you need to restart. OK. Suggested to restart it. So for us it is very exciting that we can run the object detection on this CPU of an iPhone. So you can see that yeah, he's running. Sorry for the because we were supposed to run it here, but now it's there so it's very exciting for us. We can run this state of the art object detection on the CPU of the iPhone again. I'm saying that it is on the CPU. We're not even touching the GPU and. It's even getting more exciting, so if you're going back to the slide. We we can we ignore that we can even push further and then we can.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "Run our state of the art object detection on Raspberry Pi Zero. This is a $5 computer with an ARM CPU and only 512 megabytes of RAM. For more discussion on Raspberry Pi, please stop by my poster. And at the end I.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "I thank all the people that helped me throughout this project. I want to have any specific tank Carlo and Dimitri who had a great contribution into implementing extranet on CPU. Thank you.",
+        "start": 2320.0,
+        "end": 2349.0
+    }
+]

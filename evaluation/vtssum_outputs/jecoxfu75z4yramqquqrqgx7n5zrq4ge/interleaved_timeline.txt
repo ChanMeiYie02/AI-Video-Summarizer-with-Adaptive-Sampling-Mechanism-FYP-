@@ -1,0 +1,92 @@
+[0.0s - 29.0s]
+Yes, so now I'm talking about our work on estimating parameters and hidden variables in a nonlinear state space model of balaska networks, and this is showing pork with Nicola Pre nanan strong sense of which we all from computer science Department, University of every France. How? Just one. Sorry. OK, so precious gift motivation. Sorry. Alright, thank you. So I briefly give their motivation present.
+
+[29.0s - 58.0s]
+Modern estimation orgasm an introduce some results on a synthetic data set, an expiry experimental data.
+
+[58.0s - 87.0s]
+So motivation also.
+
+[87.0s - 116.0s]
+Petrol for his nice laugh so. Letter from. And a lot of work in modeling an identifying to bylaws good network for may spend from experiment or data an this network is in a multi scale. You have a lot of element interacting elements in protein, mid top light and we need a mathematical model that capture the stochastic nature as well as dynamic behavior of the system. And one challenge here, he's the most of these interaction, nonlinear Zan. The system is passively observe. That means we can do some measurement only on our path of network an from this noisy and partially observed data. How do we identify in mathematical model an infielder? And the concentration of hidden variables. So here's some Mathematica Mathematica.
+
+[116.0s - 145.0s]
+Models so we want to model their state variable X which contains protein, M RNA and metabolite concentration. Under time, evolution of X is typically this fried by a system of OG, so you have the nonlinear function F include the structure of the system. Index fire set of parameter Theta T contains candidate parameters rate constant derived from bio chemical reaction. The system depends on our input variable U2 an that's the external input an we can measure it you.
+
+[145.0s - 174.0s]
+So we have an Audi model system. Now the system is the best observe. We cannot measure only concentration in X. So what we can measure? This is a variable white obtain from X, but an adding some ID, noise, epsilon an. What we have is we have the sequence of observed data at discrete time. The problem is.
+
+[174.0s - 203.0s]
+So estimating the parameters an value of the hidden state. OK, so the model.
+
+[203.0s - 232.0s]
+So that's.
+
+[232.0s - 261.0s]
+Mathematical modert of. One of the values of the system so. How two estimated parameters? What people do is there. We start from the initial condition. We integrate this though D, Anjou. Some optimal global optimization techniques too. Minimize some cost function to fight theater. And here we discover different approach. We first. On constructor corresponding discrete terms this model.
+
+[261.0s - 290.0s]
+On the DoD so. The state level at time TK plus one depends on the previous time TK buyer, nonlinear function capital F. So Capital F is derived from the ODI by integrating the DoD from Time TK to TK plus plus one an. Now the observation model states M as in the in the Audi model.
+
+[290.0s - 319.0s]
+Here soon.
+
+[319.0s - 348.0s]
+Ann to estimate the parameters and the state of the in the discrete time dynamical system. So we choose the base an inference approach. So we start from you specify some prior distribution for the initial state and primitive data we have a state transition model to have an observation model an route some sequence of observation. And we try to estimate or posterior distribution first one is the least filtering distribution. The design property, zoning problem, distribution of the state at Time K. Given all the observation, the current observation and.
+
+[348.0s - 377.0s]
+So the vision. And the smoothing distribution that these joint distribution given all the data that we have.
+
+[377.0s - 406.0s]
+OK, so. To calculate their filtering distribution. For now, we, we suppose that the data is now and we just consider how to estimate the state an for parameter estimation and talking about it later so. To make her vision filtering. Perhaps we we do.
+
+[406.0s - 435.0s]
+We are. Recursively calculate 2 step. The first step is reduced filtering, distribution at time K we make a propagation through the state transition model to predict the distribution of at 10K plus one and we put it in the update state of this steps. Incorporating the information we have from the observation at time K plus one to predict the distribution of time K please plus one. Oh no, we're recursively perform two step over the time series data.
+
+[435.0s - 464.0s]
+So. The. The analytical solution only obtained when the system. Our line here and all the distribution here are Gaussian Wender definition idea. This interval usually intractable an we need to approximate solution. So there are three men approach.
+
+[464.0s - 493.0s]
+Acre approximate solution, the Gaussian approximation with extended Carol, Cedar, unsent camel, spider sequence, your monthly cash flow method with particular theater, and various in a method. Here we will choose the unsent Comanche Derby 'cause it's easy to implement an. It has some nice property in comparison with extended counter. Sorry I forgot about that. OK, continue it.
+
+[493.0s - 522.0s]
+Basic problems in Johnson approximation performed by all common filter. See it's a problem of nonlinear transformation. Suppose that we have random variable X or we transform X buyer nonlinear function F to get output random variable Y. The problem is that given the mean and covariance matrix of X, how do we find them in and covariance of the output variable Y?
+
+[522.0s - 551.0s]
+So EKF and UK performed two strategy and extended, schinderle linearizer nonlinear function F and calculate the statistique of Y. Like this. An ukf user strategy to deterministically choose a set of Sigma point that will capture the statistique of X and then directly transform X. Fire nonlinear function F. An reconstructed post terrier statistic from the set of Sigma Point transform. So here these are some width an, so your strategy to choose with on this Sigma point and I'm going to not going into detail of that. So so.
+
+[551.0s - 580.0s]
+Unnecessary features server on Cent. Camel shinder, so that's deterministic sampling method an that is different from the stochastic sampling method developed by particle filter, for example, and so the number of the Sigma point is small, so the algorithm can be performed with trust an. The second point is that we know we don't have to calculate so derivative like Jack, Ribbon and hash and lie extend Paramount Theater. An ukf is the exact up to. 2nd order Taylor Faye Taylor theory expansion for both mean and covariance matrix. In comparison with Ek FYKF is the exact 1st order for the mean and 2nd order. All the programs an ukf can be a standard capture, high orders, destabilized screw, and cute as is. Does that serve for under state?
+
+[580.0s - 609.0s]
+An estimation and for the parameter estimation we simply choose or some document states approach. That means that we treat the parameters like yours state variable with trivial dynamics that remain constant with no time evolution. An we perform you care for the augmented state. Two, likely an estimated in the state and parameters.
+
+[609.0s - 638.0s]
+So.
+
+[638.0s - 667.0s]
+The first I served the result in the first system, the respirator. Constructed by terrorists in his paper Nature, 2000. The networks and contains 3 then an their proteins. This zenan put in extracted from different Organism on my lap run from E coli jet are from distrusting and C1 from Lambda face an they have constructed or synthetic biology system in classmate. An OK, these three gene and protein. Make your feedback loop. Anne. No. So for this system we have the system of six or ODS, the first 3. Transform to two this Jean Ann, the last three. They are crestfallen proteins. For these in there are there are two paths, the wet Dacian term and Michaelis Menten, two describer. The regulation of the transcription factors on on the Zine. So we have very Max life. Your maximum rate for transcription I care 1 two Feaster. Is there another mechanism and 10 constant and exponents shirt? Is the sigmoid safe parameters? Thank you. So we consider that genes are observed variables and the protein. So hidden Ann. We suppose that to the radiation rate constant rates here and there you are. Supposed to be knelt and we just tried to estimate the night parameters.
+
+[667.0s - 696.0s]
+So. We choose are initial condition and the and the parameter set. We simulate are integrating the ODI added noise to that an try to infer the parameters and hidden variables. So this web first so there.
+
+[696.0s - 725.0s]
+There are no primitive parameter estimation results. The test, or isn't realize all the true parameters and the solid lines are the estimated parameters. The theme curve out the standard deviation of the estimate parameters, so you can see that the the estimate parameter, converse grabbed it regularly to the true parameters with reduced variance. And now we have filled similar riffs out for.
+
+[725.0s - 754.0s]
+Or for another set of parameters K. And here the converse and ready bit slower, but it's converse. Here's the answer.
+
+[754.0s - 783.0s]
+UN estimation of the protein protein concentration. So that's liars to other. The true protein concentration and so late as the estimate, and we see that the estimate protein concentration converts are quickly to the truth directory.
+
+[783.0s - 812.0s]
+Care another.
+
+[812.0s - 841.0s]
+And other networks is the data Jack stat signaling pathway. In fact, when we have a signal input in here, does that become activated by phosphorylation and that enters the nuclears to make some transcription regulate transcription factor of some gene and leaves the nucleus? Other. I. The Audi models contained four difference equation an for the 4X. Correspond to the different Spacey of Stat 5. Anne. We this aggression derived from bio chemical based on mass action cannot fix an problems we cannot measure on the four concentration. What we measured is only the two combination of the four hidden variables, an. We have the 616 time point or for. Like experiment later and we just try to estimate the three parameters H here.
+
+[841.0s - 870.0s]
+So here, so here's a result dot point as experiment today to an we perform ukf. On that, we choose the estimated parameters to simulate the system an you see that the the prediction provider a good fit experimental data. OK, so.
+
+[870.0s - 899.0s]
+To conclude that we have proposed general frameworks based on nonlinear state space model for this thriving Barraclough secure networks an we perform basin insurance based on ukf for estimating the parameters and hidden state from noisy and fast early observed data. So that we do here is we use only the filtering distribution is more interesting to make sure to calculate the smoothing distribution an II pricing data. Ukf is not OK. OK thanks. Finished. You can have is nothing but Josie, and no, no approximation for the. For the highly nonlinear system that cannot be estimated, approximate by a Gaussian, we propose to use the more general approach based on particular smoothing to solve their problems. Thank you.

@@ -1,0 +1,24 @@
+{
+    "id": "sgv3o7zjxujykqiq46id64amih6d4kjo",
+    "title": "Seven Commandments for Benchmarking Semantic Flow Processing Systems",
+    "url": "http://videolectures.net/eswc2013_scharrenbach_systems/",
+    "info": {
+        "introducer": [
+            "Axel Polleres, Institute for Information Business, Vienna University of Economics and Business"
+        ],
+        "author": [
+            "Thomas Scharrenbach, Department of Informatics, University of Zurich"
+        ],
+        "published": "July 8, 2013",
+        "recorded": "May 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 311,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 36,
+    "ground_truth_summary_length_chars": 3425
+}

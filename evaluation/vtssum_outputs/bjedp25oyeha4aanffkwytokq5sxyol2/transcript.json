@@ -1,0 +1,152 @@
+[
+    {
+        "text": "So we start with an overview of AI, recent trends, techniques, applications.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So what we're going to talk about will be mostly, let's say, artificial Intelligence, View 2 recent deep neural networks which will present to some of the selected applications, and Meanwhile we also mentioned the trends which are going on. So if we.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Look at the AI in the media. There are lots of, let's say hype around AI, so we're able to destroy us where they take. Our jobs will be still necessary with driver crisis since will be necessary when we need doctors. Will you manually troubles developed? Maybe we'll have to become cyborgs and, well, lots of talk about artificial general intelligence and technological singularity web, which will take over eventually. So not surprisingly, there's. Lots of media groups who guide us in this direction. So for example.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "It's but it's traditional in the area of AI, so we have like from the 1965 Herbert Simon, one of the proponents of AI who set machine will be capable between 20 years of doing anywhere command can do well. Lucky he just said the men, not women. But anyway in 70s Marvel win scheme. Actually one of the creators of neural networks said that country to 8 years we have a machine that will be like capable or general intelligence of an average human being. And we have this recent components. You are surely know, but which do have some, let's say conflict of interest in that areas. So.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "What actually is a I? I assume that because you are here, you are interested in a little bit deeper than general public that you are maybe even working within the area of AI. So there's been a lot of research in AI and also in applications. So AI is coming from the computer science, neurology, math, psychology, and then we actually we did some general methods which are applicable in many areas of industry, science, society. Like machine learning, data mining data science. Recently another buzzword, natural language processing vision vision is really catching on and lots of things are going on in robotics in evolutionary computation, which is sort of like general techniques for optimization industry. Maybe reinforcement learning sort of self learning for many industrial controllers and then we have planning, reasoning, multi agent systems and lots of tons of applications in many areas. So this recent trends which we are seeing and this hype is actually the result of, let's say, revival of deep neural networks. So let's see.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Deep neural networks are and how they work, so the basic idea is that you have like some brain analogy and newer cell in the brain looks like this is like a newer cell and you have some input, or dendrites which receive some, let's say excitations. And when this cell is excited enough it sends a signal to its excellence with output output and then excite other cells are the neurons. Which is a sort of similar to what we have in artificial neural network which has an input weighted input and then some of those inputs together. And if that sum exceeds certain crash holds then we send the output signal. So you can imagine that if this is like a visual neuron and this is, these are the signals coming from the from the I, then if there's a let's say a bear appearing here, then this signal will react this new and react strongly and send like. Danger similar to other neurons. Of course, the single neuron isn't really much important. That's why we connect the neurons into networks. So many cells connected together, typically organized in layers for the computational reason, but unlike brain, right? What we learn this newer networks is by an algorithm called error back propagation, which actually means that once we have an output and if that output is not correct, we propagated out backwards and and actually the knowledge of this network is stored in this weights. So we collect these traits and so long we repeat this process so so long that these weights are correctly set and the network outputs the correct output. So I'm sure you.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Pretty much know about that, so around 2009 that was really revival of what is now called deep learning, which means deep neural networks at that time already. Let's say 20 years old. But what was new was that suddenly we large datasets became available and also the computational power grow immensely with the GPU. So graphical processing unit coming from their games, but they eventually contain it's thousands of processors. Which can simultaneously parallel process this. This newer cells and this made things practically important. Well, since this was happening in 2009 and here now in 2020. In between there were many bright new ideas and deep learning actually did is responsible for many of the great applications which are seeing today. So.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So why this neural networks work and how they work and why they're better than standard machine learning approaches, so we can see on this simple example, let's suppose that we want to recognize what is in this image. Let's say a card. So what the newer network processes? So in the first layers, it actually recognized not much, not much, let's say intelligence. It recognize the, let's say Carlo area, so a little bit of edges. But in the next layer, let's in the middle layer of features they would recognize like edges and circles and. A little bit more higher level knowledge and eventually on those higher in the next layer. Further layers before the output you will see like things like the Hives and Biggs and some parts of the images which we then eventually classify into a call. So why is this better than standard machine learning approaches? Because actually we built the representation. So if we humans see the picture like the pixels pixel don't have much of a meaning for us, but we eventually construct those features into more higher level features like. Beaks and edges, and so on and in the neural networks. That happens automatically, so we don't need to do it manually, and so it was done before before the. Let's say this deep neural network hype. OK, so.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So this is the reason why they work and they really work. I mean they produced lots of success stories. For example, this image classification is now let's say on the level of humans for many things in medical domain, practically there's no recognition without the without these machines and lots of success in games like Poker Go in Robotics, in speech recognition we're having almost superhuman performance in some areas. Driving costs, intelligence costs, video tracking and so on, so.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So there of course some weaknesses which we have to mention it, which are important for many applications in SoC. For example, a trained neural network thinks that this is Robin. This is cheetah that this is a Penguin, starfish, remote controller, and so on. So why this happens? Because if we know the the trained weights, remember we have the weights or actually the knowledge of the neural networks. We can tweak the input so that it fools that trained networks. And that's that's problematic for example, especially in this case, for example, we.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Have a picture which is banana right? And the classifier is like almost 100% certain that this really is banana. But once we put the sticker sort of a sticker like this on this picture, now the network tries to think that this is a poster with almost 100% probability and it's worse. We can put the same sticker on this J picture and now it thinks that it's toasted again with high probability. So maybe this is not so. Maybe this is important? That's safer self driving car. If somebody would put the sticker on the traffic sign but not so much in the last industrial environment where the image Ng is much more controlled but we have to be aware.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Where that data sets which we prepare have to be of the of the correct, let's say variance for example. This we have intentionally, let's say changed dramatically changed pictures like this is a school bus and the neural network is almost 100% sure that this is a school bus. But once we do some geometrical tweaking, this becomes garbage. Truck punching back or snow plow and this might be a problematic but reminds us of the weaknesses and of the fragility of this approach. Which has to be of course sold with the proper data set. OK, so.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "If we could go to the let's say the main areas of where the junior networks are really successful, that would be vision and sequences like text. So envision. The main idea is probably convolutional neural networks, which are currently the most successful approach. What does it does it? Actually we have a small filter which traverses the image and reportes results to one level above. And what is great about this idea is that basically we don't know we don't have to specify these filters in advance. We actually learn them. We learn what sort of filter we need for, let's say for medical images. What sort of filters we need for, let's say, traffic, images and so on so. And this is actually the reason why imaging is so successful.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So for example, an example fracture detection with deep neural networks, so this is for example, one application which was very successful. For example on this image even the, let's say the orthopedist health problems to see the fracture. But deep neural network trains with 10s of thousands of, let's say images annotated by human experts. Bye bye. That's a professional. Doctors actually can detect this fracture and so this caps for example. People in emergency room which don't have these expertise to really quickly detect fractures. So for example, there might be a fracture here for untrained people and but the neural network, equipped with the knowledge from the specialist can detect that. So there.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Any similar applications, for example in medicine, all sorts of imaging has now, let's say superhuman performance for many things, and we read that in the in the popular press as well, and then there are also many industrial applications. So for example surface anomaly detection or damage detection, different measuring systems for example, this is 1 applications we did in our Department.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Of hive detection. So the damage which is caused by the hive on the car. So many similar applications actually, and for another thing.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "For example, in visual tracking, so for many things like sport, people and so on, where on the on the video you have to detect the person and many different areas. As well, riots, security systems and so on exactly every year there's like a worldwide competition of visual tracking, which is which is going on which people actually from the faculty of Computer and Information Science. Actually the group of professor might take Winston are doing. So.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "In computer vision, the trends, if I mentioned them, lots of applications, lots of new things in pattern recognition combined with machine learning in robotics, in video analysis and also in combining images and text so deep neural networks have this capability that they project image ingane text into the same, let's say space and then actually image in context becomes the same. Let's say representation have the same representation. Also lots of biometrics and applications in many areas. For example.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Another area where deep learning is really successful would be sequences. For example, you might see think that this is like a typical Electro cardio cardio gram for the hard bit and it is a sort of. But this is audiogram so actually if you put the sound recorder like a microphone on the chest you get more or less very similar results. Then you would have you Electro cardio gram so and this actually is like a proof why speech is speech recognition is so successful. This cost in the signals we can we actually find really valid valid signal and varied patterns. So speech text text is also sequence right? We read text sequentially, so it's sort of a sequence. So and the ideas which are here, let's say wake two XI recurrent neural networks and Transformers network recently with the attention mechanism.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "So this is grouped under the area which is called semantic language technologies and actually is part of everyday communication in most of developed countries like we communicate with our mobile devices, we perform all sorts of intelligence search. We use digital assistants like Alexa and others, intelligence software intelligence costs maybe not yet self driving cars will see about that. Electronic toys, household appliances. Machine translation we're using automatic summarization question answering, writing aids and so on. So of course we want to communicate with these devices in many different languages, including serve in an. So there's actually in worldwide. There's a strong need to cover this lowest source languages with what is called cross lingual technologies. So if.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Want to see how this text will work? How can your networks process the text? We need to come to the term which is quote embeddings. It means how to basically prepare the text into the numeric form so that newer networks will be able to process them because you remember, neural networks can only process the numerical input. So basically we train the neural networks on what is called the language model and then words become numerical vectors. For example of dimension 200 or 700. So in that numerical space, we want to preserve the semantic properties of the text. For example, things like Banana and Mango should be much closer in that numerical spec space. Then for example Doc, which is much different, right? So that's the idea. So we have to train the neural networks so that it transform word into semantically equivalent space. And once we have that then then all these applications which I mentioned before would actually be possible.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So, like this one from the semantic technologies. So they set this embeddings, which should capture share relational meaning. For example, the difference between vectors of kink and men should be approximately the same as the difference between woman and the Queen, and the same is true for the pace in France and Italy and Rome and so on. So many of these semantic relationship have to be preserved, and they are preserved the way we train this neural networks.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So this brings us also to cross lingual embeddings, 'cause once we have this embeddings, all the words form a sort of a cloud in this high dimensional space. And it turns out that different languages have different spaces, but they can be aligned so many for example. So in cloud of words can be aligned with the English cloud of words and that that actually enables that we do a translation between one cloud to another and use an English model for the SUV in, so that's what is going on recently with this cross lingual embeddings. So there's.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "One project which we are part of together with the Ocean Steven Institute and the Group of Professor another large which actually scored in bed. Yeah and actually researchers and do practical applications in this cross lingual embedding for less represented languages, especially for the media industry.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So a few trends in language processing so. Now actually now we have. I mean recent plans. Let's say wait within the last year or last two years is that we have now huge pre trained neural language models and huge means that they are trained on terabytes of data. So that means that we are actually capable of capturing many many different relations in language with this like neural networks like Transformers for example there's a model code multilingual Bert which supports 100. Whole language is by training on 104 Wikipedias and it needs no. I mean it can be directly applied to many different languages. Let's say things like hate speech detection or common filtering and so on. All these things can be done on the learning several languages at once and then applying it on another or some other languages. So for example, we sent model, so this is really going fast on recent XMR was actually trained on 2 1/2 terabytes of text. So of course that was possible by Giants of, let's say of processing like Facebook and Google. These are, but they're publishing this result. I mean, they are freely available and anybody can use them. So for solving for example, they also exist. This source of model. This source of embeddings, like more burdens on some of them, for example L1. But we produced within the project which I mentioned. They are publicly available on the website, like in SI. So. Speaking about trends, there's a recent tender of Ministry of Culture and serve in which will actually produce lots of resources for Serbian language. For example, sufficient number of recordings. So the speech recognition will be publicly available and speech generation with public available and lots of these technologies which I mentioned like summarization, question, answering and so on are supposed to be solved within that project. So in two years hope, let's hope.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So another trend which I have to mention is so-called explainable AI. So what we have today with this neural networks we have actually. We can model Switcher back boxes so we don't know what's going on inside them. I mean similar to what we don't know what is happening inside the human brains. So what to do? So there are actually many areas we are very much concerned with the transparency of the models like medicine, law consultancy, public services and so on. And this actually this legal obligation under the EU General Data Protection Regulation that once you have let's say model which decides about a human being. It has to be explained. It has to be able to explain it. Its decision so that has left actually two lots of interesting explainable AI. So for example one of them.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Methods which was produced in that. I mean it's possible to explain neural networks, so one of the methods was example the research effort of our group. It actually treats what is called perturbation based explanation. It actually trees the features. For example we have prediction based on the information ABC. Now we take the information about a away. We see we get some another prediction and that prediction is the contribution of a. So this idea has led to many. Let's say methods actual quote, population methods, which can explain also neural networks. So for example.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "This is an example, so we have a model here that's probabilistic radio based neural networks and it was predicting the cancer recurrence. So this neural network said there's 80% of cancer recurrence, but in fact there wasn't cancer recurrence. So the reason why this networks was so sure about it was for example, some of the lymph nodes and we can actually get these contributions of each of the features that say menopause and so on. We can get them from the neural network and explain that. So this is for example phonology.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "So a few general trends in AI. So as I said, what is going on? We have lots of these new architectures for deep neural networks like recently this this transformer networks, which seem to be more efficient than previous networks but require even more data. So we need we are getting new semantic resources and architectures. Also for less resource languages, serve in new representations of symbolic knowledge. These are mainly embeddings, so everything is now embedded into some numerical space with neural networks. Process them lots of cross lingual technology transfer learning is happening. That means that one problem is merged with some other problems so that they they actually the knowledge from one problem or the representation from one. Knowledge is transferred to another one. That means if you have more than one problem which are similar, why not train them together so huge tent is injecting knowledge into this new architectures, for example general knowledge and common sense reasoning. Integration of models between within areas and text like. Text and images. So all these are really trends which are coming and all there already some applications, although maybe not in industrial context.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "So a few conclusions on my talk, so there will be new exciting possibility to extract information from Image Ng, sound, text, Graphs, Time series, spectronic, health records and so on. So actually we are actually we are. Do we do live in exciting times for artificial intelligence. So there are also new methodological, ethical, social dilemmas. What to do with this? I will this increasing power and as a society we have to discuss about that. This also we have to mention that there are some limitations, so the knowledge we have in this neural network is fragile. It's partial knowledge because currently we have no models for it's a broader and general knowledge and intelligence. For example, chess is an example which was sold by computers. Nobody nowadays tells that this is intelligent because we have changed the definition of intelligence, right? Because of that so. But what we have to be aware that, like in the Middle Ages, when people were trying to look out of their limited word, we're sort of now trying to pick out pick in actually into our brain and see what's going on. And this brings us to whole, whole New World, which we cannot maybe know what to do with. So thanks. So your talk was very trendy in the sense that really, it mostly covered neural networks and kind of sub symbolic learning, and even the explanations that you propose to address were again explaining the decisions of neural networks. So do you think that the more classical knowledge based approaches to artificial intelligence are dead or they still to play some role? Yeah, definitely they're not dead. They're actually only viable. I would say becausw through the neural networks. We're coming to a certain barriers to a certain, let's say actually recent trends show that we want to integrate with what I mentioned. We want to integrate all sorts of new knowledge into deep neural network. We want to integrate common sense reasoning we want, and we have to be aware that all these texts and so on are still in the symbolic form. So the majority of human knowledge is stored in the symbolic form and. Somehow we need symbolic reasoning. We need logical reasoning which has to be integrated into this, let's say human. That sucks at newer architectures, so if we think of. For example, the mouse can see very well and the mouse can hear well, well, but we don't say it's intelligent, right? It's very good neural network processing, speech and text and so on. But it's not intelligence, so we have a whole layer here cortex, which was developed specifically for logical reasoning, and actually nowadays artificial intelligence hasn't touched much lot about it, so there's lots of work waiting for us.",
+        "start": 841.0,
+        "end": 870.0
+    }
+]

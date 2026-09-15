@@ -1,0 +1,122 @@
+[0.0s - 29.0s]
+KA? The topic of this talk is about non negative matrix factorization and I see from University of Waterloo May Co authors are Michael Dickson. Stephen was dispersed from University of what?
+
+[29.0s - 58.0s]
+OK, let me first briefly tell you what the problem of non negative matrix factorization is. And then I will explain in the algorithm and some theoretical result that we have for non negative matrix factorization. So the problem is that if you have a matrix a such that the entries of this matrix are non negative or either positive or zero, you want to decompose the matrix to two matrices W&H such that both of these two matrices are also non negative. OK, so why do we even care about this problem? Why?
+
+[58.0s - 87.0s]
+We want to do that. Let me give you a very. Basically, brief view of the composition of matrices. And maybe a can explain intuitively that why it could be useful. Things to suppose I have sort of image.
+
+[87.0s - 116.0s]
+Is. I can make a matrix out of these images such that I can put each image in a column of this matrix. So here for example, each image has 560 pixels, so I have 560 rows and I have 1965 images, so I make a matrix. If I decompose this matrix to two matrices, this space, so so far it's not negative. Matrix factorization is just the composition of me. If I decompose this matrix this way. Well, I can reconstruct each column of the original matrix. By basically. Using these two columns. And using corresponding basically numbers that they have in this to mix. Basically I can multiply this column by this coefficient plus this column by this coefficient, so. You can think of this problem that you know these are some bases and. You know you have enough and this matrix basically gives you the coefficient of this now, but by this now we can change the intensity of these two bases and then you can add them. But we can subtract them and reconstruct one of these images. OK, that's what we usually do with singular value decomposition or PCA. Let's suppose that you know all interests of these two are positive or basically non negative. If they are non negative. The first thing is that these two bases are interpretable images, so you don't have any negative values that can be interpreted as intensity, so they're valid images. And this coefficients also are positive, so any column, any image, any original image can be the constructor just by adding the basis. So you're not allowed to subtract basis so we can reconstruct an image is by adding some bases, so we can intuitively think that one way to do this to reconstruct an image just by. I think some other images is that this bases are segments of the original image. Part of original image, so hopefully this technique can be used to segment images and can be used in. Text retrieval as you're going to see, so this is very.
+
+[116.0s - 145.0s]
+General view of matrix decomposition and as I mentioned, you know we can decompose matrices, for example with singular value decomposition, but there is no guarantee that the entries of the matrix are non negative in this case. So with singular value decomposition so it cannot be interpreted as images. Also since we have negative values. There is no probabilistic interpretation correspond.
+
+[145.0s - 174.0s]
+Link to this. Let me give you a very brief history of this problem. This problem non negative matrix factorization started from. Kind of. Old problems started from 1993 and.
+
+[174.0s - 203.0s]
+In 1999, this problem became popular by the work of Lee and Seung with the paper that we published in Nature. They showed that they can do basically a segmentation of images.
+
+[203.0s - 232.0s]
+It has been shown that many applications can use this technique. For example, it has been shown that in DNA microarray. They can do some sort of biclustering.
+
+[232.0s - 261.0s]
+Enema also a paper in 2003. Basically, extract nodes from a music.
+
+[261.0s - 290.0s]
+NMS in terms of the algorithm that previous work queues are basically the major trend. Is that their? Start with some gas?
+
+[290.0s - 319.0s]
+For W&H and they try to minimize this objective function. You can assume that if one of these two W or H is known. It's a list of square problem but constrained least square problem. So if W is down you can solve a list of square problem but with some constraint the entries of H is positive and vice versa. So most algorithms are basically local search with assumption that one of these two matrices are fixed and they're trying to find the other one.
+
+[319.0s - 348.0s]
+Uh. And there are. Variation of this? OK, the approach that we are going to take to solve the negative matrix factorization is somehow different actually. This is based on a very simple observation. The observation is that of if you have a non negative matrix. The leading singular vectors of a non negative matrix is non negative or non negative. This is a consequence of provenance, nor business theorem, but it also can be seen.
+
+[348.0s - 377.0s]
+Based on the power method, you know you can find the singular vectors of a matrix using power method, very simple. Iteration method and using power method you can see that there is no way that the leading eigenvector singular vectors of a non negative matrix. Are negative because in power method you know what you do. Basically, you know you want to find EU, Sigma and V such that U Sigma V transpose is A is the original matrix or low rank approximation of the original matrix. What you do is that you start with a random guess for V and then you multiply this by a an normalize. It is going to be your U use this U multiplied by a transpose. Normalize it is going to be. Your V and you keep going. You know it will converge its power method. It would converge to leading singular vectors of the matrix, so it's not going to be negative because a is non negative, V is non negative, so there's no way that you generate negative numbers in living eigen vectors or letting singular vectors. Basically. So the first observation is that leading singular vectors are non negative. So based on this observation, it's going to be trivial to have a rank one non negative matrix factorization. We can just use SVD, singular value decomposition and have a rank one NMF.
+
+[377.0s - 406.0s]
+But rank one NF is not useful. We usually wants a higher order rank. So a very naive approach based on this observation, is that OK, when you find the leading eigenvectors and you have. Rank one reconstruction of your matrix. Just cancel out. This may fix the rank one approximation of your matrix. Cancel it out from the matrix. But the UA. When you cancel out this rank, one matrix is not going to be non negative anymore. You generate negative entries very very diverse approach and also a bad approach actually. Is that when you generate some negative values? You can force those non non negative values to busy. And then keep going. You know you have a. You do you find leading singular vectors? It's rank 1F XNM approximation. You cancel out this part from the Matrix. You subtract this bird. You generate some negative values and you set them to zero. It's very nice man. It's a bad approach. But based on this intuition, actually we can do much bigger.
+
+[406.0s - 435.0s]
+So suppose that in this to the finding the leading eigen singular vectors of the original matrix A, we find a submatrix of a. Such that this submatrix of a is. Close to rank one or is rank one. And then find leading eigenvector leading singular vectors of this submatrix. So affects data rank one submatrix of a. This notation. Basically I am an. It's like Matlab notation, M is subset of Roseanne is subset of columns, so is submatrix of your matrix and if this is a rank one submatrix when you do. Rank one reconstruction of this matrix you can basically set this part equal to 0, because it's a good approximation of this sub matrix and then you can continue your algorithm.
+
+[435.0s - 464.0s]
+OK, based on this intuition we have this objective function. I'm looking for a submatrix of my matrix. I want to maximize this objective function which is. As large as possible. But I want to penalize myself. If this submatrix is not rank one. As we get far from being rank one, I would penalize the object. This is the objective function which we want to maximize to find the submatrix of the matrix. This is an NP hard problem, so we cannot solve this exact, but there's a good heuristic and actually have it.
+
+[464.0s - 493.0s]
+Puristic to solve this heuristic is that OK this this objective function depends on subset of rows, subset of columns and singular vectors. And given subset of rules and such stuff column, you know it's independent of EU Sigma NV because you can give an M and an you can find you Sigma and be using SVD singular ready the composition. So we can show that if M. And you is given. So if you have the optimal value for MU. The problem is separable. Basically, if subset of rows. And singular vectors corresponding to that is given. The problem is decomposable. Or is separable under on the columns of the matrix. And vice versa if the subset of columns is known, the problem is separable on the rows. Basically, if if subset of roses given you don't need to solve a combinatorial problem to find, you know the optimal subset of columns, you can check columns 1 by 1. To see if they improve the objective or if they don't and if they do, you can put it in the set of optimum subset of columns and you can do. Desk for Rose as well. So basically you can have kind of iterative algorithm. Assume that subset of columns is now find the optimal subset of rows. And then assume this subset of rows is optimal. Find the subset of columns. And you can iterate and it will come.
+
+[493.0s - 522.0s]
+We can prove that it will come with to give you a demo of what's going on. Do you have 10 minutes or 5 minutes? That phone so to give you a demo. You know, assume that this is your original matrix, that you have two sub matrices here.
+
+[522.0s - 551.0s]
+And at the beginning, you know, based on some initial guess, you find one of these singular vectors, and this problem is separable on.
+
+[551.0s - 580.0s]
+Columns as I said so we can find optimal.
+
+[580.0s - 609.0s]
+Set of columns so. In the next iteration, I will assume that I don't have five columns. I only have these three columns. These are my optimal column and then I will ask my algorithm. Where would be the optimal optimal subset of rule.
+
+[609.0s - 638.0s]
+And.
+
+[638.0s - 667.0s]
+Will find it.
+
+[667.0s - 696.0s]
+And given the optimal Subs.
+
+[696.0s - 725.0s]
+Water froze again, I will.
+
+[725.0s - 754.0s]
+Find the optimal subset of columns and it will converge. You know it gives me a submatrix a 0.
+
+[754.0s - 783.0s]
+Note this submatrix basically remove this submatrix from the.
+
+[783.0s - 812.0s]
+Matrix and continue. It leads to an algorithm pretty similar to power method. Basically, you know the main loop is power method, except that after each part that we find one of these singular vectors in the singular vectors, not the singular vector of the whole matrix is singular vector of a submatrix, and we do have a test to make sure that you know change the subset of optimal subset.
+
+[812.0s - 841.0s]
+So I will go pretty quickly, just you know we have two theorem in this theory in this paper, and it's not even in ICML paper, because the proof is pretty lengthy. It's an archive if you want to look at the proof completely, we can prove that if there's some assumption for a text corpus. Quickly if you have T topics and this the topics comes from distribution and each topic can be represented by a distribution from a bag of word. Uh, in epsilon separable means that term belongs to topic one. For example, the chance that this terms belongs to another topic is the probability is less than.
+
+[841.0s - 870.0s]
+Epsilon. We can prove that if the number of documents go to Infinity, then with probability one this model finds the right terms and right topics in the corpus.
+
+[870.0s - 899.0s]
+And the little experiment, an very large data set, consists of use. Hopefully news agency don't produce their own use using this bag of word and you know random random generation of terms, but apparently it works in. This is latent semantic indexing. If you look at the words in each column, you can see that there is kind of mix. There's Simpson and there's Clinton, and there's a police. There's, you know both.
+
+[899.0s - 928.0s]
+Yeah, for example in LSI. But if you look at our algorithm, which is R1D, it's pretty consistent. Simpson George Jewelry defense trial, Los Angeles, for example, the place that the court was held in.
+
+[928.0s - 957.0s]
+We also have a theorem about images that under certain condition you know this. Method can basically find the right features in a bitmap image. Image consists only black and white zero and one.
+
+[957.0s - 986.0s]
+And this is another simple experiment that you know if you have this. Data set which each image is a combination of three features of the five.
+
+[986.0s - 1015.0s]
+Then this is what you get from LSI. The first column is the basis that. LS I will find, and each of these rows in front of the first entry is, you know, entries of H. This is W. This is H, so this supposed to cluster similar image. Is this supposed to find the base?
+
+[1015.0s - 1044.0s]
+This is what LSI does. This is what some another.
+
+[1044.0s - 1073.0s]
+NFL and this is with R1D, does you know we can see that you know this column is just features exactly and these rules shows that they have been clustered exactly correctly. You know all of these images have this feature. Or all of these images have this feature?
+
+[1073.0s - 1102.0s]
+On another data set. This is like a semantic indexing and you know this is I can face this an these supposed to cluster images again. You can see that in this clustering there some inconsistency. There like for example, you know. This has left right side view left side view, but this is right side view.
+
+[1102.0s - 1131.0s]
+Also, if you apply this in other animals, you know these are the features that. One of the implementation of NF previous information of any other point. Again, you can system inconsistency in the clustering. Here you know, for example, this one compared with the rest of the.
+
+[1131.0s - 1160.0s]
+True, but our wind is pretty consistent. So our when defines these features as leading features of this data set. And this is the clusters. That you have to consider the clusters are pretty consistent. And the segments actually are sort of representative of this cluster. K.
+
+[1160.0s - 1189.0s]
+Think that's it? Question. Hello. Transformation. Sorry, can you repeat the question loudly? I can't hear you well. Quality of the approximation also. Play. So. It's normal. Open personal property. Oh yes, I I see what you mean. So we have different objective function. We can prove that our technique basically maximized our objective function. But if you mean the for vinius norm of the original matrix minus W * H, No, we don't know if it's going to minimize that. Yes, it's possible because you know. There are many reasons for that. Actually, you know if you look at I mean there is a very naive intuition about segmentation of images based on non negative matrix factorization. As I say you know to generate an image you can add some basis but that's not the only way to do that right? I mean you can add some images you can. Avoid subtraction, but it doesn't basically oblige you. That bases are. Features if bases are not as sparse. You know, you can imagine that a part of a feature comes in one base, another part comes, another in another way. If you look at the original objective function of. R. NMF it doesn't guarantee a sparsity. Right, so there is no guarantee that the spaces are sparse, so capturing a part of basically feature. And there are versions that they want to add a sparsity by adding L1 norm organization and so here actually you know the sparsity is guaranteed because when you find the submatrix in leading eigenvector vector corresponding to the whole matrix, the rest of the I mean entries correspond to the rest of the matrix are going to be 0, so it's pretty sparse. And that's one reason that you know it captures the. Parts this is basically intuitively, but as I said, theoretically the proof that you know maximizing this objective function will find the right terms. An right topics and write features under the assumption that we have for the model of effort, model of text and image. Carryover for college. Automatically. I haven't tried that on color images, I don't know. The theorem doesn't extend to color image, the term is just for bitmap images, and the term that we have experimentally I don't know. Or the top into colorless. Order one hopefully or. Virginia acquisition just go over it in someone else is not working on lower right, said overlap. So what we have, what country? But at your ever applied for another computer or Internet, or also overlap between basis vectors question, I think you're so you're basically taking chromium agriculture companies operating station. Yep. What image then multiple colors? Yeah, I. Yeah. Well, you know apart if you know part of assumption in the theory. As I said, is that the Corp is epsilon separable by epsilon separable. Basically naively it means that yeah, we have a kind of block matrix. I mean terms coming from one topic are not in another topic ideally, but. By epsilon. Separable basically means that the chance the probability that terms from one topic appear in another topic. It's possible, but the chance is less than epsilon. And we showed that the proof that you know the algorithm works perfectly if there are. If this epsilon is pretty small, you know. If there are huge overlap between these blocks. There's a good chance that this algorithm doesn't work well, but in practice actually on all kinds of data set that we try. It's better than other. NMF algorithm at something that I forgot to mention is that this is much faster than those you know in this, like data, text data set, some of the previous implementation of North is not even. You can't even run them. You know it takes a couple of days throughout, but this takes less than 3 minutes too. Sure. OK, thank you.

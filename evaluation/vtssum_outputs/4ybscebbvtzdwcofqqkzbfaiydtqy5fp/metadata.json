@@ -1,0 +1,21 @@
+{
+    "id": "4ybscebbvtzdwcofqqkzbfaiydtqy5fp",
+    "title": "Connecting Users across Social Media Sites: A Behavioral-Modeling Approach",
+    "url": "http://videolectures.net/kdd2013_zafarani_behavioral_modeling/",
+    "info": {
+        "author": [
+            "Reza Zafarani, School of Computing, Informatics and Decision Systems Engineering, Arizona State University"
+        ],
+        "published": "Sept. 27, 2013",
+        "recorded": "August 2013",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 166,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2081
+}

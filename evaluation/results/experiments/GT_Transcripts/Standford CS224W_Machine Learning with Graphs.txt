@@ -1,0 +1,722 @@
+0:03
+So, uh, welcome, everyone, to the class.
+0:07
+Uh, today, we are going to discuss about, uh,
+0:10
+reasoning in knowledge graphs, uh, using embeddings.
+0:13
+So, um, what we learned,
+0:15
+uh, last week was that, uh,
+0:17
+we discussed knowledge graphs, and in particular,
+0:20
+we defined the notion of a knowledge graph as a,
+0:23
+uh, set of, uh,
+0:24
+nodes and a set of relations between them where, uh,
+0:27
+nodes can have, uh,
+0:28
+different types and also, uh,
+0:31
+relationships, uh, can have different types.
+0:33
+Um, and then we have defined, uh, a task,
+0:36
+uh, we call the knowledge graph completion task.
+0:39
+We're basically given an enormous knowledge graph.
+0:42
+The question is, can we complete it?
+0:44
+Can we predict, infer, uh,
+0:47
+missing, uh, relationships, uh, in the graph?
+0:49
+So for a given head and,
+0:51
+uh, for a given relation,
+0:53
+uh, we wanted to predict missing tails, right?
+0:56
+So basically, for example, we would want to, uh,
+0:58
+predict the genre that a particular author is writing,
+1:04
+uh, books about based on the rest of the structure,
+1:07
+uh, of the knowledge graph.
+1:09
+So what do we are going to do today is we are going to take this idea of,
+1:14
+uh, knowledge graphs, um,
+1:16
+and knowledge graph completion,
+1:17
+but we are going to generalize it and extend it to, uh,
+1:21
+more, uh, interesting and a more,
+1:23
+uh, challenging setting where basically,
+1:25
+what we will be doing is we are going to perform multi-hop reasoning,
+1:30
+um, and logical reasoning in these knowledge graphs, uh, using embeddings.
+1:35
+So the goal is to reason in knowledge graphs and what-
+1:38
+by mean- by reason is to be able to answer, uh,
+1:41
+multi-hop queries or in some sense,
+1:43
+to make complex predictions in these, uh,
+1:47
+knowledge graphs for arbitrary predictive queries.
+1:51
+Um, and we are going to talk about, uh, two approaches.
+1:54
+One will be how do we handle what is called path queries,
+1:57
+and the other one will be about talking about
+1:59
+conjunctive queries and a method called, uh, Query2box.
+2:03
+Um, and in all these cases, basically,
+2:06
+the idea will be how do we embed the knowledge graph?
+2:08
+How do we embed the relations such that we can reason and navigate,
+2:13
+and move around, uh,
+2:15
+in this, uh, in this- in this space.
+2:18
+Uh, that's essentially the idea.
+2:20
+So, um, for the rest of the lecture,
+2:23
+I'm going to use this simple, um,
+2:25
+biomedical knowledge graph that includes,
+2:28
+uh, the following, uh- uh,
+2:30
+four types of entities.
+2:31
+If we will have nodes for, uh, different, uh,
+2:34
+drugs, we are going to have nodes,
+2:37
+uh, for different diseases,
+2:39
+we are going also to have some kind of adverse events or let's say- let's say,
+2:43
+side effects, uh, that these diseases can cause,
+2:47
+and then we'll also have nodes corresponding to proteins,
+2:50
+um, and, uh, that are- that are in,
+2:54
+uh, in our bodies and basically,
+2:56
+proteins that regulate and are part of various kinds of biological processes,
+3:01
+uh, taking, uh, part in our bodies and in our, uh, cells.
+3:05
+So now, let's say we have this kind of miniature, uh,
+3:08
+knowledge graph or a small part of the knowledge graph, uh,
+3:11
+that basically captures how these different entities,
+3:14
+uh, are related, uh,
+3:16
+to each other and then the question would be,
+3:18
+can we answer interesting questions,
+3:20
+uh, over this knowledge graph?
+3:23
+So, uh, to give you, uh,
+3:24
+an example- for example, the question is,
+3:27
+how could I answer complex queries or how would I be able to make
+3:31
+complex predictions over incomplete and massive, uh, knowledge graphs,
+3:35
+and just to give you, uh,
+3:37
+a few examples, um,
+3:38
+you know, you could say what,
+3:40
+uh, adverse event is caused, uh,
+3:42
+by a drug, uh, Ful- Fulvestrant, right?
+3:45
+And the way you could say this is to say, "Hi,
+3:47
+I want to start with the entity Fulvestrant and I want a traverse relationship cause,
+3:52
+and I want to predict what is on the other end of the- uh,
+3:55
+of this- uh, um, uh, Fulvestrant-caused relation."
+4:00
+Uh, and this is in some sense, a one-hop query.
+4:03
+It's basically a knowledge graph completion-type task.
+4:06
+I could then also do path queries where, for example, I could say,
+4:10
+what protein is associated with an adverse event caused by, uh, Fulvestrant, right?
+4:15
+So in this case, I would say,
+4:16
+I want to start with entity Fulvestrant,
+4:18
+I need to traverse over causes relation,
+4:21
+and then I need to cause, uh,
+4:22
+traverse over a associated relation.
+4:24
+Whatever entity is at the end of this,
+4:26
+that is the answer to my, uh, question,
+4:29
+to my query and then we can also ask more complex queries,
+4:32
+uh, where we can also have various logical relations between them.
+4:36
+For example, I could ask,
+4:38
+what is the drug that treats breast cancer,
+4:41
+uh, and, uh, causes headache?
+4:43
+So I could say, uh, you know, uh,
+4:45
+breast cancer- I start with an entity breast cancer.
+4:48
+I say, uh, treated by,
+4:49
+so this is now the drugs treated by
+4:51
+breast cancer and I also want to take a migraine and say,
+4:54
+what are the drugs that cause, uh, migraine,
+4:57
+and then whatever drug, uh,
+4:59
+causes both, um, that's the- uh,
+5:01
+that's the answer to my question.
+5:03
+So, you know, you can write these questions in natural language,
+5:06
+you can write them in this kind of,
+5:08
+um, uh, formula, but you can also write them in terms of the rec- graph structure, right?
+5:14
+So in- in a sense that one-hop query says start with
+5:17
+an entity and make a step along a relation,
+5:20
+path queries say start with- start with an entity,
+5:23
+make a step along one relation,
+5:25
+and then make a step a- along the other relation like causes
+5:28
+and associated, and what does this say is, it
+5:31
+says start with breast cancer and move across the
+5:34
+treated by, and start with migraine and move across,
+5:38
+uh, the relation caused by and whatever you end up- whatever entity you end up with,
+5:43
+uh, that's the answer, uh, to your question.
+5:46
+So you can see how we can basically take this- uh,
+5:49
+let's say, uh, questions,
+5:50
+queries, write them in natural language,
+5:52
+write them in the- let's say,
+5:54
+this kind of logical formula or write them in this type of,
+5:58
+uh, graphical structure, uh, form.
+6:00
+Uh, of course, today,
+6:02
+we are not going to address how do we get from natural language to the formula,
+6:05
+we are only going to kind of discuss once you have the formula,
+6:08
+once you have this logical structure,
+6:10
+this graphical structure, how do you answer, uh, a query?
+6:14
+And an important point over here will be that this-
+6:18
+this- we want to be able to answer these queries over incomplete knowledge graphs.
+6:22
+So it won't be only that we say,
+6:24
+oh, just traverse the relation.
+6:25
+It will be like, the relation is missing,
+6:27
+you have to predict it.
+6:28
+And it will- it can be chains of relations that are missing,
+6:31
+or are not in the knowledge graph,
+6:33
+and we still want to be answered- uh,
+6:35
+able to answer these questions.
+6:37
+So, um, you know,
+6:39
+first, let's talk about one-hop queries.
+6:41
+We already know how to, uh, uh,
+6:43
+answer them because we can formulate
+6:45
+graph completion problems as answering one-hop, uh, queries, right?
+6:49
+In a- in a knowledge graph completion, basically,
+6:51
+what we need to be able to estimate is to say,
+6:54
+is there a link between a head and a tail of relation-type, uh, r?
+6:58
+So this is essentially the same as saying,
+7:00
+is there- is there an answer to the query start
+7:03
+with the head and move along the relation, uh, r?
+7:06
+So, for example, what side effects,
+7:08
+uh, are caused by drug Fulvestrant, right?
+7:11
+In this case, I start with drug Fulvestrant.
+7:14
+This is my h. Uh, r is the- um,
+7:17
+caused by- uh, and now,
+7:19
+I want to basically say, is this particular entity the nth
+7:22
+point of Fulvestrant and, uh, caused by?
+7:26
+So that's, uh, how basically answering
+7:28
+one-hop queries like simple link prediction queries is,
+7:32
+uh, knowledge graph completion.
+7:34
+Now, we can talk about how about answering path queries, right?
+7:38
+We want to generalize this to basically being able to chain multiple relations,
+7:43
+uh, one after the other, right?
+7:45
+So we can say that we have an n-hop path query q that is represented by a- uh,
+7:51
+what is called an anchor node, uh, starting entity,
+7:54
+and then a sequence of relations,
+7:56
+r-1, uh, all the way to r-n, right?
+7:58
+So v is- uh,
+8:00
+v_a is an anchor node,
+8:02
+this is a fixed entity like, uh,
+8:04
+Fulvestrant, as we talked about,
+8:06
+and then answers, uh,
+8:07
+to the query will be denoted in this notation.
+8:10
+So basically, um, I have these kind of double braces so whatever is- uh,
+8:14
+whatever elements I write in here,
+8:15
+these are the answers,
+8:17
+uh, to the, uh,
+8:18
+query q on a knowledge graph G. So the way we could write this in
+8:22
+a graphical form into this kind- in something
+8:24
+we are going to call query plan is basically,
+8:27
+we start with the entity, uh, v_a,
+8:29
+and then we want to traverse our relationship type 1 and the relationship type 2,
+8:34
+all the way across the n relationships, and whatever entities are at the end of this,
+8:39
+um, we are making,
+8:41
+uh, uh, a prediction that this is the correct answer.
+8:44
+So that's a notion of a path query.
+8:46
+Um, to give you an example,
+8:49
+I could ask what proteins that are associated with
+8:51
+adverse ev- events caused by Fulvestrant, right?
+8:55
+So if I write this, then I say,
+8:56
+Fulvestrant is my anchor entity,
+8:58
+my r_1 and r_2 are relation causes and associated.
+9:03
+So my query will be started with Fulvestrant,
+9:06
+go across the causes relation,
+9:08
+and go across an associated relation, right?
+9:10
+So here is my, uh, Fulvestrant.
+9:12
+I want to first go over the green, uh-
+9:15
+The green links, uh,
+9:17
+saying, uh, uh, uh, you know,
+9:19
+what is- uh, what causes, this would be the re- the re- the red links, uh, apologies.
+9:23
+And then from here, I wanna then,
+9:25
+uh, traverse over, uh, uh,
+9:28
+the second part of li- link associated to arrive,
+9:31
+uh, at a given, uh, protein.
+9:33
+So that would basically be the idea for,
+9:36
+uh, path queries, right?
+9:38
+So to answer- to give you an example again,
+9:40
+so how do I ans- how do I find the answer now?
+9:43
+Basically the way I find the answer is that, conceptually,
+9:46
+if- if the knowledge graph is complete,
+9:48
+I simply need to, uh,
+9:50
+traverse it according to this query plan.
+9:53
+So the idea is I start with Fulvestrant.
+9:56
+I- I traverse over causes relations to get to all the side effects,
+10:01
+uh, caused by, uh, this drug,
+10:03
+like headaches and, you know,
+10:04
+brain bleeding, and shortness of breath,
+10:06
+and kidney infection, and so on,
+10:08
+so, kind of, quite serious side effects.
+10:10
+And now that I have this set of entities,
+10:12
+now I need to traverse from them according to associated relation.
+10:16
+And you know why I traverse the edges,
+10:18
+and whatever proteins I end up with,
+10:20
+those are the answers,
+10:22
+uh, to my query.
+10:23
+So, uh, these are the answers to the- to the query about,
+10:27
+you know, what are proteins associated with
+10:29
+adverse events caused by the drug, uh, Fulvestrant?
+10:32
+So that's, uh, basically the, um,
+10:35
+idea how now I can formulate and
+10:37
+answer path-based queries directly on the knowledge graph,
+10:41
+assuming knowledge graph contains,
+10:43
+uh, all the information.
+10:45
+Of course, um, in some sense, this seemed easy, right?
+10:49
+It's just answering queries, seems easy.
+10:52
+You just traverse the knowledge graph according to this plan.
+10:54
+Uh, but the problem is that knowledge graphs are notoriously incomplete, right?
+10:58
+Many relations between entities are missing or are, uh, incomplete.
+11:03
+Uh, for example, we lack a lot of biomedical knowledge, and, you know,
+11:07
+kind of enumerating all facts,
+11:10
+uh, testing all possible side effects,
+11:13
+all possible associations in these graphs,
+11:15
+is too costly and would take far too much time,
+11:19
+and perhaps we will never be able to obtain the entire knowledge, uh, about biomedicine.
+11:25
+So the question then is,
+11:26
+if these graphs are notoriously incomplete, um,
+11:29
+right, we cannot simply hope to traverse them,
+11:33
+um, to get the answers, right?
+11:35
+So the question then is, uh, what do we do?
+11:38
+Um, to give you an example, right,
+11:41
+if I'm missing, perhaps, uh,
+11:43
+a relationship causes by because it's not yet known
+11:46
+that Fulvestrant also causes shortness of breath,
+11:49
+then, for example, if I'm not able to traverse this edge, then, you know, uh,
+11:53
+the li- there is no way for me to discover that, uh, BIRC2,
+11:57
+the- uh, the protein,
+11:59
+is actually an answer to my query, right?
+12:02
+Uh, I would be able to say that the CASP8 is, uh,
+12:04
+is an answer because I go over,
+12:06
+uh, brain leading to get to it.
+12:08
+I know that, uh, PIM1 is also,
+12:11
+uh, an answer because of this path through the kidney infection,
+12:14
+but there is no way for me to find out that this, uh,
+12:16
+BIRC2 protein is also the answer, uh, to my query.
+12:20
+So that's the problem.
+12:22
+So what you could do is to say,
+12:24
+uh, I, actually, you know,
+12:25
+listened previous lecture and I remember we talked about knowledge graph completion.
+12:30
+So let's just go and apply, uh,
+12:33
+knowledge graph completion so that now the graph will be complete,
+12:36
+and then we can simply, uh, traverse it.
+12:39
+The problem is that,
+12:41
+if you do this, then, um,
+12:43
+you don't know how many edges are really missing in the knowledge graph.
+12:47
+So you could basically go and apply your knowledge graph completion,
+12:51
+uh, approach to all possible,
+12:53
+uh, edges of the graph.
+12:54
+So it means that you would wanna take, for,
+12:56
+uh, every triple i- in the knowledge graph,
+12:59
+you'd wanna s- ask your pre- uh,
+13:01
+knowledge comple- knowledge graph completion engine to
+13:04
+assign a probability that that link, um, is true.
+13:08
+Um, the problem then will be that, now,
+13:11
+your graph just got a whole lot of new- this kind of probabilistic links,
+13:15
+and now the graph is getting denser and knowledge graph, uh,
+13:20
+completion or traversal, uh,
+13:22
+will get very expensive because,
+13:24
+if you think about, you know,
+13:25
+starting at an entity, alo- uh,
+13:28
+moving along a given relation,
+13:30
+and then, uh, getting to a set of nodes,
+13:33
+moving to the next relation,
+13:34
+uh, to a new set of nodes,
+13:36
+this will explode exponentially with the length of the query, right?
+13:41
+So with the query length is, let's say,
+13:43
+capital L, then if,
+13:45
+at every step, you have some,
+13:47
+um, uh, non-trivial expansion,
+13:49
+some non- non-trivial number of- um,
+13:52
+of, uh, uh, nodes that are as- that, uh,
+13:55
+al- that allow you to traverse to- uh,
+13:57
+along a given relation,
+13:58
+then this is going to, uh,
+14:00
+increase exponentially in the query length.
+14:02
+And, uh, having big queries,
+14:04
+this becomes computationally quite hard to do,
+14:07
+uh, over, uh, a massive, uh, knowledge graph,
+14:10
+especially if you think about that we have just added
+14:13
+a lot of new edges with different probabilities, uh,
+14:16
+and we nin- we need to keep track over these probabilistic imputing edges as well,
+14:21
+this becomes, uh, a very hard, uh, computational task.
+14:25
+So, uh, here is the idea how we are going to do this and formulate it.
+14:30
+And the way we are going to talk about this is we
+14:33
+are going to call it predictive queries.
+14:36
+And the idea is, right,
+14:38
+we need a way to answer
+14:39
+path-based- path-based queries over an incomplete, uh, knowledge graph.
+14:44
+Um, and we want our approach to implicitly impute
+14:47
+and account for the incompleteness of the knowledge graph.
+14:51
+So we don't want to impute the edges and then traverse.
+14:53
+We just like the method to take care of all this automatically.
+14:58
+So rather than thinking that all we have to do is just traverse the knowledge graph,
+15:03
+we really can think of this as making very complex predictions, right?
+15:08
+It's basically saying predict what entities are a- uh,
+15:12
+an answer to a given query.
+15:14
+So basically we are going to formulate these queries as predictions.
+15:18
+So this will now be our prediction task.
+15:20
+Um, and this means it will be very interesting
+15:22
+because we'll be able to answer any kind of query.
+15:26
+In so far, we talked about path queries,
+15:28
+we are able to answer any kind of path query.
+15:31
+Whatever set of relations you put on the path,
+15:34
+we should be able to answer it.
+15:35
+So it doesn't mean, at the training time,
+15:38
+we have to see the query,
+15:39
+then we train how to answer the query,
+15:41
+and now we are able to give the answers.
+15:43
+The idea is that we can obtain- we can get any query at the,
+15:48
+uh, test time, and we should still be able to answer it.
+15:51
+Uh, and then, you know, uh,
+15:53
+another important thing is that this method needs to be able to impute- to
+15:57
+implicity impute or implicitly complete the knowledge graph for the missing information,
+16:03
+and be, this way, robust to
+16:05
+the missing information or to the nois- in the knowledge graph.
+16:08
+And, really, another way how you can think of
+16:11
+this predictive queries task is that it's
+16:13
+a generalization of the link prediction task, right?
+16:16
+Uh, link prediction is simply starting with the head, uh,
+16:20
+moving along a relation of type R,
+16:23
+what is the tail?
+16:24
+And now we'd like to, uh,
+16:26
+generalize this one-step prediction task into multistep, uh, prediction task.
+16:32
+So this is very important.
+16:33
+We are really taking- reformulating this,
+16:36
+um, task of, uh,
+16:38
+answering queries as traversal over to the knowledge graph
+16:41
+into predicting what entities are the answer,
+16:45
+uh, to the query.

@@ -1,0 +1,21 @@
+{
+    "id": "f24ua4r3q5o4fc4jib2imdvpgk3mvsxe",
+    "title": "Magnetic nanoparticles in beverage industry",
+    "url": "http://videolectures.net/bilateralWorkshop2020_campel_magnetic/",
+    "info": {
+        "author": [
+            "Stanislav Campelj, InoVine d.o.o."
+        ],
+        "published": "June 3, 2020",
+        "recorded": "February 2020",
+        "category": [
+            "Top->Technology->Nanotechnology",
+            "Top->Technology->Nanotechnology->Applications"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 105,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 1729
+}

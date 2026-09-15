@@ -1,0 +1,192 @@
+[
+    {
+        "text": "Hello, my name is Nick. I'm working, my advisor tears down and you often will be done. Essentially what you kind of, seeing the title of our talk about paper, taking the model pages are algorithm are Max and the particle beam Max Q and we have a combined them together.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "$10 for not having arm execute. It's basically a start by introducing a running example, but I used to you first and then it will be much cuter than competition and everything that we combined with the elements of our Macs. Cox puration. No choking algorithm, arm execute witches model data. And then I'll complete this result, showing how much you cannot perform goodbye. Hundreds.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So first, why would we want to?",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "I combine these two algorithms so I'm interested in general in the long term, being able to do efficiently implement earning in structured context remains so efficiently efficient. Part is why I'm interested in model based learning model based algorithms. First solid convergence guarantees. Finite time over it in British guarantees and empirically. Did I miss? The hierarchy because hierarchy seems to be intuitive, promising way. Scaling to large effect demands. I got like Bush Research article or I'm assuming that the hierarchy is given to us up front, although we hope that hierarchy is a is first intuitive language for humans to Department knowledge to our agents. Second, at the hierarchy might be intuitive, reasonable things to discover someday or someday might very well be Tuesday in the auction 6 anyway, so we've done again is to integrate these two branches of our. At first casting case, I think the standard is controversial.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So I'll be using the taxi domain like this, which piece off which we can encourage top, but there's an error with it. Therefore state variables, first, two of which give the X&Y coordinates of a taxi agent in vibrated passenger location variable gives. Where? Denmark, Swedish passengers. And finally there is a variable for rear passenger wants to go and there are six actions. North, South East, West.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Down in the optimal policy is to the beach navigate to Wichita. Passengers pick up the passenger, navigate with the passenger, wants to go and put down the passenger's already in this kind of English language. Description of the policy. Again, pick up. I'm already doing some some amount of temporal.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "I started all the actions, interviews, navigate to read 90 degree, navigate to, do composite actions or sub tasks. So the idea is that we can capture it's kind of domain knowledge in comparative action where the leaves are primitive actions. And the interior node.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Composer actions which which each comprise first ascent child actions that execute action itself is executed again and execute your shot actions until they reach some terminal state for that action. And finally, there's a goal reward function. And I just to formally define what a locally or request to be optimal policy is for individual subtasks, independent of the context imagenes attached might be called.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Sure.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Well I computer it is two years ago was Matthew. Composition which. So here I go for particular size with hierarchy well familiar with the standard state values for the maximum of the action values. Ideas here that protected key value though is instead of being the usual. Some of the single time step you word followed by the value of the state at the next time step is the value of all time steps that I got during the execution of. This is possibly composite action A followed by the value of the speed that I got that effects composite action, possibly positive action. Leave the agent so just to kind of random.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "This particular initial state at the value of this state. What actually happens to maximize the value to get to get some task? So following the second bullet point, we decompose that Q value into. That's not what I wanted. Pull up my. Yes, so the value of this date is equal to the. The value of this paper, but it actually.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Yeah, we can decompose into value of executing get this big part by the value of completing the group task doing get and then. Once we do this we can be crucial because we decompose this value.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "We get down to the value of affirmative action. It's not the value of this paper. Autovalue first doing South committed action in this State Park by the value of computing degree degree insect, ask after doing self value of a competing get. Green custom value of new task after doing against class. So.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "And the reason why, and the reason why you might do this, is that now you can learn each of these pieces of dividing motion separately, and in particular. We get a huge bin by by using. But using a different state representation for each of these pieces, so that's all I'm good, but the But the part I could ever trying to improve ponds attract that algorithm that first introduced it is based on using a hearing hearing like update will vary each of these functions. I found one problem with that is, well, first like each of these condition functions, the data you need to train it depends in part on the behavior of the doorstep tasks, meaning that for example, I got this conditional function only does turns out to be nobody will that values have already reached some reasonable state and also contributing to learning in Bozeman, Spiration. And the temperature decays. Expiration have to be tuned in order to get reasonable performance. So I've always to face the convergence. The more efficient convergence using using model based approaches. So.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "How do we do that? Like I mean again, I get the key problem with with with the completion function for every time on the on the behavior of the double check Pass in order to define office happy they are. So here are key ideas. Initially is to look at how how I got a composite action computes value function, especially asks its child actions of what their value is given state. Like the value is in a sense of kind of abstract step. One step one. When it tracks that we would function. We're going to ask that each composer actually asked his children for both the rewards as well as the transitions.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So I do some kind of style like. Imagine that first we learned rewards for the community actions. The newspaper for South Korea worries conditions. Now for any sub task that only uses compiler has contributed actions as.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "As children, we now use straightforward panning. I directed the value function. Local policy. Then, using a kind of a policy evaluation.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "That we can compute the abstract keyword. In addition, functions using these Bell medications. So, for example, the abstract would function is simply a value function that doesn't involve the Golden words used to compute. Policy in the abstract changing function simply forgiven. Terminal State X is simply kind of value function where radiation is giving a rewarding one whatever actually terminates in a state X. The bottom line is that we can use these equations in a kind of planning way in order to, given given a policy and given a a lower level. Have a model. Compute an abstract modern question. When we do this once, we can do this all the way up to higher.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "I spy I spy repeating, repeating the same process. I guess so. Here X is actually just a. Terminal state from the side of a stage that terminate the action A. There are no details in the paper out of question. Stranded very quickly. Go with this man, but the bottom line is that. Out. Also, the bottom line is that is that we can use that given models of the primitive actions. We have a way of computing the models of the extractions, love it so key question then is. Used to grind out this induction I've got, but but to be used for the little models, well I've already pushed.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "After that, we're going to use the our Max.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Style. Model is basically forgiven state action pair would be having that data was going to use the maximum maximum model when there isn't enough data, we're going to say that the action gives immediate abstracted word of some Vmax, which is some upper bound on the value function and the reaction will essentially terminate the current episode by not listening to any normal state. So it's very beginning of learning. And Max Q. Does not do it anywhere. I got all the action to Earth, essentially some optimal. As you get more.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Yeah, there you go. In general case could be. Summation where you have some subset of known states that border Samsung Frontier unknown states that have high value caused by Agent 20 plan in order to reach the frontier and tickets to attractions and this kind of optimistic exploration would drive the age.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "2:30 Explorer as printer.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Original database from whatever state that begins in.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So basically, right now I just want to show you how are Max and ask you to algorithms that were combining performance against one another. So our Mac sensually. Converges to a very high quality policy like a green line. We see that actually goes a bit above rescue in part because again. That's going to get you getting data from the entire disk space and then using spending in order to compute high quality value function policy. But of course, the tradeoff here is that in order to get all this data is doing a very, very aggressive exploration, I get it. Episodes at CarMax, 'cause it's trying to explore it literally. In Paris, this space, and so. Into the word plot you see that that it. If you Debbie word early on, you don't need, then is it? Policy and will eventually cause it to catch up to Max Q, but only after very many exits. So essentially what we're going to do is try to have our algorithm our Max Q. Both of these these algorithms would I get happy yet? Asian small separation of magic. You have. The high isn't high performance of our Max.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So simply a algorithm. Details in the paper, but potentially always doing is after you update the models up is because instead of central Armstead, which is which is two different, computing the overall value function. Now using. In the Oval Office. Value function. Hierarchy here to compute this is this series of models and value functions. And then and then, given this hierarchy is going to execute a positive policy, hardly powerfully switch. So ensure, for example, if you're in the middle of the aggregate degrees of task. We're going to continue doing that again no matter what, until we actually think. She reached the green, Denmark and of course I mean, this sounds kind of expensive, computationally and honestly it is more expensive and even ask if you are Max. Optimizations like, such as minimizing the models of time steps we use imperative speaking to propagate in a relatively short way, change to change the user computer models of the hierarchy.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So again, the short message here is that we're using. Our Macs are mastered. Earn the primitive models using Max Q Model decomposition unit return to compute the high level models from the from the model successfully, although other learning is going on down here. Everything above that is just derived from these learn primitive models.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Alright, so how do I do this actually?",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Former so right now we just have resulted in the in the in the show Castle version of Taxi. Very grateful for each navigational action. Has a 20% chance of moving is a particular direction we used. Will be hoping people replication of Tom's original ask you algorithm parameters. Suppose all the states tractions. I would like more time to go into the fish action. Side of this, but for now I just say that. Excuse me, I got the idea maximally relevant. Format execute formatting. This especially means that there is impacted our Max, particularly ID. For example in the model of this option is given this prior knowledge that this action will never change the values of the passenger and destination location variables, and Furthermore that changes it makes to the excellent form is don't depend on empire values of these variables used like a month. Define push out South Menu section line. In the case we have the same idea to the to the composite actions both through the learning for computed abstract models lost to the value functions used to define those models.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "So it should be on. We see is that the red line arm ask you first, we know that we know that dominates the performance of a mask. You benefits benefits from all the same. Practical information domain knowledge, but it uses a model based efficiency in order to. I learn more about today. Seeing is a high performance at our Max. In the end. Using the same computer models in order to in order to improve the value function. But key thing here is that it avoids the vast majority of it. Possibly expiration armax codes and sense of why I'm going to try to very quickly compute intuition for how tired we can. We can. We can use addressing.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Comes down to essentially that hierarchy. You can do kind of a lazy, lazy, are kind of exploration are masked by default. Does it very eager kind of exploration were given any initial state or try to do saving pickup done actions in all 50 states that I can reach from the initial state? I think many given any given initial state.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Trust me, you get hierarchy. And if any given one episode or mask you only ever attempt to do pick up action in. Five days in the ghetto task because first, I gotta get that definition. Pickup is only is only available again and then get get when you see it first. First initial state, then the outcome of any of it for navigational subtasks which always deposit the application for one of these for presentations. So the only way for a forearm ask you to ever tried doing pick up saying this date is if some feature episode. Happens to initial. Happens traditional eyes agent in that state. OK, so it's. Doing kind of at least expiration, some cases. Do they bring delaying expiration of this Community Action pair actually can be, I mean.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Put up my God. You might be able to never Explorer to action. So for example, if you put down action are magic, you will never will never try to execute outside of these port placement. Put because there's never any way where I've got a particle policy is completely consumed, the agent only Johnny started put sub task when the agent isn't one of these states that get that get these in. Hopefully that makes some sense again now. Community work faster or would be the favor in more detail. Hopefully. How powerful can can can can by Zorba constrain expiration useful ways?",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Sure. Could be some more more evidence or intuition for how hierarchy helps me implementing. We already know that hierarchy can can improve computational efficiency of pending, but intuitively, intuitively we know that it could help her out by decomposing problems into smaller sub problems, but I just kind of local TV shows us that that's your problem is one that either has fewer committed action spectrum store or safer navigational actions can. Or even at higher levels of the hierarchy. I expected traction. I got the number of states that the agent visits at that level is not reduced. For example with new task. For any given episode route, as only sees two national state initial state, but every state get put you in and then put some tasks that were terminated deficit.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "So in conclusion. Taking the robust exploration of our Macs and the higher Cody composition of Matthew and combine them into our Max Q&Q seems to outperform our Maps and ask you this in the in the text remain and everything, but it was pretty far and. And already, even even that remains promising. Results indicate that important goal for hierarchy might be too constraining aspiration. And if we're in that way to help sellers. Alright, so thank you and articulate questions. So you only do automatic separation for the actions. That would be the hierarchy gets bigger and bigger that benefits get smaller, right? Because I'll be at the higher task you do stand on both mine or I know. I got disappointed video more clearly. Heart attacks and we don't have any explicit exploration. All the information in the entire algorithm blows up from. Production so for example.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "If a state. We have explored negative, navigated, fully optimistic, so report and optimistic. Would function to to the higher levels and therefore I cannot help us get to 1 execute that feature vectors matrices is good and therefore they want you dead.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "So one of the things when going outside with the options were higher than models. Although where they find you because you weren't doing state abstraction or one considering space right? I wonder if the models hierarchical models in this are well defined when you have status action words, you need certain conditions in the state abstraction for these higher level models will, for the better, the equations that define the high level models. I got one. Is kind of cool.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Here actually I'm only using explicitly of various very simple form of abstraction makeover, again, particularly like a. Paper. Every check hashes change you have had. Signification the union of all the hoisted variables used by any of his children. At and that makes the model of defined again. Cost you too much because even though the 16 through tasks. Practice. I 16 different states I got. Condition spaces so intensely over I'm calling in the paper I could completion, set up a new task is very small, even though even though typically Henderson office tables hope that makes some sense, but I guess I was looking for the general activation of what state attractions need to be in order for the title. I don't have a expensive category of the possible. I mean, I guess just seeing that they seem like they're using Max node relevance to save because I'm hearing is kind of. I mean I got it. I mean it must. Management. You may not even saying that say that beach Red will never change the value of the passenger or presentation variables, and Furthermore that having to read this behavior will never depend on those two variables. Yes, I get it. My respect should be borderline. Cheers projects as the last question, 'cause I also the normal topic is article reinforcement learning and modeling for sleep together and the other obvious way to do that is with the option camera and. Stop pursuing one person that's it's appropriate to fursuit festival complicated, but I wanted I wanted to mention there's so there was there is some work. That's my thing. So this group whole God house lava. I know there's God if I'm saying words my contact at this work European workshop. Unfortunately they just done some work really doing tax domaining. How you doing? Tactical approach, you know? I'm comparing and looking at the options, so that's the first step. Prostat yeah so. OK, thank you very much.",
+        "start": 1073.0,
+        "end": 1102.0
+    }
+]

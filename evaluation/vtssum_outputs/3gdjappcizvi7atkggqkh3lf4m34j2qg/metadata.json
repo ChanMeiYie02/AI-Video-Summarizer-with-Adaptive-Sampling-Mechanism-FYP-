@@ -1,0 +1,21 @@
+{
+    "id": "3gdjappcizvi7atkggqkh3lf4m34j2qg",
+    "title": "Observers and IPR issues (copyright)",
+    "url": "http://videolectures.net/elexisobserver2019_krek_ipr_issues/",
+    "info": {
+        "author": [
+            "Simon Krek, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "March 6, 2019",
+        "recorded": "February 2019",
+        "category": [
+            "Top->Humanities->Linguistics->Lexicography",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 7,
+    "num_sentences": 105,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 651
+}

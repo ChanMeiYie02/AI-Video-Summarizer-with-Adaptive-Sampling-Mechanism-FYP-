@@ -1,0 +1,22 @@
+{
+    "id": "24xldsebz466gltqlhn3irrjjxx73px7",
+    "title": "Creating dynamic online courses",
+    "url": "http://videolectures.net/educationdesign2018_doyle_online_courses/",
+    "info": {
+        "presenter": [
+            "Gregory Doyle, University of Cape Town"
+        ],
+        "published": "July 13, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Computers->Digital Media",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 150,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 298
+}

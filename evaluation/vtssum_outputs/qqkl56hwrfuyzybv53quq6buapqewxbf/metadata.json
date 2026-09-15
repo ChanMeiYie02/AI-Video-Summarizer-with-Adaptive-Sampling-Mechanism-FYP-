@@ -1,0 +1,21 @@
+{
+    "id": "qqkl56hwrfuyzybv53quq6buapqewxbf",
+    "title": "Traffic Analytics for Linked Data Publishers",
+    "url": "http://videolectures.net/eswc2017_costabello_linked_data/",
+    "info": {
+        "author": [
+            "Luca Costabello, Fujitsu Ireland"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "June 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 220,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1265
+}

@@ -1,0 +1,97 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:03.240 --> 00:00:11.190
+Hello! Using Web Audio with streamed content is really easy. I’m going to show you the most simple
+
+00:00:11.190 --> 00:00:17.770
+example we can do, directly on JSBin.
+
+00:00:17.770 --> 00:00:43.100
+I first create an audio element, using the standard way.
+
+00:00:43.100 --> 00:01:02.980
+Here we are, ok, [music] so this is just the standard audio element. I will add the “crossOrigin=anonymous”
+
+00:01:02.980 --> 00:01:07.380
+attribute because when we stream audio content and we control it with
+
+00:01:07.380 --> 00:01:15.280
+Web Audio, we need to follow the “same origin policy” constraint. That means that the
+
+00:01:15.280 --> 00:01:21.640
+HTML page and the JavaScript code that manipulate the content of the stream, should be normally
+
+00:01:21.640 --> 00:01:28.299
+located on the same server as the audio file. This is not the case here because the HTML
+
+00:01:28.299 --> 00:01:36.530
+I’m typing is hosted on jsbin.com. By adding the “crossOrigin=anonymous” attribute, this
+
+00:01:36.530 --> 00:01:47.430
+will send different HTTP headers to the mainline.i3s.unice.fr server. And this server has been configured
+
+00:01:47.430 --> 00:01:56.009
+for accepting external requests. So this will make the example work.
+
+00:01:56.009 --> 00:02:06.570
+From JavaScript, if I want to get the audio stream, I must first wait until the page is loaded.
+
+00:02:06.570 --> 00:02:16.540
+I’m writing a window.onload event listener, and the first thing I do is to get
+
+00:02:16.540 --> 00:02:35.610
+a handle on the audio player. I need to add an id attribute here… Ok, like that!
+
+00:02:35.610 --> 00:02:51.849
+Like the canvas, that is using a graphic context, here, with Web Audio, we use an audio context.
+
+00:02:51.849 --> 00:03:09.870
+So, I created the context. Now, I can create a special source node using context.createMediaElementSource,
+
+00:03:09.870 --> 00:03:17.610
+that takes as a single parameter a video or an audio element. I’m using the player variable here,
+
+00:03:17.610 --> 00:03:22.790
+that corresponds to the audio element.
+
+00:03:22.790 --> 00:03:30.860
+Now, I connect this source to the destination. A destination is a special node that corresponds
+
+00:03:30.860 --> 00:03:38.690
+to the speakers. Each node has a connect and a disconnect method. I’m using the connect
+
+00:03:38.690 --> 00:03:49.739
+method here, and I’m using ctx.destination as the destination node. If I play it [music], the stream
+
+00:03:49.739 --> 00:03:56.379
+is going directly to the speakers. And if I comment this line, the string is disconnected
+
+00:03:56.379 --> 00:04:08.000
+and nothing is outputed. Once you got an handle on the audio stream, using createMediaElementSource,
+
+00:04:08.000 --> 00:04:15.099
+the behavior of the audio element is changed; all the signal, the audio signal, is routed
+
+00:04:15.099 --> 00:04:22.079
+to your own audio graph, not to the default route that goes to the speakers.
+
+00:04:22.079 --> 00:04:29.979
+And I can visualize this graph. With JsBin, I need to be in standalone mode, like that.
+
+00:04:29.979 --> 00:04:38.699
+I open the devtools, I check that Web Audio is activated, here, and now I can go to the
+
+00:04:38.699 --> 00:04:44.139
+Web Audio tab, reload the page, and I can see my graph here.
+
+00:04:44.139 --> 00:04:52.610
+Ok, that was all for this very first lesson. You learnt how to make the simplest audio
+
+00:04:52.610 --> 00:04:59.479
+graph possible, and how to visualize the graph. In the next lesson, we will add in
+
+00:04:59.479 --> 00:05:08.750
+the middle, here, different nodes for processing the sound like having control over the stereo,
+
+00:05:08.750 --> 00:05:10.750
+making filters... like an equalizer, and things like that...

@@ -1,0 +1,20 @@
+{
+    "id": "bbsgb5cvyy3xwh3z3blrholgwgh2pi3m",
+    "title": "Measuring the Quality of Multi-document Cluster Headlines",
+    "url": "http://videolectures.net/iiia06_kesteren_mqmdc/",
+    "info": {
+        "author": [
+            "Frank Van Kesteren, University of Twente"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "July 2006",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 162,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 1797
+}

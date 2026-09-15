@@ -1,0 +1,20 @@
+{
+    "id": "22axpf7xhjwrzdzw7w77yc7mukreba37",
+    "title": "Multiple hypotheses testing in functional neuroimaging applications",
+    "url": "http://videolectures.net/msht07_baillet_mht/",
+    "info": {
+        "author": [
+            "Sylvain Baillet, Université Pierre et Marie Curie - Paris 6"
+        ],
+        "published": "May 22, 2007",
+        "recorded": "May 2007",
+        "category": [
+            "Top->Computer Science->Image Analysis->fMRI - Analysis"
+        ]
+    },
+    "num_segments": 45,
+    "num_sentences": 537,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2982
+}

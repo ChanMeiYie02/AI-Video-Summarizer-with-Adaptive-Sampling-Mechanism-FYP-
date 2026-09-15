@@ -1,0 +1,21 @@
+{
+    "id": "ijhqiipfg7b54v46ixu5zkgjgdu2wum4",
+    "title": "Data Spectroscopy: Learning Mixture Models using Eigenspaces of Convolution Operators",
+    "url": "http://videolectures.net/icml08_belkin_dslmm/",
+    "info": {
+        "author": [
+            "Mikhail Belkin, Department of Computer Science and Engineering, Ohio State University"
+        ],
+        "published": "Aug. 1, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Gaussian Processes",
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 353,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1302
+}

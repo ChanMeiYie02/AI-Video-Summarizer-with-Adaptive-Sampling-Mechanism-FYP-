@@ -1,0 +1,20 @@
+{
+    "id": "izqcuhyyr3edvqwxyejpkx4h2djop2df",
+    "title": "Information extraction with Linked Data",
+    "url": "http://videolectures.net/eswc2015_augenstein_information_extraction/",
+    "info": {
+        "author": [
+            "Isabelle Augenstein, Department of Computer Science, University of Sheffield"
+        ],
+        "published": "Oct. 22, 2015",
+        "recorded": "September 2015",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 49,
+    "num_sentences": 335,
+    "num_clips_with_summary": 30,
+    "num_gt_summary_sentences": 51,
+    "ground_truth_summary_length_chars": 5350
+}

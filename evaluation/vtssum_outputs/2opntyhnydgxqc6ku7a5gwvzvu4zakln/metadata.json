@@ -1,0 +1,20 @@
+{
+    "id": "2opntyhnydgxqc6ku7a5gwvzvu4zakln",
+    "title": "Time-varying genetic network inference using informative priors",
+    "url": "http://videolectures.net/licsb09_lebre_itvgn/",
+    "info": {
+        "author": [
+            "Sophie Lebre, LSIIT - The Image Sciences, Computer Sciences and Remote Sensing Laboratory"
+        ],
+        "published": "April 16, 2009",
+        "recorded": "April 2009",
+        "category": [
+            "Top->Computer Science->Bioinformatics"
+        ]
+    },
+    "num_segments": 37,
+    "num_sentences": 409,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 49,
+    "ground_truth_summary_length_chars": 4269
+}

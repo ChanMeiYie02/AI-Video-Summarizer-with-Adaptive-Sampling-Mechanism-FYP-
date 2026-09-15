@@ -1,0 +1,23 @@
+{
+    "id": "ysrwbliz4cv27fvb4gzo2fqyms34xrq5",
+    "title": "Creativity as a Web Service",
+    "url": "http://videolectures.net/ascc2013_veale_web/",
+    "info": {
+        "author": [
+            "Tony Veale, UCD School of Computer Science and Informatics, University College Dublin"
+        ],
+        "published": "Jan. 27, 2014",
+        "recorded": "November 2013",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences->Psychology->Cognitive Psychology",
+            "Top->Philosophy",
+            "Top->Arts"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 494,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1406
+}

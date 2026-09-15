@@ -1,0 +1,21 @@
+{
+    "id": "fl2eaprfk63wxb4ulaapimubyfgro6yw",
+    "title": "Multi-Label Relational Neighbor Classification using Social Context Features",
+    "url": "http://videolectures.net/kdd2013_wang_social_context/",
+    "info": {
+        "author": [
+            "Xi Wang, Department of Electrical Engineering and Computer Science, University of Central Florida"
+        ],
+        "published": "Sept. 27, 2013",
+        "recorded": "August 2013",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 111,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 3682
+}

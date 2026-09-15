@@ -1,0 +1,21 @@
+{
+    "id": "637dvjvr3xitlw4lo2zwyvp5jzuym3mm",
+    "title": "Getting there. Being there. Staying there. Mars.",
+    "url": "http://videolectures.net/symposium2017_imhof_getting_there/",
+    "info": {
+        "author": [
+            "Barbara Imhof, LIQUIFER Systems Group Gmbh"
+        ],
+        "published": "July 13, 2017",
+        "recorded": "June 2017",
+        "category": [
+            "Top->Arts",
+            "Top->Science"
+        ]
+    },
+    "num_segments": 61,
+    "num_sentences": 592,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2397
+}

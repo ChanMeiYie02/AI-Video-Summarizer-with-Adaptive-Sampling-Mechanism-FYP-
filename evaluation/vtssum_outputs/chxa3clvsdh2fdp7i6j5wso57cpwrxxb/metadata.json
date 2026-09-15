@@ -1,0 +1,21 @@
+{
+    "id": "chxa3clvsdh2fdp7i6j5wso57cpwrxxb",
+    "title": "Directing exploratory search with interactive intent modelling",
+    "url": "http://videolectures.net/lsoldm2013_kaski_intent_modelling/",
+    "info": {
+        "author": [
+            "Samuel Kaski, Department of Information and Computer Science, Aalto University"
+        ],
+        "published": "Nov. 7, 2013",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science->Decision Support",
+            "Top->Computer Science->Machine Learning->On-line Learning"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 192,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2825
+}

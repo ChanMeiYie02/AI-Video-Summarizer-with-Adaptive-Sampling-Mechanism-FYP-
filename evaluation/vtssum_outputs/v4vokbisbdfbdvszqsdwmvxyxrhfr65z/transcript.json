@@ -1,0 +1,132 @@
+[
+    {
+        "text": "Speaker in this session, which is Sophie Hirst? STL about localist global affective modeling of reps strategies. Great, thank you. Lovely good afternoon everybody. Yeah, I've got the last stop before coffee, so I'll try and keep you interested. One of the things I want to say is that I'm probably coming at this from a different angle. I'm global communications so I'm not going to be doing a technical presentation by any means. However, I still think it's going to be valid for all the different people involved because I'm going to look at some of the business perspectives and some of the things going.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "And the requests, as well as what can some of the things that can be done so languages in the web today I'm going to. I've got a few steps which I found fascinating. Actually, looking at earlier on that, I'm going to show, then look at how you it was covered earlier on actually from it in a different perspective. Actually, how you have a global brand or how a company can have a global brand and keep consistency, which is what a lot of people in in marketing and organisations want to do. But then equally have it looking relevant and local. To the end user, so it's like going into a shop in Italy as opposed to going into a shop in America. When you're browsing online. Then providing culturally relevant content and advertising. So how can you make sure that the content that's on there is most relevant to people? And then I'm going to look at some of the efficiencies of actually translating web content. 'cause that's one of the challenges we deal with a lot of organizations like Dell, HP, Big Big businesses. We've gotta translate a lot of content on their websites and having and how they actually do that.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Very important, having the systems behind that is very important, he said. Interesting stats. 90% of HP's customers buy based on content not on actually touching a product, and I think that's one of the kind of outcomes of the Internet really. Is that people nowadays are less there, less walking into a shop and touching a product and buying it. Therefore there more dependent on what is on the information that they can find, whether that's content or whether it's video, whether it's text or it's video or photos, they are more dependent on that because of the fact that they're going online. And buying online more or certainly certainly looking for information before they start buying and then Additionally, most of their revenues the same company HP's revenues are done outside of their home market, so you can see the importance of the content and the language perspective there. And I think we've seen similar stats here, but only 15% of purchases are actually very comfortable buying online in non native language.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Here are some of the stats I got. I I notice someone else quoting Internet world stats as well. I found this really interesting because I think about five years ago this was quite different that now 42% of Internet users in the world are actually in Asia. I wanted to maybe lots of you are looking at these stats regularly, but I wasn't and it was like, well, that's quite that. Feels like a change. Europe is 24% and North America is only actually 13%. And yet I think someone was showing stats earlier on about the majority of content is still in English or American English, so it's an important interesting.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "And then I've I've actually while I was looking at that thought that would be interesting for everyone to see who the top users are and the top users are actually in China. 384 million users, a massive amount of users, and we kind of you. Think of China. You've actually got China and India here to emerging markets. What we call the sort of emerging markets. And yet they're the biggest Internet users according to these stats. Then Japan is at 96 million. Then you look at the European countries and someone actually had stats earlier that was slightly different to this, so but they had them in different orders. But anyway, Germany's at the top with 65 million users, way below what China is at 384 million an then Russia and the United Kingdom. So just I personally found it really interesting to see what because a lot of this is going to be affecting what we're talking about with the multilingual.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Web and what? Then? Also what's very interesting here is that although Asia has the highest usage, it's actually only at 21.5% penetration, so only 21.5% of people in China are using the end Internet. And yet there's 385 million of them. So that's to me is a huge growth area. Once some of those people are getting more online in the future, whereas North America's at a much more much higher. Penetration level.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Terms of usage. This is an article I found recently few weeks ago in BBC talking about how China's online retailers booming and how actually 10% of retail sales in China are now done online and what they were saying is the reason that people are doing that is partly because people are going out of the meeting out of the cities. Certainly the middle classes are moving out of the cities and go in. The retail shops aren't going with them. So therefore they're buying online, but also apparently when the according to the article, when you go into shops in China, that the service that you get, you're not going to get the right amount of information to make your decision. So kind of shows again why people are more and more going to the web to look at that information. So having the thing that we certainly are talking to businesses about is how the struggle for businesses is, how you get that information out there in a way that people are going.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "To understand it, and that's relevant for them wherever they they're talking from or reading from. So as per the abstract or my presentation, there are three topics I'm kind of covering, and I've put them in questions. How do you represent, or how does a company? I know there's a mixture of audiences here represent your brand consistently, so you have an overall look and feel of the brands that we kind of we know. But then equally, they're actually they don't look like this is just a global company and they're not relevant to me locally, and that's by looking actually component based. Model for web content management systems. How can you make sure that content on there is relevant to a specific culture and that's related to targeting and personalization as well as the local knowledge? And I'm going to have a couple of slides on each of these. And how can you have an effective way of making sure that you manage the process of translating and that's by integrating web content and translation management.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Something that we just see is as crucial that those are integrated, and I know there's a session later on about interoperability.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So component based model. This is all about. Looking at content and we've talked about XML and somebody mentioned it earlier. It's a similar kind of idea than than of ditter for technical documentation, but for the for the web that you write everything and excuse me for the people who know this, but you separate the content from the layout and you write things as topics of information. So you're writing components rather than say, a whole webpage or writing components that can then be reused in different places. And then of course you store that one component centrally every time it gets updated. It then gets updated when it's used in the website, when it's used on the mobile device. And so forth, and it will get updated. Recognize the update in.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Different languages which I've got here so. Because you're building a website based on a component model, you can then actually manage the relationships between them so that if somebody makes a change to this component on the say on the home page, on the home website, say that's English, the person in doing managing the French, German, and other websites will get a message saying you need to translate it because there's been a change here, but it's all being managed in one place. Equally. If you integrate that with the translation management system that can do it automatically. See right alert. This has been tracked. This is changed quick send it.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "For translation this is an example of Emirates and just showing this idea of all of the different components you can keep, you can have the kind of outer brand design can be managed by, say, your corporate marketing, your brand related people. You can have the legal people managing the component at the bottom so that nobody gets their fingers on the stuff that's going to that could could blow the business or whichever way. Than then you've got country and language information. But then you've got all these other different components which can be managed by different groups. They all have their own regulations as to how they do that, but what's important from a local perspective is you can have local offices, local offers and local campaigns. So you've got this global look.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Feel, but you've also got the local look and feel, so someone feels like they're coming to a page built for them. And then of course, if you're if you're building things based on managing it centrally and you manage your translations and everything centrally, then of course when you push it out to all the different channels, that's much easier to do.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So that's one that's the first.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "It is a component based. Then there's targeting and profiling and I know there's been people have covered some of the back end stuff, but I think it's quite interesting to see this in terms of how it impacts the front end user and the business perspective here. If you're here is an example of a website where you've got somebody coming from the American site and they're seeing something about American football, which.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "I know very little about American football. And what you can see there is that in the Geo location information there you can actually see that it's that that person is coming in from the US. If you switch that so that when people come in from the UK.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "They they see something different. Then you can have that somebody comes in and they actually see Cricket World Cup. Much more interesting, apparently even I've ridden. Still don't get into the cricket afraid. But but then, equally having the local knowledge actually also I had thought underside having people that will actually check that is also the human element of is that actually relevant in that local place? Or is is the idea that the Brits all play cricket and are interested in cricket, a bygone age? Or is it still relevant, and so that's that?",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "As always, this mix of the human element in any of this, and then for people there, there's another element of kind of personalization here. That's one of where the country you're coming from. Some companies almost need to personalize their brands, so if you take, for example, Unilever and the Lux brands, the Lux sort of soap and washing in most countries, Lux is a pretty much everyday brand. But in India it's a much more prestigious luxury brand. So what they can do? Again of this, based on a similar model, is that if you're coming in for most of the pages, that's what you're seeing. But if you're actually coming into the India page you actually get, it's almost the localization localized version of the Lux brand. It's it's made the Lux brand more relevant to those local people who are seeing it in a different way. So that's just another.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Angle almost on localization. And as I was saying earlier on that, with all of this, those technology. But it's always think somebody was saying, I think gentleman from Microsoft were saying how they work with people in their local offices. If you've got local marketing people, great, not everyone has the resource to do so, but it's so it's finding people that do or working with agencies that do. And then this is sort of different layers of culture and actually this is from a book I was reading on on understanding cultures and the impact on businesses. Three different layers of of culture. The first is what you see. So the building is the language, the food, the lots of ice cream here in Italy and sunglasses and watches. And then there's the norms and values. So if somebody bows that's it is that? That could be a norm because they are. That's what everybody does in that culture. Or it could be a value because they want to show that that level of respect to you. So those kinds of norms and values and then underneath that there's a third layer which is your core assumptions. So all the users coming to the Internet are of course coming in with all of that behind in the way that they are approaching the website. And then how? How cultures also vary based on their attitudes to three different things. One is people one is time in ones environment. So within people you've got all sorts of different approaches. So whether countries are individual, focused, or community focused because you often think, Oh yes, in that country they do that. And actually you can group them by these rather than by the different countries. So certain then there's neutral versus emotional. Do you show? Are you used to showing affection or you know getting shouting in the boardroom or keeping it quiet and subdued? Or whichever it will be. Again, all this affecting the way people come to website. Then there's kind of what you do now versus what you did in the past and how that affects your success. So in some cultures it's very much based on what you've done, what you've done and proved yourself or others. It could just be, it could be an inherent where you came from. And then there's the environment. And whether you're alone or part of a bigger environment. So those were just some ideas I thought I'd thrown from a non technical perspective 'cause I think always people are coming at the web.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "With that different kind of angle. And then Thirdly the final thing. I think for efficiency in doing this is is integrating web content management in translation management and I know people are wondering about how.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "You do that, and as I say for if you've got large amounts of content that has to be translated on the web which a lot of big organisations do today, then organizations or government 'cause it's all over the place then actually having how you manage that process is very important because it's quite a manual process otherwise and quite painful from what most of us have experienced. So you can actually within a web content management system you can link it to translation management system so that you send off your content from the web content management system. It can go through the process of translation, so applying translation, memory, machine translation terminology, all of those good things are review process and then actually come back into the web content management system translated an. That's a really important thing. Particularly, companies are trying to get to market very quickly. They need to be able to do that. So then you can use that process for social. So if you're running you understanding the two way conversations with customers through machine translation or whether it's crowdsourced, I know there are separate. Sessions on those, or whether it's kind of the corporate content which is being pushed out more can also be handled through that. Whether you have machine translation plus post editing or on its own, or crowdsourcing or humanon.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Lee so that's just looking at that. That kind of process and that idea of having those two integrated very powerful that you create the content. You then is ready for translation. You send it off for translation out. It goes into the translation. Place that process with the human translators that are involved in that and then back into completed and ready to be sent out for the global markets.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "I didn't want to do this from a sales perspective, 'cause I'm not mentioned, but I just wanted to sort of say it show that these are the kind of companies that using it. So Mandarin used integrate have component models, they integrate it and then they can then push all that content out in different languages to the different mobile sites so they are actually in use.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "And that kind of technology to do that. And as is HP just recently also integrating web content with the translation management as well as looking at the source control and.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Writing in components. So that's really it from me. Just going to summarize next slide, but I think the thing I just wanted to say is that we at SDLC this is part of a bigger a big picture, so we never see this sort of translation of web content just on its own or even translation on its own and web content on its own. We think it's all very important that companies manage the way they create content where they manage it, whether it's for the web or technical documentation, how they translate it, and how they then publish it out through multiple channels because. The logistics of doing that is quite hefty, so that you can then optimize the customer experience.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So in summary, my three points where create content and reusable components that can be modified by Park country use Geo positioning to make content culturally relevant as well as all the local knowledge and integrate language technology into your web content management system. So there we go and I'll know I've got time left so I can take questions. Now I don't think you're doing a CUNY. Yes, so get it. Just ask all speakers to come up again.",
+        "start": 725.0,
+        "end": 754.0
+    }
+]

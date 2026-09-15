@@ -1,0 +1,24 @@
+{
+    "id": "mtytxufj6dkzloqpmj54ckuju2a3m2mj",
+    "title": "The complexity of learning halfspaces using generalized linear methods",
+    "url": "http://videolectures.net/colt2014_daniely_methods/",
+    "info": {
+        "author": [
+            "Amit Daniely, Einstein Institute of Mathematics, The Hebrew University of Jerusalem"
+        ],
+        "published": "July 15, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning",
+            "Top->Computer Science->Machine Learning->Statistical Learning",
+            "Top->Computer Science->Machine Learning->Supervised Learning",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory"
+        ]
+    },
+    "num_segments": 68,
+    "num_sentences": 154,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1592
+}

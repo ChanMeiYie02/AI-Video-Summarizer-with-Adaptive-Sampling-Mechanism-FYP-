@@ -1,0 +1,21 @@
+{
+    "id": "3ukqvsrcfytubvibmxnrrnaic4igkq2e",
+    "title": "Large-Margin Thresholded Ensembles for Ordinal Regression",
+    "url": "http://videolectures.net/mlss06tw_lin_lmteo/",
+    "info": {
+        "author": [
+            "Hsuan-Tien Lin, Department of Computer Science and Information Engineering, National Taiwan University"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "July 2006",
+        "category": [
+            "Top->Computer Science->Machine Learning->Ensemble Methods",
+            "Top->Computer Science->Machine Learning->Regression"
+        ]
+    },
+    "num_segments": 53,
+    "num_sentences": 131,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1754
+}

@@ -1,0 +1,21 @@
+{
+    "id": "ek4mtprahl5c5dh6uqm4filtayqa2qzf",
+    "title": "Question Answering over Linked Data",
+    "url": "http://videolectures.net/eswc2017_napolitano_linked_data/",
+    "info": {
+        "author": [
+            "Giulio Napolitano, Fraunhofer IAIS"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 51,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 700
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "text": "I I'm going to talk about markets Epstein applying and it's extension of previous diner to multi step look ahead.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So here is auto line and so we will have brief overview of planning and diner and show how to extend diner to multistep. Dine applying and the key of the merge step. Dina planning is linear multistep model and we will show how to use this linear multistep Model 2 Diner, Diner style planning and finally some experimental results.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So planning is a model based reinforcement learning and actually the reinforcement learning book already defined this. This plan, planning and it's any computational process that takes in a model and produce policy for interacting with the model environment. So examples of multiplying include dynamic programming, heuristic touristic search and diner. So what Dina looks like?",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So, so we are familiar with Model 3 frame model frame. Sorry model free learning like you learning Sarsa. So we have some observation and then we take action and then we have reward appearance. So we use this reward experience to learn value function and then we take action again. So Diana is special in that it's in addition there, in addition to learning step. There's also. Modeling step so it will use real world experience second time to build. Build a model of the world and then use this real world to simulate some experience and then and then use this simulated simulated experience to plan an improved value function. So different diner structure is different in the in the model part and how to simulate simulate experience? So.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So what is my multi step diner planning look like? So multi step dining plan is very simple idea so it just replace the model part with the multi step model of the world and then simulate multi step transitioning appearance. So the model can be state state to state model and can be state state action, pair to state action pair. It depends on how you design the word model.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So. Am artist and model is it's a key part of a multi step planning and multi step model tells user results of your current feature after many steps later and this multi symbol model can be tabular can be one step like bear my equation and can be multi step like the key step model by certain in 95 and can be linear which is proposed last year by. By starting at some coauthors so this work actually extend this, this this this tabular marks the model and linear single step model to linear multistep model.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Anne. Here let's best look. Take a look at at the difference between single step model and multi step model. So single step model is. This case is a description of both tabular and linear function of submission of the one step linear model. Of the one step model, so just one step more ticks in a feature or state and output the expected net state or next feature and also approximately one step reward. So the key step linear model will take in a state or a feature and output. Extra expect feature after UN steps and also. A reward after N steps. So this is the key difference, and so mathematically, here's some notation.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "And single step model is described by transition matrix and one step reward vector and in the linear case is defined in this way. So here kept to fee is feature matrix and the pie is steady distribution following policy π. Here is the transition problem. Issues there, and basically you can imagine this is a normalization factor and this matrix actually mimics the. The transition probability, but you can show that I've π is not, is not stochastic, so it's not a transition matrix, but you can imagine its function as a transition matrix in the feature space, and you can show that I've pie has a very interesting properties that is the spectral radius of a pie is smaller than one, so this is a casing we will take advantage.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So. So we define multi step linear model in this way and if K equal to 1 we can show that it's just, it's just reduce it to single step linear model last page. And if if your linear function approximation reduces to tabular representation of the world so this will reduce to the original key step model by certain certain. 95 so. So see the property and for bigger than one it is well defined because the spectral radius of π is smaller than One South. Finally, if your key is going to Infinity, so this matrix actually going to zero, it shrinks step by step. And also your FKF key. We will be well defined. And you can show that this definition is beautiful becausw. In both linear and tabular case, this solution will give you the same solution with TD0.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So this is how to use the key step linear model we just defined for plans for Dina planning. So planning always start from the latest value function you already learn and then. This is the planning step. After planning step you output the improved policy to your linking to your Twitter to your next step where you function. You can use that for learning. So in the planning step we sample according to some distribution. So we have imaginary feature vector and then we applied key step linear model to project step ahead to see the key step results and then. Also we project reward key step reward so finally we have imaginary key step transition experience. That is fine too dear and this and this. So you planning on this rather than the single step transition experience. And then you apply a generalized TD learning. So like this week. So.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "This is experimental results on by and change just a little bit about previous comparison of TD and Diner Linear Diner. So in last year paper. The show, I mean the paper that proposed linear Edina in UI by certain you tester and this girl is actually their terrorism which is a single step diner and their results. Actually you can see that their results suggest that in the beginning linear diner is faster than than TD but after some episodes there result suggests linear dynamic blowup error curve graph. That means their result. Suggest Dina may be poor in the long run, so this results actually is stronger than the result because we we found that. There is a three learning step size there, so which is learning with cooling step, which there's a also modeling step size and planning steps step size. So the you seem step size for the two for the three step size and the user seems scheduling for the three step size and we actually decoupling the three step size on you. Different scheduling, scheduling and so. This is a key thing that we achieve better results and also this results also suggests that multistep dynamics more advantage advantage than single Step diner. So.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So some conclusion, sending your diner is constantly faster than TD. And multi Step Diner is still faster than linear diner. So planning for control we have some initial results. So we build a multi step linear state action to state action model and we also this model is also interesting in that it attracts the optimal tracks greedy policy and in the long run we hope that this tracking model we will model the optimum policy and we also have some experiment on mountain car and the result shows that. This tracking multistep model enables you to find the optimum policy faster than the ordinary model free. Learning algorithm such as source and cleaning. So if you're interested, we can discuss as a poster. Thank you. Question. Quickly, but I. Linear K step. Yeah. Basically saying there's a bunch of state features and we're getting going to approximate the true transition model with linear map. Yeah, and so if K was large enough that so it's sort of like extended common filter, right? It might be locally linear, but if you make a very big. Then the linear approximation will breakdown. So I think you are talking about you saying that if key big, maybe your model is not accurate. Is that what you mean, right? They don't on a large time scale. It might not be linear. That makes even make sense. Or I mean, misunderstanding. I think you are right. It's not linear, but it's a transition model can be shows that it is a power is the power is a USA. You apply linear step model multi times. So it's not linear, but it's the powers of linear. For the. For the transition proximation right? So the true transition model is indeed the power of the true transition model for one step, right? Yeah, and the linear line is the power of the linear model for one step, yeah, but while the linear model might be a good approximation for short time scales, yeah, you're right, it could be not good approximation. So in other words, there might be a good time scale. For the domain and it's going to interact with gamma, so if you make gamma, yeah, you're right, close to 1, right that you might need to control you. OK, very carefully so you don't get too much error. Does that make sense? Yeah, so my my experiment are mounting car shows that so more step you look into into the future so poor performance you get. Yeah, so some intermediate value of key. For example K equal to 5 or 10. You get best result and from 20 and later key from key equal to 20 and later your performance will degenerate. So I think it's interesting to see how much you can rely on your multi step projection and how much accuracy can you provide. But I think it's it's how program. Right, maybe there is a better way to find the market step model. Thank you.",
+        "start": 319.0,
+        "end": 348.0
+    }
+]

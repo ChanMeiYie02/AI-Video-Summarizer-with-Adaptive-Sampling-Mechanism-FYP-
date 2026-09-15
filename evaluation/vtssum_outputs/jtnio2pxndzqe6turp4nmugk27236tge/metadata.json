@@ -1,0 +1,21 @@
+{
+    "id": "jtnio2pxndzqe6turp4nmugk27236tge",
+    "title": "Hierarchical Annotation of Medical Images",
+    "url": "http://videolectures.net/sikdd08_dimitrovski_hami/",
+    "info": {
+        "author": [
+            "Ivica Dimitrovski, Department of Knowledge Technologies, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 7, 2008",
+        "recorded": "October 2008",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Image Analysis"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 248,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 4133
+}

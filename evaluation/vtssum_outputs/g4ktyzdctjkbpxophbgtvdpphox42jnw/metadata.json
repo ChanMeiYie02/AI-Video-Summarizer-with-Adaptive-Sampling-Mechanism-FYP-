@@ -1,0 +1,20 @@
+{
+    "id": "g4ktyzdctjkbpxophbgtvdpphox42jnw",
+    "title": "Projective Kalman Filter: Multiocular Tracking of 3D Locations Towards Scene Understanding",
+    "url": "http://videolectures.net/mlmi04uk_canton_mt3lt/",
+    "info": {
+        "author": [
+            "Cristian Ferrer Canton, GREC - Knowledge Engineering Research Group, Technical University of Catalonia"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "June 2005",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 140,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 2356
+}

@@ -1,0 +1,20 @@
+{
+    "id": "sj6v4ma5yb3tepxi7kvn7gg6gdhlxdz3",
+    "title": "Randomized techniques for parameterized algorithms",
+    "url": "http://videolectures.net/algo2012_marx_parameterized_algorithms/",
+    "info": {
+        "author": [
+            "Dániel Marx, Computer and Automation research institute, Hungarian Academy of Science"
+        ],
+        "published": "Oct. 2, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Computer Science->Algorithms"
+        ]
+    },
+    "num_segments": 87,
+    "num_sentences": 492,
+    "num_clips_with_summary": 27,
+    "num_gt_summary_sentences": 44,
+    "ground_truth_summary_length_chars": 4744
+}

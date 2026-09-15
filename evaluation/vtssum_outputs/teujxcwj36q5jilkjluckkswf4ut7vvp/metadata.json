@@ -1,0 +1,21 @@
+{
+    "id": "teujxcwj36q5jilkjluckkswf4ut7vvp",
+    "title": "Support Constraints Machines",
+    "url": "http://videolectures.net/simbad2011_gori_constraints/",
+    "info": {
+        "author": [
+            "Marco Gori, University of Siena"
+        ],
+        "published": "Oct. 17, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Pattern Recognition",
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 585,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1213
+}

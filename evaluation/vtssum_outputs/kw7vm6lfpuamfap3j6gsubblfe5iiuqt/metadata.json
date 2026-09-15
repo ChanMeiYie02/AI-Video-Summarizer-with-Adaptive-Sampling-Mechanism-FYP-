@@ -1,0 +1,20 @@
+{
+    "id": "kw7vm6lfpuamfap3j6gsubblfe5iiuqt",
+    "title": "Linked Open Data Driven Game Generation",
+    "url": "http://videolectures.net/iswc2014_warren_game_generation/",
+    "info": {
+        "author": [
+            "Rob Warren, Institute for Big Data Analytics, Dalhousie University"
+        ],
+        "published": "Dec. 19, 2014",
+        "recorded": "October 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 187,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 865
+}

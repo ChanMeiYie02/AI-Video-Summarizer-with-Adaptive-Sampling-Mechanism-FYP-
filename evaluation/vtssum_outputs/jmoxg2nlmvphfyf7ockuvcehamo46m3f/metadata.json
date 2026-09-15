@@ -1,0 +1,24 @@
+{
+    "id": "jmoxg2nlmvphfyf7ockuvcehamo46m3f",
+    "title": "Coming Good and Breaking Bad: Generating Transformative Character Arcs For Use in Compelling Stories",
+    "url": "http://videolectures.net/iccc2014_veale_compelling_stories/",
+    "info": {
+        "author": [
+            "Tony Veale, UCD School of Computer Science and Informatics, University College Dublin"
+        ],
+        "published": "Aug. 8, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Philosophy",
+            "Top->Social Sciences->Psychology",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Machine Learning",
+            "Top->Arts"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 291,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1556
+}

@@ -1,0 +1,182 @@
+[
+    {
+        "text": "Thank you, so we're going to talk about geometry, connectedness and dynamics.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "More specifically, I would like to say a few words about my group and then we proceed to discussion about shape and geometry. Then geometry and connectedness. Connectedness and dynamics. And finally, I'd like to say a little bit about some more recent interests of mine in arts and humanities. And then conclusions.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So starting with.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Group. Or may interests they include shape analysis on computer vision that was actually the subject of my PhD. Pattern recognition that's closely related to this and more recently. Complex systems and networks that I use it to organize my previous approaches. And also arts and humanities this.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Quite recent. So also some numbers we are supervising people. We have been red. And have been publishing unread.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "We have this book that's now on its second edition, so this about shape and this is an important aspect of my presentation. It comes from my previous experience with shape analysis and computer vision.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "We have also authored two surveys and advances in physics that I think some of you already know, but that might be of interest. So one of them is covering several measurements that you can take from networks and also using motivated statistics in order to organize and make sense of these measurements. And there is a more recent survey that is covering many different applications of complex networks, so we have almost 700 references in this survey.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "And also writing this book that's supposed to appear in two or three years in Cambridge University Press. So it's going to be a sort of multidisciplinary approach to networks.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So basically we tried to use modeling and scientific method approaches, but we have the emphasis on computational new techniques and concepts from computer science. We try to integrate into the classical scientific method, so we use image analysis, pattern recognition, databases, visualization and so on. We have this particular. Interest so.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Now to the presentation itself.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Let's start saying few. Words about shape. So it's not easy to define. Actually it is a human concept and that's why it's difficult to quantify. I would opt for this presentation. This is not perfect, but I adopt. A shape being a set of connected points. So a square field square or even. Just the border is a shape, a star. Undertray these are examples of shapes.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "And we can also extract some properties of shapes and the ones that are more more interesting for my presentation. They include the border, so the border is the limiting set of the shape. And also the skeleton. That is, this part in solid lines, and this also called middle axis. There are several different types of skeletons, but most of them they can be understood as a sort of union of the centers of inscribed circles. So is a possible definition of skeleton, but more informally speaking. This points they're sort of the middle of the shape. And then.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Another element that is also defining connectivity is the relative position and density of these cells. So the final connectivity is consequense to a large extent. Of these three properties, size, shape and position, and we're going to explore this in my presentation.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So the key questions I will be trying to address is how do size, shape and position relate to connectivity? And how do you structure connectedness on dynamics? Interact one another?",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "There have been some constraints to this type of research and they are mostly related to shape. Has not been really applied systematically in biology and other physical areas for reasons that we can discuss afterwards. So we also is already being comment by Mark, but there's not until recently there was not much public data. And in some areas is still very little. And as a consequence of these two, we also have a lack of powerful concepts and methods.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "You have a shape. And you can take several measurements of this shape. This is a feature vector, so have properties on. This is usually that they generate mapping, so you lose information in the process, but it's how you go in pattern recognition. You map your pattern into a set of attributes and then you use this as a representation of the pattern. So we're going to do that.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Are neurons? This is just an example where that would be easy situation. We have fruits, orange and bananas and if you take into account length and weight you have a nice separation between these two groups. So each object each individual is mapped into a point into this feature space.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So, are you introduced this measurement in terms of this simple example? So we have a network and this is a measurement of a node, so we're going to speak about node one. And we're going to have a dynamics in this network, and it's going to be self avoiding random walk for simplicity sake. So if you depart from node one and you are allowed to perform 2 steps, you can hit any of these four nodes 234 and five. The same thing will happen in this structure. So we're able to hit four nodes, but now if you take into account the transition probabilities in this case, they're all equal to 1 / 4. In this case, because of these two additional connections, this node is hit half of times. These two nodes are only one 8. So effectively, if you're departing from node one, you're not hitting four nodes in this case, and we wanted to quantify this property so it can be done. I think easily what we did is you get the entropy of this probabilities and then you take the entropies, this one respectively. Then you take the exponential and it can be shown that the exponential of the entropy of the transition probabilities has a dimension of node is a kind of degree generalized degree. In this case, that is when you have the same probabilities. This measurement coincides with the number of reachable nodes. This is the optimal situation. In this other case where they have it there, a genus probabilities this number is smaller, so it's A kind of fractal degree of a node that is a consequence not to hold all of topology, but also on the specific dynamics you're interested.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Now you can also have connectivity from shapes. In this sense you have an image and you can connect pixels that have similar properties. You can impose some constraints criteria and you get a graph and then you can use community finding in order to find the regions in this now move.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Into the connectedness and dynamics. These two they go together here we should have the. UK map so. You want to connect all these cities. And one possibility is to use the minimum spanning tree. That will give you the cheapest solution, but is also the least efficient in the sense that you want to go from Brighton to cared. If you need to go around this structure. So if you see here is very clear that function and topology. They're really very closely intertwined. You can have another solution. You just have a completely connected graph and here you have the most efficient solution but at the same time the most expensive. So it's a tradeoff between these constraints and what you need to do.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "This is a very recent work. I would really appreciate feedback from you is not being.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Published yet is in the archive so you can perform a random walk.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "In a graph.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "We have been.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Talking about that.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "And it can be shown. That if your graph is not directed in the equilibrium, the number of visits the frequency of visits to each node is completely defined by its indegree. For all degree this is the same. This is not well known result. I was surprised to learn this some years ago and it is particularly striking because in this case we are. We can predict function perfectly from a strictly local property of the graph. That is the degree. So I think to me that was quite surprising. It doesn't matter, paths or anything else. If you know the degree of a node, you know what is going to do. So it's a very striking, remarkable result. You can prove this easily in spectral terms. The If World Wide Web would wear like that would be able to predict the number of hits if people move as a random walk. That is a reasonable assumption. But the problem is. If.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "You have a directed graph. You lose correlation. You might resume correlation under some circumstances that we don't really know. We know one sufficient condition that is in degree equal all degree. You resume 100% correlation, but other than that we don't know much. Recently we made some interesting finds that I'm going to show you. So This is why do we lose correlation? What now? You have probably not only local properties defining dynamics, you need more wider region around the nodes in order to explain. This relationship. That's what is going on here. You lose locality. Thank you.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "So I just give your next sample here. If you have a. Depends if you. It is on this I am going to assume it is strongly connected component. Thank you. So here we have a distribution of indegree for a graph that I'm going to show you later. So this is a game. This is the indegree distribution and this is frequency of visit histogram. Can you say which graph is this? It seems to be rather uniform, yes, in connectivity and activity, but actually it is this.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "When I plot the two properties as a 2 by by variate density, you see two perfectly defined clusters. So that was quite surprising and. Now we have nodes which have relatively small degree but are very frequently visited and we have nodes with a high degree that are not not so frequently visited. So you're breaking the correlation here. Now.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "This is the graph. This is what give rise gave rise to the previous result. To have two models. Directed. But you have more connections going from one model to do other than other way round, so that's what break the correlations in these dynamics. We believe strongly that is the only reason why you break correlations, modularity. So this I think is important. For instance, for Web 'cause you know you know how we can improve or how we can explain accesses. It has to do with modules that are symmetrically connected to the remainder of the World Wide Web. So we can.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Really be very objective by making quantifications in this areas, so that was it just.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Include going back to geometry, connectedness and function so we have geometry related to size, shape and position. This interact in order to define connectedness and connectedness. Give rise to this dynamics and behavior underwater way back and all these interactions are being modulated by the environment in order to address some constraints and goals.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "So I'd like to leave some questions for discussions we could think about other ways to relate champ shape on complex networks, for instance using curvature that's related to skeletons, Lacunarity, Converse, Co and so on. Also studied this effect of direction in other topologies and types of dynamics. Given a shape. What would be the best set of measurements that we could take in order to predict some dynamics? Is another important open question. We addressed this in the those two articles I showed you after the percolation. But this has not been completely solved. So. And finally. I need I think we need a more quantitative approach to humanities and arts.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "I'd like to thank Edwin and Royal Society for this excellent opportunity. Or students, collaborators, and sponsors. So the.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "That was it, but reference is the best thing you go to my researcher ID I found out that this is perfect. I just keep you updated. So you go there and you have all the references. And.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Thank you so much. Yeah, with regard to the neural neuroscience and that the preparation level and so on, one of those things that happens in some nervous systems but not in others is pruning. So we have that you have lots and lots of neurons. But as the system develops sometimes before birth, sometimes after birth, then you get a stage where there's significant pruning. And I'm wondering whether your population. System might be able to correctly predict the statistics of how things are print. That's a fantastic suggestion, but the problem is we lack data. The neural connectivity is not well understood. They can map neurons, but they're not not good techniques to have the whole set of a model. We lack, really. That would be perfect. We have tried to get some but there are some researchers they study, but between a small group of neurons. I will try song please where they can make an image slices and tell you the densities and basics there, but they need to know that apology will need to come up with a model for the connectivity that would be possible, but I don't know how much more reliable that would be. Still it is something interesting. So how about the direct diffusion equipment it had you seen something related? Because we're writing this and could be. It seems that in physics becausw most physical systems, the interactions are symmetric. This subject has not been much studied. That's what I heard from some experts. So if you have some feedback, I'll be glad to talk to you afterwards. Anymore questions so. Thank you so much.",
+        "start": 1015.0,
+        "end": 1044.0
+    }
+]

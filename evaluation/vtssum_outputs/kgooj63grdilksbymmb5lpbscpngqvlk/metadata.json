@@ -1,0 +1,20 @@
+{
+    "id": "kgooj63grdilksbymmb5lpbscpngqvlk",
+    "title": "Visual Event Recognition in Videos by Learning from Web Data",
+    "url": "http://videolectures.net/cvpr2010_duan_verv/",
+    "info": {
+        "author": [
+            "Lixin Duan, School of Computer Science and Engineering, Nanyang Technological University"
+        ],
+        "published": "July 19, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Computer Vision->Video Analysis"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 136,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1628
+}

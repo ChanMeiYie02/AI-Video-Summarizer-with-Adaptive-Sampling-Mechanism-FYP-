@@ -1,0 +1,22 @@
+{
+    "id": "3oxxtplfivuhjistu3i2u7xrvty43vp2",
+    "title": "PROMAP: Developing a research tool for protest mapping",
+    "url": "http://videolectures.net/clarinplusworkshop2016_stathopolou_promap/",
+    "info": {
+        "author": [
+            "Theonie Stathopolou, National Center of Social Research (ΕΚΚΕ)"
+        ],
+        "published": "Aug. 21, 2017",
+        "recorded": "September 2016",
+        "category": [
+            "Top->Humanities->Languages",
+            "Top->Computers->Digital Media",
+            "Top->Social Sciences->Journalism"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 305,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 719
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2cd2bvg4pv3qnvhqdhna6nhovc3g5j5r",
+    "title": "A Translation from Logic to English with Dynamic Semantics",
+    "url": "http://videolectures.net/solomon_coppock_tleds/",
+    "info": {
+        "author": [
+            "Elizabeth Coppock, Cycorp Inc."
+        ],
+        "published": "March 26, 2010",
+        "recorded": "March 2010",
+        "category": [
+            "Top->Computer Science->Natural Language Processing",
+            "Top->Computer Science->Computational Linguistics"
+        ]
+    },
+    "num_segments": 181,
+    "num_sentences": 1050,
+    "num_clips_with_summary": 46,
+    "num_gt_summary_sentences": 62,
+    "ground_truth_summary_length_chars": 4866
+}

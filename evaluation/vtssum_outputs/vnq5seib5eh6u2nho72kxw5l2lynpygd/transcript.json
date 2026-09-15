@@ -1,0 +1,232 @@
+[
+    {
+        "text": "Alright, so hi everyone, my name is Jan Dofe and today I'm going to talk about how to build a classifier from a manifold perspective. This is joint work with seller. If I pass canvas on your show banjo and zavia Miller.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So. To start off, let me state the key idea what we're going to do is that we're going to extract the tendence of the manifold using deep learning, and we're going to make a classifier invariant to these directions, and the reason that makes any sense is because these tangents of the manifold in the case of vision, for example, correspond to small translations and rotations, for example, so we know we want our classifier to be invariant to such things. We extract these tangents in an unsupervised manner and to do this we leverage and we combine three powerful but generic prior hypothesis.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "The first one is the semisupervised hypothesis. I'm sure all of you know it. It's that the probability distribution of the input shares some structure with the conditional probability of the class labels given the input.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So by that I mean that an SVN.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Give you such a decision boundary, but.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "If you use the unlabeled data here in black.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Then you're able to come up with a much better decision boundary, and.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "This is the idea that is used in intense 2006 algorithm to train deep networks and this result is further extended by your show banjo.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "And Marco Rubio ranzato to autoencoders. So there's a lot to say about deep learning. But in a few words, the basic idea is that you want to learn a year article representation of your input.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "That's it.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So that's the first hypothesis. The second is the manifold hypothesis. By that I mean that your examples concentrate near or lower dimensional manifold. So here we have the manifold of faces in the space of images, so most images are pretty random.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "3rd Hypothesis is the classification manifold aybo.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "This is an here I found a pretty cool visualization using T sne, which is dimensionality reduction technique, and this is on Caltech 101. And the idea here is that if examples from different classes belong to different manifolds. So for example the manifold if you will or cluster faces at the bottom is separated from all the other classes by a low density region, and the idea is that if you are at a point in the manifold of faces, then any direction that keeps you within that manifold then it doesn't change the class label. So you should be invariant to it. So. What we're going to try to do is to extract these tangents in an unsupervised fashion and train a classifier to be invariant to them.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So here's how we do it.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So our algorithm is within the framework of autoencoders. Because of time constraints, I'm only going to remind you the notation. So you have an input X which you map to the hidden code H bold using the encoder function H you take the hidden code H bold and you map it back to Reconstruction Z using the decoder function G and the global objective is that you're trying to minimize the difference between a given input and its reconstruction. For all the data set.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So this is all good and well when you're simply trying to compress the input. But in the case where you want to learn rich information rich representations about your input, we turned to the contractive autoencoder, which was introduced early this year.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "And the idea is that instead of simply reconstructing your input, you are adding a second term.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Which we call the contraction. So the first time is the reconstruction, which is the usual cost of the auto encoder and the second term, which is the new term is called the contraction an it's simply the Frobenius norm of the derivative of your encoder with respect to X. So basically what you're trying to measure is how much you're eating code varies when you vary around the input just a little bit. So basically that term is trying to ignore all the information in the input, whereas the reconstruction is guaranteeing. That you keep all of the information about the input an the interaction between these two terms is sort of like a tug of war.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "And let me illustrate that. So this is a 2 dimensional space. The slide and you have embedded within it a 1 dimensional manner.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "So if we concentrate on this point.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Here in green.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "You can move basically in two directions. What the contraction will do is try to be invariant to when you move that point in any direction, so any move. In any combination of those directions would give you the same hidden code. So let's say it tries to contract.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "The first dimension it will succeed, so it will no longer be invariant when you are moving in that direction. It will also try to be invariant to changes in.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "The other direction, but it's not possible because that direction is necessary to reconstruct your input properly. So what happens? This is just a simple explanation, a simple visualization, but what happens is that the encoder function of your contracted with encoder will only be sensible to the directions that are within the manifold that are tangent to the manifold. And by using this.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Then we're able to define an Atlas of charts, and to do this we simply need to recover the directions to which the encoder is most sensitive to. And you can do this by taking the Jacobian, which is the derivative of your H with respect to X. Doing an eigendecomposition an your attention directions will be found in the left eigenvectors, so EU vector with eigenvalues above a certain threshold. So now we're able to make a prediction, right? We're able to say that if in fact we're extracting a lower dimensional manifold, then there should be only few eigenvalues that are non negligible for a given problem.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So we evaluate both the autoencoder and the contractive autoencoder on Cifar 10, which is an object recognition data set, and what we observe is that the auto encoder is sensitive to pretty much every direction in the input. However the contracted with encoder is only sensible to a few of them, meaning that it has in fact extracted a lower dimensional manifold. So this is just visualizing the distribution of eigenvalues on cifar, but I think we can do better right? We can also look.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Look at the tangents. So this is for M Nest which is N written character recognition digit recognition data set. So on the left you have an input point and on the right you have the tender directions which are extracted by the contracted with 1/4 and this is interesting because now we're able to move around in the neighborhood of that of that zero and generate completely new examples using basic math. So you simply take a linear combination. Of the attendance with the input. So this is a.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Slightly translated to the right zero. And I we can already think of some ways to improve classification using this method, one of which would be to simply augment your training set with new examples using this technique, but I think.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "We can do better. So for instance we can use tension distance which was introduced by Patrice Imma in 1993, where he uses tensions that use apriori knowledge. I think he uses etherized amusing analytic knowledge an you do use that to define a better distance measure. I don't have enough time to go into it, so I'm going to skip the explanation. The more interesting version I think is tender and propagation again by battery SEMA. Which is a framework to make any gradient based classifier invariant to tension directions and all you need to do is add a penalty to your objective and it's.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Shown here on the right. So if your classifier performs the function F, then all you need to do is take the derivative of F with respect to X and project it in the tangent directions for that point. So in an illustration, what that means is.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "But if you know that the tangent direction of the manifold of blue points is slightly slanted, then you would figure that your decision boundary should also be slanted.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Right, and this is done by this penalty because it tries to make the normal of the decision surface perpendicular to the tension space.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "And this is what we use to build the manifold tangent classifier.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "So you only need three steps at the first step you train a stack of CLL.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "So tough and finally at second step you compute the tangents of each example by doing the SVD of the derivative of H1 with respect to X. So we're going to have more layers. I just put two layers because it fits on the page and the last step is to try.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "In a logistic regression, so you stuck a logistic regression on top of the representation and you train that logistic regression is by adding also the tangent propagation penalty an. Also we also fine tune all the weights. So we do global fine tuning. Alright, so that's the manifold tangent classifier. Let's look at some.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Experiments.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So, as I've shown you before, we have some pretty nice tangents on ennist, but we can also look to a more complete.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "This problem, so here this is. This is a secret and this is not our method, I assure you. So here you have the input point, which is a dog with a shirt for some reason. Anne. Here you have the tensions using local PCA, which is just PCA on a neighborhood of the examples, so we're trying to see how how well can you approximate attendance using local methods. You could argue with.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "OK, but this is what we get using the contractive autoencoder. So the difference is pretty striking when you're going to serve is that, for example, some of the tenants correspond to small translations of the legs. For example, the next to last tenant for example.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "We've also evaluated it on text, so this is our CV one where you have documents as bag of words. I'm not going to get into it, but you can check the paper if you want to know more.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "About that, so let's talk a little bit more about classification. So first, let's see if we can improve the performance of a simple K nearest neighbor classifier using the tension distance proposed by Patrice. Imma using the tensions that we extract using the contractive auto encoder. So unless you have the regular cameras neighbor with Euclidean distance on the right, you have key nearest neighbor using our attention distance and what you can see is that on the data set that we've considered, we get an improvement using these tenants. But knowledge, let's talk about the manifold tension classifier. So this is an amnesty.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "With 106 hundred, 1000 and 3000 labels and 50,000 unlabeled examples, so this is a semi supervised setting. And here we're comparing with from left to right, traditional neural networks, SVM's convolutional neural networks, transductive SVM's deep belief networks, regularize neighborhood component analysis, embed neural network and. The contract if autoencoder and finally the manifold tangent classifier, so it's a bunch of numbers. Of course some of the results taken from other papers, but I think the more interesting results are that the manifold tension classifier in all the cases that we've considered reduces the error by half when you compare it with the traditional neural network. So for example, with 100 labels examples you get 25.81% of error. Using the traditional network and you can reduce that to 12.03% using the manifold and classifier. Also notable is the fact that we also reduced the error by half when compared with convolutional networks and SVM's in some cases, so this isn't in a semi supervised setting. We've also evaluated it in a setting where we have all the data that is.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "So this is just the regular ennist. Here I show the results only for the permutation invariant models. So we have the. We have the manifold engine classifier on the left we achieve 0.81% of error and this is close to Africa duction of the error again when compared with traditional neural network and it's also competitive when you compare it with deep belief networks and deep Boltzmann machine 1 result which shouldn't be here. But hey I had it because I thought it was. It was cool. So you have the convolutional neural network, the basic convolutional neural network at zero point 85% error. An we we beat that using the manifold tension classifier even though the convolutional networks use prior information about images. And finally.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "We also evaluated the model on cover type an. Again it compares pretty well with other models. So in this case as VMS and distributed as moms, which are stacks of SPMS.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Alright, so in conclusion, we've presented an algorithm that learns a representation that captures the structure of the manifold. We also learn the tensions of the manifold using deep learning an we training classifier that uses that representation and that also learns to be invariant to the tension directions which correspond to things, local transformations. And finally we show that it's possible to achieve state of the art results using this method. So Lastly, I'd like to think Pascal Vasselon an you show up Andrew and I'll take questions. Thank you. So I do have a question actually. So what do you think is the most important thing you bring compared to other manifold learning approaches? One thing is that we're able to discriminatively fine tune the representation that is learned, so we don't just give you the manifold coordinates, you're able to adapt these features to the classification problem. That's one thing also. We learn that entrance in an unsupervised fashion. I think I'm not aware of another algorithm that explicitly tries to learn the tension of the manifold. Usually they are interested in the learning the coordinates, but already I simply learn also the attendance because we know there they contain interesting information about the input. Right, thank you, and so all these methods you compare the results to. They all have free para meters, some more, some less so. Yes, belief networks have a lot of free parameters and so on. Can you give us an idea how many free para meters you have to tune and how difficult it is? Yeah, so. So let's say, let's consider the deep belief networks that contracted with encoders, the depots machine. So the deep deep belief network I think had a about. A million parameters, if I'm not mistaken, but the manifold tension classifier we have about 10 million from that long. If I remember correctly, so it's still on the same order and the number of free parameters. But of course it's not limited, right? We cross validate the number of parameters in the model.",
+        "start": 1305.0,
+        "end": 1334.0
+    }
+]

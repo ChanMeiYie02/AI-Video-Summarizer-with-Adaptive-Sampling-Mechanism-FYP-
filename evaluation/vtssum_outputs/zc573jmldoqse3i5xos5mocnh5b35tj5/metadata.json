@@ -1,0 +1,22 @@
+{
+    "id": "zc573jmldoqse3i5xos5mocnh5b35tj5",
+    "title": "Generative Models I",
+    "url": "http://videolectures.net/deeplearning2017_goodfellow_generative_models/",
+    "info": {
+        "author": [
+            "Ian Goodfellow, Google, Inc."
+        ],
+        "published": "July 27, 2017",
+        "recorded": "June 2017",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 63,
+    "num_sentences": 626,
+    "num_clips_with_summary": 29,
+    "num_gt_summary_sentences": 51,
+    "ground_truth_summary_length_chars": 8021
+}

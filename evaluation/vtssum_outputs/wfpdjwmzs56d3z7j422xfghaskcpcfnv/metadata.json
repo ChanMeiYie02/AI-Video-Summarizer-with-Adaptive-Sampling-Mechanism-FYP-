@@ -1,0 +1,20 @@
+{
+    "id": "wfpdjwmzs56d3z7j422xfghaskcpcfnv",
+    "title": "Grocery Shopping Recommendations Based on Basket-Sensitive Random Walk",
+    "url": "http://videolectures.net/kdd09_li_gsrbbsrw/",
+    "info": {
+        "author": [
+            "Ming Li, Unilever"
+        ],
+        "published": "Sept. 14, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Data Mining->Enterprise & Finance"
+        ]
+    },
+    "num_segments": 13,
+    "num_sentences": 141,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 3011
+}

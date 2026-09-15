@@ -1,0 +1,24 @@
+{
+    "id": "tljbgyrt7h3kgdvn62ebu6tchob65kr4",
+    "title": "Faster and Sample Near-Optimal Algorithms for Proper Learning Mixtures of Gaussians",
+    "url": "http://videolectures.net/colt2014_kamath_gaussians/",
+    "info": {
+        "author": [
+            "Gautam Kamath, Computer Science and Artificial Intelligence Laboratory (CSAIL), Massachusetts Institute of Technology, MIT"
+        ],
+        "published": "July 15, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning",
+            "Top->Computer Science->Machine Learning->Supervised Learning",
+            "Top->Computer Science->Machine Learning->Statistical Learning",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory"
+        ]
+    },
+    "num_segments": 37,
+    "num_sentences": 220,
+    "num_clips_with_summary": 26,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 5127
+}

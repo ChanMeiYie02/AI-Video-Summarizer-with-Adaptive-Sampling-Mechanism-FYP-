@@ -1,0 +1,58 @@
+[
+    {
+        "subtopic_id": 0,
+        "title": "Removing and Reinstalling a Fan",
+        "description": "This segment describes the process of removing a fan, involving disconnecting a cable and managing the screws that hold the unit in place. The speaker details how the number of screws changes after the fan is initially removed and outlines the steps for reattaching the fan.",
+        "summary": "The speaker begins the process of removing a fan, starting by disconnecting a small cable. They explain that the fan is secured by three screws. After removing the fan, the speaker notes that one screw is already loose, meaning only two screws remain holding the unit down. The segment concludes by instructing the viewer to fasten the screws back down and then plug the unit back in.",
+        "raw_output": "TITLE: Removing and Reinstalling a Fan\n\nDESCRIPTION: This segment describes the process of removing a fan, involving disconnecting a cable and managing the screws that hold the unit in place. The speaker details how the number of screws changes after the fan is initially removed and outlines the steps for reattaching the fan.\n\nSUMMARY: The speaker begins the process of removing a fan, starting by disconnecting a small cable. They explain that the fan is secured by three screws. After removing the fan, the speaker notes that one screw is already loose, meaning only two screws remain holding the unit down. The segment concludes by instructing the viewer to fasten the screws back down and then plug the unit back in."
+    },
+    {
+        "subtopic_id": 1,
+        "title": "How to Clean and Maintain Laptop Cooling Fans",
+        "description": "This guide provides step-by-step instructions for safely opening a laptop, cleaning the cooling fans and applying thermal paste, and reassembling the internal components.",
+        "summary": "The video provides a comprehensive guide on maintaining a laptop's cooling system. The initial steps involve safely disconnecting and removing the battery, followed by cleaning the cooling fans and applying new thermal paste to ensure optimal performance. The process involves detailed visual demonstrations of accessing the internal components, correctly reconnecting the fan headers, and reassembling the laptop. The speaker confirms that the cleaning is complete and that the laptop is now powered on and functioning normally, concluding the tutorial with a sign-off and a request for viewer feedback.",
+        "raw_output": "TITLE: How to Clean and Maintain Laptop Cooling Fans\n\nDESCRIPTION: This guide provides step-by-step instructions for safely opening a laptop, cleaning the cooling fans and applying thermal paste, and reassembling the internal components.\n\nSUMMARY: The video provides a comprehensive guide on maintaining a laptop's cooling system. The initial steps involve safely disconnecting and removing the battery, followed by cleaning the cooling fans and applying new thermal paste to ensure optimal performance. The process involves detailed visual demonstrations of accessing the internal components, correctly reconnecting the fan headers, and reassembling the laptop. The speaker confirms that the cleaning is complete and that the laptop is now powered on and functioning normally, concluding the tutorial with a sign-off and a request for viewer feedback."
+    },
+    {
+        "subtopic_id": 2,
+        "title": "Motherboard Maintenance and Component Reassembly",
+        "description": "This video captures a hands-on maintenance process on a computer motherboard, focusing on applying new thermal paste and discussing the specific constraints and correct placement of cooling fans. The speaker also discusses the uncertainty involved in redoing component work.",
+        "summary": "The video details a hands-on repair and maintenance process on a computer motherboard. The speaker narrates the initial steps, including the application of new thermal paste to the CPU and GPU. A key part of the discussion involves the constraints of reassembly, specifically explaining that fans must be placed in a specific order and cannot be positioned arbitrarily. The visuals confirm this discussion by focusing on a component placement detail (a \"little tab\") and noting the current fan position relative to others. The speaker also expresses uncertainty about whether to proceed with redoing previous work.",
+        "raw_output": "TITLE: Motherboard Maintenance and Component Reassembly\n\nDESCRIPTION: This video captures a hands-on maintenance process on a computer motherboard, focusing on applying new thermal paste and discussing the specific constraints and correct placement of cooling fans. The speaker also discusses the uncertainty involved in redoing component work.\n\nSUMMARY: The video details a hands-on repair and maintenance process on a computer motherboard. The speaker narrates the initial steps, including the application of new thermal paste to the CPU and GPU. A key part of the discussion involves the constraints of reassembly, specifically explaining that fans must be placed in a specific order and cannot be positioned arbitrarily. The visuals confirm this discussion by focusing on a component placement detail (a \"little tab\") and noting the current fan position relative to others. The speaker also expresses uncertainty about whether to proceed with redoing previous work."
+    },
+    {
+        "subtopic_id": 3,
+        "title": "Assembly Instructions: Fastening and Fastener Identification",
+        "description": "This segment provides detailed instructions on assembling a product, specifically focusing on how to correctly position screws and identify a locking fastener.",
+        "summary": "The speaker guides the user through critical assembly steps, instructing them to align the screw correctly against the plastic material to ensure proper alignment. They further instruct the user to place longer screws in the back section of the assembly. Finally, the speaker identifies a blue substance visible in the frame, confirming that it is a lock-type fastener.",
+        "raw_output": "TITLE: Assembly Instructions: Fastening and Fastener Identification\nDESCRIPTION: This segment provides detailed instructions on assembling a product, specifically focusing on how to correctly position screws and identify a locking fastener.\nSUMMARY: The speaker guides the user through critical assembly steps, instructing them to align the screw correctly against the plastic material to ensure proper alignment. They further instruct the user to place longer screws in the back section of the assembly. Finally, the speaker identifies a blue substance visible in the frame, confirming that it is a lock-type fastener."
+    },
+    {
+        "subtopic_id": 4,
+        "title": "Video Outro and Sign-Off",
+        "description": "This segment captures the concluding sequence of a video, featuring a standard channel sign-off and a call to action for viewer subscriptions.",
+        "summary": "The video segment begins with a display of \"THANKS FOR WATCHING!\" and transitions into a voiceover. The voiceover encourages viewers to subscribe to the channel, explaining that this action greatly helps the creator. The segment concludes with a final farewell message, stating that the video is over (\"until the next one\"), and ends with a thank you.",
+        "raw_output": "TITLE: Video Outro and Sign-Off\n\nDESCRIPTION: This segment captures the concluding sequence of a video, featuring a standard channel sign-off and a call to action for viewer subscriptions.\n\nSUMMARY: The video segment begins with a display of \"THANKS FOR WATCHING!\" and transitions into a voiceover. The voiceover encourages viewers to subscribe to the channel, explaining that this action greatly helps the creator. The segment concludes with a final farewell message, stating that the video is over (\"until the next one\"), and ends with a thank you."
+    },
+    {
+        "subtopic_id": 5,
+        "title": "Installing a Component into a Laptop Backplate",
+        "description": "This segment provides instructions on installing a specific pick-shaped component into a groove on the laptop's backplate. It describes the process of securing the clips and finally removing the remaining parts.",
+        "summary": "The speaker describes the process of installing a guitar-like pick into a groove located behind the computer where the laptop meets the backplate. The instructions involve working around to pop all the small clips in place, and eventually, the remaining parts should detach easily.",
+        "raw_output": "TITLE: Installing a Component into a Laptop Backplate\nDESCRIPTION: This segment provides instructions on installing a specific pick-shaped component into a groove on the laptop's backplate. It describes the process of securing the clips and finally removing the remaining parts.\nSUMMARY: The speaker describes the process of installing a guitar-like pick into a groove located behind the computer where the laptop meets the backplate. The instructions involve working around to pop all the small clips in place, and eventually, the remaining parts should detach easily."
+    },
+    {
+        "subtopic_id": 6,
+        "title": "Laptop Maintenance and File Management Issue",
+        "description": "This segment focuses on physically cleaning dust off a laptop and briefly discusses a scheduling conflict related to deleted video files.",
+        "summary": "The speaker begins by detailing the process of cleaning the laptop, specifically focusing on wiping dust out of the system. They then mention a scheduling conflict, explaining that despite having another video planned, one of those files was accidentally deleted during file management while recording.",
+        "raw_output": "TITLE: Laptop Maintenance and File Management Issue\nDESCRIPTION: This segment focuses on physically cleaning dust off a laptop and briefly discusses a scheduling conflict related to deleted video files.\nSUMMARY: The speaker begins by detailing the process of cleaning the laptop, specifically focusing on wiping dust out of the system. They then mention a scheduling conflict, explaining that despite having another video planned, one of those files was accidentally deleted during file management while recording."
+    },
+    {
+        "subtopic_id": 7,
+        "title": "Computer Hardware Disassembly - Initial Step",
+        "description": "This segment focuses on the initial steps of a computer hardware disassembly process, specifically focusing on preparing to remove the back panel of a laptop.",
+        "summary": "The speaker is initiating the hardware removal process by outlining the first step: using a Philips head screwdriver to remove the seven screws that secure the back panel of the device.",
+        "raw_output": "TITLE: Computer Hardware Disassembly - Initial Step\nDESCRIPTION: This segment focuses on the initial steps of a computer hardware disassembly process, specifically focusing on preparing to remove the back panel of a laptop.\nSUMMARY: The speaker is initiating the hardware removal process by outlining the first step: using a Philips head screwdriver to remove the seven screws that secure the back panel of the device."
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "id": "jsbkrnhv2awjto7ilkhy2oqbjucp6uhp",
+    "title": "Scaling Latent Variable Models",
+    "url": "http://videolectures.net/nipsworkshops2011_smola_models/",
+    "info": {
+        "author": [
+            "Alex Smola, Amazon"
+        ],
+        "published": "Jan. 24, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 52,
+    "num_sentences": 314,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2529
+}

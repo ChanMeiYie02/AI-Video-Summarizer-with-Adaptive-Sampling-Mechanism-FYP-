@@ -1,0 +1,20 @@
+{
+    "id": "ld3irhm3picebsxqwtu42ljzx5vavgpn",
+    "title": "Natural language processing",
+    "url": "http://videolectures.net/sssc2011_martell_naturallanguage/",
+    "info": {
+        "author": [
+            "Craig H. Martell, Computer Science Department, Naval Postgraduate School"
+        ],
+        "published": "Sept. 5, 2011",
+        "recorded": "August 2011",
+        "category": [
+            "Top->Computer Science->Natural Language Processing"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 660,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1660
+}

@@ -1,0 +1,20 @@
+{
+    "id": "wu7ag4gfwllkji6fe6azklos2egb5vh5",
+    "title": "Language Modeling with Tree Substitution Grammars",
+    "url": "http://videolectures.net/nipsworkshops09_post_lmtsg/",
+    "info": {
+        "author": [
+            "Matt Post, University of Rochester"
+        ],
+        "published": "Jan. 19, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Programming Languages"
+        ]
+    },
+    "num_segments": 42,
+    "num_sentences": 160,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1629
+}

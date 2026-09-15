@@ -1,0 +1,21 @@
+{
+    "id": "fqfczxeeoynzga6yd3bsd36pqz3sufus",
+    "title": "Challenging nanomaterials for sustainable processes",
+    "url": "http://videolectures.net/bilateralWorkshop2020_montini_challenging/",
+    "info": {
+        "author": [
+            "Tiziano Montini, University of Trieste"
+        ],
+        "published": "June 3, 2020",
+        "recorded": "February 2020",
+        "category": [
+            "Top->Technology->Nanotechnology",
+            "Top->Technology->Nanotechnology->Applications"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 260,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1873
+}

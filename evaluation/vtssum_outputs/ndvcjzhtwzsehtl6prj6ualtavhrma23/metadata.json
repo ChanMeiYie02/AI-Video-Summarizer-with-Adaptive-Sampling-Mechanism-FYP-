@@ -1,0 +1,21 @@
+{
+    "id": "ndvcjzhtwzsehtl6prj6ualtavhrma23",
+    "title": "Automatically Generating Data Linkages Using a Domain-Independent Candidate Selection Approach",
+    "url": "http://videolectures.net/iswc2011_song_linkages/",
+    "info": {
+        "author": [
+            "Dezhao Song, Lehigh University"
+        ],
+        "published": "Nov. 25, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web->RDF - Resource Description Framework",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 198,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3231
+}

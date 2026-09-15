@@ -1,0 +1,22 @@
+{
+    "id": "m6uidooextydyqnjjcrd4rmafui24hlp",
+    "title": "Analyzing the potential of Microblogs for spatio-temporal popularity estimation of music artists",
+    "url": "http://videolectures.net/socialweb2011_schedl_analyzing/",
+    "info": {
+        "author": [
+            "Markus Schedl, Department of Computational Perception, Johannes Kepler University"
+        ],
+        "published": "Aug. 4, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Computer Science->Social Media",
+            "Top->Computer Science->Social Computing",
+            "Top->Computer Science->Web Mining"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 166,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 2355
+}

@@ -1,0 +1,21 @@
+{
+    "id": "v5f57im4zk7gznz54q5gf2bgiudlfnbt",
+    "title": "Selected Environmental Appplications Of Structured Output Prediction",
+    "url": "http://videolectures.net/miningdata2016_dzeroski_closing_remarks/",
+    "info": {
+        "author": [
+            "Sašo Džeroski, Department of Intelligent Systems, Jožef Stefan Institute"
+        ],
+        "published": "Jan. 31, 2017",
+        "recorded": "September 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Data Science"
+        ]
+    },
+    "num_segments": 38,
+    "num_sentences": 238,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 2629
+}

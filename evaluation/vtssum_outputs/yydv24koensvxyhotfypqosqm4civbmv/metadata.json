@@ -1,0 +1,20 @@
+{
+    "id": "yydv24koensvxyhotfypqosqm4civbmv",
+    "title": "Graphical Models",
+    "url": "http://videolectures.net/mlss2012_ghahramani_graphical_models/",
+    "info": {
+        "author": [
+            "Zoubin Ghahramani, Department of Engineering, University of Cambridge"
+        ],
+        "published": "Jan. 15, 2013",
+        "recorded": "April 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->Graphical Models"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 285,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 39,
+    "ground_truth_summary_length_chars": 3730
+}

@@ -1,0 +1,11 @@
+# Final Multimodal Video Summary
+
+The project introduced by the speaker focuses on predicting the effects of chemicals and assessing ecological risk, addressing the need to understand how millions of chemicals impact the environment and species. The core methodology involves determining chemical exposure in the environment using reference data, combining this with reference effects data to calculate "risk quotients," which are then used to identify susceptible species and ecosystems.
+
+To build a predictive model, the research integrated various biological and chemical databases, including the US Environmental Protection CS Eco Tox database, NCBI taxonomy, and the Kemble and Pub Chem databases. A critical step involved aligning chemical identifiers and observed effects with species data, achieving a high recall rate in literature tests. The predictive problem was defined by analyzing the relationships between chemicals and species, including both positive and negative samples.
+
+Initially, the team developed several models, starting with a simple approach based on taxonomic distance, which is proposed for practical use by researchers. The methodology subsequently shifted to utilizing knowledge graph embedding models to represent chemical classification and species taxonomy, aiming to enhance the prediction capability. The researchers developed and optimized these embeddings simultaneously with the main prediction model.
+
+The model architecture was further refined by introducing the "little receptor model" and utilizing knowledge graph embedding layers to boost recall and the F2 score, thereby improving the accuracy of the prediction. The JELD model ultimately performed well compared to baseline models.
+
+The experimental findings showed that tested concentrations had no observed effect on negative samples, suggesting that higher concentrations are likely unaffected. The research concludes by emphasizing the critical role of this data and its predictions in improving risk assessment pipelines and enhancing the understanding of chemical impacts on ecosystems. The work highlights the necessity of considering environmental factors like temperature and pH, as these variables significantly influence the molecular changes of chemicals in aquatic environments.

@@ -1,0 +1,567 @@
+[
+    {
+        "text": "I'm a PhD student at Virginia Tech and aside and said, I'm going to talk about our work on analyzing the behavior of deeply care models, and this is going to be presented at MLP in next few months. This is a joint work with my advisor through Better and David Parekh. So for those of you.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Not familiar with this line of research of V QV Q stands for Visual Question answering. So what is visual question answering? Let me give you an example. Given an image and a natural language, open ended questions such as what is the mustache made of the task for an artificial intelligence system is to generate a natural language answer, which in this case would be bananas.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "There have been a number of papers being published on different conferences and appearing on archive proposing deep models for visual Question answering. At CPR this year, they were three paper.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "As in one organization talking about Visual question answering.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "There was a challenge at CPR where the results of the visual Question answering Challenge were announced. They were third.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Teams participating in the challenge. So there has been a lot of excitement around visual Question answering recently. However, there is a.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Interesting observations to be made. It should be noted that the performance of most models is clustered around 60 to 66% compared to human performance, which is 83% particular data set. Yeah, so I should have mentioned this is on the V QA data set which is which is from my group. This is a weekly is a large scale data set consisting of hundreds of thousands of images and 1,000,000 answers. All the images are coming from Microsoft Coco and questions were collected from Amazon. Nickel and answers will also connect collected from Amazon Mechanical Turk. So it should also be noted that these mean 5% gap between top nine entries in the weekly Challenge. So how do we identify what are the most fruitful directions of making progress? How do we compare strengths and weaknesses of different models? How do we develop insights into the failure modes of different models? We believe that as.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "First step in understanding in this direction is to understand the behavior of current models. So in order to understand the behavior of these models, we will first analyze if current VK models generalize to normal instances.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "We will then see if current Wikia models listen to the entire question and then we will see.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "He is currently K models. Look at the image. I would like to mention that the techniques that I'm going to present to you now are applicable to all deeply care models. But in this task I will be focusing on two models, each coming from two major classes of VK models with attention and without attention. So the first model that I'm going to talk.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Think about is not using any kind of attention is a vanilla CNN plus LTE model. This is from a weekly paper. It achieves an accuracy of 54% on the validation split of the week your data set. The second model.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "It uses attention on both the question and the image, and this is hierarchical Co attention from Lu at all. It achieves an accuracy of 57% on the validation split of the weaker data set. So let's look at let me walk you through the without attention model first.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "It is a 2 channel model image channel and the question channel image channel extracts image features using Ginette Question channel extracts question features using an STM. The two those two features are mapped to same dimension using fully connected layers. These these features are in pointwise multiplied and then pass through another fully connected layer to generate a softmax distribution over a predefined vocabulary of answers and finally the maximum confident answer is 2. This is the with the tank.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Model given an input image and a question, what is the color of the word?",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Embedding set extracted for the question at different levels. So why?",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Level. This is phase level embedding and this is sentence level. Embedding image features are extracted using CNN's. At each level, Co attention is applied to both the image and the question. And the final answer is predicted using the Co attended features at each level of the hierarchy. OK, so let's look at.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "But we came out how we can models generalize to normal.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Instances the question that we are interested in answering is the following. Do we create models make mistakes because test instances are two different from training instances? Specifically.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Can lower test accuracy be attributed to test question image pairs being 2 first two different from training question image pairs?",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Or can it be attributed to test question image pairs are familiar, but the labels are too different from the training labels.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Let's first look at how models behave when test question image pairs are two different from training question image bills. So.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So um, to analyze this, we first find out we first compute K nearest neighbor training pairs for every test question image pair. We then compute average distances between the K nearest neighbor training pairs and the test bill, and then we finally measure the correlation between the test accuracy and the average distance that we computed above. So now the question is in Word.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Space do we compute these K nearest neighbors? So for the without attention model? So both the models we compute the K nearest neighbor in this space of combined question plus image embedding. This is model specific embedding.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So for example, for the case of without attention model.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "As the embedding in which we compute the K nearest neighbors, this is just before passing through the fully connected layer.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "And for this model, this is again the embedding in which we compute the K nearest neighbors. So this embedding is encoding the information of both the question and the image. And so we observed that there is significant negative correlation, but.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "In the test accuracy and the distances of the test fails with training pairs and.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Negative correlation is minus .41. Further, without attention model and minus .424 with attention model.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "So this energies tells us that we came. Orders tend to fail on novel instances.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "And hence we are calling them myopic.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "We also found that a significant percentage of mistakes can be successfully predicted.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "By checking the distance of Test Qi, perform the training nearest neighbors and so 67.5% of the mistakes can be predicted for without attention model and 66.7% of the mistakes can be predicted for with attention model.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "So this analysis not only exposes a reason for mistakes being made by models, but also provides a way for models to predict their own oncoming failures.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "This being more human, like by refusing to answer questions that are two different from the one seen in the training. So far, consider this example.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "For the given image and the question, what type of reception is being attended?",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Did Alex cake as the answer?",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "It is the ground truth. Answer this wedding. Now let us look at the nearest neighbor question. An image players from the train.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So we can see that when you simple question and image pairs a semantic semantically different from the test question, an image pairs probably explaining the mistake.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Now let us see how models behave when the test question image pairs are familiar, but the labels test labels required are different from what models have seen during training. So again.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "We first compute the K nearest neighbor training pairs as we did in the previous experiment. And then in this case we compute the distance between the ground truth answers of the test pair and the ground truth answers of the training pairs. And we do this in this space of what to make. And then finally we measure correlation between the test accuracy and the average distance. So we again.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Following that, there is a significant negative correlation between the test accuracy and the average distance.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "This correlation is minus 0.62. Further, without attention model and minus, again minus 2.62. Further with attention model.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "So this tells us that we create models tend to repeat answers that they have seen during training, but they fail when the answer required a test time is different. That's true for any machine learning. Right, but I will show you example where you can. If you have a specifically compositional model. It became clear that from an example.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Consider this example. What color are the safety cones?",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Model says Orange, but the ground.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Good answer is green. Now let us look at the nearest neighbor training pairs.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "So the model has seen the question similar to what color are the safety cones in the training, but it has only seen orange cones. So this shows that today's models lag compositionality. Models I've seen cone into training and green for some other instance in the training, but they have not seen green and gold together, so modern slack compositionality if they know how to combine these two concepts. They will be able to answer this question green at testing. They said answer your question.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Now let's look at whether we could models listen to the entire question. So in order to analyze this.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "We feed partial questions to the model, so for this image and the question how many houses are on the beach? The answer is 2, but we are interested in knowing what the model says when we just feed in the first word of the.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "First 2 words of the question and so on, along with the image. So we as I said, we.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "The model with partial questions of in.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Policing length and then we compute the percentage of questions for which the responses to the partial question are same as the responses to the full question. So in.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "Split the X axis shows the length of the partial question, fed as input to the model and the Y axis shows the percentage of questions for which responses of these partial questions are same as full questions. We can see it.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "When only half of the question is fed as input to remodel the responses.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "For 41% of the questions are same as the responses for the full question. So this tells us that the model is listening to first few words more than the words. The words towards the end of the question.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "This is the same plot for the attention model and supply. In this case, the model can.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "Images on a predicted answer after listening to half of the question.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "More often. So we found that we came models converge on.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Answers after listening to half of the question for a significant percentage of questions and this percentage.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "41% for without attention model and 49% for the with attention model.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "And hence we conclude that they often jump to conclusions.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "So this is a plot showing the accuracy of the model after when they spit out answers after listening to half of the question.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "So we can see that the accuracy after listening to half of the question is 37% for the without attention model and this accuracy is.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "88% of the final accuracy, which is 54%.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "This is for the with attention model. The accuracy after listening to half of the.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "Ocean is 42%, which is 74% of the.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "In electricity, which is 57%, let me show you something.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "Numbers. So for this image and the question is, are they playing a game? The model converges on the answer yes. After listening to the first 2 words. And in this case the answer is correct.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "So my impression of this data set is that whenever you're asking that question of are they the answers by its very strong sports. Yes, that is true. For binary questions, you're right, it is not like all the questions that have. Yes is the answer, but you will see 70% of the questions have. Yes they count with answer, but that is not true for all the different types of questions like the examples I'm going to show you. So for example how. How many houses are on the beach? The model says to just after listening to the first 2 words. So whenever it says how many it assumes, the answer is 2 and does not change its answer later and it gets incorrect because the correct answer is 6.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "Is the bench made up of metal? It says no. After listening to the phrase is the bench whereas the correct answer is yes.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "Similarly, what season of the Earth was this photo taken in? It says summer after listening to just two words, what season and the correct answer is spring?",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "So now let us look at whether these models look at the image.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "In order to analyze this, we compute how often model predicts the same answer for a given question across different images. So for this question, how many zebras and for the given image the model says 2, but we're interested in knowing what would model, say for this image.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "For this image for this image. So we first compute the.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "Centage of times, let's call it X. The responses do not change across images for a particular question and then we.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "But the histogram of X across questions.",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "So in this plot I'm showing the histogram and the X axis shows the percentage of images for which the model produces the same answer, so the rightmost bin. Is that these are the questions for which the model produced the same answer across all the images?",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "And this is a cumulative plot which shows the percentage which shows the percentage of images for which the model produces percentage of questions for which the model produces the same answer for at least X percent of the images.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "So we can see that the model produces the same answer for at least half of the images for.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "At 56% of the questions. And this is the.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "Attention Model an in this case.",
+        "start": 2320.0,
+        "end": 2349.0
+    },
+    {
+        "text": "They wanted their Dicks. The same answer for at least half of the images for.",
+        "start": 2349.0,
+        "end": 2378.0
+    },
+    {
+        "text": "82% of the questions which is less than the attention without attention model.",
+        "start": 2378.0,
+        "end": 2407.0
+    },
+    {
+        "text": "So we saw that we came models do not change their responses across images for significant percentage of questions.",
+        "start": 2407.0,
+        "end": 2436.0
+    },
+    {
+        "text": "And they do so for 56% of the questions. In the case of without attention model and 42% of the questions in case case of with attention model.",
+        "start": 2436.0,
+        "end": 2465.0
+    },
+    {
+        "text": "And hence we call them stubborn.",
+        "start": 2465.0,
+        "end": 2494.0
+    },
+    {
+        "text": "We also saw that attention based models are less stubborn then non attention based models which is intuitive. So. For this quest.",
+        "start": 2494.0,
+        "end": 2523.0
+    },
+    {
+        "text": "And what does the red sign say?",
+        "start": 2523.0,
+        "end": 2552.0
+    },
+    {
+        "text": "Modern thetics stop as the answer.",
+        "start": 2552.0,
+        "end": 2581.0
+    },
+    {
+        "text": "For this image and it is correct.",
+        "start": 2581.0,
+        "end": 2610.0
+    },
+    {
+        "text": "It does so for this image.",
+        "start": 2610.0,
+        "end": 2639.0
+    },
+    {
+        "text": "For this image.",
+        "start": 2639.0,
+        "end": 2668.0
+    },
+    {
+        "text": "This image. Similarly.",
+        "start": 2668.0,
+        "end": 2697.0
+    },
+    {
+        "text": "I'm easy that is the monitor X2.",
+        "start": 2697.0,
+        "end": 2726.0
+    },
+    {
+        "text": "For this image, but it also.",
+        "start": 2726.0,
+        "end": 2755.0
+    },
+    {
+        "text": "Is 2 for this.",
+        "start": 2755.0,
+        "end": 2784.0
+    },
+    {
+        "text": "Read this image.",
+        "start": 2784.0,
+        "end": 2813.0
+    },
+    {
+        "text": "And this image.",
+        "start": 2813.0,
+        "end": 2842.0
+    },
+    {
+        "text": "We also made another.",
+        "start": 2842.0,
+        "end": 2871.0
+    },
+    {
+        "text": "Interesting observation that the accuracy of the questions for which the answer is same for at least half of the images.",
+        "start": 2871.0,
+        "end": 2900.0
+    },
+    {
+        "text": "Is 50.",
+        "start": 2900.0,
+        "end": 2929.0
+    },
+    {
+        "text": "6% which is greater.",
+        "start": 2929.0,
+        "end": 2958.0
+    },
+    {
+        "text": "And the accuracy for the entire data set, which is 54%. And say.",
+        "start": 2958.0,
+        "end": 2987.0
+    },
+    {
+        "text": "Is the case for.",
+        "start": 2987.0,
+        "end": 3016.0
+    },
+    {
+        "text": "Attention based.",
+        "start": 3016.0,
+        "end": 3045.0
+    },
+    {
+        "text": "Model the accuracy of the questions for which it is predicting the same answer across images is good.",
+        "start": 3045.0,
+        "end": 3074.0
+    },
+    {
+        "text": "Other than the accuracy across the entire data set, so why is this the case?",
+        "start": 3074.0,
+        "end": 3103.0
+    },
+    {
+        "text": "We show you an example what covers the ground and the model says no. And this is correct for all the images, and this is so because this question what covers the ground has been asked in the data set only if the images have snow. So the model will always get it correct. So we observed that producing same response.",
+        "start": 3103.0,
+        "end": 3132.0
+    },
+    {
+        "text": "This does not necessarily hurt. And it exposes late.",
+        "start": 3132.0,
+        "end": 3161.0
+    },
+    {
+        "text": "All biases in the data set. So to conclude.",
+        "start": 3161.0,
+        "end": 3190.0
+    },
+    {
+        "text": "We develop, we presented novel techniques for characterizing the behavior of today's deeply Kia models, and we found that today's models are they fail to generalize or novel instances. They tend to converge on a predicted answer after listening to half of the question, and they do not change their responses across images. For the given question. Before the wrapping up.",
+        "start": 3190.0,
+        "end": 3219.0
+    },
+    {
+        "text": "I would like you to keep a few things in mind. The behavior of the key model that I talked earlier probably correct behavior given the data set it was trained on. These models are doing what is statistically favorable. But an analysis is about revealing the implications of that. It is good to know what the current behavior is. And 3rd, we want the community to think about whether this is the desired behavior in an intelligent, weaker system, and if not, how should we try to imitate? Should we train different classes of models or should we change the biases in the data set? And finally, we are using anthropomorphic objectives, such as stubborn, myopic too early. For pedagogical reasons. We these labels are just to communicate the behavior to you. We are not claiming that these models are human, like in any way. Thank you.",
+        "start": 3219.0,
+        "end": 3248.0
+    },
+    {
+        "text": "And I would be happy to take your questions.",
+        "start": 3248.0,
+        "end": 3277.0
+    }
+]

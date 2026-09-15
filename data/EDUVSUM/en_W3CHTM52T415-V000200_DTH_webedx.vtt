@@ -1,0 +1,46 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.440 --> 00:00:09.509
+Hi! Welcome to Part 2 of the W3C HTML5 course. How about we start by looking at advanced
+
+00:00:09.509 --> 00:00:17.110
+HTML5 multimedia features? First, we will look at the Web Audio API that helps processing
+
+00:00:17.110 --> 00:00:24.570
+and synthesizing audio in Web applications. You will be able to load sound samples into memory
+
+00:00:24.570 --> 00:00:30.380
+and play them, loop them, process them through a chain of sound effects such as reverberation,
+
+00:00:30.380 --> 00:00:40.629
+delay, graphic equalizer, compressor, distortion, etc. You can also write nice real time visualizations
+
+00:00:40.629 --> 00:00:47.199
+like dancing frequency graphs, animated waveforms that dance with the music,
+
+00:00:47.199 --> 00:00:49.190
+or generate music programmatically.
+
+00:00:49.190 --> 00:00:56.129
+The Web Audio API is particulary suited for games or for music applications.
+
+00:00:56.129 --> 00:01:01.319
+A second nice multimedia feature is the Track API.
+
+00:01:01.319 --> 00:01:07.670
+With it, you will be able to synchronize a video with elements in your document.
+
+00:01:07.800 --> 00:01:11.670
+For example: display a Google Map, an HTML description
+
+00:01:11.670 --> 00:01:16.260
+or a Wikipedia page aside the video, while itâ€™s playing.
+
+00:01:16.260 --> 00:01:24.920
+As always, do not hesitate to practice coding looking at the interactive examples, and then
+
+00:01:24.920 --> 00:01:28.470
+please share your own creations in the discussion forum!
+
+00:01:28.470 --> 00:01:33.400
+We hope you will enjoy this first week and we wish you the best!

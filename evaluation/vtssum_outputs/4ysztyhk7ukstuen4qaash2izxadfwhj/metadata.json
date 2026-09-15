@@ -1,0 +1,22 @@
+{
+    "id": "4ysztyhk7ukstuen4qaash2izxadfwhj",
+    "title": "Combining Information Retrieval and Information Extraction for Medical Intelligence",
+    "url": "http://videolectures.net/mmdss07_yangarber_cir/",
+    "info": {
+        "author": [
+            "Roman Yangarber, New York University (NYU)"
+        ],
+        "published": "Dec. 3, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Computer Science->Information Retrieval",
+            "Top->Computer Science->Information Extraction",
+            "Top->Medicine->Informatics"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 816,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 946
+}

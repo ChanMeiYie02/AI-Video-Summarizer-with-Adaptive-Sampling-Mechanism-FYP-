@@ -1,0 +1,21 @@
+{
+    "id": "4pplhw3skei2fn6odl2rjb4mmewim4ws",
+    "title": "Full-text Support for Publish/Subscribe Ontology Systems",
+    "url": "http://videolectures.net/eswc2016_zervakis_ontology_systems/",
+    "info": {
+        "author": [
+            "Lefteris Zervakis, University of Peloponnese"
+        ],
+        "published": "July 28, 2016",
+        "recorded": "June 2016",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 182,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1404
+}

@@ -1,0 +1,21 @@
+{
+    "id": "7doe3jmbub72w6nzjrzx7unu3c2xbqoy",
+    "title": "SRBench: A Streaming RDF/SPARQL Benchmark",
+    "url": "http://videolectures.net/iswc2012_calbimonte_srbench/",
+    "info": {
+        "author": [
+            "Jean-Paul Calbimonte, HES-SO Valais-Wallis"
+        ],
+        "published": "Dec. 3, 2012",
+        "recorded": "November 2012",
+        "category": [
+            "Top->Computer Science->Semantic Web->RDF - Resource Description Framework",
+            "Top->Computer Science->Semantic Web->SPARQL"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 251,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 2962
+}

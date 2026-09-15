@@ -1,0 +1,25 @@
+{
+    "id": "e7pa7ypv3hleyvvr2vb5zebx47gjrt6o",
+    "title": "Horizon 2020 and Connecting Europe Facility (CEF)",
+    "url": "http://videolectures.net/metaforum2012_rossi_horizon/",
+    "info": {
+        "author": [
+            "Kimmo Rossi, European Commission"
+        ],
+        "recorded by": [
+            "German Research Center for Artificial Intelligence (DFKI)"
+        ],
+        "published": "Aug. 9, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Science->Scientific Research",
+            "Top->Science->Scientific Projects",
+            "Top->Computer Science->Natural Language Processing"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 167,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 1730
+}

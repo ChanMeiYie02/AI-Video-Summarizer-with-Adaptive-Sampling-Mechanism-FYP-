@@ -1,0 +1,21 @@
+{
+    "id": "twuavnsquedkvjyzowigv3cmg7axkisd",
+    "title": "E4 Project",
+    "url": "http://videolectures.net/wete07_zanzola_e4p/",
+    "info": {
+        "author": [
+            "Marco Zanzola, Centro Ricerche Fiat"
+        ],
+        "published": "Feb. 28, 2008",
+        "recorded": "November 2007",
+        "category": [
+            "Top->Science->Scientific Projects",
+            "Top->Business->Networked Organizations"
+        ]
+    },
+    "num_segments": 1,
+    "num_sentences": 312,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 294
+}

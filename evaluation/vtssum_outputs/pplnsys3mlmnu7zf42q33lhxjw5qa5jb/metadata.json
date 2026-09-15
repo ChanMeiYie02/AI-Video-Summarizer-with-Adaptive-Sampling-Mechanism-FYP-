@@ -1,0 +1,20 @@
+{
+    "id": "pplnsys3mlmnu7zf42q33lhxjw5qa5jb",
+    "title": "Entropy of Search Logs: How Hard is Search? With Personalization? With Backoff?",
+    "url": "http://videolectures.net/wsdm08_mei_esl/",
+    "info": {
+        "author": [
+            "Qiaozhu Mei, Department of Electrical Engineering and Computer Science, University of Michigan"
+        ],
+        "published": "Feb. 25, 2008",
+        "recorded": "February 2008",
+        "category": [
+            "Top->Computer Science->Web Search"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 244,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 4606
+}

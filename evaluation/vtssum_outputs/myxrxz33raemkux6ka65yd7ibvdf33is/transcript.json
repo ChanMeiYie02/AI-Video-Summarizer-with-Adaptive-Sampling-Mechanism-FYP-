@@ -1,0 +1,242 @@
+[
+    {
+        "text": "This is a kind of. In part review talk, when I talk about being working for a number of years. I will just called multitask learning. So the first part of the talk is divided into.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Three part first part quite shortly, just. And if you have the topic and then they discuss two recent works and the use of sparse coding, the contents multitask learning. This is mainly a statistical analysis of the method and the last part, perhaps a bit shorter, is an extension of. To multi linear multi task learning which also involves the idea of learning tensors.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So what is multitask learning? I'm. So we have 3 task, so each task is a probability measure. On our deck rozar. But our Dick would be Hilbert space. But just to simplify little bit, here is a very dimensional. A clean space. So, so these distributions are unknown, but I can draw data from each distribution so I can draw a training set for example, which is a is a list of endpoints which we call input output so the input is vector and the output is a scalar. So here the output is a real line, but it could also be. Hey. Set of two labels which is used for binary classification. So to simplify things, you could imagine that each. Is measure is that any? Yeah. Older. Some yeah OK, yeah. So to simplify little bit things, you could assume that each task is linear regression, right? So these measures muti. Of XY, right could be equal to some probability of drawing X times the conditional probability. Just to make it very simple, this could just be deterministic, so it could be the Delta function of some underlying model, some vector, right? Time is X. Minus one. So here the way I generate data from each task, I sample and input and then I determine that output terministic Lee as a linear regression by some vector, right? So you can see the problem is a problem which there are some under underline unknown vectors right? And the goal is to learn from data. Natural algorithm we consider is impeded characterization. Where we take the average over the different task of the average of the empirical error for each task, and then we minimize this quantity of parameters. Yeah right WR for WC Inocente this set here is is the hardware in the method is what is meant to include some prior knowledge about this regression vectors. So this set S encourage some common structure between the different task.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So what is an example of the set S? So an example would be the level set of regularizer, or the converse regularizer. This function Omega? For example, this could be a matrix norm, so in this sense, multitask learning is a problem of matrix estimation matrix regularization. If I choose this function in this way, right? It's not difficult to see that this optimization problem the couples so. Each minimization over WT so there solved in dependently one at a time. So this is what I call independent task learning right? Perhaps this is easier to see if instead of the constraints set here, like this one. You use. Regularizer here which is called tic over Regularizations versus even of regularization, right? So in that case if you take. The regulars will be the sum of function of this type. Then the problem the couples. So this is a good but the point of the method is that independent task learning doesn't work in the setting which we are interested in. So the setting we're interesting is a setting where there are many tasks, so there are many regression problems or many binary classification problems. But there is a very small sample size for each. So if the sample size is small. There is no way that you can independently learn or estimate the underlying model, so you can come up with lower bounds uniform lower bounds. Which say that the performance of the metal that is saying classification is is is bounded away from zero, so it's actually close to 50% right? If you have only a small sample size. So how do we do it? Well, in the.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "As we have thought of or sorry, first let me give you some more motivation about the problem, some applications and then let me explain some examples of of constraint sets over regularizers so well. These are two. Well studied applications which and motivated the work. So the first area is called. The reviews are modeling right? And then you can associate each of these tasks. He should issue this regression problems to one person 1 user and the goal is to predict what people like. So predict people user ratings to products. So here in this area, which is a little area studied in. In also the decision science study from people in Business School and this is how I got interest in this problem. Working with a colleague of mine told also have Daniel work. It works in the Insert Business School, so they have this kind of problem. So they have questionnaires for different users about the preference to computers, let's say. And then there's a vast literature in this field about how to put constraints between the different predictors of different regression problems. Very simple approach, for example is to constrain the variance of the parameter in some way, so the parameters are close to each other. So here also another point, which is I want to emphasize that a special case of this problem is what people call matrix completion. Right?",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So here I want to learn all these vectors. I can think of them as columns of a matrix. Now if my data points.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Right, so if the inputs xti right which.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "You have here adjust elements of the standard basis right? And the outputs are determined by linear regression without noise. I'm just sampling the entry of the matrix, right?",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So in this case, the problem is the problem of. Knowing a subset of the entries of the Matrix, find the remaining entries and there has been a lot of work on this problem both in machine learning and signal processing and very famous application is the Netflix competition. As you probably know. Another motivating application which has been studied quite where multi task learning has been applied quite insensitive is the problem of object detection in computer visions. When you want to detect. So here each task is abiding classification task and each is associated to one object. So it could be the first task is a person detection and the 2nd is face detection. Dog detection, then other kind of visual objects. And so here what idea which has been studied quite a lot, is the idea of. The Blue Multi task learning by learning adjoint representation of of these different. Classification task so the idea is that there is a common low dimensional is represent representation which is discriminative for each of the task. So let me just.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "I believe in more in detail some of these. Methods so and then I will move to some more recent work. So the the first idea of having is. The aggression vectors close to each other. It can be implemented by using quadratic regularizers of this type right? Where you see this is like the various of the parameters and this this. Hyperparameter C says are important. Is this term right? If you use this this this regularizer when.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So here this is the loss function and use the Angel loss right which is using support vector machines. You can also interpret this as. In the following way. So you say that you.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Look for each. So you look, each task is binary classification, so you want to maximize the margin of each task, right? So this is like as you know it is like the inverse of the margin. But you also want to keep the task close to each other. So in a way you compromise individual margin by some. And. You trade off the individual margin of the classifier with it with their variance. The second is that implements the, so it's different and it goes more into the interaction of sparse estimation. So there's been a lot of. They inspiration and influence in this area. And from idea from sparse estimation and compressed sensing. So this is the idea of. Joint sparsity, right? So here with some. So Jay goes for one today, so this is the number of is the dimension of the of the row representation of the data, right? And here we take the sum of the L2 norm. Of of the role of the matrix of task vectors, right? Right, so you can see this is. My matrix which I want to regularize. And here I take the sum of the L2 norm of this matrix. So this encouraged matrix. Which has only few nonzeros, which is another way to say is that so they are aggression. Vectors are all sparse, but the sparsity pattern is contained in this in the same set of small cardinality. But this is what this kind of regularizer will favor, and we can extend this using the trace norm, which has also been used since extensively. So it can be. It can be seen as an extension of these, so the regularizer is like these after you have rotated your your initial data representation. So so here you say that this matrix. A singular values of this matrix have bounded, so this is L1 normal single valued matrix, so this will will favor low rank matrices and you can make this statement more precise, but. Here I just want to have a quick review of this. Of the main ideas. So there has been a lot of work studying these methods. This realization methods both my point of view of statistical. Estimation, and also from the point of view of solving the problem with. In America optimization algorithm. And then the last comment is that in my talk I I focused mainly on linear models, but these ideas also extend to kernel methods, which is another important topic of the workshop, so you can. So as I said at the beginning, so.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So you can assume that the inputs right? So here there is some feature Maps, right? So that the input space is a Hilbert space. So, for example, reproducing kernel Hilbert space and to some extent all this stuff that I'm discussing will work there, but I. I will not cover it in detail. So.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So what I want to discuss in the. In the. Many parts of the talk are two. To new ideas, which in a way.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "The part little bit with this idea of. Coupling. The different task definition problem by low dimensional by say that there is a common underlying or dimensional representation. So here.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "What I want to use is that it is want to exploit the idea of sparse coding. Which is a well developed method in supervised learning which I will discuss a bit more little in a moment. So that idea is very simple. So the idea is that. The way I want to combine these different task is by saying that there is a there is a matrix D which I also call a dictionary right? Which as a property that my regression vectors. My linear predictors are all. Weather presented as as a linear combination of. Of the Dictionary of the columns of these methods, which are the dictionary at elements right? So I say that. So my model is that the regression vectors are all linear combination of some vectors which form a dictionary. So the cases are vector and. And the colors of the dictionary. An gamati is a vector which I also called. Code vector, right? And so I assume I want to encourage sparse vectors. So here for this reason that here I put a bound on the L1 norm. So the way I want, I will learn. We don't ask. Learning is by subtitle. Learn both the dictionary and the code vectors from the from my multisample, right? So this is this is the method, so I take the sum over the task right and then hear what you have inside is the minimum. It is like lasso, right? So this is the minimum of all the. Over gamma on the L1 ball of radius Alpha of the empirical error over the predictor, which is obtained as the times gamma. Right? So I think the average of these last two problems, and then I minimize further minimize over the. Right and there are some constraints of the which are necessary otherwise. There would be no regularization with the constraints are that the columns? All these metrics are all bound by one they'll turn on. So. So this is the the. In the middle of the study. So what is interesting? I notice is that so. So if the dictionary is fixed right? But if somebody tells me that. There is a dictionary D which allows for. For for good sparse linear predictor, right? So when I minimize when I solve this problem, I find a small error, right? How well, if that is true, then this is very good news, right? Because the last so has very good bound. So which depends only logarithmically and in the size of the dictionary so. So here I will be able to have a good estimation of the underlying model. I will have a good size action bound even if the sample size is size. A little bit larger than than than the than. Alpha times the logarithm of the of K right? So if this picture is fixed then you could you can see the just dip it in this battle repetition, but so you can see this method as a loss or with. With this feature map right so because if you can bring the here you can take that joint here. So this is like a lasso with the feature map the transpose X. OK, so here what we want to what you want to do what you want to study. We want to understand if, without knowing the dictionary but having at our disposal all these different tasks, or these different datasets, I can somehow I can learn it actually and therefore I can assure that statistical performance of the method is is as good as the performance of the metal which knows addiction in your priority. Right? So again, if I know the dictionary priority, there is no multi task learning the task and solve in dependently right there is no cap in here. But if I don't know it and I use this method. So my hope is that if I have a large enough number of. A bigger sets of task I can still match the performance of the lasso. Yep. Yeah, so yes it is. Yeah, there are two parameters in this algorithm. One is the size of the dictionary which is specified a priority. Of course an important question is how to choose it. And here we don't have better proposal than Blue Cross validation. The other parameter is Alpha, right? So is the size of that one also. I need to tune these two parameters.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So, so under some conditions this method is nothing else than sparse coding, which. Was originally proposed by or thousand infield. There were two competition but there are two computational scientists. And so they were trying to find. Time. A different way to represent random patches in images, right? So different from principal component analysis, for example. So the idea was that so here in that context you have a bunch of images, so they are for example. Small. Patches extracted from big images in actual images and then you will. So these are the WT in this notation and so that they were trying to find the dictionary which has the property that allows for. It has a smaller construction error, right? As far as modern construction error for say, most of the images that you have. By sparse linear combination of some basis vectors by dictionary elements. So here if so, if we take our method and we take the limit for N going to Infinity, which was the square loss, then we consider this a model here which which I put here. So some. Noiseless linear regression, and also if I assume that the inputs are. I sample from the standard actually solution, so this will be this piece of X. Then it's easy to see that this objective function reduces to the objective function which is using sparse code. So. So here we want to use these in the context of multi.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Ask learning. So, So what I want to say is, is mainly I want to comment made about the statistical analysis of this method, but just to. Lightly presentation just a couple of preliminary experiments where we tried this method. Um, so here we try these, so there's very limited. We tried this on digits on the Dennis datasets. So the first experiment is an experiment where you so you. You choose it randomly 20 characters right and? And then you want to learn to classify this correct so you have 190 binary classification task on all the pairwise classification problems, right? Now based on then you draw. Few images right for each character, but just few so from 10 to 40 here and then you learn the dictionary. And then here it's a little bit different from what I said before, so here you then use this dictionary's representation to do recognition of new characters, right? Say these are. So these adages and some letters, then you take other letters. You test your method on on different characters, and this is the performance of the methods as a function of the of the sample size. So here we notice some. There is some not not small improvement of our method, which is this one. So.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Which is this method?",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Over in. These ones multitask feature learning, so this method will develop with Andreas Agrio. Which is equivalent to trace normalization.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Also some other experiments. On this experiment, the task arm regression problems, right? So this is a different experiment in which each task is associated to one single image, right? And here I tried to do to reconstruct the image, so the input is at the pixels, right? So what I call X is pixel location, the output is a Gray level. And I only know some pixel values in the image right? And my goal is to. Learn a dictionary right which allows for a good reconstruction of all these images. Now when I know all the pixel, this is exactly sparse coding method that I described that we obtain in the limit and hear what is nice to see here is that if the number of task grows right. We match the performance of sparse coding even though we don't know all the pixel values, right? And here are some examples of the. Dictionary elements that our method learns. Whereas these are those learned by sparse coding. As you can see, this looks a little bit better, but. Still, there is quite strong similarity. So. So this may have any payment, but indicate that perhaps the method could be interested in some more large scale application. And so that last comment before describing our. Learning bound. But you can also see these methods as a week's away.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "To. Is a way to make the task more weakly related right? 'cause if we go.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Back to these metals described here. So you say that. So typically what will happen is that so so these methods can also be described as learning a representation which is low dimensional, and then each regression vector is in this part of this local dimensional representation. But typically there will be a dense.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "The vector gamma here will be then so so so this previous method is like, well waving. My hands is like putting an end to know L2 norm here. Whereas if you put an L1 norm and you take 2 task right from the pool of many tasks, so typically you will have that we share only few dictionary elements, so there will only be weakly related. So we expect that these methods could work well. For example, in object detection, when you have a taxonomy of task very large and. Where there could be different groups of task we share only few. Few atoms, so you could have for example, and in fact there has been some work. But I think I.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "I mentioned by Torralba write some more recent work.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "In which they they learned like a hierarchy of. This could be used. In the same way so.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So here. Is our first result so. So our first result gives a justification for the method, and it tells us that. If number of task is sufficiently large, we recover the performance of Lasso, which knows a priority. The good dictionary. So it's a little bit of a big beast to digest, but so let me try to highlight the main points. So first of all, what do we want to bound? So we want to bound this, called the excess risk. So the first term here is the average. Of the expected error. Expected loss right? Average over the task of my learned model, so the hat is a solution of my problem and gamma T hat is the. So this is the hottest additionality hat is the is the learned predictor for the task right? So this is the solution of my problem.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "The solution of this. Optimization problem. And by the way, here I'm not addressing, I'm solving this problem, so this is difficult. So so here is not a convex problem, is biconvex is more. I don't know how to find. Another solution. So this probably has been. Well, not in this format, so this problem has been widely studied literature and people just do alternate minimization, and each step can be solved for example with proximal gradient methods.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "And so the same is here. So this is a solution of my problem. And I compare is performance, so is expected performance with the best possible. Model in the class. So here I take the minimum over the dictionaries in my class. Right, so all matrices which have colors. Columns Lt normally correspond by one and then I take the average of what is here is the is the smallest expected error that I can achieve on the task D using dictionary D. So this second term is the best I can do with my model. So there are no. I don't so something which is important to emphasize that I don't assume that my data are generated. My underline regression vectors are generated this way, so this is so. This bound does not need this assumption. So in this in this sense this analysis is quite different from analysis which has done in compressed sensing on sparse estimation where it is a priore. Assume that there is some underlying sparsity, so here this is not assume. But they want to see if if if the sparsity arises, whether the bounds give some advantage, right? So even though that is correct, this will be very small if there is no noise, it could be even zero. So this bound says that the performance of them, my method will be good because all these terms go to zero when M&T goes Infinity. So in particular, since I assumed to be very large for the moment, I can kind of ignore these two terms may be the only comment is that fish would be much larger than K. Because if she is more than Ki, can just assign one dictionary element, one per task, and this will just be independent task learning. So there will be the method is not interesting, right in that case. Safety is less than K, the method is. Very naive. So if these two terms are negligible, what I end up is is with this term. Now if you have. So this is exactly the bond that you get when you. Let you obtain when you do the lasso. We've lost with. We visited.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Presentation right? Becausw right?",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Because the last amount using the market averages is about which is of the order of the square root of the log K / N. Times the average L Infinity norm of the data. Right, which in this case. So here you have this term, right? And so that's that's about the same. That's about the same quantity, right? So so. So what were the results says? Is that indeed if these very large I recover their data? I match the performance of the loss. Now also the bound is interesting when the input data is high dimensional. Right, and this is reflected by these two constant right? So those S one is the average. Trace Norm of the empirical covariance of the data, so Sigma hottie is empirical covariance for the T. For the input of the inputs of the task right? So if I assume that the data. Is sample from the from the uniform distribution on the unit sphere, so S one is equal to 1 right and S Infinity? You can show as if that is of the order 1 / M right? So this bound gets an additional factor of 1 / M. So in this case the bound is better than learning the task independently by just some rich some. Essentially just aggression. So this is a second comment. And the last comment you can also compare these bounds to similar bounds too. But for test normalization, which as I said is similar to putting here at the L2 norm. So in this case, the main difference is that you don't have anymore the log K term, but you have. I. Root cater for indicator. So there is also an advantage over trace normalization, so if this term is small using this model then. This metal will be advantageous, is expected to be advantageous over. Trace normalization.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "So this part I want to go more quickly through. But so, So what? I just want to apply that we can also. Do a different analysis, which is perhaps a bit more general analysis within the context which is called learning to learn which is. She's a. The nice machine learning family, which was introduced by Baxter and also studied. Ethical study by Baxter, but introduced by throne and. Product in the mid 90s, so this is the idea that the task are not. The terministic, but that are randomly chosen. So in the previous analysis I assume that I had different tasks, different aggression problems, which are fixed a priority, right? So that the underlying distributions are fixed priority. I don't know them. But they are fixed, and so in this context I want to learn a dictionary we performs well on this on this task. So here in this context I choose T task distribution from some meta distributions. So this script epsilon is a distribution distributions, right? But but in this simple model what you could assume is that you have distributions. For which you choose these WT star right? So you choose at random T vectors, right? And these are. Now, based on this, you learn the dictionary, but then you want to evaluate the performance of this Dictionary of that as we saw, is like. Is like a processor is like. Visitation of the data. Write the dictionary you want to evaluate it, or knew task which are sample from under the same law, right? So here we need to change your notion of risk and the way you change it is this way. So what is the performance of the dictionary Overtask sample from this environment? Technical word is for this meta distribution is environment, so you take the expectation of a task sample from the environment. The expectation over this. The choice of a training set for their task, and here this quantity. Is the is the risk so is expected loss of the predictor which is learned by empirical risk minimization using the dictionary D. So this gammas Eddie is. So yeah, I kind of. I run out of ink, but it is the solution of. Apology.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Is a solution of this problem? Please they fixed the is that code factor which solved which solves this problem. So here what you want to.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Troll is. Is the difference between this quantity and the optimal risk? And so anyway, I think I will. I will skip for the description, but the bound is quite similar, except that since you are solving a more difficult problem, the. The you're bound is larger, so the main difference here there is no M right in the previous bound, it was.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "This is due to the fact that you test the dictionary on you and your task. Right? Which are tide to the people to do the training task? Because there are some assembly solution, but they're not the same yeah. Yeah, the other difference is that here you have K outside the root and here you have inside and we don't know if this is probably an artifact of our proof, so we suspect that the cake. Should be inside the route, but so is. We don't know how to solve this. And there's this issue. Yeah. Um? But again, we match the performance of the law, so alright, so let's essentially the same bound another last comment about this bound is that, as I said before, that if if he goes to Infinity and L is the square loss.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "And and you use noiseless linear regression as your task. Then this method is just sparse coding. Now for sparse coding we had previously derived abound in this paper, and they are smaller on the performance of sparse coding. So here you try, so this is. So you try to bound. The average reconstruction error from from vectors sample from some distributions, so it could be my images which I which I want to reconstruct as a sparse convenience. Might my patches right which I want to reconstruct a sparse combination of dictionary atoms? So I want to bound the expected reconstruction error. Of the learning dictionary. By the. By the best reconstruction error in the model. And here we obtain essentially. So taking the limit of, I'm going into the same bound that we had previously found this paper. So, so in a way to summarize, I think I'm going to slow, But so this analysis from one hand. It matches the performance of the last, so we've best at preventing unnecessary and from a harder and it matches. Analysis For sparse coding is bound. So.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "OK, so now I want to and I think I only have maybe 15 more minutes, so this will be a bit faster. Or maybe I'll skip some part. So this is a different topic, which is a bit more practical for more experiments. Is more. Perhaps more related to the whole of the workshop, so more optimization, so here. So we still want to do multi task learning. And here the idea is that. Now the task which so previously the task were associated to one index from one to capital T. So here I want to study the case in which might ask are they identified, associated with multiple index? And here is 1 example so so I have different people. So T1 index the identity of the person and I have different what are called action units. So this is some idea which comes from psychology and so the idea is that there are different facial movements facial. Muscular movements, for example cheek raiser or other ones. So they are about more than 100. Which I want to detect in faces. So what is? And so each task is a regression. Problem is I didn't ask. And it is associated to one person and one specific actual unit. So the input will be an image like an image. Here, and the output is a number between zero, one which says the level of activation of that action unit in that person. So how much the cheek raiser is expressed in this specific image of this person? Right? So I mean, so I have several recognition problems which are indexed by this double index. And there could be more indexes of course. So.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So here, so. So what I want. I want to frame this problem as so leaving matrix regularization problem and going to tensor. Estimation, thanks for regularization problems so I can see my task as a tensor which is a free mode tensor which is still 1 * 2 * D right where again, so the first mode index identity, the second action unit and the third refers to the features to the. To the image right? So here I. So it is like if. Please. I have something like that so. So this is the identity, right? This is the actual unit, and here this third mode. Are the regression vectors, but they're everywhere, so this is the first regression vector. Sorry, this is the second one and. I should have put a picture. This is terrible. Anyway. So. So here somehow we like the idea. All of you want to buy us our model. By saying that this time for us. Can be described by only a few degree of freedoms and the way I do that I want to say that as a low rank. And one attractable way too. Force low rank tensor is we will see is to use. That is called attacker rank right? So I want to control the sum of the rank of each materialization or unfold unfolding of the tensor right? So this cube I can unfold as a matrix in three possible ways, right? I can take. All these fibers, all these columns, and put them one after the other into a big matrix, right? Or I can take? All the fibers for the Delta mode one after the other input matrix and so on. So so all these methods, izations or unfolding contains the same information and as a tensor. By the adjust. Yeah, matrices right? So there are big matrices with. As many rows as one of the dimensions and then the columns will be like T 1 * D For the first mathematics isation. T2 times before the second. Sorry T2 times before the 1st matrix isation 1 * D For the second authorization and. And what is the other one? The other is T 1 * 2 for the third. So here there has been. So this is a little research area where there has been. But a bit of work recently and here I mentioned three key papers. Which arm? In a way they they. They share the same idea, whose idea of using knees, regularizer, which we call the tensor trace norm, is just is the average of the of the trace norm of each materialization. So is the average of the L1 norm of the singular values of each meditation. And so Marco is there. So.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Anne. So in this method indeed works quite well, right? So here. Here is the performance of the methods, right? So here we compare this method with. We also compare with attacker composition using convex approach which tries to encourage low rank tensors, right? So this is very similar to, so this is like the analog between trace norm regularization and low low rank matrix factorization. So the same idea. So both methods works work much better than methods which ignore these more complex structure and just. Say so. This method here ignores the identity of the of the people, so just try to predict the. So each task is to predict the actual unit activation. But this method ignore that the information about the identity of which person is depicted in the image, so they perform significantly worse. So this is good news. However.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "We want to try to do better, but this is just working project work in progress, so it's preliminary results still not published so but we. There is an important difference between trace norm regularization and tensor trace normalization. So you can show very nice result that the trace norm is the convex envelope of the rank within a set right? So and the set is the L1 spectral bodies. Aspects are known to elementwise Infinity normal this is. Is the largest singular value matrix, so you can show using. By computing the double conjugate of this function right and. Using. Some results from matrix analysis which will take the time to describe that the trace norm is the convex function which underestimate the rank, but it is the largest convex function which underestimates rank. Then there doesn't exist any other convex function which is large and the trace down. And others within the set. That's what we find is said. Which is blank. Now, yeah. Very interesting, but we're running out of time, so yeah. But I started in 44 minutes ago, so I think I find more minutes or I think it's less. Banner Clock is faster, I think 5 more minutes. Because it's quarter past. But three more minutes. OK, yeah, so couple of minutes. So the point is that what we can show is that indeed. That answer is known is not a convex envelope. Of the attacker rank right? So what the reason for this is that so here. Yeah, I think it's 2 minutes is.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "So you're taking this function right, which is my non convex function which I want to relax. So the question is which set I consider for my? For my relaxation, the set which I consider.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "Is this set so I wanted the spectral norm of each method. Situation is bounded by 1. So in a difficulty in this analysis that the spectral norm is not an invariant property, so depending which Metra Station will consider the spectral norm can take small or large values and this is what creates the difficulty. So what we propose to do is to do a relaxation. We feel another set. Which is the Frobenius norm now the Frobenius norm of these matrices does not depend on N, so so you have your tensor, you unfold it along one mode. The. From this number, not depends on which model you use, because if Rubinius normally just the sum. Of the square of the elements, right? For me to square. It doesn't depend on which phone you use. So here's our proposal. Nice weather regularizer is the average of the convex envelope. Of the cardinality on the ultra ball of some radius Alpha, so there's additional parameter Alpha. So here what we can.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "So is that indeed. We can show that this function. It is larger than the trace norm within the set where the trace norm is relaxed at some points. Right, so this proves that. The pencil trace norm is not the compass tight collection, which is not surprising because of the difficulty which are indicated. But but also by construction, we can also see that the proposed regularizer is instead always better than the trace norm. On the L2. Euclidean ball by construction. So this does not count, so this new method does not come to say there's a price to pay.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "The person that is more difficult to solve the problem. And here I will skip this.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "But we use the admn method.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "As was also previously used in paper using in. In this paper is using the trace now.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "So. And just to conclude, we results are quite encouraging, so we see that. We get better performance as this is a root mean square error on these different problems as a function of the training set size. And also so as the size of the tensor increases, the completion of time. Our algorithm becomes compatibles only twice. Larger than the completion of time. For the testosterone is not surprising. The reason is that the key burn the compilation of bottleneck of the method is to compute the proximity operator and their major completion of steps within SVD. So when the size of the tensor increases, that SVD is what takes most of the time, so.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "So to conclude, I. I review some recent search activity or multi task learning. So will it ask this problem? Is positive relationship between multiple learning tasks to improve performance over independent task loans under specific conditions. So there are several applications where the method has been used and where there is a dramatic improvement performance just because the sample size is too small. So you cannot solve the task independently. I describe a new method to learn Additionally for sparse coding, multiple task and so the key feature of this method. It matches the performance of the last best priority on Dictionary and finally I. I just cover some Premier results on multilinear multitask learning, where I highlighted the need to study other colors, relaxation which encourage low rank tensors. Thank you.",
+        "start": 1363.0,
+        "end": 1392.0
+    }
+]

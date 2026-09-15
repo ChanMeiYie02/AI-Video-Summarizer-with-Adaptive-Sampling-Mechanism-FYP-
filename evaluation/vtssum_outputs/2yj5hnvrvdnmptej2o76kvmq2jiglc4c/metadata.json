@@ -1,0 +1,20 @@
+{
+    "id": "2yj5hnvrvdnmptej2o76kvmq2jiglc4c",
+    "title": "Old and New algorithm for Blind Deconvolution",
+    "url": "http://videolectures.net/nipsworkshops2011_weiss_deconvolution/",
+    "info": {
+        "author": [
+            "Yair Weiss, School of Computer Science and Engineering, The Hebrew University of Jerusalem"
+        ],
+        "published": "Jan. 23, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Computer Vision->Computational Photography"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 443,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 3052
+}

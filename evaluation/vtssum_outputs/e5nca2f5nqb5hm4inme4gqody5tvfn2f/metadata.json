@@ -1,0 +1,20 @@
+{
+    "id": "e5nca2f5nqb5hm4inme4gqody5tvfn2f",
+    "title": "Identifying 'Influencers' on Twitter",
+    "url": "http://videolectures.net/wsdm2011_mason_iit/",
+    "info": {
+        "author": [
+            "Winter Mason, Stevens Institute of Technology"
+        ],
+        "published": "Aug. 9, 2011",
+        "recorded": "February 2011",
+        "category": [
+            "Top->Computer Science->Information Retrieval"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 234,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3116
+}

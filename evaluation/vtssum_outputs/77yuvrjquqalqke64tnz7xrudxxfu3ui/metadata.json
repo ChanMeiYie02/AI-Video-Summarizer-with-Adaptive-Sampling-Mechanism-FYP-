@@ -1,0 +1,22 @@
+{
+    "id": "77yuvrjquqalqke64tnz7xrudxxfu3ui",
+    "title": "Plenary Session: The Role of the OER Community",
+    "url": "http://videolectures.net/oercongress2017_agbu_oer_community/",
+    "info": {
+        "author": [
+            "Jane Agbu, National Open University of Nigeria"
+        ],
+        "published": "Oct. 12, 2017",
+        "recorded": "September 2017",
+        "category": [
+            "Top->Technology",
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society"
+        ]
+    },
+    "num_segments": 2,
+    "num_sentences": 11,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 303
+}

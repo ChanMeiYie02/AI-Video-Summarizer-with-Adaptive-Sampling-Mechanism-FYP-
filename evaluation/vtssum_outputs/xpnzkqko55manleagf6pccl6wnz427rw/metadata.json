@@ -1,0 +1,21 @@
+{
+    "id": "xpnzkqko55manleagf6pccl6wnz427rw",
+    "title": "Best practices for efficient HPC performance with large models",
+    "url": "http://videolectures.net/prace2013_hoessl_hpc_large_models/",
+    "info": {
+        "author": [
+            "Bernhard Hössl, CADFEM GmbH"
+        ],
+        "published": "Jan. 6, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computers->Software"
+        ]
+    },
+    "num_segments": 87,
+    "num_sentences": 1146,
+    "num_clips_with_summary": 33,
+    "num_gt_summary_sentences": 48,
+    "ground_truth_summary_length_chars": 3388
+}

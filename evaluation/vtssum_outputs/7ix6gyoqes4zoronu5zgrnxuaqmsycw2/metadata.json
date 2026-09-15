@@ -1,0 +1,23 @@
+{
+    "id": "7ix6gyoqes4zoronu5zgrnxuaqmsycw2",
+    "title": "Winner Announcement: Facing 21st Century Disasters Challenge",
+    "url": "http://videolectures.net/challengefuture_ule_novak_mancek_facing/",
+    "info": {
+        "introducer": [
+            "Metka Ule Novak, Challenge:Future"
+        ],
+        "presenter": [
+            "Urša Manček, Zavarovalnica Triglav d.d."
+        ],
+        "published": "April 18, 2012",
+        "recorded": "March 2012",
+        "category": [
+            "Top->Events"
+        ]
+    },
+    "num_segments": 2,
+    "num_sentences": 33,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 157
+}

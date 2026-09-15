@@ -1,0 +1,21 @@
+{
+    "id": "amno57qstjuyqumsejcb7c7534fsmm2n",
+    "title": "Tool-Supported Linguistic Quality in Web-Related Multilanguage Contexts",
+    "url": "http://videolectures.net/w3cworkshop2013_nickel_lieske_contexts/",
+    "info": {
+        "author": [
+            "Inna Nickel, SAP SE",
+            "Christian Lieske, SAP SE"
+        ],
+        "published": "June 19, 2013",
+        "recorded": "March 2013",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 142,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1191
+}

@@ -1,0 +1,21 @@
+{
+    "id": "ypjgvg7oncoc57ppffy3s7kztzrzq73f",
+    "title": "A Flexible Model for Count Data: The COM-Poisson Distribution",
+    "url": "http://videolectures.net/solomon_shmueli_count_data/",
+    "info": {
+        "author": [
+            "Galit Shmuéli, Srini Raju Centre for Information Technology and the Networked Economy, Indian School of Business"
+        ],
+        "published": "Sept. 26, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->Statistical Learning",
+            "Top->Mathematics->Statistics"
+        ]
+    },
+    "num_segments": 58,
+    "num_sentences": 697,
+    "num_clips_with_summary": 25,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 3389
+}

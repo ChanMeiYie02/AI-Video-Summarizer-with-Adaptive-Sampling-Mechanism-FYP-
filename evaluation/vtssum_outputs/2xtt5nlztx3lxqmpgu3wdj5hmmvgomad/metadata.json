@@ -1,0 +1,20 @@
+{
+    "id": "2xtt5nlztx3lxqmpgu3wdj5hmmvgomad",
+    "title": "The Europeana Use Case - Multilingual and Semantic Interoperability in Cultural Heritage Information Systems",
+    "url": "http://videolectures.net/w3cworkshop2013_petras_systems/",
+    "info": {
+        "author": [
+            "Vivien Petras, Berlin School of Library and Information Science, Humboldt University of Berlin"
+        ],
+        "published": "June 19, 2013",
+        "recorded": "March 2013",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 162,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1086
+}

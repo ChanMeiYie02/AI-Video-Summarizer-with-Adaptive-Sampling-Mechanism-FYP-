@@ -1,0 +1,24 @@
+{
+    "id": "bmyv26shpvfhwq4cwasbhd7dd6r6l4os",
+    "title": "New Algorithms for Learning Incoherent and Overcomplete Dictionaries",
+    "url": "http://videolectures.net/colt2014_moitra_learning/",
+    "info": {
+        "author": [
+            "Ankur Moitra, Department of Mathematics, Massachusetts Institute of Technology, MIT"
+        ],
+        "published": "July 15, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->Statistical Learning",
+            "Top->Computer Science->Machine Learning->Supervised Learning",
+            "Top->Computer Science->Machine Learning->On-line Learning"
+        ]
+    },
+    "num_segments": 59,
+    "num_sentences": 160,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1570
+}

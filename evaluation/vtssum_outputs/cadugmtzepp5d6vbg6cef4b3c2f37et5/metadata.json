@@ -1,0 +1,21 @@
+{
+    "id": "cadugmtzepp5d6vbg6cef4b3c2f37et5",
+    "title": "Modeling and Querying Greek Legislation using Semantic Web Technologies",
+    "url": "http://videolectures.net/eswc2017_chalkidis_semantic_web/",
+    "info": {
+        "author": [
+            "Ilias Chalkidis, National and Kapodistrian University of Athens"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 54,
+    "num_sentences": 275,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1192
+}

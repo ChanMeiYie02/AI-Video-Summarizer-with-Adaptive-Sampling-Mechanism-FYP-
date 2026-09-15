@@ -1,0 +1,20 @@
+{
+    "id": "qudazjqtjrl5ejz3hqf5cacdkovmrkjv",
+    "title": "Flexibility and robustness: The cloud, standards, web services and the hybrid future of translation technology",
+    "url": "http://videolectures.net/w3cworkshop2011_nedas_technology/",
+    "info": {
+        "author": [
+            "Eliott Nedas, XTM International"
+        ],
+        "published": "April 22, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 158,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2072
+}

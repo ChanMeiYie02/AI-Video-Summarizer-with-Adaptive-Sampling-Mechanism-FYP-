@@ -1,0 +1,20 @@
+{
+    "id": "cf3xx6kcifsnekjybsmoywiub75qebao",
+    "title": "PET: A Statistical Model for Popular Events Tracking in Social Communities",
+    "url": "http://videolectures.net/kdd2010_xide_lin_pet/",
+    "info": {
+        "author": [
+            "Cindy Xide Lin, Department of Computer Science, University of Illinois at Urbana-Champaign"
+        ],
+        "published": "Oct. 1, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 149,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3701
+}

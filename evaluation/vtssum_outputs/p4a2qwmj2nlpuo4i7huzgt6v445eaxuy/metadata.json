@@ -1,0 +1,20 @@
+{
+    "id": "p4a2qwmj2nlpuo4i7huzgt6v445eaxuy",
+    "title": "The KEEN Universe: An Ecosystem for Knowledge Graph Embeddings with a Focus on Reproducibility and Transferability",
+    "url": "http://videolectures.net/iswc2019_unknown_knowledge_graph/",
+    "info": {
+        "author": [
+            "Mehdi Ali, Institute of Computer Science, University of Bonn"
+        ],
+        "published": "Dec. 10, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 183,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1831
+}

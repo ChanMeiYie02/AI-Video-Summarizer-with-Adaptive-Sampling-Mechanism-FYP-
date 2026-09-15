@@ -1,0 +1,22 @@
+{
+    "id": "2hjd5t2idv3ksw7zemjv2lcs5nvu3xef",
+    "title": "Six Thinking Hats system",
+    "url": "http://videolectures.net/cleanbalkans2011_mulej_sth/",
+    "info": {
+        "author": [
+            "Nastja Mulej, New Moment Ljubljana"
+        ],
+        "published": "May 18, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Social Sciences->Psychology",
+            "Top->Social Sciences->Education",
+            "Top->Business->Leadership"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 529,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 944
+}

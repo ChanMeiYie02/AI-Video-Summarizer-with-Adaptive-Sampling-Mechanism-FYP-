@@ -1,0 +1,20 @@
+{
+    "id": "febrtxogoqnrzkxbvrszkkiyyxaqflwu",
+    "title": "Text Mining and Light Weight Semantics",
+    "url": "http://videolectures.net/active09_grobelnik_tmlws/",
+    "info": {
+        "author": [
+            "Marko Grobelnik, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Oct. 20, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Text Mining"
+        ]
+    },
+    "num_segments": 78,
+    "num_sentences": 1089,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 3145
+}

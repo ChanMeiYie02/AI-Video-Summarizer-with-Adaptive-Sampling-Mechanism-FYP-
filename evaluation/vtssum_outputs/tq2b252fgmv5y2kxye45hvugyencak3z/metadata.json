@@ -1,0 +1,21 @@
+{
+    "id": "tq2b252fgmv5y2kxye45hvugyencak3z",
+    "title": "Influence and Passivity in Social Media",
+    "url": "http://videolectures.net/ecmlpkdd2011_romero_influence/",
+    "info": {
+        "author": [
+            "Daniel M. Romero, Center for Applied Mathematics, Cornell University"
+        ],
+        "published": "Oct. 3, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Social Media",
+            "Top->Computer Science->Network Analysis->Social Networks"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 194,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2251
+}

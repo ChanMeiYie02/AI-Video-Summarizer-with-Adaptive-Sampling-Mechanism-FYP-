@@ -1,0 +1,20 @@
+{
+    "id": "jjvt4h4yqhfmtsspfw2rwq2ituege5kt",
+    "title": "Workshop on semantic search - Exploring the Knowledge in Semi Structured Data Sets with Rich Queries",
+    "url": "http://videolectures.net/eswc08_umbrich_wss/",
+    "info": {
+        "author": [
+            "Jurgen Umbrich, University of Karlsruhe"
+        ],
+        "published": "Aug. 16, 2008",
+        "recorded": "June 2008",
+        "category": [
+            "Top->Computer Science->Semantic Search"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 285,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2155
+}

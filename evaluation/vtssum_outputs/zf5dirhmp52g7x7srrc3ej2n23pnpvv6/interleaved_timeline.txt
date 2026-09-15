@@ -1,0 +1,224 @@
+[0.0s - 29.0s]
+Thank you for the introduction. This is joint work was to be as violent, passion, live and live coverage. About image retrieval for image based localization. So let me first start by defining.
+
+[29.0s - 58.0s]
+Image based localization is we're given a novel query image and want to know where it was taking an from which direction we were looking.
+
+[58.0s - 87.0s]
+In our case, we modeled the scene using a 3D point cloud and we're interested in obtaining the camera pose of the imagery.
+
+[87.0s - 116.0s]
+To that point, cloud. And to estimate the.
+
+[116.0s - 145.0s]
+Cause we need correspondences between 2D image points and 3D points in the model. And.
+
+[145.0s - 174.0s]
+Actually, the point cloud is obtained from structure for motion, so we can associate every sweetie point with multiple image descriptors. So we basically have to solve a descriptor matching problem. There are two popular ways to do so. First one is to do an intermediate material step which benefits from the scalability.
+
+[174.0s - 203.0s]
+Retrieval, but it has been shown that not the results that you get are not optimal or not.
+
+[203.0s - 232.0s]
+If you are an what's currently done in most works, is direct connection like you directly try to match the descriptors from the image against scripters of the three points. And this does not scale well, but it gives you state of the art performance.
+
+[232.0s - 261.0s]
+I have this scalable method, so this talk will have a look at the cost for this gap in performance and how to.
+
+[261.0s - 290.0s]
+So first I will give you a short overview about two image based localization techniques, one image retrieval based on direction based. Then we will look at the reasons forces captain forms and I will show you simple way how to close it. In the end I will quickly talk about efficiently establishing correspondences between a query image in a database image.
+
+[290.0s - 319.0s]
+Now image retrieval for localization. This is the pipeline proposed Bashar and others at CPR 2009. Starters query image. And assign its features to visual words.
+
+[319.0s - 348.0s]
+For every visual word you have the inverted file entry and he used that inverted file index to add.
+
+[348.0s - 377.0s]
+Weights or score?
+
+[377.0s - 406.0s]
+Stupid databases.
+
+[406.0s - 435.0s]
+So there's one specialty here, because every inverted file entry corresponds to 3D point and see. So all the features in the database images that during Reconstruction did not yield a 3D point or ignored. Now, as soon as you have.
+
+[435.0s - 464.0s]
+Finish scoring you rank the images based on this course and.
+
+[464.0s - 493.0s]
+Only the top K rank images are considered for further processing. And also.
+
+[493.0s - 522.0s]
+We will see a top ranked image. You do a feature match.
+
+[522.0s - 551.0s]
+In between the query image and the database image, and since you know that every feature in database image corresponds.
+
+[551.0s - 580.0s]
+So sweetie, point, you end up with those 2D to 3D correspondences that you need to run post estimation or just.
+
+[580.0s - 609.0s]
+Using ransack and an endpoint post output. And you repeat that.
+
+[609.0s - 638.0s]
+Same procedure for all toprank images and.
+
+[638.0s - 667.0s]
+Post of the fairy images and the post was the most in lives. All.
+
+[667.0s - 696.0s]
+Or image direct matching approach from CI CD last year is similar in the sense that also used visual vocabulary. Some offline stage we first assign the descriptors of the 3D points to the visual words and now every inverted file entry also contains a safe trip. So all the black points inside this visual world are representative descriptors. If we have another query image, we again assign its feature to visual word.
+
+[696.0s - 725.0s]
+Then try to do try to find its nearest neighbor.
+
+[725.0s - 754.0s]
+3D points which you can easily do because you have the.
+
+[754.0s - 783.0s]
+Descriptors so.
+
+[783.0s - 812.0s]
+We then spent devilish correspondence between the query feature F and its nearest neighboring through the point P. If the descriptor distance to nearest neighbor is sufficiently smaller than the descriptor distance to 2nd nearest neighbor, which is the well known sift ratio test and again.
+
+[812.0s - 841.0s]
+The post is estimated using ransack and endpoint post output. Now.
+
+[841.0s - 870.0s]
+The drawback.
+
+[870.0s - 899.0s]
+Of direct matching is that we have to keep those sift descriptors in memory of all times, which in the scalability. Also we have to do descriptive distance computations for every inverted file entry. So what we would like to do as a torch in the beginning is we would like to have use image retrieval but to get good performance we have to close this registration form and scan. The reason for this gap is very simple because he only can estimate a valid camera pose.
+
+[899.0s - 928.0s]
+Or create image if one of the top ranked images depict.
+
+[928.0s - 957.0s]
+Same scene. If image retrieval is not able to rank relevant image high enough, we will miss. We cannot estimate the pose. So.
+
+[957.0s - 986.0s]
+Let's look at our voting stage of image retrieval, because this is responsible for the ranking. So we have now this.
+
+[986.0s - 1015.0s]
+Red stock very feature and we can basically classify all descriptors on inverted file entries in its original word into two category.
+
+[1015.0s - 1044.0s]
+These first one are those descriptors belonging to the same 3 point, so their inverted file entries will yield votes for relevant images. So votes that we would like to use.
+
+[1044.0s - 1073.0s]
+All the other descriptors belong to different 3D points, so if we use those inverted file entries to vote. We will vote for images that are not relevant to the query, so we would like to get rid of those. So what we would like to do is some sort of selective voting keep only.
+
+[1073.0s - 1102.0s]
+Correct votes discard the incorrect ones. That's a very simple idea. So how can we do that in practice? I will present you two possible approaches to possible implementations of selective voting.
+
+[1102.0s - 1131.0s]
+First one is called correspondence voting and inspired by direct matching. The idea here is that we again use descriptors and we use the idea that every query feature can correspond to at most one 3D point in C, and we try to find that point now it might happen, or in this case it happens that. Of the. Multiple descriptors of same 3 point are meant to say magic word. To simplify things we see.
+
+[1131.0s - 1160.0s]
+To replace him by the mean descriptor. Not you.
+
+[1160.0s - 1189.0s]
+Sing all descriptors.
+
+[1189.0s - 1218.0s]
+Stored in this special word, we find the two nearest neighbors again apply the SIFT ratio test and.
+
+[1218.0s - 1247.0s]
+The situation test is passed. We will simply vote for those images observing the nearest neighboring 3.0 and we use a very very simple weighting scheme by simply adding a weight of 1 to those database images. So nothing fancy here. Um, OK. This assumes that. The incorrect votes are really the cause for this performance gap, so let's evaluate that experimentally. We do that.
+
+[1247.0s - 1276.0s]
+Two datasets on Novolog data set which was reconstructed using around 3000 images taking in the historical inner city of often in Germany. What you can see here, all the red points correspond to camera positions. And the Vienna data set, which was first introduced by Sharad others and has since then been used in multiple works on image based localization and the data set will be available at our website. The links on the paper so you don't have to memorize it for the on data set we took around, we took 369 images using a mobile phone and you set up the query.
+
+[1276.0s - 1305.0s]
+So let's first compare all the performance of direct matching with image retrieval using TF IDF weighting for A to get the RE ranking can see there is there's significant gap in the number of images that can be reduced it using direct matching and imagery. So for example for the entire data set, 9% of all the query images can be reduced with using direct matching but not with image retrieval. Shar at all proposed different scoring scheme, which I'm not going to explain.
+
+[1305.0s - 1334.0s]
+Here, which gives you better results, but still are still.
+
+[1334.0s - 1363.0s]
+Significant gap even when considering the top 10 ranked images. Now if we use correspondence voting to get rid of many wrong or incorrect votes, we are not only able to close this gap in performance, actually get better performance in direct match, so this clearly shows that handling incorrect words is crucial together. Good ranking. And you what you also see said. Image retrieval works better with a large vocabulary. The reason is very simple, because using a large vocabulary you can get rid of many incorrect votes. That's one thing that's interesting to see here is that. What that corresponds voting does is it uses those correspondences harmed by direct matching and use them to vote for images. So it's at first glance surprising that it performs better than direct match. But the reason I said after the voting stage we map we matched the features in the query image against the features in the relevant database images and the way that we implemented that. We're able to recover correspondence. Is that our loss to direct matching due to quantization, so there's reason why it performs better. So. Everything is fine. We're showing you I've shown you how to get better rankings. We're done here.
+
+[1363.0s - 1392.0s]
+Unfortunately, it's not that easy. 'cause corresponds. Voting is in terms of scalability. In in no way better than direct matching because we basically do the same thing we do. We have to keep the sifter scripter.
+
+[1392.0s - 1421.0s]
+In memory we have to do distance computations, so we do not gain scalability. And as I said in the beginning, very interested in scalable method and it turns out solution to get scalable selective folding scheme has.
+
+[1421.0s - 1450.0s]
+It's already been presented in 2008. She grew it all an the buzzword here is having better idea said. Instead of using SIFT descriptors, use small binary strings which you obtain by projecting sift descriptors to a smaller dimensional space using a random projection function and then thresholding them for every visual works. In this case all descriptors below.
+
+[1450.0s - 1479.0s]
+This threshold have their first bit set to 0, all the features to the right of that which threshold has the second bit set to 0. Now to restrict the votes, we simply compare the binary strings using Hamming distances so. This example setting in Hamming distance threshold of zero, we would only vote for images observing those having those four inverted file entries so.
+
+[1479.0s - 1508.0s]
+Simply add a way to form to those four images. Notice here that we actually also do an incorrect vote because we cannot distinguish that anymore, so.
+
+[1508.0s - 1537.0s]
+Let's look at the performance of Hemming voting compared to correspondence voting to hear, see see here is if you do not use enough dimensions, get much worse.
+
+[1537.0s - 1566.0s]
+Thoughts, but finally?
+
+[1566.0s - 1595.0s]
+When you use.
+
+[1595.0s - 1624.0s]
+64 dimensions or 64 bits. You get results that are nearly the same as correspondence vote, and there is 1 interesting thing to see here based, and this is that for 32 bits and 64 bits you get better performance if you use 100,000 bushel words then when you use the final vocabulary. The reason here said having embedding or having votings able to get rid of most incorrect vote so you benefit from the fewer quantization errors that are introduced by the course of vocabulary.
+
+[1624.0s - 1653.0s]
+Now if you compare Hemming voting in correspondence voting when we use 64 bits, we need 16 times less memory. So this method will scale to larger datasets more easy. Now we still have to do a distance computation, But the nice thing is that modern CPUs can do Hemming distance computations really fast, so we can do about a million distance computations into milliseconds. So we do not really use lose time.
+
+[1653.0s - 1682.0s]
+Um? There is a small additional cost for Hemming voting because we have to project and threshold the features found in our test cases. Those were on average 23 milliseconds so we can still live with that. There is a small drop in performance. But if, since we're interested in scalability, we're glad to praise the price.
+
+[1682.0s - 1711.0s]
+OK, so so far we have looked at the voting part of retrieval of showing you how to get better rankings using selective folding, but the overall performance and runtime costs also depends on the feature missing and post estimation stage. So far we've done a very costly feature matching which builds a KD tree.
+
+[1711.0s - 1740.0s]
+Other features in the query image and use that KD tree to establish the matches which. Introduce additional times when we are interested in fast execution times. Would like to get something faster and more simple. And I do.
+
+[1740.0s - 1769.0s]
+We would reuse matches that we found in the voting stage, but the problem here said for many database images that are relevant, we do not find enough chorus.
+
+[1769.0s - 1798.0s]
+The reason is that we do this quantized matching only search for the query feature. We only search its visual word for corresponding points.
+
+[1798.0s - 1827.0s]
+And if the same 3D point is mapped to a different word for database image, we will lose that correspondence. But still we would like to reuse this data structure of Qantas matching 'cause very simple. You don't have to build special tree or anything so.
+
+[1827.0s - 1856.0s]
+There's a simple solution to that. Simply use the cause of Cavaleri and if you build that on top of the final one, you have no additional assignment costs because you know that that very feature here belongs to the smaller visual word. On the final level, thus automatically belongs to the larger which word on the corsola. So let's compare the performance, but.
+
+[1856.0s - 1885.0s]
+Queen's analysis matching and quantized matching using SIFT descriptors and binary strings. Here we use 100 words.
+
+[1885.0s - 1914.0s]
+And what you can see is that there's nearly no difference between the number of images can be registered using regular sift matching Qantas if matching my quantized Hamming matching is 3 to 4% worse.
+
+[1914.0s - 1943.0s]
+At the same time, Qantas matching is much faster, so especially if you use binary strings, nearly three orders of magnitude faster, but unfortunately.
+
+[1943.0s - 1972.0s]
+The speedup comes at the price of finding more incorrect votes which drive up your answer times. In case that post can be estimated or cannot be estimated but still quantized. Sift matching is in most cases faster than regular suspension. So before I conclude the talk I want to show you an observation that we had when comparing quanta sifting.
+
+[1972.0s - 2001.0s]
+Test having match 'cause what you?
+
+[2001.0s - 2030.0s]
+It's used if you use cost vocabulary. Get about Qantas if matching is much better than contest image. If you use 1000 words they performed about.
+
+[2030.0s - 2059.0s]
+Same.
+
+[2059.0s - 2088.0s]
+And if you use 10,000 visual words and Qantas Heming matching suddenly much better than Qantas if match. The reason for that is.
+
+[2088.0s - 2117.0s]
+At Qantas, if matching tends to find more incorrect course correspondence is when you use the final vocabulary when she can see when looking at the in liar ratios. In case it post could be estimated. While you get the opposite behavior for.
+
+[2117.0s - 2146.0s]
+Quantized Hemming matching 'cause here you get? More incorrect matches when you use the final vocabulary. So.
+
+[2146.0s - 2175.0s]
+So to conclude the talk, but I've shown you said the major reason for the gap in performance between direct matching and image retrieval based say handling of incorrect bolts. If you try to avoid them, you get much better performance for image retrieval and having voting or hamming embedding is a very simple way to do so. It's very fast, you have little additional computational overhead, little memory overhead, so can only advise you to use that if you do image retrieval. So you end up with a scalable image based localization method. Also talked a little bit about. Making the correspondence selection more efficient, but clearly we need some of future research on that to get better matches to speed up transactions. Yeah, thank you for your attention. Do you have any questions?

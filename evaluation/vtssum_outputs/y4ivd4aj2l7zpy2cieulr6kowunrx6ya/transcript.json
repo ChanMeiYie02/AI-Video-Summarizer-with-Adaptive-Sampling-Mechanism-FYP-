@@ -1,0 +1,122 @@
+[
+    {
+        "text": "Hi, my name is Luca. Now present the alert project alert is short for active support and real time coordination based on event processing influence development flow stands for Free Libre open source software.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "OK, Open source developers are located all over the world or so they need different communication channels to interact with each other. So to exchange information on bug reports they have. On systems like monkeys, bugzilla, launchpad. Or",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "I use source code management systems for code commits and for describing changes. Mailing lists are used for open discussions, and wikis are used as platforms for providing user support.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Um so. In order to. Look deep into an issue or something like that. The user has to open many tabs and use different search interfaces. Cause problems. So.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "The alert system integral integrates all of the previously mentioned information sources. We monitor code tracking system, source code management systems, forums, mailing lists and weakness. We extract information from structured and unstructured sources and provide an advanced search capabilities.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Trust all these sources. We provide automatic methods for things like finding duplicate bugs, bugs. And suggesting issues for a developer and provides subscription mechanisms so that the user can be notified when something relevant to him happen.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "This is the basic architecture of the system. Here on top we have sensors which send information to two knowledge extractors. One is from structured sources and from unstructured sources. This one is able to extract method names and such things from commits. And the other one is able to extract entities from pure text. They both store the information in a knowledge base. Then we have three services who pass that information to the user. First is the recommendation service. This one keeps profiles of all the users. And is able to suggest a developer who can fix an issue or an issue which might be appropriate for some developer. The event detector lets the users subscribe to particular topics so that if they would only like to hear about Bluetooth they will only be notified about Bluetooth. And the search and visualization service offers an interface for searching and visualizes results.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So as the search service, it provides the ability to search across multiple information sources. Now first for conceptually different search options.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "The first is general search. Here the user can enter plain keywords in the top text field and the matched results will be shown. They can also choose whether they would like to sort by date or by relevance here on the bottom text box they can enter people and only posts and mails related to those people will be shown. They can filter by information source and by that. Hi. The.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "2nd is duplicate issue detection. Here the user enters an idea of an issue and then at least is displayed ranked by similarity. The similarity is also displayed so then they can see what this issue is. I don't know 70% the same and they can take a look at them and determine if it's in fact the duplicates.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Then have issues related to a developer's code where. The user may search for issues they may have cost.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "The last one is suggest issues for a developer. Here the user can enter name of person and then some issues that they might be able to fix are displayed.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "The system visualizes the results in five different ways.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Here I have all of them, the most basic one is a list of results. Then we have the details where the. So the full content of a male is shown or whole thread. We have a social graph attack cloud in the timeline.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "OK, so first is the. List list of items. This one just displays the author date. Subject short content and optionally similarity. Depending on the type of.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Search next is item details. This one can display a full content of an item or the whole threads depending if an item is part of a threaded message.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Next is a timeline. This one shows the distribution of results overtime, so the user can spot periods of high and low activity.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Next we have the social graph. We can see who interacted with who in the results of people that are larger, send more posts and probably more acknowledge about this field. And we can see who who sends what who. So these are developers talking. Yes developers.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "The last is attack cloud. This one just displays the most the most common words in the results.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "That's it, I prepared an example, but I can show you if you like. OK, so this is the user interface and here I can. Once. Data for about a year, and. That's pretty much that stuff or some of the projects are. For Caddy, but it's just a small piece of data. OK, so I'll. I can talk type here. I don't know if you or if somebody has a better suggestion. So then here we see a list of items. We can see this one is. Bug that one is a source code commit. We can click here and we get nothing back, but we should. So here some. Uh-huh look here. We have a whole thread for an issue. This was what the first person said and then we have all the comments. We can see.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Social graph. Here and this.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "The word cloud. The timeline. Here we have actually I had a good example here. So.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Yes, if we search for duplicate issue detection. You can get results like. Here is 86% and this is almost certainly a duplicate. So then the user can view the tool which is compare them and. The thermal. So the point is in this on these large projects. Same issues can appear as multiple sources. Sports this actually. The same, but maybe. Can you maybe show one more example? There are.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "I could show here, but only the first 2 tabs are working. We were waiting for some partners for the 2nd to type so. What is it so it's? Interface switch for management. So the fact is having a diploid is once it's in place. Yes. Project is pretty much in the last station now please. OK, that's it.",
+        "start": 667.0,
+        "end": 696.0
+    }
+]

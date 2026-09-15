@@ -1,0 +1,136 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.000 --> 00:00:11.590
+Hi, in this video I will show you how we can work with the track elements from JavaScript,
+
+00:00:11.590 --> 00:00:18.440
+just to know which track has been loaded and which track is active.
+
+00:00:18.440 --> 00:00:25.390
+For that, we will manipulate different properties of the HTML track element from JavaScript.
+
+00:00:25.390 --> 00:00:32.480
+The first thing I am going to do is to add a small div at the end of the document for
+
+00:00:32.480 --> 00:00:42.280
+displaying the different track statuses. I added a div here called trackStatusesDiv with a
+
+00:00:42.280 --> 00:00:48.219
+heading... I am going to add some CSS to visualize this area.
+
+00:00:48.219 --> 00:00:56.379
+So like that, we will have the description of the track here. I added a border and some
+
+00:00:56.379 --> 00:01:02.070
+margins and so on. From JavaScript, we can not do anything before
+
+00:01:02.070 --> 00:01:16.450
+the page has been loaded, so I am adding a window.onload listener, and all the treatments
+
+00:01:16.450 --> 00:01:24.380
+will be in this function. So the first thing I am going to do is get these track elements
+
+00:01:24.380 --> 00:01:34.939
+here... and I am going to get them in a variable called htmlTracks. So how can I get them?
+
+00:01:34.939 --> 00:01:44.679
+I'm going to stop the automatic refresh on JSBin for the moment.
+
+00:01:54.800 --> 00:02:05.600
+So, querySelectorAll is a function that will return a collection with all the tracks, an array with all the tracks,
+
+00:02:05.600 --> 00:02:18.099
+all the HTML elements. So there, I am going to call a function called displayTrackStatuses
+
+00:02:18.099 --> 00:02:32.730
+that I write here. I will first iterate on these tracks and display
+
+00:02:32.730 --> 00:02:38.550
+in the console the different values. So we are doing a loop.
+
+00:02:38.550 --> 00:02:54.190
+I will first just display something in the console.
+
+00:02:54.190 --> 00:03:13.250
+I am going to add a current track, it will be easier.
+
+00:03:13.250 --> 00:03:20.349
+So, I can write currentTrack.label for example, that will display the value of the different attributes.
+
+00:03:20.349 --> 00:03:23.980
+This is just for checking that my code is OK.
+
+00:03:23.980 --> 00:03:31.409
+So I open the console, I have got one error...
+
+00:03:31.409 --> 00:03:37.540
+So if I click here "Run with JS" I can see that it's working.
+
+00:03:37.540 --> 00:03:46.019
+What I can display is the label, I can also display the kind... you remember the kind: subtitles,
+
+00:03:46.019 --> 00:03:52.950
+subtitles, chapters for the different tracks subtitles, subtitles and chapters and I can
+
+00:03:52.950 --> 00:04:07.980
+also display the language with srclang. So English, Deutsch (for German).
+
+00:04:07.980 --> 00:04:17.359
+I can also display what is called the status. It is readyState, this is a property you can
+
+00:04:17.359 --> 00:04:25.419
+use only from JavaScript. It says that for track number 1, the value is 0, for track number 2 is 2,
+
+00:04:25.419 --> 00:04:31.000
+for track number 3, it's 0. 2 means that the track is loaded and 0 means
+
+00:04:31.000 --> 00:04:37.080
+that the track is not available. So we've got the first track, the English
+
+00:04:37.080 --> 00:04:44.370
+subtitles are not available: status readyState 0 and we've got the German subtitles that
+
+00:04:44.370 --> 00:04:53.190
+have been loaded because is has the default attribute, and we showed that in Google Chrome
+
+00:04:53.190 --> 00:05:00.400
+the track with the default attribute is loaded when the page is loaded.
+
+00:05:00.400 --> 00:05:10.810
+So this is how we can consult the different statuses of a track from JavaScript.
+
+00:05:10.810 --> 00:05:19.210
+I am going to copy and paste some code for just displaying this in a nicer way here.
+
+00:05:19.210 --> 00:05:26.680
+So, this is how we can display the different statuses and I can add a button that will call this
+
+00:05:26.680 --> 00:05:45.419
+just to refresh the different statuses. Let's add a button, we call it refresh, and
+
+00:05:45.419 --> 00:06:01.800
+when we click on it, we will call displayTrackStatuses. If I click here... just checking there is no errorâ€¦
+
+00:06:01.800 --> 00:06:09.580
+it will refresh this thing. So now I am going to try this code with Safari;
+
+00:06:09.580 --> 00:06:17.419
+because you remember Safari has a menu for changing the different tracks. I prepared
+
+00:06:17.419 --> 00:06:26.990
+that already, so here I can start playing the same video that has Deutsch subtitles loaded
+
+00:06:26.990 --> 00:06:33.490
+by default, you can see that here. If I choose English subtitles now, and I refresh
+
+00:06:33.490 --> 00:06:42.630
+track statuses: you can see that the English subtitles are loaded now and the Deutsch subtitles
+
+00:06:42.630 --> 00:06:49.750
+are also available. So, we are going to use these different attributes
+
+00:06:49.750 --> 00:06:57.460
+for forcing some tracks to load programmatically from JavaScript and this will enable us
+
+00:06:57.460 --> 00:07:04.539
+to make a sort of menu for choosing the different tracks. I will explain that in a next video.

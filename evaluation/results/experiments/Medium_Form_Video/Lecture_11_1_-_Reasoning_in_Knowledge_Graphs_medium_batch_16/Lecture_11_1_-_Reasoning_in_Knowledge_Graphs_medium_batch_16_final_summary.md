@@ -1,0 +1,11 @@
+# Final Multimodal Video Summary
+
+This video introduces the concept of reasoning within knowledge graphs (KGs) using embeddings, starting with an overview of the field and a review of knowledge graphs. The main objective is to explore how to perform complex reasoning, such as multi-hop and logical queries, within these structures to make complex predictions and answer arbitrary questions.
+
+The session defines the task of knowledge graph completion, which involves predicting missing relationships in a graph. To achieve this, the system leverages embeddings to enable navigation and reasoning within the knowledge graph space. The demonstration uses a specific biomedical knowledge graph containing entities such as drugs, diseases, adverse events, and proteins.
+
+The core discussion differentiates between two main query types: one-hop queries, which involve traversing a single relation from a starting entity to find an associated fact, and path queries, which involve chaining multiple relations sequentially to answer multi-hop questions. The system can handle complex queries expressed in natural language or graphical structures, such as identifying proteins associated with adverse events caused by a specific drug.
+
+However, a significant challenge arises because knowledge graphs are often incomplete, and computationally traversing them to find specific answers becomes extremely costly, as the number of possible paths explodes exponentially. The system must overcome this computational hardness.
+
+To address this, the proposed solution is "predictive queries." Instead of explicitly imputing missing edges and then traversing the graph, this approach formulates queries as predictions, allowing the system to implicitly impute missing knowledge. This method generalizes the one-step prediction task into a multi-step prediction task, enabling the system to answer arbitrary path queries over incomplete knowledge graphs. Ultimately, the key shift in approach is focusing on predicting the correct entity as the answer, making the system robust to missing relationships and capable of answering complex queries effectively.

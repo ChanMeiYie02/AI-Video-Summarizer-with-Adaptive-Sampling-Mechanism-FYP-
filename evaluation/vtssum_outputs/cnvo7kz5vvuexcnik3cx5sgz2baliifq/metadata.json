@@ -1,0 +1,21 @@
+{
+    "id": "cnvo7kz5vvuexcnik3cx5sgz2baliifq",
+    "title": "Algorithmic Patrol: The Futures of Predictive Policing",
+    "url": "http://videolectures.net/lawandethics2017_wilson_algorithmic_patrol/",
+    "info": {
+        "author": [
+            "Dean Wilson, University of Sussex"
+        ],
+        "published": "July 24, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Data Science",
+            "Top->Social Sciences->Law"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 425,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 2039
+}

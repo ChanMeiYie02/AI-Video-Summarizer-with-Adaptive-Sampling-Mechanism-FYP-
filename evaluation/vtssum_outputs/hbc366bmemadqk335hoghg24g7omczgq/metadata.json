@@ -1,0 +1,21 @@
+{
+    "id": "hbc366bmemadqk335hoghg24g7omczgq",
+    "title": "Automated detection of chaotic and oscillatory regimes",
+    "url": "http://videolectures.net/mlsb2010_silk_ado/",
+    "info": {
+        "author": [
+            "Daniel Silk, Theoretical Systems Biology Group, Imperial College London"
+        ],
+        "published": "Nov. 8, 2010",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Bioinformatics->Computational Systems Biology"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 146,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1663
+}

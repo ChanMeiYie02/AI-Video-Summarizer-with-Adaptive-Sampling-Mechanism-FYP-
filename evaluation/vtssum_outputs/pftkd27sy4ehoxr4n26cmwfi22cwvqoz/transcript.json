@@ -1,0 +1,62 @@
+[
+    {
+        "text": "Hello, my name is yes, not vantage and I am presenting a joint work with Luca Braddish, can mutation or zhitnik on near real time translation mode detection based on accelerometer readings.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Our motivation was, well, there exist APIs there that already support fine grained classification of non motorized forms of transportation, such as still walking, running, cycling in vehicle. However, this is not enough for tracking and routing purposes, specially in use cases for urban environments where. Public transportation can represent a good alternative too. Private vehicles, so here are two examples of how routes suggests routes change depending on the transportation mode on the right side there is. Example for how to get from Jsi to faculty of Computer and Information Science by bus, and on the left side is how to get there by car. We have also buy foods. No, because there is no space but here this parts are. You should go there by food because there is no direct. You never walked. Not yet.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "However, there is a solution. Most smartphones have built-in sensors that. That measure various environmental conditions such as accelerometer, accelerometer, that measures acceleration. Gyroscope measures still think, and how the phone is oriented, and they do that with quite high frequency and precision. And therefore they are useful in monitoring 3 dimensional. Device movement, positioning and users activity.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So our data input were accelerometer readings. We chose accelerometer data over the GPS signal because it uses less power so it preserves battery life. It is it needs less additional information such as gsy information on trains on train routes and stations. And also it is more reliable because GPS receivers are typically very shielded during the activities. Um so. We measured the acceleration in three physical axes with sampling rate of 100 turds and we collected approximately 1220 hours of traveling data with the following distribution in the classification process. We didn't use the data on we collected when driving a motorbike because there are simply not enough data to do the classification on.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "In the first step of preprocessing, we split the recorded signal into smaller pieces. We do that because we want to reduce the computation time and complexity and also reduce the data usage and power consumption.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "The other step is gravity estimation, as the readings are correlated with phones orientation, as the gravity is measured together with the dynamic acceleration which we need to do there. Classification. So we take the average of all measurements in one second interval and then just subtract it from the data. And this we do that on each of the axes and on the left side there are Rd data and on the right side there are preprocessed data gravity. We don't need gravity as it is it's constant and it depends on the orientation of the phone. So we don't want. That would be a distraction.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "And on the pre process data we we computed some statistics that were our features such as mean, variance, skewness, 5th percentile in 95th percentile and we also did the same statistics on the examples where. Acceleration was greater than zero. That means that the device was accelerating, and on the examples that acceleration was negative, as this means we were stopping. And for a classifier we used support vector machine classifier from human are. We did at two different classifications. First was binary, one versus all, which means that we used one class as a positive example and the other one as the other samples were negative examples and we did. Another binary classification where we used all pairs, meaning one class was positive example another one was negative and all others were filtered out. And then we combined the the. Predictions from all the binary classifiers. To obtain a multiclass classification, and we, as a measure of. Which class is more probable? We used distance between the separating hyperplane and the test sample.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "And now I would like to focus on the evaluation results.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "In the first binary classification, one against the rest. The results were. Not so good in terms of recognizing. Buses and trains from all the other. Turns Portation modes, however, we can nicely detect cars. And for to get this result we used 10 fold cross validation and we used it for other. Examples also. Um?",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "In the all pairs classification we got better results. The first number is classification accuracy and the other one is. F1 score specially for. Cars, they are nicely separable from both other classes, whereas buses are the most confusing two to the classifier. Like train might be a bit of a redundant class to be predicting, couldn't we just? Look at where the train lines are, and it's probably not a car that's driving on the train tracks, right? Yes, that would be possible, but we did. We didn't have that GIS information yet at the time, and I'm not sure we have the principle. We can get it, yeah? 99.99 Except the suicidal. And except if there is a. Or if there is a Rd next to the train rails, it would also get confused, sometimes possibly. But you can average over over the trip, right? Yeah. We already do that so.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "And for the multiclass classification in on the left side, there are results on where we used binary one versus the rest classifiers and on the right on the right side we used all pairs. Can see that we had to define a new class called. You see, which means unclassifiable. That means that the examples belong to either none of the classes or more than one class, and we couldn't tell we channel them with the right class. And specially for buses and trains, there is a lot of. Unclassifiable examples, however, we improve that by using all pairs where the most of the example examples is classified as a, the right class, and that means that also F1 score and recall went up in the second example. Example of an unclassifiable thing between buses that might wanna buses riding on top of a train. No, that means that the classifier says, for example, it's. Car is bus and its train for we use three classifiers and each. Of them recognizes us positive examples. We cannot say, oh. We tried to use probability but it didn't work well. We got using. No prior probability, meaning there is. From the distribution of the data. Um? So.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "We have shown that it is possible to detect transportation mode using support vector machine classifier and using short readings of accelerometer signal. However we still have. Few issues to work on in the future. One of them is collect more data, especially for trains and buses as there we didn't have. A balanced data set and another one is improved binary classification for some of the classes. And explore other policies for combining multiple binary classification results as well. At least one of the strategies we used didn't work well. And now Madame I have prepared some demonstration of how this. Works so the circles are state points. And for example, well, I clicked on the. On this state point, and. So it discolored thread. And now I can click here to show the predictions on map and it predicts that I will go to the. Two classes with 11% probability and that I will go home with almost 91st time. And on the here are some statistics. Based on the state point, for example, I spent, I'm usually at the Jay side between. I don't know 9 and 12. Um? So and the statistics by the by the day of the week and time of the day so. And here on the. Right side. State points and paths between them and you can see here are the small icons that show. What type of transportation I used to get? Are used to get between, for example these two state points. We're using for training this, where yours, right? No, we can't approximately 5 people collecting the data so that it would be more diverse people and. So the features which you were using were just playing. Playing sensor data right from the. From the phone mobile phone. Yeah, we did some things like. Weather person is suicidal or not? No no no no we did. We didn't use any prior knowledge of user or anything. We can provide something. Because it was probably part of it. Yeah. Will always have this inherent difficulty that it's a binary classification. Some process methodology to aggregate votes. You could attempt, I guess, a less sexy kind of machine learning methodology, which is maybe older like a random forest type, yeah? Geared towards having this multiclass, well this is a prototype and it's still in development, so we still have to explore some other options, and it's possible that we will use random forests or some other kind of classifiers in the future. Of course. I guess we don't need to have any time sheets anymore. Because you can just see how long. Yeah yeah. Want to work? Well, actually she's a student because these distraction like being affected. Plus one more question. So did you check the SVM models? Which attributes contributed the most in each setting? Like what was the most characteristic for bus or train or no? We didn't do that. This would be interesting to see. Yes, I agree. Stand where the trouble is coming from right? I mean the the error where is coming from. This is also useful now, but. No tell, you just probably a stupid question, but to what extent does the fact that lights of the trips are in fact by Gore influence the fact that that's the most easily classifiable? Because if your algorithm just says God, it's going to be correct. A lot of the topic. I don't know because I mean. We did the tenfold cross validation, but the distribution because it was randomized still stayed the same, so I don't know how it would affect if we had for example only 30% of the car and. If we had the balanced data set, but we expect that the results would get better. They take into account also the labels of, let's say maybe 10 previous measurements and then later mentor would provide you bit of context right? We do that in the here in this space when we when we get the. Measurements only if the API detects that we are involved in vehicle and we get several measurements and then we do the average on this package of measurements. And the other two modes which are relevant is probably walking and biking, right? So this yes, these are already included in the API. However, I usually come here by bike and the API still hasn't fully detected that I'm on bike. No, that's from Android. Don't expect. So we're still working on how to get the. OK, maybe you just make better classifiers. And and include all the I would. I would guess that based on this data somehow. Or this classifier would be probably easier and way more accurate. So yeah, walking. Obviously this is very distinct way of moving. Running maybe some of their biking or so minutes? Well, let's take bus and train. Yeah, unless you have. I mean it's very simple. Right? Location. We get seacon. Provides. Send James used to. This bus is a lot better for me. Google Google thinks that I parked my car at a bus stop overnight outside my home and then parked my car at a bus stop outside the University. When I get to work. Not convinced of this? Thanks, but I own a car and I park it at bus stops. Average American the only place you can talk. You know there's really. OK thanks, any other problem. Alright thanks thanks.",
+        "start": 319.0,
+        "end": 348.0
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "id": "oyt7omuq2az2fqmie4gks6oh3rj4kohv",
+    "title": "Using Semantic and Domain-based Information in CLIR Systems",
+    "url": "http://videolectures.net/eswc2014_dragoni_semantic/",
+    "info": {
+        "author": [
+            "Mauro Dragoni, Bruno Kessler Foundation"
+        ],
+        "published": "July 30, 2014",
+        "recorded": "May 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 114,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 3004
+}

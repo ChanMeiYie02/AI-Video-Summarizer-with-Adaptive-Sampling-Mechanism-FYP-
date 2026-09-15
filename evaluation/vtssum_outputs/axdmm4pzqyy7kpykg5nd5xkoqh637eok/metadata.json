@@ -1,0 +1,20 @@
+{
+    "id": "axdmm4pzqyy7kpykg5nd5xkoqh637eok",
+    "title": "Truth Discovery with Multiple Conflicting Information Providers on the Web",
+    "url": "http://videolectures.net/kdd07_yin_tdwmci/",
+    "info": {
+        "author": [
+            "Xiaoxin Yin, Microsoft Research"
+        ],
+        "published": "Aug. 14, 2007",
+        "recorded": "August 2007",
+        "category": [
+            "Top->Computer Science->Web Mining"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 91,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1635
+}

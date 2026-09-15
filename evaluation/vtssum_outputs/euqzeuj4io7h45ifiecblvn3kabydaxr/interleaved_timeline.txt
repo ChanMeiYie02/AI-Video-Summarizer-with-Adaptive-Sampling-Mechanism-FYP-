@@ -1,0 +1,98 @@
+[0.0s - 29.0s]
+Let me know.
+
+[29.0s - 58.0s]
+And I have three goals for this car. The first is to sort of introduce you to library research methods. The second is to use Blackboard research methods to explain what I think at least is missing on the web. And the third is to suggest how tags might help that situation.
+
+[58.0s - 87.0s]
+So essentially, my research methods are orthogonal ways to find information, so if you're interested in a topic you want to find, maybe you want to use as many different methods with as many different advantages and disadvantages to find out more about the topic.
+
+[87.0s - 116.0s]
+So here's a list of library research methods. This one happens to come from the Oxford Graduate Library search, but any list would probably be similar to this and what I'm going to do is I'm going to run through sort of the web counterparts of each of these methods.
+
+[116.0s - 145.0s]
+So for keyword and Boolean searches, we've obviously got research. For encyclopedias which give you a quick overview of the topic, we've got Wikipedia.
+
+[145.0s - 174.0s]
+Free citation searching. If you're looking at a particular article, you can sort of follow these references and so on we've got.
+
+[174.0s - 203.0s]
+Actually Discord doing some. There are a couple, so for related record searching and subject.
+
+[203.0s - 232.0s]
+Geographies we've got. Essentially backlinks and similar pages.
+
+[232.0s - 261.0s]
+Search engines and curated links by experts. You might be a little bit surprised, but librarians will suggest you should sort of talk to people sources. You should ask your advisor or ask your friends for help and visit. Become more common.
+
+[261.0s - 290.0s]
+I think for most social surgeon uniforms in question, answering his own.
+
+[290.0s - 319.0s]
+If you're alive it. If you're a doctor or sort of a lawyer or what have you there legal resources and my only source is another web guide, vertical service which handles some of these sort.
+
+[319.0s - 348.0s]
+Please. But essentially we don't have a web equivalent to sort of browsing classified bookstacks and control capillary search.
+
+[348.0s - 377.0s]
+When we go into a little bit more definite, So what these actually entail, so this is actually a photo from the extent of primary and you can imagine that you went in looking for the book Ajax on Rails, which is the pink book in the middle, and what you'll notice is that you actually discover a bunch of other related books like securing Ajax applications and add Ajax and so on. And the reason is that a library really impresses a whole tree of positive bookshelf, right? So this is the.
+
+[377.0s - 406.0s]
+Eject section of the tree and that actually is just being the final leaf in a very Long Branch, so there's a part of the World Wide Web and wide area networks in computer networks all the way inside technology essentially.
+
+[406.0s - 435.0s]
+So would classify books. Exercising gives us and it gives us serendipity. Lets us find things we didn't expect too because locality and it gives us sort of a full overview of workers. On the other hand, it's expensive and it's hard to change, so This is why when directory is sort of all out of paper and has been able to keep up with the web. So taxonomy sell this comprehend in the browser collections because we don't have essentially a taxonomy for the web, it's hardly comprehend arousal provided.
+
+[435.0s - 464.0s]
+In case of control vocabulary search and this is one of the books that was made. It was on the bookshelf before it and you'll end up seeing a bunch in terms to describe the book. So in this case we have Ajax with one sentence.
+
+[464.0s - 493.0s]
+And once you've found, determine life like what's involved and you can find their returns, broader terms come from a specific list, so you can actually specify the structure relationships between return and you can.
+
+[493.0s - 522.0s]
+So look at list of terms which you know in the same way that want to test helps you find sort of related queries. You can do this with speak with control calculation.
+
+[522.0s - 551.0s]
+So there's sort of a different protein governance, so you can if you find an item need real life because you spend by topic essentially so you get this sort of like like in finding more value. And also if you have a particular topic you like. These guys want nothing more jobs. On the other hand, sort of taxonomists have to apply these terms with different specialists and disregarded function. So control categories folders expand from single items for you. Two things related in particular way that you care about. And because we don't really have it in photo Calculator for the web, if you have objective website being like it's sort of hard to find other sites there like it for the reasons that you actually like.
+
+[551.0s - 580.0s]
+So essentially what we're asking is whether tax can provide some of those that lost by not really having a taxonomy or controlled with calculated terms for the web.
+
+[580.0s - 609.0s]
+So tagging is actually sort of two different things. It's the interface or things like tag clouds and rising and so on, and the data. And we're going to focus on the terms of the structure of the topics an in text.
+
+[609.0s - 638.0s]
+The others were to surprise, we're going to look at books, and the reason is that there's sort of a special type of tagging system where people tag books called social cataloging. And this is the one place where we can actually compare tags to sort of expert annotated library metadata. So we're not going to be looking at URL is, and we're sort of requiring you to make the leap of faith that looks sort of like URLs in how people tag. But if you're willing to make that comparison, then we could just say interesting things about how tagging works. Organizational sis. This work compares text to taxonomies, to control Boca Billing and their budget experiments. But in general is having periods fairly well with this comparison.
+
+[638.0s - 667.0s]
+So I did actually looks like this is a book called Rackety Tam by Brian James and there are bunch of pieces of data that we have left his book. So the first is we have library metadata annotated by experts. So they control capillary terms like squirrels and fantasy and animals. We have a location in two taxonomies, so it's Elsie CDC. And we also have some social catalogue data, so librarything and Goodreads review social cataloging sites for people to annotate, says. And if people have annotated regularly, that's from a Red Bull series and also improved with more paper. Basically, this is Miss World certainly had swords or something. So there are bunch of essentially user tax evaders with regular tags there doing those tags, but we also added something that I'm sorry about. Witches behave tags, so we actually paid Mechanical Turk workers to annotate tags. And it turns out that they actually do very well in this fast, so they tend to apply the same sorts of tags that users have yours too and they tend to actually. But 50% of the time come up with tags that you know actually reduce the book.
+
+[667.0s - 696.0s]
+So I don't think we discovered do these experiments.
+
+[696.0s - 725.0s]
+But the first is we looked at tsunami. So one thing that you would get better controlled listen you don't have to worry about it is sort of many different ways. Using the same term, so in the left side you can see synonyms of the tag on the school and on the right side you can see synonyms of the tag 1001, book schemas reporting back. And for each of those, I showed the probability for how often you get the TAG Heuer, especially choosing at random. And so on website you can see that you almost always want it using constants. It's a much more modest using resonant right side you can see that there is much more ambiguity as to how you should be anticipating how you should be proud and basically tax. There's an observer. And the way that we actually formalize this if we use entropy, so essentially the left side where synonymy is a problem for tag we energies very well, whereas on it right side where synonymy is sort of, they probably don't know why they initiated which browsed the entropy is fairly happy. So our main contribution. Here's the formal measured, but we also looked at library in which has essentially user contributed lists of synonyms, and we looked at essentially how bad, how bad the entropy was for Chinese dinner tonight, so.
+
+[725.0s - 754.0s]
+So it turns out that very few of them are like 1001 books. You must read before we die, which is really hard with beta beta tag am, I guess. And most of them are actually like home school. That is 1 sort of dominant tag and very few sort of other times they have no sort of frequency. So in general we found this anonymous medication.
+
+[754.0s - 783.0s]
+Another sort of question is is tagged quality. So with control categories there are professionals making the terms annotating the terms, but in the case of 10 things that you have users, which is making a big enough taxes right? So this is actually the Democrats had brains. They'd be Republicans by and filter. If you're not bringing USANA, which is sort of controversial comment person, and there's sort of very controversial tags on here, right? Like wingnut welfare, horrible or so. And they are not objective plans that might help you find your way. Other things that are similar to this book. To actually look like.
+
+[783.0s - 812.0s]
+Chat with me. So we actually did analysis to look at different types of tags, and we're curious how often tags were sort of objective and about the content of the building, and often they were sort of other types of patterns. So on the first line you can see that actually the majority of tags end up being objective. Answer a constant basis, so the Lt percentage that vibrating percentage and the GR percentage they do really good reason perception. So regardless of frequency it ends up being the case that most guys are objective and content based so people organizing their own collections and they don't know what kind of Facebook makes it look like or whatever. The one main difference that we saw was personal or business owner tab, so possibly because Goodreads phrase tags bookshelves. People seem to relate more personally with the tags from this thing.
+
+[812.0s - 841.0s]
+Blessing to get to talk about it. You know some degree of DAP days proceeds had helped us. So essentially we begin a valuators, a synopsis of the book. Domesticate section synopsis from raccoons handset, Google to search and we ask them whether I set of terms would be helpful or not helpful for finding more books that were similar to book. So this was on the scale of 1, not at all helpful to silence.
+
+[841.0s - 870.0s]
+And in terms of the shows, were actually terms that were either dollar tax or Peyton Manning. Or user tags that were annotated by Peters or info vocabulary terms that were library Congress. So they had. And and this is the. I mean for the stories, were square hires better? And there were two three big things that we actually found. The first was user tags in the aggregate or by far the largest. So people thought they'd be useless for finding other other sort of books at the same time. And pay times were actually the we're actually almost competitive with my holiday annotated source. But on the other hand, when you actually divide it out by frequency, it turns out the real problem is rare user types. So moderate user types are among the best way to find more folks there actually. Similar to begin looking at. So we could suggest is that medium frequency tags are and. Analyzing the frequency distribution in general is very important for making users.
+
+[870.0s - 899.0s]
+Also, the paper I don't really have a lot of time to go into in depth. We looked at how two different tagging systems related to each other, so whether people use the same tags and whether they use them in the same way we question here is whether essentially, is Happy Titan systems to be fabricated. Another thing we looked at was the relationship between tags and vibrations. So essentially whether they have similar topics, whether they be talking to the Tigers, come up with their similar to Library of Congress, subject headings, whether they said going to the Library of Congress classification, and so we've done that, invented in general very similar topic.
+
+[899.0s - 928.0s]
+So just to conclude, I've suggested that library methods can inform breathtaking and then infects when we actually look at this chart, it isn't being the Blackstone with counterparts to methods of finding that are common when people do library search. But in other hand tacking may be able to help you. Said we didn't really analyze the interface playing tag files and browsing, but we do is we looked at the data and it turned out that there was relatively little in the way of problematic synonymy, so most have we can boost synonym sensor tags in there, being relatively understated. Tags tend to be of good times that firms to tagging terms ended up being perceived. Helpful it, but only in the case where we looked at sort of moderately common type. I think I'm most excited about is paid tagging, so you may be able to bootstrap the tightness in Chinese system. Actually paying people to tag and you may be able to supplement an existing tags and taxes, and I sort of getting boring things typed by professional. We found that in general tags were, you know, sort of made up of good topics that were similar to the ones that taxonomists came up with. And Lastly, we found it protect systems to be fired.
+
+[928.0s - 957.0s]
+So let's find something. I'll take any questions. Question. Question. I was just wondering if you think that some of the conclusions that you found are thinkable to other domains in addition to books. For example, your conclusion about not too common, not rare tags being the most useful. What's your feeling and have you looked at? Let it out with generalized. I mean, I think that the theory of the word at least text interference is fairly similar, right? Unfortunately, we don't really have a. We never even classification in the website. It's hard to make this sort of analysis on the web, but my instinct is that although there are some fairly significant differences between type systems, that much of this analysis will not across taxes. So, like in the case of Flickr, for example, many photos have, you know, specific sort of setting attributes that people replying to an average or setting things that make sure. So there are big differences depending on what your tablets, but I think that. Many of these sort of conclusion to apply broadly right above.

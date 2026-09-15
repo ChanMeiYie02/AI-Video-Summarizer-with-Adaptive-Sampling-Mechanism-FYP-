@@ -1,0 +1,116 @@
+[0.0s - 29.0s]
+What is my name is Elena Martinez? Ann this work is called graph based methods for retinal Masai Cinemassacre characterization. I'm coming from the University of Mexico. Yeah, Autonomous National University Autonomous National University of Mexico and this work is in collaboration with other colleagues from Yucatan in Mexico and from University of Alicante here, and had in Spain.
+
+[29.0s - 58.0s]
+Well, first. I want to. Explain more or less why the idea of working with these retinal images first. Before going to the graphical methods so them critical images are important for the study of vascular diseases cause it's a quite easy way to look at the vascular betting in humans is very easy to photograph. An is a way to analyze them in vivo. Um physicians so opthamologists have been working with these images since long time ago, and they have found changes in the structural structural changes in blood vessels due to some diseases, like for instance hypertension or diabetes or some other diseases. And mainly they use the work in the geometrical changes so they measure lengths, diameters and radius between the Lincoln diameter bifurcation angles to city vascular density. And so forth. So the idea of having a system that can help to the physicians to measure all these features automatically or semiautomatically is very good for them, for diagnosis or to follow treatment, for instance. So this is, this is the idea of of the application. So what I?
+
+[58.0s - 87.0s]
+So the objectives of the of the presenter will be to. To describe to you 2 two graph based methods. The first one is to develop a transformation matching algorithm to allow to construct or build more Sykes of the retina fundus. To have a larger view and therefore to be able to have larger vessels to analyze. And the second method will want to see some graph based method. That is help us to define index to try to characterize differences between these structures of blood vessels under different conditions.
+
+[87.0s - 116.0s]
+So the outline of the talk will be first, we're going to talk about the kind of feature instructions we were getting from retinal images. This is only this is related with image processing. Then I'm going to describe the graph based transformation matching algorithm that we developed to in order to get the correspondences between bills. Then I'm going to explain how we build more psych so the composite of this image is using these matches points. And finally, I'm going to describe the graph. They suspected descriptor that characterize help us to characterize this difference between.
+
+[116.0s - 145.0s]
+So how do we extract this features from the images? An we have developed in the past segmentation algorithm that extracts the blood vessels from a retinal image. This is that typical retinal images here. Here you can see the optic nerve where all the blood vessels are coming into the eyeball. And then these are the blood vessels were interested, so this is the same view as just shift. And the segmentation is based on 2 main steps. First of all, we use multiscale differential geometry and we extract 2 tubelike geometrical features. One is the maximum value from the Hessian matrix and the other is the gradient. So we struck this information along different scales. We get the maximum of these features and we made a combination between these two features in a region growing phase. And that combines these two features in an iterative relaxation way using also the neighboring pixels. So with these two combination we end up with this binary image, which is the which has the blood vessels already extracted.
+
+[145.0s - 174.0s]
+And then using the binary images, this is yes, this is using this binary images. Then we use morphological methods to extract. The branching and crossing points that we are going to use as. As feature points. So first of all, we get the binary image. We get the skeleton of the image and we find all those pixels that are connected with three neighbors. And we mark all this. Branching or crossing points is is. While this is this also work that happens has been published before, I just found on the. On the preceding there is somebody is talking about separating this kind of blood vessels, but this is exactly what we're doing as well. So once we mark all this points and this points crossing and bifurcation points are the ones we're going to use as. The points of entry points to use in the match matches the algorithm. We continue labeling the rest of the tree with something which is called the chaincode. And once the elder tree is Mark, then we are able to select one of the trees so the user just click here in the root of one of these trees and the trees is trace or is track. On separate between a blood between one one. Normally you can see here one artery and one vein. In this kind of views. So this is the way we can separate them.
+
+[174.0s - 203.0s]
+So. Once we have the feature points now, we're going to talk about the graph transformation matching algorithm. This is just a general overview, so we have the input image, the feature points and initial matching and then with this initial matching, we're going to build their image for each view a graph we're going to transform this graph with certain kind of rules that we're going to talk about, and then we finally finished with the same graph in both views and the correct matches.
+
+[203.0s - 232.0s]
+Nothing. Well, so we begin with different kind of feature points in each view. Anna, what's something that is important for you to see here is that the overlap between these two images are very, very small. Just see this is the optic nerve, and here we have the optic nerve. So actually they overlap is small, so we have a lot of points which are correct. Good feature points but are not in common.
+
+[232.0s - 261.0s]
+So the first initial machine is made with a simple correlation, so we end up from this amount of points 300 and 200. We end up with a 91 initial matching points, which are of course full of outliers because there are a lot of points that are not. Overlapping between images. So this is our input.
+
+[261.0s - 290.0s]
+Are they? GTM algorithm. So once we have this initial feature points, we build a graph of for each of these sets of features. So each feature point will define a vertex on the graph, and now we're going to create a non directed H between the pairs of vertices, ING only if PJ is one of the K closest neighbors of Pi, and if the distance between them is less or equal to the median of all distances between the pairs of vertices. If there are no K closest neighbors, that whole disk and 2nd condition, then the vertice is completely disconnected and we don't take it into account. So this is the first way the 1st way we the first graph. From
+
+[290.0s - 319.0s]
+Future plans. So the next. This is just an example of a small graph. So we have two graphs, 1. Fairview and there is a corresponding adjacency matrix and so the job of the algorithm will be to find which of those points are outliers.
+
+[319.0s - 348.0s]
+So the final vertex denoted as an outlier. The match between vertices U&U prime as an outlier. It will be. Will be noted as an outlier if it breaks most of the graph structure in. In other words, if it is the one that maximizes the number of agents that differ in both graphs. So what we do is to take the absolute difference of the adjacency matrices. And those columns that have once are very likely to be outliers, so we're going to take those that one that has the most once the major number of ones. And that's where this is going to be selected, like the one that is going to be discarded. In this case, is number 6.
+
+[348.0s - 377.0s]
+So we remove that vertex. And we repeat and iterate steps 1, two and three until both graphs are identical. So we have to build a graph. Again, we have to compute the difference absolute difference between the adjacency matrices, an erase that one that vertex that is likely to be an outlier until both graphs are the same. Which is the case in this small example.
+
+[377.0s - 406.0s]
+So this is a. Video that shows. As the transformation of the graph is going on, we're erasing vertices and we are of course erasing all so much magic points. In the two bills, so we we begin with 91. Input which we know 24 are correct. We will check that by hand to know how many of those are correct. This means that this has already 74% of outliers. We end up with only 18, so we're missing 6, but we don't have any any outlier. But we still missing 6.
+
+[406.0s - 435.0s]
+And then. I'm sorry before that. This is just for you to compare the input. The input of both and the output of GTM algorithm and the output of sub assigned. So you can see that assigning still gets us an output alot of outliers.
+
+[435.0s - 464.0s]
+From this, from this view, these are other examples of different pairs. These are in the Fairfield. We have the inputs. Initial inputs and in the 2nd row the final GTM results. Their pairs, so these are the overlappings in this image is is bigger. So we have more.
+
+[464.0s - 493.0s]
+Matching points. And these are the respective graphs. For each example we saw before and one important thing to see is that these graphs doesn't need to be can.
+
+[493.0s - 522.0s]
+Necessarily. So I was telling before that in this particular case we are still missing from 24 six in some examples, in some applications it is really important to have the more budget points as possible. In this particular case for us is important 'cause we're going to apply a transformation and if we have more points, the error in our transformation will be lower. So we develop a recovery phase. Which consists on the we take iteratively older rejected matches. In this particular example will be 71 that we rejected from the first phase. And we re compute the corresponding KNN graphs and test the receivable for maximum metrics on diversity metrics condition. It means for one one per time, one of these rejected points per time. And if this condition is satisfied, then this match is considered and is is kept on the graph. Otherwise is discarded, so we have to do this 7571 times and we were able to recover three of them. So we are now have 21 correct matches. After this thing.
+
+[522.0s - 551.0s]
+Probably thanks. But of course the bottleneck of the algorithm is the reconstruction of the computation of the graphs for every iteration, so we develop. Optimization algorithm the cost of complexity goes up to an cubed log N. And the optimization will significantly improve the reconstruction of the graphs that are in time. And there.
+
+[551.0s - 580.0s]
+Construction. The optimization phase consists of the following. We replace the representation of the. Of the of the graph of the I'll just see graph sorry by three different structures. The first one is a structure that. And represent all the output notes from each from each of the output ages from each node. So in this particular case we have K = 2 two, so the 1st two we have here those notes that come out from one is 814 and the rest are the ones that follow the nearest ones that follow in the graph. So we have this representation of all the output agents we have another array that represents which is the next. In this the index of the next. Yeah, that follows in the connection an A link arneri of linked list that represents the input. So now we are talking about directed graphs, know the inputs and with these three structures were able to know in the graph if we erase 11 vertex which one we have to connect next. So we don't need to recover the whole to reconstruct the whole.
+
+[580.0s - 609.0s]
+Laugh every time. With this optimization we developed two different times we can see in Jello. Is there a optimized taimanin blue their original GTM algorithm? And in this algorithm there are two particular points to see. One is the number of iterations and the other is initial matches. So we made two experiments for this. So we kept fix the number of iterations to 40 and we changed the number of initial matches. And we can see that as initial matches matches increase at the time of the the original GTM algorithm. Both increases as well, but the difference is about 75% improvement on the optimization results. And on the other side, what we do is to keep fixed the number of initial matches and change the number of iterations, and in this case the original GTM goes as iterations increase the time in seconds. Sorry, this is the time, in seconds increases as well and the optimization results are about the same time for all iterations.
+
+[609.0s - 638.0s]
+I'm sorry. These are only different views, just to show you that GTM Algorithm works quite nice with other more complex movements because the eye, as you can imagine, when you are in the optician, you can you move your eye open down, left or right. So we basically have only translation movements and here we have more nonrigid matching, which is. This is just a shrink of the same.
+
+[638.0s - 667.0s]
+View and we have. Good matches here. Another kind of movement is multiple movements in this kind. In this case we switch the objects here. And GTM still.
+
+[667.0s - 696.0s]
+Works quite nice. Analysis to test the robustness of outliers. So in the top row we have the input, the initial input an on the bottom row we have the the results and as you can see by columns we are increasing the outliers randomly in this person touch. So we have we don't have outliers until we get to very high percentage of noise. Which makes this.
+
+[696.0s - 725.0s]
+Quite robust. Well, once we have the. Once we have the magic points, the next step is to actually build more psych, so almost like it's just a larger view or a panoramic view of this particular scene. And the first 2 steps that we need to follow to build such as the feature points on the matching points that we already get. The next one is to find a transformation between the two views. For this we have to use the magic points and we we define a reference. One of these images as a reference. We find the transformation and then we map. The transfer image into the reference coordinate system, and we merge that abuse.
+
+[725.0s - 754.0s]
+So in the case of retinal mousike. There are few things that we have to consider here. First of all, that every view that we can see here from the retinal images of you that depends on the setting on the camera, the fundus camera can be 3045 or 5060 depending on the camera degrees of the inside of the eyeball, which is unisphere. So these images are actually a projections of the spiritual is feeling to a plane. Um? So even that the movements that they I masar just translations, mainly translations we cannot. Use only translations to match them, so we decided that we decided that quadratic transformation function could be a good approximation to misalignments of vessels. To make this mosaic on the plane. So we we. Use the 2nd order polynomial set of equations and we find the coefficients be an A with the last squares method and once we have the transformation. We use 2 Maps, one for X and one for a two to transform into the new coordinate system.
+
+[754.0s - 783.0s]
+And we do this by by pairs basically. So we get image one and two and we made this most like we get anyone and then from anyone we get another image which will be a tree to to get the next and we do this by always buy personal cascade fashion. So at the moment this is this is a line and quite nice.
+
+[783.0s - 812.0s]
+And what we need to do right now is to get a new set of images to actually have a bigger view, because what we have here in this examples.
+
+[812.0s - 841.0s]
+Oh God. The kind of images that we do have at the moment are all of them around the optic nerve.
+
+[841.0s - 870.0s]
+The normal opthamologist have a kind of protocol to take these images when they want to make composites, and so they make normally the first one is around the optic nerve, and then they make 2, one on the front, which is around the macula area, which is another important area for them to analyze. And then we have force 5, six and seven. This is like a protocol they use and we are on the way to find a new set of images in order to have larger views with this methodology and just describe.
+
+[870.0s - 899.0s]
+No. Well, this this was the construction of of the mosaics. On the last method I'm going to explain you is. How can we track tries a complete blood vessel tree? If we have two vessels, 3 coming from different health conditions, so we're trying to use in this. In this case then. Notion of diffusion kernel. So diffusion kernels come from matrix exponentiation of the blasian metrics, and the Laplacian matrix is a difference between diagonal Dick re/max metrics and adjacency matrix, and therefore degree remains in a diagonal and may not want to place. Is there just sense information for the case of trees? This diffusion kernels depends on the for the IJ. Not the diagonal, but the idea depends on the distance between those. So for this.
+
+[899.0s - 928.0s]
+With envelope, the diffusion kernel is have a set probability distribution of. So these are this is the diffusion, the probability of the diffusion values. For the diagonal. And these are from the any note to the to all the old rest of the notes on the graph. So this is like this is information like coming from lazy random walks. So we see that in in the case of the leaves, that is is the value of the kernel is higher than in the case on the internal ages.
+
+[928.0s - 957.0s]
+So using this, we build a descriptor. So the first approach that is presented on the paper is to overload boat trips and compute the sum of square of errors that I, from the comparing the entropies of the distribution overlap is like a fast matching. So we end up with a this spectral descriptor. Which is based on the year in the entropy.
+
+[957.0s - 986.0s]
+Apps. If we apply this descriptor to all our data set, we have 10 normal tensive images and 10 hypertensive images, and we extract vessels, arterial and venous trees. We made this at. This is analysis only with the comparison between arterial streets and we can see that the spectral descriptor is higher for normal tensive than for hypertensive. This means that normal tensive are more far away from to be balanced to be a balance tree. Honey bear tensive are a little bit less near to be balanced, but are not balanced anyway. The only so we have this. This was significantly different between groups with the significant value except in the three #6, which is exactly the other way around. So we tried to.
+
+[986.0s - 1015.0s]
+Home. Do some more work in this. Oh my God, yeah. Can we try to define a new descriptor? That resulted to be more statistical significant than the later one, and this one compared the notes with the same number of Archie of Children in the diagonal compares. And notes with different children. One of them will be a lift and the other half still children. By counting only the entropy of the nodes with the children. So we have. We take into account with the two of them. Um?
+
+[1015.0s - 1044.0s]
+In this case we have. The descriptor was again. Sniff icant in. The difference between gross was again significant. It was better. But still we have now to difference. Now we have #6 is still at higher and #7 is also higher. So this makes us Despite that this was significantly different between the two groups and the 10 trees that we have. We still have #6, which is not what we're expecting. A #7 as well, so we were thinking that maybe balance is not.
+
+[1044.0s - 1073.0s]
+Enough to look for. This is just how they look. The tree and the seven and six examples that they look. On balance.
+
+[1073.0s - 1102.0s]
+And so we try to to. Get it in tomorrow. Information theory, way of thinking and contemplated rooted now and at this time I rooted probabilities of pure random walks. Then the sum of radius there rush of nonterminal radius and the proportion of leaves with respect to the internal. Which is what we have here. So they said the the external and internal nodes. And these have significant difference for all the other trees is a nicer value. But still we have very short. Distance between these two. Um, I just have to have from from this debt. This part of the work is is a purple. Is the proposal from the Group of Alicante that works precisely on this on the path. Having working with this only using topological indices, like for instance the length of the tree, the path from the root to the older leaves, the total paddling desiring this is that I have worked in the past with and they did find differences between normal tensive and hypertension. In a significant way, and these findings are inconsistent with this other with the findings on the topological indices. And. But the problem is that the Intercept the topological inside using the pants are size dependent on the tree. And the nice thing of this kind of approach is that this this analysis is not dependent on the size.
+
+[1102.0s - 1131.0s]
+The tree. So conclusions we have show two different graph base model and models. The first one was for transformation matching that has demonstrated to be fast and robust method for feature matching. From this we got the points to make a retinal sizing that in this particular case depends on the overlapping regions between images and the number of matching points. So the more matching points we have, the better. And of course, the more images we have, then the larger view and finally the spectral vessel tree descriptor that has shown to be statistical difference between arteries and veins. Sorry within arteries, arteries into normal hypertension vessels. We did not find any any difference in Vienna, Austria which is also consistent with other findings on other topological measurements, and this has the advantage that the spectral descriptor is size invariant. So this is all of my dog. Thank you very much.

@@ -1,0 +1,20 @@
+{
+    "id": "qcvypv3jmcsbtpqkuhyhxrpfva7tjlxr",
+    "title": "SIHJoin: Querying Remote and Local Linked Data",
+    "url": "http://videolectures.net/eswc2011_ladwig_quering/",
+    "info": {
+        "author": [
+            "Günter Ladwig, Institute of Applied Informatics and Formal Description Methods (AIFB), Karlsruhe Institute of Technology (KIT)"
+        ],
+        "published": "July 7, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Computer Science->Web Mining"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 219,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 2118
+}

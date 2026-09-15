@@ -1,0 +1,21 @@
+{
+    "id": "onbdci3tzcv2l4efxb6fy2m2yzpqasql",
+    "title": "Deciphering human non-coding DNA using machine learning approaches",
+    "url": "http://videolectures.net/mlpmsummerschool2014_bourque_human_non_coding_DNA/",
+    "info": {
+        "author": [
+            "Guillaume Bourque, McGill University and Génome Québec Innovation Centre"
+        ],
+        "published": "Feb. 17, 2015",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Medicine",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 63,
+    "num_sentences": 721,
+    "num_clips_with_summary": 26,
+    "num_gt_summary_sentences": 36,
+    "ground_truth_summary_length_chars": 3540
+}

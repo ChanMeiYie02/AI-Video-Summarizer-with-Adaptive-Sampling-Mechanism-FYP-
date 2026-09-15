@@ -1,0 +1,24 @@
+{
+    "id": "cttf2ew3zpldbny52epb274bbzcgoe45",
+    "title": "Thompson Sampling for Learning Parameterized Markov Decision Processes",
+    "url": "http://videolectures.net/colt2015_gopalan_markov_decision/",
+    "info": {
+        "author": [
+            "Aditya Gopalan, Indian Institute of Science Bangalore"
+        ],
+        "published": "Aug. 20, 2015",
+        "recorded": "July 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning->Active Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Semi-supervised Learning"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 45,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 2,
+    "ground_truth_summary_length_chars": 119
+}

@@ -1,0 +1,127 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:02.687 --> 00:00:05.020
+PAUL NICHOLLS: For a vehicle to become fully autonomous,
+
+00:00:05.020 --> 00:00:08.900
+it needs to take over the roles and responsibility of a human.
+
+00:00:08.900 --> 00:00:11.480
+In a normal car, a human would be doing lots of things.
+
+00:00:11.480 --> 00:00:13.690
+They'd be detecting the information that's coming in.
+
+00:00:13.690 --> 00:00:15.270
+They'd be steering the vehicle.
+
+00:00:15.270 --> 00:00:18.710
+They'd be controlling the accelerator and the brakes.
+
+00:00:18.710 --> 00:00:22.250
+In an autonomous vehicle, all of those things are taken away from the human.
+
+00:00:22.250 --> 00:00:26.240
+Instead, the bus is actually detecting what's happening around it.
+
+00:00:26.240 --> 00:00:28.190
+It's making the decisions about how it turns,
+
+00:00:28.190 --> 00:00:32.340
+and it's controlling the technologies on the bus to get us from point A
+
+00:00:32.340 --> 00:00:34.040
+to point B.
+
+00:00:34.040 --> 00:00:38.690
+IMAN KAREEM: So one of the main sensors that we use for Kip is 360 Lidar.
+
+00:00:38.690 --> 00:00:41.270
+So basically how Lidar works, it's very similar to radar,
+
+00:00:41.270 --> 00:00:44.810
+except that it shoots out laser beams, 360 degrees.
+
+00:00:44.810 --> 00:00:47.000
+And so, based on that, it's able to tell--
+
+00:00:47.000 --> 00:00:51.410
+Kip is able to tell how far objects are and where objects are, relative
+
+00:00:51.410 --> 00:00:52.730
+to its position.
+
+00:00:52.730 --> 00:00:56.670
+Similar to the 360 Lidar, we have 2D Lidars down at the bottom.
+
+00:00:56.670 --> 00:00:59.390
+And what it does is that it can see objects in front of it--
+
+00:00:59.390 --> 00:01:03.050
+for example, people walking or a car in front of it.
+
+00:01:03.050 --> 00:01:08.310
+And, based on that, Kip is able to tell when to stop or when to slow down.
+
+00:01:08.310 --> 00:01:11.250
+We also do have stereo cameras over here.
+
+00:01:11.250 --> 00:01:15.316
+So hopefully we will be able to read stop signs and red lights.
+
+00:01:15.316 --> 00:01:17.190
+The bus is actually completely bidirectional,
+
+00:01:17.190 --> 00:01:20.544
+so it can go 45 kilometers on that side and on this side.
+
+00:01:20.544 --> 00:01:21.710
+So what do we see over here?
+
+00:01:21.710 --> 00:01:22.760
+The sensors.
+
+00:01:22.760 --> 00:01:26.100
+We have exactly on the other side.
+
+00:01:26.100 --> 00:01:29.780
+Much like the front and the back, we do have a 2D Lidar on the sides.
+
+00:01:29.780 --> 00:01:32.390
+So that's basically to detect how far the curb is,
+
+00:01:32.390 --> 00:01:35.180
+how far the bus stop is, so that it's really close,
+
+00:01:35.180 --> 00:01:37.220
+so that people can get on.
+
+00:01:37.220 --> 00:01:40.220
+And on the wheels we have sensors, to actually know
+
+00:01:40.220 --> 00:01:42.380
+how fast each wheel is moving.
+
+00:01:42.380 --> 00:01:47.610
+And, based on that, Kip's accuracy to the ground is centimeter-perfect.
+
+00:01:47.610 --> 00:01:50.375
+So the sensors that we see over here, the Lidars and the cameras,
+
+00:01:50.375 --> 00:01:53.910
+are actually plugged in directly to the systems onboard.
+
+00:01:53.910 --> 00:01:58.760
+And, in addition to that, we have GPS, 4G, 3G, radio, and Wi-Fi,
+
+00:01:58.760 --> 00:02:01.940
+which connect wirelessly to networks around campus,
+
+00:02:01.940 --> 00:02:05.240
+to aid its location positioning.
+
+00:02:05.240 --> 00:02:10.220
+So the reason why we use quite a few technologies to aid its positioning
+
+00:02:10.220 --> 00:02:15.240
+is so that, if one were to go down, we have quite a few backups.

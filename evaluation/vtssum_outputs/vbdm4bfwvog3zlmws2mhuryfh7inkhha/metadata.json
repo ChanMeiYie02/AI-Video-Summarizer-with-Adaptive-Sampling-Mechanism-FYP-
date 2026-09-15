@@ -1,0 +1,20 @@
+{
+    "id": "vbdm4bfwvog3zlmws2mhuryfh7inkhha",
+    "title": "Public Linked Open Data - the Publications Office's Contribution to the Semantic Web",
+    "url": "http://videolectures.net/w3cworkshop2013_schmitz_web/",
+    "info": {
+        "author": [
+            "Peter Schmitz, Publications Office of the European Union"
+        ],
+        "published": "May 31, 2013",
+        "recorded": "March 2013",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 130,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1587
+}

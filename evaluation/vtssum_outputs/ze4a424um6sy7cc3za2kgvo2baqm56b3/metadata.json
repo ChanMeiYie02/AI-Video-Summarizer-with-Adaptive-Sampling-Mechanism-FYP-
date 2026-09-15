@@ -1,0 +1,20 @@
+{
+    "id": "ze4a424um6sy7cc3za2kgvo2baqm56b3",
+    "title": "Time delay analysis",
+    "url": "http://videolectures.net/licsb08_higham_tda/",
+    "info": {
+        "author": [
+            "Catherine Higham, Department of Computing Science, University of Glasgow"
+        ],
+        "published": "April 17, 2008",
+        "recorded": "March 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 153,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 2888
+}

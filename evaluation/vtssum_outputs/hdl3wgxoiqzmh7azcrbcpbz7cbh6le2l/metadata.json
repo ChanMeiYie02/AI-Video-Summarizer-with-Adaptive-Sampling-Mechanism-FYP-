@@ -1,0 +1,21 @@
+{
+    "id": "hdl3wgxoiqzmh7azcrbcpbz7cbh6le2l",
+    "title": "HPC with ANSYS Fluent",
+    "url": "http://videolectures.net/prace2013_sofialidis_hpc_ansys_fluent/",
+    "info": {
+        "author": [
+            "Dimitrios Sofialidis, SimTec Software and Services Ltd."
+        ],
+        "published": "Jan. 6, 2014",
+        "recorded": "September 2013",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computers->Software"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 1228,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 1294
+}

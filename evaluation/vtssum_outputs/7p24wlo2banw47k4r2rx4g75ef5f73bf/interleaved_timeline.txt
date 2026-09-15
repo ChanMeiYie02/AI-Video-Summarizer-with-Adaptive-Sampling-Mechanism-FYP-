@@ -1,0 +1,287 @@
+[0.0s - 29.0s]
+Well, first of all, I wish to thank the jury for. Judging my research proposal. Good enough. To be considered for the price, and there are many other person that I should thank along my professional career. And I certainly want to mention my advisor, my PhD advisor, the French between the files, or Bumble each college, which I hold much of of what they learn in secure and well. This is meant to be a survey of of Yi, like my subject of research and. Brief presentation of some of the themes that I want to explore during this research.
+
+[29.0s - 58.0s]
+Oakland OK so. This is one of my favorite theorems. It's a basic elementary theorem of plane geometry. It says take us some symmetric partition of the. Of the plane. And an open symmetric partition of the plane. Then either you find the normal genius closed uncountable set, which for the partition. Or you can split the real line in countably many closed pieces which are homogeneous for the complement of the partition. OK, so. Maybe some notation so the the Delta is meant to represent the diagonal line, so the bisector of the.
+
+[58.0s - 87.0s]
+For.
+
+[87.0s - 116.0s]
+Quadrant. And isatis symmetric if you if you reflect it over the diagonal and you get the same thing.
+
+[116.0s - 145.0s]
+And so we just in fact are considering sets in the half plane, because if they're symmetric, if we know the set in the. Below the bisector. Then we know the set above the bisector. So here are solid.
+
+[145.0s - 174.0s]
+Some example, I made some picture so this is one open partition of the of the half plane and you see it as this partition is the property that it accumulates wildly on an open neighborhood of the diagonal. OK, this is this is a key issue of this partition. It is not. Is not sparsely accumulating on the diagonal, it is accumulating on a segment. And an open neighbourhood of the diagonal.
+
+[174.0s - 203.0s]
+This is the second, let's say possibility for an open partition. It may accumulate on the diagonal, but it does it in a discrete set. OK, it's not accumulating on a dense set, it's accumulating a discrete set.
+
+[203.0s - 232.0s]
+And there is a third case. You just have an open neighborhood and you cut off OK, and in this case it's very easy to find and homogeneous set which is contained in the open neighborhood. You just take a square which is which is contained in the neighborhood and you have that it is more genius. OK, so. The base of this of this triangle is a set such that its square is contained in the partition.
+
+[232.0s - 261.0s]
+And this is an example of the second possibility in the theorem, which says if you have an open partition, you can split the real line in countably many pieces which avoid the partition such that the squares are avoiding the partition. So I don't have a pointer, but. Well, maybe. OK, you see, this is the first piece and it's square. It's avoiding the partition. The second piece has the same property. OK, so so you're sort of saying this partition is little is small because I can avoid it with large sets I can find large, homogeneous, accountable family of large homogeneous set which are avoiding my partition and. They are closed sites. So some of them may just be points OK, if for example the partition is accumulating on the diagonal, then you are getting the point. But if it's not accumulating then you then you can get an interval with closed experiment with the extremals included. OK, and.
+
+[261.0s - 290.0s]
+Here is the example of why the first partition they gave is is not going to work because when you try to to cover the real line bye bye close set which avoid the partition if the partition is accumulating on the diagonal in an open neighborhood, you will be stuck in that open neighborhood. You don't know how to proceed there because as soon as you trying to make a closed set with nonempty interior we are going to have that the square is going to intersect the open. Partition. OK, so in this case. The theorem says OK, you will find a closed uncountable set, which is a more genius for the open partition, so you will find in this case what you would get is probably a counter set. So a set with empty interior, but whose square is still contained in the partition. So this is very nice. Plane geometry theorem and what is nice. It is first proof the 1st.
+
+[290.0s - 319.0s]
+Proof of this theorem because it has a very very, very very nonconstructive proof, so. You start with the proper forcing Axiom. I won't say what the proper forcing Axiom is, but it's a nice combinatorial statement and Todd Archer, which has proved this stronger form of the theorem which says OK, take whatever set you like contained in the real line, and then if you if you take the relative topology on this set the theorem holds for this. For this set. OK, so you take that apology that this set scenarios for. The real line and you will get the theorem for this set. So either you get an uncountable closed homogeneous set for which is contained in the partition, or you get the the set X is the union of countably many square of countably many closed sets which are disjoint. Full square is disjoint from the partition and it is very nice this theorem because it has also application in Cardinal arithmetic. For example, it is one of the key ingredient in the proof that. DFA imply in one of the many proof that PFN comply Continuum is left to.
+
+[319.0s - 348.0s]
+And then you take also this classical result of shanefield regarding absoluteness of I-12 statement and the same field results says OK if you have a pie 1 two statement and you find an uncountable transitive model of this, in which the statement is true, then you will know that it is true in all uncountable transitive model of the SC.
+
+[348.0s - 377.0s]
+OK, and and this is a very nice theorem because most of mathematics is is occurs in the realm of I want approval.
+
+[377.0s - 406.0s]
+Problems, for example, three months iPod.
+
+[406.0s - 435.0s]
+This.
+
+[435.0s - 464.0s]
+Incorrect conjecture P.
+
+[464.0s - 493.0s]
+70 for math last theorem, I mean they are most many of those are even much, much, much, much simpler. Yeah, yeah so. Yeah, well, three months I parties. I guess it's it's more OK so yeah, so all the list that I made is made by yeah yeah so OK so it's not even touching the. Border of the complexity that Pie 12 problems can have all the least the language. Huh?
+
+[493.0s - 522.0s]
+Ha, I don't know. No, I'm not coming with you. OK and well, this is a general observation which I don't know. So algebraic and differential geometry are usually concerned with Python 2 problems, and the same occurs for large core.
+
+[522.0s - 551.0s]
+Analysis number theory, but NUM PY 12 problems. Of course, in in mathematics, and they occur, for example in general topology, functional analysis, homological.
+
+[551.0s - 580.0s]
+Papa OK, and now the third theory means that if you assume large Cardinals, if you're eager to accept large Cardinal axiom, which usually set theorists are not. Are not against them, so they're eager to accept them. Then you can say, OK, PFA is probably false or, but at least it's consistent. If you have a large enough Cardinal, you get consistently a transitive model of PF.
+
+[580.0s - 609.0s]
+OK, then, let's check what does the version. The first version of the Doctor which theorem says if you check it, it supply 12 property. Well in this case it's really up. I want a statement. It says for every open partition. Either you find the clothes set which is a more genius for the partition, or you find a countable sequence of closed set, which are in Virginia.
+
+[609.0s - 638.0s]
+For the compliment, OK?
+
+[638.0s - 667.0s]
+So. 1st so you are saying for all P. If the P holds, then there exists a closed set or there exists a countable sequence of process and feed the Pisa.
+
+[667.0s - 696.0s]
+Is a D1 one statement and.
+
+[696.0s - 725.0s]
+Also, these other two statements.
+
+[725.0s - 754.0s]
+Down to 11.
+
+[754.0s - 783.0s]
+OK.
+
+[783.0s - 812.0s]
+So now we have a very platonistic proof of of.
+
+[812.0s - 841.0s]
+The doctors.
+
+[841.0s - 870.0s]
+Well, first of all, if we are eager to accept large Cardinals, then there is a uncountable transitive model of PFA.
+
+[870.0s - 899.0s]
+It's not an issue then since we have an uncountable transitive model of PFA, we get that in this particular model this theorem.
+
+[899.0s - 928.0s]
+But then using some fields absoluteness instead, this theorem is up. I want a statement, we get that it holds in all uncountable transitive model of the FC, so in particular.
+
+[928.0s - 957.0s]
+Adult in the universe, so it's it's true in general.
+
+[957.0s - 986.0s]
+And then he afterwards. An ordinary proof in elementary mathematics has been found of this of this theorem. Well, maybe I don't know. Maybe the large which had had a proof before but, but in any case you gave it afterwards. Mr voice. I know maybe it's not even to touch, but key thank who gave the the. Not not OK, Qifan gave a proof under that under a D you get every definable set as this as this property and I guess the proof from our ordinary open partition of the real line is due to the ostrich. OK, good now what does he use to prove that? The ordinary math but ordinary matter. Well, I don't know, just just what you learn in graduate courses. OK, so I I don't know what exact system of of. I have no idea, I'm sorry, I I we can discuss it later, but.
+
+[986.0s - 1015.0s]
+So the example is subsume all the three teams that I want to touch in my research, so one is forcing axioms because, as we have seen, they have nice consequences. The other is absoluteness, because also shown field theorem shows that they can have very nice consequences, and the third is the relation between large Cardinals and forcing axioms.
+
+[1015.0s - 1044.0s]
+So let's start with first in action, why why? I like them? Well, first of all, because they solved.
+
+[1044.0s - 1073.0s]
+Problems this is this log and that one can safely claim for forcing axing you take whichever mathematical problem which is likely to be independent of the FC, and you have very good hopes that TFA Oram will decide it one way or the other. OK, so if you want to prove consistency of some statement, well at least of one of the two sides, use PFA and you will get at least one of the two sides most most.
+
+[1073.0s - 1102.0s]
+Lightly. Yeah, hopefully not work. OK, so here are some.
+
+[1102.0s - 1131.0s]
+Example from Cardinal rithmetic. So this.
+
+[1131.0s - 1160.0s]
+My part of this. And, well, the theorem of. The doctor, which RCA, combined with some idea by village which gave the first proof that PFM plies that continues, I left 2. So it implies negation of continue my policy.
+
+[1160.0s - 1189.0s]
+The singular Cardinal.
+
+[1189.0s - 1218.0s]
+What is this? And this was the main result of my PhD thesis.
+
+[1218.0s - 1247.0s]
+Then there are example from Jan.
+
+[1247.0s - 1276.0s]
+Real topology classical problem with Susan hypothesis.
+
+[1276.0s - 1305.0s]
+Prognosis lindine and OK you apply MA in fact which is a sub axiom of PFA and you get the sizing.
+
+[1305.0s - 1334.0s]
+What is this hold? The airspace problem. Well this is OK. Is there a regular outer space which is readily separable but not registering?
+
+[1334.0s - 1363.0s]
+OK, and PFA if you assume PFA then this is not the case. Why?
+
+[1363.0s - 1392.0s]
+Then there is the dual problem. The L space problem. Is there a regular space which is relatively windelov but not ready to release.
+
+[1392.0s - 1421.0s]
+Horrible, and the answer is yes and face not needed. So this is not really an example of but I mentioned it because it was.
+
+[1421.0s - 1450.0s]
+Matrix, so I think that's correct and this is another example so.
+
+[1450.0s - 1479.0s]
+Assume the proper person axiom. Then every uncountable linear order will embed one of a certain fixed class of five linear order. So.
+
+[1479.0s - 1508.0s]
+For example, also from other branches of mathematics, for example function and.
+
+[1508.0s - 1537.0s]
+This is an algebra. This is one class.
+
+[1537.0s - 1566.0s]
+Look at result of Shella 74 and. There is a well.
+
+[1566.0s - 1595.0s]
+I won't say anything more and this is a very recent result of Ileus Farrah, which comes from a problem of functional.
+
+[1595.0s - 1624.0s]
+Alesis and it shows. In fact, using exactly the doctor which theorem the theorem that I was mentioning at the beginning of this talk, it shows that this is the conclusion of this theorem will follow just from torture, which theorem?
+
+[1624.0s - 1653.0s]
+And now let's let's best to Omega Logic and Absoluteness. How far can one transfer the? Absoluteness result of Shanefield to more complex problems, not justify 12 problems but.
+
+[1653.0s - 1682.0s]
+For more complex problems, and here comes the Omega Logic approach of.
+
+[1682.0s - 1711.0s]
+Wooden and this this is based on the on the on the fact that forcing set forcing is essentially the unique efficient method to produce independence results, not when you are touching metamathematical question, but when you're touching mathematical problems, then this is the most effective. In the case that you are such that you are attacking problems coming from other branches of mathematics, then then the independence will be proved by some set forcing construction or. I make a living. Make a living. A lady. I work on trying to avoid that. Yeah, yeah, yeah so.
+
+[1711.0s - 1740.0s]
+But this is just I mean the current state of affairs. It's it's not. OK, and what is just a very brief description of what is forcing? Well, you take a model of the FC and you take a Boolean algebra in the model.
+
+[1740.0s - 1769.0s]
+And then using these ingredients, therefore forcing method cooks up a new model.
+
+[1769.0s - 1798.0s]
+Of the Fe. And the the this is very effective because the truth of the theory of the new model is, well, not not really computable, but. In practice, computable and depends from the combinatorial properties that. V attributes to the Boolean Algebra B and also to the 1st Order theory of Phi.
+
+[1798.0s - 1827.0s]
+And what does Omega logic? Well, it just says OK, just ignore forcing when you're trying.
+
+[1827.0s - 1856.0s]
+To prove independence.
+
+[1856.0s - 1885.0s]
+So it says a statement is is true? Is Omega true if he told in all Boolean extensions?
+
+[1885.0s - 1914.0s]
+OK, and then the achievement of Rudin is that in the presence of large Cardinals this is a solid notion. Of through.
+
+[1914.0s - 1943.0s]
+Which says a statement is Omega True? Then you cannot change its Omega truth value using set forcing. If you use set forcing and the statement was Omega True in the ground model, it remains Omega two in the generic extension. So this is good because now you have a notion of truth which is independent of the set forcing method, which is the unique effective method I have now.
+
+[1943.0s - 1972.0s]
+To prove independence result.
+
+[1972.0s - 2001.0s]
+And now we can start to attack. More complex property. And this is a classical result of holding well, I apologize for my for my Attribution of of time. To the theorems, because this is absolutely random, in many cases. In the case of holding, actually don't have a clear idea of when this theorem or proof, because publication is always much later than the than the actual proof of core and also in the case of many of the other theorem I refer to the published version. But maybe it was much earlier.
+
+[2001.0s - 2030.0s]
+OK, so by one and property problems are settled by large Cardinals in Omega Logic. So if you have a pie one and problems either it is true or it is 4 false. Assuming the FC with large Cardinals. And in general this goes much. Much more because you can reach Delta to one properties which which are very broad class of problems.
+
+[2030.0s - 2059.0s]
+OK, and you can even just consider the theory of L constructed over countable sets of ordinals, and this is fixed by large Cardinals. In Omega
+
+[2059.0s - 2088.0s]
+OK.
+
+[2088.0s - 2117.0s]
+And this is. In some sense, this is a absoluteness result, but it says OK then what is true in LFR or in love? Well there is also the nice.
+
+[2117.0s - 2146.0s]
+Effective counterpart, well, the axiom of determinacy holds in a low far assumingly.
+
+[2146.0s - 2175.0s]
+Cardinals and it is known that almost all many problems are expressible as by one, and problems are settled by Adi.
+
+[2175.0s - 2204.0s]
+So you get a very solid theory which is invariant, and then under the notion of Omega truth and which which settle effectively. Most of the problems that people have encountered in their analysis of. Of projective sets, for example, the bear property or the measurable. The bag measure.
+
+[2204.0s - 2233.0s]
+30 OK, so can we transcend this class? So can we go above D21 or above the theory of healthy Omega one?
+
+[2233.0s - 2262.0s]
+Bored. Well, the first example of a problem which is not touched by this by these two class of problems is Ch, which is Sigma to one but not dealt at one if a sealed. And they see fails in LP Omega one hold because LP Omega one word contains a low far Elo. Far is a model of ID. So at least four sets for subset of the real icy phase.
+
+[2262.0s - 2291.0s]
+OK, so to settle TH well we already had a talk by one of the other winners of the previous edition. There are, well, not many clues. And it's known that large Cardinals are not enough. So what can we hope for one team?
+
+[2291.0s - 2320.0s]
+Of exploration is generic large Cardinals, so the idea is to transfer to small Cardinals large large Cardinal properties. This is essentially explored by by formal. He pushes more.
+
+[2320.0s - 2349.0s]
+This direction the other option is forcing actions. Which I like very much, but I have no very good argument in their defense.
+
+[2349.0s - 2378.0s]
+Or another option which has been shown by boudins Absoluteness for Sigma to 1 problems is to assume Ch because you have the Sigma to one absoluteness for Omega truth with respect to Ch. So every Sigma to one problem, which is probably consistent with Ch in. You can force to be consistent, will follow from Ch with respect to mega Logic. So if you have a Sigma to one problem and you can force it consistent, then you will know that it will also in all Boolean extensions in which Ch holds.
+
+[2378.0s - 2407.0s]
+OK. Well, maybe there are other axioms or suggestions that are that I have not included in this.
+
+[2407.0s - 2436.0s]
+Joke. Well, this I think is ruled out if one accept large Cardinals, so. We also need good criteria to accept these axioms. OK, one one criteria is. Well. This is. Team for other talks.
+
+[2436.0s - 2465.0s]
+OK so I will focus more on forcing axioms.
+
+[2465.0s - 2494.0s]
+And those are, for example, a team that I want to explore in my research topic. So we see that large Cardinal settled the theory of LP Omega one. Or can we say something? Assuming PFA on the theory of LP?
+
+[2494.0s - 2523.0s]
+I get toward or. For example, does it satisfies the axiom of choice?
+
+[2523.0s - 2552.0s]
+Is it invariant with respect to Omega Logic, assuming PFA?
+
+[2552.0s - 2581.0s]
+OK. And well, now also the way back. OK, we see that large Cardinals are crucial in order to have a solid theory of Omega truth and also to justify forcing Axiom. Can we also go the other way around? So if you have force in action, can we justify large Cardinals? Or if we have Omega logic, do we necessarily have large Cardinals? Well, to some extent, the Omega Logic part has been done by the work of wood in the.
+
+[2581.0s - 2610.0s]
+The consistency strength of PFA is is open and this is one of the problems that I like most.
+
+[2610.0s - 2639.0s]
+OK, with with Christopher Eyes, we have some.
+
+[2639.0s - 2668.0s]
+Marshall answer to this problem and this is related to the Canonical inner model for a search for Canonical in normal.
+
+[2668.0s - 2697.0s]
+Physical contact and it is possible to conjecture that Canonical in our model for supercompact Cardinal can be constructed only if such a Canonical model can be built, assuming PFA so. I guess the two assumption are are Inter.
+
+[2697.0s - 2726.0s]
+Stranger.
+
+[2726.0s - 2755.0s]
+And. Well, I I want to argue just briefly, that this is not only a purely mathematical interest because, well, I just argued that forcing axamer interesting. Well probably I will. I'm sure that most of the audience, if not everybody, are not eager to accept them as true, but I just showed at least I hope that I showed that they're useful because they prove theorems that. Before were not known and then.
+
+[2755.0s - 2784.0s]
+You can remove the assumption of forcing Axiom and you still have a theorem. So if you can get. For example, the inner model for a super compact starting from forcing action. This would give some more argument. I mean you have. We have some more effective result which comes out of very strange hypothesis. Or maybe they're just a glimpse of some other stronger hypothesis which we still have not formulated. Which one formulate is much more natural than force in action, which appears rather artificial.

@@ -1,0 +1,20 @@
+{
+    "id": "i5u4t6fkl77uxi36kbgyrg5zo3bbmxjx",
+    "title": "The Neuroscience of Reinforcement Learning",
+    "url": "http://videolectures.net/icml09_niv_tnorl/",
+    "info": {
+        "author": [
+            "Yael Niv, Princeton Neuroscience Institute, Princeton University"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Reinforcement Learning"
+        ]
+    },
+    "num_segments": 319,
+    "num_sentences": 1594,
+    "num_clips_with_summary": 57,
+    "num_gt_summary_sentences": 78,
+    "ground_truth_summary_length_chars": 6680
+}

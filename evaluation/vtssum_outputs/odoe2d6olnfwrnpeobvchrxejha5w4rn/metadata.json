@@ -1,0 +1,22 @@
+{
+    "id": "odoe2d6olnfwrnpeobvchrxejha5w4rn",
+    "title": "Control of Diabetic Retinopathy",
+    "url": "http://videolectures.net/educationdesign2018_mwangi_diabetic_retinopathy/",
+    "info": {
+        "presenter": [
+            "Nyawira Mwangi, London School of Hygiene & Tropical Medicine (LSHTM)"
+        ],
+        "published": "July 13, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Technology",
+            "Top->Computers->Digital Media"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 202,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 36,
+    "ground_truth_summary_length_chars": 3345
+}

@@ -1,0 +1,20 @@
+[0.0s - 29.0s]
+OK, next Sunday here. My name is single vision ski and this is a part of the work which is connected with my research field of clustering Excel documents according to.
+
+[29.0s - 58.0s]
+Structure. So XML documents are data objects which have tree like structure hierarchical structure. And Additionally there is a camera up survey shun that the elements which are placed near to the root element. More significant than the elements which are, for example, leaves of these trees. Therefore, I propose the clustering approach, which is called multilevel clustering. And which works as following. We start at the root level.
+
+[58.0s - 87.0s]
+And at the consecutive levels.
+
+[87.0s - 116.0s]
+The clustering is performed. The next song. Something like that and. Additionally, each partition which is created at a given level influences the clustering.
+
+[116.0s - 145.0s]
+Process at the following player. And there is another advantage of this algorithm that it may be stopped at any level. Therefore it is not needed to process the whole feature space, which may be very large in case of XML.
+
+[145.0s - 174.0s]
+And so it is possible to implement this market level approach using many different clustering algorithms, and I propose the algorithm which is called conditional fuzzy C means which was proposed by package 96. And this algorithm gives better results than traditional power plus three, and I apply the results of clustering to acceleration of query execution on XML documents and the results of the algorithms are compared on the basis of of this.
+
+[174.0s - 203.0s]
+OK, so thank you very much.

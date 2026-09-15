@@ -1,0 +1,21 @@
+{
+    "id": "o57tdpbxt43lkuhxmalyvc7loc3uvbj5",
+    "title": "Probability and Mathematical Needs",
+    "url": "http://videolectures.net/bootcamp2010_anthoine_pmn/",
+    "info": {
+        "author": [
+            "Sandrine Anthoine, Aix-Marseille Université"
+        ],
+        "published": "Aug. 5, 2010",
+        "recorded": "July 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Mathematics"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 525,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 54,
+    "ground_truth_summary_length_chars": 5328
+}

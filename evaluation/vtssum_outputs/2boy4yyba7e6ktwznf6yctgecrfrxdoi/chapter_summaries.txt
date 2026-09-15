@@ -1,0 +1,146 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+Yes, so I'm American PhD student. That's Norwegian Institute for water research. And today I'm presenting the in use case for effect prediction in the Norwegian Institute for Water Research. So about the context, there are millions of chemicals that can. [29.0s - 58.0s]
+Affects the environment and the species living in the environment. And we can make an assessment of this of the risk to this environment, but this requires a high degree of reference data. So in this project in this newspaper, we tried to mitigate some of the problems with this with the use of. [58.0s - 87.0s]
+Organisms and also experimental effort I money so will look a bit further into the ecological risk assessment where this work is supposed to be used, so you can have it. [87.0s - 116.0s]
+Posure to the chemical in the environment. For example, in the Lake and then we have the reference effects data. Which we then combine into so-called risk quotients. Here it's a simple fraction, but it's more complicated in real life. And this is obviously restricted by the effect. And then we can calculate some risk for. [116.0s - 145.0s]
+A group of species. It can be just a single species, or it can be all the species living in an ecosystem. [145.0s - 174.0s]
+And then we can identify further species that may be susceptible to these chemicals. [174.0s - 203.0s]
+And then also describe how and which chemicals affect the speech. The organisms, which again can be put to the. [203.0s - 232.0s]
+To the left or given to the laboratory's new hypothesis for the. For testing. [232.0s - 261.0s]
+And then to mitigate this, we have created a knowledge graph embedding approach and therefore we need a knowledge graph. Which has multiple benefits, obviously, but.
+
+**AI Summary:**
+The speaker, an American PhD student at the Norwegian Institute for Water Research, introduces a project focused on predicting the effects of chemicals and assessing ecological risk.
+
+The core problem addressed is that millions of chemicals can affect the environment and species, necessitating an assessment of environmental risk. To perform this assessment, the project utilizes reference data and experimental effort to determine the exposure of chemicals in the environment (e.g., in a lake) and combine this with reference effects data to calculate "risk quotients." These quotients are used to calculate the risk for individual species or entire ecosystems, allowing the identification of susceptible species.
+
+The research also describes how and which chemicals affect organisms, and proposes using a knowledge graph embedding approach to create a knowledge graph, which is presented as a method to mitigate these problems and provides multiple benefits.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So to gather this. [261.0s - 290.0s]
+State that we use the. US Environmental Protection CS Eco tox database. And together some. [290.0s - 319.0s]
+Species data which we need to make predictions. We use the NCBI taxonomy. And then. [319.0s - 348.0s]
+Finally, together, chemical classifications and features. We use the Kemble database and the Pub Chem database and then the Eco Tox database uses proprietary chemical identifiers. So therefore we need to align them to the chemical data. We gather. We do this through. [348.0s - 377.0s]
+Maybe later we're lucky enough that we collector has this alignment. And then the effects also need to be aligned with the species database. Which we use. [377.0s - 406.0s]
+This log map for which gives us, which gave us a recall of about 400 on the few test cases we were able to gather from the literature. OK, so. [406.0s - 435.0s]
+Moving on to our effective prediction problem. So let's say we. [435.0s - 464.0s]
+A set of chemicals and set the species. [464.0s - 493.0s]
+And these each have. [493.0s - 522.0s]
+Their own hierarchies. [522.0s - 551.0s]
+Totally separate. And then we can have pot. [551.0s - 580.0s]
+Examples in the experiment. So a specie or chemical affects the species. In some way. [580.0s - 609.0s]
+And then we have some negative samples where the given concentrations given concentration in the experiment did not. Give any effects to the species.
+
+**AI Summary:**
+The system describes the methodology for building a predictive model, focusing on data alignment and the definition of the prediction problem.
+
+**Summary:**
+
+To build predictions, the system integrates various biological and chemical databases. It utilizes the US Environmental Protection CS Eco Tox database for environmental data, NCBI taxonomy for species data, and the Kemble and Pub Chem databases for chemical classifications. A critical step involves aligning the chemical data (using proprietary identifiers from the Eco Tox database) with the chemical information. Furthermore, the observed effects must be aligned with the species database. This alignment process yields a recall of approximately 400 on literature test cases.
+
+The prediction problem is defined by considering a set of chemicals and species, noting that both entities possess distinct hierarchies. The core goal is to determine how chemicals or species affect each other, including analyzing negative samples where specific concentrations resulted in no observed effect on the species.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+And then we are here. We limit ourselves to binary classification, because that's just the stage we're at at this moment in time. So to solve this problem. We have developed three models and the first is based on some taxonomic different taxonomic distance. [609.0s - 638.0s]
+So, for example, do we want to figure out this? Does the chemical three affect species 3? [638.0s - 667.0s]
+And then we can find the closest species which has data attached to it. Which species 2? And then figure out. [667.0s - 696.0s]
+Yes, it affects species 3. This is a very simple model, but it's one that's proposed to be used by researchers at the Agency for Water Research.
+
+**AI Summary:**
+The current approach is limited to binary classification. To address this, three models have been developed, with the first model based on taxonomic distance. This model allows researchers to determine if a chemical affects a specific species (e.g., does chemical three affect species three?). The process involves identifying the closest species with attached data (e.g., species 2) to determine the relationship. This simple model is proposed for use by researchers at the Agency for Water Research.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+And then we go further anet. [696.0s - 725.0s]
+Susan Mcclary perceptron mobile
+
+[725.0s - 754.0s]
+Which just uses one of them codings as inputs. [754.0s - 783.0s]
+Pastor dense layer and I can. [783.0s - 812.0s]
+United and pasta. [812.0s - 841.0s]
+Seriously dense layers before we get our. [841.0s - 870.0s]
+Addiction. Finally, our knowledge graph embedding models replaces the input to this to this model. [870.0s - 899.0s]
+With the chemical classification and species taxonomy. [899.0s - 928.0s]
+We use we have used in this work three different models which were chosen because they are widely used in the literature and how short and good results. [928.0s - 957.0s]
+And then I want. Final thing is that we optimized embeddings at the same time as we optimize the prediction model. This is sort of to squeeze the embeddings or push them in the direction to optimize for the be optimized for the task at hand. [957.0s - 986.0s]
+So.
+
+**AI Summary:**
+The segment discusses the model architecture and methodology. It mentions specific components like the Susan Mcclary perceptron and dense layers, noting that one model uses a single coding as input. The focus then shifts to using knowledge graph embedding models to replace the input for the model, specifically for chemical classification and species taxonomy. The authors state they used three different models chosen for their wide use and good results in the literature. Finally, they describe optimizing the embeddings simultaneously with the prediction model to better suit the task.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+You can look at some results. The baseline model, which is a taxonomic difference. Yes, it's very hard to equal, but lacks in prediction position. Which is not. Great, but one free thing I forgot to mention is that we do favor equal because we want to protect the environment. So false positives are not necessarily bad, but we don't want to give the laboratory all the possible combinations of chemicals to test. So introducing the. [986.0s - 1015.0s]
+Little receptor model. Yield so much better balance between precision and recall. [1015.0s - 1044.0s]
+And then we can introduce our Knowledge graph embedding input layers. Which yields us better recall and better F2 score? And we can even improve our since we. I want to improve our F2 score. We can actually reduce the decision threshold. [1044.0s - 1073.0s]
+0.3. Jeld quite good results compared to the multivariate perceptron and the baseline mobile. So summary, this is quite quick this talk, but that's fine.
+
+**AI Summary:**
+The discussion focuses on evaluating and improving predictive models. The speaker first addresses the limitations of the baseline model (taxonomic difference), noting that it lacks predictive positioning. A constraint is introduced regarding environmental protection, requiring a preference for 'equal' rather than allowing all possible chemical combinations to be tested.
+
+To address these issues, the speaker introduces the "little receptor model," which offers a better balance between precision and recall. Subsequently, Knowledge graph embedding input layers are introduced to further boost recall and the F2 score. These layers are suggested as a method to improve the F2 score, potentially by reducing the decision threshold.
+
+Finally, the results show that the JELD model performs well compared to the multivariate perceptron and the baseline model.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[1073.0s - 1102.0s]
+The summary so. Fuck. OK, so one of the benefits of creating almost graph not just for the prediction is obviously improved data access. For researchers in the field. So we are shown that this introduced introduction. [1102.0s - 1131.0s]
+Cultures improves for binary predictions. And the next. Pieces of research to continuing is expanding. The large graph with all relevant data such as habitats or rules generated by researcher domain researchers. Also explored the user more sophisticated model as the talks with him before. We can definitely need to use more other types of models and then obviously because we want to predict concentrations in the future, we will move. I would like to use this obviously in the risk assessment pipeline and therefore we need to. Need to predict chemical concentrations. So, and the resources are available on GitHub, so just go download it and then come and visit us as poster 466. Thank you.
+
+**AI Summary:**
+The benefits of creating graphs are highlighted by improved data access for researchers. The discussion moves to expanding research through large graphs containing relevant data (such as habitats or rules generated by domain researchers). The need to explore more sophisticated models and other types of models is discussed. Finally, the speaker emphasizes the application of these models to predict chemical concentrations for use in risk assessment pipelines. Resources are available on GitHub.
+
+============================================================
+
+### Semantic Chapter 7 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We have time for questions. [1131.0s - 1160.0s]
+Please. Negative samples, yes. I've been known to be negative, yeah, so. Yeah, it's an it's a. In the data it's presented us. No effect concentration, so at the concentration that tested in the experiment, they observed no effect. Yeah, it's no. It's it's a fact. Yeah, but obviously the concentrations. The higher concentration, more likely unaffected, will occur anyway, so they could have just tested on a low concentration. It's about 60% positive or negative. Yes please. So the Research Institute does a lot of work for governments or local and global for assessing risks for. For a lot of ecosystems, so the final. Obviously this is early stages in my PhD and also for this project. But this data should be. Or this predictions would improve this risk assessment. And therefore can improve our understanding of how different chemicals can affect the ecosystem. Interesting ideas for some work. We have fun in risk assessment. Similar sort of environment. Yeah, yeah.
+
+**AI Summary:**
+The speaker discusses the experimental findings, stating that the tested concentration showed no observed effect on negative samples, noting that higher concentrations are likely to be unaffected. The speaker then emphasizes the role of the Research Institute in conducting risk assessments for governments and global ecosystems. They conclude by suggesting that this data and its predictions could improve risk assessment and enhance the understanding of how different chemicals impact ecosystems.
+
+============================================================
+
+### Semantic Chapter 8 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Yes so. That resets obviously. The If you said no upper limit to the search range of the baseline, it will find everything. But but we set some upper limits so that it doesn't, because if you don't set an upper limit, you will get recalled one because you will find everything right. But we need to limit the search range. We can talk about it later at the post if you want it. Is there another question? Yes. Would you consider?
+
+**AI Summary:**
+The speaker discusses resetting parameters and the necessity of setting upper limits on the search range to prevent the recall of all possible results. They emphasize that limiting the search range is required, and suggest discussing further details later.
+
+============================================================
+
+### Semantic Chapter 9 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Yes. Yes, so in our work we work mostly with what in water, but obviously freshwater and saltwater. They're quite different conditions for chemicals, so especially for the chemical side, the they are affected or their changed molecularly based on in which sort of environment or in? Which is import very important temperature, temperature, pH. Everything will make the big difference, so this is future. Work.
+
+**AI Summary:**
+The work primarily deals with water, specifically freshwater and saltwater. These different environments introduce distinct chemical conditions, meaning the molecular changes of chemicals are heavily influenced by the environment. Key factors determining these changes are temperature and pH, which significantly impact the outcomes of the research.
+
+============================================================
+

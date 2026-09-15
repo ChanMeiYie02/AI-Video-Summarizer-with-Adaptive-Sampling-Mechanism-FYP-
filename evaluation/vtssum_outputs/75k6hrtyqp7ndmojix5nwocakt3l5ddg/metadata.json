@@ -1,0 +1,40 @@
+{
+    "id": "75k6hrtyqp7ndmojix5nwocakt3l5ddg",
+    "title": "Second \"Elevator Pitch\" session",
+    "url": "http://videolectures.net/ipssc2018_elevator_pitch_session_2/",
+    "info": {
+        "presenter": [
+            "Patricija Hribar, Department of Complex Matter, Jožef Stefan Institute",
+            "Matic Bergant, Department of Environmental Sciences, Jožef Stefan Institute",
+            "Jasmina Masten, Department of Environmental Sciences, Jožef Stefan Institute",
+            "Adem Kikaj, Department of Knowledge Technologies, Jožef Stefan Institute",
+            "Tjaša Gornik, Department of Environmental Sciences, Jožef Stefan Institute",
+            "Dafina Kikaj, Department of Environmental Sciences, Jožef Stefan Institute",
+            "Gregor Cerar, Department of Communication Systems, Jožef Stefan Institute",
+            "Katarina Marković, Department of Environmental Sciences, Jožef Stefan Institute",
+            "Mona das Neves Oliveira, Jožef Stefan International Postgraduate School",
+            "Jasmin Bogatinovski, Department of Knowledge Technologies, Jožef Stefan Institute",
+            "Nina Reščič, Department of Intelligent Systems, Jožef Stefan Institute",
+            "Miha Dežman, Department for Automation, Biocybernetics and Robotics, Jožef Stefan Institute",
+            "Iaroslav Rybkin, Department of Environmental Sciences, Jožef Stefan Institute",
+            "Ana Kovačič, Department of Environmental Sciences, Jožef Stefan Institute",
+            "Evelin Gruden, Department of Inorganic Chemistry and Technology, Jožef Stefan Institute"
+        ],
+        "published": "July 19, 2018",
+        "recorded": "May 2018",
+        "category": [
+            "Top->Science->Scientific Research",
+            "Top->Biology",
+            "Top->Chemistry",
+            "Top->Computer Science",
+            "Top->Mathematics",
+            "Top->Physics",
+            "Top->Technology->Nanotechnology"
+        ]
+    },
+    "num_segments": 99,
+    "num_sentences": 460,
+    "num_clips_with_summary": 34,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 4805
+}

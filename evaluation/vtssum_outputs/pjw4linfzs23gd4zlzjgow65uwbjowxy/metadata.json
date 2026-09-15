@@ -1,0 +1,20 @@
+{
+    "id": "pjw4linfzs23gd4zlzjgow65uwbjowxy",
+    "title": "Taming Information Overload",
+    "url": "http://videolectures.net/nipsworkshops2010_guestrin_tio/",
+    "info": {
+        "author": [
+            "Carlos Guestrin, Computer Science Department, Carnegie Mellon University"
+        ],
+        "published": "Jan. 13, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Structured Output"
+        ]
+    },
+    "num_segments": 143,
+    "num_sentences": 550,
+    "num_clips_with_summary": 51,
+    "num_gt_summary_sentences": 66,
+    "ground_truth_summary_length_chars": 7777
+}

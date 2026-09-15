@@ -1,0 +1,24 @@
+{
+    "id": "45seusamt73ikj6nh4b3frypjctx3hjt",
+    "title": "Applications of Learning Theory in Algorithmic Game Theory",
+    "url": "http://videolectures.net/colt2015_roughgarden_game_theory/",
+    "info": {
+        "author": [
+            "Tim Roughgarden, Computer Science Department, Stanford University"
+        ],
+        "published": "Aug. 20, 2015",
+        "recorded": "July 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning->Active Learning",
+            "Top->Computer Science->Machine Learning->Semi-supervised Learning",
+            "Top->Computer Science->Machine Learning->On-line Learning",
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 657,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 3398
+}

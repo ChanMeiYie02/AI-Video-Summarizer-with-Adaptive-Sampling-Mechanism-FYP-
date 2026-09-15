@@ -1,0 +1,22 @@
+{
+    "id": "nrt7kg7yeq22kdrnabwxfsswees32cve",
+    "title": "Targeting Direct Cash Transfers to the Extremely Poor",
+    "url": "http://videolectures.net/kdd2014_abelson_varshney_cash_transfers/",
+    "info": {
+        "author": [
+            "Kush R. Varshney, IBM Thomas J. Watson Research Center",
+            "Brian Abelson, Enigma Technologies, Inc."
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 102,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 1331
+}

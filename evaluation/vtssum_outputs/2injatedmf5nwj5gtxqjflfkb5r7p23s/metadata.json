@@ -1,0 +1,26 @@
+{
+    "id": "2injatedmf5nwj5gtxqjflfkb5r7p23s",
+    "title": "Web Rhetoric: Intentionality and textuality on the web pages of insurance and reinsurance companies",
+    "url": "http://videolectures.net/web_kyrtsis_rhetoric/",
+    "info": {
+        "recorded by": [
+            "Artificial Intelligence Laboratory",
+            "Center of Excellence Cognitive Interaction Technology (CITEC)",
+            "Artificial Intelligence Laboratory"
+        ],
+        "author": [
+            "Alexandros-Andreas Kyrtsis, Faculty of Political Science and Public Administration, National and Kapodistrian University of Athens Panepistimiopolis"
+        ],
+        "published": "March 24, 2012",
+        "recorded": "February 2012",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web",
+            "Top->Business"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 348,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2346
+}

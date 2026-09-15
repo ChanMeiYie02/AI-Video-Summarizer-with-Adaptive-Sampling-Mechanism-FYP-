@@ -1,0 +1,152 @@
+[
+    {
+        "text": "So this is a work I've made with number 2 between my lab in Paris University Place Six and NEC Labs.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So I'm presenting two algorithm for solving two class denies VM follow Workshop. One is operating in the jewel and has been submitted to linear SVM truck and they also want is operating in the primal has been submitted to the Wild Track. Both of them are online algorithm and they both converge to the exam solution after a few epochs. So why are we using lean as well? Because an NEC Labs works as well. Run in Colombia and this morning he said that for large scale problem we should require model the models that are more complex than media so it should have been some struggles at anything but we just say that linearize them are really interesting tools to study fast optimization algorithm and this is always the first step to study an algorithm and then after both later on can the SGD Q&A rhythm of more complex final purposes.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So I'll start with LINQ which is.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Angel SVM solver. So we are talking here about the two classes VM with this linear kernel, an Angelus that's been really well described by Jen. So we were not considering the SVM problem without bias. So the primary problem is here. We are using the engine Lausanne, one loss maximization of the margin from the primary program. We can derive the jewel program introducing the Alpha multipliers, and so we don't have in any equality constraint here because we are not considering the bias. Problem and so due to the strong duality theorem, the optimum of the primal is equal to the optimal of the jeweler convergence, and so we can retrieve the final parameter vector with the dual parameters. And so that's.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Invincibility. So Linq is based on a really simple algorithm, which is I think really related to Lib Linear. The linear optimization step. So we have two steps. The first one we just pick a direction in the dual space and then in this space we do the best possible step. The best possible step can be unconstrained. If we reach the optimum, or if we reach a box constraint, we just have to stop before. So this is the constraint because they have to stay between zero and see because of their one norm, and we iterate this a good. A good view is that we will always make progress toward the solution because this step can only increase the jewel.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So a good result is that we we can pick very sparse solution direction for each iteration it will reduce a lot the computation and that it doesn't hurt convergence. So for example for start everything with the bias the the direction is the smallest direction. Yeah, we can define a direction with only two coefficients, so it will be only two rows. This is modest, and because of the equality constraint, so we have to move them by opposite amounts. Here we don't have any bias, so we can only pick only a single coefficient Alpha and.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "And so it's even simpler, so that's what I showed here. I mean, the step is here and we're only considering 1A, so one.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "You want example. And at each step, we're just moving us.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Far as we can individual. So there are some empirical observation that we've made just that we can pick two types of direction in a two classes. We have. The first kind is that direction involving refresh example that has never been seen. The thing is that as it's a fresh example, it's Alpha is zero and it's often remain zero, especially when the data is not really noisy and so a direction of this kind will not increase the jewel very often. We have another kind of direction direction that involves current support vector and therefore this one. The example the current Alpha non zero and thus it can be adjusted and so this kind of direction increase more often than usual. So it seems natural to just randomly direct pick direction between the one and two, and maybe try to pick more often the direction of time 2 the direction of type one if we want to maximize the Jewelers for as fast as possible. So this is the main idea of law rank and this is as simple as that. We just doing the optimization step of just presented before an we alternating direction of type one. We called process and direction of Type 2 that we could re process for the submission of the challenge. We used one process followed by 5 reprocess and that's it. Fixed schedule. We can refine this but for example dealing with the support vectors that are at the balance. That's like the. Chunking method available now for example or we can try to make an adaptive selection of the direction or active selection of the fresh example, but for the challenge we didn't do anything like that. Just speak to any and you example and then five all example.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So the lock algorithm converge to the same solution, so that's interesting. And why? Because when he picks the direction it's enforced two properties. The first property is that the gradient is. This direction is at least greater than a small torrent store, and the second the properties that we can do a movement of at least a small Torrance cap in this direction without leaving the constraint Polito. So we have to enforce this and this Larocque is what we could call an approximate stochastic witness direction. Church algorithm is like? Smosh is live linear is and so we have these two theorem. Just this one shows that just mixing this this direction like this we will ensure the convergence to the VM solution and we also kind of this bound that is also shared by this saying that we can reach a predefined accuracy after a number of iteration that is bounded and the bound. Is he now with the number of example?",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So here's just a few experimental results to highlight. One of the main interesting behavior of the lark algorithm. So we're comparing. We're using. The L2 loss is not what we submitted to the. To the challenge that we had discussed so, so we're comparing with the DC DL2, which is part of the Lib linear and we're just showing that here it's the number of epic on the training data. And here's the primal cost. Here is still the number of a poker. Here's the test error in red. It's DCL two and in green light green. This is Lauren. And what we just want to show you that the main difference between the CDL 2LR unk is just the use of the re process function and doing that we just remove. Reduce the number of epoch needed to reach the convergence and it's it's good on the primal, and it's also efficient for the test error, so this disagree with what just was the conclusion of the previous talk that maybe it would be interesting to have algorithm reducing the number of epochs. And although we did a lot of experiments with this algorithm, and that more often it reached the convergence after a single epoch. I think I'm on 7 of the of the data sets of the challenge. It reached the convergence after one.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So just to summarize, actually this algorithm is not new at all, and we already proposed several algorithm using this alternating two direction. The first one was 2005 and it was only for our margin SVM, but we were already alternating this stuff and we are. And we showed here that alternating this direction can help as well balanced the number of super vectors of the solution. But here we will linear case so it is not. The data. So what does it mean to have complete packs? What I mean, if I do, I'm just running through the data sequentially, but each time I'm picking a new example, then after I'm just looking at the support vectors they have and I'm just picking five of them sequentially and just. I'm just running an optimization step on this one. And when I'm reaching the last fresh example I've done, I'm done with my first book and I can do it again if I'm not at convergence or stop. How many updates do you do? For each example you see, this is just one update, or it can be. If it's a we are, we're picking them randomly after one, so if it's a super vector and if it stays support vector during the OR I have no idea it can be picked a lot, that's. When you go from for one full epic, it's happening that I will try so six times. The number of examples that I said. But it it can't, it. It's not supposed to maybe optimize that each time. If it's if you can't move because you have to enforce the two properties. So if you have an example that count moves, you just keep it. Implement this in an online fashion so that yeah it started training issues itself. Person sample. Yeah, yeah, it's supposed to do that. I mean, we have several implementations, so because we did that the so for online out margin as VM and then we apply that with the the bias for two classes VM and the LINQ actually was originally proposed to solve structured output prediction, so it has been applied to multiclass sequencing. OK, and that's it with.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So here is the 2nd method, so it's the stochastic gradient with the diagonal question Newton skating. So we submitted it.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "To the wild track. So first something we didn't do with long because we were not allowed to repro fest preprocess the data because for the stochastic gradient and forearm modify certification and stochastic gradient they are very sensitive to the data conditioning. So we normalize all the feature within zero invariant various one for sparse data set. We normalize everything to have maximal absolute value of one another. Example anomalies to L2 norm one. Just simple processing.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "And so after I'm just going to present first the plans stochastic gradient descent. So the primary problem of the SVM can be rewritten like this. We have here the sum of all the number of training examples, the regularization stem in the loss we used as well the L1. Angeles, we could use the alcohol. So stochastic gradient can be written like this. We just draw a training, training examples and then you compute the new value of new. We compute the gradient regarding to this examples the gradient of the primal and using this value of the gradient we update the parameter vector. A crucial crucial point here is the learning rate we're using, so we're using the same running rate as the one using the Leon Batu's SD card, so it's composed of our fixed term, which is actually the inverse of the Lambda parameter of the SVM, and attempt that grows that decrease with T T + T zero, and that is rose to be adjusted. What can be done OK? And so we just do that and we iterate. So the good thing is that is fast and simple. It can work very well on on many problems, and that good generalization guarantee, but it can be slow to converge and especially on some task it was like a baseline for the challenge and on some task he was not really efficient.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So what people propose it was just like to use the sudden order stochastic gradient. So which we replace the fixed learning rate from before by the inverse of the Asian metrics? So doing that, the algorithm algorithm stay the same, and doing that it can be shown that the parameter obtain after one pass is as close to the infinite training set solution as the true optimum of the primal, which means this is the same ideas that have been used. I think in the Newton is real. Maybe not the same way by Shapiro just before, so this is a really interesting property. The thing is that these metrics here can be a really big. And contrary to what they did in the previous talk, we don't want either to compute to store or to use these metrics. So we just want to have a sparse approximation of it.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So first idea is to use a low rank scaling mattress. So when you using a batch method you have access to the full gradient of the primal for two successive parameter vector. And So what you do is that you can estimate the investigation metrics using Karen Kwan updates. This is the LGS meter. The problem is that when you're doing a stochastic method, you never have access to this primal derivative. So and you only have access to the derivative to the partial derivative of the primal according to the parameter vector and to the example you just picked. And the two successive. The thing is that these two value gives really noisy estimates. Of these two value of the primal and it doesn't work. This means that you can't really estimate the Asian in a good way. A good idea. It has been proposed last year by shrugged off and colleagues for the online LBZ algorithm. It's a slight. It's one of the trick is used, but it's a slight modification and it's 2. Yeah, to estimate the two values of the derivative of the of the full primal, you still use the partial derivative of the gradient. But you use them on the same example, for example EX. 10 -- 1. So you you go on the you next iteration you update your parameter and you re compute the gradient gradient on the same example and you see and you can have a good estimate of the different of the full gradient of the primal like like this. So this idea is really to use this on the same examples. On the same example and not here, you could say that you want to use it on two successive example. So The thing is that this algorithm is a really good low rank estimation of the inverse of the issue. The thing is that compared to SGD, you still have a lot of additional computation. You have to compute one more gradient. Let's see, OK, you have to update the K rank 1 update so K can be is usually 10, the other 10 and after each time you have to do your update of the of the parameter. Here you have to compute to the product of this gradient time. This metrics of ranked in. So it's it's at least an iteration on the old data set is at least 10 times slower than the stochastic gradient. We felt we.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "With what we did so? How high do his? It's just to replace to estimate the inverse of the gradient matrix by your diagonal matrix. So now if you using a diagonal matrix, the computation are really much faster and it's much cheaper in computation, even for updating it or just to compute the product with the gradient. So how we do? We would like just for two successive parameter vector would like to matrix D2 to approximately verify this situation. Actually, this situation is exactly verified when here this is the inverse of duration. So we like D to be approximately like this. This is the basic idea and the second idea is just we were still in the stochastic setup so we don't have access to the value of the gradients. So we just say OK, we're just taking the oil be abstrac trick and we're replacing these two methods by the estimate of the partial gradient. And so here is the equation we have now in the stochastic way. And what we do now is that during training we update the diagonal estimated metrics D online using a little leaky estimate. It's been there for each term of the diagonal. We just using a dissected mean about the training are using this term that has been just compute using the the two last parameters and the two gradients we just add and then we do a mean on the fly like this. And that's it.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So there is DQN algorithm. It's like this. It's still a work in progress. We're just trying the we used the challenge actually to try to improve the method. So it's not sure it is the best set up now. So how does it work? Is just like a stochastic gradient. You draw a random training example, you compute the gradient. You first compute only the gradient for the last part of the primal. And your update right away, your parameter vector with that with the metrics D and and we still keep this factor decreasing in team. And every T iteration, we don't do it at every iteration. You update the parameter vector using the weight decay. This mean the other part of the primal. You just multiply it by T here so that you can still keep the good value. Because this operation is much more costly than this one, and so you don't want to do this one all the time, that's a trick that is living with you is already using in the logical and when you do that you also say, OK, I'm going to update my my D metrics now. So this require an extra metric computation, but we do. We don't do that all the time, we just say OK, Now I'm just going to update the. And that's it. And we iterate like this. So T is the parameters that depend on this party city of the example. When the examples are full, like most of the example of the challenge, it's basically 20. Iteration. On the other.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "And and so. And that's the algorithm. So here are some results. It's still on a subset of alphas. So here in this column these are the primary costs. Here are the test errors. It's regarding the number of epochs and regarding the training times here. So what are we comparing SGD in red acidic win in green but we don't see it very well and online LB urges or an implementation in blue. And So what we see is that the two 2nd order methods like acidic when he ran all beers. Yes, they help lot reducing the number of ebook there after only one April there there almost there. And it's exactly the same for the test error. And that's what you'd like to say. The behavior would like to see. What's interesting now is that when you you you plug the same value but according to the training time, you can see that our online abss it's 10 times slower approximately memory even 15 times slower approximately. So you still have the good behavior, but if you just plugging it regarding to that, I'm just far far away. It's not even competitive. With SGD, but the aesthetic winner ISM because it's it doesn't require too much computation because the approximation of the Asian is simpler and that you're not doing the update of the metrics all the time, you still have, so the curve is here and here. You'll still much better because you're still enjoying the 2nd order capacity and you're not losing too much time. So this is a really nice behavior for daggers. And and I think that's it for is it a Queen?",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So I just wanted to conclude with some remarks about the wildtrak criteria, just two. Because. When I submitted the results, I just.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So it behaves so the first thing is that you're dealing with absolute error rates, and we can distinguish the the relative reduction as a factor of the achieved error rate. In the end, that's what is used, and you can also consider the difference between the achieved error rates and the best achievable error rates. And this can determine is the computational cost of the algorithm. And that's true that they achieve their rates is often the more important practice, and that's why you want to use it as a as a criteria. That seems good, but as at this time, if you're considering a large scale set up, there is a point where you will double, or increasing a lot the number of examples and will cost you a lot of computation. It will have a clear effect on the criterion A because you would still decrease the relative difference between these two. The best achievable and achieve their rates, but you will have virtually no effect on the criterion be because that's why we observe in the end you even, especially with the linear method, you don't gain much. So I mean this the this demonstration does show that it doesn't when you have a critical at this, you don't really want to submit method that will optimize it to the end, because you don't see you just spare computation.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "And just the the second stuff is that we think that few criteria reward more. The small scale result that the large scale one. And that's why complex model could not win the competition. For example, you have the. This one doesn't exist. The average precision criteria. And so you're putting the precision according to the time. And you can use some strategy like for example seeking more accuracy on the test set. And it's not like cheating just for the test that you just seeking more accuracy and the small set optimizing more on them are artificially augmenting the computational effort on running more at work on the small set. Or you can as well like they said in the previous talk, just optimize the number of examples so you don't train on the largest set. And all of this it improves discrete area and it's also improved apparent exponent of the effort of you method. And I think I don't think that this strategy are just cheating, but they're just rewarding more small scale results than large scale. And so that's why we think that trying to eliminate the engineering bias is maybe not the best way. When discounting last game. And that's it. So you have one free parameter in SGD Q.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "This one. If you have two, so you have the T not any other language. They just want the Lambda. Yeah, this is the C parameter of the SVM, so you if you optimize will see you just have the this is.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "This is the no.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Is it this, Linda? One over anything and the other one that is zero. Yeah there is there. This is exactly the same we actually when we compare here.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "As Judy and SDQ and we start with exactly the same setup, I mean TO is the same and we initialize the diagonal matrix with the one over Lambda, which is the learning rate. The fixed learning rate we use for SGD and then after you just find the best. If she wants. Yeah, you still have to find your treasure. Yep. Is it important for? Uh. I guess so yeah. Because because if you, especially in the beginning of the training. You're just going to to pick up the Super vector you just added very often. It's been that it's even you won't have. You don't see all the examples so far, but by picking them just randomly this perfect. I've just seen the you just optimizing your solution much faster in the beginning, and so that you you're getting very faster, closer from the optimum. By doing that in the beginning. Examples give you more than. Examples, yeah. No, it's not. Says it's. It's the thing that I said is only is mainly valid for the first airport. When you're just because when you if your data set, that's why children Center for most. For some data set, maybe you're going to add 5% as super vector of 10%, and so the only 90% of the example you're going to see you're not going to do anything about them, and that you're just going to run and just you have to focus on this 10%. What we do with the three process that we're giving more weight to this to this example since the beginning of the training. Yep. Functionally useful. For this one. Yeah, the this yeah my dejected function is in.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Beginning this way, I don't know. This is the primary function of the. Yeah, this is another one. Yeah, I want you cannot really know any. Compute the invitation of anyone, but we're just. Averaging it so it's there's no problem. It's working as well so. Would it make sense? WT1 yeah, this is one of the that's why I say work in progress because the way of.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Of estimating here the the D metrics this we use this way, but I think there might be other way just like maybe. Yeah, this one. This is the simplest I think thing we can do and it's only require a new another. An extra gradient computation those that that's fine this way, but maybe you can go. We can be better. Do you have any idea to see whether this linear approximation is far from here? Yes, and or is there any easy way? I will tell you as I I, I have no idea so far we didn't really work on just to see if we we're just optimizing the diagonal of the issue and we're even averaging directly the inverse of the diagonalization. We're not even there. We're not even going through the ocean and then inverting it will just so it's hard for me to say now how far we are from the true values. See you working late. And what about I mean, every step you will compute for real expensive stuff? No, no, no, I'm just.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Computing it every big T. Yeah I'm updated, yeah. The Big T is it depends on this party. This is a parameter of the algorithm at. It's a parameter that we just. Express the tradeoff between just the time you want to spend and the optimal. Have a good approximation of the Asian, and if you want to be fast, you know. So the thing I've said when I say is on full data set, it's but it's around 20, so every 20 iteration we're just optimizing it. Updating it on those files. That asset is more like falls wet spam. I think it's more than three every 3000 iteration. Yes, it's exactly the same set up at this one actually because. We use data. And always found that I said, actually, I would say that because you don't gain much compared to SGD, because was fun. Data set is really sparse data set and as it is performing really well on it anyway. So you don't, I mean the the circle order doesn't help that much on this data center response. This was something we observed. These people in the room, but I've found that just the fact that you're doing online updates often. Means that early stopping do as good as. Is some sort of regularization like this Step 4? So I've often run without anything, any kind of reorganization and change to work really well. So I guess what I'm wondering is if you have any impression of that and it seems crazy, expects enough removing the regularization. Yeah, I mean rock away over there is never using any. So yeah, I think that we can if you deal with SVM you just due to the objective function you're dealing you you have the weight decay too, but I think with the neural networks explained this morning is never using this kind of a bit. Subtraction shouldn't and cover back. Yeah, this doesn't really care, so I think yeah, some sometimes you can just throw it away. These data sets for this, uh, I don't think no. I'm not sure that I don't want to claim something that I'm not sure it. From the computational time, would you say that there are different problems for which lairon or the others are more? I don't remember, but someone in the talks said that for some kind of problem it might be better to work in the jewel. And I think it's from some other program. It might be better to work in the primal. Yeah, I have no really insight of what's the we try to express larock's stochastic gradient framework with special learning rates based on the jewel, but it's it's different complicated because of the re process operation in it. So it's. My point of view, it's hard to compare other behaviors. Maybe we have more experience in it.",
+        "start": 841.0,
+        "end": 870.0
+    }
+]

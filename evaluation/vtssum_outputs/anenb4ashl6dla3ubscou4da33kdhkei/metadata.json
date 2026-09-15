@@ -1,0 +1,22 @@
+{
+    "id": "anenb4ashl6dla3ubscou4da33kdhkei",
+    "title": "Using Data Packages to Ship Annotated Corpora of Parliamentary Protocols: The GermaParl R Package",
+    "url": "http://videolectures.net/parlaCLARIN2018_blaette_data_packages/",
+    "info": {
+        "author": [
+            "Andreas Blätte, University of Duisburg-Essen"
+        ],
+        "published": "May 30, 2018",
+        "recorded": "May 2018",
+        "category": [
+            "Top->Computers->Digital Media",
+            "Top->Humanities->Languages",
+            "Top->Social Sciences->Society->Politics"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 120,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 740
+}

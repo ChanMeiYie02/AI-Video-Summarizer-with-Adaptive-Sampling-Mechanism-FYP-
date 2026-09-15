@@ -1,0 +1,21 @@
+{
+    "id": "sf4dewdw374qm665ypvwy6ldin4tvvnc",
+    "title": "Requirements for and Evaluation of User Support for Large-Scale Ontology Alignment",
+    "url": "http://videolectures.net/eswc2015_ivanova_ontology_alignment/",
+    "info": {
+        "author": [
+            "Valentina Ivanova, Department of Computer and Information Science, Linköping University"
+        ],
+        "published": "July 15, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 167,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1640
+}

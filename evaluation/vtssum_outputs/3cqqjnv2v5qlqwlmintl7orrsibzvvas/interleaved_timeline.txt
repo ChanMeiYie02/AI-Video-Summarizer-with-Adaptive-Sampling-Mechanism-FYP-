@@ -1,0 +1,23 @@
+[0.0s - 29.0s]
+So I will talk about the diversity and availability of temporal information link.
+
+[29.0s - 58.0s]
+Open data, so the problem is that the word change an. Also the web of data is dynamic. For example, if we look for information about the soccer player Antonio Cassano, we found out that its current club is AC Milan. Unfortunately, in summer 2012 Antonio Cassano moved to another team, so as a consequence, these piece of information is not up to date anymore. And in fact, this triple is not valid anymore, so in general it's very.
+
+[58.0s - 87.0s]
+Important to understand, to which extent temporal information is available in Lincoln Open data and how it is characterized. Because collecting and processing temporal information is crucial for several application and research problems that have been addressed.
+
+[87.0s - 116.0s]
+So far, so our contribution in this research is exactly to answer this question, and we carried out both qualitative and quantitative analysis of temporal information in the web of data, and in particular we focus on a specific kind of temporal information which we call temporal meta information, which is particularly important for dealing with dynamic web. So we carried out the systematic review of the model proposed so far for representing these information and a quantitative analysis to study the uptake of these models in the web of data, and we conclude with some guidelines for consumers and publisher in order to improve the way temporal information is used in the linked open data so.
+
+[116.0s - 145.0s]
+Basically, temporal meta information is information associated with truth, valuable elements, so RDF statements and graphs and basically temporal meta information specify the modification and the creation of data and also the validity of data themselves. So this is the reason why temporal information is very important. So I will jump immediately. To the conclusion of our analysis, we identified like different perspective for representing temporal meta information. 2 main categories are the document centric perspective where information is associated with RDF documents and the other perspective is the fact centric perspective where temporal information is associated with facts are represented as RDF statements or graphs. Or as an R relationships according to the W 3C representation pattern, so.
+
+[145.0s - 174.0s]
+To jump to the conclusion, we can see that the availability of temporal information is. Is quite low in linked open data, so so far and also the availabl. Anne, also there have there. There are several diverse models and vocabularies that have been. I adopted so far and finally attorney important point is that we found that in our an analysis that the automatic interpretation and processing of temporal information is not trivial and all so as a conclusion we can say that developing applications that deal with temporal meta information in a data set independent fashion is still quite very difficult. So we end up our way.
+
+[174.0s - 203.0s]
+Work by providing some guidelines to consumers to take better advantage of the few temporal information that are still available on.
+
+[203.0s - 232.0s]
+The web so far, and two publishers in order to provide a better representation of their data.

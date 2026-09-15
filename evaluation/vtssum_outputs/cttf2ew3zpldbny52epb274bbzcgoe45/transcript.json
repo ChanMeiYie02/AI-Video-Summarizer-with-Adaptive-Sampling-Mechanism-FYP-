@@ -1,0 +1,132 @@
+[
+    {
+        "text": "This is joint work with Simon or.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So here is the problem. The problem is the one of online reinforcement learning. So let's suppose you're dealing with trying to play actions in an unknown Markov decision process. So what does that mean? You have a bunch of states you.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "A bunch of actions that you can play at each state and you have a model.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "For the environment, which is fixed but unknown to you, so you have transition probabilities starting from each state and taking a certain action that leads to a distribution on the next state.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "And you have a reward function that is basically telling you how much reward you collect by making the transition.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So basically what you do is you start out at fixed initial state, let's say.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "At each point you take decide to take some action like you're trying to learn and collect maximum reward.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Move to some state you are.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Have some reward. You keep doing this.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Great to keep observing.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Rewards and.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Undergoing random.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Positions.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "And you do this.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Or some amount of time.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "And let.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Do you want to try and Maxim?",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Is your net reward.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Over the horizon of.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "OK, so that's basically online reinforcement learning problem. So you have to maximize the trying maximize. I didn't expectation or with high probability the reward that you collect. Equivalently it's you can try and minimize the regret between what you get and what is the what is a particular optimal average cost policy for this environment that you're working in. OK, so the interesting case here is when the mark of decision process may be really large, but you know that it has an implicit parameterization, so there's several examples of this sort where you might sort of work in an abstract. Amateur space that exactly specifies all your empty structure, so how would you try and learn as well as exploit and explore such as to maximize your reward?",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So in this situation, Thompson sampling is a very well known sort of natural approach that translates to this setting. It was basically a heuristic for a large time until a few years ago, so the idea is very simple. So basically imagine that you have the space of all parameterized NDPS you try and just start with an artificial prior over it. At each point we just sample.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "An instance of an MDP from this prior, once you.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "MVP just put all your trust into it. That is, try and find plan the best policy for that MDP and just use it for a few instance of time. Use whatever observations you get, update your posterior belief and then continue OK. So just repeat this prescription right so the question is.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "This seems touristic, but does this really give this really work? Well, it doesn't really give you the right balance of exploration and exploitation to try and solve online reinforcement learning problems, which might be complicated.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "We actually show that the answer is yes, we actually can get problem dependent regret bound that basically grows as essentially see times locked your constant times locked. If the number of intervals that you played this game and most importantly the constant E, The scaling of the regret in fact captures the exact structure of the parameterization in complicated but explicitly characterizable way and this.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "It has the implication that you can actually accelerate the rate of learning and regret minimization drastically if you have much more structure in the MD. So thanks.",
+        "start": 725.0,
+        "end": 754.0
+    }
+]

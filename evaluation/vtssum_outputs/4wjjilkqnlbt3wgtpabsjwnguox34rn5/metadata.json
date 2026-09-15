@@ -1,0 +1,20 @@
+{
+    "id": "4wjjilkqnlbt3wgtpabsjwnguox34rn5",
+    "title": "The importance of interoperability in European green corridors",
+    "url": "http://videolectures.net/ecitl2011_psaraftis_corridors/",
+    "info": {
+        "author": [
+            "Harilaos N. Psaraftis, Laboratory for Maritime Transport, National Technical University of Athens"
+        ],
+        "published": "Nov. 3, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Business->Transportation and Logistics"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 139,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 3188
+}

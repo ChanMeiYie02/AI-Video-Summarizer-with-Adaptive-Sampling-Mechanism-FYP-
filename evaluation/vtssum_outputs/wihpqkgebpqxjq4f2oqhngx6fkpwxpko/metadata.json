@@ -1,0 +1,20 @@
+{
+    "id": "wihpqkgebpqxjq4f2oqhngx6fkpwxpko",
+    "title": "Drammar: a comprehensive ontological resource on drama",
+    "url": "http://videolectures.net/iswc2018_lombardo_drammar_omprehensive_ontological/",
+    "info": {
+        "author": [
+            "Vincenzo Lombardo, University of Turin"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 41,
+    "num_sentences": 176,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 476
+}

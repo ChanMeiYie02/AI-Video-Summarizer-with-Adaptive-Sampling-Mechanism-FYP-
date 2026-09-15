@@ -1,0 +1,521 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+It is our pleasure here to welcome you in Beautiful New York City. My name is Michael Zeller. I'm the MCMC KDD secretary and Treasurer and I have anchored turd SI with me. Our Information director Ann. It will be our pleasure to lead you to the program tonight. So Once Upon a time 25 years ago 1989, Gregory Peteski actually organized the first workshop on KDD which later became KDD. The conference as we know it today. KDD 1995 was held in Montreal, Canada, shared by Osama Fiab and Sammy will throw Sami and had about 130 attendees. That was nearly 20 years ago and things have changed quite a bit. So this is what we have today. We were really fortunate to have these three visionaries lead KDD throughout the last two decades. And speaking about visionaries, I tried to track down some pictures from those times, but I couldn't. But Gregory was kind enough to actually share a few stories and anecdotes from that time, so 1989. Around that time the largest data set was about 1 megabyte. I think we have come quite a way since then, and also an interesting story when he talked to his manager at the time and said, well, machine learning application, applying machine learning to databases would be a great. A cool thing to do. His manager didn't think so. His manager actually thought, well this is already solved. Just apply a decision tree algorithm and he didn't really think that data mining would find anything interesting. I'm glad Gregory did not listen to his manager at the time, so here we are really.
+
+**AI Summary:**
+The speaker introduces himself (Michael Zeller, MCMC KDD secretary and Treasurer) and his co-presenter (Ann, Information director) while welcoming the audience to New York City. The main focus of the segment is a historical overview of the KDD conference. The speaker recounts that the first KDD workshop was organized by Gregory Peteski in 1989, and the KDD 1995 conference was held in Montreal, Canada. The segment also includes an anecdote about early machine learning research, noting that early ideas about applying machine learning to databases were dismissed by a manager who favored simpler decision tree algorithms.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+20 years later or 25 years later with a fantastic event for you. So we let me get started here 1st through housekeeping items. So we have a couple of changes.
+
+**AI Summary:**
+The segment begins with an introduction, setting a timeframe of 20 to 25 years into the future for a significant event. The speaker then transitions into the main content by addressing preliminary "housekeeping" items and announcing a couple of changes.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+The. [29.0s - 58.0s]
+Katie Madness starts now at 8:15 in the morning, so you have to get up just a little earlier and do not miss any of the talks. And then the exhibit exhibit Hall will have lots of food and beverage during the whole day doing all the breaks. If you need to fill up on caffeine, go there, mingled with the exhibitors. It's great to have all these sponsors with us. Finally on Tuesday the. [58.0s - 87.0s]
+Bloomberg reception at Pier 60. Chelsea Pierce is a great event. You don't want to miss really fantastic location, great food, great entertainment. So really make sure that you can attend. We're still working on some logistical items and may have some buses for you, but stay tuned for the details along the way in the next couple of days. Otherwise, take the effort, extra effort and find. Find your way over there.
+
+**AI Summary:**
+The Katie Madness event begins at 8:15 AM, requiring attendees to arrive early for the talks. Throughout the day, the exhibit Hall will offer food and beverages for breaks, featuring various sponsors and exhibitors. Later, attendees are encouraged to attend the Bloomberg reception at Pier 60, highlighting the event as a great opportunity for location, food, and entertainment. Logistical details regarding transportation are pending, and updates will be provided shortly.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+It's well worth it and then. [87.0s - 116.0s]
+Without further ado, I'd like to introduce our General Co chairs for 2014. Please give a really big applause to Claudia Pelikan, Sophos Maps, Pepsi. They have worked tirelessly to bring this event to you, and with that I'll hand it over and the stage is all yours. Thank you, thank you. So I guess we had over to the mikes over here and stuff, and I agreed that he did the slide so I have to do the talking. Welcome, it's an amazing pleasure to finally see all of you here in this building at KDD 2014 in the Big Apple and talking of Big Yes Michael already mentioned. This is the biggest ever. I'm extremely grateful and happy that we're able to accommodate as many people as we have here today, so I wanted to start out by reflecting a little bit as to where we started and I. [116.0s - 145.0s]
+Huddling with. So first and a few other key members of the organization Group last years KDD in Chicago and we were thinking about. What's our vision for this event? How do we seek a DD grow? Where do we see it go?
+
+**AI Summary:**
+The speaker introduces the General Chairs for 2014, specifically acknowledging Claudia Pelikan (Sophos Maps, Pepsi) for their efforts in organizing the event. The speaker then welcomes attendees to KDD 2014 in New York ("the Big Apple"), expressing gratitude for the large turnout. Finally, the speaker begins by reflecting on the event's origins and discussing the vision for future growth.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+And there were two themes that were really key in that vision and the first one is. It really matters that what we do matters. We want to be part. Of a community that can affect the world and change it to the better doesn't mean we all have to do this full time, but we have the potential to affect the world. And today the world's listening. That's the opportunity for us and we have to grab it. And that is where the idea on the theme of let's focus on social good and let's try to bring this and emphasize it into the four ground of this KDD. Was born and carried out with the help of many, many people and we'll talk about some of the details later on. The second idea very closely related, is. Well lucky we used to be just geeks. Today we have sexy jobs who would have known. So with it comes, I think, also the responsibility that we have the skill set and we finally have the opportunity to impact much more than we could in the past, and we should take that place and be part of. The audience of the community that talks about big Data and we should push it beyond the technology side. Much more into how do you really do things?
+
+**AI Summary:**
+The speaker highlights two key themes. First, the necessity of focusing on social good, emphasizing that individuals have the potential to affect the world positively, and urging them to seize the current opportunity to contribute. Second, they discuss the shift from being "geeks" to having specialized jobs, highlighting the responsibility that comes with these skills. The call is to use this new skill set and big data expertise to impact society by focusing on practical implementation ("how do you really do things"), rather than just technology.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+How do you make the magic happen? All of you here have those skills. We can bring them to bear. So how can we broaden the perception of KDD? How can we broaden our impact into these different industries as well as non-profit directions? I think those two themes were the core convictions of our group when we started out doing that, and there were a number of ideas people brought to the table, so I wanted to briefly highlight some of the things we did differently. The first one is. [145.0s - 174.0s]
+Let's really step out of our comfort zone a little bit and start collaborating maybe with yet other groups that we haven't reached in the past. So we found an amazing partner with Bloomberg helping us not just put more food on the table, but embracing our vision and reaching out to their media partners to give us that audience demo. Generally, we looked into NGOs and we invited many to come and be part of it, so there will be the Ignite talks. Coming up on Tuesday and later trails will talk about this as well. We looked to find maybe a topic for the KDD Cup where we can build something that matters and we found a great collaboration with DonorsChoose who will hand out the Cup winners later on. The other part that affected the theme was the reviewing in the selection of papers that we actually have a new best paper award on the best Social Paper award that is fitting of the theme and we also tried to encourage more submission to this years KDD. The second part I think that goes to the being part of the broader audience in the communication around Big Data is try to help us in the community with networking and outreach help the next generation build careers. KDD is still a very much academic conference. We will not negotiate on the quality of the content and we want all the students here. You are the next generation. My first KTD 2311 years ago, my first talk ever in front of an audience and the room looked actually like this. I couldn't see anybody because there was the light glaring in my face and it was a good way because I wasn't quite as scared. You are the future and we want you to succeed. We want you to carry this on and so in this sense, I want to also quickly congratulate and thank all of the student volunteers in their worries and we have them coming from different groups. There was collaboration with the broadening participation, inviting students we worked with, lights Group, and the Fellowship to bring them in, as well as giving out NSF awards. Can I get the students to stand up? Who were invited to KDD as some of these bodies? Let's please give them a hand and courage them. He continued, but they're doing. [174.0s - 203.0s]
+Thank you. On the thank you. [203.0s - 232.0s]
+
+**AI Summary:**
+The speaker outlines strategies for broadening the impact and perception of KDD, focusing on two core themes: collaboration and community outreach, while maintaining academic rigor.
+
+**Key Strategies Highlighted:**
+
+1.  **Expanding Collaboration and Outreach:**
+    *   **External Partnerships:** Collaborated with Bloomberg to secure audience demos and media partners.
+    *   **NGO Engagement:** Invited participation from NGOs to host Ignite talks and broader community involvement.
+    *   **Competition and Awards:** Partnered with DonorsChoose to provide awards for the KDD Cup.
+    *   **Content Recognition:** Established a new "Best Social Paper Award" to encourage submissions and enhance thematic relevance.
+
+2.  **Focus on Community and Next Generation:**
+    *   The group aims to help the community through networking and outreach to build careers for the next generation.
+    *   While maintaining a strong academic focus, the speaker emphasized that the quality of content remains paramount.
+    *   The speaker thanked student volunteers and acknowledged collaborations with groups like Broadening Participation, Lights Group, and the Fellowship, as well as NSF awards.
+
+The overall message is a commitment to leveraging partnerships and community engagement to expand KDD's reach and support emerging talent.
+
+============================================================
+
+### Semantic Chapter 6 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+Thank you. On the thank you. [203.0s - 232.0s]
+As they famously said, we're standing on the shoulders of Giants. I think it was different application. I'm standing here quite humbly on and not too high. Put us and. I wouldn't be here today if it wasn't for the community building key. DD up through the 20 years and Mike told very interesting stories where we came from. It wouldn't be for the amazing group of people I got to work with. It was a blast. As nervous as I might be today. It was fun getting here. I really enjoyed it and I didn't quite expect this to workout. This way. Many people I barely knew in the other organization committee became friends. Some of them already aware. So thank you very much. Many of you will come up, but thanks to all of you. I'm truly grateful for the experience of making this happen. I would like to also think not just nominally, but truly the sponsors who have stepped up because different from sponsors in other industry conferences. They are here because they believe in us, not because they want to sell us something. They are here because they think we are the future and they want to be part of it and they think you will carry it forward. And for that trust I thank them very much helping us amplify this community. Finally, I'm thinking all of you. Thanks for coming. Thanks for making this. The biggest KDD ever. Thanks for putting up with some of the issues that may arise from actually having all of you being here. We try to make it as open and large as we could possibly get away with, so if there are some minor glitches, please forgive us. Let's continue this. Make it as big as we can. Enjoy the networking events. Mingle and I hope to see maybe some of you next year despite the long flight. And as the future brings in many Kiedis to come. Thank you all.
+
+**AI Summary:**
+The speaker expresses deep gratitude, highlighting the success of the event and acknowledging various contributors. Key points include thanking attendees for making it a success, recognizing the community builders, and specifically thanking sponsors who believe in the organization's future rather than just seeking a sale. The speaker also apologizes for minor glitches, encourages continued networking and mingling, and looks forward to future events.
+
+============================================================
+
+### Semantic Chapter 7 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Next up. [232.0s - 261.0s]
+Is. A welcome for our ACM security chair being Luke from the University of Illinois at Chicago. Police welcome Bing Liu. Forward and back. So I will speak on behalf of CKD, and basically I would like to thank you. Sorry. OK so I would like to speak on behalf of the CKD. [261.0s - 290.0s]
+And I would like to welcome you to this biggest KDD conference and also I would like to take this opportunity to thank the organizers and which is chaired by Claudia And's office and they have done a fantastic job and also they spend so much of the time, the precious time to serve the community and we are very grateful to them and let's give him a big hand blouse. And so every year in the past few years we have been breaking the records every year in terms of attendance. And this year is just dramatic and from last years 1176 to 2200, which is a big jump in terms of attendance. And it's extremely impressive. And also I think this is a historical moment. I'm not sure whether we can sort of surpass this in the future, and this is also give the next sort of conference organizer lots of pressure. This is a very big bottle to cross. Next year I expect them to go for 3000. So. They're not, they're not just done a great job to track you to come here. They also add a lot of innovation to the conference. For example, you can see the NGO talks, which we never had it before, and also we have this Bloomberg partnership and sponsorship, which is a great opportunity for us to get into the industry and to understand the financial industry. Especially this morning. I went there and I was very surprised they're doing so much text mining and which is basically a lot of the area I'm. Particularly interesting. And I also like to thank you guys for coming to this KDD without your participation submitting papers reviewing papers that being the speaker. And there's no way we can have a great conference for this KDD. So thank you very much. [290.0s - 319.0s]
+So I also like to welcome you to CKD where the security and security, if you are never been here, so it stands for Special ACM Special Interest Group and Knowledge discovery and data mining, which is basically the home of our sort of data science data. Miners and analytics professionals and the researchers. And CKD runs the KDD conference and see KD. Of course, is a flagship conference. Of the CKD and also the Premier Conference of the field in the world. And we have a base. Normally we have two tracks and the first one is the research track and otherwise the industry and the government track. So in terms of research track, we definitely have the very best academic contributions and acceptance rates you probably have heard about. It is extremely low, 14 percent, 15%, sixteen point, 70%. Sort of always arranged in that kind of range, so it's very difficult to get in, so it represents the very best research, and we also have the industry and the government track and. Every year we have sort of real life application papers. We don't really get those sort of experiment paper to be pretend to be a try to obtain to be application and also we had in the past few years we have been having this invited talks from the leading expert which is basically focusing on. Slide sort of research and the real world applications are employed. Diploid systems, as you can see the Kitty and or see Katie. We are really like we really like industry participation. We believe this integration of research community, academic research and the application is really the best way to go forward for data science. So. [319.0s - 348.0s]
+
+**AI Summary:**
+The speaker welcomes attendees to the KDD conference and thanks the organizers. They highlight the significant growth in conference attendance, noting a jump from 1176 to 2200 attendees this year, setting a high benchmark for future events.
+
+The speaker emphasizes the conference's innovations, including new NGO talks and a Bloomberg partnership/sponsorship, which offer valuable opportunities for industry engagement in text mining.
+
+The speaker then defines CKD (Special ACM SIGKDD) as the premier conference for data science professionals and researchers. The conference operates on two main tracks:
+1. **Research Track:** Featuring the highest quality academic contributions, characterized by very low acceptance rates (14-16%), representing the best research.
+2. **Industry and Government Track:** Focusing on real-life applications, including papers on applied systems and invited talks demonstrating the practical employment of research.
+
+The overall message stresses the importance of integrating the research community, academic research, and practical applications to advance data science.
+
+============================================================
+
+### Semantic Chapter 7 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+So as the data grows, I'm sure you probably feel that as well as the data grows, we grows as well. So as the Premier community of data science in the world, our mission is really to shape the future of data science research and also to lead in this big data revolution. I'm sure everybody knows as the quantum quantity changes, the quality will change as well. So let's see whether we can stand on the shoulders of big data and do something we can't we couldn't do before and also to achieve quantum leaps to invent the future. Sorry too. To actually to see the future to predict the future, I think is our community's responsibility. Or is the duty to actually invent the future. [348.0s - 377.0s]
+So with that note, I would like to invite you to join the security so you can join in two modes and one is to be a member of CKD, and another line is you start the local chapter where we have quite a few chapters. Obviously we have lots of members for the members you only need to pay $25.00 so we don't really need your money actually. But you do get a substantial savings because we have this money. We have this $25 which is fixed about 1120 years ago or something like that. We are pretty rich actually. We also get the security explorations. You also get security explorations and then obviously you join us to shape the future of data science research. So if we have a region, if you going to particular region and even in the country you have lots sort of some researchers and Katie researchers and then it will be very nice to start a local chapter. OK to start local chapter you can lead and strengthening the local sort of KDD community and also of course you can get some. Grants from us to sort of do subsidise your local activities and on top of that ACM also has some goodies, some goodies but not a lot but interesting good it will be. This one is the ACM Distinguished Speaker program that you can participate and get my other speakers to go to your place and speech. So look at. [377.0s - 406.0s]
+Said next year, we're going to beautiful City of Sydney, Australia. And I'm sure everybody knows Australia is a very nice place and the general chair will be alone. Long Beach towel and 20 down of University of Technology Sydney and the program chairs will be tossed and jorkins from Cornell University and Jeff Webb for Monash University and I'm sure they will look forward to your help and also to your participation in order in case you're wondering what the fish is doing here. I'm sure they're doing data mining. Thank you very much. Thank you Bing. So. We've all relied on Bloomberg as our new source for many years, but it is a rare honor that the entire data mining community is now indebted to Bloomberg for this wonderful sponsorship. And for that and to tell us a little more about Bloomberg, I would like to invite James Hutson up on the stage. James, please welcome James from Bloomberg. [406.0s - 435.0s]
+Welcome, thank you. Oh good evening KDD 2014. It's an honor to be here. Thank you for let's get these slides. [435.0s - 464.0s]
+
+**AI Summary:**
+The speaker emphasizes the Premier community's mission: to shape the future of data science research and lead the big data revolution by inventing the future.
+
+They invite the audience to join the community in two ways: by becoming a member of CKD or by starting a local chapter, which can receive grants for local activities. Membership offers substantial benefits, including security explorations and opportunities to shape the field.
+
+The speaker then announces that the next event will be held in the City of Sydney, Australia, featuring speakers from the University of Technology Sydney, Cornell University, and Monash University, focusing on data mining.
+
+Finally, the speaker thanks Bloomberg for their sponsorship and introduces James Hutson from Bloomberg to the stage.
+
+============================================================
+
+### Semantic Chapter 7 (Part 3)
+
+**Original Timeline (Subtitles & Frames):**
+Welcome, thank you. Oh good evening KDD 2014. It's an honor to be here. Thank you for let's get these slides. [435.0s - 464.0s]
+Thank you for offering me these few moments to address the crowd before the fighting begins. And of course I'm referring to the awards. My name is James Hudson. As was pointed out and I manage the Bloomberg Labs Research Group that uses machine learning to solve key problems in NLP, information extraction and knowledge representation. In fact, Bloomberg Labs is our Advanced Research group at Bloomberg that's responsible for delivering the next generation of intelligent systems across all of Bloomberg's product and data resources. I actually lead an incredible team of an dedicated team of scientists and engineers that is growing rapidly and you can talk to me more later about that this shameless plug, but I'm not here to talk about that. I'm here to highlight our responsibility as a community of scientists and engineers, and also because I want to challenge you. At a recent workshop on the state of AI and Knowledge. We drew together leaders from academia and industry to set forth vision for the technologies that we want to make possible in the future. OK. We actually noted that our field is becoming more and more fragmented. Researchers less reproducible and the focus is often not on sharing and building common resources to advance the scientific or engineering principles. And not on building our fundamental ability to solve problems in the real world. But this is an opportunity. I've only been given 3 minutes, so it's going to be tough to substantiate what I just said, but believe me.
+
+**AI Summary:**
+The speaker, James Hudson, introduces himself as the manager of the Bloomberg Labs Research Group, which utilizes machine learning for NLP, information extraction, and knowledge representation, highlighting its role in developing intelligent systems. He emphasizes the responsibility of the scientific community. He then challenges the audience, noting that a recent workshop on AI and Knowledge revealed that the field is increasingly fragmented, with researchers lacking reproducibility and a poor focus on building common resources or fundamental real-world problem-solving abilities.
+
+============================================================
+
+### Semantic Chapter 8 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+But let me leave you with the following thought and challenge, as I mentioned. Don't reduce the problems you tackle to just curve fitting. Stand up and get back to basics.
+
+**AI Summary:**
+The speaker challenges the audience, urging them not to reduce the problems they tackle merely to "curve fitting." They conclude with a call to action: "Stand up and get back to basics."
+
+============================================================
+
+### Semantic Chapter 9 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Redefine the problem. Ask the right questions. Question your assumptions. Open your work to criticism and share your advances so that they meet may be used in ways that you could not imagine. Let's find better ways to communicate and collaborate. Better ways to understand what needs to be protected and share the rest. That's actually important, and it's something that we believe very strongly in at Bloomberg Labs. Our theme for KDD 2014 is using our communities technology for social good. Our science is a social good. Let's magnify its effect to solve some of the world's most pressing problems. Finally. I want to thank the organizing committee and all of the people who made this amazing event possible. I've seen first hand how hard they've been working over the past few months, and I can say. That as an organization. We are extraordinarily proud to be the platinum sponsors. It's been incredible working with Claudia and the team. I think that what the what we're aiming to do is fantastic and I think this year as was pointed out, is an incredible opportunity to build on the past and to breakthrough and really pull together all of our resources to set a vision for the future. And to help strengthen our resolve to work together towards that. So thank you and have a great time here. Thank you James. Thanks. So the role of. Two people in this conference matters the most to everyone in this room, because on them lies the responsibility of ensuring that the highest quality of work in data science is presented at this venue year after year we have had the fortunate opportunity to have volunteers from our community who deliver. That high bar. Which gets raised every year, as evidenced by the number of publications as well as the quality of these publications, as well as the citations which those publications receive. Years after the papers have been published with that. I would like to welcome you LS quick Annui rank with their big round of applause for all the hard work that they have done. [464.0s - 493.0s]
+To make sure that this community succeeds. Thank you welcome.
+
+**AI Summary:**
+The speaker begins by outlining the core philosophy for the event, emphasizing redefining problems, questioning assumptions, and using technology for social good. The theme for KDD 2014 is centered on using community technology for social good and magnifying its effect to solve pressing global problems.
+
+The speaker then transitions to expressing gratitude, thanking the organizing committee and all those who made the event possible. They emphasize the organization's pride in being platinum sponsors and view the conference as an opportunity to build on past successes and set a future vision.
+
+A significant portion of the speech focuses on the vital role of volunteers and community members, underscoring that they are responsible for maintaining the high quality of data science presented at the venue. The speaker acknowledges the hard work of these volunteers, noting that the quality is evidenced by the number, quality, and citations of published work.
+
+Finally, the speaker offers a formal welcome and applause to the "LS quick Annui rank" for their hard work.
+
+============================================================
+
+### Semantic Chapter 10 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Thank you very much.
+
+**AI Summary:**
+This segment consists solely of the spoken dialogue: "Thank you very much."
+
+============================================================
+
+### Semantic Chapter 11 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So. As we all mentioned that this is the biggest KDD conference ever. So it's our honor to serve the community and this year, as we mentioned that in the research program, we accept 151 papers which represent 20% growth over last year, and this is. Out of I think over 1000 submissions if it. Look at that. There's also 43 papers accepted in industry and the government track. [493.0s - 522.0s]
+26 workshops and which is means 75% growth and 11 tutorial an which is 83% growth and this year we also have GNU program. It's called highlight paper spotlights at every morning so every paper get a 30 second opportunity to advertise and then to excite the audience and every paper also have an opportunity to do given our representation. And in the evening there will be, I think, Monday evening there will be poster sessions at the Tuesday evening at the reception. [522.0s - 551.0s]
+So again, this is the research program we received. 1036 submissions these are full submissions that receive the full review and from the more than 2600 authors and this represents 42% increase over last year and on this plot you can see that the growth over the year for KDD conference and our acceptance rate and this year is 14.6%, which is slightly lower than last year. So again.
+
+**AI Summary:**
+The KDD conference is highlighted as the biggest event, featuring significant growth this year.
+
+**Research Program Highlights:**
+*   151 papers were accepted in the research program, representing a 20% growth over last year.
+*   Additionally, 43 papers were accepted in the industry and government tracks.
+*   The research program received 1,036 full submissions from over 2,600 authors, marking a 42% increase over last year.
+*   The overall acceptance rate for the conference is 14.6%, which is slightly lower than the previous year.
+
+**Program and Events:**
+*   The program saw growth in support events, with 26 workshops (75% growth) and 11 tutorials (83% growth).
+*   A new feature, the GNU program, includes "highlight paper spotlights," giving every paper a 30-second opportunity to advertise.
+*   Poster sessions are scheduled on Monday evening and Tuesday evening at the reception.
+
+============================================================
+
+### Semantic Chapter 12 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[551.0s - 580.0s]
+We cannot accomplish this without the help from the senior program Program Committee and the program Committee. This year we assemble very big program committee with 46 senior members and 340 regular members. We would like to thank you all for your hard work. Because of the high number of submissions. Actually, each of you volunteered to do more work than you promised before. We really thank you for that and so. In terms of the acceptance, we use the following rough rules for the acceptance. Basically we check the role review score and also the normalized score from the PC members and also check the. More normalized matter review and the review score, and if both accept higher than we accept, then we basically accept the paper and 110 paper make into this program. In this way and for the remaining paper. Actually we went through extensive discussion with the meter review and the review, and made the final decision. [580.0s - 609.0s]
+Hi so I will very briefly talk about some of the properties of the papers we received. We did lots of kind of data science on the reviews and that I saved for Tuesday business lunch. But just to say we basically received submissions from more than 50 countries. These are the countries from which we received at least I think 20 submissions dominated by United States followed by China and other countries. What is interesting is that there is a bit of a very. [609.0s - 638.0s]
+In terms of acceptance rate per country here kind of Germany did not only win the World Cup, but they also kind of win the KDD. So they had the highest acceptance rate and then kind of everyone else was was in between and so on. What may be interesting is to look at the acceptance rates by subject. Here it's dominated. [638.0s - 667.0s]
+By big data and kind of, the graph mining is the by some strange question coincidence I would say is the only one where it's actually statistically significantly lower than the average acceptance rate, but otherwise we seem to be kind of nicely covering all the topics based on the number of submissions we got. And what is? [667.0s - 696.0s]
+So interesting, we also looked at whether the author is coming from and how are the papers that different types of authors have Co authored? What kind of reviews are getting? And basically what's interesting is that in terms of submissions coming from industry or coming from academia, they are getting about the same score, while submissions that have a mixed authorship meaning authors from academia plus industry are actually getting better, better scores or higher review scores, which is kind of great to see. [696.0s - 725.0s]
+There were kind of two interesting machine learning tasks with it. The first one is trying to predict paper acceptance. Assume that random guessing gives you 50% accuracy. We can get to around 65 and basically the text. The abstract doesn't tell us much, we're at 57. Knowing who the authors are and what is their status and kind of position in the Co authorship graph and number of previous publications and citations. That seems to be the biggest determinant for acceptance. You can explain this kind of.
+
+**AI Summary:**
+The discussion covers the program structure, submission analysis, and factors influencing paper acceptance.
+
+**Key Points:**
+
+*   **Program Committee and Acceptance Process:** The program committee consisted of 46 senior and 340 regular members. Papers are accepted based on a combination of the role review score and a normalized score from PC members.
+*   **Submission Demographics:** Submissions originated from over 50 countries, with the United States and China dominating. Germany showed the highest acceptance rate, winning both the World Cup and the KDD competition.
+*   **Subject Acceptance Rates:** The subject of big data and graph mining was statistically lower than the average acceptance rate, although overall coverage across topics was good.
+*   **Authorship Impact:** Submissions with mixed authorship (academia plus industry) received better scores than those from single groups.
+*   **Prediction Model:** When trying to predict paper acceptance, the model achieved 65% accuracy (compared to 50% for random guessing). The biggest determinant for acceptance is the authors' identity, status, co-authorship graph, and number of previous publications and citations.
+
+============================================================
+
+### Semantic Chapter 13 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+However you like.
+
+**AI Summary:**
+However you like.
+
+============================================================
+
+### Semantic Chapter 14 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Another another way we did was try. [725.0s - 754.0s]
+To see if I give you review text, can you predict from the review text what the reviewer was thinking? Basically, can we predict the score of the review from the review text here? Kind of? Our results were around 7070% accuracy, which is kind of interesting that even the review text by itself is kind of hard to guess what the reviewer was thinking and then at the bottom there is human accuracy, which is kind of a bit better than what machine learning did, so there is quite a bit we can do as community to improve our reviewing. Process and I'll talk about that in a few days.
+
+**AI Summary:**
+The speaker discusses an attempt to predict reviewer intent or scores from review text. They present their machine learning results, noting an accuracy of around 70.70%. The speaker observes that even predicting the reviewer's thoughts from the text is challenging. They point out that human accuracy is slightly better than the machine learning results, suggesting there is significant room for community improvement in the reviewing process.
+
+============================================================
+
+### Semantic Chapter 15 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Thanks a lot. [754.0s - 783.0s]
+Thank you Ray. Thank you baby. So it is often said that when you judge others, you don't define them. You define yourself. And in this process of judging. When an organization like security. Has these best paper awards you essentially need to find? Top leaders in the community, who by Reading and going through these papers, will not only arrive at the best papers, but will also define and shape the way the community perceives these papers in the years to come. Because of that, security pays very special attention to. The chairs of the best papers in the Research track awards and this. [783.0s - 812.0s]
+Here it is our pleasure to invite Sunita and Thurston to please lead us and announce the best paper winners. Thurston welcome way. Yes, you're helping out. This is the new Sunita in case yes, thank you so so need. Unfortunately cannot be here but thanks thank you very much to her way is going to help me and I would like to thank the committee that helped me and us actually select the best papers so we got 30 papers from way endura that were nominated and or particularly reviewed. We reviewed them all again and then basically battle it out until we agreed. [812.0s - 841.0s]
+So for the runner up to the best Student paper award, I'd like to welcome onstage.
+
+**AI Summary:**
+The segment focuses on the philosophy behind judging and the announcement of research paper awards.
+
+**Summary:**
+The speaker discusses the importance of judging by defining oneself, emphasizing that organizations like security pay special attention to the chairs of research paper awards to identify top leaders who will shape community perception. The segment then transitions to the award ceremony, inviting Sunita and Thurston to announce the best paper winners. The speaker thanks the committee for their help in selecting the papers, noting that 30 papers were reviewed and agreed upon. Finally, the announcement of the runner-up for the best Student paper award is introduced.
+
+============================================================
+
+### Semantic Chapter 16 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Redlynch NY Chang Chan at Kilian Weinberger. And a paper is fast flux distribution for large scale sparse nonlinear classification. Yeah, so all three are here.
+
+**AI Summary:**
+Chang Chan is at Kilian Weinberger in Redlynch, NY. The discussion centers on a paper titled "fast flux distribution for large scale sparse nonlinear classification."
+
+============================================================
+
+### Semantic Chapter 17 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+You'll take care of it. The winner of the best Student Paper Award are Ya Shu Lu, Yi Wang and Dipping Guy, which I would like to. [841.0s - 870.0s]
+Come on stage for an efficient algorithm for weak erotical lawsuit. So we also have a runner up for the best overall research paper award, and for this I'd like to welcome stage Takanori, Mihara, Mitsuru Kusumoto and Ken Ichi Carabao Yoshi. [870.0s - 899.0s]
+And last but not least, we have the best research paper award and that goes to Aaron Lee Amorem ET C. Tsuite Ravi an.
+
+**AI Summary:**
+The segment announces winners for several awards. The winners of the best Student Paper Award are Ya Shu Lu, Yi Wang, and Dipping Guy. Following this, the announcement moves to an efficient algorithm for a weak erotical lawsuit, and the runner-up for the best overall research paper award is Takanori, Mihara, Mitsuru Kusumoto, and Ken Ichi Carabao Yoshi. Finally, the winner of the best research paper award is Aaron Lee Amorem.
+
+============================================================
+
+### Semantic Chapter 18 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Alex smola. [899.0s - 928.0s]
+For the paper, reducing the sampling capacity of topic models. So this was the pleasant part of my job this year. Next year I'm sending rejection notices. Thank you so thank you. So this year. [928.0s - 957.0s]
+We introduced. A true award. Not that the other awards are not true awards, but this one is just. Truer if that's a word. And one day we should all aspire to. Get an award like this. I would like to welcome Jeeping a for presenting for the first time at a KDD, a test of Time award which he will tell us more about. So welcome Jim. Again, thank you.
+
+**AI Summary:**
+The speaker discusses academic work, mentioning the focus on reducing sampling capacity in topic models and the prospect of receiving rejection notices next year. The segment then transitions to introducing a new award, describing it as a "true award" that everyone should aspire to receive. Finally, the speaker welcomes Jeeping a, who is presenting the "Test of Time award" for the first time at a KDD.
+
+============================================================
+
+### Semantic Chapter 19 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So yeah, we will help me again. So next we will recognize some old KDD papers which were published many many years ago but still had a big impact in the field. [957.0s - 986.0s]
+OK. OK, so this award recognizes the KDD papers published at least 10 years before. OK. So since this is the first time we have such award at the kiddie, we consider all the papers published between 1995 and 2004. And the selection is based on the impact of the paper in the data mining community. We measure the impact in terms of research methodology and product. OK, so due to the backlog of many high impact papers in the last 10 years, so the committee decided to give multiple awards for the first 2 years, then give one award each year in the future, OK? So in this year 2014 we had 749 papers. Sorry between 2009 between 1995 and 2004. Now we select 20 papers as candidate based on the Citation Google Scholar Citation. Learn the committee, discuss and select top six papers based on the impact of these papers. And we think all these six papers actually aver city of the world. So what we decide to do is we decide to give three awards this year for 2014 and recommend the other three papers for the award in 2015, OK? OK, so here the first award goes to Martin Hand.
+
+**AI Summary:**
+The system is discussing the criteria and process for recognizing impactful, older KDD papers.
+
+**Summary:**
+
+The award recognizes KDD papers published at least 10 years prior, based on their impact in the data mining community (measured by research methodology and product). Since this was the first time the award was established, the initial scope covers papers published between 1995 and 2004. To address a backlog of high-impact papers, the committee decided to give multiple awards for the first two years. In 2014, 749 papers were considered, leading to 20 candidates selected based on Google Scholar citations. The committee then selected the top six papers based on their impact. Consequently, three awards were given in 2014, with the first award going to Martin Hand, and three more papers recommended for the 2015 award.
+
+============================================================
+
+### Semantic Chapter 20 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[986.0s - 1015.0s]
+Peter York showing failure 1996 paper. A density based algorithm for discovering clusters in large spatial database with noise. The second award goes to being little wishy.
+
+**AI Summary:**
+Peter York presents a 1996 paper detailing a density-based algorithm for discovering clusters in large spatial databases with noise.
+
+============================================================
+
+### Semantic Chapter 21 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Imma failure 1998 paper integrate. [1015.0s - 1044.0s]
+In classification, an Association rule mining. The lost world this year goes to a David Camp John Clamber evil titles for their 2003 paper. [1044.0s - 1073.0s]
+Maximizing the spread over influence through a social network.
+
+**AI Summary:**
+This segment discusses methods in classification and data mining, specifically focusing on association rule mining. It references a 1998 paper integration and mentions the work of David Camp and John Clamber (2003 paper). The overall topic relates to maximizing the spread of influence through social networks.
+
+============================================================
+
+### Semantic Chapter 22 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Right? One thing that makes KDD special that is really something that differentiates us from all the other conferences. [1073.0s - 1102.0s]
+But I have seen is that we have an extremely good mixture of academic research as well as industry and government participation only at KDD you find high quality research papers as well as high quality application papers from actual practitioners in industry and government. So this is something a mixture of which really drives. I think the acceptance of KDD an the research that we see here. The types of papers that we see here. And I think it's it's an attractive mixture that brings new industry participation to the table every year. So without further ado, industry and government track, I would like to invite right ganian Prem Melville on the stage to report how the industry and government track work this year. Thank you. Good evening everybody. I'm pretty mobile and even now they could tell you a little bit about our industry track. So First off I kind of. [1102.0s - 1131.0s]
+The industry track is a bit of a misnomer. I'd like to think of it more as the data science practice test track these days. It's you know we focus on real world applications or contributions of our community in general, which means there's a heavy emphasis on real problems emerging from trying to apply this solve real data and solutions that actually work in practice, right? So there's a heavy emphasis on deployed solutions or papers that have a clear track to deployment. So unfortunately this means we. Received a lot of good papers that are good science. Technically good, but didn't really fit this criteria, so we had to turn some of those papers down. But Fortunately we had a trim. [1131.0s - 1160.0s]
+This growth in submissions this year we had 197 papers submitted. That's that's up by 45% from last year. Our acceptance rate was about 22%. We accepted 44 papers this year, but which is slightly lower from last year, but we made no attempt to actually regulate the acceptance rate. We accepted all the papers that we thought would make a great addition to our program, and I think we have a very exciting program up ahead and write a little bit more. OK, so one of the things you know few days ago Prime and I were having fun with since we like data we were having fun with looking at the stats and building classifiers like like you was doing in front of interesting results. We just can we build a classifier in 2013 and predict 2014 acceptances? Because then we can get it. All the reviewers who were very thankful for by the way. You know would be much more efficient process, But the interesting we wanted to sort of, you know we wanted the industry track for several years to be much more focused on deploying. It's not about doing application work, it has to be this frameset. Real problems, real data, real solutions and we found that you know the SVM but actually agreed with that. So the words that kind of came out pretty high in comparing papers that gottex. [1160.0s - 1189.0s]
+Did this year versus got rejected even though we tend to tell their viewers these keywords were predictive modeling, web production, large scale diploid and the words that came out in the negative side where you know search traffic algorithms. So using algorithms without deployment in large scale and production not very useful. Not very interesting to the industry and government track, so that's a really good sign that we are in the track is moving in the right direction the past few years we've really tried to make it stronger in the deployed in production site. And it's really encouraging to see that being backed up by evidence. So we have a really good program for you over there. [1189.0s - 1218.0s]
+
+**AI Summary:**
+The speaker introduces KDD by highlighting its unique strength: the excellent mixture of academic research and application papers from industry and government practitioners.
+
+The presentation then discusses the "Industry Track," defining it as a data science practice focused on real-world applications and contributions. This track places a heavy emphasis on deployed solutions and papers that address real problems using real data.
+
+Regarding the track's performance, submissions increased by 45% year-over-year, though the acceptance rate remained relatively low. The speaker emphasizes that the direction of the track is positive, noting that analysis of keywords showed that papers accepted were more focused on deployment than on theoretical concepts like basic search traffic algorithms. This evidence confirms that the track is successfully moving toward real-world, production-ready solutions.
+
+============================================================
+
+### Semantic Chapter 22 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+Few days in the industry and government track, we have invited industry and government talks which have been very well selected by Brian an pool. Then they'll talk about that we're going to have accepted paper presentations. One of the things we've done is the paper presentations are aligned with the industry to invited talks, so each of them are 15 minutes and a session, and the industry talks are 45 minutes. So you can switch back and forth between them. We also have a special talk given the theme of data science for social good, we have a special session Tuesday afternoon with we're going to be about 1213 presentations from the data science for social Good Summer Fellowship program that I run at University of Chicago. So we brought the students here an encourage you guys to attend that and talk more to students will also be around in the poster session and you can sort of see the rest of the program up there. The different sessions and invited talks. [1218.0s - 1247.0s]
+So you know this couldn't have been possible without all these amazing people. We had a senior PC that data really good job of taking the reviewer Signal, Program Committee ANAN, really synthesizing and so made our job easier. So we really want to thank you guys for doing a very good job to make our lives and to make a really good program. Program committee members were great, they nice of them, completed reviews on time and we are able to give really high quality feedback which is really. Helpful for the papers that do get accepted, but even more helpful. The papers papers who didn't get except so they can take that feedback and really improve the papers for the next conference. Or hopefully the next next year at KDD again and then of course, we really want to thank the authors because you guys did the really hard work of spending the time doing really good work and really good diploid solutions and then gave us the chance to highlight them over here and giving this community. So thank you very much for all your work.
+
+**AI Summary:**
+The event featured a schedule of industry and government talks, which were carefully selected. The program included paper presentations, with a mix of 15-minute presentations and 45-minute industry talks, allowing attendees to switch between them. A special session was dedicated to the "Data Science for Social Good" theme, featuring presentations from the Data Science for Social Good Summer Fellowship program run at the University of Chicago. Attendees were encouraged to engage with students and view other program sessions.
+
+The speaker concluded by offering extensive thanks to various contributors: the Program Committee for synthesizing reviewer feedback, and the authors for their hard work and contributions.
+
+============================================================
+
+### Semantic Chapter 23 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Anne. [1247.0s - 1276.0s]
+Now we want to take the time to to present the best paper awards for the industry and government track and this year is Claudio mentioned the beginning. We decided giving the theme of the conference. We want to have two best paper awards, one highlighting the best social good paper and one highlighting the best industry and government paper. So for the best social good paper, we're really happy to announce the paper. But on direct targeting direct. [1276.0s - 1305.0s]
+Cash transfers to the extremely poor by Brian Kush. Enjoy sun and this is a really good paper. You guys should read. The paper should go to talk. They did a really good job of looking at it early. Important problem of giving distributing cash to poor areas and how do you make that process really efficient? Using image analysis and machine learning? So I'd really encourage you guys to look at that paper and I want tonight Coach to come up and get his award so. And I have the pleasure of announcing the best paper award for the industry and government track. And this goes to styling the long tail by Diane who Rob Hall and Josh Attenberg and I think. [1305.0s - 1334.0s]
+Is here to receive the award. This paper is tackles a harder than usual recommendation problem. It's one where there are a lot of items in the store that are unique and at the the paper describes the system that's in deployment and with large scale experimentations with live traffic in SC and so this is an example of a very good example of data science practice paper that works well in the wild, so with that I'd like to invite Diane to come receive the award. Right click click. [1334.0s - 1363.0s]
+Another industry part that we instituted a few years ago has been extremely successful. I would like to involve invite Paul Bradley and Brian Dalessandro to come up here and speak a little bit about the invited talks that we have in store for you. These are people that probably wouldn't come and submit a paper, but we think you know from a very senior committee. These are extremely interesting applications and talks for you to definitely listen into on the industry side. Great, thanks Michael.
+
+**AI Summary:**
+The speaker announced the best paper awards for the conference, focusing on two tracks: social good and industry/government.
+
+The best social good paper was awarded to "Cash transfers to the extremely poor" by Brian Kush, which focused on using image analysis and machine learning to improve the efficiency of cash distribution to poor areas.
+
+The best paper for the industry and government track was awarded to "styling the long tail" by Diane, Rob Hall, and Josh Attenberg. This paper was highlighted for tackling a complex recommendation problem using a deployed system with large-scale experiments based on live traffic data.
+
+Finally, the speaker introduced the industry segment, inviting Paul Bradley and Brian Dalessandro to discuss invited talks and applications available to attendees.
+
+============================================================
+
+### Semantic Chapter 24 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So. [1363.0s - 1392.0s]
+This year is actually the 4th time at KDD. We've had this type of session previously, the last three years. It was called the Industry Practice Expo. This year we changed it, merged with the industry and government track as Roedean talked about. This year we have 8 talks with nine world renowned experts. We have Shree Supermanium from Groupon. And then a very interesting talk by Tracy Dipaolo of Sprint and Jeremy Howard of Lytic opening up the doors and giving you some insight into what it takes to do data science in a large large Corporation such as Sprint. And then we have Niagara Shaw from Stanford talking Cynthia Ruden from MIT. Drew Conway is here in Ran Walsman to talk about government applications and then going along with the theme of the conference. Give Nathan Eagle and Robert Monroe to talk in all of these talks will be in this room. [1392.0s - 1421.0s]
+Hello so we have been introduced to this idea of the Ignite Ingeo sessions twice, but no one has explained what they are, so I'll try to do that. We, as part of the invited talks we wanted to give a voice to the organizations whose mission is best represented by the theme of this conference, which is doing data for social good. And so we've lined up a series of talks. One very exciting one, the CEO of Bloomberg who will give us a keynote. Highlighting how committed Bloomberg is to not just supporting KDD, but to actually fostering a community of data science for social good, particularly with small government organizations. Then, we've lined up a series of small short we call them ignite style talks 'cause there are 5 to 7 minutes long where we're going to hear from the NGO non-profit organizations themselves learn how they're actually using data in the field to fulfill their mission and more importantly, than. Letting this be an information session for you, we want to facilitate collaboration between our KDD community and the actual NGOs. We've invited data kind to help organize and curate the event and data kind is an organization that plays matchmaker between data scientists like ourselves. An organizations that have a lot of data and a need for that data. They just don't have the resources to use it effectively. So I encourage everybody to attend. And again, once the session is over, take time. Introduce yourselves to the actual NGOs that are present. And potentially invite yourself to future collaboration. Thank you. Xbox. Thanks, Brian.
+
+**AI Summary:**
+The conference has evolved, merging the industry and government tracks as previously seen in the Industry Practice Expo. The event features eight talks by nine experts, including presentations from organizations like Groupon, Sprint, and Stanford/MIT, focusing on data science applications in large corporations and government.
+
+A new initiative, the Ignite Ingeo sessions, is introduced. These sessions will feature short talks from non-profit and NGO organizations, highlighting how they use data for social good. The goal is to foster collaboration between the KDD community and NGOs. The session also features a keynote from the CEO of Bloomberg, emphasizing the commitment to supporting data science for social good, particularly for small government organizations. Attendees are encouraged to connect with the present NGOs for potential future collaborations.
+
+============================================================
+
+### Semantic Chapter 25 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+So let me ask the audience a question. What is it that involves thousands of students each year? As part of KDD. Come on wake up. I hear some grumbling. No mumbling come on anyone. What involves thousands of students each year at Kennedy? Somebody said it louder. [1421.0s - 1450.0s]
+Katie, come thank you.
+
+**AI Summary:**
+The speaker addresses the audience by asking a question about an event that involves thousands of students each year as part of KDD. They urge the audience to respond. Following this, there is a brief exchange thanking someone named Katie.
+
+============================================================
+
+### Semantic Chapter 26 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Well, we are really nerdy. It is indeed the KDD Cup if, as Michael mentioned, the industry track is our distinction of how collaborative we are. As I'm in akademik. So how collaborative we are from from academia with industry Kendrick up truly is the differentiator that put us put security and Katie on the map because we were the first major ACM Society Special Interest Group to set up a contest that involved grassroots level students to come forward. An it was a sandbox where data mining techniques could be tried each year and that has led to an immense amount of success for fostering growth in the community for involving students to come forward and so on. This year we have a very very special contest and I would like to invite Vlad. William and Ben Ben here from Kaggle blood will handle the show so well compared with a huge round of applause please. Thank you so much. It's a pleasure pleasure to be here really. William and Ben have put on a great show on the Kaggle. The challenge that DonorsChoose dot Overcast posted opposed this year to the participants is to predict exciting projects on our website. [1450.0s - 1479.0s]
+And if you're not familiar with dontchoose.org, we are a nonprofit that involves all of you citizen donors in supporting our public schools. Very much like Kickstarter were allowed teachers to post projects in our website that are vetted and citizen donors come in and fund them, it's an exciting year for us because we've just crossed quarter billion dollar mark in funding supplies for public schools across the United States. And donors who donate over $50, then receive handwritten thank you notes from the students who are benefited by the supplies they were funded for them. So one of the biggest challenges for us is first in recommender systems and having inventory over one problem. There was a great paper on that just a few minutes ago. I'm excited to read it and predicting exciting projects. You can tell is quite important to us both for recommendations, but also. To enable teachers to write better essays and better projects to inspire the public. So without further ado, here are some of the winners of the KDD. [1479.0s - 1508.0s]
+Cup in a third place. We have chaotic experiments. Karen can you please come up and Sage? And the second place goes to Datarobot. [1508.0s - 1537.0s]
+Jeremy Lucas and Xavier and their team members here to receive an award for them. And thanks to data Robot Team which is a startup company, they've made a decision to donate their winning studentissues.org. So thank you so much guys. [1537.0s - 1566.0s]
+And the first place goes to strike up bangin. You welcome. Welcome a stage two rowdy audience. I'm going to go back. That's not my slide. Thank you so much for participation. And let's make the next Cup even bigger. Thank you.
+
+**AI Summary:**
+The speaker introduced the KDD Cup, emphasizing that collaboration between academia and industry is the key differentiator for the contest. They highlighted that the contest was established to foster growth by involving grassroots students in data mining techniques.
+
+The current challenge involves a contest posted on DonorsChoose.org, where participants predict exciting projects. DonorsChoose.org is a nonprofit platform that allows teachers to post vetted projects, funded by citizen donors. The organization recently crossed a quarter-billion-dollar funding mark, with donors receiving thank you notes from students who benefited from the funded supplies.
+
+The speaker noted that a key technical challenge for the contest was developing effective recommender systems and inventory management.
+
+Finally, the winners of the KDD competition were announced:
+*   First Place: StrikeUp
+*   Second Place: DataRobot (Jeremy Lucas and Xavier and their team)
+*   Third Place: Chaotic Experiments
+
+============================================================
+
+### Semantic Chapter 27 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Thank you. So next I'd like to invite you on live. [1566.0s - 1595.0s]
+This is a very important award again for our Community becausw these are our rock stars students who have done excellent amount of work in producing PHD's. If you go back and remember your own PhD experience, you will remember how hard it was to put all those papers you published together into something called the thesis. And out of that thesis should come out something even better, which can win an award at KDD. No one is going to tell us all about why these students win the award. Yeah, and who are the future of KDD, right? Yeah, all of the students. There's a students, so this is our. [1595.0s - 1624.0s]
+Our community committees. Important task to select this doctoral dissertation awards. This is the 7th 7th annual Doctoral Dissertation Award. And it started to recognize outstanding research contributions by a doctoral candidate in the field of KDD. The this is a we just asked the nomination Dominators to nominate and, but at the first filtering is done by the Department. So basically each Department chair has to. Make sure that. There's only one nomination from that Department and his University. Then this year. There's no surprise, and we have a record number of nominations. It's 19. But what does that mean? That means the committee has huge tasks, huge task to accomplish. So we invited 22 leading experts to help us, and their names will be listed on the website's office, promised me to list them on the website. And because without them, it's impossible, OK, and we do have. The two committee members and so we selected the one winner and one run up and also we have a record number of. Other information, so we create a lot of records, this conference. We try to do the same.
+
+**AI Summary:**
+The speaker introduced an important award recognizing outstanding doctoral work in the field of KDD. This award highlights students who have produced excellent research, emphasizing the value of transforming a thesis into a significant contribution.
+
+Details of the award:
+*   This is the 7th annual Doctoral Dissertation Award, recognizing outstanding research contributions by doctoral candidates in KDD.
+*   Nominations are filtered initially by the Department chair, ensuring only one nomination per department and university.
+*   This year, there were 19 nominations, resulting in a large task for the committee.
+*   To assist the committee, 22 leading experts were invited, and the final selection included one winner and one runner-up.
+
+============================================================
+
+### Semantic Chapter 28 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+There's no coordination though. And the winner and the run up stock will be in this Riverside boardroom borborbor room, right and Tuesday 3:30 to 5:00. O'clock these are the ring. [1624.0s - 1653.0s]
+Criteria very important. I would encourage all the professors. Please, please nominate your outstanding students. OK, so first is the relevance to KDD. Then the second one is the originality of the main ideas. Then we look at like significance broader impact. If you're familiar with the national NSF proposal. So you have to have this. So we also have this broader impact for the social good. And technical depth and soundness. Overall presentation now. It's my honor to present. [1653.0s - 1682.0s]
+The honorable mentions. We have please honorable mentions award winners. Please come.
+
+**AI Summary:**
+The speaker discusses presentation criteria for a selection process. They outline the criteria as: relevance to KDD, originality of main ideas, broader impact, technical depth and soundness, and alignment with the national NSF proposal and social good. They encourage professors to nominate outstanding students. Finally, the speaker introduces the presentation segment and mentions the honorable mentions award winners.
+
+============================================================
+
+### Semantic Chapter 29 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We have two of them. My sweater does from University of Texas. Dallas then also we have achieved while young from Stanford University. These two students they are here and Mladin Cola. He cannot be here and Eric. She is not here either so. Out of emails, but we still have to check out. [1682.0s - 1711.0s]
+This says the run up Aditya. He's also here so we also exchanged emails. The last one, the winner and Conkey Kim, please. [1711.0s - 1740.0s]
+I'm. And the Cohee Kim he will. He is working at the Disney. It's not much fun, so he decided to join so National University as a professor next year to nurture more data miners. Alright, thank you very much. Please remember to nominate your students next year. We're almost there so I know it's late. Everybody had a long day of exciting workshops, so we'll try to speed up a little bit at the end. And I'd like to invite Garber, Mellie to the stage. He's going to be talking about the ACM Security 2. [1740.0s - 1769.0s]
+1014 Service An innovation awards? Thanks. Hello, it's been my Honor this year to chair the committee that selected this year, see KDD Service Award and Innovation Award winners. It involved content committee members of. People who you'd recognize from the field past winners of the Service Award and Innovation works well. Start with the Service award and I'll try to build up a little bit, but the service award is the price. [1769.0s - 1798.0s]
+Locate the person who has contributed significantly to the field to their community. It involves a cloudy, mentioned a lot of assistance and it can be very multifaceted from helping out directly or with students or funding organizations. And for this year I'll try to build out.
+
+**AI Summary:**
+The segment covers networking and discussions about academic achievements, followed by an awards presentation.
+
+Attendees discussed academic affiliations from the University of Texas, Dallas, and Stanford University. There was also mention of exchanging emails and identifying individuals, including Aditya and Conkey Kim. A specific mention was made of Cohee Kim, who plans to join National University as a professor to nurture data miners.
+
+The segment transitions to an awards ceremony, where the speaker thanked participants for a long day of workshops and encouraged nominations for next year. The focus shifts to the KDD Service Award and Innovation Award, noting that the speaker chaired the committee that selected the winners. The criteria for the Service Award emphasize recognizing individuals who have significantly contributed to their field and community through direct assistance, students, or funding organizations. Finally, the segment introduced Garber and Mellie to speak about the ACM Security 1014 Service and Innovation Awards.
+
+============================================================
+
+### Semantic Chapter 30 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Maybe you'll recognize who the individual is. Um, for substantial technical, technical contributions, you'll also recognize that for we benefited. [1798.0s - 1827.0s]
+From their work for this conference, 'cause they've really ensured that our practice area industry government track has really focused on applications and has been in the community for many years, will definitely recognize them. There's here some some of the. [1827.0s - 1856.0s]
+Bio that I encourage you to look at the website for more of their their contributions, but this is some of the more recent activity and for example Katie the Treasurer had the honor to deal with all this logistics. So for this year's Service award, I'd like to invite Ted Senator up. [1856.0s - 1885.0s]
+No. Well, thank you very much. It's been my pleasure and to be able to engage in all the different activities to help this very important community. There's many people I'd love to thank is battling to call out three in particular, you only Michael Zeller Android Gani who were during the three years that I was the program Co chair for the industry, government track? And they were code shares with me in each of those three and they had a very important role. So thank you to them and thank you to. Everybody else, and please, there's there's many, many opportunities, especially as the community and the conference grows to help it help it move along. And I hope all of you contribute, not just scientifically, not just through your research, but in other ways to the Community as well. So thank you. Our second task was to find an individual for the innovation award and we had. [1885.0s - 1914.0s]
+Many contenders in the field, as you know, there are some incredible talent present in our community for the innovation award. With these are our criteria.
+
+**AI Summary:**
+The speaker begins by recognizing individuals who have made substantial technical contributions to the industry/government track, emphasizing their long-term involvement in the community. The speaker then introduces the logistics for the Service award and invites Ted Senator up. They express gratitude, specifically thanking Michael Zeller and Android Gani for their significant roles during the program's three years. The speaker encourages the community to contribute in various ways beyond just scientific research. Finally, the focus shifts to the next task: finding an individual for the innovation award, noting that there are many talented contenders in the community.
+
+============================================================
+
+### Semantic Chapter 31 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Definitely as outstanding technical contribution in our field with lasting impact. So Fortunately for us we can do a lot of analysis on past impact on significant papers even through our own proceedings. Anne.
+
+**AI Summary:**
+The contribution is highlighted as an outstanding technical achievement with lasting impact. This work enables further analysis of its past influence on significant papers, leveraging their own proceedings.
+
+============================================================
+
+### Semantic Chapter 32 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+To build up to. Announcement you'll recognize there once you see them here. Definitely foundational research and. Data stream analysis and cost based classification. Adversarial learning. And many applications systems that have been developed because of each of those contributions. [1914.0s - 1943.0s]
+I encourage you again to look at the website to find the many contributions in a specific contributions, but here's a little more that you may know. [1943.0s - 1972.0s]
+I have known about them and maybe to give away who? The winner is. This there right now professor at University of Washington, and has that tremendous impact that I know several times being here too, for when they received the best paper award and always was an amazing presence in our conference. And so I would like to invite you to welcome. [1972.0s - 2001.0s]
+Is the winner Professor Pedro Domingos. Thanks, congratulations, thank you.
+
+**AI Summary:**
+The speaker discusses foundational research in data stream analysis, cost-based classification, and adversarial learning, highlighting how these contributions have led to various application systems. The segment then transitions to an announcement, introducing the winner of an award. The winner is identified as Professor Pedro Domingos from the University of Washington.
+
+============================================================
+

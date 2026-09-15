@@ -1,0 +1,20 @@
+{
+    "id": "zqok4xsjncgyuadxf6ddsljuh2n3tr4i",
+    "title": "Deep Learning via Semi-Supervised Embedding",
+    "url": "http://videolectures.net/icml09_weston_dlss/",
+    "info": {
+        "author": [
+            "Jason Weston, Facebook"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Semi-supervised Learning"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 227,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1429
+}

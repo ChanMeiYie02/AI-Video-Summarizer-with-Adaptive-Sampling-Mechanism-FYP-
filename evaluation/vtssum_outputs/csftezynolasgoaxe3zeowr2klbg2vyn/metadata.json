@@ -1,0 +1,20 @@
+{
+    "id": "csftezynolasgoaxe3zeowr2klbg2vyn",
+    "title": "A polynomial algorithm for the inference of context free languages",
+    "url": "http://videolectures.net/icgi08_clark_pai/",
+    "info": {
+        "author": [
+            "Alexander Clark, Royal Holloway, University of London"
+        ],
+        "published": "Oct. 9, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Natural Language Processing"
+        ]
+    },
+    "num_segments": 44,
+    "num_sentences": 327,
+    "num_clips_with_summary": 32,
+    "num_gt_summary_sentences": 68,
+    "ground_truth_summary_length_chars": 7442
+}

@@ -1,0 +1,20 @@
+{
+    "id": "nok6yq7twvse42oe3mu3lyhwtyrma34e",
+    "title": "Learning with a Non-Exhaustive Training Dataset: Detection of Bacteria Cultures Using Optical-Scattering Technology",
+    "url": "http://videolectures.net/kdd09_dundar_lnetdbcost/",
+    "info": {
+        "author": [
+            "M. Murat Dundar, Department of Computer and Information Science, Indiana University-Purdue University Indianapolis"
+        ],
+        "published": "Sept. 14, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Data Mining->Anomaly & Streams"
+        ]
+    },
+    "num_segments": 91,
+    "num_sentences": 260,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 3545
+}

@@ -1,0 +1,23 @@
+{
+    "id": "ddhfdisrjr7fzygiq3hx45njq7727ex5",
+    "title": "How the Biggest Open Database of Companies was Built",
+    "url": "http://videolectures.net/dataforum2012_taggart_database/",
+    "info": {
+        "author": [
+            "Chris Taggart, OpenCorporates"
+        ],
+        "published": "July 16, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Computer Science->Databases",
+            "Top->Business->Small and Medium Enterprises (SMEs)",
+            "Top->Social Sciences->Society->Public Policy",
+            "Top->Social Sciences->Society->Information Society"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 252,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 2546
+}

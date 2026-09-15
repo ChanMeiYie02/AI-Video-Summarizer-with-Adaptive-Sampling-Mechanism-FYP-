@@ -1,0 +1,20 @@
+{
+    "id": "2pey2a6jn5avx6tdqpf64syhjiz3sxxx",
+    "title": "Linked Open Data",
+    "url": "http://videolectures.net/estc2010_davies_lod/",
+    "info": {
+        "author": [
+            "John Davies, British Telecommunications Plc."
+        ],
+        "published": "Dec. 23, 2010",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 10,
+    "num_sentences": 30,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 359
+}

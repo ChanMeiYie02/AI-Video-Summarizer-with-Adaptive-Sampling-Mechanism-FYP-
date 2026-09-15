@@ -1,0 +1,674 @@
+[0.0s - 29.0s]
+OK, so First off, thanks to the organizers for inviting me. It's always fun to come out to Montreal and like Escape the Vancouver rain. And. I always like coming here 'cause you learn like so many different things in the deep learning. People are always doing amazing applications and like the last few days, it's just like tremendous what's happening in this area. But as you mentioned, I kind of I'm only working on this sort of stuff recently. We've got a few projects in our lab, but we mostly just do optimization proofs. So I'm going to start with the first lecture talking about very easy problems in the sense that they are smooth, finite and convex. So these are problems that we can solve in polynomial time, and more recently we can solve very very large instances in polynomial time. And the reason I want to talk about this is because there I think there's a few very exciting developments in the last three years which potentially have applications in applications that you're interested in. Tomorrow we're going to basically take the negation of this. We're going to talk about non smooth, non finite and non convex and see what changes what extra challenges arise there weather what are things that you need to think about.
+
+[29.0s - 58.0s]
+OK, so I think I can more or less skip the motivation.
+
+[58.0s - 87.0s]
+You can we. We've heard all week about how you can use these big datasets. You can fit these big models. An optimization seems to be a crew.
+
+[87.0s - 116.0s]
+So part of this, so a common framework we think about is empirical risk minimization. Usually we have some data fitting term, so I'm going to use X as in R to the DD as your dimension. X is your parameters. You might have some inputs, AI and outputs BI, or possibly just inputs loss, L, and then you often have a regularizer too, so the regularizer has not been talked about as much in the lectures, but it's often there so we have N observations and we're just going to talk about finding the optimal parameters X star, and we're really talking about this in the mathematical sense. Of we want to really find the globally optimal parameters. We want to minimize this.
+
+[116.0s - 145.0s]
+Function. So you can talk, put almost anything in this framework. Everything from L2 regularizer, least squares, conditional random fields and a lot of the deep neural network models will also fit in this framework.
+
+[145.0s - 174.0s]
+So the practical challenges are designing or learning good features or efficiently solving the problem. When energy are very large.
+
+[174.0s - 203.0s]
+So why think about large scale optimization? Well, optimization is the core of a lot of machine learning models. Most of the models we've seen talked about during during the summer school have been based on optimization algorithms. And you can't really solve huge problems with traditional methods, so we've seen.
+
+[203.0s - 232.0s]
+A lot of stochastic gradient in particular to solve large problems. OK, so why do I want to focus on convex optimization to start with?
+
+[232.0s - 261.0s]
+Well, these are among the only efficiently solvable continuous problems, and I'll say what I mean by that in a moment. But these are problems we can solve in polynomial time.
+
+[261.0s - 290.0s]
+You can also do a lot with convex models, so there's a lot of models in machine learning that are convex and a lot of the empirically effective non convex methods are based on methods with good properties. For convex functions. You can also talk about the converse of that where if you really want to get to a local minimum then near local minimum your function will look like a convex function. So if you design A method that doesn't have good properties for convex functions you wouldn't expect it to have nice properties for non convex functions either.
+
+[290.0s - 319.0s]
+And the thing that I'll talk about in Part 2 is a lot of the tools from convex analysis are being extended to non convex functions. So there's a few tools that have been developed in this very special, smooth, finite convex case that it's now we've now realized we can apply to nonsmooth, nonconvex and or non finite prob.
+
+[319.0s - 348.0s]
+OK, so. Testing the audience. How hard is this problem? I have some function F of XI. Haven't told you anything about it. You have parameters X real space R to the D. You can use whatever you want, except you can't use an Oracle that tells you the answer. How long does it take you to solve this problem? I heard a few. Yeah, you don't. You don't have to get the solution. You just have to be within within epsilon of the best F of X. Lot of people talking once. OK so I heard some I heard some exponential. I heard some forever. The correct answer is actually forever.
+
+[348.0s - 377.0s]
+So you can't actually solve this problem. I can design A function that's basically flat everywhere, and then it's infinitely small at some arbitrary real value decimal expansion and then you can just never find it. Whatever algorithm you give me, I just add one extra decimal place to make sure your algorithm never actually finds it. So to even talk about solving optimization problems, you need to start making some sort of assumptions. Usually these come in in the form of Lipschitz continuous assumptions, so either assume that your function or radiant, or your Hessian or something doesn't change too quickly. So if you do it on your function, we say that the absolute value of the function can't change by more than L as you change the parameters.
+
+[377.0s - 406.0s]
+So as a picture, I've got my function here. And if I evaluate some point.
+
+[406.0s - 435.0s]
+Then this L gives me the slope of two lines. And what this inequality tells me?
+
+[435.0s - 464.0s]
+Is that if I just know my function at this point, the other function values have to lie in this sort of mauve area on this projector? So when you start to make assumptions like this, now you can narrow down things. Now it's not an impossible problem anymore because I can't make something arbitrarily low. It can't be lower than this line.
+
+[464.0s - 493.0s]
+And then if I can maybe get another point, I can narrow down the space even more. And as you go along, you can start to narrow down.
+
+[493.0s - 522.0s]
+The solution would be. So if you make that assumption. There's a worst case bound that you can. Well, there's there's an upper and a matching lower bound, so if you have that assumption you can now apply a sort of a grid search where you actually like. Explicitly explore the entire space in high dimensions and you can eventually find that epsilon optimal solution. There's also a matching lower bound, which is this rate, so let's take 1 / T to the 1 / D. So this is a very bad rate if you're in high dimensions. So 1 / T is already not very nice, but raising that to the power of the dimension it makes means that this is going to take an extremely long time. This is a crazy exponential runtime. Um, another thing is OK, so there's a lot of. Results for non convex elements. We have convergence rates that are actually even slower than this and I want to point out how absurd that is because if you actually just search for random points and then take the best one, you also get this convergence rate in expectation. So you should you see convergence rates lower than this, you should be very uh.
+
+[522.0s - 551.0s]
+Happy with it. OK, so the point I want to make with this slide is optimization can actually be very hard in the general case. But as soon as you start making assumptions, it makes a big difference. So we went from an absolutely impossible problem to a problem that we can solve very slowly by just making one simple assumption. And this is sort of where convexity is going to come in.
+
+[551.0s - 580.0s]
+Other generalizations of that. So a convex function is a function satisfying this inequality.
+
+[580.0s - 609.0s]
+It is easier to show it by pictures, so if you.
+
+[609.0s - 638.0s]
+Somefunction we have two points.
+
+[638.0s - 667.0s]
+A convex function is always below the line between the two points, so I evaluate F of X&F of Y and if I evaluate the function at any point between X of what X&Y, the function is going to be below this line. It's a very simple definition, but the nice implication of that is that if you have a local minima, it's a global minima.
+
+[667.0s - 696.0s]
+So.
+
+[696.0s - 725.0s]
+The point between.
+
+[725.0s - 754.0s]
+So this would be a non convex function where you.
+
+[754.0s - 783.0s]
+If you have two points, the function is actually above, so that's non convex and that means you can have non global local minima.
+
+[783.0s - 812.0s]
+A second characterization of convexity is by this sort of tangent.
+
+[812.0s - 841.0s]
+Asian. And what it means is that convex functions are.
+
+[841.0s - 870.0s]
+Are basically above their tangent everywhere. So if I take an F of X.
+
+[870.0s - 899.0s]
+And I draw a line which is this F of X plus this linear term. Then the function is always above it, so you can always sort of find a lower bound to your function everywhere. Once you have a point and a derivative.
+
+[899.0s - 928.0s]
+And from that you can easily see that if the gradient is zero that you are global minimum 'cause if I'm here and the tangent to zero, that means the function is above that line everywhere.
+
+[928.0s - 957.0s]
+There's a third characterization of convexity for twice differentiable functions, and that's the Hessian always has non negative eigenvalues and this is maybe less nice from a geometric perspective. It just means that the function is curved upwards in every direction at every point, but this is usually the easiest way to show that a function is convex. If you're not sure that a function is convex and you want to try and prove it often, you can just take the second derivatives and show that those are never negative. Are we happy with convex functions?
+
+[957.0s - 986.0s]
+That makes sense. OK, so there's a whole bunch of simple convex functions. You can basically just memorize the list. These are the ones that occur most often and we've got linear functions, quadratic functions, sort of exponential Max functions, norms and norm squared.
+
+[986.0s - 1015.0s]
+There's some more exotic things like the log, some exponential log determinants, and these linear quadratic race.
+
+[1015.0s - 1044.0s]
+Shows there's a bunch of operations that preserve convexity, so you can take a non negative weighted sum. You can take a linear or convex function of a linear function will still be convex, or you can take the maximum of convex functions that's also.
+
+[1044.0s - 1073.0s]
+Sex. So if you want to show that some more complicated functions are convex, usually just compose them with these simple operators.
+
+[1073.0s - 1102.0s]
+So, so that function. We know that this is a norm, and so it follows from this second rule.
+
+[1102.0s - 1131.0s]
+Or if you want to show it.
+
+[1131.0s - 1160.0s]
+SVM's are convex. Well, this term is the norm squared. These two are linear functions. You take the Max and you take a non negative weighted sum. So with these rules you can show the lot of things or convex.
+
+[1160.0s - 1189.0s]
+OK, so I don't want to go too much more into the details of convex functions 'cause I actually want to get into methods which are which are more of interest, but I just want to go over that to sort of introduce notation and to set the stage for what we're talking about.
+
+[1189.0s - 1218.0s]
+OK, so there's these things called interior Point methods which can solve convex problems in polynomial time. I'm not going to talk about these too much, but this is nice in computer science. We want problems that we can solve in polynomial time.
+
+[1218.0s - 1247.0s]
+But usually those have a D squared or worse cost per iteration. So if you have if you have a billion variables, these are very expensive. Even just to do one iteration. Um? Yeah, so usually there will be an end in there may not be N squared, so usually you can pick either D squared or N ^2. We
+
+[1247.0s - 1276.0s]
+Whichever is smaller. So that's sort of cause renewed interest in gradient methods, so grading methods have been used in the deep learning literature like forever. But it's only recently that in convex optimization people realized that we really consider gradient methods there too. Just 'cause they have a better scaling with the dimension. So the methods are very simple. We have XT stepsize, Alpha T, Anna gradient FXT and we use that to generate a new iteration XD plus one, so I'm assuming you've seen this many times over the past two weeks, but I just wanted to show it to sort of.
+
+[1276.0s - 1305.0s]
+Read the notation I'm.
+
+[1305.0s - 1334.0s]
+So the nice thing is we have the cheap iteration cost, but there's a tradeoff, because now you're going to need more iterations and the question is, do we lose this polynomial time guarantee when we go to gradient method instead?
+
+[1334.0s - 1363.0s]
+Of Interior point style methods. So let's consider one of the sort of test problems in the convex world of machine learning, which is L2 regularizer, logistic regression. This is a simple binary classification model. The objective is convex. That first term is Lipschitz continuous. The second term is not Lipschitz continuous.
+
+[1363.0s - 1392.0s]
+But the assumptions you have which you often have are that the eigenvalues of the Hessian are bounded above by a positive constant, so that's a very reasonable assumption. That's almost always true. I believe that's even true for almost all deep. Well, I don't know about recurrent networks, but the standard feedforward networks that's definitely true. And then this is so much stronger assumption. This is called strong convexity. So for the.
+
+[1392.0s - 1421.0s]
+Aggression that satisfies this, but you often have those. Where muse greater than zero? Yeah, so you often have it for some you, but we are worried about them. You greater than zero case here. So we're saying that the gradient is Lipschitz continuous is equivalent to that, and this mu greater than zero, which bounds the eigenvalues. That's called a strongly convex function. That's right, so so this is a notation meaning that the eigenvalues of this are less than or equal to L. All the animals are lessening with L, which is often written like this in sort of the convex books.
+
+[1421.0s - 1450.0s]
+OK, So what are those assumptions give us? The Lipschitz continuous gradient, so this is going to be. This is going to be true on this slide for any Lipschitz continuous function, which includes feedforward networks. I've never proved that, but I'm almost sure that it's true. OK, so from Taylor's theorem we have this inequality. This is the 2nd order Taylor's theorem. I've written new innovative. OK, yeah, so definitely. If you stay on a compact set then your if your weights don't get too big then it's definitely true. OK, so normally will talk about having a third order term or something that, but there's also a version related to like the mean value theorem, which is that for some value of the Hessian between X&Y, this is going to hold with equality.
+
+[1450.0s - 1479.0s]
+And now you're going to use that Lipschitz assumption to bound this second term. So if you have the email, then you're bounded by Li. Then I can think of the worst direction, y -- X, and that that can be at most L times the difference between y -- X. So what this says is when you have the Lipschitz continuous gradient, you can use Taylor expansion to get this global upper bound on the function value.
+
+[1479.0s - 1508.0s]
+And you can think of just setting your next iteration to the minimizer of that upper bound. This is like em. You make an upper bound, you go to the minimum of it. So if you plug that value back into this equation, you see that these two terms start to cancel out and you get something that looks like this and what it means is. If you use gradient descent with a step size of 1 / L, you actually guaranteed to decrease the objective function, so there's no line search or anything. This is just because the Hessian or the gradient can't change too quickly if you use the step size, you're guaranteed that the objective function goes down, and strictly so if you're not at the minimizer.
+
+[1508.0s - 1537.0s]
+So as a picture you at some point X and you have.
+
+[1537.0s - 1566.0s]
+Function F of X. This was our first order term. The first 2 terms in our Taylor expansion, which we said are always below the function. But then because you have, you know the gradient doesn't change too quickly.
+
+[1566.0s - 1595.0s]
+You can make this blue thing, which is an upper bound on the function.
+
+[1595.0s - 1624.0s]
+And then you can think of moving to the minimizer of that function to get your new your new editor.
+
+[1624.0s - 1653.0s]
+Or as a 2D picture, we always see the gradient descent is always moving inside the level curves of a function and making steady progress towards the optimum.
+
+[1653.0s - 1682.0s]
+OK, so that will be true even for non convex problems. That's just the property of the Lipschitz continuous gradient, so strong convexity lets us go in the other direction.
+
+[1682.0s - 1711.0s]
+We're now going to say the eigenvalues. Will they have to be at least knew times I and that lets us turn the inequality around and get an upper bound or lower bound that depends on you.
+
+[1711.0s - 1740.0s]
+So is a pig.
+
+[1740.0s - 1769.0s]
+Sure, it's kind of the same.
+
+[1769.0s - 1798.0s]
+This before, but now we've got this red function that's always below our function, so we know that we can't really go too far below where we are now.
+
+[1798.0s - 1827.0s]
+If you minimize both sides of this inequality, you get an inequality that looks like this, so it's roughly saying that the solution can't be too far down from where we are now. Depending on the current function value in the current gradient.
+
+[1827.0s - 1856.0s]
+And once you have those two assumptions, it actually lets you show that you get what's called a linear convergence rate.
+
+[1856.0s - 1885.0s]
+So you put those.
+
+[1885.0s - 1914.0s]
+Inequality is to get.
+
+[1914.0s - 1943.0s]
+Here you have this guaranteed progress coming from the Lipschitz continuous prop.
+
+[1943.0s - 1972.0s]
+And you have that you can only go so far because of strong convexity.
+
+[1972.0s - 2001.0s]
+That's what's going to let.
+
+[2001.0s - 2030.0s]
+You got a convergence rate, so if you put those two together, you subtract F of X star from both sides. You get something that looks like this, so my suboptimally an iteration T plus one is the suboptimality an iteration T times this property 1 minus me over L&L overview is often called the condition number of the problem. This tells you how hard the problem is to solve or or how much the.
+
+[2030.0s - 2059.0s]
+Problem changes in some sense. And if we apply that inequality over and over and over again, going back to X zero, we get this quantity raised to the power T. So each time you run an iteration of gradient descent, you're multiplying your error by some fixed amount. Now one thing I want to point out is this is dimension independent. There's no, there's no D here, so D indirectly affects me in L. But in principle, if you and L is constant, you can solve billion dimensional problems for the same number of iterations as you can solve 2 dimensional problems. So people really like that. If you were always close to one, this can be very fast. If it's close to 0, this can be very slow, and this is in some sense a polynomial time runtime, because if you want an extra. Digit of accuracy. You make you multiply the number of iterations G by some constant amount.
+
+[2059.0s - 2088.0s]
+OK, what if we don't have their regularizer? What if we're not strongly convex, but we're just convex. This is supposed to be easy, right?
+
+[2088.0s - 2117.0s]
+Well, it changes things, so we're still convex, so we still have the. The eigen values are greater than zero greater than or equal to 0. But we don't have that lower bound anymore. Now we have a linear.
+
+[2117.0s - 2146.0s]
+Lower bound so.
+
+[2146.0s - 2175.0s]
+Instead of that nice red line that curved back up and made sure minimum was finite. Now we just know that the function is above this green line and that leads us to some kind of weird.
+
+[2175.0s - 2204.0s]
+Cases.
+
+[2204.0s - 2233.0s]
+So if you just have that assumption, you get what's called a sublinear convergence rate, so your suboptimality iteration T is going to be some constant Times 1 / T Now. This is way faster than a general nonconvex problem, right? We don't have this negative 1 / D. We just have 1 / T so we don't have the dimension dimension dependence, but this is in some sense not really a polynomial runtime. If you want to get one more digit of accuracy, you might have to do 10 times as many iterations as you did before. If you want two more digits of accuracy, you might have to do 103 more digits 1000 and so on. So this is this is less appealing and so I just want to emphasize that the linear convergence rate is. Is.
+
+[2233.0s - 2262.0s]
+A bit nicer than the sublinear convergence rate. And in machine learning. That's right, so that's my next point here is that if you have a convex function, you can always add a regularizer. So if you add the two norm squared, it actually strictly increases that new value by Lambda. So if you have a convex function and this actually should be Lambda over 2, then you is at least Lambda an you might have extra strong convexity from your function, but you can always do that. There's a second reason that machine learning. We probably don't care about this result, and I'll get to that when I start talking about non convex functions, because actually for almost every convex function you'll ever encounter in machine learning, you can prove the faster rate from the last slide, and so I'll get to that part.
+
+[2262.0s - 2291.0s]
+Tomorrow OK, so that's some theoretical issues, but in practice you never use this 1 / L. What do you actually use? So there's these things called line searches which actually work much better and they don't require that you know that value.
+
+[2291.0s - 2320.0s]
+L. So the basic one is in Armillo backtracking line search. You just start with some big step size and you start dividing it until some inequality that looks like what you want is satisfied. You just want to make sure you decrease the function by a little bit more than what the grey.
+
+[2320.0s - 2349.0s]
+It tells you you can. Then there's more fancy things like the Wolf conditions, which make sure the step sizes don't get too small, and if you implement these properly, usually really only need about one evaluation per iteration, so there's some people think that line searches take many. Evaluation of the function preparation. But if you do it properly, you can really avoid that.
+
+[2349.0s - 2378.0s]
+Another thing to mention in practice. The intuition is you can do a clever initialization, Anna clever selection of the points you evaluate along the line. So for example, let's say you tried some step size and it failed. Well, you actually value the function. At that point you had the function of the old point and the gradient at that point. Now you can fit a quadratic function through all those pieces of information and move to the minimum of that. If you also like the gradient at the new point, now you can fit a cubic function and move to the middle of that an. If, once you do these tricks, you can actually avoid a lot of the line search iterations. It's called Hermite interpolation or something.
+
+[2378.0s - 2407.0s]
+No yeah Hermite tribulation OK, but usually the number one reason this fails is because your rating code is wrong and I don't mean you as in like a general sense, I'm saying you're not good at coding gradients. I'm including myself and more. You know all inclusive sense. Usually your derivative code is wrong the first time you try it, you should actually check your derivative code. Finite difference is one way to do it. If you have a really big complicated model that's very high dimensional and you're worried something weird is happening. In high dimensions, there's this nice trick from Nicola Leroux, which just says just take some random direction and you can evaluate the directional derivative along that random direction, not on some sense. Check all your coordinates at once with just two function evaluations instead of. Checking all N function evaluations. Yes, yes, that's right. So if you go in both directions and then you can go like 4 function evaluations and things like that too. But going to two usually gives you much more precision than one.
+
+[2407.0s - 2436.0s]
+OK, so it's gradient method in optimal 1st order method. The answer is no. So Nesterov's method has been mentioned a few.
+
+[2436.0s - 2465.0s]
+Times here. So the gradient method has this 1 / T rate for convex functions, and Nesterov's method gets you to 1 / T ^2. For strongly convex it improves you from 1 minus mover L to 1 minus square root of me over L. Mu overalls are number less than one, so taking the square root makes it bigger. And so that means that this is a faster rate.
+
+[2465.0s - 2494.0s]
+So Nesterov's accelerated gradient method looks like this. It looks almost exactly like momentum or what's called the heavy ball method, an conjugate gradient. I think you change around the few of the X is unwise, but the form is roughly the same and the ideas are roughly the same. And the nice thing about Nestor's method is it's nearly optimal if you want a dimension independent algorithm. So if you want an algorithm that doesn't depend on how many variables you have in the convergence rate. These are almost the best that you can do. There's not much hope for a better algorithm unless you make more assumptions about the function, so that's a very nice.
+
+[2494.0s - 2523.0s]
+Property. But for logistic regression, a lot of a lot of other losses you can actually get linear convergence without the strong convexity. So in optimization they really care about this 1 / T versus 1 / T squared rate. But actually it's this difference. That's the more important one. In machine learning we almost never have a general convex function where the 1 / T style rates would apply.
+
+[2523.0s - 2552.0s]
+And now I'll just mention Newtons method which has been mentioned a few times in the summer school too. So here we're taking the 2nd order step where we solve this Newton system. We find a direction DT and take a step in that direction.
+
+[2552.0s - 2581.0s]
+That's equivalent to minimizing some sort of quadratic approximation, so it's the same as before, except for it's not really an inequality here, it's an approximation, and we're using a norm that's based on our Hessian instead of just the Euclidean norm. And I'll talk next time about things where you actually try and put the 3rd order term here, and that those are actually a little bit more elegant an I wish they would have been invented before Newton's method, 'cause the sort of the classical development of Newton's method is very ugly and lead to things like line search and trust regions and stuff. And in 2006 there was a much more elegant method invented that should have been invented 1st and makes life so.
+
+[2581.0s - 2610.0s]
+Much simpler. Also very nice if you want to talk about saddle points. OK, so we can generalize the army oh condition to Newtons method with something like that and Newtons method has a sort of a natural step length of 1, so usually you just try a step length of 1 and you hope that that works. That's always going to work when you're close to a minimizer.
+
+[2610.0s - 2639.0s]
+So what is newtons?
+
+[2639.0s - 2668.0s]
+Would look like.
+
+[2668.0s - 2697.0s]
+So our gradient method looks like that or we have some point or minimum is here. We're going into the board. You're moving sort of perpendicular to the level curves your function, which is not a great.
+
+[2697.0s - 2726.0s]
+Direction of progress here and Noone's method you can think of as making some sort of quadratic approximation.
+
+[2726.0s - 2755.0s]
+You're going to move to the minimum of the quadratic approximation. This blue function, which you're hoping approximates your original red function, and here it makes much more prob.
+
+[2755.0s - 2784.0s]
+Russ so in terms of convergence rate, if you assume you're strongly convex and you assume that the Hessian is Lipschitz continuous, then Newtons method has what's called a super linear rate when you're near the solution. So you get something that looks like this, but instead of having a fixed value here you have some sequence of values, row T that converges to 0. So the longer you run it, the faster it gets, which is a very nice property, so. If you can afford to use that style of method, you probably should.
+
+[2784.0s - 2813.0s]
+You often can't, though, because you have to solve this sort of system. There is a variant called Cubic Regularization which I'll talk about next time, which will let you get global convergence rates and also certain solve certain nonconvex problems.
+
+[2813.0s - 2842.0s]
+Now there are practical versions of Newton like methods, so one thing you can do is you can only use the diagonal of the Hessian, which is equivalent to just having a step size for each dimension. There's bars libro in which is a very cute algorithm which just uses this as the step size, and it's kind of magical. So I made people do this in my class where they were applying a method where gradient descent took thousands and thousands of iterations and they just changed the step size to this and then it takes 75 and just solves the problem to some. Crazy accuracy, so just you know you can try that out this afternoon.
+
+[2842.0s - 2871.0s]
+Quasi Newton that's right, I'm so stochastic gradient is my next section, which I'll get to shortly. But yes, we we did have a version of this. First the casted gradient, but it requires the noise to sort of be bounded. That's right, yeah. So for large mini batches, try this step size. It'll work for awhile until you get until your noise starts to dominate. The forgetting of the initial conditions. That that that that will work for a while. You can keep changing the mini batch. You can do a true stochastic method up until some point and at some point you'll stop making progress as you will with any sort of fixed step size. Yeah you that your noise gets too big, so if you increase the mini batch size overtime then you can keep doing this and that will work OK. OK, so there's also more fancy things quasi Newton Hessian, free Newton methods, so these either keep an approximation of the Hessian or they use Hessian vector products to approximately solve the Newton system, and another relative methods nonlinear conjugate gradient. I'm not going to go over go over these in details 'cause I really want to get to stochastic optimization methods, but I just want to mention that they exist and if you have a problem where you can go through data set many times these are very appealing methods.
+
+[2871.0s - 2900.0s]
+And this is just something I have on my web page comparing a bunch of these things. So I have this code min funk and this is sort of a standard optimization test problem. You start at zero, you want to get to 1. The problem is very ill conditioned. If you use gradient descent with a very fancy line search, it doesn't do much was if you if you some of the more fancy things limited memory, FGS testing for Newton all these fancy conjugate gradients you can do much better.
+
+[2900.0s - 2929.0s]
+That's right. Yeah, well, so so actually a very nice property is if you just want the derivative in One Direction, whether it's your function, your gradient, your Hessian, whatever you can in some sense always do that efficiently. If you want to automatically compute the gradient with respect to every direction with respect to all your coordinates, that's expensive, But if you just give me One Direction, I can always compute that the cost of. At most, like three times the cost of computing the value itself. So gradients and directions are very cheap. And for neural networks they have a very nice structure. As for they do from any other problems. That's true, another thing you can do is you evaluate your gradient in the complex domain with a small perturbation in the complex domain and then the real part will give you the gradient and the complex part will give you the exact Hessian vector product. Yeah. It's very cool. It's in our ICML 2006 paper for CRF's, but the exact same thing is true of most neural network models. As long as you're saying that you're not doing something like a Max, it has to be like a smooth function. It's implement as a sequence of operations. So for a lot of functions, yeah, you can just use complex arithmetic to take the Hessian vector product and that's in Min Funk.
+
+[2929.0s - 2958.0s]
+Two so I just want to show you sort of a sample that these things really can make a difference from not making much progress to making just basically solving the problem.
+
+[2958.0s - 2987.0s]
+OK. But we don't usually talk about gradient methods were often talk about stochastic gradient methods. Hussain.
+
+[2987.0s - 3016.0s]
+What do you mean by approximations? For LBF Jess, it's a complicated question. So if you read the books and stuff they say it's OK. In practice, something weird can happen. So if you really want to Newton like method to converge. You basically need your sequence of Hessian approximations, their eigenvalues to be bounded between two fixed positive constants. Now LDF Jess. If you read about in the textbooks and you look at the implementations, what they usually do is they make sure that it's not ever zero. The eigenvalues of your approximation, but they're not checking that it's too big, or two or two close to 0 so. What can actually happen is that that can go wrong and the algorithm stops working. There's an easy fix, you just restart the algorithm. Oh, I usually say the LB FGS or the precondition testing free Newton methods so. Precondition hassian fruit and uses LB FS to precondition the Hessian free method and that's a very nice, simple, elegant method that works quite well. If you keep the fixed batch size. That's a very complicated question. So that'll work if your Hessian converges to a constant. I'm not sure if that works if you're heading approximation of the eigenvalues stay bounded between interval. I don't know, but the nice thing about the polyak Ruppert result is in some sense it says you don't need to approximate the Hessian in that setting. I'll get to the polyak Ruppert result momentarily. Are there other questions on deterministic methods before we move on to stochastic methods? I feel like there's one more random comment waiting to get out. Not random, insightful. Sorry, I meant this thing in my head. Got replaced with. I'm just joking. Oh, 'cause this is a 2D function. This is 2D, very hard function. Often you're dealing with much easier and much higher dimensional functions, and the story kind of switches when you go to those problems. But yeah, that's a really good question. OK.
+
+[3016.0s - 3045.0s]
+So oh.
+
+[3045.0s - 3074.0s]
+So if I put in I hear and I hear. I don't need to do this anymore. The imaginary part is just going to give me the Hessian vector product. Times Delta so you have to multiply it by Delta but will give it give it to you to like 150 decimal places accuracy so not like the usual like 6. It just completely computes it's. It's actually a special case of automatic differentiation, but you don't do anything fancy, you just change your code to work with complex numbers.
+
+[3074.0s - 3103.0s]
+OK, so back to our problem formulation.
+
+[3103.0s - 3132.0s]
+Grading methods they kind of let us solve the scaling with D, But what about the case where N is very large? So if we talked about image net, I guess it's even bigger now, but at the time of the slide it was 14,000,000 images which you don't want to go through like 100 times. You want to go through it like at most 10 to 15 times. That's sort of the sweet spot. It seems like you need more than one, but probably you don't need more than 50, you don't.
+
+[3132.0s - 3161.0s]
+Too much progress after that. So let's just consider the very abstract problem minimizing a sum of smooth.
+
+[3161.0s - 3190.0s]
+Functions so deterministic grading methods. Very old method when you have that some structure, you just take the average of the gradients in the sum. That's your gradient direction. The problem is the iteration cost is linear in N 'cause you need to complete your grading on every single training example. But you get the nice convergence with constants with constant stepsize or you have.
+
+[3190.0s - 3219.0s]
+Your linesearch stochastic gradient methods sort of a different tradeoff. Instead of valuing every function, you just sample one random function. You take your gradient step with respect to that one random function.
+
+[3219.0s - 3248.0s]
+It's nice it gives an unbiased estimate of the true gradient. So if you take the expectation of this value over all eyes and sometimes I replaced my gradient with F prime. Then you just get the average of the gradients, which is the true gradient. So this is very beautiful. The iteration cost is independent of N. If you have 15 million training examples, this is 15 million times faster, which is the speedup you should care about.
+
+[3248.0s - 3277.0s]
+But the convergence means your step size has to go to 0, and that's sort of what's going to ruin all the fun.
+
+[3277.0s - 3306.0s]
+So this is the deterministic rating with this casting method you start taking big step sizes, but you slowly make them smaller. So if you do that properly you'll converge.
+
+[3306.0s - 3335.0s]
+So stochastic iterations there end times faster, but we really care about how many.
+
+[3335.0s - 3364.0s]
+Actions are required, and if you just do the table, it's actually not so hard to find these results, but they are out there in the literature. The stochastic method for convex function is 1 / sqrt T and for strongly convex functions it's 1 / T. So as I mentioned, we're really going to focus on the strongly convex case and the problem here is that the convergence rate is actually very slow. This 1 / T rate means that the longer you run stochastic gradient, the less progress that's going to make the difference between 1 / 1,000,000 and one over million one is almost nothing. So if you're running it for a million iterations, you're not doing very much. And if you're only relying on unbiased grading approximations, you can't actually improve on the 1 / T. That's true, that's Part 2. That's tomorrow. So today I'm I'm assuming the world is very nice to me and then tomorrow I'm going to step outside my comfort zone and talk about issues like that. But yes, I will get to that.
+
+[3364.0s - 3393.0s]
+OK, here's another weird thing which I added yesterday, 'cause I realized that I really need to mention this. OK, so momentum slash acceleration does not improve the rate, so you're still in this rate regime. So in terms of convergence rate, momentum doesn't make you faster. Here's another weird thing though is that there's only one convergence rate. Proof of momentum in this casting aware of, and actually requires the momentum to go to 0. So this usual thing of setting that data to .9, there's actually no theory to justify that as far as I'm aware. Just throwing that out there since that seems to be a very common thing. I it's. In the stochastic case, momentum does not help in terms of the dependence on T. I'll get to in a few slides. You can actually improve the constants that are hidden in there, but you cannot improve the dependence on T. And you need the momentum to go to 02, which is another weird thing.
+
+[3393.0s - 3422.0s]
+OK, so this is kind of the story in the smooth, strongly convex case where we've got the deterministic methods, which kind of do nothing for a long time. Take a big step, do nothing, take a big step and so on, but make steady progress with this casting methods which make a whole lot of progress right away. But the longer you run them, the less progress they're going to make. So if you're really in the low time or you don't care much about accuracy, then stochastic methods are definitely superior, whereas if you have a lot of time or you need a very high accuracy than the deterministic methods are a bit better than. Unfortunately it's a little bit tricky 'cause you're not allowed to see the green curve when you run stochastic methods. You can't really decide which method to use, so I just want to point out that trade.
+
+[3422.0s - 3451.0s]
+Off
+
+[3451.0s - 3480.0s]
+Well, yes, so you have to make this the casting method lot slower. 'cause now you have to compute the function values itself to figure out where the crossing point is. Right, so if you're using a validation set, then I think. It goes away a bit. Depending on the cost of evaluating the validation set for. Yeah, so yeah, in that case you could actually look for the crossing point definitely. Oh, so I'm pointing versus time so it has to actually go through all 15 million data points. And at that point in time it's not changing the parameters, so it's effectively doing nothing on those iterations. Other questions about this plot. So this is actually set up point, which I'll get to very shortly. Is that for a lot of the stochastic gradient methods that at least the theory used in some of the ones that use in practice, they actually exponentially go up before they start going down. And this is this is this is approvable phenomenon. The answer to that is used constant step size and I'll get. Or something that looks like constant step size and I'll get to that momentarily. Yes, definitely. That's right, so that's a very common strategy. Classically, the. Yeah, so often the recommended right places after one pass through the data, so right there. And that's usually a pretty good approximation of where you should do it.
+
+[3480.0s - 3509.0s]
+OK, before we get to that trip, I just want to mention that the story is not the same for nonsmooth problems. So if we think about things like SVM's, the story between.
+
+[3509.0s - 3538.0s]
+Realistic and stochastic is actually much simpler. So here's the rates of what's called a subgradient method. It's generalization of grading for nonsmooth problems, for non, for convex problems. So if we go through the full data set on each iteration, we get 1 / sqrt, T one over T, so it's not. It's not great, it's much slower than if this function is smooth. But the stochastic rain actually has the same rate. Which is kind of cool. It's like a free lunch if your function is really. If you're really optimizing a nonsmooth convex function used the castec subgradient. Don't use cutting plane, don't use. I think that's still in the non smooth setting. You still have you still have. Discontinuity's if you can show that the minimizer, the point you're converging to, that the function is smooth, then you're really in the easier case. But if you're non smooth out the minimizer then you're in the hard case. So there's a bunch of optimization people have been saying that we can just apply quasi Newton Smith problems and not even worry about it, but they don't work on problems like L1 regularization where you're actually not smooth at the minimizer. OK, so they're convex. What I mean by non smooth is that you can't take the derivative everywhere, there's there's some points where there's no gradient. It's not, it does not exist. Now this function so you can't talk about the gradient being Lipschitz continuous anymore. So what you do is you. So, so Lipschitz is kind of an upper bound on the rate of change, and strong convexity is a is a lower bound on the rate of change. This happens to be a strongly convex function, so we still have the lower bound, but the upper bound we have to change now 'cause we don't have a gradient, but you assume that the sub what's called the sub gradient, which I'll get to in the next slide is bounded. The subgradient can't change too quickly either and then you get analogous things. In the gradient descent stuff, you only care about the gradient function doesn't have to be Lipschitz continuous, and at least squares, it's not. Right? It's true, so. So actually for convex functions, any nonsmooth convex function has to be differentiable almost everywhere. The problem is not that you're on the non differentiable points. The problem is that the gradient you sort of lose this that the gradient can change slowly when you have non differentiable points you get to you go from here to here in the gradient sort of jumps in magnitude, and that's going to prevent you from. Sort of approaching it slowly and smoothly. That's right. I will talk about smoothing approaches next time 'cause 'cause you can beat these bounds with approaches like that. I am one of the points I really make next time. Is these bounds actually really pessimistic and you can. You can just destroy them in practice, which is kind of like a theme of my research is showing that you can often beat these bounds under very small changes to your assumptions, but that's a very good point. OK, so so. So if any of you are still using like SVM, whatever structure per for light or whatever, just you stochastic gradient instead. It'll work much better.
+
+[3538.0s - 3567.0s]
+OK. So for announcement problems, determining determining methods are not faster than stochastic methods. So if you truly have a black box dance with problem, you stochastic subgradient durations will be 10 times faster. Convergence rates the same. It really is a free lunch until we get to tomorrow.
+
+[3567.0s - 3596.0s]
+OK, So what is? What is the subgrade in the subdifferential? So that was our that was our sort of 1st order DEF.
+
+[3596.0s - 3625.0s]
+Notion of convexity and we're just going to say a subgradient is any direction. D where I can plug it into that inequality and the inequality is still satisfied.
+
+[3625.0s - 3654.0s]
+If you had a differential point, there's only one sub gradient which is the gradient and at non differentiable X you're going to have a whole set of sub gradients, called the subdifferential, which is confusingly used with this notation. A nice property of the subdifferential is if zero is in your subdifferential, then you're at the global minimum of a convex function, so that generalizes the condition that the gradient is 0 for the.
+
+[3654.0s - 3683.0s]
+The minimum of a smooth function.
+
+[3683.0s - 3712.0s]
+As a picture.
+
+[3712.0s - 3741.0s]
+If you're at a smooth point, you've got one subgradient. It's the gradient.
+
+[3741.0s - 3770.0s]
+If you're at a non smooth point then.
+
+[3770.0s - 3799.0s]
+You have you know that.
+
+[3799.0s - 3828.0s]
+Subgradient, that's it.
+
+[3828.0s - 3857.0s]
+Gradient that's a subgroup.
+
+[3857.0s - 3886.0s]
+Print and basically any any way you sort of tilt this line. You'll get a subgradient and it turns out it doesn't. Well, I'll talk about.
+
+[3886.0s - 3915.0s]
+Whether it matters which.
+
+[3915.0s - 3944.0s]
+When you pick but essentially for stochastic subgradient it doesn't matter which one you pick. So if you're doing this generalization of this for nonsmooth functions called the Clark Subdifferential, which is a very fancy way of saying that's what you guys are doing when you do Relu. So if you want to make your papers sound more fancy, you should say you're taking the Clark subgradient, which is basically like a local subgradient, and that would be. What would you do for revenue when you take either one or the other line? If you're actually at the nonsmooth.
+
+[3944.0s - 3973.0s]
+Which you may not be. So sub differential absolute value function is is plus one if you're bigger than 0 -- 1. If you're less than zero, and then anything in between when you're equal to 0.
+
+[3973.0s - 4002.0s]
+As a picture.
+
+[4002.0s - 4031.0s]
+Sure, if you're there, it's the line with slope minus one.
+
+[4031.0s - 4060.0s]
+If you're at.
+
+[4060.0s - 4089.0s]
+Zero then you.
+
+[4089.0s - 4118.0s]
+Minus one plus.
+
+[4118.0s - 4147.0s]
+10 So this is the global minimum of the absolute value.
+
+[4147.0s - 4176.0s]
+And then a whole bunch of us.
+
+[4176.0s - 4205.0s]
+Thing, so any of those will work as subgradients, they're all fine.
+
+[4205.0s - 4234.0s]
+Subdifferential of Max.
+
+[4234.0s - 4263.0s]
+Function as in the Relu is you just take whichever one is the arc Max and take its gradient, assuming they're both smooth. So if F1 is bigger, you take that one. If F2 is bigger, you take that one. If they are tide then you can take any convex combination. You can take any anything that mixes between the two.
+
+[4263.0s - 4292.0s]
+OK so the basic subgradient method I'm going to use this notation where DT is now some element of the sub diferente.
+
+[4292.0s - 4321.0s]
+I'll if you want to talk about the best subgradient that's called the steepest descent rule, and it's given by this weird relationship where you actually take the smallest subgradient that's in some sense the direction that will give you the most improvement. That's often not easy to compute if you're doing something like L1 regularization. It is easy and very common, but in Gen.
+
+[4321.0s - 4350.0s]
+Well, it's not easy to compute. If you don't pick that direction, you can actually increase the objective even for small alphas. So if you there's no guarantee that you'll decrease the objective function by following a subgradient. But if your step size is small enough, you can guarantee that you decrease the distance to the solution. So even though you might increase the function, you still actually get closer to the solution. But you still require the step size to go to 0, and that's what's going to lead to those bad convergence.
+
+[4350.0s - 4379.0s]
+So I showed before. The basic stochastic subgradient method is exactly what you think it would be. Instead of taking the true subgradient, you just take the subgradient for one of your functions, randomly chosen, so no surprises there. I'm pretty sure most people in the room have actually used this hour.
+
+[4379.0s - 4408.0s]
+OK, so let's talk a little bit about what is known of the theory versus the practice for convex functions. So if I just take this Alpha T is one over mu times T this is this is very common for SVM. Is this actually works for every other problem? This doesn't really work, they don't ever write that in the papers. I don't know why. OK, so 1 / T for smoothing functions one over log T / T for nonsmooth functions you use a log factor compared.
+
+[4408.0s - 4437.0s]
+Optimal, but it's not a big deal, but except for if you're doing binary streams, you should actually never use that version of stochastic gradient descent, so the initial steps are huge, so usually mu is something like 1 / N or 1 / sqrt N. So your initial step size is something like N. The number of data points like 15 million. You can, you can easily imagine why this is a ridiculous thing to do, and you can actually prove that until some point. This step size is going to be exponentially fast away from the solution, it's going to increase the objective function, so this was a comment before that often stochastic rain. You don't see this sharp increase. You see a big increase, and then it goes down. That's usually from using some crazy stepsize like this. The later steps actually get very small, so 1 / T goes to zero very quickly. The convergence rate is also not robust to misspecification of mu, so there's one paper where they said well, what if he is off by a little bit and then they show that the convergence rate is incredibly slow. Yeah. Yeah. Don't use this, I don't, I don't. I'm not going you are using this. People do this, but not not people who work on hard problems. People who work on hard problems know what step sizes they should use, and we'll get to that shortly. .1, yes, exactly. I'll show you a theorem for .1 in two slides. OK, and this is really for the worst case problem. This is think about the worst possible strongly convex function you can think of, but often you're not optimizing the worst strongly convex function. There's no adaptivity of the problem in the step size at all here, so this is sort of a very pessimistic.
+
+[4437.0s - 4466.0s]
+Algorithm. So tricks that work both in theory and in practice 2 very simple tricks are well, use smaller initial step sizes that go to zero more slowly, and this sort of has been much more appreciated in the last few years, especially Francis Bach. Published a series of papers showing that this is a good idea so you don't want to use this 15 million size initial step and you don't want it to go to 0 so quickly either. Another thing is taking a weighted average of either the gradients or the iteration so you can show those have some very nice properties and I'll get to the polyak Ruppert result momentarily. They're just some weights, so. Non negative yeah. So one common one is you. You average like the second half year iterations or something like that.
+
+[4466.0s - 4495.0s]
+OK, so there's a few works that support using large steps and averaging, so if you do what I just mentioned, you're just average the second half of the iteration. That's going to achieve the 1 / T rate without the log factor. It works a little bit better, or you can just average by the iteration number is another weird thing. So instead of averaging 1 / N, you sort of take the iteration number T, and you normalize your step to average by that, so you focus more on the later iterations than the earlier iterations. Um? I'd have to think about the first iteration would have weight proportional to one and the last one would ever weight proportional to T. And then you normalize them. So I think you get a T squared in there somewhere in the weights. Um? Yeah, you you have the TT plus one over the old Gauss some story. OK, so there's this thing called dual averaging which where you take gradient averaging and that's been shown to improve the constants and if you have a sparse regularizer that will actually identify the sparsity pattern, which is not true of stochastic gradient methods or subgrade methods. So Bakken Muline showed that if you sort of a smaller steps.
+
+[4495.0s - 4524.0s]
+Guys, it's more robust to miss specifying you, and here's the result that if you're going to take one thing away from the first 2/3 of this lecture, study this line. So this result is very much hidden in this paper of netishyn bertsekas, but I wrote like a three page report last year giving like a simplified like half page proof of this result in the more general setting. OK, so if I use a constant stepsize, if I use .1. This is the result that you get, so are my expected function value. It's going to be something that forgets my initial conditions with a linear convergence rate, so I go away from my initial conditions very quickly. But I don't converge. I have this extra term that doesn't depend on T. It's proportional to the stepsize. So basically you you go very quickly to some region, but then after that you can't make any progress anymore. There's sort of this this level set this level below which you go very quickly and then after that you're stuck. You don't know what's going to happen. If you make the step size smaller, that region goes down and down and down. So if you're using this strategy, which my understanding is, it's very common use some step size some concepts for a long time. Take something smaller, use that for a long time, take something smaller, do that for a long time. That's a very reasonable thing to do. In fact, for classic stochastic gradient methods, I often recommend that 'cause that's very easy to tune compared to these, this decreasing sequence and it is completely justified theoretically, as long as you're willing to give up convergence and you say, well, I'm not going to get these back solution, but I'll get to someplace quite good. Yes, then you're back to 1 / T. Ha.
+
+[4524.0s - 4553.0s]
+So so gradient averaging Yagi actually averaging the directions. So you you know you're taking one stochastic gradients, another another another, and you take the average of all those directions you've looked at. Just an magnitudes, yes. And then the other one is. You actually average the iterations themselves, so if you're bouncing all around the place, you actually go to the middle of where you're bouncing around. Usually this is an offline thing. We actually run your algorithm and then you just return the average as opposed to. And then there's something called bathers method, which is not well known but has the same polyak Ruppert result, which I'll get to momentarily, which does which does online averaging and averaging in the gradients, and has very beautiful properties, but it's not well known 'cause there's no PDF of it online. Who's that? Maybe that's.
+
+[4553.0s - 4582.0s]
+Hypothesis, or is there another question? See are you saying at some point, stop and evaluate the function or approximate the function and then decide to choose the step size? I think you're still going to be stuck in the 1 / T regime. I think if you really want to converge, you're stuck with 1 / T. There's not really something that can solve that in the general case, unless you're talking about finite sums, which I'll get to shortly. With this rate, yeah yeah. So that will still work, but but this is a very nice rate 'cause you really do get this exponential convergence to some nice region. Sure, yeah. If it's converging then it can't be faster than one over there. That's a theorem. If it's constant and it's within some bound between two bounded intervals, then it, then it's in this an your Alpha is probably the Max of the interval, but if you do something more refined you might be able show it's a bit better than that as you go through the interval. Are there more questions I I think this result is not well known, and perhaps is underappreciated 'cause it wasn't. It's hidden in a longer paper that discusses a whole bunch of other things. That's all we're talking about today. If you. OK, so I'll make two comments on that. So First off, you actually don't need smoothness for this result. If you state in terms of the distance to the solution. So smoothness is not not important, but strong convexity is important to this result. The second point is we don't really have any theory on what happens in that case. So to say that this theory doesn't apply is true, but the same thing with everything else that anyone has said except for that very first that it can't go faster than grid search. If you're talking about solving a general problem so. Yes, you can make that criticism, but we have to try to find out what's understanding and we're starting with this easy case to try and understand what's happening. It's true, but I'll show you function tomorrow that does not look like that at all. Where this theorem still applies. It's not even convex, it's not. It has flat rate. You know it's much more nasty.
+
+[4582.0s - 4611.0s]
+But today I just want to make my life simple, not talk with things. OK, so the Poly actor engine. It's key result is a very very important result and. It's still not really well written. It's very complicated with there's no results, which I'll talk about tomorrow, which are very interesting. OK, so if you're talking about this smooth and strongly convex case, iterate averaging is asymptotically optimal in the sense that if you have the optimal estimator in terms of statistics. Asymptotically, once you forget about the initial phase averaging the iterations, that's the optimal thing you can do. You can also do optimal with the stochastic Newton's method, but why would you do this to castec Newtons method if you can just do iterate averaging and the 1st order gradient method. So in some sense this is almost a negative result saying that maybe stochastic methods aren't the right thing to do, they certainly aren't the right thing to do asymptotically. So, so I think that result is sort of underappreciated an whenever you're thinking of developing is to Gaston method, you should always. Try and think about like the Polyak in Judith's key case 'cause.
+
+[4611.0s - 4640.0s]
+I think sometimes our intuition with the determinant deterministic case can mislead us in the stochastic case. OK, so should we use accelerated or Newton like methods? We know that they don't improve the convergence rate. Those methods still have 1 / T.
+
+[4640.0s - 4669.0s]
+But there are a bunch of positive results, so acceleration or momentum or heavy ball can actually improve your dependence on other constants, so they don't improve your dependence on the number iterations T. But if you if they improve your depends on the condition number, they may still be appealing to use, and I think This is why they actually work in practice is because T may not be the bottleneck in some cases. In some cases the optimization problem might just be really hard. We wanted to improve our dependency on the optimization problem as opposed to the number of iterations we ran. So that will improve the performance either at the start or if your noise is very small. There's also this ADA grad and a sequence of works following it, whether using a step size for each coordinate. Again, that's not going to get you around 1 / T. But Ducey, Al Al did show that can improve regret bounds. So so if you add up your suboptimality across all iterations, you can do a little bit better using this. Back in New Orleans gave sort of a Newton like method, which actually I think I mean this has seen vector products which gives the 1 / T rate without strong convexity. When unfortunately I got to Frances. After he submitted the version of the paper so we didn't have this nice complex number trick in the paper, but he should have, so that's kind of nice that actually we don't need the strong convexity in a lot of cases to get the 1 / T rate. OK, I think that's all I have to disable stochastic methods, so maybe I'll pause there to see if there's some more questions. The short answer is no. The funnier answer is someone asked this to number of ski at a workshop at NIPS one year, and he got mad at them. He's like how can you possibly define a distribution over possible problems you could solve? If you apply conjugate gradient tool in your system that comes from random data points. It actually converges way faster. You can prove out much faster rate, so there may be results like that that exists. But there in like Nesterov's notebook in his file cabinet drawer somewhere and I that none of them are actually out in the world as far as I'm aware, except for for linear programming there's this proof with like the smooth analysis of simplex method showing that simplex is actually polynomial time in practice. Oh no, I'm just saying you can. You can actually pick any subgradient the theory applies. Yeah. You have to. You have to think of like a function like this where the level. So I've been showing all these like round level sets these circles but if you have something like a triangle then you can have something that actually doesn't go inside the triangle but actually moves you closer to the solution. So you have to really consider like a non smooth point in your level curve and then you can get that property. But seekers had some very nice illustrations in his book. Right, I mean all of it's in most of his books. So what I'm saying here is this is kind of a mystery. I would I would say like try and find a good constant stepsize and maybe like divide that by two or 10 or something if you find that it's not working after all. I mean, my understanding is that this is what people already doing and I just wanted to say that that's actually like a reasonable thing to do from a theoretical perspective. Um? So I mean this land guy, he wants to design out and that works for every single problem, so I'll get to his results next time where he actually addresses nonconvex problems and he gets an algorithm like works well. If you're convex or non smooth or stochastic or whatever. So there are people working on that. The algorithms that work in every single case though tend not to be the fastest hours in specific cases and in practice we care about the algorithm works best for my problem, not for every problem. So there's definitely research in both directions. I think there's another question somewhere. Well, not free lunch program is not for optimization. For optimization, there's definitely free lunches. It's great. It's much nicer as a theorist.
+
+[4669.0s - 4698.0s]
+OK, so I mean if I was talking about any function as opposed to this specific class of functions, then there would be like a no free lunch thing where you can't beat dropping down random points in general. But because I'm making such strong assumptions I can actually get free lunches. Well, no, he still has assumptions, but he's trying to just think of all the ones you can possibly have.
+
+[4698.0s - 4727.0s]
+OK, so I want to get to this last thing which is which is finite sum problems. So that was the problem that we.
+
+[4727.0s - 4756.0s]
+Motivating we sense to Cassie and this 1 / T rate, but they need one gradient preparation and those rates can't be improved for general stochastic.
+
+[4756.0s - 4785.0s]
+Actives whereas the Terministic methods had this linear rate but they required ingredients preparation and the reason that you can get a faster rate, you can get it around the lower bound is because the number of data points you have is finite.
+
+[4785.0s - 4814.0s]
+So the question is for if you are minimizing finite sum, can we actually design A better method? Do we have to look at these two?
+
+[4814.0s - 4843.0s]
+Dreams so back to this picture.
+
+[4843.0s - 4872.0s]
+We want to design something like this. And there's many ways you can think of doing that, like switching or growing the batch or whatever. We're actually going to get a method that actually has a better slope than the deterministic method by taking this.
+
+[4872.0s - 4901.0s]
+Perspective OK, so approach one is.
+
+[4901.0s - 4930.0s]
+Control the sample size. For grading method uses all in gradients stochastic gradient methods.
+
+[4930.0s - 4959.0s]
+What uses 1 using mini batch? You're kind of getting somewhere in between. For example in that constant step size rule that all of Alpha term is kind of also proportional to the batch size. So instead of decreasing your step size, you could also increase your batch size and get back to the exponentially converging. Or you can do that bars like bro in step or quasi Newton stuff, as long as you're increasing the batch size, sort of the deterministic methods work. It's kind of cheating.
+
+[4959.0s - 4988.0s]
+So.
+
+[4988.0s - 5017.0s]
+Perfect sample size.
+
+[5017.0s - 5046.0s]
+Rated sub linear but.
+
+[5046.0s - 5075.0s]
+Can increase the batch size and that's.
+
+[5075.0s - 5104.0s]
+Pretty common strategy, and you can actually choose to do that properly to get convergence rates if you want to sort of you start with something looks like a stochastic gradient method, but at the end it looks like a quasi Newton method.
+
+[5104.0s - 5133.0s]
+But that eventually requires full passes through the data, so it's really just sort of like hiding the fact, or maybe cleaning up the first iterations of the quasi Newton method. Can we really get a rate that has linear with just one gradient parameter?
+
+[5133.0s - 5162.0s]
+And and this is work.
+
+[5162.0s - 5191.0s]
+Did with Nikola LaRue. Who's a former student of Joshua's as well as Francis Bach and it's called the stochastic average gradient so. This is your standard gradient step. On each iteration of SAG, we're going to take one random datapoint.
+
+[5191.0s - 5220.0s]
+It it's gradient and instead of.
+
+[5220.0s - 5249.0s]
+In those gradients there I'm going to put here the last gradient that I computed for function I. So we have this sort of weird memory where in each iteration I remember the gradient of every single training example, which seems crazy, but I'll say why it's not completely crazy in a moment, and then we compute a new one and replace the old one with the new one, and we're just going to assume that that's our true gradient.
+
+[5249.0s - 5278.0s]
+So, so that's a stochastic version of.
+
+[5278.0s - 5307.0s]
+They came before where they went through cyclically. It's really sort of, assuming that your gradients are not changing too quickly, but as you converge to the solution, they happen to not change very quickly because your ex is we're getting closer together, so your Lipschitz continuous gradient means that your gradients are getting closer together, so this becomes a good approximation as you go.
+
+[5307.0s - 5336.0s]
+So maybe the most technical slide today, which possibly should not be at the very end. But basically it gets a linear convergence rate with a constant that's actually very good.
+
+[5336.0s - 5365.0s]
+Hi, a lot better than you would expect, so we have a linear convergence rate. We just have to look at one function on each iteration so same cost as stochastic gradient method, but much faster convergence rate. If you're in this setting, the well conditioned setting it means you multiply your air by .8825 after each pass through the data, which doesn't seem great, but you go .825 to the 20. It gets fairly small, whereas the 1 / T can start getting slow in that regime. If you're in this case, if you have a hard optimization problem, the rate is actually almost as fast as if you were doing the gradient descent where you going through the full data set on each iteration, which I think is the kind of the fascinating part. This album really works for hard optimization problems.
+
+[5365.0s - 5394.0s]
+So just.
+
+[5394.0s - 5423.0s]
+Some numbers there.
+
+[5423.0s - 5452.0s]
+So gradient descent, the fastest known rate, looks like this for accelerated gradient. The Nesterov style method you get to this and optimization people really care about that rate, but but sag we cheat a little bit where we have a slower rate, but we can do N iterations for the cost of one of those methods, so we can actually raise the power N and get a much faster rate. And if I force you to go through the full data set in every iteration, this is.
+
+[5452.0s - 5481.0s]
+The fastest rate you can get, so it's faster than any black box method that goes through the full data set each time. So it's not only faster than stochastic gradient because it beats 1 / T, But for most deterministic gradient methods.
+
+[5481.0s - 5510.0s]
+Also faster.
+
+[5510.0s - 5539.0s]
+Another way to look at that as number of valuations to reach epsilon. So in stochastic case you've kind of got condition number divided.
+
+[5539.0s - 5568.0s]
+Epsilon gradient you've got condition number times log which is better, but then you multiply by N and then.
+
+[5568.0s - 5597.0s]
+Acceleration you put a square root and Max. You take the are inside. You take the Max of these two big numbers so the Max is going to be much smaller than the product. No. You're just assuming that there's a finite number of data points, and that you solve this Lipschitz continuous and the strong convexity assumption, but they can be from some weird distribution. There's no idea assumption here. That's right. Actually, yeah, so that's a good point. So here. And that's why it's a little bit hard to compare these. So in this rate L is actually the L for individual data points. So if you have one data point, that's really crazy. It's going to kind of screw things up for everything else, but if you have two distributions with the same L value, then the theory says it works the same. So you can have weird things happen. Almost no result applies in that setting, so bruticus and medics have some old results that apply in that setting, but they are not good, so we have very little analysis for that setting. I'll briefly mention something about that case shortly.
+
+[5597.0s - 5626.0s]
+OK, so we did. We did a lot of testing. We actually compared to some pretty serious methods like LB, FGS, Nesterov. We tune some stochastic grading methods like crazy and if you look at the appendix of our paper you'll see we actually compared to 14 different stochastic gradient methods including like Ada, Grad and all that stuff. But we're just showing the best ones, and when you add the new.
+
+[5626.0s - 5655.0s]
+Method on the plot. It works really well. This method works way better than I thought. I thought I was just going to theory paper, but it kind of made me rethink how we should actually solve problems in practice too. I was really surprised that it beat LBF Jess. I wasn't going to do that comparison but Nicola made.
+
+[5655.0s - 5684.0s]
+Do it. 'cause I I didn't even imagine it would work better. OK, so there's been a whole bunch of subsequent the cascarones with linear rates. There's this stochastic dual, core descent, SVR G saga, miso.
+
+[5684.0s - 5713.0s]
+Is on there. Talk about SVG momentarily. The next thing would SVG in, while focus on is it doesn't have the memory requirement that the other methods have. And then I guess next time I'll talk about Nonsmooth problems. That's right, yeah, yeah, for sure. Yes, not every up to every training point. Yeah.
+
+[5713.0s - 5742.0s]
+OK, so that's what.
+
+[5742.0s - 5771.0s]
+Alan looks like and I just want to emphasize a few practical issues so you can add regularization if your data is sparse, it doesn't look like this is a sparse sequence of operations, but you can implement it in a sparse way. There's an automatic stepsize selection and a termination criterion, so there's no. There's no tuning. You can just tell the code off my web page an run it, and it just goes. There's no, you don't have to step size or anything. It figures out on its own there a little bit heuristic key, but there definitely less heuristically than the stuff you have to do when you have truly stochastic objective. There's also.
+
+[5771.0s - 5800.0s]
+Celerated versions, but two points on emphasize. One is the nonuniform sampling.
+
+[5800.0s - 5829.0s]
+So we had this question briefly about this reshuffling trick where you are and permanent pass through the data anaran permanent password.
+
+[5829.0s - 5858.0s]
+Data OK does that work better? For classic stochastic gradient methods, the answer is maybe. There's a whole lot of empirical evidence. In particular. Nice report by Lambeau 2 showing that it does seem to work better and there was a paper in 2012 showing if we can show a certain inequality is true, then it's actually true that that's faster than random. But this is a very complicated paper, so if you really like math and want a high impact result in, you're confident in your skills, try and prove that. Yeah. I. We actually saw a version is a little bit weird. I don't want to get into it, but you have to basically use agaza subroutine to solve another problem and then use a sequence of those to solve it. I don't know. No, people have not quite figured out how to do that. It's similar, but not the same. Yes, so doing you're doing going through all your data points in a random permutation and then switching it and doing another one. Yes. Yeah, so so the so the company that's actually the companies I've talked to. Two companies that are actually. What they do in practice, they don't want the random accesses, they do 2 random permutations and alternate between the two. And that seems to work OK.
+
+[5858.0s - 5887.0s]
+OK for stag it doesn't seem to actually help. It gets performance intermediate between cyclic and stochastic, which means it's not as good as stochastic. Some of the other algorithms that have come afterwards do seem to work with this and we have no idea why we actually know very little about this trick.
+
+[5887.0s - 5916.0s]
+One thing we do know a lot more about lately is nonuniform sampling, so we have a nice.
+
+[5916.0s - 5945.0s]
+The distribution. But you actually try and pick which data points you're going to sample more often. So for classic SG you can improve the constants. You can improve the dependence on Ellen Mu, but not the 1 / T rate.
+
+[5945.0s - 5974.0s]
+On for say, you can actually improve the rate, and the idea is the same. You're going to have Lipschitz constant for each function, so you're going to see each functions. Gradient has an ally and you sample proportional to those allies, so the gradients that change quickly. You want to sample them very often. The ones that change slowly. You don't want to marry often, and I'll answer that momentarily, but I just want to say for a lot of problems the big allies point class correspond to points you've classified well, and or at least when you start talking to local ally where's the small lies or points you haven't classified well. So what this is saying is. You don't want to sample the points. You've already classified very well very often because you've in some sense already got them, whereas the points you don't have. Well, you want to put more attention on them and that kind of just comes out of the math, which is nice. OK, go. Yeah, so yes, definitely there was an IP server last year, but it improves the dependence on Ellen Mu, but not on like the epsilon and the Sigma squared. So the dominant term doesn't get improved, but the sort of the optimization hardness term can get improved by this trick. The nice thing with sag is those two terms kind of mixed together so you can improve on everything and so so when you do this sample, you actually depend on the average of these Lipschitz constant instead of the worst function.
+
+[5974.0s - 6003.0s]
+Yeah. Yeah, so for logistic regression. Think of the Lipschitz constant is something that's way out there on the list logistic curve. If you're really well classified, then your slope is almost zero and your gradient doesn't change very quickly as you move, so the so the method actually just learns to start ignoring these data points or it samples them very, very rarely. I think this is something that could potentially be used in deep networks, is maybe trying to figure out which data points you should sample more often than others, and Yoshi has talked about this and various points in time. I've been coming to see far for many years. OK, so we're here stick to actually estimate those allies. You go so that you can try and figure out what you're doing as you go along. So we really want.
+
+[6003.0s - 6032.0s]
+Box type of things and these were two datasets from our experiments where we found that sag didn't work well in the sense that it achieved state of the art but didn't destroy state of the art.
+
+[6032.0s - 6061.0s]
+And the non uniform makes that so. But the the adaptive was really important though if you just sample portion of the global Lipschitz constant, it was like a minor improvement. But when you really trying to estimate these local ones you try and find out which points are well class.
+
+[6061.0s - 6090.0s]
+Spired then then it really helps. OK so I just want to.
+
+[6090.0s - 6119.0s]
+Um, we we have an estimate for each one, we just initialize it to one when we get to that data point, we take a step in the gradient direction for that point, and we know that the function value should change by a certain amount. If our Lipschitz constant is big enough. If it's not big enough, we just double it until it's big enough. The nice thing is, for linear models you can actually do this for free. There's there's no cost for linear models, would you? Yeah, well you you start reading you know your first pass through the data you're revisiting, like 60 or 40% of the data or something already so. I think it yeah it does take a while to kick in. That's a good point, but I haven't thought about how long that takes to kick in. That's a good point that I should really update my plots. 'cause in the Journal version we actually do have the like the min and Max and the regions are actually non overlapping like the best run of these algorithms is better than the worst run of this algorithm. So, so in the general version we have those error regions, but this this here is just one run. Slower. So do you. I wouldn't say a lot more. It's definitely a small constant factor. I mean, there's just a few other extra arithmetic operations. I mean, assuming like some nice model of computation, where different implementations aren't using different tricks, then then it's almost the same. Yeah, I mean, so the stochastic grading methods would definitely be a little bit faster. This would be a little bit slower. Some of the other methods like would also be slower too, and I think LBF's would be quite a bit faster 'cause that would use vectorized computation more effectively, 'cause it's embarrassingly parallel, but the I have I don't have this one, but on the subsequent paper we do have runtime plots and it didn't change any conclusions. Yeah, I think I've got 2.
+
+[6119.0s - 6148.0s]
+I'd left, I just want to mention mini batching. What am I at? One minute? OK, I think I have two slides reasons to use mini batch with sag.
+
+[6148.0s - 6177.0s]
+You can parallelize the gradient calculation. You can decrease the memory. You can also increase the convergence rate.
+
+[6177.0s - 6206.0s]
+So the convergence rate depends on the Lipschitz constants of the batches. If you can make the Lipschitz constant, the batch is much smaller than the worst Lipschitz constant. The algorithm converges faster, so you can imagine finding these these bad training examples and putting them in batches with good training examples you can prove that actually makes you go faster. How do that? Optimally, I don't quite know other than that heuristic.
+
+[6206.0s - 6235.0s]
+Big and small trick. To deal with them.
+
+[6235.0s - 6264.0s]
+Only there's a few ways you can use me.
+
+[6264.0s - 6293.0s]
+Batches linear models CRF's it works fine.
+
+[6293.0s - 6322.0s]
+If those.
+
+[6322.0s - 6351.0s]
+Don't work, you should you.
+
+[6351.0s - 6380.0s]
+Just PRG.
+
+[6380.0s - 6409.0s]
+And I'll just put this up here. So one thing I'll say is the practical issues are very similar to say you can talk about acceleration, automatic step size, determination, sparsity regularization, nonuniform sampling, mini batches and so on. The key difference between Saginaw CRG is that SVG does not require the gradient of every example. It just requires storing 1 old parameter vector and doing. Two gradient evaluations on each iteration, so you need to evaluate the old parameter vector and the new parameter vector. It's a little bit slower, but it gets rid of the memory, so now you can apply it to any problem you want. I'll talk a little bit more about this next time, but again, it's a very simple algorithm. You can implement this out. This is this afternoon. Try it on whatever problem you want. Constant stepsize. You know, fairly easy to tune.
+
+[6409.0s - 6438.0s]
+OK, so just to summarize part one.
+
+[6438.0s - 6467.0s]
+You need to know L or you need to have an approximation of L and so we do that same trick where we start with one and we increase it. If the inequality is we want to be satisfied or not satisfied.
+
+[6467.0s - 6496.0s]
+OK, so convex functions have special properties that let us efficiently minimize them. Grading methods are good for high dimensions. Stochastic rating methods are good for large training examples, but you have a slower rate. And then for finite datasets, sag sort of fixes the convergence rate, but introduces the memory. An SVG fixes that.
+
+[6496.0s - 6525.0s]
+Mary Ann so tomorrow will talk about non smooth test error and non convex problems.

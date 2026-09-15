@@ -1,0 +1,22 @@
+{
+    "id": "uvsnt5hfvyhnkrf65vyyxpwzukf64qpt",
+    "title": "Can you pave the plane with identical tiles?",
+    "url": "http://videolectures.net/FPSAC2019_zong_identical_tiles/",
+    "info": {
+        "author": [
+            "Chuánmíng Zōng, Tianjin University"
+        ],
+        "published": "July 19, 2019",
+        "recorded": "July 2019",
+        "category": [
+            "Top->Computer Science",
+            "Top->Mathematics->Algebra",
+            "Top->Mathematics->Combinatorics"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 447,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 3852
+}

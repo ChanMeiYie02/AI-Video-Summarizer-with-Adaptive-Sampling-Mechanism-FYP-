@@ -1,0 +1,134 @@
+[0.0s - 29.0s]
+Good afternoon everyone. I am Caleb from Hong Kong, UST and I'm very glad to have a chance to share my work with you today and this work has been done collaboratively with my colleagues in tone and my supervisor, professor late chain and Professor Jagdish from University of Michigan. OK, OK before I start. Can I ask you all of your question how many of you here are familiar or even content with the concept of crowdsourcing? Could use your hand OK, good because today we're going to talk about the.
+
+[29.0s - 58.0s]
+Outsourcing the crossing is also known as human competition crowdsourcing competition, an HP processing, etc. But today the topic we're going to talk about is not true.
+
+[58.0s - 87.0s]
+National Ones, the traditional ones is based on a massive mechanical Turk, but today we're trying to extend this magic power onto the social network or social media services and OK.
+
+[87.0s - 116.0s]
+I think we are all enjoying the the wonderful conference KD here. For the past two days and the money is about to mind. The gold from the given data, right? OK, it is good. It is nice but.
+
+[116.0s - 145.0s]
+Sometimes it is not enough because we might forgot something which is caused by human wisdom. The human wisdom is the power is a cognitive power of human to make decisions with little factors and little and latent knowledges and.
+
+[145.0s - 174.0s]
+As I quoted from Professor join Clan Brooks book, he says the aggregated power is aggregated behavior of a lot of person which also called adds a lot of crowds might be very accurate on some decision making problems and but there's a problem while using this crowd power which is.
+
+[174.0s - 203.0s]
+The wisdom is within the human. Right human is his ontology of this wisdom. Not only we have to dig it out, we also have to manage them. But the problem also arises from the human. Let's have.
+
+[203.0s - 232.0s]
+Investigation of human what is human first of all, human is erroneous. We all make a lot of errors quoted by the Roman philosopher sisters. He's saying to air is human. This is human nature. We all make mistakes, even though we want to make accurate results and also another natural natural characteristic characteristic is that humans are greedy. We want more than we deserve. We cannot avoid it. Is it from Shakespeare's.
+
+[232.0s - 261.0s]
+So the challenges here is in general there are two factors. The first one is that the human workers they perform a work according to probability of to do things correctly. And also they always want to or we have to say we always want to maximize their income or their their utility.
+
+[261.0s - 290.0s]
+So this is 2 major challenges in crowdsourcing applications. There are sloppy workers and also spam workers. They work well but they work. They want to get the money back, but they didn't pay much attention to the quality of their work. So how can we deal?
+
+[290.0s - 319.0s]
+Is it the answer? Here is a market. It's quite a new, but it won't be too complex. So what is the market?
+
+[319.0s - 348.0s]
+OK, in the market there are humans, but humans are investors, so with investors to factors investor they only have partial informations if they have the full information of one event that we will never lose and also the invest to maximize their income. This is the two basic factors of investor and also a market. A market consists of a lot of investors. And some of them will win, and some of them will lose. This is characteristic of market. So let's have imagined that a market. What kind of market do a market make decisions among a lot of preference among lot of options. They have a previous and we construct a market here to based on majority voting. Say we treat the majority of the market opinion as a market opinion.
+
+[348.0s - 377.0s]
+K so in one sentence, what we're going to do today is. Is to provide a market following these principles only the winning workers will get a word that sounds easy, but actually it is not. So let's have a.
+
+[377.0s - 406.0s]
+Kind of how to run and imagine in we are given a set of candidate workers. Each of them is also is associated with the confidence interval. Confidence indicating the reliability of this one to doing some work and our work is to choose a best combination from this candidate set whom can form a market to do they invest so.
+
+[406.0s - 435.0s]
+I think it's a little bit abstract, so I will introduce with running example.
+
+[435.0s - 464.0s]
+Suppose we are given 5 investors and each of them is associated with an individual confidence, say 0.8 zero point 8, zero point, 7 point 6.5. So what we're going to do is that based on the majority voting, we're trying to find the best combination of them. To satisfy. Given short hold of market confidence, which is the market quality to do some majority voting? Spent by saying.
+
+[464.0s - 493.0s]
+Nomico here, which means we want to minimize the cost of the market. There are two basic assumptions. The first one is that each user who is one who is winning will get a unit payment after the investment and only the winning owners will get will get this reward. So this is a two basic assumptions. So let's have a specific.
+
+[493.0s - 522.0s]
+Investigation if we choose a CD for the first time on the left left circle. The market confidence MC stands for market confidence of role is 0.864 based on majority voting. How to calculate it is easy. We have. There are four cases for majority voting's. The first case that I love them are winning. The second case is that only two winning winning and once loose and etc. So calculating the market confidence is things not that complicated but just by summing up of the individual calculations. We've got the market confidence. And this one satisfies a given threshold. OK, here comes how can we calculate the.
+
+[522.0s - 551.0s]
+Cost. The cost, as I said, if there is 1 winning investors we have to pay him. While unit of this cost. So we let's check this.
+
+[551.0s - 580.0s]
+This table there are specifically 8 cases. The first one, ACD, is our winning. Nobody is wrong, so we pay three of them, all of them. The cost is 3 and the second case until the 4th case. All of them are two winners, so we have to pay 2 unit for each of them. Interesting things becomes at the kids five, although there's only one winning users who invest correctly. But as we assertion as we asserted, we have to pay the majority. So we still have to pay two costs 2 units to the investors and worst case show up as 8 eighth case nobody right? Nobody is correct. But as a rule, we still have to pay all of them three markets, 3 units of payment. This looks kind of crazy that we're paying slope users, but actually it turns out well. And let's check out.
+
+[580.0s - 609.0s]
+Check another example. Say what if we choose BCD this time? B has a has a lower confidence compared to A and not surprisingly, we got the confidence regarding the cost becomes lower, but the confidence is even lower which cannot satisfy the given thread hold. So it is disqualified. So how about the others we cannot.
+
+[609.0s - 638.0s]
+Reach out of the possible combinations. So we need powerful tools to examine to facilitate the procedure of finding the best combinations, and let's go to the.
+
+[638.0s - 667.0s]
+Bottom definition.
+
+[667.0s - 696.0s]
+Investors as we said, investors are essentially human, essentially online users. They might be on Facebook, they might be on traitors and maybe on Weibo and practically we send out private messages and we use the add operator to send them messages saying that we have a task. Would you want to join in if you choose the same as a majority will pay you some money? This is how it works. So the investor will have two options to choose. Or the yes or no over the high or low or whatever, and they promised to get this reward. And here the op, sorry. I think there are a typo or maybe the system errors an image. Have to clarify that. Under this some expenses there is ground truth for each task, and but it is latent before the investment. So both the investors and the market might not know the ground truth before they've invested. And also the two options should be have equal priority to the investors, otherwise this is not a fair market.
+
+[696.0s - 725.0s]
+OK, So what is West Market or West Market is simply a set of investors who can vote and who are waiting for the rewards. And what is the market opinion? A market opinion is simply the opinion of the majority voting. It is output of the majority from the whole group. And there's one basic assumption is that the size of the market must be out to avoid balance case or Thai case. OK here.
+
+[725.0s - 754.0s]
+Common market confidence as we have elaborated in the running example, the cases of the market companies. Increases exponentially and it is actually. It is essentially a possum binomial distribution and following this long equations I won't elaborate now. And. Yeah, so MC is the probability that the majority wins. The majority means market, so again the market might be wrong. So we just want to maximize the probability that market is reliable. Also mark.
+
+[754.0s - 783.0s]
+The cost the market cost is the number of the winning. Users. Or in another word, is the number of the majority. It will never force lower than half of the size. And this is what we're going to optimize. The expected value of this market cost. Take this easy.
+
+[783.0s - 812.0s]
+OK. So here comes the problem definition. The Magic effective market problem. Say we are given. A predefined shred hold of the quality of the market. And what we're going to do is that we're going to choose the best subset from the given candidate set so that the expected value, the expected cost value will be minimized. In one word, it means this system will provide a market builder for task holders. Imagine you are a company you want to enroll a lot of online workers to work for you, as I do a polling Dua surveying or just do market prediction. This system help you to find out the best. Combination of the users with the with the lower is the cost and a guaranteed quality, so this is the MP problem. Alright.
+
+[812.0s - 841.0s]
+So the leftover problem is that how can we build such a West market to build such a West market? First of all, we have to know how to calculate the market confidence and how to calculate the market market cost and by doing so we know how to build this market. And in each case, we propose both exact solutions and approximation solutions so that we can find the best tradeoff for adapted for online applications.
+
+[841.0s - 870.0s]
+To calculate market confidence as we have, we have talked about, it is essentially a possum binomial distribution and the original calculation of it entails oh and square complex city and we developed, divide and conquer based algorithms and facilitate with 50 speed up which yield an ON squared in Logan Square times temp. Laxity to calculate it.
+
+[870.0s - 899.0s]
+This is the exact algorithms, but due to the time limit I will skip it.
+
+[899.0s - 928.0s]
+Also, we proposed a channel inequality bounding based bonding to help too early rollout of the impossible combinations and it is also entails ON time complexity.
+
+[928.0s - 957.0s]
+And also we propose approximation calculations, which is based on the central limit theorem and we can show the result on the experiments parts. It also entails ON times.
+
+[957.0s - 986.0s]
+Complex city. OK, now.
+
+[986.0s - 1015.0s]
+It cost the market cost. The exact solution of market cost can be directly derived from the result from market confidence. So just not not that complicated and have the same complexity. To calculate.
+
+[1015.0s - 1044.0s]
+To speed up the calculation of the approximation value, we propose both the lower bound and an upper bound of it, and.
+
+[1044.0s - 1073.0s]
+Which achieves three months to sitter as approximation ratio. Note that theater here means that given requirements rather hold, which means the higher that require ability, the closer the approximation results and the result. The complexity is also big open.
+
+[1073.0s - 1102.0s]
+And we also develop early termination termination algorithm to help funding the overall market. And which combines the channel bonding and also merge trying to generate the combinations for the details.
+
+[1102.0s - 1131.0s]
+You can check the papers in the proceedings. Here's over algorithms.
+
+[1131.0s - 1160.0s]
+And empirical studies we.
+
+[1160.0s - 1189.0s]
+Conducted studies on two kind of datasets, one is on selected set. We generate them following both normal distribution and from the zipf distribution and we also generate inferred confidence from the Chinese Shandong report data, which is input of individual individual confidence from all of the candidate users. In this environment. OK, let me introduce briefly some of the representative results. About the basic trace of.
+
+[1189.0s - 1218.0s]
+See and cost yourself as we can see in the first paragraph. In the first graph. Top left corner between the the mean of 0.5. There is a very sharp slope saying that if we if the if the mean of the given users are unreliable, the whole market is unreliable an otherwise the market becomes readable very quickly and the lower row is from the zip zip distribution which is quite like on the Internet users which tells us that. The most cases of the online opinions are not reliable. Say the market. The confidence is very low on the left side.
+
+[1218.0s - 1247.0s]
+And this is also the given experiments about the efficiency. On the on the left left bottom figure we can know that the red line is accurate is efficiency of the exact is effectiveness of the exact algorithms and the black line is approximation algorithms. So while the size growing, growing bigger and bigger, the differences between two algorithms becomes very very small. And.
+
+[1247.0s - 1276.0s]
+This is overall algorithms an as we can see on the last one, while the given size of kind of counted users becomes larger and larger, we can find the. Find the best market with with lower and lower cost and higher and higher market confidence. OK, this is about the criminal studies.
+
+[1276.0s - 1305.0s]
+OK, thank you so much.

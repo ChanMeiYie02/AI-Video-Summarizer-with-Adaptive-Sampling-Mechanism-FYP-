@@ -1,0 +1,20 @@
+{
+    "id": "bes3ua2lji677ihy4ryr3dt6p7k2nuep",
+    "title": "Music Recommendation by Unified Hypergraph: Combining Social Information and Music Content",
+    "url": "http://videolectures.net/acmmm2010_tan_mr/",
+    "info": {
+        "author": [
+            "Shulong Tan, College of Computer Science, Zhejiang University"
+        ],
+        "published": "Feb. 1, 2011",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Recommender Systems"
+        ]
+    },
+    "num_segments": 36,
+    "num_sentences": 97,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 1904
+}

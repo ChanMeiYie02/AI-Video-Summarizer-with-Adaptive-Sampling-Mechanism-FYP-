@@ -1,0 +1,20 @@
+{
+    "id": "opjfehdn6nezc4sh7lku54sp73l72v5y",
+    "title": "Dense message passing for sparse principal component analysis",
+    "url": "http://videolectures.net/aistats2010_sharp_dmpfs/",
+    "info": {
+        "author": [
+            "Kevin Sharp, School of Computer Science, University of Manchester"
+        ],
+        "published": "June 3, 2010",
+        "recorded": "May 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 164,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1451
+}

@@ -1,0 +1,21 @@
+{
+    "id": "eqwi3v3mmkxnqtvptyuynbkroi42hgyg",
+    "title": "Spatial Ontology-Mediated Query Answering over Mobility Streams",
+    "url": "http://videolectures.net/eswc2017_schneider_mobility_streams/",
+    "info": {
+        "author": [
+            "Patrik Schneider, Faculty of Informatics, Vienna University of Technology"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 222,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2619
+}

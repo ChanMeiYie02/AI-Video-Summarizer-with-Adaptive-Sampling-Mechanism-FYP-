@@ -1,0 +1,20 @@
+{
+    "id": "w6qqmeq5j3mcrglfkl5mhpqxu2fe6es6",
+    "title": "A Tutorial on Logic-Based Approaches to SRL",
+    "url": "http://videolectures.net/ilpmlgsrl09_cussens_tlba/",
+    "info": {
+        "author": [
+            "James Cussens, Department of Computer Science, University of York"
+        ],
+        "published": "Sept. 18, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Statistical Learning"
+        ]
+    },
+    "num_segments": 64,
+    "num_sentences": 730,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 65,
+    "ground_truth_summary_length_chars": 7466
+}

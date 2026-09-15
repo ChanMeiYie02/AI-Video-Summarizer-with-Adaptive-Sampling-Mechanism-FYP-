@@ -1,0 +1,21 @@
+{
+    "id": "l4okxhiznj3iimsy7emga2mllu4whvlo",
+    "title": "PAC-Bayes Analysis of Classification",
+    "url": "http://videolectures.net/aop07_shawe_taylor_pba/",
+    "info": {
+        "author": [
+            "John Shawe-Taylor, University College London"
+        ],
+        "published": "Dec. 14, 2007",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Computer Science->Machine Learning->Bayesian Learning",
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines"
+        ]
+    },
+    "num_segments": 144,
+    "num_sentences": 825,
+    "num_clips_with_summary": 40,
+    "num_gt_summary_sentences": 88,
+    "ground_truth_summary_length_chars": 9286
+}

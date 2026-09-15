@@ -1,0 +1,20 @@
+{
+    "id": "dtvqrw4j3d4mblqj26d5bx5s7rnicnz4",
+    "title": "An Information Theoretic Approach to Learning Generative Graph Prototypes",
+    "url": "http://videolectures.net/simbad2011_hancock_generative/",
+    "info": {
+        "author": [
+            "Edwin Hancock, Department of Computer Science, University of York"
+        ],
+        "published": "Oct. 17, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Mathematics->Graph Theory"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 194,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 3460
+}

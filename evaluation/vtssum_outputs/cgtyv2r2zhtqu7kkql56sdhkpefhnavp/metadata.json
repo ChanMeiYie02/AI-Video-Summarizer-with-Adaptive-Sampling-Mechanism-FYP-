@@ -1,0 +1,20 @@
+{
+    "id": "cgtyv2r2zhtqu7kkql56sdhkpefhnavp",
+    "title": "OpenCV",
+    "url": "http://videolectures.net/icml2010_bradski_ocv/",
+    "info": {
+        "author": [
+            "Gary Bradski, Willow Garage"
+        ],
+        "published": "July 20, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computers->Software->Open-Source Software"
+        ]
+    },
+    "num_segments": 98,
+    "num_sentences": 640,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 3323
+}

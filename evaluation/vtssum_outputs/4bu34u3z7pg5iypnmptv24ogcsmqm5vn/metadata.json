@@ -1,0 +1,23 @@
+{
+    "id": "4bu34u3z7pg5iypnmptv24ogcsmqm5vn",
+    "title": "Business Applications and Markets for Semantic Technologies",
+    "url": "http://videolectures.net/estc08_davis_bamst/",
+    "info": {
+        "author": [
+            "Mills Davis, Project10X",
+            "Luca Scagliarini",
+            "Jeoren Wester",
+            "Geert Rensen"
+        ],
+        "published": "Nov. 24, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 557,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3496
+}

@@ -1,0 +1,20 @@
+{
+    "id": "pg74jkm7vxg4krfmvfp3coyuwruwuavw",
+    "title": "VoxEL: A Benchmark Dataset for Multilingual Entity Linking",
+    "url": "http://videolectures.net/iswc2018_rosales_mendez_voxel_benchmark/",
+    "info": {
+        "author": [
+            "Henry Rosales-Méndez, University of Chile"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 55,
+    "num_sentences": 168,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 337
+}

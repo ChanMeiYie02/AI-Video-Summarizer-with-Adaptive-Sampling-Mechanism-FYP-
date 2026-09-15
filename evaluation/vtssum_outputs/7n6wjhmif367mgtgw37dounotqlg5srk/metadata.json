@@ -1,0 +1,21 @@
+{
+    "id": "7n6wjhmif367mgtgw37dounotqlg5srk",
+    "title": "Bootstrapping Ontology Evolution with Multimedia Information Extraction",
+    "url": "http://videolectures.net/iiia06_paliouras_boemi/",
+    "info": {
+        "author": [
+            "Georgios Paliouras, NCSR \"Demokritos\""
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "July 2006",
+        "category": [
+            "Top->Computer Science->Semantic Web->Ontologies",
+            "Top->Computer Science->Information Extraction"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 244,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 33,
+    "ground_truth_summary_length_chars": 3030
+}

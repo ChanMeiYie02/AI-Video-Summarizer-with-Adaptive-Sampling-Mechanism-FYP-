@@ -1,0 +1,20 @@
+{
+    "id": "dyvohlmtfcxdblqp274c2zsbl7wuygah",
+    "title": "TP3 Partial or Delayed Feedback",
+    "url": "http://videolectures.net/psm08_cesa_bianchi_tpd/",
+    "info": {
+        "author": [
+            "Nicolò Cesa-Bianchi, University of Milan"
+        ],
+        "published": "Feb. 7, 2008",
+        "recorded": "January 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 215,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 3348
+}

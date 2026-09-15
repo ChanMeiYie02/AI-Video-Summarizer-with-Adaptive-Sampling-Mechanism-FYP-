@@ -1,0 +1,20 @@
+{
+    "id": "h37kam4iemojatbc52k3qqtikaawhpw2",
+    "title": "XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks",
+    "url": "http://videolectures.net/eccv2016_rastegari_neural_networks/",
+    "info": {
+        "author": [
+            "Mohammad Rastegari, Allen Institute for Artificial Intelligence (AI2)"
+        ],
+        "published": "Oct. 24, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 81,
+    "num_sentences": 148,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 457
+}

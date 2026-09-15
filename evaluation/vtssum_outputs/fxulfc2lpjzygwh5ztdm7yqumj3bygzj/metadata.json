@@ -1,0 +1,21 @@
+{
+    "id": "fxulfc2lpjzygwh5ztdm7yqumj3bygzj",
+    "title": "Preparing multi-modal data for natural language processing",
+    "url": "http://videolectures.net/sikdd2018_novak_natural_language_processing/",
+    "info": {
+        "author": [
+            "Erik Novak, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Oct. 23, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 99,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 2336
+}

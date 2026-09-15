@@ -1,0 +1,20 @@
+{
+    "id": "yan5vs46fzybqohofg76y4gxdnlcgdnw",
+    "title": "Cheeger Cuts and p-Spectral Clustering",
+    "url": "http://videolectures.net/mlss09us_hein_ccpsc/",
+    "info": {
+        "author": [
+            "Matthias Hein, Max Planck Institute for Biological Cybernetics, Max Planck Institute"
+        ],
+        "published": "July 30, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 497,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 52,
+    "ground_truth_summary_length_chars": 5913
+}

@@ -1,0 +1,21 @@
+{
+    "id": "ilcktypdwftmq4wk7gvfbxsweb5r6alg",
+    "title": "Perinasal Indicators of Deceptive Behavior",
+    "url": "http://videolectures.net/fgconference2015_dcosta_deceptive_behavior/",
+    "info": {
+        "author": [
+            "Malcolm Dcosta, Computational Physiology Lab (CPL), University of Houston"
+        ],
+        "published": "July 2, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Computer Vision->Face & Gesture Analysis",
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 112,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1593
+}

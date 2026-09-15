@@ -1,0 +1,20 @@
+{
+    "id": "w7lgvac7zfcid3enurgxdiakabavgfce",
+    "title": "Xlike Pipeline & Integration",
+    "url": "http://videolectures.net/xlimekickoff2013_xlike_pipeline/",
+    "info": {
+        "author": [
+            "Esteban García Cuesta, iSOCO"
+        ],
+        "published": "July 15, 2014",
+        "recorded": "November 2013",
+        "category": [
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 124,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 326
+}

@@ -1,0 +1,20 @@
+{
+    "id": "igx2t7uku2gu63jtcqgar475nm7z42tm",
+    "title": "Improved Software Fault Detection with Graph Mining",
+    "url": "http://videolectures.net/mlg08_eichinger_isfd/",
+    "info": {
+        "author": [
+            "Frank Eichinger, Institute for Program Structures and Data Organization (IPD), University of Karlsruhe"
+        ],
+        "published": "Aug. 25, 2008",
+        "recorded": "July 2008",
+        "category": [
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 257,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 44,
+    "ground_truth_summary_length_chars": 5685
+}

@@ -1,0 +1,20 @@
+{
+    "id": "odt4k4ci7eygvb5nw6y665ciuxlgvybi",
+    "title": "Sparsity analsysis of term weighting schemes and application to text classification",
+    "url": "http://videolectures.net/slsfs05_brank_satws/",
+    "info": {
+        "author": [
+            "Janez Brank, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "February 2005",
+        "category": [
+            "Top->Computer Science->Text Mining"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 259,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 3403
+}

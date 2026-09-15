@@ -1,0 +1,20 @@
+{
+    "id": "urwo2hbjh727hrgqf75wuxem42ik3puk",
+    "title": "AC+DC - Achievements for Global Supply Chains",
+    "url": "http://videolectures.net/tra08_menzel_ada/",
+    "info": {
+        "author": [
+            "Wolfgang Menzel, University of Hamburg"
+        ],
+        "published": "May 22, 2008",
+        "recorded": "April 2008",
+        "category": [
+            "Top->Business->Transportation and Logistics->Technology"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 192,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 1473
+}

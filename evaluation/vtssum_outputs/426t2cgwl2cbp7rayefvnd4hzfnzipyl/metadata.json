@@ -1,0 +1,20 @@
+{
+    "id": "426t2cgwl2cbp7rayefvnd4hzfnzipyl",
+    "title": "Learning Feature Hierarchies by Learning Deep Generative Models",
+    "url": "http://videolectures.net/nipsworkshops09_salakhutdinov_lfhldgm/",
+    "info": {
+        "author": [
+            "Ruslan Salakhutdinov, Machine Learning Department, Carnegie Mellon University"
+        ],
+        "published": "March 26, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Feature Selection"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 231,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 25,
+    "ground_truth_summary_length_chars": 2427
+}

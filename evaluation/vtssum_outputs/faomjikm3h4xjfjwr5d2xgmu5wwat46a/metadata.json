@@ -1,0 +1,21 @@
+{
+    "id": "faomjikm3h4xjfjwr5d2xgmu5wwat46a",
+    "title": "The essential dishonesty of the current online community model: some case studies",
+    "url": "http://videolectures.net/WG3WG5meeting2018_rayner_essential_dishonesty/",
+    "info": {
+        "author": [
+            "Manny Rayner, University of Geneva"
+        ],
+        "published": "Nov. 13, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Crowdsourcing",
+            "Top->Humanities->Languages"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 205,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 43,
+    "ground_truth_summary_length_chars": 4486
+}

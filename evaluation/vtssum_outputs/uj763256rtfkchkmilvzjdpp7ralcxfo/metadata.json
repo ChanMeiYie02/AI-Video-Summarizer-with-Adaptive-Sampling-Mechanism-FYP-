@@ -1,0 +1,20 @@
+{
+    "id": "uj763256rtfkchkmilvzjdpp7ralcxfo",
+    "title": "\"BisoNet\" Generation Using Textual Data",
+    "url": "http://videolectures.net/ecmlpkdd09_segond_bngutd/",
+    "info": {
+        "author": [
+            "Marc Segond, European Center for Soft Computing"
+        ],
+        "published": "Oct. 20, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Text Mining"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 228,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 4091
+}

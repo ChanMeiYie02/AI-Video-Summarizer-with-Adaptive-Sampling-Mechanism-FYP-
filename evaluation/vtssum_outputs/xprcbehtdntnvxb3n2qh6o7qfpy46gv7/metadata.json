@@ -1,0 +1,21 @@
+{
+    "id": "xprcbehtdntnvxb3n2qh6o7qfpy46gv7",
+    "title": "Content Analysis and MPEG-7 Description Tools",
+    "url": "http://videolectures.net/cao07_schallauer_iis/",
+    "info": {
+        "author": [
+            "Peter Schallauer, Joanneum Research"
+        ],
+        "published": "Feb. 22, 2008",
+        "recorded": "December 2007",
+        "category": [
+            "Top->Computers->Multimedia",
+            "Top->Computer Science->Information Retrieval->Multimedia Retrieval"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 410,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 1768
+}

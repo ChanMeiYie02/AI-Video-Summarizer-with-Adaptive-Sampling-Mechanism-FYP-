@@ -1,0 +1,20 @@
+{
+    "id": "2rdgfdukeigil43bzuycejrzapscrpvl",
+    "title": "Representation and Reasoning with Universal Schema Embeddings",
+    "url": "http://videolectures.net/iswc2015_mccallum_universal_schema/",
+    "info": {
+        "author": [
+            "Andrew McCallum, Department of Computer Science, University of Massachusetts Amherst"
+        ],
+        "published": "Jan. 11, 2016",
+        "recorded": "October 2015",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 246,
+    "num_sentences": 862,
+    "num_clips_with_summary": 23,
+    "num_gt_summary_sentences": 40,
+    "ground_truth_summary_length_chars": 4591
+}

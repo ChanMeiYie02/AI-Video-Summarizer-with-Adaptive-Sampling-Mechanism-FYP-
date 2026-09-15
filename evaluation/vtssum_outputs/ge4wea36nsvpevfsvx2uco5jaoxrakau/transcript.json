@@ -1,0 +1,22 @@
+[
+    {
+        "text": "So I guess I should start by saying that this poster is joint work with Amy Purples and Ann Navarro, and this is a poster M16 if you want to come by later for more details. So why?",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "The simplest ways in which languages across the world very is in what language called Basic word order, which is the relative order of the subject, verb, and object of a sentence. So there are six logically possible ways of ordering these constituents, and some of them are a lot more common among languages than others. And also we see the basic word orders change overtime in some directions and not others. So there's a really striking non uniform structure in both the current distribution and in the dynamics of change. And it would be really nice if we had some kind of convincing cognitively grounded explanation for why things happen in the way that they do.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "I'll post it comes at this problem from an information theoretic perspective and it's it's a rational explanation which suggests that maybe the structures of language adapt to to suit the structure of the physical world that I have to describe. So the idea is that when you're processing a sentence, you have some uncertainty about the meaning of the sentence. So uncertainty here, in the information theoretic, sense its entropy. Each word you get in the sentence decreases that entropy, or each word carries a certain amount of information, and. Whatever it is you're trying to say. Permuting the order of the words in which you say it changes the way the information is distributed across the words, and the idea that we're leveraging is 1 fairly recent idea from psycholinguistics, which says that what you really want to do is spread your information out as uniformly as possible. This is really good for trading off between efficiency and noise resistance. It's really good for minimizing processing effort, and there's lots of evidence that people sort of do this online, and that languages change offline to facilitate this kind of stuff, and so we're seeing if this idea can explain. Various world phenomenon So what?",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Basically done is built a bunch of probabilistic models of the way events happen in the world. The kind of events that you want to describe with these simple transitive sentences. So we built these models using analysis of corpora an. The results from some behavioral experiments, and we've used the data to figure out how different word orders distribute information across words, and the results seem to be really very compatible with what we get from linguistics. So the word orders, which are extremely rare, are the ones which performed very poorly from an information theoretic point of view. And the directions of change are such that what orders change from from. Better, sorry from worse to better with regards to. Information theory, so there is a very sort of high level description, but all the details are available from me at the poster which is proposed to M16. So if you're interested, please come by later, thanks.",
+        "start": 87.0,
+        "end": 116.0
+    }
+]

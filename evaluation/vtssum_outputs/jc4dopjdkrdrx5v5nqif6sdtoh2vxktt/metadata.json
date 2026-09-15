@@ -1,0 +1,21 @@
+{
+    "id": "jc4dopjdkrdrx5v5nqif6sdtoh2vxktt",
+    "title": "Lean at Odense University Hospital",
+    "url": "http://videolectures.net/szko2010_hansen_thor_pdpv/",
+    "info": {
+        "author": [
+            "Gitte Dahl Hansen, Odense University Hospital",
+            "Claus Thor, Odense University Hospital"
+        ],
+        "published": "Dec. 3, 2010",
+        "recorded": "November 2010",
+        "category": [
+            "Top->Medicine->Informatics"
+        ]
+    },
+    "num_segments": 57,
+    "num_sentences": 645,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 38,
+    "ground_truth_summary_length_chars": 2488
+}

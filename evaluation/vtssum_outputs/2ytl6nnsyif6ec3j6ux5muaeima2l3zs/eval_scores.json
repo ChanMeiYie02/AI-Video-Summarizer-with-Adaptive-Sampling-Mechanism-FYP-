@@ -1,0 +1,17 @@
+{
+    "rouge1_f1": 0.488,
+    "rouge1_precision": 0.602,
+    "rouge1_recall": 0.4103,
+    "rouge2_f1": 0.1257,
+    "rouge2_precision": 0.1551,
+    "rouge2_recall": 0.1056,
+    "rougeL_f1": 0.1867,
+    "rougeL_precision": 0.2303,
+    "rougeL_recall": 0.157,
+    "bertscore_precision": 0.8553,
+    "bertscore_recall": 0.8403,
+    "bertscore_f1": 0.8477,
+    "prediction_length": 2136,
+    "reference_length": 2542,
+    "compression_ratio": 0.84
+}

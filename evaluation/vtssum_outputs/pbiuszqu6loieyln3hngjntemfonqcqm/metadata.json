@@ -1,0 +1,20 @@
+{
+    "id": "pbiuszqu6loieyln3hngjntemfonqcqm",
+    "title": "IM2 (Swiss Initiative)",
+    "url": "http://videolectures.net/nim07_bourlard_im/",
+    "info": {
+        "author": [
+            "Herve Bourlard, IDIAP Research Institute"
+        ],
+        "published": "Nov. 21, 2007",
+        "recorded": "October 2007",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 327,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 18,
+    "ground_truth_summary_length_chars": 2234
+}

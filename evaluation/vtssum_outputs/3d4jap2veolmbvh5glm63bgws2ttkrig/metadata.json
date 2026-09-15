@@ -1,0 +1,22 @@
+{
+    "id": "3d4jap2veolmbvh5glm63bgws2ttkrig",
+    "title": "Developing a substitution calling algorithm to analyse breast cancer exomes by next generation sequencing",
+    "url": "http://videolectures.net/cancerbioinformatics2010_menzies_jones_tslv/",
+    "info": {
+        "author": [
+            "Andrew Menzies, Wellcome Trust Sanger Institute",
+            "David Jones, Wellcome Trust Sanger Institute"
+        ],
+        "published": "Oct. 11, 2010",
+        "recorded": "September 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 321,
+    "num_clips_with_summary": 23,
+    "num_gt_summary_sentences": 44,
+    "ground_truth_summary_length_chars": 4657
+}

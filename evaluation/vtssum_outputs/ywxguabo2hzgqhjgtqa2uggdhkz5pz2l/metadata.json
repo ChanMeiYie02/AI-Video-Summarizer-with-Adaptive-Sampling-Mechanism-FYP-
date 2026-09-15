@@ -1,0 +1,21 @@
+{
+    "id": "ywxguabo2hzgqhjgtqa2uggdhkz5pz2l",
+    "title": "The European Research Council: Funding opportunities for investigator-driven frontier research",
+    "url": "http://videolectures.net/eswc2019_nagy_european_eesearch_council/",
+    "info": {
+        "author": [
+            "Miklos Nagy, European Research Council (ERC)"
+        ],
+        "published": "July 19, 2019",
+        "recorded": "June 2019",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 54,
+    "num_sentences": 694,
+    "num_clips_with_summary": 31,
+    "num_gt_summary_sentences": 64,
+    "ground_truth_summary_length_chars": 5872
+}

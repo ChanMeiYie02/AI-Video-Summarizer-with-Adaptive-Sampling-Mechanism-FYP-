@@ -1,0 +1,20 @@
+{
+    "id": "5b2rbwxtvsqksoppjjqg7tzqmbaeader",
+    "title": "Combining Instance-Based Learning and Logistic Regression for Multi-Label Classification",
+    "url": "http://videolectures.net/ecmlpkdd09_cheng_cibl/",
+    "info": {
+        "author": [
+            "Weiwei Cheng, Mathematik und Informatik, Philipps-Universität Marburg"
+        ],
+        "published": "Oct. 20, 2009",
+        "recorded": "September 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 259,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 1893
+}

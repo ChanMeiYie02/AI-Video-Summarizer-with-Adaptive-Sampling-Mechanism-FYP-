@@ -1,0 +1,147 @@
+[
+    {
+        "text": "You might be wondering how these two seemingly different concepts, artificial intelligence and agriculture are connected, so we will see now.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Water is one of the first professions of humans. Human people started to cultivate crops and plants approximately 12,000 years ago. With the when the ice, the last ice, each finished with that, they started to make the first settlements which actually represented the start of modern civilization and through years centuries the. Agriculture changed a lot from the first primitive way of cultivating plants, which was mostly labor labor based with the development of industry, it modernized and now we have very. Well we have agriculture where we use very modern machinery. An way of cultivating plants and crops.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So we all know why we need agriculture, mostly because we produce food in appreciable abundance. So now hunger is and famine is being decreased because of that, but besides that it also creates opportunities for people to leave them out of poverty in developing nations because it creates opportunity work opportunities. So as a matter of fact. Around 60% of the world's working poor work in agriculture. But not, I mean the workforce is not only on the field in agriculture but also. There are more jobs open for farm equipment makers in the food processing, transportation, infrastructure, infrastructure and manufacturing. And so agriculture is also being developed as a scientific area. Farmers are becoming more educated and it's not anymore only a primitive activity of people just to produce food, and it is being extensively modernized.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "But agriculture, besides the benefits, poses some threats. So we know that the human population is expected to increase to 10 billion people by 2050, with, which means that we need to produce more food for more people with the limited resources that we have. Another problem is that modern agriculture has huge reliance only on few crops. So also with the increasing climate change and extreme events this. This poses a problem because of the. Extreme events such as floods, fires that damage and cause damage to the agriculture. On the other hand, agriculture poses environmental and health pressures. Agriculture is one of the biggest contributors contributors to the greenhouse. To the increase of greenhouse gases it also. Contributes to biodiversity loss, water pollution, pesticides, etc.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So as I said, the agriculture. Transformed through the years so it transformed from traditional labor based to technology based agriculture, there are many new technologies introduced such as precision farming. Drones are used extensively, robots mostly for combating pests and diseases to monitor nutrient levels, to monitor soil and growing conditions, and this leads to production of huge amounts of structured on. Or unstructured data daily.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So having all this set, we have the threats we have, the benefits of agriculture. We have large amounts of data produce an we don't. We cannot forget also the regulations that every country need to follow such as the United Nations Sustainable Development Goals which aimed at decreasing the environmental pressure of of agriculture. So here actually we come to merging these two fields of artificial intelligence and agriculture to solve these problems.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "The most popular applications of artificial intelligence in agriculture can be divided into these three categories. The first one is agricultural robots, so more and more. There are more and more introduced in agriculture. Autonomous robots that handle essential and repetitive agricultural tasks at higher volume and faster pace as humans. The second category is crop and soil monitoring where. Drones and software based technologies are used to monitor, crop and soil health and computer vision and deep learning algorithms are used to process this data and the last category is predictive analytics, where machine learning models are used to track and predict various variables and aspects in agriculture.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So in the continuation of my talk, I will present some areas in agriculture that we have successfully applied artificial intelligence on at the Department of Knowledge Technologies at users different institutes. So this is not the extensive list. These are just a few topics and areas that we have been working in the last years, so we have been working for more than 15 years. This area of applying artificial intelligence in agriculture, the areas that we have been working on are genetically modified crops. Water pollution with plant protection products. Biological pest control, soil preservation and assessment of soil functions, tomato resilience and resource use efficiency, sustainability of legume agrifood chains, integrated pest management, etc. So let's see some of these. Examples of application.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Of artificial intelligence in agriculture so. Around 15 years ago there has been a lot of research going on on genetically modified crops and their coexistence with conventional crops. The problem here is that the farmers should have the. The ability to choose what to grow on their fields but have to take care that their crops don't mix with the neighbors crops through cross pollination. So in this case, because. In at least in Europe, growing genetically modified crops was forbidden, and it still is. Experts and scientists could not make real field experiments to estimate how the effects of outcrossing and cross pollination take place. But they developed many different simulation models to simulate. This process is and some of the simulation models are named here. These are the simulations that models that we worked with Genesis map, not an individual based models for oilseed rape. So in order to analyze this kind of data and this kind of process is, we had to use data from simulation models and not real data and we were mostly focused on oilseed rape and maize. So the problem was the coexistence issue. So how can 2 fields with GM and conventional crops coexist and don't mix? The effects of genetically modified crops genetically modified crops have negative effects of unnatural habitats. They have consequences of human health, and they also have some economic consequences, because which are very important to farmers, because if even 0.9% of GM material is found in conventional filled, it is considered as a gem filled and then. This is actually considered as a GM production. So here we have applied different machine learning models to analyze different scenarios, large scale scenarios where we actually investigated how the management techniques on one field can influence and protect the the field from getting GM material from neighboring fields. Then we analyzed field to field scenarios and how the weather influences the outcrossing. As well as individual based scenarios and we applied machine learning methods such as relational decision trees, equation discovery process based modeling, etc. So we have developed very interesting models and we came to interesting conclusions.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "The next area, which is very important even nowadays is water pollution with plant protection products. So the biggest annoyance of farmers are the pests and they're trying to fight them by using sometimes in excessive amounts, plant protection products or pesticides which besides getting into our food are also getting into underground waters. Through irrigation and rain so they pollute. Also the underground waters with pesticides. There are many different directives for water protection like the European Water Framework Directive Direct Directive on the sustainable use of plant plant protection products, which are sometimes in conflict with the application instructions, instructions of pesticide producers. So there is a very. It is very important to monitor the water quality and protect it from being polluted with pesticides. So in this topic actually we were trying to. To model the risk of pollution of underground waters with pesticides and for certain crop management plan an. In case this there is a risk to change the crop management plan which is not very straightforward. So how did we do?",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "This we divided this problem into several smaller problems which are listed here. So we we had to 1st predict and model the water pathways in the field. The water out full outflow from the field. We had to predict the intensive periods of drainage which actually are the ones that there is the biggest danger of of the water being polluted. We have to then assess the risk and propose some measures for management managing this risk. Here in this case and in many other cases that we have worked on later, we combined machine learning methods. Data mining with decision modeling and this is what Professor Bohannon said previously. That is very important to complement these two areas in. Order 2 Get the most of of the models and from human knowledge.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So at the end we developed a complex decision support system that actually evaluates the management. This is very small. I'm sorry that you cannot see, but the system evaluates the management plan that is being applied on the field assesses the risk, and if there is no risk, the farmer can proceed with his management plan. But if there is a risk then the system evaluates possible alternatives and proposes an alternative. Management plan that will not lead to water pollution.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Following this, we worked on biological pest control, which is an alternative an away to to deal with the water pollution. So here natural enemies of pests are used as protection against that instead of pesticides. So here we were focusing in on understanding and management of the Biver biodiversity of agricultural ecosystems of the natural enemies. And of person finding the most suitable environment that would actually be beneficial for natural enemies. The goals were to assess the effects of agricultural management, crop pro cropping systems, and landscape and climate on natural enemies population too. And to assess the effect of natural enemies on pests. Here we worked with data from 4 different regions in France and the two types of natural enemies that we worked with were surfeits and carob. Is this are these insects here that regulate African slacks on the fields?",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So here we wanted to assess the potential of surface and karabits for biological pest control. We define their taxonomic and functional diversity and we modeled their size and structure. Well size structure of these two species.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "There was a huge amount of pre processing done here. To get to a very complex data set describing taxonomic material, logical landscape data, we had to calculate many different diversity indexes, functional categories and we came up with very different and interesting models. Single target and multi target models.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Describe the most abundant species on the field and their interactions. Another very interest.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "The area is assessment of soil functions. Which soil has five different soil functions which are not represented in the same same amount. So the goal in this study was to develop a decision support system called Soul Navigator that operates on field level and provides advises on what management practices should be used on the field in order to optimize this well functions.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So the goal was first to assess the performance of this soil functions in terms of low, medium or high depending on the management practices, environmental and climatic conditions and soil characteristics, and then propose appropriate management practices to improve the performance of selected soil functions. So in.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "This case we also combined machine learning an decision modeling to develop 5 models for each of the soil function an.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Integrate them. These are just some basic statistics about the size of the models to divide.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Pull up complex Decision Support system that assess is an propose, the sole function and proposes measures. We have gone through a very thorough process of verification, sensitivity, analysis, calibration and validation of the models with many different stakeholders. Farmers advisors on many different workshops throughout Europe. So then we were happy with the models they were.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Good and reliable, so the system is now Open Access. We have developed also user interface. You can find it on this link here.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "It. There is. The user can input data about the Aggreko system management environment and soil, and.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "System gives an assessment of the soil functions which can be. Then the user can choose which of these soil functions should be improved and the system gives a solution and suggestions for management that can improve the selected cell functions.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Another very popular area in agriculture. It is becoming more and more popular. Now is the sustainability of legume of sustainable actually the sustainability? So now we work on sustainability of legume Agri food chains. It is a very complex concept because it takes into account different. Aspects which are environmental, social, and economic aspects, these are the three pillars of sustainability and they also have interactions which are called by their ability viability. An equitability and we can talk about sustainability if these three aspects of sustainability are fulfilled. So in this area we are trying to identify transition path to increase sustainable legume production in Europe. Here we are not focusing only in one on one. Special level, but we are focusing on the entire value chain of legume feed and food and again here we are developing a decision support system that assesses the sustainability for the whole value chain.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "So the value chain has is comprised from 5 links from production to consumers and markets. And here we need to actually assess the sustainability of each link of the value chains individually.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "And then integrate this into an overall two tier system, which at the end gives a an assessment of the overall sustainability of the whole Agri food food.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Chain. Last but not least, another interesting topic is resilience and resource use. Efficiency of plants. This is work done in a European project called Tamras. So here we want to address the resilience of plans given the climate change and the water and nutrients stresses that the plants are dealing with so. Here we are again applying machine learning and decision modeling to investigate factors that influence the water, nitrogen and phosphorus use efficiency under different conditions and also to model and to assess the tomato production systems open field and glasshouse from different aspects such as socioeconomic, environmental and resource usage, efficiency perspective. So to sum.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Up we have seen how these two areas come together and how artificial intelligence is applied in agriculture. As we have seen, agriculture is becoming more and more digital, but the application of artificial intelligence in agriculture is not something to be done. It is already a reality for some time and it is very good because it actually leads to more efficient and more more sustainable. Agriculture, which has environmental benefits in mind. There are also some disadvantages, so all these modernization and digitalization of agriculture is pretty expensive. So not everyone can afford it. And also the Automatizacion and robotization of many processes leads to decrease in employment and workforce in the agricultural sector, which might be a problem in some areas where people depend a lot. Are on this sector, so thank you very much for your attention. If you have any questions. So do you have any use cases in Slovenia? Actually not too many. We were trying to. Collaborate with institutions in Slovenia and we were presenting our methodology Zan use cases that we have done in abroad, but we still haven't had the opportunity to apply this models in Slovenia, but we're working on it. My other question concerns type of data where you get actually very nice coverage of all of Slovenia and other countries in the world, namely, this is remotely sense. Data these are now becoming of increasingly high resolution in there can be used also in agriculture. Are you aware of what the state of the art is in this area? How AI is used in this Department? Actually, yeah, we've been in contact with one person just last week where we organized a workshop. So there is a company in Moscow so but or or two, I think that actually working just with that there. Providing drones which actually make. Are recording the fields to see whether there are pests in some parts of the fields and they're trying to implement this and it's becoming more and more used also in Slovenia, but I don't have numbers to say to what extent.",
+        "start": 812.0,
+        "end": 841.0
+    }
+]

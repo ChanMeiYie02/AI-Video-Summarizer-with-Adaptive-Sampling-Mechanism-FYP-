@@ -1,0 +1,21 @@
+{
+    "id": "phef6uol7aq3trbw4ckptpnjwj2sqkkx",
+    "title": "Massively Multilingual Language Technologies",
+    "url": "http://videolectures.net/interACT2016_carbonell_multilingual_technologies/",
+    "info": {
+        "author": [
+            "Jaime Carbonell, Language Technologies Institute, Carnegie Mellon University"
+        ],
+        "published": "July 31, 2016",
+        "recorded": "July 2016",
+        "category": [
+            "Top->Computer Science",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 211,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2370
+}

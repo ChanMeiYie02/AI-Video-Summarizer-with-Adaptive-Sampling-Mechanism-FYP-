@@ -1,0 +1,20 @@
+{
+    "id": "yqm5hxwroi4fash32m6no6ia4aoju7fz",
+    "title": "Advances in Phonetics-based Sub-Unit Modeling for Transcription, Alignment and Sign Language Recognition",
+    "url": "http://videolectures.net/gesturerecognition2011_vogler_advances/",
+    "info": {
+        "author": [
+            "Christian Vogler, Gallaudet University"
+        ],
+        "published": "Aug. 24, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 384,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 1532
+}

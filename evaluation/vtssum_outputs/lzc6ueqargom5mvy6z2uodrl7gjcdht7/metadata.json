@@ -1,0 +1,21 @@
+{
+    "id": "lzc6ueqargom5mvy6z2uodrl7gjcdht7",
+    "title": "Fluid Mechanics = \"Single\"-Particle Control: From Control to Turbulence and Back",
+    "url": "http://videolectures.net/cyberstat2012_chertkov_fluid_mechanics/",
+    "info": {
+        "author": [
+            "Michael Chertkov, Los Alamos National Laboratory"
+        ],
+        "published": "Oct. 16, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Physics->Statistical Physics",
+            "Top->Mathematics->Control Theory"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 691,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 39,
+    "ground_truth_summary_length_chars": 3788
+}

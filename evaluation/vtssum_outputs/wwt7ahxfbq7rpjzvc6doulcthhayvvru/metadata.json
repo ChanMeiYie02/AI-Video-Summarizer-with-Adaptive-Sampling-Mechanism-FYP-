@@ -1,0 +1,20 @@
+{
+    "id": "wwt7ahxfbq7rpjzvc6doulcthhayvvru",
+    "title": "Certain Answers for SPARQL with Blank Nodes",
+    "url": "http://videolectures.net/iswc2018_hernandez_certain_sparql_nodes/",
+    "info": {
+        "author": [
+            "Daniel Hernández, University of Chile"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 217,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 597
+}

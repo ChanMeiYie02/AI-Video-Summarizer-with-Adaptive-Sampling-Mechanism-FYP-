@@ -1,0 +1,22 @@
+{
+    "id": "k3qdcx5qwg7ddz4i4s5t5lu2xkkne23v",
+    "title": "An experiment on antiacademic research",
+    "url": "http://videolectures.net/NGSchool2019_filion_antiacademic_research/",
+    "info": {
+        "author": [
+            "Guillaume Filion, Centre for Genomic Regulation (CRG)"
+        ],
+        "published": "Dec. 3, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Medicine",
+            "Top->Biology",
+            "Top->Data Science"
+        ]
+    },
+    "num_segments": 30,
+    "num_sentences": 725,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2185
+}

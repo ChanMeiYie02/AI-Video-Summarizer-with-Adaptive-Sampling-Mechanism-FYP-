@@ -1,0 +1,485 @@
+[0.0s - 29.0s]
+Let's let's play a game. Can you can you show me what is what is 30 degrees with your with your hands? About 30 OK. So the notebooks are made such that a little over 90 is the optimal look. Can you close it to 30 please for a few minutes? Thank you wonderful. OK, so let's play another game. That's not dirty, OK.
+
+[29.0s - 58.0s]
+What do you see on this picture? Snow is not a bad guess. There is snow. Is there something else? What? Stone says, well, yeah, do you see animals? So so difficult question. Imagine asking your wonderful horse, yeah?
+
+[58.0s - 87.0s]
+There is a horse, right? Imagine asking your computer the same. Hey my computer, what do you see on this picture? It would be tough, right? So how many horses do you see? Wonder?
+
+[87.0s - 116.0s]
+Which two out of the four? Is there any other? Wonderful.
+
+[116.0s - 145.0s]
+Really, yeah there is a small one over there, right? So imagine, imagine a computer program that can that can recognize these horses. Let let me show you.
+
+[145.0s - 174.0s]
+Final defensive picture. Do you?
+
+[174.0s - 203.0s]
+See the dog on that picture. You immediately see right? Why? Because I gave you something. It's something is called prior information. The more prior information we have about the system, the easier it becomes to answer. OK, this this is very important to remember and.
+
+[203.0s - 232.0s]
+And my second last is what's the question here? It's it's from the child books. Exactly exactly which each of the two squares in the center is bigger. What is the answer? OK, Are you sure about it? Not at all, right? Probably I was I was spending the last five minutes before my talk to make this bigger. Did I? I didn't OK, but or I is not really is not really for quantitative analysis and this is very important to gain to remember the human eye is not for quantitative analysis and the very last game I'm going to show you pictures and it contains dapice stained nuclei and you tell me how many.
+
+[232.0s - 261.0s]
+Claire, you see there is no magic there.
+
+[261.0s - 290.0s]
+Here is the first one. Half counts zero. OK. So how many? Not very good. 9.
+
+[290.0s - 319.0s]
+Alright, so for human takes about four seconds for my computer is about 0.01 second. How about here?
+
+[319.0s - 348.0s]
+Come on. Use you found it.
+
+[348.0s - 377.0s]
+OK, yeah, to tell you we have fantastic.
+
+[377.0s - 406.0s]
+Microscopes.
+
+[406.0s - 435.0s]
+We can take.
+
+[435.0s - 464.0s]
+Pictures of Mini SAS, even men.
+
+[464.0s - 493.0s]
+Anymore.
+
+[493.0s - 522.0s]
+And and that's something.
+
+[522.0s - 551.0s]
+You just don't want to count anymore. So why did I show you this fancy pictures?
+
+[551.0s - 580.0s]
+Human is imprecise, right? So we can't really measure the size of the block boxes. We are rather slow in computing, but you actually could see the horses. Could my could my computer see? That's probably not an I put dummy dummy's dummy vert here, but I can't say something really better than that. So the the the the research what my group is trying to put together is disrupting. Being intelligent, fast and precise. And now you can use your computer if you want. This was my take home message but imagine. That we have paella.
+
+[580.0s - 609.0s]
+Here what you see is 384 well plates 400 of them. This was one of the very first human genome wide screen. Probably 35 images in Switzerland. Few years ago an and just to have a sense of the data size, but but we're talking about it was more than 10 terabyte. That time? Is it shake, gigantic data and it contained more than 10 billion single cells? What had to be analyzed? So we need to be really precise, fast, and intelligent. Because there is no way to look one by one each. Each image not mentioning.
+
+[609.0s - 638.0s]
+Single cells, right? So my my groups in Finland and Hungary called Bio Mag. Biological image analysis and Machine learning Group and we're working on four major topics. That one is image quality improvement, taking images, making them good looking a second or important thing we work on is segmentation and tracking of single cells. Third one is using machine learning for single cell phenotyping. You will see all types of different machine learning applications we do. And the first one, the last one. But I will spend a little little bit of time. Is how to how to get a single cell out of its cellular microenvironment. Take it out and do molecular measurements on a particular single cell where the decisions are based on the earlier methods, like a machine learning can pick a single set for sequencing. That's like the easy way to explain, so I'm going to show you a couple of these projects we.
+
+[638.0s - 667.0s]
+We are working on in this order, so the first one is if I show you a picture like this you see couples you see columns or see. Probably you don't see that the corner of the image is much brighter than than than the middle because our eyes tuned to death. Unfortunately this phenomenon is very sick.
+
+[667.0s - 696.0s]
+Here for example.
+
+[696.0s - 725.0s]
+In in this picture, it's three times darker than the middle, and probably it's not surprisingly it's there.
+
+[725.0s - 754.0s]
+Also, in microscopy you can see like stitched images, used images, cancer images whatsoever and and you really see the severity of the problem is is after even using very great microscopes it it becomes serious. So we took this challenge actually to create a method that can turn these images into a flat image and developed the method code side there. The idea of cider.
+
+[754.0s - 783.0s]
+Is that it starts from a reality. It goes through an optical system sensory system and we get an image right? It's for example on microscope throughout. This way the picture picks up different distortions like from the objective noise, noise from the CCD, and it becomes distorted. And what we said is if we would have in finite number of images. And we would pick any point. And the objects are uniformly distributed. Then the intensity distribution. What we should say. See at each point should be very similar. The only difference is actually just because of the distortion coming from the microscope. So if we know that then probably we could. We could make these curves the same looking and find out the parameters which which which makes them thick and this is what we did using a so-called variational calculus. And solving for each pixel one equation. Unfortunately, in reality we don't have infinite number of data, so so we had to do something called regularization to fill in the horse and and regularization is is also built in.
+
+[783.0s - 812.0s]
+Into the system, but at the end we gotta method which was tested in. Basically each microscope techniques you can. You can think of nowadays, fluorescence, brightfield, DIC, even super super resolution and we even outperformed the calibration techniques. So it's I think still at the moment it is still the state of the art method that exists for our for background correction and you find different implementations like in image J, math website provider and. We even have a Python, so if you if you have serious problems then I I recommend to use it. Otherwise if it's not that serious, the built-in microscope methods are not that bad. OK, so we have good looking images.
+
+[812.0s - 841.0s]
+What's next, so the next one we already heard about image processing, image segmentation? Usually my group works on on fluorescence images, often some other label free imaging.
+
+[841.0s - 870.0s]
+But the major steps we take is this. We have fluorescent channels, so the pictures I'm showing here we published a few years ago. It's an influencer. High content screen.
+
+[870.0s - 899.0s]
+And the major steps we take, we detect the cells. We detect cellular compartments and then we extract their features.
+
+[899.0s - 928.0s]
+So starting four from detecting.
+
+[928.0s - 957.0s]
+South, it's usually that we have a nuclear staining. Usually DAPI or host or whatsoever.
+
+[957.0s - 986.0s]
+So basically what we?
+
+[986.0s - 1015.0s]
+Do it, we just threshold the image and then we got in nuclei easy. OK sometimes we need to do some tricks like splitting them but but but if they're not very, very danced and then then we can do very intuitive methods.
+
+[1015.0s - 1044.0s]
+Once that's there.
+
+[1044.0s - 1073.0s]
+The next one is find the compartment. I very badly. I called the cytoplasm as as a compartment but but yeah, forgive me. I'm computer scientists.
+
+[1073.0s - 1102.0s]
+So.
+
+[1102.0s - 1131.0s]
+For example, we detect the cytoplasm. We detect virus particles.
+
+[1131.0s - 1160.0s]
+Then at the end, starting from an in.
+
+[1160.0s - 1189.0s]
+We got the segmented image for each and every compartment is detected. This is not something for the biologist months. A biologist wants numbers so.
+
+[1189.0s - 1218.0s]
+How to turn this into numbers is usually that we measure the properties of the sets like its morphology, how big, how circular their intensity is there texture and so on and so forth, so that the.
+
+[1218.0s - 1247.0s]
+And again, starting from the image we have.
+
+[1247.0s - 1276.0s]
+Matrix A matrix is much better now we have numbers. We have numbers for each row is is is 1 salvage economies one property. So now we can ask questions. What are the size of the stairs? What is the texture whatsoever? And we are happy. Or actually we are.
+
+[1276.0s - 1305.0s]
+You are not that happy. We are happy because there are very difficult cases, so this is what our research mostly concentrates on. Very image analysis is not that easy like label free microscopes are sitting on top of each other so it's hardly touching each other like seriously touching each other. Is it possible to overcome these problems and really get a decent segmentation? And I'm going to show you a couple of methods we recently published.
+
+[1305.0s - 1334.0s]
+One is when cells are sitting on top of each other. This is this is very often phenomenon, like cancer cells tend to grow on the top of each other tissue sections nuclei are often on the top of each other, right? And if we are interested in really single cell resolution and understand their morphologies then we need methods that can separate. So 11. Interesting observation we took is that if two cells are on top of each other under fluorescent microscope, then based on the basic properties of a fluorescent microscope we see double intensities. Because it's in a very simplified manner. It's an integrative techniques, so it counts. Look like it's not entirely true. It actually counts within the point spread function. But if you have bad enough microscopes what we have then, then then it looks like double intensity. OK, so if so, then we said that I would like to have a method which actually looks for circular objects. I allow some slight perturbations, but I also allow them to overlap. If intensities permits that. OK, so if there are double intensities then I let them grow on the top of each other and we we proposed this method. I mean we talked a lot about this app profiler. You see a comparison between say profiler and this method is called Amoco. Multilayer gossip circles Methodist. The name it is based on active contours and you can find the description. You can find Simplifier plugins that earned an.
+
+[1334.0s - 1363.0s]
+Python And Matlab plugins for that. It even works for tissue sections. Here what you see is is tissue microarrays of breast cancer patients and you often see that says are touching each other and and we could successfully split the cells.
+
+[1363.0s - 1392.0s]
+We work a lot on 3D and and again variational methods in 3D so well or background is variational, so we work productive contortion. An active surface is our developed different methods that can that can fit on on on different properties of 3D, like given volume given volume versus area and so on and so forth.
+
+[1392.0s - 1421.0s]
+For example here, segmenting single yeast cells are divine or the other one based on the parameter setting. So we can be selective in 3D segmentation. I will talk about this a little more in the end.
+
+[1421.0s - 1450.0s]
+Are we work on touching cells that very often happens that saucer touching each other? This is not a magic, it's it's there. And what we observe. The very interesting property is in the junctions. The so called curvature goes up so that the break of the contour or the the continuity of the counter. So he said if the core curvature goes up and there is a counterpart where it goes as well and they are close enough and they are in an opposite direction, then we could make energy functions. That hunt for such situations and break up the County.
+
+[1450.0s - 1479.0s]
+So we we designed models like that and what you see here is a higher order active contour model that actually fits on the edges of the image. But if it finds a situation there, contours are like in the opposite side. You will see for example here and they have large curvatures that they actually hunt for each other. It's a simple partial differential equation, but that has energy minimum when they break up OK and you see here as well, it's the situation. That that the hiker richer places approach each other and and and an energy minimum is if they break up. This song.
+
+[1479.0s - 1508.0s]
+Times going inside the cells, for example, analyzing lipid droplets that have whatever very serious physiological effects. For example in.
+
+[1508.0s - 1537.0s]
+In different metabolic this.
+
+[1537.0s - 1566.0s]
+This is 1 project we published verse thread to selectively find out that the different size drop.
+
+[1566.0s - 1595.0s]
+Let's and analyze their dynamics so the images we had this very high resolution, confocal images. We did the same, detected assess. I don't know if you can see it enough. If not, we can make it darker, but basically we detected each of the droplets that was the magic that like different sizes could be detected with the wavelet transformation.
+
+[1595.0s - 1624.0s]
+And then.
+
+[1624.0s - 1653.0s]
+Created the digital map of a cell.
+
+[1653.0s - 1682.0s]
+So digital map is something very. The droplets are points with sizes. Their connections can be defined based on our size and difference and and also the other compartments can be digitalized. And then we could ask questions. Is that like dynamically or are they moving together? Is small and big droplet moves together and so on and so forth and and based on these questions of the biologist, we could very well answer. So this is what we did in the last 10 years.
+
+[1682.0s - 1711.0s]
+And then last year there was this big competition called the Data Science Bowl where the task was. It's probably some of you or participated in this competition. The task was that we had very diverse different images and to develop one single method that actually detects cell nuclei in the most reliable manner. And we said that, OK, this is probably the competition for us. We spent ten years on it, so so we should win it. And and it turned out, actually, I think the largest bioinformatics or computational biology competition in the world with four thousand groups participating. So we went. We start to apply our methods and it really sucked. So we were at position 1000, which is like really bad. And of course it turned out everybody uses deep learning. So we started to use deep learning as well. And we were at position 100 or so. But like this, this very advanced. What server deep learning methods and then came an idea? Let me show you something it's.
+
+[1711.0s - 1740.0s]
+It's very exciting. It's called image style transfer learning, so the big problem with deep learning is that we need training examples. We need many training examples. We said image style transfer is you have a basis. You have a style you can create that basis in that.
+
+[1740.0s - 1769.0s]
+Style or freezing paintings you have the basis and famous paintings and you can paint that scheme as as it would have been painted by these painters. And it's not only color similarity, it's like you really see the brushes. So if one can do it for pictures, can we do it for biology and?
+
+[1769.0s - 1798.0s]
+Yes, we took a real image and I said I would like to have on sale here, here and here.
+
+[1798.0s - 1827.0s]
+Here and my computer created.
+
+[1827.0s - 1856.0s]
+Artificials
+
+[1856.0s - 1885.0s]
+Just.
+
+[1885.0s - 1914.0s]
+We can create. Infinite number of artificial cells and what we did. We trained our method on images that were trained that were generated artificially. And actually we are in the 1st place of the competition. So the paper is under publication. You can.
+
+[1914.0s - 1943.0s]
+You can get it on. I will show you the web page. You can even find it right now. So here out of these two pictures for pictures 2 are fake. Can you point me out which two are fake and which to Ariel? It's pretty tough, isn't it? I.
+
+[1943.0s - 1972.0s]
+Help you a little bit. So if you look at these two cells here, there magically is very similar position as these do says, right? So what happened here is that these are coming from 2 patients and we created an artificial set of black and white cirpas issans and we applied these ties on this pictures and we could even fake the pathologists. So I mean this is nothing.
+
+[1972.0s - 2001.0s]
+Magic, it's it's just modern deep learning but but but it's there and and you can create fantastic fake data and fantastic is as fantastic as a few weeks ago in in in India. It happened that that some patients data was you heard. Probably the story that some patient data was faked, like like D has to pathological digital data was faked and predicted cancer. If I remember correctly. I'm not 100%.
+
+[2001.0s - 2030.0s]
+But yeah, so the method is there. You can find it in nucleariser.org if you want to try it now. It's it's online. It's running on Google Cloud and this is what we did for the comp.
+
+[2030.0s - 2059.0s]
+And it it really works pretty pretty well. I mean at the moment, probably this is the state of the art in single nuclear detection. What you can get in each each type of images? OK, so.
+
+[2059.0s - 2088.0s]
+I made a detour out now that I have one very interesting thing they had to show. So nuclei was very difficult. But what is much, much more difficult is to find the single cytoplasm. So this is what?
+
+[2088.0s - 2117.0s]
+Are currently working.
+
+[2117.0s - 2146.0s]
+I cannot report to fantastic results, but on fluorescent images we are.
+
+[2146.0s - 2175.0s]
+Pretty good, so like.
+
+[2175.0s - 2204.0s]
+This this is the result we have.
+
+[2204.0s - 2233.0s]
+Very heavily working on on this day, Carpenter, slab and and. Something is coming, but it's too early to say how good it is and.
+
+[2233.0s - 2262.0s]
+One other thing I wanted to show you, and this is actually Thomas Project who is here and he's going to tell tell you more about it. But this is what was really impressive for me. We had we had a task to detect astrocytes on on on tissue slides an it's really difficult. So if you look at them I myself I couldn't say which one is yes and no. There was a brain researcher pathologist who could do that. So that was a PhD student who annotated 10,000 cells for us. And then we started deep learning and we were interested how nicely deep learning can learn that. So what we did we ask three person from the same lab to annotate a smaller set. We also asked this this PhD student to re annotate it such that we rotated the data and waited 2 weeks and then we could measure how how self accurate she is and how accurate the lab members compared to that PhD student. And what turned out was really magic so so, so these two are accuracies, recalls and precisions of very classical methods like elastic. Probably you heard it still deep learning, but it's like early deep learning and cell profiler and so on. Dave are about 2030% accuracy, so that that was really bad. The PhD student self accuracy was about 80% and her accuracy compared to two other students was a little lower. But what was really magic is is the different. I can't really remember the architecture. What was it detect? Not right so so it was detected at it. It was. It was really good. It was actually as good as the original PhD student and was better compared to the origin of and then the two other lab members. So I'm not saying that deep learning is is any good, but I'm saying that for a very particular. Even very, very difficult task it can learn it's annotator better than the other mates and and I think this was very interesting to see what's going on. It's it's. It's basically just a bounding box annotation. In this case. Yeah so.
+
+[2262.0s - 2291.0s]
+Remember, we start from an influencer image.
+
+[2291.0s - 2320.0s]
+And we got numbers. I just made the detour that how like different single cell analysis tasks arise. But now we have the numbers and what to do with these numbers and this is the second topic I.
+
+[2320.0s - 2349.0s]
+Wanted to show you I usually call it multi parametered nonlinear. Follow the fashion it's it's very fashionista. Do to be multi parametric and non linear and we all.
+
+[2349.0s - 2378.0s]
+So try to be very fashionist so we start to develop this program called the Advanced Cell Classifier.
+
+[2378.0s - 2407.0s]
+The idea of the advanced classifiers is to provide very accurate single cell analysis with minimal user interaction using advanced machine learning. You can find it insideclassifier.org. It's basically a program and how it.
+
+[2407.0s - 2436.0s]
+Works is that you can load an image of cells and then you for example what you see here is cells derived from arena cancer patient and the cells are painted with. Are some proliferation marker? I can't recall what was it, but actually so the bad guys are The Dirty guys because they are going for proliferation and and we measure drug efficacy.
+
+[2436.0s - 2465.0s]
+So what the biology starts? This is a positive.
+
+[2465.0s - 2494.0s]
+Find this is negative on this.
+
+[2494.0s - 2523.0s]
+Something else, and continuing like supervised learning.
+
+[2523.0s - 2552.0s]
+Machine can learn and predict that these these were positive on cities were negative uncensored. So this is a very classic obtained. We do since 10 years probably that that that we can assign cells and the machine can learn it pretty effectively, even even on a low number of cells.
+
+[2552.0s - 2581.0s]
+At the moment, what we're working on, together with the Carpenter Lab is to bring everything that I've shown you to the web. So since probably you heard about tensor flow JS so, so we try to bring the single cell detection and single cell phenotyping into our web based tool. You can find it inside today. I it's it's not ready yet, but it's it's somewhat working now an and bring detection and phenotyping together and. And you basically just throw the images and and either load the pre trained model or retrain it with your classes and then it will tell you what what is the composition of analytic composition at the single cell level of your. Biology, yeah, so let's make a bit of summary where we are so and if you remember my first.
+
+[2581.0s - 2610.0s]
+Slide we had nuclear images and I asked you to count them. OK, so you were an expert and then what you did is we have nine sets on the image so this is the classical data processing pipeline. We have data. We have the expert and then it analyzes. OK. The problem with that, it's very slow and subjective. Then we got computers right? So we had the data we had whatsoever, so profiler. And then we got the result that it's nine cells indeed. So the problem here. Is that the biologist expert? Has someone in the chain the software developer so the software is going to do something? What the expert explains to the software engineer and as much as the software engineer understands from debt will be programmed. So the problem with these classical tools is that they are rather indirect, right? So what to do?
+
+[2610.0s - 2639.0s]
+We probably could be more intelligent and this is what I've shown you is. How can we most efficiently?
+
+[2639.0s - 2668.0s]
+By knowledge and basically what supervised machine learning does is that the expert directly feeds the information into the software. OK, this is what I've shown you. So what can we do more? Oh
+
+[2668.0s - 2697.0s]
+Probably 1 very interesting thing, but we can explore yet is that it's not only the expert who is explaining the software, but but can we allow the software to ask from the expert or crucial things? So basically can we create some sort of intelligent discussion between between our knowledge and and or expert and?
+
+[2697.0s - 2726.0s]
+This is what we started to think about. And.
+
+[2726.0s - 2755.0s]
+It turned out that we probably could ask two very major questions, but we didn't ask so far in this high content field is is my analysis as accurate as it Camp Anne? did I entirely or at least partially discover my data and think about this? I'm not talking about 2 pictures and 200 says I'm talking about 2 billion. 10 billion cells. Is there something I didn't recognize in that? So we started to think about this and actually this is also Thomas project, so if you want to. Learn more about it. Just feel free to ask him and and.
+
+[2755.0s - 2784.0s]
+Something what we what we approach. This active learning is probably something which is which is known for. For some of you, but the idea is that we would like to be more precise, much faster using less human resources and asking intelligent questions from a Hume.
+
+[2784.0s - 2813.0s]
+And for that we actually use a scheme. It's it's called the active learning scheme is that we haven't a pre labeled set. We create a model, we run it on the entire data and we try to find out what are the difficult questions and if we could find out then we can ask the Oracle. The biologists. Hey, I'm not so sure about this. Can you help me to point out? Watch this and then if it has a label then we included in the set and iterate this. So basically. We're not. We don't ask the biologist anymore pathologist to mark this and this and this rather than that we ask that hey, this is the question, tell me the answer. OK so we started to.
+
+[2813.0s - 2842.0s]
+Um? Starting to workout this and it's it's there in the Advanced Air Classifier software, but let me show you three projects we with it. So the first one is is about ribosome Biogenesis. So we were interested that genes play a role in the Biogenesis of ribosomes. Ann and the graphs. What you see here very easily. This is the accuracy of the machine. This is the number of questions that we asked from the biologists, and the biologist is always the lowest. So actually like letting the biologist to choose by his or her own. So the machine could always beat with intelligent questions and what turned out is. So let me just show you the three projects. So that was the devil's arrival symbiogenesis. We were just looking dots basically like nucleoli and the localization of 1 certain ribosomal protein. This was a virus infection project. I will tell you later it's Assembly forest virus infection and we were interested in the severity of the infection and this was again an infection project. It was a yes. I know it's. Basically green and and on Queen Anne. What turned out here somehow? We almost could not be the biologist, but but he was working on this project for five years and I think he actually developed the good sense to to minimize his efforts to successfully train the machine. In this case. This is, this is a pretty difficult project. The biologist was really superior by the machine, so it was, I think, even 10%. Accuracy difference all across the whatever number of questions. And here I what you see here is the machine reached a plateau and nothing happened after that. It's a super simple question. It's really red or not. Sorry green or not green and we speculate that it was just very easy to learn for the machine to decide whether it's it's green or non green. Various for the biologist probably he tried to concentrate on those questions that are probably more exciting for him. Yeah, So what turned out is that. Using active learning is really something to consider.
+
+[2842.0s - 2871.0s]
+And then remember the other question I asked, did I entirely cover my data or discover my data? So here if you develop the method code the phenotype Finder, it's basically the idea is that we have the large phenotypic space. Usually what we use is hundreds of parameters and and often again billions of cells. So we are in a very high dimensional space with a large amount of instances. And could we do something to automatically? Or semi automatically discovered those that we haven't seen so far and what we do is usually we asked biologist to label a couple of controls or a couple of things. What what finds interesting and well. And then what we do is we concentrate on those which were not labeled and for that we use a technique called one class classification and say that everybody whom we know we would just like to forget about and everybody who we don't know would like to see in a very structured way. And this structured way for example we use some sort of tree representation and an interactive explore Explorer where the biologist can explore the space and and can assign new phenotypes if she. He finds something new, but we do something also which is very exciting. We turn the feature space according to the biologists answer so. I'm asking myself is it possible to somehow figure out what are the important and unimportant features for the biologists, Ann, and very likely we could learn something from from his or her answers, and this is something that if he says that these green things are the same, then very likely those parameters which are important similar for this says right there us if the green and blue are different, there might be parameters that are important which distinguishes them. And we try to try to identify these parameters and try to stretch the space based on these parameters at at each step.
+
+[2871.0s - 2900.0s]
+So how successful it is? It's just I could show you a lot of plots but but if you're interested, just let me show you one screen. This is from new characters group, probably some of you know it's it's a breast cancer screen of it. AstraZeneca, drugs and very nice looking phenotypes. So we set to a biologist who never see this data set that you have half an hour. You have 100 million cells and find everything what you can in this set. And in 1/2 an hour she was able to detect nine different phenotypic classes. Very similar advanced. So it's not just like random shots, but she was able to find similar ones and it actually very well correlates to the describe literature. So so we believe that that that this tool is in practice. It's also something that is useful for large scale data and we use it every day actually.
+
+[2900.0s - 2929.0s]
+OK, the next topic we were interested about is that the title is here, Tommy your neighbor, right? What you are. Unfortunately the editor didn't like these titles, so the the title of the of the paper is different. But I like very much so. Imagine you have your Facebook friends. If if I know your Facebook friends, can I know more about you than than than otherwise? Or like your local neighborhood where you leave it? Does this explain something about you? So we asked the same question for cells. If I know this cell and if I know its neighbors, can I detect its phenotypic? But whatever properties based like.
+
+[2929.0s - 2958.0s]
+Asking its neighbors. So what we did is actually very primitive in away, so we took the cell we took its neighborhood based on elk Lydian or K nearest neighbor or whatsoever. And then we made we took the profile of the single cell as far as the profile of the neighborhood and use that for phenotypic analysis and. Just just to show you like Tronics exciting example, this is a cancer cell. This is a fibroblast. They actually look very similar. They local properties are basically identical, so these are like I don't know size intensity whatsoever like 1010 major features are basically the same, but it's neighborhood is very different, so actually that helps us to distinguish are very similar looking cells from each other so.
+
+[2958.0s - 2987.0s]
+To show you the the. Um, experiments. We did probably most of you are familiar with this confusion matrices, so is that that like this this type of servers really indeed classified as this? Then it's black or device. It's right, and this is without. And this is with neighborhood features, and it turned out that I mean what was for me. Very unexpected is that we could even increase the recognition accuracy with our cultures, which is probably for most of the cases. It's not unexpected like like virus. Reinfection or something like that is very local but but but for others like like this was again on this new character status said, I wouldn't expect that the neighborhood will help anything in recognizing the cells, but actually it improved by 10% the recognition accuracy for tissues. As for me, no question indeed.
+
+[2987.0s - 3016.0s]
+It actually helped a lot. OK um. So the next topic I wanted to tell you is if we try to leave or or discrete decisions and we try to understand that biology is often continuous and it's very difficult to say that this is phenotype and this is phenotype, so it's about regression models for high content screening and.
+
+[3016.0s - 3045.0s]
+The model I'm showing you is the localization of latent, or something lysosomes. For certain cells are after drug treatment.
+
+[3045.0s - 3074.0s]
+So so the the green dots are the lysosomes and latency endosomes, and we were interested about there. Are they localising within the cells? And as again me as a computer scientist, the biologist came to me and said that hey, here is the picture. Analyze it and this is something you never want to hear because it's very difficult to analyze if you don't have the real target.
+
+[3074.0s - 3103.0s]
+So it was very easy to say that this is type A and this is type B and let's just classify them. But unfortunately if there's something like this coming which is neither A nor B, then it's very difficult to decide, and probably it's not a good idea to decide. And humans are very bad in that. But what we are very good at is compare things. So if I show you four of them for sure, you can make a.
+
+[3103.0s - 3132.0s]
+Or at least that this is more.
+
+[3132.0s - 3161.0s]
+Like packed, this is more ski.
+
+[3161.0s - 3190.0s]
+Battered with regards to this and the psalms, and then these are somewhere in between. So instead what we said is that let's type A&B. All of them. Let's make it continuous and let's go from A to B and we created something we call the regression plane concept where you it works something like your post it you just pick your your cell and put it out wherever you want, just according to the biology and you see that they are packed here scattered there. And there is a transition between them and very nicely. This is a fantastic machine learning problem called regression, so we can learn based on their phenotypic properties. Sorry, based based on their whatsoever morphological prop.
+
+[3190.0s - 3219.0s]
+This is where they would lie on the 01 scale, and if there is an unknown image we can say that, for example, this server have been zero point 76 on the 01 scale. So somewhere here and then we can say statistics about the population. OK, so.
+
+[3219.0s - 3248.0s]
+We applied this on a very large or human genome wide screen where we were dealing about the same leaky forest viruses infection and what the essay was that we infected cells and then after. Few hours of infection there are. There are green dots. There are many more green dots. After 8 hours they become bigger and then the cyclopses and again me is not a biologist. I understand as much from this but we can quantify that and we said that let's consider this as a process or if we look at the fluorescent images, not all of the cells were infected, but those that were infected. They were at different stages of infection like some of them are early infected or non infected. Some of them are earlier, some of them are late. So it's a it's not possible to quantify a question like this with this with an infected noninfected way, so therefore we used the regression plane and we trained the machine to estimate how much a certain cell is infected.
+
+[3248.0s - 3277.0s]
+Turned out is a couple of very exciting things, so one scrambled so this is a negative control. It behaved as we expected. Most of the cells were non infected, some of them are early and less and less and less very in a later infection stages we find blockers that actually stop the infection. So nearly all of the cells were non infected and only a couple of them are infected. We found boosters where the many of the cells were infected. Quite a few of them are in a later stage, but very excitingly we found jeans that actually boosted infection, so you really could see that there were almost no one in an uninfected stage, but at certain point it actually stopped infection progression. It was one of the ribosomal genes. It actually you can read in this paper. And and and and then the cells didn't progress further. So basically they stopped at a certain point of infection. OK, so so for answering a question like that it would have been impossible to just say infected noninfected, but we really had to do this sort of continuous analysis.
+
+[3277.0s - 3306.0s]
+Um? Quite often we need even more complex decisions like that because biological processes are not just like happening one at a time, but biology. Many process happen at the same time and would it be possible to somehow combine these? This money and very complex processes?
+
+[3306.0s - 3335.0s]
+In some sort of quantifiable way. So the project I'm going to show you is is analyzing lipid droplets after S RNA treatment, and the question was how actually the lipid droplet size, intensity and distribution in the cell.
+
+[3335.0s - 3364.0s]
+It's happened after treatment so.
+
+[3364.0s - 3393.0s]
+So what we first did is is the same, but I've shown you in the beginning. We identified nuclei, cytoplasm, droplets, and then.
+
+[3393.0s - 3422.0s]
+The biologist.
+
+[3422.0s - 3451.0s]
+Client different phenotypes like no droplets, little ones, bigger fonts, bigger shiny Vons, bigger with ER and dying sauce and so on. And then.
+
+[3451.0s - 3480.0s]
+Uh.
+
+[3480.0s - 3509.0s]
+She went crazy so after like putting them in in such classes it for her it was impossible to decide between one or the other one, but. What what actually she was able to do is to say that that probably there could be very interesting transitions from one state to the other, and we could do them somehow with the regression and.
+
+[3509.0s - 3538.0s]
+So we did is we called the 2D regression plane. Which can predict much more complex biological processes. But so that we we don't expect the biologist to know that the image analysis as the wall. So basically what the biologist needs to know is this is my end point. This is my other endpoint or not even that but but these cells are going from one way to the other.
+
+[3538.0s - 3567.0s]
+So it looks very similar to the previous one, but it it's it's basically a playground for biologists where you can put your sass according to any sort of properties. For example, what we did here is brightness and drop that size, so there were large droplets, but not many of them large, but many of them small ones, but very bright and no droplets and so on. But you could shuffle them as as you wish. It's basically any planar graphs could be represented with that, and of course this is again a very nice machine learning.
+
+[3567.0s - 3596.0s]
+Ask what we can learn and then we can predict from an unknown image where where the single source would be.
+
+[3596.0s - 3625.0s]
+And then we can create statistiques like that. So for example here you see a couple of distrib.
+
+[3625.0s - 3654.0s]
+Options like says there were very small and very, very dim.
+
+[3654.0s - 3683.0s]
+Cases where we had only a few but very bright spots.
+
+[3683.0s - 3712.0s]
+Or very mixed populations where you see local minimum everywhere, local Maxima everywhere.
+
+[3712.0s - 3741.0s]
+OK, and from now on I closed my second topic. I'm going to show you a couple of medical applications where we use high content screening. So the first one I wanted to show you is we apply high content screening for predicting drug treatments for childhood acute lymphoblastic leukemia together with the Children's Hospital in theory. So the basic.
+
+[3741.0s - 3770.0s]
+Idea is that we have bone marrow cells and we have leukemic cells from a patient and we treat the bone marrow cells with certain leukemia drugs and we are interested.
+
+[3770.0s - 3799.0s]
+What is the effect of the drug on the alchemic cells? And of course, what we are looking for is drug which which doesn't harm the bone marrow but kills the leukemia cells OK?
+
+[3799.0s - 3828.0s]
+So we developed the method. It basically uses or or or machine learning platform which actually can count the number of leukemia cells and then for certain drug in certain concentrations we can report to the to the hematologist that this this method has decent this accuracy.
+
+[3828.0s - 3857.0s]
+Right now we migrated everything to deep learning using unit and unit can really fast.
+
+[3857.0s - 3886.0s]
+Astic Lee.
+
+[3886.0s - 3915.0s]
+Recognize sales and here the big the big problem is that these are living cells and we we only found one single dive which can actually stain both of the nuclei. But but unfortunately then we need to somehow separate disco cultures and the way we separate this is basically digital separation, so there are no two colors OK and there even for very complex images.
+
+[3915.0s - 3944.0s]
+Like that we at the single cell level, we really can't select the leukemia cells, so the method is at the moment it is used in clinics and and about 5 to 10 patients per week are treated such that it actually is one of the decision supporting process. The next point I.
+
+[3944.0s - 3973.0s]
+Wanted to show you is more of what my finished group is doing. Image based personalized translational medicine. So in in Finland video of its solid cancers and the idea and the entire.
+
+[3973.0s - 4002.0s]
+Institutes, it's it's the nordici. Ambiel Institute is one part of it is is really based on personalized precision medicine where the the idea is that from a patient sample. Create ex vivo Sam Odessan on this XP for some odd as we test drugs so we have 550 different cancer drugs or the standard about 150 of the FDA approved and about 400 that are in late clinical trials and we test them in seven different concentrations using image ink using besides image Ng. Many other things like survival, assess ATP measurements and so on. And all this goes into a bioinformatics. Form and that goes again to a decision support to the clinicians. Unfortunately, here I cannot really report you very big successive, probably in the last five years we treated three or four patients where this was helping indecision. This is much, much more difficult. Doing ex vivo solid cancer. Then then, then hematology cancers.
+
+[4002.0s - 4031.0s]
+And what we are working currently on is pediatric brain tumors together with one group in Heidelberg vCard. This samples or from like brain cancer from children and we try to do 3D modeling of of the cancer and treat with drugs and try to predict the drug outcome. But using 3D high content screening instead of 2D for example. Here you see one efficient drug there. Where like for large concentration, the spheroid disappeared and forced for lower one is actually remains. And now we arrive to 3D. My one of my favorite topics. So of course everybody talks about 3D screening nowadays. Probably no one really does it in a very proper way, because it's very difficult. So we also took this challenge and we start to build a.
+
+[4031.0s - 4060.0s]
+High content screening platform. Right to advance the 3D single cell analysis and what my group is working on is the pipeline is we generate spheroids. We select those which have certain properties. We do Image Inc. You will see it's mostly light sheet imaging but also can focus spinning disk and then image analysis. And I'm not going to show you any miracle we are in the middle of the process so.
+
+[4060.0s - 4089.0s]
+Weather report for Spirit generation again. I'm not very interested about because it's it's like very heavy biology, but we selected one method that that actually serves us. It's this Google Myers spherical plate 5D that creates us through three nowadays, even 400 Micron sized spheroid at thousands of them and the question then is. Also, what turned out is is that the very deciding factor is to resolve the heterogeneity of these spheroids.
+
+[4089.0s - 4118.0s]
+Therefore we built them off a machine. It's it's basically a robot manipulator that can pick certain spirits that have certain morphological properties. So the idea is that using deep learning we control a small machine that out of the thousands of spirits, picks those which have let's say 300 Micron plus minus five Micron. Just got one very interesting grant from the European Union. It's called abstract. It's for prototype development. It actually starts next.
+
+[4118.0s - 4147.0s]
+But this is how it looks like. The machine is a microscope and the manipulator creates like a screen of the spheroids and measures their properties like diameter around Ness and so on. And if you find something that is good, then the robot arm goes there, sucks in and puts it in a 96 well paid. And then we can do image Ng. So it's called a spirit picture project. And follow it. I think you know half a year we will. We will have the first prototype that is probably even commercializable.
+
+[4147.0s - 4176.0s]
+And then the next, the next topic is imaging so. So maybe this is the most difficult part of Treaty. How can you? How can you image a large object? We probably both of you know the properties of light. It's very difficult to go beyond something, and if something is about 3040 fifty microns. So what we start today of it is is a light sheet. Unfortunately, light sheet microscopy is nonetheless it's a fantastic technology applying it for high content screening is nearly impossible, so. But there was one very nice development from like a. It's at least mirror based like light sheet microscopy, which actually gives you 1 degree of freedom. So what we are doing is we're putting spirits next to each other in a row and in this way we could reach that. It's possible to screen them 1 by 1. And probably I think this is the most versatile 3D screening platform. Unfortunately, the Leica is not as great as that ice one but but but at the moment we can we can go single cell level up to 400 Micron such that you really see the single source in the middle of the very very dense cell.
+
+[4176.0s - 4205.0s]
+Features and then the most difficult part is is image analysis and my group is image analysis, but unfortunately I cannot really report you any success here. We are very heavily working on 3D deep learning methods and they are moving forward but we don't have a proper singers and segmentation method at the moment in hand we have new annotation tools for 3D based on machine learning but.
+
+[4205.0s - 4234.0s]
+It's it's coming, probably in the next one year, and then my last topic is single cell. I told you that we are working on machines that can pick a single cell from like different. Perspectives
+
+[4234.0s - 4263.0s]
+Let me show you a video. So last year we published a paper called the Coming Computer Aided Microscopy Isolation. The idea of coming is starting either from a cell, culture, tissue, culture. We take large image Ng scenarios like often thousands or millions of pictures. We take every single oursel, analyzed them and then do training on that and and then investigate every single cells phenotype. And then we can tell the machine that I would like to have a class number fun and isolate for me and for for the moment we use laser micro dissection microscopy. Can pick a single cell and can be ready for I tell you what sort of molecular analysis we have but but it really advanced very much in the last one year. So this is the the major idea of coming and and actually so probably you can feel the the difficulty here. Is that that are mostly the isolation microscopes and the high resolution microscopes are not the same. So if we want to have really high resolution we need another microscope like super resolution or confocal or so. And so we had to make a lot of computation to really put the same sample under the isolation plus minus one Micron precision and so on. But it's soft and we have all the codes available and pub.
+
+[4263.0s - 4292.0s]
+So for example this one. It's real time, it's it's cutting the single source out and then it can shoot them. Really the machine learning based algorithm was selecting the cells as well as detecting the contours and then we are at throughput that we can isolate about 10,000 cells today even in single cells we have 96 well plate collectors. And and straight collectors and so on. So just a few applications.
+
+[4292.0s - 4321.0s]
+So one is in brain research. We were just interested in in in a certain cell that expresses some certain sorting fluid force. So you see this, I don't know what is the color. Probably orange South. We isolated and then we build something we call the Surface Book which is a database where the machine uploads the single cells and you can go and say that I want to isolated this and this and this cells and it instantly. Just instantly sends down to the machine and then the machine isolates those which you want and so the first, the first story contained only digital PCR assessing as single RNA counts. At the single cell level and and we did whole transcriptome analysis on about 10 cell or genome analysis or so. In a few cells know that nowadays what.
+
+[4321.0s - 4350.0s]
+We are one very big project. What we are up for is trying to resolve cancer heterogeneity at tissue as well as a subculture level and we are working on cancer patients and ex vivo cultures and try to match the ex vivo culture with the originel patient sample so.
+
+[4350.0s - 4379.0s]
+We take the sample as well as the cell culture.
+
+[4379.0s - 4408.0s]
+Phenotype it So what you see here is the phenotypes of the patient derived cells.
+
+[4408.0s - 4437.0s]
+What you see here is the phenotypes of the cancer tissue of that same patient, and then we hold transcriptome and analyzed. Or the South, as well as all the derived cells, and I'm trying to match. So the what we see is there is a very good correlation between the different grade cancer cells and the different phenotypes. But what we are trying to work right now is to probably give new guidelines. WHO 2? I think the degrading of certain cancers because what we see is that that this grading system is probably not the optimal and we see many more different classes of. This is a project ongoing together with the two Pathology Institute is probably again I will just report more in the future. And what we are currently the most excited about is we could move to proteomics, so proteomics single, separate or mix is a very difficult thing. Probably even the most sensitive method requires about 800 to 1000 single cells to be able to do deep like really quantitative proteomics. So we teamed up with Matthias Mann and Amber Lumber Lundberg. Probably these names ring the bells. And and and we created a concept called the Deep Visual Proteomics. Their multi has developed a new method where we can probably go to the 10th of the required cells. It's just about to come. I cannot tell you more unfortunately but but we just received a very big and very prestigious grant to to do this and currently we're working on also on lipidomics lipidomics. On the other hand is really fantastic or there not a single cell but but. At 10 S resolution, we can get successfully Potomac analysis and also we do single saramon spectroscopy. So if you think about what I've shown you is we have different type of sensory systems like microscopes, single cell sequencing, proteomics. So basically all type of different analysis. Very different heterogeneous data type and the big.
+
+[4437.0s - 4466.0s]
+And what we are currently working on, I missed actually one thing, but that I skipped and jump back. Is this one? Is can we build machines that do fully autonomous discovery of biology? This is this is my current question is we have methods that take again microscope pictures that do single cell sequence. You must back can we somehow connect this data and make inferences from this from this data such that one of them is very cheap like microscope is very cheap. Sequencing is very expensive because a single set cost me $3000 + + 3 months waiting. Or must pack I need to pay 2 million for a top notch mass spec, so these are very cheap and very expensive. Techniques cannot develop strategies that select only those that are the most important for me. Like again, microscope and anything else and only pick those that are really informative. And if so can I analyze them? And if so, can I make fully automatic discoveries like inference systems that describes biology and let me show you one very early example. We are we are in the beginning of this, but we already got 1 grant. So what you see here is a skin cancer, an in skin cancers. The path ologist recently discovered a type of cell that is some sort of dormant cancer cell. Ann and it turned out that they look very similar, but if we paint them on with one of the cancer markers, it turns out that that they are. They are one of them is cancerous. The other is not. And for example, we built one machine that tries to discover such things and formalize biology fully automatically and tells you that warning. Group One and two are nearly the same morphology, but unfortunately with very different molecular properties, and that is like fully automated. OK, so you don't need a pathologist to describe sentences like this and and create some data like this, so these are the current methods we are working on. This is to trying to like unbiased discover the data and then so I made a bet jump. Unfortunately, jumping to the very last topic is there, so This is why I actually returned to Hungary. Is we built a system because the out pitch system it is a single cell brain discover system. So we have a human brain. And can we pick a single cell from a human brain such that the cell is discovered by machine learning and it approached by an intelligent needle? It's called Patch clamp, so many of you probably heard about that. And to Patch clamp measurement or even pick out the single cell and.
+
+[4466.0s - 4495.0s]
+So we've worked on that system and what you see here. So unfortunately, human brain is impossible to sustain. I mean human brain. I mean that after operation just one hour after operation, we got the samples. It looks like a spaghetti, very difficult to see, but if we could turn it into single cells, we built a machine that controls the needle onto the single Sir plus minus one Micron. Precision has a positive light pressure not to contaminate. When it approaches the cell, it actually sucks in and creates a contact and then we can do the measurement. I tell you what is a measurement, So what you see here, it was never touched by a human machine. Selected assailed 300 Micron deep in the brain, approached the single cell and connected to it. It was five years of work and you can imagine what I mean like to coordinate system plus minus one Micron in a plastic organ. So we have real time tracker on the single cell that that follows as we are pushing we have obstacles like hit another sad and become back, then bypass and and go further. Pressure controller that actually pushes away everything until we reach the self sucking, but the most difficult.
+
+[4495.0s - 4524.0s]
+This one was to find single cells in the brain. So we use deep learning for that as well and and actually again, Thomas and my my other PhD student was building this. It's it's a real 3D real time detector system that finds the cells probably even with the human eye. It's difficult to see them and select those that are interesting for us and controls the machine there and what we are able to do is is about water. PhD student can do with like probably 1 one year of training. Also successfully Patch it, measure it. But we can also take out the single cell and and the most advanced results we have is really picking up the nucleus and Dan fever together with the Allen Brain Institute. So they have sequenced whole whole. Call transcript nuclear transcriptome OK.
+
+[4524.0s - 4553.0s]
+So that I've shown you if you want to read a little more about this topic we've wrote last year couple of reviews so.
+
+[4553.0s - 4582.0s]
+Tiffany's is about screening. That was with the larger European consortium.
+
+[4582.0s - 4611.0s]
+Von Witt data processing. I think my graph was already citing this paper.
+
+[4611.0s - 4640.0s]
+Where we made fun for phenotypic machine learning based analysis?
+
+[4640.0s - 4669.0s]
+And the very recent was in 3D high content screening where we discussed the difficulties and and and water problems in high content screening of 3D.
+
+[4669.0s - 4698.0s]
+Structures and with that I would like to thank my Finnish group, my Hungarian group collaborators and money givers, and thank you for your attention.

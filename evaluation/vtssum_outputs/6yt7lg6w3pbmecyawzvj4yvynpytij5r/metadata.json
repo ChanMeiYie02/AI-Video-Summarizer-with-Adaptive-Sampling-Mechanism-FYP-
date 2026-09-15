@@ -1,0 +1,21 @@
+{
+    "id": "6yt7lg6w3pbmecyawzvj4yvynpytij5r",
+    "title": "Feature extraction from audio and their application in music organization and transient enhancement in recorded music",
+    "url": "http://videolectures.net/mcvc08_frank_fea/",
+    "info": {
+        "author": [
+            "Vincenzo Di Salvo, Institute of Cognitive Sciences and Technologies (ISTC)",
+            "Jakob Frank, Vienna University of Technology"
+        ],
+        "published": "Feb. 14, 2008",
+        "recorded": "February 2008",
+        "category": [
+            "Top->Computer Science->Speech Analysis"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 93,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 703
+}

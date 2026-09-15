@@ -1,0 +1,13 @@
+# Final Multimodal Video Summary
+
+This work introduces a methodology for recovering time-varying genetic networks by incorporating informative priors into dynamic Bayesian network (DBN) modeling. The core objective is twofold: to detect structural changes in regulatory networks using existing biological knowledge and to introduce a time-varying model and inference method.
+
+The methodology involves modeling regulatory networks from gene expression time series. A dynamic Bayesian network is employed, structured with nodes for genes and specific time points, assuming regulatory interactions occur with a constant time delay, such as gene activation at time $T$ is produced by expression at $T-1$. This structure assumes a first-order Markov process and time homogeneity.
+
+To move beyond static models, the system infers time-varying networks by introducing change points that allow the network structure to evolve across developmental phases. A reversible Markov Chain Monte Carlo (MCMC) procedure is used to model network structure, allowing for the inference of regulatory changes across the *Drosophila* lifecycle, analyzing data from over 4,000 genes across 66 time points.
+
+The researchers utilized Gene Ontology analysis to identify potential target genes, prioritizing those involved in developmental processes or transcription factor activity. To enhance inference, informative priors were introduced into the model based on network sparsity and incoming edge structure. Specifically, genes were clustered based on shared properties, including roles as transcription factors or involvement in developmental processes.
+
+The application of these informative priors significantly influenced the results, making genes involved in developmental processes more likely to be inferred target genes, and genes related to transcription factor activity more likely to be inferred parent genes. This suggests that edges in the network can be bidirectional. The analysis revealed that developmental genes tend to cluster in specific phases, such as the early embryo, and the overall network visualization showed distinct color transitions corresponding to these developmental stages.
+
+The findings underscore the necessity of caution when using informative priors, as the inherent noise in gene expression data suggests that restricting the analysis is beneficial. The overall approach provides a new framework for inferring time-dependent network changes and variable timing, allowing researchers to estimate the positions and ages within different developmental phases. Future work aims to scale this approach to investigate highly connected clusters of genes implicated in various developmental processes.

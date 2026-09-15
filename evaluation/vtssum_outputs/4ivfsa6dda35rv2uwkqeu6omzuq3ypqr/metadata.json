@@ -1,0 +1,22 @@
+{
+    "id": "4ivfsa6dda35rv2uwkqeu6omzuq3ypqr",
+    "title": "Annotation of the Corpus of the Saeima with Multilingual Standards",
+    "url": "http://videolectures.net/parlaCLARIN2018_dargis_multilingual_standards/",
+    "info": {
+        "author": [
+            "Roberts Darģis, University of Latvia"
+        ],
+        "published": "May 30, 2018",
+        "recorded": "May 2018",
+        "category": [
+            "Top->Computers->Digital Media",
+            "Top->Humanities->Languages",
+            "Top->Social Sciences->Society"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 52,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1187
+}

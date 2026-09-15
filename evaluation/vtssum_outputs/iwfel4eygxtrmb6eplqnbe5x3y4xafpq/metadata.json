@@ -1,0 +1,20 @@
+{
+    "id": "iwfel4eygxtrmb6eplqnbe5x3y4xafpq",
+    "title": "A Controlled Crowdsourcing Platform for High-Quality Ontology Development and Data Annotation",
+    "url": "http://videolectures.net/iswc2017_garijo_data_annotation/",
+    "info": {
+        "author": [
+            "Daniel Garijo, Information Sciences Institute (ISI), University of Southern California"
+        ],
+        "published": "Nov. 28, 2017",
+        "recorded": "October 2017",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 13,
+    "num_sentences": 141,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 2984
+}

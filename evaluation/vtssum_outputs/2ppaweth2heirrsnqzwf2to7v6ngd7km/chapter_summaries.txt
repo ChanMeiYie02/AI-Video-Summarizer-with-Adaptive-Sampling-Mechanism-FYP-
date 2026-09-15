@@ -1,0 +1,280 @@
+### Semantic Chapter 1 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[0.0s - 29.0s]
+Good morning everyone and welcome to the presentation on Kiwi. The Kiwi sitting here. It will support me a bit in the presentation. What I'm going to present is the outcomes of a European Union funded research project that is called also Kiwi Kiwi was standing for knowledge in a wiki, but we changed the focus of it and it's now a platform for building semantic social media applications. The project has been running since March 2008 and it will now come to an end in February 2011, so I put the wrong date already.
+
+**AI Summary:**
+The speaker begins a presentation detailing the outcomes of a European Union-funded research project named Kiwi. The project, which ran from March 2008 to February 2011, focused on developing Kiwi as a platform for building semantic social media applications, shifting its original scope from a knowledge wiki.
+
+============================================================
+
+### Semantic Chapter 2 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+It's a future. I will briefly introduce into what was the vision so the project is. Has its focus on enterprise knowledge management. [29.0s - 58.0s]
+And I will present a bit about the vision, but the most interesting part to you will probably be the demonstration of the actual key system, because I think we have a lot of nice things to show in the really nice research prototype. [58.0s - 87.0s]
+So knowledge management knowledge management is at least from a technical point of view, you have a lot of different kinds of resources which content you have media content. You have text content, but you can also have things like software.
+
+**AI Summary:**
+The project focuses on enterprise knowledge management. The speaker will first introduce the vision and then demonstrate the key system prototype. Knowledge management encompasses various resource types, including text content, media content, and software.
+
+============================================================
+
+### Semantic Chapter 3 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+You can have. Process is back reports and so on. There's a lot of user in domain specific workflows, so every company has different workflows. Every domain, especially his different workflows, and it's about sharing of content in color. [87.0s - 116.0s]
+Nation of users. And traditionally, knowledge management is something that is considered to be knowledge acquisition systems. So you fill in forms and then this is stored somehow in the document management system you have predefined process is it's often part of the quality Mineta quality management activity of a company, and it's meant not in a negative way. But it's meant to make people replaceable. So if someone gets ill, you want to share the knowledge. Or if someone goes into retirement, you want to be you want the knowledge to live on. But the problem here is that most of the time technologists and manage is installer knowledge management systems and then people have to adapt by doing education and by requirements on quality management procedures and so on. [116.0s - 145.0s]
+In the key way, we want technology and organization to be adaptable to the people, and Kiwi is actually Mendoza. [145.0s - 174.0s]
+Content management system. That follows this vision. The underlying philosophy is very well expressed by a guy called Garr Reynolds. He's he's been writing a nice book called Presentation sent. And its share it, give it away. Make it easy because the more people know your idea, the more powerful it becomes. [174.0s - 203.0s]
+And the concept we are using is online communities in social software. They are already successful in sharing now in companies also, especially in the technology domain. So there's no reason why we. [203.0s - 232.0s]
+And applied. While wikis wikis are simple to use, there's a low technological barrier. They're very flexible, so you can write anything in a week. You can just take a small note, but you can also write a whole documentation. You can even write a book in a wiki. You don't have a predefined workflow, so there's no dictate of the system, and it adjusts thus to the necessities of the. [232.0s - 261.0s]
+Awesome. So you can see a wiki essentially like a piece of paper, so you can write on it. You can connect things by drawing lines between the things you can draw on it. You can even do some handwriting and put a Smiley there, and so it's like like a very flexible and social kind of way of doing things. [261.0s - 290.0s]
+So there's only workflows by social convention. No define know defined workflows by the system, but there are rules, but it's possible to deviate if you think it's necessary. And this often happens, especially in knowledge intensive enterprises that you have to deviate from the rules.
+
+**AI Summary:**
+The discussion focuses on evolving knowledge management (KM) systems, moving away from rigid, predefined processes toward adaptability and social sharing.
+
+**Key Points:**
+
+1. **Traditional Knowledge Management (KM):** Traditional methods involve using document management systems and filling out forms, often tied to quality management procedures. The goal is to ensure knowledge survives if personnel leave (e.g., through sharing).
+2. **The Need for Adaptability:** There is a need for technology and organizational structures to be adaptable to people.
+3. **Content Sharing Philosophy:** Content management systems should follow a philosophy that prioritizes sharing ideas easily to increase their power (referencing Garr Reynolds' concept: "Make it easy because the more people know your idea, the more powerful it becomes").
+4. **Social Tools:** Online communities and social software are successful tools for knowledge sharing, particularly in the technology domain.
+5. **Wikis as Flexible Tools:** Wikis offer a low technological barrier and high flexibility, allowing users to create anything from small notes to entire books. They function as flexible, social spaces where workflows are determined by social convention, allowing for deviation when necessary, rather than strict system dictates.
+
+============================================================
+
+### Semantic Chapter 4 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+For example, if you have a better solution, or if you're completely.
+
+**AI Summary:**
+Please provide the Raw Video Chunk (Spoken dialogue and Visual scene descriptions) you want me to summarize.
+
+============================================================
+
+### Semantic Chapter 5 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+[290.0s - 319.0s]
+New situation. But it's also like an empty piece of paper, so it's well suited for creative tasks. It's well suited for tasks that you already know very well. And but there's no support for the use of whatever I mean. It's just like having an empty piece of paper and then you start writing on it and no one would actually feel his tax return on an empty piece of paper. So forms and workflows have been invented with the reason. And the reason was to support the user. And also with the growing amount of content, it also becomes increasingly difficult to find the content in the wiki. [319.0s - 348.0s]
+Here for the rescue comes the semantic web because it adds former in machine readable meaning to the web. And since the wiki is a small web, it also can add forming machine readable semantics to a wiki on a first glance, it really looks like which it structures. You have. Predefined process isn't only have description logics, you have a lot of formal people reasoning and all this kind of stuff. But if you look more closely it's much more flexible than a database you have. Open word you have seen structured data that you can flexibly adapt. Structures can evolve instead of being predefined, and it's really never imposed. You can use a schema. You can use an ontology to verify whether your data is correct, but you don't need to. You can just use the data structures very flex. [348.0s - 377.0s]
+So what is Kiwi? Kiwi is knowledge management plus Wiki philosophy plus the semantic web and we. Have machine readable linking of content. We can adapt the presentation of the input to personal preferences to the context to different kinds of content. And so on. So different kinds of content can for example be meeting minutes. It can be locations, it can be resource plans, persons and so on. And this also holds both for presentation and input. So you can adapt, for example how content is displayed. But you can also adapt in the same way how content is entered into the system. Vicky's philosophy I've not written wiki. I've written wiki philosophy because the same principles that apply to a wiki apply essentially to all social software systems. Block is also in principle like this. You have a low technological barrier. You can easily link between things. It's just the way it's used that is a bit different, but from a technological viewpoint it's very similar. [377.0s - 406.0s]
+And instead of pouring you with a lot of slides, I thought I would give a presentation. It's much more interesting.
+
+**AI Summary:**
+The discussion introduces the need for structured workflows and forms to support users and combat content difficulty in wikis. The Semantic Web is presented as a solution, enabling the addition of machine-readable meaning to content.
+
+Kiwi is defined as the integration of Knowledge Management, Wiki philosophy, and the Semantic Web, emphasizing machine-readable linking of content. This approach allows for flexible adaptation of how content is both input and presented, applicable across various types of data (e.g., meeting minutes, locations, resource plans). The underlying philosophy applies broadly to social software systems, offering a low technological barrier and flexible data structures that can evolve rather than being rigidly defined.
+
+============================================================
+
+### Semantic Chapter 6 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+And also we have something to show. Unfortunately then I have to go to the. This place here. So.
+
+**AI Summary:**
+The speaker introduces something to show, but then states they must leave immediately and go to a specific location.
+
+============================================================
+
+### Semantic Chapter 7 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Here we go. Key is implemented as a Java Enterprise edition. System that is built on Java Enterprise Edition and what you can see here is that typically. Project management scenario. Enterprise knowledge management scenario and this is the wiki view on the system. So on top of Kivy which is a platform we implemented a semantic wiki. We have in this demo we have filled in some demo data.
+
+**AI Summary:**
+This segment demonstrates the implementation of a system built on Java Enterprise Edition. The system is designed for project management and enterprise knowledge management. Specifically, the system features a semantic wiki implemented on top of the Kivy platform. The demo includes populated demo data.
+
+============================================================
+
+### Semantic Chapter 8 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+You have a list of persons you have, a list of projects. So on and you can I just reload just to be sure that the session is initialized properly. Here we go.
+
+**AI Summary:**
+The user is verifying the session initialization by confirming lists of persons and projects, and then reloading to ensure the session is properly set up before proceeding.
+
+============================================================
+
+### Semantic Chapter 9 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Now we go down here and you can see here different projects and now click on the project Ki Ki soon, but it can first explain what is happening here. So we have here the first kind of semantic data which is references to other pages in these references. What you can see here, they are generated automatically. There can be extracted because the very simple information is there's a link to certain pages, it's who is the author. It's what is the type of the page and its content, it's document item and so on. Then you have a list of activities that. Are happening around the content. And this is very important in knowledge management scenarios because you would like to know what is going on and what is going on about the things that are interesting to you. We have tagging. And tagging in Kavyas actually both free text tagging and conceptual tagging. It's a mixture can be both in the point is here I can tag with us course concept or I can take with a free text tech that is automatically turned into a resource and knowledge engineer can later assign it with a thesaurus if it's needed. And then we have the types here. So I click on the key project. On the key project you have a typical description of a project you have persons, events, meetings and now assume that we are. You have already a lot of content in the week and now you want to start structuring your content. Maybe because you want to make it easier to find, or maybe because you want to add certain kinds of presentations. So I go to the key release plan, planning, planning, meeting and there's some text in it saying, for example, the location. This keeping meeting will be hosted by Salzburg Research. It's at a certain location this certain persons.
+
+**AI Summary:**
+The video demonstrates features within a knowledge management system, focusing on content organization and retrieval. Key steps include:
+
+1.  **Semantic Data:** Extracting and displaying automatically generated semantic data, such as links to related pages, author information, page type, and content.
+2.  **Tagging:** Utilizing both free-text and conceptual tagging, allowing users to tag content with course concepts or automatically convert free text into resources for knowledge engineers to assign a thesaurus.
+3.  **Project Structuring:** Navigating to a "key project" to view a description including persons, events, and meetings.
+4.  **Planning Details:** Accessing the key release plan to find specific details about meetings, such as location, host organizations (e.g., Salzburg Research), and participants.
+
+============================================================
+
+### Semantic Chapter 10 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+There's an agenda, and so on now. OK, in an enterprise system, you need permission management. So currently I'm not logged in so I cannot edit anything. So I click on login, I can. I'm now presented my login screen. I can either log in with my Facebook account or with my 4th plus SSL profile. Since for the demo we should be independent of Internet access, we don't use any of these. I just use the internal. User management. And now I'm locked in. See my dashboard. I see my personal tag cloud, the personal tag Cloud describes what kind of topics I can be interested in, and as I said. The attacks occur in here. They are all concepts, so this is also a semantic context. We have here activities and tweets and this is a collection. It's an activity stream. It's a collection of all the things I showed you. The activities on the content and this is an aggregation of the activities around the content that is interesting to me and I have my history. What pages did I visit? What pages did I edit? What text did I add and what searches did I carry out? And so on. Now I go back to the wiki. I'm still at the same page, so it context context is preserved and now I can click on edit here. And it will open a wiki editor. I mean, of course it's a research prototype, so we're not use interface experts. It's it's still a pretty good user interface, but of course it cannot compete with the system like Confluence. So what we're planning to do is actually integrating with other systems that are better in this regard. Here you have the types and here you can see OK, this is the current types of the document and now I will show you the first thing that was really semantic technologies behind and this is what I always called the magic button. It's for me, it's magic because I'm not an expert in information extraction and it's actually visits staff and they can click on the wizard stuff and it does magic. Well, it's not very sophisticated magic, but it's very supportive to the user and what you can see is that it now detects many things in the in the text. First one is. It recommends your type, namely the type meeting, and it does this based on the statistical training data. On in the system. So since it already has a lot of meetings and they're already classified as meeting, it can then automatically derived from the structure of this text that this could also be a meeting, and it recommends it to me in by clicking on the plus, I can simply confirm it. And then also the system is automatically trained further. Now it recognized also some entities. For example it recognized. Here that there's a name in the name can be a street. So I go to St here and the key is in the way. Street and I just completed it says. 5. And they create an update and what it does, it creates an idea of a annotation in here. Just correct the text. Do the same with Salzburg and say it's the city and these relations that are shown here. They come from ontologies. So actually when I take the city it's and it's a small ontology we just did for the demo and for the system. It just contains City, Street and country and Postal code. And the system offers those relations that are defined. Those properties that are defined in the ontologies. And it does this based on the information that it's a meeting. Then I can go to Austria and say it's the country. And now it's all annotated. I can click. I can even have some tag recommendations. They have also been. Well, it's not layout properly, but it applies the same information extraction techniques for tagging. And then I click on save and all this information is saved. And on meta data, what is actually hidden is the RDF meta data that is associated with a certain piece of with a certain resource in the system. So when I click here I see all the RDF data type and annotation properties and what you can see now. It already contains the city. It already contains the street in the country here. And what you have here in the tabs is actually what
+
+**AI Summary:**
+The demonstration begins with logging into the system using internal user management, emphasizing that the system is independent of external internet access. The user dashboard showcases a personal tag cloud and an activity stream, which aggregates all user activities and content interactions.
+
+The demonstration then shifts to the wiki, where the user can access an editor. The core focus is on the system's semantic technologies and information extraction capabilities. The system features a "magic button" that automatically suggests content types (e.g., classifying text as a "meeting") based on statistical training data.
+
+Furthermore, the system performs entity recognition and relation extraction. For example, it identifies entities like a name, a street, and a city. The system then uses predefined ontologies (defining concepts like City, Street, Country, and Postal Code) to automatically generate annotations and relations (e.g., identifying Salzburg as a city and Austria as a country). This process creates rich RDF metadata, linking the extracted entities back to the resource.
+
+============================================================
+
+### Semantic Chapter 10 (Part 2)
+
+**Original Timeline (Subtitles & Frames):**
+RDF data type and annotation properties and what you can see now. It already contains the city. It already contains the street in the country here. And what you have here in the tabs is actually what we call perspective. So by default it's two perspectives enabled, the default one to display the content and the meter data one to display this kind of tabular meter data. Now I go back to default and then I will just add some additional perspectives into perspective. Is a certain kind of viewpoint on content because content can be used in different contexts and viewpoints. I choose here because it's a meeting. I say it has a location and it has an event. In to submit this information and then I get additional perspectives. Here I can click on location in other systems. This is called semantic forms. But we think that our system goes beyond semantic forms in many ways. I now edit this. And it automatically fills in all the metadata here already. And I say OK now it's the wrong wrong number. It wasn't 3 actually. Now enter also the Postal code and I click on Geo locate here to move it a bit and I click on save and installed. And now you will see something that I find very nice because what is very important you have always around content you have textual content which is for humans.
+
+**AI Summary:**
+The speaker discusses managing data properties, specifically RDF data types and annotation properties. They explain how to manage different "perspectives" (default view and meter data view) and add additional viewpoints based on context, such as a meeting location. The system uses semantic forms to handle location data, and the user demonstrates editing the content, which automatically fills in metadata. Finally, the speaker corrects an error (the wrong number), enters a postal code, performs a geo-location, and saves the changes. The segment concludes by highlighting the importance of textual content for humans.
+
+============================================================
+
+### Semantic Chapter 11 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+It's called the eyeball web sometimes and then you have. Non textual data content that is meant for machines and in kivy both things are synchronized. If I now click on default. You will see the content has been updated also to carry the new. Street number here, and this is because content meta data is synchronized. They can even go here again and then change it here. Click on edit. Where's the street number here? No, I say no. It's not free, it's 7. Updated and I go to default and. I have to go and view because the edit editor caches so it's not updated here, but you will see it here and it's even in the location from now. So it's all synchronized. Now what happened also in the background, kivy contains another semantic component which is a rule based reasoner. So we're using. We deliberately deliberately said our reasoning description logics are not the right thing to do in such a system. What we need is a rule based system, a simple one that allows us to derive new knowledge and what it does. In this case, it's a very simple rule. It implements RDF's reasoning instance reasoning ended. Also, we added a user defined role rule that says a meeting is located meeting. If it has a latitude and longitude and you can see it here, it has been the type has already been added. It's called located meeting here and actually if I have the mouse over it, it's it's a really nice feature because it even contains the explanations why certain inference has been made. The visualization is not yet so nice, but you can see that this resources are located meeting 'cause this resource is also a meeting and this resource has a latitude and these resources along a tude. And there's a rule called located message rule. Now I can go to the.
+
+**AI Summary:**
+The system utilizes synchronized metadata for non-textual data content in Kivy. Updates to data, such as street numbers, are synchronized via content metadata.
+
+The system incorporates a rule-based reasoner, shifting away from descriptive logic to derive new knowledge. Specific rules implemented include a user-defined rule named "located meeting," which infers that a resource is a meeting if it possesses both latitude and longitude. This feature provides explanations for the inferred reasoning. Additionally, a rule called "located message rule" was also added to the system.
+
+============================================================
+
+### Semantic Chapter 12 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+The admin interface and here see the visit. Krishna configure Risner and in the in the reason that you can get some statistics first about the reasoning and you have different rulesets programs one for our RL we have. This one is the one we have been just using and it contains a rule that is called located message rule and it says exactly this. So if something is a meeting and this something also has a latitude and this something also has a longitude then it's also located meeting. It's very simple. Kind of rule based reasoning, data look style, but it's much more powerful in such a scenario than oil based reasoning. OK, no.
+
+**AI Summary:**
+The video shows an admin interface where Krishna is configuring Risner. The system allows users to view statistics related to reasoning and access different rulesets, including one used for Reinforcement Learning (RL). This specific ruleset contains a "located message rule," which defines a located meeting as any event that is both a meeting and possesses both latitude and longitude coordinates. This approach is described as a simple, rule-based reasoning method, which is noted to be more powerful than oil-based reasoning in this scenario.
+
+============================================================
+
+### Semantic Chapter 13 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+How to use this? All this information I showed you that we can have different perspectives on it. There's even an even perspective. I think you trust me that I can enter dates there, but what is now really nice is since I have all this data with the content, I can do a lot of interesting things with the content and I told you it's not only about a wiki, Kiwis, a platform for building semantic social software applications and we have built another one and this one is called tag it. And if I go to tag it take it was actually meant as a platform for geolocating news articles of Salzburg. But it can equally be used to displaying any other kinds of content that has Geo information attached. And we have here now the selection of located meetings and if I go here and have the mouse over it, it's the release planning meeting. And actually this is a kind of faceted search with a different user interface. In the first set that is enabled to use located meeting and I can click here and again get the Kiwi release planning meeting with all the information that I have. I can have other meetings on the map as well. I have the first key in your meeting. This one has even pictures attached to it and these are all represented using RDF in the background. So the relations between the pictures and the content. I can search here for example for all of them, and then it displays all the meetings that we had. In that we entered into the demo system, so we had one break. We had one Stockholm and you can display them in the same way. No, it can go back just just to give you an impression how this can look like.
+
+**AI Summary:**
+The speaker introduces and describes the platform "Tagit," highlighting its versatility beyond a simple wiki, noting that it is a platform for building semantic social software applications.
+
+Key features demonstrated include:
+*   **Geolocating Content:** Tagit was initially intended for geolocating news articles (e.g., Salzburg), but can display any content with geo-information.
+*   **Meeting Management:** The platform allows users to select located meetings, such as the "release planning meeting."
+*   **Faceted Search:** It features a faceted search interface that allows users to find specific meetings and view related information.
+*   **Data Structure:** Meetings can be linked with attached pictures, which are represented using RDF to define the relationships between the pictures and the content.
+
+The demonstration concludes by showing how to display meetings (e.g., in Stockholm) within the system.
+
+============================================================
+
+### Semantic Chapter 14 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+We also have other applications here. We have mediator, which is an idea management prototype for experimenting how such a system can be used to collect ideas in innovation management. And there's also some other applications. One is for Art is an art portal where people can browse pieces of art. Another one is in elearning platform that I didn't actually really see because it's a community contributed project. Now what we can also do with this information is search give you offers a powerful search functionality and effect. For example search for Kiwi. It displays me all search results almost in an instant and what it immediately offers is faceting and faceting can be done over some predefined things like text types, persons, but I can also add arbitrary facets that relate to RDF properties. So for example I won't show it now because it takes a long time, but. For example, if you have pictures with EXIF information, you confess it on the aperture value, or you confess it over the time that they have been created on. I told you that key also contains personalization. You can for example see it here in the personalized search and the person was a personalized search. Takes into account my tagging information so when I click now on personalized search, it will rearrange the search results in a way that is more appropriate to my personal preferences. The first one didn't change, but the other ones changed according to what pages I've been mostly working on. I can even show you that other things are also represented in that everything is represented in the same way in the system. For example, if I know now go to the located meeting or to the meeting page. Where is it? Meeting meeting. OK, I didn't find it, so I do some faceting. I want things that are glasses. Now I have the different classes in here and I click on meeting and you will now see how such a class is represented. You have here the relations, the subclasses you have the domain and here for the classes. Is it automatically added a class perspective in an extraction perspective? The Class perspective allows me to view the. Class information and also edit it in a form based way and I immediately get inferred information. Opinion first things when I hover the mouse or weighted again gives me the explanation. The extraction perspective allows me to train the system further and training in the system works in a bootstrapping way. So this is innovative because usually in information extraction you need a large text corpus in key you can start from scratch and you do it by giving positive and negative examples for each of. The classes. And for example, I can say this one is a comment. OK, this is not a meeting, so all of them are negative, so I can just reject them. And.
+
+**AI Summary:**
+The system features several applications, including a mediator for idea management, an art portal, and an e-learning platform.
+
+The system offers powerful search functionality with faceting, allowing users to filter results by predefined attributes (like text types or persons) or arbitrary facets related to RDF properties (e.g., EXIF values or creation time). The system also supports personalized search, which rearranges results based on the user's tagging information and preferences.
+
+The system models data using structured classes, relations, and subclasses. It provides two key perspectives for information extraction:
+1. **Class Perspective:** Allows users to view, edit class information, and immediately get inferred data.
+2. **Extraction Perspective:** Enables bootstrapping training by providing positive and negative examples for classes, allowing the user to train the system from scratch without needing a large text corpus.
+
+============================================================
+
+### Semantic Chapter 15 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Then the system will be further trained in this way. OK, this is this, is it?
+
+**AI Summary:**
+The speaker confirms a method for further training the system and seeks verification ("OK, this is this, is it?").
+
+============================================================
+
+### Semantic Chapter 16 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Making winding up for that. Yeah, it's I'm finished with the demo and I will now go on with the presentation. It's not not much longer now. So this was was it for the demo. [406.0s - 435.0s]
+This was the scenario that I own. [435.0s - 464.0s]
+Describe to you. [464.0s - 493.0s]
+So you're going to build the next semantic Web killer application. Why not build it on top of killing? You have seen some of the features it offers. You have seen what we have implemented with it that it can have different applications. [493.0s - 522.0s]
+And I have actually 11 reasons why you should do it. [522.0s - 551.0s]
+Number one. It has unified access to content and meta data. Number two it is RDF and ontology support. Number three, it has semantic in faceted search, which I showed you. It has semantic tagging, which is also very powerful feature. It goes much beyond ordinary tagging. It is rule based reasoning, reasoning with maintenance. It has information extraction. We have transactions and versioning. This is something I didn't show, but I hope you believe me that it does. It has recommendations and personalization in it. It has advanced structured clearing. I also didn't show you this, but what is behind this is you can query content and the relations. Two other pieces of content at the same time, so we developed an experimental query language that allows to do this. It's called quickly. Then it's Java Enterprise Edition based and service oriented, so it uses standard technologies. And it's open source and open source in our sense means it's published under the GNU BSD license. You can simply reuse it in your projects whenever you want, whenever you want. We have a Kiwi community building up around it, and we invite you all to participate in. [551.0s - 580.0s]
+Didn't look onto the page. Application areas that we envision enterprise knowledge management is one that I had demonstrated. We can also imagine enterprise integration, so you have different systems that all communicate over Kiwi semantic indexing and search. You can also build public social media applications if you want to. [580.0s - 609.0s]
+So what's the difference between Web 2.0 and Web 3.0? It's very easy.
+
+**AI Summary:**
+The speaker concludes a demonstration and transitions into a presentation about building a semantic Web application. The core topic is the proposed application, which they call Kiwi.
+
+Key points discussed include:
+
+*   **Kiwi Features:** The application offers a comprehensive set of features, including unified access to content and metadata, RDF and ontology support, semantic faceted search, advanced semantic tagging, rule-based reasoning, information extraction, and transaction/versioning capabilities.
+*   **Advanced Functionality:** Kiwi features advanced structured querying, allowing users to query content and relations between two different pieces of content simultaneously using an experimental query language called "quickly."
+*   **Technical Stack:** The application is Java Enterprise Edition based, service-oriented, and open source under the GNU BSD license. They invite community participation.
+*   **Applications:** Potential use cases include enterprise knowledge management, enterprise integration across different systems, and public social media applications.
+*   **Conclusion:** The segment concludes by setting up a comparison between Web 2.0 and Web 3.0.
+
+============================================================
+
+### Semantic Chapter 17 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+I could instead of one I could write Kiwi. [609.0s - 638.0s]
+So thanks to the key team, it's a lot of people behind it.
+
+**AI Summary:**
+The speaker suggests an alternative ("Kiwi" instead of another option). They then express gratitude, acknowledging that the project's success is due to the key team and the many people involved.
+
+============================================================
+
+### Semantic Chapter 18 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+It's not only me, it's not only the key here. Bigger people here are not more important, it's just it's more Peters in the project more than one Peter, 3 Peters. [638.0s - 667.0s]
+We had a big release party in Vienna, actually in a very nice location. The Planetarium in October. Here you can see a few of the key developers celebrating the key. [667.0s - 696.0s]
+Police in some links. This first one is the official Kiwi Project website, where you can get well more less administrative information. It's rather boring. Then we have the planet key block which is updated from time to time with interesting articles. We have a showcase where you can try out. Actually almost the demo that I presented to you and we have the Community page and this is the most important link here. That's that's why it's in bold and there you can get. All the documentation you can download the software. You can even get the demo and if you're interested in collaboration and you happen to be located in Austria, there's also the opportunity to join Salzburg new Media Lab. Which is a government funded competence center? [696.0s - 725.0s]
+And.
+
+**AI Summary:**
+The discussion emphasizes that the project is driven by multiple contributors ("Peters") rather than just a few key people. A recent event was a release party held in Vienna at the Planetarium in October, attended by key developers.
+
+The speaker then outlines essential resources:
+*   The official Kiwi Project website (for administrative information).
+*   The Planet Key blog, updated with articles.
+*   A showcase featuring a demo, a Community page, and comprehensive documentation for downloading the software and demos.
+
+Finally, the speaker highlights an opportunity for collaboration, noting that interested individuals in Austria can join the Salzburg new Media Lab, a government-funded competence center.
+
+============================================================
+
+### Semantic Chapter 19 (Part 1)
+
+**Original Timeline (Subtitles & Frames):**
+Contact thanks very much resting so. Time for a couple of questions for Sebastian. Someone must have a question. I think you answered you, answered all the questions that were in my mind's eye as as you were talking, so I guess other people feel safer. But let me let me kick off. Will you show some applications there and have you have you tried trial those applications on a user community? What sort of users? If you expose this so we have in the project we have two pilot use cases, one with Sun Microsystems where now Oracle and one with Logica? An illogical is more this project management scenario that we showed and in some Microsystems it's it's about basically managing the content in their Internet isn't typically enterprise knowledge management scenario, and there there we have all this semantic tagging because tagging for them is very important. They won't do our DFA annotations. Normal people won't do, not so much. So semantic tagging is very important for them. I'll be back, you getting me. What sort of feedback you getting? Well, there's the use cases are still implementing building on top of the platform, so we don't have the final results yet. OK. Anymore questions any questions? How easy is it to extend your system? So? Are there any APIs or how do you help the developer community at the moment? If you, if you know how to program in Java Enterprise Edition, it's not so not so difficult if you don't know how to learn how to work with Java. Enterprise Edition is difficult but not because of Kivy. It's because of Java Enterprise edition. What we are doing in the next month is that we standardize the APIs and make much of the functionality available as Restful services so that you can even build, for example PHP based applications on top of it. But this is not yet completely ready. We will do it until end of February.
+
+**AI Summary:**
+The conversation focuses on questions about the platform's applications, user feedback, and system extensibility.
+
+Key points include:
+*   **Pilot Use Cases:** The platform has two pilot use cases: one with Sun Microsystems (Oracle), focusing on project management, and another with Logica, dealing with content management where semantic tagging is crucial.
+*   **Feedback Status:** Use cases are still in the implementation phase, and final results are not yet available.
+*   **Extensibility and APIs:** The speaker addresses how to extend the system for developers. While working with Java Enterprise Edition can be challenging, the team is standardizing APIs to make functionality available as RESTful services (allowing for applications like PHP-based ones). This standardization is planned for completion by the end of February.
+
+============================================================
+

@@ -1,0 +1,21 @@
+{
+    "id": "ifgs2y3ssshs3vzqctf2qmf7kaalc3im",
+    "title": "On Discovering Relationships in Multi-Label Learning via Linked Open Data",
+    "url": "http://videolectures.net/eswc2015_papagiannopoulou_open_data/",
+    "info": {
+        "author": [
+            "Eirini Papagiannopoulou, Department of Informatics, Aristotle University of Thessaloniki"
+        ],
+        "published": "July 15, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 77,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 1022
+}

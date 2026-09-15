@@ -1,0 +1,20 @@
+{
+    "id": "rizild6k6tcda4wwjq3msjw6onxkypwr",
+    "title": "emotion3D KG",
+    "url": "http://videolectures.net/estc2010_wilson_e3d/",
+    "info": {
+        "author": [
+            "Tom Wilson, emotion3D"
+        ],
+        "published": "Dec. 23, 2010",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 10,
+    "num_sentences": 103,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 744
+}

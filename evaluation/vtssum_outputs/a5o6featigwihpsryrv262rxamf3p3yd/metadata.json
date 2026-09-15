@@ -1,0 +1,20 @@
+{
+    "id": "a5o6featigwihpsryrv262rxamf3p3yd",
+    "title": "Visualization of graphs using their product structure",
+    "url": "http://videolectures.net/cov05_zerovnik_vgutp/",
+    "info": {
+        "author": [
+            "Janez Žerovnik, University of Maribor"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "November 2005",
+        "category": [
+            "Top->Computer Science->Data Visualisation"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 116,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1020
+}

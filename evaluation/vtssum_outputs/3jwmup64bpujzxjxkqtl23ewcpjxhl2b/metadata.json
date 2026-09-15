@@ -1,0 +1,21 @@
+{
+    "id": "3jwmup64bpujzxjxkqtl23ewcpjxhl2b",
+    "title": "Updating Wikipedia via DBpedia Mappings and SPARQL",
+    "url": "http://videolectures.net/eswc2017_savenkov_updating_wikipedia/",
+    "info": {
+        "author": [
+            "Vadim Savenkov, Institute for Information Business, Vienna University of Economics and Business"
+        ],
+        "published": "July 10, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 276,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2501
+}

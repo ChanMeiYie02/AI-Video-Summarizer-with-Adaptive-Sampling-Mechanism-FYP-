@@ -1,0 +1,302 @@
+[
+    {
+        "text": "So today I'm going to talk about implementing the wisdom of the crowd. This is sort of a work which is in between game theory, computer science, more more. We will fit. Twist probably told the game theorists over two quarters, Elon Kramer and multi Perry. One is an economist, one is a former finance Department. And sort of the end of this claim. But I want to say is that I decided, sort of. I'm not going to give any proof, so I try to keep it in the high level and intuitive level. Anyone who would like to know more is more than welcome to us questions later.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So it is sort of the starting point of of where we started this research. So many things there's like there is. There is a tendency to believe the transparency is what we should have. Like we started looking at the report cards report court system today exist for many things in healthcare and education, probably with professors. Get the student reviews getting published. And and there is the real reason why it exists, because people believe that if we publish it, it will be transparent if people will see it, it will improve the quality and it really needs to be. This is one side of it and the other side of it is to provide information to other people who come. Like anything which which involves people, which it becomes a game in gaming, the system in report cards is an issue. For example, if you look at healthcare, then it's very good that hospitals have to report sort of. How successful their operations are? What's the death rate in a heart transplant? But what you do find out very fast is that they're trying to game the system. How do they gain the system? They would opt in order to get the easier cases and try to avoid the hard cases. This is 1 example.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Here is another example so. I sort of assume how many people here use TripAdvisor way. OK, that's very good cloud, so I don't need to really introduce the trip adviser to you. So tribute to visors like recommendation site. Most people, a few that are using it as sort of slightly unaware, sorta fulfill twist with really exist in the way that we all use it when you come to Barcelona, there are too many hotels you have. There are too many restaurants when you need to go out for dinner, you're not going to go over all of them somehow. What trip adviser has they have? Sort of an algorithm with sort of. Gives you a number people can understand the single number, so it gives the ranking between the different hotels between the different restaurants and this is the popularity index. With TripAdvisor it gives you. If you look if you look even slightly that you see it's not the average of what people reported, so the popularity index is a proprietary algorithm. So just to be fair, I have no idea how exactly they do it, but it's also a self reinforcing algorithm, so if you look on research with people did in hotels, so the difference between being rated number 10 or #20 amounts to something like 10%. In the in the hotel bookings that you're going to get, so it's very significant amount for the hotel, but also to sell something which is self reinforcing. If you take a small restaurant which is just opened and got a few good reviews and you push it up, you're very likely as the trip adviser website you're going to get more reviews for that restaurant, so in fact you can. You need to think that there is some exploration versus exploitation issue. We should go here in. Into here because somehow you do want to to elicit information from the people. And here is sort of.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "The most convincing example, and for this example we even have a video of the CEO saying it so ways used to be an Israeli startup. Now it got bought by Google. If you months ago and what it does is a real time navigation recommendation. So basically you get into your car, you take your smartphone, turn it on and it gives you sort of the recommendation of how to drive home. And it's based on real time information that it gets from other user. Basically we are the traffic jam. How? How are you is the best way to drive? Now here is the real dilemma. From time to time they need to send people on route routes that we have no idea whether they are good or bad. Because they need to do the exploration. And in the seal just said, OK, we do it. There is no choice, right? Someone needs for the better good to stand on the fence so people will be able to walk over. So. And when you think about it, it makes sense. Like someone needs to do this exploration. Of course, if you see that your navigation system is always sending you on very long route, you're not going to use it. In fact, what I suspect is that you have such a high sort of noise right in the navigation system. In any case, that even if we just look at the time in which it didn't predict correctly, most of those times are not due to the fact that they're doing exploration. Most of those times, because traffic conditions change from the time you. You sort of started driving to the time that you got to the place. And intuitively, so people would be people are willing to use this system and the reason why they are winning is because most of the time that would get good recommendation. So this.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Leaves is what I want to talk today, so I would like to talk about agents with need to select between a few alternative fuel ternative's could be hotels like in the TripAdvisor case, traffic routes like in the ways example doctors like in report cards. So this is sort of the issue. Will assume that they have sort of known prior about the success. So if you are driving every day from work to home, you have a very good prior. How much time each route is going to take, but the variance is what you would really like to to to know. We will have multiple agents without arriving in each one wouldn't just need to make one decision. Each one is just taking one route. Still, at home and the individual edges, of course, strategic in the sense you would like to get faster, you're not really into trying to exploring. So you would be willing to take the advice of the system if you think that this is the best thing that you can do. So the point of perspective, it will be trying to look for it is from the planner perspective is the one which is sort of controlling the information we would like to learn how to really to implement such a system. So the goal of the planner is that everyone would be better off, right is the goal of a planner with everyone would get as fast as they can home, but he's looking at the sum of things and therefore there is tension between what he wants and what the individual people want. You can think about the planner as a regulator or SoC when you're thinking about report card, but in many cases you can think that maximizing the user satisfaction even for. Bill Wolfe site like trip adviser. This is the real goal. So.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "The main issue here is that agency will have a dual role they're both producing and consuming information. They are consuming information and then through this consumption. They are getting their utility, but also while they are consuming their producing new information that will help the GNU users that are going to come along.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So what is? So the main research question that I would sort of schedule days. How does the optimal Planner policy should look like? So what is so first of all? What is linear control? So really, what he control, he controls the information. He can sort of decide what he can tell about the other users about what he knows. We're going to talk with no more money incentives. You can extend the result to monitor incentives. I doubt if I do it at the end. What the planet would like to do? He would like to induce exploration. He would like that at the end to guarantee that everyone is doing the better alternative. What would look at would look sort of. OK, so our goal is to find the optimal policy and will also try to measure how good is the optimal policy. What do I mean by? How good is the optimal policy? How far is it from from a setting in which we knew everything? So what is very great of the optimal policy in this setting? And it can rebound the cost of exploration in some sense.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "OK, let me do it D2. Trying to connect with what I'm going to talk today with a few themes that is very familiar to this community. So assume that multi armed bandit sort of. After seeing glasses session of an hour and a half, most people know what's multi armed. Bandit is a very simple decision theoretic model. We have multiple independent action and we have the real uncertainties regarding the reward. The main issues is that there is a repeated interaction between selecting the action and relegating the reward. And the main focus is with tradeoff between the exploration and exploitation. So this is sort of a places which will be in some sense similar.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So when you think about multi Arm Bandit is really there to two things, I think the cold community is almost all on the right hand side of the slide. There is a Bayesian sighting in which we assume it prior over rewards and given the power of the rewards there are optimal algorithm like the Gittins index for the discounted return there is that your serial setting in which we are all interested in worst case bounds. Worst case with would hold true for any reward sequence that we're going to observe. And we measure the regret is with difference between the best action and the online performance and the goal is to get the varnishing regret varnishing as a function of the number of time steps.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "OK. So now let's sort of contrast where where I'm going to talk today versus the classical setting. So in the classical setting, the wave and certainty regarding rewards, right? This is the main uncertainty in this drastic setting. It comes from the distributions in that your server setting is because we don't know what the remaining reward sequences. But we do have certainty about something we do have certainty when we perform an action, it's going to get performed. In our setting there is sort of like another uncertain T. We haven't certainty regarding rewards is before, but we also have uncertainty about the execution of an action, because in some sense what I said is that yes, we can recommend you how to to drive home, but you then we'll look at the routing. Sometimes when I use Waze and says it doesn't make sense and I just don't take that route right? So we can recommend things, but you can't force things to happen, so we cannot force exploration, so will need sort of power somehow too. Induce exploration without focusing it.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So why is all this interesting? So this is sort of a more personal perspective. Why is it interesting to me? So I think includes, do you think incentives to the basic tradeoff between exploration and exploitation is something that I find very interesting? And I think it's it could be a very fruitful, even especially for this community to think, sort of along those lines. Adding a third dimension to the classical tradeoffs in which incentives. Basically, if you think about the machine right, there are no incentives. But if you think about trying to implement the multi arm bent on on humans, you should think that incentives would come here in one way or another. So in this talk I'm going to. Let's talk about action control about strategic agents in a related work with Nikolaj is a, Bianchi and. And Fabrizio Germano, which is sort of. For a long time we're playing around. We never thought of God to write it up, but here is sort of the gust of ideas. So I think the motivation is only the strongest thing that we can see. Think about the classical expert advice, so the classical expert advice is a basic assumption in the beginning. The experts really want to give the information right. Experts do not have incentives. Let's think about life. So sometimes it's true expert do not have incentives, but in many settings experts do have incentives. Anyone who sort of four rented or bought an apartment recently. He knows that real estate agents do have incentives. That incentives are not aligned with your incentives and not with the seller incentive, right? They want to add a deal to go through somehow. Coming from Israel Army Generals Army generals also usually have incentives like they're more likely to think that there is a solution using the army. If you think about this life right, it's not a joke. Where I come from, it's not, it's not OK. Criminal trials in the US think about juries. People on Julie's many times have incentives. Incentives is not that tight so everyone wanted. If someone did, the crime should go to jail and if he didn't do anything he should go free. But the title between false positive and false negative is very different for different people. Alright, so when you set up a Julie, you need to be aware that this is this is an issue. OK. So what could be a research agenda here? And this is what we try to do. So you would like to be biased there. The experts. Somehow you would like to be able to get a better prediction even when the experts are biased. Get better tradition and more reliable one, OK? So. The good news is I think it's a very good motivation. The bad news, but I don't have too much to say about it, at least now. So now we can sort of go and continue, sort of.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Along Villa, so now I'm going to sort of before I can sort of say the result even I want to sort of set up the model. So what is the model? So I'm going to have a very simplistic setting in this simplistic setting. We just have two action for each agent. Each agent has changes to choose between two alternatives. You can think of between. Selecting between two medical treatments, right? Each action has a fixed but unknown reward. So once we realized in action we know sort of. What is reward is and we will. We are going to do it in a Bayesian setting. We will have a prior over the rewards. It's well known everyone knows it and just for simplicity, let's assume that action one is a priority, the better one. We will have a stream of agents T agents. They will arrive one after the other sequentially. And each one knows his place in the order so I know that I'm the first one, the second guide knows it is the second guy, etc. Each agent will get a single chance to select an action and get the reward of the action that is selected. We'll assume that the agents are risk neutral. Basically they just would like to maximize the expectation of the of of the reward that they're going to get. So in some sense, we are fixing the averages. The agents what are going to do? Is it? They get some information during the process given all the information they receive, they can compute some posterior and they're going to choose a better action according to their posterior. So the agents of two armed bandits, but they are fixed by saying that they maximize their utility.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "The main issue is sort of how to elicit things from those simply to arm bands, so we'd be looking at the plan so the planner is the one which would like to plan for. So the planner really controls the information and you would like to maximize the expected some of payoff. So he's like maximizing the social welfare. The agents of incentive compatible in the sense that they are going to do whatever is in their best interest and where. If they said no payments for now, we can sort of relax it later. And it's not that important. So what can the action plan or do so the planner can sort of tell a story to each one of the agents so he's the real estate agent and it says a very long story to tell about what happened in previously right and then sort of the agent does what he does and the planner observes the outcome. So now we have iteration. Each time the plan of sort of gives a message to the next agent and then the the agency is done going to do the action with sort of maximizes its own utility. In order to complete it into a game theoretic setting, we do assume that the agents know the plan of policy. So in some sense the planner cannot lie in the usual sense, right? So I know that if you plan, it told me to do action one, it's really big 'cause he observed AB&C in his code and this is sort of why he's recommending it. So, so in the sense the agents, when they come to make their decision, their decision is based also on the plane of policy on how to give the recommendation, and the goal is. To maximize the sum of the payoff, this is the plan or goal, right? So this is a social welfare maximization.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "OK. So that also. So, so I'm going to mainly discuss private recommendation for this. I'm going to derive an optimal policy. The exact optimal policy, and in addition to being exactly optimal, it will also had good performance in the sense that the total regret that you and care is only constant depends on the prior, and there's no dependent on the number of agents that show up. Blue flame going through later today to mention some other models. So when you don't know your place in the line or the inventor is money or there is more information over and accommodation are sort of observed by everyone who asks, but the main sort of what I think I'm going to talk about is a private recommendation and the fact that in this case we can sort of implement the optimal social welfare with relatively low cost.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "OK so before going on. I'm going to speak about a related, probably unrelated work and later, as explained to me, why is it unrelated and the main reason is because I think it's very interesting for those of you unfamiliar with it. So this is information cascading. So what happens in Informacion cascading? So we think that there are two bins. I hope you can see the color. This is red and this is green. And you know that in the Bender of either 2 green balls in three Red Bulls. 02 red balls and three green balls. By probability 1/2 it's this one probability. 1/2 is this one, and some of. You would like to know which case it is.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So what happens is, is the following sort of scenario.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "This guy comes.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "He put in his hand into his hand into the bin and pulls out the board and now he needs to predict he needs to predict whether there are more red balls or more green balls. So OK, so first guys, very easy, right? He's so Red Bull more likely. That is that.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Majorities, red, so he's saying red. Now they say.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Second guy comes and he pulls another book.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So if he pulls the green ball, let's assume that if he pulls the green Bolton is gone.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "To say Green Solid trust himself more than the first guy. Mike",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "Without death.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "If it sees a Red Bull now, now is even more confident. The majority is red.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "He's going to say right away. The things becomes interesting with third.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "The third guy comes up.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "And he's seeing a green ball. What should he say? OK, so now this in some sense you know that the first guy said red, so it means that is so bad he is known as the second guy, said red. So it means that is so red he's so green, but two Reds versus 1 green.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "He's going to say red. So what is there to form this point on? Everyone is going to say read.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Right, so so it means that there is a constant probability. It's not that tiny. That if we have a huge number of people, it doesn't make any difference. They're all going to say the same. They're all going to be included, correct? And if they all said the signal with overwhelming probability. We would have known the correct answer, so some information doesn't aggregate here. So so now I want to sort of to explain why doesn't happen in our setting, hope.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "I'm not confusing you too much, so here is sort of our setting. Describe pictures so. So the teacher here is the planner and what the planner.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Is doing is agents of coming one by one in.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "But the teacher is sort of giving recommendation. A private recommendation. Oh you, you should do it.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Now the agent gets to choose whether to push the green button or the red button.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "And after the agent pushed the button. He gets the reward. The planner observes a reward and the age.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Go walks away so I'm like in the in formation cascading. He really, the planner has all the information. He is the one that aggregates information and he is one that discloses information and therefore sort of there isn't any real issue of cascading of information because the information is sort of channeled. Four through this planet. OK.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "So now we want to start the describing our results in model so. So let's start with a few simple observation, right? So once, so since the planner controls information, the simplest policy is not to give any information. If we don't give any information, everyone is going to do the better or your reaction. Basically no, no exploracion. OK, this doesn't look good.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "The other extreme. Is full in formation so full in formation. Still unclaimed, it's very easy to see, will have limited exploration. Alright, so let's do very.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "Simple example, suppose there's two options. The first action is uniform between minus one and +2, and the second option is uniform fitting minus two and plus two now.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "Now. If the first agent observes a value which is known negative, it's strictly positive everyone is going to do the first action right? Although there is a fair chance of the second option is still better. Alright, so. So full information is not doing what we would like it and it is doing something that you would observe. Also in practice, I think it causes people to be more conservative. It causes people sort of to rely more on on what what is out there and not to try to do to explore new things. But but if there are 100 people you want one of them to try the second a action because the second suppose the first action is 0.5. The second action says still is a good probability to being above 0.5. Right? The agents are coming 1 by 1. The first agent is going to do the yellow action. Supposedly he observes 0.5 now in the full information, the planner is just telling everyone what the first agent received, so it tells everyone you know the yellow action would give you 0.5 every time you push the yellow action you get 0.5. So from that point on the planner cannot convince anyone to do the blue action. Although if there are many people you would like to someone to. Try the yellow action. You do have a probability of 1 / 8. I think that the blue action is better, so you would like someone to try the blue action. But if you're doing full information, you're not going to get anyone to agree to do it.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "OK, before describing the result of. We do need some technical condition and I sort of ascribe it would impossibility result. So in some sense. We cannot always guarantee exploration, and here is when we cannot suppose that sort of action one has a predefined payoff which is deterministic. In action, Two has a lower expectation. But there's sample ability of being better in sample building of being worse in some sense. In this setting, the planner doesn't have any information you can sell to the agents, right? Becausw. Every agents know that all the engines before we would prefer the action one right. The first active agent do action one, the second agent, regardless of what the planner tells him he knows what the plan of saw, and therefore he also do action one. The third editing sort of so. Everyone is going to do action one in this case, you plan or doesn't have any influence. So the really mild assumption which we need to do is to require that there is some probability that the first action is works in the expectation of the second action. So incense the planner there is away some scenario in which the planner can convince you to do the second action. OK, so not willing to do the proof, but sort of if I did it for four, it's easier to think about full support for both action and no mask on. OK. So here's how the algorithm is going to look.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "For the first agent, we don't have much of an influence is going to do the first action. We're going to observe this reward for the second agent in Incels. For each edge it will have a threshold, and once the reward is. Below the flesh is OK. If we already know the better action, we always recommend the better action. If we observed only action once so far, then we have a threshold. Depending on the value that we observe for action one, and this is sort of how are we splitting the exploration between the different agents, so agent is going to be the one to explore action too if he. He's the first one to have this hold for him, and then we're going to recommend from action to otherwise action one right? So in some sense, we are recommending action one until a certain agent, then a certain agent is going to be the first one who is going to be recommend to do action to and following him? Everyone is going to do the better action. In a few properties, sort of, the optimal policy is going to be. Recommendations are going to be sufficient. Essentially, I'm going to talk about it later. It is revelation principle, right? Sort of. I don't need to sort of tell you anything about the past. It's enough that tell you which actually is better for you to do. The constraints of in the for the agents between the two actions are going to be tight. This is also sort of fairly intuitive if since we want to maximize the exploration, will make it in such a way that a the agent doesn't care whether he does. Action one or Action 2 and it will generally explore low values before- in. Surreal intuition is really coming from the fact that. The agent doesn't know why we recommended action to deal with it. Did it come from here or did it come from here? OK. So now this sort of to make sure that everyone sort of in line with what I'm going to do is in it.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "Sample and I think through this example, the entire sort of algorithm would become fairly simple and obvious, right? So let's do concrete example, right? The first action is uniform between minus one and five, so it has a positive average value. The second action is uniform between minus five and plus five, so zero expectation and think that the number of edges is huge. So if you don't need to think about sort of effect of a small number of agents. So this is sort of the picture that we start with. So now we full conspiracy here like agents, one will choose the yellow action. And now agents two will choose the blue action only for the yellow action is negative. This is sort of what I already showed you. So let's see how. How can we solve this? How can we overcome this problem? How can we get convince sort of the second agents to do more exploration so?",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "Is one way of doing it. What? This same picture. So rather than telling the second agent the outcome of the first agent. Let's just indicate that the reward is below 1. Just telling the Daily World is below one don't end. This is 0.5 or minus 0.5. So now when when you convey the information that the reward of the first action is below 1. The second agent is indifferent between doing action one and two. Both have expectation 0, so let's say it does what we ask him to. OK. So we were able to induce more exploration by doing a partial revelation, so this outcome is more efficient than the full transparency one, and we got more exploration for the second agent. But now how can we do better right? So now the third agent will come right over the third agent. We need sort of to have a different story. OK, four.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "Found agents. OK. Now now we can sort of user information that the 2nd and just give us. So now we have two cases in which we can sort of try to convince this third agent. One case is sort of maybe the second agent already did action too. And then in which case we will be recommending the better action. And it could be that. The first award was too high. So the first one is above 1. So now we can sort of stress starting stretch it so it's clear that the third agent would love to do action too in case one and would not like to do it in case 2. But now we can sort of stretch eggs until to the point in which he is indifferent. And if you run, do the calculation. In this example you get 3 point something, and then in a sense. You do in this example you do Agent 4. And in the magical way, under after agent for your guarantee to cover all the exploration and therefore agents. 5 in order always going to do the better option. So in a sense. Your entire regret is built on a constant number of agents that happened in the beginning. OK.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Faith is doing sort of a short overview, sort of what is involved in this. Solution, so the basic properties. So first I said recommendations are always sufficient and the way you can think about it is I can send you a message and ask and then given this measure you compute the posterior and given the posterior you do better action. But if you know my policy and you know that I can sort of do this for you right rather than sending you a message, I'll take the message we want to send. You compute the posterior and just tell you the outcome. So therefore I can always rely only on recommendations. The second.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Salvation is that the optimal policies is a partition policy sort of partition policy. In this, in the following sense, it recommends to the first agent always the first action, because this is the only thing that he is going to do. If both actions are sampled, is going to always recommend the better one, and so now the only thing is when are you going to ask the first guy to try the second action? So essentially you're going to have a partition. Depending on the values of the 1st. Of the first the action, sometimes you have, say, agent for those value for Engine 3 doesn't have to be continuous like this is Agent 40 might. This might be again agent for maybe no exploration here Agent 5 in Soto.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "And what you need to keep usually need to keep track of 2 two constraints like you want it when you recommend action to it is better to do action too. And when you recommend action One, it is better to do action one. Someone in this setting it's sufficient to look only on action too. 'cause action one is a priority better and so intuitively, although you need to prove it every time you recommend action one the edges is like it's in some way to follow it because. It's also the operator we think, So what you needed to make sure is that when you recommend action Two, it's really. Better for the agent to follow the recommendation, because this is the worst uproar reaction.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "OK. So OK, so few properties of the optimal policy, so you're going to get incentive constraints which are tight, so you want to make agents in different between the two alternative. The second agent is going to explore any value which is already below the expectation of the of the second action. So really, you're sort of getting rid of all the low values immediately, and generally you sort of explore low values between high values and this is sort of the threshold that we are good. I'm going to talk about so the optimal algorithm is going to look like this. The first agent is going to recommend Action One, and we observe its reward. All the other actions agents when we sample both action, recommend the better action. And if we didn't some sample yet, the second action we're going to recommend action two if our one is less than the threshold of this agent. Otherwise we'll keep on asking for action. One right so so the higher the value of action one, the more we are delaying the first agent, which is going to sample. Action 2 in the intuition should come from the inherent tradeoff between each agent. Doesn't know why we we recommended the the second action did recommend because we know in which case you would like to follow order. We will recommend because we like him to explore, in which case it doesn't want to follow it. And by balancing those two things, when you do get the exploration going on. OK.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "So the main technical difficulties really to show that the threshold is exactly the optimal policy. It's built on a very delicate swap argument, in which case in if there is a known threshold, the. Think you can gain by slow keeping, but the point is that you need to to gain in two different places. One place that you need to gain or not close at least is a social welfare because you won't like to increase social welfare. But on the other hand side you need also to keep track of all for the incentives of the agents, right? So there is the two agents that you are going to swap between them and they should both maintain their their belief that they're doing the better action for the room. So this is sort of the thing that I'm not going to say much about.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "OK. So it's strange in some sense to talk about what's the performance of an optimal policy, but I think it's worthwhile to think it here. So what will happen in the when we are running this policy? So it's the action one is better. It's great. Only one agent will try action too and we have very low weekly if Action 2 is better than what you can show, is it the number of agents without going to do exploration depends on the prior, but only on the pile. So if the number of agents is going to Infinity really you have just a constant regret. Which comes from this part. So this is a constantly regret compared to what? What would have been if you knew everything in advance and it's independent from the number of agents.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "So the ultimate policies social policy in fairly sort of simple to compute it. I'm not going to go over it. Essentially what you do is you compute it under the assumption that there is an infinite number of agents, and then you need to sort of to take care of the truncation effect truncation, meaning that since there are only 100 people, some values or just too high in order to try to explore. So you compute it. The threshold with the infinite one, and then you're sort of correcting them for the fact that you really have a finite number of agents and set your threshold to be the minimum of the tool.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "OK, and and as I said, sort of the regret that you are going to have is is depending. Is a concept which is independent of T and here is sort of a way of bounding it right? So we had to. To expectations for the first argument with second action, and you can sort of bound. This is a rough upper bound on the number of agents which cause can do sort of an in an optimal action. Take the difference between the two expectation and divide them, sort of by this integral. So this is sort of the probability that the first action is below the expectation of the second one, and it is the worst action, so this probability. If you want that would control sort of you regret.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "OK, let me talk briefly about a few extension and then probably open the floor for questions.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "OK, so relaxing the is it the agents knowledge So what? I'll just have to know. So we assume that agents know the exact place in in line. So the first one knows it is the first second or does this second and sort of in some sense you would like to relax it in life, sort of. It's not really make sense, you know exactly where you are in line you can think. Sort of if you're selling something is like early adopter mass adoptation or later Doctor. If you're driving home, you know that you're before rush hour. UN golfed Abbatiale will after rush hour so you do know something about your place in line, but it doesn't have to be exact. Essentially the same properties hold so, so if you if you sort of think of. Taking the agents and dividing them into various number of blocks and in each block you sort of select randomly.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "What would happen that in the optimal policy in every block is sort of the first you try to convince her first agent to explore for the entire block. Since you block is sort of uniform, he's willing to do it and then sort of. You just gain because you can. You can induce more exploration because it has more uncertain T so blocks in only increase with social welfare and therefore reduce the regret. In extreme Point, which is still interesting, sort of what would happen if if they just have no idea where they are in line, think about the random permutation. So agents are not aware on the place in the queue. So in this case. If you think about it, sort of. The incentives of the agents in the planner sets are suddenly aligned because when there in there are no position. Is there summing over all possible positions? For their expectation and the planner is summing over all position to compute the social welfare. So since their incentives are aligned. What happens is the planner can simply run the optimal policy. Bye. No need to explain why. OK.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "So so far in the model, we assume that there isn't any money going around, right? So so we were trying to convince people to follow the action just based on their utilities and not by paying money. Assume you have money. Assume you can't pay people to do medical experiments or something right? You can sort of induce exploration by paying money. The nice thing is that the same policy states the same basic policy. The only point now is that the planner has it. His money is going to invest all the money that he has in the second agent to try to get the exploration as early as possible. Other than this, essentially you're going to get the same construction. It's going to be the same optimal policy. OK. This is what happens when you work with people in finance. So when when money costs money, OK, So what does it mean when money costs money? So so when the OK. So usually when you think you're making payments and payments are just coming from somewhere. But things that if you have the government and you want to put taxes there is the cost of putting taxes. So if you're going to take money then you're taking alone in your paying interests so. So again, the nice thing is the same basic strategy will will will remain. And what happens is this player is going to subsidize some of the exploration of the second agent. Other agents are going to be exactly as before. OK.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "Hey. OK. Two more extensions in which I wish they. Knew more about that I can tell you what they do know, right? OK. So one weakness in the model they describe is that I said once in action is realized every time you do the same action, you're going to get the exactly the same reward. It would have been nice to say that there is a prior over the expectation of an action. Let's say it's it's a bernouilli random variable, and each one is going to get a draw from this action. So if we have stochastic playoffs, we can get an approximate optimal policy. It's going to be the same policy in essentially the idea so that we can sort of break the sample into blocks of one over epsilon squared, and sort of when we are averaging over one of option squared agents, we're almost getting the deterministic one. The unfortunate thing is. I have no idea how to get the optimal policy in this case, like how. How would you get something like the git index that essentially will do the optimal tradeoff here between the exploration and exploitation? Another issue, sort of. I discard everything for for two actions and it's it's no coincidence like sound. If you go from 2. Actually even 2 three actions, a state space becomes richer, so so. For the optimal policy 443 actions, I'm not sure even how it looks like, but what we can do we can sort of get in approximation, right? We can increase the regret by a factor of a number of action. But sort of doing tournaments, sort of take the pill with two candidate based action and do a tournament between them and then do another tournament with the next guy in the next day. This will cost you a factor of a number of action in the regret. It's definitely not the optimal policy.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "OK. The last thing is sort of public recommendation. So in some setting, public accommodations are more meaningful than private ones. So if you think about the report cards, my first slide in the top, this is really public recommendation. Usually you put it up on the web and everyone can see it. So public accommodations are better than full information. So. OK, with the men observation again in public recommendation, is it? Yes you can. You can try to induce explosion in various extras, but because everything is public because the planner doesn't sort of controls in formation and gives different bits to different people. Essentially you can move all the explosion with people are willing to do to the second agent if Edge is number 5 is willing to do an explosion under certain condition then engine #2 is also willing to do. The exploration I don't know the same condition, so it gives a very simple characterization. So namely, the only exploration in the optimal policy, the only expression that you will get is from the second agent. But this is significant limitation. It really means that you can have a linear regret in the sense. In the optimal policy, under the public recommendation, so you're not going to get the socially optimal outcome that you would like to have. OK.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Conclude, OK, So what I discovered discovered an optimal policy in a very limited in a very specific setting. It makes us exploration and exploitation in some sense. The exploitation is really using the past information using the information, whether you know that Action 2 is better or you would like to explore it for the first time. Any of the exploitation well, what we have? What we're doing. We're really gathering in the exploration. We're gathering new information in the new information is is one we sort of allows us to do more. Explorer Explorer exploration and exploitation. Furthermore, if you think it's a high level sort of what this research is trying to say is, although the I would say the widely public believe the the higher transparency will get the better things are going to be. I think that. Even if we ignore sort of the theoretical model that I described here, there is a risk in in transparency and the risk and transparency is essentially that it will cause people to become conservative. I think we saw it sort of theoretically in in our model, but it's an issue that does come sort of. To life in various settings. OK.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "And this points of Al concluding.",
+        "start": 1711.0,
+        "end": 1740.0
+    }
+]

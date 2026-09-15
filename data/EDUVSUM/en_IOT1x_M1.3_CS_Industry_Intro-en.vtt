@@ -1,0 +1,220 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:02.960 --> 00:00:06.850
+IAN HOWARD: I come to this research area, or Internet of Things area,
+
+00:00:06.850 --> 00:00:09.920
+from the point of view of rotating equipment.
+
+00:00:09.920 --> 00:00:14.140
+So if we think about industry, there's all kinds of pumps, compressors,
+
+00:00:14.140 --> 00:00:16.930
+turbines, gearboxes, and bore mills.
+
+00:00:16.930 --> 00:00:21.400
+The amount of rotating machinery that we have is really very vast.
+
+00:00:21.400 --> 00:00:24.820
+How do you actually know when things need maintaining?
+
+00:00:24.820 --> 00:00:31.060
+You either work on a time schedule basis, but if you try to save money
+
+00:00:31.060 --> 00:00:34.660
+and trying to do maintenance smarter, then really what you should be doing
+
+00:00:34.660 --> 00:00:38.980
+is on a predictive condition monitoring basis.
+
+00:00:38.980 --> 00:00:42.430
+That requires the use of sensors.
+
+00:00:42.430 --> 00:00:46.880
+Sensors that actually measure the behavior of the equipment.
+
+00:00:46.880 --> 00:00:49.720
+And you want to be able to transmit that information,
+
+00:00:49.720 --> 00:00:53.440
+communicate that information, back to the web or to the internet
+
+00:00:53.440 --> 00:00:57.100
+and then be able to analyze that and be able to use
+
+00:00:57.100 --> 00:01:00.130
+that to understand what is happening.
+
+00:01:00.130 --> 00:01:03.840
+So wind turbines designed to last more than 20 years
+
+00:01:03.840 --> 00:01:06.310
+but it needs to be maintained well.
+
+00:01:06.310 --> 00:01:10.240
+In the earlier days, the wind turbines, well, the maintenance procedures,
+
+00:01:10.240 --> 00:01:13.130
+would be on a time schedule basis.
+
+00:01:13.130 --> 00:01:16.960
+What we have now is the ability to actually continuously monitor
+
+00:01:16.960 --> 00:01:19.300
+the system in real time.
+
+00:01:19.300 --> 00:01:22.930
+Then it's only when something is in need of replacement
+
+00:01:22.930 --> 00:01:25.320
+that you actually do the replacement.
+
+00:01:25.320 --> 00:01:29.170
+Let's say that the wind turbine suffers a lightning strike.
+
+00:01:29.170 --> 00:01:31.890
+And the lightning propagates through the blade
+
+00:01:31.890 --> 00:01:35.200
+and because the blade is a composite fiber material,
+
+00:01:35.200 --> 00:01:37.990
+it's possible that the lightning strike could actually introduce
+
+00:01:37.990 --> 00:01:41.060
+some delamination in the blade.
+
+00:01:41.060 --> 00:01:44.060
+So, if you have vibration sensors on the blade,
+
+00:01:44.060 --> 00:01:46.720
+you have strain gage sensors on the blade for example,
+
+00:01:46.720 --> 00:01:49.360
+then in real time you're able to detect, OK there's
+
+00:01:49.360 --> 00:01:52.370
+actually been a change in operating condition now.
+
+00:01:52.370 --> 00:01:56.050
+And then over time you can monitor that change and can progress.
+
+00:01:56.050 --> 00:01:58.960
+That change can progress.
+
+00:01:58.960 --> 00:02:04.990
+So it's vitally important that before that portion of a blade flies off,
+
+00:02:04.990 --> 00:02:08.229
+travels hundreds of meters potentially killing somebody,
+
+00:02:08.229 --> 00:02:11.530
+that you actually stop the turbine, replace the blade.
+
+00:02:11.530 --> 00:02:14.650
+The same thing for the bearings in the gearbox, for example.
+
+00:02:14.650 --> 00:02:19.000
+Wind turbines have a history of burning down.
+
+00:02:19.000 --> 00:02:24.520
+Which sounds very weird, but you can see evidence of wind turbines
+
+00:02:24.520 --> 00:02:27.280
+burning because the bearings in the gears
+
+00:02:27.280 --> 00:02:33.190
+get so damaged that they just heat up so much and that the oil starts to burn
+
+00:02:33.190 --> 00:02:37.300
+and the whole thing literally burns down.
+
+00:02:37.300 --> 00:02:41.470
+By monitoring the bearing condition and the gearbox condition then
+
+00:02:41.470 --> 00:02:45.640
+you can actually alert the maintainers, the operators,
+
+00:02:45.640 --> 00:02:48.400
+that something needs to be fixed.
+
+00:02:48.400 --> 00:02:54.070
+And you can actually predict weeks and weeks, sometimes months in advance,
+
+00:02:54.070 --> 00:02:56.140
+when it needs to be maintained.
+
+00:02:56.140 --> 00:03:00.790
+I've got a PhD student looking at asset tracking in the health sector
+
+00:03:00.790 --> 00:03:03.280
+and there's different opportunities there
+
+00:03:03.280 --> 00:03:05.950
+in hospitals as well as in age care.
+
+00:03:05.950 --> 00:03:07.390
+They might be aware.
+
+00:03:07.390 --> 00:03:13.570
+OK, they already have like 500 chairs for patients
+
+00:03:13.570 --> 00:03:16.740
+to use, for visitors to use.
+
+00:03:16.740 --> 00:03:19.570
+They know they have them-- they purchased them--
+
+00:03:19.570 --> 00:03:23.410
+but then you ask them, OK, where are those chairs?
+
+00:03:23.410 --> 00:03:25.900
+They actually don't know.
+
+00:03:25.900 --> 00:03:27.970
+At any particular point in time, at the moment,
+
+00:03:27.970 --> 00:03:32.920
+they're not able to tell you where their assets are.
+
+00:03:32.920 --> 00:03:39.850
+That led us to do some research into the various means of asset tracking,
+
+00:03:39.850 --> 00:03:45.070
+using smart tags for example, which can connect
+
+00:03:45.070 --> 00:03:54.040
+to Wi-Fi devices, Bluetooth devices, or LoRaWAN devices.
+
+00:03:54.040 --> 00:03:57.080
+So that's some research that's currently going on.
+
+00:03:57.080 --> 00:04:01.240
+Asset tracking has added benefits because if you
+
+00:04:01.240 --> 00:04:04.810
+can develop a smart tag on the asset, the smart tag
+
+00:04:04.810 --> 00:04:09.020
+itself can have sensors inbuilt in the asset.
+
+00:04:09.020 --> 00:04:13.060
+So now you have an asset, which has a tag on there,
+
+00:04:13.060 --> 00:04:16.570
+and you also have sensors on the tag.
+
+00:04:16.570 --> 00:04:19.720
+That can be embedded in the asset so that not only do you
+
+00:04:19.720 --> 00:04:24.760
+know where the asset is but you can do some condition monitoring or patient
+
+00:04:24.760 --> 00:04:26.200
+monitoring.
+
+00:04:26.200 --> 00:04:32.670
+So you can actually introduce the concept of patient quality care
+
+00:04:32.670 --> 00:04:35.190
+into the asset itself.

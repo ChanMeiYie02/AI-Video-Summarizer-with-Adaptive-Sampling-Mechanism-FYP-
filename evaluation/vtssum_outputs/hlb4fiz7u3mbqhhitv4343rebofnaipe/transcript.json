@@ -1,0 +1,447 @@
+[
+    {
+        "text": "Thank you for coming to my last. The last talk of the session. I think there have been some really interesting things we've talked about so far. I would like to tell you a little bit about the work that I've done on characterizing individual communication patterns, but I'd like to impress upon you. Is that in the chemical engineering Department? I am interested in sociological problems and I'm presenting this at a computer science conference. So as you might imagine, we might have a little bit of a communication issue. So if you have any questions, feel free to ask.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "OK, so basically I'm interested in characterizing individuals an sociologists have been doing this for quite some time now, and so if you were to consider a typical population of people, say the characters from Roger Hargreaves Children's book series, you might want to quantify how these individuals behave, how they how successfully, or what have you, and hopefully relate that back to attributes that are unique to those individuals. So, for instance, we might be interested in identifying whether or not Mr. Clumsy is rich.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Or not an relating that to something that's unique to Bob. Mr Clumsy, whether maybe clumsiness is related to how successful you are. I don't know, so there are lots of different ways that we can think.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Do this, the first is just look at gender, see if they're gendered.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "In some people the other is by ethnicity. If your race matters or your religious background.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Another way is by whether there are geographical factors that play influence in terms of how.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Successful you are another attribute that can be important is your social network and there's been lots of talks here at this conference about how to use social networks to gain information, but we're.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Really interested in is using activity patterns of these individuals to try to characterize how may be successfully successful and so to give you an idea of how we might go about doing this.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "If we were to consider the some time series of that, maybe Mr. Chatterbox had.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And consider so consider this time series. Try to characterize this activity in a meaningful way. So typically you might do this with some correlation or some other type of statistic. Alternatively, you can do with model parameterisation and there have been lots of papers that have gone along these lines, so the basic idea is you take a model and you parameterize it in some meaningful way that you can compare user a user B.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "The next way is that you tried it. The next step would be to try to make predictions based on these characterizations and then.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Compare these predictions to some output so the predictions might be clustering users based on how similar they are, or classifying them in some meaningful way. Identifying users that are true outliers or even identifying when their behavior changes.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So the emphasis of this talk and the real contribution here is to develop a model that is intuitive and that it's very easy to understand and it's simple enough that we can actually compare different users in a meaningful way. And we're going to do is use this parameter model parameter station to do a little toy example of clustering an outlier detection. OK.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So when I say human activity patterns or that I want to characterize human activity patterns, what do I really mean? And I think probably the best way to motivate this is to think about I'm getting a little ahead of myself. We're going to consider two datasets here primarily, so I'm interested in doing this in the context of email, and these two datasets come from two different papers which have been published in Proceedings of the National Academy of Sciences and in Science. So the first data set was published in 2004 from and it's taken from a European University consists of are on the order of 1000 users over about a semester, and the second data set consists of data from American University in 2006. It consists of about 10 thousand 100,000 users. Over about four semesters or two academic years. So typically when we think about these email datasets, we think about the network representation. That's what I'm showing here. The static representation of a graph. Another way you can think about it.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "As a very dynamic representation. So here I'm going to just step through a little cartoon of how this network might change overtime.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "And what you're going to see is that different people who are being highlighted in red when they send a message are sending these messages along the highlighted links.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Anne.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Their patterns are quite different each.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Individual has different behave.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Dear Anne.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "That behavior is possibly.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Quantifiable in some meaningful way. So we want to try to quantify when these individuals are turning red.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "This figure and use that as an attribute or develop away.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Uses it as an attribute in some sort of.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Theological analysis. OK, so now what I was saying before is the way.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "One might think about this in many.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "It is in the way we like to think about human activity.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "As in the following, I think it's best Rep.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "And if we think about it in terms of Little Miss wise.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "So Little Miss Wise is a very very successful student and she's so success.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "So that all she really does is sleep, eat, go to class study and send email. So on a typical day for Little Miss, why is she?",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Might wake up, grab some breakfast, maybe send a few emails before going to class, grab some lunch while sending a few emails, and then go to class again. Study email, you get the ID.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "And so this kind of this kind of thing.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Repeats itself again on Friday and then on SAT.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "In Sunday she takes the weekend off, maybe goes to Paris for a conference.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "And then so this is the kind of pattern that we might have for Little Miss wise. I'm not Little Miss wise. So.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "So this is what we might expect somebody to behave like. But actually all we have are the email communication data. We don't know anything about when they're eating or sleeping or going to class or doing their homework. All we know is when they're sending emails and we don't actually know when they're sitting down at their computer saying their emails, which is what I'm highlighting here in orange. All we know is when they actually send emails. So that's all we actually have in the data, so.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "As you can tell, there's lots of uncertainty here, which we're going to quantify.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "With something called the intervent time towel. And that's just the time between two consecutive events that somebody sent their two consecutive email.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Somebody sends, so there's lots of uncertainty and the question is how can we quantify this uncertainty and a model and use that in a meaningful way to interpret for later analysis? So.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Probably the most simplest way that we can do this is with something called A plus on process, in particular homogeneous plus on process homogeneous plus on process. There are really two important feature.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "The first is that the probability that an event occurs at any given time is directly proportional to the probability density, but the rate at which those things happen is proportional to probability.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "See the other really important thing in the distinguishing feature about a person processes that it's history independent. So if an event occurs at time T, it's completely independent of what's happened in the past. So this is a pretty naive model in the sense that there are no correlations, and so this rate is proportional to the probability density that something happens at a particular time, and it so happens that when you can do some analytical results, which I'm sure you probably all done in a statistics class of some sort, and if you look at the log linear plot of the probability density of the Inter event times, you can see that it decays exponentially and. This is.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "But what's interesting is when you look at the probability density of empirical users, actual users in the data, it has a very heavy tail.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "And so here I'm showing a log log plot of the same probability density for an actual user in our data set. An what you can see is that this decays much more slowly than an exponential, suggesting that there's some serious flaws with the homogeneous Passan process so.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "Kind of go back to the drawing board and think about what you would expect from an actual user. So the three things I'd like to emphasize, or the first people will have weekly.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Periodicity's, so we typically work Monday through Friday. We don't really work as much on the weekends, or maybe send as many emails on the weekends. The second is that we have daily. This season that we took.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Please sleep during the same times of the night and the third is.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "We have these cascades of activity or what we refer to as cascades of activity or email sessions, so we want to try to encapsulate this model in a meaningful way.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "What we've done in previous work is develop a cascading nonhomogeneous periodic posts on process, and that's kind of a mouthful, but hopefully you'll understand where all these phrases are coming from, so the first is that we're going to start from a homogeneous plus on process with a constant.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "Every time.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Here is the weekly periodicity, so here.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "You can already start to see why the periodic part is important and then the non homogeneous part just refers to the fact that the rate is not constant in time. It actually changes so then we.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "Incorporate further in addition to the weekly activity.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "Turns the daily patterns.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "Activity and these in.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "In principle are.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "Start what we call.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Email sessions and.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "In these email sessions you can have.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "I've seen either.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "Additional events happen during a Session, 2 maybe 3, and so on and so forth, so you get the.",
+        "start": 1769.0,
+        "end": 1798.0
+    },
+    {
+        "text": "Yeah, So what we actually observe in email data then is the project.",
+        "start": 1798.0,
+        "end": 1827.0
+    },
+    {
+        "text": "Both of these time sequences under the same time acts.",
+        "start": 1827.0,
+        "end": 1856.0
+    },
+    {
+        "text": "And so this is the data.",
+        "start": 1856.0,
+        "end": 1885.0
+    },
+    {
+        "text": "They were actually confer.",
+        "start": 1885.0,
+        "end": 1914.0
+    },
+    {
+        "text": "And with.",
+        "start": 1914.0,
+        "end": 1943.0
+    },
+    {
+        "text": "So in previous work we've shown that actually this.",
+        "start": 1943.0,
+        "end": 1972.0
+    },
+    {
+        "text": "Odila statistically consistent with the data we've done.",
+        "start": 1972.0,
+        "end": 2001.0
+    },
+    {
+        "text": "Some Monte Carlo hypothesis testing, and I'm not just showing 1 user here, but we've actually done this for several different user.",
+        "start": 2001.0,
+        "end": 2030.0
+    },
+    {
+        "text": "So you can get a feeling for the fact that this model is able to encapsulate a lot of different behaviors, and so it offers the potential to actually characterize people and compare them in a meaningful way. Um? So.",
+        "start": 2030.0,
+        "end": 2059.0
+    },
+    {
+        "text": "So in addition to those benefits, there are two major downsides with this particular model, which we've done in previous work. The first is that it's very expensive to infer because it uses a simulated annealing approach for identifying the parameters of the model. The second is that it's very difficult to actually interpret the model parameters, so we want to come up with something that actually solves both these problems simultaneously, and so if.",
+        "start": 2059.0,
+        "end": 2088.0
+    },
+    {
+        "text": "Go back and take a look at the model. What we observe is that actually there's a hidden Markov structure which can make inference very efficient, so.",
+        "start": 2088.0,
+        "end": 2117.0
+    },
+    {
+        "text": "So the first thing that we can notice is that here I'm highlighting the top time series in blue in the bottom time series in red, which correspond with.",
+        "start": 2117.0,
+        "end": 2146.0
+    },
+    {
+        "text": "Passive and active state, so you're not really sending email if you're being passive. If you're out walking the dog, unless you have a BlackBerry like everybody does now. Or you're actively sending email on that. You're sitting on the train and actually doing things, so we have these two states. You're either passive or active, and we say that you transition between them with some probability. See and this is the probability that really defines our Markov model, and it ends up being giving reasonable predictions with things that we've empirically observed in the other data set or in our previous study. So the second feature that I like.",
+        "start": 2146.0,
+        "end": 2175.0
+    },
+    {
+        "text": "To point out about this model is that we can see.",
+        "start": 2175.0,
+        "end": 2204.0
+    },
+    {
+        "text": "Qualify this complicated rate expression that we have for the non homogeneous portion of the model into something that just looks like a product of square pulses an this ends up being.",
+        "start": 2204.0,
+        "end": 2233.0
+    },
+    {
+        "text": "Really nice way to represent things and it doesn't actually give away. We can still see that the results are very consistent with the actual data, so we're not losing any any precision when we.",
+        "start": 2233.0,
+        "end": 2262.0
+    },
+    {
+        "text": "So the model that we end up having is a 9 parameter model that has intercession rate, the intercession rate so on and so forth. But really, the.",
+        "start": 2262.0,
+        "end": 2291.0
+    },
+    {
+        "text": "The two parameters that I'd like to focus on for the remainder of the talk are the start of the day, which we call Tau 0D. Excuse me and the end of the day, Talwandi.",
+        "start": 2291.0,
+        "end": 2320.0
+    },
+    {
+        "text": "So what we do is we estimate these parameters for. 400 or so users from the Ekman Moses survey data set, which is the one from the European University, and we estimate these parameters for the four semesters worth of the academic calendar from the American University, which is the cost and what status?",
+        "start": 2320.0,
+        "end": 2349.0
+    },
+    {
+        "text": "And what we see when we estimate these parameters is that surprisingly, these distributions are actually relatively similar. When I explain things. So first of all, people tend to start their days basically around the same time. Europeans data set is apparently shifted a little earlier. Perhaps they have more motivation to get up than American students. I don't know. Then this on this. On the right we can look at the end of the day when people actually stop sending emails, or we estimate that they stop sending emails and there's a distinct peak around, say 6:00 or 7:00 PM and another distinct peak for the American University around 1:00 o'clock or 2:00 o'clock. So these correspond with people that are either they basically have a 95 work day or they have along. They basically send emails whenever they're awake. Um? So what I'd like to do is focus for now on the continents and watch data set because it offers us the opportunity to check and see whether.",
+        "start": 2349.0,
+        "end": 2378.0
+    },
+    {
+        "text": "These parameters are actually stable overtime, so here we have these four different semesters an you can imagine a couple of different ways that we might observe that these parameter estimate distributions are so stable the 1st.",
+        "start": 2378.0,
+        "end": 2407.0
+    },
+    {
+        "text": "Might be that these distributions actually quantify how each individual changes. So at each semester I draw my parameters from these distributions and that tells me how I behave over that time.",
+        "start": 2407.0,
+        "end": 2436.0
+    },
+    {
+        "text": "The second possibility is that actually these distributions quantify a difference across population, so actually each person is a very precise point in this in this distribution, and these distributions are there a distribution across the population.",
+        "start": 2436.0,
+        "end": 2465.0
+    },
+    {
+        "text": "So we've done is taking a measure of how much variability there is for each individual and compare that with the variability across the entire distribution. So we're looking at the standard deviation of each an looking at the ratio of those two, and what we find is that over 85% of individuals very less than the population, which tells us that these parameters are actually telling us something meaningful about how individuals behave, and it's not something that's you can just pick out of a hat out of this distribution. So actually those parameters when you estimate them are telling you something useful about a person.",
+        "start": 2465.0,
+        "end": 2494.0
+    },
+    {
+        "text": "So I'd like to turn our attention now to using this information about how stable these parameters are to kind of illustrate that this might be actually useful for a real application. So here I'm showing five time series as denoted by a through E an what I'd like to post you is that one of them is synthetic. It's not actually person, the other four are an invite anybody to guess which one is the one that's not real. See OK, good guess wrong. So that was a good guess though, 'cause they look very different, right? But actually it turns out that when you look at at the you estimate the parameters for all these different people and you look at where they fall in this in this parameter space of the start of the day and the end of the day you act.",
+        "start": 2494.0,
+        "end": 2523.0
+    },
+    {
+        "text": "Fall in different clusters and actually I'm not so sure that you can see from the back, so I'm just going to point. So we are in this cluster down here and then here in this cluster at the top an A is kind of off to the side. It's not actually in either of the clusters. So the bottom cluster actually corresponds with people that start their day around 10 or 11 in the morning and then their day around 6:00 o'clock in the evening. So these are people that only send work emails during their work day. The top cluster corresponds with people that start their day around the same time, but continue sending emails through one or two in the morning. So these are what we called email aholics an basically D and he ended up falling into the same category and it's really hard to tell. In fact, it's nontrivial to tell that actually they belong in the same category considering. There are so few events for user Dee Ann a it, it turns out, is somebody that just sends a lot of emails at particular times of the day. So they send emails from 6:00 o'clock in the evening to maybe midnight. So they start sending emails when they get home from work, and then they conclude. But by the time they go to sleep so. That I just.",
+        "start": 2523.0,
+        "end": 2552.0
+    },
+    {
+        "text": "I'd like to, I hope that I've convinced you that actually characterizing individual communication patterns might be on a novel opportunity to make other predictions about user behavior, and with that, I'd like to thank my coauthors, especially Jake Hoffman, who's in the audience Duncan Watts for giving the opportunity to work at Yahoo over the summer, and my advisor, Louis Shamrell. Thank you. So. Using apparel. The other one is to try some unsupervised learning classification approaches. Have you compared? Your approach to. So I mean, we haven't actually done that. The next step, which would be to actually try to classify things and I. Right, so so I mean, I think it's that's an important thing to maybe do as a next step to try to classify individuals. That my understanding you correctly. I mean, we're just we're really proposing here, the model and it's parameterisation. Question is sort of evaluating the model. You know, one way to dollars in a couple of examples and see if you're doing OK. You know intuitively the other way is to compare it against some baselines and all right? Yeah, I understand we have not done that, and that would be definitely interesting thing to do.",
+        "start": 2552.0,
+        "end": 2581.0
+    }
+]

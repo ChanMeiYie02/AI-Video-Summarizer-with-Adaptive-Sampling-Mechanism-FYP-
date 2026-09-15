@@ -1,0 +1,22 @@
+{
+    "id": "dotls7e272r4b3inrubpxkinzezje2ku",
+    "title": "Symmetric Correspondence Topic Models for Multilingual Text Analysis",
+    "url": "http://videolectures.net/machine_fukumasu_models/",
+    "info": {
+        "author": [
+            "Kosuke Fukumasu, Graduate School of System Informatics, Kobe University"
+        ],
+        "published": "Jan. 14, 2013",
+        "recorded": "December 2012",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning",
+            "Top->Computer Science->Machine Learning->Semi-supervised Learning",
+            "Top->Computer Science->Information Retrieval"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 28,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 407
+}

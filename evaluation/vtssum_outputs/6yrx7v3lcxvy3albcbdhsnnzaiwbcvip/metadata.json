@@ -1,0 +1,21 @@
+{
+    "id": "6yrx7v3lcxvy3albcbdhsnnzaiwbcvip",
+    "title": "Normalized Semantic Web Distance",
+    "url": "http://videolectures.net/eswc2016_de_nies_web_distance/",
+    "info": {
+        "author": [
+            "Tom de Nies, Ghent University"
+        ],
+        "published": "July 28, 2016",
+        "recorded": "May 2016",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 222,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 3716
+}

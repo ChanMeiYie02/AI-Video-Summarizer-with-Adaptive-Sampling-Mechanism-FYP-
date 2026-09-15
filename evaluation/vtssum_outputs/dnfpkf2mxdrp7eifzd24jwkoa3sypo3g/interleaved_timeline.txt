@@ -1,0 +1,107 @@
+[0.0s - 29.0s]
+Coming up. Just like characteristics.
+
+[29.0s - 58.0s]
+In this book, learning always meds identification in the limit from positive death. You found networking process systems in the title. This in Italian class systems are class of language with algebraic algebraic structure as target of learning and you know Jack sets used for sufficient conditions for learnability of language classes.
+
+[58.0s - 87.0s]
+In previous work, it is shown that bounded unions of language learner socially but. But it's learning algorithm is not given in its growth in stock. We give a scheme of learning procedure on banded unions. Certain class of languages called Natalie Android system. By using character exchange.
+
+[87.0s - 116.0s]
+OK. This is ultra or in this talk, let's talk. First, we explain in the relation between inductive inference an algebra. Then we give a precise definition of natalian tests. That system and character except. Then we get main result an example.
+
+[116.0s - 145.0s]
+The purpose of our research is gratifying the property of learning languages with argic structure on both the build point of learning and mathematics. Current subject is lying bounded universal language which have not attracted mathematicians. But we are very popular for learning paper.
+
+[145.0s - 174.0s]
+Some learning people have investigated learning languages with algebraic structure. For example. Ideas of the the set of all integers. Is in biscuits by angle. Angry also studied pattern language. And state and best of study ideas in competitive ranks.
+
+[174.0s - 203.0s]
+This is very simple example of inductive inference. A language is ideas or the integers. Ideas of integers is the set of all much breath of some number N. Suppose that target language is all set up with all multiples of 12. And. What is an is positive that is yes, 7340 eight 6012 zero. Teacher showed this example one by one. Then learning machine computes this city of giving examples and output it out. Put them as hypothesis 7240 four 2412. This algorithm learns the class of ideas of integers.
+
+[203.0s - 232.0s]
+From the viewpoint of mathematics, mathematics, Chance, Summer research at the history of mathematics have found that the original budget over here about basis theorem can be regarded as learning. This means mathematician just learning in algebra in late 19th century. In fact. Sherry is the best thing that can be regarded as learning.
+
+[232.0s - 261.0s]
+This is his best originel paper.
+
+[261.0s - 290.0s]
+Roughly speaking, this statement says that. Anything at the seconds of polynomials F1F2F3A. With any variables XYX the XN there exists such that all polynomials as can be represented in this form. The combination of Air France after the FN. It act as the grammar of this sequence.
+
+[290.0s - 319.0s]
+Yeah, we explain why I said to you when I hear a mathematics. The set union of two ideas has not been interested because it is difficult to give its meaning. In fact, the set of Unity ideas is not ideas anymore. In learning theory, final resting state of glass of language insured identifier, but you set union to language in it. But that's not effective procedure. The computer. It's kind of static.
+
+[319.0s - 348.0s]
+This is the definition of ideas incompatible ring. Let it be a commutative ring, just as the set of integers or polynomials. A sense that IR is an idea if these three conditions are satisfied. He has examples of ideas.
+
+[348.0s - 377.0s]
+The notion of ideas can be generalized to process systems CSS. Let you be sunset sunset. I'm mapping see a power set up you do if there is a closure operator. If these three conditions satisfied. The subset X is closed if she X = X. A class system is in the class of all classes closed set.
+
+[377.0s - 406.0s]
+This is the definition of acceptance. In this case, like this figure. If it's a textbook, set up air. And but if they are with this language like this. S is not a character set of air anymore.
+
+[406.0s - 435.0s]
+Script error is Sam Glass of language. Script has infinite SP if there exists an infinite sequence of elements as one S0S1 and language everyone L2 such that is there to SN1 belongs. But it doesn't. Script error has finite SDF underneath FL does not have infinite interest.
+
+[435.0s - 464.0s]
+Let's quit air BCSS. The previous research showed that. Had finite earth this day and spell satisfies the ascending chain condition. Is equivalent. The Natalian process system. Any CSS is CSS that has finitely LSD or satisfies ascending chain condition. This ascending chain condition is well known ocean in.
+
+[464.0s - 493.0s]
+Algebra. The bounded unions of language is defined this way. It is known that the bounded unions of language inherits the finite plasticity.
+
+[493.0s - 522.0s]
+This is the conclusion of this section. If script there is an Italian cruisers test system, then this class, the bounded unions, were a finite LSD. Every element of this class has objective set, and so this class is identifiable from positive date.
+
+[522.0s - 551.0s]
+Now we get our main result. Just talk.
+
+[551.0s - 580.0s]
+Suppose that script error is in Italian class system and disgusting bounded unions of error is compact in this definition. We get our algorithm schema for learning discussed under the conditions that for all language air traffic set of Erin founded Union is computable from electric set of L in script error.
+
+[580.0s - 609.0s]
+Let the unions of Arab and LM beat target language and it's positive that is a friend if the offender. In any step, by using hyper graph constructor hypothesis hypothesis Age such that this condition. From a friend to FN.
+
+[609.0s - 638.0s]
+But how to construct a hypergraph? I fasted. I the bad is set of hypergraph is F1. And hyperedge is. Here.
+
+[638.0s - 667.0s]
+The anesthetic this is this if you want to FN. Repair the hyperedge hyper edges of previous step.
+
+[667.0s - 696.0s]
+Fast. For all is in budget. Sets do effective set of shears in unions of air is contained by. But it's set back at S as Hyper Edge, and this is this. Letter. And remember, all hyperedges continued by S. Bet. If no hyper is hard as if and then at. This high page red bar.
+
+[696.0s - 725.0s]
+This is the whole scheme of learning algorithm of this class. Construct a hypergraph. Cheers at most K maximum high bridge and output then. The ordering of high pies. It can be taken fairly provided that this condition there is 5.
+
+[725.0s - 754.0s]
+Let's give an exam.
+
+[754.0s - 783.0s]
+Number of application that I will class let I be the class of all ideas of polynomial polynomials. Target language is the union of two D2 ideas. And positive data is here. Here we use a collective set of this in this form. For for ideas generated by F&GFG F + G is eclectic set of this in this class.
+
+[783.0s - 812.0s]
+The first step. Just. The Leonard did receive the first example and construct hypergraph. Hypergraph? Output is this easier.
+
+[812.0s - 841.0s]
+Second step. Hi, progress is yes and output is the unions of his ideas.
+
+[841.0s - 870.0s]
+The third step. Dell learning machine Massachusetts. Two ideas from here, but this idea is not maximum. Since this road. So the output changed.
+
+[870.0s - 899.0s]
+The first step in this step. Trick Set appeared in this way. So the hyper is hyper graph is changed. And output is here.
+
+[899.0s - 928.0s]
+5th, just continue.
+
+[928.0s - 957.0s]
+Output is not change. Yeah, 60. Another tactic set appears in this way. So hyper graph is like this and output changed. This is target language.
+
+[957.0s - 986.0s]
+In similar way, the algorithm schema can be applied to learning bounded unions. Three pattern language.
+
+[986.0s - 1015.0s]
+Concrete we proposed learning algorithm scheme by combining hypergraphs and checklists for banned unions of Natalia Curtis systems. Thank you. The technical question was trying to follow. At some point, you assume that the class is recursive. Yes, that's quite unusual because in the case of financial assistance. You seem aggressive in ability of the class. So why is it? Why do some aggressive in this case? This case.
+
+[1015.0s - 1044.0s]
+At. In the class of ideas that recursively is. Insured by. The theory of gravner basis. Define me. Minutes give 'em. Because of you. OK, you don't really need. Side ability of membership. Suggest just happens to be recursive. Head. This in this example. At in this example. Mad. Suppose that some element. Given. This hat. For deciding that that element. Is in ideas this ideas or not? At Mac. Goodnight basis, selling on. Division algorithm in greatness basis theorem. Desides whether the polynomial in this idea or not. He this algorithm other words. So can you change the hyperdrive you must be based on some some some some decision procedure. Otherwise you don't know what it is and all that. So it must be able to make this choice when changing the paper. OK. Thankful.

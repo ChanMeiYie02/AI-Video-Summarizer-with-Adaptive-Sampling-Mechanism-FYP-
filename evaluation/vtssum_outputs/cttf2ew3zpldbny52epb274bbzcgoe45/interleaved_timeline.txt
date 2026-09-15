@@ -1,0 +1,77 @@
+[0.0s - 29.0s]
+This is joint work with Simon or.
+
+[29.0s - 58.0s]
+So here is the problem. The problem is the one of online reinforcement learning. So let's suppose you're dealing with trying to play actions in an unknown Markov decision process. So what does that mean? You have a bunch of states you.
+
+[58.0s - 87.0s]
+A bunch of actions that you can play at each state and you have a model.
+
+[87.0s - 116.0s]
+For the environment, which is fixed but unknown to you, so you have transition probabilities starting from each state and taking a certain action that leads to a distribution on the next state.
+
+[116.0s - 145.0s]
+And you have a reward function that is basically telling you how much reward you collect by making the transition.
+
+[145.0s - 174.0s]
+So basically what you do is you start out at fixed initial state, let's say.
+
+[174.0s - 203.0s]
+At each point you take decide to take some action like you're trying to learn and collect maximum reward.
+
+[203.0s - 232.0s]
+Move to some state you are.
+
+[232.0s - 261.0s]
+Have some reward. You keep doing this.
+
+[261.0s - 290.0s]
+Great to keep observing.
+
+[290.0s - 319.0s]
+Rewards and.
+
+[319.0s - 348.0s]
+Undergoing random.
+
+[348.0s - 377.0s]
+Positions.
+
+[377.0s - 406.0s]
+And you do this.
+
+[406.0s - 435.0s]
+Or some amount of time.
+
+[435.0s - 464.0s]
+And let.
+
+[464.0s - 493.0s]
+Do you want to try and Maxim?
+
+[493.0s - 522.0s]
+Is your net reward.
+
+[522.0s - 551.0s]
+Over the horizon of.
+
+[551.0s - 580.0s]
+OK, so that's basically online reinforcement learning problem. So you have to maximize the trying maximize. I didn't expectation or with high probability the reward that you collect. Equivalently it's you can try and minimize the regret between what you get and what is the what is a particular optimal average cost policy for this environment that you're working in. OK, so the interesting case here is when the mark of decision process may be really large, but you know that it has an implicit parameterization, so there's several examples of this sort where you might sort of work in an abstract. Amateur space that exactly specifies all your empty structure, so how would you try and learn as well as exploit and explore such as to maximize your reward?
+
+[580.0s - 609.0s]
+So in this situation, Thompson sampling is a very well known sort of natural approach that translates to this setting. It was basically a heuristic for a large time until a few years ago, so the idea is very simple. So basically imagine that you have the space of all parameterized NDPS you try and just start with an artificial prior over it. At each point we just sample.
+
+[609.0s - 638.0s]
+An instance of an MDP from this prior, once you.
+
+[638.0s - 667.0s]
+MVP just put all your trust into it. That is, try and find plan the best policy for that MDP and just use it for a few instance of time. Use whatever observations you get, update your posterior belief and then continue OK. So just repeat this prescription right so the question is.
+
+[667.0s - 696.0s]
+This seems touristic, but does this really give this really work? Well, it doesn't really give you the right balance of exploration and exploitation to try and solve online reinforcement learning problems, which might be complicated.
+
+[696.0s - 725.0s]
+We actually show that the answer is yes, we actually can get problem dependent regret bound that basically grows as essentially see times locked your constant times locked. If the number of intervals that you played this game and most importantly the constant E, The scaling of the regret in fact captures the exact structure of the parameterization in complicated but explicitly characterizable way and this.
+
+[725.0s - 754.0s]
+It has the implication that you can actually accelerate the rate of learning and regret minimization drastically if you have much more structure in the MD. So thanks.

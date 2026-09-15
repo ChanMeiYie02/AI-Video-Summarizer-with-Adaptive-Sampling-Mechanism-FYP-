@@ -1,0 +1,83 @@
+[0.0s - 29.0s]
+Hi everyone, my name is Sheila and today I'm going to present our paper multi label relational Neighbor classification using social context feature and this is joint work with my advisor Doctor Guyton 6 anchor from University of Central Florida so.
+
+[29.0s - 58.0s]
+The network data, such as data set crowd from social network, bibliographic network, biological and other information network has attracted a lot of attention during the past decade and relational learning has received huge success in solving classification problem network data. However, those conventional relational classification models only focusing on single label classification. So which assumes all the instance in the network only have one single label. However, this is not actually true in most of real world datasets. So for example, in the like bibliographic work, the document have more than. Can have multiple topics and in scientific collaboration network authors can have multiple research interests. So and also the connections between instance in this multi label network, usually driven by various causal reasons, so authors are seeking to collaborate with other coauthors for different kind of projects, so the classification problem in this scenario is much more complex. So the.
+
+[58.0s - 87.0s]
+Problem we are solving in this paper can be regarded as a node classification problem. So the input is the natural structure, that is the connectivity in formation of the network and also the labels of some actors in the network and we want to predict the other labels of other actors in the network.
+
+[87.0s - 116.0s]
+So one of the most property for networks resulting from social process is harmfully. That is a note with similar labels are more likely to be connected. An relational learning models enhance the trackability of computing the joint probability of the data by making the 1st order Markov assumption. That is, the label of 1 node depending on that of its neighbors in the network so. Traditional relational models are built on the labels of the neighbors and by making use the correlation label correlation of the linked instance and the prediction made using collective inference. So the contribution of.
+
+[116.0s - 145.0s]
+Our paper is we introduce a new multi label iterative relational label classifier to solve the node classification problem. Multi relational network and our model is improved by introducing our class propagation probability, which use the social context feature extracted from network structure and we will demonstrate that by using the social context features. Our proposed model can improve the classification performance on several Real World Collaborative network.
+
+[145.0s - 174.0s]
+So here I first give a brief introduction about what is relational label classifier. It is very simple but very effective classifier. Which make predictions of the target nodes based only on the labels of its neighbors. So here I give a training graph. And we are predicts the labels of the target nodes based on the class of its neighbors who have the maximum maximum amount of votes. So the prediction continues its richly until by the end all the labels in the network is a stable stable.
+
+[174.0s - 203.0s]
+So the weighted world relational neighbor classifier extends the traditional relational label classifier by using the class problem class probability of its neighbors instead of using the hard labeling. So it estimates the prediction probability by the weighted mean of the class probability of the nodes neighbors.
+
+[203.0s - 232.0s]
+So the problem is when we directly apply the relational neighbor classified into this multi relational network. Because in multi relational network we have nodes who have more than one class labels. So by directly applies the relational label classifier will end up with a lot of nodes who have multiple levels, especially with the nodes who shall directly connection with the. Overlapping nodes, that is nodes with multiple labels, so actually functionally. Unfortunately this is not correct, so the idea of our paper is we during the during the label propagation procedure, instead of giving equal probability of each class, we want to maintain a higher class probability of the in this case of the red class. All the green class so we can offer more accurate results by the end and if we could use this class problem propagation probability, what is the best better way to calculate this class probability?
+
+[232.0s - 261.0s]
+So even though we can use some of the intrinsic feature like the words in the net in the document to calculate this class propagation probability, we found the network structure itself is very informative. So the connection in human networks, mainly application driven and the links Internet internetwork, possess a strong connection between the nodes class. So for instance. If two authors have been collaborating on a KDD paper, there is higher chance that these two authors are all interested in data mining area. So the link in formation here can help us solving node classification problem so. But however, since the age class information is not always available in most of the data set unsupervised clustering methods can be adopted here. To partition the links into different groups.
+
+[261.0s - 290.0s]
+So in our paper we use the scalable Age Clustering method proposed by time and others in 2009 so. Firstly, we we each age is represented in a feature based format where the age where the features are represented by the node index. And then we use K means clustering on the edges features and finally our social features are constructed based on the age cluster IDs. That's the node is involved with.
+
+[290.0s - 319.0s]
+So here I give an example of the result of each clustering, a subset of DLP data set with 95 instance. The ages are clustered into 10 different groups and each of which is showing in a different color. So intuitively the node with higher degree are more likely to be involved in two different groups and we can see from this figure that the links connected with this. Overlapping nodes are more likely to be participate in two different into different clusters.
+
+[319.0s - 348.0s]
+So our proposed method consists of the following steps. So firstly we initially the class reference vector which is defined based on the weighted sum of the node social features in that class. And then we calculate the nodes class propagation probability based on the node social features and the class reference features. So the semi similarity can be calculated using any vector based. Similarity measures such as the cosine or inner product and so on. So the SCRN method estimates the class.
+
+[348.0s - 377.0s]
+IS membership of the target node based on three different parts? And the first one is class propagation probability. The second one is a similarity between the connecting nodes or the link weights. And the last one is class probability of its neighbors. So the actually the last two having already have been already adopted in the traditional relational neighbor classifier. Here we introduce the class propagation probability and we want to demonstrate that by introducing this class problem propagation probability, we can reduce the incorrectness during the label propagation procedure.
+
+[377.0s - 406.0s]
+So our post model is make predictions. It's richly and during each iteration we update the. Both the class reference vector as well as the notes as well as the nodes class propagation probability based on the labels of both both the training instance and the testing instance in and in the current iteration and the prediction stops when when all the labels in the network stable or the maximum amount of iterations is reached.
+
+[406.0s - 435.0s]
+So here I showing our result of our SCR method on synthetic multi label network with 1000 node and 30 two different classes. Sorry, is it actually the black node in the center? Other nodes with multiple labels and our method is richly predicted. Labels of the rest of nodes and we can see that after 15 iterations the labels in the networks are quite stable.
+
+[435.0s - 464.0s]
+So further, evaluates their performance classification performance of our model. We select three different kinds of datasets. The first one is DLP date data set. We select 15 represented conference in six research area, ranging from database data mining to computer vision and machine learning.
+
+[464.0s - 493.0s]
+The second one is the IMDb data set extracted from 2000 two 2010 and we use 27 different candidates movie genres as the class label. And the last one is a subset.
+
+[493.0s - 522.0s]
+Out of YouTube data set with 15 hundred, $15,000 and 47 different interest groups as a class label.
+
+[522.0s - 551.0s]
+The comparative method used in this paper are the first one is a scalable H clustering method and the second one is the weighted worlds relational label classifier. The prior method make make estimation of the class based on the fraction of the nodes based on the fraction of the nodes in the training pool who which are in that class and the random methods. Make predictions by randomly select a class in the class pool.
+
+[551.0s - 580.0s]
+So the size of social features base is set to be. 1002 DBLP and YouTube data set, and 10,000 two IMDb data set. This gives the best performance of each clustering method and offers a fair comparison between our method and age clustering method. Our class propagation probability is calculated using generalized histogram intersection kernel and this gives us the best performance. The we also adopted the relaxation labeling. Into the collective inference framework for both SCRN and wbre. We assume since our problem is essentially multi label classification problem, we assume the number of labels for the testing node is known and this scheme has already been adopted in some previous work.
+
+[580.0s - 609.0s]
+Instead of using the traditional cross validation methods, we use the network cross validation method to reduce the overlap between the test samples. An hour classification performance is evaluated based on micro F1 macro file from an harming loss. So the macro FF1 anmc off one F1 are the method based on the precision and recall the homologues directly. Cap compare the Hamming distance between their predicted labels and the ground truth.
+
+[609.0s - 638.0s]
+So here I'm showing the result Michael F1 result on DLP data set the size of the training samples range from 5% to 30%. We can see that the. The method based on considering the label correlation of the links nodes such as SCR in age, clustering and depth varying perform perform better than the other two. By directly using the label correlation WVR and perform better than the each clustering method, an hour method by using considering the social feature similarity, we perform the best. And here is.
+
+[638.0s - 667.0s]
+The Mac of F1 result and we get the quite similar result. Our CRM method consistently perform the best. So far.
+
+[667.0s - 696.0s]
+Timing loss things. The lower the lower the value of the better, the more accurate we got, so we can see that our method also gives the best result of both. Both WBR in an age chemistry.
+
+[696.0s - 725.0s]
+So here I just showing the results of the Hamming loss result, IMDb data set and the training sample are from 1% to 20% and our model perform the best, especially when the training samples are small.
+
+[725.0s - 754.0s]
+So we have a very interesting finding that in YouTube data set all these three methods perform quite equally and in some cases the edge clustering method may be performed better than the other two. So we attributed this to the fact that the YouTube data set is not essentially collaborative network and the number of class is much higher than the other two, so an. So the low label correlation in the network can limit the performance of both WVI and our method.
+
+[754.0s - 783.0s]
+So to sum up, so in this in this paper we solving the node classification problem in multi relational network when the links are heterogeneous and the nodes can belong to multiple groups and we propose a method which tackle the problem went directly apply the relation label classifier in multi relational network by introducing a class propagation probability that considering the now social. Feature similarity and by several experiment on several real world datasets. We demonstrate that our proposed method can improve the classification problem performance over several benchmarks. So our open source implementation of SCI is available at Google Code Repository. And here are the reference of our.
+
+[783.0s - 812.0s]
+Paper. And thank you for listening.

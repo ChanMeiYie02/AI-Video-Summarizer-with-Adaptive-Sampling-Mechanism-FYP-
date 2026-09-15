@@ -1,0 +1,124 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:02.922 --> 00:00:06.410
+SPEAKER: Hello, and welcome to this introductory demo to the network
+
+00:00:06.410 --> 00:00:08.870
+simulation tool Cisco Packet Tracer.
+
+00:00:08.870 --> 00:00:11.840
+Looking down here at the devices and components
+
+00:00:11.840 --> 00:00:13.700
+you can take into to the workspace.
+
+00:00:13.700 --> 00:00:15.950
+And down here is a submenu of those.
+
+00:00:15.950 --> 00:00:19.220
+You can click through, and the name appears there.
+
+00:00:19.220 --> 00:00:21.800
+And these are the devices themselves.
+
+00:00:21.800 --> 00:00:25.740
+And you can see the name appearing as the mouse hovers over each one.
+
+00:00:25.740 --> 00:00:30.650
+So let's take a few out into the workspace by clicking and dragging.
+
+00:00:30.650 --> 00:00:37.270
+We've got things like an air conditioner unit, fire sprinkler,
+
+00:00:37.270 --> 00:00:41.510
+or network-capable devices in this instance.
+
+00:00:41.510 --> 00:00:47.960
+And looking across here in devices, that's
+
+00:00:47.960 --> 00:00:55.265
+looking at computers, TVs, phones, and tablets.
+
+00:00:57.780 --> 00:01:03.785
+Going across here, we have other devices through here, as you can see.
+
+00:01:06.770 --> 00:01:09.925
+Let's just take a smoke detector.
+
+00:01:09.925 --> 00:01:15.450
+If we're looking in here, we've got microcontroller board, single board
+
+00:01:15.450 --> 00:01:16.950
+computers.
+
+00:01:16.950 --> 00:01:24.780
+We've got alarms and LEDs.
+
+00:01:24.780 --> 00:01:30.660
+All can be simulated to be used in Packet Tracer.
+
+00:01:30.660 --> 00:01:43.370
+And our Sensors category, we've got humidity sensors,
+
+00:01:43.370 --> 00:01:52.030
+switches, temperature sensors, lots of other options.
+
+00:01:52.030 --> 00:01:56.280
+Going back here, we have our actual network devices,
+
+00:01:56.280 --> 00:02:07.670
+such as routers and switches, cell towers
+
+00:02:07.670 --> 00:02:12.140
+to connect mobile devices to the network, and home gateways.
+
+00:02:15.080 --> 00:02:22.470
+So just say I'm in a menu and I've put something out that I didn't want,
+
+00:02:22.470 --> 00:02:26.550
+I can either undo it or redo.
+
+00:02:26.550 --> 00:02:33.660
+Or use this button over here, we'll delete And we switch back, like that.
+
+00:02:33.660 --> 00:02:39.090
+Now, we also click on the device to view the specifications.
+
+00:02:39.090 --> 00:02:43.500
+We can see the physical or the configuration settings.
+
+00:02:43.500 --> 00:02:50.100
+You can view a web browser on devices like a computer,
+
+00:02:50.100 --> 00:02:52.520
+change the configuration.
+
+00:02:52.520 --> 00:02:58.450
+All the settings are available by clicking on the device, such as this.
+
+00:02:58.450 --> 00:03:06.910
+And just say you were looking to find out the range of outputs,
+
+00:03:06.910 --> 00:03:12.080
+you can see this is analog represented as 0 to 255,
+
+00:03:12.080 --> 00:03:15.160
+which is equivalent of 0% to 100%.
+
+00:03:15.160 --> 00:03:20.750
+So 255 is equal to, "100% humidity," for example.
+
+00:03:20.750 --> 00:03:23.420
+OK, we have to look at how to actually network
+
+00:03:23.420 --> 00:03:28.010
+and connect these things together by configuring them and connecting them
+
+00:03:28.010 --> 00:03:30.770
+with cables in a future demonstration.
+
+00:03:30.770 --> 00:03:32.900
+But for now, that's just a brief introduction.
+
+00:03:32.900 --> 00:03:37.030
+And you can look around and explore for yourself.

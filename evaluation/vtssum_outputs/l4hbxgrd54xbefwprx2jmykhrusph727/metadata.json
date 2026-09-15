@@ -1,0 +1,24 @@
+{
+    "id": "l4hbxgrd54xbefwprx2jmykhrusph727",
+    "title": "Semantic Knowledge Bases from Web Sources",
+    "url": "http://videolectures.net/ijcai2011_t5_semantic/",
+    "info": {
+        "author": [
+            "Hady W. Lauw, Institute for Infocomm Research",
+            "Ralf Schenkel, Cluster of Excellence Multimodal Computing and Interaction, Saarland University",
+            "Fabian M. Suchanek, INRIA Saclay - Île-de-France",
+            "Martin Theobald, Max Planck Institute for Informatics, Max Planck Institute",
+            "Gerhard Weikum, Max Planck Institute for Informatics, Max Planck Institute"
+        ],
+        "published": "Aug. 23, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 477,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 912
+}

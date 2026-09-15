@@ -1,0 +1,23 @@
+{
+    "id": "ekn333edwh5zvvo67pcfrpf7snojhlr5",
+    "title": "Lexicographer’s Lacunas or How to Deal with Missing Dictionary Forms on the Example of Czech",
+    "url": "http://videolectures.net/euralex2018_cvrcek_kovarikova_lacunas/",
+    "info": {
+        "author": [
+            "Dominika Kováříková, Charles University Prague",
+            "Václav Cvrček, Faculty of Arts, Charles University Prague"
+        ],
+        "published": "July 27, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Humanities->Linguistics->Lexicography",
+            "Top->Social Sciences->Society",
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 236,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 2503
+}

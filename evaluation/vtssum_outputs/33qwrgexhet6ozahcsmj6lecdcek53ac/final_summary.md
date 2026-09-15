@@ -1,0 +1,15 @@
+# Final Multimodal Video Summary
+
+The presentation begins by introducing the concept of identity links in data, focusing on the `sameAs` statement used to link entities across datasets. The speaker highlights significant problems with this approach, noting that `sameAs` is often misused due to a lack of precision, temporal shifts, and philosophical concerns regarding the definition of identity. Calculations demonstrate that many terms linked by `sameAs` are transitively linked but do not refer to the same real-world entity.
+
+To address these erroneous links, the video reviews existing detection strategies, such as inconsistency approaches, content-based comparisons, and network structure analysis. The core objective is to determine how effectively these methods can identify wrong identity links.
+
+The speaker then introduces a novel approach designed to detect incorrect "same as links." This method leverages the community structure of the relationship (AL same as networks) to assign a degree to each link. The hypothesis is that terms densely connected to each other form correct links, while isolated terms are likely incorrect. The approach also prioritizes symmetrical, duplicative links.
+
+The system operates in four main steps: first, extracting the large dataset into statements; second, identifying "equality sets"—connected components where all elements refer to the same entity; third, using the efficient Luba algorithm to detect community structure within each set; and finally, assigning a degree metric to each link based on community density and symmetry.
+
+The evaluation phase details the performance of this error degree system. Initial findings show that links with a higher error degree are more likely to be erroneous. When testing against a large dataset, the method achieved an overall accuracy of 86% and a recall of 93% based on manual evaluation of 300 links. The analysis revealed that the size of the equality set significantly impacts the distribution of the error degree, noting that precision is highly dependent on the equality set used. Specifically, when focusing on links above a high threshold, precision can exceed 40%.
+
+Further analysis on identity links using gold standard data demonstrated that the approach found 78 errors in a dataset of 7870 links, achieving an accuracy of 98% in validating identity links. Overall, the study estimated that approximately 4% of all "same-as" links in the log are incorrect, with an overall finding that 21% of all "same-as" links are erroneous.
+
+The speaker concludes by emphasizing the scalability and feasibility of this network structure and community detection approach for web deployment. They note that while the precision is limited for very small equality sets, future directions include combining multiple community detection algorithms or utilizing vector-based approaches, such as graph embeddings, to enhance the detection of wrong links.

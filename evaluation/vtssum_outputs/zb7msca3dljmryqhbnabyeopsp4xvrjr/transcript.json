@@ -1,0 +1,47 @@
+[
+    {
+        "text": "Successes could be judged.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "In terms of our applications and in terms of technologies that enabled applications. And the most successful. Time for machine learning was actually before we started really to do data mining. It was medical diagnostics. It was financial time series analysis. It was speech recognition, which is very much improved now and I would like to bring a few other examples of good applications which are behavioral targeting, recommendation systems, fraud detection and search relevance. This a big big big topics which define current state of the art of technology actually and then. Datamyne",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Instruments which enable this. I think very much matured and include frequent set mining constraint and stabilized regression. It's now proven that gradient boosting works and works very well. We now have very fast, almost linear SVM's. We have good probabilistic and graphical models and collaborative filtering and we really excelled in information retrieval. I would bring also to the light that currently applications become really large and it's important for us to build software which operates in parallel on the grid and there are certain successes with this as well.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Now I'm coming to challenges. And I will. I'm a application guy so I will do one for a theoretical thing and then I will talk about applications. And the largest challenge which I see is IID assumption, which we usually do. In all our studies. Nothing in real application. Is. Iid. I was thinking that it is my personal view, but I yesterday talked to Petra, Dominican. He's at all is the largest impediments which I see as well. So for example. Medical data has different relations and family history, so is in no way these are independent Lee. Sampled web graphs have hyperlinks. They have several actually structures which are imposed on them. They have different ID structures, different host structure, society structures and this very much defines how you treat them. For example, internal links are not the same as external links, and you cannot mine a graph without taking an account. Is the neighborhood of the node. Social networks are by definition not a set of records, but this is a set of connected records. News comes from different streams, sources and commercial products are only valid in certain geographical locations. There somehow linked through common manufacturers, distributors, agents, retailers and so on. I guess couple of references here, which I more or less randomly picked, but I think there is a lot of people who now start to think about this, and I think it's a big challenge. The second big challenge which I see.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Is to somehow investigate the art of feature construction? Future construction so far is not a science, and especially we now move to move multimedia and its image and this text and this idea and its dependency on time and how you should educate the variables and what you do to aggregate them and how you categorize events. This is all feature construction and 95% of success in any industrial project is about how you select the features on.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "How you do this? There is no off the shelf. Robust good clustering and I started to believe that they will never be. Clustering may be as successful technology as intermediate thing for segmentation for predictive learning or for data research, but I challenge anybody to show me a good clustering technique which will work with numerical and categorical attributes and with wide variety of them and produce something that you showed the marketing and they will like it. There is no currently industrial in this industry. Strength data mining environment, open source environment and they see it as a big challenge. What it means we need it means that we need to come first with good requirements and good requirements is about what.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Kind of data is should handle it should handle very large data and very wet data, otherwise you will not be able to deal with text. It should handle sparse data. It should have efficient transformation and they should effectively built many many many thousands of models and be capable of deploying them. PML is nothing that will be used in technology to deploy the model. You have to take C++ object or some other. Kind of object and diploid instantaneously and you should be able not.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Only to diploid, but you should create a data mining operation as any industry has operations and operations should deal with all the models you diploid and should know which models require rebuilding. Which models have data which are not good? You should be capable of saying. What? We are the steps which brought you to this. Models keep in mind that you cannot have terabytes of data sitting on your disk out of the warehouse just to make sure that a year later you can reproduce the results. First, it violates privacy. Most companies do not keep user data for long. Second, it's very impractical and shortly you forget is this. Which attributes is this which attributed that person could leave the company? You need to have a full track roll rollback system where you can retrain where you can maintain a quality of the models. And when you can provide for smooth model deployement. And you need to have a real model reporting which will say this is benchmarking. That's how well the model does. That's how much it became outdated. That's how you want to marry this with some real time device and this should be a full blown operation and I would prefer to see this operation based on open software which will be open source data mining platform which many people could use then. Anyone in need in academia could add a new classifier when you too, and you transformation and it will become like in Matlab right away.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "It will be home by community. That's my views on this. Thank you very much.",
+        "start": 232.0,
+        "end": 261.0
+    }
+]

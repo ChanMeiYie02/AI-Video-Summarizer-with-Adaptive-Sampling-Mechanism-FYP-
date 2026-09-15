@@ -1,0 +1,385 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:06.680 --> 00:00:11.480
+Dictionaries are mappings from key objects to value objects.
+
+00:00:11.480 --> 00:00:17.250
+Dictionaries consists of Key:Value pairs, where the keys must be immutable
+
+00:00:17.250 --> 00:00:19.800
+and the values can be anything.
+
+00:00:19.800 --> 00:00:22.600
+Dictionaries themselves are mutable so this
+
+00:00:22.600 --> 00:00:28.210
+means once you create your dictionary, you can modify its contents on the fly.
+
+00:00:28.210 --> 00:00:33.920
+Dictionaries can be used for performing very fast look-ups on unordered data.
+
+00:00:33.920 --> 00:00:37.350
+A key aspect to be aware about regarding dictionaries
+
+00:00:37.350 --> 00:00:40.320
+is that they are not sequences, and therefore do not
+
+00:00:40.320 --> 00:00:43.840
+maintain any type of left-right order.
+
+00:00:43.840 --> 00:00:46.610
+This means that if you&#39;re looping over a dictionary,
+
+00:00:46.610 --> 00:00:53.030
+the Key:Value pairs will be iterated over in arbitrary order.
+
+00:00:53.030 --> 00:00:56.442
+Let&#39;s look at a diagram to clarify this idea.
+
+00:00:56.442 --> 00:00:58.400
+We&#39;re going to set up a simple dictionary where
+
+00:00:58.400 --> 00:01:02.740
+we have our first key that&#39;s associated with a value object.
+
+00:01:02.740 --> 00:01:07.650
+We have our second key that goes with another object.
+
+00:01:07.650 --> 00:01:10.700
+And let&#39;s say we have key number four here which goes
+
+00:01:10.700 --> 00:01:13.990
+with the corresponding value object.
+
+00:01:13.990 --> 00:01:18.010
+If this is a dictionary, this key object will always
+
+00:01:18.010 --> 00:01:21.050
+be associated with this value object.
+
+00:01:21.050 --> 00:01:25.580
+Similarly, this key will always go with this value object.
+
+00:01:25.580 --> 00:01:27.740
+When we say that dictionaries don&#39;t maintain
+
+00:01:27.740 --> 00:01:30.510
+any type of left or right order, what we&#39;re saying
+
+00:01:30.510 --> 00:01:36.520
+is that the ordering of these key-value pairs themselves is not defined.
+
+00:01:36.520 --> 00:01:39.490
+That means if I&#39;m looping over these pairs,
+
+00:01:39.490 --> 00:01:45.730
+I might first get the pair that corresponds to my second key here.
+
+00:01:45.730 --> 00:01:48.870
+Let&#39;s then look at some uses of dictionaries.
+
+00:01:48.870 --> 00:01:52.020
+I would like to set up a dictionary which is called age.
+
+00:01:52.020 --> 00:01:54.570
+And if I want this to be an empty dictionary,
+
+00:01:54.570 --> 00:01:57.470
+I have two ways to construct that.
+
+00:01:57.470 --> 00:02:01.610
+The first approach is just to use a pair of curly braces,
+
+00:02:01.610 --> 00:02:03.870
+and this would give me a dictionary age which would
+
+00:02:03.870 --> 00:02:06.380
+be empty at the time of construction.
+
+00:02:06.380 --> 00:02:11.290
+Another possibility is to type &quot;age = dict&quot;,
+
+00:02:11.290 --> 00:02:14.740
+which is a key word, open and close parentheses.
+
+00:02:14.740 --> 00:02:18.340
+And again I have created an empty dictionary.
+
+00:02:18.340 --> 00:02:23.180
+Let&#39;s then construct a dictionary that consists of names and ages.
+
+00:02:23.180 --> 00:02:26.660
+In this particular dictionary, the names are going to be the keys
+
+00:02:26.660 --> 00:02:30.020
+and the ages are going to be the value objects.
+
+00:02:30.020 --> 00:02:34.680
+Imagine the first task we&#39;d like to do is look up a person&#39;s age.
+
+00:02:34.680 --> 00:02:37.780
+We do this using the following syntax.
+
+00:02:37.780 --> 00:02:40.770
+We first type the name of the dictionary.
+
+00:02:40.770 --> 00:02:43.360
+We then follow with the square brackets.
+
+00:02:43.360 --> 00:02:48.040
+Inside the square brackets, we insert the key we&#39;re interested in looking up.
+
+00:02:48.040 --> 00:02:51.630
+Let&#39;s say, in this case, we&#39;d like to know, how old is Pam?
+
+00:02:51.630 --> 00:02:55.310
+So we&#39;d enter &quot;Pam&quot; inside the square brackets.
+
+00:02:55.310 --> 00:02:58.600
+And Python returns the result to us.
+
+00:02:58.600 --> 00:03:01.620
+Often, we&#39;d like to modify the value objects that
+
+00:03:01.620 --> 00:03:04.390
+are associated with specific keys.
+
+00:03:04.390 --> 00:03:08.310
+Let&#39;s say we would like to increase the age of Tim by one year.
+
+00:03:08.310 --> 00:03:10.340
+Here is how we could do this.
+
+00:03:10.340 --> 00:03:13.390
+We first take our age dictionary.
+
+00:03:13.390 --> 00:03:16.610
+We&#39;d like to modify Tim.
+
+00:03:16.610 --> 00:03:19.540
+And let&#39;s say we want to increase his age by one year.
+
+00:03:19.540 --> 00:03:21.760
+We could use the following kind of syntax.
+
+00:03:21.760 --> 00:03:28.040
+We could say age of Tim is equal to age of Tim plus 1.
+
+00:03:28.040 --> 00:03:29.980
+And this certainly works.
+
+00:03:29.980 --> 00:03:35.190
+However incrementing the value of an object by one, or by some other number,
+
+00:03:35.190 --> 00:03:37.090
+is a very common operation.
+
+00:03:37.090 --> 00:03:42.010
+And there&#39;s a very handy shorthand notation for doing that in Python.
+
+00:03:42.010 --> 00:03:44.500
+So let&#39;s take the age of Tim,
+
+00:03:44.500 --> 00:03:48.550
+and say we would like to increase that by one year,
+
+00:03:48.550 --> 00:03:50.320
+we can do the following:
+
+00:03:50.320 --> 00:03:54.150
+We can just type &quot;+= 1&quot;.
+
+00:03:54.150 --> 00:03:57.120
+And what happens if we check the age of Tim,
+
+00:03:57.120 --> 00:04:02.740
+we will have increased Tim age again by one year.
+
+00:04:02.740 --> 00:04:07.530
+Let&#39;s make sure we understand what happens when we say plus equals.
+
+00:04:07.530 --> 00:04:09.860
+When you&#39;re reading code from left to right,
+
+00:04:09.860 --> 00:04:12.520
+the plus operation happens first.
+
+00:04:12.520 --> 00:04:15.910
+Then we have the equal sign, which means assignment.
+
+00:04:15.910 --> 00:04:20.649
+So when we say something plus equals 1, for example, we first
+
+00:04:20.649 --> 00:04:24.560
+take the value of the object, we add one to that object,
+
+00:04:24.560 --> 00:04:28.850
+and then we reassign it back to the original object.
+
+00:04:28.850 --> 00:04:34.420
+A common mistake is sometimes to mix up the order of these two operations.
+
+00:04:34.420 --> 00:04:39.030
+Think about what happens if you say x equals plus 1.
+
+00:04:39.030 --> 00:04:42.170
+You&#39;re not incrementing the value of x by 1.
+
+00:04:42.170 --> 00:04:44.930
+Instead, you&#39;re saying that x should be assigned
+
+00:04:44.930 --> 00:04:50.410
+the value of plus 1, which is just the same thing as saying x is equal to 1.
+
+00:04:50.410 --> 00:04:53.700
+If you wish to increment the value of a variable by 1,
+
+00:04:53.700 --> 00:04:57.510
+you first do it the incrementation and then the assignment.
+
+00:04:57.510 --> 00:05:02.500
+That&#39;s why the order of these two operations is plus and then equals.
+
+00:05:02.500 --> 00:05:06.410
+You can use the dictionary method keys to find out what
+
+00:05:06.410 --> 00:05:08.420
+are all the keys in the dictionary.
+
+00:05:08.420 --> 00:05:10.880
+And similarly, you can use the values method
+
+00:05:10.880 --> 00:05:15.510
+to find out what are all of the values in the dictionary.
+
+00:05:15.510 --> 00:05:18.450
+When you call these methods, Python returns to you
+
+00:05:18.450 --> 00:05:21.740
+an object which has a very special type.
+
+00:05:21.740 --> 00:05:26.730
+The type of the returned object is what&#39;s called a &quot;view object&quot;.
+
+00:05:26.730 --> 00:05:30.690
+View objects do precisely what you might imagine that they do.
+
+00:05:30.690 --> 00:05:36.510
+They provide a dynamic view of the keys or values in the dictionary.
+
+00:05:36.510 --> 00:05:41.550
+A key point here is that as you update or modify your dictionary,
+
+00:05:41.550 --> 00:05:44.990
+the views will also change correspondingly.
+
+00:05:44.990 --> 00:05:48.740
+Let&#39;s now work with the dictionary that we just defined.
+
+00:05:48.740 --> 00:05:52.700
+We&#39;re going to first extract all of the names in the dictionary.
+
+00:05:52.700 --> 00:05:55.970
+So I&#39;ll do that by saying &quot;names = age.keys&quot;.
+
+00:05:58.770 --> 00:06:03.010
+Now let&#39;s just check the type of the object names.
+
+00:06:03.010 --> 00:06:07.810
+And Python confirms that this is a dictionary keys object.
+
+00:06:07.810 --> 00:06:12.750
+Let&#39;s say I would like to add a new key to my dictionary.
+
+00:06:12.750 --> 00:06:17.610
+Let&#39;s add a person called Tom who is 50 in our dictionary.
+
+00:06:17.610 --> 00:06:22.740
+So we say age[&quot;Tom&quot;]
+
+00:06:22.740 --> 00:06:28.060
+and we assign the value object 50 to that key.
+
+00:06:28.060 --> 00:06:31.380
+If we now ask, what are the names, you&#39;ll
+
+00:06:31.380 --> 00:06:35.230
+see that the view object also contains Tom.
+
+00:06:35.230 --> 00:06:38.550
+We didn&#39;t redefine the content of names,
+
+00:06:38.550 --> 00:06:40.960
+and this is the nature of view object.
+
+00:06:40.960 --> 00:06:44.940
+As we modify the dictionary, the content of the view object
+
+00:06:44.940 --> 00:06:47.630
+will change automatically.
+
+00:06:47.630 --> 00:06:51.120
+Let&#39;s look at the values method.
+
+00:06:51.120 --> 00:06:55.410
+So if we say age.values, Python returns to us
+
+00:06:55.410 --> 00:06:58.270
+all of the values in the dictionary.
+
+00:06:58.270 --> 00:07:01.850
+I&#39;m going to call this ages,
+
+00:07:01.850 --> 00:07:04.010
+and we can look at that object.
+
+00:07:04.010 --> 00:07:06.040
+So in this case, we have one, two, three, four,
+
+00:07:06.040 --> 00:07:09.610
+five different ages contained in the dictionary.
+
+00:07:09.610 --> 00:07:12.350
+I&#39;m going to add one more person to the dictionary.
+
+00:07:12.350 --> 00:07:15.110
+Let&#39;s call that person Nick,
+
+00:07:15.110 --> 00:07:19.170
+and let&#39;s say Nick is 31 years old.
+
+00:07:19.170 --> 00:07:22.610
+If I now ask Python, what are the names, you&#39;ll
+
+00:07:22.610 --> 00:07:27.650
+see that the name Nick is also contained in the names object.
+
+00:07:27.650 --> 00:07:29.640
+This is the nature of views objects--
+
+00:07:29.640 --> 00:07:34.210
+their content is dynamically updated as you modify your dictionary.
+
+00:07:34.210 --> 00:07:39.130
+Finally, let&#39;s see how we&#39;ll test for membership in a dictionary.
+
+00:07:39.130 --> 00:07:42.140
+We know that we have a key Tom in our dictionary.
+
+00:07:42.140 --> 00:07:45.880
+If I want to ask if Tom is a member of our dictionary,
+
+00:07:45.880 --> 00:07:51.650
+if Tom is a key in our dictionary, I can ask, &quot;Tom&quot; in age?
+
+00:07:51.650 --> 00:07:54.360
+And the answer is going to be &quot;True&quot;.
+
+00:07:54.360 --> 00:07:59.310
+If I ask, is &quot;Zofia&quot; in our dictionary?
+
+00:07:59.310 --> 00:08:01.570
+Python is going to say &quot;False&quot;.
+
+00:08:01.570 --> 00:08:05.510
+This is how we test for object membership in a dictionary.

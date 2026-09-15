@@ -1,0 +1,20 @@
+{
+    "id": "q4ftdisildvmupaktiwrwmhs6j72wfwu",
+    "title": "WORQ: Workload-Driven RDF Query Processing",
+    "url": "http://videolectures.net/iswc2018_madkour_woqr_workload_driven/",
+    "info": {
+        "author": [
+            "Amgad Madkour, Department of Computer Science, Purdue University"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 186,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1066
+}

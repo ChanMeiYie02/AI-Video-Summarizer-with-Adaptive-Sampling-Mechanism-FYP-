@@ -1,0 +1,20 @@
+{
+    "id": "gqank5zw53cpi4swu6czem3g54bz6unj",
+    "title": "Fast Global Registration",
+    "url": "http://videolectures.net/eccv2016_koltun_global_registration/",
+    "info": {
+        "author": [
+            "Vladlen Koltun, Intel Labs Seattle"
+        ],
+        "published": "Oct. 24, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 133,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1253
+}

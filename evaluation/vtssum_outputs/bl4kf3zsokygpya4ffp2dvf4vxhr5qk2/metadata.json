@@ -1,0 +1,21 @@
+{
+    "id": "bl4kf3zsokygpya4ffp2dvf4vxhr5qk2",
+    "title": "The Lazy Traveling Salesman - Memory Management for Large - Scale Link Discovery",
+    "url": "http://videolectures.net/eswc2016_ngonga_ngomo_link_discovery/",
+    "info": {
+        "author": [
+            "Axel-Cyrille Ngonga Ngomo, University of Leipzig"
+        ],
+        "published": "July 28, 2016",
+        "recorded": "May 2016",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 212,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 1175
+}

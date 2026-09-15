@@ -1,0 +1,20 @@
+{
+    "id": "drt6hm43tkqfmipfxncpkl6yllei3zhx",
+    "title": "Passive Treatment of AMD with a case study in Ireland",
+    "url": "http://videolectures.net/outbursts_azzie_ptamd/",
+    "info": {
+        "author": [
+            "Bernadette Azzie, Golder Associates Ireland"
+        ],
+        "published": "June 7, 2010",
+        "recorded": "March 2010",
+        "category": [
+            "Top->Earth Sciences->Geology"
+        ]
+    },
+    "num_segments": 46,
+    "num_sentences": 209,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 2764
+}

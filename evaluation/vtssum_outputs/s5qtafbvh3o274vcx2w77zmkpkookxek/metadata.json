@@ -1,0 +1,20 @@
+{
+    "id": "s5qtafbvh3o274vcx2w77zmkpkookxek",
+    "title": "Automatic Dominance Detection In Meetings Using Support Vector Machines",
+    "url": "http://videolectures.net/mlmi04uk_rienks_addmu/",
+    "info": {
+        "author": [
+            "Rutger Rienks, Research Group Human Media Interaction (HMI), University of Twente"
+        ],
+        "published": "Feb. 25, 2007",
+        "recorded": "June 2005",
+        "category": [
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 202,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 1956
+}

@@ -1,0 +1,21 @@
+{
+    "id": "poicvbrex2hptyeztegnr4qg5qi6q23d",
+    "title": "OpeNER and PANACEA: Web Services for the CLARIN Research Infrastructure",
+    "url": "http://videolectures.net/clarinannualconference2019_albanesi_openner/",
+    "info": {
+        "author": [
+            "Davide Albanesi, National research council of Italy"
+        ],
+        "published": "Feb. 7, 2020",
+        "recorded": "January 2020",
+        "category": [
+            "Top->Humanities",
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 161,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2520
+}

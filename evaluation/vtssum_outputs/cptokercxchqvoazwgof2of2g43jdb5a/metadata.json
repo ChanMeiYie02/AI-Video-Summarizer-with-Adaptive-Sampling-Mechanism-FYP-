@@ -1,0 +1,20 @@
+{
+    "id": "cptokercxchqvoazwgof2of2g43jdb5a",
+    "title": "Semidefinite ranking on graphs",
+    "url": "http://videolectures.net/sicgt07_vembu_srog/",
+    "info": {
+        "author": [
+            "Shankar Vembu, Department of Computer Science, University of Illinois at Urbana-Champaign"
+        ],
+        "published": "Sept. 7, 2007",
+        "recorded": "September 2007",
+        "category": [
+            "Top->Mathematics->Graph Theory"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 228,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2227
+}

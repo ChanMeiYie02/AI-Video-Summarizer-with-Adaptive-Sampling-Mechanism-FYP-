@@ -1,0 +1,21 @@
+{
+    "id": "rr7sp5epdyujyarndkbfyurpbf5ruyqe",
+    "title": "FP6 project VITALAS",
+    "url": "http://videolectures.net/chorusfc09_vries_fpv/",
+    "info": {
+        "author": [
+            "Arjen P. de Vries, Centrum Wiskunde & Informatica (CWI)"
+        ],
+        "published": "June 19, 2009",
+        "recorded": "May 2009",
+        "category": [
+            "Top->Computer Science->Information Retrieval->Multimedia Retrieval",
+            "Top->Science->Scientific Projects"
+        ]
+    },
+    "num_segments": 37,
+    "num_sentences": 214,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 868
+}

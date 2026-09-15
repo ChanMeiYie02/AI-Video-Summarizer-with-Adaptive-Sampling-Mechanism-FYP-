@@ -1,0 +1,20 @@
+{
+    "id": "cpmf7wvqyxij4liw56gvgv23bvxmj2dj",
+    "title": "From Bandits to Experts: On the Value of Side-Observations",
+    "url": "http://videolectures.net/nips2011_shamir_observations/",
+    "info": {
+        "author": [
+            "Ohad Shamir, Faculty of Mathematics and Computer Science, Weizmann Institute of Science"
+        ],
+        "published": "Sept. 6, 2012",
+        "recorded": "December 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->On-line Learning"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 20,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 572
+}

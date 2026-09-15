@@ -1,0 +1,22 @@
+{
+    "id": "c33odwssx4olg5sm2chj324uwk7mke2q",
+    "title": "Has lexicography reaped the full benefit of the (learner) corpus revolution?",
+    "url": "http://videolectures.net/euralex2018_granger_corpus_revolution/",
+    "info": {
+        "author": [
+            "Sylviane Granger, Centre for English Corpus Linguistics, University of Louvain"
+        ],
+        "published": "July 27, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Humanities->Linguistics->Lexicography",
+            "Top->Social Sciences->Society",
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 53,
+    "num_sentences": 498,
+    "num_clips_with_summary": 42,
+    "num_gt_summary_sentences": 126,
+    "ground_truth_summary_length_chars": 14826
+}

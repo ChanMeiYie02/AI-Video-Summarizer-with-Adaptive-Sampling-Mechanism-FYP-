@@ -1,0 +1,164 @@
+[0.0s - 29.0s]
+Here I'm going to present voxel. There is a benchmark data set for multilingual entity linking. I'm going to start this presentation with a brief example about what is entity linking.
+
+[29.0s - 58.0s]
+And, well, anything contained may lead to faces. First, an entity recognition that identify the entities in the text. Here, for example, you can identify.
+
+[58.0s - 87.0s]
+By these underlying entities. And the second phase is an entity simulation that for each of them, this stack established.
+
+[87.0s - 116.0s]
+Linking with an entry in a knowledge base and here we target a Wikipedia, but you can target others knowledge basis which as we create value pedia so. And this is very important becausw with this current action we can get valuable information about the entities and for example, you can know that Michael Jackson was a person. That was a very popular musician and much more information. And for the.
+
+[116.0s - 145.0s]
+Recent have is have application in many other areas, for example semantic search, semantic annotation and many others that have the entities like units or processes.
+
+[145.0s - 174.0s]
+And well, one of the main problem here is the navigation and becausw. You can target the same entity for more than one Xanthi dimension. For example you can target or repaired to Michael Jackson with his full name or only with Michael, or only with Jackson. In many other ways. And visa versa.
+
+[174.0s - 203.0s]
+The same end Dimension Country fair to more than one page in the knowledge base. For example, in Wikipedia there are more than one page about person with the same name Michael Jackson, and in this case this kind of approach have to make the choice.
+
+[203.0s - 232.0s]
+In this way we are interesting in the those approaches that support more than one language, and we expect this kind of approach behave in the same way or similar way for their support. The languages. For example, we have this annotation for writing in English. This seven cases, watching Italian or.
+
+[232.0s - 261.0s]
+Spanish we spent to have the same behavioral similar.
+
+[261.0s - 290.0s]
+And well there.
+
+[290.0s - 319.0s]
+Some data set in the literature that have takes on his current annotation, which oh here the most popular of them, and this kind of datasets are important. 'cause we then we can measure the quality of these approaches and here you can see that in most of the cases only support only one language and the majority of them English. In this case there this.
+
+[319.0s - 348.0s]
+That art modeling was I want to say that it's important that there are other datasets for modeling linking, but there are related to competition that only make valuable discussion of data set for participant. For this reason, we leave out of this selection. Well, in the case of DP address is a large data set. And it's billed over the upset of Wikipedia. But the problem with this data set is that do not contain the same information across language. And this is a problem and we want to make conclusion about the behavior of this approach over their differing supported languages and well in the case of Cinderella. Meantime do contain the same content cross language but do not the same annotation.
+
+[348.0s - 377.0s]
+This reasons our first goal here is to create a benchmark data set for multilingual and the linking that have these two properties that contain the same information and also the same annotation.
+
+[377.0s - 406.0s]
+Well, we select Box Europe as source because these are online newspaper that published the same news in some European languages and this is a curated sources information because this translation was made by leaders and journalists and not by management. And well, only left the what kind of annotation we should identify and for example.
+
+[406.0s - 435.0s]
+Going back to the previous example, should we identify another entity here or for example who I don't identify?
+
+[435.0s - 464.0s]
+Michael Jackson instead of living with Michael Jackson, why don't both at the same time and the sequential for you?
+
+[464.0s - 493.0s]
+Is here and also there are other.
+
+[493.0s - 522.0s]
+Word that, for which there are Wikipedia page related to them. Well, to answer this quest.
+
+[522.0s - 551.0s]
+We applied to the same example at 4 popular approaches and we put the result.
+
+[551.0s - 580.0s]
+Here in the same place and the A onto the underline means that this result was this entity and the dimension was identi.
+
+[580.0s - 609.0s]
+Quiet and quarterly annotated, but by Ada. And as you can see here, either commonly targets proper names. Hey Debbie.
+
+[609.0s - 638.0s]
+Underlying is where are related bubble fi and here such as either target target mainly proper name but also allow overlapping between the entities.
+
+[638.0s - 667.0s]
+In the case of DPS, but they have far more content about the entities. Becausw includes orders that there are not proper names, such as Bell siblings and.
+
+[667.0s - 696.0s]
+Is similar for patent. And here we need to know that for none of these entities, the four approaches agree at the same time and for the.
+
+[696.0s - 725.0s]
+Reason we say that they are not a consensus in the literature about what you do and the linking link and this is reflected also in the data set 'cause there are.
+
+[725.0s - 754.0s]
+Some data set that only contain annotation over. Over proper names, but there are others such as this that we're highlighting here that.
+
+[754.0s - 783.0s]
+Only also contain a annotation over others and.
+
+[783.0s - 812.0s]
+That they are not open names. And for this reason I.
+
+[812.0s - 841.0s]
+Our second goal here is great. Two versions of the same datasets. Anna St version an attractive version. The street version.
+
+[841.0s - 870.0s]
+And follow a class based definition. That at the beginning that introduced these five classes to gather the entities, and.
+
+[870.0s - 899.0s]
+In this case we only target or identify entities of person, location, organization, but this definition is very restrictive because there are a lot of entities that do not feel here, for example.
+
+[899.0s - 928.0s]
+With Michael Jackson. It's not fill in any of these categories becauses it's a documentary. But do do fill in the.
+
+[928.0s - 957.0s]
+Knowledge by definition that is our relaxed version, because here we include all the the entity mention that Wikipedia base related to them.
+
+[957.0s - 986.0s]
+Well, book Sale is a based on curated from Pie languages we include here German, Italian, French, English and Spanish. And we have the same sentence by East Correspondent document. There was some entities that differ across languages and those we were eliminated. And also we have here the same annotation by each correspondent sentence here we had also some problem cause in one language you had problem name that it was a problem in other language. In this case is replace the problem by the proper names. In order to align the the annotations and at the end Attribution process that was made by the other three authors of this paper.
+
+[986.0s - 1015.0s]
+Well, here as summarize summary of the content of the data set, this is for one one language.
+
+[1015.0s - 1044.0s]
+But we have 5 languages. For this reason we buy that for them, that is, the number of documents, sentence and annotation.
+
+[1044.0s - 1073.0s]
+And also we have to bear some of this data set that we can see here the final numbers. And.
+
+[1073.0s - 1102.0s]
+We were interested in to in see how to perform the the current approaches over this data set, and to do that we use. Gerald is a very popular tool and is very useful in this case. And a.
+
+[1102.0s - 1131.0s]
+Well, there are many approaches that. That are multilingual because here many of them we select this fight cause.
+
+[1131.0s - 1160.0s]
+Present an API available and also an integer recognition phase and target, Wikipedia and DB.
+
+[1160.0s - 1189.0s]
+Here the result.
+
+[1189.0s - 1218.0s]
+At the top here, the result of the last version, and we're on the result of that red version. One interesting result here is that the Pedia frame tag meant D behave better for English Stanford.
+
+[1218.0s - 1247.0s]
+Languages. On
+
+[1247.0s - 1276.0s]
+What, according to this data set an? For this reason, we.
+
+[1276.0s - 1305.0s]
+We're interested in in apply.
+
+[1305.0s - 1334.0s]
+Machine translation in a segments periment and see that the what is the performance of those approaches.
+
+[1334.0s - 1363.0s]
+And well, when we do, we have two configuration of the system, one configuration for the coding language and other configuration for the English for English. And then for each.
+
+[1363.0s - 1392.0s]
+And a this, for example, is in the German document we apply the document and also the translation using Google translation to English and also the English. The same document created in English because in this case we are taking the English as baseline. Anne.
+
+[1392.0s - 1421.0s]
+And where we apply that for.
+
+[1421.0s - 1450.0s]
+Or or the other?
+
+[1450.0s - 1479.0s]
+Languages. And.
+
+[1479.0s - 1508.0s]
+Well, here's the result. A is surprisingly the translation behaving for many in many cases better than the Calculator results and is very similar also with our baseline. Here that is the one the approaches are configured by English and is taking the English version of the document. And the well, our Main's contribution here is boxing that is a publishing public domain. And also we will.
+
+[1508.0s - 1537.0s]
+We can see with our experiment that much of the system performs much better for for English and well that we use, we can use machine translation to to address these multilinguality. Is.
+
+[1537.0s - 1566.0s]
+I want to see what happens when we take the other languages as baseline. Please come to my poster. I will be happy to see you. And.
+
+[1566.0s - 1595.0s]
+What is all? Thank you for your attention. Right on time. Time for a couple of questions. One, I'll buy you a beer. So I'm wondering. I mean, we we tend to always look at the European languages. What's the scope for expanding beyond there? I mean, is there a demand and is there a way of doing it? I like that you know the newspaper you use. But I wonder whether. You found a way to expand even beyond that. Did you asking about more language than this one? Well? Problem with that is the source, because in this case this both Europe only publish the same using in those languages I. I think that this depends on the source. If the source have many languages, well you can do it where you want. We're also looking at machine translation. Seems to be doing a great job these days, so yes, can be. But in this case we select this disorder cause was a translated manually and not by matching because there are some models of resample entity linking that is based on grammar. An is important to have a high quality. We know that this will be higher quality for sure well. I guess. When can I see you? Right there. By the way. Just to make sure you understand you had 15 articles annotated per language. Yes, and the articles across the five languages are not the same. Articles translated are about different topics. Well, not at the same document, but in the different languages. OK, so this is the same story written in different languages, the same OK, and you have exactly the same number of entities across annotated across the languages. Just yes, we align that across the file language. OK for the annotation that you have been produced. How many annotators did them? So how confident you are that you annotations are gold standard directing for the number of annotator. Yes, only one, OK. One or two I see. Well, just in terms of data right? So not sure if you're aware of this. Our system event registry right which collects. 10,000 per day, right? Clusters of articles in across many languages, right so? So maybe you could move to a little bit. Yeah, higher scale in that sense, right? So I mean this is 1 aspect. And also since you have in the background right Vicky data and the rest right? So you could easily expand across 10s of languages, right? So so these are some ideas for future work. Yeah, but. Make it designed in such a way so that you start with a high cost, right? So this would be my thank you. OK, thank you very much. Thanks for the speaker again.

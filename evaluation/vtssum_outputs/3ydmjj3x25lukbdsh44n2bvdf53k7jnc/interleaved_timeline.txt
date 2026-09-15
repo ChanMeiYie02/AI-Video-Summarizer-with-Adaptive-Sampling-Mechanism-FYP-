@@ -1,0 +1,104 @@
+[0.0s - 29.0s]
+Good afternoon everyone. I'm John from come from Institute of Computing Technology, Chinese, Chinese Academy of Sciences. Today I will represent. Cost to find autoencoder networks for real time, face alignment? This work is this is joint work together with sugar. May not and chilling.
+
+[29.0s - 58.0s]
+This is the outline of my today's presentation.
+
+[58.0s - 87.0s]
+As we all know, face alignment plays an important role in face recognition. Face facial expression recognition and face animation.
+
+[87.0s - 116.0s]
+Face Alignment is a complex mapping from appearance to shape. This makes it a challenge problem especially. Due to the large appearance and shape variations. In his post expression in elimination and partial closure.
+
+[116.0s - 145.0s]
+In the past decades, there are many. There are many works on face alignment. Typical methods like a SMN am used PC model. Use PCA model to model the shape and appearance variations. And it works. Fair Works, works well for the favorable face images. However, there are sensitive to the initial ships and noise. Moreover, the linear PC model cannot wear capture the capture the counter variations in ships an appearance. Recently, deep model like this and has achieved promising results on face alignment. Benefited from its favorability of model linear, however it make it get stuck in local minima under occlusion. Shape regression model have ship regression models have achieved. Great successes or face alignment. Which cascades several regression models to predict the ship updates based on the shape of the ship index features. It has. It has been proved to be effective method for face alignment in practical.
+
+[145.0s - 174.0s]
+Following this, the regression method. We also use cascade shape regression models for face alignment. The most shipped regression models can be formulated as this equation. And use the ship interfacial fight to predict the ship division data is Jay. However, they have some limits and we improve them in three aspects. Firstly. The most shape regression models need initial face shape. You really are the, SO the initial SO is initialized with the main ship.
+
+[174.0s - 203.0s]
+As shown in this figure, the midship is quite far from the ground truth. Under the extreme poses and expressions. So in order to get a better initial face shape.
+
+[203.0s - 232.0s]
+We desire a deep model. To directly predict the face shape with global feature.
+
+[232.0s - 261.0s]
+Moreover, intuitively, the regression function HJ in this equation is learning a mapping. So we cast we so we desire deep networks. To model the regression function dark, the regression function HJ.
+
+[261.0s - 290.0s]
+Certainly instead of a straight forward of these networks. Rick asked a networks in a cost to find architecture. To alleviate the local minimum problems with adaptive certain step.
+
+[290.0s - 319.0s]
+Generally, in order to get a better fit of in order get in order to get a better face initial ship. The global stack autoencoder networks is designed. Then to further refines the face shape, several local stack autoencoder networks are cascaded in Acosta fine architecture.
+
+[319.0s - 348.0s]
+Specific.
+
+[348.0s - 377.0s]
+Play the global sound predicts the face shape quickly.
+
+[377.0s - 406.0s]
+By taking us inputs. By taking holistically or low resolution face image as input.
+
+[406.0s - 435.0s]
+Getting the face estimation is there from the global sound. Several Oak.
+
+[435.0s - 464.0s]
+Sounds. Progressively refines the face shape. By taking us input the the joint local features in higher and higher resolution.
+
+[464.0s - 493.0s]
+Now let's go to the details of the global sound.
+
+[493.0s - 522.0s]
+The global sound tries to quickly predict the face shape. For other input image I. Formulated as HO in this equation. Considering the HO is linear mapping, we modeled the H the HO as stacked autoencoder networks with key hidden layers. The objective function. Is formulated as this equation. I see.
+
+[522.0s - 551.0s]
+The red part corresponds to the E networks for regression besides. Await Decatur is added to prevent the overfitting. Since the global South gave rough estimation for the face shape. A low resolution face image is enough for input.
+
+[551.0s - 580.0s]
+That's all about the global song. Now let's go to the details of local sounds.
+
+[580.0s - 609.0s]
+Based on the initial phase ship is zero from the Global South. The local sound attempts to refine the phase shift by predicting the ship deviations. Data is war between the current face, shape is zero and the ground truth face shape is. Similar as Global, some the linear function, each one in the local in the local sun is also modeled as a deep autoencoder networks. Here the input of the function, each one is joint. Local features fine as the. SO at the target is shift deviation, data is 1.
+
+[609.0s - 638.0s]
+After get the ship update status as well from the first local shop. Several local sounds. A cascaded to progressively refine the face shape by predicting the ship deviation data is Jay between the current ship is J -- 1 and the ground Truth ship is. For each local cell. Local features. Around each landmarks are extracted in a local Patch of the same size, but at the different resolutions. End of the. The interior cells need a large search region which which contains more content. More context informations. Since the current ship is relatively far from the ground truth. So for the anterior anterior sounds, but low resolution face image is used. To alleviate the local minimum problems. Then the posterior sounds are conducted in higher and higher resolutions. This ship is refined with a teenage search step. Which leads to more accurate of detection results.
+
+[638.0s - 667.0s]
+To evaluate the performance of our methods for public datasets are used in our experiments. The exam two ATS. This site is collected under control and the other three are collected in the wild. The ground shoes adaptations of 68 Fishel points are provided provided by the iPod group.
+
+[667.0s - 696.0s]
+Since our method consists, consists of several successive sounds. We investigate how is your son contributes to the performance improvement. I see. This is the performance of the main ship, as this is the performance of our global sound. The global sound is much better than the mean shape. And the detection result is progressively improved by the following sounds. Besides, we also evaluate the runtime of each cell.
+
+[696.0s - 725.0s]
+That's the top. I think our method takes like less than 25 milliseconds per image for detecting 68 facial points. It can perform in real time.
+
+[725.0s - 754.0s]
+Then we compare our method with three groups of deep stable arts methods.
+
+[754.0s - 783.0s]
+In this experiment, all methods are evaluated on on the Highland Test site. I see. This realizes the performance of True und RDMF methods. And the STR method performs better. Our methods achieved the best results on this data set.
+
+[783.0s - 812.0s]
+This is the performance of all methods on FP double attack set. And our methods also outperformed the others.
+
+[812.0s - 841.0s]
+Or XM280S they said. Our methods also achieve good results.
+
+[841.0s - 870.0s]
+Furthermore, we compared to other methods we compare our method with disease. In terms of fire, Fishel points. I think our method also outperformed outperforms disabled on this thread sets.
+
+[870.0s - 899.0s]
+This slide shows some extremely. Challenge examples RC even.
+
+[899.0s - 928.0s]
+Under the large post expression, beard sunglass and occlusion, our method can still achieve good alignment results.
+
+[928.0s - 957.0s]
+In conclusion our contribution can be summarized in full force. Firstly, the Global South can achieve more accurate initializations. Secondly, the SAE the SAE can will characterize loneliness from appearance, to face, shape and our classified structure is effective. Our method outperforms the others and can perform in real time.
+
+[957.0s - 986.0s]
+Our model is available online. Welcome to download it and if you are interested in our methods, welcome to our poster. The.
+
+[986.0s - 1015.0s]
+Skull, thank you very much and this is a demo. As this is a demo of my systems. Thank you very much.

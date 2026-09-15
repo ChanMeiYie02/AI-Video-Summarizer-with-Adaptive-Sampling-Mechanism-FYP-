@@ -1,0 +1,20 @@
+{
+    "id": "r4jqtr4a4ykabjrbfyush557rfhnfbjh",
+    "title": "Crowd truth",
+    "url": "http://videolectures.net/eswc2015_welty_crowd_truth/",
+    "info": {
+        "author": [
+            "Chris Welty, IBM Thomas J. Watson Research Center"
+        ],
+        "published": "Oct. 22, 2015",
+        "recorded": "September 2015",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 56,
+    "num_sentences": 601,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 3342
+}

@@ -1,0 +1,25 @@
+{
+    "id": "br36ab5jxl7rkglqxmyxrky4eaaz5h3k",
+    "title": "Saliency-Cognizant Error Concealment In Loss-Corrupted Streaming Video",
+    "url": "http://videolectures.net/icme2012_hadizadeh_streaming/",
+    "info": {
+        "author": [
+            "Hadi Hadizadeh, School of Engineering Science, Simon Fraser University"
+        ],
+        "recorded by": [
+            "IEEE ICME"
+        ],
+        "published": "Sept. 18, 2012",
+        "recorded": "July 2012",
+        "category": [
+            "Top->Computer Science",
+            "Top->Computer Science->Computer Vision",
+            "Top->Computers->Multimedia"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 172,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 3649
+}

@@ -1,0 +1,20 @@
+{
+    "id": "pxqur5qarphs5l2jkr6ws5hvtj3wsrtp",
+    "title": "Supermodels: Interactive Ensembles of Imperfect Models",
+    "url": "http://videolectures.net/solomon_wiegerinck_imperfect_models/",
+    "info": {
+        "author": [
+            "Wim Wiegerinck, Department of Medical Physics and Biophysics, Radboud University Nijmegen"
+        ],
+        "published": "May 27, 2013",
+        "recorded": "May 2013",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 601,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 60,
+    "ground_truth_summary_length_chars": 4426
+}

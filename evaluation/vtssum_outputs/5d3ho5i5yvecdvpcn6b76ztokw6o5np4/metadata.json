@@ -1,0 +1,21 @@
+{
+    "id": "5d3ho5i5yvecdvpcn6b76ztokw6o5np4",
+    "title": "Estimating Unbiased Sharer Reputation via Social Data Calibration",
+    "url": "http://videolectures.net/kdd2013_yang_data_calibration/",
+    "info": {
+        "author": [
+            "Jaewon Yang, Department of Electrical Engineering, Stanford University"
+        ],
+        "published": "Sept. 27, 2013",
+        "recorded": "August 2013",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Knowledge Extraction"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 188,
+    "num_clips_with_summary": 22,
+    "num_gt_summary_sentences": 39,
+    "ground_truth_summary_length_chars": 3086
+}

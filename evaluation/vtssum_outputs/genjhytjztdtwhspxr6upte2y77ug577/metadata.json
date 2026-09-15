@@ -1,0 +1,20 @@
+{
+    "id": "genjhytjztdtwhspxr6upte2y77ug577",
+    "title": "Computing Authoring Tests from Competency Questions: Experimental Validation",
+    "url": "http://videolectures.net/iswc2017_dennis_experimental_validation/",
+    "info": {
+        "author": [
+            "Matt Dennis, School of Computing, University of Portsmouth"
+        ],
+        "published": "Nov. 28, 2017",
+        "recorded": "October 2017",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 146,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 4518
+}

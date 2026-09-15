@@ -1,0 +1,20 @@
+{
+    "id": "pvp3ntjpcotagm7bh3aqnagfcjwj3zjy",
+    "title": "Ranking Mechanisms in Twitter-Like Forums",
+    "url": "http://videolectures.net/wsdm2010_sarma_rmit/",
+    "info": {
+        "author": [
+            "Atish Das Sarma, College of Computing, Georgia Institute of Technology"
+        ],
+        "published": "Feb. 22, 2010",
+        "recorded": "February 2010",
+        "category": [
+            "Top->Computer Science->Web Search"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 183,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 4151
+}

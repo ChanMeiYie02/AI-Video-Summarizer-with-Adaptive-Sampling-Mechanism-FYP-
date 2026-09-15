@@ -1,0 +1,20 @@
+{
+    "id": "mjelbtys2ygm6fc5g2xovdtt7twkcbtq",
+    "title": "A Cross-Platform Benchmark Framework for Mobile Semantic Web Reasoning Engines",
+    "url": "http://videolectures.net/iswc2014_van_woensel_semantic_web/",
+    "info": {
+        "author": [
+            "William Van Woensel, Computer Science Department, Vrije Universiteit Brussel"
+        ],
+        "published": "Dec. 19, 2014",
+        "recorded": "October 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 10,
+    "num_sentences": 149,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2482
+}

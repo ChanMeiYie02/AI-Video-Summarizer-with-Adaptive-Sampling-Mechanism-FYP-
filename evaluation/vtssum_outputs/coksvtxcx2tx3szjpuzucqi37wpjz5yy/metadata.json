@@ -1,0 +1,20 @@
+{
+    "id": "coksvtxcx2tx3szjpuzucqi37wpjz5yy",
+    "title": "Wrinkle Patterns in Active Viscoelastic Thin Sheets",
+    "url": "http://videolectures.net/kolokviji_sknepnek_wrinkle_patterns/",
+    "info": {
+        "author": [
+            "Rastko Sknepnek, University of Dundee"
+        ],
+        "published": "Jan. 21, 2020",
+        "recorded": "January 2020",
+        "category": [
+            "Top->Science"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 540,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1377
+}

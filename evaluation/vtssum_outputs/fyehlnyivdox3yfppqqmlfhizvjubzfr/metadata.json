@@ -1,0 +1,21 @@
+{
+    "id": "fyehlnyivdox3yfppqqmlfhizvjubzfr",
+    "title": "Vision on clouds and the impact on European r&d",
+    "url": "http://videolectures.net/classconference2014_jeffery_schubert_cloudsimpact/",
+    "info": {
+        "author": [
+            "Keith Jeffery, Independent Consultant",
+            "Lutz Schubert, Institute of Information Resource Management, Ulm University"
+        ],
+        "published": "Dec. 1, 2014",
+        "recorded": "September 2014",
+        "category": [
+            "Top->Computers->Software"
+        ]
+    },
+    "num_segments": 46,
+    "num_sentences": 361,
+    "num_clips_with_summary": 19,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 3358
+}

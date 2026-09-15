@@ -1,0 +1,21 @@
+{
+    "id": "4jtyq3fwnwbbnd3fklc5a5pltbcmhmvn",
+    "title": "Mulan Mulan",
+    "url": "http://videolectures.net/icml2010_spyromitros_mumu/",
+    "info": {
+        "author": [
+            "Eleftherios Spyromitros - Xioufis, Department of Informatics, Aristotle University of Thessaloniki"
+        ],
+        "published": "July 20, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computers->Programming->Java"
+        ]
+    },
+    "num_segments": 12,
+    "num_sentences": 33,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 456
+}

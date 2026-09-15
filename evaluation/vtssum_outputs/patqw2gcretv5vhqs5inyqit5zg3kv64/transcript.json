@@ -1,0 +1,197 @@
+[
+    {
+        "text": "OK, so this is a joint work with Julio Castillo. Uh.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "OK. So we know about multiple users of landmarks in planning. Actually, the most powerful admissible holistics nowadays are based on landmarks, so we know a lot about how to exploit the landmark. Once you have the language then there are different ways of exploiting them. You can do the cost, optimal partitioning, uniform cost partitioning you can solve fitting set problems, etc. But we know little about generation of landmarks and this talk is about all this. Work is about the generation. Of landmarks.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So our contribution in this work is we present an algorithm for generating landmark that is based on principles. And this landmark can be used for different purposes. Actually we we, we show that the landmark can be used for admissible optimal planning and we all we all of all of us know, did know that I'm also for non admissible satisficing planning. And then we present a polytime unmissable heuristic that is based on this idea of generating landmarks in a principled manner. So the landmarks that we know.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Are all of them are extracted from the relaxed plan?",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So what is the relaxed plan? The relax problem? It's a problem that results of removing the delete of the actions. It is characterized characterized by by a finite set of fluens. Some initial situation, mission facts, golf aksan operators that in this talk I'm going to denote in that way that will mean that this operator all has cost of four. It has two preconditions A&B and it adds see. Andy, there are no delete because these are relaxed problem and we will assume without loss of generality that the initial state is just one fluent I. The goal is just one through and G and all the preconditions are nonempty. If this is not satisfied you can modify your planning problem really easy to achieve this.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "OK, so let's see an example we have here 5 operators. So for example, this is the only one that the goal and it needs preconditions, AC and D. It has cost one the 1st three operators are the only ones that are applicable at the initial state, that is, I so one way to reach the goal is supplied. That sequence that's applying and the cost of that plan is 9 that in this case is an optimal plan.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So the the optimal relax cost is what we call H, plus an is a minimal is the cost of the meat of optimal plan to go to reach the goal from the initial state and it is a very good heuristic function for that can be used for optimal planning, but it is NP hard to compute or even to approximate it by a constant factor.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "OK, so now let's move into.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Marks basically a landmark is just a set of actions such that every plan must contain one action in the landmark, so it is a disjunction that every plan has to satisfy.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "Let's see again the example. We have the example and then we have different language. For example, we need to reach the goal right and the only options that add the goal is the 05 stop that action has to be applied at every plan. So we know that this is a landmark, and since the cost of that action is one, we know that the optimal cost has to be greater than or equal to 1. Similarly, we need a the fluent a because they only actions that RG requires a an. The only two. So we need A and the only two action that at AR 0102. So that set is also landmark. Every plan has to contain either 01 or O2 and the minimum cost among dentistry, so their cost of an optimal plan is at least three. Alright, so you can iterate.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Over. Thanks so now we have this collection of landmarks and how can we exploit them. So I will explain the hitting set idea. Hitting set is a classical problem in computer science. Basically is given by a finite set of elements, a collection of subsets from from the set and negative cost assigned to every element a subset of element. It's called a hitting set. If it touches every subset in the family and the cost of the hitting set is just the cost of the actions in the set. And then we have the minimum cost hitting set problem. It's finding the hitting set of minimum cost is a classical NP complete problem. Now you have it.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "We have the landmarks, then the collection of landmarks can be thought as a minimum hitting set problem. In this case we have the operator we have here the landmarks and for every operator we have a cost so a minimum hitting set, minimum cost hitting set for that collection will give you a lower bound on the cost of an optimal plan. In that case this is a minimum hitting set so you know that the optimal plan has caused at least 6.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "OK, so in order to get the landmarks I'm going to define these things, call a precondition choice, functions that for every operator it @ assigns one precondition of it. And then once we have a PCF you fix the PCF and then you construct what is called the justification justification graph for that PCF that basically the vertices are the facts and then you have an arc from that. From that precondition to that fact to every effect of the operator. Oh. So.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Let's see an example here for example. We fixed the PCF and then we built the justification graph for that PCF. Right here I have highlighted the precondition that the PCF is selecting for every action. So now it's.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Runs out that if you compute a cut in this graph, a cut that separates the initial state I from the Golgi, that is going to be a landmark, everything that everything that crosses the court is going to be a landmark. Here we have a coat that is all that side of the graph and then G only on the type. So 05 is the only arc that crosses the court. That is a landmark.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "This is another landmark here, another coat and this is the cut set. The arcs that cross the code that will give you another landmark.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So you can compute landmarks using. Computing PCF and then computing costs of the justification graph.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "This is a new piece.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "See if more cuts.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "OK, So what is the power of this way of generating landmark where we show last year that if you were able to generate to generate all court court landmarks then and then the minimum cost hitting set for that collection is actually age plus. But",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "We know that the number of PCF is huge, is exponential, and even for a fixed PCF the number of cut in a graph is also exponential, so it is impractical. This result is is nice, but it's impractical for generating landmarks. But the question is do we need all of them to get H plus or a good approximation of H plus maybe not?",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "OK, so now I will move. I will present the algorithm for generating landmarks.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "How much time do you have? 7 minutes OK. So let's let's say that we have a set of age of operators. And then using that set of operators we compute the fluids that are reachable from the initial situation using only those operators.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Then two things can happen if the goal is reachable. Think each contains a relaxed plan. We were able to get from the initial situation to the goal using the operators in age. So in age there is a relaxed plan. If G is not reachable. If the goal is not reachable, then we can prove that the code that is formed by taking the fluent that are reachable in one side and this the fluid that are that are not reachable on the other side. Is a coat of some use ification graph for a PCFD and at age does not hit that. Gossip.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Indeed, it is enough to define the PCFD as follow for every operator you're going to assign a precondition to the operator, so if all the preconditions are reachable, assigned any one, the one that you like the most. And if there is some precondition that is not reachable, then you will assign that precondition or do pick one that is not reachable. As for defining the PCF.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "And now you have your PCF. You compute the cut in the graph. The cut set that is the arcs that crossed the cut and that is guaranteed to be a landmark of the problem that is not hit. Buy the set of operators that you have, so now you have you have found. A landmark that gives you new information.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "And also you can improve a little bit the landmark by removing facts in the graph that are not relevant to the goal.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "I'm going to show how to do that. OK first before that so that the algorithm is the following. You have a set of actions and then you compute the reachable fluens using those actions. If the goal is in Hu, return yes. Otherwise you compute the PCF just as I told you the justification graph, you simplify the graph a little bit and then compute the cut set in the graph and that will give you a landmark. And you can do this in linear time with the correct data structures, because basically what you're doing here is reachability.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "OK, let's see an example. Suppose that we.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Begin with the empty collection of landmarks. Then H is empty, no actions whatsoever. So the only thing that is reachable from I using no action is I, and the compliment is that saying and then this is the PCF. We simplified the PCF becausw removing that guy and that guy because there are irrelevant to G. There is no path from C to G and there is no path from B to G. So we can remove them and then we compute a cut set here that basically connects are to the complement of R and the coach. It is those two guys. We have a landmark.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "OK, so now we have a landmark pecan action that hit the landmark. And now we have the set age contains the action or one that hits that landmark. Then compute the reachable things. These are the things that are not reachable and that gives you that justification graph. You remove the relevant things and now the coach it here that crosses the coach. The Qatar, RC is that guy you have a new landmark.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "You have two 2 landmark computer hitting set for that. Then you have that set of operator and you repeat the thing. Compute the justification graph the court so and so forth and then.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Do you get? My.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "More landmarks each time.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Until something happened. Then when you have reached that collection, then they're reachable. Set contains the goal, so now you have a complete collection of landmarks, meaning that the minimum cost shipping set for that guy. This. The value of H plus. Right every day, every landmark can be generated.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "A linear time, so the algorithm looks like this. You start with initial collection of Landmark, will be the empty one as as we did in the example, and then you compute a minimum cost hitting set for the collection. Help you call the algorithm A. That will give will either return yes the collection is complete, you have reached the goal or where or will return a new landmark. So if it is returned, yes you are done. Otherwise, you extend your collection with the new landmark, and then you iterate. That is a complete algorithm for generating landmarks. Now these are loading this in wrong. Impala time polynomial time be cause first you have to compute the minimum cost hitting set that's hard and second because the number of iterations maybe exponential so even even in the case that you could compute you could solve the minimum costing setting efficiently. You may perform an exponential number of iterations.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Nonetheless, they flaws can be overcome in some way. You basically control the number of iterations. One way of doing that is putting a bound on the number of iterations, and you also control the difficulty solving the minimum hit hitting set problem. Uh. Thanks for doing that. The paper and you will see how to do it. In the paper there are details about how to modify the algorithm C1 into some variants that are polytime. How to use this technique of generating landmark for satisfying planning? Because you don't need to solve the minimum hits. At minimum, hitting set minimum cost hitting set problem exactly. You can do approximations of that. And we present some novel polytime heuristic based on this idea. The risks are expand less notes that the current state of the art, so they dominate the current state of the art, but we are slower. So time wise we're still behind Ellicott. But we're getting into that, I think.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "So that's it. So the exponential number of iterations sounds strange to me, because so let's assume all actions or unit costs. So H Plus is bounded by the number of propositions, right? Which is not exponential, so so, so I think you would gain very little from, you know, going beyond that in terms of number of iterations. Oh I mean, maybe it's not intuitive. It took me some time to realize that, but. If there are examples that I that it will take exponential time, the problem is that you are basically computing this minimum hitting set, right? They're not big landmarks are not disjoint, so they have overlap, so you might add a landmark and gain nothing. Basically, and Interestingly, will not increase the value of of of H plus, but it will be a landmark that is not dominated by another landmark, so these are disjoint landmarks and no one is like kind of dominated by other. I still you may need exponential number of them. Justification. At the iterations of the algorithm, the operator said age correspond to hitting set of the current landmarks, right? Yes, it doesn't have to be minimal.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "OK, it doesn't have to be minimal. Yeah it if you want that the resulting guy is the solution of the resulting collection is H plus. Then you need to be minimal, otherwise it doesn't have. Actually, that's the way of dealing with the with the exponential number of iterations and with the with the difficulty of solving that. If you throw in a method that will give you. Quickly. Hitting set of L at that we guarantee that the number of iterations is bounded. Then you are dumb. For example, you can choose all the actions in the new landmark and AT2H. Right, you have a new landmark. You throw all the actions in the new llama into H that will be hitting set under the number of iterations is bounded by the number of actions, so that will be polynomial realization or approximation of this algorithm C1. You can also solve. There is a method of solving hitting set problem is called the pricing algorithm by Chapital ISA. Quite nice actually. We tried that. Sing thanks so forget about solving the actual problem for a moment. Let's just think about solving the derealization. So I really want to have the edge plus value. We don't really have a lot of good algorithms for that yet, and you know you like spend half an hour and that if you use this algorithm together with like an optimal hitting set solver, do you think it would be better than the things that we currently do for computing? Just, you know, the edge plus value of the initial state? I have an idea actually. I have been thinking about this thing with computing H plus. You know, I don't know how to do it yet, but one thing that came to my mind was doing some kind of search which you have do search tree. It will be some, some will be constraint on age. So either you put you allow an action to be in a engage or do disallow it right. So you have like this split this branching. And then somehow you incorporate that kind of thing in that search and. But this is only an idea, I don't know if it's going to work. OK, I give them back to Patrick. Maybe I can give some answer to Multas question, so I've used basically this algorithm but with a different method of generating landmarks to compute age plus, and I don't know of anything else domain independent that is better. Remained independent for. Anything I I'm not, I don't know any other even reasonably efficient method of computing a class that is domain independent. Back to you. Other metrics are So what we do is we need an extra problem and so does it matter. Landmarks from. Expecting. Why is not doing relax planning graph is is a graph that you get from the relax problem. But this is not a relaxed planning rough right? Is that the question? Is it just based on the? How is your friend? While the relax planning graph has like actions and influence? And then you also consider the, well, the relaxed planning graph. You have time points, right? So. I think it it it might be similar, but it's not exactly the same thing. That may just be actually this is you fix a PCF right? You change the precondition choice function and then you have another a different graph. So this graph depends on the precondition choice function. Sarah.",
+        "start": 1102.0,
+        "end": 1131.0
+    }
+]

@@ -1,0 +1,20 @@
+{
+    "id": "lbxyxvq4q4kvdq4f72l7sr76x4cvuscy",
+    "title": "DOREMUS: A Graph of Linked Musical Works",
+    "url": "http://videolectures.net/iswc2018_lisena_dormeus_graph_musical/",
+    "info": {
+        "author": [
+            "Pasquale Lisena, EURECOM"
+        ],
+        "published": "Nov. 22, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 25,
+    "num_sentences": 135,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 13,
+    "ground_truth_summary_length_chars": 1181
+}

@@ -1,0 +1,21 @@
+{
+    "id": "3z2heykipx7xqgq3dmslrv5yhqf7kyom",
+    "title": "Internet Advertising and Optimal Auction Design",
+    "url": "http://videolectures.net/kdd08_schwarz_iaoad/",
+    "info": {
+        "author": [
+            "Michael Schwarz, Yahoo! Research"
+        ],
+        "published": "Sept. 29, 2008",
+        "recorded": "August 2008",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web",
+            "Top->Social Sciences->Economics->Marketing"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 618,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 45,
+    "ground_truth_summary_length_chars": 4381
+}

@@ -1,0 +1,24 @@
+{
+    "id": "qm3dtrulisyzdfyp3wsjdw5xe42kxiuh",
+    "title": "Distribution-Independent Reliable Learning",
+    "url": "http://videolectures.net/colt2014_kanade_distribution/",
+    "info": {
+        "author": [
+            "Varun Kanade, École normale supérieure Paris"
+        ],
+        "published": "July 15, 2014",
+        "recorded": "June 2014",
+        "category": [
+            "Top->Computer Science->Machine Learning->Computational Learning Theory",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning",
+            "Top->Computer Science->Machine Learning->Supervised Learning",
+            "Top->Computer Science->Machine Learning->Statistical Learning",
+            "Top->Computer Science->Machine Learning->On-line Learning"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 167,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 4114
+}

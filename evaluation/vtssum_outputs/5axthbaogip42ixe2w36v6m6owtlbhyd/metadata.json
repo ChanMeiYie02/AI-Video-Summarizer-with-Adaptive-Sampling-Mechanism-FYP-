@@ -1,0 +1,21 @@
+{
+    "id": "5axthbaogip42ixe2w36v6m6owtlbhyd",
+    "title": "Using Linked Data Techniques for Creating an IsiXhosa Lexical Resource - a Collaborative Approach",
+    "url": "http://videolectures.net/clarinannualconference2018_eckart_linked_data/",
+    "info": {
+        "author": [
+            "Thomas Eckart, University of Leipzig"
+        ],
+        "published": "Jan. 14, 2019",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Humanities",
+            "Top->Social Sciences"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 128,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1732
+}

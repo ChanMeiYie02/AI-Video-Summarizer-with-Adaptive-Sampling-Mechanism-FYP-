@@ -1,0 +1,22 @@
+{
+    "id": "wwrri7mq2g5zrt4p247g6idbinqaowcs",
+    "title": "Bio- and Cheminformatics Methods for Mode of Action Analysis",
+    "url": "http://videolectures.net/icgeb_bender_action_analysis/",
+    "info": {
+        "author": [
+            "Andreas Bender, University of Cambridge"
+        ],
+        "published": "June 28, 2019",
+        "recorded": "May 2019",
+        "category": [
+            "Top->Computer Science",
+            "Top->Data Science",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 58,
+    "num_sentences": 570,
+    "num_clips_with_summary": 32,
+    "num_gt_summary_sentences": 71,
+    "ground_truth_summary_length_chars": 8041
+}

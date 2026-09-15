@@ -1,0 +1,22 @@
+{
+    "id": "otqbx63nefckjjasawmznjrxfi37gbci",
+    "title": "TransLectures: cost-effective transcription and translation of video lectures",
+    "url": "http://videolectures.net/internetofeducation2013_diaz_munio_translectures/",
+    "info": {
+        "author": [
+            "Gonçal Garcés Díaz-Munío, Technical University of Valencia (UPV)"
+        ],
+        "published": "Dec. 10, 2013",
+        "recorded": "November 2013",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web",
+            "Top->Social Sciences->Education",
+            "Top->Technology"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 267,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1294
+}

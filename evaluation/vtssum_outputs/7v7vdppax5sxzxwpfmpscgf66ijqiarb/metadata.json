@@ -1,0 +1,21 @@
+{
+    "id": "7v7vdppax5sxzxwpfmpscgf66ijqiarb",
+    "title": "A PET/CT approach to spinal cord metabolism",
+    "url": "http://videolectures.net/encals2017_novi_cord_metabolism/",
+    "info": {
+        "author": [
+            "Giovanni Novi, L'Ospedale Policlinico San Martino"
+        ],
+        "published": "July 21, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Medicine",
+            "Top->Medicine->Neuroscience"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 58,
+    "num_clips_with_summary": 7,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1032
+}

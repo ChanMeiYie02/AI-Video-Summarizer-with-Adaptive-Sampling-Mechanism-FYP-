@@ -1,0 +1,117 @@
+[
+    {
+        "text": "This is work with Karthik who is maybe somewhere there. OK there. And we're going to talk about online nonprofit.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Progression this is the protocol, and the protocol should be familiar and the problem is supervised learning. In other words, the examples are tuples of X isn't wise, however we have no generative mechanism on this sequence is an individual sequence that comes once. It will never come again and we need to predict this sequence at each time. Step XD is revealed to us. Prediction yhat tea is made by the algorithm. That's us and then the YT is revealed by nature. The YT does not depend cannot depend on the yhat. These are made simultaneously. Then regret with respect to a class F of functions is just. This notion should be familiar. Now its average of the prediction mistakes that we make or the amount of mistakes versus the best within a class of functions. F and of interest is the optimal behavior of such a problem. For this class F.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "To quantify this optimal behavior, we can write the minimax value. It's the infimum, overall algorithms that are possible so premium over sequences. This is how we quantify that the algorithm has to work for all sequences for all sequences that has to minimize this regret. Written in this way, it's not clear how to do it and and there is another way to write this in super in terms of interleaved in few months supremum. And then this gives a little bit more teeth to the problem.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Now what is known for this problem? Actually surprisingly not that much. The problem was started. I believe I might be wrong in 1990 with the paper of Foster who submitted to annals of statistics, and he says that it came back twice with rejection saying that this is not possible. It's not possible to do regression for a finite over an individual sequence. Then there was around that time work by valid evoke. And then 98 AM 2000 Vodka considered a bounded subset of dimensional space around the same time Asurion Warmath had another paper of that form. More recently, there has been work by Sebastian version of its on sparse problems where the function is a linear function, but the vector is sparse and. Oh volitive off had a series of papers that I it looks like they were mostly not paid attention to in our community. Unfortunately very nice papers where F is a rich classes bowling the best of space. There are several bounds there, with some of them are loose, some of them are not loose and volodja asked a question whether what, what, how do you get optimal rates here? How do you know that there are optimal? What are the algorithms and so forth? There are other works here that are not mentioned. They usually discretize the space from the outset. In the metric, entropy type of sense and reduce the problem. Linearize the problem reduces to experts. This falls again under the results by. Wolf can 98.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "OK, so I just want to say that this is kind of a sad state of affairs as compared to statistical statistical learning where people consider rich classes of functions, classes with smoothness assumptions on the on, these regression functions F and so forth. Both statistics and statistical learning. So what we would like to do is we would like to understand the optimal behavior for general class F. How does one do that?",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "And there are two claims. The first claim is that behavior of this minimax regret the best you can do in this problem is characterized by some measure of complexity of F, which itself is not obvious statement that you just need to look at complexity of F. You just need to get the right complexity, but there is no other mechanism beyond that. Understand this minimax object and the second claim is that there is a Canonical learning algorithm for any F for in class F.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Alright, so to define a notion of complexity I need to go very quickly through definitions that were introduced about three years ago in the paper with context around and language Tewari, the tuples of points from the ID setting now become trees just for analysis purposes. This is used to the sequential symmetrization technique that was introduced. The tree is just an X label. Trees that re labeled by instances of the X space and you go left or right depending on the. Plus minus is so this is some label in this set X and you get here by taking a left branch and so forth. So you can think of these as labeling functions for each level. There are any of them, and for the ice level the way that you get the label is just by traversing up to I -- 1. What's important is that this is a path of plus or minus ones. That's the induces the path and we will write XD of epsilon. But really just depends on how you got there, which is T -- 1. This will be very important. OK.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "The following notion that was introduced in the paper with the context in which the body this is the notion of a covering number, which is the right notion in some sense for these sequential problems for online learning, a set V of real value trees is an Alpha cover of a function class on a tree. If for any function and for any path there is some elements, some tree of the set of trees such that the function values are close to the values of the tree on that path, and what's important is on that path, and if the tree has constant along the each level then you get back the usual notion of a covering number. The best smallest cover is denoted by N 2 and this is L2 cents. And we'll say sequential entropy is the analogue of political chinskey entropy. In the ideal case, Supreme over all trees log at least for that fixed N. That's the analog log of the covering number. That's the entropy. OK.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So, uh, another notion that we introduced before is rather more complex, sequential Rademacher complexity, and this is again in some sense the right generalization of the usual Rademacher complexity. But on the trees, so are other complexity of on the tree is correlation of random signs with values of the function on the tree, but only on the path that is given by the same epsilon. So this is kind of interesting structure by itself, and this turns out there's a Martindale is Supreme over Martindale. And process and then it leads to many generalizations. We showed that if in the problem that we're considering you took take absolute loss instead of square loss, then the value of the game is upper and lower bounded within the constant of two by sequential random complexity. So this is the right notion for learning with absolute loss. Also it leads to Martindale extensions of uniform laws of large numbers, fat shattering dimension, scale sensitive dimensions and so forth. Unfortunately, it cannot get your rates better than one over square root of this. As usual Rademacher complexity one needs to do something else, and for learning with squared loss we know that the rates are faster in the ID setting. This is due to localization or some technique of that for.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So this was a puzzle. It puzzled us for several years. How to get the rates faster than 1 / sqrt N through the kind of a general complexity based analysis. So just to kind of a hit, a few hints of how this can be, what we had at our disposal in statistical learning. Just recently, if the class is not convex, we realized that one can do kind of a combination of aggregation, which is exponential where you can think of the exponential weights and localization, and the reason that you need some kind of aggregation is that empirical risk minimization in the ideal world doesn't work always if the class is non convex or doesn't have the Bernstein condition. The empirical simulation fails, just gets the wrong rate. Then empirical process story is not enough for the problem. If the class is not convex and. Therefore you have to do improper learning. That's the point that you have to do improper learning, and it's enough to do improper learning in the aggregation step. And this was in the paper with such typical MacArthur. Where you take a class of functions, you subdivide based on the data you do a net based on the date on the samples. On some of the samples, then on the another part of the samples you do empirical risk minimization on each cell and then you aggregate these empirical minimizers and that's that, gives you the optimal.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "So the puzzle here in online learning is that we can't even define this data dependent subsets. We would like to do it dented dependently. I would like to build use the cover on the tree, but we cannot do it because we don't see data ahead of time, unlike in the IID where we can just take two batches of data. And with for awhile we thought that we need to build these covers in a manner that she'll have shorts had in the SOA algorithm, but that somehow never, never worked. On the positive side, the online learning protocol is inherently improper, so we this point is on the positive side, because we never require the yhat T to be consistent with any function in the class. Other several other pieces of the Puzzle View outlined two different algorithms for best of spaces. One is based on the uniform convexity kind of mirror, dissent style, and the other one in the metric entropy, which is the exponential weights style. Unfortunately, this one is suboptimal and so it's not clear what other algorithms out there and so here. The point is that if we started with, an algorithm would likely be stuck. What we did is we actually looked at the value of the game directly, and then we came back to algorithms, so we will get algorithms. But first we analyze the value of the game.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Here is the handwaving argument, regret against any single F is well at time. T is our loss at time T minus the performance of that F at Time Team. Now when you write it as a minimax, once we go to the Mini Max dual, the choice of prediction. This is just purely for purposes of analysis, can be done after we see the distribution of nature and the best decision then is the mean under the distribution of nature and so this gets you this difference and then expanding it you have two.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Terms in a way which is almost the same as what Shahar was talking about yesterday in the for IID. This term is 0 mean, and so we can symmetrize this. This has a. This is the linear term. The term of the interaction of the noise and the functions behave and minus the quadratic term, so this is zero mean guy and this is minus its square, right? If we assume that these are bounded is the square so. You see that this can kill the fluctuations of this randomness, and that's basically what happens. The square is due to the curvature of the loss.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So here is the first theorem that we can show is that the value of the game is upper bounded Supreme over 2 trees, one for the axes and one for the means of the distributions. Or that's where they come from. If we didn't have anything here, this would be the usual sequential Rademacher complexity, cannot give you faster than 1 / sqrt N rates.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "But thankfully we can symmetrized with this guy in there and therefore we have this new object which we call SQL offset, sequential Rademacher complexity. And you see for any F this is a negative mean random variable, so it doesn't get big. The question is can we control this stochastic object uniformly over F and it turns out that would be that this is the case. One can do chaining directly on this object. What happens is you can you can place now that now that the trees are fixed that we can do a covering with respect to these trees. So for we can split the class into finite number of centers if you wish, although there improper not in the class and then we have a finite collection. Here it's a Max for any finite collection. All these random variables are negative, so there are unlikely to be high and the rate is log N / N. And you realize that this is the rate you get from aggregation. In the ideal case here, it's gotten from a nonconstructive argument, and then in the rest it's a small bowl. The curvature of the loss doesn't matter anymore, so we can actually drop the square and just consider the other complexity, and we get the chaining Dudley integral that goes up to this radios gamma, and so this gamma has to be balanced. Depending on the complexity of the class and the right balance of. This gamma and here and here gives you. Turns out the optimal rates. So to make the bounds more nice.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Go to the. I assume that there is some growth of sequential entropy, which is like Alpha to the minus P. Just to give you an idea, P = 2, zero is the easy case. This is the parametric the VC class. The finite dimensional situation. These are easy classes. P equal to two is a ball in the Hilbert space. You cannot cover it without data, so you have to really. Do symmetrization and then try to obtain a covering on the sample. Be greater than two is crazy classes, so this is what we get for the greater than two. The rate is enter the minus 1 / P and it is the same rate as if you didn't have the quadratic. It's the same rate as if you had absolute loss, so curvature of square of the square loss does not help. In that situation, the classes to reach somehow between zero and two. We get the minus 2 / 2 + P rate. For parametric case we get the right. So basically we can recover with a single algorithm, which I'll show you in a second. With a single algorithm with a single analysis, we can recover all the cases just by plugging in the complexity of the function class and we have matching lower bounds to these and to these as well. OK, so this is the depending on the complexity of the class. This is the right. The right approach.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So if you remarks for greater than two curvature of the loss does not help, which is interesting in that transition picual to two. This transition phase transition has been noted by many people that Dudley Integral that starts to diverge Shahar in 2002 I think had a paper where there are several interesting things happening at P equals to two. This is a phase transition. What's interesting is online tobach implies a method with correct rates for statistical learning. So this gives brings you back now to statistical learning and gives you correct rates, modular. Differences between sequential an ID, but for many cases this there is no difference and therefore you you can actually get the right thing for ID as well. Note that online algorithms are obtained through a completely different technique, completely different language and. What is interesting is that this is a purely empirical process based story of improper learning. We we don't have this story for IID for IID, the way that you get empirical processes through doing empirical rationalization, which is a selector that selects something from the class.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "OK algorithms, I have only a couple of minutes so. In the paper with the option here, two years ago we introduced the notion of relaxations. If you can come up with a function such that it's lower bounded by the comparator and has this property. Recursive property kind of potential function then. You can have an algorithm so as long as this is a convex in the YT you have, you have a black box algorithm. You take any relaxation. Check these two conditions. This is your algorithm right? All we need to do is to come up with the relaxation. How do we come up with the relaxation as we? Did before you start with the Rademacher complex.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So this is the Canonical algorithm. You take this look like it looks a bit ugly, but this is the Canonical algorithm, it's the sequential Rademacher complexity where you already know some data, and then for the rest it looks exactly as like a offset Rademacher sequential Rademacher complexity from previous. And this is the black box prediction for that algorithm. And this gives you the optimal within constant rate which is sequential offset sequential Rademacher complexity. So from here and now we can assume some documents, so we can assume some structure of the class and now we can actually try to get a nicer, more computationally efficient algorithm.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "So, for instance, let's play. Let's take linear regression. If you start upper bounding this guy, you just come with some Algebra 2. This relaxation doesn't take that long and then this is can be realized as a Wolf 'cause we warm up forecaster it's nonlinear forecaster and it has the regret bound that we know from. Papers on the book.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "OK, so last concluding slides. If the details are too much, this is a slightly fuzzy picture, which is almost correct given enough assumptions. So there are three worlds, statistical estimation where you know the function that you know you know the data comes from this model. Distributive function plus noise. There is a world of statistical learning where we do distribution free analysis. Don't assume that the model is correct and there is online learning and.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "For instance, if you take this. A complexity point of view of the function class. Then the rates between these three Worlds match modular. The difference between. The definition of covering number modular that these three world. These three rates match. And then there is a difference in the rates between these two worlds and this of course warrants further investigation.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So further directions we have extension to other losses. This would be soon in a Journal version. You can see that that squared term just depends on the curvature and so you can interpolate between absolute loss curve loss, very curved loss and so forth and get appropriate rates. Open questions new online regression algorithms for interesting classes completely open. Implications for statistical learning, and specially given that we now have this algorithmic toolbox, how can we take this toolbox and see that we get an estimator in this in the statistical nonparametric estimation case and understanding the why this gap doesn't exist between these two worlds, why is it that the distribution free statistical learning has the same rate as? A word sequence that's appears to be true but not clear why so thank you.",
+        "start": 638.0,
+        "end": 667.0
+    }
+]

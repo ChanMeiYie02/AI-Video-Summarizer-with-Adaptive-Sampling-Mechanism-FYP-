@@ -1,0 +1,20 @@
+{
+    "id": "3cqqjnv2v5qlqwlmintl7orrsibzvvas",
+    "title": "On the Diversity and Availability of Temporal Information in Linked Open Data",
+    "url": "http://videolectures.net/semantic_palmonari_linked_open_data/",
+    "info": {
+        "author": [
+            "Matteo Palmonari, University of Milano - Bicocca"
+        ],
+        "published": "Dec. 10, 2012",
+        "recorded": "November 2012",
+        "category": [
+            "Top->Computer Science->Semantic Web->Linked Data"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 24,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 5,
+    "ground_truth_summary_length_chars": 372
+}

@@ -1,0 +1,21 @@
+{
+    "id": "6mllbqqni6d6lefomhmkhkuma24j2gow",
+    "title": "Nenufar: Modelling a Diachronic Collection of Dictionary Editions as a Computational Lexical Resource",
+    "url": "http://videolectures.net/elexisconference2019_khan_nenufar/",
+    "info": {
+        "presenter": [
+            "Fahad Khan, Istituto di Linguistica Computazionale \"Antonio Zampolli\""
+        ],
+        "published": "Dec. 2, 2019",
+        "recorded": "October 2019",
+        "category": [
+            "Top->Humanities->Languages",
+            "Top->Humanities->Linguistics->Lexicography"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 129,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 3960
+}

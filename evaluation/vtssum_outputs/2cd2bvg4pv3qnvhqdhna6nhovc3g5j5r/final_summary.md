@@ -1,0 +1,13 @@
+# Final Multimodal Video Summary
+
+This segment introduces a research initiative focused on defining and implementing an algorithm to translate predicate logic formulas into natural, concise English. The core challenge addressed is the generation of both referring expressions (those that point to specific objects) and non-referring expressions (such as variables or quantifiers).
+
+To achieve this, the system integrates two major fields: generating referring expressions and tactical general generation. Referring expressions are handled by dedicated methods, while non-referring expressions rely on existing formal grammatical theories like head-driven and combinatory grammar. Semantic representation is grounded in Attribute Value Matrices (AVMs) and Head-Driven Phrase Structure Grammar (HPSG), which are used to represent quantificational formulas. These systems allow for the representation of logical structures, supported by tactical realization systems to translate these formulas into natural language.
+
+A key step in the methodology is integrating these components through a unified system that incorporates discourse reference. This approach utilizes Discourse Representation Theory (DRT) to model discourse dynamically, moving beyond static representations. This dynamic framework allows the system to track discourse references—which are intermediate constructs between language and reality—and manage how entities are introduced and referenced across sentences.
+
+The core generation process is defined by a function that relies on both a discourse context and an operator context. The operator context captures logical elements, including variables, quantifiers, and negation, while the discourse context tracks specific discourse references. This structure is used to derive a "causal skeleton" from the logical input formula, systematically extracting and organizing the formula's structure.
+
+The system employs an algorithm for dynamic semantics. This process involves constructing a syntax tree from the input expression, managing the discourse context, and then generating the corresponding output string. The generation step involves adjusting linguistic elements based on the entity’s status in the discourse context, allowing for appropriate pronoun usage or the selection of determiners.
+
+The translation rules for quantifiers and negation are carefully defined. Universal quantifiers are generally translated as "every," and existential quantifiers as "some." The rules account for complex scenarios, such

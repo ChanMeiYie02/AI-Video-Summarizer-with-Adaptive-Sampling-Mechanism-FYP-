@@ -1,0 +1,20 @@
+{
+    "id": "fuernjl4wbcyr7ktg7j6rk5s3gfq72ik",
+    "title": "A Polynomial-time Metric for Outerplanar Graphs (Extended Abstract)",
+    "url": "http://videolectures.net/mlg07_schietgat_aptmfo/",
+    "info": {
+        "author": [
+            "Leander Schietgat, Department of Computer Science, KU Leuven"
+        ],
+        "published": "Sept. 5, 2007",
+        "recorded": "August 2007",
+        "category": [
+            "Top->Mathematics->Graph Theory"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 198,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 36,
+    "ground_truth_summary_length_chars": 4337
+}

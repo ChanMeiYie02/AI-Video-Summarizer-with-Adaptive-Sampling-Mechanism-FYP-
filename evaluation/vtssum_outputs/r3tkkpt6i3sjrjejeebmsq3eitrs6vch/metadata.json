@@ -1,0 +1,21 @@
+{
+    "id": "r3tkkpt6i3sjrjejeebmsq3eitrs6vch",
+    "title": "Evolution of language / Evolucija jezika",
+    "url": "http://videolectures.net/bzid2010_szathmary_eol/",
+    "info": {
+        "author": [
+            "Eörs Szathmáry, Department of Plant Taxonomy and Ecology, Institute of Biology, Eötvös Loránd University"
+        ],
+        "published": "Nov. 22, 2010",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Biology",
+            "Top->Humanities->Languages"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 430,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 3405
+}

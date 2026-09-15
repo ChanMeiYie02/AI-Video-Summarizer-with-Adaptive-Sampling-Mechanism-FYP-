@@ -1,0 +1,20 @@
+{
+    "id": "xbnpne46agehf2uisxlivnpbluksr3nv",
+    "title": "Towards feasible PAC-learning probabilistic deterministic finite automata",
+    "url": "http://videolectures.net/icgi08_gavalda_tfpac/",
+    "info": {
+        "author": [
+            "Ricard Gavalda, Departament de Llenguatges i Sistemes Informàtics, Technical University of Catalonia"
+        ],
+        "published": "Oct. 9, 2008",
+        "recorded": "September 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning->Computational Learning Theory"
+        ]
+    },
+    "num_segments": 27,
+    "num_sentences": 260,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 42,
+    "ground_truth_summary_length_chars": 5003
+}

@@ -1,0 +1,21 @@
+{
+    "id": "zad65d4ysmcxbadhjrkeubp7nnobrstl",
+    "title": "Distributed Web Search",
+    "url": "http://videolectures.net/essir2011_baeza_yates_distributed/",
+    "info": {
+        "author": [
+            "Ricardo Baeza-Yates, NTENT, Inc."
+        ],
+        "published": "Sept. 20, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Information Retrieval",
+            "Top->Computer Science->Web Search"
+        ]
+    },
+    "num_segments": 101,
+    "num_sentences": 1122,
+    "num_clips_with_summary": 40,
+    "num_gt_summary_sentences": 77,
+    "ground_truth_summary_length_chars": 5760
+}

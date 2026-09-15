@@ -1,0 +1,23 @@
+{
+    "id": "enfpikk47d4hzjwmreezzaokufntpz3v",
+    "title": "Output Kernel Learning Methods",
+    "url": "http://videolectures.net/roks2013_dinuzzo_output/",
+    "info": {
+        "author": [
+            "Francesco Dinuzzo, Max Planck Institute for Intelligent Systems, Max Planck Institute"
+        ],
+        "published": "Aug. 26, 2013",
+        "recorded": "July 2013",
+        "category": [
+            "Top->Computer Science->Optimization Methods",
+            "Top->Computer Science->Machine Learning->Kernel Methods->Support Vector Machines",
+            "Top->Computer Science->Compressed Sensing",
+            "Top->Computer Science->Machine Learning->Regularization"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 182,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1490
+}

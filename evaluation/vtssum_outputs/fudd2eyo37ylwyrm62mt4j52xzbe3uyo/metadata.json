@@ -1,0 +1,20 @@
+{
+    "id": "fudd2eyo37ylwyrm62mt4j52xzbe3uyo",
+    "title": "Sustainable Urban Development Planner for Climate Change Adaptation (SUDPLAN)",
+    "url": "http://videolectures.net/envip2010_havlik_sudp/",
+    "info": {
+        "author": [
+            "Denis Havlik, AIT Austrian Institute of Technology GmbH"
+        ],
+        "published": "Oct. 28, 2010",
+        "recorded": "October 2010",
+        "category": [
+            "Top->Computer Science->Environmental Computation"
+        ]
+    },
+    "num_segments": 19,
+    "num_sentences": 207,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 1564
+}

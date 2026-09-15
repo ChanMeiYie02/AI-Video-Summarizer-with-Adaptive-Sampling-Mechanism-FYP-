@@ -1,0 +1,112 @@
+[
+    {
+        "text": "My name is you. I'm from the University of Helsinki and this is joint work with Oscar Gross and Hannah Toivonen. And the topic. Of today is. The officer is taller than you. Raise yourself using document specific word associations in poetry generation.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So the general goals of this work. R2 use document specific words or word associations. Import regeneration. And the idea here is that we want to produce poems which talk about a specific document. Or about the specific topic in question and we. Describe a new method of finding these words. And how they are used in diploid regeneration? And we hope that these. Poems which use, for example, specific news story as an inspiration, evoke fresh mental images and viewpoints to that specific news story or some other documents. This work is extending our basic word substitution method employed regeneration. Which I presented here in the same conference in 2012. And I will outline a bit more later. How this method works?",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "But first. I will give a brief introduction to our aims, employed, regeneration, what we think is important. When we are producing automated poetry. Then I'll briefly talk a bit about related work and then a bit more about how we extract these document specific words. Then I'll outline the. Over well outlined, the generation phase of the. Poetical's a bit more and then I'll. Show you some examples and tell about an experiment we did. And finally, I'll conclude with a short summary and future work.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So our aims import regeneration R2. Use maximally unsupervised methods. And this means that we want to minimize the amount of handcrafted grammars. General linguistic knowledge. World knowledge. Poetry domain knowledge. Instead of using knowledge bases and explicit krames manually generated templates, this sort of things we use solely statistical corpus based methods. And this is to automize. The poetry production as much as possible. And also to. Well, minimize the need for manually crafting some knowledge. The goal to use using these novel associations mind from certain documents is to evoke fresh mental images.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Of course, this approach has its own benefits and restrictions. So. One of the good things is that this is relatively flexible, so we can use this. Too many styles. With many different corpora. This is relatively language independent as well. So we have. At the moment this basic methodology working in Finnish, of course. In English, French and now I'm working on the German system. But then we have of course restrictions as well in this method, so the quality of the results varies quite a lot because we are not using any specific templates. But you'll see some results later on, which are not curated at all, so.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "You can make your own opinion about that. Next bit about related work so. Computer point regeneration. Has received quite a lot of attention. For example, this full phase poetry generation system by quantum, it's all. Is producing new story based poems as well, but our approach is bit different because we are mining all the relevant information like the templates, word associations, these things fully automated in a fully automated way. The man alone has done a lot of work on point regeneration with his colleagues. And they're using evolutionary based methods. And that sort of things which are then a bit different to ours as well. Public hair wash has done a lot of work with case based reasoning, important generation. And there are of course many other poetry generation systems. But we want to emphasize that our method. Is in the. Maximally unsupervised end of this spectrum of different methods to produce poetry.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Send a pizza party word Association analysis. So we want to find content words for the basic substitution method to produce poetry. And the general way to do this has been proposed by cross at all in 2012. And recently it has been extended to produce document specific associations. Here the relevant questions are that. Which word pairs are novel in a specific document? And to find this. These words we need. A reference of novelty. And for that purpose we are using a background corpus. And then we contrast a specific document, for example news story to that background document and we call this specific document in question for ground. And here's only we have been using the whole English Wikipedia as a background. And then we contrast. For example, a new story about Justin Bieber. 2. There's stuff that's being said about Justin Bieber in the English Wikipedia. And to measure the. Statistical relevance we used lock likelihood ratio we could use. Of course many other methods like LSA. Lesson Theory clear location. Something like that, but we chose LR because it's relatively efficient to compute. And we get, well, we can process fast masses of text quite easily.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So let's consider this new story. So Justin Bieber on Miami drink drive charge after Rd raising pop star Justin Bieber has appeared before Miami court accused of driving under the influence of alcohol, Marianna, and prescription drugs. Police said the Canadian was arrested early on Thursday after raising his post car on the Miami Beach Street. They said he did not cooperate when pulled over and also charged him with resisting arrest without violence and having an expired driving licence.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So what could be relevant word associations in this specific news story? They could be for example paper and alcohol or paper and prescription Justin and alcohol. These are the novel content of this specific news story. On the other hand, Justin and Bieber or sports and car driving and license. They are not so interesting because they occur together in very many documents. They don't tell anything specific about this. New story.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And then the method how to find. Which word associations actually are interesting in this new story is based on counting. Call currencies. Of these word pairs for, for example paper and alcohol or paper and not alcohol. Not people and alcohol and neither 1 Beaver nor alcohol appearing in the same sentence. And we count these occurrences both in the news story or the foreground and in the background corpus. And as a minor remark, these counts in the background compass are not always integrals because we are using a mixed. Model in this, but you can take a look at at the paper on the cross all paper. To get a bit more information about that.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "But then when we have counted these. Occurrences of the relevant pairs both in the news story. And in the background.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Opus we can use this formula here. To calculate. The relevant weight of these word associations in this new story. So we just normalize the counts K112K22 into probabilities. PIJ for the foreground probabilities and QIJ for the background probabilities. And then this formula can be used to. Calculate the relative weights. And. I won't go very much into the derivation of this formula Now, so you can take a look at the derivation in the paper if you are interested.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "But now this formula. Well, it gives higher value to those associations whose distribution deviates more from the background distribution. In the news story. And the weights are smaller for those word associations which have pretty much the same distribution in the new story. As in the background corpus. And then we use these. Where it's mined in this way is way in the replacement poetry generation.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "And for example, for the previous news story about Justin Bieber. We find that, well, the relevant or novel pairs in this new story, Bieber say. Police say Beaver and alcohol. And so on. And the least novel pairs in this document include, for example, Los Angeles, later jail sport car. Which don't tell very much about this specific ministry.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So then a bit about the. Poetry generation phase. So this is based on our earlier work. And the idea is that we use two corpora. One for mining the word associations, which I have just described and the other one for finding templates. And this corpus. Could be, for example, poetry, so we can take a piece of poetry out of that corpus and then use the words we have just mind the substitute words in this template. And of course we need to do some morphological analysis and synthesis to do this. Anthea reusing Stanford Post checker. And more, say and most the tools to carry these things out.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So for example, one template. Automatically taken from another complex could be, is it the dirt, the squalor? The wear of human bodies and the dead phases of our neighbors. These are but symbols. So this is from Project Gutenberg. Some images, poetry and after. The substitution phase where we have used Justin Bieber. Word associations we get this kind of a poem. Is it the entourage, the sport? The singer of later Lamborghinis and the early Thursdays of our singers. Things about Justin's. So we can see that pretty much all the content words have been replaced. It's telling us something about Justin Bieber quite clearly. And yeah, usually most of the words. Are replaced by this method. Some of words like and the this kind of grammar words which don't actually carry very much meaning. Are left in the original template. They are left left to the poem.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "And we didn't. Did a short experiment so we took several news stories. Like Justin Bieber drinking and driving while high profits surging Ukrainian Prime Minister resigning and US states reconsidering execution methods. Ann templates very taken from the images pointer accomplished of Project Gutenberg. And these following problems I will show you fully without any curation. So you can make your own opinion whether they are good or bad. But we didn't select them in any way and they are presented as they are.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So the first one about who have a profits surging. Oaks and impact technologies. Rise buying with transfer rise. They comfortable technology.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Ukrainian Prime Minister resigning. And always concrete. Oh, if I could try it with my weak resigned concrete against the repeal. Do you resign? I'd have a Parliament like you at my television. With your other of your week that you resign me. Oh Ukrainian week how I resign you for your parliamentary legislation?",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "And finally, US states reconsidering execution methods. I die, perhaps I have begun. This is a doubt. This is a prisoner, and there is state.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "So to summarize. We have proposed a novel way to mine document specific words. And to use these words in replacement poetry generation. And we haven't done evaluation set yet, so that's left for future work. We are going to the Frankfurt Book Fair next autumn to present. German poetry generation system there which is. For using brain wave measurements as inspiration to produce German poetry, and I think that should be a very good opportunity to do some full scale evaluation becausw I guess there will be very much people there. And we want to of course. EXPAND Our statistical NLP analysis to improve the results. And what could be very interesting is to combine different methods of point regeneration, for example with. Some of the methods you have produced. To improve the results further. And one interesting idea could be to take a set of similar documents and to produce poems which give an overview to the different aspects of this topic. For example, taking a lot of news stories about. Ukrainian crisis. Something like that and to produce poems which give many viewpoints to the same situation.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So thank you very much for your attention. Any questions? Part of your method appears to be also the extraction of patterns. So how exactly did you do that? Could you clarify a bit of extracting patterns? I guess you are extracting patterns from a set of comments of the same genre, and it is not probably just the words which appear, but it's also the structure. So how do you decide upon a certain pattern which you have extracted? That's an interesting question, so we haven't been very much concentrating on that that part yet. So the idea is that we just take take some template. And the analyzed that according to post tax morphological. Information like cases, politix, this sort of things and then we have a set of possible replacement words which can be transferred to the specific forms required in the template and we try. With all the words and match the post tags. Clitics, these sort of things because we can't do the morphological synthesis for all the word forms, and then we just take those words randomly. But it could be very interesting to analyze the template abit more carefully and see what kind of patterns there are. I was just, but it's a bit of a suggestion, but I thought as opposed to using news stories as an input, you could consider someone like Thomas Hardy and novelist who produced a lot of you know longer I'd written work and then in his later later on in his career he really condensed it and started generating a lot of poetry. Which was, you know, really, you know, a concentration of his ideas, so perhaps you could take like all the novels of him and then. You know, I think yeah, that's between the yeah, that's very cool idea and actually we are now cooperating with one point who has been writing a lot of poetry, and he was interested to see what kind of things we can accomplish by taking all his works and doing some analysis, then producing some more poetry in his style. And of course, this could be done for novelists, but I think that Thomas Hardy is a particularly good example, because in his early work he was. Very long form novels, and then you know poetry is a real condensation of ideas, right? And that's what he did later in his career before he died before he died after his wife died and he was like in this intensely sad. But it was really a distilled and of or distillation of what he was like working on throughout his entire career. So you could potentially like compare what yours is, what your sister is doing with what he was doing. With his poetry, yeah, sounds like cool idea, so we'll definitely try the high. Yeah, so in the interest of novelty, you use associations with the lowest. I guess the log likelihood ratios, which is unusual use of this statistic in sort of like. Corpus linguistics sort of like workwear. Typically we're looking for the people used, actually the least novel sort of associations like you were showing in your table, right? So I guess this is based on an assumption that choosing these low. This novel associations leads to more interesting poetry, but there's a tension there between novelty and, I guess, coherence, where if you were putting in pairs of words such as I don't know marijuana abuse or something like that, then? One might imagine that the poems come off looking a bit more coherent, so can you say a bit more about why you think this is something worth select sacrifice? Yeah, we can take a look at this. Example associations, for example. So we're using the most novel pairs, like different alcohol. This sort of things and fill it could be possible that by using the least novel pairs we could get bit more coherence into the poetry. So it's an interesting research question, but the idea was that. If we took the least novel pairs. We couldn't get very much of the specific content of that new story into the poem because we could take, for example, Los and Angeles as an Association which could. It could add some coherence to the poem, but it wouldn't be about the new story anymore. So did this answer to you. Question. Yeah Henry Diesel yeah yeah sure. I admit that so we are researching that more in the future. During your poems we were laughing a little bit. I'm sure you know, so that might be an indication that we weren't taking them entirely seriously, so I just wanted to give you an anecdote from something I recently did, which. I increased the way in which the amount of seriousness that too serious people took with my poems by not changing their output, but by changing the presentation. OK, so the paper you cited mean Tony at the start there's a. There's a poem in there called blueberry blue overalls and it's about the the African National Congress. And so it could equally be taken not seriously. the BBC Radio 4 show came looking for power generation, so we gave him our poems. And they took the poems and gave it to Manchester professors at the University of Manchester to critique, hoping that they would just say they're awful. What is this all about? 'cause they were looking for that so to try and manage that. I first of all, as you know, the software produces commentaries, so it didn't just say. Here is my poem about blueberry blue overalls. It says here is a process which led to that here in my motivations, his exit from the newspaper story came from and that they specifically mentioned that that was more interesting than the poem. And that project together were interesting. And the second thing I did was to specifically say to them. These are not poems. These are something I'm calling see poems for computationally generated. They're not to be taken seriously as a poem by a human because they're not by human. So I just wanted to ask you, I think I asked you this in in Finland, are you going to think about doing the the comments generation and you mean framing generation friendly? Yeah, in general. Yeah, we have been thinking that. And as a matter of fact, Oscar will be presenting on Friday something in the line of that. So we took some poems and generated some visual images. As framing photos, or could be seen that the points are framing for the visual images as well, but we have been thinking that and it's definitely a very important research direction to go, because I think framing is very important part and it should be emphasized more.",
+        "start": 609.0,
+        "end": 638.0
+    }
+]

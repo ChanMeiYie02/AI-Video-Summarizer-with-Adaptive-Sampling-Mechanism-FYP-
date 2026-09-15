@@ -1,0 +1,21 @@
+{
+    "id": "r7r3vzt42bn3qrvirhtqtd5ynych4htg",
+    "title": "Decentralizing power: how we want to keep CALLector ethical",
+    "url": "http://videolectures.net/WG3WG5meeting2018_rayner_decentralizing_power/",
+    "info": {
+        "presenter": [
+            "Manny Rayner, University of Geneva"
+        ],
+        "published": "Nov. 13, 2018",
+        "recorded": "October 2018",
+        "category": [
+            "Top->Computer Science->Crowdsourcing",
+            "Top->Humanities->Languages"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 178,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 39,
+    "ground_truth_summary_length_chars": 4096
+}

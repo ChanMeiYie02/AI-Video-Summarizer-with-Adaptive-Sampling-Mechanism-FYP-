@@ -1,0 +1,20 @@
+{
+    "id": "xryivhut6txarpy5r67hbqijqjp3iqmt",
+    "title": "Challenge in Astrophysics",
+    "url": "http://videolectures.net/psm08_bridle_cia/",
+    "info": {
+        "author": [
+            "Sarah Bridle, Department of Physics and Astronomy, University College London"
+        ],
+        "published": "Feb. 7, 2008",
+        "recorded": "January 2008",
+        "category": [
+            "Top->Physics"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 272,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1357
+}

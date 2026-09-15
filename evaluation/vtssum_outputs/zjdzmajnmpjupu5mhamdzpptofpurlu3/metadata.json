@@ -1,0 +1,21 @@
+{
+    "id": "zjdzmajnmpjupu5mhamdzpptofpurlu3",
+    "title": "Learning Scale Free Networks by Reweighted L1 regularization",
+    "url": "http://videolectures.net/aistats2011_liu_learning/",
+    "info": {
+        "author": [
+            "Qiang Liu, Donald Bren School of Information and Computer Science, University of California, Irvine"
+        ],
+        "published": "May 6, 2011",
+        "recorded": "April 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Structured Data",
+            "Top->Computer Science->Network Analysis"
+        ]
+    },
+    "num_segments": 51,
+    "num_sentences": 202,
+    "num_clips_with_summary": 21,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 3560
+}

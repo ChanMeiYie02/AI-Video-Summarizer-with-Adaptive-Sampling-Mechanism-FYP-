@@ -1,0 +1,22 @@
+{
+    "id": "l7wgkqklhzy3wtxs3sn5s6p2gjdcqo45",
+    "title": "Abstract Access Control Model for Dynamic RDF Datasets",
+    "url": "http://videolectures.net/dataforum2012_fundulaki_rdf_datasets/",
+    "info": {
+        "author": [
+            "Irini Fundulaki, Foundation for Research and Technology - Hellas (FORTH)"
+        ],
+        "published": "July 16, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Computer Science->Semantic Web->RDF - Resource Description Framework",
+            "Top->Computer Science->Internet, World Wide Web",
+            "Top->Computer Science->Semantic Web->Annotation"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 139,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2992
+}

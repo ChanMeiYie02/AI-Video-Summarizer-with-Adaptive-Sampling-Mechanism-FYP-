@@ -1,0 +1,20 @@
+{
+    "id": "o6vr6v4tjupnszfgjiiwev6lekxlms5j",
+    "title": "My Experiment",
+    "url": "http://videolectures.net/eswc09_roure_myexp/",
+    "info": {
+        "author": [
+            "David De Roure, School of Electronics and Computer Science, University of Southampton"
+        ],
+        "published": "July 28, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 142,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1146
+}

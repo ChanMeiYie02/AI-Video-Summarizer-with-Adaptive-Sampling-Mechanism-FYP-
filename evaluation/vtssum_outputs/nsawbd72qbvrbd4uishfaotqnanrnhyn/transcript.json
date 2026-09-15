@@ -1,0 +1,142 @@
+[
+    {
+        "text": "Thank you very much for the introduction, so this was joint work together with my colleagues, Country Club sheets, Middleton Ozone Hospital from Grad soon Aver city type of technology and zemans.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "So first of all, let me motivate our talk structure. For motion has become very important and popular in the last 10 years and we are now able to reconstruct whole CDs by just using images. We also can do this in real time because of the increased processing power. The result of such a structure promotional slam process is pastor presentation of the environment and the camera poses itself. Unfortunately, the sparse representation of the environment by just this point cloud is for many applications not suitable, for example in augmented reality or robotics applications. We need a real surface representation. So therefore, these points clouds cannot be used directly. On the other hand, we nowadays have this full metric surface reconstruction approaches, which came up in the last four to five years, and we can obtain really high quality surface reconstructions. But the problem is that we need these approaches are volumetric based approaches and therefore they have a very limited scene size. Becausw everything has to be computed and stored on a GPU to achieve real time requirements.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So therefore the motivation forward. Our work was can we reconstruct a suitable or suitable surface from just using this power structure for motion points? So the surface has to be consistent 'cause we have to be or it has to be robust against outliers. 'cause we're dealing here with reconstructed points from feature matches matches which are always yeah, sometimes noisy when we integrate want to integrate such a surface of construction in slam approach. It also has to be fully incremental. That means we have to integrate new 3D points and update our surface incrementally. Furthermore, when dealing with slam it should be real time. And we should be able to handle arbitrary camera motions, which means that we integrate new 3D points in arbitrary parts of the surface.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "So what are the challenges of such an approach? First of all, the density of the sparse point cloud is completely inhomogeneous, as you can see here on this image we have parts where we do not have any kind of 3D information and then we have parts which are really densely sampled and therefore we have to find an approach which can deal with such enormous genius point clouds. We also, as I said before, we have to deal with severe outliers because of false matches. And when we use it in a slam approach. Our approach has to adopt to continuously growing point cloud and as I said before already, we have to deal with arbitrary camera motions, so already revisited parts that are revisited by a camera should be refined in the surface.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So now I come to the outline of my talk. First of all, I will present some related work. Then I will explain how we obtain the surface by labeling approach and how we achieve this incremental surface reconstruction. Finally, I will show some experiments in the video.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So to come to the related work, nearly all our work in this field is based on irregular discretization of the space into tetrahedra. So the data here, as you can see here is innocent volume element consisting of four points which are connected by 4 triangles. So all approaches used the sparse point cloud. Make a deal on a triangulation of the sparse point cloud and then perform a classification into the free and occupied space. The advantage of our determination is that it can be. Is this really fast to compute and it can be incrementally updated if new information arrives. As I said before, the class then all approaches try to classify each of these tetrahedra into free or occupied space using visibility information. The interface, then between the free and occupied tetrahedra is done the resulting surface. The method methods which have been developed in the past years. Or one of the first method is just free space carrying. So because we know which 3D point is visible in which camera, we can remove all tetrahedra which prohibit this free space constraint. But unfortunately this approach is not really robust to outliers, as we can see later in the experiments. In 2007, #2 has proposed the surface reconstruction is a labeling problem, so he wants to classify each heater heater into free or occupied space by defining an energy function. And then performs a graph cut on that energy function. This is very robust. Against Outliers produces really nice results, but it's not suitable for incremental reconstruction becausw. It also depends on this free space carving constraint. Very recently there were several other approaches which try to aggregate free classified tetrahedron into a common into a common volume. So yesterday there were supposed to hear which has shown this approach.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So what are our contributions? So we propose an algorithm that performs a robust fiachra pit labeling using a deal on a triangulated sparse point cloud we formulated is that as conditional random field and our energy function under describing this random field is can be very easily computed and updated if the deal on it regulation changes. Finally, we solve this incremental labeling problem because our deal on it real changes overtime using a dynamic graph cut and therefore we are independent from an overall scene size.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "So before I go into detail, I will show how this approach works. So this is our input point cloud.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Then we perform this deal on a triangulation, so this is a wire frame presentation of the deal on triangulation. Since it's very difficult to see what's going on there.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "We have just put out a slice of this volume and you can see here in front. This part has been labeled by our approach as free space in this part. Here has been labeled as occupied space.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "The interface between free and occupied is then the resulting.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Face, as you can see here.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So how do we achieve this labeling? Our goal is as I said before, is to classify each data head on into free or occupied. Given the visibility information, the visibility information is given by the information which 3D point is visible in which camera. So this is shown here. So you have here tetrahedron and all of these Rays are the visibility information. Our energy function which we want to minimize depends on a unary and binary term. The unary term describes the probability that the tetrahedron is free or occupied space. Given the visibility information. The binary term is just the smoothness priors that neighboring tetrahedron are labeled should be labeled equally. The specialty of our energy function is that the unary as well as the binary term do not depend on the whole Ray or the whole visibility information, just visibility information which is directly connected to a tetrahedron. So we do not do things like like raycasting that the unary binary depend on Rays passing through a tetrahedra. Just using the race which are directly connected to a tetrahedron and this makes our approach very, very fast. The energy function itself can be optimized by graph cuts because it's a submodular function.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "How are unary potentials defined by? Unary potentials are motivated by a truncated science distance function, so as you can see here, if a teacher here on this intersected or it's intersected by many Rays which are directly in front of a vertex, then the probability that this teacher here on is free space is very high. So given this vertex we can see that this trade on here is with very high probability. Free space the tetrahedron in extent of the race of this vertex. Describe or say that the probability is very high that this state rate on here is occupied space our universe are looking like that that we just count the number of how often a title here and is classified as free space and is occupied space. So this advantage is that we do not have to perform a array data hidden intersection. We just have to count how often that are hidden is in front or behind a certain vertex. So the delani data structure which is used underlying also speeds up discounting.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Our binary potentials are defined as follows. Typically only 50% or 30 to 50% of the tetrahedral get unary terms. Therefore, we need strong regularizer regularization. Basically, we can assume that it's very unlikely the two neighboring tetrahedra get the same or different labels. Sorry, therefore we assign high costs. If teacher hidden get different labels. Except for Neighboring's tetrahedra that are not crossed by common race, so this is shown here. So here we can see these to Theta heater are intersected by common race and therefore they should be labeled equally. Where these thread on here are not intersected by common race and therefore the probability is higher, they should be get be labeled differently.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So this was our energy, but now it's a question, how can we do this incrementally? So when we add a new 3D points or SLAM algorithm produces a new 3D point. We integrate this new 3D point into our delauney triangulation. So this is shown here. In the example, we start with the standard or. This is the deal on generation. Then we add a new point and all tetrahedra within a certain local boundary are destroyed, and then you take her account created in here. So this also this change in the delani translation has to be reflected in the energy function. So we update our energy EN two N + N + 1 by just removing all terms related to the tater hater, delete it here and justice at new terms for all tetrahedron which are created freshly sewn. Since this can be the universal binaries for the new ones can be calculated very fast. The whole update takes around half a second for 1000 U 3D points.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Now we have the problem we have now and deal on translation which can be easily updated. We have an energy function that can be easily updated, But the problem is we always have to solve or find the optimal labeling labeling for the energy function. So we needed this labeling. This labeling basically can be obtained by a standard graph cut, But the problem is that our energy function grows and grows. Overtime is more 3D points we add so we can see here in this plot, so it's more 3D points we add. So this is the number of 3D points. The higher gets the time for solving the graph cut, so therefore our approach when we use just a standard graph cut. This would not really really scalable for large scale scenes.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So the solution for that one for that problem was proposed by pushing it cool in 2007. They defined or modified the standard graph cut of boikov bye bye approach that you can add and remove several terms of your energy and you can reuse the labeling result from a previous energy which is nearly similar to this current energy and therefore the complexity then depends not on the overall scene size or a number of terms in this energy function, but just on the number of changed weights. Between two energies. And we show later in the experiments that it really speeds up the process.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "So to come to the experiments, first of all, we performed the static experiments. So we had already made a structure for motion reconstruction. We constructed about 80,000 3D points which are connected to 4.4 race on average. The size of the scene was around 200 * 450 meters. Acquired by Micro air vehicle.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "So here we compare the qualitative result of our different approaches. So at first we see the free space cargo free space covers by just classifying each tetrahedron which is intersected by array as free space and remove them. Therefore you can see the runtime for that one is about 80 seconds, but the surface was really really noisy. So when we use this approach by Lava 2 where we also defined this energy function, you see the result is much smoother and the. Computational effort is nearly the same. Our approach instead, really produces the same result as that wanna fly by two, but just only in half a minute. So this is because we do not have to perform a full raycast, but just do this counting for the unities.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "We also experimented for the accuracy using the special found data set and you can see here that the error curves of the accuracy of our approach on the state of the art. I need nearly identical.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Now come to an incremental experiment. I want to show video, so we first have taken several images by micro aerial vehicles in the nearly linear camera motion. So you can see here like in structure and slam, the points are reconstructed incrementally. So and here we can see this is the resulting surface, so the grey part is the part that stays constant overtime because it has not to be changed because no new information is integrated and the red triangles indicate parts of the surface that have been updated due to new 3D points. And this is the final result. As I said before, 200 * 50 meters, but just using 80,000 3D points. So we are not restricted to linear motion. Therefore we have the second sequence. So the images are taken very far away from the surface, and then we're getting closer and closer to this figures integrated in the surface. This is also reflected in the surface reconstruction. So first of all we have a very rough mesh, very broad triangles, and then we add new a new 3D information and we can see here that this figure is getting more and more precisely constructed.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "OK, so to show the timings for the reconstruction. So this is the number of 3D points and thousand and this is a time for updating the energy function. You can see that the update of the energy function is nearly constant overtime and varies between zero point .3 and one second, so there's only one peak. This is because we have a large change in the structure of the deal on a tree in relation, but basically you do not see any linear increase. In the update of the energy overtime.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "This is the comparison of the dynamic graph cut against the static graph cut. As I said before, here we can see when we would solve these energy. This growing energy overtime each time. From scratch we will result in a near linear time complexity. So as the scene gets larger we need more and more time for solution. Solve it. When we use the dynamic graph cut where we are just only depends on the number of changed weights in the graph. So and this is since this is nearly constant overtime, so independent. In size, the time for solving the dynamic graph cut is also nearly constant in time.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So to come to conclusion, so you can use or we can reconstruct a consistent mesh from sparse, noisy sparse structure from motion pointcuts by using a robust random field formulation. And we can also do it incrementally and in really in real time so we can integrate about 2000 sparse 3D points per second. And we are independent from the overall scene size thanks to the dynamic graph cut. And we do not need any GPU during this whole process. As we have seen in this video, we're not limited to specific camera motion and we can update arbitrary parts of our surface. And the last thing is, is a difficult to implement. No, it's not so big thanks to libraries like Siegel and the dynamic graph cut, which is publicly available. You can code it in less than 500 lines of code.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Thank you very much. This is great work. Actually this is fantastic. Well, one thing is that in the beginning you saw is this triangulation. You had tetrahedrons of varying size, widely varying size, really big ones and then really small ones. And I'm wondering whether that has an effect on the on the pairwise terms I mean. So, so because it doesn't seem right that have really big tetrahedron, you know, sort of influencing only like 3 or four other ones at the vertex. The good thing is when you see the the so very very big teacher had just created by our layer 3D points. So this RT.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "So we show here so the real surface here is just a very very narrow band, or the detail on very narrow band around the real surface and all the rest here and here. That's just produced by Outlier points and therefore those those big tetrahedrons do not or get very very bad unary terms. Or therefore they are not so important to that one. But you can also think of that you can do for the pairwise term. You just include the size of the tail, try it on or the size of the triangles so they're different extents. Level 2 has done simple extends to define the pairwise terms and one more question if if you would run the graph cut again on the entire graph, you would get exactly the same answer, so that's that's what pushed me. Yeah it is. Yeah it is, so it's really the same result as you would run from scratch. So have you if you're really doing this incrementally, have you started thinking about using it to actually improve the structure from motion performance? So reasoning about occlusion of points and that kind of thing? Yes, I think there are many applications where you can use this. Even this surface for getting better results. So when you think of image based localization for example, you can do really occlusion handling or as you said you can do it for tracking so that you can really use it to get occlusion. So I think there are many applications or for dense reconstruction later you know your rough surface, you have an initial guess where your surface has to be there for. I think there are many applications and also to improve it for tracking and so on. So, but we're working on that, so that's the next step. If you look on the resulting surface is the are they are still.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "So do you see any any way to generalize to go for more complex model? I mean beyond pairwise interactions, things like that. So the reason why this surface is are not that accurate. You have to see is that you only have for example, in this scene about 8003 D points, which are which are very very less for the whole the whole things. And therefore so the deal on it. Regulation itself defines moreles which which which occurs you can achieve from this reconstruction, because this is the discretization. So and I think when we want to have a hell of a better reconstruction, it's more important to to find the discretization which also builds up or shows up this certain details we want to be interested in. So we're just currently working in the question how can we make the discretization at parts? Where we want to have details more accurate and parts we are not interested in, just leave it very broad. So this is the focus we I'm going into. Thank you very much, thanks, thank you once again.",
+        "start": 783.0,
+        "end": 812.0
+    }
+]

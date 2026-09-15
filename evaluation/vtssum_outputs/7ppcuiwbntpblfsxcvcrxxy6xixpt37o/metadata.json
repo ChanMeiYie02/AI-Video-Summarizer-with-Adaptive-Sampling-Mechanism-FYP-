@@ -1,0 +1,21 @@
+{
+    "id": "7ppcuiwbntpblfsxcvcrxxy6xixpt37o",
+    "title": "Incremental and Decremental Training for Linear Classification",
+    "url": "http://videolectures.net/kdd2014_lee_linear_classification/",
+    "info": {
+        "author": [
+            "Ching-Pei Lee, Department of Computer Science and Information Engineering, National Taiwan University"
+        ],
+        "published": "Oct. 7, 2014",
+        "recorded": "August 2014",
+        "category": [
+            "Top->Computer Science->Knowledge Extraction",
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 33,
+    "num_sentences": 124,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 3094
+}

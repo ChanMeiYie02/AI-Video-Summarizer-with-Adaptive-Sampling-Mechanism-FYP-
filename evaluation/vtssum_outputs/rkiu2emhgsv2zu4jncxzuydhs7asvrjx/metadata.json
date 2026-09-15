@@ -1,0 +1,20 @@
+{
+    "id": "rkiu2emhgsv2zu4jncxzuydhs7asvrjx",
+    "title": "Probabilistic Temporal Inference on Reconstructed 3D Scenes",
+    "url": "http://videolectures.net/cvpr2010_schindler_pti/",
+    "info": {
+        "author": [
+            "Grant Schindler, College of Computing, Georgia Institute of Technology"
+        ],
+        "published": "July 19, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Computer Vision->Stereo & Structure from Motion"
+        ]
+    },
+    "num_segments": 26,
+    "num_sentences": 194,
+    "num_clips_with_summary": 1,
+    "num_gt_summary_sentences": 1,
+    "ground_truth_summary_length_chars": 190
+}

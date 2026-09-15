@@ -1,0 +1,22 @@
+{
+    "id": "luydvcws4ly5j6rprjizexqq5f6yzxso",
+    "title": "Optimization I",
+    "url": "http://videolectures.net/DLRLsummerschool2018_ba_optimization1/",
+    "info": {
+        "author": [
+            "Jimmy Ba, Department of Computer Science, University of Toronto"
+        ],
+        "published": "Oct. 11, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Computer Science->Machine Learning->Unsupervised Learning",
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning"
+        ]
+    },
+    "num_segments": 47,
+    "num_sentences": 618,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 3539
+}

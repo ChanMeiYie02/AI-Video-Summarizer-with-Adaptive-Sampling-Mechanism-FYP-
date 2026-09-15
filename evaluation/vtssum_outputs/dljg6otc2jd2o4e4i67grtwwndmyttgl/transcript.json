@@ -1,0 +1,302 @@
+[
+    {
+        "text": "So welcome to this second tutorial on deep learning. I suppose that many of you attended the morning tutorial by Russell. A good enough. So I will. There will be some overlap, but mostly the things I'll talk about will be different. Please. Do not hesitate to interrupt me in the middle and ask questions. We have plenty of time. And just raise your hand and I'll try to keep watching. So I've been embarked on this.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "It's crazy adventure. Because I want to understand intelligence, I want to understand the computational. And mathematical principles that could give rise to intelligence in animals and humans. And of course, in machines that we want to build.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "And I believe that it's central to this quest that we understand. How? Machines or living beings can acquire knowledge. And so I've been doing machine learning for a couple of decades. And since almost the same time.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "I've been working with neural Nets. And there's been a breakthrough in the last few years that people called deep learning that I'm going to tell you about today. And it's both machine learning algorithms that are inspired by brains brains, just like neural Nets have been. But with the particular twists, which is this notion that we want to represent data and we want to do it using multiple levels of representation? And the idea is that these multiple levels of representation correspond to multiple levels of abstraction. And there are a number of theoretical. And practical reasons why we want to do that. That that hopefully you will. Be clear to you at the end of this tutorial.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "So deep learning. Is a particular form of representation learning. Representation learning is a way for. Machine learning systems too. Discover new representations of data they're going to be useful. Deep learning or representation learning algorithms that have these multiple levels of representation. And of course, this is part of the bigger research on machine learning that I'm sure you know about which is itself part of AI.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "A deep learning has attracted a lot of attention in the recent two years, roughly. Although it really had a big breakthrough in 2006, so that's eight years ago. It has become used heavily in industry, mostly because it has almost revolutionized areas such as speech recognition and object recognition and computer vision. There's a lot more going on and coming. In other areas of application. Within computer vision, other applications besides object recognition, like detection. And parsing of scenes, but also in an area that may be more interesting from many people in this audience, which has to do with. Dealing with text, natural language processing dialogue. More recently, there's been some interesting advances in combining deep learning with reinforcement learning.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Let me give you an example of how things have changed with the. Input of deep learning in speech recognition. So this these numbers come from Microsoft and the talk about performance on a switchboard data set, which has been longstanding benchmarks from the early 90s. So the X axis are yours and the Y axis is. Word error rate which one will go down. Things have been progressing well in the 90s. Even though the algorithms themselves haven't changed that much in those years, I was actually working on speech recognition myself in the early 90s when I completed my PhD in 91. I'm. So there was mostly advances because of being able to train bigger systems, bigger models, faster with faster computers, much larger data sets, but there's only so much you can do with that. An in the decade that followed, things have kind of flattened. And then progress started to accelerate again with the use of deep learning. So that's the kind of reason why people have been attracted to this area.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Something similar has happened in object recognition at about the same time, a little bit later there was a breakthrough in one of the most interesting. Challenging tasks in object recognition. The Imagenet data set that has 1000 classes of objects and about a million training examples actually now 20,000,000. And you see, here. Outputs of this early system, which was getting around 17% correct in the sense of the having right answer on the 1st 5. I'm more modern systems that the latest systems have now are now down to five or six.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Percent these were the numbers as they were in 2012. So on the right hand side you see the. Error rates obtained by by other systems competing in those days with the system put up by Alex Kryszewski. Yes, Karen, Jeff Hinton, but won this competition and brought it down from about 26% error to go in 16% error and they said in the. Your afterwards they brought it down to around 11 and this year is down to 6% or something like that. So there's been amazing progress thanks to these techniques.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "You can try it out for yourself. Russell probably showed this URL. This morning just deep learning dot CS. The Toronto that Edu you go there an you can upload a URL of an image. And it will use these 1000 categories to try to identify the main object in the image. So here it's saying convertible. I hear it's saying chimpanzee here it's saying sports car and I just picked those images without searching much using Google Image Search and pasted them. It doesn't. It's not always perfect, for example here it says Killer Whale. With 35% confidence and Tiger Shark with 19% confidence in scuba diver, so it's not always perfect, of course, and there's a lot more to be done. But this German Shepherd was perfectly recognized and. So. It's if you've tried computer vision and object recognition. In the past it was very brittle and these systems are just. Made a qualitative change by the way in which they are robust to all kinds of variations in illumination and background, and things like that.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "In my lab, we applied these techniques to emotion classification from movie clips from video using both the audio and images an we want to competition. Was held last December using using very fairly similar systems.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So with these and other advances in 2013, the MIT Technology Review declared declining to be one of the 10 breakthrough technologies of the year.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "And then there's been a lot of. Journalists talking about it in New York Times and wired and others. An companies have started competing. For. For the technology and for the people working on it in particular, Google and Facebook, where in an arms race too. Acquire our companies or people one big event and this was the Google buying deep line for about 500 million dollars. Anne Anne now there's tons of startups in this in this area.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "OK, so that's all nice and there's a lot of hype. But there are some real research that remains to be done and. Some interesting challenges, so this tutorial is about these challenges. Also introducing you to some of the concepts behind deep learning. And I'll try to tell you about what I consider the major challenge, which is how to move the successes we've had with supervised learning. Most of these applications have been using supervised learning. Two unsupervised or semi supervised learning where you have tons of unlabeled or weakly labeled data and structured outputs which is tightly connected to the improvised learning question. Where the output of the system is not just a category or a few numbers, but it's something that's very high dimensional, like a sentence, an image, or some complicated data structure. The thing with these both supervised both these structured outputs and this provides learning scenarios. Is that probabilistic models quickly become intractable. Computation both from a computational point of view and from the statistical point of view. So the use of deep learning in these areas could have a fairly important impact. I'll tell you about the challenge of scaling up from a computational point of view, because what we've seen in recent years is that the better models are the bigger ones, and we're limited just by our ability to train bigger models and related to this, I'll tell you about some of the challenges arising in. Training deep Nets. So there's a numerical optimization issue. Even though the techniques we're using are doing amazingly well, we have some indication that we're not doing as well as we could, and I'll tell you about that and some ideas to get around these. Challenges.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "And if we can, if we can face these challenges, then it can be a much more impressive impact on AI. I think with computers that can see and hear and understand natural language understand humans. Anne Anne provide better service to humans and of course maybe even understand. Help us understand how humans and animals. Managed to solve difficult learning problems.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "5. So now let's go a bit more technical slowly. Anne. How do we build intelligent machines well? You need knowledge in order to take intelligent decisions and you need that knowledge to come from somewhere and part of it could be that we. Feed that knowledge directly to the machines, but what we've learned in the last few decades is that a large part of it has to be directly acquired by the machine, and that's what machine learning is about. And if you. Learn about machine learning and you try to figure out what are the core elements that you find in machine learning. Well, one core element is priors. In other words, no, there's no general purpose machine learning algorithm. You need some priors and price could be very specialized to your application. Or they could be very broad and in AI we're trying to look at very broad priors. But both both could be interesting. Then there is always an element of optimization or search where searching for a good solution to a problem in a large family of solution. Or in the case of inference, we're looking for searching for a good explanation to a particular input, like when you're doing machine translation or or speech recognition. There are many explanations to the thing we see and we're looking for the best one, so there's search or optimization comes up in these algorithms. And practically, from a computer science perspective, there is also an issue of efficiency of computation. We've seen a lot of progress in recent years due to GPU's that can paralyze a lot of that computation. So thinking about that aspect is also important. Now. The more fundamental question behind machine learning is generalization. How do we get? Our learner to provide the right answers for new cases. And the take that I'm trying to put forward on this generalization question is a geometrical One South. During the presentation you will see this come back when I'm thinking about generalization as how we take probability mass. That we know should be high on the training examples an spreading it in a right way. Guessing where it should concentrate. So you will see this notion come back. Now, unfortunately, in high dimensional spaces, guessing where to put probability mass is seems intractable, because there's a exponentially orange large number of configurations of places where you could put probability mass. So that's the curse of dimensionality. And how do we get around that? Well. Something I've been pushing in the last few years. Is this idea that? We can get around the curse of dimensionality. If our learning systems can discover and disentangle separate out. The underlying factors that explain the data. The underlying cause is basically making sense of the data, so it may seem like a hard thing to do. And of course it is, but I've been trying to. To push that as the agenda for making really serious progress towards AI.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Alright, so now let's go back to machine learning 101. Let's consider this one dimensional supervised learning task where you have to predict Y given X, and if you're given these examples, these green stars. And of course there is a true underlying function that relates the wise in the axis, maybe with some noise. And you're trying to guess it using these examples. So that's a simple thing that we're trying to do, and here it will be very easy in one way to see why it will be very easy is that the I can't do that the. Examples are insufficient number. That they can cover the ups and downs of the function you want to learn. And because they can cover the ups and downs of the function you want to learn, you basically just need to interpolate.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "This is shown in the next slide. So you can do it, you know, in very smart ways, and there's a lot of. Statistical machine learning that you know does that with very beautiful mathematics like kernel machines. And that's nice and. What it does really is it exploits aprior. Remember I said one of the crucial ingredients in machine learning is the priors. What's the prior here? The prior is what people call the smoothness prior. It says the value of the function you want to learn. At Test point X. Should be close to. The value you observed in the neighborhood, so the function is smooth. It doesn't change rapidly, so that's why interpolation works. That's nice and we should use that prior, but it's not.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Enough when you go into higher dimensional spaces where the set of configurations of interests becomes exponentially large. And maybe the functions you want to learn aren't that smooth. Then you get into trouble 'cause the number is the number of ups and downs of the function you'd like to cover or the number of configurations you'd like to separate. Could become much, much larger than the number of examples you could ever hope to get. So what do we do? One idea people had about 15 years ago is that we could solve that problem by reducing dimensionality.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "But we've shown with some theory that it's not really dimensionality. You can have a 1 dimensional function that could be very very hard to learn. What makes it really hard is the number of Upson Downs is the variability in the function you want to learn.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "And Furthermore, even if you were able to reduce dimensionality. It might not be enough. Because the functions maybe the manifold's on here, which is data concentrate very a lot and actually we do see this in AI applications. Now this idea of manifold learning however is very inspiring and it has been inspiring for me and for many people. And it relies on another prior, so I've already talked about one prior which was a smoothness and there is a second one here. It doesn't apply to every data set. Of course, like priors, they apply to some problems, but not all. And what it says here is the probability. Mass concentrates, in other words, if you get if you look at your data and you look at the variables of interests. You consider completely random, say, uniform configurations of your variables. These random configurations would be very unlikely you wouldn't. You wouldn't expect to see these in the data, so images where you pick the pixels in dependently you get these white noise and these are not at all like natural images. If you look at sequences of random characters, they don't look like English. What's the chance that you would produce a natural image by randomly picking pixels or what's the chance that you will pick? And a natural looking English sentence by picking characters randomly for long enough tiny. Exponentially tiny. So that says something about the kind of data that we're working with here. In many AI tasks, the data has this manifold structure. The probability concentrates and in continuous case we think of that concentration as regions. Of low probability of low dimensionality. Um?",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "So. So the geometrical view on machine learning is we're going to try to guess where this probability mass concentrates. And in order to face the challenge that there is an exponential large number of such places where we could put probably mass. We're going to go through this notion of representation learning. So the idea is going to change. We're going to do a change of coordinate. We're going to move to a new space where things are simpler and potentially of lower dimension. So in the figure we see this one dimensional manifold which is twisted. If only we could map the points on the left. Through a space where the same manifold now corresponds to a nice flat line, even horizontal line, then the modeling problem would see would be much easier right on the right hand side you could just use a simple Gaussian and you can basically get it right. OK, so the key is going to be learning these representations that suddenly make the learning problem easy.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So again to emphasize the same idea. Nobody gives US data. That's what we call the empirical distribution an from the general point of view, you can think of these points in space in the space of configurations. And at each of those points, we know that policy should be high. We know that if one of the axes X and the other is Y, then when X text these value the corresponding wisely. All right, that's a raw data, and what smoothness tells us is that neighborhood configurations were also likely. And that gives us a little bit of mileage, but not that much in high dimensional spaces. So instead, we'd like to figure out that these points are kind of aligned in some way. They have some structure. If we can find that structure, then we can generalize much more accurately than with this simpler spreading. The mass around idea of smoothing, but you see this, it's like a new representation where now the coordinate system would be the location on that curve. So that's what representation learning is about. It's not necessarily going to give us really a Euclidean coordinate system, but it's going to move the data into a new space where things become easy. At least that's going to be the goal.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So that's what representation learning is about. It's about taking our data and transforming it. Extracting features that make the life of further machine learning easier. Now the traditional way of doing things in machine learning is to handcraft your features. Because humans are very good at that, they can understand the problem. They can think about it. They can guess good features, good transformations, and they're looking for features. They're going to be very informative for the task that they care about. But that's a lot of work. It's a lot of manual labor where somebody has to understand both machine learning and the application in industrial applications of machine learning that I was exposed to, it was usually more than 90% of the effort was in designing these features. And that makes the spread of machine learning kind of expensive and slow. What we would really like is to use computers to figure out those features, so that's what representation learning is about. Of course it doesn't prevent you from using your knowledge to provide the data in a good form, but if we could let the computers figure out good transformations of that data.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Would be great. This figure illustrates the same notion. I'm with traditional. Well, it goes from rule based systems to deep learning. So on the left hand side you see the old way where there is not any machine learning. You handcraft a program that goes from inputs to outputs. Then we have the classic machine learning methods where you hand design your features and then you have machine learning that map those features to your output. So your classes. Now with representation learning, we introduce the notion that the features are going to be learned rather than hand designed. Of course, that doesn't you can. You can also think of it as adding an extra level where we take the hand design features and fold them by better learned features and with deep learning is just that those features are not going to come in a hierarchy of features, so we can have maybe lower level similar features. And on top of the more complex features and you can have more than two levels of course.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "And when you do that, you can do all kinds of exciting things. The Google Image Search system is based on this idea and what it adds to this notion is not different. Modalities like texts and images can be associated through these representations that are learned. So, for example, what you see on the slide is. A system in which images are mapped with one function. Called by I. To a representation space, A vector space of 100 dimensions, and there's another function. Find W for words or queries that takes words or queries. So text Ann Maps them to the same space and those two functions are trained jointly together so that when somebody types dolphin and then clicks on that image. The two objects end up close to each other in that space. This work was done by my brother Samy Bengio, by the way, and his collaborators, Jason Weston. Nicola losing you and others in a series of papers around 2010.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Now, this idea of mapping words in language to a representation which is a vector. This was something that I put forward in 2000 and presented at NIPS. 2000 follows up on earlier work from Geoff Hinton in representing symbols in the 80s. And in the work I did, we learned what's called a language model in which we do unsupervised learning on sequences of text, sequences of words, and as a side effect, each word gets mapped to a point in a. Vector space in those days was 50 dimension or 100 dimensions. You can't see those words, but we can zoom in. Well. First of all, you can see that there are these big big clusters. It turns out that these big clusters corresponds to correspond to part of speech, but if you zoom in, you start seeing sort of. Semantically grouped words, for example. Here we have countries or different verbs or variants of to be. So you get a sense that when you learn representations. Um? Objects that are semantically similar and are close to each other and that's connected. That's useful and connected to the earlier prior of smoothness. So words viewed as symbols are as far as each other as any pair of word is as far as each other as any other pair of word. But once you've mapped into that space, suddenly, if you've learned something about a word. Like take then that might generalize to nearby word in the same space like get. And actually, you can think of directions in that space. As attributes. That the system is learned. And.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "This idea was pushed in a very nice way by Thomas Mikolov and his collaborators. I. Where they discovered that if you take these representations an you take the differences between words. Those differences have a meaning, and that meaning is preserved throughout different regions of space. So for example, if you take the word embedding for friends. And the word embedding for Paris. So these are points in 700 dimensional space and you subtract them. You get a vector, and if you take Italy minus Rome, you get another vector, but these two vectors are almost the same. And so you can do algebra and find that King Minos Queen is almost the same as man minus woman. So you can use this to reason by analogy, and it it's something that comes up without having been trained for. It comes up of unsupervised learning of modeling sequences of words. It's not something that the system is being trained for it to look at pairs like this and make sure they match. So this is quite exciting. It brings us to the realm of semantics in a way that we couldn't imagine 10 or 15 years ago would be able to do.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "And these kinds of word embeddings recently of making starting to make breakthroughs in machine translation. One of the areas of AI that I consider really interesting because. To do a really good job in translation, you need to understand the sentence. Um? So we have a paper coming up in September, I think where we used these deep recurrent networks in order to do machine translation. And there's been in at the end of June at the ACL conference best paper award given to. Paper from BBN. Where they have achieved fairly amazing improvements in Bleu score, which is the metric used in machine translation. For some, for some tasks, I think they did it on Arabic, Arabic, English and Chinese English.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "In our system, the way we think about the machine translation problem and I give that as an example because it gives you a taste of. What it means to think of machine learning problem with representation learning as a core element? So what we do is we take a sentence like economy growth has slowed down in recent years an we have a machine which happens to be a recurrent net in this case. That not only represents the words in the sentence, but also represents the whole sentence as as a object which. Here is a big vector. And then there's another machine. Which we call a decoder that takes that object an Maps it to a distribution over sequences in the other language. An if you sample from that, or if you look for the most likely translation, it might tell you something like lacrosse economy caravantes danniels any which is a good translation for this. Sentence this actually was run on our system and even have a demo running. If you want to try it out. Alright. So this encoder decoder idea is actually something I'll come back to because these autoencoders come up as very useful ideas in deep learning.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "So let us go back to this notion of having multiple levels of representation. First of all, there is. All kinds of vertical results which point in the direction that representing functions. With sufficient levels of composition with sufficient. Composition of nonlinearities and combination of pieces. Um? Can give you an exponential gain. In other words that there are some functions that can be represented very efficiently. If you use what's called a deep circuit. Where you do some nonlinear computation. And you do it again and again. In different ways. Those are functions that can be represented very efficiently in this way, but that require an exponential amount of computation if you do it with a shallow circuit where you're only allowed to do, say, 2 levels of these operations. So these operations might be things like Boolean gates or or neurons, artificial neurons. Or rectifiers we've been playing with recently. There's also inspiration from. Brains, as I mentioned at the beginning of my presentation. When we look at. The visual cortex in particular, which is probably the best understood part of our brain. We see that the information coming from our retina gets transformed. In multiple stages going through different areas of visual cortex. And if we try to understand what the neurons do in these different areas, they seem to extract features. There are very sensible if you if you talk to computer vision people. These features make a lot of sense and the lower level features that computer vision people are used to extract, like edge detectors are extracted in the first of these areas and as you go higher up they detect more complicated shapes an. More Interestingly, the detect features that are more specialized, more invariant to all kinds of changes that can happen in the input. And eventually we have neurons that detect whole objects. There's also this very interesting observation that the cortex seems to be kind of general purpose learning machine that it's not specialized to a particular task, it is. But parts of the cortex parts of the cortex which are meant to do one job like vision could be doing another job. If, say, you get blind, or I'd say the part of the cortex which would be meant to do music. Could suddenly be larger if you're a musician, then if you're not a musician, so that means there are neurons that would, for someone else, have done another job. But because you're practicing using a lot, some neurons have been recruited to do that, which means they probably all use the same mechanism. So it looks like there is one simple mechanism that's used for learning all kinds of things in cortex. So that's that's very encouraging and sort of inspiring for for many of us. And then of course there is what we know about condition and how humans solve problems. Which involves. Breaking problems into simpler problems and composing the solutions. Learning similar things first and then more complicated things on top and so on. So we want to have these these features as well.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "And I'm going to skip this.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "So. This illustrates what I was telling you about regarding. Higher level features defined in terms of lower level features. So what you see in these circles are. What different artificial neurons like to see in the input and the first layer they like to detect edges? In the second layer they detect corners and contours and higher up they start detecting object parts and so on. And eventually objects.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Do we write programs as one very long main program? No, we write.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Programs that have structure and structure means. Recursion or reuse of functions, functions calling other functions. And that's something we want to have in machine learning as well. That's what one thing that deep learning is trying to bring to machine learning in general.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "Yes. I'm going.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Skip that so as I mentioned. In 2000 something something happened. Though many of us had the intuition for many years that we would like to have deeper neural Nets, we hadn't been really successful in training deep neural Nets with back prop or other methods. But something happened which really started in Toronto with Jeff Hinton, and at almost the same time in my lab and yellow cones lab, where we discovered that we could train very deep Nets if we first used. Unsupervised learning to train each layer one at a time in a kind of greedy way. And each layer would be trained in. A nurse provides way to find a better representation on top of the representation of the lower level. So the initial work used are BMS restricted Boltzmann machines, which I'm sure Ross talked about this morning. Autoencoders, which I will talk about later and sparse coding which I want to talk about and the basic procedure.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "We used is this. We take the raw data in its initial form, like pixels.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "An we learn a set of features and the way we learn those features. For example with autoencoders. But it's.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "Almost the same with RBM's is we have a little neural net, which is fairly easy to train, for example here which tries to reconstruct the inputs with some some. Some regularization or something that prevents the neural net from just copying the input to the output. And once we've done that, we.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "Throw away this this reconstruction layer and use this new representation as input to.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "Train another autoencoder. And we can do it again.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "An after awhile we get more and more abstract features. Which we can use.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "As input to logistic regression. And just do classification with that. But we can also do what we call fine tuning where we just consider this as initializing very deep feedforward neural net. So this was a procedure we worked on in those in those days. There's been a lot of progress since then. In particular.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "The main progress is that we found ways to train deep supervised neural Nets without even using improvised learning simply by changing the way they are trained the way they are initialized and the architecture. So we found that the initialization of the parameters was quite important. Um? And the kind of nonlinearities we would use was quite important. In particular, we've been using what's called piecewise linear, non linearity. So instead of the traditional sigmoid or hyperbolic tangent. Things like rectifiers and the Max out which is related have been found to work quite a bit better for deep Nets, especially an. We've also improved the ways of regularising. So in other words preventing overfitting and helping to generalize with a technique called dropout, which I will also mention later. The unsupervised pretraining remains important when you deal with rare classes. When your number of labeled examples maybe is not is not large enough, or if you want to transfer to new domains or new classes or simply as an extra regularizer.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "OK, so now I'm going to do a little bit of. Machine learning 101 units. Tutorial. To explain some of the tools later. So what we want to do is to learn. A family of functions I call F Theta, where Theta represents tunable parameters and the goal of learning is going to be changed. Those parameters so that we minimize some expected loss on you. Examples where these examples are to be coming from a data generating distribution. So I'm going to call these examples Ed here and they come from an unknown distribution P of Z. And we have a loss function L. That measures how well our function F Theta works. For the example zed. So for example, in the bottom we see the case the classical case of supervised learning, where Z is has an input part X and an output part Y, and we're trying to predict Y given X and then the loss has two arguments. The output of the function applied on X&Y. So if F of X is close to why we're happy? If not, we're not an. We measure our happiness and in this way. Typically we will also consider adding to the training criterion in addition to the average loss on the training set, a regularizer. The classical regularizer is some function of the parameters, like the smoothness I was talking about can be expressed as a regularizer. Sometimes the regularizer depends only on the data on the parameters, and sometimes it also depends on the data itself. Now the last ingredient we need to make an actual learning algorithm is a method to approximately minimize this average regularize loss on the data, and this approximate minimization. There are many ways of doing it, but I'll tell you about some of the simplest ways which are based on stochastic gradient descent and many match mini batch gradient descent. OK, so these are the.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "Some of the actors, one of the nice things about this framework is that it allows you to. To learn to estimate conditional probability and also probabilities in general. So in many supervised learning applications you can frame your problem in terms of estimating P of Y given X. So you want to predict Y given X. But Y could be something complicated. And instead of. Printing is expected value. Maybe we want to actually estimate its distribution in general. So keep in general we have this notion. We want to estimate P of Y given X. And the way in which we're going to stick our neural Nets in this is that we're going to declare that P of Y given X is parameterized. So we can imagine that P of Y, the distribution of Y for a given X is, say, a parametric distribution with parameters Omega. But those Omega, instead of being fixed like an unusual parametric distribution, are going to be a function of X, and that function is going to be the output of our neural net. So if we're going to be using our neural net to predict, say, probabilities over classes, then those probabilities are the parameters of our same multinomial distribution. An once we've set things in this way, we can define a natural loss function for these, which is the negative log like queuing. So in other words, given our input and given our function F data, we obtain parameters Omega and these parameters assign a probability P of Y to the observed Y and would like. That the observed Y given X gets the highest probability as possible, measured with its log and the log is because we want to add probability, add the loss over examples and we are assuming the examples or independent. If they weren't, then we can still fit that in by considering the joint an capturing that those dependencies. So as an example, 2 examples to classical examples of this is when the Y is the usual real number, which you might imagine represented with a Gaussian. So that's the Gaussian. Here isn't the marginal distribution. Why it's the conditional distribution and why so it means, given XY has maybe Gaussian distributed, so basically it has a typical value, but there is some air around it. And that's represented with just two parameters, the mean and the and the variance, and so you can have that mean you and the variance Sigma B outputs of your neural net. Typically we only make the mean very an X an. We let Sigma be some parameter which doesn't depend on X, but you can also make Sigma variance depend on X. So there are cases where. Only the input tells us about what the why should be, but also what uncertainty there should be about why. In that case you can make signal the output of your neural net as well. So in the in this simple case where Sigma doesn't depend on X, then your log loss just log Sigma plus the usual squared error weighted by Sigma squared. Similarly, if Y is a category, then. Our network could be outputing the probabilities for each of the classes. And we could use something like a softmax which takes a vector of numbers and converts them into a vector of normalized probabilities. And these would be the Omega eyes. The parameters of the distribution over Y given X, and so the then again the negative log likelihood would just be minus log of the. Probability estimated by the model. Which would be the output for the category wine?",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "And you can. You can extend that to having not just one output variable, but a bunch, a bunch of variables, and if they are independent, it's just like having a neural net with multiple groups of outputs, where each group corresponds to one of the random variables. If those variables are not independent, then you get into a very interesting realm of structured outputs. So for example, if you're predicting. Pixels in an image. For example, you're trying to label the pixels or you're trying to predict the complicated data structure, or you're trying to predict a sentence like in machine translation. Then the different things you want to predict are not independent of each other. Given the input, they have a complicated joint distribution. And capturing that joint distribution is often intractable, but we'll see that. There are some interesting things that can be done there.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Alright, so in all of these cases we have either log blanket or some proxy or some other loss function and we'd like to minimize. And we have to think about how to do that, and we would typically do that by iterative optimization, where we start from some configuration of the parameters and we gradually change them. In order to hopefully reach a minimum, and as you know, you can have local minima. An if we're going to end up in the local minimum, we'd like to have one that is hopefully close to a global minimum in terms of error. And.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "The simplest way that you could go down the error is used by iterative changes. Use gradient based optimization where we have a loss, but we can also suppose that we can compute the derivative of our loss and the derivative. The derivative tells us. In what direction? I could make an infinitesimal change in my parameters. So as to make the loss increase or decrease. So if we move our parameters in that direction by some epsilon. Then we hope to make our loss change and improve. And of course there's vast literature on that question. But the algorithms that we use in deep learning for this are fairly simple and the simplest of them is called. Mini batch stochastic gradient descent? Well, it's not the simplest. The simplest stochastic gradient descent where we just take one example at a time. We measure its loss. We measure the gradient with respect to parameters and we do one step of gradient in that direction so it's called stochastic because we the real loss we care about is the average over the whole training set, and we're only taking one example or a group of example, which we call a mini batch in order to decide where to move. And so this is a kind of noisy estimate of the true gradient. But actually it has all kinds of nice properties, and more importantly, it converges very, very quickly.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "So now. Neural Nets. If you're familiar with logistic regression can be understood very easily by thinking of. A bunch of logistic regressions that you could be running at the same time if somebody told you a good representation for your problem. In other words, that kind of sub problem you'd like to solve. And you would know what the target values for these features would be given the inputs. Then you could just train a bunch of logistic regression to predict these.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "And then you could take these as input to your actual problem of interest. But the nice thing with units is that you don't have to tell the neural net with these intermediate values should be these intermediate features. It is going to look for them, of course, that makes the optimization problem harder, and that's the reason why people have preferred kernel methods for about a more modern Medicaid, because the optimization problem is now becomes non convex. But what we've got here is essentially we've learned. Colonel, we've learned the feature space. Um, we were looking at it more difficult optimization problem but. But it it is, we'll see it has both computational and statistical advantages. And of course, once you understand this process, you can do it.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "Multiple times to have deeper neural Nets. So one of the.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "The ingredients in many of the techniques we use these days is backdrop, and that is that word is used in often the wrong sense in the sense that I would, I and others like Jeff Hinton would like people to retain, is back propagation algorithm to compute gradients. Now you can use those gradients as part of an optimization method like gradient descent or say hash inflammation, or conjugate gradients or LBF GS. But but the way you compute the gradient is what backup is about. And what it relies on is called the chain rule. And it's something that makes that's really important when as soon as you start thinking about composing functions. So the simplest case of composition of functions is. Here we have X, which is transformed into Y by a function. G&Y gets transformed into Zed by function F, so zed is F of G of X. So if we want to know how to change. X So as to change that in a particular way, we need DZX and change will tells us this is DZ y * D YDX.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "See why this is true? Think about this so we can. We can use this notation of flow graphs where each variable is a little circle. An represents a value. And the arrows tell us. What values computed based on what values? So we have partial derivatives now that we can attach attach to these these arcs. So DZDY tells us how a small change in Y makes a small change in Zen and similarly for dyd X. So. If we know that a small change Delta Y. When we multiply by diesel, DY tells us how zed oil change so it gives us a Delta zetten. We know this similar thing that Delta Y Delta X * D YDX gives us Delta Y. We just plug one of these in the other and we get the change in X. Delta X gets transformed into a change Delta set by multiplying Delta X by dies at the YDY DX, right? So that's just very very simple. Algebra. And we get the chain rule.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "And if you had two paths to go from X to Z, you can make a similar argument for each of those paths, and you end up finding that the partial derivative is just a sum. Of the product of the partial derivatives along each of those paths.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "Right, and of course, if you have N paths, it's just the sum of the partial derivatives across all of these paths.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "And now you can make a general rule which tells you that if you have a graph of computation, which I call a flow graph where each node is one of these values. And you want to know the ZDX where Zen is the final nodes scaler. And X is any intermediate node in the middle. Then you can obtain it by looking at D. Zeddy Wiiware, why I is one of the one of the immediate descendants of X. So you look at all the descendants of X. We call them why I or the successors of X. And assuming you have already computed this aid these at the why are you can compute the ZX by taking those? These are the wise and multiplying them by the partial derivatives relating each of those wise 2X the dyd X, and that's the most general form of the chain rule which which we take advantage of in back problem. You just plug it in your code actually.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Design code around that and you have a very general purpose way of. Doing that drop in any kind of system. So in the regular neural net. What it means is you think of the neural net as this graph, where now the nodes include both your inputs, your hidden units, but also your parameters as well as your label annual loss. And for each of those nodes, there is a well defined computation as well as partial derivatives that you can compute. So for example, you can compute the partial derivative of the negative log likelihood. Here the final loss with respect to the output of the neural net. And then you can propagate that into. A derivative with respect to the parameters of the first layer W and with respect to the hidden unit. Outputs H. And so on. To get the gradients on the other set of parameters V. All.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "Right, and so that gives you a kind of general formula general algorithm for computing gradients in a flow graph. You have two parts to this. The F drop in the backdrop. The F prop visits the nodes in some order, which we call a topological order, so it creates a directed. Acyclic graph that goes from inputs to the final node and the final node in our problem is going to be a loss of scalar that we would like to minimize an average and then in the second phase the backdrop phase we are going to follow those those arcs backwards. And at each node we're going to compute the derivative of the final loss, said with respect to the values computed in the forward pass. So for the final node dies, it dies at is 1. But then we're going to compute the ZX for every internal node, and for each of those nodes, we're going to be using. Oh does that mean it's time for a break? We're going to be using the chain rule. As I showed earlier. Alright. And. I guess maybe now is a good time for the break anyways.",
+        "start": 1711.0,
+        "end": 1740.0
+    }
+]

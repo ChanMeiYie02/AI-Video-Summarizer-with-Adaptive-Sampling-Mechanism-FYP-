@@ -1,0 +1,20 @@
+{
+    "id": "k7atnxfvddzsmio3kgmcj3ovyhbghoai",
+    "title": "A Structured Learning Approach to Attributed Graph Embedding",
+    "url": "http://videolectures.net/ssspr2010_robles_kelly_sla/",
+    "info": {
+        "author": [
+            "Antonio Robles-Kelly, National ICT Australia"
+        ],
+        "published": "Sept. 13, 2010",
+        "recorded": "August 2010",
+        "category": [
+            "Top->Computer Science->Pattern Recognition"
+        ]
+    },
+    "num_segments": 15,
+    "num_sentences": 171,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 2221
+}

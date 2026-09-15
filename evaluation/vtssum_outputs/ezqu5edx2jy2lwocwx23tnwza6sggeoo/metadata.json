@@ -1,0 +1,21 @@
+{
+    "id": "ezqu5edx2jy2lwocwx23tnwza6sggeoo",
+    "title": "Distance Metric Learning for Kernel Machines",
+    "url": "http://videolectures.net/nipsworkshops2010_weinberger_dml/",
+    "info": {
+        "author": [
+            "Kilian Q. Weinberger, Department of Computer Science, Cornell University"
+        ],
+        "published": "Jan. 12, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Learning to Rank",
+            "Top->Computer Science->Machine Learning->Kernel Methods"
+        ]
+    },
+    "num_segments": 55,
+    "num_sentences": 348,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 2348
+}

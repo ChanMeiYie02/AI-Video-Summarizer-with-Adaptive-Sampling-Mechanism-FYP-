@@ -1,0 +1,22 @@
+{
+    "id": "xlgonk7vdnivfzu5uhbkyhfwviwjnac6",
+    "title": "Impact of Multimedia",
+    "url": "http://videolectures.net/multimedia09_smeulders_iom/",
+    "info": {
+        "author": [
+            "Arnold Smeulders, Intelligent Systems Lab Amsterdam, University of Amsterdam"
+        ],
+        "published": "Feb. 4, 2010",
+        "recorded": "December 2009",
+        "category": [
+            "Top->Technology->Innovation",
+            "Top->Technology",
+            "Top->Computers->Multimedia"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 506,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 36,
+    "ground_truth_summary_length_chars": 2943
+}

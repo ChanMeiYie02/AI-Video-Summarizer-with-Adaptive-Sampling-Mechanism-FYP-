@@ -1,0 +1,485 @@
+[0.0s - 29.0s]
+OK, good morning. Let's start this session. A very warm welcome to this invited talk on this last day of the conference. Is anybody listening to me? OK, so I'm very happy to introduce horse. One thing I like about organizes initials so HHH Helmut Aslam Hoffman if remember that. So it's not the reason why we invited him, obviously. M So I got a great guy is one of the leading researchers in SAT. Most of you probably know him anyhow, to name just one thing. So you did his PhD in Germany Darmstadt. Not too long before me and when I went to his web page for now it is actually the president of the Canadian AI SoC now. So I'm a bit far away from which even that goal in France I suppose. OK, what does it want to say? So the last years he spearheaded a very interesting kind of research on automatic software configuration, which is about today. I saw I had the pleasure of seeing a talk of him in Glasgow last year, and one of the results that impressed me was they took a SAT solver that was sort of competitive but not very competitive. Then they expose all these parameters, tuned them, and afterwards just blew the competition to pieces. So basically waiting for him to wipe the floor with FF. And maybe it's already done it so. Thank you very much for the kind and efficient introduction. It's a great pleasure to be here and I'm delighted to see on the morning after the banquet. So many of you here. I'm actually delighted to see myself here as well. I wasn't quite sure I could make it.
+
+[29.0s - 58.0s]
+So. This talk is really about how to build better solvers for heart problems. That is the question that I am interested in in my research. And of course there are many approaches to that and just to be very clear.
+
+[58.0s - 87.0s]
+What I'm going to do here? You could go and try and construct a probably good silver. I have the highest respect for those who who go into that. That's not what I do. I come into play when this quiet doesn't go.
+
+[87.0s - 116.0s]
+Far enough. So you could do this one here. Roll up your sleeves and do the best you can. There is a guy who's tried that for awhile a little bit South of here with success that I guess can be debate.
+
+[116.0s - 145.0s]
+It's here, somebody else who's trying it right now, hopefully to better success, and that isn't that. I guess many of you try many times right, and so this is also something that I don't need to speak much about. Basically what rolling up your sleeves and doing the best you can means depends a lot on what it is that you have to do right and of course, speaking in front of this community. I don't really feel very qualified to tell you how to roll up your sleeves and make better planners. That's something that you could probably teach me a lot about.
+
+[145.0s - 174.0s]
+However, the approach that I think really, really, really useful and very powerful as well is this last one. Here, use your little Gray cells and then your little black chips. Lots of them.
+
+[174.0s - 203.0s]
+And what I mean by that is really principled experimentation combined with generic techniques that can essentially take black box methods be their planners, SAT solvers or solvers for any other NP hard problem. In fact, I don't think this stops at NP hard problems. I think this can go wave problems that are that are much harder than than just. You know, the typical NP complete problem. So really, really hard problems, like the ones that Moshe talked about yesterday. But also I think it can be very very effective on. Easier problems.
+
+[203.0s - 232.0s]
+So what I want to leave you with at the end of this talk, about 42 slides out is this idea that computer aided algorithm design. The approach that I will be talking about today really manage is selected mutational power to construct better algorithm.
+
+[232.0s - 261.0s]
+In doing so, it liberates human designers from the boring and often menial tasks of fiddling around with parameters or finding out which algorithm works best in which circumstances, and so on. And let's them instead use their time and energy that they retrieved. That way focus on higher level design issues, which I think humans are not only very good at, but also currently essentially.
+
+[261.0s - 290.0s]
+Moving. How do we do that? Well, we will enable the effective exploration of large design spaces.
+
+[290.0s - 319.0s]
+And we will do that in a way that facilitates the principle design of highly heuristic algorithms. And when I say heuristic in this talk just so that we don't have misunderstandings, what I don't mean is algorithms that have no provable properties whatsoever. They may not have provable properties, but I purposefully include any types of algorithms that whether they have provable properties are expected and hoped to perform better than the provable guarantees tell you OK, and that of course includes a huge amount of complete solvers for sat, for example, right? So I would call all of these heuristics because they make use of heuristic techniques to perform better than you can prove.
+
+[319.0s - 348.0s]
+And I claim that in the end, if we do this, this has the potential to profoundly change the way we build and use algorithms. And hopefully the talk. I can convince you that all of these things really are.
+
+[348.0s - 377.0s]
+Not realistic. So, but to start off, I want to I want to make an observation that hopefully we can all just agree on which is that high performance algorithms, particularly once that heavily use heuristics, are quite difficult to design for a variety of reasons. One of them is that as you build these solvers, you encounter many design choices. They range from representations such as the search space dealing with the search problem and the neighborhoods. If you are dealing with a local search approach and the search strategy itself. Two variable value selection heuristics. If you have a CSP type problem. Ant research restart rules that can be used on top of everything. Certain preprocessing techniques all the way down to relatively implementation specific aspects such as very specific data structures and so on. Right? So designshare choice.
+
+[377.0s - 406.0s]
+All the way. Secondly, we all know the best performance of such heuristic algorithm is often achieved by a combination of various heuristics and mechanisms, not by just a single one right.
+
+[406.0s - 435.0s]
+And that makes things difficult. But before going there, let me actually acknowledge that this community here for slightly more than 10 years has actually made this experience and has been very good at exploiting it and exposing it. So this starts with with work of Adele, how and the 1999 who back then already started using portfolio based techniques in order to solve planning problems. It then goes on with with Derek. With with Maria Fox and Derek Long in 2001, who with their stand planner also used the idea of essentially having components that based on the actual type of planning problem that you're encountering as a sub problem within a bigger planning task would then be chosen and they also had the listing idea of using a fall back option. If that doesn't work and we will see that such fall back options can be quite important. They actually discovered this unbeknownst to us before we did and used it quite heavily to win the SAT. Competition then there is a very interesting work by Roberts. That hour from 2007 and of course you all know more than I do, probably about the the excellent work that culminated in the llama solver of which to invest file in 2009. Even at this conference there are a lot of papers actually that are based and leveraged off of this observation that using more than one heuristic can be very, very useful, just to mention one the paper valenzano at our. That was presented on Friday is an excellent example of that.
+
+[435.0s - 464.0s]
+So, and by the way, if I didn't mention your paper in this, it's not because I didn't think it falls into this category, but I needed to move on at some point. So please don't feel I left you out. So various heuristic components do interact in complex ways, and that gives often rise to rather unexpected emergent behavior, right? And this makes things complicated because I can't just take one you Ristic. Understand how it works and under which circumstances, and another heuristic and do the same thing and combine them together and still have good understanding as what's going.
+
+[464.0s - 493.0s]
+To happen. And also the performance of these kind of algorithms is tricky to assess due to various factors and they include some differences in the behavior problem instances in planning of course has this in particular because of these rather fundamental instances between distance differences between various domains, and also because of the use of stochastic city within the solvers, which is something rather prominent for many types of NP hard prob.
+
+[493.0s - 522.0s]
+So therefore it is a rather time consuming process to design these algorithms and the success in this process very often critically depends on experience, intuition, luck and that's not a good situation. It's not a good situation Becausw, while experience is to some extent teachable and transferable. Intuition and black essentially aren't right. The only way to build intuition is by amassing a lot of experience and then hoping to sort of. Graph certain patterns, often even without the ability to explain rationally what they are. But then you just have these gut feelings as to what should be done and what might be effective in certain situations, and plainly completely unteachable. And that is one of the reasons why many people, perhaps with some justification kind of look down on folks who go and fiddle with algorithms until they get good performance with folks who might get very good at looking at a problem. Anna class of algorithms and then through. Their experience, intuition and a bit of luck managed to to win a competition and blow the the other competitors out of the water that way, right?
+
+[522.0s - 551.0s]
+So. Another problem with this overall state of affairs is that the algorithms that we get out of such a design process are often complex and someone at Hawken not.
+
+[551.0s - 580.0s]
+We formalized. So here's a real world example that really I think illustrates that nicely. The application here is solving sat and coded software verification problems. I think this is a very interesting and exciting approach with a lot of potential.
+
+[580.0s - 609.0s]
+In the case that that I'm talking about here, what was given the high performance, DPL type SAT solver? I'm called Spear and when I say high performance, that's more the intention behind the solver as the state of affairs at the point when we started working with it, the solver ended up having 26 parameters of various types, including categorical ones, Boolean ones continue and continuous ones in a few integer valued parameters. These parameters did things such as control the variable and value ordering heuristics so deeply. I'll type solvers are derived from research in our complete class learning, which is heavily used in these kind of solvers and restarts and a whole bunch of other aspects of.
+
+[609.0s - 638.0s]
+How this silver works and the goal was of course to minimize the expected runtime on typical SAT instances obtained from. In this case, a rather specifically chosen software verification tool right to make the whole package go as fast as possible.
+
+[638.0s - 667.0s]
+So the problems that you encounter when you when you deal with this kind of challenges that the default setting like that can already lead to run times in the order of 300 seconds per run, right? So when you experiment you have to factor this in every run that you do want. An instance might take you very easily 5 minutes right? So that kind of severely limits how much you can play with this and also of course good performance on some instances may not generalize to others and together those two factors make things rather tricky.
+
+[667.0s - 696.0s]
+So with this motivation my talk will proceed as follows. I will first sort of contrast traditional and computer aided algorithm design and tell you what I mean by computer aided design and why. I think that this is very useful in this context. We will. We will have to discuss the concept of design spaces and design patterns, which I think is a very useful abstraction of various things that people are doing. I don't want to spend a lot of time on this today, but I'd certainly want to show you some examples and then sort of the other component of this. Is so called meta algorithmic search and optimization procedures, which then will be used in order to sort of make the best out of these design patterns. I will then take a few minutes to relate to you 3 success stories in the hope to convince you that this is actually worth studying a little bit more in detail and they will concern two very very well known problem and one I think that is also quite well known and of interest to you in particular in the timetabling. And finally, hopefully I'll have some time to tell you about where I see the next this heading, which is the idea of programming by optimization something I'm extremely excited about these days.
+
+[696.0s - 725.0s]
+But let's start here from the beginning. So the traditional algorithm design approach is an iterative and.
+
+[725.0s - 754.0s]
+Manual process, in which the designer gradually introduces an modifies components or mechanisms right so you fit a little bit until something perhaps work so it doesn't work in the introduce another mechanism and fit a little bit more, and so it proceeds instead.
+
+[754.0s - 783.0s]
+While you're doing this, you have to somehow assess how well your design is doing right, and you do that by testing performance on benchmark instances.
+
+[783.0s - 812.0s]
+I want to point out that designs often start from generic or broadly applicable problem solving methods, perhaps not so much in this community, although I think yesterday we had at least one talk that kind of followed a similarly similar approach. These general problem solving methods include things such as evolutionary algorithms, but also branch and cut mechanisms, and all sorts of sort of general problem solving techniques that can give you a very good stuff.
+
+[812.0s - 841.0s]
+Point so as I already briefly commented on earlier during the design process, many decisions are made.
+
+[841.0s - 870.0s]
+Some of these choices actually end up taking the form of parameters, while others are hard coded and not visible to a user of a piece of code.
+
+[870.0s - 899.0s]
+The design choices do interact in complex ways, which I've pointed out before.
+
+[899.0s - 928.0s]
+And the problems of course kind of approach are that that it is not only labor intensive.
+
+[928.0s - 957.0s]
+And not only is it the case that design decisions are often made in a rather ad hoc fashion based on rather limited experimentation and intuition. In particular, when these runs get rather time consuming.
+
+[957.0s - 986.0s]
+But also at least we have observed in our work that human designers typically overgeneralize observations and explore as a result relatively few designs. And what do I mean by that? It's observations, such as you know, if I fiddle with this component here, the performance tends to get better if I if I turn the nob this way, right? So then I will turn the NOB this way and just leave it there. Now that, of course.
+
+[986.0s - 1015.0s]
+It's dangerous, right? Because that amounts to an implicit assumption of independence. Between that not here and the other knobs that I could fiddle with. And these kind of assumptions are often incorrect. The same holds for monotonicity assumptions, where I'm basically saying if I turn the not that far, it's really good. So little bit further it ought to be better. Right now this sounds pretty naive, but once you have many, many knobs and you observe yourself fiddling with them, I would almost make a little bit, but you will find yourself if you're a critically observing what you're doing making these kind of assump.
+
+[1015.0s - 1044.0s]
+Also, of course, the number of components and mechanisms that that you're implementing and evaluating there tends to grow in each state of the design projects, right? So these things sort of grow organically.
+
+[1044.0s - 1073.0s]
+An adults in designs that are often complicated and often have a lot of unfulfilled performance potential in them.
+
+[1073.0s - 1102.0s]
+So what's the solution? Well, I think the solution is what I call computer aided algorithm design, where the goal is to construct high performance algorithms automatically. So this is this is quite a bit related to what more she was talking about yesterday, namely program synthesis. The big difference here is that. In computer aided algorithm design, in the flavor that I'm discussing here is not to automatically get an algorithm that solves the problem according to some specification, we assume that we have that and we assume that we have more than one. We assume that we have big spaces of these correct algorithms for a problem. The goal here is to find 1 to design, one that performs particularly well. So in some sense, these two things are orthogonal. You can think of having solved the algorithm synthesis problem and then still have to solve this problem. Here. You can also think about the fact of course that being able to solve this problem says basically nothing about being able to solve the synthesis problem, so they're really quite often.
+
+[1102.0s - 1131.0s]
+The key idea here is to use fully formalized procedures to effectively explore large spaces of candidate designs.
+
+[1131.0s - 1160.0s]
+And of course, we're not the first to propose this kind of thing. In fact, this has been heavily studied in various areas, including genetic programming, a relatively new area with operations research that's known as hyper, you risztics, and an area known as reactive search. There's various communities that have actually conferences and workshops on.
+
+[1160.0s - 1189.0s]
+These kind of things, including the learning and intelligent optimization community and the so called stochastic local search engineering community that have annual and biennial conference, is also. Of course this is highly related to the idea of meta learning and ensemble techniques in machine learning, and as I wanted out briefly to program synthesis.
+
+[1189.0s - 1218.0s]
+So in this approach that I'm advocating here, what is the role of the human designer? Well, the human designer specifies a possibly large space of candidate algorithm designs and how this is done. We'll see in a bit.
+
+[1218.0s - 1247.0s]
+The human designer also supplies sets of problem instances for performance evaluation. This is a very important part of the equation account. Emphasize enough how important that is, although I feel that I'm converted here because from the discussion yesterday about the planning competition, I distinctly get the impression that you guys already know the importance of appropriately chosen bench.
+
+[1247.0s - 1276.0s]
+Mark sets the human designer, specifies a performance metric. The thing that we are interested in optimizing that could be more.
+
+[1276.0s - 1305.0s]
+One as well, and then the human designer is complemented in these activities by a meta algorithmic system that is used to explore the design space in a principled manner actually in algorithm.
+
+[1305.0s - 1334.0s]
+Matter to be handed designs automatically and hopefully as efficiently as reasonably.
+
+[1334.0s - 1363.0s]
+Possible, and that of course hopefully then leads to finding high performance designs relatively.
+
+[1363.0s - 1392.0s]
+Simple idea. So if we could make this work, the advantage would be that it would let the human designer focus on higher level issues, namely design. Defining these design spaces rather than searching for actual design.
+
+[1392.0s - 1421.0s]
+It would presumably enable us to better explore large design spaces because we're using full automatic methods to do that, to do something which I already said earlier. Humans are not very.
+
+[1421.0s - 1450.0s]
+Good at. And finally, it would allow us to exploit complementary strengths of different approaches for solving a given problem, and we will see how that comes about.
+
+[1450.0s - 1479.0s]
+It would do all that using principle Dan, fully formalized methods for algorithm design, and that is something quite invaluable even if you if you weren't to see much value in the other advantages, this alone would be worth 4. And why is that? Well, if you sit down and make a very good algorithm by hand. Try to explain how you did it later onto your student. For example, that is not always easy, right? It often takes the form, well, you know I did a little bit of that and then I had a feeling that doing this might also be good. And then I played a little bit with that and if the process takes long enough you may not even be able to remember all the things that you considered. And that's part of what makes this kind of difficult to teach and what makes this not only safe, but also in some very tangible way. Sort of unprincipled right? Whereas if you have a fully formalized method and algorithm that does this job for you, you're in a much better situation because at least you can say. Well, here's the procedure that I ran that resulted in this thing, right? And if you run this procedure again, there should be a very good chance that you get a similarly good result. We may still not fully understand why this procedure under any given circumstance produces this, but at least now it becomes.
+
+[1479.0s - 1508.0s]
+And also very importantly, from a practical point of view, this approach can be used to customize the algorithms for using specific applications with minimal human effort. Once again, we'll see a little bit better how this will work in a more.
+
+[1508.0s - 1537.0s]
+So I want to briefly go back to the set to the example of SAT based software verification that I used in the very beginning. This is actually coming out of work that I did together with a PhD student of mine on quota and a PhD student, Allen, who who is in who's working in verification. So that PhD student will still my garbage and Alan himself was involved as well of course. And this is work that appeared at FM CAD in 2007. I already sent. The goal was to solve a suit of. A suite of satin coded software verification instances as far.
+
+[1537.0s - 1566.0s]
+It is possible. We have this new DPL style sat solver that domain go ahead built and I have to say Domagoj was not a member of the sad community that I've spent already. A lot of time making good SAT solvers. This was a PhD student that was interested in verification in, particularly in the aspect of actually getting specifications in a logic different from sat, more from propositional logic. I should say and compile that down into sat and then just use off the shelf SAT solvers to solve that. And he found that the off the shelf SAT solvers. Didn't do quite as well as he hoped for software verification using this particular approach, so he said fine. Wanna read all the good papers on sat? I'm going to implement all of these techniques then because he didn't know which techniques would work best, he just implemented all of them, right? Pretty much and put them all into a big framework. And that framework of course had many parameters and a total of just shy of 10 to the 18 configurations. That's a huge space, right? And then tomorrow instead as you would. Let's fiddle with the parameters and try whether we can optimize the performance society at the performance of this highly generics for the specific type of instances, right? And we're not talking about sort of some artificial, unimportant kind of instances. We're talking about real bugs from real software, such as spam filters, email clients, and so on, right? Translate it down into set with this real world tool.
+
+[1566.0s - 1595.0s]
+So he manually config.
+
+[1595.0s - 1624.0s]
+This thing, and at that point he ran into my PhD student Frank and Frank. At this point together with me and my colleague too much, Twizzler had thought automatic algorithm configuration and developed a method called paramel S which I won't tell you much more about, although that would be an interesting thing to talk about, but he will simply use it as a black box as the Domagoj, by the way, because it's a generic algorithm configuration procedure, it doesn't care what you give it, what kind of black box with knobs on it you give it. And so then we had this little Bake Off rights. Domagoj had taken a week and all of his domain insights and all of his preciously acquired and SAT solvers. And, you know, also, this is the guy who built the Spirit solver, that black Box method was configuring any configured manually, and he thought he had done.
+
+[1624.0s - 1653.0s]
+Pretty good job, so let's see how well he did. So this is these are empirical results on software verification benchmarks. So first of all, where's the baseline? Minnesota 2.0 was the SAT solver of the Hour in 2007. It's still one of the best systematic complete SAT solvers that is around. OK, so out of a benchmark, 302 test instances, and I'd be careful to point out that neither Domagoj news use these for manual tuning, nor did we for automatic tuning. These were just test instances. That were kept solely for testing mini sat solve with a cut off of 1 hour per problem. It solved all of the 302 in a mean runtime of 161.3 CPU seconds. Not bad.
+
+[1653.0s - 1682.0s]
+So when Domagoj manually configured spear, he got pretty close and this is very impressive, meaning status. The result of some very very dedicated and clever work by people who knew a lot more about sat than Domagoj Dusanne. Perhaps even then I do OK, so. He got pretty close. His original version of Spear could solve almost all of these benchmark instances in about five times the CPU time, right? So this is not very far.
+
+[1682.0s - 1711.0s]
+Power off. Then we configured it using, actually, not. This is like the ones we were interested in solving, but just the training suite assembled from the structured benchmark collection from the SAT competition, right? Thinking that you know whatever, whatever verification instances we have, they're probably similar enough that it makes sense to optimize for that. And look what happens. We solved all of the instances within the cut off, but more we also managed right off the bat to get significantly better. Substantially better than mini set. An thing that didn't take us long at all, right? This took in the order of 2 three CPU days and we were there. Then we had the idea of just training this on the specific types of software verification instances that Domagoj would actually in the end use this for solving and once again we didn't use these 302. Of course we use the training set of independent instances, but generated with the same verification tool, OK.
+
+[1711.0s - 1740.0s]
+And look what happened here. So now we're two orders of magnitude better than mini sat on these instances. In minutes, that was the state of the art for solving these types of instances. At the point when we stay.
+
+[1740.0s - 1769.0s]
+And we are, you know, an astonishing factor of almost 500 better, the better than the expert manual tuned version of the algorithm, OK? And that in fact was the new state of the art. At that point. We don't know. I submitted it to the 2007 SMT competition as the core component of the system that also did the course, and it won the one category for which it was a little, which was the which was the quantifier. If we bit vector cat.
+
+[1769.0s - 1798.0s]
+Free. So let's briefly talk about design spaces and design patterns. Now that you're hopefully motivated to listen a little bit more of how these things work. Home. I want to basically discuss this by pointing out a few interesting special cases of computer aided algorithm design parameter optimization, which is what I just talked about, is definitely one of them and work on that metric. Methods for solving this problem goes back to about 2002 at least where moderate Hari from the Group of Thomas Trisler started studying racing techniques that will talk a little bit more about later other important work in this area includes the work of a density as in Laguna in 2006, which used to you Ristic Tabu search. Based method for solving algorithm configuration or parameter optimization and then the work that's coming out of my own group. Instrumentally involved my former PhD student, Frank Houghton, our postdoc at UBC. Also recent work, but by Carlos Unsorted. We, at our at Brown and Thomas Parts Pile Stein at Fr. Quinn.
+
+[1798.0s - 1827.0s]
+There is also the problem of algorithm configuration from components, so this is a slightly different thing, right? It's not what we did with spear. This is where you actually have interchangeable components and you're plugging something together very much in a Lego like manner. Again, you do this. In a way such that every possible configuration is guaranteed to be a correct solution, but they differ vastly inefficiency, right? So this was done by by Alex Fukunaga in 2002. There is later work by Michael Carandini, one of my students and myself from 2008 that does this for timetabling, and I'll mention this in some more detail later, and the latest work, and perhaps the most ambitious of that, also comes out of my group and stand by my master student, as she could ebooks in conjunction with my colleague Kevin Leyton Brown at UBC.
+
+[1827.0s - 1856.0s]
+There's also restart strategies, Doobie ET Al wrote a very interesting paper on that, and later it has been. It has been taken up by Bart Selman, Carla Golasa, Gomez, Guardiola and Schmidhuber Street at all, and so on. This is something I won't talk about here, but it clearly falls within the same categ.
+
+[1856.0s - 1885.0s]
+And there's also instance based algorithm later, so there the idea is that you don't configure for a type of problem instance, but for an actual problem instance and the way you do this is when the way you apply this in the end is when the instance comes in. You do a quick analysis and depending on what you find in this analysis, you actually configure your algorithm. So this is kind of very related in spirit to what Maria and Derek did in planning, and what Adele how had done before them in a very different manner and work that should be mentioned here. Again, we're coming out of my own group, perhaps in 2006, although that didn't go nearly as far as we would have wished it to be in more recent work by Malay.
+
+[1885.0s - 1914.0s]
+Skin cinnamon so I'm a further kind of pattern that can be used as is the idea of online algorithm control. Respect might be in the audience or not. He with his PhD student Tom Cochrane have done some wonderful work on that and Roberto Battiti from the University of Trento has recently book on that with some of his group. So the idea there is that you go even further than instance based algorithm configuration while the algorithm is running, you're reconfiguring it based on what you see, right? So obviously this is potentially quite a bit more powerful. Also more ambitious.
+
+[1914.0s - 1943.0s]
+Then there's instance based algorithm selection. This is something I do want to talk about quite a bit more because I think it's very interesting. It's very closely related to some of the ideas that have been around the planning community for quite awhile, but I have the impression that full potential of this has not been exploited yet, and the idea here is that in comes a problem instance. I analyze it quickly and then, rather than configuring an algorithm for it, I'm making a choice between a set of algorithms right from a set of algorithms. I choose one, and then I commit to that and run. So this idea was first, at least to my knowledge, the first person to formalize that idea was rice. 1976 later on Kevin Leyton Brown while he was still in the in the offshore met at Stanford, investigated that further, we are in Milano independently. Around the same time that similar things and most recently perhaps we did work. Kevin and I did work with our PhD student Link shoe at UBC. That resulted in the SAT solver that then ended up essentially winning two SAT competitions.
+
+[1943.0s - 1972.0s]
+Finally we have algorithm, portfolio, static and dynamic. Once again very nice article by who in 1970 by Huberman ET al 1997, followed up by very nice work by a colleague, Comacine, Bart Selman, and again I'm glad you mentioned it will be worked in that in that area. Of course there's various various types of algorithm portfolios and point out there. Sometimes some confusion between what really should be called algorithm selection or portfolio based algorithm selection and true portfolios where you're running things in parallel right? So what I mean down here is you run more than with them in parallel with the hope of actually of one of these algorithms. Finding a better solution or a solution earlier than the others. You can do that in a static or dynamic fashion. Dynamic would mean that while you while you're running, you might adjust the mix in your portfolio.
+
+[1972.0s - 2001.0s]
+So all of these in some sense armetta algorithmic design patterns. Why do I call them meta algorithmic design patterns while I do that 'cause they essentially take other algorithms as black boxes, an operate on a level above that, they tell you how to stitch together algorithms from existing algorithmic components, and they induce potentially very rich in large design spaces.
+
+[2001.0s - 2030.0s]
+So what do you need in order to search such design spaces? Well, the obvious thing to use is all the tools that we have for solving search problems in optimization problems in large spaces. So this is primarily powerful heuristic search and optimization procedures with a significant amount of computing.
+
+[2030.0s - 2059.0s]
+Power or machine learning methods such as classification, regression and so on, combined with a significant amount of training data or a combination of the two, right? So you can already see, depending on whether you have a large amount of training data, you may want to choose to do either this or this, or a little bit more of this, or a little bit more of that right. By the way, I'm not meaning to say that this doesn't also occasionally require compute power. Quite a bit of it, but typically you need more in approach here.
+
+[2059.0s - 2088.0s]
+So here are some examples for parameter tuning. You have numerical optimization techniques such as the very well known Cmas algorithm by Hanson and Ostermayer. This is by the way, currently probably the best, most powerful and most versatile gradient free numerical optimization algorithm available as established by the competition that these guys have in their area too.
+
+[2088.0s - 2117.0s]
+Um? But you can also use model based optimization methods. Then actually tried the model that lets you predict performance for parameter configurations that you've never actually observed before, and the classical technique for that nowadays would be SPO sequential parameter optimization by parts pile Stein, which has then been further developed in my group to address some of the issues that weren't perhaps quite quite solved as well as they could be in the context of algorithm configuration. SPO itself is actually much more general. Then algorithm configure.
+
+[2117.0s - 2146.0s]
+Algorithm configuration itself, where you have sort of more of a discrete space with components in it as opposed to parameter tuning, although they are very closely related and benefits from its own set of techniques, in particular genetic programming techniques such as the class system developed by Fukunaga in 2002 in the context of SAT and can be quite useful and effective there.
+
+[2146.0s - 2175.0s]
+But also, racing procedures such as F raised by Barataria Doll hold a lot of promise and erasing procedure, just in case you don't know the price here there is that if you have a large configuration space, you essentially take those configurations. You start evaluating them in parallel and at every at any stage you challenge each of these configurations with a new benchmark instance, right? So as soon as as one or more of them seem to statistically significantly fall behind the others, you eliminate those from the race and only continue with the ones that they're still doing fine. You can already see from the way I'm describing that that would be limited to relatively small configuration spaces, right?
+
+[2175.0s - 2204.0s]
+Or you can advance stochastic local search procedures such as our own para. My less algorithm that is essentially an iterated local search procedure. That means that it's doing something like, you know, a stochastic Hill climbing occasionally interspersed by large diversification steps designed to get it out of local minima. And that's really mostly what there is.
+
+[2204.0s - 2233.0s]
+More examples include, for instance, based algorithm selection. You could either use classification approaches, asked query, and me.
+
+[2233.0s - 2262.0s]
+Arnold or regression approaches asked it our group an obviously Kevin Leyton Brown and.
+
+[2262.0s - 2291.0s]
+You have shown for dynamic algorithm portfolio, so called time allocators. You could use banded solvers askal, Yolo and Schmidhuber did.
+
+[2291.0s - 2320.0s]
+Or you could use evolutionary algorithms such as hurricane low boasted quite a bit before them. And So what you can see from the way I'm talking about that that it is quite useful to separate the design patterns which I talked about first from the actual meta algorithmic optimization and search procedures be cause for the same patterns. You can have more than one procedure that is in principle applicable to that, and it's very important to be aware of those choices because these these various methods have have they have all their own drawbacks and advantages.
+
+[2320.0s - 2349.0s]
+There are many open questions, for instance, which procedure of the many ones that I told you about should be used for which type of design space? Notice how this echoes very much questions, such as on the target level below which planner should be used for which kind of planning instance, right? And using similar techniques to investigate that you could make similar progress, but this is very much an open question.
+
+[2349.0s - 2378.0s]
+Currently, how do we deal with hybrid design patterns? Design patterns that combine, for instance, the idea of algorithm selection algorithm configuration. Perhaps you start only from one algorithm and you configure not one instance of it, but many instances between then between, which then you will automatically select. That is a hybrid pattern and will presumably require hybrid meth.
+
+[2378.0s - 2407.0s]
+It's for solving it. And how do you best with the censored and sparse data that you typically have censored? Meaning when you optimize for runtime very often in the early stages with poor configurations, you have the kind of run times that are just prohibitive and you want to cut off those runs so such a sensor at run is not something you want to throw away because you know something about it. You know that it was a bad run, right? But how bad it was? You don't know because you cut it off before you could measure how long the runtime really would have been. So dealing with this kind of thing is is not trivial, but they aren't. For doing it and sparse data, well, if it takes you 300 seconds to complete one run, guess what you won't be doing too many runs and that leads of course to very sparse data. For instance, in the context of the machine learning.
+
+[2407.0s - 2436.0s]
+So instead of talking about these things, which are all fascinating research problems, but sort of quickly go technically to a level where we would have to spend a lot more time in order to make real progress, I want to answer the question. How good are current methods for computer aided algorithm design? Hoping tomorrow, perhaps, then to look a little bit by yourself into these methods. If you find them attractive.
+
+[2436.0s - 2465.0s]
+And so the proof for these kind of things is, as they say, in the pudding, and I want to tell you 3 success stories and I can tell you this is not three stories of a million that we attempted. This is basically three hits out of three. OK, so we tried this first for propositional satisfiability. We tried it for course timetabling and we tried it for mixed integer programming and it worked in all of these cases. It worked in particular was for propositional satisfiability. The part of the work that I'll talk about is automatic algorithm selection, although we also had very good results with configuration, which I already mentioned, and with a hybrid approach that is quite interesting for timetabling and mixed integer program programming, we did algorithm configuration only so far, but with.
+
+[2465.0s - 2494.0s]
+Potential for more. There's further success stories that I don't have time to go into here, including protein structure prediction problem that was tackled by my group awhile ago. Further that I briefly mentioned, including two articles to appear this year at each clients at which I think are quite interesting in this context, and work on TSP, where we managed to beat relatively narrowly but nevertheless decisively the current state of the art. In TSP like status, one of these problems where that means a lot because people are spending an inordinate amount of time to actually. Get a little bit better at solving that. That's also work coming out of my.
+
+[2494.0s - 2523.0s]
+Right now. So very briefly about the portfolio based algorithm selection called Scylla and that that perhaps in its most recent incarnation has been described in Ajera Article Co authored by my Student Link Shoe and my Now post off Frank Houghton, my colleague Kevin Leyton Brown and myself, where the key idea is according to John Rice in 76, given a set of algorithms for a problem in some problem instance pie from that set select from South, the algorithm expected to solve that particular instance most efficiently. Based on cheaply computable features of Pi, cheaply computable here means that we shouldn't spend more time computing features than we expect to need for solving it, because otherwise it can be affect.
+
+[2523.0s - 2552.0s]
+Right, so in a nutshell, what's atsila does is it takes a CNF formula. It extracts 84 low order polynomial time computable instance features that range all the way from trivial things such as number of clauses, number of variables to relatively sophisticated things like run. Also, learning based solver for a certain number of steps and actually look at the number of unit propagations that happened during that time, right? That kind of thing. Look at the length of unit propagation change that get triggered in this process. But the key is that all of these so-called probes need to be very.
+
+[2552.0s - 2581.0s]
+Fast from these features to you, then obtain a performance prediction for a set of SAT solvers that you have given. So for each SAT solver, you basically build a model that, based on features, allows you to make a produce.
+
+[2581.0s - 2610.0s]
+On the runtime of that solver on that instance. Then simply run the solver with the best predictor of performance. Why do we call that portfolio based? Well, because you have a portfolio of algorithms that you never run in parallel, but you select from that, right? That's the idea.
+
+[2610.0s - 2639.0s]
+So under the hood, just a few remarks on how this works and we use state of the art complete and incomplete local search SAT solvers where for the incomplete solvers it's very critical to be careful committing to them, because if you have an unset instance and you choose one of those, guess what. You're pretty much hooked, right?
+
+[2639.0s - 2668.0s]
+We also use rich regression as the specific technique on carefully selected features, automatically carefully selected to predict solver runtimes from instance features. Rich regression is a pretty standard technique and the feature selection techniques that we use are also.
+
+[2668.0s - 2697.0s]
+Reasonably standard, we use the methods of simian Hon. It's a classical method from 1979 to deal with sensor at runtime. Data meaning runs that during the training phase of the algorithm had to be cut off 'cause they didn't terminate within the time that we were willing.
+
+[2697.0s - 2726.0s]
+So invest there are some whistles we use pre solvers very much like Maria and Eric did, but without knowing about their work at the time to solve easy instances quickly actually and also to fall back in cases where we wouldn't make progress with our feature.
+
+[2726.0s - 2755.0s]
+Mutation we build runtime predictors for various types of instances using a classifier. Then to select the best predictor based on instance features.
+
+[2755.0s - 2784.0s]
+And we predict the time required for feature computation at that time is too long. We also use the backup solver.
+
+[2784.0s - 2813.0s]
+Doing all of this, we managed to win five of the 9 main categories of the 2009 SAT solver competition, actually 3 gold and two silver in those and in the solver competition. Before that we did similarly well, and that makes our approach this sort of most versatile and successful that's currently available for us, at which we are.
+
+[2813.0s - 2842.0s]
+Pleased with. Second case study in post enrollment course timetabling. This is joint work with Michael Keaton. Denio has been working on this problem longer than I have and my PhD student Chris Faucet. There is one paper that came out at Patat in 2008 short paper and we have something else that we're currently preparing. So the idea behind posting Roseman Roman course timetabling, which is something that the universities we all care about, is that students enroll in courses and only after that has happened. The courses are assigned to rooms and times not subject to certain hard constraints such as. No two classes within the same room. Overlapping times, right? And then we have preferences by the students such as don't want classes at 8:00 o'clock in the morning. Don't want a class at 8:00 o'clock in the morning, and then one at 6:00 o'clock at night, with the huge gap in between. And these are all represented as soft constraints, so this is a classical problem that has been studied for.
+
+[2842.0s - 2871.0s]
+Quite awhile. What we did is we we took one of the best solvers that was available at the time when we started working on the problem, which happened to be a multiphase stochastic local search that used a hard constraint solver that finds feasible course schedules followed by a soft constraint solver that then optimizes the schedule maintenance, maintaining feasibility. So that was their beef.
+
+[2871.0s - 2900.0s]
+Four and what we did is we adapted and expanded the solver and exposed all the degrees of freedom we could possibly think of right. We had only one months to do that, 'cause pretty late in the game we decided to want to enter the competition so that creates some serious time pressure. We started from the solver by Karen DDL in 2003. Wasn't applicable to the problem any longer. Becausw knew, because newer techniques have been had been developed. Sorry, new constraints have been injected into the problem by that time, and also some new techniques have been developed which we really wanted to incorporate. The soft constraint solver we left unchanged because we didn't have time and the hard constraint solvers solver we configured automatically, so we focused.
+
+[2900.0s - 2929.0s]
+The design space for the hard constraint solver ended up being a parameterized combination of various techniques including construct taboo, surgeon diversification strategy. We didn't do that because we thought those were the best things that we could come up with, but because those were the best things that experts on timetabling previous to us had come up with. So we thought they would be good building blocks. Thing had only seven parameters. When we were done in only 50,000 configurations. Still way too many to search exhaustively. As you will see in a moment becausw the performance objective in the competition was solution quality. After 300 CPU seconds right after 5 min.
+
+[2929.0s - 2958.0s]
+Configuration in this case we used Focus Rs 2.3, which is this generic algorithm Configurator that have been developed in my group and most recently described the most recent version described in 2000.
+
+[2958.0s - 2987.0s]
+9. So here's the result, and for this you have to keep in mind Chris was a student of freshly baked PhD student at that at that time, who had never done timetabling before. Right Marker was a little bit of a consultant to the project and helped out with certain aspect was really mostly mostly Chris that did it. We were up against all of these timetabling experts in our solver came in 3rd, so that was disappointing. But then we looked at what happened. This is the aggregate performance measure to the left is good. These are box plots that indicate the performance over various experiments that were automatically done in the competition. The further the boxes to the left, the better the solver is and therefore come bizarre. Denial won the competition right? We came in 3rd as you look at the median here indicated by this line. It was a relatively close second after that so. But then we looked at distance to feasibility, which is the measure that actually really describes how well the hard constraint solver does, and notice the soft constraint solver we didn't touch, it was something in old thing that people had used in 2003 and look at that according to distance to feasibility, we would have at the very least I'd with the winner here already and that wasn't.
+
+[2987.0s - 3016.0s]
+Charging, so we put more work in another six months of Christmas time, during which time you also took courses and other stuff starting from our previous solver, we now automatically confidant soft constraint solvers.
+
+[3016.0s - 3045.0s]
+And as the design space for the soft constraints, we used a highly parameterized simulated annealing algorithm, which again is what people had used before. So we just took this and open it wide upright. We threw in absolutely everything that we felt was not decided on a principled manner. We opened up and threw in design alternatives that we thought were at least as reasonable as what people had been done doing previously in their algorithm. That led to 11 new parameters in 2.7 million configurations. So now we definitely have no chance of doing anything exhaustive. And sampling wouldn't do very well.
+
+[3045.0s - 3074.0s]
+Either we use the slightly adapted and further developed version of our focus ILS algorithm. It wasn't adapted to this problem, except that we ran it in multiple stages, tuning the hard and soft constraint solver separately, and then in the end jointly. And we also use different performance objectives for these stages in the final stage it was solution quality after 600 CPU seconds. Why did we do that? Cause the competition in 300 seconds had so many problems that they couldn't even solve the feasibility that we found. It would have been utterly unfair to compare them on that. That would have distorted really things in our favor because in terms of finding feasible schedules, we already did very, very well.
+
+[3074.0s - 3103.0s]
+So we then did a two way race against the ITC track to Winner, which was the track in which we competed. And as you can see here, we now very decided the beat the solver by, sorted out, which was very.
+
+[3103.0s - 3132.0s]
+Eyes to see. So that happens on the 24 competition instances, so not quite across the board, but across a large number of instances. And we're currently adapting that solver to the University wide exam scheduling problem at UBC, which is a much, much harder problem. It involves about 16150 exams in every round and 28,000 students, whereas the problems used in the competition go only to about 400 exams with actually only a few hundred students. The way the competition.
+
+[3132.0s - 3161.0s]
+Instances are set up. Finally, mixed integer programming. I will go through this relatively quickly so we can get to the last topic after that and have it still a little bit of time. This is new work coming out of my group jointly with Frank Kota and Kevin Leyton Brown. The first stage involved also too much. Let's live. We just did a second round of that which will appear at CPI or are just next month. Of course I don't need to remind you that mixed integer programming is very widely used for modeling optimization problems in industry mix solvers. A very important role for solving a broad range of real world problems. I think a recent survey showed that at least that at least 20% of the Fortune 500 companies use MIPS. Solving in one way or another within their business processes and production processes. C Plex is one of the most prominent and widely used commercial mix solvers. Probably the most widely used MIPS overcurrent. It's an exact solver based on a very sophisticated branch and cut algorithm in numerous heuristics. And it's very flexible, right? So it has 159 parameters out of which 81 directly control the search process, and I haven't met one single person anywhere who makes a credible claim to understand what all of these parameters do as they start interacting with each other. It's a very, very complex, very realistic beast.
+
+[3161.0s - 3190.0s]
+So this is what the SEAPLEX manual 12.1 says. Actually a great deal of development effort has been devoted to establishing default dialogue seaplex. Now IBM ILOG CPLEX parameter settings that achieve good performance on a wide variety of mid models. So informal chats with the makers of Seaplex suggests that several person years, at least have gone into manual parameter configuration of seaplex, so this was.
+
+[3190.0s - 3219.0s]
+High bar. So we automatically configure this starting from the factory default settings. We selected 63 parameters out of the 81 that sends to us to automatically configure some of those have auto settings, which means that if you set it to that, the solver sort of analyzes the instance of it and tries to adapt itself. So this is instance based algorithm configuration, so it already does a little bit of that. And of course the setting that the settings that we considered would have allowed all of these to be set to auto, but wouldn't have forced them to be inaudible. The configuration space is vast, it has more than. 10 to 30.
+
+[3219.0s - 3248.0s]
+Configurations we use the same configurators as in previous work for those 2.3 with a performance objective of minimizing mean runtime to the completion of a proof OK. The configuration time was 10 * 2 CPU days, so this was basically two CPU day runs performed in parallel on 10 machines, so not a whole lot actually. So how?
+
+[3248.0s - 3277.0s]
+Well, did this work? Here's the rub. These are various types of map instances. Those three types are very well come from the Berkeley,, Tutorial optimization lab. This is one that is also quite well known. It's a combinatorially auctions with termination problem, and this is a specific one that came up in an RNA energy function optimization problem in our lab. In the other part of our lab where we are doing bioinformatics type problems, here are the default performances, but let's not even look at that. Let's just look at the speedup factors that we got here over the factory. And they range from 1.8 in this quadratic programming domain here. And actually this is the complete problem, right? This is a polynomial problem solved by seaplex, so it doesn't exercise C plexus muscle quite as much, and then it goes all the way up to about 54.4 on the mixed integer knapsack problems from the Berkeley Co. Mentored optimization app collection. So this is real.
+
+[3277.0s - 3306.0s]
+Great, let's look at those two and just let's see how this is across those instances and what you will see. There is not just one.
+
+[3306.0s - 3335.0s]
+Average right? So here we have the runtime of the default is the runtime of the optimized configuration and you can see actually almost all the points here, particularly all the difficulties are below. This equals CP CPU line CPU timeline, indicating that pretty much across the board, and particularly for hard instances, are new. Automatically found configuration performs.
+
+[3335.0s - 3364.0s]
+Better and the same can be observed for a case where the speedup wasn't as impressive, but you can see it's still very, very consistent.
+
+[3364.0s - 3393.0s]
+Good, here are latest results that are not even haven't haven't appeared yet, but will at CPI. Or this is kohlrabi, another. So it's sort of a challenger to seaplex. This is a bunch of guys who were really very much responsible for the success of simplex and then left and did their own company. Very, very good people. An integer programming. The Gurobi solver is, in many respects fully competitive with simplex, so we tuned that it doesn't have nearly as many parameters, but still huge configuration space. And this is again on this on these Berkeley, tutorial optimization instances you can see that also there we get very, very nice results within the same configuration time.
+
+[3393.0s - 3422.0s]
+And this is on training data. Just you wondered about if you wonder about training and test data. This is an independent test data that the solver has never seen so pretty much as good.
+
+[3422.0s - 3451.0s]
+And this is LP solve an open source mixed integer programming solver, so this is not just linear programming, it's the mixed integer linear programming solver of LP. Solve on the combinatorial auction with termination and here you can achieve basically three orders of magnitude of speed up, particularly on hard instances. What's known. What's worth noting here is that the blue lines indicate the cut off used during training, so during training only two of these instances where ever solved, so we configure it effectively. Unbeknownst to us, on two instances and the performance generalize like this on all of these, here we can solve them within the time indicated, but the default just times out after after about 500,000 CPU.
+
+[3451.0s - 3480.0s]
+And here is the test data basically as.
+
+[3480.0s - 3509.0s]
+So to close this all up, how do you use computer aided algorithm design?
+
+[3509.0s - 3538.0s]
+The recipe you have an application context, you just have that right.
+
+[3538.0s - 3567.0s]
+You define a design space. You do that, typically by opening up parameters, exposing introducing design alternatives, exposing all sorts of degrees of freedom.
+
+[3567.0s - 3596.0s]
+You use an optimization procedure. You don't have to make this yourself. Other people do this for you. I mean, of course, if you're interested, you're very welcome to join.
+
+[3596.0s - 3625.0s]
+And then you use a modern amount of compute.
+
+[3625.0s - 3654.0s]
+And then hopefully you get success, right?
+
+[3654.0s - 3683.0s]
+So what's the next step with us? And this is really exciting. I called the next step programming optimization and it really addresses the question how easily. How easy is it to use these techniques? Because I would really like to tell you. Just download this piece of software and it will do it for you, right?
+
+[3683.0s - 3712.0s]
+Now what you need is effective support for specifying which design space is right. You want way that makes it easy to open up these design choice.
+
+[3712.0s - 3741.0s]
+And also you need automatic design analysis processes, right? You want to automate this whole thing as much as Poss.
+
+[3741.0s - 3770.0s]
+So for the second thing we are working on a solution currently that we call how the high performance algorithm Lab this is currently under review for CP and what this does is it supports. It's a system that's supposed to support algorithm design, an empirical analysis.
+
+[3770.0s - 3799.0s]
+The board using a lot of design patterns and procedures, including the ones that I mentioned.
+
+[3799.0s - 3828.0s]
+For it is supposed to effectively utilize parallel computation, which is rather instrumental for executing some of these compute intensive configuration and and optimize.
+
+[3828.0s - 3857.0s]
+Task it's supposed to run on multiple platforms. Of course, currently we have a version that runs very well in Linux and Mac OS. We're working on Windows, we're kind of. We're wondering about Chrome.
+
+[3857.0s - 3886.0s]
+It has a web based UI in a component based option is made so that it could be relatively easily extended with all sorts of things that others.
+
+[3886.0s - 3915.0s]
+I come up with and it's supposed to actually be used and expanded widely across various communities, including hopefully yours here and to facilitate that is open.
+
+[3915.0s - 3944.0s]
+Source so here is the main screen of how you have a bunch of tasks on the left hand side, such as evaluate evaluation, task configuration tasks and comparison tasks, and these tasks. Once they're running, look like this. I would have liked to show you a live demo, but as a trend maintenance on our compute service yesterday and guess what, it doesn't run today, which is very unfortunate, but I don't think.
+
+[3944.0s - 3973.0s]
+Have much time anyway, roughly speaking, what you would do in order to tune something like Llama, for instance, which we just started doing is you define a new algorithm configuration tasks after registering the benchmark instances in the algorithm with the with the actual system, and then you launch that task. It will appear in your task list and you can check on it and what you see in the end is is a comparison between the default configuration.
+
+[3973.0s - 4002.0s]
+The one that you found and what you would hopefully see, of course, is is a case where where the where your new configuration performs significantly.
+
+[4002.0s - 4031.0s]
+Better what I'm showing you here actually is not quite that. It's the comparison between two different algorithms configurators and how well they do on this particular sphere problem that I mentioned earlier in the context of software verification process.
+
+[4031.0s - 4060.0s]
+Start. So now what is programming by optimization? This is an exciting thing. Oh, by the way, is is also the abbreviation the chemical symbol for lead oxide and lead oxide is the thing that turns an object such as this one here, which is nicely crafted. It's a nice little marble. It has quite a few imperfections and it kind of symbolizes the kind of solvers that we build. It allows you to turn something like this into something like this thing here. That has lead oxide in it, which makes it sparkle right? And it also has been nicely machined and cut into this beautiful shape right? Which automatically in this case, and we do automatically to sopio is about turning this into this. And how do we do this?
+
+[4060.0s - 4089.0s]
+Well, the key idea is to avoid premature, uninformed and possibly detrimental design choices, right? Just don't make them just leave it open. Don't guess when you are not in a position to guess, implement the alternatives and expose them. And you do that by encouraging developers to parameterise and provide functionally equivalent alternatives.
+
+[4089.0s - 4118.0s]
+And then you make automatically choices to obtain choices about these things to obtain algorithm software or systems that perform well in a given application context, right?
+
+[4118.0s - 4147.0s]
+So for the first thing you use a generic programming language extension, so this is kind of Java plus PDO and essentially these extensions will make it very easy to expose parameters so you don't have to worry about the programming language specific mechanism, you just have a meta mechanism that makes it that makes it basically A1 liner to expose a parameter and to declare alternative semantically equivalent alternatives that might differ in.
+
+[4147.0s - 4176.0s]
+Performance. And the second thing will be achieved by using help plus compute power. Good, so how does this?
+
+[4176.0s - 4205.0s]
+For planning, here's the vision. You have a planner right now. This one here.
+
+[4205.0s - 4234.0s]
+You basically open up the design space by introducing alternatives. An opening up all the little magical constants as parameters. That gets you to a design space like this, right? And so within that design.
+
+[4234.0s - 4263.0s]
+Space for a given application context, you use these automatic tools too.
+
+[4263.0s - 4292.0s]
+Make for instance and optimize planner. You can do that by using automatic algorithm configuration like the methods that I mentioned in my.
+
+[4292.0s - 4321.0s]
+Call but the beauty is from the same design space from this thing here right? It's multi faceted. You can also make more than one planner and then. Use an odd built automatically an instance based selector, right? So from this one thing you can make an entire instance based selector just by using a different meta algorithmic procedure, and we've recently done that for sat with quite some success. If you want to learn more about it, there's a forthcoming triple AIP.
+
+[4321.0s - 4350.0s]
+And finally, if you make more than one, you don't have to select between them. You can also run it in parallel, right? And if you run it in parallel, what you get is a parallel algorithm portfolio, except that here all the components are built from the same design space from the same rich space.
+
+[4350.0s - 4379.0s]
+And then once you get to this, we actually start from a planner instead of retroactively introduced all of these degrees of freedom. Why don't we start as programmers and algorithm developers to think in design spaces? And that is really turning the idea of programming a bit on its head, right? So far the idea of programming is that you make something that is so precise that a computer can execute it without a shadow of a doubt, right? Perhaps with some random numbers. But this here says no, no, no, no, no. Let's not make something that specifies execution. Let's make something that has lots of alternatives, and then we don't randomly choose between them. We have this huge space of algorithms and we automatically search within it to make all of these things here automatically for a specific application context. So this is something I want to leave you with. In the end, only one remark. Is this computationally perhaps?
+
+[4379.0s - 4408.0s]
+Expensive and here is an example that hopefully convinces you otherwise. The Hydra solver that is forthcoming in this paper, which is essentially an automatically constructed algorithm selector and it's based on one design pattern right on one thing like this. We make the entire automatic algorithm selector and all the things that selects from all from one design space, making this using parallel essence. Atsila took us about 770 CPU days.
+
+[4408.0s - 4437.0s]
+In reality, that's seven days on A10 CPU cluster because it can be very trivially parallelized.
+
+[4437.0s - 4466.0s]
+That costs us on Amazon Elastic out which we didn't use, but could have used $20 and 16.
+
+[4466.0s - 4495.0s]
+Hence, an for $20.16. You can buy 38 minutes of an average software engineer in the US and bet whether the average software engineer in the US can actually get the same result in that time.
+
+[4495.0s - 4524.0s]
+Or two hours and 45 at minimum wage, which unfortunately is closer to what a grad student in Canada makes. Then what the software engineer in the US makes and hope that the grad student gets it in 2 hours and 45 minutes. So this is expensive. It is, or rather, how expensive.
+
+[4524.0s - 4553.0s]
+OK, so I want to leave you with this. I do hope to have convinced you, at least to some extent, that using computer aided algorithm design. You can leverage computational power to construct better algorithms more or less automatically.
+
+[4553.0s - 4582.0s]
+It is not supposed to replace your ingenuity, right? It's not like Adam said yesterday, a jerk comes along and uses these techniques and blows you out of the water and makes you superfluous. Know quite in the contrary, this stuff liberates you to ideas and not on fiddling with the ideas to make them work quite as much as you currently have to write.
+
+[4582.0s - 4611.0s]
+It does that by enabling effective exploration of large design spaces. Don't be afraid of 10 to 38 right as Moshe said, you know exponential is the new polynomial, so 10 to 38 is almost like. 38 right?
+
+[4611.0s - 4640.0s]
+It facilitates principle design of heuristic algorithms principled in the sense that at least now you have the recipe and is very explicit. Although you might not really understand how the recipe in every single step gets you desired result.
+
+[4640.0s - 4669.0s]
+And it profoundly changes how we build and use algorithms, because I strongly believe once you've started fiddling with this stuff and you see what it can do for you, you just won't want to do without it, because if you do without it, then somebody else will take your stuff and put PBO in or these techniques and then enter it into condition the competition and.
+
+[4669.0s - 4698.0s]
+And against you. So I don't throw these acknowledgements in detail since the time is exhausted. In any case, I just want to acknowledge I've had the opportunity and continue to have the opportunity to work to work with some absolutely wonderful students. The ones shown in blue are still currently at my lab and some wonderful, wonderful, very talented colleagues at UBC and elsewhere. My long-term collaborators are shown in blue here. Research funding comes from various sources, and it's very important because we need to do a lot of computation. Although I showed you that it's cheap in reality when you do it at the University is not quite as cheap. Maybe we should just go onto. To Amazon for that, and we were lucky that we had very good system support for all of these clusters that we need to keep running in order to do this stuff. With that, I leave you thank you very much for your attention. I hope you got a few interesting ideas. I. I've been instructed for us to use the microphones that can be recorded. Sorry about that. I don't like to use it myself either. Can you say anything on any fitness, landscape analysis or search based analysis that you've done in the like the utility space of the parameter, you know? We haven't done very much there yet, but what we are doing currently and which we hope actually will become. I wouldn't say the next generation of techniques, but perhaps did some of the things that we've been doing so far. Is so-called response surface models, so this is using techniques such as Gaussian processes in order to model the dependency of the algorithms performance on its parameter settings, right? And so once you've done that, of course that becomes a great stepping stone for analysis. So what we found doing that is that. In many cases the spaces appear to be pretty rugged with lots of local minima. We haven't even published that yet, but I can tell you just from this, so there are difficult to search. The Valley. OK, so if anybody didn't hear it, the question is about, you know, have we have we been able to extract sort of larger scale structures such as big valleys in there? And the answer is we haven't attempted that yet and I would expect that probably you would find that in certain scenarios because there are cases where you don't have independence between parameters but Pixar kind of interacting in a semi regular way. So I think there are reasons to believe that often when you have continuous parameters that sort of control the same tradeoff. You actually would get an almost convex problem, and so I fully expect that we'll find that we haven't done it yet. We're still, you know, a little bit like kids in a candy store. We're going like wow, you know this works so well. Let's do more of it before we understand why it works so well, so. There is an error in statistics called Speciments which is stand when people actually experiment have a very large space. How to choose sufficiently? How's it related to what you're talking about? So this is the area out of which the SPO technique that I mentioned earlier stems, which we have now further developed. The big difference between that area and ours is that in design of experiments, very often the objectives are slightly different. One of the objectives there is often to optimize features that are unlike runtime things that are observed after a fixed amount of time. So when you optimize for solution quality, that's actually much closer to it. And also they don't have this issue with problem instances between which the performance varies greatly. So it turns out that most of the techniques, at least that we could find, are on what's called black box function optimization, where essentially you have one function and the fact that this function actually comes from aggregation over a number of problem instances that can be varied. Is not exploited nor recognized. Now once you recognize and exploit that you can do a lot more, so this is currently what we're doing when we expand, extend SPO 2, something we're currently working on that we call active Configurator that essentially uses these design of experiment methods and response surfaces in order to do active learning to sample the space more smartly. What we see right now is that this appears to have the potential to do a bit better than per mile is sort of the blind search method that we are using, but it doesn't seem to blow it out of the water. In many cases, so I expect that in the end, depending on the structure of your problem, sometimes this will work very well. I expect that for small numbers of continuous parameters, which is the scenario for which this is sort of most directly applicable, SPO, at least as I think it will probably do quite a bit better than what we currently have, but for others, such as hugely discrete spaces you know imagine 100 Boolean parameters. I have difficulties and this will do quite as well. Thank you. I actually I was wondering if you already thought about the design space of models instead of just design space of planners? I didn't, but I'm glad that you bring it up. The same techniques can be used for many different things. You could also use these techniques by the way to study various encodings of a problem into a formalism such as Sacramento. If we solve software verification in instead, you can make the encoding part of your design space right. We haven't done that yet, but I think it's quite promising actually. You can, you can even use the same techniques that I'm kind of keen on doing it, but haven't found the time yet to actually investigate what features make problem instances particularly hard for a given class of algorithms by actually using it to somehow pervertedly maximize the hardness of a problem instance by searching over a space of generators for problem instances, rather without solving them. And there has been some work in that area, but not sort of within this framework that that we're advocating here, and I think that would be very interesting to do. But certainly I mean searching over a space of models I think is a very, very interesting approach, particularly for the planning community. I think there could be quite a bit of potentially thank you.

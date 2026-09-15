@@ -1,0 +1,21 @@
+{
+    "id": "h3pbnnwb4zalmkbqm5x6sakxe6xnihn6",
+    "title": "A Novel Stability based Feature Selection Framework for k-means Clustering",
+    "url": "http://videolectures.net/ecmlpkdd2011_mavroeidis_novel/",
+    "info": {
+        "author": [
+            "Dimitrios Mavroeidis, Radboud University Nijmegen"
+        ],
+        "published": "Oct. 3, 2011",
+        "recorded": "September 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning->Feature Selection",
+            "Top->Computer Science->Machine Learning->Clustering"
+        ]
+    },
+    "num_segments": 18,
+    "num_sentences": 151,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 2251
+}

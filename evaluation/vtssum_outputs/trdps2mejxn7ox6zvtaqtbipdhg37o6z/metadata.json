@@ -1,0 +1,20 @@
+{
+    "id": "trdps2mejxn7ox6zvtaqtbipdhg37o6z",
+    "title": "A truly Read-Write Web for machines as the next generation Web?",
+    "url": "http://videolectures.net/iswc2012_coppens_next_web/",
+    "info": {
+        "author": [
+            "Sam Coppens, Ghent University"
+        ],
+        "published": "Dec. 3, 2012",
+        "recorded": "November 2012",
+        "category": [
+            "Top->Computer Science->Semantic Web->History"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 121,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 7,
+    "ground_truth_summary_length_chars": 474
+}

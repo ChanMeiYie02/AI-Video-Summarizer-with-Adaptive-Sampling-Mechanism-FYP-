@@ -1,0 +1,122 @@
+[0.0s - 29.0s]
+Well, thank you. And yes, I did just fly in yesterday, but hopefully morning is going to be OK. I was just coming in from from Durham NC where I actually also was a doctor for two weeks and I do that a few times a year. The. Previous discussion was really, I think, very useful in this in the sense that I guess it introduces you to the idea that the human beings in the context in which we take care of them, is complicated. So what better context to think about complexity than to think about about? Caring for human beings for the medical care system and for issues surrounding that. So all the way up, up and down the scale going from the macro level about population health all the way down to the micro level of of individual genomes and proteomes and so on and so forth. No matter which level you go down, up or down, it's kind of like a fractal problem. Basically, it's equally complex at every level you go to. And the group that that we have over Duquesne US really has been focusing a lot on the use of system dynamics as a methodology for starting to capture in an explicit and useful way. Various phenomena that are occurring in healthcare and last year I had an opportunity to be at this session, which I really appreciate it. It was fun. I had a chance to describe something that was a bit more macro, which was about how can we deal with a population that's so rapidly aging that Singapore and basically most of the countries in Asia are aging as the most rapidly aging countries in the world. And so dealing with the problems of this aging population is really something that that is is worrisome to everybody who's involved, all stakeholders. Anne. The question was how do you start to approach that? Because it is fundamentally a complex issue, there's complex dynamics related to the demographics. This whole demographic shift of more elderly people, fewer younger people, where the manpower is going to come from all we providing services that actually makes sense in this new context. I mean, basically we built a whole system that was all about taking care of acute problems for a relatively young population. Is that really going to suit us when we? We have to deal with more complicated problems. People with multiple chronic conditions and. Who can't just be dealt with one organ system at a time, or one specific condition at a time. They typically have multiple conditions, so we did talk about that and developed some modeling exercise that was that was useful at that point. Then we're still continuing to work on that, but this year when I was asked to present, I decided I try something at a different level. Similarly, using system dynamics, which is basically just differential equations, modeling of aggregate of aggregation so. Stocks and flows OK, stocks and flows. That's what it's about and I'll show you the diagram of a model we constructed which which allow me to sort of introduce you to some of the iconography. But for those of you who are more mathematically sophisticated, I think you're going to find this basically elementary. But what's really valuable about the approach is, as far as I've been concerned, and why I found it to be something that I pursue in the context of health care is that it provides an opportunity to take relatively difficult, complex concepts and to create a visual representation that you can work among stakeholders who aren't mathematically adept and wouldn't have a clue what you meant when you showed them a differential equation. You can show them something that they can understand conceptually. And then can play with and start to potentially understand whether there are some unique solutions they hadn't considered, and even if they don't all agree, they at least can start to visualize where. They disagree and they can see, or they can see the part that there that what they do contributes one way or another to the overall picture. So it's more kind of the ethos around system dynamics rather than the methodology per southeast that has really interested me in the topic that I'm going to talk about today with my colleagues at Duquesne US. And this is a colleague at Duke. Heather Whitson is A is a geriatrician. Is an interest in looking at this question of how do people lose function overtime and how do they recover function overtime and what can we do about it? And can we think about this in dynamic terms in that actually advances that not only are understanding better potential for doing something to help improve those trajectories?
+
+[29.0s - 58.0s]
+So that's a big deal. So these are the learning objectives, which I think is probably the learning objectives of your whole course, basically. The system what we often call IT system thinking. 'cause sometimes people don't like the word system dynamics. It's got kind of some negative consequences. Like you know some hyper religious kind of approach to the world. But but systems thinking, looking at the dynamic relationships between different parts of an interconnected system and then and then apply this in a health context so. Let me introduce you to the ID.
+
+[58.0s - 87.0s]
+Yeah, this is about about aging fundamentally. Again, because this is a topic that we're all just intensely concerned about and the general agreement is that a hallmarks of successful aging is a sustained ability to interact physically. Sociological, socially, and psychologically with the world well into the life course, so that if you looked at. Function at that by that definition. Basically it would be a square wave that we'd be boom, and then you die. OK, assuming that everybody has to die, we don't know that for effect, but we believe that to be true. But if that's going to be true, we want to have that shape of a life course.
+
+[87.0s - 116.0s]
+And the core objective of aging research is to understand the factors that impact functional ability and to inform decisions that would promote successful aging for individuals in the population. So here's the thing that we that we started from we said that.
+
+[116.0s - 145.0s]
+There's there's recent work that supports the idea that the processes underlying functional loss are dynamic. Which is no big surprise, but that it's not just an issue of senescence, senescence, meaning that cells just age. They get old, they lose function and eventually boom you die. OK, it's not just about that. There's more to it than that that that actually, that there is evidence of feedback loop.
+
+[145.0s - 174.0s]
+Which in which variables are both the cause and the effect which is? The foundation for a lot of system dynamics, the more interesting system dynamics problems are the ones in which their feedback processes. And that understanding these dynamics, we said we hypothesized, would help us to reveal opportunities to optimize life trajectory, or at least to say that there's a conversation that's going on about this that is fairly has been. Occurring at all kinds of different levels with all kinds of semantic problems about what various terms mean, like resilience and frailty, and all kinds of other terms that have come that have come out and we wanted to see if we could also use this modeling exercise to sort of create a more standardized set of terms. Whether anybody wants to agree with those definitions or not is another story, but at least we would be explicit. So one of the motivations for me personally was in looking at a lot of the literature about frailty over the last 15 years or so. This concept of the frail elder has come to the fore and. And there are ways of defining their measures. They're probably there. Last time I looked there, about 45 different measures that one could use to define whether someone was frail. But fundamentally it was something about the fact that you know a stiff wind. You know they'll blow over. In this case, a little birds sat on that branch and it cracked the branch. So that's a frail tree. OK, but the fact is is that that frailty is not just a phenotype. It's not just a point in time, it's that the phenomena that we're talking about is really a dynamic phenomenon. It's about it's about loss. It's about recovery, and it's about incomplete recovery, and so we thought that's what we really want to capture. So we wanted.
+
+[174.0s - 203.0s]
+Create a simple causal model of physical function in response to stressors. The idea is that we're constantly experiencing stressors there. Big stressors, little stressors. And we wanted to have explicit definitions and we wanted to create testable hypothesis, which would mean basically that's what you what a good conceptual model will do for you. It will help you with your definitions and it will help you define a series of experiments that you could engage in that could help you prove or disprove relationships that you posit exist.
+
+[203.0s - 232.0s]
+So this is the data that we started with, which is in a sense. Call in system dynamics terms the reference modes, which is to say that when you look at physiologic change with age in various body systems, that the evidence indicates that basically there's a linear loss overtime. A function, but when you look at in the aggregate, the decline is actually in the short term. It looks linear, looks linear, looks linear, but it's actually declining in a somewhat exponential fashion. So what's that about and how might we explain it?
+
+[232.0s - 261.0s]
+And so we developed this conceptual model. And as I said, we wanted we wanted to capture some issues that we thought were important and the geriatricians who are studying this area felt were important and we wanted it to be supported by the literature. So actually each each component of this model has at least some literature that suggests that it may be true, or at least at least resembles the truth, and we wanted to do some form of verification, which in this case it consisted of having experts work with us to look at the model and see if they actually. Agreed with its representation, and so it goes.
+
+[261.0s - 290.0s]
+So here's here's the model, and this is relatively simple system dynamics model, but I'll try to go through it step by step. That you'll see, of course, that that the iconography is basically that their stocks, these boxes there flows, which are these big arrows with little valves in them. And then there are things that influence those valves, OK? And then we have some. There are some loops going on here, so let me start step by step. We have 4 main parameters in this MoD.
+
+[290.0s - 319.0s]
+The first is actual function, it's it's some aggregate measure of how someone is doing in terms of their interaction with the world. In all of the three domains I mentioned.
+
+[319.0s - 348.0s]
+There's resilience now resilience. We specifically define as the tendency to engage in activities that lead to functional recovery of a perceived deficit. That's a long definition, but it basically says how quickly do you try to close the gap if you perceive that you have a gap between where you are and where and where you could be. So it's a perception issue. Anne.
+
+[348.0s - 377.0s]
+Then there's, of course, what what influences your perception was? What's your expectation of recovery? And it could be very, very much the same.
+
+[377.0s - 406.0s]
+Be very resilient in the sense that you engage in a lot of activities to recover and you have high expectations for recovery. But it also made me that you have high expectations for recovery, but you don't engage in activities that are going to influence your recovery.
+
+[406.0s - 435.0s]
+Just don't do that. You know there are people like that and the opposite is also true, and then the 4th important variable is stressor.
+
+[435.0s - 464.0s]
+So there's a stressor here and we're going to talk about what I'm calling the single stressor model. We're only going to talk about one stress at one point in time. The hip fracture, say a loss of a spouse. Pneumonia, so any number of things could could count as a stressor retirement. I mean, we could be. It could be a stressor becoming a caregiver, so you're having having a family member who suddenly becomes disabled and you have to take care of them. So the idea was for this to be somewhat generalizable. So this is the stressor. So now you see these feed these feedback loops. We have a balance, what's called a balancing loop because basically as as actual function. As actual function increases because of resilience than the gap that someone gap that they have diminishes. It's kind of like you know the the idea of that app you know is your glass gets more full. You perceive the glass is almost full and you slow down that app, so that's a balancing loop. There is 2. 2 feedback loops that actually opposite in the opposite direction. One is is that as actual function diminishes your result, the rate at which people lose their resiliency increases. OK, and that tends to decrease people's capability of recovering whoops. No, there are only two. There are only two loops here. Sorry the next mile I'll show you has three loops now all this other junk up here basically is kind of placeholders. This basically says what would. What would people be like if all that happened to them was they had senescence, so it's just sort of. It's just there for the algebra.
+
+[464.0s - 493.0s]
+So we created three experiments for experiments in which in which we modified these these parameters and and. These are basically saying resilience, going from zero to 100. Expectation of recovery, going from zero to one resource availability, going from zero to 1. Zero 100 means perfect. Function 1 means that it's about how you wait. Your current function versus your your perfect function. The function that you could could potentially have if we.
+
+[493.0s - 522.0s]
+Back to the previous version, what we're calling expected function is what you would have if you could get back to where. If you could get back to where you were before the stressor. But you may not believe that you could get back there and so.
+
+[522.0s - 551.0s]
+Degree to which you don't, which you don't agree. If you think you're going to do actually better than you were before, so you wait. The potential that you can actually have a higher expectation recovery, but for the most part, people's expectation may be lower. OK, so.
+
+[551.0s - 580.0s]
+Now it's going to move to the.
+
+[580.0s - 609.0s]
+Pulse so.
+
+[609.0s - 638.0s]
+The first base run was no stressor. Actual function remains unchanged at 80 is again, this. This norming we just. Normalize the functional zero to 100 scale. We could have used barthels index or some other kind of functional index.
+
+[638.0s - 667.0s]
+The second is the first scenario then. And by the way, you see that there's no drop because during that. Senescence really is not operating. OK, it's all too quick. The second would be you have a highly resilient person with a high expectation of recovery, and so the rate at which they return to the potential that they had is relatively rapid, OK?
+
+[667.0s - 696.0s]
+Now, if you had somebody who actually was hyper resilient, then they might actually do better. This may be a big opportunity for somebody. It's kind of the teachable moment notion. You know somebody suddenly discovers, wow. I haven't realized what I could be doing.
+
+[696.0s - 725.0s]
+Then this is the person who's highly resilient, but they don't have higher expectations for themselves and so the level of recovery tapers off at the level that they expect to taper off.
+
+[725.0s - 754.0s]
+And then this is the sort of the thinker phenomena. Which is they're not resilient. They have low expectations. They don't have access to resources and this is here the consequences of this stressor is just a continual decline.
+
+[754.0s - 783.0s]
+So then we said, OK, can we now extend this to a lifecourse model? We have the same parameters, but now we have an additional feedback loop, so the parameters that I showed you before the extra parameter here.
+
+[783.0s - 812.0s]
+Now is that there is a stressor that's going to occur at some interval and the notion is is that as functional level drops, that frequency of that stressor will increase. Now the evidence for that is pretty substantial that as people become more functionally disabled, the likelihood of experiencing stress or increases. So as somebody becomes more less functional, they're more likely to develop pneumonia. They're more likely to fall. They're more likely to lose their spouse, so all the things that one might experience are going to happen at. At a greater frequency.
+
+[812.0s - 841.0s]
+This induces another feedback loop which now as functional status drops. You now see this negative consequence that that the frequency of stressors would increase, so none of this is magic. None of this is sort of super duper counter intuitive whether we've captured everything that's important or not. Everything that's important. But actually the fact that it's so so small an. Is 1 might say elegant? And that's nice, I mean, because we built models that are just God awful complicated. Some of you probably have done that too, and they're hard to think about and explain to people. This woman is a nice example of something we were able to talk to people about.
+
+[841.0s - 870.0s]
+Geriatricians and say well, what is it? Are we capturing these these things in a sensible way? Something that you understand and can test? We use the same scenarios.
+
+[870.0s - 899.0s]
+And so I'll show the results of each scenario.
+
+[899.0s - 928.0s]
+Switches
+
+[928.0s - 957.0s]
+Here you are now seeing if we did nothing there but no stressors for the life course. This is all senescence operating OK?
+
+[957.0s - 986.0s]
+This is the best scenario which in which in which someone has high risk they have. We had the same the same stressor, but then subsequently they had a number of stressors that occur at frequencies that are dependent on their level of function, and so not terribly unexpectedly, you see. A more rapid decline overtime.
+
+[986.0s - 1015.0s]
+With a highly resilient individual with a high expectation of recovery, they actually can even appear to have a longer life expectancy in M and a much higher functional level.
+
+[1015.0s - 1044.0s]
+And if they have high, they have relatively low resource availability and low expectations of recovery.
+
+[1044.0s - 1073.0s]
+And then finally the stinker. They don't expect much of themselves, they don't have alot available to them, and they're not very resilient, and so this is what this is. What we see. So it's not that these are actual trajectories. The idea is is that are these are these represent general structures, and it could with the notion that if we actually could parameterized these with real people's data, we have at least a fighting. We have a fighting chance to actually simulate true real life trajectories, which is now what we're in the process of doing, which is. Collecting data about people who are experiencing specific stressors like one of the one we're working on his hip fracture, another one is potentially knee replacement, another one is stroke and so on. So so it's possible we can actually now test test this model, parameterized the model and test it. And to see if the components are actually. Things that make up the model are actually true, so so basic.
+
+[1073.0s - 1102.0s]
+D for both short and term duration, we've taken just a few parameters an leads which leads to a realistic range of trajectories of function. Overtime that we see this the to create this accelerating functional decline did not have to assume any accelerating decline, an underlying organ function which is not supported by the evidence, but really it occurs. It was occurring because of these negative reinforcement loops.
+
+[1102.0s - 1131.0s]
+You don't have to read this whole slide, but this is one of the things that I think is really makes it kind of exciting for me in terms of how we now use this as a conceptual framework, and that is that each of the elements implies something that we could do actively to reduce some of the negative consequences an improve trajectories and so making resources available on affordable building resilience. Now one of the notions is that resilience is kind of a personality trait. But there are interventions that are aimed at improving peoples or changing people's perception of what they themselves can do to to increase their recovery an so these resilience building activities either with the with the individual themselves or with their families. We find that families have a tendency to have a negative resilience effect. They over baby there. Family member and I think that's true a little bit more here than that in some places. It's all in the spirit of filial piety, but not necessarily good for recovery. Improving functional ability. This is sort of physical therapy and so on. Treating actually medical treatment conditions and then reducing the frequency and intensity of stressors. But I like to call the wrapping him up in bubble wrap. Approaches. So just to conclude what?
+
+[1131.0s - 1160.0s]
+So we've done. We've done in this process using system dynamics to say, can we create a model of the life trajectory that is relatively simple, uses explicit definitions, generates testable hypothesis, and provides a framework for conversation amongst the various players? That is, that is actually allows us to move forward, both in terms of our conversations about definitions, but also in terms of developing interventions that are that are conceptual framework base.
+
+[1160.0s - 1189.0s]
+Thanks. Really impressive, particularly the part where you talk about the psychological effects. This is all mental state, so no so can you say a few words about how you know you well. So so the issue. One of the things about system dynamics also is is that that as a group. The system dynamics people don't seem to have any problem with with issues like you know preferences and tendencies and and so on. I'm a little bit different in the sense that I say OK, if we're going to talk about something like psychological resilience, we have to have something that we can measure that corresponds to that activity. So I could say so there are such a measure that we've been using now called CD risk. The counter Davidson RICS RASC score, which is a measure of basically peoples tendency to engage in positive activities and their tendency to see themselves as actors in their own lives as opposed to victims. So it's that kind of tendency, so we are. So we're using that, and then we're one of the things that we're testing is the degree to which that characteristic relates to the rate at which somebody recovers a perceived gap. So we're looking at where they are, where they expect to be, and then how quickly they recover, and then going back. The math basically says we should be able to find a correlation between the two. So with the CD risk is a quantified, quantifiable measure, and it's been. It's not, maybe not been so terribly validated, but it's at least translated into into Asian languages. So Many thanks again. Let's thank the speakers again for this morning.

@@ -1,0 +1,21 @@
+{
+    "id": "iq6yziluzdullqm3pltuewi6j7r36jin",
+    "title": "Crowdsourcing Linked Data Quality Assessment",
+    "url": "http://videolectures.net/iswc2013_acosta_quality_assessment/",
+    "info": {
+        "author": [
+            "Maribel Acosta, Institute of Applied Informatics and Formal Description Methods (AIFB), Karlsruhe Institute of Technology (KIT)"
+        ],
+        "published": "Nov. 28, 2013",
+        "recorded": "October 2013",
+        "category": [
+            "Top->Computer Science->Crowdsourcing",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 128,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 34,
+    "ground_truth_summary_length_chars": 3606
+}

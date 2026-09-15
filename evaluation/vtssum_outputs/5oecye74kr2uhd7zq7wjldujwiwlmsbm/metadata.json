@@ -1,0 +1,22 @@
+{
+    "id": "5oecye74kr2uhd7zq7wjldujwiwlmsbm",
+    "title": "Realizing traditional built heritage for sustainability",
+    "url": "http://videolectures.net/educationdesign2018_acri_built_heritage/",
+    "info": {
+        "presenter": [
+            "Marco Acri, University of Nova Gorica"
+        ],
+        "published": "July 13, 2018",
+        "recorded": "July 2018",
+        "category": [
+            "Top->Technology",
+            "Top->Social Sciences->Education",
+            "Top->Computers->Digital Media"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 225,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2281
+}

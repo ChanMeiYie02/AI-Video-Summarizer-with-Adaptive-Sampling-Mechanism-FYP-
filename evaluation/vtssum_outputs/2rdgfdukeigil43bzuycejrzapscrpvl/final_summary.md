@@ -1,0 +1,15 @@
+# Final Multimodal Video Summary
+
+The presentation begins by introducing the speaker and setting the stage by discussing the evolution of user behavior: shifting from simple desktop searches to engaging with knowledge bases focused on dialogue and answering questions. This transition is driven by the need to provide precise, concise results, exemplified by systems like Freebase, which demonstrate the interest in the semantic web.
+
+The core objective of the research is to construct comprehensive knowledge bases (KBs) by integrating data from scientific papers, patents, webpages, newswire releases, and social media to track scientific careers. This effort aims to build tools that accelerate scientific progress by helping users find collaborators and papers, while also exploring models for open peer review.
+
+The process of building these knowledge bases involves complex steps: extracting entities and determining the relationships between them. A major challenge is mitigating the snowballing errors that occur during information extraction. To address this, the system employs joint inference, combining top-down and bottom-up reasoning to manage uncertainty and improve overall accuracy. Furthermore, the system is designed to treat the knowledge base as a dynamic system, storing not only the final truth but also all intermediate evidence and reasoning to allow for continuous updates based on new data.
+
+To manage this complexity, the team focuses on representation and diversity. The speaker proposes a "Universal Schema," which embraces the ambiguity of raw data and combines structured information with natural language to enable reasoning. This approach uses matrix completion techniques, similar to those used for large datasets, to infer missing relationships and capture complex asymmetries in knowledge.
+
+In the realm of Natural Language Processing (NLP), the research moves beyond traditional supervised methods toward unsupervised approaches, using dependency parsers and clustering to automatically discover relations and patterns. The system develops a new philosophy that prioritizes diversity over rigid, predefined schemas, allowing users to query the knowledge base using everyday language.
+
+A key innovation is the use of vector embeddings to represent knowledge. Instead of storing symbolic entities and relations, the system represents knowledge bases using vectors, allowing entities and relations to be understood in a continuous space. This vector representation is processed by a recurrent neural network (RNN) that combines sequential context to generate a composite vector for the entire semantic path.
+
+The research also explores advanced multimodal reasoning, introducing a nonparametric sense system to capture multiple, context-dependent meanings for a single word. The system learns to manage these concepts by creating vector representations that capture breadth and asymmetry. By combining structured knowledge and raw text, the model successfully predicts complex relationships, such as inferring a person's place of birth or the original language of a book, demonstrating the power of chaining

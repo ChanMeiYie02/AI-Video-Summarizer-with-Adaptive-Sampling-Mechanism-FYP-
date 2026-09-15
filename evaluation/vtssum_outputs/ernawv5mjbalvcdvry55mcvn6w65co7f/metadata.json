@@ -1,0 +1,20 @@
+{
+    "id": "ernawv5mjbalvcdvry55mcvn6w65co7f",
+    "title": "The KL-UCB Algorithm for Bounded Stochastic Bandits and Beyond",
+    "url": "http://videolectures.net/colt2011_garivier_bandits/",
+    "info": {
+        "author": [
+            "Aurélien Garivier, CNRS - LTCI UMR 5141 Telecom ParisTech"
+        ],
+        "published": "Aug. 2, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Computer Science->Algorithms and Data Structures"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 198,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1758
+}

@@ -1,0 +1,20 @@
+{
+    "id": "nd4yl6lqzlsgy2lj4durqffgmrdehvch",
+    "title": "Beyond Images - THOMSON’s strategy for the Future Internet",
+    "url": "http://videolectures.net/foi08_hourcade_bi/",
+    "info": {
+        "author": [
+            "Jean Charles Hourcade, Thomson Reuters"
+        ],
+        "published": "April 16, 2008",
+        "recorded": "March 2008",
+        "category": [
+            "Top->Computer Science"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 195,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1415
+}

@@ -1,0 +1,21 @@
+{
+    "id": "ntju4wf65jhsiwykj7wzbxzzruhgcyo3",
+    "title": "Decomposition and Modular Structure of BioPortal Ontologies",
+    "url": "http://videolectures.net/iswc2011_vescovo_klinov_structure/",
+    "info": {
+        "author": [
+            "Chiara Del Vescovo, School of Computer Science, University of Manchester",
+            "Pavel Klinov, Institute of Artificial Intelligence, Ulm University"
+        ],
+        "published": "Nov. 25, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Computer Science->Semantic Web->Ontologies"
+        ]
+    },
+    "num_segments": 40,
+    "num_sentences": 263,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 20,
+    "ground_truth_summary_length_chars": 1956
+}

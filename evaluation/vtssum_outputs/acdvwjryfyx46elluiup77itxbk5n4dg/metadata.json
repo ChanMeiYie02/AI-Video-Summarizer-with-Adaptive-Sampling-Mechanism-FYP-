@@ -1,0 +1,24 @@
+{
+    "id": "acdvwjryfyx46elluiup77itxbk5n4dg",
+    "title": "A Semantic Web for End Users",
+    "url": "http://videolectures.net/eswc2013_karger_semantic/",
+    "info": {
+        "introducer": [
+            "Philipp Cimiano, Center of Excellence Cognitive Interaction Technology (CITEC), Bielefeld University"
+        ],
+        "author": [
+            "David R. Karger, Computer Science and Artificial Intelligence Laboratory (CSAIL), Massachusetts Institute of Technology, MIT"
+        ],
+        "published": "July 19, 2013",
+        "recorded": "May 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Big Data"
+        ]
+    },
+    "num_segments": 195,
+    "num_sentences": 963,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2412
+}

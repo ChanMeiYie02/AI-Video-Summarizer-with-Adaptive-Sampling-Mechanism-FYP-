@@ -1,0 +1,56 @@
+[0.0s - 29.0s]
+So I will present a paper that that provides a formal semantics about the weighted ontology mapping.
+
+[29.0s - 58.0s]
+First of all, what are weighted ontology mappings? Well, ontology mappings are expressions that by that connects that establish is relations between elements of two ontology, two originals ontologies? Crisp mappings tells us that certain concepts are related to other concept in an ontology and the type of relations are typically set theoretical relation like subset subset, superset equivalence and disjunction. Weighted ontology mapping. In addition to this type of relation, associate and number await to these relation.
+
+[58.0s - 87.0s]
+Ontology mappings is a very important topic and one need. Once somebody has found a set of ontology mapping, there is also the necessity of handle with ontology mappings. In particular, we want to be able to do ontology mapping, composition mapping, verification, mapping, consistency verification, mapping, minimality and so on. So giving the formal semantic is important. In order to perform these in this operation in the correct way. There are very good semantics. A very good studies for Chris mappings which are based on set theoretic semantic. On the other hand, there is no agreement on a formal semantic for weights associated through the ontology mappings. So the objective of this paper.
+
+[87.0s - 116.0s]
+There is 2 exactly to provide a formal semantic for this and to also give a notion of logical consequence between weighted mappings that allows us to define a set of inference rules that allows us to. There I've waited, mapping from a set of existing mappings. This is the typical operation under which which you can construct. Ontology mapping managers. What is the intuition about the semantics or just give?
+
+[116.0s - 145.0s]
+The intuition here, it's called the reclassification of semantics, and suppose that you have to. Ontology showed in the picture and ontology one is used to classify 6 elements, which are the little bull colored ballot in the ontology. Suppose that these six elements are reclassified in the second ontology. Well, you can measure. You can measure the value of of such theoretic mapping by counting these elements. For example, you can see that the concept.
+
+[145.0s - 174.0s]
+He and the concept D the top.
+
+[174.0s - 203.0s]
+Consider the $2 are equivalent are equivalent with.
+
+[203.0s - 232.0s]
+We have .1 because every element in the first concept is also in the 2nd and vice versa. Then, but is similarly you have a subset of mapping between B.
+
+[232.0s - 261.0s]
+And the, but then, if you compare now the concept.
+
+[261.0s - 290.0s]
+The concept B and the concept E you discover that 50% of the objects in concept B are reclassified in their concept E, and so the this justify the fact that you can say the subset mapping between B&E is .5 vice versa. You can you can see that the 66 percent 66% of the element classified under E are reclassified under B. This allows us to say that the weights associated to the subset mapping between B&E is 0.6.
+
+[290.0s - 319.0s]
+Six, given the semantics we define.
+
+[319.0s - 348.0s]
+In an ocean of ontology, weighted ontology mapping composed of is an expression composed of a source concept, a target concept relation between these two concepts, and an interval which is an interval in which the weights is.
+
+[348.0s - 377.0s]
+Should go these type of mappings. This type of semantics allows us to describe to build up a set of inference rules, and here I put.
+
+[377.0s - 406.0s]
+As one simple example, if you have two mapping and super set mapping and the subset mapping with weighted associated to it, you are able to derive soundly derive equivalence mapping in the following way, and this is it.
+
+[406.0s - 435.0s]
+Sample teacher you have the 60% of the teachers are sorry. 70% of the teacher or professor and then you can compose it and obtain.
+
+[435.0s - 464.0s]
+Wait associated to the teachers equivalence mapping between teachers and professors as shown in the pic.
+
+[464.0s - 493.0s]
+We the limitation of this work is the fact that we managed to divisor quite a number of rules for mapping derivation, but we don't know if these rules are complete if we don't know if there are other.
+
+[493.0s - 522.0s]
+Which are necessary to be out. So this is part of our future work among and among the future work is also to.
+
+[522.0s - 551.0s]
+Also, to study how this amounted for weighted ontology mapping can be used for mapping composition mapping, equivalence mapping, minimality and all the other operational mappings that are necessary in the in the community of heterogenous knowledge integration. Thank you.

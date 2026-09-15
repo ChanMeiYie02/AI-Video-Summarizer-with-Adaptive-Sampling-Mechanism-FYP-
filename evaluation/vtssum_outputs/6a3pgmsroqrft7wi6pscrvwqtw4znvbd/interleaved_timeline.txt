@@ -1,0 +1,32 @@
+[0.0s - 29.0s]
+So the motivation of this paper.
+
+[29.0s - 58.0s]
+All of this demo has been to extract a graph of moves from. Flickr photographs from the reference photographs and apply some Charlie calculate graph centrality measures and see whether one can say something about the structure of a city. Him by interactively exploring.
+
+[58.0s - 87.0s]
+The results. In order to do this, we have applied visual analytics method which works in basically four steps. So initially what we want to do is extract the trajectories from our photograph so photographs at Flickr have a time reference and the geographical reference and each user has an account. So ordering the uploads of a user, we can consider it as a trajectory of movement overtime. Anne.
+
+[87.0s - 116.0s]
+So if I look at the region and extract all the photographs corresponding to this region, I can have a data set of trajectories. Here we see the larger Athens area at the key. And the next step from these trajectories I want to get the graph of moves between different places. So the first thing I.
+
+[116.0s - 145.0s]
+Gonna do is split my region into areas and in order to do this we apply. We cluster the photographs, apply density based clustering. In order to do this and then take the. Centroids and Usama seeds compute varno polygons and after that I can count.
+
+[145.0s - 174.0s]
+The number of. Head movements between the places and aggregate my data into a graph, basically of. Linx moves my edges. Between places the areas my nodes. Having done this.
+
+[174.0s - 203.0s]
+Now we can compute my different centrality measures. We have computed basic measures, degrees, closeness between us. I should say also that I can aggregate the data either the total sum of of my whole data set or I can also aggregate it depending on the time interval of the users choice. So either I have a total graph or a graph of monthly moves daily moves, hourly moves whatever I prefer and having computed my graphs and my graphs and.
+
+[203.0s - 232.0s]
+The measures I can then go ahead and interactively explore my results using different representations and. And look at the different measures and compare them and. Make sense of them. So here we see choropleth map of their degree in the 1st. To the. Left and closeness to the right. The one shows us the highly visited places. The other one shows us places that are well connected.
+
+[232.0s - 261.0s]
+Said I can also. Him having computed my centrality measures by season, for example, I can compare how the different measures. How they relate to each other?
+
+[261.0s - 290.0s]
+Can also have time graphs to see. Hear each line represents a place so I can see see peaks. For example in the. Temporal peaks or recurring events etc. And the whole idea is that the user can interact freely and explore different aspects of this centrality and make sense of the data. And what is interesting to them? And then go on and.
+
+[290.0s - 319.0s]
+Explore further. But you can see the demo downstairs. Thank you.

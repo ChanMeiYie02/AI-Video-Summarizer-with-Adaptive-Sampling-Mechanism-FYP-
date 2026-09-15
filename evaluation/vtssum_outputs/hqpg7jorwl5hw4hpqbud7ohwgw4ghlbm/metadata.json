@@ -1,0 +1,21 @@
+{
+    "id": "hqpg7jorwl5hw4hpqbud7ohwgw4ghlbm",
+    "title": "Combining SAWSDL, OWL-DL and UDDI for Semantically Enhanced Web Service Discovery",
+    "url": "http://videolectures.net/eswc08_kourtesis_cs/",
+    "info": {
+        "author": [
+            "Dimitrios Kourtesis, Southeast European Research Centre"
+        ],
+        "published": "Aug. 16, 2008",
+        "recorded": "June 2008",
+        "category": [
+            "Top->Computer Science->Semantic Computing",
+            "Top->Computer Science->Semantic Web->Semantic Web Services"
+        ]
+    },
+    "num_segments": 34,
+    "num_sentences": 264,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 10,
+    "ground_truth_summary_length_chars": 718
+}

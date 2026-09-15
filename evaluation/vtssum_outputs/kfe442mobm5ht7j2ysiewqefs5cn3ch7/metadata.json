@@ -1,0 +1,20 @@
+{
+    "id": "kfe442mobm5ht7j2ysiewqefs5cn3ch7",
+    "title": "Interactive NeRV: Interactive Visualization Optimized for Information Retrieval",
+    "url": "http://videolectures.net/machine_kaski_interactive_nerv/",
+    "info": {
+        "author": [
+            "Samuel Kaski, Department of Information and Computer Science, Aalto University"
+        ],
+        "published": "Aug. 6, 2013",
+        "recorded": "April 2013",
+        "category": [
+            "Top->Computer Science->Information Retrieval"
+        ]
+    },
+    "num_segments": 3,
+    "num_sentences": 19,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 6,
+    "ground_truth_summary_length_chars": 768
+}

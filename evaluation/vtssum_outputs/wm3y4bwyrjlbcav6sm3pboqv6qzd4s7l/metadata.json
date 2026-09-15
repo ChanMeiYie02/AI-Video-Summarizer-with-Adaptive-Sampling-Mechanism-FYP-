@@ -1,0 +1,21 @@
+{
+    "id": "wm3y4bwyrjlbcav6sm3pboqv6qzd4s7l",
+    "title": "Graph-based Methods for Retinal Mosaicing and Vascular Characterization",
+    "url": "http://videolectures.net/gbr07_perez_gbrmr/",
+    "info": {
+        "author": [
+            "M. Elena Martinez-Perez, National University of Mexico"
+        ],
+        "published": "July 4, 2007",
+        "recorded": "June 2007",
+        "category": [
+            "Top->Mathematics->Graph Theory",
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 284,
+    "num_clips_with_summary": 24,
+    "num_gt_summary_sentences": 35,
+    "ground_truth_summary_length_chars": 4064
+}

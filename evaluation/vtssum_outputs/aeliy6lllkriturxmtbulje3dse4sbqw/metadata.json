@@ -1,0 +1,24 @@
+{
+    "id": "aeliy6lllkriturxmtbulje3dse4sbqw",
+    "title": "A Three-Layered Approach to Facade Parsing",
+    "url": "http://videolectures.net/eccv2012_martinovic_parsing/",
+    "info": {
+        "author": [
+            "Anđelo Martinović, KU Leuven"
+        ],
+        "chairman": [
+            "Tinne Tuytelaars, Faculty of Engineering, KU Leuven",
+            "Serge J. Belongie, University of California, San Diego"
+        ],
+        "published": "Nov. 12, 2012",
+        "recorded": "October 2012",
+        "category": [
+            "Top->Computer Science->Computer Vision"
+        ]
+    },
+    "num_segments": 29,
+    "num_sentences": 147,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1158
+}

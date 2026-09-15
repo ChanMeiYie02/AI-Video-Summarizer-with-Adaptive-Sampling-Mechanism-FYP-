@@ -1,0 +1,20 @@
+{
+    "id": "khu7i7tifucyht5i7taicfzwjbdxvory",
+    "title": "Public transport service design requirements for the changing face of the South African customer",
+    "url": "http://videolectures.net/tra08_mokonyama_pts/",
+    "info": {
+        "author": [
+            "Mathetha Mokonyama, Council for Scientific and Industrial Research - CSIR"
+        ],
+        "published": "May 21, 2008",
+        "recorded": "April 2008",
+        "category": [
+            "Top->Business->Transportation and Logistics->Technology"
+        ]
+    },
+    "num_segments": 23,
+    "num_sentences": 137,
+    "num_clips_with_summary": 14,
+    "num_gt_summary_sentences": 28,
+    "ground_truth_summary_length_chars": 2740
+}

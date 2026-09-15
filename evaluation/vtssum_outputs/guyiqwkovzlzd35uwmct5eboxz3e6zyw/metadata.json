@@ -1,0 +1,20 @@
+{
+    "id": "guyiqwkovzlzd35uwmct5eboxz3e6zyw",
+    "title": "Complexity Theoretic Lower Bounds for Sparse Principal Component Detection",
+    "url": "http://videolectures.net/colt2013_berthet_sparse/",
+    "info": {
+        "author": [
+            "Quentin Berthet, Department of Operations Research and Financial Engineering, Princeton University"
+        ],
+        "published": "Aug. 9, 2013",
+        "recorded": "June 2013",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 28,
+    "num_sentences": 191,
+    "num_clips_with_summary": 16,
+    "num_gt_summary_sentences": 26,
+    "ground_truth_summary_length_chars": 3467
+}

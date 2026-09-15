@@ -1,0 +1,20 @@
+{
+    "id": "xl45h723qm2l4ay4lfrajfk5yywztfqp",
+    "title": "Mining the Web of Linked Data with RapidMiner",
+    "url": "http://videolectures.net/iswc2014_paulheim_rapidminer/",
+    "info": {
+        "author": [
+            "Heiko Paulheim, Institut für Informatik, University of Mannheim"
+        ],
+        "published": "Dec. 19, 2014",
+        "recorded": "October 2014",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 14,
+    "num_sentences": 160,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 23,
+    "ground_truth_summary_length_chars": 2965
+}

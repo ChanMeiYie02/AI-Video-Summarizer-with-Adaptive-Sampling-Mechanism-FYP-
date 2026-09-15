@@ -1,0 +1,20 @@
+{
+    "id": "wp3h3gy6le65n5mfzcggmz4566ashcrd",
+    "title": "SKOS: Past, Present, Future - and a little bit of history, architecture and engineering",
+    "url": "http://videolectures.net/eswc2010_bechhofer_sppf/",
+    "info": {
+        "author": [
+            "Sean Bechhofer, School of Computer Science, University of Manchester"
+        ],
+        "published": "June 30, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 59,
+    "num_sentences": 693,
+    "num_clips_with_summary": 50,
+    "num_gt_summary_sentences": 108,
+    "ground_truth_summary_length_chars": 11614
+}

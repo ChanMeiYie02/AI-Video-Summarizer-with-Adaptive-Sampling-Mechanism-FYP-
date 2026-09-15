@@ -1,0 +1,8 @@
+[server]
+maxUploadSize = 4096
+
+[theme]
+primaryColor = "#5ca4e7ff"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f6ffff"
+textColor = "#000000"

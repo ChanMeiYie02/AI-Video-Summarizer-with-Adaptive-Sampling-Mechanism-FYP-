@@ -1,0 +1,1 @@
+And in the visualization you see on the left, the blue pixels represent the density of MCMC samples, while the red pixels represent the ground truth information that we have for these dates.

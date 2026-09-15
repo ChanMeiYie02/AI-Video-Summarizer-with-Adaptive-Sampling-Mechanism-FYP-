@@ -1,0 +1,85 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:00.000 --> 00:00:07.390
+Hi! We will continue the last example from the
+
+00:00:07.390 --> 00:00:17.049
+previous video, and this time when we will click on the "force load track 0" or "force load track 2" buttons.
+
+00:00:17.049 --> 00:00:25.960
+You remember the track number 0 (the English subtitles) was not loaded, readyState=0
+
+00:00:25.960 --> 00:00:33.570
+here says the track is not loaded. Track 2 also was not loaded: it contains
+
+00:00:33.570 --> 00:00:40.739
+the English chapters of the video. This time, I will explain how we can read
+
+00:00:40.739 --> 00:00:46.590
+the content of the file. So if I click on "force load track 0", I see
+
+00:00:46.590 --> 00:00:53.989
+here the content of the WebVTT file. I didn't read it as pure text, I used the
+
+00:00:53.989 --> 00:01:05.260
+track API for accessing individually each cue, each one of these elements here is a cue,
+
+00:01:05.260 --> 00:01:13.810
+and I access the id, the start time, the end time and the content, that we call the text content
+
+00:01:13.810 --> 00:01:18.560
+of each cue. If I click on "force load track 2", I see the
+
+00:01:18.560 --> 00:01:25.590
+chapters definitions here, so chapter 1 of the video goes from 0 to 26 seconds, and it
+
+00:01:25.590 --> 00:01:29.350
+corresponds to the introduction part of the video.
+
+00:01:29.350 --> 00:01:38.710
+How did we do that? We just completed the readContent function that previously just
+
+00:01:38.710 --> 00:01:45.549
+showed the statuses of the different tracks. So remember that when we clicked on a button,
+
+00:01:45.549 --> 00:01:53.460
+we forced the text track corresponding to the HTML track to be loaded in memory,
+
+00:01:53.460 --> 00:02:02.420
+and then we can read it. A TextTrack object has different properties
+
+00:02:02.420 --> 00:02:14.770
+and the most important one is called cues. The cues is the list of every cue inside the VTT file,
+
+00:02:14.770 --> 00:02:20.180
+and each cue corresponds to a time segment, has an id and a text content.
+
+00:02:20.180 --> 00:02:28.660
+If you do track.cues, you've got the list of the cues and you can iterate on them.
+
+00:02:28.660 --> 00:02:42.590
+So for each cue, we are going to get its id: cue.id here. It corresponds to the id of the
+
+00:02:42.590 --> 00:02:50.180
+cue number i. In my example, I have got an index in the loop, I get the current cue,
+
+00:02:50.180 --> 00:02:55.220
+I get the id of this cue. I can also get the start time, the end time
+
+00:02:55.220 --> 00:03:04.709
+and the text. So cue.text corresponds exactly at this sentence
+
+00:03:04.709 --> 00:03:12.319
+highlighted here. This is the only thing I wanted to show you,
+
+00:03:12.319 --> 00:03:18.340
+because the next time we are going to do something really interesting with this content here,
+
+00:03:18.340 --> 00:03:24.230
+we are going to display on the side of the video a clickable transcript. And when we will
+
+00:03:24.230 --> 00:03:32.580
+click on it, the video will jump to the corresponding position. This is exactly what the edX video
+
+00:03:32.580 --> 00:03:37.110
+player does, the one you are watching at right now.

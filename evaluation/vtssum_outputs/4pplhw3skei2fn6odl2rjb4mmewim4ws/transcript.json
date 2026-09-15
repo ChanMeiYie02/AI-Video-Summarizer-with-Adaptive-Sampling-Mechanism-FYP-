@@ -1,0 +1,172 @@
+[
+    {
+        "text": "Good afternoon everybody. My name is Lefteris are Vikes and today I'm going to present you our work about full tech support in ontology based public subscribe systems.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "As the web is constantly growing, new information becomes available to the users at high rates and at high volumes. Users on their part want to discuss, discover new information that is fresh and that fulfills their interests.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "In order to help information seekers to find new and interesting information to information, paradigms have emerged. Information pool information polls.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "In the information pull paradigm, when user wants to find information that fulfills his interests, he poses a query to service.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "This query contains. This query contains terms about the interest of the user. The service that indexes all the available content. In the web, returns at least of items to the users. These items have matched the query of the user.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "Later, when the user wants to find updated information about the the same type of content, the same interests, he poses a similar or slightly different query in this in the same service.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So the the saving the service again returns to the user list of items. This list of items now contains both new information that the user has never seen before and told information from his previous searches.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Then the user must go through the list of new information and look for. Sorry, the user must go through the whole list and sort out the new and the old information. So.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "So as you understand the continuous the user must do the same process every time he wants to be. He wants to be informed about his about his interests.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "An as you, as you understand. This continues searching and classifying information between new and old can lead to account of overload for the user.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "On the other hand, only information push paradigm when the user wants to find information about. A topic that he's interested off, he poses a continuous query to a service. This service is responsible for indexing the continuous query in its in its database. Then the user. Sorry if this continues query usually represents a longstanding longstanding interest of the user it. And there is a. In this it is posed in order to satisfy the user interests. Usually it's more detailed about what they really, really interested user, and it's not something abstract. So when the user poses the query to the service, the service is responsible for indexing this query and the user can go back to his daily tasks. When new content becomes available to the service, the service is responsible for filtering the continuous query. Against the new published content. Then, if the the new published content matches the criteria set by the user. A notification is sent to the user to inform him about the new. The new content that is available and is of its interest. Similarly, every time that content fulfills the longstanding query of the user, notifications are assigned to him. Both systems are commonly known and pub subscribe systems alerting systems or filtering systems. In our work, we use the term public subscribe.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Show a. In order to enhance information delivery and assist information seekers in finding new new new content that matches their interest, ontology based publish subscribe systems have emerged. In these systems can use the semantics. Often $1 G and the. Increase the effectiveness of their return result in these systems, usually. Continuous queries are representing sparkle while publications are sets of RDF triples.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Current state of the art Barbie subscribe. Modality based systems support structural filtering. I like the system GTO PSS. And other systems like the algorithm broker, support structure filtering and arithmetic and string operations like equality. But there is no structural. There is no ontology based pub subscribe system that supports both structural and fulltext filtering operations. Contrary to the information pull paradigms where there is a plethora of information retrieval systems that support these operations.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "And ontology enabled. Barbara subscribe system could have a wide variety of where I quite range of applications in new selecting systems and digital libraries. While it could be used as curation and monitoring tool for linked data sets and could compliment linked open data plate platforms with structural and textual notifications. So.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Our code contribution is that we have extended sparkle with Fulltext publish subscribe. Or better, headphones operators, such as Boolean operators, word proximity operators, and phrase matching operators. Here we have a query in party with requests for publications that are of type particle. Have a title. Heavy heavy title and this title must contains the terms Olympic Games. As you can see here, we have an operator after contains in the filter clause that specifies the full. The full text restrictions of the query. Additionally, this public this this park we request for for the publication to have a body, this body must have the terms Olympic Games and drill. A finally, the term real must be must come after their term games and must be at. Emma at the distance of maximum two terms. We have",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "We have developed a family of algorithms named RTF, which is an acronym for RDF and text filtering that support that supports structural filtering and fulltext filtering. In a unified way. By utilizing three tree based structures. Our main focus is on efficiency as. We expect the server to be under heavy load of publications during filtering time.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So now we proceed in showing how algorithm RTF indexes the queries into its indexing structure. Here we have very cool that was shown earlier. Algorithm.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "RTF takes the first field of the where clause and generates a tuple.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "T1 that stores the structural structural constraints of the query.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "For the second filter, they were close algorithm RTF. Play air. Find that there is structural constraint and a full attention constraint for this field, so it combines both constrain.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Into a single tablet. In the same.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Manor. The third.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "The third section is representing is represented in the table.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "So here we have decomposed the query into 3 tables. In order for its publication for a publication to match this query, all three types must be satisfied by by the by the incoming publication. We are now going to show how how we index the tablets Internet instructions structure. So far the of RTF. And how we try to? How we try to group the tables in to? Interforest",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "So when the first Apple arrives at the forest. The indexing structure is empty. Algorithm RBF creates 3 new notes in order to store that structural constraint of. Of query Q. Not here, but here. We keep the quick witted, disciplined fire. Next, when the second tuple of query Q arrives, RTF will consider using the existing notes of the of the three. To index. The second table. As you can see here, the tablets index under the same root, but it generates a different. A different subtree which contains the structural contextual restrictions of the tablet. You notice here that we have a full tax pseudo node that represents the textual constraints of the query of that of the tablet. And the identifier of the table is kept at the leaf. Similarly, the same procedure applies from for the third table of query queue. Which where are TF generate? A third subtree. As you can see here we have indexed all three tables of query queue. Then when a new table. A nuclear event arrives at the system. The first table can have the following form may have the following form. RTF will consider the first couple of. Search the same structural and apart of of the actual restrictions with the third couple of query Q. So RTF will reuse the existing nodes and store the query at the top under the same subtree. As you can see here, only new additional node was created for the for the Term Committee of the textual restrictions, while the. The term Olympic is indexed under. The same subtree us with the third couple of curriculum. After several inceptions of doubles, the forest can have. A form like this. As you can see, for each predicate we use a different fulltext pseudo node to index the text that actual constraint. So here we have a. This variation of algorithms are RTF, his name. Our TFM asked utilizes multiple full text should or not. We could collapse all full text to notes into a single. Anne. Full text node. In order to cluster with better cluster. Via textual constraints of the of the tables. So.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "Here a forest with a single full text download would look like this. Please notice that the top is used in this. In this example, and this are the same. And we can see that we reduce. We have a better class clustering of the textual constraints. This variation.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "Fr PF is named our TFs as it utilizes a single full text. Note to index the text. Constraint.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "Now, during publication time sets of RDF triples arrive at the system. That represent a new publication. The the triples are matched against the three forest by traversing it in the first manner. While a nonmatching some sub trees are pruned in order to have a better filtering times.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "For the experimental evaluation will utilize type broker. We implement a broker, which is an ontology based pub subscribe algorithm that shared similar goals with ours. I broke a supported structure filtering and string string equality and utilizing inverted index to filter the continuous queries. We have extended. We have extended my broker to support Boolean fulltext operators.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "For the experimental evaluation, as no real life continues queries with fulltext operators were available to us. We use it video corpus to synthetically to synthetically. Generate continuous queries.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Now we're going to show how. The results from the experiment experimental evaluation. Here we have the filtering results concerning. We have the filtering result. In this diagram, the X axis represent the queries database query database which is constantly increasing while the Y axis represents the filtering time that its algorithm needs to filter incoming publication. The filtering time is in seconds. As you can see here algorithms are PFM and our TFs are two orders of magnitude faster compared to the competitor I broker. This happens because. This happens because RTF M&RTFS use three structures to cluster together common parts of of the queries, both in structural and textual. Both structural textural restrictions. While my broker doesn't utilize such a technique. It just uses an inverted index to store the triplets inside. At the.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Final results about the filter for about the filtering procedure procedure are that our TFs is 2.5 to 2.5% faster than our TFM at. This happens because our TFs utilizes single. Forest of trees to index the textual constraints so it it compacts better, better than our TFM. The tax terms. In general, the RTF user spends 50% of the of the time for the structural constraints and 50% of its time for the textual constraints. While both algorithms used 40% less memory than I broker, this happens because of the clustering of the structural textual constraints.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "Since there is no free meal in life. Albums are TFs and are PFM, have worse. Reformers during session time, as they just as they have to exhaustively sets that that restructures to index the continuous queries. While I broke, it just stores the continuous queries in inverted index and fast utility, it's less time for the indexing of the queries. But",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "Include. We have extended sparkle for Boolean full text. Operators in the public in the pub subscribe paradigm. We have designed fast query indexing algorithms that are in the first in the literature that consider fulltext operators. In in the public subscribe paradigm and Ontology based systems. Our approach is 2 orders of magnitude faster than our our competitors and in the future we plan on supporting the vector space model for public subscribe. OK.",
+        "start": 957.0,
+        "end": 986.0
+    }
+]

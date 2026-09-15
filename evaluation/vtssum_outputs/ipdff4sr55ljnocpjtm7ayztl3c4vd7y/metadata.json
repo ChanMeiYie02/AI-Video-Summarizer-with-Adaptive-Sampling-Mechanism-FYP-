@@ -1,0 +1,21 @@
+{
+    "id": "ipdff4sr55ljnocpjtm7ayztl3c4vd7y",
+    "title": "Impact analysis of using OpenCourseWare to flipper the classroom – examples in Taipei Medical University",
+    "url": "http://videolectures.net/ocwc2014_wan_impact/",
+    "info": {
+        "author": [
+            "Hsu-Tien Wan, Taipei Medical University (TMU)"
+        ],
+        "published": "June 23, 2014",
+        "recorded": "April 2014",
+        "category": [
+            "Top->Social Sciences->Education",
+            "Top->Social Sciences->Society->Public Policy"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 224,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 19,
+    "ground_truth_summary_length_chars": 1659
+}

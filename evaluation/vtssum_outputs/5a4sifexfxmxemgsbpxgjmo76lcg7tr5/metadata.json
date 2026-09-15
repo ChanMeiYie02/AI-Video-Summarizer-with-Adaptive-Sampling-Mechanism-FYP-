@@ -1,0 +1,22 @@
+{
+    "id": "5a4sifexfxmxemgsbpxgjmo76lcg7tr5",
+    "title": "A Corpus of Grand National Assembly of Turkish Parliament's Transcripts",
+    "url": "http://videolectures.net/parlaCLARIN2018_gungor_national_assembly/",
+    "info": {
+        "author": [
+            "Onur Güngör, Department of Computer Engineering, Boğaziçi University"
+        ],
+        "published": "May 30, 2018",
+        "recorded": "May 2018",
+        "category": [
+            "Top->Computers->Digital Media",
+            "Top->Humanities->Languages",
+            "Top->Social Sciences->Society->Politics"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 101,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1417
+}

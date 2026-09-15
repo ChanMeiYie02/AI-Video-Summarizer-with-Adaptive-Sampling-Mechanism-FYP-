@@ -1,0 +1,62 @@
+[0.0s - 29.0s]
+The paper will be presented by Giancoli. OK. So.
+
+[29.0s - 58.0s]
+Hey, it's the online. I first introduction the motivations and then tech technical details followed by reason.
+
+[58.0s - 87.0s]
+And conclusions, so multiview stereo is a very crowded research topic. There are a lot of existing method and. I think fast and accurate algorithm is TR meaningful and currently there are few research on the application. Application gamut of multiple stereo so. Existing algorithms can be divided into several technical categories, so depth map merging is one of the most typical and extensible categories. But we observe that current, currently algorithms in depth map Virgin are usually required, subpixel level still matching precision for accurate results is still challenging on merging inaccurate. Apps so this paper proposes a two stage bundle optimization method.
+
+[87.0s - 116.0s]
+Ford F map margin. So how is different work? So they basically problem of multiple stellar is that set of calibrated images? We can reconstruct the city model in the images. At so basically our method contains a 2 steps. The first step is uh, still matching, so we first select steel pairs for followed Daisy based style matching and then the second major step is the bound bound optimization are two stage bound optimization after three point code is generated we using. Open sourced matching surface reconstruction methods such as touch, expand, and post.
+
+[116.0s - 145.0s]
+Surface reconstruction. So they still power is selected since not all image pairs or steppers are useful for for multiple stereo. We basically based on 3 rules. The first is the angle between view directions. We constraint in the range of five degree 245 degree and also constrain the distance between the camera optical centers. Remove, remove those pair with. Larger and smaller to larger to smaller optical center distance. Certainly we constrain each view can be at most in 2 steps.
+
+[145.0s - 174.0s]
+After they are stepper is determined. We rectified this still appears to make the corresponding pictures in our skyline for each pixel in a single line of the last image. We found correspondence on the right image based on Daisy features for using a visa credit. Ritu Excellerated search so. This means for a scanner in the right image, we extracted features for the scan line. Every piece of this line, and then we using our credit rating index. Features and for each pixel into writing media, we search the credit rate to the 10 top K results. OK, usually we use 10, so after the line is processed we further did scanline optimization to cap the interline, although consistency. So finally we only kept the reliable matches based on the.
+
+[174.0s - 203.0s]
+The score. After their match are obtained, we did check. Optimization. Track means are collected matches among steel pairs with pixels come from more than 3 views. For instance, here we have two stairs and the first pair have a pizza come from the first image and connected to the second image and further connected to the server image by the second pair. So we did a depth first search to find all tracks are for.
+
+[203.0s - 232.0s]
+Starpass Track is obtained attract showed crisp picture in a track should correspond to the same 3 point optimized at the three point position. By minimize the reprojection error, we paralyzed the rate for those with larger reprojection errors, and. And we kept immediately checks in Java checks means that the replication error is less than. Threshold gamma pixels so and there are at least three views satisfy this condition. After check optimization we in fact get.
+
+[232.0s - 261.0s]
+Initially reporting cloud, but this point out is is not that accurate since they still matching is is not accurate. Still matching is pixel level accuracy, so it's usually require subpixel level accuracy for accurate multiview stereo, and they put color has no Lomas and then we refine the point cloud with photo consistency optimization. So the photo consistency is defined over Daisy features for track pixel X in, for instance, there are two pairs for track of images. In left image we can using a derived. Homograph mapping map this picture to the right image. In fact reading is also mapped to the right image so they are homography is defined by a function of. Norm of three point and the distance from the point to the. The camera center of the left image so Ek is the cost function or summarize over all the pixel in the track so we minimize Ek subject to abounded abounded reading. So they just means they re project error of the Pixel showed in bounding box an off the original pixel and the norm of the. Sweaty point also. In a constraint of the point view directions. So the normal is initialized either use. Plan fitting of the point card or using a grid based search from the point cloud directions so the benefit of this bounded optimization is twofold each. Has a very less function evaluation since it's in a bounding box of the. Or in the position of the pixels and is very fast.
+
+[261.0s - 290.0s]
+Urgency. So our system is. Implemented on our medical platform so all code are written in C and C++. We did fine fine grained optimization. We write simply code for Hospice. MD means Central single instruction. Multiple data is instruction level parallelization. This forklift and Asian and it's. So we also did a parallel data level parallelization for Skyline search and track optimization and three point refinement. So for typical 32 two mini pixel data set the how much you still took less than 3 minutes. So on 8 core machine with our system get. Modern six times speedup.
+
+[290.0s - 319.0s]
+Have some results. We test our system on Middlebury variation, the result of our method is competitive to some of the state of results. For instance, the diary result it's ranked within top five and result for tempering is also comparable to the state of result. And. Besides, our method is one of the most efficient method among those long GPU method. So this time in this table is. At the time of rewriting the relative paper so. It can be even faster when we have a new.
+
+[319.0s - 348.0s]
+Call at 7 machines. Besides the standard evaluation, we also test on some real data set. This kind of for instance. Here are two data set list data set. These two data that can contains very complex service. For instance the first monster data set contains very very complex surface of the object. So I think maybe it's one of the most complex services. I have ever seen in my teeth feel sterile papers. And our method reproduce many details of the object and 2nd, this is a sculpture face. It's the major part of this object is. A metal surface and there are some highlights. Our method also reproduce major details.
+
+[348.0s - 377.0s]
+And there's some more results. I will emphasize the second one. It's a learn. Made by Eisenberg. Heroes there is. Very large highlight error on this object, so. And the background is very complex. Photo my feeling provides that all the steps that are captured by our digital camera and the camera parameters are self calibrated. So we are method still can reproduce the major details of the object.
+
+[377.0s - 406.0s]
+So here is another example. We input a video and record a video around objects and also did the multiview stereo for this object. And also we can. Risk and structure. Major details of the object. So before our conclusion I assume you are.
+
+[406.0s - 435.0s]
+Radio so that's some some of the example of this monster. So there is very complex of the surface. That's our reconstruction result. There's another data set is. So you can see. Many details of the service has been reproduced. This other one. OK. Let's conclude.
+
+[435.0s - 464.0s]
+So the major contribution of this paper is that we propose are bound to stage vandalization framework for fast and accurate depth web version. We also studied multiple stellar on some complex and under billing service. We are introduced Daisy for multiples there, both for stair matching and photo consistency optimization and the framework of our method is parallel processing friendly and schedule where on the complexity of the problems and the number of machine calls our data set is publicly available on my personal home page and you can download and try your method, so that's it. Thank you.
+
+[464.0s - 493.0s]
+So we have time for questions. Very interesting work. One question is. Are you do not seem to reconstruct background to have a table on the shoe. Do not request or tables. Assuming you user segmentation mask. Yeah yeah yeah. So we we in our paper with describe that point. We just using a simple bounding box to a simple bundles around the object. So for for the Middlebury valuation we're using a relatively accurate celebrate. I'm sorry it's not the purest. Second per Pixel Sigma just bounding box. Yeah, just pounding bogus. Hi, for the Lion Studio example. OK, so it's very difficult to get the top image so yeah, so if without that image then how are you going to like reconstruct the surface?
+
+[493.0s - 522.0s]
+So for this example, is a little high, so we cannot have the images of the head of this line. So in fact there is some error on the head of the line. That's our problem of money. Instead of only we can have pictures to reflect the surface. We can reconstruct this service if we have. You don't have the picture at some service, so we cannot have a good result on this part. OK.
+
+[522.0s - 551.0s]
+I'm interested in a breakdown of the components in terms of timing, so there's understand using pass on to put the point cloud together into this global model. Yeah, using bundler to do the bundle adjustment. Sorry, so I'm interested in a breakdown at the time, so you got 3 minutes, but how does it breakdown and does that include price on OK? OK, so our people have addressed this point. In fact they still matching part is take most. Computation time is about 70%, and they bundle optimization taken about 25 or 30%. They post on powder is ready for fewer. If we have a paralyzed person surface reconstruction result, the time can be even for you. So in fact, all time in. In in this figure, we did not come. Can I take?
+
+[551.0s - 580.0s]
+Say a service reconstruction into consideration. OK. Accuracy last curious last question. Could you for the for the.
+
+[580.0s - 609.0s]
+Examples with the real. With the real scenes and the images, could you explain how these results compared to safer recovers PMV method? Yes, so full cover. Just ask our question. In fact, we did not compare in our paper. We did some comparison. In our practice, we found that personal PMS pet based method also can get some good result, but it's our. This function based method. There are some holes on the service on the Point cloud service, so it's smoothed by the Postal Service reconstruction and and some details may be loose. OK, so thank you again.

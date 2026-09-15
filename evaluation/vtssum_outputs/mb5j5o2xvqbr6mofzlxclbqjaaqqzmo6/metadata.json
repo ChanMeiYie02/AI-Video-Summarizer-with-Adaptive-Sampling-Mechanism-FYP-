@@ -1,0 +1,20 @@
+{
+    "id": "mb5j5o2xvqbr6mofzlxclbqjaaqqzmo6",
+    "title": "A Theory of Multiclass Boosting",
+    "url": "http://videolectures.net/nips2010_mukherjee_tmb/",
+    "info": {
+        "author": [
+            "Indraneel Mukherjee, Computer Science Department, Princeton University"
+        ],
+        "published": "Jan. 12, 2011",
+        "recorded": "December 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Boosting"
+        ]
+    },
+    "num_segments": 89,
+    "num_sentences": 189,
+    "num_clips_with_summary": 11,
+    "num_gt_summary_sentences": 12,
+    "ground_truth_summary_length_chars": 1063
+}

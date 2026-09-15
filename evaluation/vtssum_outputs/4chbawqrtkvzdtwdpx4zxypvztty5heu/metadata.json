@@ -1,0 +1,21 @@
+{
+    "id": "4chbawqrtkvzdtwdpx4zxypvztty5heu",
+    "title": "The engines of emotion: towards a shared understanding of the work they do",
+    "url": "http://videolectures.net/fgconference2015_cowie_engines_emotion/",
+    "info": {
+        "author": [
+            "Roddy Cowie, School of Psychology, University of Liverpool"
+        ],
+        "published": "July 2, 2015",
+        "recorded": "May 2015",
+        "category": [
+            "Top->Computer Science->Computer Vision",
+            "Top->Computer Science->Computer Vision->Face & Gesture Analysis"
+        ]
+    },
+    "num_segments": 35,
+    "num_sentences": 459,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 27,
+    "ground_truth_summary_length_chars": 2760
+}

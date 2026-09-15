@@ -1,0 +1,21 @@
+{
+    "id": "6v7j5bpmcsy4ahynmz3ojvc7brkuswow",
+    "title": "Data Analytics in Aquaculture",
+    "url": "http://videolectures.net/sikdd2016_pita_costa_aquaculture/",
+    "info": {
+        "author": [
+            "João Pita Costa, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 15, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Data Mining",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 177,
+    "num_clips_with_summary": 4,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 1185
+}

@@ -1,0 +1,22 @@
+{
+    "id": "e3lovsokq4airxchkjsceuv7tjzo7ktn",
+    "title": "Advanced Topics in RL",
+    "url": "http://videolectures.net/deeplearning2016_pineau_advanced_topics/",
+    "info": {
+        "author": [
+            "Joelle Pineau, McGill University"
+        ],
+        "published": "Aug. 23, 2016",
+        "recorded": "August 2016",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 126,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 14,
+    "ground_truth_summary_length_chars": 1716
+}

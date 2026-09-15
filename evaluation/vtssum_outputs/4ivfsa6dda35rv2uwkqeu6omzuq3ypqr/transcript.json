@@ -1,0 +1,72 @@
+[
+    {
+        "text": "Hello everyone, my name is.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Robert Dodson, I will talk about imitation of the corpus, or the same as multilingual standards.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "So current compared to research of the parliamentary debate is not sufficiently facilitated by simply providing untainted corpus as was mentioned earlier as well, and we propose that augmenting such corpora with extra layers according to multiple times that will help to facilitate this, and today I will talk about untested layers that we have added to the corpse of the same and the format which dates are published.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Simon is the name of the Parliament of the Republic of Latvia, and the corpus. Includes transcriptions of the Parliament debates starting from here, not in 1993. From the first permitted term when letter against independence and seclude date until 2017 and is still being extended. An early basis. Descriptions of the corpse of the same contains 38 million tokens. From the 487 thousand sent audiences and 468 speakers.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "The first temptation later that I want to mention is more logical ends in the local home tations. It contains lemon part of speech, morphological features and fanatical dependencies according to the Universal Dependency Standard format.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "One of the formats in which these morphological plantations are published, his musket changing that was also mentioned in the future speeches. An interface provides powerful corpus query system query can include words, lemmas, morphological tags and also some meta data.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "And synthetical plantations, as well as the Polish conditions, are also published in Conduit Data format.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "We also added machine translation in English with the system that we had available. The undervalued machine generated translations is provided for content analysis and to aid such ability and understanding for international researchers. But the quality of automated translations is lacking. So for qualitative analysis, professional translation should be used.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "We use strict data knowledge base to find mentions of named entities and link to them and link them to the knowledge base. Ultimate goal, what in generation was added to improve the recall of the recognition. Although anti immigration is still needed to be headed. This here. In the courts will decide we didn't buy the 383 thousand mentions of 3000 unique entities. And about 1/3 of the speeches contained mentis.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "We also have published data in the diff format as linked open data. They're calling it links I'ma for data modeling way partially used. The work of link. European Parliament project and they're linked politics, sorry. In this corpus we have four types of objects, meeting, speech, speaker and role of the speaker.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "The data this paper published his link data and information about the object is accessible by looking up the relevant linked data. Your eyes all datasets objects have HTTP UI identifiers and. Temperment implementation uses slot view of. Linked data browser to serve the data in HTML. Yes, Sir. DF and multiple other formats. We use a triple fragment server as well to serve the. Queryable at the updates that this is all like interface for this. And they also published at the F date set as well. If somebody wants to do more complex analysis on their own machines.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "The main innovation so this data set relative to the European Parliament project is that the addition of named entity information pointing to a relevant Vicki data, your eyes and other differences that we materialized roles of the speaker. So beginning then you write your ice and we also link them to the week data where it is applicable so one can look up, for example speeches of that are given by. European president in the Parliament of Latvia. And the only we also manually link the speakers to the weekday to your eyes to make it easier to conduct the entire corporate research.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So in conclusion, we have developed a new data set of the parliamentary debate is. Extended plantations that will widen the application of the corpse of the Sima. In the future we want to extend the links. I'm with more objects, link them to more things. One idea is to also add the date about voting. Also, the improvement of morphological ethical tools are being. They are being improved in other research projects and they will read, annotate the corpus when the accuracy will improve significantly. So we would like to call Ponder research community to pursue open command little languages processing data standards to enable single competitive research.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Thank you.",
+        "start": 377.0,
+        "end": 406.0
+    }
+]

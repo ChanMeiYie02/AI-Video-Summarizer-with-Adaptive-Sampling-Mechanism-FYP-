@@ -1,0 +1,20 @@
+{
+    "id": "dh5e2a2kuqlj57ljpjwjevphzsvcampt",
+    "title": "Extending the Use of Web-Based Terminology Services",
+    "url": "http://videolectures.net/w3cworkshop2012_gornostay_services/",
+    "info": {
+        "author": [
+            "Tatiana Gornostay, Tilde"
+        ],
+        "published": "July 12, 2012",
+        "recorded": "June 2012",
+        "category": [
+            "Top->Computer Science->Multilingual Information Access"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 149,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 22,
+    "ground_truth_summary_length_chars": 2139
+}

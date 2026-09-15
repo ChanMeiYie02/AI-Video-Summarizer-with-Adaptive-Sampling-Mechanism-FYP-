@@ -1,0 +1,20 @@
+{
+    "id": "ltfssv25pm3fj6mecykdfxgydtsjzd6t",
+    "title": "Surrogate-Based Optimization at ONERA: Some Recent Examples",
+    "url": "http://videolectures.net/mla09_meunier_sbo/",
+    "info": {
+        "author": [
+            "Mickaël Meunier, Onera - The French Aerospace Lab"
+        ],
+        "published": "July 20, 2009",
+        "recorded": "July 2009",
+        "category": [
+            "Top->Computer Science->Optimization Methods"
+        ]
+    },
+    "num_segments": 17,
+    "num_sentences": 239,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3499
+}

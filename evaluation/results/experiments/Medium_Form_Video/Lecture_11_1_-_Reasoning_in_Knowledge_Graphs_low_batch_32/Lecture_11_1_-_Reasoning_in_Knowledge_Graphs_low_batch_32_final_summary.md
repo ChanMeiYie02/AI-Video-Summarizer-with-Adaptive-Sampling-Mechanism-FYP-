@@ -1,0 +1,9 @@
+# Final Multimodal Video Summary
+
+The lecture introduces the fundamental concepts of reasoning over Knowledge Graphs (KGs), focusing on how to perform complex multi-hop reasoning using embeddings. The session explores methods such as "query to box" to embed relations, enabling efficient navigation and reasoning within the knowledge space.
+
+The discussion is grounded in a biomedical knowledge graph structure containing nodes such as drugs, diseases, adverse events, and proteins. The core objective is to tackle complex queries by differentiating between one-hop queries, path queries, and complex logical queries.
+
+A significant challenge addressed is answering these queries over incomplete KGs, which necessitates predicting missing or incorrect relationships. This is particularly relevant when dealing with natural language queries that must be translated into logical or graphical structures. Specifically, one-hop queries are handled using knowledge graph completion, while path queries generalize this by chaining multiple relations ($R_1$ to $R_n$) to traverse complex pathways, such as finding proteins associated with an adverse event caused by a drug.
+
+The main computational hurdle lies in applying knowledge graph completion to all possible edges, which results in an exponentially expensive traversal cost, especially for long queries. To overcome this, the system proposes a novel approach called "predictive queries." This method reformulates path queries as prediction tasks, allowing the system to implicitly account for the incompleteness of the knowledge graph. By framing the problem this way, the system can generalize the link prediction task, robustly completing the knowledge graph and answering path queries without performing costly explicit traversals. Ultimately, the task is shifted from a simple one-step prediction to a multi-step prediction, focusing on predicting which entities will answer a given query.

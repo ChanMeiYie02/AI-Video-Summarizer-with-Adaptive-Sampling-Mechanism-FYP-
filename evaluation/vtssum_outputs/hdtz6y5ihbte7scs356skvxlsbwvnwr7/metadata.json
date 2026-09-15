@@ -1,0 +1,20 @@
+{
+    "id": "hdtz6y5ihbte7scs356skvxlsbwvnwr7",
+    "title": "MultiBoost",
+    "url": "http://videolectures.net/icml2010_kegl_mubu/",
+    "info": {
+        "author": [
+            "Balázs Kégl, Laboratoire de l Accélérateur Linéaire, University of Paris-Sud 11"
+        ],
+        "published": "July 20, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning->Software"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 68,
+    "num_clips_with_summary": 6,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 1426
+}

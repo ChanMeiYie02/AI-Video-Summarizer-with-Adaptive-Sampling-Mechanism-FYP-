@@ -1,0 +1,20 @@
+{
+    "id": "hr7dlgc2buliehiodxn3tdr647uipvrb",
+    "title": "Calculation of results for tritium in water by LSC",
+    "url": "http://videolectures.net/meet-cinch_modul43_tritium_calculation_of_results/",
+    "info": {
+        "author": [
+            "Marko Štrok, Reaktorski center, Institut \"Jožef Stefan\""
+        ],
+        "published": "May 16, 2019",
+        "recorded": "May 2019",
+        "category": [
+            "Top->Chemistry->Nuclear Chemistry->Radiochemistry"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 21,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 870
+}

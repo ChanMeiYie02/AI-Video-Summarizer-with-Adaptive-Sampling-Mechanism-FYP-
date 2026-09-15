@@ -1,0 +1,20 @@
+{
+    "id": "czabbf26puqarbdrxkbjy5olksj57pgv",
+    "title": "Textual Entailment",
+    "url": "http://videolectures.net/psm08_dagan_te/",
+    "info": {
+        "author": [
+            "Ido Dagan, Bar-Ilan University"
+        ],
+        "published": "Feb. 7, 2008",
+        "recorded": "January 2008",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 31,
+    "num_sentences": 302,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 30,
+    "ground_truth_summary_length_chars": 3154
+}

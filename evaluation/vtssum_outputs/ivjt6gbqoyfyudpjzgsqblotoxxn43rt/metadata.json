@@ -1,0 +1,20 @@
+{
+    "id": "ivjt6gbqoyfyudpjzgsqblotoxxn43rt",
+    "title": "A Shifting Boundary: the dynamics of internal cognition and the web as external representation",
+    "url": "http://videolectures.net/acmwebsci2011_dix_cognition/",
+    "info": {
+        "author": [
+            "Alan Dix, School of Computing and Communications, Lancaster University"
+        ],
+        "published": "July 19, 2011",
+        "recorded": "June 2011",
+        "category": [
+            "Top->Computer Science->Internet, World Wide Web"
+        ]
+    },
+    "num_segments": 8,
+    "num_sentences": 196,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 9,
+    "ground_truth_summary_length_chars": 893
+}

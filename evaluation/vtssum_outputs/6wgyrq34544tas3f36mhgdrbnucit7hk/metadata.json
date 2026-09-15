@@ -1,0 +1,24 @@
+{
+    "id": "6wgyrq34544tas3f36mhgdrbnucit7hk",
+    "title": "The Community Trademark",
+    "url": "http://videolectures.net/dataforum2014_magnusdottir_services/",
+    "info": {
+        "author": [
+            "Gudrun Magnusdottir, ESTeam AB"
+        ],
+        "published": "March 31, 2014",
+        "recorded": "March 2014",
+        "category": [
+            "Top->Computer Science->Big Data",
+            "Top->Computer Science->Data Visualisation",
+            "Top->Social Sciences->Law->Regulations",
+            "Top->Social Sciences->Society->Public Policy",
+            "Top->Business->Management->Knowledge Management"
+        ]
+    },
+    "num_segments": 6,
+    "num_sentences": 72,
+    "num_clips_with_summary": 3,
+    "num_gt_summary_sentences": 4,
+    "ground_truth_summary_length_chars": 360
+}

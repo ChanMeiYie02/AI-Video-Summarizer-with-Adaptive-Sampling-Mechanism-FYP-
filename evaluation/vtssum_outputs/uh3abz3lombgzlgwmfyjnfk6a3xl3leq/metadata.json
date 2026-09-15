@@ -1,0 +1,20 @@
+{
+    "id": "uh3abz3lombgzlgwmfyjnfk6a3xl3leq",
+    "title": "Using Cloud Shadows to Infer Scene Structure and Camera Calibration",
+    "url": "http://videolectures.net/cvpr2010_jacobs_ucsi/",
+    "info": {
+        "author": [
+            "Nathan Jacobs, Department of Computer Science and Engineering, Washington University in St. Louis"
+        ],
+        "published": "July 19, 2010",
+        "recorded": "June 2010",
+        "category": [
+            "Top->Computer Science->Computer Vision->Shape from X"
+        ]
+    },
+    "num_segments": 21,
+    "num_sentences": 124,
+    "num_clips_with_summary": 13,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 2002
+}

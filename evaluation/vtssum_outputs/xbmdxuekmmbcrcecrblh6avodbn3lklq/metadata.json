@@ -1,0 +1,22 @@
+{
+    "id": "xbmdxuekmmbcrcecrblh6avodbn3lklq",
+    "title": "Artificial Intelligence for Europe: Strategy for ethical and trustworthy AI",
+    "url": "http://videolectures.net/GoDigital2019_badique_ai_for_europe/",
+    "info": {
+        "author": [
+            "Eric Badiqué, European Commission"
+        ],
+        "published": "Nov. 29, 2019",
+        "recorded": "November 2019",
+        "category": [
+            "Top->Data Science",
+            "Top->Computer Science",
+            "Top->Computer Science->Artificial Intelligence"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 234,
+    "num_clips_with_summary": 12,
+    "num_gt_summary_sentences": 17,
+    "ground_truth_summary_length_chars": 1855
+}

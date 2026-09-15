@@ -1,0 +1,92 @@
+[
+    {
+        "text": "Thanks and you're offering me a nice transition since we're mostly targeting very constrained devices, and by that I mean microcontrollers with the 8 to 64 kilobytes of RAM. And therefore we needed. Compact representation audio mostly to exchange. Between this sort of devices? Or if data. I'm Victor Sharpener, PhD student at Siemens and Munich. Um? And. And this work is in the frame of. Add the development of web of things application so IO T applications using web technologies.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "And the very first project that use the semantic web for IO T applications with Spitfire European project. I wear sensor networks and nodes in a sensor network. Had a rest interface that could be crowd. So that and then the data. That is already of data could be stored in a triple store and then on top of that Triple Store's semantic search engine could be built for sensor data. I'm today with if we had to do this. Project again, we would call nodes in the sensor. Network, we call them servants. Anne Anne there is.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "A set of building blocks that are being standardized by the Denver W 3C at the moment. That include an interaction model to program against a scripting API. Set of protocol bindings for IO T protocols that are not always very web friendly. And in order of model. The thing description model. To represent things and their capabilities. That are iaccessible via servants. So the nodes, the servants here or. Or in Spitfire where? Wireless modes and they had, for most of them eight kilobyte RAM, so this is very constrained. In general, the web of things can apply to many architectures, but the one we're interested in in this work is thing to thing, interaction or. To me it's more accurate to say servant to servant interaction. I'm an you see here.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "The devices have firmwares. I'm so everything is. Processed in binary form. So there is a state of.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Yard mostly since Spitfire. On representing RDF in binary format. Why is Leap Superstore is what was used in Spitfire? It's not exactly a format. In that case, it's more a data structure to code against. The. So it's basically about having trees to compress as much as much as possible the your eyes in a data set. It's designed for microcontrollers wisely is in fact, sort of reimplementation of the standard library, the c-plusplus.net library. For microcontrollers in ways. But it requires a lot of memory allocation. Calls, which is often not. A good fit for industry applications which require. Static memory allocation usually. And it turns out not to be very efficient in terms of compression. And the state of the art today is HTTP, which stands for a header. Dictionary triples. Which uses binary. Or bitmaps to represent triples. It's very efficient in general, it's. I think used in many projects. However, it's designed for static datasets. There is no update mechanism. And it might be a problem for constrained devices. And well, and in general it requires also. Procedures that might be hard to implement on on small hardware. Kata triples is a variant of HDT which is even more efficient. For large datasets, but as we found out in this as we experimented with these. It's it has a very high overhead for small datasets and therefore it's not a very good fit for our applications. The last one is already FXY, which has been which was introduced two years ago three years ago and in this conference. It's a very simple idea. There is this number through the standard code. EXE efficient example interchange format, which is a binary representation of XML. So the idea is just too. Serialize RDF XML in xe. It's it's quite efficient towards. Littorals, but not at all towards. Your eyes and it's mostly because of the original flaws in the design of order fix, IMO. For some reason, the schema sometimes define your eyes as strings. Or as attribute values in Excel which. Then makes your eyes not subject to the compression schemes defined in exit.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "I'm. In some cases it is also required to process order of data. In constrained devices, and there are several ways to query data. So the to me the the simplest way of accessing our data is to use something like link data resources where we have for one specific resources energy Prof. Its neighbors or a small subset of the oven RDF data set. Um? Or there are two pattern fragments or something electrical pattern fragments. Namely, just having triple patterns. The possibility to apply triple patterns on or give datasets HTT provides that, for instance, last year we introduced the Micro Audio Store, which. Where we implemented joins over. Triple pattern matching. And it turns out to be efficient enough. In terms of memory. So that we can have it on microcontrollers. But of course Sparkle 1 one is not really implementable on platforms that just have 8 or 64 kilobytes at best.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "So. Um? Then the basic idea here is to use Jason LD. For a compact binary representation of RDF. I just introduced the basic concepts of Jason Aldean. Here is a Jason document that represents a data set so you see, there are a lot of your eyes. It's a graph. A graph in order of graph is represented as an array of nodes and each node. It is an object, so this is the order and abstract order for presentation of that graph, and you see that. All properties. Um? Or triples whose subject is. Sensor. Get into the same node. And the same for temp so.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "It's quite simple. Anne. But it's a bit verbose and it's not very friendly to people familiar with Jason. So there were a couple of features Jason Aldean defines. On top of this format, basic format and the first one is at the the idea of having a context for Jason data. You see here we have the same structure, a graph with two nodes. But there is no your eye anymore and.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "It's just that the mapping is defined in an other Jason every document. I dereferenceable from this address. Where? Terms here. Map to you, right? So the viewers or just substituted with the terms defined in the context. This is also a simple idea. Anne.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "And of course we can define arbitrary terms. And in our case we're interested in the most compact terms possible for each year, and this is the basic idea. Um? The format we propose. In the paper.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "There is another interesting feature which is not yet part of the Jason Ellis Turner, at least, not Jason LD 1.0 but it will be introduced in Jason 11, which is in the making, and probably will be published on exterior. So what you see here is that there is just one node and the second node has been merged or put as a. Value for the key observes. And. This transformation in the Jason structure. Was driven by the definition of this. Others is not the document which is adjacent to the frame. Which which is that all nodes should have the following shape. The roots should be of type sensor and it should observe something of type temperature. Here I'm using SN terms since our. Our main concern is the web of things and sensor data. I'm. So. I write so this frame is actually equivalent to a spot with the sparkle query with joins. So the BGP subset of sparkle. And in the paper we define a mapping from Jason only framing or friend might frame matching. To sparkle. And the advantage of this is that we can represent the queries the same way we represent the data. So queries could be sent in binary form. On the over the network. Since we can define the context for the query too.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So. To summarize, the whole idea of. Having a binary object notation for it if is. To start from any arbitrary death, turn it into Jason LD. The algorithm is part of the standard, then compact it with the shortest possible terms. Define in a remote context. And then use one of the existing binary representation for Jason. Here we tested 2 exit for Jason and Seaborne exit for Jason is. Also, part of the existing diversity exist and are. It's just basically just about turning every Jason into Dan. XML using a certain schema and then applying Xe. To compact adjacent to XML data as ANSI boards in a recent. A binary format for for Jason. Standardized by ATF. So we made a couple of experiments, mostly to test the.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Compaction of our of this format we used for datasets the first 3. Or the ones that were used for experiments in speedfire. So busy.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "So is a sample of the one of the datasets used in the bill on Triple Challenge. And it's a random random sample you can see here that door 174 triples. But and as as many subjects, so it's mostly to test your right compaction. In the of each format. I node represents essential measurements on one of the nodes in the sensor network of Spitfire. And SSP I think it stands for semantic sensor. Proxy. Is an aggregation of the measurements from from several nodes. Um? So we tested SSP both as a single data set and as the Union of. The different measurements it contains. The last the data set is have been provided by one of our business units at Siemens. It's an export in order for export of digital CC, which is a software to integrate building automation systems. And the expert uses the thing description model. And some ontology. That is specific to disable CC that will be released at some point. In our future. Add the the datasets and the results or on on GitHub. My quality of store experiment. And as soon as the ontologies are published. You find them here. Anne. So here are the results. I'm.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "As you see here K2 triples, so we we tested. Different different configurations, so it is HTTP. We didn't include the header, which since the header in HD is not compressed. And with dentist indexes for Jason NC board in two different configurations, of course, the way we designed the context, the Jason LD context influences greatly the. Compaction, so we for every data set we define two. Contacts 1 one is a minimal context. It Maps every year in the data set. Two to see some term that is short as possible and the other contexts is. Built from the ontologies. Whose vocabulary is used in each data set? So some of the some of the your eyes are do not necessarily have a mapping. If they are not part of a vocabulary. The second context is typically how one would design generally generally context files. It's much more realistic than the first one, which is just used as a comparison point in this experiment. So as you can see, kata triple is in. Most data for most datasets. The worst performing, but you can see here that Ford is ego taken as a one single data set. It is. More efficient, it outperforms HTTP. As we were as I was saying earlier. Anne. In general, HTTPS is very efficient, but in some cases. A binary Jason representation is more compact. If we use the minimal context, but also when we don't like here for the node. Is therefore with exit for days and we can outperform HTT. For very small datasets, node contains on the 770 triples I think. Anne. And This is why we.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Made another experiment with. A collection of small datasets that correspond to. The data that is exchanged in weather things applications. So we split split SSP. By every measurement and compared to. Distribution of the sizes. For all the did the single measurements and we did the same for this ego. Testicle the export we have is a collection of thing description documents each for an individual device in a building automation system. So we compare the distribution. Between a GTX for Jason and Seaboard. For every single thing ascription here, the context we use is the realistic context that is based on vocabularies and not the minimal context. And you can see here that enough, in average in both cases. Binary Jason outperforms HTTP. It has a much higher variability here in in. Building automation systems. Some devices have a much more important role than others, meaning they have a lot of. Meta data to expose and as soon as. The data set has more than 100 triples. Exit for dissonance. Then sibor decreases in terms of performance. The performances of the did this. Civilization is decreases. Quit fast. So in conclusion.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Summary of what I said we represent in the paper. A binary object notation for RDF. And with the semantics, we also provide a mapping from Jason Lee framing to sparkle. I'm. The basic idea is to have a compacted Jason LD with some standard binary representation of Jason, with a custom context one can build. With a set of vocabularies or ontologies available on the Semantic Web. And it's efficient, efficient enough. On small datasets datasets that we're likely to exchange on the web of things. There is another advantage that is it's very simple to implement. Most of the building blocks of this approach or standards and they come along with different implementations one can reuse. Small perspective, I don't know if you know this. Book it's the book that introduced Jason, and since that time Jason has been used everywhere on the web. So did Jason. First, Jason has been very successful, but today just another is also gaining momentum since it's it's it is appealing to web developers and. With the study we performed, it might also become the reference format for the web of things. And. Thank you, thank you speaker. So have you waited the the time to serialize and this serialized? We didn't. In the with the test we did informally with the Microsoft Store, the time to send the data over the network is. Much higher than the time to serialize in this, this realize. A couple of triples, so it wasn't really relevant in our applications. These were very interesting talk. Maybe I missed it, but did you compare your particular serialization with well, other kinds of representations of the sensor or whatever data? Not not Jason LD not semantic web, but more more ad hoc or more and other kinds of structured format. It doesn't make sense really to compare to ad hoc representations. We are very interesting in having standard representations, or at least end our information data models. And. There there are the old formats for. Sensor and measurements. But here we are more interesting in having the meta data. To be represented. Yeah, I said ad hoc, but I just mentioned I just meant in general, like a structured representation. Sure, I know you didn't make the distinction. So we were interested in having the meta data into the datasets we wanted to represent in binary format. Since the data will likely not be exchanged in order. As that it's it's very very both in general and they are very efficient formats to to send just the measurement value. Which is often. Digital value. Over the network and we weren't exactly comparing to that. So with regards to sensors, what kind of data would you then be sending? If not, there are data or or in the best of things with the application be then you can have a look at the thing Description model. It's basically about sending the. The links. Under which you would find sensor measurements or commands to send to actuator on some automation control. System some control device. And how the different? Properties. Servant has order thing a servant is providing highs. Relate with other properties with other servants in the network. OK, thanks so very interesting work. Do all the transfer protocols actually support content negotiation and is this something that you agree so this encoding? Do you agree upon using content negotiation? Well before even thinking of content negotiation would we should. Ensure that the protocol. Can provide media types along with the payload. I have every message as so at the beginning I. Gave so here. You see, you can. You have one.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "So, but can have different protocol bindings to the same interaction model. And. Protocol binding is another specification of how the interaction model Maps to two messages. There are sent between devices. It depends on the context. It depends on the device capability. So. This is not very relevant at the at the level of the interaction model, since the interaction model itself contains media types and. There is an abstract, generic way of representing things, properties, actions, and events in. As objects.",
+        "start": 493.0,
+        "end": 522.0
+    }
+]

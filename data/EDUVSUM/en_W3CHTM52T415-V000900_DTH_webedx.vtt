@@ -1,0 +1,139 @@
+﻿WEBVTT - https://subtitletools.com
+
+00:00:01.709 --> 00:00:08.860
+Ok. This time we will talk about track events and cue events.
+
+00:00:08.860 --> 00:00:20.039
+So first, let's start by a small demonstration. If I play this video, the video is going on
+
+00:00:20.039 --> 00:00:25.859
+and I can listen to events like 'cuenter' and 'cueexit'.
+
+00:00:25.859 --> 00:00:35.850
+Each time a new cue is entered, we will display it here, and each time it is exited, we will
+
+00:00:35.850 --> 00:00:47.280
+display it here. We saw that we can display them in sync with
+
+00:00:47.280 --> 00:00:51.850
+the video now. So each time a cue is reached, it means that
+
+00:00:51.850 --> 00:01:02.329
+the current time entered a new time segment defined by the starting and ending time of
+
+00:01:02.329 --> 00:01:06.820
+a cue. Let's have a look again at one of the VTT
+
+00:01:06.820 --> 00:01:16.210
+files. Each cue holds a start time and a end time so when
+
+00:01:16.210 --> 00:01:26.430
+the time enters the 15th second, we've got a cueenter event and we can get this content
+
+00:01:26.430 --> 00:01:38.960
+and show it on the HTML page. When we go out of this time period, when we go further than 18 seconds, we exit
+
+00:01:38.960 --> 00:01:47.689
+this cue and we enter this cue. How are these events handled in the JavaScript
+
+00:01:47.689 --> 00:01:54.030
+code? Everything is done in the readContent method
+
+00:01:54.030 --> 00:02:01.950
+that we saw earlier. This time instead of iterating on different
+
+00:02:01.950 --> 00:02:16.620
+cues of the TextTrack, we will just, for each cue individualy, we will iterate on the cues and add a listener on that cue, an
+
+00:02:16.620 --> 00:02:24.750
+exist listener and an enter listener. So what do we do? We iterate in the cues called
+
+00:02:24.750 --> 00:02:31.459
+addCueListenners for the current cue. This method, addCueListeners, it will define
+
+00:02:31.459 --> 00:02:38.040
+two listeners: the cue enter listener and the cue exit event listener.
+
+00:02:38.040 --> 00:02:48.720
+On the cue enter listener we just create a string "entered cue id=" and "text=" that
+
+00:02:48.720 --> 00:02:55.209
+will correspond to the text displayed when a cue is just reached.
+
+00:02:55.209 --> 00:03:04.220
+We display the id and we display the text. The same thing is done when we exit, when we exit we just
+
+00:03:04.220 --> 00:03:13.450
+display the id "exited cue id=". This is how we can have individual enter and
+
+00:03:13.450 --> 00:03:19.900
+exit listeners for each cue. It will enable us to highlight the current
+
+00:03:19.900 --> 00:03:33.049
+cue in a transcript while the video is playing. The only problem is that as of December 2015,
+
+00:03:33.049 --> 00:03:37.720
+FireFox still does not recognize this sort of listeners.
+
+00:03:37.720 --> 00:03:48.489
+The implementation is not done yet, so you can use a fallback. You can use a listener on the track
+
+00:03:48.489 --> 00:03:58.860
+that will listen to the 'cuechange' event. So if I just comment the function addCueListeners
+
+00:03:58.860 --> 00:04:10.019
+and I uncomment this piece of code that has a cueChange listener on the track itself,
+
+00:04:10.019 --> 00:04:18.570
+then instead of knowing that we entered of exited and individual cue, we can get, for
+
+00:04:18.570 --> 00:04:26.350
+every new time segment, the list of the cues that are triggered, that should be activated
+
+00:04:26.350 --> 00:04:33.370
+and displayed for this time segment. As the different cues can overlap, the time segments
+
+00:04:33.370 --> 00:04:40.990
+can overlap -it is not often the case but it may occur- what the callback function
+
+00:04:40.990 --> 00:04:49.820
+from this listenner gives is a list of active cues. Most of the time you have got only one.
+
+00:04:49.820 --> 00:04:56.580
+Anyway you can just work with the list of the cues. Here we just take the first active
+
+00:04:56.580 --> 00:05:05.889
+cue because we are assuming that the cues are not overlapping. I added a small test here because sometimes
+
+00:05:05.889 --> 00:05:16.120
+we've got some strange ghost cues that are active and not defined. I do not exactly what
+
+00:05:16.120 --> 00:05:23.870
+was the problem when I test it but I added this test here to avoid some error messages...
+
+00:05:23.870 --> 00:05:33.320
+We have got the first active cue and we just display it. We get the id, we get the text
+
+00:05:33.320 --> 00:05:39.870
+and this is all. In that case, if I run the application again,
+
+00:05:39.870 --> 00:05:49.240
+instead of having enter and exit, I will just have cue change events.
+
+00:05:49.240 --> 00:06:02.930
+It starts at 15 seconds. I had a small bug here, it is not this.id
+
+00:06:02.930 --> 00:06:16.190
+but cue.id.... wa can start again. This is a fallback for FireFox if you want
+
+00:06:16.190 --> 00:06:26.120
+to display the cues in sync with the video. The next video will show how to display a
+
+00:06:26.120 --> 00:06:32.919
+transcript here with the current cue highlighted and you can click on them in order to jump
+
+00:06:32.919 --> 00:06:39.660
+to the right place in the video. After that I think we will have seen the most
+
+00:06:39.660 --> 00:06:45.500
+useful properties, methods, events you can use with tracks and cues...

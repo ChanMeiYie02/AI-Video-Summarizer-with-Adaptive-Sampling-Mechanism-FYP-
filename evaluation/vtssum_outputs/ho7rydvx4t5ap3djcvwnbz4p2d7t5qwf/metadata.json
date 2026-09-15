@@ -1,0 +1,21 @@
+{
+    "id": "ho7rydvx4t5ap3djcvwnbz4p2d7t5qwf",
+    "title": "Tackling Climate Change: Unfinished Business from the Last “Winter”",
+    "url": "http://videolectures.net/iswc2012_musen_climate_change/",
+    "info": {
+        "author": [
+            "Mark A. Musen, School of Medicine, Stanford University"
+        ],
+        "published": "Dec. 3, 2012",
+        "recorded": "November 2012",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 72,
+    "num_sentences": 467,
+    "num_clips_with_summary": 34,
+    "num_gt_summary_sentences": 51,
+    "ground_truth_summary_length_chars": 7112
+}

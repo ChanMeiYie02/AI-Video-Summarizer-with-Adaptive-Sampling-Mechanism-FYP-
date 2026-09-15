@@ -1,0 +1,112 @@
+[
+    {
+        "text": "Good morning, I'm genial. I'm also from Arizona State. This is John work with Leah and Jenny. Our work is on an efficient algorithm for solving the fewlass or penalized problem.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Fierce Lexing has been become very effective tool for dealing with high dimensional data. And recently, sparse learning has been widely used for fear selection. You smart learning. We computer what vector X for the features and here the non 0 feature feature in the X means that the features are selected and the 0 features means that corresponding authors are not naked. And we usually estimate this vector X by applying this kind of computer of function here. The first term is the last function defined on the training training. Samples were known. Loss function include need square loss, hinge loss, and logistic loss. A second term is our prior or something about the parameter X. If we use the unknown. This is Lawson and it will give you a sparse losing if you use the L2 norm. It is the group lasso and it will give you the group group sparsity. In this talk we focus on. The last of the penalty bins are filled.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Castle. This is the outline for the remainder of the remaining talk. First, we briefly introduce what is philosophy and some of its.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Civil applications. The philosophy is extension of the law so. Uh, do you know enough? So we use the L norm to induce sparsity and you infuse another. Besides using this LL Norm we also using. The Ellen onto the successive difference of the entries are the result. We can get a solution that is also spot not only sparse but also the adjacent values are identical. So this is called the future switching, so he's also can give a solution that is sparse in both the parameters X under the successive successive differences. And a few laughs.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "As being apart, emailing applications are one of the most well known. Application is arrested. A resident is a popular tool for identifying the key number variations along the genome. It has been used as a marker for improving the diagnosis of cancer in the addition of the features are locked to ratio along the genome. Here the genome. Under this ratio is between the number of gene copies of gene in the tumor cells and the number of gene copies in the reference cells. As you can see, the features are of a special order due to their closeness along the genome. Under, this is equal to the solution for the philosophy by the feudal society. It is a piecewise constant as it captures the piecewise constant shape of the copy number changes. This is important as it has been shown that the common number changes can be not owning the large chromosome segmentation then or loss, but also the abrupt local amplification deletion. And this figure is also taken from this work. It shows that the philosopher came apart outperform outperform much better. OK, perform much better than the other methods On this date.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "A number in some applications, however, the features might have no pre specified order, unfortunately. The jeans in the Easter. Fortunately, it has been shown by people running in his in his 2005 paper for this kind of data that we can also apply philosophy after estimating ordering by one tool for estimating. Ordering is higher clustering.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Next, we discuss the efficient optimization of the field. Lots of.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Another problem. OK, so this is the problem we want to solve and we assume the first term. The first time the last term is smooth and convex and. The challenge here is that the few last term is nonsmooth, not smooth and non separable. Unwritten is needed is to a very challenging problem. Previous worker many user smooth reformulation to solve this problem. Specifically, we first this problem in first reforms as a smooth operator problem by introducing many ordinary functions, order variables and constraints, and then the general server is apply for the for solving the problem. This, however, does not scale well. In fact, it was pointed out in the 2005 power of attorney at one difficulty in using the philosopher. Is a computational speed and the speed could become apart limiting this is especially the case if cross violating are used, therefore is not necessary to come up with an efficient algorithm for solving this class of problem. So our main contributors to is to service car.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Probably efficiently. All method. Is that we make use of recent proposed accelerated method? Counter characteristic of this message is that that we treat these two terms very definitely not at this first term is smooth. The second term is not smooth, so in this method we need to compute a model for approximating this objective function in each direction. And this here is the model. As you can see for the smooth part we apply the 1st order to expansion and for announcement part would directly put into the model. And it turns out by units model we can obtain the commercial 1 / K square for credit ratings, and this is the optimal for the 1st order methods. Easter iteration of this problem and we need to minimize this model, and it turns out minimize model is equivalent to solving this counter of future loss of signal approximately problem. So next we discuss how to efficiently solve this problem, and this is the main contribution of our work, but I would like to mention that this is part of the quite technical, so I make I only give the high level idea. So next we discussed how to solve this field of signal approximately.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "So you can see this problem. The input is a vector V and we want to compute X which is close to this way and Meanwhile it has a low. Funeral penalty. And unfortunately this this problem is also nice, most unanswerable. So next we used you several reformulations to to solve the problem. 1st. First with you after this problem can be solved by unequal problem by setting this number 120. So we call this the simplify problem. Or you can see OK, we just remove this term and we can use this solution to this problem to recover this. Looking for this problem.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "Uh next next we discuss how to solve this problem. This term is also not small, so our messages that we make use of the genome of the L1 norm and we can reformulate, we can derive the dual problem for the primal problem for this problem. Fortunately, this dual problem is very easy. It has nice property, it has a. It is quadratic and it is. It only has a bound constraint and once we have solved the problem we can use this relationship in the Primer Pro X&Y&Z to recover the primer solution. We've further. Our serial ATA shooter. We can use this used to control the quality of the solution.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So next. Wish, Wish, wish or how to solve this problem so this deal problem we can this different as I mentioned before this deal problems occur correctly. Point program problem. So we can apply many servers here. For simplicity, we can. We just assume that we can use for this room by the greater and lesser method, and to show the performance of these methods I use a center, so I generate input V which is. Dimension is 100,000 and this under the this figure shows the convergence of. Uh, this is 2 matters or you can see by the radical and the green curve. So this is for these two matters. The result is that in 200 iterations is to make at least two methods achieve a divided up of 1 -- 2 and 1 -- 3. However, this need to twin implementations first. The proceeding is not very high. Second, the number of iteration is very low and the number of tradition is very high. We know that this problem is solved in each iteration of our problmes. So we need to solve. This problem is definitely to solve this problem. We propose a novel restart technical and read this restart technical. We can solve the same problem in just eight iterations and we can achieve the exhaust routing. This part is quite technical and I generally go into detail here for if you are interested you can go. You can refer to our paper.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "So next I show some.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Experiments. First, I initially proposed submitting algorithm for solving the future loss of signal approximately problem, and we also here we use the sensitive data. And this figure shows the convergence of this method for different regular apt #2. And here is the X axis delusory train number and the Y axis denotes the divided up in the log scale. As you can see, as you can see from this figure out Mr Converge very fast and it can achieve you have a less than one in my turf in thousands of thousands of iterations.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "We also compared this algorithm with the recently proposed a past FLS algorithm, and this algorithm is is proven to be the final state of our algorithm. Here we also use. Net data here. This is each column. It is the problem size we try this. This is dimension of the way. So we try from 100 to 10 meaning and this is this is a different regular parameter or they can see from this figure. Or almost is much more efficiently this possibl algorithm, and in most cases the speed other is over 10 times.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Next we show some efficiency of the purpose.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Record this problem is the subroutine next.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "Should the effect of the the the main algorithm and we can compare compare with the general server civics and here we use 3D sets. The first 2 have some meaningful ordering nuclear don't have we use the higher clustering to estimate order, so we are together. We have three daughters. This figure summarizes the computational cost, so the X axis is the different regular parameter. the Y axis is time in log scale. As you can see from this figure, in most cases our algorithm is is is 10 times is more than 10 times faster than the general server and similar. Similarly, we can observe from this is.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Finally, we report report some expense classification performance. We compare the performance of a few larger and larger. As you can see, so on this arrested data, the improvement is significant. The reason that maybe this is the philosophy is. Is a very simple instead and only only achieve compare compatible results. The interesting that further nuclear test by using the recording we indeed get an improvement.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "The course for our proposed algorithm is available online and it is incorporating our recently developed sparse learning package and you can get this package by by using Google and use this keyword sparse learning and it it returns. The first is the first returns our algorithm.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "In summary, in this in this work we propose an efficient algorithm for solving the few lots of people problem and the key. Our condition is upgrading finding algorithm for solving the future loss of signal approximate problem in the in our future work we we we plan to extend the philosopher to the multidimensional case notes in the current work, we only consider the successive difference and in future we may consider the. More general material difference. We also plan to apply the proposed algorithm for learning the time wearing network, so that's the end of.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "All my talk, thank you. Experiment. Analogy for $50. Haha why? OK, I'll leave the past learning algorithm. I think for me, if we can fit in the memory. With that outfit in memory that is not working. So I think as soon as it can fit in the memory, our algorithm can work. So the second question has not really related at all. Obvious. Lambda one hamster? Setting a second one. My wife, I wonder how we do that. I think maybe there is not no good I think. And undoubtedly don't have very frequent Susan. Maybe only use the conversation and typically we can try. We can certainly Marks and then we just use our ratio event log scale along this line. So with landmarks in people's ears, listening audio solution. But you can use their last year to learn, so I mean. When you use a very large number, it'll give you all the rules and you can try to log user log, scale permits reply, then use the log scales log scale for training.",
+        "start": 609.0,
+        "end": 638.0
+    }
+]

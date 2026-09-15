@@ -1,0 +1,20 @@
+{
+    "id": "b73ygizc2qyrwg7s73evif6c2zlc3t4u",
+    "title": "Turbulence modeling for incompressible single phase flows in nuclear engineering",
+    "url": "http://videolectures.net/kolokviji_benhamadouche_turbulence_modeling/",
+    "info": {
+        "author": [
+            "Sofiane Benhamadouche, EDF"
+        ],
+        "published": "Nov. 3, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Physics->Nuclear Physics"
+        ]
+    },
+    "num_segments": 55,
+    "num_sentences": 572,
+    "num_clips_with_summary": 33,
+    "num_gt_summary_sentences": 76,
+    "ground_truth_summary_length_chars": 8360
+}

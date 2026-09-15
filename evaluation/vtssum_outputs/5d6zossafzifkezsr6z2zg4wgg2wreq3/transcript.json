@@ -1,0 +1,117 @@
+[
+    {
+        "text": "So my name is Sean Young. I'm from Twitter. This is joint work with my colleague Alec Andy at punk engine. So we present a topic modeling system deployed inside Twitter. So for every tweet sent on Twitter platform, we want to predict the top label for that tweet. So why is this interesting to us? Why is it interesting? US, particularly for Twitter, right? So this is interesting as this is important of. Actually it has a lot of use cases inside Twitter. For example, one use cases 12. The.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "Able to a mirror. For each topic marosa like consumption impression was a volume of that topic. At that time an overtime. What's the trend, right? So that's a very important use case. Another use cases. User interests normally.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "Hope this is a. OK, use user interest money right. So if we know. For each state, if we know the topic of this street, we can use a very simple, maybe MapReduce job. What's the number of tweets this user consumed and what's the number of tweets this user produced? And very easily we can project that data to extract a real time dynamic user interest model. So for example like this right so also?",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Why more use cases? Topic channels if we can organize tweets into different verticals like this topic verticals that will help the user to have better consumption experience. And also personalization recommendation right? If we know what the.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Topics that content and we know what the interest of user. We can connect the right content to the right user. And they are.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "And there are a lot of many other use cases, for example, as targeting newsfeeds, ranking CR Prediction, search index, alot of these use cases so. But because of these various of use cases.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "And also the potential of exposing is topic labels to our user. We have this quality requirement so particularly want have at least 90% precision. That means if we say these traces about sports, right? We can 90% of the time. We are correct, right? This is turned out to be a very. It's very challenging actually, because.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "Because of the nature of the Twitter data arrays, tweets are sparse bounded by 140 characters and on average it takes only like. Less than 10 unigrams. So how do you achieve 90% precision with only seven unigram? This is pre challenge. Also Twitter data is pretty noisy right? So it can contain plates contain any like substring right? And tweets out and figures right? Or lotteries about many topics. And some tweets are conversational. No topic at alright. And also it's dynamic. We have emergent events emerging. Hashtags right? It's very challenged. OK, so because of these challenges we find out.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Some existing pretty standard approach off the shelf approach doesn't work. For example, LDA and its variance variance rate supervising. Ideally, this model is done work. Why it doesn't work? A couple reasons. One reason is for LDA, right? So this unsupervised model maybe 40% procedure is reasonable right? 30% maximum for tweets but 90% procedure is too much, right? So far from our goal and also the LDA topic model if you want to align that topic to our. Yes, we want to organize trades to this predefined ontology. If you want to organize aligned at the unsurprised learning results to that predefined taxonomy, that's not trivial right. And also we want to improve the quality of our Top Model system overtime and LDA model does allow you to do that if you retrain model the topics we shuffle right, and if you add one new topics or the other topics we change also right? So and also. Public fare train. This is a pretty. Popular approach used to extract topics. So language model was talking filtering, but we found that this approach works for very semantically very focused topics like SF, MTA. These topics, but for generic topics it doesn't work well. Also I want to mention one more approach. Active learning right? So if you apply after active learning. First tweet topic understanding. That's also it's not going to work because tweets are sparse. Even you run this mini batch right of active learning, you collect like a couple of thousands by topic data. Because of sparsity, as we are not generated on the test data, we alright so OK. So we present a system called Job is system is deployed inside Twitter. It doing it predict topics for tweets on the 4th scale, Twitter data in real time or structure taxonomy about.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "350 topics and about 90 three procedure. 93% procedure with 40% coverage. English tweets or or the English states actually so OK so how?",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "We did it right, so I want to give an overview of our approach. This is a collection of tech talk.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Modern techniques, but I don't have time to go into all the details, but I want to give a brief overview. OK, this is a high level architecture. Our system. Basically we have the real time Twitter stream, right? So we have a training data collector module. Basically listen to their Twitter stream and click label data automatically at no cost and we have machine learning trainer system. Basically based on that. Collective training labeled data to produce machine learning models validated that model and diplay replicate to our data center, and then that pointer. Alright, so. OK, OK so. That topic classifier is basically was used together with our knowledge base knowledge base about the entities, knowledge base about the user, so all sorts of the knowledge we acquire too. Yeah, thank you. Thank you. To provide the final production target labels and we also have some other like feedback collection module, static diagnostic modules too. If we detect systematic mistakes and correct that mistake on the fly. OK so.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "I'll give a brief introduction to each other. Models first model is labeled data collection. So how do we collect label data at no cost so? So we basically designed this system this. This module basically consists of a couple of submodules first models. Labeling priors so priors noisy filters about each topic. So like user, so these priors to prefilter the top points and that noisy filter data is used by our data cleaning pipeline basic consists of called training and learning based on positive unlabeled data with PU learning module to produce high quality, positive and negative. Training data for our model training.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "OK, so once we have that labeled data, we basically launch machine learning model to produce models. This is pretty standard so tweets futurized and then. Feeding into our trainer to produce models is a pretty standard text classification systems I will skip.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "And also, as I mentioned, our taxonomy is a structure taxonomy. We have this segment depth in total 7 depth taxonomy, right? So how we also want to leverage that structured structure to improve the quality of our model. Yeah, so we basically use three approaches. We do data sharing, the labor propagation. We do private sharing cost sensitive learning. If you want to know more details, you can read the paper. And also so once we have all with all of this we can achieve about about maybe an average 60% procedure, but 90% precision is still far away to go. So how do we achieve that 90% percent?",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "So we have another model, cars, two stage training. Basically we have. A large amount of. Program collected noisy data from our training data collection program, but we also have a small we can afford with our budget. We can follow a small set of. Clean human labor data. Right, so if you change the model on each of these data set, it doesn't work, because this model is too noisy, right? 60% procedure. This model is too sparse. It doesn't generalize well on our test data, so our combined this because of the dominance volume, right? So this would be like average out this signal here. So we use this two stage training. Basically train model based on this large volume data and use that as prior to train. Answer A small amount of data. OK.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "Also, we have diagnosis or corrective learning modules, basically to detect the to collect feedback from our user at no cost and identify systematic mistakes and correct it on the fly. So and also for some kind of tweets, it's very noisy. It's very hard to get it right.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "I see even impossible, right? So we want to we want to like waste our system latency on these streets multitude diseno rejection so. We have also model model. Calibration is basically estimate. The procedure must have a classifier to estimate the threshold at which threshold we can.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "OK, so we are.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "So, but places also is not only about text, it's also about a lot of other signals, right? So basically, based on the, we also derive signal.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "From URL author engagement Engagers and also entities and two is called integrative inference to get the final results. This is horses.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "This is the final system which brought our system which achieves 93% precision with 40% English coverage.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So this is so. In summary, we present diploid system on large scale, high precision type of modeling and we present collection of topic modeling techniques to achieve that. 93% or so if you are interested in our to know more details, you can come to our poster, read our paper. Thank you very much.",
+        "start": 638.0,
+        "end": 667.0
+    }
+]

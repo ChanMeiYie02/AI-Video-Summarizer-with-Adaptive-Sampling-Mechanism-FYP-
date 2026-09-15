@@ -1,0 +1,25 @@
+{
+    "id": "ohz5tkh3ttbllt36kxysclyj5bfr5scv",
+    "title": "Reinforcement learning objectives constrain the cognitive map",
+    "url": "http://videolectures.net/rldm2015_stachenfeld_cognitive_map/",
+    "info": {
+        "author": [
+            "Kimberly Stachenfeld, Princeton Neuroscience Institute, Princeton University"
+        ],
+        "published": "July 28, 2015",
+        "recorded": "June 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning",
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Social Sciences->Economics",
+            "Top->Social Sciences->Psychology",
+            "Top->Medicine->Neuroscience",
+            "Top->Technology->Engineering->Electrical Engineering->Control Engineering"
+        ]
+    },
+    "num_segments": 24,
+    "num_sentences": 167,
+    "num_clips_with_summary": 5,
+    "num_gt_summary_sentences": 8,
+    "ground_truth_summary_length_chars": 973
+}

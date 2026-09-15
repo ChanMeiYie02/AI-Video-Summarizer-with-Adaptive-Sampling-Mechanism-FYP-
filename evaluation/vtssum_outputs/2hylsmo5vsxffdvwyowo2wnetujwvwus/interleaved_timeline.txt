@@ -1,0 +1,179 @@
+[0.0s - 29.0s]
+OK, so this is work from TTI, Chicago together with Michael Moran, Greg Schechner, Ovich. OK, so let's try to define.
+
+[29.0s - 58.0s]
+In what colorization is so? Let's set up the task.
+
+[58.0s - 87.0s]
+If you open up this image in Photoshop, there's a button that says.
+
+[87.0s - 116.0s]
+Saturate and if you click it, it will sort of drain all the color from your image and you get a grayscale image. Now one definition of polarization could be the inverse.
+
+[116.0s - 145.0s]
+Function of this. So now we open up a grayscale image we hit.
+
+[145.0s - 174.0s]
+One that says colorized and we get back the original, the original meaning whatever we had that we desaturated. But this is an Impala.
+
+[174.0s - 203.0s]
+Simple problem and we might not have an original that was desaturated. It could be an original grayscale image. So.
+
+[203.0s - 232.0s]
+We could propose another definition that says, well, it's just. It just needs to be an inverse that is false.
+
+[232.0s - 261.0s]
+Foreign pleasing to human observer, so there's sort of some wiggle room in how we could interpret that. So.
+
+[261.0s - 290.0s]
+We're going to keep we're going to use both of these definitions. The first one we're going to use for training and quantitative evaluation, and the second one we're just going to keep in mind for qualitative evaluation.
+
+[290.0s - 319.0s]
+So before we go into automatic colorization, I thought we would try and Emanuel colorization first, so I opened up this image in Photoshop. I had never seen the color version of it. And so before I can start picking a color and putting it down, I have to.
+
+[319.0s - 348.0s]
+I see things like grass I identify.
+
+[348.0s - 377.0s]
+Things like trees and I.
+
+[377.0s - 406.0s]
+Know that the scene is a landscape scene, so I'm using all.
+
+[406.0s - 435.0s]
+These low level to high level cues to build the confidence to say this region should be green. OK so I continue and I.
+
+[435.0s - 464.0s]
+The Sky Blue Anne for the mountains.
+
+[464.0s - 493.0s]
+I sort of panicked and said, well, maybe they're Brown. OK, so this is clearly not Eva.
+
+[493.0s - 522.0s]
+Very high quality colorization and I'm not just trying to lower the bar here. I just wanted to see what I could do in as little time as possible and this was sort of my 15 second budget.
+
+[522.0s - 551.0s]
+Spending a little bit more time on it, I got this in three minutes, so that's still 3 minutes and it did require some Photoshop in some sort of artistic touches. So the prospects of being able to do this fully automatically with an algorithm in 100.
+
+[551.0s - 580.0s]
+SEC has clear economic wins.
+
+[580.0s - 609.0s]
+So the motivation of this work is primarily to colorize old black and white photographs and films, but there's a second motivate.
+
+[609.0s - 638.0s]
+Asian, which is we think this is a good proxy for visual understanding because you have to understand what's in the image to colorize it correctly and I'll come back to that at the at the end. So.
+
+[638.0s - 667.0s]
+Dramatic colorization, or colorization, has been a research field for about 15 years. Most previous methods have involved some level of user inputs, such as scribbles or selecting a reference image. The the more recent.
+
+[667.0s - 696.0s]
+The automatic prediction based models we saw first time last year two papers that I CV and then.
+
+[696.0s - 725.0s]
+This year we've seen one at SIGGRAPH and then yes.
+
+[725.0s - 754.0s]
+Today you saw one a great talk from UC Berkeley presented by Richard Young and then our work now, so how?
+
+[754.0s - 783.0s]
+We're going to make this model well. It's going to be a convolutional neural network, and some of the design principles will be so.
+
+[783.0s - 812.0s]
+So we need semantic knowledge. If you see a grayscale image of a banana, you need to identify it as a banana and know that bananas are usually yellow, so we're going to start by leveraging an image.
+
+[812.0s - 841.0s]
+Task based classifier so it's been trained for classification and it has all these representations.
+
+[841.0s - 870.0s]
+Secondly, we want to be able to use both low level and high level cues just like I did in my manual colorization, so we're going to use a hyper.
+
+[870.0s - 899.0s]
+Call marketecture, that essentially concatenates all the layer for one spatial location. What this what this does? Is it sort of reduces the distance from the low level layers to the task so that they can be more immediately involved. So fine.
+
+[899.0s - 928.0s]
+Only we need to address the fact that colorization is not unique. OK, so you could have multiple reasonable colorizations of 1 pixel. So.
+
+[928.0s - 957.0s]
+That we're going to predict histograms so the histograms can capture multi modality. And the color space that we use is Hue and chroma, and lightness is sort of a pass through channel, so putting this all together.
+
+[957.0s - 986.0s]
+OK, so we first first we have to if we want to create an RGB image. We do have to sample or select one represent one color from the histogram. So for this we sort of we picked median for the Chrome on that worked well. We can pick medium for the Hue because it's circular and so we use the complex expectation for that. Anne this
+
+[986.0s - 1015.0s]
+Where we get. So we do this for every pixel and you can see that the our results are pretty close to the ground truth. So the way this is. So another thing we.
+
+[1015.0s - 1044.0s]
+To do with the rich representation of actually predicting histograms is we could say, well, we can introduce a global bias that says let's make this image more red or more blue. So.
+
+[1044.0s - 1073.0s]
+So. We can, we can say, OK, we want this to be red, but we can also say we want this to be blue.
+
+[1073.0s - 1102.0s]
+And you see that the skin color did not change because it had a more higher certainty in the model, so it had sort of a low entropy prediction.
+
+[1102.0s - 1131.0s]
+Here's another exam.
+
+[1131.0s - 1160.0s]
+Apple with. Four different.
+
+[1160.0s - 1189.0s]
+Colors of the tractor, but the grass is always green.
+
+[1189.0s - 1218.0s]
+So to summarize, the training, we started with an image not pre trained model that was trained for classification.
+
+[1218.0s - 1247.0s]
+We adapted to grayscale. Fine tune fine tune it for a little bit.
+
+[1247.0s - 1276.0s]
+And then we switched the task to colorization and we train it on no labeled data. So the way the.
+
+[1276.0s - 1305.0s]
+These things are usually trained is you create a fully convolutional or you run your network as a fully convolutional network and you get this really dense representation of hyper columns. Now this is a huge memory footprint. So one of our technical innovations is to use a sparse sampling of hyper columns.
+
+[1305.0s - 1334.0s]
+So we do by direct bilinear interpolation, so we don't need all the full representation of all hyper columns. And we found that since so many of the hyper columns in a single image are highly correlated, you don't lose much in training. So using this we can train a much larger images with comfortable batch sizes.
+
+[1334.0s - 1363.0s]
+And we had code available for Cafe in Tensorflow. This can be used for other image to image tasks. So I encourage you to check it out.
+
+[1363.0s - 1392.0s]
+So how do we do on colorization well? Compare comparing to the two ICD papers on quantitative measurements. So basically looking at how far away are we on a per pixel basis to the ground truth? We offer a pretty significant improvement over the state of the art. When it comes.
+
+[1392.0s - 1421.0s]
+To comparison with concurrent work, there are two papers that did comparisons. The first one I'm showing you as an archive paper. And. We do better, but to be fair, Jung at all from UC Berkeley, they did not emphasize this task. They looked at. User studies which we saw yesterday and they tested two models of their own and then our model and our model came in in between. So I think what's interesting here is that we're able to be very competitive on the quantitative measurements, but it doesn't seem that we're giving up user appeal, so we're able to do both of these tasks well. They also did an interesting thing which was to run the colorized images through a classifier, and on this we improve the accuracy the most. So.
+
+[1421.0s - 1450.0s]
+What does it look like? These are all images that were not seen during training in either of the stages classification or colorization. And.
+
+[1450.0s - 1479.0s]
+This is how they look colorized. So you can see it's pretty hard to tell these from actual color images.
+
+[1479.0s - 1508.0s]
+Couple more examples and notice that we can colorize things that are not necessarily image net classes, right? So for instance, the grass, the wood texture, all these things are not image in the classes, but we can still colorize them appropriately. Another interesting one is the top right corner here, where the actual leaf is red, but our model took a more conservative guess and said green.
+
+[1508.0s - 1537.0s]
+Even though we didn't adapt this explicitly to old black and white photographs, it still does pretty well.
+
+[1537.0s - 1566.0s]
+So just to manage your expectations, they don't all look this good. These are sort of a selection of very successful examples, and there are still many many failure cases such as inconsistent color for objects, color bleeding, various types of confusion. So.
+
+[1566.0s - 1595.0s]
+To come back to the second motivation, which was sort of colourization as a vehicle for self supervision. The first question we need to ask is can you train colorization from scratch? And that.
+
+[1595.0s - 1624.0s]
+Turns out you can do it pretty well. Actually you lose a little bit by not using an image not pre trained model, but it still works pretty well.
+
+[1624.0s - 1653.0s]
+Then we can. We can take this model and utilize it for another task such as semantic segmentation. So this is the task of essentially classification on a per pixel level. So each pixel needs to be labeled caraboat or anything. For 20 classes in background.
+
+[1653.0s - 1682.0s]
+And sorry if it's cut off a little bit. No, it's not. It's only on my screen. OK, very good so. If you train semantic segmentation from random initialization, you do really poorly. 32.5 there and then. If you use an image net pre trained model, you get much better results. So how do we do initializing this with our colorized or colourization from scratch network well?
+
+[1682.0s - 1711.0s]
+We found that we can more than halfway bridge this gap. And what I really want to highlight is the fact that the best results that use only the original data set is about 48% and the only thing we added was unlabeled data. But this is ongoing work and I think we can. We can push this further. So to sum.
+
+[1711.0s - 1740.0s]
+Nice, I presented a fully automatic colorization model with state of the art results. We present a an efficient way of training using sparse sampling of hyper columns and we also see this as a promising proxy task for visual learning. Thank you.

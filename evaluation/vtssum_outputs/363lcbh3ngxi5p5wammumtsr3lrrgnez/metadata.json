@@ -1,0 +1,22 @@
+{
+    "id": "363lcbh3ngxi5p5wammumtsr3lrrgnez",
+    "title": "Smooth, Finite, and Convex Optimization Deep Learning Summer School",
+    "url": "http://videolectures.net/deeplearning2015_schmidt_smooth_finite/",
+    "info": {
+        "author": [
+            "Mark Schmidt, Department of Computer Science, University of British Columbia"
+        ],
+        "published": "Sept. 13, 2015",
+        "recorded": "August 2015",
+        "category": [
+            "Top->Computer Science->Machine Learning->Deep Learning",
+            "Top->Computer Science->Machine Learning->Reinforcement Learning",
+            "Top->Computer Science->Machine Learning->Unsupervised Learning"
+        ]
+    },
+    "num_segments": 225,
+    "num_sentences": 945,
+    "num_clips_with_summary": 20,
+    "num_gt_summary_sentences": 29,
+    "ground_truth_summary_length_chars": 3377
+}

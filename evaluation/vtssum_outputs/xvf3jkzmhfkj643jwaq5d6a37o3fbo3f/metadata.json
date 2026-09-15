@@ -1,0 +1,21 @@
+{
+    "id": "xvf3jkzmhfkj643jwaq5d6a37o3fbo3f",
+    "title": "Physical Cyber Social Computing: An early 21st century approach to Computing for Human Experience",
+    "url": "http://videolectures.net/wims2013_sheth_physical_cyber_social_computing/",
+    "info": {
+        "author": [
+            "Amit Sheth, Kno.e.sis, Wright State University"
+        ],
+        "published": "Nov. 20, 2013",
+        "recorded": "June 2013",
+        "category": [
+            "Top->Computer Science->Semantic Web",
+            "Top->Computer Science->Data Mining"
+        ]
+    },
+    "num_segments": 166,
+    "num_sentences": 929,
+    "num_clips_with_summary": 23,
+    "num_gt_summary_sentences": 31,
+    "ground_truth_summary_length_chars": 2509
+}

@@ -1,0 +1,20 @@
+{
+    "id": "n4mqq7oecqg5b46chgdnyqxk62wijk7j",
+    "title": "A Fine-Grained Evaluation of SPARQL Endpoint Federation Systems",
+    "url": "http://videolectures.net/iswc2016_saleem_federation_systems/",
+    "info": {
+        "author": [
+            "Muhammad Saleem, Agile Knowledge Engineering and Semantic Web (AKSW), University of Leipzig"
+        ],
+        "published": "Nov. 10, 2016",
+        "recorded": "October 2016",
+        "category": [
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 43,
+    "num_sentences": 155,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 11,
+    "ground_truth_summary_length_chars": 1309
+}

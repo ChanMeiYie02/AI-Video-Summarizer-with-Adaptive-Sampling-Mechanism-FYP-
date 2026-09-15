@@ -1,0 +1,21 @@
+{
+    "id": "w6lgixoeqetf26vayrizchnpsoct5bxc",
+    "title": "Limits of the current state of Artificial Intelligence for Law",
+    "url": "http://videolectures.net/lawandethics2017_grobelnik_artificial_intelligence/",
+    "info": {
+        "author": [
+            "Marko Grobelnik, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "July 24, 2017",
+        "recorded": "May 2017",
+        "category": [
+            "Top->Data Science",
+            "Top->Social Sciences->Law"
+        ]
+    },
+    "num_segments": 32,
+    "num_sentences": 587,
+    "num_clips_with_summary": 15,
+    "num_gt_summary_sentences": 41,
+    "ground_truth_summary_length_chars": 2748
+}

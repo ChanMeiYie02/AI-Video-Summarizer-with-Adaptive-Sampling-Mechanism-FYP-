@@ -1,0 +1,20 @@
+{
+    "id": "7ks5a2c33tny3of22jjozcp75j3nqtld",
+    "title": "Blue Skies - Outlining the Future of Innovation in Human Healthcare",
+    "url": "http://videolectures.net/nib_minger_future_medicine/",
+    "info": {
+        "author": [
+            "Stephen Minger, Centre for Commercialization of Regenerative Medicine (CCRM)"
+        ],
+        "published": "Jan. 4, 2017",
+        "recorded": "December 2016",
+        "category": [
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 39,
+    "num_sentences": 874,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 2093
+}

@@ -1,0 +1,312 @@
+[
+    {
+        "text": "OK so I'm my read this is joint work with James Montgomery and Indica Premachandra were all from the N Yuan. It's actually part of a linkage project they have between that Bob and I have between the NU and Canon information system so. So Peter's talk is this is slightly hard act to follow and this is in some sense going to be very different. So there are. There's not a single equation on this in this talk, and it's an it's an it's very much a work in progress and I'd even go so far as to say it's it's more a discussion piece then. Hope not. Not at the end of the talk, right? So so just some expectation management. What I'm looking for here is is a vibrant discussion. I'm not probably going to tell you anything you don't already know, so if you if you need to go to a different workshop Now, that's fine.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "OK, so so the so I'll talk a little bit about how I came to this paper. So the conference is about relations between problems and I guess we want to end up with something, abstractly speaking, that's sort of like this where we have a bunch of problems and they're connected by relations and the relations might be easier like this problem is actually this problem, or we can solve this problem because part of it is this problem or this problem is like this problem? Or we can transform one to the other? There are many different ways of talking about relations, but thought about this for a while and one thing I realized was.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "I don't actually know what we mean by a problem exactly here, so maybe before we try to come up with some general way of relating problems. However, we step back a little bit and think about what we mean by a problem and hence anatomy of a.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "Problem. So I did a bit of hunting around on the Internet as one does these days and I wondered, will anyone else sort of face this problem of relating things and it turns out in medicine. There's been what looks like significant work. I think I've only scratched the surface in my brief searching. There's been significant work to build Maps of things much in the way that we would hope to build Maps in machine learning. I assume you're all at this workshop, so yeah, the the medical researchers have built this disease zone map, which is this is. This is only a small portion of said map. The map is like this 20 Meg file and this is maybe a small corner of a very large poster, but what they've done is they've found a number of diseases and they've been able to relate them in terms of. Various genetic associations that they know about the disease and cluster them. And then I get this quite rich picture. And there's more details in an interactive map at this. This URL down the bottom here, so I thought this is impressive. I mean how to how they do this is exactly what we want to do. So I hope that we can kind of start the conversation as to how we'll get to what the medical people can do already.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "This interesting observation, at least that's what I found on the website. They say even though I'm interested in problems here, they they note that relations between the elements are at least as important as the elements themselves, which is some. You know good for the topic of this workshop as well, 'cause that's what we're ostensibly looking at.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "OK, so who wrote this? Was this you Jake so I got this off the ML com website. Yeah yeah, so as we'll see it later, I ended up serving a lot of projects that do work in in trying to manage this zoo of machine learning problems and this was a nice quote I found on the ML com website. So basically it's a zoo right? We all know this we. We you look at NIPS, I think Amos is talk showed that although the vast number of papers and it seems like there's like 10 new problems, every conference that pop up. And if you're, you know if you're. Constantly going to conferences. Maybe you can keep up with the average practitioner is going to have a really hard time deciding what problem they have in which technique they used to solve it so.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "How can we organize a zoo? Fortunately there are other disciplines that at least had a crack at this problem. So zoologists, for example. And so it is all just do well. They they kind of build hierarchies. They say, you know we have life and then we have the domains within Life Kingdoms, Phylums, class, order, family, genus, species. They basically hierarchically structure all known life. So now the analogy would like is that you know if we can treat each problem as a living, breathing Organism, how do we? How do we do this? Yeah exactly, they would have generate this graph using machine learning, so it's kind of nice. So why can't we, you know, be self reflexive and and apply our techniques of our own problems. So I guess we want to know. So I thought if we want to build these Maps they must have solved the problem of how to talk about individual nodes in the map and they know how to relate them. So how about we try and draw some inspiration from what they do?",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "And so you have to go back in history quite some time to see where where, where they started with this, and you know how far it's traveled so.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "They I guess when you know natural scientists hundreds and hundreds of years ago started looking at the world they developed what they would consider what are called folk taxonomies, which you know this is a cat. This is a dog. This is a human and there's these very fuzzy categories about things, and they're not very scientific or rigorous. And then.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "After a lot of time, they realize that this wasn't sufficient in order to sort of really get to grips with a large number of things that can be quite similar. So Linnaeus and I guess others started to develop scientific taxonomies, and you know these are now standardized and codified into international codes of zoology, Zoological nomenclature, and an you know you're familiar with these. These are these Latin sounding really, incredibly technical names that you can use to impress people. Homosapien's macropus. Showing gigantis if you can pronounce them, you can impress people. Does anyone know what this one is? Yes, giant squid. Kangaroo. So yeah, so there's there's a big there's a really big leap between, sorry. There's a really big leap, no pun intended, between folk taxonomy and scientific taxonomy. There's a lot of time and effort and discussion was needed to make this step.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "And I'd like to think we're somewhere in between, right? We have. We certainly have the need to build a language with which to talk about the problems we face. So if you do what Amos did and just grab all of the titles from NIPS this year, you might see things like active learning with the drifting distribution, multi label classification on tree index, structured hierarchies, vector valued manifold regularization like we have. We have something more than just cats, dogs, humans, right? We're not just saying this is classification. And this is a regression problem like we were getting increasingly sophisticated. But I don't think we're quite a systematic sophistication yet.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "So how can we get there? Interestingly, this is more of an aside, but I guess if your aim is to develop taxonomies, you're kind of defining individuals by their relations to one another anyway, so maybe that's the point we can discuss at the end or during the panel. So that might be a criticism of what I'm saying here.",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "Right, so it seems like the key problem here is language and George Boole famously said that the language is an instrument of human reason and not just the way of explosions thought. So the idea here is that. It is crucial to actually get the language sorted out, so you can think properly it's not just a side effect of of having thought everything and now how do I? How do I tell people about what I thought?",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "Alright, so just to recap a little. We want to look at relations I said how about problems? What other people done when they've had to talk about problems? There seems to be this idea of scientific taxonomy. Let's have a look at how far we've got in machine learning itself.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "So I went back to some sort of classic textbooks to see what has happened so far in machine learning, and if you go back to Tom Mitchell's book, he gives a very broad definition of what it means to learn. So you have experience easom class of task, TA performance measure, and if you improve your performance measure as you see more and more tasks that's learning this is not quite what we want, right? So this is defining what learning means, not what a learning problem is so.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "That didn't really help me. I went back a little further to this older textbook of Mitchell and others and here this is when I first saw this. This is like the title of one of the sections in the opening chapter. That sort taxonomy an eyesore MLN. I thought this is fantastic, but it was actually a taxonomy of research rather than problems, so he they had broad headings like the the underlying learning strategies of a particular line of research and. Representation of knowledge of a particular line of research on the application domain and this is kind of techniques, models and data, and I think it's sort of gets close, but it's not quite. Arguably, it's not quite what we're after.",
+        "start": 435.0,
+        "end": 464.0
+    },
+    {
+        "text": "So instead of looking for people's thoughts on the matter, I thought I'd look at how people actually organize real learning problems and this sort of.",
+        "start": 464.0,
+        "end": 493.0
+    },
+    {
+        "text": "General UCI Repository was the first stop, so James and Dikran I went through and basically looked at every entry in the in the database and tried to understand what sort of terms are used by people who actually want to organize learning tasks and so. 189 entries and they talk about data types, default tasks, attribute types, number of instances, number of attributes, and these are kind of the key. Features are used to.",
+        "start": 493.0,
+        "end": 522.0
+    },
+    {
+        "text": "Talk about tasks and if you drill down on what they mean by default tasks then you get classification, regression, clustering, another, you know you've got to be wary of a classification scheme where like you have. I almost 1/3 of your things in other.",
+        "start": 522.0,
+        "end": 551.0
+    },
+    {
+        "text": "Then you have attribute types so they talk about integer. This is the values that the attributes can take integer categorical.",
+        "start": 551.0,
+        "end": 580.0
+    },
+    {
+        "text": "Real and then they have this very confusing term called data type. It about whether it's a. I guess a data generating program, whether it's a domain theory image, multivariate rational, relational, sequential etc etc etc. It was. It was certainly the impression you get when you look through this repository. Is that it wasn't something planned, it was. The language grew organically as more and more tasks were thrown to the bucket, so that was.",
+        "start": 580.0,
+        "end": 609.0
+    },
+    {
+        "text": "Less than satisfying. So more recently Chang and some others think some on and some others have created this service. Call dental data, which is an attempt at trying to create a I guess a more modern repository of of learning problems and methods and challenge.",
+        "start": 609.0,
+        "end": 638.0
+    },
+    {
+        "text": "So here's the site you can go to Atmel data log and you can increase data, methods, tasks and challenges. That sort of top level categ.",
+        "start": 638.0,
+        "end": 667.0
+    },
+    {
+        "text": "Trees for thinking about machine learning. So data here is raw data as a collection of similarly structured objects, which is fairly nice.",
+        "start": 667.0,
+        "end": 696.0
+    },
+    {
+        "text": "Definition methods are a ways you process things and and transform them.",
+        "start": 696.0,
+        "end": 725.0
+    },
+    {
+        "text": "The challenges. Collections of tasks under a certain theme.",
+        "start": 725.0,
+        "end": 754.0
+    },
+    {
+        "text": "And task is more interesting, one that there are 27 tasks at the time of writing an an. They basically. Define it ought to be a data set of data plus performance measures for evaluating a method on on that data, and they have binary classification, multiclass and regression, and that's about it. And there's a small number of performance measures, so this is yet another example of how people have. Have tried to classify things.",
+        "start": 754.0,
+        "end": 783.0
+    },
+    {
+        "text": "And then this is the other service. We had a quick look at was a male comp and so slightly different motivation to ML data. This is more to sort of host evaluation competitions I guess, and to be able to run a variety of tasks against a variety of.",
+        "start": 783.0,
+        "end": 812.0
+    },
+    {
+        "text": "Problems, and I mean if you want to know more about it, you can ask Jake up the vector. This is a free website for objectively comparing. There's actually 325 machine learning programs across 382 data sets on 10 different problem domains, at least at time of the writing. It might be more now, not sure.",
+        "start": 812.0,
+        "end": 841.0
+    },
+    {
+        "text": "Anne Anne Anne, the language that's used in ML comp. Is it a domain is a class of problems, has a particular data set format a particular program interface, and a standard evaluation metrics. So basically I'm going through these examples just to give an impression to everyone of the type of language and classifications that are made by the.",
+        "start": 841.0,
+        "end": 870.0
+    },
+    {
+        "text": "Existing services. So. Domains are organized into sort of three high level types. Supervised learning, performing domains and interactive domains. So by performing. You can think clustering and by interactive you can think online learning.",
+        "start": 870.0,
+        "end": 899.0
+    },
+    {
+        "text": "Interestingly, I thought this was a nice surprise. There's actually support within email. Come to to implement reductions, which is quite nice, so I recommend you check it out if you're interested in actually playing around with some reductions.",
+        "start": 899.0,
+        "end": 928.0
+    },
+    {
+        "text": "OK, so just pause and summarize again. We wanted to get a sense of where problems are with in machine learning and how people describe them and how they relate them and. It's a bit of a mess I guess so. I'm going to put forward a very very tentative, I guess a straw man for the purpose of discussion and I'm more than welcome to have feedback and, you know, put your hand up and say I vehemently disagree with everything you've just said, so here's a prescription.",
+        "start": 928.0,
+        "end": 957.0
+    },
+    {
+        "text": "There's some fine print on this prescription. This machine probably recommend anything, but were not systematic. We obviously have a bias because we are a limited number of researchers and we looked at what we found interesting. 1st and we're not trying to push a single vocabulary that everyone adopts, right? This is this is just a discussion point.",
+        "start": 957.0,
+        "end": 986.0
+    },
+    {
+        "text": "Not FDA approved. It also use at your own risk.",
+        "start": 986.0,
+        "end": 1015.0
+    },
+    {
+        "text": "OK, so. So sorry, I've been a field scientist. I've I've gone out. I've looked at, you see, I've looked at them all data I've looked at my comp. I've taken all my samples back to the lab and now I want to, you know, get on my pins and stick them into little showcases and figure out how I can relate them and describe them. And so I had no idea how to do this, so I haven't. I went and looked at what zoologist do again, and at least in this part where they were, they refined from genus to species, and I guess, similarly, all the way up the. The taxonomy they use this idea of genus differentiate definition.",
+        "start": 1015.0,
+        "end": 1044.0
+    },
+    {
+        "text": "Which is interesting.",
+        "start": 1044.0,
+        "end": 1073.0
+    },
+    {
+        "text": "What genus is a collection of things they call them species and differentiate, is a condition that distinguishes two species and they have a number of. Guidelines as to how you choose your differential in these pro.",
+        "start": 1073.0,
+        "end": 1102.0
+    },
+    {
+        "text": "So the the definitions for the.",
+        "start": 1102.0,
+        "end": 1131.0
+    },
+    {
+        "text": "The differentiate should be essential so. If you're describing a circle, you would rather talk to talk about it as being points of equating distance locus from another point, you know so that it's you know I push it into the ground drawstring around. I get a circle, but you could equally define a circle to be the body of maximum area with a fixed perimeter. And you would say this one is a bit more essential. At least it's more transparent as to what a circle is.",
+        "start": 1131.0,
+        "end": 1160.0
+    },
+    {
+        "text": "They ask that definition should be non circular, so you don't want to do things like online learning. Example presented in an online fashion. That would be bad.",
+        "start": 1160.0,
+        "end": 1189.0
+    },
+    {
+        "text": "You don't want the definition to be too broad or narrow. You want to split up your space.",
+        "start": 1189.0,
+        "end": 1218.0
+    },
+    {
+        "text": "You don't want it to be ambiguous or obscur. Simile is like an orange and metaphor is an egg. You know it's not helpful except this examples.",
+        "start": 1218.0,
+        "end": 1247.0
+    },
+    {
+        "text": "And you want to preferably state things positively. You don't want to say multi class is non binary. You'd rather say multi classes two or more classes or single three more classes of things. OK, So what I actually found this definition after I had written the paper and so I think implicitly I was. I was reaching for something like this, but it's nice to have it written down. And basically what I did is took. Took all of the impressions I got from how other people have described tasks and.",
+        "start": 1247.0,
+        "end": 1276.0
+    },
+    {
+        "text": "Um, tried to build some kind of structure into into the whole mess so. As a starting point, I when I think of a learning problem, release a productive learning problem, there's kind of a fairly natural flow from data to models or predictions to the assessment of those models and predictions, and so I figured at a very high level. Maybe we should organize our terminology around around these sort of ideas.",
+        "start": 1276.0,
+        "end": 1305.0
+    },
+    {
+        "text": "And so on. The data. It seems that the the common language that pops up time and time again is is notions of format. So you talk about whether the data is actually value relational. They're using a kernel to re represent it, whether it's sparse or dense, the size these seem to be useful terms.",
+        "start": 1305.0,
+        "end": 1334.0
+    },
+    {
+        "text": "You can also speak about the mode in which the data is presented. There can be better online transductive inductive acid, active and passive.",
+        "start": 1334.0,
+        "end": 1363.0
+    },
+    {
+        "text": "Argue that under Muslim predictions you can. You can have a model type. It can be parametric, your kernel model and so obviously there's not. These aren't disjoint categories that I'm proposing. Models can be graphical sparse.",
+        "start": 1363.0,
+        "end": 1392.0
+    },
+    {
+        "text": "Etc they can be. Prediction types this is the output of the models of the predictions. You have classes, probability structures, ranks and so on.",
+        "start": 1392.0,
+        "end": 1421.0
+    },
+    {
+        "text": "Under assessment, there's various choices you can make to assess the risk of using a particular model or making predict.",
+        "start": 1421.0,
+        "end": 1450.0
+    },
+    {
+        "text": "And the feedback you give to the learner via training signal is also. Arguably, you put under assessment or under the data, but these are things like do you see the labels or do you just see the losses you see the labels for everything or just some things? Do you get partial feedback etc etc. So it's very sketchy proposal of starting point for discussion as to how we might systematize a bit.",
+        "start": 1450.0,
+        "end": 1479.0
+    },
+    {
+        "text": "Yep. So there are things left out of this. Listen and on purpose, so I would argue, and you can argue against me that things like assumptions about the data which pop up a lot when you're doing analysis or or about to apply an algorithm. I would argue that these don't belong in in a. Taxonomy of learning tasks, so I assume just like the data is ideal, the models are realizable or the adversary is constrained in some way. These I don't think what we're reaching for when we want to come up with a description of learning problems. Because you can't test for them, you can't. I can't. I want I want. I want language where they can form questions from and if you pass me and you learning task, I can ask a question of the learning task and I can get an answer I. Are you sure that this is the case but? I need to know. OK. Like I said, I'm I'm putting this up to be knocked down so. Boy food models. This is something that you surely pull in to try and solve the problem rather than OK. So so yeah, that's a Fairpoint. So I guess the there's varying degrees of what you could. Consider a problem. I mean, I could say I really, really need to fit a line to this data. That's that that is the problem. You know, I don't. I don't care if quadratic would fit perfectly, I really interfere line. So in that sense, you consider your your choice of model as part of the problem. From there. This this one. I'm not sure because you can use. I can I can fit a line to data in many different ways, right there. There's more than I can declare that I want to line, but the way in which I get the line from the data is up to you. General declarative algorithms. OK, sure, sure, but with that's what I think. Music parametric you're already implying something about where you're going to talk about the data. The language you're using is probability, right? Language options are built in. Papers for writing papers. Is there a difference? OK, so I actually get. I get to that in the in the next slide. So I guess yeah all I wanted here is this is this is like. This is the result of me looking at all of this language and then the first thing that came to my head dumping it on the page and and opening it up for discussion. Yeah, food for thought. Yeah exactly. Will it be able to automate writing this paper? I hope so. Yeah, actually let me get on to the next slide please.",
+        "start": 1479.0,
+        "end": 1508.0
+    },
+    {
+        "text": "So the other very arguable point I make is that the more that you need to use terms from the sort of data column, the more practical your interest is, and over here it's kind of more theoretical. But you know that's probably going to draw even more fire than my.",
+        "start": 1508.0,
+        "end": 1537.0
+    },
+    {
+        "text": "So so yeah, so yeah, you could use these to write papers, right? So you just, you know, a little bit from column A little bit from column B and now I have a pay.",
+        "start": 1537.0,
+        "end": 1566.0
+    },
+    {
+        "text": "Paper on online semi supervised kernel probability estimation under log loss right? Right, so so so so. A nice taxonomy would be something where you know you can. You can fit all of these nips. Bingo like titles in into the taxonomy.",
+        "start": 1566.0,
+        "end": 1595.0
+    },
+    {
+        "text": "So Anne Anne. I guess if we pin down the language, obviously we haven't come to any consensus on it yet. But if we were able to pin down the language a little bit, there's still some more issues to cover and there's problems with taxonomy, and I think even the zoologists have issues with the right way to set up the taxonomy, so I don't think we're going to be immune from.",
+        "start": 1595.0,
+        "end": 1624.0
+    },
+    {
+        "text": "And I'm not necessarily sure it's a problem. So one thing we might do is if we were to try and build a text only web start with saying, well, prediction type is pretty crucial. Let's let's you know, take a subset of the terminology. I'm using it as well. Problems can either be have predictions that are classes or probabilities, and then once you know.",
+        "start": 1624.0,
+        "end": 1653.0
+    },
+    {
+        "text": "Which probably task is in sorry which category of tasks and then you ask what what is the mode that the data is presented? It's online or batch and you'll end up with four classes of.",
+        "start": 1653.0,
+        "end": 1682.0
+    },
+    {
+        "text": "Problem here and you might have Amb being kind of similar 'cause they're both classification, they just they just differ in their mode but someone.",
+        "start": 1682.0,
+        "end": 1711.0
+    },
+    {
+        "text": "Might come along and say, well, the modes kind of important and then AMB get quite get separated and. This is a inherent problem with taxonomy, so maybe taxonomy aren't the right way to try and get a handle on problems. Or maybe it's just different interests. Theoretical versus applied. Might try to construct these things in different ways, but hopefully we can all use a similar language.",
+        "start": 1711.0,
+        "end": 1740.0
+    },
+    {
+        "text": "So. To conclude, kinda how do we describe what it is we're relating? We want to know what are the nodes in the graph. The landmarks on the map. If this is our job to try and build the map, and I sort of made a very roughly argument. This is probably end user dependent, and I'd like to also put it that we kind of use a sophisticated folk taxonomy if you like, and I would argue that it's ambiguous, inconsistent and redundant, and I think we can do better, and I think to do so we should still techniques from disciplines have grappled with this for hundreds and hundreds of years.",
+        "start": 1740.0,
+        "end": 1769.0
+    },
+    {
+        "text": "Thank you.",
+        "start": 1769.0,
+        "end": 1798.0
+    }
+]

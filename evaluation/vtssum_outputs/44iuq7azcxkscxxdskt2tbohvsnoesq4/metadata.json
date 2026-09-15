@@ -1,0 +1,22 @@
+{
+    "id": "44iuq7azcxkscxxdskt2tbohvsnoesq4",
+    "title": "Cleaning companies vision on AMC’s",
+    "url": "http://videolectures.net/AMiCIworkshop2018_modic_cleaning_companies/",
+    "info": {
+        "author": [
+            "Martina Modic, Department of Surface Engineering and Optoelectronics, Jožef Stefan Institute"
+        ],
+        "published": "March 28, 2018",
+        "recorded": "March 2018",
+        "category": [
+            "Top->Science",
+            "Top->Technology",
+            "Top->Medicine"
+        ]
+    },
+    "num_segments": 4,
+    "num_sentences": 37,
+    "num_clips_with_summary": 2,
+    "num_gt_summary_sentences": 3,
+    "ground_truth_summary_length_chars": 211
+}

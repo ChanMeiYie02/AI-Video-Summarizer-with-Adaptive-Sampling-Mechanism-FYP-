@@ -1,0 +1,21 @@
+{
+    "id": "ztjb67hrjuqqnvh2txzuhqjqz4okjghh",
+    "title": "The statistical physics of optimal control theory",
+    "url": "http://videolectures.net/cyberstat2012_kappen_statistical_physics/",
+    "info": {
+        "author": [
+            "Bert Kappen, Department of Medical Physics and Biophysics, Radboud University Nijmegen"
+        ],
+        "published": "Oct. 16, 2012",
+        "recorded": "September 2012",
+        "category": [
+            "Top->Physics->Statistical Physics",
+            "Top->Mathematics->Control Theory"
+        ]
+    },
+    "num_segments": 85,
+    "num_sentences": 574,
+    "num_clips_with_summary": 26,
+    "num_gt_summary_sentences": 39,
+    "ground_truth_summary_length_chars": 5270
+}

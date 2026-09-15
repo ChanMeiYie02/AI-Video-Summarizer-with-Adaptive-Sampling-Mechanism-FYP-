@@ -1,0 +1,20 @@
+{
+    "id": "oc7eejkyc7jg7hzjf3oyak5vviy2pgvh",
+    "title": "Good Learners for Evil Teachers",
+    "url": "http://videolectures.net/icml09_dekel_glfet/",
+    "info": {
+        "author": [
+            "Ofer Dekel, Microsoft Research"
+        ],
+        "published": "Aug. 26, 2009",
+        "recorded": "June 2009",
+        "category": [
+            "Top->Computer Science->Machine Learning->Supervised Learning"
+        ]
+    },
+    "num_segments": 16,
+    "num_sentences": 258,
+    "num_clips_with_summary": 10,
+    "num_gt_summary_sentences": 21,
+    "ground_truth_summary_length_chars": 2428
+}

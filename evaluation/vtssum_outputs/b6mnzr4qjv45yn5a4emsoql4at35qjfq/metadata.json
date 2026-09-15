@@ -1,0 +1,20 @@
+{
+    "id": "b6mnzr4qjv45yn5a4emsoql4at35qjfq",
+    "title": "Flexible QSAR: functional machine learning in computational chemistry",
+    "url": "http://videolectures.net/ecmlpkdd2010_belda_ip/",
+    "info": {
+        "author": [
+            "Ignasi Belda, Intelligent Pharma"
+        ],
+        "published": "Nov. 16, 2010",
+        "recorded": "September 2010",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 22,
+    "num_sentences": 233,
+    "num_clips_with_summary": 17,
+    "num_gt_summary_sentences": 32,
+    "ground_truth_summary_length_chars": 3481
+}

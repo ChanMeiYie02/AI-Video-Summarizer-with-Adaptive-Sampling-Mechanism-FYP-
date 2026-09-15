@@ -1,0 +1,21 @@
+{
+    "id": "cjuofmirf2gn5gfccwevowx7m4x4uupa",
+    "title": "KOIOS: Utilizing Semantic Search for Easy-Access and Visualization of Structured Environmental Data",
+    "url": "http://videolectures.net/iswc2011_tran_koios/",
+    "info": {
+        "author": [
+            "Thanh Tran, University of Karlsruhe"
+        ],
+        "published": "Nov. 25, 2011",
+        "recorded": "October 2011",
+        "category": [
+            "Top->Computer Science->Semantic Search",
+            "Top->Computer Science->Semantic Web"
+        ]
+    },
+    "num_segments": 20,
+    "num_sentences": 180,
+    "num_clips_with_summary": 9,
+    "num_gt_summary_sentences": 15,
+    "ground_truth_summary_length_chars": 2564
+}

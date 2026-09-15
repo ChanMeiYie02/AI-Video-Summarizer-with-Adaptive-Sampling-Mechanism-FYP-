@@ -1,0 +1,72 @@
+[
+    {
+        "subtopic_id": 0,
+        "title": "CPU Cooler Maintenance and Wiring Procedure",
+        "description": "This video demonstrates the physical process of cleaning a computer CPU fan and discusses proper installation and wiring techniques for the component. The speaker provides instructions on handling components and ensuring correct placement.",
+        "summary": "The video focuses on the maintenance and assembly of a computer CPU cooler. The initial steps involve physically cleaning the CPU fan, which is described as having significant dust build-up, and the planned method for cleaning includes using isopropyl alcohol, Q-tips, and a soft scrubbing material. The process also involves careful handling of the component and connecting/disconnecting wires. Furthermore, the audio provides specific guidance on the proper installation procedure, explaining how the fan should be positioned relative to the wires (specifically, putting the fan back in first after repositioning the wire), and confirming that both components can technically be placed together.",
+        "raw_output": "TITLE: CPU Cooler Maintenance and Wiring Procedure\n\nDESCRIPTION: This video demonstrates the physical process of cleaning a computer CPU fan and discusses proper installation and wiring techniques for the component. The speaker provides instructions on handling components and ensuring correct placement.\n\nSUMMARY: The video focuses on the maintenance and assembly of a computer CPU cooler. The initial steps involve physically cleaning the CPU fan, which is described as having significant dust build-up, and the planned method for cleaning includes using isopropyl alcohol, Q-tips, and a soft scrubbing material. The process also involves careful handling of the component and connecting/disconnecting wires. Furthermore, the audio provides specific guidance on the proper installation procedure, explaining how the fan should be positioned relative to the wires (specifically, putting the fan back in first after repositioning the wire), and confirming that both components can technically be placed together."
+    },
+    {
+        "subtopic_id": 1,
+        "title": "How to Clean Laptop Cooling Fans and Improve Performance",
+        "description": "This video provides a step-by-step guide on cleaning the internal components of a laptop, specifically focusing on installing fan headers and ensuring proper cooling. It concludes by demonstrating the successful reassembly and verification of the working laptop.",
+        "summary": "The video guides the viewer through the process of cleaning and maintaining a laptop's cooling system. The initial steps involve powering down the device and disconnecting the battery. The core of the process focuses on locating and installing the fan headers, which are easily connected. The laptop is then spun around before the battery is reconnected. After performing the cleaning and reassembly, the speaker confirms that the laptop is powered on and functioning normally, indicating that the cleaning process is complete and successful.",
+        "raw_output": "TITLE: How to Clean Laptop Cooling Fans and Improve Performance\nDESCRIPTION: This video provides a step-by-step guide on cleaning the internal components of a laptop, specifically focusing on installing fan headers and ensuring proper cooling. It concludes by demonstrating the successful reassembly and verification of the working laptop.\nSUMMARY: The video guides the viewer through the process of cleaning and maintaining a laptop's cooling system. The initial steps involve powering down the device and disconnecting the battery. The core of the process focuses on locating and installing the fan headers, which are easily connected. The laptop is then spun around before the battery is reconnected. After performing the cleaning and reassembly, the speaker confirms that the laptop is powered on and functioning normally, indicating that the cleaning process is complete and successful."
+    },
+    {
+        "subtopic_id": 2,
+        "title": "Fan Removal and Reassembly Instructions",
+        "description": "This segment provides step-by-step instructions for removing a fan, involving disconnecting a cable and adjusting the number of screws holding it down. It concludes with instructions on fastening the fan back into place.",
+        "summary": "The speaker begins the process of removing a fan, noting that a cable should be popped off first. The fan is secured by three screws, but after taking it out, one screw is noted as already removed, leaving only two screws remaining. The next step involves fastening the screws back down. The speaker instructs to start with one screw and then ensure the fans are properly fastened back down before plugging them in.",
+        "raw_output": "TITLE: Fan Removal and Reassembly Instructions\nDESCRIPTION: This segment provides step-by-step instructions for removing a fan, involving disconnecting a cable and adjusting the number of screws holding it down. It concludes with instructions on fastening the fan back into place.\nSUMMARY: The speaker begins the process of removing a fan, noting that a cable should be popped off first. The fan is secured by three screws, but after taking it out, one screw is noted as already removed, leaving only two screws remaining. The next step involves fastening the screws back down. The speaker instructs to start with one screw and then ensure the fans are properly fastened back down before plugging them in."
+    },
+    {
+        "subtopic_id": 3,
+        "title": "Video Outro and Call to Action",
+        "description": "This segment serves as the concluding section of the video, featuring a request for viewers to subscribe to the channel and a final farewell message.",
+        "summary": "The video concludes with a voiceover prompting viewers to consider subscribing to the channel, explaining that subscriptions greatly assist the creator. The segment then wraps up with a final sign-off, stating that the video is over, and offering a goodbye until the next upload.",
+        "raw_output": "TITLE: Video Outro and Call to Action\nDESCRIPTION: This segment serves as the concluding section of the video, featuring a request for viewers to subscribe to the channel and a final farewell message.\nSUMMARY: The video concludes with a voiceover prompting viewers to consider subscribing to the channel, explaining that subscriptions greatly assist the creator. The segment then wraps up with a final sign-off, stating that the video is over, and offering a goodbye until the next upload."
+    },
+    {
+        "subtopic_id": 4,
+        "title": "Laptop Cleaning and File Management Issue",
+        "description": "This segment details the process of physically cleaning dust from a laptop and mentions an unexpected complication involving the deletion of a video file during recording.",
+        "summary": "The speaker begins by cleaning the laptop by wiping dust from the system. They then acknowledge a technical issue, explaining that they had planned another video but accidentally deleted one during file management, causing an interruption in their planned workflow.",
+        "raw_output": "TITLE: Laptop Cleaning and File Management Issue\nDESCRIPTION: This segment details the process of physically cleaning dust from a laptop and mentions an unexpected complication involving the deletion of a video file during recording.\nSUMMARY: The speaker begins by cleaning the laptop by wiping dust from the system. They then acknowledge a technical issue, explaining that they had planned another video but accidentally deleted one during file management, causing an interruption in their planned workflow."
+    },
+    {
+        "subtopic_id": 5,
+        "title": "Final Assembly and Stability Check",
+        "description": "This segment discusses the importance of securing screws tightly to ensure stability and prevent wobbling. It concludes the setup process by noting that everything is now assembled and the next step is checking for thermal paste.",
+        "summary": "The speaker emphasizes that tightening the screws is crucial to prevent components from loosening, especially during activities like travel or physical movement. Since the assembly is now complete, the final step is to verify the presence of thermal paste.",
+        "raw_output": "TITLE: Final Assembly and Stability Check\nDESCRIPTION: This segment discusses the importance of securing screws tightly to ensure stability and prevent wobbling. It concludes the setup process by noting that everything is now assembled and the next step is checking for thermal paste.\nSUMMARY: The speaker emphasizes that tightening the screws is crucial to prevent components from loosening, especially during activities like travel or physical movement. Since the assembly is now complete, the final step is to verify the presence of thermal paste."
+    },
+    {
+        "subtopic_id": 6,
+        "title": "Accessing Internal Components via a Specific Tool",
+        "description": "This segment describes the physical process of using a specialized pick-like tool to release internal clips and components located behind the laptop's backplate.",
+        "summary": "The speaker is outlining a procedure for accessing internal components by using a small, guitar-shaped pick. This tool is first slotted into a groove located behind the computer where the laptop meets the backplate. The user then needs to work around to pop all the small clips in the back. Eventually, they must work the tool further so that the remaining clips will release easily.",
+        "raw_output": "TITLE: Accessing Internal Components via a Specific Tool\nDESCRIPTION: This segment describes the physical process of using a specialized pick-like tool to release internal clips and components located behind the laptop's backplate.\nSUMMARY: The speaker is outlining a procedure for accessing internal components by using a small, guitar-shaped pick. This tool is first slotted into a groove located behind the computer where the laptop meets the backplate. The user then needs to work around to pop all the small clips in the back. Eventually, they must work the tool further so that the remaining clips will release easily."
+    },
+    {
+        "subtopic_id": 7,
+        "title": "Securing Components with Screws and Loctite Application",
+        "description": "This clip provides detailed instructions for correctly assembling a component, focusing on screw placement and using threadlocker for secure fastening.",
+        "summary": "The video demonstrates assembly techniques for securing a component, emphasizing that the part must be flush against the plastic to ensure screws align correctly. The speaker advises using longer screws for the back section of the assembly. Finally, the speaker points out a blue substance visible in the frame, identifying it as Loctite (threadlocker).",
+        "raw_output": "TITLE: Securing Components with Screws and Loctite Application\nDESCRIPTION: This clip provides detailed instructions for correctly assembling a component, focusing on screw placement and using threadlocker for secure fastening.\nSUMMARY: The video demonstrates assembly techniques for securing a component, emphasizing that the part must be flush against the plastic to ensure screws align correctly. The speaker advises using longer screws for the back section of the assembly. Finally, the speaker points out a blue substance visible in the frame, identifying it as Loctite (threadlocker)."
+    },
+    {
+        "subtopic_id": 8,
+        "title": "CPU/GPU Thermal Paste Application and Component Reinstallation",
+        "description": "This segment discusses the process of reapplying thermal paste to the CPU and GPU, and provides instructions or warnings regarding the proper sequential reinstallation of fans or other components.",
+        "summary": "The speaker discusses the process of applying new thermal paste to the CPU and GPU, noting that this step might be revisited later. They then transition to discussing the reinstallation of fans, emphasizing that they must be put back in a specific order and cannot simply be placed back in arbitrary locations. The speaker points out the presence of little tabs or guides to ensure the correct placement of these components.",
+        "raw_output": "TITLE: CPU/GPU Thermal Paste Application and Component Reinstallation\n\nDESCRIPTION: This segment discusses the process of reapplying thermal paste to the CPU and GPU, and provides instructions or warnings regarding the proper sequential reinstallation of fans or other components.\n\nSUMMARY: The speaker discusses the process of applying new thermal paste to the CPU and GPU, noting that this step might be revisited later. They then transition to discussing the reinstallation of fans, emphasizing that they must be put back in a specific order and cannot simply be placed back in arbitrary locations. The speaker points out the presence of little tabs or guides to ensure the correct placement of these components."
+    },
+    {
+        "subtopic_id": 9,
+        "title": "Removing the Device Back Panel",
+        "description": "This segment demonstrates the initial step in disassembling a device, specifically focusing on removing the rear panel. The crucial first step involves correctly identifying and removing the screws that secure the panel.",
+        "summary": "The process begins by instructing the viewer to use a Philips head screwdriver. This tool is required to remove seven specific screws that are holding the back panel of the device in place.",
+        "raw_output": "TITLE: Removing the Device Back Panel\nDESCRIPTION: This segment demonstrates the initial step in disassembling a device, specifically focusing on removing the rear panel. The crucial first step involves correctly identifying and removing the screws that secure the panel.\nSUMMARY: The process begins by instructing the viewer to use a Philips head screwdriver. This tool is required to remove seven specific screws that are holding the back panel of the device in place."
+    }
+]

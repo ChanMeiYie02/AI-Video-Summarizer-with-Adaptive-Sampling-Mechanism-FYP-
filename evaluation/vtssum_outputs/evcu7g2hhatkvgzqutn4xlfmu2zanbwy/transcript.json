@@ -1,0 +1,82 @@
+[
+    {
+        "text": "No OK hello hello to everyone. No, in my talk I would like to show you some our NOL. The reticle results about the optimal about application of the maximum entropy production principle in enzyme kinetics. Confirm.",
+        "start": 0.0,
+        "end": 29.0
+    },
+    {
+        "text": "I will talk about the maximum entropy production principle and its relation to Shannon information entropy. Then I will introduce idea that principles of non equilibrium thermodynamics can be at least in the field of enzyme kinetics. Much better understood if we accept the idea that enzymes are molecules which are very flexible in their structure and then in the second part. I'll show you some of basic calculations. I will discuss the model results and then I will give you some short conclusions.",
+        "start": 29.0,
+        "end": 58.0
+    },
+    {
+        "text": "No, it is somehow widely accepted that enzymes in living cells operate in complex biochemical networks and they share products and substrates with other enzymes and such processes also take place far from thermodynamic equilibrium. Therefore, we can consider enzyme reaction as open non equilibrium thermodynamics system. And.",
+        "start": 58.0,
+        "end": 87.0
+    },
+    {
+        "text": "It follows from non equilibrium thermodynamics that such system. Such systems tend spontaneously towards steady states where they dissipate energy and produce entropy with maximal possible rate. In fact, this statement is known as the maximum entropy production principle. It is central statement of non equilibrium thermodynamics sum. Some authors also claim that this principle described statistically most probable steady states of nonequilibrium systems, which means that steady states, characterized with maximal entropy production are characterized also with the most uniform distribution of microscopic states of the system, which in turn results in maximal Shannon information entropy. However, these principles are not well understood or so not well accepted among researchers. Especially in the field of chemical kinetics are strongly under question. No. We have some, let's say, rough. Rough evidence is that these principles can be better understood if we accept the idea. And that. Enzymes are flexible in their structure and it is known generally accepted that structure strongly affect enzyme kinetic structure of enzyme strongly affect the enzyme kinetics. So what? We mean by. With flexibility. Off up, sorry. So. Here is kinetic scheme. Here enzyme passes through different. Enzyme conformational states which are closely connected to enzyme catalysis capability and flexible structure. Enables fast transitions between enzyme States and according to some authors, this flexibility in structure is requirement for effective catalysis. We can demonstrate that such flexibility. Coexist or coincide together with maximal entropy production and maximal Shannon information entropy. Now we.",
+        "start": 87.0,
+        "end": 116.0
+    },
+    {
+        "text": "Investigated the relation between flexibility. Show ends with people. Duction Shannon information, entropy and different types of enzymes. For example, glucose is moraza, then three different types of beta, lactamase and Trio SIS throws for statism Arazi. So I will.",
+        "start": 116.0,
+        "end": 145.0
+    },
+    {
+        "text": "So you know some basic model which is developed for enzyme glucose is a moraza. We calculate density of entropy production, Shannon information, entropy, and kinetic flexibility under the constraints of mass conservation of reaction system and fixed equilibrium constant of reaction density of entropy production was is calculated as product of reaction flux and thermodynamic force. Divided by absolute temperature for thermodynamic forces obtained as difference of chemical potentials between substrate and product and. Reaction flux is a derived by using. Reversible Michaelis menten enzyme kinetics. And this is the basic of basic definition of the Shannon information entropy, where P1 and P2 are probabilities. Or that enzyme is found either in free form or in complex with substrate. This is P2. And.",
+        "start": 145.0,
+        "end": 174.0
+    },
+    {
+        "text": "Kinetic flexibility is calculated. From local stability analysis here we used the basic kynetic model, which is a system of four differential equations. This system is then. Reduced to the system of two differential equations and then in steady state. The system can be linearized and their cobian metrics can be calculated by using this formula. And kinetic flexibility is then given as trace of yacoubian matrix, which is assume of diagonal. Elements.",
+        "start": 174.0,
+        "end": 203.0
+    },
+    {
+        "text": "OK, then we first investigated. The existence of maximal entropy production according to basic formulation maximum entropy production. Is achieved by maximal thermodynamic flux at some fixed value of thermodynamic force. In our case, this means that we are searching for maximal value of this expression with respect to enzyme rate constants under this condition. Of fixed overall equilibrium. A constant of reaction, and it turns out that there is no maximum in entropy production under this condition. Therefore, we investigated. In very details, what are the necessary conditions? For the existence of the maximum in entropy production, and it turns out. That there is. Maksima min entropy production if we, together with this condition. Take the products of forward and backward enzyme rate constants. As fixed parameters of reaction. Then under this Optima.",
+        "start": 203.0,
+        "end": 232.0
+    },
+    {
+        "text": "Visitation conditions the reaction flux Shannon information entropy. And kinetic flexibility. Can be presented as functions of two. Body labels two independent. Enzyme rate constants. Here is an example where dis quantities are. Presented as functions of K2 Plus and K1 minus. These are now basic. Equations of our optimization problem, sorry. Some water. No. It follows from this equations.",
+        "start": 232.0,
+        "end": 261.0
+    },
+    {
+        "text": "That there is. It follows from this equation that. Reaction flux, Shannon information, entropy and kinetic flexibility all have well defined Maxima. For exactly the same. Optimal values of enzyme rate. Constance, which means that there there exists a steady state characterized by maximal entropy production. The same state is at the same time also statistically most probable state, and this state is associated also with the maximum in kinetic flexibility. Now we can we can compare. Predicted. Rate constants with the measurements. And. These are predicted values of enzyme rate constants. Sorry for this. These are predicted values by using map principle. And these are measured values for glucose is moraza and what we see there is good agreement in these values at least. In the order. Of magnitude. Now the same principles.",
+        "start": 261.0,
+        "end": 290.0
+    },
+    {
+        "text": "The same approach. Can be used. In analysis of other enzymes. Here we analyzed three different types of beta lactamase enzymes and calculated. Optimal values of rate constants K1 plus K2 plus K3 plus and we see again that optimal values predicted by map principle Max and entrees. Are very similar. And very close to experimentally measured values, and this can be observed in our almost all these cases. And.",
+        "start": 290.0,
+        "end": 319.0
+    },
+    {
+        "text": "Here is an example of thermodynamic analysis for triosephosphate ISM Raza enzyme. In this case we didn't manage calculate to a trace of cobian metrics that we calculated. Optimal values of eight different. Enzyme rate constants by using map and Marks and principles. And again, we somehow see these optimal values. Calculated from map and Mark Center very similar and also very close to experimental data. In conclusion",
+        "start": 319.0,
+        "end": 348.0
+    },
+    {
+        "text": "We can say that we we demonstrated the coexistence of well defined Maxim and density of entropy production, Shannon information, entropy and kinetic flexibility with respect to enzyme rate constants for different enzymes. We can say that my principle serves for description of statistically most probable status states for simple enzyme reactions. We can also say that flexible enzyme structure is closely connected with optimal thermodynamic performance of enzyme.",
+        "start": 348.0,
+        "end": 377.0
+    },
+    {
+        "text": "I would like to thank to my quoters professor, Doctor Alex Fine with Doctor in Denmark, which Professor Milan Broom and Professor Mark Markel. Markel stark. My colleague, Doctor Mark avitas. I analyzed the financial support from this learning and research agency. I would like.",
+        "start": 377.0,
+        "end": 406.0
+    },
+    {
+        "text": "Thanks to organizers for giving me the opportunity to present my work here. Anne. I would like to.",
+        "start": 406.0,
+        "end": 435.0
+    },
+    {
+        "text": "Thank you for your attention.",
+        "start": 435.0,
+        "end": 464.0
+    }
+]

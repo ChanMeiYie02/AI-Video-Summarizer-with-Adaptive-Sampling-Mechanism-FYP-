@@ -1,0 +1,95 @@
+[0.0s - 29.0s]
+Good afternoon, my name is Sid issue from the Chinese University of Hong Kong and my supervisor is John, so today I'm going to introduce our paper product selection problem, improve market share by learning consumer behavior. So first of all, let me introduce what is the?
+
+[29.0s - 58.0s]
+Selection problem. So let's say we want to produce some some smartphones. So there are a lot of things we need to decide. For example how large screen or large is the RAM and so many others. We call these things attributes. So do cell phone. We need to make a tradeoff among these attributes. Simple exam.
+
+[58.0s - 87.0s]
+So if you want a large battery, we probably need to.
+
+[87.0s - 116.0s]
+Twice the weight and thickness, and even if we succeed in putting a large battery in a compact device, we must sacrifice some other things like price like performance. So what product?
+
+[116.0s - 145.0s]
+Election do is we want to find the best tradeoff among among these different attributes so that we can help the manufacturer to find the most marketable products. So this is our goal and to achieve this goal.
+
+[145.0s - 174.0s]
+We need to under 3 questions. The first one is how we model the different consumers and products in the market and the second one is how to model the consumer behavior and the third one is how to select, so let.
+
+[174.0s - 203.0s]
+Let's start with the first one. How to describe consumers and products.
+
+[203.0s - 232.0s]
+In this work we consider market consists of a set of Consumer C and a set of existing products PE and in the market there is a manufacturer M. It may already have some some products in the market denoted by.
+
+[232.0s - 261.0s]
+I am so it's obviously a subset of PE and the manufacturer M had a set of candidate new products denoted by PN, so we're going to select product from PN and add them to the market. And in such a market we describe different products.
+
+[261.0s - 290.0s]
+Sumers by attributes, and let's say we have a set of attributes A1 to a D, and here we assume that higher value implies higher quality for every attribute. So here at route could be battery life durability, inverter price, lower price is always preferable, so we use inverse surprise instead of price and.
+
+[290.0s - 319.0s]
+Based on this attribute set. We define the quality of products for product PJ. It has a quality vector QJ where each element in this vector represents PGS quality on on the corresponding attributes attributes.
+
+[319.0s - 348.0s]
+So here is an example where we only have two attributes here. One is better life. And why is inverse of price? So if we have a product P1 with quality vector 24 one over 125, it means that this product has 24 hours of battery life and cost $125.00. So similarly we define the requirement vector of a consumer. So let's say we have a consumer see one with requirement vector R1. 16 one over 250 it means that it's this consumer requires that the product has at least 16 hours of battery life and cost no more than $250 and want to see that. Actually here P1 meets Missy wants requirements on every attributes. So in this case we say that P1 status.
+
+[348.0s - 377.0s]
+Say one and P1 is also said to be satisfactory product of say one. So this is how we describe different consumers and products in the market.
+
+[377.0s - 406.0s]
+Now we move on to the second question how to model consumer behavior and in the.
+
+[406.0s - 435.0s]
+This work, actually this, simply assume that the consumer will randomise at random by the by the satisfactory products. We think we think that this is not realistic, so in this work we proposed distance based product adoption model to capture the consumer behavior and the model actually is quite simple, just one sentence. Consumers only buy the farthest satisfactory products from them, where why? Because we assume that higher bottle imply implies higher quality, so the Father product is the better quality tends has. So here is another example.
+
+[435.0s - 464.0s]
+Again, we only have two attributes here, and let's say we use Ellen Amkette to calculate the distance. So here the difference between say one P1 is 5 and distance between say one P2 is 3 so. So here P1 is the farthest product from the from the consumer. See one. So C1 we're by P1. That's it. So here we actually we use Ellen on here. But actually we can use all kinds of different metrics to to describe different consumer behavior in different scenario. For example, we can use Eleanor Melton. Um, we can set different way to different attributes and so on. But for now, let's just assume that we know that these metrics the consumer use. And based on distance metrics, we can calculate the market share because we can nominate every every consumers behavior.
+
+[464.0s - 493.0s]
+So let's let's say we use MSAA, denotes the expected market share of consumers of the products. Now we can formulate define the problem. We call. This problem came most marketable products. Problem came in people shot. So here we have three products at PE PMPM and one consumer set C. So we try to select a set P of products from the candy new product set PN and add it to the market. So we can maximize the expected market share of both. P The new products will select and PM the existing products from the manufacturer. So now we have the formal definition of this problem. We can go on.
+
+[493.0s - 522.0s]
+And also the third question, how to select an or? In other words, the algorithms we use?
+
+[522.0s - 551.0s]
+If we only want to select one most market product, actually it's quite simple. We use is a optimized exhaustive search algorithm and complexity is bigger M plus the end times eldian here. MLD is the number of existing programs, products, candidate products to consumers and attributes respectively. But we cannot use exhaustive search algorithm for when K is larger than one because we prove that this problem is NP hard. So to solve it, we proposed.
+
+[551.0s - 580.0s]
+Radio based approximation algorithm. An idea is really simple. We select the solution of the top one algorithm and of course we need to update the product sets and then repeat K times. So 'cause we repay the top one algorithms algorithm for K times?
+
+[580.0s - 609.0s]
+So the capacity is actually K times of the capacity of the top one algorithm and. We use synthetic data to examine the speedup of our algorithm as compared with exhaustive search. Here we show the running time of our algorithm. An exhaustive search algorithm when varying the number of the candidate products in and the number on the left and the number of products we want to select K on the right and walk up served at here. Our algorithm, as expected, is way faster than exhaustive search. Actually, even in the large data set we use in our paper. Our algorithm can finish in like 7 minutes, so here time is not a problem. So how about?
+
+[609.0s - 638.0s]
+Accuracy. We actually proved that our objective function market share is non active mountain submodular. So we prove that our algorithm can provide at least 1 -- 1 every approximation and again we use data to examine the accuracy. And here we show the expected market share of the selected products when varying and K respectively. And we can see that actually the solution of our greedy algorithm is really close to the optimal solution. So on average, here we have a 96% approximation and even in the worst case is about 82%, so it's much better, much higher than the lower bound one 1 -- 1 / E. So now we have pharmacy. Find the problem and we have proposed really good algorithm. But there actually is still one more thing we need to consider when we start to solve the problem. We assume that we know that these metrics the consumer use. But how do we know that so?
+
+[638.0s - 667.0s]
+So there actually a false question. We need to answer how to select these metrics. In
+
+[667.0s - 696.0s]
+Our work, we propose learning method we learn from the historical purchase data. To use this method, we only need to know two things. The first one is we need to know the real world market share of a subset of products so we don't need to know that we don't need to know the real market share of all the products, just a subset. And we also need to know a set of potential just measures. The consumer may use so we can transform the problem to finding the probability distribution. Of these potential disk metrics in the set. And.
+
+[696.0s - 725.0s]
+Here we use that example to illustrate how our method works. Let's say we have three products, P1 and P3. We know the real world market share and there are three potential different metrics. In the first step, we calculate the expected market share on the different distance metrics using our method. And let's say we use data to denote the probability distribution of our of these three different metrics. So in the second step we forecast the.
+
+[725.0s - 754.0s]
+Market share by summing up they expect expected market share weighted by this distribution Theta. And as I said, we know the real world market share of these three products P1P2P3. So in the third step. We only we simply minimize the square difference between the forecast market share and the real world market share. So this actually is just a linear regression problem which can be solved. So this is our method and.
+
+[754.0s - 783.0s]
+To examine our method, we use real world data. That data set crawled from TripAdvisor where consumers rate hotels on 8 attributes. We use ratings as a quality of products and the requirement of the consumers. And here we forward this metrics. The first one is discrete metric, where we set all the distance to one. So actually it's equivalent to selecting randomly so we can cover the previous works. They are just a special case of our model and the second one is non metric where we just use Evernham and the third one is price metric. Here we want to describe describe those consumers who have a really tight budget and we just want the cheapest product. So here we set the weight. We only consider the average price and set the weight of other attributes. To 0. And On the contrary, we have rich metric. We want to describe those consumers who are really rich. You don't care bout care about price, just want the best best products. So here.
+
+[783.0s - 812.0s]
+We use the El Nom, but we disregard the attribute price. Firstly, we examined the accuracy of our learning method. Since we don't know the ground truth of the consumer behavior. So what we do here is actually we assume that we know the distribution and we randomly assign these these four different metrics to the consumers, and then we're using our method to learn it and compare the difference and hear the results. We use normalized mercy to measure the measured accuracy and here we vary the number of products we know the real world market share. They only see that the more products we know the real market share, the better accuracy we can get, and even we only know the real market share of five products. Actually the result is quite good. So based on such a. Accurate learning learning results.
+
+[812.0s - 841.0s]
+Parts of a real real problem we try to find the two most marketable products here in this. In this data set and let me first show the results. If we only use one this metric. So here is a table shows the ID and the and the market share of the selected products under the four different metrics. And actually, the result is quite interesting, because if you look at the idea of the selected products, the two most market products under different distance metrics, there are different and Furthermore the market share varies significantly under different different different metrics. So this actually implies that how important it is to analyze the consumer behavior before we select products.
+
+[841.0s - 870.0s]
+And now let's take a look at the result after learning. And here it is. So the idea of the selected products actually is totally different from all the four results above. So we can look at the market share so we indeed improved market share as compared with just use one this metric. So our title is not lying. We improve market share by learning consumer behavior. So now let me.
+
+[870.0s - 899.0s]
+Include.
+
+[899.0s - 928.0s]
+In this paper we formulate the problem of product selection mdpi problem and we model the consumer behavior using a general distance distance, distance based adoption model where we can use all kinds of these metrics to describe different consumer behavior and we provide a learning method to determine which these metrics we should use in different scenario and we prove the problem is NP hard and provide the efficiency and. Accuracy, accuracy approximation algorithm to solve this problem? That's our paper. Thank you very much.

@@ -1,0 +1,23 @@
+{
+    "id": "a6ep7jzuuzulkw5hehhfw5d3m23sshod",
+    "title": "Artificial Intelligence Handling Text Data",
+    "url": "http://videolectures.net/is2012_mladenic_grobelnik_text_data/",
+    "info": {
+        "author": [
+            "Dunja Mladenić, Artificial Intelligence Laboratory, Jožef Stefan Institute",
+            "Marko Grobelnik, Artificial Intelligence Laboratory, Jožef Stefan Institute"
+        ],
+        "published": "Nov. 16, 2012",
+        "recorded": "October 2012",
+        "category": [
+            "Top->Computer Science->Artificial Intelligence",
+            "Top->Computer Science->Text Mining",
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 9,
+    "num_sentences": 198,
+    "num_clips_with_summary": 8,
+    "num_gt_summary_sentences": 16,
+    "ground_truth_summary_length_chars": 1806
+}

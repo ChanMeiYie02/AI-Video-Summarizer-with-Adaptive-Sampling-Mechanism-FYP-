@@ -1,0 +1,20 @@
+{
+    "id": "2wp4vtsmoxbczi4yotdjxrcaampwwdhq",
+    "title": "Rich Probabilistic Models for Holistic Scene Understanding",
+    "url": "http://videolectures.net/ijcai2011_koller_scene/",
+    "info": {
+        "author": [
+            "Daphne Koller, Stanford University"
+        ],
+        "published": "Aug. 23, 2011",
+        "recorded": "July 2011",
+        "category": [
+            "Top->Computer Science->Machine Learning"
+        ]
+    },
+    "num_segments": 98,
+    "num_sentences": 565,
+    "num_clips_with_summary": 42,
+    "num_gt_summary_sentences": 53,
+    "ground_truth_summary_length_chars": 6921
+}

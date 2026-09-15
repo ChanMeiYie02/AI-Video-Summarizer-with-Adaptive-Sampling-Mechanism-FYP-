@@ -1,0 +1,20 @@
+{
+    "id": "pes6baaxt2h7tte3rd6w5b2wpix6gycq",
+    "title": "Functional Composition of Sensor Web APIs",
+    "url": "http://videolectures.net/iswc2012_verborgh_web_apis/",
+    "info": {
+        "author": [
+            "Ruben Verborgh, Ghent University"
+        ],
+        "published": "Dec. 3, 2012",
+        "recorded": "November 2012",
+        "category": [
+            "Top->Computer Science->Semantic Web->Applications"
+        ]
+    },
+    "num_segments": 37,
+    "num_sentences": 219,
+    "num_clips_with_summary": 18,
+    "num_gt_summary_sentences": 24,
+    "ground_truth_summary_length_chars": 3081
+}
