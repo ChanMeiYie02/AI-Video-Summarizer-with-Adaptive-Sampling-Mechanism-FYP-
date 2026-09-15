@@ -48,7 +48,7 @@ The system is controlled through an interactive **Streamlit dashboard** and is d
 * **🖥️ Streamlit Interactive Dashboard**
   Provides video playback, subtopic navigation, semantic search, keyframe visualization, and summary generation.
 
-* **🧪 Automated Evaluation Suite**
+* **🧪 Evaluation Suite**
   Supports evaluation using WER/CER for speech recognition and ROUGE, BLEU, and BERTScore for summarization quality.
 
 ---
@@ -158,9 +158,3 @@ run_evaluation.bat
 ```
 
 ---
-
-## 📄 License
-
-This project is distributed under a **Research License**.
-
-Please refer to the project documentation for the applicable terms, usage restrictions, and validation guidelines.
