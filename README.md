@@ -1,11 +1,11 @@
-# 🎬 Meiyie — AI-Powered Multimodal Video Summarizer
+# 🎬 AI-Powered Multimodal Video Summarizer
 
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.6-ee4c2c.svg)](https://pytorch.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.56-ff4b4b.svg)](https://streamlit.io/)
 [![License](https://img.shields.io/badge/License-Research-green.svg)](#-license)
 
-**Meiyie** is a local, end-to-end **multimodal video summarization system** that combines visual scene detection, speech-to-text transcription, semantic topic clustering, and LLM-based Map-Reduce summarization into a single automated pipeline.
+**AI Video Summarizer with Adaptive Sampling Mechanism** is a local, end-to-end **multimodal video summarization system** that combines visual scene detection, speech-to-text transcription, semantic topic clustering, and LLM-based Map-Reduce summarization into a single automated pipeline.
 
 The system is controlled through an interactive **Streamlit dashboard** and is designed to process both short and long-form videos while preserving important visual and audio context.
 
