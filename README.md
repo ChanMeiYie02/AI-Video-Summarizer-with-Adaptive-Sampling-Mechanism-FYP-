@@ -158,3 +158,18 @@ run_evaluation.bat
 ```
 
 ---
+
+## ⚙️ Llama Server Configuration
+
+The pipeline uses `llama-server` with the quantized Gemma-4-E2B model for local multimodal inference. The following configuration is integrated into `run.bat` and is provided here for reproducibility.
+
+```bash
+wsl /home/<username>/llama-cpp-turboquant/build/bin/llama-server \
+  -m /mnt/c/Users/<username>/.cache/huggingface/hub/models--unsloth--gemma-4-E2B-it-GGUF/snapshots/<snapshot-id>/gemma-4-E2B-it-Q4_K_M.gguf \
+  --cache-type-k turbo3 \
+  --cache-type-v turbo3 \
+  --host 0.0.0.0 \
+  --port 8080 \
+  -c 32768 \
+  -ngl 99 \
+  -fa on
