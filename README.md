@@ -18,7 +18,7 @@ The system is controlled through an interactive **Streamlit dashboard** and is d
 * [📁 Repository Directory Structure](#-repository-directory-structure)
 * [📊 Datasets & Storage Structure](#-datasets--storage-structure)
 * [🚀 Getting Started](#-getting-started)
-* [📄 License](#-license)
+* [⚙️ Llama Server Configuration](#-llama-server-configuration)
 
 ---
 
