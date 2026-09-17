@@ -86,8 +86,33 @@ flowchart TD
 
 The repository is organized into separate directories for source code, datasets, evaluation scripts, documentation, and generated outputs.
 
-![Repository Directory Structure](https://github.com/user-attachments/assets/a3c0157a-7478-40e2-b5dc-1e1eb80f7b8e)
-
+Meiyie/
+├── data/                             # 📁 Benchmark Datasets & Runtime Processing
+│   ├── Voice_Noise_Test_Set/         # Audio Noise Robustness Evaluation Set
+│   └── VT-SSum/                      # VT-SSum Spoken Lecture Dataset
+├── Doc/                              # 📄 Technical Specifications & System Briefs
+├── evaluation/                       # 🧪 Benchmark & Evaluation Suite
+│   ├── evaluate_summaries.py         # ROUGE, BLEU, BERTScore metrics
+│   ├── run_experiment.py             # Full evaluation suite runner
+│   ├── run_pipeline_on_vtssum.py     # Pipeline runner for VT-SSum dataset
+│   └── run_voice_noise_evaluation.py # Audio noise evaluation test
+├── outputs/                          # 📦 Generated Pipeline Outputs
+│   ├── final_summary.md              # Final cohesive Markdown summary
+│   ├── interleaved_timeline.txt      # Chronological visual & speech timeline
+│   └── transcript.json               # Unified transcript file
+├── src/                              # 📌 Primary Source Code
+│   ├── audio/                        # Whisper / Gemma audio transcription
+│   ├── langchain_splitter_chunking.py# Semantic text splitting logic
+│   ├── main.py                       # Master CLI pipeline orchestrator
+│   ├── multimodal/                   # Native interleaved multimodal engine
+│   ├── preprocessing/                # FFmpeg, TransNetV2 scene detection & frame filters
+│   ├── summarization/                # LangChain Map-Reduce LLM summarizer
+│   ├── ui/                           # Streamlit interactive frontend
+│   ├── utils/                        # Clustering, Vector Search, and File Exporters
+│   └── vision/                       # BLIP-2 / Gemma VLM frame captioning
+├── transnetv2_pytorch/               # 🎬 TransNetV2 PyTorch Package
+├── requirements.txt                  # 📌 Frozen Python Package Dependencies
+└── run.bat                           # 🚀 One-Click Windows Launcher Script
 ---
 
 ## 📊 Datasets & Storage Structure
