@@ -86,7 +86,7 @@ flowchart TD
 
 The repository is organized into separate directories for source code, datasets, evaluation scripts, documentation, and generated outputs.
 
-<img width="1249" height="946" alt="image" src="https://github.com/user-attachments/assets/22f0d489-8908-44c0-9ba2-e323d0ef0757" />
+<img width="1249" height="946" alt="image" src="https://github.com/user-attachments/assets/a21740e6-162a-412c-bc1d-418754dac9bb" />
 
 ---
 
