@@ -1,4 +1,4 @@
-# 🔍 VT-SSum × Meiyie Pipeline — Compatibility Analysis
+# 🔍 VT-SSum × AI Video Summarizer Adaptive Sampling Mechanism Pipeline — Compatibility Analysis
 
 ## TL;DR Verdict
 
