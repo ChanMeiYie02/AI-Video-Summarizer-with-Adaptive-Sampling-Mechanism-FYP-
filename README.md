@@ -97,9 +97,7 @@ Meiyie supports processing and benchmarking across **five integrated datasets an
 | Dataset / Resource            | Location                            | Modality & Description                                                                                                                  |           Samples |
 | ----------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------: |
 | **9-Video YouTube Benchmark** | `Doc/youtube_9_videos_benchmark.md` | Multimodal benchmark covering 9 YouTube videos across 3 duration tiers and 3 presentation types, evaluated across multiple batch sizes. |          9 Videos |
-| **TVSum50**                   | `data/TVSum/`                       | Multimodal dataset containing YouTube videos across 10 event categories with human shot-importance annotations.                         |         50 Videos |
 | **VT-SSum**                   | `data/VT-SSum/`                     | Spoken-language dataset containing academic lecture transcripts covering Computer Science, Mathematics, Physics, and Medicine.          | 9,616 Transcripts |
-| **EDUVSUM**                   | `data/EDUVSUM/`                     | Educational lecture dataset containing video recordings, `.vtt` subtitles, and ground-truth topic/chapter annotations.                  |         97 Videos |
 | **Voice Noise Test Set**      | `data/Voice_Noise_Test_Set/`        | Audio benchmark containing speech samples with background noise at different signal-to-noise ratios (SNR).                              |         Multi-SNR |
 
 ---
